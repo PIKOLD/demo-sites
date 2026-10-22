@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Студия бровей и ресниц Анны Фроловой — Санкт-Петербург</title>
+<meta name="description" content="Брови, перманент, ресницы, комбо и макияж. 2-й Муринский пр., 36, 3 этаж. Ежедневно 11:00–21:00. Рейтинг 5.0 в 2ГИС.">
+<meta name="theme-color" content="#F5ECE3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&family=Inter:wght@400;500;600&display=swap"><style>.rv{opacity:1!important;transform:none!important}</style></noscript>
+<style>
+:root{
+  --powder:#F5ECE3; --powder-2:#EFE3D6; --champ:#E7D6BC; --champ-d:#C9AE84; --paper:#FCF9F5;
+  --graph:#2A2B2E; --graph-2:#505156; --muted:#6A645D; --gold:#8C6F45;
+  --line:rgba(42,43,46,.3); --hair:rgba(42,43,46,.14);
+  --display:"Raleway","Inter",system-ui,sans-serif;
+  --text:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--powder);color:var(--graph);font:400 16px/1.65 var(--text);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.ic{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font:500 11.5px/1 var(--text);letter-spacing:.24em;text-transform:uppercase;color:var(--graph-2)}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--graph)}
+h1,h2,h3{font-family:var(--display);font-weight:300;margin:0;letter-spacing:-.02em;font-feature-settings:"lnum"}
+h2{font-size:clamp(32px,5.2vw,60px);line-height:1.06;margin-top:18px}
+h1 em,h2 em{font-style:normal;font-weight:500}
+.lead{font-size:clamp(16px,1.6vw,18px);color:var(--graph-2);max-width:54ch;margin:0}
+section{padding:clamp(64px,9vw,120px) 0;position:relative}
+section[id]{scroll-margin-top:60px}
+
+/* demo bar */
+.demo{background:var(--graph);color:#EDE6DE;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:#fff;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:11px;border:1px solid rgba(255,255,255,.4);padding:3px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(245,236,227,.92);backdrop-filter:saturate(1.3) blur(12px);-webkit-backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid var(--hair)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:14px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.logo svg{width:38px;height:auto;flex:none;fill:none;stroke:var(--graph);stroke-width:1.2;stroke-linejoin:round}
+.logo b{display:block;font:300 22px/1 var(--display);letter-spacing:.02em;white-space:nowrap}
+.logo small{display:none;margin-top:5px;font:500 10px/1 var(--text);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+@media (min-width:480px){.logo small{display:block}}
+.nav{display:none;gap:30px}
+.nav a{text-decoration:none;font:500 12.5px/1 var(--text);letter-spacing:.14em;text-transform:uppercase;color:var(--graph-2);position:relative;padding:6px 0}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--graph);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border:1px solid var(--graph);background:var(--graph);color:var(--powder);font:500 12.5px/1 var(--text);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .3s,color .3s,transform .3s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--graph)}
+.btn.ghost:hover{background:var(--graph);color:var(--powder)}
+.btn.sm{min-height:42px;padding:0 20px;font-size:11.5px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border:1px solid var(--graph);background:transparent;display:grid;place-items:center;cursor:pointer;flex:none}
+.burger span{display:block;width:18px;height:1px;background:var(--graph);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1px;background:var(--graph);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--powder);padding:120px 24px 40px;display:flex;flex-direction:column;gap:4px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:200 34px/1.2 var(--display);text-decoration:none;padding:10px 0;border-bottom:1px solid var(--hair)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:980px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* линия брови: контур и волоски прорисовываются при скролле */
+.brow-svg{display:block;width:100%;height:auto;overflow:visible;fill:none;stroke:var(--graph);stroke-linecap:round;stroke-linejoin:round}
+.b-out{stroke-width:1.4;stroke-dasharray:100;stroke-dashoffset:100}
+.b-hair{stroke-width:.9;stroke-dasharray:100;stroke-dashoffset:100}
+.div{display:flex;align-items:center;gap:20px;margin:-48px 0;position:relative}
+.div i{flex:1;height:1px;background:var(--hair)}
+.div .brow-svg{width:min(60vw,340px);flex:none}
+
+/* hero */
+.hero{padding:clamp(32px,5vw,72px) 0 clamp(56px,8vw,104px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:52px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:72px}}
+.status{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);padding:8px 14px 8px 12px;font:500 12.5px/1.2 var(--text);letter-spacing:.06em}
+.status i{width:8px;height:8px;border-radius:50%;background:#3BA55C;box-shadow:0 0 0 0 rgba(59,165,92,.5);animation:pulse 2s infinite}
+.status.closed i{background:#C2554B;animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(59,165,92,0)}100%{box-shadow:0 0 0 0 rgba(59,165,92,0)}}
+.hero h1{font-weight:200;font-size:clamp(38px,5.6vw,78px);line-height:1.04;margin:22px 0 22px}
+.hero h1 em{font-weight:400}
+.hero .lead{margin-bottom:24px}
+.place{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:14.5px;margin-bottom:28px}
+.place .ic{margin-top:3px;color:var(--graph)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:600px){.ctas .btn{flex:0 0 auto}}
+.ratings{display:flex;flex-wrap:wrap;gap:14px 30px;margin-top:34px;padding-top:24px;border-top:1px solid var(--line)}
+.rate{display:flex;align-items:center;gap:14px}
+.rate strong{font:200 54px/1 var(--display)}
+.rate span{font-size:13px;line-height:1.4;color:var(--muted)}
+.rate span b{display:block;color:var(--gold);letter-spacing:3px;font-size:12px;font-weight:500}
+
+.mirror{position:relative;width:100%;max-width:480px;margin-inline:auto;aspect-ratio:4/5}
+.mirror .glass{position:absolute;inset:6%;border-radius:55% 45% 48% 52% / 40% 50% 50% 60%;overflow:hidden;background:var(--champ)}
+.mirror .glass img{width:100%;height:100%;object-fit:cover;object-position:72% 30%}
+.mirror .glass::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(245,236,227,0) 60%,rgba(42,43,46,.18))}
+.mirror .ring{position:absolute;pointer-events:none;border:1px solid var(--graph)}
+.mirror .r1{inset:1%;border-radius:48% 52% 56% 44% / 56% 42% 58% 44%;transform:rotate(-4deg)}
+.mirror .r2{inset:3% 0 0 3%;border-radius:60% 40% 44% 56% / 44% 58% 42% 56%;transform:rotate(5deg);border-color:var(--champ-d)}
+.mirror .hbrow{position:absolute;left:3%;top:19%;width:44%;z-index:2}
+.mirror .tag{position:absolute;right:0;bottom:7%;z-index:3;background:var(--paper);border:1px solid var(--graph);padding:10px 14px;font:500 11.5px/1.35 var(--text);letter-spacing:.06em;max-width:190px}
+.mirror .tag b{display:block;font:300 22px/1.1 var(--display);letter-spacing:0;margin-top:2px}
+
+/* quiz */
+.band{background:var(--powder-2);border-block:1px solid var(--hair)}
+.quiz-wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:44px;align-items:start}
+@media (min-width:960px){.quiz-wrap{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:80px}}
+.quiz-intro .qbrow{width:min(86%,420px);margin-top:36px}
+.quiz{position:relative;background:var(--paper);border:1px solid var(--graph);padding:clamp(22px,4vw,42px);outline:1px solid var(--line);outline-offset:8px;min-height:420px}
+.q-prog{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-bottom:26px}
+.q-prog i{display:block;height:2px;background:var(--hair);position:relative;overflow:hidden}
+.q-prog i::after{content:"";position:absolute;inset:0;background:var(--graph);transform:scaleX(0);transform-origin:left;transition:transform .5s}
+.q-prog i.on::after{transform:none}
+.q-meta{margin:0 0 10px;font:500 11.5px/1 var(--text);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.q-title{font:300 clamp(26px,3.6vw,36px)/1.15 var(--display);margin-bottom:24px;outline:none}
+.opts{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+.opt{display:flex;justify-content:space-between;align-items:center;gap:16px;width:100%;text-align:left;border:1px solid var(--line);background:transparent;padding:16px 18px;font:500 15px/1.35 var(--text);cursor:pointer;transition:background .25s,border-color .25s}
+.opt::after{content:"→";flex:none;color:var(--muted);transition:transform .25s,color .25s}
+.opt:hover,.opt:focus-visible{background:var(--champ);border-color:var(--graph);outline:none}
+.opt:hover::after{transform:translateX(4px);color:var(--graph)}
+.q-back{margin-top:20px;border:0;background:none;padding:6px 0;font:500 12px/1 var(--text);letter-spacing:.14em;text-transform:uppercase;color:var(--graph-2);cursor:pointer;border-bottom:1px solid var(--line)}
+.q-name{font:300 clamp(28px,4vw,42px)/1.1 var(--display);outline:none}
+.q-price{font:200 clamp(44px,8vw,72px)/1 var(--display);margin:14px 0 10px}
+.q-brow{display:block;width:min(56%,200px);margin:0 0 18px}
+.q-sum{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 16px;padding:0;list-style:none}
+.q-sum li{border:1px solid var(--line);padding:5px 10px;font-size:12.5px;color:var(--graph-2)}
+.q-alt{margin:0 0 6px;font-size:14.5px}
+.q-det{margin:0 0 6px;font-size:14.5px;color:var(--graph-2)}
+.q-note{margin:12px 0 22px;font-size:13px;color:var(--muted)}
+.q-actions{display:flex;flex-wrap:wrap;gap:12px}
+.q-actions .btn{flex:1 1 170px}
+
+/* services */
+.head{display:grid;gap:14px;margin-bottom:36px}
+@media (min-width:960px){.head{grid-template-columns:minmax(0,1fr) minmax(0,auto);align-items:end}}
+.head p{margin:0;color:var(--muted);font-size:14px;max-width:46ch}
+.tabs,.filters{display:flex;flex-wrap:wrap;border-bottom:1px solid var(--line);margin-bottom:6px}
+.filters{margin-bottom:28px}
+.tab{background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:14px 18px 14px 0;margin-right:18px;font:500 12px/1 var(--text);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);cursor:pointer;transition:color .25s,border-color .25s}
+.tab:hover{color:var(--graph)}
+.tab[aria-selected="true"],.tab[aria-pressed="true"]{color:var(--graph);border-bottom-color:var(--graph)}
+.panel{display:none}
+.panel.on{display:block;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}}
+.plist{display:grid;grid-template-columns:minmax(0,1fr);column-gap:72px}
+@media (min-width:960px){.plist{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 18px;align-items:baseline;padding:20px 0;border-bottom:1px solid var(--hair)}
+.row .n b{display:block;font:500 16px/1.35 var(--text)}
+.row .n small{display:block;color:var(--muted);font-size:13.5px;margin-top:3px}
+.row .p{font:300 26px/1 var(--display);white-space:nowrap}
+.row .p small{font-size:15px;color:var(--muted);margin-right:4px}
+.row.hot .n b::after{content:"авторская услуга";margin-left:10px;padding:3px 7px;border:1px solid var(--gold);color:var(--gold);font:600 9.5px/1 var(--text);letter-spacing:.12em;text-transform:uppercase;vertical-align:2px;white-space:nowrap}
+
+/* permanent (graphite) */
+.graph{background:var(--graph);color:var(--powder)}
+.graph .eyebrow{color:var(--champ)}
+.graph .eyebrow::before{background:var(--champ)}
+.graph h2 em{color:var(--champ)}
+.graph .lead{color:#CFC6BC}
+.perm{display:grid;grid-template-columns:minmax(0,1fr);gap:48px;align-items:center}
+@media (min-width:960px){.perm{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:72px}}
+.rings{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.ringc{aspect-ratio:1;border:1px solid rgba(245,236,227,.45);border-radius:50%;display:grid;place-content:center;justify-items:center;gap:6px;text-align:center;padding:6px;transition:background .35s,color .35s}
+.ringc:hover{background:var(--champ);color:var(--graph)}
+.ringc svg{width:clamp(22px,6vw,40px);height:auto}
+.ringc span{font:500 clamp(11px,3vw,15px)/1.1 var(--text)}
+.ringc b{font:300 clamp(15px,4.2vw,30px)/1 var(--display);white-space:nowrap}
+.perm .btn{margin-top:26px}
+.graph .btn{background:var(--champ);border-color:var(--champ);color:var(--graph)}
+.graph .btn:hover{background:var(--paper);border-color:var(--paper)}
+
+/* gallery */
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (min-width:760px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}}
+.gi{position:relative;aspect-ratio:1;align-self:stretch;overflow:hidden;background:var(--champ);cursor:zoom-in;border:0;padding:0;outline:1px solid var(--line);outline-offset:5px;transition:opacity .4s}
+.gi.wide{grid-column:span 2;aspect-ratio:2/1}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.05)}
+.gi span{position:absolute;left:0;bottom:0;background:var(--paper);font:500 10.5px/1 var(--text);letter-spacing:.16em;text-transform:uppercase;padding:8px 10px}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,1000px);max-height:90vh}
+.lb::backdrop{background:rgba(24,24,26,.88)}
+.lb img{max-height:84vh;width:auto;margin:auto}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border:0;background:var(--paper);font-size:22px;cursor:pointer}
+
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,1fr);border-top:1px solid var(--line)}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pr-card{padding:34px 0;border-bottom:1px solid var(--line)}
+@media (min-width:860px){.pr-card{padding:40px 34px 40px 0;border-bottom:0}.pr-card+.pr-card{padding-left:34px;border-left:1px solid var(--line)}}
+.pr-card .num{font:200 56px/1 var(--display);color:var(--champ-d)}
+.pr-card h3{font:400 24px/1.2 var(--display);margin:16px 0 10px}
+.pr-card p{margin:0;color:var(--graph-2)}
+.score{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.score a{display:flex;align-items:center;gap:16px;border:1px solid var(--graph);padding:14px 22px;text-decoration:none;flex:1 1 260px;max-width:420px;transition:background .3s}
+.score a:hover{background:var(--champ)}
+.score strong{font:200 48px/1 var(--display)}
+.score span{font-size:13.5px;color:var(--muted)}
+.score span b{color:var(--graph);display:block;font-weight:500}
+
+/* studio */
+.studio{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 22px;padding:0 8px}
+.studio figure{margin:0;background:var(--champ);outline:1px solid var(--line);outline-offset:7px;overflow:hidden;aspect-ratio:4/5}
+.studio figure:nth-child(even){margin-top:30px}
+.studio img{width:100%;height:100%;object-fit:cover}
+@media (min-width:900px){.studio{grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;padding:0 10px}.studio figure:nth-child(even){margin-top:48px}}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:48px}
+.fact{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);padding:10px 16px;font-size:14px;font-weight:500}
+.fact .ic{width:16px;height:16px}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:36px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px;align-items:stretch}}
+.cinfo{display:grid;gap:0;align-content:start}
+.ci{padding:18px 0;border-bottom:1px solid var(--hair)}
+.ci:first-child{border-top:1px solid var(--hair)}
+.ci small{display:block;font:500 11px/1 var(--text);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.ci p,.ci a{margin:0;font-size:17px;font-weight:500;text-decoration:none}
+.ci a.big{font:300 34px/1.1 var(--display)}
+.socials{display:flex;gap:8px;flex-wrap:wrap}
+.socials a{border:1px solid var(--line);padding:9px 14px;font-size:13.5px;transition:background .25s,color .25s}
+.socials a:hover{background:var(--graph);color:var(--powder)}
+.cinfo .ctas{margin-top:24px}
+.map{overflow:hidden;min-height:400px;background:var(--champ);border:1px solid var(--graph);outline:1px solid var(--line);outline-offset:8px}
+.map iframe{width:100%;height:100%;min-height:400px;border:0;display:block}
+
+/* final */
+.final{text-align:center;background:var(--champ);border-top:1px solid var(--hair)}
+.final .brow-svg{width:min(70%,360px);margin:0 auto 30px}
+.final h2{font-weight:200;font-size:clamp(38px,7vw,88px);max-width:14ch;margin:16px auto 18px}
+.final h2 em{font-weight:400}
+.final .lead{margin:0 auto;color:var(--graph-2)}
+.final .ctas{justify-content:center;margin-top:32px}
+footer{padding:36px 0 120px;font-size:13px;color:var(--muted);border-top:1px solid var(--hair)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer a{color:var(--graph);text-underline-offset:3px}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.3fr);gap:6px;padding:6px;background:rgba(42,43,46,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 18px 40px -12px rgba(0,0,0,.45);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;color:var(--powder);text-decoration:none;font:500 11px/1 var(--text);letter-spacing:.08em;text-transform:uppercase}
+.mbar a .ic{width:20px;height:20px}
+.mbar a.main{background:var(--champ);color:var(--graph);flex-direction:row;font-size:12px;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity 1s cubic-bezier(.2,.7,.2,1), transform 1s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+  .b-out,.b-hair{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><path d="M3 11l18-8-8 18-2-8-8-2z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-tg" viewBox="0 0 24 24"><path d="M21 4L3 11l6 2 2 6 3-4 5 4z"/><path d="M9 13l8-6"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15"/><path d="M8 3v4M16 3v4M3.5 10h17"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14"/><path d="M2 10h20"/></symbol>
+    <symbol id="i-stairs" viewBox="0 0 24 24"><path d="M3 20h5v-4h5v-4h5V8h3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+  </defs>
+</svg>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта для студии Анны Фроловой. Данные из открытых источников (2ГИС / DIKIDI) на 22.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Анна Фролова — наверх">
+      <svg viewBox="0 0 40 16" aria-hidden="true"><path d="M2 12C8 5 18 2 26 3c5 .6 9 3.5 12 8-5-3-10-4-15-3.6-8 .6-14 3-21 4z"/></svg>
+      <span><b>Анна Фролова</b><small>студия бровей и ресниц</small></span>
+    </a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#quiz">Подбор услуги</a>
+      <a href="#services">Услуги и цены</a>
+      <a href="#works">Работы</a>
+      <a href="#praise">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm" href="http://dikidi.net/366721" target="_blank" rel="noopener">Записаться</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#quiz">Подбор услуги</a>
+  <a href="#services">Услуги и цены</a>
+  <a href="#permanent">Перманент</a>
+  <a href="#works">Работы</a>
+  <a href="#praise">Отзывы</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="status rv" id="status"><i></i><span>Ежедневно 11:00–21:00</span></span>
+      <h1 class="rv d1">Брови и ресницы, <em>которые выглядят естественно</em></h1>
+      <p class="lead rv d2">Студия Анны Фроловой: брови, перманент, ресницы, комбо и макияж. Не знаете, что выбрать, — ответьте на три вопроса или запишитесь на «Не&nbsp;знаю, что хочу — главное красиво».</p>
+      <div class="place rv d2">
+        <svg class="ic" viewBox="0 0 24 24"><use href="#i-pin"/></svg>
+        <span>2-й Муринский пр., 36, 3&nbsp;этаж · Выборгский район, Санкт-Петербург</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn" href="http://dikidi.net/366721" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><use href="#i-cal"/></svg>Записаться</a>
+        <a class="btn ghost" href="tel:+79919985100"><svg class="ic" viewBox="0 0 24 24"><use href="#i-phone"/></svg>Позвонить</a>
+        <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~59.999588%2C30.358971&rtt=auto" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><use href="#i-route"/></svg>Маршрут</a>
+      </div>
+      <div class="ratings rv d3">
+        <div class="rate"><strong>5.0</strong><span><b>★★★★★</b>2ГИС · 55 оценок</span></div>
+      </div>
+    </div>
+
+    <div class="mirror rv d2">
+      <div class="ring r2"></div>
+      <div class="ring r1"></div>
+      <div class="glass"><img src="img/hero.jpg" alt="Портрет клиентки: ухоженные брови, нюдовый макияж" width="1024" height="768" fetchpriority="high"></div>
+      <svg class="brow-svg hbrow" data-brow="hero" viewBox="0 0 320 100" aria-hidden="true"></svg>
+      <div class="tag">Авторская услуга<b>2&nbsp;000&nbsp;₽</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz" class="band">
+  <div class="wrap quiz-wrap">
+    <div class="quiz-intro">
+      <span class="eyebrow rv">Подбор услуги</span>
+      <h2 class="rv d1">Не знаю, <em>что хочу</em></h2>
+      <p class="lead rv d2" style="margin-top:20px">Три вопроса — и мы подскажем услугу из прайса. В студии для этого есть отдельная услуга: «Не&nbsp;знаю, что хочу — главное красиво», 2&nbsp;000&nbsp;₽.</p>
+      <svg class="brow-svg qbrow" data-brow="scroll" viewBox="0 0 320 100" aria-hidden="true"></svg>
+    </div>
+    <div class="quiz rv d1" id="quizCard">
+      <div class="q-prog" id="quizProg" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div id="quizBody"><noscript>Для подбора включите JavaScript или посмотрите прайс ниже.</noscript></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Прайс</span><h2 class="rv d1">Услуги <em>и цены</em></h2></div>
+      <p class="rv d2">Цены из карточки студии в 2ГИС на 21.10.2026</p>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Категории услуг">
+      <button class="tab" role="tab" aria-selected="true" data-tab="br">Брови</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="pm">Перманент</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="ls">Ресницы</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="cm">Комбо и макияж</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="ad">Доп.</button>
+    </div>
+
+    <div class="panel on" id="p-br" role="tabpanel">
+      <div class="plist">
+        <div class="row"><div class="n"><b>Коррекция</b></div><div class="p">1&nbsp;700&nbsp;₽</div></div>
+        <div class="row"><div class="n"><b>Коррекция + окрашивание</b></div><div class="p"><small>от</small>2&nbsp;300&nbsp;₽</div></div>
+        <div class="row"><div class="n"><b>Organic brow</b><small>уход с коррекцией</small></div><div class="p"><small>от</small>2&nbsp;300&nbsp;₽</div></div>
+        <div class="row"><div class="n"><b>Комплекс</b><small>окрашивание + коррекция + уход</small></div><div class="p"><small>от</small>2&nbsp;700&nbsp;₽</div></div>
+        <div class="row"><div class="n"><b>Ламинирование</b></div><div class="p">2&nbsp;700&nbsp;₽</div></div>
+        <div class="row"><div class="n"><b>Осветление</b><small>с коррекцией и локальным окрашиванием</small></div><div class="p">1&nbsp;700&nbsp;₽</div></div>
+        <div class="row hot"><div class="n"><b>«Не знаю, что хочу — главное красиво»</b></div><div class="p">2&nbsp;000&nbsp;₽</div></div>
+      </div>
+    </div>
+    <div class="panel" id="p-pm" role="tabpanel">
+      <div class="plist">
+        <div class="row"><div class="n"><b>Перманент бровей</b></div><div class="p">9&nbsp;000&nbsp;₽</div></div>
+        <div class="row"><div class="n"><b>Перманент губ</b></div><div class="p">9&nbsp;000&nbsp;₽</div></div>
+        <div class="row"><div class="n"><b>Перманент межреснички</b></div><div class="p">9&nbsp;000&nbsp;₽</div></div>
+        <div class="row"><div class="n"><b>Коррекция перманента</b></div><div class="p">4&nbsp;500&nbsp;₽</div></div>
+      </div>
+    </div>
+    <div class="panel" id="p-ls" role="tabpanel">
+      <div class="plist">
+        <div class="row"><div class="n"><b>Ламинирование ресниц</b></div><div class="p"><small>от</small>2&nbsp;800&nbsp;₽</div></div>
+        <div class="row"><div class="n"><b>Наращивание (адаптированное)</b><small>нижние ресницы в подарок</small></div><div class="p">4&nbsp;000&nbsp;₽</div></div>
+        <div class="row"><div class="n"><b>Уголки</b></div><div class="p">2&nbsp;500&nbsp;₽</div></div>
+        <div class="row"><div class="n"><b>Коррекция наращенных ресниц</b><small>до 3 недель</small></div><div class="p">2&nbsp;800&nbsp;₽</div></div>
+        <div class="row"><div class="n"><b>Окрашивание ресниц</b></div><div class="p">600&nbsp;₽</div></div>
+        <div class="row"><div class="n"><b>Снятие ресниц</b></div><div class="p">700&nbsp;₽</div></div>
+      </div>
+    </div>
+    <div class="panel" id="p-cm" role="tabpanel">
+      <div class="plist">
+        <div class="row"><div class="n"><b>Комбо: брови + ресницы</b></div><div class="p"><small>от</small>4&nbsp;500&nbsp;₽</div></div>
+        <div class="row"><div class="n"><b>Макияж любой сложности</b></div><div class="p">4&nbsp;200&nbsp;₽</div></div>
+        <div class="row"><div class="n"><b>Свадебные и вечерние причёски</b><small>цена в источнике не указана</small></div><div class="p">—</div></div>
+      </div>
+    </div>
+    <div class="panel" id="p-ad" role="tabpanel">
+      <div class="plist">
+        <div class="row"><div class="n"><b>Удаление волос воском</b></div><div class="p">400&nbsp;₽</div></div>
+        <div class="row"><div class="n"><b>Гель для бровей</b><small>или сыворотка для ресниц</small></div><div class="p">600&nbsp;₽</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERMANENT -->
+<section id="permanent" class="graph">
+  <div class="wrap perm">
+    <div>
+      <span class="eyebrow rv">Перманент</span>
+      <h2 class="rv d1">Три зоны — <em>по&nbsp;9&nbsp;000&nbsp;₽</em></h2>
+      <p class="lead rv d2" style="margin-top:20px">Брови, губы и межресничка: каждая зона — 9&nbsp;000&nbsp;₽. Коррекция — 4&nbsp;500&nbsp;₽.</p>
+      <a class="btn rv d3" href="http://dikidi.net/366721" target="_blank" rel="noopener">Записаться на перманент</a>
+    </div>
+    <div class="rings rv d1">
+      <div class="ringc"><svg class="ic" viewBox="0 0 32 32" style="stroke-width:1.2"><path d="M4 21c6-8 14-11 24-7"/><path d="M7 23c6-6 12-8 19-5" opacity=".5"/></svg><span>Брови</span><b>9&nbsp;000&nbsp;₽</b></div>
+      <div class="ringc"><svg class="ic" viewBox="0 0 32 32" style="stroke-width:1.2"><path d="M3 16c4-5 8-6 10-4 1 1 2 1 3 0 2-2 6-1 13 4-5 6-9 8-13 8S8 22 3 16z"/><path d="M3 16h26"/></svg><span>Губы</span><b>9&nbsp;000&nbsp;₽</b></div>
+      <div class="ringc"><svg class="ic" viewBox="0 0 32 32" style="stroke-width:1.2"><path d="M3 17c7-8 19-8 26 0-7 7-19 7-26 0z"/><circle cx="16" cy="17" r="3.5"/></svg><span>Межресничка</span><b>9&nbsp;000&nbsp;₽</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section id="works">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Портфолио</span><h2 class="rv d1">Работы <em>студии</em></h2></div>
+      <p class="rv d2">Фото из карточки студии в 2ГИС</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр работ">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="brows">Брови</button>
+      <button class="tab" aria-pressed="false" data-f="lashes">Ресницы</button>
+      <button class="tab" aria-pressed="false" data-f="portraits">Портреты</button>
+    </div>
+    <div class="grid" id="grid">
+      <button class="gi wide rv" data-c="brows"><img src="img/work-2.jpg" alt="Брови до и после, коллаж" loading="lazy"><span>до / после</span></button>
+      <button class="gi rv d1" data-c="lashes"><img src="img/work-1.jpg" alt="Ресницы до и после ламинирования, коллаж" loading="lazy"><span>до / после</span></button>
+      <button class="gi rv d2" data-c="brows lashes"><img src="img/work-3.jpg" alt="Бровь и ресницы крупным планом" loading="lazy"><span>Брови</span></button>
+      <button class="gi rv" data-c="brows"><img src="img/work-5.jpg" alt="Процесс: окрашивание бровей хной" loading="lazy"><span>Окрашивание хной</span></button>
+      <button class="gi rv d1" data-c="portraits"><img src="img/hero.jpg" alt="Портрет клиентки: ухоженные брови, нюдовый макияж" loading="lazy"><span>Портрет</span></button>
+      <button class="gi rv d2" data-c="portraits"><img src="img/portrait-1.jpg" alt="Портрет с макияжем" loading="lazy"><span>Портрет</span></button>
+      <button class="gi rv" data-c="portraits"><img src="img/portrait-2.jpg" alt="Портрет с макияжем" loading="lazy"><span>Портрет</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""></dialog>
+
+<div class="wrap"><div class="div" aria-hidden="true"><i></i><svg class="brow-svg" data-brow="scroll" viewBox="0 0 320 100"></svg><i></i></div></div>
+
+<!-- PRAISE -->
+<section id="praise">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Отзывы</span><h2 class="rv d1">За что <em>хвалят</em></h2></div>
+      <p class="rv d2">Пересказ отзывов клиентов в 2ГИС</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card rv"><div class="num">01</div><h3>Естественный результат</h3><p>Даже на тонких и сложных бровях всё выглядит естественно, а цвет подбирают точно.</p></article>
+      <article class="pr-card rv d1"><div class="num">02</div><h3>Аккуратно и быстро</h3><p>Работают аккуратно и безболезненно, процедуры проходят быстро.</p></article>
+      <article class="pr-card rv d2"><div class="num">03</div><h3>Уютная студия</h3><p>Гостей угощают напитками, а с мастерами легко общаться.</p></article>
+    </div>
+    <div class="score rv">
+      <a href="https://2gis.ru/spb/firm/70000001063210416" target="_blank" rel="noopener"><strong>5.0</strong><span><b>2ГИС</b>55 оценок</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- STUDIO -->
+<section id="studio" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Студия</span><h2 class="rv d1">Где всё <em>происходит</em></h2></div>
+    </div>
+    <div class="studio">
+      <figure class="rv"><img src="img/studio-1.jpg" alt="Рабочие места студии: зеркала с подсветкой, синие стулья" loading="lazy"></figure>
+      <figure class="rv d1"><img src="img/studio-2.jpg" alt="Зал у окна с зеркалами" loading="lazy"></figure>
+      <figure class="rv d2"><img src="img/studio-3.jpg" alt="Зеркало с голубой подсветкой крупным планом" loading="lazy"></figure>
+      <figure class="rv d3"><img src="img/studio-4.jpg" alt="Светлый кабинет с большим окном" loading="lazy"></figure>
+    </div>
+    <div class="facts rv">
+      <span class="fact"><svg class="ic" viewBox="0 0 24 24"><use href="#i-stairs"/></svg>3 этаж</span>
+      <span class="fact"><svg class="ic" viewBox="0 0 24 24"><use href="#i-clock"/></svg>Ежедневно 11:00–21:00</span>
+      <span class="fact"><svg class="ic" viewBox="0 0 24 24"><use href="#i-card"/></svg>Наличные, через банк, перевод, QR</span>
+      <span class="fact"><svg class="ic" viewBox="0 0 24 24"><use href="#i-globe"/></svg>Есть онлайн-услуги</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1">Как <em>добраться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Санкт-Петербург, 2-й Муринский пр., 36, 3 этаж · Выборгский район</p></div>
+        <div class="ci"><small>Часы работы</small><p>Ежедневно, 11:00–21:00</p></div>
+        <div class="ci"><small>Телефон</small><a class="big" href="tel:+79919985100">+7 991 998-51-00</a></div>
+        <div class="ci"><small>Запись, мессенджеры и соцсети</small>
+          <div class="socials">
+            <a href="http://dikidi.net/366721" target="_blank" rel="noopener">Онлайн-запись</a>
+            <a href="https://t.me/anybrow1" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://t.me/any1brow" target="_blank" rel="noopener">Канал в Telegram</a>
+            <a href="https://vk.com/any.brow" target="_blank" rel="noopener">ВКонтакте</a>
+            <a href="https://max.ru/id780438712668_biz" target="_blank" rel="noopener">MAX</a>
+          </div>
+        </div>
+        <div class="ci"><small>Оплата</small><p>Наличные, через банк, перевод, QR</p></div>
+        <div class="ctas"><a class="btn ghost" href="https://yandex.ru/maps/?rtext=~59.999588%2C30.358971&rtt=auto" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><use href="#i-route"/></svg>Построить маршрут</a></div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?ll=30.358971%2C59.999588&z=16&pt=30.358971%2C59.999588%2Cpm2rdm" title="Студия Анны Фроловой на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <svg class="brow-svg" data-brow="scroll" viewBox="0 0 320 100" aria-hidden="true"></svg>
+    <span class="eyebrow rv">Запись</span>
+    <h2 class="rv d1">Главное — <em>красиво</em></h2>
+    <p class="lead rv d2">Выберите время в DIKIDI или позвоните в студию.</p>
+    <div class="ctas rv d3">
+      <a class="btn" href="http://dikidi.net/366721" target="_blank" rel="noopener">Записаться</a>
+      <a class="btn ghost" href="tel:+79919985100">+7 991 998-51-00</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Студия бровей и ресниц Анны Фроловой, Санкт-Петербург</span>
+    <span>Демо-концепт. Цены и данные — из открытых источников: <a href="https://2gis.ru/spb/firm/70000001063210416" target="_blank" rel="noopener">2ГИС</a>, <a href="http://dikidi.net/366721" target="_blank" rel="noopener">DIKIDI</a> на 22.10.2026.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79919985100"><svg class="ic" viewBox="0 0 24 24"><use href="#i-phone"/></svg>Позвонить</a>
+  <a href="https://t.me/anybrow1" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><use href="#i-tg"/></svg>Telegram</a>
+  <a class="main" href="http://dikidi.net/366721" target="_blank" rel="noopener">Записаться</a>
+</nav>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const NB = ' ';
+  const fmt = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, NB) + NB + '₽';
+  const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+  const BOOK = 'http://dikidi.net/366721';
+
+  // Статус «открыто/закрыто» по московскому времени (ежедневно 11:00–21:00)
+  const st = document.getElementById('status');
+  const parts = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Moscow', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(new Date());
+  const m = (+parts.find(p => p.type === 'hour').value) * 60 + (+parts.find(p => p.type === 'minute').value);
+  const open = m >= 11 * 60 && m < 21 * 60;
+  st.classList.toggle('closed', !open);
+  st.querySelector('span').textContent = open ? 'Открыто сейчас · до 21:00' : 'Сейчас закрыто · откроемся в 11:00';
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Вкладки прайса
+  const tabs = document.querySelectorAll('[role=tab]');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === 'p-' + t.dataset.tab));
+  }));
+
+  // ---------- Линия брови: контур и волоски прорисовываются ----------
+  const OUT = 'M14 64C50 30 120 12 196 15C250 18 284 40 308 66C262 44 220 34 168 36C110 38 50 62 14 78Z';
+  const M1 = [[14,70],[50,44],[120,24],[196,24]], M2 = [[196,24],[250,26],[284,46],[308,66]];
+  const bez = (P, t) => { const u = 1 - t; return [0, 1].map(i => u*u*u*P[0][i] + 3*u*u*t*P[1][i] + 3*u*t*t*P[2][i] + t*t*t*P[3][i]); };
+  const der = (P, t) => { const u = 1 - t; return [0, 1].map(i => 3*u*u*(P[1][i]-P[0][i]) + 6*u*t*(P[2][i]-P[1][i]) + 3*t*t*(P[3][i]-P[2][i])); };
+  const f1 = x => x.toFixed(1);
+  function hairsPath(N) {
+    let h = '';
+    for (let i = 0; i < N; i++) {
+      const s = .03 + .93 * i / (N - 1);
+      const P = s < .5 ? M1 : M2, t = s < .5 ? s * 2 : s * 2 - 1;
+      const c = bez(P, t), d = der(P, t);
+      const a = Math.atan2(d[1], d[0]) - (1 - s) * .75 + (i % 2 ? .06 : -.06);
+      const len = (16 - 8 * s) * (.85 + .3 * ((i * 37) % 10) / 10);
+      const dx = Math.cos(a), dy = Math.sin(a);
+      const x0 = c[0] - dx * len * .5, y0 = c[1] - dy * len * .5, x1 = c[0] + dx * len * .5, y1 = c[1] + dy * len * .5;
+      h += `<path class="b-hair" pathLength="100" d="M${f1(x0)} ${f1(y0)}Q${f1(c[0] - dy * 1.6)} ${f1(c[1] + dx * 1.6)} ${f1(x1)} ${f1(y1)}"/>`;
+    }
+    return h;
+  }
+  const HAIRS = hairsPath(26);
+  const brows = [];
+  function initBrow(svg) {
+    svg.setAttribute('viewBox', '0 0 320 100');
+    svg.innerHTML = `<path class="b-out" pathLength="100" d="${OUT}"/>` + HAIRS;
+    const b = { svg, out: svg.querySelector('.b-out'), hairs: [...svg.querySelectorAll('.b-hair')], mode: svg.dataset.brow, k: -1 };
+    paint(b, reduce ? 1 : 0);
+    return b;
+  }
+  function paint(b, k) {
+    if (Math.abs(k - b.k) < .002) return; b.k = k;
+    b.out.style.strokeDashoffset = 100 * (1 - clamp(k / .55));
+    const n = b.hairs.length;
+    b.hairs.forEach((h, i) => { h.style.strokeDashoffset = 100 * (1 - clamp((k - (.4 + .5 * i / n)) / .14)); });
+  }
+  document.querySelectorAll('svg[data-brow]').forEach(s => brows.push(initBrow(s)));
+
+  let intro = reduce ? 1 : 0;
+  function update() {
+    const vh = innerHeight;
+    brows.forEach(b => {
+      if (reduce) return paint(b, 1);
+      if (b.mode === 'hero') return paint(b, Math.max(intro, clamp(scrollY / (vh * .45))));
+      if (b.mode === 'scroll') {
+        const r = b.svg.getBoundingClientRect();
+        paint(b, clamp((vh * .92 - r.top) / (vh * .45 + r.height * .3)));
+      }
+    });
+  }
+  if (!reduce) {
+    const t0 = performance.now() + 300;
+    const tick = now => {
+      const k = clamp((now - t0) / 1700);
+      intro = .62 * (1 - Math.pow(1 - k, 3)); update();
+      if (k < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }
+  function tweenBrow(b) {
+    if (reduce) return paint(b, 1);
+    const t0 = performance.now();
+    const tick = now => { const k = clamp((now - t0) / 1500); paint(b, 1 - Math.pow(1 - k, 3)); if (k < 1) requestAnimationFrame(tick); };
+    requestAnimationFrame(tick);
+  }
+
+  // Мобильная панель и привязка линий к скроллу
+  const mbar = document.getElementById('mbar');
+  let busy = false;
+  const onScroll = () => {
+    mbar.classList.toggle('show', scrollY > 420);
+    if (busy) return; busy = true;
+    requestAnimationFrame(() => { update(); busy = false; });
+  };
+  addEventListener('scroll', onScroll, { passive: true });
+  addEventListener('resize', update);
+  onScroll(); update();
+
+  // ---------- Квиз «Не знаю, что хочу» ----------
+  const S = {
+    brow_lam:  { n: 'Ламинирование бровей', p: 2700 },
+    brow_org:  { n: 'Organic brow — уход с коррекцией', p: 2300, from: 1 },
+    brow_perm: { n: 'Перманент бровей', p: 9000, d: 'Коррекция перманента — 4 500 ₽.' },
+    brow_tint: { n: 'Коррекция + окрашивание бровей', p: 2300, from: 1 },
+    brow_any:  { n: '«Не знаю, что хочу — главное красиво»', p: 2000, d: 'Авторская услуга студии.' },
+    lash_lam:  { n: 'Ламинирование ресниц', p: 2800, from: 1 },
+    lash_tint: { n: 'Окрашивание ресниц', p: 600 },
+    lash_ext:  { n: 'Наращивание (адаптированное)', p: 4000, d: 'Нижние ресницы — в подарок.' },
+    lash_corn: { n: 'Уголки', p: 2500 },
+    combo:     { n: 'Комбо: брови + ресницы', p: 4500, from: 1 },
+    perm:      { n: 'Перманент: брови, губы или межресничка', p: 9000, per: ' за зону', d: 'Коррекция перманента — 4 500 ₽.' },
+    makeup:    { n: 'Макияж любой сложности', p: 4200, d: 'Свадебные и вечерние причёски в студии тоже делают — цена в источнике не указана.' }
+  };
+  const MAP = {
+    brows: {
+      'natural-long': ['brow_lam', 'brow_org'], 'natural-regular': ['brow_org', 'brow_lam'],
+      'bold-long': ['brow_perm', 'brow_tint'], 'bold-regular': ['brow_tint', 'brow_perm'],
+      'trust-long': ['brow_any', 'brow_tint'], 'trust-regular': ['brow_any', 'brow_tint']
+    },
+    lashes: {
+      'natural-long': ['lash_lam', 'lash_tint'], 'natural-regular': ['lash_tint', 'lash_lam'],
+      'bold-long': ['lash_ext', 'lash_corn'], 'bold-regular': ['lash_corn', 'lash_ext'],
+      'trust-long': ['lash_lam', 'lash_ext'], 'trust-regular': ['lash_lam', 'lash_ext']
+    }
+  };
+  const Q = [
+    { t: 'Что хотите обновить?', o: [['brows', 'Брови'], ['lashes', 'Ресницы'], ['both', 'Брови и ресницы сразу'], ['perm', 'Перманент: брови, губы или межресничка'], ['makeup', 'Макияж']] },
+    { t: 'Какой результат вам ближе?', o: [['natural', 'Естественный, почти незаметный'], ['bold', 'Выразительный, с акцентом'], ['trust', 'Не знаю — доверюсь мастеру']] },
+    { t: 'Как относитесь к уходу?', o: [['long', 'Хочу результат надолго, без ежедневных забот'], ['regular', 'Не против регулярных визитов и ухода']] }
+  ];
+  const body = document.getElementById('quizBody'), prog = [...document.querySelectorAll('#quizProg i')];
+  let step = 0, ans = [], lab = [];
+  const price = s => (s.from ? 'от' + NB : '') + fmt(s.p) + (s.per || '');
+
+  function showQ() {
+    const q = Q[step];
+    prog.forEach((el, k) => el.classList.toggle('on', k <= step));
+    body.innerHTML = `<p class="q-meta">Вопрос ${step + 1} из 3</p><h3 class="q-title" tabindex="-1">${q.t}</h3>` +
+      `<div class="opts" role="group" aria-label="${q.t}">${q.o.map(([v, l]) => `<button type="button" class="opt" data-v="${v}" data-l="${l}">${l}</button>`).join('')}</div>` +
+      (step ? '<button type="button" class="q-back">← Назад</button>' : '');
+  }
+  function showResult() {
+    prog.forEach(el => el.classList.add('on'));
+    const [zone, style, keep] = ans;
+    let main, alt;
+    if (zone === 'brows' || zone === 'lashes') { const r = MAP[zone][style + '-' + keep]; main = S[r[0]]; alt = S[r[1]]; }
+    else main = S[zone === 'both' ? 'combo' : zone];
+    body.innerHTML = `<p class="q-meta">Подходит вам</p><h3 class="q-name" tabindex="-1">${main.n}</h3>` +
+      `<div class="q-price">${price(main)}</div>` +
+      `<svg class="brow-svg q-brow" data-brow="result" aria-hidden="true"></svg>` +
+      `<ul class="q-sum">${lab.map(l => `<li>${l}</li>`).join('')}</ul>` +
+      (main.d ? `<p class="q-det">${main.d}</p>` : '') +
+      (alt ? `<p class="q-alt">Ещё вариант: <b>${alt.n}</b> — ${price(alt)}</p>` : '') +
+      `<p class="q-note">Это подсказка по прайсу студии. Точную услугу и цену уточняйте при записи.</p>` +
+      `<div class="q-actions"><a class="btn" href="${BOOK}" target="_blank" rel="noopener">Записаться</a><button type="button" class="btn ghost q-restart">Пройти ещё раз</button></div>`;
+    tweenBrow(initBrow(body.querySelector('.q-brow')));
+  }
+  const focusTitle = () => { const h = body.querySelector('h3'); if (h) h.focus({ preventScroll: true }); };
+  body.addEventListener('click', e => {
+    const opt = e.target.closest('.opt');
+    if (opt) {
+      ans[step] = opt.dataset.v; lab[step] = opt.dataset.l; step++;
+      step < 3 ? showQ() : showResult(); focusTitle();
+    } else if (e.target.closest('.q-back')) { step--; showQ(); focusTitle(); }
+    else if (e.target.closest('.q-restart')) { step = 0; ans = []; lab = []; showQ(); focusTitle(); }
+  });
+  showQ();
+
+  // Фильтр работ и лайтбокс
+  const items = document.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && !i.dataset.c.split(' ').includes(f.dataset.f)));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt;
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>

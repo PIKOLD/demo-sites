@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Pm Code — студия перманентного макияжа в Санкт-Петербурге</title>
+<meta name="description" content="Перманентный макияж бровей, губ и межреснички, лазерное удаление старого татуажа. Парфёновская ул., 14 к1. Ежедневно 09:00–22:00.">
+<meta name="theme-color" content="#F6F3F0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap"></noscript>
+<style>
+:root{
+  --milk:#F6F3F0; --paper:#FFFFFF; --stone:#ECE6E1; --nude:#E4CBC0; --rose:#B0705F; --rose-d:#94594A;
+  --ink:#1E1B1A; --ink-2:#3A3431; --muted:#756C68; --line:rgba(30,27,26,.12);
+  --r-lg:28px; --r-md:18px; --r-sm:12px;
+  --shadow:0 20px 50px -24px rgba(60,35,25,.35);
+  --serif:"Cormorant Garamond", Georgia, serif; --sans:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--milk);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.eyebrow{font:600 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--rose)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.02;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(36px,6vw,64px)}
+h2 em,h1 em{font-style:italic;font-weight:500;color:var(--rose)}
+.lead{font-size:clamp(16px,1.6vw,18px);color:var(--ink-2);max-width:52ch}
+section{padding:clamp(72px,10vw,128px) 0}
+
+/* demo bar */
+.demo{background:var(--ink);color:#EDE6E2;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:#fff;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:11px;border:1px solid rgba(255,255,255,.35);border-radius:99px;padding:3px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(246,243,240,.88);background:color-mix(in srgb,var(--milk) 82%,transparent);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:baseline;gap:8px;text-decoration:none}
+.logo b{font:700 20px/1 var(--sans);letter-spacing:.22em}
+.logo b span{color:var(--rose)}
+.logo small{font:500 11px/1 var(--sans);color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
+.nav{display:none;gap:28px}
+.nav a{text-decoration:none;font-weight:500;font-size:14.5px;color:var(--ink-2);position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--rose);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;border-radius:99px;border:1px solid var(--ink);background:var(--ink);color:#fff;font-weight:600;font-size:15px;text-decoration:none;cursor:pointer;transition:transform .25s, background .25s, color .25s, border-color .25s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.rose{background:var(--rose);border-color:var(--rose)}
+.btn.rose:hover{background:var(--rose-d);border-color:var(--rose-d)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+.btn.sm{min-height:42px;padding:0 18px;font-size:14px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--paper);display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:18px;height:1.5px;background:var(--ink);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:var(--ink);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--milk);padding:120px 24px 40px;display:flex;flex-direction:column;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:600 34px/1.25 var(--serif);text-decoration:none;padding:6px 0;border-bottom:1px solid var(--line)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{padding:clamp(28px,5vw,64px) 0 clamp(56px,8vw,96px);position:relative}
+.hero .wrap{display:grid;gap:44px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:64px}}
+.status{display:inline-flex;align-items:center;gap:10px;background:var(--paper);border:1px solid var(--line);border-radius:99px;padding:8px 14px 8px 12px;font-size:13.5px;font-weight:600}
+.status i{width:9px;height:9px;border-radius:50%;background:#3BA55C;box-shadow:0 0 0 0 rgba(59,165,92,.5);animation:pulse 2s infinite}
+.status.closed i{background:#C2554B;animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(59,165,92,0)}100%{box-shadow:0 0 0 0 rgba(59,165,92,0)}}
+.hero h1{font-size:clamp(40px,5.4vw,80px);margin:22px 0 22px}
+.hero .lead{margin:0 0 26px}
+.place{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:14.5px;margin-bottom:28px}
+.place svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--rose)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.ratings{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:34px;padding-top:26px;border-top:1px solid var(--line)}
+.rate{display:flex;align-items:center;gap:12px}
+.rate strong{font:600 40px/1 var(--serif)}
+.rate span{font-size:13px;line-height:1.35;color:var(--muted)}
+.rate span b{color:var(--ink);font-weight:600;display:block}
+.stars{color:#D89B3C;letter-spacing:2px;font-size:12px}
+
+.visual{position:relative;max-width:520px;margin-inline:auto;width:100%}
+.arch{position:relative;aspect-ratio:4/5;border-radius:999px 999px var(--r-lg) var(--r-lg);overflow:hidden;box-shadow:var(--shadow);background:var(--stone)}
+.arch img{width:100%;height:118%;object-fit:cover;object-position:50% 38%;will-change:transform}
+.arch::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(246,243,240,0) 55%,rgba(30,27,26,.28))}
+.brow{position:absolute;left:-6%;top:12%;width:62%;z-index:3;color:var(--rose);pointer-events:none}
+.brow path{fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-dasharray:420;stroke-dashoffset:420;animation:draw 2.4s .4s cubic-bezier(.65,0,.35,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.chip{position:absolute;z-index:4;background:rgba(255,255,255,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.9);border-radius:var(--r-md);padding:12px 16px;box-shadow:var(--shadow);font-size:13px;line-height:1.35;animation:float 6s ease-in-out infinite}
+.chip b{display:block;font:600 22px/1.1 var(--serif);margin-top:2px}
+.chip.c1{right:-4%;top:46%}
+.chip.c2{left:-4%;bottom:7%;animation-delay:-3s}
+@media (max-width:520px){.chip.c1{right:2%}.chip.c2{left:2%}}
+@keyframes float{50%{transform:translateY(-10px)}}
+
+/* marquee */
+.marquee{border-block:1px solid var(--line);background:var(--paper);overflow:hidden;padding:18px 0}
+.track{display:flex;width:max-content;animation:run 38s linear infinite}
+.track span{font:500 italic clamp(22px,3vw,32px)/1 var(--serif);padding:0 26px;white-space:nowrap;display:flex;align-items:center;gap:52px}
+.track span::after{content:"✦";font-style:normal;font-size:14px;color:var(--rose)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* services */
+.head{display:grid;gap:18px;margin-bottom:44px}
+@media (min-width:960px){.head{grid-template-columns:1fr auto;align-items:end}}
+.head p{margin:0;color:var(--muted);font-size:14px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:30px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:11px 18px;font-weight:600;font-size:14px;cursor:pointer;transition:all .25s}
+.tab[aria-selected="true"],.tab[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.svc{display:grid;gap:32px}
+@media (min-width:960px){.svc{grid-template-columns:1.25fr .75fr;gap:56px;align-items:start}}
+.panel{display:none}
+.panel.on{display:block;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.row{display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--line)}
+.row:first-child{border-top:1px solid var(--line)}
+.row .n{flex:1 1 auto;min-width:0}
+.row .n b{display:block;font-weight:600;font-size:16px}
+.row .n small{color:var(--muted);font-size:13.5px}
+.row .p{font:600 24px/1 var(--serif);white-space:nowrap}
+.row.hot .n b::after{content:"акция месяца";margin-left:8px;font:700 10px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;background:var(--nude);color:var(--rose-d);padding:4px 7px;border-radius:99px;vertical-align:2px}
+.svc-photo{position:relative;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/5;background:var(--stone);display:none}
+@media (min-width:960px){.svc-photo{display:block;position:sticky;top:96px}}
+.svc-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .7s, transform 1.2s}
+.svc-photo img.on{opacity:1;transform:none}
+.note{margin-top:22px;font-size:13px;color:var(--muted)}
+
+/* removal (dark) */
+.dark{background:var(--ink);color:#EFE8E4}
+.dark .eyebrow{color:var(--nude)}
+.dark h2 em{color:var(--nude)}
+.dark .lead{color:#CFC5C0}
+.rm{display:grid;gap:48px}
+@media (min-width:960px){.rm{grid-template-columns:1fr 1fr;gap:72px;align-items:center}}
+.prices2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:30px 0}
+.pcard{border:1px solid rgba(255,255,255,.16);border-radius:var(--r-md);padding:20px}
+.pcard small{color:#BDB2AD;font-size:13px}
+.pcard b{display:block;font:600 38px/1.1 var(--serif);color:#fff;margin-top:6px}
+.steps{display:grid;gap:14px;counter-reset:s}
+.step{display:grid;grid-template-columns:52px 1fr;gap:16px;padding:22px;border-radius:var(--r-md);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}
+.step::before{counter-increment:s;content:"0" counter(s);font:600 28px/1 var(--serif);color:var(--nude)}
+.step b{display:block;font-size:16px;margin-bottom:4px;color:#fff}
+.step p{margin:0;color:#BDB2AD;font-size:14.5px}
+.pig{position:relative;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/3;background:#2A2523}
+.pig img{width:100%;height:100%;object-fit:cover;opacity:.92}
+.pig figcaption{position:absolute;left:14px;bottom:14px;right:14px;background:rgba(30,27,26,.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:10px 14px;border-radius:12px;font-size:13px;color:#EFE8E4}
+
+/* calculator */
+.calc{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);padding:clamp(18px,4vw,48px);display:grid;grid-template-columns:minmax(0,1fr);gap:36px;box-shadow:var(--shadow)}
+@media (min-width:960px){.calc{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px}}
+.zones{display:grid;gap:12px;margin-top:26px}
+.zone{position:relative;display:flex;flex-wrap:wrap;align-items:center;gap:12px 14px;padding:16px;border:1px solid var(--line);border-radius:var(--r-md);cursor:pointer;transition:border-color .25s, background .25s}
+.zone input{position:absolute;opacity:0;pointer-events:none}
+.zone .ic{width:48px;height:48px;border-radius:14px;background:var(--milk);display:grid;place-items:center;flex:none;color:var(--rose);transition:background .25s,color .25s}
+.zone .ic svg{width:28px;height:28px}
+.zone .t{flex:1;min-width:0}
+.segrow{flex-basis:100%;padding-left:62px}
+@media (max-width:420px){.zone .ic{width:40px;height:40px}.segrow{padding-left:54px}.zone .pr{font-size:19px}}
+.zone .t b{display:block;font-weight:600}
+.zone .t small{color:var(--muted);font-size:13px}
+.zone .pr{font:600 22px/1 var(--serif);white-space:nowrap}
+.zone .box{width:24px;height:24px;border-radius:8px;border:1.5px solid var(--line);flex:none;display:grid;place-items:center;transition:all .2s}
+.zone .box::after{content:"";width:10px;height:6px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg) translate(1px,-1px);opacity:0}
+.zone:has(input:checked){border-color:var(--rose);background:#FBF6F3}
+.zone:has(input:checked) .ic{background:var(--rose);color:#fff}
+.zone:has(input:checked) .box{background:var(--rose);border-color:var(--rose)}
+.zone:has(input:checked) .box::after{opacity:1}
+.zone:has(input:focus-visible){outline:2px solid var(--rose);outline-offset:2px}
+.seg{display:inline-flex;background:var(--milk);border-radius:99px;padding:4px}
+.seg button{border:0;background:transparent;border-radius:99px;padding:7px 14px;font-size:13px;font-weight:600;cursor:pointer;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--paper);color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.sum{background:var(--milk);border-radius:var(--r-md);padding:28px;display:flex;flex-direction:column;gap:14px}
+.sum .lbl{font-size:13px;color:var(--muted);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.sum .total{font:600 clamp(48px,7vw,72px)/1 var(--serif)}
+.sum ul{list-style:none;margin:0;padding:0;font-size:14.5px;display:grid;gap:8px}
+.sum li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed var(--line);padding-bottom:8px}
+.combo{display:none;background:var(--ink);color:#fff;border-radius:var(--r-md);padding:18px;font-size:14.5px}
+.combo.on{display:block;animation:fade .4s}
+.combo b{font:600 26px/1.1 var(--serif);display:block;margin-top:4px;color:var(--nude)}
+.extra{font-size:13.5px;color:var(--muted);display:grid;gap:4px}
+
+/* gallery */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media (min-width:760px){.grid{grid-template-columns:repeat(4,1fr);gap:14px}}
+.gi{position:relative;border-radius:var(--r-md);overflow:hidden;aspect-ratio:1;background:var(--stone);cursor:zoom-in;border:0;padding:0;transition:opacity .4s, transform .4s}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.08)}
+.gi span{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.88);font-size:12px;font-weight:600;padding:5px 10px;border-radius:99px}
+.gi.wide{grid-column:span 2;aspect-ratio:2/1}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,1000px);max-height:90vh}
+.lb::backdrop{background:rgba(20,17,16,.86)}
+.lb img{max-height:84vh;width:auto;margin:auto;border-radius:16px}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:#fff;font-size:22px;cursor:pointer}
+
+/* praise */
+.praise{display:grid;gap:16px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,1fr)}}
+.pr-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);padding:30px;position:relative;overflow:hidden}
+.pr-card .num{font:500 italic 76px/1 var(--serif);color:var(--nude);position:absolute;right:20px;top:8px}
+.pr-card h3{font-size:30px;margin:46px 0 12px;position:relative}
+.pr-card p{margin:0;color:var(--ink-2);position:relative}
+.score{display:flex;flex-wrap:wrap;gap:14px;margin-top:22px}
+.score a{display:flex;align-items:center;gap:14px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r-md);padding:14px 20px;text-decoration:none;flex:1 1 240px}
+.score strong{font:600 44px/1 var(--serif)}
+.score span{font-size:13.5px;color:var(--muted)}
+.score span b{color:var(--ink);display:block}
+
+/* studio */
+.studio{display:grid;gap:14px;grid-template-columns:repeat(2,1fr)}
+@media (min-width:900px){.studio{grid-template-columns:1.4fr 1fr 1fr}}
+.studio figure{margin:0;border-radius:var(--r-lg);overflow:hidden;background:var(--stone);aspect-ratio:1}
+.studio figure:first-child{grid-column:span 2;aspect-ratio:16/10}
+@media (min-width:900px){.studio figure:first-child{grid-column:auto;grid-row:span 2;aspect-ratio:auto}}
+.studio img{width:100%;height:100%;object-fit:cover}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.fact{display:inline-flex;align-items:center;gap:8px;background:var(--paper);border:1px solid var(--line);border-radius:99px;padding:10px 16px;font-size:14px;font-weight:500}
+.fact svg{width:16px;height:16px;color:var(--rose)}
+.rent{margin-top:28px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;border:1px dashed var(--rose);border-radius:var(--r-md);padding:20px 22px;background:#FBF6F3}
+.rent b{font-weight:700}
+.rent span{color:var(--muted);font-size:14px}
+
+/* contacts */
+.ct{display:grid;gap:28px}
+@media (min-width:960px){.ct{grid-template-columns:.9fr 1.1fr;gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start}
+.ci small{display:block;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ci p,.ci a{margin:0;font-size:18px;font-weight:500;text-decoration:none}
+.ci a.big{font:600 34px/1.1 var(--serif)}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:10px 16px;font-size:14px;font-weight:600;text-decoration:none;transition:background .25s,color .25s}
+.socials a:hover{background:var(--ink);color:#fff}
+.map{border-radius:var(--r-lg);overflow:hidden;min-height:380px;background:var(--stone);border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* final */
+.final{text-align:center;background:radial-gradient(120% 90% at 50% 0%,#F1E2DB 0%,var(--milk) 60%)}
+.final h2{font-size:clamp(40px,7vw,84px);max-width:14ch;margin:18px auto}
+.final .ctas{justify-content:center;margin-top:30px}
+footer{padding:36px 0 120px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px;padding:8px;background:rgba(30,27,26,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:22px;box-shadow:0 18px 40px -12px rgba(0,0,0,.45);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:15px;color:#fff;text-decoration:none;font-size:11.5px;font-weight:600}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--rose);flex-direction:row;font-size:14px;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+  .brow path{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Концепт сайта для студии Pm Code. Данные из открытых карточек 2ГИС и YCLIENTS на 22.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Pm Code — наверх"><b>PM<span>·</span>CODE</b><small>studio</small></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#services">Услуги и цены</a>
+      <a href="#removal">Удаление</a>
+      <a href="#calc">Калькулятор</a>
+      <a href="#works">Работы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm rose" href="https://n727890.yclients.com" target="_blank" rel="noopener">Записаться онлайн</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#services">Услуги и цены</a>
+  <a href="#removal">Удаление татуажа</a>
+  <a href="#calc">Калькулятор</a>
+  <a href="#works">Работы</a>
+  <a href="#praise">Отзывы</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="status rv" id="status"><i></i><span>Ежедневно 09:00–22:00</span></span>
+      <h1 class="rv d1">Натуральный перманент <em>и&nbsp;бережное удаление</em> старого</h1>
+      <p class="lead rv d2">Подбираем форму, технику и оттенок под вашу внешность. Делаем новый перманентный макияж и исправляем старые работы — в том числе лазером.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Парфёновская ул., 14 к1, 2 этаж · Адмиралтейский район, Санкт-Петербург</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn rose" href="tel:+79124262066"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+        <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~59.900648%2C30.31268&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+      </div>
+      <div class="ratings rv d3">
+        <div class="rate"><strong>5.0</strong><span><b class="stars">★★★★★</b>2ГИС · 75 оценок</span></div>
+        <div class="rate"><strong>5.0</strong><span><b class="stars">★★★★★</b>Яндекс Карты · 133 отзыва</span></div>
+      </div>
+    </div>
+    <div class="visual rv d2">
+      <svg class="brow" viewBox="0 0 300 90" aria-hidden="true"><path d="M8 70 C 60 30, 130 10, 190 18 S 280 48, 292 62"/><path d="M30 64 C 80 34, 140 22, 196 28" opacity=".45"/></svg>
+      <div class="arch"><img id="heroImg" src="img/hero.jpg" alt="Зона ожидания студии Pm Code: серые кресла и мраморный пол" width="900" height="1600" fetchpriority="high"></div>
+      <div class="chip c1">Брови · пудровое напыление<b>15 000 ₽</b></div>
+      <div class="chip c2">Удаление старого ПМ лазером<b>3 500 ₽</b></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Пудровые брови</span><span>Волосковая техника</span><span>Перманент губ</span><span>Межресничка</span><span>Удаление лазером</span><span>Ламинирование</span><span>Мини-тату</span>
+  <span>Пудровые брови</span><span>Волосковая техника</span><span>Перманент губ</span><span>Межресничка</span><span>Удаление лазером</span><span>Ламинирование</span><span>Мини-тату</span>
+</div></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Прайс</span><h2 class="rv d1" style="margin-top:14px">Услуги <em>и цены</em></h2></div>
+      <p class="rv d2">Цены из прайса студии в YCLIENTS, обновлён 21.10.2026</p>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Категории услуг">
+      <button class="tab" role="tab" aria-selected="true" data-tab="pm" data-img="lips-1">Перманентный макияж</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="rm" data-img="brows-4">Удаление</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="bl" data-img="brows-1">Брови и ресницы</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="ot" data-img="minitattoo">Ещё</button>
+    </div>
+    <div class="svc">
+      <div>
+        <div class="panel on" id="p-pm" role="tabpanel">
+          <div class="row"><div class="n"><b>Брови — пудровое напыление</b><small>Стойкий насыщенный цвет, чёткий контур</small></div><div class="p">15 000 ₽</div></div>
+          <div class="row"><div class="n"><b>Брови — волосковая техника</b><small>Аппаратная техника, эффект натуральных волосков</small></div><div class="p">15 000 ₽</div></div>
+          <div class="row"><div class="n"><b>Губы</b><small>Топ-мастер</small></div><div class="p">15 000 ₽</div></div>
+          <div class="row"><div class="n"><b>Межресничка</b><small>Топ-мастер</small></div><div class="p">12 000 ₽</div></div>
+          <div class="row"><div class="n"><b>Комплекс: брови, веки, губы</b><small>Топ-мастер Яна Тихомирова</small></div><div class="p">27 000 ₽</div></div>
+          <div class="row"><div class="n"><b>Коррекция бровей, межреснички или губ</b><small>Топ-мастер, за зону</small></div><div class="p">8 000 ₽</div></div>
+          <div class="row"><div class="n"><b>Рефреш через 12–16 месяцев</b><small>Если перманент делали в студии</small></div><div class="p">12 000 ₽</div></div>
+          <div class="row"><div class="n"><b>Коррекция перманента другого мастера</b></div><div class="p">15 000 ₽</div></div>
+        </div>
+        <div class="panel" id="p-rm" role="tabpanel">
+          <div class="row"><div class="n"><b>Удаление некачественного перманента лазером</b></div><div class="p">3 500 ₽</div></div>
+          <div class="row"><div class="n"><b>Удаление некачественного перманента ремувером</b></div><div class="p">4 500 ₽</div></div>
+          <div class="row"><div class="n"><b>Консультация</b><small>Стоимость уточняйте при записи</small></div><div class="p">—</div></div>
+        </div>
+        <div class="panel" id="p-bl" role="tabpanel">
+          <div class="row hot"><div class="n"><b>Комбо: брови + ламинирование ресниц</b><small>Коррекция с окрашиванием бровей краской или хной + ламинирование ресниц</small></div><div class="p">3 800 ₽</div></div>
+          <div class="row"><div class="n"><b>Коррекция формы бровей</b><small>Без окрашивания</small></div><div class="p">990 ₽</div></div>
+          <div class="row"><div class="n"><b>Коррекция с окрашиванием</b><small>Хной или краской</small></div><div class="p">1 500 ₽</div></div>
+          <div class="row"><div class="n"><b>Ламинирование бровей</b></div><div class="p">1 500 ₽</div></div>
+          <div class="row"><div class="n"><b>Ламинирование ресниц</b></div><div class="p">2 800 ₽</div></div>
+          <div class="row"><div class="n"><b>Окрашивание ресниц</b></div><div class="p">800 ₽</div></div>
+        </div>
+        <div class="panel" id="p-ot" role="tabpanel">
+          <div class="row"><div class="n"><b>Мини-тату</b></div><div class="p">1 500 ₽</div></div>
+          <div class="row"><div class="n"><b>Карбоновый пилинг</b></div><div class="p">2 500 ₽</div></div>
+          <div class="row"><div class="n"><b>Карбоновый пилинг — абонемент</b><small>5 процедур</small></div><div class="p">10 000 ₽</div></div>
+        </div>
+        <p class="note">В студии есть подарочные сертификаты.</p>
+      </div>
+      <div class="svc-photo" aria-hidden="true">
+        <img src="img/lips-1.jpg" alt="" data-k="lips-1" class="on" loading="lazy">
+        <img src="img/brows-4.jpg" alt="" data-k="brows-4" loading="lazy">
+        <img src="img/brows-1.jpg" alt="" data-k="brows-1" loading="lazy">
+        <img src="img/minitattoo.jpg" alt="" data-k="minitattoo" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REMOVAL -->
+<section id="removal" class="dark">
+  <div class="wrap rm">
+    <div>
+      <span class="eyebrow rv">Наша сильная сторона</span>
+      <h2 class="rv d1" style="margin:14px 0 20px">Удаление <em>старого татуажа</em></h2>
+      <p class="lead rv d2">Серый, «уплывший» или просто надоевший перманент — частая причина, по которой к нам приходят. В отзывах об удалении пишут чаще всего.</p>
+      <div class="prices2 rv d2">
+        <div class="pcard"><small>Лазером</small><b>3 500 ₽</b></div>
+        <div class="pcard"><small>Ремувером</small><b>4 500 ₽</b></div>
+      </div>
+      <a class="btn rose rv d3" href="https://n727890.yclients.com" target="_blank" rel="noopener">Записаться на удаление</a>
+    </div>
+    <div class="steps">
+      <div class="step rv"><div><b>Консультация и фото «до»</b><p>Мастер оценивает старый перманент, объясняет, как будет уходить пигмент, и фиксирует исходное состояние.</p></div></div>
+      <div class="step rv d1"><div><b>Быстрая процедура</b><p>По отзывам клиентов, сама процедура занимает около 10 минут, а ощущения терпимые.</p></div></div>
+      <div class="step rv d2"><div><b>Курс и новый перманент</b><p>Для полного удаления нужен курс. После него можно сделать новый перманент — уже в студии.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section id="calc">
+  <div class="wrap">
+    <div class="calc rv">
+      <div>
+        <span class="eyebrow">Калькулятор</span>
+        <h2 style="margin-top:14px;font-size:clamp(34px,5vw,54px)">Соберите <em>свой</em> перманент</h2>
+        <div class="zones">
+          <label class="zone"><input type="checkbox" value="brows" data-price="15000" data-name="Брови" checked>
+            <span class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20c6-7 14-9 24-6"/></svg></span>
+            <span class="t"><b>Брови</b><small id="browTech">Пудровое напыление</small></span>
+            <span class="pr">15 000 ₽</span><span class="box"></span>
+            <span class="segrow"><span class="seg" role="group" aria-label="Техника бровей"><button type="button" aria-pressed="true" data-tech="Пудровое напыление">Пудровые</button><button type="button" aria-pressed="false" data-tech="Волосковая техника">Волоски</button></span></span></label>
+          <label class="zone"><input type="checkbox" value="lips" data-price="15000" data-name="Губы">
+            <span class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 16c4-5 8-6 10-4 1 1 2 1 3 0 2-2 6-1 13 4-5 6-9 8-13 8S8 22 3 16z"/><path d="M3 16h26"/></svg></span>
+            <span class="t"><b>Губы</b><small>Топ-мастер</small></span>
+            <span class="pr">15 000 ₽</span><span class="box"></span></label>
+          <label class="zone"><input type="checkbox" value="liner" data-price="12000" data-name="Межресничка">
+            <span class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 17c7-8 19-8 26 0-7 7-19 7-26 0z"/><circle cx="16" cy="17" r="3.5"/></svg></span>
+            <span class="t"><b>Межресничка</b><small>Топ-мастер</small></span>
+            <span class="pr">12 000 ₽</span><span class="box"></span></label>
+        </div>
+      </div>
+      <div class="sum" aria-live="polite">
+        <span class="lbl">Ориентировочно</span>
+        <div class="total" id="total">15 000 ₽</div>
+        <ul id="lines"></ul>
+        <div class="combo" id="combo">Выбраны три зоны. В прайсе есть комплекс «брови, веки, губы» у топ-мастера<b>27 000 ₽</b></div>
+        <div class="extra"><span>Коррекция каждой зоны — 8 000 ₽</span><span>Рефреш через 12–16 мес. — 12 000 ₽</span></div>
+        <a class="btn rose" href="https://n727890.yclients.com" target="_blank" rel="noopener" style="margin-top:6px">Записаться</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section id="works" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Портфолио</span><h2 class="rv d1" style="margin-top:14px">Работы <em>студии</em></h2></div>
+      <p class="rv d2">Фото из карточки студии в 2ГИС</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр работ">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="lips">Губы</button>
+      <button class="tab" aria-pressed="false" data-f="brows">Брови</button>
+      <button class="tab" aria-pressed="false" data-f="liner">Межресничка</button>
+    </div>
+    <div class="grid" id="grid">
+      <button class="gi wide rv" data-c="lips"><img src="img/lips-1.jpg" alt="Перманент губ, натуральный оттенок" loading="lazy"><span>Губы</span></button>
+      <button class="gi rv d1" data-c="brows"><img src="img/brows-1.jpg" alt="Перманент бровей" loading="lazy"><span>Брови</span></button>
+      <button class="gi rv d2" data-c="liner"><img src="img/liner-1.jpg" alt="Перманент век, стрелка" loading="lazy"><span>Веки</span></button>
+      <button class="gi rv" data-c="brows"><img src="img/brows-2.jpg" alt="Перманент бровей крупным планом" loading="lazy"><span>Брови</span></button>
+      <button class="gi rv d1" data-c="lips"><img src="img/lips-2.jpg" alt="Перманент губ" loading="lazy"><span>Губы</span></button>
+      <button class="gi wide rv d2" data-c="brows"><img src="img/brows-3.jpg" alt="Брови и губы после перманента" loading="lazy"><span>Брови</span></button>
+      <button class="gi rv" data-c="liner"><img src="img/liner-2.jpg" alt="Межресничка и брови" loading="lazy"><span>Межресничка</span></button>
+      <button class="gi rv d1" data-c="lips"><img src="img/lips-3.jpg" alt="Перманент губ, розовый оттенок" loading="lazy"><span>Губы</span></button>
+      <button class="gi rv d2" data-c="liner"><img src="img/liner-3.jpg" alt="Межресничка" loading="lazy"><span>Межресничка</span></button>
+      <button class="gi rv" data-c="lips"><img src="img/lips-4.jpg" alt="Перманент губ, насыщенный оттенок" loading="lazy"><span>Губы</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""></dialog>
+
+<!-- PRAISE -->
+<section id="praise" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Отзывы</span><h2 class="rv d1" style="margin-top:14px">За что <em>хвалят</em></h2></div>
+      <p class="rv d2">Пересказ отзывов клиентов в 2ГИС</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card rv"><span class="num">01</span><h3>Удаление без драмы</h3><p>Старый татуаж убирают неодимовым лазером: быстро, терпимо, эффект заметен уже после первого сеанса.</p></article>
+      <article class="pr-card rv d1"><span class="num">02</span><h3>Честная консультация</h3><p>Мастер не навязывает лишнюю коррекцию, подробно объясняет процесс, показывает примеры и снимает фото «до».</p></article>
+      <article class="pr-card rv d2"><span class="num">03</span><h3>Светло и уютно</h3><p>Чистая, красивая студия в центре города. Клиенты пишут о дружелюбной атмосфере и о том, что хочется вернуться.</p></article>
+    </div>
+    <div class="score rv">
+      <a href="https://2gis.ru/spb/firm/70000001060292491" target="_blank" rel="noopener"><strong>5.0</strong><span><b>2ГИС</b>75 оценок</span></a>
+      <a href="https://yandex.ru/maps/?text=Pm%20Code%20%D0%9F%D0%B0%D1%80%D1%84%D1%91%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2014" target="_blank" rel="noopener"><strong>5.0</strong><span><b>Яндекс Карты</b>133 отзыва</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- STUDIO -->
+<section id="studio">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Студия</span><h2 class="rv d1" style="margin-top:14px">Как <em>у нас</em></h2></div>
+    </div>
+    <div class="studio">
+      <figure class="rv"><img src="img/room.jpg" alt="Кабинет перманентного макияжа" loading="lazy"></figure>
+      <figure class="rv d1"><img src="img/lounge.jpg" alt="Зона ожидания" loading="lazy"></figure>
+      <figure class="rv d2"><img src="img/cabinet.jpg" alt="Процедурный кабинет у окна" loading="lazy"></figure>
+      <figure class="rv d1"><img src="img/entrance.jpg" alt="Вход в студию с часами работы" loading="lazy"></figure>
+      <figure class="rv d2"><img src="img/brows-4.jpg" alt="Процедура перманента бровей" loading="lazy"></figure>
+    </div>
+    <div class="facts rv">
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 21V3h10v18M10 7h4M10 11h4"/></svg>2 этаж · широкий лифт</span>
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M10 16V8h3a2.5 2.5 0 0 1 0 5h-3"/></svg>Парковка</span>
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg>Wi-Fi</span>
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1s6 1 6 1 6 2 6-1-4-3-6 1"/></svg>Подарочный сертификат</span>
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Карта, наличные, перевод, QR</span>
+    </div>
+    <div class="rent rv">
+      <div><b>Мастерам: аренда кабинета</b><br><span>1&nbsp;час&nbsp;—&nbsp;500&nbsp;₽ · 2&nbsp;часа&nbsp;—&nbsp;1&nbsp;000&nbsp;₽ · 4&nbsp;часа&nbsp;—&nbsp;2&nbsp;000&nbsp;₽ · день (10&nbsp;часов)&nbsp;—&nbsp;3&nbsp;500&nbsp;₽</span></div>
+      <a class="btn sm ghost" href="https://wa.me/79119941205" target="_blank" rel="noopener">Узнать свободные даты</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1" style="margin-top:14px">Как <em>добраться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Санкт-Петербург, Парфёновская ул., 14 к1, 2 этаж</p></div>
+        <div class="ci"><small>Часы работы</small><p>Ежедневно, 09:00–22:00</p></div>
+        <div class="ci"><small>Телефон</small><a class="big" href="tel:+79124262066">+7 912 426-20-66</a></div>
+        <div class="ci"><small>Мессенджеры и соцсети</small>
+          <div class="socials">
+            <a href="https://wa.me/79119941205" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://t.me/pm_code" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://vk.com/pmcodespb" target="_blank" rel="noopener">ВКонтакте</a>
+            <a href="https://n727890.yclients.com" target="_blank" rel="noopener">Онлайн-запись</a>
+          </div>
+        </div>
+        <div class="ctas"><a class="btn ghost" href="https://yandex.ru/maps/?rtext=~59.900648%2C30.31268&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a></div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?ll=30.31268%2C59.900648&z=16&pt=30.31268%2C59.900648%2Cpm2rdm" title="Pm Code на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow rv">Запись</span>
+    <h2 class="rv d1">Начните <em>с консультации</em></h2>
+    <p class="lead rv d2" style="margin:0 auto">Расскажите, чего хотите — или что хотите исправить. Подберём технику и оттенок под вас.</p>
+    <div class="ctas rv d3">
+      <a class="btn rose" href="https://n727890.yclients.com" target="_blank" rel="noopener">Записаться онлайн</a>
+      <a class="btn ghost" href="tel:+79124262066">+7 912 426-20-66</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Pm Code — студия перманентного макияжа, Санкт-Петербург</span>
+    <span>Демо-концепт. Цены и данные — из открытых источников (2ГИС, YCLIENTS, Яндекс Карты) на 22.10.2026.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79124262066"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+  <a href="https://wa.me/79119941205" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>WhatsApp</a>
+  <a class="main" href="https://n727890.yclients.com" target="_blank" rel="noopener">Записаться</a>
+</nav>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Статус «открыто/закрыто» по московскому времени (ежедневно 09:00–22:00)
+  const st = document.getElementById('status');
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
+  const m = now.getHours() * 60 + now.getMinutes();
+  const open = m >= 9 * 60 && m < 22 * 60;
+  st.classList.toggle('closed', !open);
+  st.querySelector('span').textContent = open ? 'Открыто сейчас · до 22:00' : 'Сейчас закрыто · откроемся в 09:00';
+
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    const y = scrollY;
+    hdr.classList.toggle('scrolled', y > 8);
+    mbar.classList.toggle('show', y > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Лёгкий параллакс фото на первом экране
+  const hero = document.getElementById('heroImg');
+  if (!reduce && hero) {
+    let tick = false;
+    addEventListener('scroll', () => {
+      if (tick) return; tick = true;
+      requestAnimationFrame(() => { hero.style.transform = `translateY(${Math.min(scrollY, 700) * -0.06}px)`; tick = false; });
+    }, { passive: true });
+  }
+
+  // Вкладки прайса + смена фото
+  const tabs = document.querySelectorAll('[role=tab]');
+  const pics = document.querySelectorAll('.svc-photo img');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === 'p-' + t.dataset.tab));
+    pics.forEach(p => p.classList.toggle('on', p.dataset.k === t.dataset.img));
+  }));
+
+  // Калькулятор перманента (цены из прайса)
+  const fmt = n => n.toLocaleString('ru-RU').replace(/,/g, ' ') + ' ₽';
+  const boxes = document.querySelectorAll('.zone input');
+  const total = document.getElementById('total'), lines = document.getElementById('lines'), combo = document.getElementById('combo');
+  const tech = document.getElementById('browTech');
+  const calc = () => {
+    let s = 0, html = '';
+    boxes.forEach(b => {
+      if (!b.checked) return;
+      const p = +b.dataset.price; s += p;
+      const name = b.value === 'brows' ? 'Брови · ' + tech.textContent.toLowerCase() : b.dataset.name;
+      html += `<li><span>${name}</span><span>${fmt(p)}</span></li>`;
+    });
+    total.textContent = s ? fmt(s) : '0 ₽';
+    lines.innerHTML = html || '<li><span>Выберите зоны</span><span></span></li>';
+    combo.classList.toggle('on', [...boxes].every(b => b.checked));
+  };
+  boxes.forEach(b => b.addEventListener('change', calc));
+  document.querySelectorAll('.seg button').forEach(btn => btn.addEventListener('click', e => {
+    e.preventDefault(); e.stopPropagation();
+    document.querySelectorAll('.seg button').forEach(x => x.setAttribute('aria-pressed', x === btn));
+    tech.textContent = btn.dataset.tech; calc();
+  }));
+  calc();
+
+  // Фильтр работ и лайтбокс
+  const items = document.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt;
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>

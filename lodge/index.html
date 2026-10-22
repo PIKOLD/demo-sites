@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Lodge — уютный салон красоты на Московском проспекте, Санкт-Петербург</title>
+<meta name="description" content="Lodge — салон красоты на Московском пр., 75 лит. А: стрижки и окрашивание, маникюр и педикюр, брови, чистка лица, массаж. Цены мастера и топ-мастера. Ежедневно 10:00–22:00.">
+<meta name="theme-color" content="#F5EDDF">
+<script>document.documentElement.className='js'</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,700;1,500;1,700&family=Nunito:wght@400;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,700;1,500;1,700&family=Nunito:wght@400;600;700;800&display=swap"></noscript>
+<style>
+:root{
+  --cream:#F5EDDF; --cream-2:#EDE1CB; --sand:#E4D2B2; --paper:#FCF8F0;
+  --wood:#9A6B3F; --wood-d:#6B4526; --wood-dd:#3F2915;
+  --olive:#666B34; --olive-d:#4B4F25; --olive-l:#9AA05C; --olive-bg:#E5E3C6;
+  --ink:#2F271D; --ink-2:#554639; --muted:#7B6C5B; --line:rgba(63,41,21,.16);
+  --r-lg:26px; --r-md:16px; --r-sm:10px;
+  --shadow:0 24px 50px -26px rgba(63,41,21,.5);
+  --serif:"Alegreya", Georgia, "Times New Roman", serif;
+  --sans:"Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1180px;
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .22 0 0 0 0 .1 .5 0 0 0 -.15'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);background-image:var(--grain),radial-gradient(70% 38% at 100% 0%,rgba(255,206,130,.4),transparent 65%),radial-gradient(60% 30% at 0% 45%,rgba(154,160,92,.12),transparent 70%);color:var(--ink);font:400 16.5px/1.6 var(--sans);font-variant-numeric:lining-nums;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button,input,select{font:inherit;color:inherit}
+section[id]{scroll-margin-top:72px}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.i{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.eyebrow{font:800 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--olive)}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.05;margin:0}
+h2{font-size:clamp(36px,6vw,64px)}
+h2 em,h1 em{font-style:italic;font-weight:500;color:var(--olive)}
+.lead{font-size:clamp(16.5px,1.6vw,19px);color:var(--ink-2);max-width:52ch}
+section{padding:clamp(68px,9vw,120px) 0}
+
+/* demo bar */
+.demo{background:var(--wood-dd);color:#F1E6D2;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:#FFF6E6;font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:11px;border:1px solid rgba(255,246,230,.4);border-radius:99px;padding:3px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(245,237,223,.9);background:color-mix(in srgb,var(--cream) 86%,transparent);backdrop-filter:saturate(1.3) blur(14px);-webkit-backdrop-filter:saturate(1.3) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.logo svg{width:30px;height:30px;color:var(--olive);flex:none}
+.logo b{font:700 30px/1 var(--serif);font-style:italic;letter-spacing:.01em}
+.logo small{font:700 10.5px/1 var(--sans);color:var(--muted);letter-spacing:.12em;text-transform:uppercase;display:none}
+@media (min-width:420px){.logo small{display:block}}
+.nav{display:none;gap:26px}
+.nav a{text-decoration:none;font-weight:700;font-size:14.5px;color:var(--ink-2);position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;border-radius:2px;background:var(--olive);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:14px;border:2px solid var(--olive);background:var(--olive);color:#FFF9EC;font-weight:800;font-size:15px;text-decoration:none;cursor:pointer;transition:transform .25s, background .25s, color .25s, border-color .25s;white-space:nowrap;box-shadow:0 12px 22px -14px rgba(75,79,37,.9)}
+.btn:hover{transform:translateY(-2px);background:var(--olive-d);border-color:var(--olive-d)}
+.btn.wood{background:var(--wood);border-color:var(--wood);box-shadow:0 12px 22px -14px rgba(107,69,38,.9)}
+.btn.wood:hover{background:var(--wood-d);border-color:var(--wood-d)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:rgba(63,41,21,.35);box-shadow:none}
+.btn.ghost:hover{background:var(--wood-dd);border-color:var(--wood-dd);color:#fff}
+.btn.sm{min-height:42px;padding:0 18px;font-size:14px;border-radius:12px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:var(--paper);display:grid;place-items:center;cursor:pointer;flex:none}
+.burger span{display:block;width:18px;height:2px;background:var(--ink);position:relative;border-radius:2px}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;border-radius:2px;background:var(--ink);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--cream);padding:120px 24px 40px;display:flex;flex-direction:column;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:700 34px/1.25 var(--serif);text-decoration:none;padding:6px 0;border-bottom:1px solid var(--line)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{padding:clamp(26px,5vw,64px) 0 clamp(60px,8vw,100px);position:relative}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:44px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:64px}}
+.sign{position:relative;display:inline-flex;align-items:center;gap:10px;padding:10px 26px;border-radius:10px;color:#FFF7E8;font-weight:800;font-size:13.5px;letter-spacing:.02em;background:repeating-linear-gradient(90deg,rgba(0,0,0,.05) 0 2px,transparent 2px 9px),linear-gradient(180deg,#B88958,#8F6238);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -2px 0 rgba(0,0,0,.18),0 10px 18px -10px rgba(63,41,21,.6)}
+.sign::before,.sign::after{content:"";position:absolute;top:50%;width:5px;height:5px;margin-top:-2.5px;border-radius:50%;background:#5A3B20;box-shadow:inset 0 1px 0 rgba(255,255,255,.3)}
+.sign::before{left:10px}.sign::after{right:10px}
+.sign i{width:9px;height:9px;border-radius:50%;background:#B7E36A;box-shadow:0 0 0 0 rgba(183,227,106,.7);animation:pulse 2s infinite;flex:none}
+.sign.closed i{background:#E57A6A;animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(183,227,106,0)}100%{box-shadow:0 0 0 0 rgba(183,227,106,0)}}
+.hero h1{font-size:clamp(40px,6vw,78px);margin:24px 0 20px;line-height:1}
+.hero .lead{margin:0 0 22px}
+.place{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:15px;margin-bottom:26px}
+.place .i{margin-top:3px;color:var(--olive)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:640px){.ctas .btn{flex:0 0 auto}}
+.ratings{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:32px;padding-top:24px;border-top:2px dotted var(--line)}
+.rate{display:flex;align-items:center;gap:12px}
+.rate strong{font:700 46px/1 var(--serif);color:var(--wood-d)}
+.rate span{font-size:13.5px;line-height:1.35;color:var(--muted)}
+.rate span b{display:block;font-weight:800;color:#C7872F;letter-spacing:2px;font-size:12px}
+.visual{position:relative;width:min(100%,500px);margin-inline:auto}
+.hwrap{filter:drop-shadow(0 26px 26px rgba(63,41,21,.32))}
+.house{position:relative;aspect-ratio:1/1.06;background:linear-gradient(160deg,#B88958,#7B5230);clip-path:polygon(50% 0,100% 23%,100% 100%,0 100%,0 23%)}
+.house .in{position:absolute;inset:14px;overflow:hidden;clip-path:polygon(50% 0,100% 22.5%,100% 100%,0 100%,0 22.5%);background:var(--sand)}
+.house img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:35% 60%;filter:sepia(.22) saturate(1.1) contrast(1.02)}
+.house .in::after{content:"";position:absolute;inset:0;background:linear-gradient(200deg,rgba(255,214,150,.35),transparent 50%),linear-gradient(0deg,rgba(63,41,21,.22),transparent 40%)}
+.tag{position:absolute;z-index:3;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:11px 15px;box-shadow:var(--shadow);font-size:13px;line-height:1.35;max-width:68%}
+.tag b{display:block;font:700 21px/1.15 var(--serif);margin-top:2px;color:var(--wood-d)}
+.tag.t1{right:-2%;top:30%;rotate:2.5deg}
+.tag.t2{left:-2%;bottom:6%;rotate:-2deg}
+@media (max-width:520px){.tag.t1{right:0}.tag.t2{left:0}}
+
+/* ticker */
+.ticker{border-block:2px dotted var(--line);background:var(--paper);overflow:hidden;padding:16px 0}
+.track{display:flex;width:max-content;animation:run 40s linear infinite}
+.track span{font:500 italic clamp(22px,3vw,32px)/1 var(--serif);padding:0 24px;white-space:nowrap;display:flex;align-items:center;gap:48px;color:var(--ink-2)}
+.track span::after{content:"";width:14px;height:8px;border-radius:100% 0 100% 0;background:var(--olive-l);transform:rotate(-20deg)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* services */
+.head{display:grid;gap:16px;margin-bottom:40px}
+@media (min-width:960px){.head{grid-template-columns:minmax(0,1fr) auto;align-items:end}}
+.head p{margin:0;color:var(--muted);font-size:14px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.tab{border:1.5px solid var(--line);background:var(--paper);border-radius:12px;padding:11px 18px;font-weight:800;font-size:14.5px;cursor:pointer;transition:all .25s}
+.tab:hover{border-color:var(--olive)}
+.tab[aria-selected="true"],.tab[aria-pressed="true"]{background:var(--wood-d);color:#FFF6E6;border-color:var(--wood-d)}
+.svc{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.svc{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:56px;align-items:start}}
+.panel{display:none}
+.panel.on{display:block;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.mode{position:relative;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:min(100%,380px);padding:4px;background:var(--cream-2);border:1.5px solid var(--line);border-radius:16px;margin-bottom:8px}
+.mode::before{content:"";position:absolute;top:4px;bottom:4px;left:4px;width:calc(50% - 4px);border-radius:12px;background:var(--olive);box-shadow:0 8px 16px -10px rgba(75,79,37,.9);transition:transform .35s cubic-bezier(.3,.8,.3,1)}
+.mode[data-mode="t"]::before{transform:translateX(100%)}
+.mode button{position:relative;z-index:1;border:0;background:transparent;padding:11px 8px;font-weight:800;font-size:14.5px;cursor:pointer;color:var(--ink-2);transition:color .25s;border-radius:12px}
+.mode button[aria-pressed="true"]{color:#FFF9EC}
+.mode-cap{font-size:13px;color:var(--muted);margin:0 0 6px}
+.sub{font:700 26px/1.1 var(--serif);color:var(--wood-d);margin:30px 0 4px}
+.sub:first-child{margin-top:0}
+.row{display:flex;align-items:baseline;gap:14px;padding:16px 0;border-bottom:2px dotted var(--line)}
+.row .n{flex:1 1 auto;min-width:0}
+.row .n b{display:block;font-weight:800;font-size:16px}
+.row .n small{color:var(--muted);font-size:13.5px}
+.row .p{font:700 25px/1 var(--serif);white-space:nowrap;color:var(--wood-d)}
+.row .p.pop{animation:pop .4s ease}
+@keyframes pop{40%{transform:scale(1.12);color:var(--olive)}}
+.row .p.t{font:700 14px/1 var(--sans);color:var(--muted)}
+.svc-photo{position:relative;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:16/10;background:var(--sand);order:-1;border:6px solid var(--paper);box-shadow:var(--shadow)}
+@media (min-width:960px){.svc-photo{order:0;aspect-ratio:4/5;position:sticky;top:96px;rotate:1.2deg}}
+.svc-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .7s, transform 1.2s}
+.svc-photo img.on{opacity:1;transform:none}
+.note{margin-top:22px;font-size:14px;color:var(--muted)}
+
+/* kids */
+.kids{background:var(--olive-bg);position:relative;overflow:hidden}
+.kids::before{content:"";position:absolute;right:-90px;top:-90px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(255,206,130,.55),transparent 70%)}
+.kd{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:40px;align-items:center}
+@media (min-width:960px){.kd{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:64px}}
+.kd>*{min-width:0}
+.kd .lead{margin:20px 0 26px}
+.tags{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:12px;margin-bottom:28px}
+.ktag{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r-md);padding:16px 18px;box-shadow:0 14px 24px -20px rgba(63,41,21,.6);min-width:0}
+.ktag small{display:block;color:var(--muted);font-size:13px;line-height:1.35}
+.ktag b{display:block;font:700 22px/1.15 var(--serif);color:var(--wood-d);margin-top:6px}
+.ktag b span{display:block;font:700 13px/1.3 var(--sans);color:var(--muted)}
+.kart{position:relative;aspect-ratio:1;max-width:420px;width:100%;margin:0 auto;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FFF4DA,#F2DDB5 70%);border:6px solid var(--paper);box-shadow:var(--shadow);display:grid;place-items:center}
+.kart svg.sc{width:56%;height:auto;color:var(--wood-d);fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round}
+.kart svg.sc circle.pv{fill:var(--olive);stroke:none}
+.kart .dot{position:absolute;border-radius:50%;background:var(--olive-l)}
+.kart .d1{width:16px;height:16px;left:12%;top:20%}.kart .d2{width:10px;height:10px;right:16%;top:14%;background:var(--wood)}.kart .d3{width:12px;height:12px;right:10%;bottom:24%}.kart .d4{width:8px;height:8px;left:20%;bottom:16%;background:var(--wood)}
+.kart figcaption{position:absolute;left:50%;bottom:9%;transform:translateX(-50%);background:var(--paper);border:1.5px solid var(--line);border-radius:99px;padding:8px 16px;font:700 italic 19px/1 var(--serif);white-space:nowrap}
+
+/* gallery on wood */
+.table{background:repeating-linear-gradient(0deg,rgba(0,0,0,.1) 0 2px,transparent 2px 130px),var(--grain),linear-gradient(180deg,#8A6039,#6B4526);color:#FFF6E6}
+.table .eyebrow{color:#E8D6A8}
+.table h2 em{color:#E8D6A8}
+.table .head p{color:#E7D5BB}
+.table .tab{background:rgba(255,246,230,.1);border-color:rgba(255,246,230,.3);color:#FFF6E6}
+.table .tab[aria-pressed="true"]{background:var(--paper);color:var(--wood-dd);border-color:var(--paper)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px}
+@media (min-width:760px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 20px}}
+.gi{position:relative;display:block;background:var(--paper);padding:8px 8px 0;border:0;cursor:zoom-in;box-shadow:0 18px 26px -16px rgba(0,0,0,.6);text-align:center;color:var(--ink);transition:translate .4s, rotate .4s}
+.gi:nth-child(odd){rotate:-1.4deg}.gi:nth-child(even){rotate:1.1deg}.gi:nth-child(3n){rotate:-.4deg}
+.gi:hover{rotate:0deg;translate:0 -4px}
+.gi::before{content:"";position:absolute;left:50%;top:-9px;width:54px;height:18px;margin-left:-27px;background:rgba(228,210,178,.85);rotate:-3deg;z-index:2}
+.gi img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.gi span{display:block;font:700 italic 17px/1 var(--serif);padding:10px 0 11px;color:var(--wood-d)}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,1000px);max-height:90vh}
+.lb::backdrop{background:rgba(40,26,14,.9)}
+.lb img{max-height:84vh;width:auto;margin:auto;border:8px solid var(--paper)}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:var(--paper);font-size:22px;cursor:pointer}
+
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pr-card{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r-lg);padding:30px;position:relative;overflow:hidden}
+.pr-card .num{position:absolute;right:18px;top:14px;width:46px;height:46px;border-radius:50%;background:var(--olive-bg);color:var(--olive-d);display:grid;place-items:center;font:700 italic 22px/1 var(--serif)}
+.pr-card h3{font-size:28px;margin:46px 0 12px;position:relative}
+.pr-card p{margin:0;color:var(--ink-2)}
+.score{display:flex;flex-wrap:wrap;gap:14px;margin-top:22px}
+.score a{display:flex;align-items:center;gap:14px;background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r-md);padding:14px 20px;text-decoration:none;flex:1 1 240px}
+.score strong{font:700 46px/1 var(--serif);color:var(--wood-d)}
+.score span{font-size:13.5px;color:var(--muted)}
+.score span b{color:var(--ink);display:block;font-weight:800}
+
+/* salon */
+.studio{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (min-width:900px){.studio{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr);gap:14px}}
+.studio figure{position:relative;margin:0;border-radius:var(--r-lg);overflow:hidden;background:var(--sand);aspect-ratio:1}
+.studio figure:first-child{grid-column:span 2;aspect-ratio:16/10}
+@media (min-width:900px){.studio figure:first-child{grid-column:auto;grid-row:span 2;aspect-ratio:auto;min-height:420px}}
+.studio img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:sepia(.14) saturate(1.05)}
+.studio figcaption{position:absolute;left:10px;bottom:10px;background:rgba(252,248,240,.9);border-radius:10px;padding:7px 12px;font-size:12.5px;font-weight:700;line-height:1.35;width:fit-content;max-width:calc(100% - 20px)}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.fact{display:inline-flex;align-items:center;gap:8px;background:var(--paper);border:1.5px solid var(--line);border-radius:12px;padding:10px 16px;font-size:14px;font-weight:700;max-width:100%}
+.fact .i{width:16px;height:16px;color:var(--olive)}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start;min-width:0}
+.ci small{display:block;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ci p,.ci a{margin:0;font-size:18px;font-weight:700;text-decoration:none;overflow-wrap:anywhere}
+.ci .ph{display:grid;gap:2px}
+.ci a.big{font:700 32px/1.15 var(--serif)}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--line);background:var(--paper);border-radius:12px;padding:10px 16px;font-size:14px;font-weight:800;text-decoration:none;transition:background .25s,color .25s}
+.socials a:hover{background:var(--wood-dd);color:#fff}
+.mapcol{display:grid;gap:14px;grid-template-rows:auto minmax(0,1fr);min-width:0}
+.facade{margin:0;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:16/8;position:relative;background:var(--sand);display:none}
+@media (min-width:640px){.facade{display:block}}
+.facade img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 40%;filter:sepia(.12)}
+.facade figcaption{position:absolute;left:10px;bottom:10px;background:rgba(252,248,240,.92);border-radius:10px;padding:6px 12px;font-size:12.5px;font-weight:700}
+.map{border-radius:var(--r-lg);overflow:hidden;min-height:380px;background:var(--sand);border:1.5px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* book */
+.book{background:linear-gradient(180deg,var(--cream-2),var(--sand))}
+.bk{display:grid;grid-template-columns:minmax(0,1fr);gap:36px;align-items:center}
+@media (min-width:960px){.bk{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px}}
+.bk>*{min-width:0}
+.bk h2{font-size:clamp(38px,6vw,68px);margin:16px 0 18px}
+.bk .ctas{margin-top:26px}
+.form{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r-lg);padding:clamp(20px,3.5vw,34px);box-shadow:var(--shadow);display:grid;gap:16px}
+.form h3{font-size:30px}
+.fld{display:grid;gap:6px;min-width:0}
+.fld label{font-size:12.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.fld input,.fld select{width:100%;min-height:50px;border:1.5px solid rgba(63,41,21,.28);border-radius:12px;background:#fff;padding:0 14px;font-size:16px;font-weight:600;outline:none;transition:border-color .2s,box-shadow .2s}
+.fld input:focus,.fld select:focus{border-color:var(--olive);box-shadow:0 0 0 3px rgba(102,107,52,.2)}
+.form .btn{width:100%;white-space:normal;text-align:center}
+.fine{margin:0;font-size:13px;color:var(--muted)}
+footer{padding:36px 0 120px;font-size:13px;color:#E7D5BB;background:var(--wood-dd)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer a{color:#FFF6E6}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.3fr);gap:8px;padding:8px;background:rgba(63,41,21,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:20px;box-shadow:0 18px 40px -12px rgba(40,26,14,.6);transform:translateY(150%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:13px;color:#FFF6E6;text-decoration:none;font-size:11.5px;font-weight:800}
+.mbar a .i{width:20px;height:20px}
+.mbar a.main{background:var(--olive);flex-direction:row;font-size:14px;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><path d="M3 11l18-8-8 18-2-8-8-2z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></symbol>
+  <symbol id="i-tg" viewBox="0 0 24 24"><path d="M21.5 4.5 2.8 11.6l5.4 2 2 5.6 3.1-3.6 4.4 3.2z"/><path d="M8.2 13.6l8.6-5.4"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></symbol>
+  <symbol id="i-paw" viewBox="0 0 24 24"><circle cx="6" cy="10" r="1.8"/><circle cx="10" cy="6" r="1.8"/><circle cx="14" cy="6" r="1.8"/><circle cx="18" cy="10" r="1.8"/><path d="M12 12c-3 0-5.5 3-5.5 5.2 0 1.6 1.4 2.3 3 2 1-.2 1.7-.5 2.5-.5s1.5.3 2.5.5c1.6.3 3-.4 3-2C17.5 15 15 12 12 12z"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></symbol>
+</svg>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Концепт сайта для салона Lodge. Данные из открытой карточки 2ГИС на 22.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Lodge — наверх">
+      <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15 16 4l12 11M7 13v14h18V13"/><path d="M13 27v-7h6v7"/></svg>
+      <b>Lodge</b><small>салон красоты</small>
+    </a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#services">Услуги и цены</a>
+      <a href="#kids">Малыши</a>
+      <a href="#works">Работы</a>
+      <a href="#salon">Салон</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm" data-wa="Здравствуйте! Хочу записаться в салон Lodge." href="https://wa.me/79218885004" target="_blank" rel="noopener">Записаться</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#services">Услуги и цены</a>
+  <a href="#kids">Малыши</a>
+  <a href="#works">Работы</a>
+  <a href="#praise">Отзывы</a>
+  <a href="#salon">Салон</a>
+  <a href="#contacts">Контакты</a>
+  <a href="#book">Записаться</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="sign rv" id="status"><i></i><span>Ежедневно 10:00–22:00</span></span>
+      <h1 class="rv d1">Lodge — <em>уютный</em> салон красоты на Московском проспекте</h1>
+      <p class="lead rv d2">Стрижки и окрашивание, маникюр и педикюр, брови, чистка лица и массаж. В прайсе — цены и у мастера, и у топ-мастера.</p>
+      <div class="place rv d2">
+        <svg class="i"><use href="#i-pin"/></svg>
+        <span>Московский пр., 75 лит. А · Адмиралтейский район, Санкт-Петербург</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn" href="tel:+78123161795"><svg class="i"><use href="#i-phone"/></svg>Позвонить</a>
+        <a class="btn wood" data-wa="Здравствуйте! Хочу записаться в салон Lodge." href="https://wa.me/79218885004" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>Записаться в WhatsApp</a>
+        <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~59.902991%2C30.318219&rtt=auto" target="_blank" rel="noopener"><svg class="i"><use href="#i-route"/></svg>Маршрут</a>
+      </div>
+      <div class="ratings rv d3">
+        <div class="rate"><strong>5.0</strong><span><b>★★★★★</b>2ГИС · 68 оценок</span></div>
+      </div>
+    </div>
+    <div class="visual rv d2">
+      <div class="hwrap"><div class="house"><div class="in"><img src="img/hero.jpg" alt="Зал салона Lodge: парикмахерские кресла, полки с косметикой, светлое дерево" width="1024" height="768" fetchpriority="high"></div></div></div>
+      <div class="tag t1">Маникюр с лаком · мастер / топ-мастер<b>2&nbsp;300 / 3&nbsp;000&nbsp;₽</b></div>
+      <div class="tag t2">Стрижка · женская от 3&nbsp;600&nbsp;₽, мужская от 3&nbsp;000&nbsp;₽</div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="track">
+  <span>Стрижки</span><span>Окрашивание</span><span>Маникюр</span><span>Педикюр</span><span>Брови</span><span>Чистка лица</span><span>Массаж</span><span>Уходы для волос</span>
+  <span>Стрижки</span><span>Окрашивание</span><span>Маникюр</span><span>Педикюр</span><span>Брови</span><span>Чистка лица</span><span>Массаж</span><span>Уходы для волос</span>
+</div></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Прайс</span><h2 class="rv d1" style="margin-top:14px">Услуги <em>и цены</em></h2></div>
+      <p class="rv d2">Цены по данным карточки 2ГИС на 21.10.2026</p>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Категории услуг">
+      <button class="tab" role="tab" aria-selected="true" data-tab="man" data-img="nails-1">Маникюр</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="ped" data-img="nails-2">Педикюр</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="hair" data-img="hair-1">Волосы</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="face" data-img="portrait">Брови и лицо</button>
+    </div>
+    <div class="svc">
+      <div>
+        <div class="panel on" id="p-man" role="tabpanel">
+          <div class="mode" id="mode" data-mode="m" role="group" aria-label="Уровень мастера">
+            <button type="button" aria-pressed="true" data-mode="m">Мастер</button>
+            <button type="button" aria-pressed="false" data-mode="t">Топ-мастер</button>
+          </div>
+          <p class="mode-cap">Переключите уровень — цены в списке изменятся.</p>
+          <div class="row" data-m="2300" data-t="3000"><div class="n"><b>Комплекс «Всё включено» с лаком</b></div><div class="p">2&nbsp;300&nbsp;₽</div></div>
+          <div class="row" data-m="3300" data-t="4000"><div class="n"><b>Комплекс «Всё включено» с гелем</b></div><div class="p">3&nbsp;300&nbsp;₽</div></div>
+          <div class="row" data-m="2500" data-t="2700"><div class="n"><b>Пилочный</b></div><div class="p">2&nbsp;500&nbsp;₽</div></div>
+          <div class="row" data-m="2700" data-t="4100"><div class="n"><b>Японский</b></div><div class="p">2&nbsp;700&nbsp;₽</div></div>
+          <div class="row" data-m="2700" data-t="3000"><div class="n"><b>СПА</b></div><div class="p">2&nbsp;700&nbsp;₽</div></div>
+          <div class="row" data-m="1500" data-t="1900"><div class="n"><b>Детский</b></div><div class="p">1&nbsp;500&nbsp;₽</div></div>
+          <div class="row" data-m="2200" data-t="2700"><div class="n"><b>Мужской</b></div><div class="p">2&nbsp;200&nbsp;₽</div></div>
+          <div class="row" data-m="1400" data-t="1800"><div class="n"><b>Покрытие гель-лаком</b></div><div class="p">1&nbsp;400&nbsp;₽</div></div>
+          <div class="row" data-m="2000" data-t="2500"><div class="n"><b>Запечатывание</b></div><div class="p">2&nbsp;000&nbsp;₽</div></div>
+          <div class="row" data-m="500" data-t="600"><div class="n"><b>Дизайн</b></div><div class="p">500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Наращивание</b><small>Только у топ-мастера</small></div><div class="p">5&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Коррекция нарощенных</b><small>Только у топ-мастера</small></div><div class="p">3&nbsp;600&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-ped" role="tabpanel">
+          <div class="row"><div class="n"><b>Комплекс с гель-лаком «Всё включено»</b><small>Топ-мастер</small></div><div class="p">5&nbsp;000&nbsp;₽</div></div>
+          <p class="note">Эта позиция указана в прайсе карточки 2ГИС. Подробности уточняйте по телефону.</p>
+        </div>
+        <div class="panel" id="p-hair" role="tabpanel">
+          <h3 class="sub">Стрижки</h3>
+          <div class="row"><div class="n"><b>Женская стрижка</b></div><div class="p">от&nbsp;3&nbsp;600&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Мужская стрижка</b></div><div class="p">от&nbsp;3&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Мужская на длинные волосы</b></div><div class="p">3&nbsp;400&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Окантовка</b></div><div class="p">1&nbsp;400&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Детская до 5 лет</b></div><div class="p">2&nbsp;300–2&nbsp;700&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Подростковая</b></div><div class="p">2&nbsp;700–3&nbsp;300&nbsp;₽</div></div>
+          <h3 class="sub">Окрашивание</h3>
+          <div class="row"><div class="n"><b>Тонирование / один тон</b><small>Короткие волосы</small></div><div class="p">от&nbsp;6&nbsp;600&nbsp;₽</div></div>
+          <p class="note">В карточке стрижки начинаются от 1&nbsp;100&nbsp;₽. Также: кератин, ботокс и полировка волос, сложное окрашивание, уходы для волос (Davines), афрокудри, прикорневой объём.</p>
+        </div>
+        <div class="panel" id="p-face" role="tabpanel">
+          <div class="row"><div class="n"><b>Брови — оформление</b><small>Топ-мастер</small></div><div class="p">1&nbsp;600&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Чистка лица</b></div><div class="p">5&nbsp;800&nbsp;₽</div></div>
+          <p class="note">Также: массаж лица, оздоровительный и релакс-массаж, пилинги.</p>
+        </div>
+      </div>
+      <div class="svc-photo" aria-hidden="true">
+        <img src="img/nails-1.jpg" alt="" data-k="nails-1" class="on" loading="lazy">
+        <img src="img/nails-2.jpg" alt="" data-k="nails-2" loading="lazy">
+        <img src="img/hair-1.jpg" alt="" data-k="hair-1" loading="lazy">
+        <img src="img/portrait.jpg" alt="" data-k="portrait" loading="lazy" style="object-position:50% 25%">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KIDS -->
+<section id="kids" class="kids">
+  <div class="wrap kd">
+    <div>
+      <span class="eyebrow rv">Для семей</span>
+      <h2 class="rv d1" style="margin-top:14px">Стрижём даже <em>самых маленьких</em></h2>
+      <p class="lead rv d2">В отзывах пишут: мастера берутся стричь и малышей, которым отказывают в других местах. Цены на детские услуги — из прайса салона.</p>
+      <div class="tags rv d2">
+        <div class="ktag"><small>Детская стрижка до 5 лет</small><b>2&nbsp;300–2&nbsp;700&nbsp;₽</b></div>
+        <div class="ktag"><small>Подростковая стрижка</small><b>2&nbsp;700–3&nbsp;300&nbsp;₽</b></div>
+        <div class="ktag"><small>Детский маникюр</small><b>1&nbsp;500&nbsp;₽<span>мастер · топ-мастер 1&nbsp;900&nbsp;₽</span></b></div>
+      </div>
+      <a class="btn wood rv d3" data-wa="Здравствуйте! Хочу записать ребёнка на стрижку в Lodge." href="https://wa.me/79218885004" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>Записать ребёнка в WhatsApp</a>
+    </div>
+    <figure class="kart rv d2" aria-hidden="true">
+      <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span>
+      <svg class="sc" viewBox="0 0 120 110"><circle cx="34" cy="94" r="13"/><circle cx="86" cy="94" r="13"/><path d="M41.4 82.1 84 14M78.6 82.1 36 14"/><circle class="pv" cx="60" cy="52.4" r="4.5"/></svg>
+      <figcaption>малыши и подростки</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section id="works" class="table">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Портфолио</span><h2 class="rv d1" style="margin-top:14px">Работы <em>салона</em></h2></div>
+      <p class="rv d2">Фото из карточки салона в 2ГИС</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр работ">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="hair">Волосы</button>
+      <button class="tab" aria-pressed="false" data-f="nails">Маникюр и педикюр</button>
+    </div>
+    <div class="grid rv" id="grid">
+      <button class="gi" data-c="hair"><img src="img/hair-1.jpg" alt="Стрижка и окрашивание, светлые пряди" loading="lazy"><span>Волосы</span></button>
+      <button class="gi" data-c="nails"><img src="img/nails-1.jpg" alt="Маникюр, нюдовое розовое покрытие с перламутром" loading="lazy"><span>Маникюр</span></button>
+      <button class="gi" data-c="hair"><img src="img/hair-3.jpg" alt="Волосы с розовыми концами" loading="lazy" style="object-position:40% 50%"><span>Окрашивание</span></button>
+      <button class="gi" data-c="nails"><img src="img/nails-3.jpg" alt="Французский маникюр, молочный оттенок" loading="lazy"><span>Френч</span></button>
+      <button class="gi" data-c="hair"><img src="img/hair-2.jpg" alt="Тёмные волнистые волосы" loading="lazy"><span>Укладка</span></button>
+      <button class="gi" data-c="nails"><img src="img/nails-2.jpg" alt="Белый маникюр и педикюр" loading="lazy"><span>Маникюр и педикюр</span></button>
+      <button class="gi" data-c="hair"><img src="img/portrait.jpg" alt="Портрет модели с укладкой волнами" loading="lazy" style="object-position:50% 30%"><span>Укладка</span></button>
+      <button class="gi" data-c="nails"><img src="img/nails-4.jpg" alt="Маникюр с дизайном и стразами" loading="lazy"><span>Дизайн</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""></dialog>
+
+<!-- PRAISE -->
+<section id="praise">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Отзывы</span><h2 class="rv d1" style="margin-top:14px">За что <em>хвалят</em></h2></div>
+      <p class="rv d2">Пересказ отзывов клиентов в 2ГИС</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card rv"><span class="num">1</span><h3>Внимательные мастера</h3><p>Мастера по волосам подсказывают, как перейти на натуральный цвет, и рассказывают про домашний уход.</p></article>
+      <article class="pr-card rv d1"><span class="num">2</span><h3>Годами к одному мастеру</h3><p>Маникюр и педикюр клиенты называют идеальными, а к своему мастеру ходят годами.</p></article>
+      <article class="pr-card rv d2"><span class="num">3</span><h3>Уютно для всей семьи</h3><p>Атмосфера уютная, а мастера берутся стричь даже малышей, которым отказывают в других местах.</p></article>
+    </div>
+    <div class="score rv">
+      <a href="https://2gis.ru/spb/firm/70000001055613261" target="_blank" rel="noopener"><strong>5.0</strong><span><b>2ГИС</b>68 оценок</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- SALON -->
+<section id="salon" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Салон</span><h2 class="rv d1" style="margin-top:14px">Как <em>у нас</em></h2></div>
+    </div>
+    <div class="studio">
+      <figure class="rv"><img src="img/hero.jpg" alt="Зал: кресла, полки с косметикой, зеркала с лампами, светлое дерево" loading="lazy"><figcaption>Зал</figcaption></figure>
+      <figure class="rv d1"><img src="img/wash.jpg" alt="Мойки для волос" loading="lazy"><figcaption>Мойки для волос</figcaption></figure>
+      <figure class="rv d2"><img src="img/reception.jpg" alt="Стойка ресепшена с цветами" loading="lazy"><figcaption>Ресепшен</figcaption></figure>
+      <figure class="rv d1"><img src="img/interior-2.jpg" alt="Зал, другой ракурс" loading="lazy"><figcaption>Рабочие места</figcaption></figure>
+    </div>
+    <div class="facts rv">
+      <span class="fact"><svg class="i"><use href="#i-wifi"/></svg>Wi-Fi</span>
+      <span class="fact"><svg class="i"><use href="#i-paw"/></svg>Можно с собакой</span>
+      <span class="fact"><svg class="i"><use href="#i-card"/></svg>Оплата: карта, наличные</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1" style="margin-top:14px">Как <em>добраться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Санкт-Петербург, Московский пр., 75 лит. А · Адмиралтейский район</p></div>
+        <div class="ci"><small>Часы работы</small><p>Ежедневно, 10:00–22:00</p></div>
+        <div class="ci"><small>Телефоны</small>
+          <div class="ph"><a class="big" href="tel:+78123161795">+7 (812) 316-17-95</a><a href="tel:+78123165846">+7 (812) 316-58-46</a></div>
+        </div>
+        <div class="ci"><small>WhatsApp и Telegram · +7 921 888-50-04</small>
+          <div class="socials">
+            <a data-wa="Здравствуйте! Хочу записаться в салон Lodge." href="https://wa.me/79218885004" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>WhatsApp</a>
+            <a href="https://t.me/+79218885004" target="_blank" rel="noopener"><svg class="i"><use href="#i-tg"/></svg>Telegram</a>
+            <a href="https://t.me/Lepetit_salon_bot" target="_blank" rel="noopener"><svg class="i"><use href="#i-tg"/></svg>Telegram-бот</a>
+          </div>
+        </div>
+        <div class="ci"><small>Почта</small><a href="mailto:salonlodgespb@gmail.com">salonlodgespb@gmail.com</a></div>
+        <div class="ctas"><a class="btn ghost" href="https://yandex.ru/maps/?rtext=~59.902991%2C30.318219&rtt=auto" target="_blank" rel="noopener"><svg class="i"><use href="#i-route"/></svg>Построить маршрут</a></div>
+      </div>
+      <div class="mapcol rv d1">
+        <figure class="facade"><img src="img/facade.jpg" alt="Фасад здания на Московском проспекте с вывеской Lodge" loading="lazy"><figcaption>Фасад на Московском пр.</figcaption></figure>
+        <div class="map"><iframe src="https://yandex.ru/map-widget/v1/?ll=30.318219%2C59.902991&z=16&pt=30.318219%2C59.902991%2Cpm2rdm" title="Lodge на карте" loading="lazy" allowfullscreen></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK -->
+<section id="book" class="book">
+  <div class="wrap bk">
+    <div>
+      <span class="eyebrow rv">Запись</span>
+      <h2 class="rv d1">Оставьте <em>заявку</em></h2>
+      <p class="lead rv d2">Выберите услугу и удобное время — откроется WhatsApp с готовым сообщением в салон. Можно и просто позвонить.</p>
+      <div class="ctas rv d3">
+        <a class="btn" href="tel:+78123161795"><svg class="i"><use href="#i-phone"/></svg>+7 (812) 316-17-95</a>
+      </div>
+    </div>
+    <form class="form rv d2" id="lead" autocomplete="off">
+      <h3>Заявка в WhatsApp</h3>
+      <div class="fld"><label for="f-svc">Что хотите</label>
+        <select id="f-svc">
+          <option value="Маникюр">Маникюр</option>
+          <option value="Педикюр">Педикюр</option>
+          <option value="Стрижка">Стрижка</option>
+          <option value="Детская стрижка">Детская стрижка</option>
+          <option value="Окрашивание волос">Окрашивание волос</option>
+          <option value="Брови">Брови</option>
+          <option value="Чистка лица">Чистка лица</option>
+          <option value="Другое">Другое</option>
+        </select>
+      </div>
+      <div class="fld"><label for="f-when">Когда удобно</label><input id="f-when" type="text" placeholder="например, в субботу вечером" maxlength="80"></div>
+      <div class="fld"><label for="f-who">Как вас зовут</label><input id="f-who" type="text" placeholder="по желанию" maxlength="40" autocomplete="given-name"></div>
+      <button class="btn wood" type="submit"><svg class="i"><use href="#i-wa"/></svg>Открыть WhatsApp с заявкой</button>
+      <p class="fine">Сайт ничего не отправляет сам: сообщение откроется в вашем WhatsApp, останется нажать «Отправить».</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Lodge — салон красоты, Санкт-Петербург</span>
+    <span>Демо-концепт. Данные — из открытой карточки <a href="https://2gis.ru/spb/firm/70000001055613261" target="_blank" rel="noopener">2ГИС</a> на 22.10.2026.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+78123161795"><svg class="i"><use href="#i-phone"/></svg>Позвонить</a>
+  <a href="https://t.me/+79218885004" target="_blank" rel="noopener"><svg class="i"><use href="#i-tg"/></svg>Telegram</a>
+  <a class="main" data-wa="Здравствуйте! Хочу записаться в салон Lodge." href="https://wa.me/79218885004" target="_blank" rel="noopener">Записаться</a>
+</nav>
+
+<script>
+(() => {
+  const WA = 'https://wa.me/79218885004';
+  const fmt = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽';
+
+  // Статус «открыто/закрыто» по московскому времени (ежедневно 10:00–22:00)
+  const st = document.getElementById('status');
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
+  const m = now.getHours() * 60 + now.getMinutes();
+  const open = m >= 10 * 60 && m < 22 * 60;
+  st.classList.toggle('closed', !open);
+  st.querySelector('span').textContent = open ? 'Открыто сейчас · до 22:00' : 'Сейчас закрыто · откроемся в 10:00';
+
+  // Ссылки WhatsApp с готовым текстом
+  document.querySelectorAll('[data-wa]').forEach(a => { a.href = WA + '?text=' + encodeURIComponent(a.dataset.wa); });
+
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    hdr.classList.toggle('scrolled', scrollY > 8);
+    mbar.classList.toggle('show', scrollY > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(node => io.observe(node));
+
+  // Вкладки прайса + смена фото
+  const tabs = document.querySelectorAll('[role=tab]');
+  const pics = document.querySelectorAll('.svc-photo img');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === 'p-' + t.dataset.tab));
+    pics.forEach(p => p.classList.toggle('on', p.dataset.k === t.dataset.img));
+  }));
+
+  // Переключатель «мастер / топ-мастер» в прайсе маникюра
+  const mode = document.getElementById('mode');
+  mode.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+    const k = b.dataset.mode;
+    mode.dataset.mode = k;
+    mode.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b));
+    document.querySelectorAll('#p-man .row[data-m]').forEach(r => {
+      const p = r.querySelector('.p');
+      p.textContent = fmt(+r.dataset[k]);
+      p.classList.remove('pop'); void p.offsetWidth; p.classList.add('pop');
+    });
+  }));
+
+  // Фильтр работ и лайтбокс
+  const items = document.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt;
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+
+  // Форма «Оставить заявку»: открывает WhatsApp салона с готовым текстом
+  document.getElementById('lead').addEventListener('submit', e => {
+    e.preventDefault();
+    const svc = document.getElementById('f-svc').value;
+    const when = document.getElementById('f-when').value.trim();
+    const who = document.getElementById('f-who').value.trim();
+    let t = 'Здравствуйте! Хочу записаться в салон Lodge. Услуга: ' + svc + '.';
+    if (when) t += ' Удобное время: ' + when + '.';
+    if (who) t += ' Меня зовут ' + who + '.';
+    const a = document.createElement('a');
+    a.href = WA + '?text=' + encodeURIComponent(t); a.target = '_blank'; a.rel = 'noopener';
+    document.body.appendChild(a); a.click(); a.remove();
+  });
+})();
+</script>
+</body>
+</html>

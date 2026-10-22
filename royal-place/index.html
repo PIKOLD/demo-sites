@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Royal Place — салон красоты в Калининском районе Санкт-Петербурга</title>
+<meta name="description" content="Royal Place — салон красоты на пр. Металлистов, 117 ст1: стрижки и окрашивание, маникюр и педикюр, лазерная эпиляция, косметология. Ежедневно 10:00–21:00.">
+<meta name="theme-color" content="#1E060E">
+<script>document.documentElement.className='js'</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@400;500;600;700&display=swap"></noscript>
+<style>
+:root{
+  --wine-dd:#1E060E; --wine-d:#340B18; --wine:#4E1024; --wine-l:#6E1A35; --rose:#8C2A47;
+  --gold:#CFA94E; --gold-l:#EBD08C; --gold-d:#A5802F;
+  --gold-grad:linear-gradient(135deg,#9A7424 0%,#EBD08C 26%,#B58B36 52%,#F5E4AE 76%,#A5802F 100%);
+  --ivory:#F7F0E2; --ivory-2:#EFE4CE; --paper:#FFFBF2;
+  --ink:#2A0F18; --ink-2:#4F3039; --muted:#7D6670; --line:rgba(78,16,36,.2);
+  --r-lg:22px; --r-md:14px; --r-sm:8px;
+  --shadow:0 28px 50px -28px rgba(30,6,14,.6);
+  --serif:"Playfair Display", Georgia, "Times New Roman", serif;
+  --sans:"Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ivory);color:var(--ink);font:400 16px/1.65 var(--sans);font-variant-numeric:lining-nums;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+section[id]{scroll-margin-top:72px}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.i{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.crown{fill:none;stroke:currentColor;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font:600 11.5px/1 var(--sans);letter-spacing:.26em;text-transform:uppercase;color:var(--gold-d)}
+.eyebrow::before{content:"";width:30px;height:1px;background:currentColor;flex:none}
+.dark .eyebrow,.hero .eyebrow{color:var(--gold)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;margin:0}
+h2{font-size:clamp(34px,5.6vw,60px)}
+h2 em,h1 em{font-style:italic;font-weight:500;color:var(--wine-l)}
+.dark h2 em,.hero h1 em{color:var(--gold-l)}
+.gold-t{color:var(--gold);background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.lead{font-size:clamp(16px,1.6vw,18px);color:var(--ink-2);max-width:54ch}
+section{padding:clamp(68px,9vw,120px) 0}
+
+/* silk */
+.silk{background-color:var(--wine-dd);background-image:repeating-linear-gradient(105deg,rgba(255,255,255,.03) 0 1px,transparent 1px 48px),radial-gradient(60% 80% at 12% 0%,rgba(207,169,78,.16),transparent 65%),linear-gradient(115deg,#1E060E 0%,#4E1024 30%,#2B0912 50%,#6E1A35 72%,#2B0912 100%);background-size:auto,auto,240% 240%;background-position:0 0,0 0,0% 50%;animation:silk 24s ease-in-out infinite alternate}
+@keyframes silk{to{background-position:0 0,0 0,100% 50%}}
+.dark{color:var(--ivory)}
+.dark .lead{color:#E4D3CB}
+
+/* demo bar */
+.demo{background:#000;color:#E8DCCB;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:var(--gold-l);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:11px;border:1px solid rgba(235,208,140,.5);border-radius:99px;padding:3px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(30,6,14,.9);backdrop-filter:saturate(1.3) blur(14px);-webkit-backdrop-filter:saturate(1.3) blur(14px);border-bottom:1px solid rgba(207,169,78,.25);color:var(--ivory)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.logo svg{width:32px;height:24px;color:var(--gold);flex:none;stroke-width:3}
+.logo b{font:600 18px/1 var(--serif);letter-spacing:.16em;text-transform:uppercase;white-space:nowrap}
+.logo small{font:500 9.5px/1 var(--sans);color:#CDB9A9;letter-spacing:.16em;text-transform:uppercase;display:none}
+@media (min-width:420px){.logo small{display:block}}
+.nav{display:none;gap:26px}
+.nav a{text-decoration:none;font-weight:500;font-size:13.5px;letter-spacing:.04em;color:#E4D3CB;position:relative;transition:color .25s}
+.nav a:hover{color:var(--gold-l)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:2px;border:1px solid var(--gold);background:var(--gold-grad);color:#2A1208;font:600 13.5px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:transform .25s, filter .25s, background .25s, color .25s;white-space:nowrap;box-shadow:0 14px 26px -16px rgba(207,169,78,.9)}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.btn.line{background:transparent;color:var(--ink);border-color:var(--wine-l);box-shadow:none}
+.btn.line:hover{background:var(--wine);color:var(--gold-l);filter:none}
+.dark .btn.line,.hero .btn.line{color:var(--gold-l);border-color:rgba(235,208,140,.6)}
+.dark .btn.line:hover,.hero .btn.line:hover{background:rgba(235,208,140,.14);color:#fff}
+.btn.sm{min-height:42px;padding:0 18px;font-size:12px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border-radius:50%;border:1px solid rgba(207,169,78,.45);background:transparent;display:grid;place-items:center;cursor:pointer;flex:none}
+.burger span{display:block;width:18px;height:1.5px;background:var(--gold-l);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:var(--gold-l);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--wine-dd);padding:120px 24px 40px;display:flex;flex-direction:column;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:600 32px/1.25 var(--serif);text-decoration:none;padding:6px 0;border-bottom:1px solid rgba(207,169,78,.25);color:var(--ivory)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:1020px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:clamp(36px,6vw,80px) 0 clamp(72px,9vw,120px);color:var(--ivory)}
+.hero .wm{position:absolute;right:-6%;bottom:-8%;width:min(70vw,640px);color:var(--gold);opacity:.06;pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:56px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:64px}}
+.hero .wrap>*{min-width:0}
+.mono{width:84px;height:84px;display:block;margin-bottom:22px}
+.status{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(235,208,140,.5);border-radius:99px;padding:8px 16px 8px 12px;font-size:12.5px;font-weight:500;letter-spacing:.04em;background:rgba(30,6,14,.4)}
+.status i{width:9px;height:9px;border-radius:50%;background:#59D08A;box-shadow:0 0 0 0 rgba(89,208,138,.55);animation:pulse 2s infinite;flex:none}
+.status.closed i{background:#E0766A;animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(89,208,138,0)}100%{box-shadow:0 0 0 0 rgba(89,208,138,0)}}
+.hero h1{font-size:clamp(44px,8vw,104px);margin:24px 0 8px;line-height:.98;letter-spacing:.005em}
+.hero .sub{font:italic 500 clamp(20px,2.6vw,28px)/1.25 var(--serif);color:var(--gold-l);margin:0 0 20px}
+.hero .lead{margin:0 0 22px;color:#E4D3CB}
+.place{display:flex;gap:10px;align-items:flex-start;color:#CDB9A9;font-size:14.5px;margin-bottom:28px}
+.place .i{margin-top:3px;color:var(--gold)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:640px){.ctas .btn{flex:0 0 auto}}
+.ratings{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:32px;padding-top:24px;border-top:1px solid rgba(207,169,78,.3)}
+.rate{display:flex;align-items:center;gap:12px}
+.rate strong{font:600 46px/1 var(--serif)}
+.rate span{font-size:13px;line-height:1.35;color:#CDB9A9}
+.rate span b{display:block;font-weight:600;color:var(--gold);letter-spacing:2px;font-size:12px}
+.visual{position:relative;width:min(100%,440px);margin-inline:auto}
+.fwrap{filter:drop-shadow(0 30px 34px rgba(0,0,0,.55))}
+.frame{--c:24px;position:relative;aspect-ratio:4/5;background:var(--gold-grad);clip-path:polygon(var(--c) 0,calc(100% - var(--c)) 0,100% var(--c),100% calc(100% - var(--c)),calc(100% - var(--c)) 100%,var(--c) 100%,0 calc(100% - var(--c)),0 var(--c))}
+.frame .f2{--c:20px;position:absolute;inset:5px;background:var(--wine-dd);clip-path:polygon(var(--c) 0,calc(100% - var(--c)) 0,100% var(--c),100% calc(100% - var(--c)),calc(100% - var(--c)) 100%,var(--c) 100%,0 calc(100% - var(--c)),0 var(--c))}
+.frame .f3{--c:16px;position:absolute;inset:5px;overflow:hidden;background:var(--wine);clip-path:polygon(var(--c) 0,calc(100% - var(--c)) 0,100% var(--c),100% calc(100% - var(--c)),calc(100% - var(--c)) 100%,var(--c) 100%,0 calc(100% - var(--c)),0 var(--c))}
+.frame img{position:absolute;inset:0;width:100%;height:112%;object-fit:cover;object-position:66% 50%;will-change:transform}
+.frame .f3::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(30,6,14,.6)),radial-gradient(80% 50% at 50% 0%,rgba(207,169,78,.18),transparent 70%)}
+.seal{position:absolute;right:-8px;bottom:-14px;width:112px;height:112px;z-index:4}
+.seal svg{width:100%;height:100%;display:block}
+.seal .ring{transform-box:fill-box;transform-origin:center;animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.chip{position:absolute;z-index:3;background:rgba(30,6,14,.84);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(235,208,140,.55);padding:11px 15px;font-size:12.5px;line-height:1.4;max-width:64%;box-shadow:0 18px 30px -18px #000}
+.chip b{display:block;font:600 22px/1.1 var(--serif);margin-top:3px;color:var(--gold-l)}
+.chip.c1{left:-4px;top:12%}
+.chip.c2{left:-4px;bottom:11%}
+@media (min-width:520px){.chip.c1,.chip.c2{left:-26px}}
+
+/* ticker */
+.ticker{background:var(--wine-dd);border-block:1px solid rgba(207,169,78,.35);overflow:hidden;padding:18px 0}
+.track{display:flex;width:max-content;animation:run 46s linear infinite}
+.track span{font:italic 500 clamp(20px,2.6vw,28px)/1 var(--serif);padding:0 22px;white-space:nowrap;display:flex;align-items:center;gap:44px;color:var(--gold-l)}
+.track span::after{content:"";width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* services */
+.head{display:grid;gap:16px;margin-bottom:40px}
+@media (min-width:960px){.head{grid-template-columns:minmax(0,1fr) auto;align-items:end}}
+.head p{margin:0;color:var(--muted);font-size:14px}
+.dark .head p{color:#CDB9A9}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.tab{border:1px solid var(--line);background:var(--paper);padding:11px 20px;font:600 12.5px/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:all .25s;border-radius:2px}
+.tab:hover{border-color:var(--gold-d)}
+.tab[aria-selected="true"],.tab[aria-pressed="true"]{background:var(--wine);color:var(--gold-l);border-color:var(--wine)}
+.svc{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.svc{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:56px;align-items:start}}
+.panel{display:none}
+.panel.on{display:block;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.sub2{font:600 24px/1.1 var(--serif);color:var(--wine-l);margin:30px 0 4px}
+.sub2:first-child{margin-top:0}
+.row{display:flex;align-items:baseline;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.row .n{flex:1 1 auto;min-width:0}
+.row .n b{display:block;font-weight:600;font-size:15.5px}
+.row .n small{color:var(--muted);font-size:13px}
+.row .p{font:600 24px/1 var(--serif);white-space:nowrap;color:var(--wine-l)}
+.row .p.t{font:500 14px/1 var(--sans);color:var(--muted)}
+.svc-photo{position:relative;aspect-ratio:16/10;order:-1;padding:6px;background:var(--gold-grad);box-shadow:var(--shadow)}
+@media (min-width:960px){.svc-photo{order:0;aspect-ratio:4/5;position:sticky;top:96px}}
+.svc-photo .box{position:absolute;inset:6px;overflow:hidden;background:var(--wine-dd)}
+.svc-photo .box>*{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .7s, transform 1.2s}
+.svc-photo .box>.on{opacity:1;transform:none}
+.svc-photo .mn{display:grid;place-items:center}
+.svc-photo .mn svg{width:46%;height:auto}
+.note{margin-top:22px;font-size:13.5px;color:var(--muted)}
+.note a{color:var(--wine-l);font-weight:600}
+.combos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:10px}
+.combos div{border:1px solid var(--line);background:var(--paper);padding:12px 6px;text-align:center;font:600 19px/1.1 var(--serif);color:var(--wine-l)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.chips span{border:1px solid var(--line);background:var(--paper);padding:8px 14px;font-size:13.5px;font-weight:500}
+
+/* laser calculator */
+.calc{position:relative;padding:clamp(20px,4vw,52px);border:1px solid rgba(207,169,78,.7);outline:1px solid rgba(207,169,78,.3);outline-offset:6px}
+.top{display:grid;gap:14px;margin-bottom:34px}
+@media (min-width:960px){.top{grid-template-columns:minmax(0,1fr) minmax(0,.8fr);align-items:end}}
+.top h2{margin-top:14px;font-size:clamp(32px,5vw,54px)}
+.top p{margin:0;color:#E4D3CB;font-size:15px}
+.mtag{display:inline-block;margin-top:10px;border:1px solid rgba(235,208,140,.6);color:var(--gold-l);padding:6px 12px;font:600 11px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase}
+.lz{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.lz{grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr);gap:44px;align-items:start}}
+.lz>*{min-width:0}
+.fig{background:rgba(255,255,255,.04);border:1px solid rgba(207,169,78,.3);padding:18px;text-align:center}
+.fig .seg{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-bottom:10px}
+.fig .seg button{border:1px solid rgba(235,208,140,.45);background:transparent;padding:8px 16px;font:600 11.5px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;cursor:pointer;color:var(--gold-l);border-radius:2px}
+.fig .seg button[aria-pressed="true"]{background:var(--gold-grad);color:#2A1208;border-color:var(--gold)}
+.body{width:min(100%,260px);height:auto;margin:0 auto;display:block}
+.body .base *{fill:rgba(255,255,255,.07);stroke:rgba(255,255,255,.2);stroke-width:1}
+.body .eyes circle{fill:rgba(255,255,255,.4);stroke:none}
+.body .zn>*{fill:rgba(207,169,78,.08);stroke:rgba(207,169,78,.6);stroke-width:1.3;stroke-dasharray:3 3;cursor:pointer;transition:fill .25s,stroke .25s}
+.body .zn:hover>*{fill:rgba(207,169,78,.26)}
+.body .zn.on>*{fill:rgba(235,208,140,.62);stroke:#F5E4AE;stroke-dasharray:none}
+.body .zn .hit{fill:transparent!important;stroke:none!important}
+.body.all .base *{fill:rgba(235,208,140,.28);stroke:rgba(245,228,174,.6)}
+.fig[data-view="front"] .bk{display:none}
+.fig[data-view="back"] .fr{display:none}
+.fig .cap{margin:10px 0 0;font-size:12.5px;color:#CDB9A9}
+.zones{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:640px){.zones{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.zone{position:relative;display:grid;gap:3px;align-content:start;padding:13px 14px;border:1px solid rgba(207,169,78,.32);background:rgba(255,255,255,.04);cursor:pointer;transition:border-color .25s, background .25s;min-width:0}
+.zone input{position:absolute;opacity:0;pointer-events:none}
+.zone b{font-weight:600;font-size:13.5px;line-height:1.3;padding-right:20px;overflow-wrap:anywhere}
+.zone span{font:600 19px/1.1 var(--serif);color:var(--gold-l);white-space:nowrap}
+.zone::after{content:"";position:absolute;right:11px;top:12px;width:14px;height:14px;border:1px solid rgba(235,208,140,.6);transform:rotate(45deg) scale(.8);transition:all .2s}
+.zone.on{border-color:var(--gold-l);background:rgba(207,169,78,.16)}
+.zone.on::after{background:var(--gold-l);border-color:var(--gold-l)}
+.zone.focus{outline:2px solid var(--gold-l);outline-offset:2px}
+.zone.full{grid-column:1/-1}
+.sum{margin-top:14px;border:1px solid rgba(207,169,78,.55);background:rgba(30,6,14,.55);padding:clamp(18px,3vw,28px);display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+@media (min-width:700px){.sum{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:28px}}
+.sum>*{min-width:0}
+.sum .lbl{font:600 11.5px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:#CDB9A9}
+.sum .total{font:600 clamp(44px,7vw,66px)/1.05 var(--serif);margin:10px 0 4px;overflow-wrap:anywhere}
+.sum ul{list-style:none;margin:0;padding:0;font-size:14px;display:grid;gap:7px}
+.sum li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed rgba(207,169,78,.35);padding-bottom:7px}
+.sum li span:first-child{min-width:0}
+.sum li span:last-child{white-space:nowrap}
+.sum .nt{font-size:13px;color:#E4D3CB;margin:0}
+.sum .acts{display:grid;gap:10px;margin-top:6px}
+.sum .acts .btn{width:100%;white-space:normal;text-align:center;padding:0 16px}
+.reset{background:none;border:0;padding:0;margin-top:6px;color:var(--gold-l);text-decoration:underline;cursor:pointer;font-size:13px}
+
+/* gallery */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (min-width:700px){.grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}}
+.gi{position:relative;display:block;overflow:hidden;padding:5px;border:1px solid var(--gold-d);background:var(--paper);cursor:zoom-in;aspect-ratio:4/5;transition:box-shadow .4s}
+.gi:hover{box-shadow:0 18px 30px -18px rgba(78,16,36,.7)}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.05)}
+.gi span{position:absolute;left:12px;bottom:12px;background:rgba(30,6,14,.82);color:var(--gold-l);font:600 10.5px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;padding:6px 10px}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,1000px);max-height:90vh}
+.lb::backdrop{background:rgba(20,4,10,.92)}
+.lb img{max-height:84vh;width:auto;margin:auto;border:2px solid var(--gold)}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:var(--gold-grad);color:#2A1208;font-size:22px;cursor:pointer}
+
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pr-card{position:relative;padding:34px 28px 30px;border:1px solid rgba(207,169,78,.5);background:rgba(255,255,255,.04);outline:1px solid rgba(207,169,78,.2);outline-offset:-8px}
+.pr-card .num{font:italic 500 54px/1 var(--serif);display:block;margin-bottom:12px}
+.pr-card h3{font-size:26px;margin-bottom:12px;color:var(--gold-l)}
+.pr-card p{margin:0;color:#E4D3CB}
+.score{display:flex;flex-wrap:wrap;gap:14px;margin-top:22px}
+.score a{display:flex;align-items:center;gap:14px;border:1px solid rgba(207,169,78,.5);padding:14px 20px;text-decoration:none;flex:1 1 240px}
+.score strong{font:600 46px/1 var(--serif)}
+.score span{font-size:13px;color:#CDB9A9}
+.score span b{color:var(--ivory);display:block;font-weight:600}
+
+/* salon */
+.studio{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (min-width:900px){.studio{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);grid-template-rows:repeat(2,minmax(0,1fr));gap:14px}}
+.studio figure{position:relative;margin:0;overflow:hidden;aspect-ratio:1;border:1px solid var(--gold-d);padding:5px;background:var(--paper)}
+.studio figure:first-child{grid-column:span 2;aspect-ratio:16/10}
+@media (min-width:900px){.studio figure:first-child{grid-column:auto;grid-row:span 2;aspect-ratio:auto;min-height:440px}.studio figure:not(:first-child){aspect-ratio:auto;min-height:213px}}
+.studio img{position:absolute;inset:5px;width:calc(100% - 10px);height:calc(100% - 10px);object-fit:cover}
+.studio figcaption{position:absolute;left:12px;bottom:12px;background:rgba(30,6,14,.84);color:var(--gold-l);font:600 10.5px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;padding:7px 11px}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.fact{display:inline-flex;align-items:center;gap:8px;background:var(--paper);border:1px solid var(--line);padding:10px 16px;font-size:13.5px;font-weight:500;max-width:100%}
+.fact .i{width:16px;height:16px;color:var(--gold-d)}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start;min-width:0}
+.ci small{display:block;font:600 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.ci p,.ci a{margin:0;font-size:17px;font-weight:500;text-decoration:none;overflow-wrap:anywhere}
+.ci a.big{font:600 34px/1.1 var(--serif);color:var(--wine-l)}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--paper);padding:10px 16px;font:600 12.5px/1 var(--sans);letter-spacing:.06em;text-decoration:none;transition:background .25s,color .25s}
+.socials a:hover{background:var(--wine);color:var(--gold-l)}
+.map{overflow:hidden;min-height:380px;background:var(--ivory-2);border:1px solid var(--gold-d);padding:5px}
+.map iframe{width:100%;height:100%;min-height:370px;border:0;display:block}
+
+/* final */
+.final{text-align:center;color:var(--ivory)}
+.final .mono{margin:0 auto 20px;width:96px;height:96px}
+.final h2{font-size:clamp(38px,7vw,80px);max-width:15ch;margin:18px auto}
+.final .lead{margin:0 auto}
+.final .ctas{justify-content:center;margin-top:30px}
+footer{padding:36px 0 120px;font-size:13px;color:#CDB9A9;background:#000}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer a{color:var(--gold-l)}
+@media (min-width:1020px){footer{padding-bottom:40px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.3fr);gap:8px;padding:8px;background:rgba(30,6,14,.94);border:1px solid rgba(207,169,78,.5);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:4px;box-shadow:0 18px 40px -12px rgba(0,0,0,.7);transform:translateY(150%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;color:var(--ivory);text-decoration:none;font-size:11px;font-weight:600;letter-spacing:.04em}
+.mbar a .i{width:20px;height:20px}
+.mbar a.main{background:var(--gold-grad);color:#2A1208;flex-direction:row;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;gap:8px}
+@media (min-width:1020px){.mbar{display:none}}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="goldg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9A7424"/><stop offset=".28" stop-color="#EBD08C"/><stop offset=".55" stop-color="#B58B36"/><stop offset=".78" stop-color="#F5E4AE"/><stop offset="1" stop-color="#A5802F"/>
+    </linearGradient>
+  </defs>
+  <symbol id="crown" viewBox="0 0 64 48"><path d="M6 38 3 12l15 12L32 6l14 18 15-12-3 26z"/><path d="M8 43h48"/><circle cx="3" cy="10" r="2.4" fill="currentColor"/><circle cx="32" cy="4.5" r="2.6" fill="currentColor"/><circle cx="61" cy="10" r="2.4" fill="currentColor"/></symbol>
+  <symbol id="monogram" viewBox="0 0 120 120">
+    <circle cx="60" cy="60" r="57" fill="none" stroke="url(#goldg)" stroke-width="2"/>
+    <circle cx="60" cy="60" r="51" fill="none" stroke="url(#goldg)" stroke-width=".8"/>
+    <use href="#crown" x="34" y="24" width="52" height="39" class="crown" style="color:#EBD08C"/>
+    <text x="60" y="95" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="27" font-weight="600" letter-spacing="3" fill="url(#goldg)">RP</text>
+  </symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><path d="M3 11l18-8-8 18-2-8-8-2z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></symbol>
+  <symbol id="i-tg" viewBox="0 0 24 24"><path d="M21.5 4.5 2.8 11.6l5.4 2 2 5.6 3.1-3.6 4.4 3.2z"/><path d="M8.2 13.6l8.6-5.4"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-ramp" viewBox="0 0 24 24"><path d="M3 19h18M3 19 17 8M17 8v11"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+  <symbol id="i-vk" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M7 9c.5 4 2.5 6 5 6M12 15V9m0 3c2 0 3.2-1.5 4-3"/></symbol>
+</svg>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Концепт сайта для салона Royal Place. Данные из открытых источников (2ГИС, Taplink) на 22.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Royal Place — наверх"><svg class="crown" viewBox="0 0 64 48" aria-hidden="true"><use href="#crown"/></svg><b>Royal Place</b><small>салон красоты</small></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#services">Услуги и цены</a>
+      <a href="#calc">Лазерная эпиляция</a>
+      <a href="#works">Работы</a>
+      <a href="#salon">Салон</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm" data-wa="Здравствуйте! Хочу записаться в салон Royal Place." href="https://wa.me/79117948048" target="_blank" rel="noopener">Записаться</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#services">Услуги и цены</a>
+  <a href="#calc">Лазерная эпиляция</a>
+  <a href="#works">Работы</a>
+  <a href="#praise">Отзывы</a>
+  <a href="#salon">Салон</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero silk">
+  <svg class="wm crown" viewBox="0 0 64 48" aria-hidden="true"><use href="#crown"/></svg>
+  <div class="wrap">
+    <div>
+      <svg class="mono rv" viewBox="0 0 120 120" role="img" aria-label="Монограмма Royal Place"><use href="#monogram"/></svg>
+      <span class="status rv" id="status"><i></i><span>Ежедневно 10:00–21:00</span></span>
+      <h1 class="rv d1"><span class="gold-t">Royal Place</span></h1>
+      <p class="sub rv d1">Салон красоты в Калининском районе</p>
+      <p class="lead rv d2">Стрижки и окрашивание, маникюр и педикюр, лазерная эпиляция, косметология и уход за лицом.</p>
+      <div class="place rv d2">
+        <svg class="i"><use href="#i-pin"/></svg>
+        <span>пр. Металлистов, 117 ст1 · Калининский район, Санкт-Петербург. Есть пандус.</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn" href="tel:+79117948048"><svg class="i"><use href="#i-phone"/></svg>Позвонить</a>
+        <a class="btn line" href="https://yandex.ru/maps/?rtext=~59.976272%2C30.385576&rtt=auto" target="_blank" rel="noopener"><svg class="i"><use href="#i-route"/></svg>Маршрут</a>
+      </div>
+      <div class="ratings rv d3">
+        <div class="rate"><strong class="gold-t">5.0</strong><span><b>★★★★★</b>2ГИС · 82 оценки</span></div>
+      </div>
+    </div>
+    <div class="visual rv d2">
+      <div class="fwrap"><div class="frame"><div class="f2"><div class="f3"><img id="heroImg" src="img/hero.jpg" alt="Зона ожидания салона Royal Place: тёмные кресла, хрустальная люстра-спираль, белые стены" width="1024" height="768" fetchpriority="high"></div></div></div></div>
+      <div class="seal" aria-hidden="true">
+        <svg viewBox="0 0 120 120">
+          <circle cx="60" cy="60" r="58" fill="#1E060E" stroke="url(#goldg)" stroke-width="1.5"/>
+          <defs><path id="circ" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0"/></defs>
+          <g class="ring"><text font-family="Montserrat, Arial, sans-serif" font-size="9.5" font-weight="600" letter-spacing="2.4" fill="#EBD08C"><textPath href="#circ" textLength="272" lengthAdjust="spacing">ROYAL PLACE · САЛОН КРАСОТЫ ·</textPath></text></g>
+          <use href="#crown" x="36" y="40" width="48" height="36" class="crown" style="color:#EBD08C"/>
+        </svg>
+      </div>
+      <div class="chip c1">Женская стрижка, любая длина<b>2&nbsp;800&nbsp;₽</b></div>
+      <div class="chip c2">Лазерная эпиляция, тело полностью (мужской прайс)<b>14&nbsp;000&nbsp;₽</b></div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="track">
+  <span>Стрижки</span><span>Окрашивание</span><span>Маникюр и педикюр</span><span>Лазерная эпиляция</span><span>Аппаратная косметология</span><span>Массаж лица</span><span>SPA для головы</span><span>Вертикальный солярий</span>
+  <span>Стрижки</span><span>Окрашивание</span><span>Маникюр и педикюр</span><span>Лазерная эпиляция</span><span>Аппаратная косметология</span><span>Массаж лица</span><span>SPA для головы</span><span>Вертикальный солярий</span>
+</div></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Прайс</span><h2 class="rv d1" style="margin-top:14px">Услуги <em>и цены</em></h2></div>
+      <p class="rv d2">Цены по данным карточки 2ГИС на 21.10.2026</p>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Категории услуг">
+      <button class="tab" role="tab" aria-selected="true" data-tab="hair" data-img="hair-1">Волосы</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="nails" data-img="cosmo">Ногти</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="laser" data-img="mono">Лазерная эпиляция</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="more" data-img="wash">Ещё</button>
+    </div>
+    <div class="svc">
+      <div>
+        <div class="panel on" id="p-hair" role="tabpanel">
+          <h3 class="sub2">Стрижки</h3>
+          <div class="row"><div class="n"><b>Женская стрижка</b><small>Любая длина</small></div><div class="p">2&nbsp;800&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Мужская модельная</b></div><div class="p">1&nbsp;800&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Мужская удлинённая / каре / каскад</b></div><div class="p">2&nbsp;300&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Стрижка бороды</b></div><div class="p">600&nbsp;₽</div></div>
+          <h3 class="sub2">Окрашивание</h3>
+          <div class="row"><div class="n"><b>Один тон</b><small>Короткие волосы</small></div><div class="p">от&nbsp;5&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Один тон</b><small>Средние волосы</small></div><div class="p">от&nbsp;6&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Один тон</b><small>Длинные волосы</small></div><div class="p">от&nbsp;7&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Мелирование</b><small>Короткие волосы</small></div><div class="p">от&nbsp;3&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Мелирование</b><small>Средние волосы</small></div><div class="p">от&nbsp;5&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Мелирование</b><small>Длинные волосы</small></div><div class="p">от&nbsp;7&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Окрашивание бороды</b></div><div class="p">700&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Тонирование, сложное окрашивание</b><small>Стоимость уточняйте</small></div><div class="p t">—</div></div>
+        </div>
+        <div class="panel" id="p-nails" role="tabpanel">
+          <div class="row"><div class="n"><b>Маникюр комбинированный</b><small>Без покрытия</small></div><div class="p">1&nbsp;600&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Маникюр японский</b></div><div class="p">2&nbsp;200&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Маникюр + гель-лак</b></div><div class="p">3&nbsp;200&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Пилочный маникюр + гель-лак + снятие</b></div><div class="p">3&nbsp;400&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Пилочный маникюр + гель-лак + снятие, френч</b></div><div class="p">3&nbsp;600&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Коррекция наращенных ногтей</b></div><div class="p">4&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Мужской маникюр</b></div><div class="p">1&nbsp;800&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Мужской педикюр</b></div><div class="p">3&nbsp;400&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-laser" role="tabpanel">
+          <h3 class="sub2">Лазерная эпиляция · мужской прайс</h3>
+          <div class="row"><div class="n"><b>Верхняя губа</b></div><div class="p">600&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Подмышки</b></div><div class="p">1&nbsp;400&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Руки до локтя</b></div><div class="p">1&nbsp;700&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Ягодицы</b></div><div class="p">2&nbsp;200&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Голени</b></div><div class="p">2&nbsp;300&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Руки полностью</b></div><div class="p">2&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Бикини классика</b></div><div class="p">2&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Бёдра</b></div><div class="p">3&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Глубокое бикини</b></div><div class="p">3&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Ноги полностью</b></div><div class="p">4&nbsp;800&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Тело полностью</b></div><div class="p">14&nbsp;000&nbsp;₽</div></div>
+          <h3 class="sub2">Комбо</h3>
+          <div class="combos"><div>5&nbsp;500&nbsp;₽</div><div>9&nbsp;500&nbsp;₽</div><div>12&nbsp;000&nbsp;₽</div></div>
+          <p class="note">Состав комбо уточняйте в салоне. Посчитайте зоны в <a href="#calc">калькуляторе</a>.</p>
+        </div>
+        <div class="panel" id="p-more" role="tabpanel">
+          <div class="row"><div class="n"><b>Коррекция бровей</b><small>Из мужского прайса</small></div><div class="p">800&nbsp;₽</div></div>
+          <h3 class="sub2">Также в салоне</h3>
+          <div class="chips">
+            <span>Аппаратная косметология</span><span>Чистка лица</span><span>Пилинги</span><span>Массаж лица</span><span>SPA для головы</span><span>Вертикальный солярий</span><span>Восковая эпиляция</span><span>Ламинирование ресниц и бровей</span>
+          </div>
+          <p class="note">Стоимость этих услуг в источнике не указана — уточняйте по телефону.</p>
+        </div>
+      </div>
+      <div class="svc-photo" aria-hidden="true"><div class="box">
+        <img src="img/hair-1.jpg" alt="" data-k="hair-1" class="on" loading="lazy">
+        <img src="img/cosmo.jpg" alt="" data-k="cosmo" loading="lazy">
+        <div class="mn" data-k="mono"><svg viewBox="0 0 120 120" style="color:#EBD08C"><use href="#monogram"/></svg></div>
+        <img src="img/wash.jpg" alt="" data-k="wash" loading="lazy">
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LASER CALCULATOR -->
+<section id="calc" class="silk dark">
+  <div class="wrap">
+    <div class="calc rv">
+      <div class="top">
+        <div>
+          <span class="eyebrow">Калькулятор</span>
+          <h2>Лазерная эпиляция <em>по зонам</em></h2>
+          <span class="mtag">Мужской прайс</span>
+        </div>
+        <p>Нажимайте на зоны силуэта или выбирайте их в списке — сумма считается по мужскому прайсу салона. Зоны, входящие друг в друга, не суммируются.</p>
+      </div>
+      <div class="lz">
+        <div class="fig" id="fig" data-view="front">
+          <div class="seg" role="group" aria-label="Вид силуэта">
+            <button type="button" aria-pressed="true" data-view="front">Спереди</button>
+            <button type="button" aria-pressed="false" data-view="back">Сзади</button>
+          </div>
+          <svg class="body" id="body" viewBox="0 0 240 500" role="img" aria-label="Силуэт для выбора зон эпиляции">
+            <g class="base">
+              <ellipse cx="120" cy="40" rx="24" ry="30"/>
+              <rect x="108" y="64" width="24" height="24" rx="6"/>
+              <path d="M68 94 Q120 80 172 94 L166 150 Q162 192 158 232 L82 232 Q78 192 74 150 Z"/>
+              <path d="M82 228 L158 228 L164 268 Q120 292 76 268 Z"/>
+            </g>
+            <g class="eyes fr"><circle cx="111" cy="35" r="1.8"/><circle cx="129" cy="35" r="1.8"/></g>
+            <g class="zn" data-z="hip" data-cover="hip,leg"><title>Бёдра</title>
+              <rect x="-19" y="0" width="38" height="116" rx="19" transform="translate(98 258) rotate(2)"/>
+              <rect x="-19" y="0" width="38" height="116" rx="19" transform="translate(142 258) rotate(-2)"/></g>
+            <g class="zn" data-z="shin" data-cover="shin,leg"><title>Голени</title>
+              <rect x="-14" y="0" width="28" height="108" rx="14" transform="translate(94 370) rotate(1.2)"/>
+              <rect x="-14" y="0" width="28" height="108" rx="14" transform="translate(146 370) rotate(-1.2)"/></g>
+            <g class="zn" data-z="arm" data-cover="arm"><title>Руки полностью</title>
+              <rect x="-12" y="-6" width="24" height="100" rx="12" transform="translate(64 102) rotate(9.2)"/>
+              <rect x="-12" y="-6" width="24" height="100" rx="12" transform="translate(176 102) rotate(-9.2)"/></g>
+            <g class="zn" data-z="armlow" data-cover="armlow,arm"><title>Руки до локтя</title>
+              <rect x="-10" y="-4" width="20" height="112" rx="10" transform="translate(50 190) rotate(5.5)"/>
+              <rect x="-10" y="-4" width="20" height="112" rx="10" transform="translate(190 190) rotate(-5.5)"/></g>
+            <g class="zn fr" data-z="deep" data-cover="deep"><title>Глубокое бикини</title><path d="M90 242 L150 242 L144 284 Q120 302 96 284 Z"/></g>
+            <g class="zn fr" data-z="bik" data-cover="bik,deep"><title>Бикини классика</title><path d="M106 246 L134 246 L130 266 Q120 273 110 266 Z"/></g>
+            <g class="zn fr" data-z="pit" data-cover="pit"><title>Подмышки</title><ellipse cx="77" cy="112" rx="7" ry="11"/><ellipse cx="163" cy="112" rx="7" ry="11"/></g>
+            <g class="zn bk" data-z="glute" data-cover="glute"><title>Ягодицы</title><ellipse cx="101" cy="262" rx="24" ry="28"/><ellipse cx="139" cy="262" rx="24" ry="28"/></g>
+            <g class="zn fr" data-z="lip" data-cover="lip"><title>Верхняя губа</title><path d="M110 51 Q120 44 130 51 Q120 55 110 51Z"/><circle class="hit" cx="120" cy="51" r="12"/></g>
+          </svg>
+          <p class="cap">Пунктиром отмечены зоны прайса</p>
+        </div>
+        <div>
+          <div class="zones">
+            <label class="zone"><input type="checkbox" value="lip"><b>Верхняя губа</b><span>600&nbsp;₽</span></label>
+            <label class="zone"><input type="checkbox" value="pit"><b>Подмышки</b><span>1&nbsp;400&nbsp;₽</span></label>
+            <label class="zone"><input type="checkbox" value="armlow"><b>Руки до локтя</b><span>1&nbsp;700&nbsp;₽</span></label>
+            <label class="zone"><input type="checkbox" value="arm"><b>Руки полностью</b><span>2&nbsp;500&nbsp;₽</span></label>
+            <label class="zone"><input type="checkbox" value="bik"><b>Бикини классика</b><span>2&nbsp;500&nbsp;₽</span></label>
+            <label class="zone"><input type="checkbox" value="deep"><b>Глубокое бикини</b><span>3&nbsp;500&nbsp;₽</span></label>
+            <label class="zone"><input type="checkbox" value="glute"><b>Ягодицы</b><span>2&nbsp;200&nbsp;₽</span></label>
+            <label class="zone"><input type="checkbox" value="hip"><b>Бёдра</b><span>3&nbsp;500&nbsp;₽</span></label>
+            <label class="zone"><input type="checkbox" value="shin"><b>Голени</b><span>2&nbsp;300&nbsp;₽</span></label>
+            <label class="zone"><input type="checkbox" value="leg"><b>Ноги полностью</b><span>4&nbsp;800&nbsp;₽</span></label>
+            <label class="zone full"><input type="checkbox" value="body"><b>Тело полностью</b><span>14&nbsp;000&nbsp;₽</span></label>
+          </div>
+          <div class="sum" aria-live="polite">
+            <div>
+              <span class="lbl">Ориентировочно</span>
+              <div class="total gold-t" id="total">0&nbsp;₽</div>
+              <p class="nt" id="note"></p>
+              <button class="reset" type="button" id="reset">Сбросить выбор</button>
+            </div>
+            <div>
+              <ul id="lines"></ul>
+              <p class="nt" style="margin-top:12px">Комбо в прайсе: 5&nbsp;500 / 9&nbsp;500 / 12&nbsp;000&nbsp;₽ — состав уточняйте в салоне.</p>
+              <div class="acts">
+                <a class="btn" id="calcWa" href="https://wa.me/79117948048" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>Записаться в WhatsApp</a>
+                <a class="btn line" href="https://taplink.cc/oxsana_royal" target="_blank" rel="noopener"><svg class="i"><use href="#i-link"/></svg>Запись через Taplink</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section id="works">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Портфолио</span><h2 class="rv d1" style="margin-top:14px">Работы <em>салона</em></h2></div>
+      <p class="rv d2">Фото из карточки салона в 2ГИС</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр работ">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="hair">Волосы</button>
+      <button class="tab" aria-pressed="false" data-f="look">Образы</button>
+    </div>
+    <div class="grid" id="grid">
+      <button class="gi" data-c="hair"><img src="img/hair-1.jpg" alt="Длинные волнистые светлые волосы, укладка" loading="lazy" style="object-position:40% 30%"><span>Волосы</span></button>
+      <button class="gi" data-c="look"><img src="img/portrait-1.jpg" alt="Портрет с укладкой локонами и макияжем" loading="lazy" style="object-position:50% 30%"><span>Образ</span></button>
+      <button class="gi" data-c="hair"><img src="img/hair-3.jpg" alt="Розовое каре" loading="lazy"><span>Каре</span></button>
+      <button class="gi" data-c="hair"><img src="img/hair-2.jpg" alt="Объёмные кудри, тонирование" loading="lazy"><span>Кудри</span></button>
+      <button class="gi" data-c="hair"><img src="img/hair-4.jpg" alt="Стрижка каскад с мягким окрашиванием" loading="lazy" style="object-position:35% 50%"><span>Окрашивание</span></button>
+      <button class="gi" data-c="hair"><img src="img/hair-7.jpg" alt="Ровный платиновый блонд" loading="lazy"><span>Блонд</span></button>
+      <button class="gi" data-c="look"><img src="img/portrait-2.jpg" alt="Портрет с укладкой и макияжем" loading="lazy" style="object-position:40% 40%"><span>Образ</span></button>
+      <button class="gi" data-c="hair"><img src="img/hair-5.jpg" alt="Светлое каре с лёгкими слоями" loading="lazy"><span>Каре</span></button>
+      <button class="gi" data-c="hair"><img src="img/hair-6.jpg" alt="Каштановые волосы с мягкими волнами" loading="lazy"><span>Волосы</span></button>
+      <button class="gi" data-c="hair"><img src="img/hair-8.jpg" alt="Длинные карамельные волны" loading="lazy"><span>Волны</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""></dialog>
+
+<!-- PRAISE -->
+<section id="praise" class="silk dark">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Отзывы</span><h2 class="rv d1" style="margin-top:14px">За что <em>хвалят</em></h2></div>
+      <p class="rv d2">Пересказ отзывов клиентов в 2ГИС</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card rv"><span class="num gold-t">I</span><h3>Атмосфера до мелочей</h3><p>Салон называют уютным и атмосферным, продуманным до мелочей.</p></article>
+      <article class="pr-card rv d1"><span class="num gold-t">II</span><h3>К мастерам возвращаются</h3><p>Профессиональные мастера по волосам и ногтям — к ним ходят постоянно.</p></article>
+      <article class="pr-card rv d2"><span class="num gold-t">III</span><h3>Слышат просьбы</h3><p>Мастера внимательно выполняют пожелания клиента — вплоть до формы каждого ногтя.</p></article>
+    </div>
+    <div class="score rv">
+      <a href="https://2gis.ru/spb/firm/70000001044497565" target="_blank" rel="noopener"><strong class="gold-t">5.0</strong><span><b>2ГИС</b>82 оценки</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- SALON -->
+<section id="salon">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Салон</span><h2 class="rv d1" style="margin-top:14px">Как <em>у нас</em></h2></div>
+    </div>
+    <div class="studio">
+      <figure class="rv"><img src="img/hero.jpg" alt="Зона ожидания: тёмные кресла, хрустальная люстра-спираль, стеклянный столик" loading="lazy" style="object-position:62% 50%"><figcaption>Зона ожидания</figcaption></figure>
+      <figure class="rv d1"><img src="img/wash.jpg" alt="Мойки для волос, плитка-пэчворк" loading="lazy"><figcaption>Мойки</figcaption></figure>
+      <figure class="rv d2"><img src="img/cosmo.jpg" alt="Косметологическое кресло" loading="lazy"><figcaption>Косметология</figcaption></figure>
+    </div>
+    <div class="facts rv">
+      <span class="fact"><svg class="i"><use href="#i-ramp"/></svg>Есть пандус</span>
+      <span class="fact"><svg class="i"><use href="#i-wifi"/></svg>Wi-Fi</span>
+      <span class="fact"><svg class="i"><use href="#i-card"/></svg>Оплата: карта, наличные, QR</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1" style="margin-top:14px">Как <em>добраться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Санкт-Петербург, пр. Металлистов, 117 ст1 · Калининский район</p></div>
+        <div class="ci"><small>Часы работы</small><p>Ежедневно, 10:00–21:00</p></div>
+        <div class="ci"><small>Телефон, WhatsApp, Telegram</small><a class="big" href="tel:+79117948048">+7 911 794-80-48</a></div>
+        <div class="ci"><small>Мессенджеры и ссылки</small>
+          <div class="socials">
+            <a data-wa="Здравствуйте! Хочу записаться в салон Royal Place." href="https://wa.me/79117948048" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>WhatsApp</a>
+            <a href="https://t.me/+79117948048" target="_blank" rel="noopener"><svg class="i"><use href="#i-tg"/></svg>Telegram</a>
+            <a href="https://vk.com/salon_royalplace" target="_blank" rel="noopener"><svg class="i"><use href="#i-vk"/></svg>ВКонтакте</a>
+            <a href="https://taplink.cc/oxsana_royal" target="_blank" rel="noopener"><svg class="i"><use href="#i-link"/></svg>Taplink</a>
+          </div>
+        </div>
+        <div class="ctas"><a class="btn line" href="https://yandex.ru/maps/?rtext=~59.976272%2C30.385576&rtt=auto" target="_blank" rel="noopener"><svg class="i"><use href="#i-route"/></svg>Построить маршрут</a></div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?ll=30.385576%2C59.976272&z=16&pt=30.385576%2C59.976272%2Cpm2rdm" title="Royal Place на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final silk dark">
+  <div class="wrap">
+    <svg class="mono rv" viewBox="0 0 120 120" aria-hidden="true"><use href="#monogram"/></svg>
+    <span class="eyebrow rv">Запись</span>
+    <h2 class="rv d1">Ждём вас <em>в Royal Place</em></h2>
+    <p class="lead rv d2">Напишите в WhatsApp, позвоните или загляните в Taplink салона. Работаем ежедневно с 10:00 до 21:00.</p>
+    <div class="ctas rv d3">
+      <a class="btn" data-wa="Здравствуйте! Хочу записаться в салон Royal Place." href="https://wa.me/79117948048" target="_blank" rel="noopener"><svg class="i"><use href="#i-wa"/></svg>Записаться в WhatsApp</a>
+      <a class="btn line" href="tel:+79117948048">+7 911 794-80-48</a>
+      <a class="btn line" href="https://taplink.cc/oxsana_royal" target="_blank" rel="noopener"><svg class="i"><use href="#i-link"/></svg>Taplink</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Royal Place — салон красоты, Санкт-Петербург</span>
+    <span>Демо-концепт. Данные — из открытых источников: <a href="https://2gis.ru/spb/firm/70000001044497565" target="_blank" rel="noopener">2ГИС</a>, <a href="https://taplink.cc/oxsana_royal" target="_blank" rel="noopener">Taplink</a>, на 22.10.2026.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79117948048"><svg class="i"><use href="#i-phone"/></svg>Позвонить</a>
+  <a href="https://t.me/+79117948048" target="_blank" rel="noopener"><svg class="i"><use href="#i-tg"/></svg>Telegram</a>
+  <a class="main" data-wa="Здравствуйте! Хочу записаться в салон Royal Place." href="https://wa.me/79117948048" target="_blank" rel="noopener">Записаться</a>
+</nav>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const WA = 'https://wa.me/79117948048';
+  const fmt = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽';
+
+  // Статус «открыто/закрыто» по московскому времени (ежедневно 10:00–21:00)
+  const st = document.getElementById('status');
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
+  const m = now.getHours() * 60 + now.getMinutes();
+  const open = m >= 10 * 60 && m < 21 * 60;
+  st.classList.toggle('closed', !open);
+  st.querySelector('span').textContent = open ? 'Открыто сейчас · до 21:00' : 'Сейчас закрыто · откроемся в 10:00';
+
+  // Ссылки WhatsApp с готовым текстом
+  document.querySelectorAll('[data-wa]').forEach(a => { a.href = WA + '?text=' + encodeURIComponent(a.dataset.wa); });
+
+  // Мобильная панель
+  const mbar = document.getElementById('mbar');
+  const onScroll = () => { mbar.classList.toggle('show', scrollY > 420); };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(node => io.observe(node));
+
+  // Лёгкий параллакс фото в раме
+  const hero = document.getElementById('heroImg');
+  if (!reduce && hero) {
+    let tick = false;
+    addEventListener('scroll', () => {
+      if (tick) return; tick = true;
+      requestAnimationFrame(() => { hero.style.transform = `translateY(${Math.min(scrollY, 700) * -0.04}px)`; tick = false; });
+    }, { passive: true });
+  }
+
+  // Вкладки прайса + смена картинки
+  const tabs = document.querySelectorAll('[role=tab]');
+  const pics = document.querySelectorAll('.svc-photo .box>*');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === 'p-' + t.dataset.tab));
+    pics.forEach(p => p.classList.toggle('on', p.dataset.k === t.dataset.img));
+  }));
+
+  // Калькулятор лазерной эпиляции (мужской прайс, 2ГИС 21.10.2026)
+  const Z = {
+    lip: ['Верхняя губа', 600], pit: ['Подмышки', 1400], armlow: ['Руки до локтя', 1700], arm: ['Руки полностью', 2500],
+    bik: ['Бикини классика', 2500], deep: ['Глубокое бикини', 3500], glute: ['Ягодицы', 2200], hip: ['Бёдра', 3500],
+    shin: ['Голени', 2300], leg: ['Ноги полностью', 4800], body: ['Тело полностью', 14000]
+  };
+  const EXC = { arm: ['armlow'], armlow: ['arm'], bik: ['deep'], deep: ['bik'], leg: ['hip', 'shin'], hip: ['leg'], shin: ['leg'] };
+  const inputs = [...document.querySelectorAll('.zone input')];
+  const byKey = k => inputs.find(i => i.value === k);
+  const fig = document.getElementById('fig'), silh = document.getElementById('body');
+  const shapes = [...silh.querySelectorAll('.zn')];
+  const el = id => document.getElementById(id);
+  const calc = () => {
+    const sel = inputs.filter(i => i.checked).map(i => i.value);
+    const set = new Set(sel);
+    const total = sel.reduce((s, k) => s + Z[k][1], 0);
+    inputs.forEach(i => i.closest('.zone').classList.toggle('on', i.checked));
+    shapes.forEach(s => s.classList.toggle('on', set.has('body') || s.dataset.cover.split(',').some(k => set.has(k))));
+    silh.classList.toggle('all', set.has('body'));
+    el('total').textContent = fmt(total);
+    el('lines').innerHTML = sel.map(k => `<li><span>${Z[k][0]}</span><span>${fmt(Z[k][1])}</span></li>`).join('') || '<li><span>Выберите зоны</span><span></span></li>';
+    let note = '';
+    if (set.has('hip') && set.has('shin')) note = 'В прайсе есть «ноги полностью» — ' + fmt(4800) + '.';
+    else if (total > 14000 && !set.has('body')) note = 'В прайсе есть «тело полностью» — ' + fmt(14000) + '.';
+    el('note').textContent = note;
+    const text = sel.length
+      ? `Здравствуйте! Хочу записаться на лазерную эпиляцию (мужской прайс): ${sel.map(k => Z[k][0].toLowerCase()).join(', ')}. По калькулятору на сайте ориентировочно ${fmt(total)}.`
+      : 'Здравствуйте! Хочу записаться на лазерную эпиляцию.';
+    el('calcWa').href = WA + '?text=' + encodeURIComponent(text);
+  };
+  inputs.forEach(i => {
+    i.addEventListener('change', () => {
+      if (i.checked) {
+        if (i.value === 'body') inputs.forEach(o => { if (o !== i) o.checked = false; });
+        else { byKey('body').checked = false; (EXC[i.value] || []).forEach(k => { byKey(k).checked = false; }); }
+      }
+      calc();
+    });
+    i.addEventListener('focus', () => i.closest('.zone').classList.add('focus'));
+    i.addEventListener('blur', () => i.closest('.zone').classList.remove('focus'));
+  });
+  silh.addEventListener('click', e => {
+    const g = e.target.closest('.zn'); if (!g) return;
+    const i = byKey(g.dataset.z); i.checked = !i.checked; i.dispatchEvent(new Event('change'));
+  });
+  fig.querySelectorAll('button[data-view]').forEach(b => b.addEventListener('click', () => {
+    fig.dataset.view = b.dataset.view;
+    fig.querySelectorAll('button[data-view]').forEach(x => x.setAttribute('aria-pressed', x === b));
+  }));
+  el('reset').addEventListener('click', () => { inputs.forEach(i => { i.checked = false; }); calc(); });
+  byKey('pit').checked = true; byKey('shin').checked = true;
+  calc();
+
+  // Фильтр работ и лайтбокс
+  const items = document.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt;
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>
