@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Камертон — салон красоты на Ленинском проспекте, Санкт-Петербург</title>
+<meta name="description" content="Салон красоты «Камертон»: женский и мужской залы, ногти, ресницы и брови, косметология, лазерная эпиляция, пирсинг. Ленинский пр., 45 к1 ст1. Ежедневно 10:00–21:00.">
+<meta name="theme-color" content="#0E3B31">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Prata&family=Onest:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prata&family=Onest:wght@400;500;600;700&display=swap"><style>.rv{opacity:1!important;transform:none!important}</style></noscript>
+<style>
+:root{
+  --deep:#082520; --em:#0E3B31; --em2:#15513F; --brass:#C4A15B; --brass-l:#E6D29E; --brass-d:#7A5C1F;
+  --cream:#F5EEDD; --paper:#FCF9F1; --sand:#E9DFC6;
+  --ink:#0F1F1A; --ink2:#2C3E37; --muted:#5B6A62; --line:rgba(15,31,26,.14); --line-l:rgba(245,238,221,.18);
+  --serif:"Prata", Georgia, "Times New Roman", serif; --sans:"Onest", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.eyebrow{font:600 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--brass-d)}
+.dk .eyebrow,.hero .eyebrow{color:var(--brass)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;margin:0}
+h2{font-size:clamp(32px,5.4vw,58px)}
+h2 em,h1 em{font-style:normal;color:var(--brass-d)}
+.dk h2 em,.hero h1 em{color:var(--brass-l)}
+.lead{font-size:clamp(16px,1.6vw,18px);color:var(--ink2);max-width:54ch}
+section{padding:clamp(64px,9vw,112px) 0}
+section[id]{scroll-margin-top:64px}
+svg.ic{width:18px;height:18px;flex:none}
+
+/* demo bar */
+.demo{background:var(--brass);color:var(--deep);font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:11px;border:1px solid rgba(8,37,32,.5);border-radius:99px;padding:3px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(8,37,32,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--cream);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line-l)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo svg{width:22px;height:30px;color:var(--brass)}
+.logo b{font:400 21px/1 var(--serif);letter-spacing:.16em;text-transform:uppercase}
+.nav{display:none;gap:26px}
+.nav a{text-decoration:none;font-weight:500;font-size:14.5px;color:#E3DCC8;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--brass);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;border-radius:99px;border:1px solid var(--brass);background:var(--brass);color:var(--deep);font-weight:600;font-size:15px;text-decoration:none;cursor:pointer;transition:transform .25s, background .25s, color .25s, border-color .25s;text-align:center}
+.btn:hover{transform:translateY(-2px);background:var(--brass-l);border-color:var(--brass-l)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--cream)}
+.hero .btn.ghost,.dk .btn.ghost{color:var(--cream);border-color:rgba(245,238,221,.5)}
+.hero .btn.ghost:hover,.dk .btn.ghost:hover{background:var(--cream);color:var(--deep);border-color:var(--cream)}
+.btn.sm{min-height:42px;padding:0 18px;font-size:14px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border-radius:50%;border:1px solid var(--line-l);background:transparent;display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:18px;height:1.5px;background:var(--cream);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:var(--cream);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--deep);color:var(--cream);padding:110px 24px 40px;display:flex;flex-direction:column;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:400 30px/1.25 var(--serif);text-decoration:none;padding:8px 0;border-bottom:1px solid var(--line-l)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:radial-gradient(90% 70% at 80% 30%,var(--em2) 0%,var(--em) 45%,var(--deep) 100%);color:var(--cream);padding:clamp(36px,6vw,76px) 0 clamp(72px,9vw,120px)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1fr);gap:56px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:64px}}
+.wv{position:absolute;left:0;width:200%;height:150px;pointer-events:none;animation:drift 40s linear infinite}
+.wv path{fill:none;stroke:var(--brass);stroke-width:1.2;vector-effect:non-scaling-stroke}
+.wv.w1{bottom:10px;opacity:.38}
+.wv.w2{bottom:44px;opacity:.24;animation-duration:30s;animation-direction:reverse}
+.wv.w3{bottom:78px;opacity:.16;animation-duration:56s}
+@keyframes drift{to{transform:translateX(-50%)}}
+.status{display:inline-flex;align-items:center;gap:10px;background:rgba(245,238,221,.07);border:1px solid var(--line-l);border-radius:99px;padding:8px 14px 8px 12px;font-size:13.5px;font-weight:600}
+.status i{width:9px;height:9px;border-radius:50%;background:#5FD08A;box-shadow:0 0 0 0 rgba(95,208,138,.5);animation:pulse 2s infinite;flex:none}
+.status.closed i{background:#E0786D;animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(95,208,138,0)}100%{box-shadow:0 0 0 0 rgba(95,208,138,0)}}
+.hero h1{font-size:clamp(38px,6.2vw,84px);margin:24px 0 22px}
+.hero .lead{color:#D5CDB8;margin:0 0 24px}
+.place{display:flex;gap:10px;align-items:flex-start;color:#BDB6A2;font-size:14.5px;margin-bottom:28px}
+.place svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--brass)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.rate{display:flex;align-items:center;gap:14px;margin-top:34px;padding-top:26px;border-top:1px solid var(--line-l)}
+.rate strong{font:400 44px/1 var(--serif);color:var(--brass-l)}
+.rate span{font-size:13px;line-height:1.4;color:#BDB6A2}
+.rate span b{display:block;color:var(--brass);letter-spacing:2px;font-size:12px;font-weight:400}
+
+.fork{position:relative;width:min(100%,340px);margin-inline:auto;padding-bottom:8px}
+.fork-u{position:relative}
+.fork-u::before,.fork-u::after{content:"";position:absolute;inset:-12px;border:1px solid var(--brass);border-radius:32px 32px 999px 999px;opacity:.7;pointer-events:none}
+.fork-u::after{animation:ring 4s ease-out infinite}
+@keyframes ring{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.2);opacity:0}}
+.u{position:relative;aspect-ratio:4/5;border-radius:20px 20px 999px 999px;overflow:hidden;background:var(--em2);box-shadow:0 30px 60px -20px rgba(0,0,0,.55)}
+.u img{width:100%;height:100%;object-fit:cover}
+.stem{display:flex;flex-direction:column;align-items:center;margin-top:12px}
+.stem i{display:block;width:2px;height:60px;background:linear-gradient(var(--brass),rgba(196,161,91,.1))}
+.stem b{display:block;width:12px;height:12px;border-radius:50%;border:2px solid var(--brass)}
+.tag{position:absolute;z-index:3;max-width:62%;background:rgba(8,37,32,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line-l);border-left:3px solid var(--brass);border-radius:12px;padding:10px 14px;font-size:12.5px;line-height:1.35;color:#D5CDB8}
+.tag b{display:block;font:400 20px/1.15 var(--serif);color:var(--brass-l);margin-top:2px}
+.tag.t1{left:-4%;top:30%}
+.tag.t2{right:-4%;bottom:20%}
+
+/* ribbon */
+.ribbon{background:var(--brass);color:var(--deep);overflow:hidden;padding:16px 0}
+.track{display:flex;width:max-content;animation:run 46s linear infinite}
+.track span{font:400 clamp(18px,2.4vw,24px)/1 var(--serif);padding:0 22px;white-space:nowrap;display:flex;align-items:center;gap:44px}
+.track span::after{content:"";width:8px;height:8px;background:var(--deep);transform:rotate(45deg)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* heads */
+.head{display:grid;gap:14px;margin-bottom:40px}
+@media (min-width:960px){.head{grid-template-columns:minmax(0,1fr) auto;align-items:end}}
+.head p{margin:0;color:var(--muted);font-size:14px;max-width:44ch}
+.dk .head p{color:#BDB6A2}
+
+/* equalizer */
+.eq{background:var(--em);color:var(--cream);border-radius:28px;padding:clamp(14px,3vw,36px);box-shadow:0 30px 60px -34px rgba(8,37,32,.7)}
+.faders{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+@media (min-width:760px){.faders{grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}}
+.fader{--lvl:var(--rest);border:1px solid var(--line-l);background:rgba(255,255,255,.03);border-radius:16px;padding:14px 4px 12px;display:flex;flex-direction:column;align-items:center;gap:12px;cursor:pointer;color:#CFC8B3;transition:border-color .3s, background .3s, color .3s}
+.fader:hover{border-color:rgba(196,161,91,.6)}
+.fader[aria-selected="true"]{--lvl:92%;border-color:var(--brass);background:rgba(196,161,91,.12);color:var(--brass-l)}
+.trk{position:relative;width:6px;height:76px;border-radius:99px;background:rgba(245,238,221,.16);flex:none}
+.trk::before{content:"";position:absolute;left:0;right:0;bottom:0;height:var(--lvl);border-radius:99px;background:linear-gradient(to top,var(--brass-d),var(--brass-l));transition:height .55s cubic-bezier(.3,1.4,.4,1)}
+.knob{position:absolute;left:50%;bottom:var(--lvl);width:24px;height:12px;border-radius:4px;background:var(--cream);box-shadow:0 2px 8px rgba(0,0,0,.4);transform:translate(-50%,50%);transition:bottom .55s cubic-bezier(.3,1.4,.4,1), box-shadow .3s}
+.fader[aria-selected="true"] .knob{background:var(--brass-l);box-shadow:0 0 0 4px rgba(196,161,91,.25), 0 2px 8px rgba(0,0,0,.4)}
+.lab{font-size:12.5px;font-weight:600;line-height:1.25;text-align:center;overflow-wrap:anywhere;min-height:2.5em;display:flex;align-items:center}
+@media (min-width:760px){.lab{font-size:13.5px}}
+
+.pn{display:none;margin-top:30px}
+.pn.on{display:grid;grid-template-columns:minmax(0,1fr);gap:26px;animation:fade .5s ease}
+@media (min-width:900px){.pn.ph.on{grid-template-columns:minmax(0,1fr) minmax(0,.5fr);gap:44px;align-items:start}}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.ptitle{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+.ptitle h3{font-size:clamp(24px,3.4vw,34px);color:var(--cream)}
+.bars{display:flex;align-items:flex-end;gap:3px;height:24px;flex:none}
+.bars i{display:block;width:3px;height:100%;background:var(--brass);border-radius:2px;transform-origin:bottom;animation:bar 1s ease-in-out infinite alternate}
+.bars i:nth-child(2){animation-duration:.7s;animation-delay:-.3s}
+.bars i:nth-child(3){animation-duration:1.2s;animation-delay:-.6s}
+.bars i:nth-child(4){animation-duration:.85s;animation-delay:-.1s}
+.bars i:nth-child(5){animation-duration:1.05s;animation-delay:-.5s}
+@keyframes bar{from{transform:scaleY(.22)}to{transform:scaleY(1)}}
+.rows{display:grid;grid-template-columns:minmax(0,1fr)}
+@media (min-width:760px){.rows.two{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:44px}}
+.row{display:flex;align-items:baseline;gap:12px;padding:13px 0;border-bottom:1px solid var(--line-l)}
+.row .n{flex:1 1 auto;min-width:0;overflow-wrap:anywhere;font-size:15.5px}
+.row .p{font:400 19px/1 var(--serif);white-space:nowrap;color:var(--brass-l)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px}
+.tags span{border:1px solid var(--line-l);border-radius:99px;padding:8px 14px;font-size:14px;color:#E3DCC8}
+.hint{margin:12px 0 0;font-size:13.5px;color:#BDB6A2}
+.med{margin:16px 0 0;padding:12px 14px;border:1px dashed var(--brass);border-radius:12px;font-size:14px;color:var(--brass-l)}
+.pimg{position:relative;margin:0;border-radius:20px;overflow:hidden;aspect-ratio:4/3;background:var(--em2)}
+.pimg img{width:100%;height:100%;object-fit:cover}
+.pimg figcaption{position:absolute;left:10px;bottom:10px;background:rgba(8,37,32,.78);color:var(--cream);font-size:12px;font-weight:600;padding:5px 10px;border-radius:99px}
+.eqcta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.eqcta .btn{flex:1 1 220px}
+
+/* gallery */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.fbtn{border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:10px 18px;font-weight:600;font-size:14px;cursor:pointer;transition:all .25s}
+.fbtn[aria-pressed="true"]{background:var(--em);color:var(--cream);border-color:var(--em)}
+.gal{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;grid-auto-flow:dense}
+@media (min-width:760px){.gal{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.gal.all .gi.big{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}}
+.gi{position:relative;border:0;padding:0;border-radius:18px;overflow:hidden;aspect-ratio:4/3;background:var(--sand);cursor:zoom-in;transition:opacity .4s, transform .4s}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.06)}
+.gi span{position:absolute;left:10px;bottom:10px;background:rgba(252,249,241,.92);font-size:12px;font-weight:600;padding:5px 10px;border-radius:99px;color:var(--ink)}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,1000px);max-height:90vh;color:var(--cream);overflow:visible}
+.lb::backdrop{background:rgba(5,20,17,.88)}
+.lb img{max-height:80vh;width:auto;margin:auto;border-radius:16px}
+.lb p{margin:10px 0 0;text-align:center;font-size:14px}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:var(--cream);color:var(--deep);font-size:22px;cursor:pointer}
+
+/* praise */
+.dk{background:var(--deep);color:var(--cream)}
+.praise{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pr-card{background:rgba(255,255,255,.04);border:1px solid var(--line-l);border-radius:24px;padding:26px}
+.stf{position:relative;height:49px;margin:6px 0 34px;background:repeating-linear-gradient(to bottom,rgba(196,161,91,.4) 0 1px,transparent 1px 12px)}
+.nt{position:absolute;left:var(--x);top:var(--y);width:15px;height:10px;background:var(--brass);border-radius:50%;transform:rotate(-20deg)}
+.nt::after{content:"";position:absolute;right:0;bottom:4px;width:2px;height:32px;background:var(--brass)}
+.pr-card h3{font-size:26px;margin-bottom:12px;color:var(--brass-l)}
+.pr-card p{margin:0;color:#D5CDB8}
+.score{display:flex;flex-wrap:wrap;gap:14px;margin-top:24px}
+.score a{display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.04);border:1px solid var(--line-l);border-radius:18px;padding:16px 22px;text-decoration:none;flex:1 1 260px}
+.score strong{font:400 46px/1 var(--serif);color:var(--brass-l)}
+.score span{font-size:13.5px;color:#BDB6A2}
+.score span b{color:var(--cream);display:block;font-weight:600}
+
+/* salon */
+.salon{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (min-width:900px){.salon{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:16px}}
+.salon figure{margin:0;border-radius:22px;overflow:hidden;background:var(--sand);aspect-ratio:4/3}
+.salon figure:first-child{grid-column:span 2}
+@media (min-width:900px){.salon figure:first-child{grid-column:auto;grid-row:span 2;aspect-ratio:auto}}
+.salon img{width:100%;height:100%;object-fit:cover}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.fact{display:inline-flex;align-items:center;gap:8px;background:var(--paper);border:1px solid var(--line);border-radius:99px;padding:10px 16px;font-size:14px;font-weight:500}
+.fact svg{width:16px;height:16px;color:var(--brass-d);flex:none}
+.access{margin-top:20px;display:flex;align-items:center;gap:16px;border:2px solid var(--em);border-radius:20px;padding:16px 20px;background:var(--paper)}
+.access .ai{width:52px;height:52px;border-radius:50%;background:var(--em);color:var(--brass-l);display:grid;place-items:center;flex:none}
+.access .ai svg{width:30px;height:30px}
+.access b{display:block;font:400 20px/1.2 var(--serif)}
+.access span{font-size:14.5px;color:var(--ink2)}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start}
+.ci small{display:block;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ci p,.ci a{margin:0;font-size:18px;font-weight:500;text-decoration:none}
+.ci a.big{font:400 32px/1.1 var(--serif)}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{display:inline-flex;align-items:center;border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:10px 16px;font-size:14px;font-weight:600;transition:background .25s,color .25s}
+.socials a:hover{background:var(--em);color:var(--cream)}
+.map{border-radius:24px;overflow:hidden;min-height:380px;background:var(--sand);border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* final */
+.final{position:relative;overflow:hidden;text-align:center;background:radial-gradient(100% 90% at 50% 0%,var(--em2) 0%,var(--deep) 70%);color:var(--cream)}
+.final .wrap{position:relative;z-index:2}
+.final .ficon{width:34px;height:46px;color:var(--brass);margin:0 auto 18px}
+.final h2{font-size:clamp(36px,6.4vw,76px);max-width:16ch;margin:18px auto}
+.final .lead{margin:0 auto;color:#D5CDB8}
+.final .ctas{justify-content:center;margin-top:30px}
+.final .wv.w1{bottom:0}.final .wv.w2{bottom:30px}
+footer{background:var(--deep);color:#A9A290;padding:34px 0 120px;font-size:13px;border-top:1px solid var(--line-l)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 32px;justify-content:space-between}
+footer p{margin:0;flex:1 1 280px}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.3fr);gap:8px;padding:8px;background:rgba(8,37,32,.94);border:1px solid var(--line-l);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:22px;box-shadow:0 18px 40px -12px rgba(0,0,0,.5);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:15px;color:var(--cream);text-decoration:none;font-size:11.5px;font-weight:600}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--brass);color:var(--deep);flex-direction:row;font-size:14px;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+  .fork-u::after{display:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="fork" viewBox="0 0 24 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 2v11a6 6 0 0 0 12 0V2"/><path d="M12 19v10"/><circle cx="12" cy="29.5" r=".8"/></symbol></svg>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Концепт сайта для салона красоты «Камертон». Данные из открытых источников (2ГИС, YCLIENTS) на 22.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Камертон — наверх"><svg aria-hidden="true"><use href="#fork"/></svg><b>Камертон</b></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#services">Услуги и цены</a>
+      <a href="#works">Работы</a>
+      <a href="#praise">Отзывы</a>
+      <a href="#salon">Салон</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm" href="https://n311915.yclients.com" target="_blank" rel="noopener">Записаться онлайн</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#services">Услуги и цены</a>
+  <a href="#works">Работы</a>
+  <a href="#praise">Отзывы</a>
+  <a href="#salon">Салон</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <svg class="wv w3" viewBox="0 0 2400 100" preserveAspectRatio="none" aria-hidden="true"><path data-h="150" data-a="46"/></svg>
+  <svg class="wv w2" viewBox="0 0 2400 100" preserveAspectRatio="none" aria-hidden="true"><path data-h="60" data-a="34"/></svg>
+  <svg class="wv w1" viewBox="0 0 2400 100" preserveAspectRatio="none" aria-hidden="true"><path data-h="100" data-a="40"/></svg>
+  <div class="wrap">
+    <div>
+      <span class="status rv" id="status"><i></i><span>Ежедневно 10:00–21:00</span></span>
+      <h1 class="rv d1">Настроим <em>вашу красоту</em></h1>
+      <p class="lead rv d2">«Камертон» — салон красоты на Ленинском проспекте: женский и мужской залы, ногти, ресницы и брови, косметология, лазерная эпиляция и пирсинг.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Ленинский пр., 45 к1 ст1 · Красносельский район, Санкт-Петербург</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn" href="tel:+79313784165"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+        <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~59.865245%2C30.160268&rtt=auto" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+      </div>
+      <div class="rate rv d3"><strong>5.0</strong><span><b>★★★★★</b>2ГИС · 148&nbsp;оценок</span></div>
+    </div>
+    <div class="fork rv d2">
+      <div class="fork-u"><div class="u"><img src="img/hero.jpg" alt="Изумрудный диван в салоне «Камертон»" width="1024" height="768" fetchpriority="high"></div></div>
+      <div class="stem" aria-hidden="true"><i></i><b></b></div>
+      <div class="tag t1">Женская стрижка<b>от&nbsp;1&nbsp;300&nbsp;₽</b></div>
+      <div class="tag t2">Лазерная эпиляция, комплекс<b>от&nbsp;4&nbsp;100&nbsp;₽</b></div>
+    </div>
+  </div>
+</section>
+
+<div class="ribbon" aria-hidden="true"><div class="track">
+  <span>Женский зал</span><span>Мужской зал</span><span>Окрашивание</span><span>Наращивание волос</span><span>Причёски</span><span>Детские стрижки</span><span>Ногтевой сервис</span><span>Ресницы и брови</span><span>Косметология</span><span>Лазерная эпиляция</span><span>Пирсинг</span><span>SPA для головы</span>
+  <span>Женский зал</span><span>Мужской зал</span><span>Окрашивание</span><span>Наращивание волос</span><span>Причёски</span><span>Детские стрижки</span><span>Ногтевой сервис</span><span>Ресницы и брови</span><span>Косметология</span><span>Лазерная эпиляция</span><span>Пирсинг</span><span>SPA для головы</span>
+</div></div>
+
+<!-- SERVICES: Эквалайзер залов -->
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Прайс</span><h2 class="rv d1" style="margin-top:14px">Эквалайзер <em>залов</em></h2></div>
+      <p class="rv d2">Выберите канал — поднимется фейдер и откроются услуги и цены. Цены по данным 2ГИС, в полном прайсе 371&nbsp;позиция.</p>
+    </div>
+    <div class="eq rv">
+      <div class="faders" role="tablist" aria-label="Направления салона">
+        <button class="fader" role="tab" id="t-women" aria-selected="true" aria-controls="e-women" data-tab="women" style="--rest:62%"><span class="trk" aria-hidden="true"><i class="knob"></i></span><span class="lab">Женский зал</span></button>
+        <button class="fader" role="tab" id="t-men" aria-selected="false" aria-controls="e-men" data-tab="men" tabindex="-1" style="--rest:38%"><span class="trk" aria-hidden="true"><i class="knob"></i></span><span class="lab">Мужской зал</span></button>
+        <button class="fader" role="tab" id="t-nails" aria-selected="false" aria-controls="e-nails" data-tab="nails" tabindex="-1" style="--rest:50%"><span class="trk" aria-hidden="true"><i class="knob"></i></span><span class="lab">Ногти</span></button>
+        <button class="fader" role="tab" id="t-cosmo" aria-selected="false" aria-controls="e-cosmo" data-tab="cosmo" tabindex="-1" style="--rest:28%"><span class="trk" aria-hidden="true"><i class="knob"></i></span><span class="lab">Косметология</span></button>
+        <button class="fader" role="tab" id="t-laser" aria-selected="false" aria-controls="e-laser" data-tab="laser" tabindex="-1" style="--rest:46%"><span class="trk" aria-hidden="true"><i class="knob"></i></span><span class="lab">Лазерная эпиляция</span></button>
+        <button class="fader" role="tab" id="t-pierc" aria-selected="false" aria-controls="e-pierc" data-tab="pierc" tabindex="-1" style="--rest:34%"><span class="trk" aria-hidden="true"><i class="knob"></i></span><span class="lab">Пирсинг</span></button>
+      </div>
+
+      <div class="pn ph on" id="e-women" role="tabpanel" aria-labelledby="t-women">
+        <div>
+          <div class="ptitle"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><h3>Женский зал</h3></div>
+          <div class="rows">
+            <div class="row"><div class="n">Женская стрижка</div><div class="p">от&nbsp;1&nbsp;300&nbsp;₽</div></div>
+          </div>
+          <div class="tags"><span>Окрашивание</span><span>Наращивание волос</span><span>Причёски</span><span>Детские стрижки</span><span>SPA для головы</span></div>
+          <p class="hint">Цены на эти услуги смотрите в полном прайсе.</p>
+        </div>
+        <figure class="pimg"><img src="img/hair-2.jpg" alt="Волосы после работы мастера салона «Камертон»" width="1024" height="768" loading="lazy"><figcaption>Волосы</figcaption></figure>
+      </div>
+
+      <div class="pn ph" id="e-men" role="tabpanel" aria-labelledby="t-men">
+        <div>
+          <div class="ptitle"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><h3>Мужской зал</h3></div>
+          <div class="rows">
+            <div class="row"><div class="n">Мужская стрижка</div><div class="p">1&nbsp;700&nbsp;₽</div></div>
+            <div class="row"><div class="n">Креативная стрижка, фейд</div><div class="p">1&nbsp;800&nbsp;₽</div></div>
+            <div class="row"><div class="n">Длинные волосы</div><div class="p">2&nbsp;500&nbsp;₽</div></div>
+            <div class="row"><div class="n">«Площадка»</div><div class="p">2&nbsp;300&nbsp;₽</div></div>
+            <div class="row"><div class="n">Под «0» / 1 насадка</div><div class="p">800&nbsp;₽</div></div>
+            <div class="row"><div class="n">Машинкой, 2+ насадки</div><div class="p">1&nbsp;300&nbsp;₽</div></div>
+            <div class="row"><div class="n">Опасной бритвой</div><div class="p">1&nbsp;300&nbsp;₽</div></div>
+            <div class="row"><div class="n">Шейвером</div><div class="p">900&nbsp;₽</div></div>
+            <div class="row"><div class="n">Оформление бороды</div><div class="p">1&nbsp;300&nbsp;₽</div></div>
+            <div class="row"><div class="n">Рисунки, узоры</div><div class="p">от&nbsp;200&nbsp;₽</div></div>
+            <div class="row"><div class="n">Чёрная маска</div><div class="p">1&nbsp;500&nbsp;₽</div></div>
+            <div class="row"><div class="n">Face Detox</div><div class="p">2&nbsp;000&nbsp;₽</div></div>
+          </div>
+        </div>
+        <figure class="pimg"><img src="img/men.jpg" alt="Мужская стрижка в салоне «Камертон»" width="1024" height="768" loading="lazy"><figcaption>Мужская стрижка</figcaption></figure>
+      </div>
+
+      <div class="pn ph" id="e-nails" role="tabpanel" aria-labelledby="t-nails">
+        <div>
+          <div class="ptitle"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><h3>Ногти</h3></div>
+          <div class="tags"><span>Ногтевой сервис</span><span>Ресницы и брови</span></div>
+          <p class="hint">Цены на ногтевой сервис, ресницы и брови смотрите в полном прайсе.</p>
+        </div>
+        <figure class="pimg"><img src="img/nails-1.jpg" alt="Ногтевой сервис в салоне «Камертон»" width="1024" height="768" loading="lazy"><figcaption>Ногтевой сервис</figcaption></figure>
+      </div>
+
+      <div class="pn ph" id="e-cosmo" role="tabpanel" aria-labelledby="t-cosmo">
+        <div>
+          <div class="ptitle"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><h3>Косметология</h3></div>
+          <div class="tags"><span>Лазерная</span><span>Аппаратная</span><span>Инъекционная</span><span>Чистки</span><span>Пилинги</span><span>Карбокситерапия</span></div>
+          <p class="hint">Цены на косметологию смотрите в полном прайсе.</p>
+          <p class="med">Имеются противопоказания, необходима консультация специалиста</p>
+        </div>
+        <figure class="pimg"><img src="img/cosmo.jpg" alt="Косметология в салоне «Камертон»" width="1024" height="768" loading="lazy"><figcaption>Косметология</figcaption></figure>
+      </div>
+
+      <div class="pn" id="e-laser" role="tabpanel" aria-labelledby="t-laser">
+        <div>
+          <div class="ptitle"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><h3>Лазерная эпиляция</h3></div>
+          <p class="hint" style="margin:0 0 8px">Женские комплексы. Состав комплексов уточняйте при записи.</p>
+          <div class="rows two">
+            <div class="row"><div class="n">Подготовка</div><div class="p">500&nbsp;₽</div></div>
+            <div class="row"><div class="n">Комплекс 1</div><div class="p">4&nbsp;100&nbsp;₽</div></div>
+            <div class="row"><div class="n">Комплекс 2</div><div class="p">4&nbsp;100&nbsp;₽</div></div>
+            <div class="row"><div class="n">Комплекс 3</div><div class="p">5&nbsp;500&nbsp;₽</div></div>
+            <div class="row"><div class="n">Комплекс 4</div><div class="p">7&nbsp;000&nbsp;₽</div></div>
+            <div class="row"><div class="n">Комплекс 5</div><div class="p">7&nbsp;500&nbsp;₽</div></div>
+            <div class="row"><div class="n">Комплекс 6</div><div class="p">7&nbsp;500&nbsp;₽</div></div>
+            <div class="row"><div class="n">Комплекс 7</div><div class="p">8&nbsp;600&nbsp;₽</div></div>
+            <div class="row"><div class="n">Комплекс 8</div><div class="p">9&nbsp;000&nbsp;₽</div></div>
+            <div class="row"><div class="n">Комплекс 9</div><div class="p">11&nbsp;500&nbsp;₽</div></div>
+            <div class="row"><div class="n">Комплекс 10</div><div class="p">19&nbsp;000&nbsp;₽</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pn" id="e-pierc" role="tabpanel" aria-labelledby="t-pierc">
+        <div>
+          <div class="ptitle"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><h3>Пирсинг</h3></div>
+          <div class="rows two">
+            <div class="row"><div class="n">Мочка уха</div><div class="p">от&nbsp;3&nbsp;000&nbsp;₽</div></div>
+            <div class="row"><div class="n">Хрящ уха</div><div class="p">4&nbsp;000&nbsp;₽</div></div>
+            <div class="row"><div class="n">Двойной прокол хряща</div><div class="p">5&nbsp;000&nbsp;₽</div></div>
+            <div class="row"><div class="n">Нос, губа, бровь, язык, пупок</div><div class="p">5&nbsp;000&nbsp;₽</div></div>
+            <div class="row"><div class="n">Замена, снятие, установка украшения</div><div class="p">1&nbsp;000&nbsp;₽</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="eqcta">
+        <a class="btn" href="https://n311915.yclients.com" target="_blank" rel="noopener">Полный прайс — 371&nbsp;позиция в&nbsp;YCLIENTS</a>
+        <a class="btn ghost" href="https://n311915.yclients.com" target="_blank" rel="noopener" style="color:var(--cream);border-color:rgba(245,238,221,.5)">Записаться онлайн</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section id="works" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Галерея</span><h2 class="rv d1" style="margin-top:14px">Салон <em>и&nbsp;работы</em></h2></div>
+      <p class="rv d2">Фото из карточки салона в 2ГИС</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр фото">
+      <button class="fbtn" aria-pressed="true" data-f="all">Все</button>
+      <button class="fbtn" aria-pressed="false" data-f="salon">Салон</button>
+      <button class="fbtn" aria-pressed="false" data-f="hair">Стрижки и волосы</button>
+      <button class="fbtn" aria-pressed="false" data-f="nails">Ногти</button>
+    </div>
+    <div class="gal all" id="gal">
+      <button class="gi big rv" data-c="salon"><img src="img/hall.jpg" alt="Зал салона «Камертон»" width="1024" height="768" loading="lazy"><span>Интерьер зала</span></button>
+      <button class="gi rv d1" data-c="nails"><img src="img/nails-1.jpg" alt="Ногтевой сервис" width="1024" height="768" loading="lazy"><span>Ногтевой сервис</span></button>
+      <button class="gi rv d2" data-c="hair"><img src="img/hair-1.jpg" alt="Волосы после работы мастера" width="1024" height="768" loading="lazy"><span>Волосы</span></button>
+      <button class="gi rv" data-c="hair"><img src="img/men.jpg" alt="Мужская стрижка" width="1024" height="768" loading="lazy"><span>Мужская стрижка</span></button>
+      <button class="gi rv d1" data-c="nails"><img src="img/nails-2.jpg" alt="Ногтевой сервис" width="1024" height="768" loading="lazy"><span>Ногтевой сервис</span></button>
+      <button class="gi rv d2" data-c="salon"><img src="img/cosmo.jpg" alt="Косметология" width="1024" height="768" loading="lazy"><span>Косметология</span></button>
+      <button class="gi rv" data-c="hair"><img src="img/kids-1.jpg" alt="Детская стрижка" width="1024" height="768" loading="lazy"><span>Детская стрижка</span></button>
+      <button class="gi rv d1" data-c="hair"><img src="img/hair-2.jpg" alt="Волосы после работы мастера" width="1024" height="768" loading="lazy"><span>Волосы</span></button>
+      <button class="gi rv d2" data-c="nails"><img src="img/nails-3.jpg" alt="Ногтевой сервис" width="1024" height="768" loading="lazy"><span>Ногтевой сервис</span></button>
+      <button class="gi rv" data-c="salon"><img src="img/hall-2.jpg" alt="Интерьер салона" width="1024" height="768" loading="lazy"><span>Интерьер салона</span></button>
+      <button class="gi rv d1" data-c="hair"><img src="img/hair-3.jpg" alt="Волосы после работы мастера" width="1024" height="768" loading="lazy"><span>Волосы</span></button>
+      <button class="gi rv d2" data-c="hair"><img src="img/kids-2.jpg" alt="Детская стрижка" width="1024" height="768" loading="lazy"><span>Детская стрижка</span></button>
+      <button class="gi rv" data-c="nails"><img src="img/nails-4.jpg" alt="Ногтевой сервис" width="1024" height="768" loading="lazy"><span>Ногтевой сервис</span></button>
+      <button class="gi rv d1" data-c="salon"><img src="img/cabinet.jpg" alt="Кабинет салона" width="1024" height="768" loading="lazy"><span>Кабинет</span></button>
+      <button class="gi rv d2" data-c="nails"><img src="img/nails-5.jpg" alt="Ногтевой сервис" width="1024" height="768" loading="lazy"><span>Ногтевой сервис</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""><p id="lbCap"></p></dialog>
+
+<!-- PRAISE -->
+<section id="praise" class="dk">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Отзывы</span><h2 class="rv d1" style="margin-top:14px">За что <em>хвалят</em></h2></div>
+      <p class="rv d2">Пересказ отзывов клиентов в 2ГИС</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card rv"><div class="stf" aria-hidden="true"><i class="nt" style="--x:14%;--y:28px"></i><i class="nt" style="--x:42%;--y:16px"></i><i class="nt" style="--x:70%;--y:34px"></i></div><h3>С&nbsp;момента открытия</h3><p>Многие ходят в салон с самого открытия. Отмечают дружелюбных сотрудников, стабильное качество и приемлемые цены.</p></article>
+      <article class="pr-card rv d1"><div class="stf" aria-hidden="true"><i class="nt" style="--x:14%;--y:10px"></i><i class="nt" style="--x:42%;--y:30px"></i><i class="nt" style="--x:70%;--y:20px"></i></div><h3>Стрижки и окрашивание</h3><p>Мастера приводят волосы в порядок и дают рекомендации по уходу за ними.</p></article>
+      <article class="pr-card rv d2"><div class="stf" aria-hidden="true"><i class="nt" style="--x:14%;--y:36px"></i><i class="nt" style="--x:42%;--y:22px"></i><i class="nt" style="--x:70%;--y:6px"></i></div><h3>Мужской зал</h3><p>Гости мужского зала пишут, что там стильно и профессионально.</p></article>
+    </div>
+    <div class="score rv">
+      <a href="https://2gis.ru/spb/firm/70000001052432145" target="_blank" rel="noopener"><strong>5.0</strong><span><b>2ГИС</b>148&nbsp;оценок</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- SALON -->
+<section id="salon">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Салон</span><h2 class="rv d1" style="margin-top:14px">Как <em>у&nbsp;нас</em></h2></div>
+    </div>
+    <div class="salon">
+      <figure class="rv"><img src="img/hall.jpg" alt="Зал салона" width="1024" height="768" loading="lazy"></figure>
+      <figure class="rv d1"><img src="img/hall-2.jpg" alt="Интерьер салона" width="1024" height="768" loading="lazy"></figure>
+      <figure class="rv d2"><img src="img/cabinet.jpg" alt="Кабинет салона" width="1024" height="768" loading="lazy"></figure>
+    </div>
+    <div class="access rv">
+      <div class="ai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="4" r="1.8"/><path d="M10 7.5v6h5l3 5.5"/><path d="M7.2 10.5a5.5 5.5 0 1 0 7.6 7.8"/></svg></div>
+      <div><b>Доступная среда</b><span>Пандус и подъёмник</span></div>
+    </div>
+    <div class="facts rv">
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Ежедневно 10:00–21:00</span>
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Карта, наличные, QR</span>
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12a8 8 0 0 1 16 0M12 4v16"/></svg>«Плати частями»</span>
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg>Wi-Fi</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1" style="margin-top:14px">Как <em>добраться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Санкт-Петербург, Ленинский пр., 45 к1 ст1 (Красносельский район)</p></div>
+        <div class="ci"><small>Часы работы</small><p>Ежедневно, 10:00–21:00</p></div>
+        <div class="ci"><small>Телефон / WhatsApp</small><a class="big" href="tel:+79313784165">+7 931 378-41-65</a></div>
+        <div class="ci"><small>Мессенджеры и соцсети</small>
+          <div class="socials">
+            <a href="https://wa.me/79313784165" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://t.me/salonkamerton.ru" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://vk.com/salon_kamerton" target="_blank" rel="noopener">ВКонтакте</a>
+            <a href="https://n311915.yclients.com" target="_blank" rel="noopener">Онлайн-запись</a>
+          </div>
+        </div>
+        <div class="ctas"><a class="btn ghost" href="https://yandex.ru/maps/?rtext=~59.865245%2C30.160268&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a></div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?ll=30.160268%2C59.865245&z=16&pt=30.160268%2C59.865245%2Cpm2rdm" title="Салон «Камертон» на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <svg class="wv w2" viewBox="0 0 2400 100" preserveAspectRatio="none" aria-hidden="true"><path data-h="100" data-a="36"/></svg>
+  <svg class="wv w1" viewBox="0 0 2400 100" preserveAspectRatio="none" aria-hidden="true"><path data-h="60" data-a="30"/></svg>
+  <div class="wrap">
+    <svg class="ficon rv" aria-hidden="true"><use href="#fork"/></svg>
+    <span class="eyebrow rv" style="color:var(--brass)">Запись</span>
+    <h2 class="rv d1">Готовы <em style="color:var(--brass-l)">настроиться?</em></h2>
+    <p class="lead rv d2">Выберите услугу и удобное время — запишитесь онлайн или позвоните в салон.</p>
+    <div class="ctas rv d3">
+      <a class="btn" href="https://n311915.yclients.com" target="_blank" rel="noopener">Записаться онлайн</a>
+      <a class="btn ghost" href="tel:+79313784165">+7 931 378-41-65</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© Камертон — салон красоты, Санкт-Петербург, Ленинский пр., 45 к1 ст1</p>
+    <p>Демо-концепт. Цены и данные — из открытых источников (2ГИС, YCLIENTS) на 22.10.2026. Имеются противопоказания, необходима консультация специалиста.</p>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79313784165"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+  <a href="https://wa.me/79313784165" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>WhatsApp</a>
+  <a class="main" href="https://n311915.yclients.com" target="_blank" rel="noopener">Записаться</a>
+</nav>
+
+<script>
+(() => {
+  // Звуковые волны (декор): путь шириной 2400, период делит 1200 — цикл бесшовный
+  document.querySelectorAll('path[data-h]').forEach(p => {
+    const h = +p.dataset.h, a = +p.dataset.a, n = 2400 / h;
+    let d = `M0 50 q${h / 2} ${-a} ${h} 0`;
+    for (let i = 1; i < n; i++) d += ` t${h} 0`;
+    p.setAttribute('d', d);
+  });
+
+  // Статус «открыто/закрыто» по московскому времени (ежедневно 10:00–21:00)
+  const st = document.getElementById('status');
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
+  const m = now.getHours() * 60 + now.getMinutes();
+  const open = m >= 10 * 60 && m < 21 * 60;
+  st.classList.toggle('closed', !open);
+  st.querySelector('span').textContent = open ? 'Открыто сейчас · до 21:00' : (m < 10 * 60 ? 'Сейчас закрыто · откроемся в 10:00' : 'Сейчас закрыто · откроемся завтра в 10:00');
+
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    hdr.classList.toggle('scrolled', scrollY > 8);
+    mbar.classList.toggle('show', scrollY > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Эквалайзер залов
+  const faders = [...document.querySelectorAll('.fader')];
+  const pick = (f, focus) => {
+    faders.forEach(x => { const on = x === f; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1; });
+    document.querySelectorAll('.pn').forEach(p => p.classList.toggle('on', p.id === 'e-' + f.dataset.tab));
+    if (focus) f.focus();
+  };
+  faders.forEach((f, i) => {
+    f.addEventListener('click', () => pick(f));
+    f.addEventListener('keydown', e => {
+      const k = e.key;
+      if (k === 'ArrowRight' || k === 'ArrowDown') { e.preventDefault(); pick(faders[(i + 1) % faders.length], true); }
+      if (k === 'ArrowLeft' || k === 'ArrowUp') { e.preventDefault(); pick(faders[(i - 1 + faders.length) % faders.length], true); }
+    });
+  });
+
+  // Фильтр галереи и лайтбокс
+  const gal = document.getElementById('gal'), items = gal.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    gal.classList.toggle('all', f.dataset.f === 'all');
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt;
+    lbCap.textContent = i.querySelector('span').textContent;
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>

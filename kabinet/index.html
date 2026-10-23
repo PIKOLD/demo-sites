@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Кабинет — студия красоты в Пушкине</title>
+<meta name="description" content="Стрижки и окрашивание, маникюр и педикюр, вертикальный солярий, лазерная эпиляция и косметология. Ростовская ул., 15, Пушкин. Ежедневно 10:00–21:00.">
+<meta name="theme-color" content="#171514">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Tenor+Sans&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Tenor+Sans&display=swap"></noscript>
+<style>
+:root{
+  --ink:#171514; --gr:#211F1D; --gr2:#2C2926; --gold:#C9A25F; --goldl:#E4C88F; --goldd:#8A6A30;
+  --milk:#F5F0E6; --paper:#FCFAF5; --sand:#E8DFCE; --mut:#6B645A; --mutl:#B2AA9C;
+  --line:rgba(23,21,20,.14); --linel:rgba(228,200,143,.24);
+  --hexF:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);
+  --hexP:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);
+  --head:"Tenor Sans","Trebuchet MS",system-ui,sans-serif;
+  --sans:"Onest",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1160px;
+  --pat:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100' viewBox='0 0 56 100'%3E%3Cg fill='none' stroke='%23C9A25F' stroke-opacity='.13' stroke-width='1'%3E%3Cpath d='M28 66L0 50L0 16L28 0L56 16L56 50L28 66L28 100'/%3E%3Cpath d='M28 0L28 34L0 50L0 84L28 100L56 84L56 50L28 34'/%3E%3C/g%3E%3C/svg%3E");
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--milk);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{width:min(100% - 32px,var(--wrap));margin-inline:auto}
+h1,h2,h3,h4{font-family:var(--head);font-weight:400;margin:0;line-height:1.08}
+h2{font-size:clamp(32px,5.4vw,60px);letter-spacing:-.005em}
+em{font-style:normal;color:var(--goldd)}
+.dk em{color:var(--gold)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:600 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--goldd)}
+.eyebrow::before{content:"";width:12px;height:11px;background:currentColor;clip-path:var(--hexF)}
+.dk .eyebrow{color:var(--gold)}
+.lead{font-size:clamp(16px,1.6vw,18px);max-width:54ch;margin:0}
+section{padding:clamp(64px,9vw,120px) 0}
+.dk{background:var(--ink);color:var(--milk)}
+.hexbg{position:relative;isolation:isolate}
+.hexbg::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--pat);background-size:84px 150px;-webkit-mask-image:linear-gradient(100deg,transparent 0,#000 70%);mask-image:linear-gradient(100deg,transparent 0,#000 70%);pointer-events:none}
+
+/* demo */
+.demo{background:var(--gold);color:var(--ink);font-size:12.5px;line-height:1.4;padding:8px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:11px;border:1px solid rgba(23,21,20,.55);border-radius:99px;padding:3px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(23,21,20,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s;color:var(--milk)}
+.hdr.scrolled{border-color:var(--linel)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo svg{width:30px;height:27px;color:var(--gold);flex:none}
+.logo b{font:400 22px/1 var(--head);letter-spacing:.22em;text-transform:uppercase}
+.nav{display:none;gap:26px}
+.nav a{text-decoration:none;font-weight:500;font-size:14.5px;color:#D9D2C4;transition:color .25s}
+.nav a:hover{color:var(--goldl)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 26px;border-radius:99px;border:1px solid var(--gold);background:var(--gold);color:var(--ink);font-weight:600;font-size:15px;text-decoration:none;cursor:pointer;transition:transform .25s,background .25s,color .25s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px);background:var(--goldl);border-color:var(--goldl)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.line{background:transparent;color:var(--milk);border-color:rgba(228,200,143,.55)}
+.btn.line:hover{background:rgba(228,200,143,.14);border-color:var(--goldl)}
+.btn.line.l{color:var(--ink);border-color:var(--ink)}
+.btn.line.l:hover{background:var(--ink);color:var(--milk);border-color:var(--ink)}
+.btn.sm{min-height:42px;padding:0 20px;font-size:14px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border-radius:50%;border:1px solid var(--linel);background:transparent;display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:18px;height:1.5px;background:var(--milk);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:var(--milk);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--ink) var(--pat);background-size:84px 150px;padding:110px 24px 40px;display:flex;flex-direction:column;gap:4px;opacity:0;pointer-events:none;transition:opacity .3s;color:var(--milk)}
+.mnav a{font:400 32px/1.25 var(--head);text-decoration:none;padding:8px 0;border-bottom:1px solid var(--linel)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{padding:clamp(32px,5vw,72px) 0 clamp(56px,8vw,104px);background:var(--ink);color:var(--milk)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:44px;align-items:center;position:relative;z-index:1}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px}}
+.status{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--linel);border-radius:99px;padding:8px 14px 8px 12px;font-size:13.5px;font-weight:600;background:rgba(255,255,255,.04)}
+.status i{width:9px;height:9px;border-radius:50%;background:#4DBE72;box-shadow:0 0 0 0 rgba(77,190,114,.5);animation:pulse 2s infinite;flex:none}
+.status.closed i{background:#D4685C;animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(77,190,114,0)}100%{box-shadow:0 0 0 0 rgba(77,190,114,0)}}
+.hero h1{font-size:clamp(38px,5.6vw,78px);margin:22px 0;line-height:1.04}
+.hero h1 em{color:var(--gold)}
+.hero .lead{color:#D6CEBF;margin-bottom:22px}
+.place{display:flex;gap:10px;align-items:flex-start;color:var(--mutl);font-size:14.5px;margin-bottom:28px}
+.place svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--gold)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.rate{display:flex;align-items:center;gap:14px;margin-top:32px;padding-top:24px;border-top:1px solid var(--linel)}
+.rate strong{font:400 44px/1 var(--head);color:var(--goldl)}
+.rate span{font-size:13px;line-height:1.4;color:var(--mutl)}
+.rate b{display:block;color:var(--gold);letter-spacing:3px;font-size:13px}
+
+.cluster{position:relative;aspect-ratio:1/.9;width:100%;max-width:580px;margin-inline:auto}
+.hx{position:absolute;margin:0;aspect-ratio:1.1547;filter:drop-shadow(0 18px 24px rgba(0,0,0,.45))}
+.hxi{display:block;width:100%;height:100%;clip-path:var(--hexF);background:linear-gradient(150deg,var(--goldl),var(--goldd));padding:2px}
+.hxi img{width:100%;height:100%;object-fit:cover;clip-path:var(--hexF)}
+.hx.big{width:70%;left:0;top:16%}
+.hx.s1{width:36%;right:0;top:0;animation:float 7s ease-in-out infinite}
+.hx.s2{width:36%;right:0;top:56%;animation:float 8s ease-in-out -3s infinite}
+.hx.bd{width:29%;left:2%;top:72%;z-index:3;filter:drop-shadow(0 12px 18px rgba(0,0,0,.5))}
+.bd .hxi{background:var(--ink);padding:3px}
+.bd .in{display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;height:100%;clip-path:var(--hexF);background:linear-gradient(150deg,var(--goldl),var(--gold));color:var(--ink);text-align:center;line-height:1.1}
+.bd strong{font:400 clamp(22px,4.4vw,30px)/1 var(--head)}
+.bd small{font-size:clamp(8.5px,1.9vw,11px);font-weight:600;line-height:1.2;margin-top:2px}
+@keyframes float{50%{transform:translateY(-9px)}}
+
+/* strip */
+.strip{background:var(--gold);color:var(--ink);overflow:hidden;padding:14px 0}
+.track{display:flex;width:max-content;animation:run 40s linear infinite}
+.track span{font:400 clamp(18px,2.4vw,24px)/1 var(--head);padding:0 22px;white-space:nowrap;display:flex;align-items:center;gap:44px;text-transform:uppercase;letter-spacing:.08em}
+.track span::after{content:"";width:12px;height:11px;background:var(--ink);clip-path:var(--hexF)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* head */
+.head{display:grid;gap:16px;margin-bottom:44px}
+@media (min-width:960px){.head{grid-template-columns:minmax(0,1fr) auto;align-items:end}}
+.head h2{margin-top:14px}
+.head p{margin:0;color:var(--mut);font-size:14px}
+.dk .head p{color:var(--mutl)}
+
+/* honeycomb navigator */
+.nv{display:grid;grid-template-columns:minmax(0,1fr);gap:36px;align-items:start}
+@media (min-width:960px){.nv{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px}}
+.honey{position:relative;aspect-ratio:1.0392;width:100%;max-width:480px;margin-inline:auto}
+.hn{position:absolute;width:33.333%;height:40%;padding:0;border:0;background:transparent;cursor:pointer;clip-path:var(--hexP);color:var(--milk)}
+.hni{position:absolute;inset:3px;clip-path:var(--hexP);background:var(--goldd);display:grid;place-items:center;transition:background .3s}
+.hni::before{content:"";position:absolute;inset:1.5px;clip-path:var(--hexP);background:var(--gr);transition:background .3s}
+.hni>span{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:5px;padding:0 6px;text-align:center;font-weight:600;font-size:11.5px;line-height:1.15;overflow-wrap:anywhere}
+.hni svg{width:22px;height:22px;color:var(--gold);transition:color .3s}
+.hn:hover .hni::before,.hn:focus-visible .hni::before{background:var(--gr2)}
+.hn[aria-pressed="true"] .hni{background:var(--goldl)}
+.hn[aria-pressed="true"] .hni::before{background:linear-gradient(160deg,var(--goldl),var(--gold))}
+.hn[aria-pressed="true"]{color:var(--ink)}
+.hn[aria-pressed="true"] svg{color:var(--ink)}
+.hn:focus-visible .hni{background:var(--goldl)}
+.hc{position:absolute;width:33.333%;height:40%;left:33.333%;top:30%}
+.hc .hni{background:transparent;background-image:none;border:0}
+.hc .hni::before{background:transparent;border:0}
+.hc .hni{background:rgba(138,106,48,.4)}
+.hc .hni::before{background:var(--milk)}
+.hc .hni span{font-weight:500;font-size:10.5px;color:var(--mut);line-height:1.25}
+.h1{left:16.667%;top:0}.h2{left:50%;top:0}.h3{left:0;top:30%}.h4{left:66.667%;top:30%}.h5{left:16.667%;top:60%}.h6{left:50%;top:60%}
+@media (min-width:520px){.hni>span{font-size:14px;gap:8px}.hni svg{width:30px;height:30px}.hc .hni span{font-size:13px}}
+.pbox{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:clamp(20px,3.4vw,38px);box-shadow:0 24px 50px -30px rgba(23,21,20,.35);scroll-margin-top:84px}
+.panel{display:none}
+.panel.on{display:block;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.panel h3{font-size:clamp(28px,4vw,38px);margin-bottom:6px}
+.panel .sub{margin:0 0 18px;color:var(--mut);font-size:14px}
+.grp h4{font:600 12px/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--goldd);margin:22px 0 4px}
+.row{display:flex;align-items:baseline;gap:14px;padding:13px 0;border-bottom:1px solid var(--line)}
+.row .n{flex:1 1 auto;min-width:0;font-weight:500}
+.row .n small{display:block;color:var(--mut);font-size:13px;font-weight:400}
+.row .p{font:400 22px/1 var(--head);white-space:nowrap}
+.note{margin:18px 0 0;font-size:13px;color:var(--mut)}
+.med{margin:18px 0 0;padding:14px 16px;border-left:3px solid var(--gold);background:#F3EBDA;font-size:14px;font-weight:500}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 0}
+.chips span{border:1px solid var(--line);border-radius:99px;padding:8px 14px;font-size:14px;font-weight:500;background:var(--milk)}
+.panel .btn{margin-top:24px}
+.panel .btn.line.l{margin-left:0}
+
+/* gallery */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.tab{border:1px solid var(--linel);background:transparent;border-radius:99px;padding:10px 18px;font-weight:600;font-size:14px;cursor:pointer;transition:all .25s;color:var(--milk)}
+.tab[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (min-width:760px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}}
+.gi{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--gr);cursor:zoom-in;border:0;padding:0;clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px));transition:opacity .4s}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.07)}
+.gi span{position:absolute;left:12px;bottom:10px;max-width:calc(100% - 24px);background:rgba(23,21,20,.78);color:var(--goldl);font-size:12px;font-weight:600;padding:5px 10px;border-radius:99px}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,1000px);max-height:92vh;color:#fff;overflow:visible}
+.lb::backdrop{background:rgba(15,13,12,.88)}
+.lb img{max-height:76vh;max-width:100%;width:auto;margin:auto;border-radius:14px}
+.lb p{text-align:center;margin:12px 0 0;font-size:14px;color:var(--goldl)}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:var(--gold);color:var(--ink);font-size:24px;cursor:pointer}
+
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pc{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:28px}
+.pc .num{width:56px;height:49px;clip-path:var(--hexF);background:var(--ink);color:var(--gold);display:grid;place-items:center;font:400 20px/1 var(--head)}
+.pc h3{font-size:27px;margin:22px 0 10px}
+.pc p{margin:0;color:#3A352F}
+.score{display:flex;margin-top:22px}
+.score a{display:flex;align-items:center;gap:16px;background:var(--ink);color:var(--milk);border-radius:20px;padding:16px 24px;text-decoration:none;flex:1 1 260px;max-width:420px}
+.score strong{font:400 46px/1 var(--head);color:var(--goldl)}
+.score span{font-size:13.5px;color:var(--mutl)}
+.score span b{display:block;color:var(--milk);font-size:15px}
+
+/* studio */
+.sg{display:grid;grid-template-columns:minmax(0,1fr);gap:40px;align-items:center}
+@media (min-width:900px){.sg{grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:64px}}
+.mosaic{position:relative;aspect-ratio:1.4846;width:100%;max-width:640px;margin-inline:auto}
+.st{position:absolute;width:33.333%;height:57.143%;padding:0;border:0;background:transparent;cursor:zoom-in;clip-path:var(--hexP)}
+.sti{position:absolute;inset:3px;clip-path:var(--hexP);background:linear-gradient(150deg,var(--goldl),var(--goldd));padding:2px;overflow:hidden}
+.sti img{width:100%;height:100%;object-fit:cover;clip-path:var(--hexP);transition:transform .8s}
+.st:hover img{transform:scale(1.08)}
+.t1{left:0;top:0}.t2{left:33.333%;top:0}.t3{left:66.667%;top:0}.t4{left:16.667%;top:42.857%}.t5{left:50%;top:42.857%}
+.sg p{color:#D6CEBF;margin:20px 0 0;max-width:50ch}
+.sg h2{margin-top:14px}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.fact{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--linel);border-radius:99px;padding:9px 16px;font-size:14px;font-weight:500;background:rgba(255,255,255,.04)}
+.fact svg{width:16px;height:16px;color:var(--gold);flex:none}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start}
+.ci small{display:block;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--goldd);margin-bottom:6px}
+.ci p,.ci a{margin:0;font-size:18px;font-weight:500;text-decoration:none}
+.ci a.big{font:400 34px/1.1 var(--head)}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{display:inline-flex;align-items:center;border:1px solid var(--ink);border-radius:99px;padding:10px 18px;font-size:14px;font-weight:600;transition:background .25s,color .25s}
+.socials a:hover{background:var(--ink);color:var(--milk)}
+.map{border-radius:20px;overflow:hidden;min-height:380px;background:var(--sand);border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* final */
+.final{text-align:center}
+.final h2{font-size:clamp(36px,6.4vw,76px);max-width:16ch;margin:18px auto}
+.final .lead{margin:0 auto;color:#D6CEBF}
+.final .ctas{justify-content:center;margin-top:30px}
+.final.hexbg::before{-webkit-mask-image:radial-gradient(70% 90% at 50% 50%,#000,transparent);mask-image:radial-gradient(70% 90% at 50% 50%,#000,transparent)}
+footer{background:var(--ink);color:var(--mutl);padding:30px 0 120px;font-size:13px;border-top:1px solid var(--linel)}
+footer .wrap{display:grid;gap:10px}
+footer b{color:var(--goldl);font-weight:600}
+footer a{color:var(--goldl)}
+@media (min-width:960px){footer{padding-bottom:36px}}
+
+/* mobile bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:8px;padding:8px;background:rgba(23,21,20,.94);border:1px solid var(--linel);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:22px;box-shadow:0 18px 40px -12px rgba(0,0,0,.55);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:15px;color:var(--milk);text-decoration:none;font-size:11.5px;font-weight:600}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--gold);color:var(--ink);flex-direction:row;font-size:14px;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}.rv.d4{transition-delay:.4s}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта для студии красоты «Кабинет». Данные из открытых источников (2ГИС) на 22.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Кабинет — наверх"><svg viewBox="0 0 30 27" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M8 1.5h14L29 13.5 22 25.5H8L1 13.5z"/><path d="M11 8h8l4 5.5-4 5.5h-8l-4-5.5z" opacity=".55"/></svg><b>Кабинет</b></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#services">Услуги и цены</a>
+      <a href="#works">Работы</a>
+      <a href="#praise">Отзывы</a>
+      <a href="#studio">Студия</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm" href="https://wa.me/79819119029?text=Здравствуйте!%20Хочу%20записаться%20в%20студию%20«Кабинет».%20Подскажите%20свободное%20время." target="_blank" rel="noopener">Записаться</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#services">Услуги и цены</a>
+  <a href="#works">Работы</a>
+  <a href="#praise">Отзывы</a>
+  <a href="#studio">Студия</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero hexbg dk">
+  <div class="wrap">
+    <div>
+      <span class="status rv" id="status"><i></i><span>Ежедневно 10:00–21:00</span></span>
+      <h1 class="rv d1">Всё для красоты — <em>в&nbsp;одном кабинете</em></h1>
+      <p class="lead rv d2">Студия красоты «Кабинет» в Пушкине: стрижки и окрашивание, маникюр и педикюр, вертикальный солярий, лазерная эпиляция и косметология.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Ростовская ул., 15 · Пушкин, Пушкинский район, Санкт-Петербург</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn" href="tel:+79819119029"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+        <a class="btn line" href="https://yandex.ru/maps/?rtext=~59.740425%2C30.472571&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+      </div>
+      <div class="rate rv d3"><strong>4.8</strong><span><b>★★★★★</b>2ГИС · 43 оценки</span></div>
+    </div>
+    <div class="cluster rv d2">
+      <figure class="hx big"><span class="hxi"><img src="img/hero.jpg" alt="Зал студии «Кабинет» с шестигранной подсветкой на потолке" width="1024" height="768" fetchpriority="high"></span></figure>
+      <figure class="hx s1"><span class="hxi"><img src="img/hall-2.jpg" alt="Зал студии" width="1024" height="768" loading="lazy"></span></figure>
+      <figure class="hx s2"><span class="hxi"><img src="img/makeup.jpg" alt="Зона макияжа" width="1024" height="768" loading="lazy"></span></figure>
+      <div class="hx bd"><span class="hxi"><span class="in"><strong>4.8</strong><small>2ГИС · 43&nbsp;оценки</small></span></span></div>
+    </div>
+  </div>
+</section>
+
+<div class="strip" aria-hidden="true"><div class="track">
+  <span>Стрижки</span><span>Окрашивание</span><span>Химзавивка</span><span>Укладки</span><span>Маникюр</span><span>Педикюр</span><span>Наращивание</span><span>Солярий</span><span>Лазерная эпиляция</span><span>Косметология</span>
+  <span>Стрижки</span><span>Окрашивание</span><span>Химзавивка</span><span>Укладки</span><span>Маникюр</span><span>Педикюр</span><span>Наращивание</span><span>Солярий</span><span>Лазерная эпиляция</span><span>Косметология</span>
+</div></div>
+
+<!-- SERVICES: соты-навигатор -->
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Соты-навигатор</span><h2 class="rv d1">Услуги <em>и цены</em></h2></div>
+      <p class="rv d2">Нажмите на соту — откроются цены. Прайс из карточки 2ГИС на 22.08.2026.</p>
+    </div>
+    <div class="nv">
+      <div class="honey rv" role="group" aria-label="Направления студии">
+        <button class="hn h1" aria-pressed="true" aria-controls="p-hair" data-p="hair"><span class="hni"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.6 7.6L20 18M8.6 16.4L20 6"/></svg>Волосы</span></span></button>
+        <button class="hn h2" aria-pressed="false" aria-controls="p-color" data-p="color"><span class="hni"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M12 3C8 8 6 11 6 14a6 6 0 0 0 12 0c0-3-2-6-6-11z"/></svg>Окрашивание</span></span></button>
+        <button class="hn h3" aria-pressed="false" aria-controls="p-nails" data-p="nails"><span class="hni"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="11" width="8" height="10" rx="2"/><path d="M10 11V8h4v3M11 8V3h2v5"/></svg>Ногти</span></span></button>
+        <div class="hc" aria-hidden="true"><span class="hni"><span>Нажмите на соту</span></span></div>
+        <button class="hn h4" aria-pressed="false" aria-controls="p-pedi" data-p="pedi"><span class="hni"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M8 21c-2-1-2-4-1-8 .5-3 2-5 4-5s3 2 3 5c0 3 2 5 2 7 0 2-5 2-8 1z"/><circle cx="17" cy="6" r="1.2"/><circle cx="14" cy="4" r="1"/></svg>Педикюр</span></span></button>
+        <button class="hn h5" aria-pressed="false" aria-controls="p-sun" data-p="sun"><span class="hni"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>Солярий</span></span></button>
+        <button class="hn h6" aria-pressed="false" aria-controls="p-cosmo" data-p="cosmo"><span class="hni"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>Косметология</span></span></button>
+      </div>
+
+      <div class="pbox rv d1" id="pbox">
+        <div class="panel on" id="p-hair">
+          <h3>Волосы</h3>
+          <div class="grp"><h4>Женские стрижки</h4>
+            <div class="row"><div class="n">Длинные волосы</div><div class="p">от&nbsp;1&nbsp;100&nbsp;₽</div></div>
+            <div class="row"><div class="n">Средние волосы</div><div class="p">950&nbsp;₽</div></div>
+            <div class="row"><div class="n">Короткие волосы</div><div class="p">850&nbsp;₽</div></div>
+            <div class="row"><div class="n">Каре</div><div class="p">от&nbsp;1&nbsp;000&nbsp;₽</div></div>
+            <div class="row"><div class="n">Одним срезом</div><div class="p">от&nbsp;600&nbsp;₽</div></div>
+          </div>
+          <div class="grp"><h4>Мужские стрижки</h4>
+            <div class="row"><div class="n">Модельная</div><div class="p">от&nbsp;600&nbsp;₽</div></div>
+            <div class="row"><div class="n">Удлинённая</div><div class="p">750&nbsp;₽</div></div>
+          </div>
+          <div class="grp"><h4>Укладки</h4>
+            <div class="row"><div class="n">Укладка</div><div class="p">700&nbsp;₽</div></div>
+            <div class="row"><div class="n">Локоны</div><div class="p">1&nbsp;000&nbsp;₽</div></div>
+          </div>
+          <div class="grp"><h4>Химическая завивка</h4>
+            <div class="row"><div class="n">Химическая завивка</div><div class="p">от&nbsp;3&nbsp;500&nbsp;₽</div></div>
+          </div>
+          <a class="btn" href="https://wa.me/79819119029?text=Здравствуйте!%20Хочу%20записаться%20в%20«Кабинет»%20на%20стрижку.%20Подскажите%20свободное%20время." target="_blank" rel="noopener">Записаться на стрижку</a>
+        </div>
+
+        <div class="panel" id="p-color">
+          <h3>Окрашивание</h3>
+          <div class="grp"><h4>Окрашивание волос</h4>
+            <div class="row"><div class="n">В один тон</div><div class="p">1&nbsp;400&nbsp;₽</div></div>
+            <div class="row"><div class="n">Блондирование</div><div class="p">3&nbsp;500&nbsp;₽</div></div>
+            <div class="row"><div class="n">Мелирование</div><div class="p">4&nbsp;500&nbsp;₽</div></div>
+            <div class="row"><div class="n">Сложное окрашивание</div><div class="p">8&nbsp;000&nbsp;₽</div></div>
+          </div>
+          <a class="btn" href="https://wa.me/79819119029?text=Здравствуйте!%20Хочу%20записаться%20в%20«Кабинет»%20на%20окрашивание.%20Подскажите%20свободное%20время." target="_blank" rel="noopener">Записаться на окрашивание</a>
+        </div>
+
+        <div class="panel" id="p-nails">
+          <h3>Ногти</h3>
+          <div class="grp"><h4>Маникюр</h4>
+            <div class="row"><div class="n">Маникюр без покрытия</div><div class="p">от&nbsp;800&nbsp;₽</div></div>
+            <div class="row"><div class="n">Снятие + маникюр + гель-лак</div><div class="p">1&nbsp;950&nbsp;₽</div></div>
+            <div class="row"><div class="n">Наращивание</div><div class="p">2&nbsp;900&nbsp;₽</div></div>
+            <div class="row"><div class="n">Мужской маникюр</div><div class="p">900&nbsp;₽</div></div>
+          </div>
+          <div class="grp"><h4>Дизайн, доплата</h4>
+            <div class="row"><div class="n">Френч</div><div class="p">+350&nbsp;₽</div></div>
+            <div class="row"><div class="n">Кошачий глаз</div><div class="p">+150&nbsp;₽</div></div>
+          </div>
+          <a class="btn" href="https://wa.me/79819119029?text=Здравствуйте!%20Хочу%20записаться%20в%20«Кабинет»%20на%20маникюр.%20Подскажите%20свободное%20время." target="_blank" rel="noopener">Записаться на маникюр</a>
+        </div>
+
+        <div class="panel" id="p-pedi">
+          <h3>Педикюр</h3>
+          <div class="grp"><h4>Педикюр</h4>
+            <div class="row"><div class="n">Стопы и пальчики без покрытия</div><div class="p">от&nbsp;2&nbsp;000&nbsp;₽</div></div>
+            <div class="row"><div class="n">Пальчики + гель-лак</div><div class="p">2&nbsp;300&nbsp;₽</div></div>
+            <div class="row"><div class="n">Комплекс: педикюр + маникюр с гель-лаком</div><div class="p">3&nbsp;400&nbsp;₽</div></div>
+          </div>
+          <a class="btn" href="https://wa.me/79819119029?text=Здравствуйте!%20Хочу%20записаться%20в%20«Кабинет»%20на%20педикюр.%20Подскажите%20свободное%20время." target="_blank" rel="noopener">Записаться на педикюр</a>
+        </div>
+
+        <div class="panel" id="p-sun">
+          <h3>Солярий</h3>
+          <div class="grp"><h4>Вертикальный солярий</h4>
+            <div class="row"><div class="n">Вертикальный солярий<small>В источнике указано «40 ₽» без единицы тарификации — уточняйте при записи</small></div><div class="p">40&nbsp;₽</div></div>
+          </div>
+          <a class="btn" href="https://wa.me/79819119029?text=Здравствуйте!%20Хочу%20записаться%20в%20«Кабинет»%20в%20солярий.%20Подскажите%20свободное%20время." target="_blank" rel="noopener">Записаться в солярий</a>
+        </div>
+
+        <div class="panel" id="p-cosmo">
+          <h3>Косметология</h3>
+          <p class="sub">Цен в источнике нет — стоимость и подбор процедур по консультации.</p>
+          <div class="grp"><h4>Направления</h4>
+            <div class="chips"><span>Лазерная</span><span>Аппаратная</span><span>Инъекционная</span><span>Чистки</span><span>Пилинги</span></div>
+          </div>
+          <p class="note">Также в студии: лазерная эпиляция — стоимость уточняйте при записи.</p>
+          <p class="med">Имеются противопоказания, необходима консультация специалиста.</p>
+          <a class="btn" href="https://wa.me/79819119029?text=Здравствуйте!%20Хочу%20записаться%20в%20«Кабинет»%20на%20консультацию%20по%20косметологии." target="_blank" rel="noopener">Записаться на консультацию</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section id="works" class="dk">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Портфолио</span><h2 class="rv d1">Работы <em>мастеров</em></h2></div>
+      <p class="rv d2">Фото из карточки студии в 2ГИС</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр работ">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="hair">Волосы</button>
+      <button class="tab" aria-pressed="false" data-f="nails">Ногти</button>
+    </div>
+    <div class="grid">
+      <button class="gi rv" data-c="hair" data-lb data-cap="Стрижки и окрашивание"><img src="img/hair-1.jpg" alt="Работа мастера по волосам: стрижка и окрашивание" width="1024" height="768" loading="lazy"><span>Стрижки и окрашивание</span></button>
+      <button class="gi rv d1" data-c="nails" data-lb data-cap="Ногти"><img src="img/nails-1.jpg" alt="Работа мастера по ногтям" width="1024" height="768" loading="lazy"><span>Ногти</span></button>
+      <button class="gi rv d2" data-c="hair" data-lb data-cap="Стрижки и окрашивание"><img src="img/hair-2.jpg" alt="Работа мастера по волосам: стрижка и окрашивание" width="1024" height="768" loading="lazy"><span>Стрижки и окрашивание</span></button>
+      <button class="gi rv d3" data-c="nails" data-lb data-cap="Ногти"><img src="img/nails-2.jpg" alt="Работа мастера по ногтям" width="1024" height="768" loading="lazy"><span>Ногти</span></button>
+      <button class="gi rv" data-c="hair" data-lb data-cap="Стрижки и окрашивание"><img src="img/hair-3.jpg" alt="Работа мастера по волосам: стрижка и окрашивание" width="1024" height="768" loading="lazy"><span>Стрижки и окрашивание</span></button>
+      <button class="gi rv d1" data-c="nails" data-lb data-cap="Ногти"><img src="img/nails-3.jpg" alt="Работа мастера по ногтям" width="1024" height="768" loading="lazy"><span>Ногти</span></button>
+      <button class="gi rv d2" data-c="hair" data-lb data-cap="Стрижки и окрашивание"><img src="img/hair-4.jpg" alt="Работа мастера по волосам: стрижка и окрашивание" width="1024" height="768" loading="lazy"><span>Стрижки и окрашивание</span></button>
+      <button class="gi rv d3" data-c="nails" data-lb data-cap="Ногти"><img src="img/nails-4.jpg" alt="Работа мастера по ногтям" width="1024" height="768" loading="lazy"><span>Ногти</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button id="lbClose" aria-label="Закрыть">×</button><img id="lbImg" alt=""><p id="lbCap"></p></dialog>
+
+<!-- PRAISE -->
+<section id="praise">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Отзывы</span><h2 class="rv d1">За что <em>хвалят</em></h2></div>
+      <p class="rv d2">Пересказ отзывов клиентов в 2ГИС</p>
+    </div>
+    <div class="praise">
+      <article class="pc rv"><span class="num">1</span><h3>К мастерам ходят годами</h3><p>Клиенты пишут, что ходят к мастерам маникюра годами: отмечают внимательное отношение, качественную работу и скорость.</p></article>
+      <article class="pc rv d1"><span class="num">2</span><h3>Уют и приветливый коллектив</h3><p>Студию описывают как уютную, а людей, которые в ней работают, — как приветливых.</p></article>
+      <article class="pc rv d2"><span class="num">3</span><h3>Брови и ресницы</h3><p>Хвалят брови и ламинирование ресниц: те, кто пришёл впервые, возвращаются снова.</p></article>
+    </div>
+    <div class="score rv">
+      <a href="https://2gis.ru/spb/firm/70000001096915055" target="_blank" rel="noopener"><strong>4.8</strong><span><b>2ГИС</b>43 оценки</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- STUDIO -->
+<section id="studio" class="dk hexbg">
+  <div class="wrap sg">
+    <div class="mosaic rv" role="group" aria-label="Фото студии">
+      <button class="st t1" data-lb data-cap="Зал студии" aria-label="Открыть фото: зал студии"><span class="sti"><img src="img/hall-2.jpg" alt="Зал студии" width="1024" height="768" loading="lazy"></span></button>
+      <button class="st t2" data-lb data-cap="Зал студии" aria-label="Открыть фото: зал студии"><span class="sti"><img src="img/hall-3.jpg" alt="Зал студии" width="1024" height="768" loading="lazy"></span></button>
+      <button class="st t3" data-lb data-cap="Зона макияжа" aria-label="Открыть фото: зона макияжа"><span class="sti"><img src="img/makeup.jpg" alt="Зона макияжа" width="1024" height="768" loading="lazy"></span></button>
+      <button class="st t4" data-lb data-cap="Ресепшн" aria-label="Открыть фото: ресепшн"><span class="sti"><img src="img/reception.jpg" alt="Ресепшн студии" width="1024" height="768" loading="lazy"></span></button>
+      <button class="st t5" data-lb data-cap="Мойка для волос" aria-label="Открыть фото: мойка"><span class="sti"><img src="img/wash.jpg" alt="Мойка" width="1024" height="768" loading="lazy"></span></button>
+    </div>
+    <div>
+      <span class="eyebrow rv">Студия</span>
+      <h2 class="rv d1">Соты на потолке, <em>всё в одном кабинете</em></h2>
+      <p class="rv d2">Фирменная деталь зала — шестигранная подсветка на потолке. Стрижки и окрашивание, ногти, солярий и косметология собраны в одной студии в Пушкине.</p>
+      <div class="facts rv d3">
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Ежедневно 10:00–21:00</span>
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg>Wi-Fi</span>
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Карта, наличные, QR</span>
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>Вертикальный солярий</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1">Как <em>добраться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Санкт-Петербург, Пушкин, Ростовская ул., 15</p></div>
+        <div class="ci"><small>Часы работы</small><p>Ежедневно, 10:00–21:00</p></div>
+        <div class="ci"><small>Телефон и WhatsApp</small><a class="big" href="tel:+79819119029">+7 981 911-90-29</a></div>
+        <div class="ci"><small>Мессенджеры и соцсети</small>
+          <div class="socials">
+            <a href="https://wa.me/79819119029?text=Здравствуйте!%20Хочу%20записаться%20в%20студию%20«Кабинет».%20Подскажите%20свободное%20время." target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://t.me/kabinet_study" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://vk.com/kabinet_study" target="_blank" rel="noopener">ВКонтакте</a>
+          </div>
+        </div>
+        <div class="ctas"><a class="btn line l" href="https://yandex.ru/maps/?rtext=~59.740425%2C30.472571&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a></div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?ll=30.472571%2C59.740425&z=16&pt=30.472571%2C59.740425%2Cpm2rdm" title="Студия «Кабинет» на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final dk hexbg">
+  <div class="wrap">
+    <span class="eyebrow rv">Запись</span>
+    <h2 class="rv d1">Запись — <em>одно сообщение</em></h2>
+    <p class="lead rv d2">Напишите в WhatsApp, что вас интересует: стрижка, ногти, солярий или консультация по косметологии. Подскажем свободное время.</p>
+    <div class="ctas rv d3">
+      <a class="btn" href="https://wa.me/79819119029?text=Здравствуйте!%20Хочу%20записаться%20в%20студию%20«Кабинет».%20Подскажите%20свободное%20время." target="_blank" rel="noopener">Записаться в WhatsApp</a>
+      <a class="btn line" href="tel:+79819119029">+7 981 911-90-29</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© «Кабинет» — студия красоты, Пушкин, Ростовская ул., 15</span>
+    <span>Демо-концепт. Цены и данные — из открытых источников: <a href="https://2gis.ru/spb/firm/70000001096915055" target="_blank" rel="noopener">2ГИС</a> (прайс на 22.08.2026, остальные данные на 22.10.2026).</span>
+    <span><b>Косметология, инъекционные процедуры:</b> имеются противопоказания, необходима консультация специалиста.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79819119029"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+  <a href="https://t.me/kabinet_study" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 4L3 11l6 2 2 6 3-4 5 4z"/></svg>Telegram</a>
+  <a class="main" href="https://wa.me/79819119029?text=Здравствуйте!%20Хочу%20записаться%20в%20студию%20«Кабинет».%20Подскажите%20свободное%20время." target="_blank" rel="noopener">Записаться</a>
+</nav>
+
+<script>
+(() => {
+  // Статус «открыто/закрыто» по Москве (ежедневно 10:00–21:00)
+  const st = document.getElementById('status');
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
+  const m = now.getHours() * 60 + now.getMinutes();
+  const open = m >= 10 * 60 && m < 21 * 60;
+  st.classList.toggle('closed', !open);
+  st.querySelector('span').textContent = open ? 'Открыто сейчас · до 21:00' : 'Сейчас закрыто · откроемся в 10:00';
+
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => { hdr.classList.toggle('scrolled', scrollY > 8); mbar.classList.toggle('show', scrollY > 420); };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Соты-навигатор: выбор направления открывает свой прайс
+  const hexes = document.querySelectorAll('.hn');
+  const panels = document.querySelectorAll('.panel');
+  const pbox = document.getElementById('pbox');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  hexes.forEach(h => h.addEventListener('click', () => {
+    hexes.forEach(x => x.setAttribute('aria-pressed', x === h));
+    panels.forEach(p => p.classList.toggle('on', p.id === 'p-' + h.dataset.p));
+    if (innerWidth < 960) pbox.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'nearest' });
+  }));
+
+  // Фильтр работ и лайтбокс
+  const items = document.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+  document.querySelectorAll('[data-lb]').forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt; lbCap.textContent = i.dataset.cap || '';
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>

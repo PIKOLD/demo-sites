@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Белый лис — ветеринарная клиника в Санкт-Петербурге, Парнас</title>
+<meta name="description" content="Ветеринарная клиника «Белый лис» у Парнаса: приём специалистов, УЗИ, вакцинация, кастрация. Заречная ул., 41 ст1. Ежедневно 10:00–20:00.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=Onest:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=Onest:wght@400;500;600;700&display=swap"><style>.rv{opacity:1!important;transform:none!important}</style></noscript>
+<style>
+:root{
+  --white:#FFFFFF; --cream:#FFFAF4; --fox:#D9530F; --fox-d:#B8430A; --fox-l:#FF8A3D; --fox-bg:#FFF0E4;
+  --mint:#BDE8D8; --mint-l:#E8F7F0; --mint-d:#17715A;
+  --ink:#15302A; --ink-2:#34504A; --muted:#5E736D; --line:rgba(21,48,42,.14);
+  --r-lg:28px; --r-md:20px; --r-sm:14px;
+  --shadow:0 22px 48px -26px rgba(21,48,42,.4);
+  --disp:"Unbounded", "Arial Black", system-ui, sans-serif; --sans:"Onest", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:76px}
+body{margin:0;background:var(--white);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:600 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--fox)}
+.eyebrow::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--fox-l);box-shadow:-9px -7px 0 -2px var(--mint-d)}
+h1,h2,h3{font-family:var(--disp);font-weight:600;line-height:1.14;margin:0;overflow-wrap:break-word}
+h2{font-size:clamp(24px,4.6vw,40px)}
+h1 em,h2 em{font-style:normal;color:var(--fox)}
+.lead{font-size:clamp(16px,1.6vw,18px);color:var(--ink-2);max-width:54ch}
+section{padding:clamp(60px,9vw,108px) 0}
+
+/* demo bar */
+.demo{background:var(--ink);color:#DDEBE6;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:#fff;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:11px;border:1px solid rgba(255,255,255,.4);border-radius:8px;padding:3px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.9);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:14px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.logo svg{width:38px;height:38px;color:var(--fox);flex:none}
+.logo b{display:block;font:700 15px/1.1 var(--disp);letter-spacing:.01em}
+.logo small{display:block;font:500 11px/1.2 var(--sans);color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
+.nav{display:none;gap:26px}
+.nav a{text-decoration:none;font-weight:500;font-size:14.5px;color:var(--ink-2);padding:6px 0;border-bottom:2px solid transparent;transition:border-color .25s,color .25s}
+.nav a:hover{color:var(--fox);border-color:var(--fox-l)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 24px;border-radius:var(--r-sm);border:2px solid var(--ink);background:var(--ink);color:#fff;font-weight:600;font-size:15px;line-height:1.2;text-align:center;text-decoration:none;cursor:pointer;transition:transform .25s, background .25s, color .25s, border-color .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.fox{background:var(--fox);border-color:var(--fox)}
+.btn.fox:hover{background:var(--fox-d);border-color:var(--fox-d)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+.btn.sm{min-height:44px;padding:8px 18px;font-size:14px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border-radius:12px;border:1.5px solid var(--line);background:var(--white);display:grid;place-items:center;cursor:pointer;flex:none}
+.burger span{display:block;width:18px;height:2px;background:var(--ink);position:relative;border-radius:2px}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;border-radius:2px;background:var(--ink);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--mint-l);padding:110px 24px 40px;display:flex;flex-direction:column;gap:4px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:600 22px/1.3 var(--disp);text-decoration:none;padding:12px 0;border-bottom:1px solid var(--line)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{padding:clamp(24px,4vw,56px) 0 clamp(64px,8vw,104px);background:radial-gradient(60% 70% at 88% 18%,var(--mint-l),transparent 72%),radial-gradient(40% 40% at 0% 100%,var(--fox-bg),transparent 70%)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:44px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:64px}}
+.status{display:inline-flex;align-items:center;gap:10px;background:var(--white);border:1.5px solid var(--line);border-radius:12px;padding:8px 14px 8px 12px;font-size:13.5px;font-weight:600}
+.status i{flex:none;width:9px;height:9px;border-radius:50%;background:#2FA36B;box-shadow:0 0 0 0 rgba(47,163,107,.5);animation:pulse 2s infinite}
+.status.closed i{background:#C2554B;animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(47,163,107,0)}100%{box-shadow:0 0 0 0 rgba(47,163,107,0)}}
+.hero h1{font-size:clamp(28px,7vw,50px);margin:22px 0 20px}
+.hero .lead{margin:0 0 22px}
+.place{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:14.5px;margin-bottom:26px}
+.place svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--fox)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.ratings{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:30px;padding-top:24px;border-top:1.5px dashed var(--line)}
+.rate{display:flex;align-items:center;gap:14px}
+.rate strong{font:600 34px/1 var(--disp)}
+.rate span{font-size:13px;line-height:1.35;color:var(--muted)}
+.rate span b{color:var(--ink);font-weight:600;display:block}
+.stars{color:#E39A2D;letter-spacing:2px;font-size:12px}
+
+.fox-frame{position:relative;width:100%;max-width:520px;margin:48px auto 0}
+.fox-frame::before{content:"";position:absolute;inset:7% -6% -6% 7%;border-radius:36px;background:var(--mint);transform:rotate(3deg);z-index:0}
+.ear{position:absolute;top:0;width:25%;aspect-ratio:1/1.1;background:var(--fox);clip-path:polygon(50% 0,0 100%,100% 100%);z-index:0;transform-origin:50% 100%}
+.ear::after{content:"";position:absolute;inset:36% 27% 0 27%;background:var(--mint);clip-path:polygon(50% 0,0 100%,100% 100%)}
+.ear.l{left:9%;transform:translateY(-66%) rotate(-12deg)}
+.ear.r{right:9%;transform:translateY(-66%) rotate(12deg)}
+.ph{position:relative;z-index:1;aspect-ratio:1/1;border-radius:36px;overflow:hidden;box-shadow:var(--shadow);background:var(--mint-l);border:5px solid var(--white)}
+.ph img{width:100%;height:100%;object-fit:cover;object-position:50% 32%}
+.chip{position:absolute;z-index:4;background:rgba(255,255,255,.94);border:1.5px solid var(--line);border-radius:var(--r-sm);padding:10px 14px;box-shadow:var(--shadow);font-size:13px;line-height:1.3;animation:float 6s ease-in-out infinite;max-width:70%}
+.chip b{display:block;font:600 16px/1.2 var(--disp);margin-top:3px;color:var(--fox)}
+.chip.c1{right:-3%;top:16%}
+.chip.c2{left:-3%;bottom:8%;animation-delay:-3s}
+@media (max-width:520px){.chip.c1{right:2%}.chip.c2{left:2%}}
+@keyframes float{50%{transform:translateY(-8px)}}
+
+/* urgent */
+.urgent{background:var(--fox);color:#fff;padding:22px 0}
+.urgent .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 28px}
+.u-l{display:flex;align-items:center;gap:14px;min-width:0}
+.u-l svg{width:44px;height:44px;flex:none;color:#fff}
+.u-l b{display:block;font:600 clamp(18px,3vw,24px)/1.2 var(--disp)}
+.u-l span{display:block;font-size:14px;opacity:.92;margin-top:2px}
+.u-phone{font:600 clamp(20px,5.4vw,32px)/1.1 var(--disp);text-decoration:none;white-space:nowrap;background:rgba(255,255,255,.14);border:2px solid rgba(255,255,255,.55);border-radius:var(--r-sm);padding:12px 18px;transition:background .25s,color .25s}
+.u-phone:hover{background:#fff;color:var(--fox-d)}
+
+/* head */
+.head{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-bottom:38px}
+@media (min-width:960px){.head{grid-template-columns:minmax(0,1fr) auto;align-items:end}}
+.head p{margin:0;color:var(--muted);font-size:14px}
+
+/* doctors */
+.docs-sec{background:var(--cream)}
+.docs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (min-width:640px){.docs{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}}
+.doc{position:relative;display:flex;flex-direction:column;gap:10px;padding:16px;background:var(--white);border:2px solid var(--line);border-radius:var(--r-md);cursor:pointer;transition:border-color .25s,background .25s,transform .25s;min-width:0}
+.doc:first-child{grid-column:span 2}
+.doc:hover{transform:translateY(-3px);border-color:var(--fox-l)}
+.doc input{position:absolute;opacity:0;pointer-events:none}
+.doc .ic{width:46px;height:46px;border-radius:14px;background:var(--mint-l);color:var(--mint-d);display:grid;place-items:center;transition:background .25s,color .25s}
+.doc .ic svg{width:26px;height:26px}
+.doc b{font:600 14px/1.25 var(--disp);overflow-wrap:break-word;hyphens:auto}
+.doc small{color:var(--muted);font-size:13px;line-height:1.35;flex:1}
+.doc .pr{font:600 15px/1.2 var(--disp);color:var(--fox-d);white-space:nowrap}
+.doc:has(input:checked){border-color:var(--fox);background:var(--fox-bg)}
+.doc:has(input:checked) .ic{background:var(--fox);color:#fff}
+.doc:has(input:focus-visible){outline:3px solid var(--fox-l);outline-offset:2px}
+.pick{margin-top:22px;display:grid;grid-template-columns:minmax(0,1fr);gap:20px;background:var(--mint-l);border:2px solid var(--mint);border-radius:var(--r-lg);padding:clamp(20px,4vw,34px)}
+@media (min-width:760px){.pick{grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:40px}}
+.pick small{display:block;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--mint-d);margin-bottom:8px}
+.pick h3{font-size:clamp(20px,3.4vw,28px)}
+.pick p{margin:8px 0 0;color:var(--ink-2)}
+.pk-r{display:grid;gap:12px;justify-items:start}
+@media (min-width:760px){.pk-r{justify-items:end;text-align:right}}
+.pk-price{font:600 clamp(32px,6vw,44px)/1 var(--disp);color:var(--fox-d)}
+.pk-r .cap{font-size:13px;color:var(--muted);margin-top:-6px}
+
+/* services */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.tab{border:1.5px solid var(--line);background:var(--white);border-radius:12px;padding:11px 18px;font-weight:600;font-size:14px;cursor:pointer;transition:all .25s;min-width:0}
+.tab:hover{border-color:var(--fox-l)}
+.tab[aria-selected="true"],.tab[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.svc{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
+@media (min-width:960px){.svc{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:56px;align-items:start}}
+.panel{display:none}
+.panel.on{display:block;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.row{display:flex;align-items:center;gap:16px;padding:18px 4px;border-bottom:1.5px solid var(--line)}
+.row:first-child{border-top:1.5px solid var(--line)}
+.row .n{flex:1 1 auto;min-width:0}
+.row .n b{display:block;font-weight:600;font-size:16px}
+.row .n small{color:var(--muted);font-size:13.5px}
+.row .p{font:600 17px/1.2 var(--disp);white-space:nowrap;color:var(--fox-d);text-align:right}
+.svc-photo{position:relative;margin:0;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/3;background:var(--mint-l);border:5px solid var(--white);box-shadow:var(--shadow)}
+@media (min-width:960px){.svc-photo{position:sticky;top:92px}}
+.svc-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.05);transition:opacity .7s, transform 1.2s}
+.svc-photo img.on{opacity:1;transform:none}
+.svc-photo figcaption{position:absolute;left:12px;bottom:12px;z-index:2;background:rgba(255,255,255,.92);font-size:12.5px;font-weight:600;padding:6px 12px;border-radius:10px}
+.note{margin-top:22px;font-size:13px;color:var(--muted)}
+
+/* gallery */
+.gal-sec{background:var(--mint-l)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:dense;gap:10px}
+@media (min-width:760px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}}
+.gi{position:relative;border-radius:var(--r-md);overflow:hidden;aspect-ratio:1;background:var(--white);cursor:zoom-in;border:0;padding:0;transition:opacity .4s, transform .4s}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.07)}
+.gi span{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.92);font-size:12px;font-weight:600;padding:5px 10px;border-radius:9px;text-align:left}
+.gi.wide{grid-column:span 2;aspect-ratio:2/1}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,1000px);max-height:90vh}
+.lb::backdrop{background:rgba(12,28,24,.88)}
+.lb img{max-height:84vh;width:auto;margin:auto;border-radius:16px}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:14px;border:0;background:#fff;font-size:24px;cursor:pointer}
+
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pr-card{background:var(--cream);border:2px solid var(--line);border-radius:var(--r-lg);padding:28px;position:relative;overflow:hidden}
+.pr-card .num{position:absolute;right:18px;top:14px;width:44px;height:44px;border-radius:50%;background:var(--mint);color:var(--mint-d);display:grid;place-items:center;font:600 15px/1 var(--disp)}
+.pr-card h3{font-size:19px;margin:44px 0 12px;position:relative}
+.pr-card p{margin:0;color:var(--ink-2);position:relative}
+.score{display:flex;flex-wrap:wrap;gap:14px;margin-top:22px}
+.score a{display:flex;align-items:center;gap:16px;background:var(--fox-bg);border:2px solid var(--fox-l);border-radius:var(--r-md);padding:14px 22px;text-decoration:none;flex:1 1 260px}
+.score strong{font:600 40px/1 var(--disp);color:var(--fox-d)}
+.score span{font-size:13.5px;color:var(--muted)}
+.score span b{color:var(--ink);display:block}
+
+/* clinic */
+.studio{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (min-width:900px){.studio{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}}
+.studio figure{position:relative;margin:0;border-radius:var(--r-lg);overflow:hidden;background:var(--mint-l);aspect-ratio:1}
+.studio figure:first-child{grid-column:span 2;aspect-ratio:16/10}
+@media (min-width:900px){.studio figure:first-child{grid-column:auto;grid-row:span 2;aspect-ratio:auto}}
+.studio img{width:100%;height:100%;object-fit:cover}
+.studio figcaption{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.92);font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:9px}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.fact{display:inline-flex;align-items:center;gap:8px;background:var(--mint-l);border:1.5px solid var(--mint);border-radius:12px;padding:10px 16px;font-size:14px;font-weight:500}
+.fact svg{width:17px;height:17px;color:var(--mint-d);flex:none}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start;min-width:0}
+.ci small{display:block;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ci p,.ci a{margin:0;font-size:18px;font-weight:500;text-decoration:none;overflow-wrap:anywhere}
+.ci a.big{font:600 clamp(22px,6vw,28px)/1.2 var(--disp);color:var(--fox-d)}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{display:inline-flex;align-items:center;border:1.5px solid var(--line);background:var(--white);border-radius:12px;padding:10px 16px;font-size:14px;font-weight:600;text-decoration:none;transition:background .25s,color .25s}
+.socials a:hover{background:var(--ink);color:#fff}
+.map{border-radius:var(--r-lg);overflow:hidden;min-height:380px;background:var(--mint-l);border:2px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* final */
+.final{position:relative;overflow:hidden;text-align:center;background:var(--mint-l)}
+.final .big-fox{position:absolute;right:-60px;bottom:-70px;width:min(60vw,360px);height:auto;color:var(--mint-d);opacity:.14;pointer-events:none}
+.final .wrap{position:relative}
+.final h2{font-size:clamp(26px,5.6vw,52px);max-width:18ch;margin:18px auto}
+.final .lead{margin:0 auto}
+.final .ctas{justify-content:center;margin-top:30px}
+footer{padding:34px 0 120px;font-size:13px;color:var(--muted);border-top:1.5px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer span{min-width:0;overflow-wrap:anywhere}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.3fr);gap:8px;padding:8px;background:rgba(21,48,42,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:20px;box-shadow:0 18px 40px -12px rgba(0,0,0,.45);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:13px;color:#fff;text-decoration:none;font-size:11.5px;font-weight:600}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--fox);flex-direction:row;font-size:14px;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="fox" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 5l12 9M42 5L30 14"/><path d="M6 5c-1 14 3 25 18 38C39 30 43 19 42 5"/><path d="M18 14c4-2 8-2 12 0"/><path d="M14 27c3 2 6 1 8-1M34 27c-3 2-6 1-8-1"/><path d="M20.5 35.5h7L24 40z" fill="currentColor"/></g></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></symbol>
+  <symbol id="plane" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3 11l18-8-8 18-2-8-8-2z"/></symbol>
+</svg>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта для ветеринарной клиники «Белый лис». Данные из открытых источников (2ГИС) на 22.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Белый лис — наверх"><svg aria-hidden="true"><use href="#fox"/></svg><span><b>Белый лис</b><small>ветклиника</small></span></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#doctors">К какому врачу</a>
+      <a href="#services">Услуги и цены</a>
+      <a href="#photos">Фото</a>
+      <a href="#praise">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm fox" href="https://wa.me/79650011188?text=Здравствуйте!%20Хочу%20записаться%20на%20приём%20в%20клинику%20«Белый%20лис»." target="_blank" rel="noopener">Записаться</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#doctors">К какому врачу</a>
+  <a href="#services">Услуги и цены</a>
+  <a href="#photos">Фото</a>
+  <a href="#praise">Отзывы</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="status rv" id="status"><i></i><span>Ежедневно 10:00–20:00</span></span>
+      <h1 class="rv d1">Ветеринарная клиника <em>«Белый&nbsp;лис»</em></h1>
+      <p class="lead rv d2">Приём специалистов, УЗИ, вакцинация и кастрация для кошек и собак — рядом с Парнасом.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Заречная ул., 41 ст1, пом. 33-Н · Выборгский район, Парнас, Санкт-Петербург</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn fox" href="tel:+79650011188"><svg aria-hidden="true"><use href="#phone"/></svg>Позвонить</a>
+        <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~60.082671%2C30.34454&rtt=auto" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#plane"/></svg>Маршрут</a>
+      </div>
+      <div class="ratings rv d3">
+        <div class="rate"><strong>4.9</strong><span><b class="stars">★★★★★</b>2ГИС · 65 оценок</span></div>
+      </div>
+    </div>
+    <div class="fox-frame rv d2">
+      <span class="ear l" aria-hidden="true"></span><span class="ear r" aria-hidden="true"></span>
+      <div class="ph"><img src="img/hero.jpg" alt="Врач клиники со шпицем на руках" width="1024" height="768" fetchpriority="high"></div>
+      <div class="chip c1">Приём ветврача<b>2&nbsp;800&nbsp;₽</b></div>
+      <div class="chip c2">УЗИ-диагностика<b>от&nbsp;1&nbsp;800&nbsp;₽</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- URGENT -->
+<aside class="urgent" aria-label="Срочная помощь">
+  <div class="wrap">
+    <div class="u-l"><svg aria-hidden="true"><use href="#fox"/></svg><div><b>Срочно? Звоните</b><span>Ежедневно 10:00–20:00</span></div></div>
+    <a class="u-phone" href="tel:+79650011188">+7&nbsp;965&nbsp;001-11-88</a>
+  </div>
+</aside>
+
+<!-- DOCTORS -->
+<section id="doctors" class="docs-sec">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Специалисты</span><h2 class="rv d1" style="margin-top:14px">К какому <em>врачу?</em></h2></div>
+      <p class="rv d2">Выберите специалиста — увидите цену приёма и сможете сразу записаться в WhatsApp</p>
+    </div>
+    <div class="docs rv" role="radiogroup" aria-label="Выбор специалиста">
+      <label class="doc" data-name="Ветврач" data-lc="ветврач" data-desc="Общий осмотр и первичный приём." data-price="2800">
+        <input type="radio" name="doc" checked>
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v6a4 4 0 0 0 8 0V3M10 13v3a4 4 0 0 0 8 0v-1"/><circle cx="18" cy="13" r="2"/></svg></span>
+        <b>Ветврач</b><small>Общий осмотр и первичный приём</small><span class="pr">2&nbsp;800&nbsp;₽</span>
+      </label>
+      <label class="doc" data-name="Хирург" data-lc="хирург" data-desc="Хирургические вопросы." data-price="2500">
+        <input type="radio" name="doc">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><path d="M8 7.5L20 18M8 16.5L20 6"/></svg></span>
+        <b>Хирург</b><small>Хирургические вопросы</small><span class="pr">2&nbsp;500&nbsp;₽</span>
+      </label>
+      <label class="doc" data-name="Стоматолог" data-lc="стоматолог" data-desc="Зубы и ротовая полость." data-price="3000">
+        <input type="radio" name="doc">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M7 3c-3 0-4.5 3-3.5 6.5S5 21 7.5 21 9 15 12 15s1.5 6 4.5 6S19.5 13 20.5 9.5 19 3 17 3c-2 0-3 1-5 1S9 3 7 3z"/></svg></span>
+        <b>Стоматолог</b><small>Зубы и ротовая полость</small><span class="pr">3&nbsp;000&nbsp;₽</span>
+      </label>
+      <label class="doc" data-name="Терапевт-дерматолог" data-lc="терапевт-дерматолог" data-desc="Терапия, кожа и шерсть." data-price="4000">
+        <input type="radio" name="doc">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"/></svg></span>
+        <b>Терапевт-дерматолог</b><small>Терапия, кожа и шерсть</small><span class="pr">4&nbsp;000&nbsp;₽</span>
+      </label>
+      <label class="doc" data-name="Нефролог" data-lc="нефролог" data-desc="Почки." data-price="3800">
+        <input type="radio" name="doc">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M15 4c-4-1-8 1-8 6 0 3 1 4 1 6 0 3 2 5 5 4 4-1 6-5 5-9-1-4-1-6-3-7z"/></svg></span>
+        <b>Нефролог</b><small>Почки</small><span class="pr">3&nbsp;800&nbsp;₽</span>
+      </label>
+      <label class="doc" data-name="Уролог" data-lc="уролог" data-desc="Мочевыводящие пути." data-price="3800">
+        <input type="radio" name="doc">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="15" r="6"/><path d="M12 9V3"/></svg></span>
+        <b>Уролог</b><small>Мочевыводящие пути</small><span class="pr">3&nbsp;800&nbsp;₽</span>
+      </label>
+      <label class="doc" data-name="Гастроэнтеролог" data-lc="гастроэнтеролог" data-desc="Пищеварение." data-price="3800">
+        <input type="radio" name="doc">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8c0-3 6-3 6 0s-6 3-6 6 6 6 8 6 8-2 8-6-4-4-8-4"/></svg></span>
+        <b>Гастро&shy;энтеролог</b><small>Пищеварение</small><span class="pr">3&nbsp;800&nbsp;₽</span>
+      </label>
+    </div>
+    <div class="pick rv" aria-live="polite">
+      <div><small>Вы выбрали</small><h3 id="pkName">Ветврач</h3><p id="pkDesc">Общий осмотр и первичный приём.</p></div>
+      <div class="pk-r"><div class="pk-price" id="pkPrice">2&nbsp;800&nbsp;₽</div><span class="cap">стоимость приёма</span><a class="btn fox" id="pkBtn" href="https://wa.me/79650011188?text=Здравствуйте!%20Хочу%20записаться%20на%20приём:%20ветврач." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#chat"/></svg>Записаться в WhatsApp</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Прайс</span><h2 class="rv d1" style="margin-top:14px">Услуги <em>и цены</em></h2></div>
+      <p class="rv d2">Цены из карточки клиники в 2ГИС, 12.09.2026</p>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Категории услуг">
+      <button class="tab" role="tab" aria-selected="true" data-tab="vis" data-img="exam">Приёмы</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="uzi" data-img="uzi">УЗИ и вакцинация</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="cast" data-img="doctor">Кастрация</button>
+    </div>
+    <div class="svc">
+      <div>
+        <div class="panel on" id="p-vis" role="tabpanel">
+          <div class="row"><div class="n"><b>Приём ветврача</b></div><div class="p">2&nbsp;800&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Приём хирурга</b></div><div class="p">2&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Приём стоматолога</b></div><div class="p">3&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Приём нефролога / уролога / гастроэнтеролога</b></div><div class="p">3&nbsp;800&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Приём терапевта-дерматолога</b></div><div class="p">4&nbsp;000&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-uzi" role="tabpanel">
+          <div class="row"><div class="n"><b>Вакцинация</b></div><div class="p">от&nbsp;2&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>УЗИ-диагностика</b></div><div class="p">от&nbsp;1&nbsp;800&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>УЗИ сердца кошек и собак</b></div><div class="p">от&nbsp;2&nbsp;800&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-cast" role="tabpanel">
+          <div class="row"><div class="n"><b>Кастрация кота</b><small>Газовый наркоз</small></div><div class="p">5&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Кастрация кошки</b><small>Газовый наркоз</small></div><div class="p">от&nbsp;9&nbsp;500&nbsp;₽</div></div>
+        </div>
+        <p class="note">Оплата: карта, наличные, перевод, QR.</p>
+      </div>
+      <figure class="svc-photo" aria-hidden="true">
+        <img src="img/exam.jpg" alt="" data-k="exam" class="on" loading="lazy">
+        <img src="img/uzi.jpg" alt="" data-k="uzi" loading="lazy">
+        <img src="img/doctor.jpg" alt="" data-k="doctor" loading="lazy">
+        <figcaption id="svcCap">Осмотр</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="photos" class="gal-sec">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Фото</span><h2 class="rv d1" style="margin-top:14px">Клиника <em>изнутри</em></h2></div>
+      <p class="rv d2">Фото из карточки клиники в 2ГИС</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр фото">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="work">Приём</button>
+      <button class="tab" aria-pressed="false" data-f="room">Клиника</button>
+      <button class="tab" aria-pressed="false" data-f="pets">Пациенты</button>
+    </div>
+    <div class="grid" id="grid">
+      <button class="gi wide rv" data-c="work"><img src="img/hero.jpg" alt="Врач со шпицем" loading="lazy"><span>Врач со шпицем</span></button>
+      <button class="gi rv d1" data-c="work"><img src="img/vet-1.jpg" alt="Врач с кошкой" loading="lazy"><span>Врач с кошкой</span></button>
+      <button class="gi rv d2" data-c="room"><img src="img/cabinet.jpg" alt="Смотровой кабинет" loading="lazy"><span>Смотровой кабинет</span></button>
+      <button class="gi rv" data-c="pets"><img src="img/dog-1.jpg" alt="Пациент клиники" loading="lazy"><span>Пациент</span></button>
+      <button class="gi rv d1" data-c="room"><img src="img/uzi.jpg" alt="Аппарат УЗИ" loading="lazy"><span>Аппарат УЗИ</span></button>
+      <button class="gi wide rv d2" data-c="room"><img src="img/reception.jpg" alt="Холл клиники" loading="lazy"><span>Холл</span></button>
+      <button class="gi rv" data-c="work"><img src="img/vet-2.jpg" alt="Врач с кошкой на руках" loading="lazy"><span>Врач с кошкой</span></button>
+      <button class="gi rv d1" data-c="work"><img src="img/exam.jpg" alt="Осмотр питомца" loading="lazy"><span>Осмотр</span></button>
+      <button class="gi rv d2" data-c="pets"><img src="img/dog-2.jpg" alt="Пациент клиники" loading="lazy"><span>Пациент</span></button>
+      <button class="gi wide rv" data-c="work"><img src="img/doctor.jpg" alt="Врач за работой" loading="lazy"><span>Врач за работой</span></button>
+      <button class="gi rv d1" data-c="room"><img src="img/shop.jpg" alt="Витрина с товарами в клинике" loading="lazy"><span>Витрина с товарами</span></button>
+      <button class="gi wide rv d2" data-c="room"><img src="img/aquarium.jpg" alt="Аквариум в холле клиники" loading="lazy"><span>Аквариум в холле</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""></dialog>
+
+<!-- PRAISE -->
+<section id="praise">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Отзывы</span><h2 class="rv d1" style="margin-top:14px">За что <em>хвалят</em></h2></div>
+      <p class="rv d2">Пересказ отзывов владельцев питомцев в 2ГИС</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card rv"><span class="num">01</span><h3>Помогают сразу</h3><p>В экстренных случаях в клинике действуют быстро и спокойно: владельцы рассказывают, что собаку после укуса приняли сразу.</p></article>
+      <article class="pr-card rv d1"><span class="num">02</span><h3>Первый визит без стресса</h3><p>Котят и щенков осматривают и делают им первые прививки так, что малыши не нервничают.</p></article>
+      <article class="pr-card rv d2"><span class="num">03</span><h3>Знают по именам</h3><p>Клиенты пишут о внимательных врачах: постоянных пациентов в клинике знают по именам.</p></article>
+    </div>
+    <div class="score rv">
+      <a href="https://2gis.ru/spb/firm/70000001056561978" target="_blank" rel="noopener"><strong>4.9</strong><span><b>2ГИС</b>65 оценок</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- CLINIC -->
+<section id="clinic" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Клиника</span><h2 class="rv d1" style="margin-top:14px">Как <em>у нас</em></h2></div>
+    </div>
+    <div class="studio">
+      <figure class="rv"><img src="img/reception.jpg" alt="Холл клиники" loading="lazy"><figcaption>Холл</figcaption></figure>
+      <figure class="rv d1"><img src="img/cabinet.jpg" alt="Смотровой кабинет" loading="lazy"><figcaption>Смотровой кабинет</figcaption></figure>
+      <figure class="rv d2"><img src="img/uzi.jpg" alt="Аппарат УЗИ" loading="lazy"><figcaption>УЗИ</figcaption></figure>
+      <figure class="rv d1"><img src="img/aquarium.jpg" alt="Аквариум в холле" loading="lazy"><figcaption>Аквариум в холле</figcaption></figure>
+      <figure class="rv d2"><img src="img/shop.jpg" alt="Витрина с товарами" loading="lazy"><figcaption>Витрина с товарами</figcaption></figure>
+    </div>
+    <div class="facts rv">
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg>Есть УЗИ</span>
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19h6l9-9h3"/><path d="M3 19l-0 0"/></svg>Пандус</span>
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="11" r="2"/><circle cx="10" cy="6" r="2"/><circle cx="16" cy="6" r="2"/><circle cx="20" cy="11" r="2"/><path d="M8 19c0-4 2-6 6-6s6 2 6 6c0 2-2 2-4 1-3-1-5-1-8 0-2 1-0 0 0-1z"/></svg>Можно с собакой</span>
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Карта, наличные, перевод, QR</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1" style="margin-top:14px">Как <em>добраться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Санкт-Петербург, Заречная ул., 41 ст1, пом. 33-Н (Выборгский район, Парнас)</p></div>
+        <div class="ci"><small>Часы работы</small><p>Ежедневно, 10:00–20:00</p></div>
+        <div class="ci"><small>Телефон / WhatsApp</small><a class="big" href="tel:+79650011188">+7&nbsp;965&nbsp;001-11-88</a></div>
+        <div class="ci"><small>Мессенджеры и соцсети</small>
+          <div class="socials">
+            <a href="https://wa.me/79650011188?text=Здравствуйте!%20Хочу%20записаться%20на%20приём%20в%20клинику%20«Белый%20лис»." target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://t.me/vet_whitefox" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://t.me/vetwhitefox" target="_blank" rel="noopener">Telegram-канал</a>
+            <a href="https://vk.com/vetwhitefox" target="_blank" rel="noopener">ВКонтакте</a>
+          </div>
+        </div>
+        <div class="ci"><small>Email</small><a href="mailto:vet.whitefox@gmail.com">vet.whitefox@gmail.com</a></div>
+        <div class="ctas"><a class="btn ghost" href="https://yandex.ru/maps/?rtext=~60.082671%2C30.34454&rtt=auto" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#plane"/></svg>Построить маршрут</a></div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?ll=30.34454%2C60.082671&z=16&pt=30.34454%2C60.082671%2Cpm2rdm" title="Клиника «Белый лис» на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <svg class="big-fox" aria-hidden="true"><use href="#fox"/></svg>
+  <div class="wrap">
+    <span class="eyebrow rv">Запись</span>
+    <h2 class="rv d1">Запишите питомца <em>на приём</em></h2>
+    <p class="lead rv d2">Напишите в WhatsApp или позвоните — если нужна помощь срочно, лучше звонить.</p>
+    <div class="ctas rv d3">
+      <a class="btn fox" href="https://wa.me/79650011188?text=Здравствуйте!%20Хочу%20записаться%20на%20приём%20в%20клинику%20«Белый%20лис»." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#chat"/></svg>Записаться в WhatsApp</a>
+      <a class="btn ghost" href="tel:+79650011188">+7&nbsp;965&nbsp;001-11-88</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Белый лис — ветеринарная клиника, Санкт-Петербург</span>
+    <span>Демо-концепт. Цены и данные — из открытых источников (2ГИС) на 22.10.2026; цены по карточке 2ГИС от 12.09.2026.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79650011188"><svg aria-hidden="true"><use href="#phone"/></svg>Позвонить</a>
+  <a href="https://t.me/vet_whitefox" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#plane"/></svg>Telegram</a>
+  <a class="main" href="https://wa.me/79650011188?text=Здравствуйте!%20Хочу%20записаться%20на%20приём%20в%20клинику%20«Белый%20лис»." target="_blank" rel="noopener">Записаться</a>
+</nav>
+
+<script>
+(() => {
+  // Статус «открыто/закрыто» по московскому времени (ежедневно 10:00–20:00)
+  const st = document.getElementById('status');
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
+  const m = now.getHours() * 60 + now.getMinutes();
+  const open = m >= 10 * 60 && m < 20 * 60;
+  st.classList.toggle('closed', !open);
+  st.querySelector('span').textContent = open ? 'Открыто сейчас · до 20:00' : 'Сейчас закрыто · откроемся в 10:00';
+
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    const y = scrollY;
+    hdr.classList.toggle('scrolled', y > 8);
+    mbar.classList.toggle('show', y > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const rv = document.querySelectorAll('.rv');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+    rv.forEach(el => io.observe(el));
+  } else rv.forEach(el => el.classList.add('in'));
+
+  // «К какому врачу?»
+  const fmt = n => n.toLocaleString('ru-RU').replace(/\s/g, ' ') + ' ₽';
+  const pkName = document.getElementById('pkName'), pkDesc = document.getElementById('pkDesc'),
+        pkPrice = document.getElementById('pkPrice'), pkBtn = document.getElementById('pkBtn');
+  document.querySelectorAll('.doc').forEach(d => d.querySelector('input').addEventListener('change', () => {
+    pkName.textContent = d.dataset.name;
+    pkDesc.textContent = d.dataset.desc;
+    pkPrice.textContent = fmt(+d.dataset.price);
+    pkBtn.href = 'https://wa.me/79650011188?text=' + encodeURIComponent('Здравствуйте! Хочу записаться на приём: ' + d.dataset.lc + '.');
+  }));
+
+  // Вкладки прайса + смена фото
+  const tabs = document.querySelectorAll('[role=tab]');
+  const pics = document.querySelectorAll('.svc-photo img');
+  const cap = document.getElementById('svcCap');
+  const caps = { exam: 'Осмотр', uzi: 'Аппарат УЗИ', doctor: 'Врач за работой' };
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === 'p-' + t.dataset.tab));
+    pics.forEach(p => p.classList.toggle('on', p.dataset.k === t.dataset.img));
+    cap.textContent = caps[t.dataset.img] || '';
+  }));
+
+  // Фильтр фото и лайтбокс
+  const items = document.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt;
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>

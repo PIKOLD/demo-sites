@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Клиника косметологии Александры Буяльской — Санкт-Петербург, пр. Королёва</title>
+<meta name="description" content="Дерматокосметолог: чистки, пилинги, IPL-фотоомоложение, массаж лица, контурная пластика губ. Пр. Королёва, 68 ст1. Ежедневно 10:00–21:00.">
+<meta name="theme-color" content="#2A0E27">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Onest:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Onest:wght@400;500;600;700&display=swap"></noscript>
+<style>
+:root{
+  --p950:#1B0618; --p900:#2A0E27; --p800:#3D1636; --p700:#561F4A; --p300:#CDA8C2;
+  --red:#D9112E; --red-d:#B30C24; --red-hi:#FF3D57;
+  --blush:#F8EFF2; --white:#FFFFFF; --ink:#23101F; --ink-2:#4A3446; --muted:#6B5767;
+  --line:rgba(42,14,39,.16); --line-w:rgba(255,255,255,.18);
+  --serif:"Playfair Display", Georgia, "Times New Roman", serif;
+  --sans:"Onest", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--white);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+ul{margin:0;padding:0;list-style:none}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+section{padding:clamp(64px,9vw,112px) 0}
+.eyebrow{display:inline-block;font:600 12px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--red)}
+.dk .eyebrow,.hero .eyebrow{color:var(--red-hi)}
+h1,h2,h3,h4{font-family:var(--serif);margin:0}
+h2{font-weight:900;font-size:clamp(38px,8vw,84px);line-height:.95;letter-spacing:-.015em;margin-top:16px;overflow-wrap:break-word}
+h2 em{font-style:italic;color:var(--red)}
+.dk h2 em{color:var(--red-hi)}
+.lead{font-size:clamp(16px,1.7vw,19px);color:var(--ink-2);max-width:54ch;margin:0}
+.head{display:grid;gap:14px;margin-bottom:clamp(32px,5vw,52px)}
+@media (min-width:960px){.head{grid-template-columns:minmax(0,1fr) auto;align-items:end}}
+.head p{margin:0;color:var(--muted);font-size:14px}
+.dk .head p{color:var(--p300)}
+.dk{background:var(--p900);color:#fff}
+.bl{background:var(--blush)}
+
+/* demo bar */
+.demo{background:var(--red);color:#fff;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:11px;border:1px solid rgba(255,255,255,.7);padding:3px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(42,14,39,.94);color:#fff;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line-w)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.logo{display:flex;flex-direction:column;gap:3px;text-decoration:none;min-width:0}
+.logo b{font:900 21px/1 var(--serif);letter-spacing:.06em}
+.logo b span{color:var(--red-hi)}
+.logo small{font:500 10px/1 var(--sans);color:var(--p300);letter-spacing:.24em;text-transform:uppercase}
+.nav{display:none;gap:26px}
+.nav a{text-decoration:none;font-weight:500;font-size:14px;color:#EBDDE6;position:relative;padding:6px 0}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--red-hi);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border:1.5px solid var(--red);background:var(--red);color:#fff;font:600 13px/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;cursor:pointer;border-radius:3px;transition:transform .25s, background .25s, color .25s, border-color .25s;text-align:center}
+.btn:hover{transform:translateY(-2px);background:var(--red-d);border-color:var(--red-d)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.w{background:transparent;border-color:#fff;color:#fff}
+.btn.w:hover{background:#fff;color:var(--p900);border-color:#fff}
+.btn.d{background:transparent;border-color:var(--p900);color:var(--p900)}
+.btn.d:hover{background:var(--p900);color:#fff;border-color:var(--p900)}
+.btn.sm{min-height:42px;padding:0 18px;font-size:12px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border:1.5px solid var(--line-w);background:transparent;display:grid;place-items:center;cursor:pointer;border-radius:3px}
+.burger span{display:block;width:18px;height:2px;background:#fff;position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:#fff;transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--p950);padding:110px 24px 40px;display:flex;flex-direction:column;gap:4px;opacity:0;pointer-events:none;transition:opacity .3s;overflow-y:auto}
+.mnav a{font:900 clamp(28px,8.5vw,40px)/1.2 var(--serif);color:#fff;text-decoration:none;padding:8px 0;border-bottom:1px solid var(--line-w)}
+.mnav a:hover{color:var(--red-hi)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:1020px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{position:relative;color:#fff;padding:clamp(34px,6vw,76px) 0 clamp(64px,9vw,112px);overflow:hidden;
+  background:radial-gradient(70% 55% at 88% 6%,rgba(217,17,46,.34),transparent 62%),radial-gradient(80% 70% at 0% 100%,var(--p700) 0%,transparent 62%),repeating-linear-gradient(115deg,rgba(255,255,255,.025) 0 2px,transparent 2px 9px),var(--p900)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:54px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:56px}}
+.status{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);border:1px solid var(--line-w);padding:8px 14px 8px 12px;font-size:13.5px;font-weight:600;border-radius:3px}
+.status i{width:9px;height:9px;border-radius:50%;background:#3FD07A;box-shadow:0 0 0 0 rgba(63,208,122,.55);animation:pulse 2s infinite;flex:none}
+.status.closed i{background:var(--red-hi);animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(63,208,122,0)}100%{box-shadow:0 0 0 0 rgba(63,208,122,0)}}
+.hero h1{margin:22px 0 22px;font-weight:900;line-height:.92}
+.hero h1 .k{display:block;font:600 clamp(12px,2.6vw,15px)/1.4 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--p300);margin-bottom:14px}
+.hero h1 .big{display:block;color:var(--red-hi);font-style:italic;font-size:clamp(44px,13.4vw,104px);letter-spacing:-.02em;overflow-wrap:anywhere}
+@media (min-width:960px){.hero h1 .big{font-size:clamp(60px,8.4vw,104px)}}
+.hero .lead{color:#E7D7E1;margin-bottom:24px}
+.place{display:flex;gap:10px;align-items:flex-start;color:#D9C3D1;font-size:14.5px;margin-bottom:28px}
+.place svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--red-hi)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.mini{margin-top:30px;padding-top:22px;border-top:1px solid var(--line-w);display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:13.5px;color:#D9C3D1}
+.mini strong{font:900 38px/1 var(--serif);color:#fff}
+.mini .stars{color:#FFB33D;letter-spacing:2px;font-size:13px;display:block}
+.vis{position:relative;max-width:520px;width:100%;margin-inline:auto;padding:0 16px 16px 0}
+.vis::before{content:"";position:absolute;inset:16px 0 0 16px;background:var(--red);border-radius:130px 0 130px 0}
+.frame{position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:130px 0 130px 0;background:var(--p800);box-shadow:0 30px 60px -28px rgba(0,0,0,.7)}
+.frame img{width:100%;height:100%;object-fit:cover}
+.frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(27,6,24,0) 60%,rgba(27,6,24,.55))}
+.badge{position:absolute;left:-8px;bottom:34px;width:128px;height:128px;border-radius:50%;background:#fff;color:var(--p900);display:grid;place-items:center;z-index:3;box-shadow:0 18px 34px -12px rgba(0,0,0,.55)}
+.badge svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 22s linear infinite}
+.badge text{font:600 11px var(--sans);fill:var(--p900);letter-spacing:.1em}
+.badge b{position:relative;font:900 34px/1 var(--serif);color:var(--red)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.cap-h{position:absolute;right:30px;bottom:30px;z-index:2;max-width:70%;text-align:right;font-size:12.5px;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+
+/* marquee */
+.marquee{background:var(--red);color:#fff;overflow:hidden;padding:16px 0}
+.track{display:flex;width:max-content;animation:run 40s linear infinite}
+.track span{font:900 italic clamp(22px,3.4vw,34px)/1 var(--serif);padding:0 24px;white-space:nowrap;display:flex;align-items:center;gap:48px}
+.track span::after{content:"✦";font-style:normal;font-size:14px;color:var(--p900)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* skin map */
+.skin{display:grid;grid-template-columns:minmax(0,1fr);gap:36px;align-items:start}
+@media (min-width:960px){.skin{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:56px}}
+.facecard{background:var(--p900);padding:clamp(20px,4vw,34px) clamp(20px,4vw,34px) 20px;border-radius:3px;border-bottom:6px solid var(--red);color:#fff}
+.facebox{position:relative;max-width:300px;margin:0 auto}
+.facebox svg{display:block;width:100%;height:auto}
+.hs{position:absolute;width:44px;height:44px;margin:-22px 0 0 -22px;border:0;background:transparent;cursor:pointer;padding:0}
+.hs::before{content:"";position:absolute;left:50%;top:50%;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:var(--red-hi);box-shadow:0 0 0 0 rgba(255,61,87,.6);animation:ping 2.4s infinite}
+.hs::after{content:"";position:absolute;left:50%;top:50%;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;border:1.5px solid rgba(255,255,255,.7);transition:transform .25s,border-color .25s}
+.hs[aria-pressed="true"]::before{background:#fff;animation:none}
+.hs[aria-pressed="true"]::after{border-color:var(--red-hi);transform:scale(1.35)}
+.hs:focus-visible{outline:2px solid #fff;outline-offset:-4px;border-radius:50%}
+@keyframes ping{70%{box-shadow:0 0 0 12px rgba(255,61,87,0)}100%{box-shadow:0 0 0 0 rgba(255,61,87,0)}}
+.facecard .sel{margin:16px 0 0;text-align:center;font-size:13px;color:var(--p300)}
+.facecard .sel b{color:#fff;font:900 20px/1.2 var(--serif);display:block;margin-top:2px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.chip,.tab{min-width:0;border:1.5px solid var(--p900);background:transparent;color:var(--p900);padding:11px 16px;font:600 13px/1.25 var(--sans);letter-spacing:.04em;cursor:pointer;border-radius:3px;transition:background .25s,color .25s,border-color .25s;text-align:center}
+.chip:hover,.tab:hover{background:rgba(42,14,39,.08)}
+.chip[aria-pressed="true"],.tab[aria-selected="true"],.tab[aria-pressed="true"]{background:var(--p900);color:#fff;border-color:var(--p900)}
+.dk .tab{border-color:rgba(255,255,255,.5);color:#fff}
+.dk .tab:hover{background:rgba(255,255,255,.12)}
+.dk .tab[aria-pressed="true"]{background:var(--red);border-color:var(--red)}
+.res{background:#fff;border:1px solid var(--line);border-top:6px solid var(--red);padding:clamp(20px,4vw,34px);border-radius:3px;box-shadow:0 24px 50px -30px rgba(42,14,39,.45)}
+.res h3{font-weight:900;font-size:clamp(26px,4vw,38px);line-height:1.05}
+.res h3 em{color:var(--red)}
+.res .sub2{margin:6px 0 14px;font-size:13.5px;color:var(--muted)}
+.res ul{margin:0}
+.res li{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid var(--line)}
+.res li span{min-width:0}
+.res li b{font:900 20px/1 var(--serif);white-space:nowrap}
+.res ul.fade{animation:fade .45s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}}
+.res .go{margin-top:22px}
+.med{margin:18px 0 0;font-size:13px;color:var(--ink-2);background:var(--blush);border-left:4px solid var(--red);padding:10px 14px}
+
+/* services */
+.svc{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
+@media (min-width:960px){.svc{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:56px;align-items:start}}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}
+.panel{display:none}
+.panel.on{display:block;animation:fade .5s ease}
+.sub{font:900 italic 22px/1.2 var(--serif);color:var(--red);padding:20px 0 10px;border-bottom:2px solid var(--p900)}
+.row{display:flex;align-items:baseline;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.row .n{flex:1 1 auto;min-width:0}
+.row .n b{display:block;font-weight:600;font-size:16px}
+.row .n small{color:var(--muted);font-size:13.5px}
+.row .p{font:900 22px/1.15 var(--serif);white-space:nowrap;text-align:right}
+.row .p span{display:block}
+.row .p small{font:500 13px/1.2 var(--sans);color:var(--muted);margin-right:6px}
+.svc-photo{position:relative;overflow:hidden;aspect-ratio:3/4;background:var(--p800);display:none;border-radius:130px 0 130px 0}
+@media (min-width:960px){.svc-photo{display:block;position:sticky;top:96px}}
+.svc-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .7s, transform 1.2s}
+.svc-photo img.on{opacity:1;transform:none}
+.gift{margin-top:30px;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between;background:var(--p900);color:#fff;padding:20px 24px;border-radius:3px}
+.gift b{font:900 22px/1.2 var(--serif)}
+.gift b i{color:var(--red-hi)}
+.gift span{font:900 24px/1 var(--serif);white-space:nowrap}
+
+/* gallery */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;grid-auto-flow:dense}
+@media (min-width:760px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}}
+.gi{position:relative;overflow:hidden;aspect-ratio:4/3;background:var(--p800);cursor:zoom-in;border:0;padding:0;border-radius:3px;transition:opacity .4s}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.07)}
+.gi span{position:absolute;left:0;bottom:0;background:var(--red);color:#fff;font:600 11.5px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;padding:7px 10px;max-width:100%}
+.gi.wide{grid-column:span 2;aspect-ratio:8/3}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(94vw,1000px);max-height:92vh;color:#fff}
+.lb::backdrop{background:rgba(20,6,18,.9)}
+.lb img{max-height:78vh;width:auto;margin:auto;border-radius:3px}
+.lb p{margin:10px 0 0;text-align:center;font-size:14px}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:#fff;color:var(--p900);font-size:24px;cursor:pointer}
+
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pr-card{background:#fff;border-top:6px solid var(--red);padding:30px 28px 32px;position:relative;overflow:hidden;border-radius:3px}
+.pr-card .num{font:900 italic 84px/1 var(--serif);color:var(--blush);-webkit-text-stroke:1px var(--red);position:absolute;right:16px;top:6px}
+.pr-card h3{font-weight:900;font-size:27px;line-height:1.1;margin:52px 0 12px;position:relative}
+.pr-card p{margin:0;color:var(--ink-2);position:relative}
+.score{display:flex;flex-wrap:wrap;gap:14px;margin-top:20px}
+.score a{display:flex;align-items:center;gap:16px;background:var(--p900);color:#fff;padding:16px 24px;text-decoration:none;flex:1 1 260px;border-radius:3px}
+.score strong{font:900 48px/1 var(--serif);color:var(--red-hi)}
+.score span{font-size:13.5px;color:#E7D7E1}
+.score span b{color:#fff;display:block;font-size:15px}
+
+/* clinic */
+.clinic{display:grid;grid-template-columns:minmax(0,1fr);gap:40px}
+@media (min-width:960px){.clinic{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:60px;align-items:center}}
+.ph4{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.ph4 figure{margin:0;overflow:hidden;background:var(--p800);aspect-ratio:4/3;border-radius:3px}
+.ph4 figure:first-child{grid-column:span 2;aspect-ratio:16/10;border-radius:100px 0 100px 0}
+.ph4 img{width:100%;height:100%;object-fit:cover}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0}
+.tags li{border:1.5px solid var(--p900);padding:8px 14px;font-size:14px;font-weight:500;border-radius:3px}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.fact{display:inline-flex;align-items:center;gap:8px;background:var(--blush);padding:10px 16px;font-size:14px;font-weight:500;border-radius:3px}
+.fact svg{width:16px;height:16px;color:var(--red);flex:none}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:30px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start}
+.ci small{display:block;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:6px}
+.ci p,.ci a{margin:0;font-size:18px;font-weight:500;text-decoration:none;overflow-wrap:anywhere}
+.ci a.big{font:900 clamp(26px,5vw,36px)/1.1 var(--serif)}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{display:inline-flex;align-items:center;border:1.5px solid var(--p900);padding:10px 16px;font-size:14px;font-weight:600;border-radius:3px;transition:background .25s,color .25s}
+.socials a:hover{background:var(--p900);color:#fff}
+.map{overflow:hidden;min-height:380px;background:var(--p800);border:1px solid var(--line);border-bottom:6px solid var(--red);border-radius:3px}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* final */
+.final{text-align:center;color:#fff;background:radial-gradient(90% 90% at 50% 0%,var(--p700) 0%,var(--p900) 55%,var(--p950) 100%)}
+.final h2{font-size:clamp(40px,8vw,96px);max-width:12ch;margin:18px auto}
+.final .lead{color:#E7D7E1;margin:0 auto}
+.final .ctas{justify-content:center;margin-top:32px}
+footer{background:var(--p950);color:#BFA6B6;padding:36px 0 120px;font-size:13px}
+footer .wrap{display:grid;gap:12px}
+footer a{color:#fff}
+footer .med{background:rgba(255,255,255,.06);color:#fff;border-left-color:var(--red-hi);margin:0}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.3fr);gap:8px;padding:8px;background:rgba(27,6,24,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:6px;box-shadow:0 18px 40px -12px rgba(0,0,0,.55);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:4px;color:#fff;text-decoration:none;font-size:11.5px;font-weight:600}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--red);flex-direction:row;font-size:13px;gap:8px;letter-spacing:.04em}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта для клиники косметологии Александры Буяльской. Данные из открытых источников (2ГИС) на 22.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Буяльская — наверх"><b>БУЯЛЬСКАЯ<span>.</span></b><small>косметология</small></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#skin">Карта кожи</a>
+      <a href="#services">Услуги и цены</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#praise">Отзывы</a>
+      <a href="#clinic">Клиника</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm" href="https://wa.me/79627624197" data-wa target="_blank" rel="noopener">Записаться</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#skin">Карта кожи</a>
+  <a href="#services">Услуги и цены</a>
+  <a href="#gallery">Галерея</a>
+  <a href="#praise">Отзывы</a>
+  <a href="#clinic">Клиника</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="status rv" id="status"><i></i><span>Ежедневно 10:00–21:00</span></span>
+      <h1 class="rv d1"><span class="k">Клиника косметологии Александры</span><span class="big">Буяльская</span></h1>
+      <p class="lead rv d2">Дерматокосметолог в Приморском районе Санкт-Петербурга: чистки, пилинги, IPL-фотоомоложение, массаж лица и контурная пластика губ.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>пр. Королёва, 68 ст1, студия «Эпичные» · ЖК «На Королёва» · Приморский район</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn" href="tel:+79627624197"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+        <a class="btn w" href="https://yandex.ru/maps/?rtext=~60.036028%2C30.234448&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+      </div>
+      <div class="mini rv d3">
+        <strong>5.0</strong>
+        <span><b class="stars">★★★★★</b>2ГИС · 291&nbsp;оценка</span>
+      </div>
+    </div>
+    <div class="vis rv d2">
+      <div class="frame"><img src="img/hero.jpg" alt="Зона ожидания клиники: фиолетовый диван и арт с красными губами" width="1024" height="768" fetchpriority="high"></div>
+      <div class="badge" aria-label="291 оценка, рейтинг 5.0 в 2ГИС">
+        <svg viewBox="0 0 120 120" aria-hidden="true"><defs><path id="ring" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#ring" textLength="284" lengthAdjust="spacing">291 ОЦЕНКА · 5.0 · 2ГИС · </textPath></text></svg>
+        <b>5.0</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Чистки лица</span><span>Пилинги</span><span>IPL-фотоомоложение</span><span>Массаж лица</span><span>Уходы</span><span>Контурная пластика губ</span>
+  <span>Чистки лица</span><span>Пилинги</span><span>IPL-фотоомоложение</span><span>Массаж лица</span><span>Уходы</span><span>Контурная пластика губ</span>
+</div></div>
+
+<!-- SKIN MAP -->
+<section id="skin" class="bl">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Фишка</span><h2 class="rv d1">Карта <em>кожи</em></h2></div>
+      <p class="rv d2">Выберите задачу — покажем процедуры из прайса клиники</p>
+    </div>
+    <div class="skin">
+      <div class="facecard rv">
+        <div class="facebox">
+          <svg viewBox="0 0 200 260" fill="none" stroke="#F8EFF2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M100 12C150 12 176 60 172 118C169 175 140 238 100 248C60 238 31 175 28 118C24 60 50 12 100 12Z" stroke-width="2"/>
+            <path d="M54 84C64 74 82 74 90 82" /><path d="M110 82C118 74 136 74 146 84"/>
+            <path d="M58 102C68 96 80 96 88 102C80 108 66 108 58 102Z"/><path d="M112 102C120 96 132 96 142 102C134 108 120 108 112 102Z"/>
+            <path d="M100 100C98 124 94 138 90 148C96 152 104 152 110 148"/>
+            <path d="M72 188C84 176 94 178 100 184C106 178 116 176 128 188C116 204 84 204 72 188Z" fill="#D9112E" stroke="#D9112E"/>
+            <path d="M72 188C90 192 110 192 128 188" stroke="#2A0E27" stroke-width="1.4"/>
+          </svg>
+          <button type="button" class="hs" data-k="pigment" aria-label="Пигментация" aria-pressed="false" style="left:50%;top:21%"></button>
+          <button type="button" class="hs" data-k="vessels" aria-label="Сосуды" aria-pressed="false" style="left:50%;top:55%"></button>
+          <button type="button" class="hs" data-k="acne" aria-label="Акне" aria-pressed="true" style="left:27%;top:60%"></button>
+          <button type="button" class="hs" data-k="glow" aria-label="Сияние" aria-pressed="false" style="left:73%;top:60%"></button>
+          <button type="button" class="hs" data-k="lift" aria-label="Лифтинг" aria-pressed="false" style="left:70%;top:82%"></button>
+          <button type="button" class="hs" data-k="lips" aria-label="Губы" aria-pressed="false" style="left:50%;top:73%"></button>
+        </div>
+        <p class="sel">Выбрано<b id="sel">Акне и высыпания</b></p>
+      </div>
+      <div class="rv d1">
+        <div class="chips" role="group" aria-label="Задача для кожи">
+          <button type="button" class="chip" data-k="acne" aria-pressed="true">Акне</button>
+          <button type="button" class="chip" data-k="pigment" aria-pressed="false">Пигментация</button>
+          <button type="button" class="chip" data-k="vessels" aria-pressed="false">Сосуды</button>
+          <button type="button" class="chip" data-k="glow" aria-pressed="false">Сияние</button>
+          <button type="button" class="chip" data-k="lift" aria-pressed="false">Лифтинг</button>
+          <button type="button" class="chip" data-k="lips" aria-pressed="false">Губы</button>
+        </div>
+        <div class="res" aria-live="polite">
+          <h3 id="resT">Акне и высыпания</h3>
+          <p class="sub2">Подходящие процедуры из прайса</p>
+          <ul id="resL"></ul>
+          <p class="med">Имеются противопоказания, необходима консультация специалиста. Подборка собрана из прайса, точный план определяет специалист.</p>
+          <a class="btn go" id="resGo" href="https://wa.me/79627624197" target="_blank" rel="noopener">Записаться в WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Прайс</span><h2 class="rv d1">Услуги <em>и цены</em></h2></div>
+      <p class="rv d2">Цены по данным 2ГИС на 13.10.2026</p>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Категории услуг">
+      <button class="tab" role="tab" aria-selected="true" data-tab="clean" data-img="care-1">Чистки</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="peel" data-img="care-2">Пилинги</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="mass" data-img="care-3">Массаж</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="ipl" data-img="care-4">IPL-фотоомоложение</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="care" data-img="care-5">Уходы</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="lips" data-img="hero">Губы</button>
+    </div>
+    <div class="svc">
+      <div>
+        <div class="panel on" id="p-clean" role="tabpanel">
+          <h3 class="sub">Чистка лица</h3>
+          <div class="row"><div class="n"><b>Ультразвуковая</b></div><div class="p">4&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Атравматическая</b></div><div class="p">4&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Комбинированная</b></div><div class="p">5&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Механическая</b></div><div class="p">5&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>С миндальным пилингом</b></div><div class="p">6&nbsp;800&nbsp;₽</div></div>
+          <h3 class="sub">Чистка спины</h3>
+          <div class="row"><div class="n"><b>Чистка спины</b></div><div class="p">6&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Чистка спины с химическим пилингом</b></div><div class="p">7&nbsp;500&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-peel" role="tabpanel">
+          <h3 class="sub">Пилинги</h3>
+          <div class="row"><div class="n"><b>Миндальный</b></div><div class="p">4&nbsp;200&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Азелаиновый / феруловый</b></div><div class="p">4&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Карбоновый + уход</b></div><div class="p">4&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Пилинг спины</b><small>салициловый</small></div><div class="p">5&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>BioRePeel</b></div><div class="p">5&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Peach Peel</b></div><div class="p">5&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Джеснера</b></div><div class="p">5&nbsp;800&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>PRX-T33</b></div><div class="p">5&nbsp;800&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Жёлтый</b></div><div class="p">6&nbsp;000&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-mass" role="tabpanel">
+          <h3 class="sub">Массаж</h3>
+          <div class="row"><div class="n"><b>Косметологический / лимфодренажный</b></div><div class="p"><span><small>30&nbsp;мин</small>2&nbsp;800&nbsp;₽</span><span><small>1&nbsp;ч</small>3&nbsp;800&nbsp;₽</span></div></div>
+          <div class="row"><div class="n"><b>Буккальный / хиромассаж</b></div><div class="p"><span><small>30&nbsp;мин</small>3&nbsp;500&nbsp;₽</span><span><small>1&nbsp;ч</small>4&nbsp;300&nbsp;₽</span></div></div>
+        </div>
+        <div class="panel" id="p-ipl" role="tabpanel">
+          <h3 class="sub">Фотоомоложение IPL</h3>
+          <div class="row"><div class="n"><b>Единичный сосуд</b></div><div class="p">1&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Сосуды на крыльях носа</b></div><div class="p">3&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Акне / пигментация / сосуды</b><small>щёки</small></div><div class="p">7&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Лицо полностью</b></div><div class="p">11&nbsp;000&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-care" role="tabpanel">
+          <h3 class="sub">Уходы</h3>
+          <div class="row"><div class="n"><b>Экспресс-увлажнение</b></div><div class="p">4&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Карбокситерапия</b></div><div class="p">4&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Омоложение и лифтинг</b></div><div class="p">4&nbsp;700&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Сияние кожи</b><small>Eclado</small></div><div class="p">4&nbsp;800&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Комплексный уход 7 в 1</b></div><div class="p">5&nbsp;300&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-lips" role="tabpanel">
+          <h3 class="sub">Контурная пластика губ</h3>
+          <div class="row"><div class="n"><b>Viscoline Lips</b><small>1&nbsp;мл</small></div><div class="p">15&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Belotero Lips Shape</b><small>0,6&nbsp;мл</small></div><div class="p">16&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Stylage M/L</b><small>1&nbsp;мл</small></div><div class="p">19&nbsp;000&nbsp;₽</div></div>
+          <p class="med">Имеются противопоказания, необходима консультация специалиста.</p>
+        </div>
+        <div class="gift rv"><b>Подарочный <i>сертификат</i></b><span>от&nbsp;1&nbsp;000&nbsp;₽</span></div>
+      </div>
+      <div class="svc-photo" aria-hidden="true">
+        <img src="img/care-1.jpg" alt="" data-k="care-1" class="on" loading="lazy">
+        <img src="img/care-2.jpg" alt="" data-k="care-2" loading="lazy">
+        <img src="img/care-3.jpg" alt="" data-k="care-3" loading="lazy">
+        <img src="img/care-4.jpg" alt="" data-k="care-4" loading="lazy">
+        <img src="img/care-5.jpg" alt="" data-k="care-5" loading="lazy">
+        <img src="img/hero.jpg" alt="" data-k="hero" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="dk">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Галерея</span><h2 class="rv d1">Клиника <em>изнутри</em></h2></div>
+      <p class="rv d2">Фото из карточки клиники в 2ГИС</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр фото">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="int">Интерьер</button>
+      <button class="tab" aria-pressed="false" data-f="proc">Процедуры</button>
+    </div>
+    <div class="grid" id="grid">
+      <button class="gi wide rv" data-c="int"><img src="img/hero.jpg" alt="Зона ожидания: фиолетовый диван и арт с красными губами" loading="lazy"><span>Зона ожидания</span></button>
+      <button class="gi rv d1" data-c="proc"><img src="img/care-1.jpg" alt="Процедура ухода за кожей" loading="lazy"><span>Уход</span></button>
+      <button class="gi rv d2" data-c="int"><img src="img/lounge.jpg" alt="Интерьер клиники" loading="lazy"><span>Интерьер</span></button>
+      <button class="gi rv" data-c="proc"><img src="img/care-2.jpg" alt="Процедура ухода за кожей" loading="lazy"><span>Уход</span></button>
+      <button class="gi rv d1" data-c="int"><img src="img/cabinet.jpg" alt="Кабинет клиники" loading="lazy"><span>Кабинет</span></button>
+      <button class="gi wide rv d2" data-c="proc"><img src="img/doctor.jpg" alt="Косметолог за работой" loading="lazy"><span>Косметолог за работой</span></button>
+      <button class="gi rv" data-c="int"><img src="img/vitrine.jpg" alt="Витрина косметики" loading="lazy"><span>Витрина косметики</span></button>
+      <button class="gi rv d1" data-c="proc"><img src="img/care-3.jpg" alt="Процедура ухода за кожей" loading="lazy"><span>Уход</span></button>
+      <button class="gi rv d2" data-c="proc"><img src="img/portrait.jpg" alt="Клиентка клиники" loading="lazy"><span>Клиентка</span></button>
+      <button class="gi rv" data-c="proc"><img src="img/care-4.jpg" alt="Процедура ухода за кожей" loading="lazy"><span>Уход</span></button>
+      <button class="gi rv d1" data-c="int"><img src="img/room.jpg" alt="Интерьер клиники" loading="lazy"><span>Интерьер</span></button>
+      <button class="gi rv d2" data-c="proc"><img src="img/care-5.jpg" alt="Процедура ухода за кожей" loading="lazy"><span>Уход</span></button>
+      <button class="gi rv" data-c="proc"><img src="img/care-6.jpg" alt="Процедура ухода за кожей" loading="lazy"><span>Уход</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""><p id="lbCap"></p></dialog>
+
+<!-- PRAISE -->
+<section id="praise" class="bl">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Отзывы</span><h2 class="rv d1">За что <em>хвалят</em></h2></div>
+      <p class="rv d2">Пересказ отзывов клиентов в 2ГИС</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card rv"><span class="num">01</span><h3>Результат, которому доверяют</h3><p>Клиенты пишут, что результат всегда получается идеальным. Некоторые ходят уже второй год и доверяют только этому врачу.</p></article>
+      <article class="pr-card rv d1"><span class="num">02</span><h3>Знакомство с косметологией</h3><p>Для многих именно здесь началось знакомство с косметологией: подробно объясняют, что и зачем делают, и работают бережно.</p></article>
+      <article class="pr-card rv d2"><span class="num">03</span><h3>Красивый кабинет</h3><p>Гости отмечают приятную атмосферу и эффектный, красиво оформленный кабинет.</p></article>
+    </div>
+    <div class="score rv">
+      <a href="https://2gis.ru/spb/firm/70000001085793714" target="_blank" rel="noopener"><strong>5.0</strong><span><b>2ГИС</b>291&nbsp;оценка</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- CLINIC -->
+<section id="clinic">
+  <div class="wrap">
+    <div class="clinic">
+      <div class="ph4">
+        <figure class="rv"><img src="img/doctor.jpg" alt="Косметолог за работой" loading="lazy"></figure>
+        <figure class="rv d1"><img src="img/cabinet.jpg" alt="Кабинет клиники" loading="lazy"></figure>
+        <figure class="rv d2"><img src="img/vitrine.jpg" alt="Витрина косметики" loading="lazy"></figure>
+      </div>
+      <div>
+        <span class="eyebrow rv">Клиника</span>
+        <h2 class="rv d1">Дерматокосметолог <em>и&nbsp;красивая</em> студия</h2>
+        <ul class="tags rv d2">
+          <li>Аппаратная косметология (IPL-фотоомоложение)</li>
+          <li>Чистки</li>
+          <li>Пилинги</li>
+          <li>Удаление новообразований</li>
+          <li>Массаж лица</li>
+          <li>Контурная пластика губ</li>
+        </ul>
+        <div class="facts rv d2">
+          <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>ЖК «На Королёва»</span>
+          <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Ежедневно 10:00–21:00</span>
+          <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Карта, наличные, QR</span>
+          <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg>Wi-Fi</span>
+          <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M12 8v13M3 12h18"/></svg>Подарочный сертификат</span>
+        </div>
+        <p class="med rv d3">Имеются противопоказания, необходима консультация специалиста.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" class="bl">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1">Как <em>добраться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Санкт-Петербург, пр. Королёва, 68 ст1, студия «Эпичные» (Приморский район, ЖК «На Королёва»)</p></div>
+        <div class="ci"><small>Часы работы</small><p>Ежедневно, 10:00–21:00</p></div>
+        <div class="ci"><small>Телефон, WhatsApp, Telegram</small><a class="big" href="tel:+79627624197">+7 962 762-41-97</a></div>
+        <div class="ci"><small>Мессенджеры и соцсети</small>
+          <div class="socials">
+            <a href="https://wa.me/79627624197" data-wa target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://t.me/+79627624197" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://vk.com/buyalskaya_kosmetolog" target="_blank" rel="noopener">ВКонтакте</a>
+            <a href="mailto:buyalskayaalexandra@yandex.com">Email</a>
+          </div>
+        </div>
+        <div class="ci"><small>Оплата</small><p>Карта, наличные, QR</p></div>
+        <div class="ctas"><a class="btn d" href="https://yandex.ru/maps/?rtext=~60.036028%2C30.234448&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a></div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?ll=30.234448%2C60.036028&z=16&pt=30.234448%2C60.036028%2Cpm2rdm" title="Клиника косметологии Буяльской на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow rv" style="color:var(--red-hi)">Запись</span>
+    <h2 class="rv d1">Кожа, которую <em style="color:var(--red-hi)">хочется показать</em></h2>
+    <p class="lead rv d2">Напишите, что беспокоит кожу, и выберите время визита. Ежедневно с 10:00 до 21:00.</p>
+    <div class="ctas rv d3">
+      <a class="btn" href="https://wa.me/79627624197" data-wa target="_blank" rel="noopener">Записаться в WhatsApp</a>
+      <a class="btn w" href="tel:+79627624197">+7 962 762-41-97</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="med" style="margin:0">Имеются противопоказания, необходима консультация специалиста.</p>
+    <span>© Клиника косметологии Александры Буяльской, Санкт-Петербург</span>
+    <span>Демо-концепт. Цены и данные — из открытых источников: <a href="https://2gis.ru/spb/firm/70000001085793714" target="_blank" rel="noopener">2ГИС</a> (цены на 13.10.2026), <a href="https://vk.com/buyalskaya_kosmetolog" target="_blank" rel="noopener">ВКонтакте</a>, на 22.10.2026. Страница не индексируется.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79627624197"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+  <a href="https://t.me/+79627624197" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 4L3 11l6 2.5L11 20l3-4 5 3z"/></svg>Telegram</a>
+  <a class="main" href="https://wa.me/79627624197" data-wa target="_blank" rel="noopener">Записаться</a>
+</nav>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const NB = ' ';
+  const fmt = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, NB) + NB + '₽';
+  const PHONE = '79627624197';
+  const waUrl = t => 'https://wa.me/' + PHONE + '?text=' + encodeURIComponent(t);
+  const WA_TEXT = 'Здравствуйте! Хочу записаться в клинику косметологии Александры Буяльской. Подскажите, пожалуйста, свободное время.';
+
+  // WhatsApp с готовым текстом
+  document.querySelectorAll('[data-wa]').forEach(a => { a.href = waUrl(WA_TEXT); });
+
+  // Статус «открыто/закрыто» по московскому времени (ежедневно 10:00–21:00)
+  const st = document.getElementById('status');
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
+  const m = now.getHours() * 60 + now.getMinutes();
+  const open = m >= 10 * 60 && m < 21 * 60;
+  st.classList.toggle('closed', !open);
+  st.querySelector('span').textContent = open ? 'Открыто сейчас · до 21:00' : 'Сейчас закрыто · откроемся в 10:00';
+
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    const y = scrollY;
+    hdr.classList.toggle('scrolled', y > 8);
+    mbar.classList.toggle('show', y > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Карта кожи: задача -> процедуры из прайса
+  const MAP = {
+    acne:    { t: 'Акне и высыпания', i: [['Чистка лица ультразвуковая', 4000], ['Чистка лица комбинированная', 5000], ['Пилинг миндальный', 4200], ['Пилинг азелаиновый / феруловый', 4500], ['IPL: акне, пигментация, сосуды (щёки)', 7500], ['Чистка спины', 6000]] },
+    pigment: { t: 'Пигментация', i: [['IPL: акне, пигментация, сосуды (щёки)', 7500], ['Пилинг азелаиновый / феруловый', 4500], ['Пилинг миндальный', 4200], ['Пилинг BioRePeel', 5500], ['Пилинг Peach Peel', 5500]] },
+    vessels: { t: 'Сосуды', i: [['IPL: единичный сосуд', 1500], ['IPL: сосуды на крыльях носа', 3500], ['IPL: акне, пигментация, сосуды (щёки)', 7500], ['IPL: лицо полностью', 11000]] },
+    glow:    { t: 'Сияние кожи', i: [['Уход «Сияние кожи» (Eclado)', 4800], ['Экспресс-увлажнение', 4500], ['Карбоновый пилинг + уход', 4500], ['Чистка лица атравматическая', 4500], ['Комплексный уход 7 в 1', 5300]] },
+    lift:    { t: 'Лифтинг', i: [['Уход «Омоложение и лифтинг»', 4700], ['Массаж буккальный / хиромассаж, 1 ч', 4300], ['Массаж лимфодренажный, 1 ч', 3800], ['Карбокситерапия', 4500], ['IPL-фотоомоложение: лицо полностью', 11000]] },
+    lips:    { t: 'Губы', i: [['Контурная пластика: Viscoline Lips, 1 мл', 15000], ['Контурная пластика: Belotero Lips Shape, 0,6 мл', 16000], ['Контурная пластика: Stylage M/L, 1 мл', 19000]] }
+  };
+  const kb = document.querySelectorAll('[data-k].chip, [data-k].hs');
+  const resT = document.getElementById('resT'), resL = document.getElementById('resL'), resGo = document.getElementById('resGo'), sel = document.getElementById('sel');
+  const pick = k => {
+    const d = MAP[k];
+    kb.forEach(b => b.setAttribute('aria-pressed', b.dataset.k === k));
+    resT.textContent = d.t; sel.textContent = d.t;
+    resL.innerHTML = d.i.map(([n, p]) => `<li><span>${n}</span><b>${fmt(p)}</b></li>`).join('');
+    resL.classList.remove('fade'); void resL.offsetWidth; resL.classList.add('fade');
+    resGo.href = waUrl('Здравствуйте! Хочу записаться в клинику косметологии Александры Буяльской. Запрос: ' + d.t.toLowerCase() + '. Интересуют: ' + d.i.slice(0, 3).map(x => x[0]).join('; ') + '.');
+  };
+  kb.forEach(b => b.addEventListener('click', () => pick(b.dataset.k)));
+  pick('acne');
+
+  // Вкладки прайса + смена фото
+  const tabs = document.querySelectorAll('[role=tab]');
+  const pics = document.querySelectorAll('.svc-photo img');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === 'p-' + t.dataset.tab));
+    pics.forEach(p => p.classList.toggle('on', p.dataset.k === t.dataset.img));
+  }));
+
+  // Фильтр галереи и лайтбокс
+  const items = document.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt;
+    lbCap.textContent = i.querySelector('span').textContent;
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>

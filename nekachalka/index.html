@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Некачалка — фитнес-пространство в Мурино</title>
+<meta name="description" content="Фитнес-пространство «Некачалка» в Мурино: групповые и персональные тренировки, кроссфит, TRX, пилатес, стретчинг, танцы. Пн–Пт 07:00–22:00, Сб–Вс 09:00–17:00.">
+<meta name="theme-color" content="#F4F0FF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Rubik:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Rubik:wght@400;500;600&display=swap"></noscript>
+<style>
+:root{
+  --lav:#F4F0FF; --lav-2:#E8DFFF; --lav-3:#D5C6FF; --lav-4:#B6A0F7; --violet:#5B3FD0;
+  --blue:#2B3BFF; --blue-d:#1D2AD6; --ink:#17113F; --ink-2:#3A3466; --muted:#5E5886;
+  --line:rgba(23,17,63,.12); --white:#fff;
+  --r-xl:40px; --r-lg:30px; --r-md:20px;
+  --shadow:0 26px 50px -28px rgba(43,59,255,.55);
+  --disp:"Unbounded","Arial Black",system-ui,sans-serif;
+  --sans:"Rubik",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--lav);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+section[id]{scroll-margin-top:72px}
+.wrap{width:min(100% - 32px,var(--wrap));margin-inline:auto}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font:600 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--violet)}
+.eyebrow::before{content:"";width:22px;height:6px;border-radius:99px;background:var(--blue)}
+h1,h2,h3{font-family:var(--disp);font-weight:700;line-height:1.12;margin:0;letter-spacing:-.02em;overflow-wrap:break-word}
+h2{font-size:clamp(26px,5.4vw,50px)}
+h2 em{font-style:normal;color:var(--blue)}
+.lead{font-size:clamp(16px,1.6vw,18px);color:var(--ink-2);max-width:54ch}
+section{padding:clamp(64px,9vw,112px) 0}
+
+/* demo */
+.demo{background:var(--ink);color:#E6DFFF;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:#fff;font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:11px;border:1px solid rgba(255,255,255,.4);border-radius:99px;padding:3px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(244,240,255,.88);background:color-mix(in srgb,var(--lav) 84%,transparent);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:4px;text-decoration:none;font:800 17px/1 var(--disp);letter-spacing:-.02em}
+.logo i{font-style:normal;background:var(--blue);color:#fff;border-radius:10px;padding:6px 8px 7px;transform:rotate(-5deg);display:inline-block}
+.nav{display:none;gap:26px}
+.nav a{text-decoration:none;font-weight:500;font-size:14.5px;color:var(--ink-2);position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:3px;border-radius:99px;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:99px;border:2px solid var(--blue);background:var(--blue);color:#fff;font-weight:600;font-size:15px;text-align:center;text-decoration:none;cursor:pointer;transition:transform .25s,background .25s,color .25s,border-color .25s,box-shadow .25s;box-shadow:0 14px 28px -16px rgba(43,59,255,.8)}
+.btn:hover{transform:translateY(-2px);background:var(--blue-d);border-color:var(--blue-d)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink);box-shadow:none}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+.btn.white{background:#fff;color:var(--blue);border-color:#fff;box-shadow:none}
+.btn.white:hover{background:var(--lav-2);border-color:var(--lav-2)}
+.btn.ghost-w{background:transparent;color:#fff;border-color:rgba(255,255,255,.7);box-shadow:none}
+.btn.ghost-w:hover{background:#fff;color:var(--blue)}
+.btn.sm{min-height:44px;padding:0 20px;font-size:14px}
+.hdr .btn{display:none}
+.burger{width:46px;height:46px;border-radius:16px;border:0;background:var(--blue);display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:18px;height:2px;background:#fff;position:relative;border-radius:2px}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;border-radius:2px;background:#fff;transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--lav);padding:120px 24px 40px;display:flex;flex-direction:column;gap:4px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:700 24px/1.3 var(--disp);text-decoration:none;padding:10px 0;border-bottom:2px solid var(--lav-3)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{padding:clamp(24px,4vw,56px) 0 clamp(56px,8vw,96px);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:560px;height:560px;border-radius:50%;right:-180px;top:-160px;background:radial-gradient(circle at 40% 40%,var(--lav-3),rgba(213,198,255,0) 70%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:44px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px}}
+.status{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:99px;padding:8px 14px 8px 12px;font-size:13.5px;font-weight:500;margin-bottom:22px;max-width:100%}
+.status i{width:9px;height:9px;border-radius:50%;flex:none;background:#2FB36B;box-shadow:0 0 0 0 rgba(47,179,107,.5);animation:pulse 2s infinite}
+.status.closed i{background:#D4465C;animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(47,179,107,0)}100%{box-shadow:0 0 0 0 rgba(47,179,107,0)}}
+.hero h1{font-size:clamp(32px,9.4vw,76px);display:flex;flex-wrap:wrap;align-items:center;gap:.06em .12em;margin:18px 0 22px;line-height:1.05;font-weight:800}
+.ne{display:inline-block;background:var(--blue);color:#fff;border-radius:.34em;padding:.06em .26em .1em;transform:rotate(-4deg);box-shadow:var(--shadow)}
+.kach{color:var(--ink)}
+.hero .lead{margin:0 0 22px}
+.place{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:14.5px;margin-bottom:26px}
+.place svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--blue)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+.ctas .btn.first{flex-basis:100%}
+@media (min-width:640px){.ctas .btn,.ctas .btn.first{flex:0 0 auto}}
+.ratings{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:32px;padding-top:24px;border-top:2px dashed var(--lav-3)}
+.rate{display:flex;align-items:center;gap:12px}
+.rate strong{font:800 38px/1 var(--disp)}
+.rate span{font-size:13px;line-height:1.35;color:var(--muted)}
+.rate span b{color:#D8901A;font-weight:600;display:block;letter-spacing:2px;font-size:12px}
+
+.visual{position:relative;max-width:540px;margin-inline:auto;width:100%;padding-left:30px}
+.wb{position:absolute;left:0;top:30px;bottom:-24px;width:96px;border-radius:18px;
+  background:
+    linear-gradient(var(--blue),var(--blue)) 0 0/7px 100% no-repeat,
+    linear-gradient(var(--blue),var(--blue)) 100% 0/7px 100% no-repeat,
+    repeating-linear-gradient(180deg,transparent 0 24px,var(--blue) 24px 30px) 7px 0/calc(100% - 14px) 100% no-repeat}
+.photo{position:relative;z-index:1;aspect-ratio:5/6;border-radius:110px 26px 110px 26px;overflow:hidden;box-shadow:var(--shadow);background:var(--lav-2)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.sticker{position:absolute;z-index:3;right:-4px;top:-18px;width:116px;height:116px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-content:center;text-align:center;text-decoration:none;border:4px solid var(--lav);transform:rotate(10deg);animation:wob 5s ease-in-out infinite;box-shadow:var(--shadow)}
+.sticker small{font:500 11px/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--lav-3)}
+.sticker b{font:800 22px/1.15 var(--disp)}
+@keyframes wob{50%{transform:rotate(2deg) scale(1.05)}}
+
+/* marquee */
+.marquee{background:var(--blue);color:#fff;overflow:hidden;padding:16px 0}
+.track{display:flex;width:max-content;animation:run 40s linear infinite}
+.track span{font:700 clamp(15px,2vw,20px)/1 var(--disp);text-transform:uppercase;letter-spacing:.02em;padding:0 22px;white-space:nowrap;display:flex;align-items:center;gap:44px}
+.track span::after{content:"";width:14px;height:14px;border-radius:50%;background:var(--lav-3)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* heads */
+.head{display:grid;gap:16px;margin-bottom:40px}
+.head h2{margin-top:14px}
+.head p{margin:0;color:var(--muted);font-size:14px}
+@media (min-width:960px){.head{grid-template-columns:minmax(0,1fr) auto;align-items:end}}
+
+/* directions */
+.dirs{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:900px){.dirs{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.2fr)}}
+.dcard{position:relative;border-radius:var(--r-xl);padding:28px;background:#fff;display:flex;flex-direction:column;gap:20px;min-height:260px}
+.dcard .idx{font:800 54px/1 var(--disp);color:var(--lav-3)}
+.dcard h3{font-size:22px}
+.dcard .chips{margin-top:auto}
+.dcard.a{background:var(--lav-3)}
+.dcard.a .idx{color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:10px 16px;border-radius:99px;background:var(--lav);font-weight:500;font-size:15px}
+.dcard.a .chip{background:#fff}
+.dcard.dance{color:#fff;background:#120A2E;overflow:hidden;min-height:380px;justify-content:flex-end}
+.dcard.dance img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.dcard.dance::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(18,10,46,0) 25%,rgba(18,10,46,.9))}
+.dcard.dance>*:not(img){position:relative;z-index:2}
+.dcard.dance .chip{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);color:#fff;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.dcard.dance small{font-size:13px;color:#E6DFFF;margin-top:-8px}
+
+/* prices */
+.prices{background:#fff;border-radius:var(--r-xl) var(--r-xl) 0 0}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.tab{border:2px solid var(--lav-3);background:#fff;border-radius:99px;padding:10px 18px;font-weight:600;font-size:14px;cursor:pointer;transition:all .25s}
+.tab:hover{border-color:var(--blue)}
+.tab[aria-selected="true"],.tab[aria-pressed="true"]{background:var(--blue);color:#fff;border-color:var(--blue)}
+.svc{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
+@media (min-width:960px){.svc{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:56px;align-items:start}}
+.panel{display:none}
+.panel.on{display:block;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.row{display:flex;align-items:baseline;gap:14px;padding:16px 0;border-bottom:2px dashed var(--lav-2)}
+.row:first-child{border-top:2px dashed var(--lav-2)}
+.row .n{flex:1 1 auto;min-width:0}
+.row .n b{display:block;font-weight:500;font-size:16px}
+.row .n small{color:var(--muted);font-size:13.5px}
+.row .p{font:700 clamp(16px,4.6vw,21px)/1.1 var(--disp);white-space:nowrap}
+.row.hl .p{color:var(--blue)}
+.note{margin-top:22px;font-size:13px;color:var(--muted)}
+.svc-photo{display:none;position:relative;border-radius:110px 26px 110px 26px;overflow:hidden;aspect-ratio:4/5;background:var(--lav-2)}
+@media (min-width:960px){.svc-photo{display:block;position:sticky;top:96px}}
+.svc-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .7s,transform 1.2s}
+.svc-photo img.on{opacity:1;transform:none}
+
+/* calculator */
+.calc-sec{background:var(--blue);color:#fff;position:relative;overflow:hidden}
+.calc-sec::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;left:-160px;bottom:-200px;background:rgba(255,255,255,.08)}
+.calc-sec .wrap{position:relative}
+.calc-sec .eyebrow{color:var(--lav-3)}
+.calc-sec .eyebrow::before{background:var(--lav-3)}
+.calc-sec h2 em{color:var(--lav-3)}
+.calc-sec .head p{color:#DCD4FF}
+.calc{background:#fff;color:var(--ink);border-radius:var(--r-xl);padding:clamp(18px,4vw,44px);display:grid;grid-template-columns:minmax(0,1fr);gap:28px;box-shadow:0 34px 60px -30px rgba(8,12,110,.7)}
+@media (min-width:900px){.calc{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px}}
+.kind{display:flex;flex-wrap:wrap;gap:6px;background:var(--lav);padding:5px;border-radius:99px}
+.kind button{flex:1 1 130px;border:0;background:transparent;border-radius:99px;padding:12px 14px;font-weight:600;font-size:15px;cursor:pointer;color:var(--muted);transition:background .25s,color .25s}
+.kind button[aria-pressed="true"]{background:var(--blue);color:#fff}
+.q{font:700 15px/1.3 var(--disp);margin:26px 0 0}
+.counts{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:8px;margin-top:14px}
+.cnt{min-height:58px;border:2px solid var(--lav-3);background:#fff;border-radius:18px;font:700 20px/1 var(--disp);cursor:pointer;color:var(--ink);transition:transform .2s,background .2s,border-color .2s,color .2s}
+.cnt:hover{border-color:var(--blue)}
+.cnt[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff;transform:translateY(-3px)}
+.hint{margin:16px 0 0;font-size:13.5px;color:var(--muted)}
+.trial{margin:18px 0 0;padding:14px 16px;border-radius:var(--r-md);background:var(--lav);font-size:14.5px}
+.trial b{font-weight:600;color:var(--blue)}
+.cr{background:var(--lav);border-radius:var(--r-lg);padding:22px;display:flex;flex-direction:column;gap:14px;min-width:0}
+@media (min-width:480px){.cr{padding:28px}}
+.cr .lbl{font-size:12.5px;color:var(--muted);font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.total{font:800 clamp(28px,8vw,52px)/1 var(--disp);color:var(--blue)}
+.per{font-size:15px;color:var(--ink-2)}
+.per b{font:700 20px/1.2 var(--disp);color:var(--ink)}
+.cr ul{list-style:none;margin:0;padding:0;font-size:14.5px;display:grid;gap:8px}
+.cr li{display:flex;justify-content:space-between;gap:12px;border-bottom:2px dashed var(--lav-3);padding-bottom:8px}
+.cr li span:last-child{font-weight:600;text-align:right}
+.bars-t{font-size:12.5px;color:var(--muted);margin:2px 0 -4px}
+.bars{display:flex;align-items:flex-end;gap:6px;height:112px}
+.col{flex:1 1 0;min-width:0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:4px}
+.col i{display:block;width:100%;border-radius:9px 9px 3px 3px;background:var(--lav-3);transition:height .5s cubic-bezier(.2,.8,.2,1),background .3s}
+.col.on i{background:var(--blue)}
+.col span{font:600 11px/1 var(--sans);color:var(--muted)}
+.col.on span{color:var(--blue)}
+.cr .ctas .btn{flex:1 1 100%}
+
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pc{background:#fff;border-radius:var(--r-xl);padding:30px}
+.pc .n{width:48px;height:48px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font:700 16px/1 var(--disp)}
+.pc h3{font-size:19px;line-height:1.25;margin:22px 0 10px}
+.pc p{margin:0;color:var(--ink-2)}
+.pc.l{background:var(--lav-3)}
+.pc.b{background:var(--blue);color:#fff}
+.pc.b p{color:#E6E2FF}
+.pc.b .n{background:#fff;color:var(--blue)}
+.score{display:flex;flex-wrap:wrap;gap:14px;margin-top:20px}
+.score a{display:flex;align-items:center;gap:16px;background:#fff;border-radius:var(--r-md);padding:16px 22px;text-decoration:none;flex:1 1 240px;border:2px solid transparent;transition:border-color .25s}
+.score a:hover{border-color:var(--blue)}
+.score strong{font:800 40px/1 var(--disp);color:var(--blue)}
+.score span{font-size:13.5px;color:var(--muted)}
+.score span b{color:var(--ink);display:block;font-weight:600}
+
+/* gallery */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.gal{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:dense;gap:10px}
+@media (min-width:760px){.gal{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}}
+.gi{position:relative;border:0;padding:0;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:1;background:var(--lav-2);cursor:zoom-in;transition:opacity .4s,transform .4s}
+.gi.wide{grid-column:span 2;aspect-ratio:2/1}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.07)}
+.gi span{position:absolute;left:10px;bottom:10px;max-width:calc(100% - 20px);background:rgba(255,255,255,.92);font-size:12px;font-weight:500;padding:5px 11px;border-radius:99px;text-align:left}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,1000px);max-height:90vh}
+.lb::backdrop{background:rgba(18,10,46,.88)}
+.lb img{max-height:84vh;width:auto;margin:auto;border-radius:20px}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:#fff;font-size:22px;cursor:pointer}
+
+/* space */
+.space{background:#fff}
+.sp{display:grid;grid-template-columns:minmax(0,1fr);gap:44px;align-items:center}
+@media (min-width:960px){.sp{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px}}
+.sp h2{margin:14px 0 18px}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.fact{display:inline-flex;align-items:center;gap:8px;background:var(--lav);border-radius:99px;padding:10px 16px;font-size:14px;font-weight:500}
+.fact svg{width:16px;height:16px;flex:none;color:var(--blue)}
+.collage{position:relative;padding-bottom:64px}
+.collage figure{margin:0;overflow:hidden;background:var(--lav-2)}
+.collage .c1{aspect-ratio:4/3;border-radius:26px 110px 26px 110px}
+.collage .c2{position:absolute;right:0;bottom:0;width:44%;aspect-ratio:1;border-radius:50%;border:6px solid #fff;box-shadow:var(--shadow)}
+.collage img{width:100%;height:100%;object-fit:cover}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:28px;align-items:stretch}}
+.cinfo{display:grid;gap:14px;align-content:start}
+.ci{background:#fff;border-radius:var(--r-md);padding:20px 22px}
+.ci small{display:block;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--violet);margin-bottom:8px}
+.ci p{margin:0;font-size:17px;font-weight:500}
+.ci a.big{font:800 clamp(20px,6vw,28px)/1.1 var(--disp);text-decoration:none;color:var(--blue)}
+.hours{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.hours li{display:flex;justify-content:space-between;gap:12px;font-size:16px;padding:8px 12px;border-radius:12px}
+.hours li.today{background:var(--lav-2);font-weight:600}
+.socials{display:flex;gap:8px;flex-wrap:wrap}
+.socials a{display:inline-flex;align-items:center;border:2px solid var(--lav-3);background:#fff;border-radius:99px;padding:9px 16px;font-size:14px;font-weight:600;text-decoration:none;transition:background .25s,color .25s,border-color .25s}
+.socials a:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+.map{border-radius:var(--r-xl);overflow:hidden;min-height:380px;background:var(--lav-2)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* final */
+.final{padding-top:0}
+.fbox{position:relative;overflow:hidden;background:var(--blue);color:#fff;border-radius:var(--r-xl);padding:clamp(36px,7vw,80px) clamp(22px,5vw,64px)}
+.fbox::before{content:"";position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;background:rgba(255,255,255,.1)}
+.fbox .wb2{position:absolute;right:28px;bottom:-30px;width:90px;height:170px;opacity:.28;background:
+    linear-gradient(#fff,#fff) 0 0/7px 100% no-repeat,
+    linear-gradient(#fff,#fff) 100% 0/7px 100% no-repeat,
+    repeating-linear-gradient(180deg,transparent 0 22px,#fff 22px 28px) 7px 0/calc(100% - 14px) 100% no-repeat}
+.fbox>*:not(.wb2){position:relative}
+.fbox .eyebrow{color:var(--lav-3)}
+.fbox .eyebrow::before{background:var(--lav-3)}
+.fbox h2{font-size:clamp(28px,6.4vw,64px);max-width:16ch;margin:16px 0}
+.fbox h2 em{color:var(--lav-3)}
+.fbox .lead{color:#E3DEFF;margin:0}
+.fbox .ctas{margin-top:28px}
+footer{padding:36px 0 120px;font-size:13px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer a{color:var(--violet)}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.3fr);gap:8px;padding:8px;background:rgba(23,17,63,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:26px;box-shadow:0 18px 40px -12px rgba(0,0,0,.5);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:18px;color:#fff;text-decoration:none;font-size:11.5px;font-weight:500}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--blue);flex-direction:row;font-size:14px;font-weight:600;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта для фитнес-пространства «Некачалка». Данные из открытых источников (карточка 2ГИС) на 22.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Некачалка — наверх"><i>Не</i>качалка</a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#dirs">Направления</a>
+      <a href="#prices">Цены</a>
+      <a href="#calc">Калькулятор</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm" href="https://wa.me/79992161077?text=Здравствуйте!%20Хочу%20записаться%20на%20пробную%20групповую%20тренировку%20за%20600%20₽." target="_blank" rel="noopener">Пробная за&nbsp;600&nbsp;₽</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#dirs">Направления</a>
+  <a href="#prices">Цены</a>
+  <a href="#calc">Калькулятор</a>
+  <a href="#praise">Отзывы</a>
+  <a href="#gallery">Галерея</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="status rv" id="status"><i></i><span>Пн–Пт 07:00–22:00 · Сб–Вс 09:00–17:00</span></span><br>
+      <span class="eyebrow rv">Фитнес-пространство · Мурино</span>
+      <h1 class="rv d1" aria-label="Некачалка"><span class="ne">Не</span><span class="kach">качалка</span></h1>
+      <p class="lead rv d2">Групповые и персональные тренировки, пилатес, стретчинг и танцы в уютной студии, а не в «качалке».</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Петровский бульвар, 7 к1, вход со двора · Мурино, ЖК «Ласточка»</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn first" href="https://wa.me/79992161077?text=Здравствуйте!%20Хочу%20записаться%20на%20пробную%20групповую%20тренировку%20за%20600%20₽." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>Пробная за&nbsp;600&nbsp;₽</a>
+        <a class="btn ghost" href="tel:+79992161077"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+        <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~60.056629%2C30.43289&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+      </div>
+      <div class="ratings rv d3">
+        <div class="rate"><strong>5.0</strong><span><b>★★★★★</b>2ГИС · 104 оценки</span></div>
+      </div>
+    </div>
+    <div class="visual rv d2">
+      <div class="wb" aria-hidden="true"></div>
+      <a class="sticker" href="https://wa.me/79992161077?text=Здравствуйте!%20Хочу%20записаться%20на%20пробную%20групповую%20тренировку%20за%20600%20₽." target="_blank" rel="noopener" aria-label="Пробная групповая за 600 рублей"><small>пробная</small><b>600&nbsp;₽</b></a>
+      <div class="photo"><img src="img/hero.jpg" alt="Светлый зал студии с зеркалами" width="1024" height="768" fetchpriority="high"></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Групповые</span><span>Персональные</span><span>Кроссфит</span><span>TRX</span><span>Пилатес</span><span>Стретчинг</span><span>Зумба</span><span>High heels</span><span>Стрип-пластика</span><span>Тверк</span>
+  <span>Групповые</span><span>Персональные</span><span>Кроссфит</span><span>TRX</span><span>Пилатес</span><span>Стретчинг</span><span>Зумба</span><span>High heels</span><span>Стрип-пластика</span><span>Тверк</span>
+</div></div>
+
+<!-- DIRECTIONS -->
+<section id="dirs">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Направления</span><h2 class="rv d1">Что у нас <em>можно делать</em></h2></div>
+      <p class="rv d2">Направления из карточки студии в 2ГИС</p>
+    </div>
+    <div class="dirs">
+      <article class="dcard a rv"><span class="idx">01</span><h3>Тренировки</h3>
+        <div class="chips"><span class="chip">Групповые</span><span class="chip">Персональные</span><span class="chip">Кроссфит</span><span class="chip">TRX</span></div></article>
+      <article class="dcard rv d1"><span class="idx">02</span><h3>Гибкость и тело</h3>
+        <div class="chips"><span class="chip">Пилатес</span><span class="chip">Стретчинг</span></div></article>
+      <article class="dcard dance rv d2"><img src="img/dance.jpg" alt="Танцевальная фотосессия high heels в красном свете" width="1024" height="768" loading="lazy"><h3>Танцы</h3>
+        <div class="chips"><span class="chip">Зумба</span><span class="chip">High heels</span><span class="chip">Стрип-пластика</span><span class="chip">Тверк</span></div>
+        <small>Танцевальные программы студии</small></article>
+    </div>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section id="prices" class="prices">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Цены</span><h2 class="rv d1">Занятия <em>и абонементы</em></h2></div>
+      <p class="rv d2">Цены из карточки 2ГИС на 05.05.2026</p>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Категории цен">
+      <button class="tab" role="tab" aria-selected="true" data-tab="trial" data-img="train-1">Пробные</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="group" data-img="train-3">Групповые</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="pers" data-img="train-2">Персональные</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="abon" data-img="train-4">Абонементы</button>
+    </div>
+    <div class="svc">
+      <div>
+        <div class="panel on" id="p-trial" role="tabpanel">
+          <div class="row hl"><div class="n"><b>Пробная групповая тренировка</b><small>Легко начать с пробной</small></div><div class="p">600&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Пробная персональная тренировка</b></div><div class="p">1&nbsp;000&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-group" role="tabpanel">
+          <div class="row"><div class="n"><b>Групповое занятие</b><small>Разовое</small></div><div class="p">1&nbsp;200&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>4 групповых</b></div><div class="p">3&nbsp;590&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>8 групповых</b></div><div class="p">6&nbsp;790&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>12 групповых</b></div><div class="p">8&nbsp;990&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>16 групповых</b></div><div class="p">11&nbsp;190&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>24 групповых</b></div><div class="p">15&nbsp;590&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>32 групповых</b></div><div class="p">19&nbsp;190&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-pers" role="tabpanel">
+          <div class="row"><div class="n"><b>Персональная тренировка</b><small>Разовая</small></div><div class="p">2&nbsp;200&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>4 персональных</b></div><div class="p">7&nbsp;990&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>8 персональных</b></div><div class="p">14&nbsp;390&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-abon" role="tabpanel">
+          <div class="row"><div class="n"><b>Месячный абонемент</b></div><div class="p">от&nbsp;3&nbsp;590&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Годовой абонемент</b></div><div class="p">от&nbsp;35&nbsp;190&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Разовые посещения</b><small>Возможны</small></div><div class="p">—</div></div>
+        </div>
+        <p class="note">Оплата: карта, наличные, перевод.</p>
+      </div>
+      <div class="svc-photo" aria-hidden="true">
+        <img src="img/train-1.jpg" alt="" data-k="train-1" class="on" width="1024" height="768" loading="lazy">
+        <img src="img/train-3.jpg" alt="" data-k="train-3" width="1024" height="768" loading="lazy">
+        <img src="img/train-2.jpg" alt="" data-k="train-2" width="1024" height="768" loading="lazy">
+        <img src="img/train-4.jpg" alt="" data-k="train-4" width="1024" height="768" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section id="calc" class="calc-sec">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Калькулятор абонемента</span><h2 class="rv d1">Сколько стоит <em>одно занятие</em></h2></div>
+      <p class="rv d2">Считаем по ценам из карточки 2ГИС</p>
+    </div>
+    <div class="calc rv">
+      <div>
+        <div class="kind" role="group" aria-label="Тип занятий">
+          <button type="button" aria-pressed="true" data-kind="g">Групповые</button>
+          <button type="button" aria-pressed="false" data-kind="p">Персональные</button>
+        </div>
+        <p class="q">Сколько занятий?</p>
+        <div class="counts" id="counts" role="group" aria-label="Число занятий"></div>
+        <p class="hint" id="hint"></p>
+        <p class="trial">Начать можно с пробной: групповая <b>600&nbsp;₽</b>, персональная <b>1&nbsp;000&nbsp;₽</b>.</p>
+      </div>
+      <div class="cr" aria-live="polite">
+        <span class="lbl" id="lbl">Абонемент</span>
+        <div class="total" id="total">3&nbsp;590&nbsp;₽</div>
+        <div class="per"><b id="per">≈&nbsp;898&nbsp;₽</b> за занятие</div>
+        <ul id="lines"></ul>
+        <p class="bars-t">Цена за занятие в разных пакетах</p>
+        <div class="bars" id="bars" aria-hidden="true"></div>
+        <div class="ctas">
+          <a class="btn" id="calcWa" href="https://wa.me/79992161077" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>Записаться в WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRAISE -->
+<section id="praise">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Отзывы</span><h2 class="rv d1">За что <em>хвалят</em></h2></div>
+      <p class="rv d2">Пересказ отзывов клиентов в 2ГИС</p>
+    </div>
+    <div class="praise">
+      <article class="pc rv"><span class="n">01</span><h3>Тренеры, к которым возвращаются</h3><p>Тренеров называют самыми лучшими: многие занимаются у одного и того же тренера годами.</p></article>
+      <article class="pc b rv d1"><span class="n">02</span><h3>Уютно, а не как в «качалке»</h3><p>Клиенты пишут о дружелюбной атмосфере и уютной студии без брутальности.</p></article>
+      <article class="pc l rv d2"><span class="n">03</span><h3>Легко начать</h3><p>Есть и групповые, и индивидуальные занятия, а начать можно с пробной тренировки.</p></article>
+    </div>
+    <div class="score rv">
+      <a href="https://2gis.ru/spb/firm/70000001046572110" target="_blank" rel="noopener"><strong>5.0</strong><span><b>2ГИС</b>104 оценки</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Галерея</span><h2 class="rv d1">Как <em>это выглядит</em></h2></div>
+      <p class="rv d2">Фото из карточки студии в 2ГИС</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр фото">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="train">Тренировки</button>
+      <button class="tab" aria-pressed="false" data-f="team">Тренеры и участницы</button>
+      <button class="tab" aria-pressed="false" data-f="dance">Танцы</button>
+    </div>
+    <div class="gal" id="gal">
+      <button class="gi wide rv" data-c="dance"><img src="img/dance.jpg" alt="Танцевальная фотосессия high heels в красном свете" width="1024" height="768" loading="lazy"><span>High heels</span></button>
+      <button class="gi rv d1" data-c="train"><img src="img/train-1.jpg" alt="Тренировка в студии" width="1024" height="768" loading="lazy"><span>Тренировка</span></button>
+      <button class="gi rv" data-c="team"><img src="img/team-1.jpg" alt="Тренеры и участницы студии" width="1024" height="768" loading="lazy"><span>Тренеры и участницы</span></button>
+      <button class="gi rv d1" data-c="train"><img src="img/train-2.jpg" alt="Тренировка в студии" width="1024" height="768" loading="lazy"><span>Тренировка</span></button>
+      <button class="gi rv d2" data-c="train"><img src="img/train-3.jpg" alt="Растяжка и упражнения на занятии" width="1024" height="768" loading="lazy"><span>Занятие</span></button>
+      <button class="gi wide rv" data-c="team"><img src="img/team-2.jpg" alt="Тренеры и участницы студии" width="1024" height="768" loading="lazy"><span>Тренеры и участницы</span></button>
+      <button class="gi rv d1" data-c="train"><img src="img/train-4.jpg" alt="Упражнения на тренировке" width="1024" height="768" loading="lazy"><span>Тренировка</span></button>
+      <button class="gi rv" data-c="team"><img src="img/team-3.jpg" alt="Тренеры и участницы студии" width="1024" height="768" loading="lazy"><span>Тренеры и участницы</span></button>
+      <button class="gi wide rv d1" data-c="train"><img src="img/train-5.jpg" alt="Тренировка в студии" width="1024" height="768" loading="lazy"><span>Тренировка</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""></dialog>
+
+<!-- SPACE -->
+<section id="space" class="space">
+  <div class="wrap sp">
+    <div>
+      <span class="eyebrow rv">Пространство</span>
+      <h2 class="rv d1">Светлый зал <em>с зеркалами</em></h2>
+      <p class="lead rv d2">Студия находится в Мурино, в ЖК «Ласточка»: Петровский бульвар, 7 к1, вход со двора.</p>
+      <div class="facts rv d2">
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Вход со двора</span>
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 21V3h10v18M10 7h4M10 11h4"/></svg>ЖК «Ласточка», Мурино</span>
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-4 3-6 6-6s6 2 6 6M15 14c3 0 6 1.5 6 5"/></svg>Групповые и персональные</span>
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Разовые посещения возможны</span>
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Карта, наличные, перевод</span>
+      </div>
+    </div>
+    <div class="collage rv d1">
+      <figure class="c1"><img src="img/hero.jpg" alt="Светлый зал студии с зеркалами" width="1024" height="768" loading="lazy"></figure>
+      <figure class="c2"><img src="img/team-3.jpg" alt="Тренеры и участницы студии" width="1024" height="768" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1">Как <em>нас найти</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Петровский бульвар, 7 к1, вход со двора. Мурино, Ленинградская обл., ЖК «Ласточка»</p></div>
+        <div class="ci"><small>Часы работы</small>
+          <ul class="hours">
+            <li data-d="1,2,3,4,5"><span>Пн–Пт</span><span>07:00–22:00</span></li>
+            <li data-d="6,0"><span>Сб–Вс</span><span>09:00–17:00</span></li>
+          </ul>
+        </div>
+        <div class="ci"><small>Телефон / WhatsApp</small><a class="big" href="tel:+79992161077">+7 999 216-10-77</a></div>
+        <div class="ci"><small>Мессенджеры и соцсети</small>
+          <div class="socials">
+            <a href="https://wa.me/79992161077" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://t.me/nekachalka" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://vk.com/nekachalka_spb" target="_blank" rel="noopener">ВКонтакте</a>
+            <a href="https://taplink.cc/nekachalka" target="_blank" rel="noopener">Taplink</a>
+          </div>
+        </div>
+        <div class="ctas"><a class="btn ghost" href="https://yandex.ru/maps/?rtext=~60.056629%2C30.43289&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a></div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?ll=30.43289%2C60.056629&z=16&pt=30.43289%2C60.056629%2Cpm2rdm" title="Некачалка на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <div class="fbox rv">
+      <div class="wb2" aria-hidden="true"></div>
+      <span class="eyebrow">Запись</span>
+      <h2>Начните <em>с пробной за&nbsp;600&nbsp;₽</em></h2>
+      <p class="lead">Напишите в WhatsApp, и выберем группу или персональную тренировку.</p>
+      <div class="ctas">
+        <a class="btn white" href="https://wa.me/79992161077?text=Здравствуйте!%20Хочу%20записаться%20на%20пробную%20групповую%20тренировку%20за%20600%20₽." target="_blank" rel="noopener">Записаться в WhatsApp</a>
+        <a class="btn ghost-w" href="tel:+79992161077">+7 999 216-10-77</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Некачалка — фитнес-пространство, Мурино</span>
+    <span>Демо-концепт. Данные из открытых источников (<a href="https://2gis.ru/spb/firm/70000001046572110" target="_blank" rel="noopener">2ГИС</a>) на 22.10.2026, цены на 05.05.2026. Страница не индексируется.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79992161077"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+  <a href="https://t.me/nekachalka" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 4L3 11l6 2 2 6 3-4 4 3z"/></svg>Telegram</a>
+  <a class="main" href="https://wa.me/79992161077?text=Здравствуйте!%20Хочу%20записаться%20на%20пробную%20групповую%20тренировку%20за%20600%20₽." target="_blank" rel="noopener">Записаться</a>
+</nav>
+
+<script>
+(() => {
+  const NB = ' ';
+
+  // Статус «открыто/закрыто» по московскому времени (Пн–Пт 07–22, Сб–Вс 09–17)
+  const H = [[9,17],[7,22],[7,22],[7,22],[7,22],[7,22],[9,17]]; // индекс = getDay()
+  const pad = n => String(n).padStart(2, '0');
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
+  const d = now.getDay(), m = now.getHours() * 60 + now.getMinutes();
+  const [o, c] = H[d];
+  const open = m >= o * 60 && m < c * 60;
+  const st = document.getElementById('status');
+  st.classList.toggle('closed', !open);
+  let txt;
+  if (open) txt = 'Открыто сейчас · до ' + pad(c) + ':00';
+  else if (m < o * 60) txt = 'Сейчас закрыто · откроемся сегодня в ' + pad(o) + ':00';
+  else txt = 'Сейчас закрыто · откроемся завтра в ' + pad(H[(d + 1) % 7][0]) + ':00';
+  st.querySelector('span').textContent = txt;
+  document.querySelectorAll('.hours li').forEach(li => li.classList.toggle('today', li.dataset.d.split(',').includes(String(d))));
+
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    hdr.classList.toggle('scrolled', scrollY > 8);
+    mbar.classList.toggle('show', scrollY > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const x = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', x);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Вкладки цен + смена фото
+  const tabs = document.querySelectorAll('[role=tab]');
+  const pics = document.querySelectorAll('.svc-photo img');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === 'p-' + t.dataset.tab));
+    pics.forEach(p => p.classList.toggle('on', p.dataset.k === t.dataset.img));
+  }));
+
+  // Калькулятор абонемента (цены из 2ГИС)
+  const PL = {
+    g: { single: 1200, pack: { 4: 3590, 8: 6790, 12: 8990, 16: 11190, 24: 15590, 32: 19190 }, trial: 600, word: 'групповые' },
+    p: { single: 2200, pack: { 4: 7990, 8: 14390 }, trial: 1000, word: 'персональные' }
+  };
+  let kind = 'g', n = 4;
+  const fmt = v => v.toLocaleString('ru-RU').replace(/\s/g, NB) + NB + '₽';
+  const plural = k => (k % 10 === 1 && k % 100 !== 11) ? 'занятие' : ([2,3,4].includes(k % 10) && ![12,13,14].includes(k % 100)) ? 'занятия' : 'занятий';
+  const price = (k, cnt) => cnt === 1 ? PL[k].single : PL[k].pack[cnt];
+  const list = k => [1, ...Object.keys(PL[k].pack).map(Number)];
+  const $ = id => document.getElementById(id);
+  const countsEl = $('counts');
+
+  function render() {
+    const L = list(kind);
+    if (!L.includes(n)) n = L.includes(4) ? 4 : L[0];
+    const P = PL[kind], pr = price(kind, n), per = Math.round(pr / n);
+    countsEl.innerHTML = L.map(x => `<button type="button" class="cnt" aria-pressed="${x === n}" data-n="${x}">${x}</button>`).join('');
+    $('lbl').textContent = n === 1 ? 'Разовое занятие' : 'Абонемент: ' + n + ' ' + plural(n);
+    $('total').textContent = fmt(pr);
+    $('per').textContent = (n === 1 ? '' : '≈' + NB) + fmt(per);
+    $('hint').textContent = kind === 'g' ? 'Групповые занятия: от 1 до 32 в пакете.' : 'Персональные тренировки: 1, 4 или 8 занятий.';
+    let html = `<li><span>Тип занятий</span><span>${P.word}</span></li><li><span>Разовое занятие</span><span>${fmt(P.single)}</span></li>`;
+    if (n > 1) html += `<li><span>Выгода к разовым</span><span>${fmt(n * P.single - pr)}</span></li>`;
+    $('lines').innerHTML = html;
+    $('bars').innerHTML = L.map(x => {
+      const pp = price(kind, x) / x, h = Math.max(16, Math.round(pp / P.single * 78));
+      return `<div class="col${x === n ? ' on' : ''}"><i style="height:${h}px"></i><span>${x}</span></div>`;
+    }).join('');
+    const msg = 'Здравствуйте! Хочу записаться: ' + n + ' ' + plural(n) + ' (' + P.word + '), ' + fmt(pr).replace(/ /g, ' ') + '. Подскажите, пожалуйста, свободное время.';
+    $('calcWa').href = 'https://wa.me/79992161077?text=' + encodeURIComponent(msg);
+  }
+  countsEl.addEventListener('click', e => {
+    const b = e.target.closest('.cnt'); if (!b) return;
+    n = +b.dataset.n; render();
+  });
+  document.querySelectorAll('.kind button').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.kind button').forEach(x => x.setAttribute('aria-pressed', x === b));
+    kind = b.dataset.kind; render();
+  }));
+  render();
+
+  // Фильтр фото и лайтбокс
+  const items = document.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = $('lb'), lbImg = $('lbImg');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt;
+    if (lb.showModal) lb.showModal();
+  }));
+  $('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>
