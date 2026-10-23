@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Зазноба — салон колористики, маникюра и наращивания ресниц в Санкт-Петербурге</title>
+<meta name="description" content="Яркая колористика, японский маникюр, наращивание ресниц, брови, спа-уход для волос на роботе. Бестужевская ул., 10. Ежедневно 10:00–21:00.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Rubik:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Rubik:wght@400;500;600&display=swap"></noscript>
+<style>
+img{height:auto}
+:root{
+  --white:#FFFFFF; --mist:#F3FAFA; --ink:#0E1A2B; --ink-2:#2B3A50; --muted:#66758A;
+  --teal:#19DCCB; --blue:#2B5BFF; --lime:#B6F23E; --line:rgba(14,26,43,.13);
+  --grad:linear-gradient(100deg,#19DCCB 0%,#2B5BFF 55%,#B6F23E 100%);
+  --grad-btn:linear-gradient(100deg,#19DCCB,#B6F23E);
+  --r-lg:26px; --r-md:16px; --r-sm:12px;
+  --shadow:0 24px 50px -26px rgba(14,26,43,.4);
+  --head:"Unbounded","Arial Black",system-ui,sans-serif; --sans:"Rubik",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--white);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.eyebrow{display:inline-block;font:600 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--blue);background:rgba(43,91,255,.09);padding:8px 12px;border-radius:99px}
+h1,h2,h3{font-family:var(--head);font-weight:700;line-height:1.1;margin:0;letter-spacing:-.02em;overflow-wrap:break-word}
+h2{font-size:clamp(26px,4.6vw,50px)}
+h1 em,h2 em{font-style:normal;color:var(--blue);background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.lead{font-size:clamp(16px,1.6vw,18px);color:var(--ink-2);max-width:54ch}
+section{padding:clamp(68px,9vw,120px) 0}
+
+/* demo bar */
+.demo{background:var(--ink);color:#E3EBF5;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:var(--ink);background:var(--lime);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:11px;border-radius:99px;padding:3px 9px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.88);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.logo i{width:30px;height:30px;border-radius:50% 50% 50% 12%;background:var(--grad);flex:none;transform:rotate(-12deg)}
+.logo b{display:block;font:800 18px/1 var(--head);letter-spacing:.02em}
+.logo small{display:block;margin-top:4px;font:500 10.5px/1 var(--sans);color:var(--muted);letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+.nav{display:none;gap:26px}
+.nav a{text-decoration:none;font-weight:500;font-size:14.5px;color:var(--ink-2);position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:3px;border-radius:2px;background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;border-radius:99px;border:1px solid var(--ink);background:var(--ink);color:#fff;font-weight:600;font-size:15px;text-decoration:none;cursor:pointer;transition:transform .25s, background .25s, color .25s, border-color .25s, box-shadow .25s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.grad{background:var(--grad-btn);border-color:transparent;color:var(--ink);box-shadow:0 14px 30px -14px rgba(25,220,203,.9)}
+.btn.grad:hover{box-shadow:0 18px 34px -12px rgba(25,220,203,1)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+.btn.sm{min-height:42px;padding:0 18px;font-size:14px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;flex:none;border-radius:50%;border:1px solid var(--line);background:var(--white);display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:18px;height:1.5px;background:var(--ink);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:var(--ink);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--white);padding:120px 24px 40px;display:flex;flex-direction:column;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:700 24px/1.3 var(--head);letter-spacing:-.02em;text-decoration:none;padding:8px 0;border-bottom:1px solid var(--line)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:1100px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:clamp(28px,5vw,64px) 0 clamp(60px,8vw,100px)}
+.paint{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.paint i{position:absolute;border-radius:50%;filter:blur(64px);animation:drift 18s ease-in-out infinite alternate}
+.paint .a{width:420px;height:420px;background:var(--teal);left:-140px;top:-100px;opacity:.5}
+.paint .b{width:380px;height:380px;background:var(--blue);right:-120px;top:12%;opacity:.3;animation-delay:-6s}
+.paint .c{width:320px;height:320px;background:var(--lime);right:22%;bottom:-140px;opacity:.55;animation-delay:-12s}
+@keyframes drift{to{transform:translate(44px,30px) scale(1.14)}}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:44px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:64px}}
+.status{display:inline-flex;align-items:center;gap:10px;background:var(--white);border:1px solid var(--line);border-radius:99px;padding:8px 14px 8px 12px;font-size:13.5px;font-weight:500}
+.status i{width:9px;height:9px;border-radius:50%;background:#2FB45E;box-shadow:0 0 0 0 rgba(47,180,94,.5);animation:pulse 2s infinite}
+.status.closed i{background:#D4544A;animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(47,180,94,0)}100%{box-shadow:0 0 0 0 rgba(47,180,94,0)}}
+.hero .eyebrow{margin:22px 0 0;display:block;width:fit-content}
+.hero h1{font-size:clamp(28px,3.9vw,50px);margin:18px 0 20px}
+.hero .lead{margin:0 0 24px}
+.place{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:14.5px;margin-bottom:28px}
+.place svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--blue)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.ratings{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:32px;padding-top:24px;border-top:1px solid var(--line)}
+.rate{display:flex;align-items:center;gap:12px}
+.rate strong{font:800 36px/1 var(--head)}
+.rate span{font-size:13px;line-height:1.35;color:var(--muted)}
+.stars{color:#F0A020;letter-spacing:2px;font-size:12px;display:block}
+
+.visual{position:relative;max-width:500px;margin-inline:auto;width:100%;padding:0 0 24px}
+.stroke{position:absolute;left:-8%;bottom:-2%;width:96%;z-index:0}
+.stroke path{fill:none;stroke:url(#paintG);stroke-width:34;stroke-linecap:round;stroke-dasharray:900;stroke-dashoffset:900;animation:draw 2.4s .3s cubic-bezier(.65,0,.35,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.blob{position:relative;z-index:1;aspect-ratio:1/1.05;border-radius:58% 42% 55% 45% / 48% 56% 44% 52%;overflow:hidden;box-shadow:var(--shadow);background:var(--mist);animation:morph 14s ease-in-out infinite alternate}
+@keyframes morph{50%{border-radius:44% 56% 42% 58% / 56% 44% 56% 44%}100%{border-radius:52% 48% 60% 40% / 42% 58% 42% 58%}}
+.blob img{width:100%;height:100%;object-fit:cover;object-position:35% 50%}
+.sticker{position:absolute;z-index:4;left:-1%;bottom:2%;background:var(--lime);color:var(--ink);border-radius:var(--r-md);padding:12px 16px;transform:rotate(-5deg);box-shadow:0 16px 34px -14px rgba(14,26,43,.55);font-size:12.5px;line-height:1.35;max-width:220px}
+.sticker small{display:block;font:700 10.5px/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+.sticker b{display:block;font:700 15px/1.3 var(--head);letter-spacing:-.02em}
+.chip{position:absolute;z-index:4;right:0;top:8%;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:var(--r-md);padding:11px 15px;box-shadow:var(--shadow);font-size:13px;line-height:1.35;animation:float 6s ease-in-out infinite}
+.chip b{display:block;font:700 18px/1.2 var(--head);letter-spacing:-.02em;margin-top:3px}
+@media (max-width:520px){.chip{padding:9px 12px;font-size:12px}.chip b{font-size:15px}.sticker{padding:10px 13px;max-width:190px}.sticker b{font-size:13px}}
+@keyframes float{50%{transform:translateY(-10px)}}
+
+/* marquee */
+.marquee{background:var(--ink);overflow:hidden;padding:18px 0;transform:skewY(-1.2deg);margin:12px 0}
+.track{display:flex;width:max-content;animation:run 38s linear infinite}
+.track span{font:700 clamp(18px,2.6vw,26px)/1 var(--head);letter-spacing:-.02em;padding:0 24px;white-space:nowrap;display:flex;align-items:center;gap:48px;color:#fff}
+.track span::after{content:"";width:12px;height:12px;border-radius:50% 50% 50% 20%;background:var(--grad);transform:rotate(-12deg)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* head + tabs + rows */
+.head{display:grid;gap:18px;margin-bottom:44px}
+@media (min-width:960px){.head{grid-template-columns:minmax(0,1fr) auto;align-items:end}}
+.head p{margin:0;color:var(--muted);font-size:14px;max-width:46ch}
+.head h2{margin-top:16px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:30px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;border:1px solid var(--line);background:var(--white);border-radius:99px;padding:11px 18px;font-weight:500;font-size:14px;cursor:pointer;transition:all .25s}
+.tab:hover{border-color:var(--ink)}
+.tab[aria-selected="true"],.tab[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.svc{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
+@media (min-width:960px){.svc{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:56px;align-items:start}}
+.panel{display:none}
+.panel.on{display:block;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.grp{margin:28px 0 2px;font:600 11.5px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--blue)}
+.grp:first-child{margin-top:0}
+.row{display:flex;align-items:baseline;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.row .n{flex:1 1 auto;min-width:0}
+.row .n b{display:block;font-weight:500;font-size:16px}
+.row .n small{color:var(--muted);font-size:13.5px}
+.row .p{font:600 22px/1 var(--sans);white-space:nowrap}
+.row .p i{font:500 12px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-right:5px;font-style:normal}
+.row.hot .n b::after{content:"знакомство";margin-left:8px;font:700 10px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;background:var(--lime);color:var(--ink);padding:4px 7px;border-radius:99px;vertical-align:2px}
+.svc-photo{position:relative;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:4/5;background:var(--mist);display:none}
+@media (min-width:960px){.svc-photo{display:block;position:sticky;top:96px}}
+.svc-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .7s, transform 1.2s}
+.svc-photo img.on{opacity:1;transform:none}
+.note{margin-top:22px;font-size:13px;color:var(--muted)}
+
+/* colorist packets */
+.color{background:linear-gradient(180deg,var(--mist),#EEF3FF);position:relative;overflow:hidden}
+.color .wrap{position:relative}
+.ctl{display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center;margin-bottom:26px}
+.seg{display:inline-flex;background:var(--white);border:1px solid var(--line);border-radius:99px;padding:4px}
+.seg button{border:0;background:transparent;border-radius:99px;padding:11px 20px;font-size:14px;font-weight:500;cursor:pointer;color:var(--muted);transition:all .25s}
+.seg button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.pgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+@media (min-width:760px){.pgrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}}
+.pcard{display:block;text-align:left;border:1px solid var(--line);background:var(--white);border-radius:var(--r-lg);padding:18px;cursor:pointer;transition:box-shadow .3s,border-color .3s,transform .3s;position:relative}
+.pcard:hover{transform:translateY(-3px)}
+.pcard[aria-pressed="true"]{border-color:var(--ink);box-shadow:0 0 0 2px var(--ink),var(--shadow)}
+.sw{position:relative;display:block;height:88px;border-radius:60px 16px 50px 16px / 36px 16px 44px 16px;margin-bottom:16px}
+.sw.one{background:linear-gradient(110deg,#19DCCB,#2FA8E8)}
+.sw.cx{background:var(--grad)}
+.sw.tb{background:linear-gradient(110deg,#FFF3C2,#F5D98A 60%,#FFF9E2)}
+[data-d="l"] .sw::after{content:"L’Oréal";position:absolute;right:10px;bottom:8px;background:var(--ink);color:#fff;font:600 11px/1 var(--sans);letter-spacing:.06em;padding:5px 8px;border-radius:99px}
+.pt{display:block;font:700 17px/1.2 var(--head);letter-spacing:-.02em;margin-bottom:10px}
+.pv{display:grid;min-height:48px}
+.v{grid-area:1/1;align-self:center;font:600 clamp(26px,3.6vw,36px)/1.1 var(--sans);opacity:0;transform:translateY(10px);transition:opacity .35s,transform .45s cubic-bezier(.2,.7,.2,1);pointer-events:none}
+.v.on{opacity:1;transform:none}
+.v i{font:500 13px/1 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-right:6px;font-style:normal}
+.v.no{font-size:16px;font-weight:400;color:var(--muted)}
+.pick{margin-top:22px;display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center;justify-content:space-between;background:var(--ink);color:#fff;border-radius:var(--r-lg);padding:20px 22px}
+.pick small{display:block;font:600 11px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#9FB2CC;margin-bottom:8px}
+.pick b{font:700 clamp(16px,2.4vw,22px)/1.3 var(--head);letter-spacing:-.02em}
+.pick .btn{flex:1 1 220px}
+@media (min-width:560px){.pick .btn{flex:0 0 auto}}
+.pfoot{margin:16px 0 0;font-size:13px;color:var(--muted)}
+
+/* robot (dark) */
+.dark{background:radial-gradient(50% 60% at 12% 18%,rgba(25,220,203,.28),transparent 70%),radial-gradient(50% 60% at 92% 85%,rgba(43,91,255,.38),transparent 70%),var(--ink);color:#E7EEF8}
+.dark .eyebrow{background:rgba(182,242,62,.16);color:var(--lime)}
+.dark h2 em{background:linear-gradient(100deg,#19DCCB,#B6F23E);-webkit-background-clip:text;background-clip:text}
+.dark .lead{color:#C2CFE0}
+.rb{display:grid;grid-template-columns:minmax(0,1fr);gap:48px;align-items:center}
+@media (min-width:960px){.rb{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px}}
+.rb .lead{margin:20px 0 0}
+.rb .note{color:#9FB2CC;margin:18px 0 26px}
+.rphotos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.rphotos figure{margin:0;padding:4px;border-radius:var(--r-lg);background:var(--grad);transform:rotate(-2deg)}
+.rphotos figure:last-child{transform:rotate(2.5deg);margin-top:30px}
+.rphotos img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:calc(var(--r-lg) - 4px)}
+
+/* gallery */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:760px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}}
+.gi{position:relative;border-radius:var(--r-md);overflow:hidden;aspect-ratio:1;background:var(--mist);cursor:zoom-in;border:0;padding:0}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.08)}
+.gi span{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.92);font-size:12px;font-weight:600;padding:5px 10px;border-radius:99px}
+.gi.wide{grid-column:span 2;aspect-ratio:2/1}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,1000px);max-height:90vh}
+.lb::backdrop{background:rgba(10,18,30,.88)}
+.lb img{max-height:84vh;width:auto;margin:auto;border-radius:16px}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:#fff;font-size:22px;cursor:pointer}
+
+/* praise */
+.praise{display:grid;gap:16px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pr-card{background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);padding:30px;position:relative;overflow:hidden}
+.pr-card::before{content:"";position:absolute;left:0;top:0;right:0;height:6px;background:var(--grad)}
+.pr-card .num{font:800 54px/1 var(--head);color:rgba(43,91,255,.12);position:absolute;right:20px;top:18px}
+.pr-card h3{font-size:19px;margin:34px 0 12px;position:relative}
+.pr-card p{margin:0;color:var(--ink-2);position:relative}
+.score{display:flex;flex-wrap:wrap;gap:14px;margin-top:22px}
+.score a{display:flex;align-items:center;gap:14px;background:var(--mist);border:1px solid var(--line);border-radius:var(--r-md);padding:14px 20px;text-decoration:none;flex:1 1 240px}
+.score strong{font:800 38px/1 var(--head)}
+.score span{font-size:13.5px;color:var(--muted)}
+.score span b{color:var(--ink);display:block}
+
+/* studio */
+.studio{display:grid;gap:14px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (min-width:900px){.studio{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr)}}
+.studio figure{margin:0;border-radius:var(--r-lg);overflow:hidden;background:var(--mist);aspect-ratio:1}
+.studio figure:first-child{grid-column:span 2;aspect-ratio:16/10}
+@media (min-width:900px){.studio figure:first-child{grid-column:auto;grid-row:span 2;aspect-ratio:auto}}
+.studio img{width:100%;height:100%;object-fit:cover}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.fact{display:inline-flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--line);border-radius:99px;padding:10px 16px;font-size:14px;font-weight:500}
+.fact svg{width:16px;height:16px;color:var(--blue);flex:none}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start}
+.ci small{display:block;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:6px}
+.ci p,.ci a{margin:0;font-size:18px;font-weight:500;text-decoration:none}
+.ci a.big{font:700 26px/1.2 var(--head);letter-spacing:-.02em;display:block}
+.ci .sub{font-size:14px;color:var(--muted);font-weight:400;display:block;margin-top:4px}
+.ci .sub a{font-size:14px;color:var(--ink);text-decoration:underline}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--white);border-radius:99px;padding:10px 16px;font-size:14px;font-weight:600;text-decoration:none;transition:background .25s,color .25s}
+.socials a:hover{background:var(--ink);color:#fff}
+.map{border-radius:var(--r-lg);overflow:hidden;min-height:380px;background:var(--mist);border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* final */
+.final{text-align:center;background:linear-gradient(120deg,#DDFBF7,#E6EDFF 55%,#F1FDCF);position:relative;overflow:hidden}
+.final h2{font-size:clamp(28px,5.6vw,64px);max-width:15ch;margin:18px auto}
+.final .lead{margin:0 auto}
+.final .ctas{justify-content:center;margin-top:30px}
+footer{padding:36px 0 120px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px;padding:8px;background:rgba(14,26,43,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:22px;box-shadow:0 18px 40px -12px rgba(0,0,0,.45);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:15px;color:#fff;text-decoration:none;font-size:11.5px;font-weight:600}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--grad-btn);color:var(--ink);flex-direction:row;font-size:14px;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+  .stroke path{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><linearGradient id="paintG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#19DCCB"/><stop offset=".55" stop-color="#2B5BFF"/><stop offset="1" stop-color="#B6F23E"/></linearGradient></defs></svg>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Концепт сайта для салона «Зазноба». Данные из открытой карточки 2ГИС на 22.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Зазноба — наверх"><i aria-hidden="true"></i><span><b>ЗАЗНОБА</b><small>салон колористики</small></span></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#services">Услуги и цены</a>
+      <a href="#color">Окрашивание</a>
+      <a href="#robot">Робот для волос</a>
+      <a href="#works">Работы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm grad" href="https://wa.me/79213052975?text=Здравствуйте!%20Хочу%20записаться%20в%20салон%20«Зазноба»." target="_blank" rel="noopener">Записаться в WhatsApp</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#services">Услуги и цены</a>
+  <a href="#color">Окрашивание</a>
+  <a href="#robot">Робот для волос</a>
+  <a href="#works">Работы</a>
+  <a href="#praise">Отзывы</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="paint" aria-hidden="true"><i class="a"></i><i class="b"></i><i class="c"></i></div>
+  <div class="wrap">
+    <div>
+      <span class="status rv" id="status"><i></i><span>Ежедневно 10:00–21:00</span></span>
+      <span class="eyebrow rv d1">Калининский район · Бестужевская ул.</span>
+      <h1 class="rv d1">Салон <em>колористики</em>, маникюра и&nbsp;наращивания ресниц</h1>
+      <p class="lead rv d2">Яркое окрашивание, японский маникюр, ресницы и брови, спа-уход для волос на роботе. Ежедневно с 10 до 21.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Бестужевская ул., 10, пом. 103, 1 этаж · Калининский район, Санкт-Петербург</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn grad" href="tel:+79213052975"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+        <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~59.986459%2C30.393506&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+        <a class="btn ghost" href="https://wa.me/79213052975?text=Здравствуйте!%20Хочу%20записаться%20в%20салон%20«Зазноба»." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>WhatsApp</a>
+      </div>
+      <div class="ratings rv d3">
+        <div class="rate"><strong>5.0</strong><span><b class="stars">★★★★★</b>2ГИС · 41 оценка</span></div>
+      </div>
+    </div>
+    <div class="visual rv d2">
+      <svg class="stroke" viewBox="0 0 400 300" aria-hidden="true"><path d="M20 240C90 130 160 290 230 160S340 70 385 130"/></svg>
+      <div class="blob"><img src="img/hero.jpg" alt="Зал салона: круглые зеркала с подсветкой и кресла" width="1024" height="768" fetchpriority="high"></div>
+      <div class="chip">Окрашивание · пакет 1<b>от&nbsp;3&nbsp;490&nbsp;₽</b></div>
+      <div class="sticker"><small>Знакомство с мастером</small><b>Маникюр 2&nbsp;190&nbsp;₽</b><b>Стрижка от&nbsp;990&nbsp;₽</b></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Окрашивание</span><span>Тотал-блонд</span><span>Стрижки</span><span>Японский маникюр</span><span>Педикюр</span><span>Ресницы</span><span>Брови</span><span>Спа для волос</span><span>Прокол ушей</span>
+  <span>Окрашивание</span><span>Тотал-блонд</span><span>Стрижки</span><span>Японский маникюр</span><span>Педикюр</span><span>Ресницы</span><span>Брови</span><span>Спа для волос</span><span>Прокол ушей</span>
+</div></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Прайс</span><h2 class="rv d1">Услуги <em>и цены</em></h2></div>
+      <p class="rv d2">Цены из прайса салона в 2ГИС, обновлён 22.10.2026. Окрашивание — в отдельном блоке ниже.</p>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Категории услуг">
+      <button class="tab" role="tab" aria-selected="true" data-tab="hr" data-img="men">Стрижки</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="mn" data-img="nails-3">Маникюр</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="pd" data-img="nails-4">Педикюр</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="ls" data-img="lashes">Ресницы</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="br" data-img="lashes">Брови</button>
+    </div>
+    <div class="svc">
+      <div>
+        <div class="panel on" id="p-hr" role="tabpanel">
+          <div class="row hot"><div class="n"><b>Стрижка — знакомство с мастером</b></div><div class="p"><i>от</i>990&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Мужская стрижка</b></div><div class="p">1&nbsp;490&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Женская стрижка</b></div><div class="p"><i>от</i>1&nbsp;690&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Чёлка</b></div><div class="p"><i>от</i>500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Камуфляж мужской седины</b></div><div class="p"><i>от</i>1&nbsp;990&nbsp;₽</div></div>
+          <p class="note">Также в салоне: кератин, ботокс, нанопластика, холодное восстановление, прикорневой объём, прокол ушей. Цены на эти услуги уточняйте по телефону или в WhatsApp.</p>
+        </div>
+        <div class="panel" id="p-mn" role="tabpanel">
+          <div class="grp">Маникюр</div>
+          <div class="row hot"><div class="n"><b>Маникюр — знакомство с мастером</b></div><div class="p">2&nbsp;190&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Маникюр без покрытия</b></div><div class="p"><i>от</i>1&nbsp;490&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Маникюр, пакет 1</b></div><div class="p"><i>от</i>2&nbsp;490&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Маникюр, пакет 2</b></div><div class="p"><i>от</i>2&nbsp;990&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Японский маникюр</b></div><div class="p"><i>от</i>2&nbsp;190&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Мужской маникюр</b></div><div class="p"><i>от</i>1&nbsp;690&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Мужской японский маникюр</b></div><div class="p"><i>от</i>2&nbsp;390&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Наращивание</b></div><div class="p">6&nbsp;490&nbsp;₽</div></div>
+          <div class="grp">Дизайн и покрытие</div>
+          <div class="row"><div class="n"><b>Дизайн</b><small>френч, лунки, втирка, стемпинг</small></div><div class="p"><i>от</i>500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Дизайн</b></div><div class="p">200&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Градиент на все ногти</b></div><div class="p">1&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Покрытие CWC</b></div><div class="p">700&nbsp;₽</div></div>
+          <div class="grp">Снятие и ремонт</div>
+          <div class="row"><div class="n"><b>Снятие гель-лака</b></div><div class="p"><i>от</i>700&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Снятие нарощенных</b></div><div class="p"><i>от</i>900&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Ремонт ногтя</b></div><div class="p">300&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-pd" role="tabpanel">
+          <div class="row"><div class="n"><b>Педикюр ½</b><small>только пальчики</small></div><div class="p"><i>от</i>1&nbsp;990&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Педикюр ½ + гель-лак</b></div><div class="p"><i>от</i>2&nbsp;990&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>SMART без покрытия</b></div><div class="p"><i>от</i>2&nbsp;490&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>SMART + гель-лак</b></div><div class="p"><i>от</i>3&nbsp;490&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Обработка стоп SMART</b></div><div class="p"><i>от</i>1&nbsp;190&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Мужской SMART</b></div><div class="p"><i>от</i>2&nbsp;690&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-ls" role="tabpanel">
+          <div class="grp">Наращивание ресниц</div>
+          <div class="row"><div class="n"><b>Классика</b></div><div class="p">1&nbsp;990&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>1,5D</b></div><div class="p">2&nbsp;190&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>2D</b></div><div class="p">2&nbsp;490&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>3D</b></div><div class="p">2&nbsp;790&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>4D</b></div><div class="p">3&nbsp;090&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Уголки</b></div><div class="p">2&nbsp;190&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Снятие</b></div><div class="p">490&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-br" role="tabpanel">
+          <div class="row"><div class="n"><b>Коррекция бровей</b></div><div class="p">1&nbsp;090&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Окрашивание + коррекция</b></div><div class="p">1&nbsp;790&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Ламинирование + окрашивание + коррекция</b></div><div class="p">2&nbsp;290&nbsp;₽</div></div>
+        </div>
+      </div>
+      <div class="svc-photo" aria-hidden="true">
+        <img src="img/men.jpg" alt="" data-k="men" class="on" loading="lazy">
+        <img src="img/nails-3.jpg" alt="" data-k="nails-3" loading="lazy">
+        <img src="img/nails-4.jpg" alt="" data-k="nails-4" loading="lazy">
+        <img src="img/lashes.jpg" alt="" data-k="lashes" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLOR: пакеты окрашивания -->
+<section id="color" class="color">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Колористика</span><h2 class="rv d1">Пакеты <em>окрашивания</em></h2></div>
+      <p class="rv d2">Цены из прайса 2ГИС (обновлён 22.10.2026). Выберите красители и пакет — цены в карточках сменятся.</p>
+    </div>
+    <div class="ctl rv">
+      <div class="seg" id="segD" role="group" aria-label="Красители">
+        <button type="button" data-d="n" aria-pressed="true">Обычные красители</button>
+        <button type="button" data-d="l" aria-pressed="false">L’Oréal</button>
+      </div>
+      <div class="seg" id="segP" role="group" aria-label="Пакет">
+        <button type="button" data-p="1" aria-pressed="true">Пакет 1</button>
+        <button type="button" data-p="2" aria-pressed="false">Пакет 2</button>
+        <button type="button" data-p="3" aria-pressed="false">Пакет 3</button>
+      </div>
+    </div>
+    <div class="pgrid rv d1" id="pk" data-d="n">
+      <button type="button" class="pcard" aria-pressed="true" data-name="Окрашивание в один тон">
+        <span class="sw one"></span><span class="pt">В один тон</span>
+        <span class="pv"><b class="v n1"><i>от</i>3&nbsp;490&nbsp;₽</b><b class="v n2"><i>от</i>4&nbsp;990&nbsp;₽</b><b class="v n3"><i>от</i>5&nbsp;990&nbsp;₽</b><b class="v l1">5&nbsp;990&nbsp;₽</b><b class="v l2">7&nbsp;990&nbsp;₽</b><b class="v l3">9&nbsp;990&nbsp;₽</b></span>
+      </button>
+      <button type="button" class="pcard" aria-pressed="false" data-name="Сложное окрашивание">
+        <span class="sw cx"></span><span class="pt">Сложное</span>
+        <span class="pv"><b class="v n1"><i>от</i>5&nbsp;990&nbsp;₽</b><b class="v n2"><i>от</i>7&nbsp;990&nbsp;₽</b><b class="v n3"><i>от</i>9&nbsp;990&nbsp;₽</b><b class="v l1">10&nbsp;990&nbsp;₽</b><b class="v l2">13&nbsp;990&nbsp;₽</b><b class="v l3">19&nbsp;990&nbsp;₽</b></span>
+      </button>
+      <button type="button" class="pcard" aria-pressed="false" data-name="Тотал-блонд">
+        <span class="sw tb"></span><span class="pt">Тотал-блонд</span>
+        <span class="pv"><b class="v n1"><i>от</i>5&nbsp;990&nbsp;₽</b><b class="v n2"><i>от</i>9&nbsp;990&nbsp;₽</b><b class="v n3 no">нет в прайсе</b><b class="v l1 no">нет в прайсе</b><b class="v l2 no">нет в прайсе</b><b class="v l3 no">нет в прайсе</b></span>
+      </button>
+    </div>
+    <div class="pick rv" aria-live="polite">
+      <div><small>Ваш выбор</small><b id="pickTxt">В один тон · пакет 1 · обычные красители</b></div>
+      <a class="btn grad" id="pickWa" href="https://wa.me/79213052975" target="_blank" rel="noopener">Записаться на окрашивание</a>
+    </div>
+    <p class="pfoot rv">Что входит в каждый пакет, уточняйте у администратора по телефону или в WhatsApp.</p>
+  </div>
+</section>
+
+<!-- ROBOT -->
+<section id="robot" class="dark">
+  <div class="wrap rb">
+    <div>
+      <span class="eyebrow rv">Спа-уход для волос</span>
+      <h2 class="rv d1" style="margin-top:16px">Робот <em>для волос</em></h2>
+      <p class="lead rv d2">В зале салона стоит аппарат для ухода за волосами — клиенты рассказывают про спа-уход для волос на роботе.</p>
+      <p class="note rv d2">Стоимость и запись уточняйте по телефону или в WhatsApp.</p>
+      <a class="btn grad rv d3" href="https://wa.me/79213052975?text=Здравствуйте!%20Хочу%20узнать%20про%20спа-уход%20для%20волос%20на%20роботе." target="_blank" rel="noopener">Узнать про спа для волос</a>
+    </div>
+    <div class="rphotos rv d1">
+      <figure><img src="img/robot-1.jpg" alt="Аппарат с сенсорным экраном в зале салона" loading="lazy"></figure>
+      <figure><img src="img/robot-2.jpg" alt="Аппарат для ухода за волосами рядом с креслом мастера" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section id="works">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Портфолио</span><h2 class="rv d1">Работы <em>салона</em></h2></div>
+      <p class="rv d2">Фото из карточки салона в 2ГИС</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр работ">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="hair">Волосы</button>
+      <button class="tab" aria-pressed="false" data-f="nails">Ногти</button>
+      <button class="tab" aria-pressed="false" data-f="lashes">Ресницы</button>
+    </div>
+    <div class="grid" id="grid">
+      <button class="gi wide rv" data-c="hair"><img src="img/hair-1.jpg" alt="Бирюзово-зелёное окрашивание волос" loading="lazy"><span>Волосы</span></button>
+      <button class="gi rv d1" data-c="hair"><img src="img/hair-2.jpg" alt="Синее окрашивание волос" loading="lazy"><span>Волосы</span></button>
+      <button class="gi rv d2" data-c="hair"><img src="img/hair-3.jpg" alt="Лиловое окрашивание волос" loading="lazy"><span>Волосы</span></button>
+      <button class="gi rv" data-c="nails"><img src="img/nails-1.jpg" alt="Маникюр цвета хаки" loading="lazy"><span>Ногти</span></button>
+      <button class="gi rv d1" data-c="nails"><img src="img/nails-2.jpg" alt="Нюдовый маникюр с бликом" loading="lazy"><span>Ногти</span></button>
+      <button class="gi wide rv d2" data-c="hair"><img src="img/hair-4.jpg" alt="Волнистые волосы" loading="lazy"><span>Волосы</span></button>
+      <button class="gi rv" data-c="nails"><img src="img/nails-3.jpg" alt="Маникюр с пастельным градиентом" loading="lazy"><span>Ногти</span></button>
+      <button class="gi rv d1" data-c="nails"><img src="img/nails-4.jpg" alt="Оливковый маникюр с рисунком" loading="lazy"><span>Ногти</span></button>
+      <button class="gi wide rv d2" data-c="lashes"><img src="img/lashes.jpg" alt="Глаза с наращенными ресницами" loading="lazy"><span>Ресницы</span></button>
+      <button class="gi wide rv" data-c="hair"><img src="img/hair-5.jpg" alt="Длинные русые волосы" loading="lazy"><span>Волосы</span></button>
+      <button class="gi wide rv d1" data-c="hair"><img src="img/men.jpg" alt="Мужская стрижка" loading="lazy"><span>Мужская стрижка</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""></dialog>
+
+<!-- PRAISE -->
+<section id="praise" style="background:var(--mist)">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Отзывы</span><h2 class="rv d1">За что <em>хвалят</em></h2></div>
+      <p class="rv d2">Пересказ отзывов клиентов в 2ГИС</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card rv"><span class="num">01</span><h3>Мастера маникюра</h3><p>Клиенты пишут, что нашли своего мастера маникюра: покрытие носится отлично.</p></article>
+      <article class="pr-card rv d1"><span class="num">02</span><h3>Спа для волос и тёплое общение</h3><p>Хвалят спа-уход для волос на роботе и вежливое, дружелюбное общение.</p></article>
+      <article class="pr-card rv d2"><span class="num">03</span><h3>Подход к каждому</h3><p>Мастера находят подход даже к детям: прокол ушей ребёнку, по отзывам, прошёл спокойно.</p></article>
+    </div>
+    <div class="score rv">
+      <a href="https://2gis.ru/spb/firm/70000001047933967" target="_blank" rel="noopener"><strong>5.0</strong><span><b>2ГИС</b>41 оценка</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- STUDIO -->
+<section id="studio">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Салон</span><h2 class="rv d1">Как <em>у нас</em></h2></div>
+    </div>
+    <div class="studio">
+      <figure class="rv"><img src="img/hall.jpg" alt="Мастера за работой в зале салона" loading="lazy"></figure>
+      <figure class="rv d1"><img src="img/decor.jpg" alt="Гипсовый бюст и декор" loading="lazy"></figure>
+      <figure class="rv d2"><img src="img/reception.jpg" alt="Ресепшен с полками" loading="lazy"></figure>
+      <figure class="rv d1"><img src="img/hero.jpg" alt="Круглые зеркала с подсветкой и кресла" loading="lazy"></figure>
+      <figure class="rv d2"><img src="img/robot-2.jpg" alt="Аппарат для ухода за волосами в зале" loading="lazy"></figure>
+    </div>
+    <div class="facts rv">
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18M6 20V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v14M14 12h.01"/></svg>1 этаж</span>
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg>Wi-Fi</span>
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="10" r="1.6"/><circle cx="10.5" cy="6" r="1.6"/><circle cx="15" cy="6" r="1.6"/><circle cx="19" cy="10" r="1.6"/><path d="M8 18c0-3 2-5 4-5s4 2 4 5c0 2-2 2-4 1-2 1-4 1-4-1z"/></svg>Можно с собакой</span>
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Карта, наличные, эл. кошелёк, перевод, QR</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1" style="margin-top:16px">Как <em>добраться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Санкт-Петербург, Бестужевская ул., 10, пом. 103, 1 этаж (Калининский район)</p></div>
+        <div class="ci"><small>Часы работы</small><p>Ежедневно, 10:00–21:00</p></div>
+        <div class="ci"><small>Телефон</small><a class="big" href="tel:+79213052975">+7 921 305-29-75</a><span class="sub">Звонок и WhatsApp. Второй WhatsApp: <a href="https://wa.me/79131239599" target="_blank" rel="noopener">+7 913 123-95-99</a></span></div>
+        <div class="ci"><small>Мессенджеры и соцсети</small>
+          <div class="socials">
+            <a href="https://wa.me/79213052975" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://t.me/zaznoba_salon" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://vk.com/zaznoba_salon_spb" target="_blank" rel="noopener">ВКонтакте</a>
+            <a href="https://taplink.cc/beauty.stories" target="_blank" rel="noopener">Taplink</a>
+          </div>
+        </div>
+        <div class="ctas"><a class="btn ghost" href="https://yandex.ru/maps/?rtext=~59.986459%2C30.393506&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a></div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?ll=30.393506%2C59.986459&z=16&pt=30.393506%2C59.986459%2Cpm2rdm" title="Зазноба на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow rv">Запись</span>
+    <h2 class="rv d1">Запишитесь <em>к мастеру</em></h2>
+    <p class="lead rv d2">Знакомство с мастером: маникюр 2&nbsp;190&nbsp;₽, стрижка от&nbsp;990&nbsp;₽. Запись — по телефону и в WhatsApp.</p>
+    <div class="ctas rv d3">
+      <a class="btn grad" href="https://wa.me/79213052975?text=Здравствуйте!%20Хочу%20записаться%20в%20салон%20«Зазноба»." target="_blank" rel="noopener">Записаться в WhatsApp</a>
+      <a class="btn ghost" href="tel:+79213052975">+7 921 305-29-75</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Зазноба — салон колористики, маникюра и наращивания ресниц, Санкт-Петербург</span>
+    <span>Демо-концепт. Цены и данные — из открытой карточки 2ГИС на 22.10.2026.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79213052975"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+  <a href="https://yandex.ru/maps/?rtext=~59.986459%2C30.393506&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+  <a class="main" href="https://wa.me/79213052975?text=Здравствуйте!%20Хочу%20записаться%20в%20салон%20«Зазноба»." target="_blank" rel="noopener">WhatsApp</a>
+</nav>
+
+<script>
+(() => {
+  // Статус «открыто/закрыто» по московскому времени (ежедневно 10:00–21:00)
+  const st = document.getElementById('status');
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
+  const m = now.getHours() * 60 + now.getMinutes();
+  const open = m >= 10 * 60 && m < 21 * 60;
+  st.classList.toggle('closed', !open);
+  st.querySelector('span').textContent = open ? 'Открыто сейчас · до 21:00' : 'Сейчас закрыто · откроемся в 10:00';
+
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    const y = scrollY;
+    hdr.classList.toggle('scrolled', y > 8);
+    mbar.classList.toggle('show', y > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Вкладки прайса + смена фото
+  const tabs = document.querySelectorAll('[role=tab]');
+  const pics = document.querySelectorAll('.svc-photo img');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === 'p-' + t.dataset.tab));
+    pics.forEach(p => p.classList.toggle('on', p.dataset.k === t.dataset.img));
+  }));
+
+  // Пакеты окрашивания: красители, пакет, тип окрашивания
+  const pk = document.getElementById('pk');
+  const cards = [...pk.querySelectorAll('.pcard')];
+  const segD = document.getElementById('segD'), segP = document.getElementById('segP');
+  const pickTxt = document.getElementById('pickTxt'), pickWa = document.getElementById('pickWa');
+  let dye = 'n', pack = '1', sel = 0;
+  const upd = () => {
+    pk.dataset.d = dye;
+    cards.forEach((c, i) => {
+      c.setAttribute('aria-pressed', i === sel);
+      c.querySelectorAll('.v').forEach(v => v.classList.toggle('on', v.classList.contains(dye + pack)));
+    });
+    const c = cards[sel], v = c.querySelector('.v.on'), none = v.classList.contains('no');
+    const dyeName = dye === 'l' ? 'красители L’Oréal' : 'обычные красители';
+    const price = v.textContent.replace(/ /g, ' ').trim();
+    const nm = c.querySelector('.pt').textContent;
+    pickTxt.textContent = nm + ' · пакет ' + pack + ' · ' + (dye === 'l' ? 'L’Oréal' : 'обычные красители') + (none ? ' — в прайсе нет' : ' — ' + price);
+    const msg = 'Здравствуйте! Хочу записаться на окрашивание: ' + c.dataset.name.toLowerCase() + ', пакет ' + pack + ', ' + dyeName + (none ? '' : ' (' + price + ')') + '. Подскажите, пожалуйста, свободное время.';
+    pickWa.href = 'https://wa.me/79213052975?text=' + encodeURIComponent(msg);
+  };
+  segD.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+    dye = b.dataset.d; segD.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b)); upd();
+  }));
+  segP.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+    pack = b.dataset.p; segP.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', x === b)); upd();
+  }));
+  cards.forEach((c, i) => c.addEventListener('click', () => { sel = i; upd(); }));
+  upd();
+
+  // Фильтр работ и лайтбокс
+  const items = document.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt;
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>

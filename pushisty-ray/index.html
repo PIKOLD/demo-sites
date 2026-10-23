@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Пушистый рай — груминг-студия для собак и кошек, Санкт-Петербург</title>
+<meta name="description" content="Пушистый рай: груминг собак и кошек в ЖК «Ariosto». Плесецкая ул., 2 ст1. Ежедневно 12:00–22:00. Цены по породам — от 2 000 ₽.">
+<meta name="theme-color" content="#B7A3F8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Nunito:wght@400;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Nunito:wght@400;600;700;800&display=swap"><style>
+.rv{opacity:1!important;transform:none!important}</style></noscript>
+<style>
+img{height:auto}
+:root{
+  --lav-50:#FBF9FF; --lav-100:#F1ECFF; --lav-200:#E1D7FF; --lav-300:#C9B9FA; --lav-400:#B7A3F8; --lav-500:#8A6CF0; --lav-600:#7352E6; --lav-700:#5B3FC4; --lav-800:#432C9B;
+  --peach:#FFC7A3; --peach-d:#F4A06F; --cream:#FFF4EA;
+  --ink:#2A2147; --muted:#675E8A; --line:rgba(91,63,196,.16);
+  --r-xl:36px; --r-lg:28px; --r-md:20px;
+  --shadow:0 24px 50px -26px rgba(67,44,155,.5);
+  --head:"Comfortaa","Nunito",system-ui,sans-serif; --sans:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1160px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--lav-50);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button,input{font:inherit;color:inherit}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font:800 12.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--lav-700)}
+.eyebrow svg{width:16px;height:16px;fill:currentColor;flex:none}
+h1,h2,h3{font-family:var(--head);font-weight:700;line-height:1.08;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(30px,5.4vw,54px)}
+h1 em,h2 em{font-style:normal;color:var(--lav-600)}
+.lead{font-size:clamp(16px,1.6vw,18.5px);color:#4A4170;max-width:52ch}
+section{padding:clamp(64px,9vw,112px) 0}
+
+/* demo bar */
+.demo{background:var(--ink);color:#EDE8FF;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:#fff;font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:11px;border:1px solid rgba(255,255,255,.4);border-radius:99px;padding:3px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(251,249,255,.88);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:14px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.logo svg{width:30px;height:30px;fill:var(--lav-600);flex:none}
+.logo b{font:700 20px/1 var(--head);white-space:nowrap}
+.logo b span{color:var(--lav-600)}
+.nav{display:none;gap:26px}
+.nav a{text-decoration:none;font-weight:700;font-size:15px;color:#4A4170;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:3px;border-radius:3px;background:var(--peach-d);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:99px;border:2px solid var(--lav-700);background:var(--lav-700);color:#fff;font-weight:800;font-size:15.5px;text-decoration:none;cursor:pointer;transition:transform .25s, background .25s, color .25s, border-color .25s, box-shadow .25s;white-space:nowrap}
+.btn:hover{transform:translateY(-3px);box-shadow:0 14px 26px -14px rgba(67,44,155,.7)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.peach{background:var(--peach);border-color:var(--peach);color:var(--ink)}
+.btn.peach:hover{background:#FFD3B7;border-color:#FFD3B7}
+.btn.ghost{background:#fff;color:var(--lav-700)}
+.btn.ghost:hover{background:var(--lav-700);color:#fff}
+.btn.sm{min-height:42px;padding:0 18px;font-size:14px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:18px;height:2px;border-radius:2px;background:var(--ink);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;border-radius:2px;background:var(--ink);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--lav-100);padding:110px 24px 40px;display:flex;flex-direction:column;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s;overflow-y:auto}
+.mnav a{font:700 30px/1.25 var(--head);text-decoration:none;padding:8px 0;border-bottom:2px dotted var(--lav-300)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:clamp(30px,5vw,64px) 0 clamp(80px,10vw,120px);background:linear-gradient(180deg,var(--lav-400) 0%,#D3C6FB 55%,var(--lav-100) 100%)}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:28px;background:radial-gradient(circle at 28px 28px,#fff 27px,transparent 28px) 0 0/56px 28px repeat-x}
+.sky{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.cloud{position:absolute;left:-240px;width:170px;height:54px;background:#fff;border-radius:99px;opacity:.88;animation:drift linear infinite}
+.cloud::before,.cloud::after{content:"";position:absolute;background:#fff;border-radius:50%}
+.cloud::before{width:74px;height:74px;left:24px;top:-36px}
+.cloud::after{width:56px;height:56px;left:88px;top:-26px}
+.cloud.c1{top:9%;animation-duration:80s;--x:6%}
+.cloud.c2{top:36%;scale:.65;animation-duration:110s;animation-delay:-45s;--x:62%}
+.cloud.c3{top:64%;scale:.85;animation-duration:95s;animation-delay:-20s;--x:30%}
+.cloud.c4{top:20%;scale:.5;animation-duration:130s;animation-delay:-90s;--x:82%}
+@keyframes drift{to{transform:translateX(calc(100vw + 520px))}}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:48px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px}}
+.status{display:inline-flex;align-items:center;gap:10px;background:#fff;border-radius:99px;padding:9px 16px 9px 13px;font-size:14px;font-weight:800;box-shadow:0 10px 24px -14px rgba(67,44,155,.6)}
+.status i{width:10px;height:10px;border-radius:50%;background:#35B56A;box-shadow:0 0 0 0 rgba(53,181,106,.5);animation:pulse 2s infinite;flex:none}
+.status.closed i{background:#D45E56;animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(53,181,106,0)}100%{box-shadow:0 0 0 0 rgba(53,181,106,0)}}
+.hero h1{font-size:clamp(46px,9vw,104px);margin:22px 0 18px;color:var(--ink)}
+.hero h1 em{color:#fff;text-shadow:0 4px 0 rgba(91,63,196,.35)}
+.hero .lead{margin:0 0 22px;color:#352B5C}
+.place{display:flex;gap:10px;align-items:flex-start;color:#352B5C;font-size:15px;font-weight:600;margin-bottom:26px}
+.place svg{width:20px;height:20px;flex:none;margin-top:2px;color:var(--lav-700)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.ratings{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:30px;padding-top:24px;border-top:2px dotted rgba(42,33,71,.25)}
+.rate{display:flex;align-items:center;gap:12px}
+.rate strong{font:700 44px/1 var(--head)}
+.rate span{font-size:13.5px;line-height:1.35;color:#352B5C;font-weight:600}
+.rate span b{display:block;color:#C77A1A;letter-spacing:2px;font-size:12px}
+.visual{position:relative;max-width:500px;margin-inline:auto;width:100%;padding:10px}
+.blob{aspect-ratio:1;border-radius:58% 42% 55% 45% / 50% 55% 45% 50%;overflow:hidden;border:8px solid #fff;box-shadow:var(--shadow);background:var(--lav-300);animation:morph 14s ease-in-out infinite alternate}
+@keyframes morph{50%{border-radius:46% 54% 42% 58% / 56% 44% 56% 44%}100%{border-radius:60% 40% 52% 48% / 44% 58% 42% 56%}}
+.blob img{width:100%;height:100%;object-fit:cover;object-position:28% 45%}
+.chip{position:absolute;z-index:4;background:#fff;border-radius:22px;padding:11px 16px;box-shadow:var(--shadow);font-size:13px;line-height:1.35;font-weight:700;max-width:200px;animation:float 6s ease-in-out infinite}
+.chip b{display:block;font:700 22px/1.15 var(--head);margin-top:2px;color:var(--lav-700)}
+.chip.c1{right:0;top:8%}
+.chip.c2{left:0;bottom:6%;animation-delay:-3s}
+.chip.c2 b{color:#C2661F}
+@keyframes float{50%{transform:translateY(-9px)}}
+
+/* marquee */
+.marquee{background:var(--peach);color:var(--ink);overflow:hidden;padding:16px 0}
+.track{display:flex;width:max-content;animation:run 46s linear infinite}
+.track span{font:700 clamp(20px,2.6vw,26px)/1 var(--head);padding:0 22px;white-space:nowrap;display:flex;align-items:center;gap:44px}
+.track span::after{content:"";width:18px;height:18px;background:currentColor;opacity:.5;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30'/%3E%3C/svg%3E") center/contain no-repeat}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* finder */
+.wool{background-color:#fff;background-image:radial-gradient(rgba(138,108,240,.1) 1.2px,transparent 1.7px);background-size:11px 11px}
+.head{display:grid;gap:14px;margin-bottom:36px}
+@media (min-width:960px){.head{grid-template-columns:1fr auto;align-items:end}}
+.head p{margin:0;color:var(--muted);font-size:14px;font-weight:600}
+.finder{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;grid-template-areas:"ctrl" "ticket" "list"}
+@media (min-width:960px){.finder{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:22px 48px;grid-template-areas:"ctrl ticket" "list ticket";align-items:start}}
+.ctrl{grid-area:ctrl;display:grid;gap:14px}
+.search{position:relative}
+.search svg{position:absolute;left:18px;top:50%;width:22px;height:22px;margin-top:-11px;fill:var(--lav-500);pointer-events:none}
+.search input{width:100%;min-height:58px;border-radius:99px;border:2px solid var(--lav-300);background:#fff;padding:0 20px 0 52px;font-size:17px;font-weight:600;outline:none;transition:border-color .2s, box-shadow .2s}
+.search input::placeholder{color:#9A92BC;font-weight:600}
+.search input:focus{border-color:var(--lav-600);box-shadow:0 0 0 5px rgba(138,108,240,.2)}
+.opts{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chp{border:2px solid var(--lav-300);background:#fff;border-radius:99px;padding:9px 16px;font-weight:800;font-size:14px;cursor:pointer;transition:all .2s}
+.chp small{font-weight:700;color:var(--muted);margin-left:4px}
+.chp[aria-pressed="true"]{background:var(--lav-700);border-color:var(--lav-700);color:#fff}
+.chp[aria-pressed="true"] small{color:#E1D7FF}
+.sort{display:inline-flex;background:var(--lav-100);border-radius:99px;padding:4px}
+.sort button{border:0;background:transparent;border-radius:99px;padding:7px 13px;font-size:13px;font-weight:800;cursor:pointer;color:var(--muted)}
+.sort button[aria-pressed="true"]{background:#fff;color:var(--ink);box-shadow:0 2px 8px rgba(67,44,155,.14)}
+.list{grid-area:list;list-style:none;margin:0;padding:4px 6px 4px 0;display:grid;grid-template-columns:minmax(0,1fr);gap:8px;max-height:min(58vh,520px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--lav-300) transparent}
+.br{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;text-align:left;padding:13px 18px;border-radius:var(--r-md);border:2px solid var(--line);background:#fff;cursor:pointer;transition:border-color .2s, background .2s, transform .2s}
+.br:hover{border-color:var(--lav-400);transform:translateX(3px)}
+.br .bn{min-width:0;font-weight:700;overflow-wrap:anywhere}
+.br .bp{font:700 18px/1 var(--head);white-space:nowrap;color:var(--lav-700);flex:none}
+.br[aria-pressed="true"]{background:var(--lav-100);border-color:var(--lav-600)}
+.empty{grid-area:list;display:none;background:var(--cream);border:2px dashed var(--peach-d);border-radius:var(--r-lg);padding:24px;font-weight:600}
+.empty.on{display:block}
+.empty p{margin:0 0 14px}
+.ticket{grid-area:ticket;position:relative;background:linear-gradient(160deg,var(--lav-600),var(--lav-800));color:#fff;border-radius:var(--r-xl);padding:28px 26px 26px;box-shadow:var(--shadow);text-align:center;overflow:hidden}
+@media (min-width:960px){.ticket{position:sticky;top:92px}}
+.ticket::before,.ticket::after{content:"";position:absolute;background:rgba(255,255,255,.1);border-radius:50%}
+.ticket::before{width:150px;height:150px;right:-50px;top:-50px}
+.ticket::after{width:110px;height:110px;left:-40px;bottom:-40px}
+.ticket>*{position:relative;z-index:1}
+.tpic{width:min(190px,56%);aspect-ratio:1;margin:0 auto 16px;border-radius:50%;overflow:hidden;border:5px solid #fff;background:var(--lav-300);display:grid;place-items:center}
+.tpic img{width:100%;height:100%;object-fit:cover;display:none}
+.tpic svg{width:56%;fill:#fff}
+.tpic.has img{display:block}
+.tpic.has svg{display:none}
+.ticket small{display:block;font:800 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:#D9CCFF}
+.ticket h3{font-size:clamp(24px,3.4vw,32px);margin:8px 0 4px;overflow-wrap:anywhere}
+.tprice{font:700 clamp(52px,8vw,72px)/1.05 var(--head);color:#FFE2CD;margin:6px 0 16px}
+.ticket .btn{width:100%}
+.tnote{margin:14px 0 0;font-size:13px;color:#D9CCFF;font-weight:600}
+
+/* gallery */
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (min-width:760px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}}
+.gi{position:relative;overflow:hidden;aspect-ratio:1;background:var(--lav-200);cursor:zoom-in;border:5px solid #fff;padding:0;box-shadow:0 14px 28px -18px rgba(67,44,155,.6);border-radius:46% 54% 50% 50% / 52% 48% 52% 48%;transition:border-radius .6s, transform .4s}
+.gi:nth-child(2n){border-radius:54% 46% 48% 52% / 48% 54% 46% 52%}
+.gi:nth-child(3n){border-radius:40% 60% 56% 44% / 56% 42% 58% 44%}
+.gi:hover{border-radius:50%;transform:rotate(-2deg) scale(1.02)}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.08)}
+.gi span{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);background:rgba(255,255,255,.92);font-size:11.5px;font-weight:800;padding:5px 10px;border-radius:99px;max-width:84%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,1000px);max-height:90vh}
+.lb::backdrop{background:rgba(30,20,70,.85)}
+.lb img{max-height:84vh;width:auto;margin:auto;border-radius:24px}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:#fff;font-size:22px;cursor:pointer;color:var(--ink)}
+
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pr-card{background:#fff;border:2px solid var(--line);border-radius:var(--r-xl);padding:30px;position:relative;overflow:hidden}
+.pr-card:nth-child(2){background:var(--cream)}
+.pr-card .pw{position:absolute;right:16px;top:16px;width:46px;height:46px;fill:var(--lav-300);transform:rotate(14deg)}
+.pr-card:nth-child(2) .pw{fill:var(--peach)}
+.pr-card h3{font-size:23px;margin:50px 0 10px;position:relative}
+.pr-card p{margin:0;color:#4A4170;position:relative}
+.score{display:flex;flex-wrap:wrap;gap:14px;margin-top:22px}
+.score a{display:flex;align-items:center;gap:14px;background:#fff;border:2px solid var(--line);border-radius:var(--r-lg);padding:14px 22px;text-decoration:none;flex:1 1 240px}
+.score strong{font:700 42px/1 var(--head)}
+.score span{font-size:13.5px;color:var(--muted);font-weight:600}
+.score span b{color:var(--ink);display:block;font-weight:800}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start}
+.ci small{display:block;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--lav-700);margin-bottom:6px}
+.ci p,.ci a{margin:0;font-size:18px;font-weight:700;text-decoration:none;overflow-wrap:anywhere}
+.ci a.big{font:700 30px/1.15 var(--head)}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{display:inline-flex;align-items:center;border:2px solid var(--line);background:#fff;border-radius:99px;padding:9px 16px;font-size:14px;font-weight:800;text-decoration:none;transition:background .25s,color .25s}
+.socials a:hover{background:var(--lav-700);color:#fff}
+.facts{display:flex;flex-wrap:wrap;gap:8px}
+.fact{background:var(--lav-100);border-radius:99px;padding:8px 14px;font-size:14px;font-weight:700}
+.map{border-radius:var(--r-xl);overflow:hidden;min-height:400px;background:var(--lav-200);border:4px solid #fff;box-shadow:var(--shadow)}
+.map iframe{width:100%;height:100%;min-height:400px;border:0;display:block}
+
+/* final */
+.final{position:relative;overflow:hidden;text-align:center;background:linear-gradient(180deg,var(--lav-700),var(--lav-800));color:#fff}
+.final .sky .cloud{opacity:.16}
+.final .wrap{position:relative}
+.final .eyebrow{color:#E1D7FF}
+.final h2{font-size:clamp(36px,7vw,80px);max-width:15ch;margin:18px auto;color:#fff}
+.final h2 em{color:var(--peach)}
+.final .lead{margin:0 auto;color:#E1D7FF}
+.final .ctas{justify-content:center;margin-top:30px}
+.final .btn.ghost{background:transparent;color:#fff;border-color:#fff}
+.final .btn.ghost:hover{background:#fff;color:var(--lav-800)}
+footer{padding:34px 0 120px;font-size:13px;color:var(--muted);font-weight:600}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.3fr);gap:8px;padding:8px;background:rgba(42,33,71,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:26px;box-shadow:0 18px 40px -12px rgba(30,20,70,.6);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:18px;color:#fff;text-decoration:none;font-size:11.5px;font-weight:800}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--peach);color:var(--ink);flex-direction:row;font-size:14px;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+  .cloud{left:var(--x,10%)}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="paw" viewBox="0 0 64 64"><ellipse cx="10" cy="30" rx="6" ry="8"/><ellipse cx="23" cy="17" rx="6.5" ry="9"/><ellipse cx="41" cy="17" rx="6.5" ry="9"/><ellipse cx="54" cy="30" rx="6" ry="8"/><path d="M32 31c-9 0-16 9-16 16 0 6 4.5 8 9 8 3 0 5-1.5 7-1.5s4 1.5 7 1.5c4.5 0 9-2 9-8 0-7-7-16-16-16z"/></symbol></svg>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Концепт сайта для груминг-студии «Пушистый рай». Данные из открытой карточки 2ГИС на 22.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Пушистый рай — наверх"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#paw"/></svg><b>Пушистый <span>рай</span></b></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#breed">Найди породу</a>
+      <a href="#pets">Наши пушистики</a>
+      <a href="#praise">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm peach" href="https://dikidi.net/1907422" target="_blank" rel="noopener">Записаться онлайн</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#breed">Найди породу</a>
+  <a href="#pets">Наши пушистики</a>
+  <a href="#praise">Отзывы</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="sky" aria-hidden="true"><i class="cloud c1"></i><i class="cloud c2"></i><i class="cloud c3"></i><i class="cloud c4"></i></div>
+  <div class="wrap">
+    <div>
+      <span class="status rv" id="status"><i></i><span>Ежедневно 12:00–22:00</span></span>
+      <h1 class="rv d1">Пушистый <em>рай</em></h1>
+      <p class="lead rv d2">Груминг-студия для собак и кошек в ЖК «Ariosto». Найдите свою породу и сразу увидите цену.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Плесецкая ул., 2 ст1 · ЖК «Ariosto» · Приморский район, Санкт-Петербург</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn peach" href="https://dikidi.net/1907422" target="_blank" rel="noopener">Записаться</a>
+        <a class="btn" href="tel:+79143507878"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+        <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~60.029972%2C30.206343&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+      </div>
+      <div class="ratings rv d3">
+        <div class="rate"><strong>5.0</strong><span><b>★★★★★</b>2ГИС · 41 оценка</span></div>
+      </div>
+    </div>
+    <div class="visual rv d2">
+      <div class="blob"><img src="img/hero.jpg" alt="Корги после груминга на столе, рядом вычесанная шерсть, на фоне фиолетовой стены" width="1024" height="768" fetchpriority="high"></div>
+      <div class="chip c1">Груминг<b>собак и кошек</b></div>
+      <div class="chip c2">Цены по породам<b>от 2&nbsp;000&nbsp;₽</b></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Корги</span><span>Шпиц</span><span>Той-пудель</span><span>Йоркширский терьер</span><span>Лабрадор</span><span>Мейн-кун</span><span>Кошки</span><span>Бишон</span>
+  <span>Корги</span><span>Шпиц</span><span>Той-пудель</span><span>Йоркширский терьер</span><span>Лабрадор</span><span>Мейн-кун</span><span>Кошки</span><span>Бишон</span>
+</div></div>
+
+<!-- BREED FINDER -->
+<section id="breed" class="wool">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#paw"/></svg>Калькулятор</span><h2 class="rv d1" style="margin-top:14px">Найди свою <em>породу</em></h2></div>
+      <p class="rv d2">Цены из прайса 2ГИС, обновлён 13.11.2025</p>
+    </div>
+    <div class="finder">
+      <div class="ctrl rv">
+        <div class="search">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><use href="#paw"/></svg>
+          <input id="q" type="search" placeholder="Начните вводить породу" autocomplete="off" aria-label="Поиск породы">
+        </div>
+        <div class="opts">
+          <div class="chips" role="group" aria-label="Кто у вас">
+            <button class="chp" type="button" aria-pressed="true" data-t="all">Все<small id="nAll"></small></button>
+            <button class="chp" type="button" aria-pressed="false" data-t="d">Собаки<small id="nD"></small></button>
+            <button class="chp" type="button" aria-pressed="false" data-t="c">Кошки<small id="nC"></small></button>
+          </div>
+          <div class="sort" role="group" aria-label="Сортировка">
+            <button type="button" aria-pressed="true" data-s="price">По цене</button>
+            <button type="button" aria-pressed="false" data-s="name">По алфавиту</button>
+          </div>
+        </div>
+      </div>
+      <aside class="ticket rv d1" aria-live="polite" aria-label="Стоимость груминга">
+        <div class="tpic" id="tPic"><img id="tImg" src="img/hero.jpg" alt="" width="1024" height="768" loading="lazy"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#paw"/></svg></div>
+        <small>Груминг</small>
+        <h3 id="tName">Корги</h3>
+        <div class="tprice" id="tPrice">2&nbsp;900&nbsp;₽</div>
+        <a class="btn peach" href="https://dikidi.net/1907422" target="_blank" rel="noopener">Записаться онлайн</a>
+        <p class="tnote">Цена из прайса 2ГИС. Итоговую стоимость уточняйте при записи.</p>
+      </aside>
+      <ul class="list rv" id="list" tabindex="0" aria-label="Список пород и цены"></ul>
+      <div class="empty" id="empty">
+        <p>Такой породы нет в списке. Позвоните или напишите нам, и мы подскажем стоимость.</p>
+        <div class="ctas"><a class="btn" href="tel:+79143507878">Позвонить</a><a class="btn ghost" href="https://t.me/push_ray" target="_blank" rel="noopener">Telegram</a></div>
+      </div>
+    </div>
+    <noscript><p style="margin-top:24px;font-weight:700">Чтобы увидеть цены по породам, включите JavaScript или позвоните: <a href="tel:+79143507878">+7 914 350-78-78</a>.</p></noscript>
+  </div>
+</section>
+
+<!-- PETS -->
+<section id="pets" style="background:var(--lav-100)">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#paw"/></svg>Фото</span><h2 class="rv d1" style="margin-top:14px">Наши <em>пушистики</em></h2></div>
+      <p class="rv d2">Фото из карточки студии в 2ГИС</p>
+    </div>
+    <div class="grid">
+      <button class="gi rv" type="button"><img src="img/dog-1.jpg" alt="Шпиц в оранжевом полотенце" loading="lazy"><span>Шпиц в полотенце</span></button>
+      <button class="gi rv d1" type="button"><img src="img/dog-2.jpg" alt="Пушистый шпиц" loading="lazy"><span>Пушистый шпиц</span></button>
+      <button class="gi rv d2" type="button"><img src="img/dog-3.jpg" alt="Корги рядом с вычесанной шерстью" loading="lazy"><span>Корги</span></button>
+      <button class="gi rv d3" type="button"><img src="img/dog-4.jpg" alt="Йоркширский терьер после стрижки" loading="lazy"><span>Йорк после стрижки</span></button>
+      <button class="gi rv" type="button"><img src="img/dog-5.jpg" alt="Кавалер-кинг-чарльз-спаниель" loading="lazy"><span>Кавалер-спаниель</span></button>
+      <button class="gi rv d1" type="button"><img src="img/dog-6.jpg" alt="Белый шпиц" loading="lazy"><span>Белый шпиц</span></button>
+      <button class="gi rv d2" type="button"><img src="img/dog-7.jpg" alt="Ирландский сеттер" loading="lazy"><span>Ирландский сеттер</span></button>
+      <button class="gi rv d3" type="button"><img src="img/dog-8.jpg" alt="Йоркширский терьер" loading="lazy"><span>Йорк</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""></dialog>
+
+<!-- PRAISE -->
+<section id="praise" class="wool">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#paw"/></svg>Отзывы</span><h2 class="rv d1" style="margin-top:14px">За что <em>хвалят</em></h2></div>
+      <p class="rv d2">Пересказ отзывов хозяев в 2ГИС</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card rv"><svg class="pw" viewBox="0 0 64 64" aria-hidden="true"><use href="#paw"/></svg><h3>Справляются со сложным</h3><p>Хозяева пишут, что грумеры берутся за колтуны у мейн-куна и за непоседливых собак и справляются с ними.</p></article>
+      <article class="pr-card rv d1"><svg class="pw" viewBox="0 0 64 64" aria-hidden="true"><use href="#paw"/></svg><h3>Бережно и профессионально</h3><p>Питомцы возвращаются домой чистыми и ухоженными, а работа проходит аккуратно и с уважением к животному.</p></article>
+      <article class="pr-card rv d2"><svg class="pw" viewBox="0 0 64 64" aria-hidden="true"><use href="#paw"/></svg><h3>Заботливая команда</h3><p>Грумер и администратор внимательные и заботливые. Некоторые клиенты называют студию лучшей на районе.</p></article>
+    </div>
+    <div class="score rv">
+      <a href="https://2gis.ru/spb/firm/70000001067916399" target="_blank" rel="noopener"><strong>5.0</strong><span><b>2ГИС</b>41 оценка</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" style="background:var(--lav-100)">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#paw"/></svg>Контакты</span><h2 class="rv d1" style="margin-top:14px">Как <em>добраться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Санкт-Петербург, Плесецкая ул., 2 ст1, ЖК «Ariosto»</p></div>
+        <div class="ci"><small>Часы работы</small><p>Ежедневно, 12:00–22:00</p></div>
+        <div class="ci"><small>Телефон</small><a class="big" href="tel:+79143507878">+7 914 350-78-78</a></div>
+        <div class="ci"><small>Запись и соцсети</small>
+          <div class="socials">
+            <a href="https://dikidi.net/1907422" target="_blank" rel="noopener">Онлайн-запись</a>
+            <a href="https://t.me/push_ray" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://vk.com/fluffyparadisee" target="_blank" rel="noopener">ВКонтакте</a>
+          </div>
+        </div>
+        <div class="ci"><small>Что ещё</small>
+          <div class="facts"><span class="fact">Собаки и кошки</span><span class="fact">Оплата: карта, наличные, QR</span></div>
+        </div>
+        <div class="ctas"><a class="btn ghost" href="https://yandex.ru/maps/?rtext=~60.029972%2C30.206343&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a></div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?ll=30.206343%2C60.029972&z=16&pt=30.206343%2C60.029972%2Cpm2rdm" title="Пушистый рай на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="sky" aria-hidden="true"><i class="cloud c1"></i><i class="cloud c3"></i></div>
+  <div class="wrap">
+    <span class="eyebrow rv">Запись</span>
+    <h2 class="rv d1">Запишите питомца <em>в рай</em></h2>
+    <p class="lead rv d2">Выберите время в онлайн-записи или позвоните нам.</p>
+    <div class="ctas rv d3">
+      <a class="btn peach" href="https://dikidi.net/1907422" target="_blank" rel="noopener">Записаться онлайн</a>
+      <a class="btn ghost" href="tel:+79143507878">+7 914 350-78-78</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Пушистый рай — груминг-студия, Санкт-Петербург</span>
+    <span>Демо-концепт. Цены и данные — из открытой карточки 2ГИС на 22.10.2026.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79143507878"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+  <a href="https://yandex.ru/maps/?rtext=~60.029972%2C30.206343&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+  <a class="main" href="https://dikidi.net/1907422" target="_blank" rel="noopener">Записаться</a>
+</nav>
+
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const fmt = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽';
+
+  // Статус «открыто/закрыто» по московскому времени (ежедневно 12:00–22:00)
+  const st = $('#status');
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
+  const m = now.getHours() * 60 + now.getMinutes();
+  const open = m >= 12 * 60 && m < 22 * 60;
+  st.classList.toggle('closed', !open);
+  st.querySelector('span').textContent = open ? 'Открыто сейчас · до 22:00'
+    : (m < 12 * 60 ? 'Сейчас закрыто · откроемся в 12:00' : 'Сейчас закрыто · откроемся завтра в 12:00');
+
+  // Шапка и мобильная панель
+  const hdr = $('.hdr'), mbar = $('#mbar');
+  const onScroll = () => { hdr.classList.toggle('scrolled', scrollY > 8); mbar.classList.toggle('show', scrollY > 420); };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = $('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  $$('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const rv = $$('.rv');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+    rv.forEach(el => io.observe(el));
+  } else rv.forEach(el => el.classList.add('in'));
+
+  // Прайс по породам (2ГИС, обновлён 13.11.2025): [название, цена, d — собаки / c — кошки]
+  const D = [
+    ['Ирландский терьер', 2000, 'd'], ['Джек-рассел', 2000, 'd'], ['Керн-терьер', 2000, 'd'], ['Лейкленд-терьер', 2000, 'd'],
+    ['Кошки', 2300, 'c'], ['Вельштерьер', 2300, 'd'], ['Скотч-терьер', 2300, 'd'], ['Фокстерьер', 2300, 'd'], ['Пекинес', 2300, 'd'],
+    ['Карликовый пудель', 2500, 'd'], ['Миттельшнауцер', 2500, 'd'], ['Бигль', 2500, 'd'], ['Китайская хохлатая (голая)', 2500, 'd'],
+    ['Той-пудель', 2600, 'd'], ['Малый шпиц', 2600, 'd'], ['Мопс', 2600, 'd'],
+    ['Вест-хайленд-уайт-терьер', 2700, 'd'], ['Керри-блю-терьер', 2700, 'd'], ['Кавалер-кинг-чарльз-спаниель', 2700, 'd'],
+    ['Мейн-кун', 2800, 'c'], ['Большой пудель', 2800, 'd'], ['Малый пудель', 2800, 'd'], ['Средний пудель', 2800, 'd'], ['Метис', 2800, 'd'],
+    ['Цвергшнауцер', 2800, 'd'], ['Йоркширский терьер', 2800, 'd'], ['Китайская хохлатая (пуховка)', 2800, 'd'], ['Мальтезе', 2800, 'd'],
+    ['Ши-тцу', 2900, 'd'], ['Кокер-спаниель', 2900, 'd'], ['Корги', 2900, 'd'], ['Русский спаниель', 2900, 'd'],
+    ['Ризеншнауцер', 3000, 'd'], ['Бишон', 3000, 'd'], ['Вольфшпиц', 3200, 'd'], ['Померанский шпиц', 3200, 'd'],
+    ['Ирландский мягкошёрстный пшеничный терьер', 3300, 'd'], ['Эрдельтерьер', 3500, 'd'], ['Акита-ину', 3500, 'd'], ['Сеттер', 3500, 'd'],
+    ['Лабрадор', 3800, 'd'], ['Немецкая овчарка (короткошёрстная)', 4000, 'd'], ['Золотистый ретривер', 4300, 'd'],
+    ['Немецкая овчарка (длинношёрстная)', 4500, 'd'], ['Кане-корсо', 5000, 'd'], ['Ротвейлер', 5000, 'd'], ['Американская акита', 5300, 'd'],
+    ['Самоедская собака', 6000, 'd'], ['Аляскинский маламут', 6500, 'd'], ['Чёрный терьер', 6600, 'd']
+  ];
+  // Фото студии, где порода названа в досье
+  const PHOTO = {
+    'Корги': ['hero', 'Корги после груминга'],
+    'Йоркширский терьер': ['dog-4', 'Йоркширский терьер после стрижки'],
+    'Кавалер-кинг-чарльз-спаниель': ['dog-5', 'Кавалер-кинг-чарльз-спаниель'],
+    'Сеттер': ['dog-7', 'Ирландский сеттер']
+  };
+  const norm = s => s.toLowerCase().replace(/ё/g, 'е');
+  const list = $('#list'), empty = $('#empty'), q = $('#q');
+  let type = 'all', sort = 'price', sel = D.findIndex(d => d[0] === 'Корги');
+
+  $('#nAll').textContent = D.length;
+  $('#nD').textContent = D.filter(d => d[2] === 'd').length;
+  $('#nC').textContent = D.filter(d => d[2] === 'c').length;
+
+  const draw = () => {
+    const term = norm(q.value.trim());
+    const rows = D.map((d, i) => ({ n: d[0], p: d[1], t: d[2], i }))
+      .filter(r => (type === 'all' || r.t === type) && norm(r.n).includes(term))
+      .sort(sort === 'price' ? (a, b) => a.p - b.p || a.i - b.i : (a, b) => a.n.localeCompare(b.n, 'ru'));
+    list.innerHTML = rows.map(r =>
+      '<li><button type="button" class="br" aria-pressed="' + (r.i === sel) + '" data-i="' + r.i + '"><span class="bn">' + r.n + '</span><span class="bp">' + fmt(r.p) + '</span></button></li>'
+    ).join('');
+    empty.classList.toggle('on', !rows.length);
+    list.style.display = rows.length ? '' : 'none';
+  };
+  const ticket = () => {
+    const d = D[sel], ph = PHOTO[d[0]], pic = $('#tPic'), img = $('#tImg');
+    $('#tName').textContent = d[0];
+    $('#tPrice').textContent = fmt(d[1]);
+    pic.classList.toggle('has', !!ph);
+    if (ph) { img.src = 'img/' + ph[0] + '.jpg'; img.alt = ph[1]; } else img.alt = '';
+  };
+  list.addEventListener('click', e => {
+    const b = e.target.closest('.br'); if (!b) return;
+    sel = +b.dataset.i;
+    $$('.br', list).forEach(x => x.setAttribute('aria-pressed', x === b));
+    ticket();
+  });
+  q.addEventListener('input', draw);
+  $$('[data-t]').forEach(b => b.addEventListener('click', () => {
+    type = b.dataset.t; $$('[data-t]').forEach(x => x.setAttribute('aria-pressed', x === b)); draw();
+  }));
+  $$('[data-s]').forEach(b => b.addEventListener('click', () => {
+    sort = b.dataset.s; $$('[data-s]').forEach(x => x.setAttribute('aria-pressed', x === b)); draw();
+  }));
+  draw(); ticket();
+
+  // Лайтбокс
+  const lb = $('#lb'), lbImg = $('#lbImg');
+  $$('.gi').forEach(i => i.addEventListener('click', () => {
+    const img = $('img', i); lbImg.src = img.src; lbImg.alt = img.alt;
+    if (lb.showModal) lb.showModal();
+  }));
+  $('#lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>

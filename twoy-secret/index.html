@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Twoy Secret — салон красоты на Лиговском проспекте, Санкт-Петербург</title>
+<meta name="description" content="Салон красоты Twoy Secret на Лиговском пр., 271: окрашивание, наращивание волос Ring Star, маникюр, педикюр, свадебный образ. Ежедневно 10:00–22:00.">
+<meta name="theme-color" content="#FCF8F1">
+<script>document.documentElement.className='js'</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:wght@300;400;500;600&display=swap"></noscript>
+<style>
+img{height:auto}
+:root{
+  --ivory:#FCF8F1; --milk:#F6EEE1; --champ:#EFE2C6; --gold:#B58E45; --gold2:#D8BC7C; --goldd:#8F6D2E;
+  --blush:#F0D8CE; --rose:#C48A84; --cocoa:#2D201C; --cocoa2:#3B2B25; --ink:#3A2C27; --mute:#86746B;
+  --line:rgba(58,44,39,.14); --lineD:rgba(216,188,124,.3);
+  --serif:"Forum", "Times New Roman", Georgia, serif;
+  --sans:"Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1180px;
+  --shadow:0 30px 60px -34px rgba(120,86,36,.55);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ivory);color:var(--ink);font:400 15.5px/1.7 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+section{padding:clamp(68px,10vw,128px) 0;position:relative;overflow:hidden;overflow:clip}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.05;margin:0;overflow-wrap:break-word}
+h2{font-size:clamp(34px,6vw,62px);letter-spacing:.005em}
+em{font-style:normal;background:linear-gradient(100deg,#8F6D2E 0%,#D8BC7C 48%,#A5802F 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.dk em{background:linear-gradient(100deg,#D8BC7C,#F3E3B8 50%,#C8A55D);-webkit-background-clip:text;background-clip:text}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font:500 11px/1 var(--sans);letter-spacing:.26em;text-transform:uppercase;color:var(--goldd)}
+.eyebrow::before,.eyebrow::after{content:"";width:22px;height:1px;background:currentColor;opacity:.7}
+.lead{font-size:clamp(15.5px,1.6vw,17.5px);font-weight:300;max-width:52ch;margin:0}
+.head{display:grid;gap:16px;margin-bottom:44px}
+.head.c{text-align:center;justify-items:center}
+.head p{margin:0;color:var(--mute);font-size:14px;max-width:54ch}
+.dk{background:var(--cocoa);color:#EFE3CF}
+.dk .head p{color:#BFAE98}
+.dk .eyebrow{color:var(--gold2)}
+
+/* demo bar */
+.demo{background:var(--cocoa);color:#E6D8C0;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:var(--gold2);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:11px;border:1px solid var(--gold);border-radius:99px;padding:3px 9px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(252,248,241,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hw{display:grid;grid-template-columns:1fr auto;align-items:center;height:70px;gap:16px}
+.nl,.nr{display:none}
+.logo{text-decoration:none;font:400 27px/1 var(--serif);letter-spacing:.04em;display:flex;align-items:center;gap:10px;white-space:nowrap}
+.logo span{color:var(--gold);font-size:13px}
+.nav a{text-decoration:none;font-weight:500;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:99px;border:1px solid var(--gold);background:linear-gradient(120deg,#B58E45,#D8BC7C 55%,#B58E45);background-size:200% 100%;color:#2D201C;font:600 13px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:transform .25s,background-position .6s,box-shadow .25s;white-space:nowrap;box-shadow:0 10px 24px -14px rgba(143,109,46,.9)}
+.btn:hover{transform:translateY(-2px);background-position:100% 0}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:none}
+.btn.ghost:hover{background:var(--cocoa);color:var(--gold2);border-color:var(--cocoa)}
+.dk .btn.ghost{color:var(--gold2)}
+.dk .btn.ghost:hover{background:var(--gold);color:var(--cocoa)}
+.btn.sm{min-height:42px;padding:0 20px;font-size:12px}
+.burger{width:44px;height:44px;border-radius:50%;border:1px solid var(--gold);background:transparent;display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:18px;height:1.5px;background:var(--ink);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:var(--ink);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--ivory);padding:110px 28px 40px;display:flex;flex-direction:column;gap:4px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:400 34px/1.25 var(--serif);text-decoration:none;padding:6px 0;border-bottom:1px solid var(--line)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){
+  .hw{grid-template-columns:1fr auto 1fr}
+  .nl,.nr{display:flex;gap:28px;align-items:center}
+  .nl{justify-content:flex-end}
+  .nr{justify-content:flex-start}
+  .burger,.mnav{display:none}
+}
+
+/* hero */
+.hero{background:radial-gradient(70% 60% at 80% 30%,#F8E8D2 0%,rgba(248,232,210,0) 70%),radial-gradient(60% 60% at 8% 95%,rgba(240,216,206,.9),rgba(240,216,206,0) 70%),var(--ivory);padding:clamp(30px,5vw,68px) 0 clamp(70px,9vw,120px)}
+.hero .wrap{position:relative;display:grid;gap:56px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1fr) minmax(0,.85fr);gap:64px}}
+.feathers{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.feathers i{position:absolute;top:-70px;left:var(--x);width:18px;height:54px;border-radius:50% 50% 50% 50% / 62% 62% 38% 38%;background:linear-gradient(90deg,rgba(255,255,255,.2),#fff 50%,rgba(255,255,255,.2));box-shadow:0 0 0 1px rgba(181,142,69,.16),0 8px 10px -5px rgba(143,109,46,.35);opacity:0;animation:fall var(--t) ease-in-out var(--d) infinite;transform-origin:50% 90%}
+.feathers i::after{content:"";position:absolute;left:50%;top:6%;bottom:-12%;width:1px;background:rgba(181,142,69,.5)}
+@keyframes fall{0%{transform:translate3d(0,0,0) rotate(var(--r));opacity:0}10%{opacity:.95}50%{transform:translate3d(var(--dx),55vh,0) rotate(calc(var(--r) * -1))}100%{transform:translate3d(calc(var(--dx) * -1),112vh,0) rotate(var(--r));opacity:0}}
+.status{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.8);border:1px solid var(--line);border-radius:99px;padding:8px 14px 8px 12px;font-size:13px;font-weight:500}
+.status i{width:9px;height:9px;border-radius:50%;background:#3BA55C;box-shadow:0 0 0 0 rgba(59,165,92,.5);animation:pulse 2s infinite}
+.status.closed i{background:#C2554B;animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(59,165,92,0)}100%{box-shadow:0 0 0 0 rgba(59,165,92,0)}}
+.hero h1{font-size:clamp(44px,8.4vw,92px);margin:24px 0 22px;letter-spacing:.005em}
+.hero .lead{margin-bottom:24px}
+.place{display:flex;gap:10px;align-items:flex-start;color:var(--mute);font-size:14px;margin-bottom:28px}
+.place svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--gold)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:600px){.ctas .btn{flex:0 0 auto}}
+.ratings{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:32px;padding-top:24px;border-top:1px solid var(--line)}
+.rate{display:flex;align-items:center;gap:14px}
+.rate strong{font:400 46px/1 var(--serif);color:var(--goldd)}
+.rate span{font-size:13px;line-height:1.4;color:var(--mute)}
+.rate span b{display:block;color:var(--gold);letter-spacing:3px;font-size:12px;font-weight:500}
+.visual{position:relative;max-width:470px;width:100%;margin-inline:auto}
+.mirror{position:relative;aspect-ratio:4/5;border-radius:50%;overflow:hidden;box-shadow:0 0 0 9px var(--ivory),0 0 0 10px var(--gold),0 0 0 18px rgba(216,188,124,.25),var(--shadow)}
+.mirror img{width:100%;height:100%;object-fit:cover;object-position:46% 50%}
+.mirror::after{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(255,255,255,.28),rgba(255,255,255,0) 45%)}
+.medal{position:absolute;border-radius:50%;overflow:hidden;aspect-ratio:1;box-shadow:0 0 0 5px var(--ivory),0 0 0 6px var(--gold),var(--shadow);animation:bob 7s ease-in-out infinite}
+.medal img{width:100%;height:100%;object-fit:cover}
+.medal.m1{left:-5%;bottom:5%;width:33%}
+.medal.m2{right:-4%;top:9%;width:26%;animation-delay:-3.5s}
+@keyframes bob{50%{transform:translateY(-8px)}}
+@media (max-width:520px){.medal.m1{left:-2%}.medal.m2{right:-1%}}
+
+/* wedding */
+.wed{background:linear-gradient(180deg,var(--blush) 0%,#F7E7DD 100%)}
+.wed .wrap{display:grid;gap:44px;align-items:center}
+@media (min-width:900px){.wed .wrap{grid-template-columns:minmax(0,.95fr) minmax(0,1fr);gap:72px}}
+.duo{position:relative;max-width:520px;width:100%;margin-inline:auto;padding-bottom:12%}
+.duo .a{width:78%;aspect-ratio:4/5;border-radius:200px 200px 14px 14px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--gold)}
+.duo .b{position:absolute;right:0;bottom:0;width:52%;aspect-ratio:1;border-radius:50%;overflow:hidden;box-shadow:0 0 0 6px #F7E7DD,0 0 0 7px var(--gold),var(--shadow)}
+.duo img{width:100%;height:100%;object-fit:cover}
+.duo .a img{object-position:50% 40%}
+.wed h2{margin:16px 0 18px}
+.price-big{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 16px;margin:26px 0}
+.price-big small{font:500 11px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--goldd)}
+.price-big b{font:400 clamp(48px,8vw,76px)/1 var(--serif);color:var(--goldd);white-space:nowrap}
+
+/* ring star calculator */
+.ring{background:radial-gradient(80% 80% at 50% 0%,#FBF3E1 0%,var(--champ) 100%)}
+.calc{display:grid;grid-template-columns:minmax(0,1fr);gap:0;background:#fff;border:1px solid var(--gold);border-radius:24px;overflow:hidden;box-shadow:var(--shadow)}
+@media (min-width:900px){.calc{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}}
+.calc .l{padding:clamp(22px,4vw,48px)}
+.calc .r{background:var(--cocoa);color:#EFE3CF;padding:clamp(22px,4vw,44px);display:flex;flex-direction:column;gap:16px}
+.fld{border:0;margin:0 0 22px;padding:0;min-width:0}
+.fld legend{padding:0;margin-bottom:12px;font:500 11px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--goldd)}
+.pills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.pill{position:relative;display:block;cursor:pointer}
+.pill input,.sw input{position:absolute;opacity:0;pointer-events:none}
+.pill span{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;border:1px solid var(--line);border-radius:14px;padding:14px 6px;transition:all .25s}
+.pill b{font:400 20px/1.1 var(--serif)}
+.pill em{font:500 12.5px/1 var(--sans);color:var(--mute);white-space:nowrap}
+.pill input:checked + span{border-color:var(--gold);background:linear-gradient(180deg,#FBF3E1,#F3E3BD)}
+.pill input:checked + span em{color:var(--goldd)}
+.pill input:focus-visible + span,.sw input:focus-visible + span{outline:2px solid var(--gold);outline-offset:2px}
+.sw{position:relative;display:block;cursor:pointer;margin-bottom:8px}
+.sw span{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--line);border-radius:14px;padding:14px 16px;transition:all .25s}
+.sw span b{font-weight:500;font-size:14.5px;min-width:0}
+.sw span em{font:400 20px/1 var(--serif);color:var(--goldd);white-space:nowrap}
+.sw input:checked + span{border-color:var(--gold);background:linear-gradient(180deg,#FBF3E1,#F3E3BD)}
+.sw span::before{content:"";width:22px;height:22px;border-radius:50%;border:1px solid var(--gold);flex:none;order:-1;background:radial-gradient(circle,var(--gold) 0 0,transparent 0);transition:background .25s}
+.sw input:checked + span::before{background:radial-gradient(circle,var(--gold) 0 7px,transparent 8px)}
+.sw span{justify-content:flex-start}
+.sw span em{margin-left:auto}
+.trs{display:flex;gap:9px;justify-content:center;align-items:flex-end;height:104px;margin-bottom:4px}
+.trs i{width:20px;height:96px;border-radius:10px;background:rgba(216,188,124,.16);border:1px solid rgba(216,188,124,.35);transition:background .5s,transform .5s}
+.trs i.on{background:linear-gradient(180deg,#F3E3B8,#B58E45);transform:translateY(-6px)}
+.trs i.t{width:15px;height:50px;margin-left:10px}
+.calc .lbl{font:500 11px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--gold2)}
+.total{font:400 clamp(52px,8vw,78px)/1 var(--serif);color:#F3E3B8}
+.calc ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:14px}
+.calc li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed rgba(216,188,124,.3);padding-bottom:8px}
+.calc li b{font:400 18px/1.2 var(--serif);color:var(--gold2);white-space:nowrap}
+.extra{font-size:13px;color:#BFAE98;display:grid;gap:4px}
+.extra b{color:var(--gold2);font-weight:500}
+.calc .btn{margin-top:auto}
+
+/* services */
+.acc{border-top:1px solid var(--line)}
+.acc:last-of-type{border-bottom:1px solid var(--line)}
+.acc summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 0;font:400 clamp(26px,3.6vw,36px)/1.1 var(--serif)}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary small{font:400 12.5px/1 var(--sans);color:var(--mute);margin-left:12px;letter-spacing:.04em}
+.acc summary i{width:36px;height:36px;border:1px solid var(--gold);border-radius:50%;position:relative;flex:none;transition:background .3s}
+.acc summary i::before,.acc summary i::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1px;background:var(--goldd);transform:translate(-50%,-50%);transition:transform .3s}
+.acc summary i::after{transform:translate(-50%,-50%) rotate(90deg)}
+.acc[open] summary i::after{transform:translate(-50%,-50%) rotate(0)}
+.acc summary:hover i{background:var(--champ)}
+.rows{display:grid;grid-template-columns:minmax(0,1fr);column-gap:56px;padding-bottom:24px}
+@media (min-width:900px){.rows.two{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.row span{min-width:0}
+.row span small{display:block;font-size:12.5px;color:var(--mute)}
+.row b{font:400 22px/1 var(--serif);color:var(--goldd);white-space:nowrap}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}
+.tags span{border:1px solid var(--gold);border-radius:99px;padding:9px 16px;font-size:13px;font-weight:500;background:#fff}
+.note{margin:18px 0 0;font-size:13px;color:var(--mute)}
+
+/* secret / veil */
+.sgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:22px}
+@media (min-width:700px){.sgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}}
+.sc{position:relative}
+.sc .ph{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:200px 200px 16px 16px;border:1px solid var(--gold);background:var(--cocoa2)}
+.sc img{width:100%;height:100%;object-fit:cover}
+.sc figcaption{display:flex;align-items:baseline;gap:12px;padding:14px 4px 0;font:400 22px/1.2 var(--serif);color:#F3E3B8}
+.sc figcaption small{font:300 13px/1.4 var(--sans);color:#BFAE98}
+.veil{display:none}
+.js .veil{display:block;position:absolute;inset:0;z-index:2;background:radial-gradient(circle,rgba(181,142,69,.4) 0 1px,transparent 1.5px) 0 0/14px 14px,linear-gradient(180deg,#FCF8F1,#F0D8CE);transform:translateY(calc(var(--p,0) * -104%));opacity:calc(1 - var(--p,0) * .35);will-change:transform}
+.js .veil::after{content:"";position:absolute;left:0;right:0;bottom:-13px;height:14px;background:radial-gradient(circle at 50% 0,#F0D8CE 0 7px,transparent 8px) 0 0/16px 14px repeat-x}
+.veil span{position:absolute;inset:0;display:grid;place-items:center;font:400 22px/1 var(--serif);color:var(--goldd);letter-spacing:.1em}
+.hint{margin:26px 0 0;text-align:center;font-size:13px;color:#BFAE98}
+
+/* works */
+.cols{columns:2;column-gap:12px}
+@media (min-width:900px){.cols{columns:3;column-gap:18px}}
+.wk{break-inside:avoid;position:relative;margin:0 0 12px;border-radius:16px;overflow:hidden;background:var(--champ)}
+@media (min-width:900px){.wk{margin-bottom:18px}}
+.wk img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.wk:hover img{transform:scale(1.05)}
+.wk::after{content:"";position:absolute;inset:8px;border:1px solid rgba(255,255,255,.75);border-radius:10px;pointer-events:none}
+.wk.t{aspect-ratio:4/5}.wk.s{aspect-ratio:1}.wk.h{aspect-ratio:4/3}
+.wk figcaption{position:absolute;left:14px;bottom:14px;z-index:1;background:rgba(45,32,28,.72);color:#F3E3B8;font-size:11.5px;letter-spacing:.06em;padding:5px 11px;border-radius:99px}
+
+/* praise */
+.praise{display:grid;gap:18px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pr{position:relative;background:#fff;border:1px solid var(--line);border-top:2px solid var(--gold);border-radius:6px 6px 24px 24px;padding:34px 28px 30px}
+.pr .num{font:400 44px/1 var(--serif);color:var(--gold2)}
+.pr h3{font-size:28px;margin:12px 0 10px}
+.pr p{margin:0;color:var(--ink);font-weight:300}
+.score{display:flex;flex-wrap:wrap;gap:14px;margin-top:22px;justify-content:center}
+.score a{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid var(--gold);border-radius:99px;padding:12px 28px;text-decoration:none}
+.score strong{font:400 46px/1 var(--serif);color:var(--goldd)}
+.score span{font-size:13.5px;color:var(--mute);line-height:1.4}
+.score span b{display:block;color:var(--gold);letter-spacing:3px;font-size:12px;font-weight:500}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:30px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:52px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start}
+.ci small{display:block;font:500 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--goldd);margin-bottom:8px}
+.ci p,.ci a{margin:0;font-size:17px;font-weight:400;text-decoration:none}
+.ci p span{display:block;font-size:14px;color:var(--mute)}
+.ci a.big{display:block;font:400 clamp(30px,6vw,40px)/1.1 var(--serif);white-space:nowrap}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{display:inline-flex;align-items:center;border:1px solid var(--gold);border-radius:99px;padding:10px 18px;font-size:13px;font-weight:500;text-decoration:none;transition:background .25s,color .25s}
+.socials a:hover{background:var(--cocoa);color:var(--gold2);border-color:var(--cocoa)}
+.map{border-radius:20px;overflow:hidden;min-height:380px;background:var(--champ);border:1px solid var(--gold)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+.facts{display:flex;flex-wrap:wrap;gap:8px}
+.facts span{border:1px solid var(--line);border-radius:99px;padding:7px 14px;font-size:13px;background:#fff}
+
+/* final */
+.final{text-align:center;background:radial-gradient(90% 100% at 50% 0%,#3B2B25 0%,var(--cocoa) 70%);color:#EFE3CF}
+.final h2{font-size:clamp(38px,7vw,78px);max-width:14ch;margin:18px auto}
+.final .lead{margin:0 auto;color:#CDBDA6}
+.final .ctas{justify-content:center;margin-top:32px}
+footer{background:#241915;color:#BFAE98;padding:34px 0 120px;font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* floating call */
+.fab{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom));z-index:50;display:flex;flex-direction:column;align-items:flex-end;gap:10px;transform:translateY(160%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.fab.show{transform:none}
+.fab a{display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;box-shadow:0 14px 30px -10px rgba(45,32,28,.6)}
+.fab .wa{width:48px;height:48px;border-radius:50%;background:var(--cocoa);color:var(--gold2);border:1px solid var(--gold)}
+.fab .call{min-height:54px;padding:0 24px;border-radius:99px;background:linear-gradient(120deg,#B58E45,#D8BC7C);color:#2D201C;font:600 13px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase}
+.fab svg{width:20px;height:20px}
+@media (min-width:960px){.fab{display:none}}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .rv{opacity:1;transform:none}
+  .feathers{display:none}
+  .js .veil{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо-концепт</b><span>Сайт-концепт для салона Twoy Secret. Данные и фото — из карточки 2ГИС, прайс обновлён 21.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap hw">
+    <nav class="nav nl" aria-label="Меню слева">
+      <a href="#services">Услуги</a>
+      <a href="#ring">Ring Star</a>
+    </nav>
+    <a class="logo" href="#top" aria-label="Twoy Secret — наверх">Twoy<span>✦</span>Secret</a>
+    <div class="nr">
+      <nav class="nav" aria-label="Меню справа" style="display:flex;gap:28px">
+        <a href="#wedding">Wedding day</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="btn sm" data-wa="Здравствуйте! Хочу записаться в Twoy Secret." href="https://wa.me/79313000300?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F." target="_blank" rel="noopener">Записаться</a>
+    </div>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#services">Услуги и цены</a>
+  <a href="#ring">Наращивание Ring Star</a>
+  <a href="#wedding">Wedding day</a>
+  <a href="#secret">Интерьер</a>
+  <a href="#works">Образы</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="feathers" id="feathers" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <span class="status rv" id="status"><i></i><span>Ежедневно 10:00–22:00</span></span>
+      <h1 class="rv d1">Ваш личный <em>секрет красоты</em></h1>
+      <p class="lead rv d2">Окрашивание, наращивание волос Ring Star, маникюр, педикюр и свадебный образ — в интерьере с хрусталём, перьями и золотом.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Лиговский пр., 271, пом.&nbsp;36Н · Фрунзенский район, ЖК «Первый квартал»</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn" data-wa="Здравствуйте! Хочу записаться в Twoy Secret." href="https://wa.me/79313000300?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F." target="_blank" rel="noopener">Записаться в WhatsApp</a>
+        <a class="btn ghost" href="tel:+79313000300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+        <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~59.906286%2C30.33971&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+      </div>
+      <div class="ratings rv d3">
+        <div class="rate"><strong>4.7</strong><span><b>★★★★★</b>2ГИС · 60 оценок</span></div>
+      </div>
+    </div>
+    <div class="visual rv d2">
+      <div class="mirror"><img id="heroImg" src="img/hero.jpg" alt="Рабочее место с золотыми зеркалами с лампами, перья и портьеры в салоне Twoy Secret" width="1024" height="768" fetchpriority="high"></div>
+      <div class="medal m1"><img src="img/chandelier.jpg" alt="Хрустальная люстра в салоне" width="1024" height="768" loading="lazy"></div>
+      <div class="medal m2"><img src="img/coffee.jpg" alt="Кофе с латте-артом «TS» на серебряном подносе" width="1024" height="768" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- WEDDING -->
+<section id="wedding" class="wed">
+  <div class="wrap">
+    <div class="duo rv">
+      <div class="a"><img src="img/hair-2.jpg" alt="Мягкие волны и макияж, образ от стилистов салона" width="1024" height="768" loading="lazy"></div>
+      <div class="b"><img src="img/portrait.jpg" alt="Портрет с макияжем и причёской" width="1024" height="768" loading="lazy"></div>
+    </div>
+    <div>
+      <span class="eyebrow rv">Wedding day</span>
+      <h2 class="rv d1">Свадебный <em>образ</em></h2>
+      <p class="lead rv d2">Свадебный образ от стилистов Twoy Secret. Свадебные причёски — одно из направлений салона.</p>
+      <div class="price-big rv d2"><small>Wedding day</small><b>14&nbsp;000&nbsp;₽</b></div>
+      <a class="btn rv d3" data-wa="Здравствуйте! Хочу обсудить свадебный образ (Wedding day) в Twoy Secret." href="https://wa.me/79313000300?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F." target="_blank" rel="noopener">Обсудить образ в WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- RING STAR -->
+<section id="ring" class="ring">
+  <div class="wrap">
+    <div class="head c">
+      <span class="eyebrow rv">Наращивание волос</span>
+      <h2 class="rv d1">Ring <em>Star</em></h2>
+      <p class="rv d2">Бесплатная консультация перед наращиванием. Выберите количество трессов — сумма посчитается сама.</p>
+    </div>
+    <div class="calc rv">
+      <form class="l" id="ringForm" onsubmit="return false">
+        <fieldset class="fld">
+          <legend>Сколько трессов</legend>
+          <div class="pills">
+            <label class="pill"><input type="radio" name="tr" data-n="1" data-price="8000" data-name="1 тресс" checked><span><b>1 тресс</b><em>8&nbsp;000&nbsp;₽</em></span></label>
+            <label class="pill"><input type="radio" name="tr" data-n="2" data-price="11000" data-name="2 тресса"><span><b>2 тресса</b><em>11&nbsp;000&nbsp;₽</em></span></label>
+            <label class="pill"><input type="radio" name="tr" data-n="3" data-price="13500" data-name="3 тресса"><span><b>3 тресса</b><em>13&nbsp;500&nbsp;₽</em></span></label>
+          </div>
+        </fieldset>
+        <fieldset class="fld">
+          <legend>Дополнительно</legend>
+          <label class="sw"><input type="checkbox" id="temple" data-price="3000" data-name="Височная зона (1 тресс)"><span><b>Височная зона (1 тресс)</b><em>3&nbsp;000&nbsp;₽</em></span></label>
+          <label class="sw"><input type="checkbox" data-price="1500" data-name="Мытьё головы в составе наращивания"><span><b>Мытьё головы в составе наращивания</b><em>1&nbsp;500&nbsp;₽</em></span></label>
+        </fieldset>
+        <div class="trs" id="trs" aria-hidden="true"><i></i><i></i><i></i><i class="t"></i></div>
+      </form>
+      <div class="r" aria-live="polite">
+        <span class="lbl">Ориентировочно</span>
+        <div class="total" id="total">8&nbsp;000&nbsp;₽</div>
+        <ul id="lines"></ul>
+        <div class="extra"><span>Снятие 1–2 трессов — <b>2&nbsp;000&nbsp;₽</b></span><span>Снятие 3–4 трессов — <b>4&nbsp;000&nbsp;₽</b></span></div>
+        <a class="btn" id="ringWa" href="https://wa.me/79313000300?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F." target="_blank" rel="noopener">Записаться в WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Прайс</span><h2 class="rv d1" style="margin-top:14px">Услуги <em>и цены</em></h2></div>
+      <p class="rv d2">Часть прайса из 2ГИС: в карточке 120 позиций, обновлено 21.10.2026.</p>
+    </div>
+
+    <details class="acc rv" open>
+      <summary><span>Маникюр</span><i></i></summary>
+      <div class="rows two">
+        <div class="row"><span>Без покрытия</span><b>2&nbsp;600&nbsp;₽</b></div>
+        <div class="row"><span>Пилочный без покрытия</span><b>3&nbsp;000&nbsp;₽</b></div>
+        <div class="row"><span>Японский</span><b>3&nbsp;100&nbsp;₽</b></div>
+        <div class="row"><span>Пилочный + японский P-Shine</span><b>4&nbsp;400&nbsp;₽</b></div>
+        <div class="row"><span>С лечебным лаком Bandi</span><b>3&nbsp;300&nbsp;₽</b></div>
+        <div class="row"><span>С цветным лаком Bandi</span><b>3&nbsp;600&nbsp;₽</b></div>
+        <div class="row"><span>С гель-лаком</span><b>4&nbsp;100&nbsp;₽</b></div>
+        <div class="row"><span>Пилочный + гель-лак</span><b>4&nbsp;400&nbsp;₽</b></div>
+        <div class="row"><span>Френч</span><b>4&nbsp;600&nbsp;₽</b></div>
+        <div class="row"><span>Пилочный LUXIO + френч + снятие</span><b>5&nbsp;000&nbsp;₽</b></div>
+        <div class="row"><span>С наращиванием</span><b>от&nbsp;5&nbsp;500&nbsp;₽</b></div>
+        <div class="row"><span>С наращиванием + френч</span><b>от&nbsp;5&nbsp;800&nbsp;₽</b></div>
+        <div class="row"><span>Мужской</span><b>2&nbsp;800&nbsp;₽</b></div>
+        <div class="row"><span>Уход для рук Bandi Switual SPA</span><b>1&nbsp;800&nbsp;₽</b></div>
+        <div class="row"><span>Снятие гель-лака + форма</span><b>1&nbsp;000&nbsp;₽</b></div>
+        <div class="row"><span>Укрепление гелем</span><b>600&nbsp;₽</b></div>
+        <div class="row"><span>Наращивание за ноготь</span><b>200&nbsp;₽</b></div>
+        <div class="row"><span>Ремонт</span><b>от&nbsp;150&nbsp;₽</b></div>
+        <div class="row"><span>Дизайн</span><b>от&nbsp;50&nbsp;₽</b></div>
+        <div class="row"><span>Втирка</span><b>50&nbsp;₽</b></div>
+      </div>
+    </details>
+
+    <details class="acc rv">
+      <summary><span>Педикюр</span><i></i></summary>
+      <div class="rows two">
+        <div class="row"><span>Без покрытия</span><b>3&nbsp;600&nbsp;₽</b></div>
+        <div class="row"><span>Пилочный LUXIO</span><b>4&nbsp;000&nbsp;₽</b></div>
+        <div class="row"><span>Японский P-Shine</span><b>4&nbsp;000&nbsp;₽</b></div>
+        <div class="row"><span>Пилочный + японский</span><b>4&nbsp;800&nbsp;₽</b></div>
+        <div class="row"><span>С гель-лаком<small>только пальцы — 4&nbsp;200&nbsp;₽</small></span><b>4&nbsp;600&nbsp;₽</b></div>
+        <div class="row"><span>Френч<small>только пальцы — 4&nbsp;700&nbsp;₽</small></span><b>5&nbsp;100&nbsp;₽</b></div>
+        <div class="row"><span>Мужской</span><b>4&nbsp;100&nbsp;₽</b></div>
+        <div class="row"><span>Обработка пальцев</span><b>2&nbsp;800&nbsp;₽</b></div>
+        <div class="row"><span>Обработка стоп</span><b>2&nbsp;500&nbsp;₽</b></div>
+        <div class="row"><span>Лечебный лак Bandi</span><b>800&nbsp;₽</b></div>
+        <div class="row"><span>Цветной лак Bandi</span><b>1&nbsp;000&nbsp;₽</b></div>
+      </div>
+    </details>
+
+    <details class="acc rv">
+      <summary><span>В 4 руки</span><i></i></summary>
+      <div class="rows">
+        <div class="row"><span>Маникюр + педикюр без покрытия</span><b>7&nbsp;200&nbsp;₽</b></div>
+      </div>
+    </details>
+
+    <details class="acc rv">
+      <summary><span>Волосы</span><i></i></summary>
+      <div class="rows two">
+        <div class="row"><span>Женская стрижка</span><b>от&nbsp;4&nbsp;000&nbsp;₽</b></div>
+        <div class="row"><span>Окрашивание корней</span><b>от&nbsp;7&nbsp;000&nbsp;₽</b></div>
+        <div class="row"><span>Консультация колориста</span><b>бесплатно</b></div>
+        <div class="row"><span>Мытьё головы</span><b>2&nbsp;500&nbsp;₽</b></div>
+        <div class="row"><span>Мытьё головы — абонемент<small>5 процедур</small></span><b>10&nbsp;000&nbsp;₽</b></div>
+        <div class="row"><span>Мытьё головы — абонемент<small>10 процедур</small></span><b>20&nbsp;000&nbsp;₽</b></div>
+      </div>
+    </details>
+
+    <div class="tags rv" aria-label="Ещё в салоне">
+      <span>Сложное окрашивание</span><span>Свадебные причёски</span><span>Прикорневой объём</span><span>Холодное восстановление</span><span>SPA для головы</span><span>Ламинирование бровей и ресниц</span><span>Парафин</span>
+    </div>
+    <p class="note rv">Цены на направления без суммы на странице — уточняйте в WhatsApp.</p>
+  </div>
+</section>
+
+<!-- SECRET (veil) -->
+<section id="secret" class="dk">
+  <div class="wrap">
+    <div class="head c">
+      <span class="eyebrow rv">Интерьер</span>
+      <h2 class="rv d1">Приоткройте <em>секрет</em></h2>
+      <p class="rv d2">Хрусталь, перья, золото и продуманные мелочи — вплоть до уборной. Листайте: вуаль сходит с фото.</p>
+    </div>
+    <div class="sgrid">
+      <figure class="sc" style="margin:0"><div class="ph"><img src="img/chandelier.jpg" alt="Хрустальная люстра с подвесками" width="1024" height="768" loading="lazy"><div class="veil"><span>✦</span></div></div><figcaption>Хрустальная люстра</figcaption></figure>
+      <figure class="sc" style="margin:0"><div class="ph"><img src="img/feathers.jpg" alt="Белые перья и чашка с золотой каймой" width="1024" height="768" loading="lazy"><div class="veil"><span>✦</span></div></div><figcaption>Белые перья и чашка</figcaption></figure>
+      <figure class="sc" style="margin:0"><div class="ph"><img src="img/coffee.jpg" alt="Кофе с латте-артом «TS»" width="1024" height="768" loading="lazy"><div class="veil"><span>✦</span></div></div><figcaption>Кофе с вензелем «TS»</figcaption></figure>
+      <figure class="sc" style="margin:0"><div class="ph"><img src="img/restroom.jpg" alt="Уборная с дизайнерскими обоями и золотыми зеркалами" width="1024" height="768" loading="lazy"><div class="veil"><span>✦</span></div></div><figcaption>Уборная с дизайнерскими обоями</figcaption></figure>
+    </div>
+    <p class="hint">Фото из карточки салона в 2ГИС</p>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section id="works">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Портфолио</span><h2 class="rv d1" style="margin-top:14px">Образы <em>салона</em></h2></div>
+      <p class="rv d2">Фото из карточки салона в 2ГИС</p>
+    </div>
+    <div class="cols">
+      <figure class="wk t rv"><img src="img/hair-1.jpg" alt="Светлые локоны и макияж" width="1024" height="768" loading="lazy"><figcaption>Светлые локоны</figcaption></figure>
+      <figure class="wk h rv d1"><img src="img/stylist.jpg" alt="Стилист за работой" width="1024" height="768" loading="lazy"><figcaption>Стилист за работой</figcaption></figure>
+      <figure class="wk s rv d2"><img src="img/hair-2.jpg" alt="Мягкие волны" width="1024" height="768" loading="lazy"><figcaption>Мягкие волны</figcaption></figure>
+      <figure class="wk h rv"><img src="img/nails.jpg" alt="Нюдовый маникюр на фоне розовых гвоздик" width="1024" height="768" loading="lazy"><figcaption>Нюдовый маникюр</figcaption></figure>
+      <figure class="wk t rv d1"><img src="img/hair-3.jpg" alt="Образ с укладкой и макияжем" width="1024" height="768" loading="lazy"><figcaption>Образ с укладкой</figcaption></figure>
+      <figure class="wk s rv d2"><img src="img/portrait.jpg" alt="Портрет с макияжем и причёской" width="1024" height="768" loading="lazy"><figcaption>Макияж и причёска</figcaption></figure>
+      <figure class="wk t rv"><img src="img/hair-4.jpg" alt="Стрижка, блонд с завитыми концами" width="1024" height="768" loading="lazy"><figcaption>Стрижка</figcaption></figure>
+      <figure class="wk h rv d1"><img src="img/hair-5.jpg" alt="Блонд с объёмом" width="1024" height="768" loading="lazy"><figcaption>Блонд с объёмом</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- PRAISE -->
+<section id="praise" style="background:var(--milk)">
+  <div class="wrap">
+    <div class="head c">
+      <span class="eyebrow rv">Отзывы</span>
+      <h2 class="rv d1">За что <em>хвалят</em></h2>
+      <p class="rv d2">Пересказ отзывов гостей в 2ГИС</p>
+    </div>
+    <div class="praise">
+      <article class="pr rv"><span class="num">I</span><h3>Сервис на высоте</h3><p>Гости пишут о чистоте, заботливых администраторах и продуманных мелочах — вплоть до уборной.</p></article>
+      <article class="pr rv d1"><span class="num">II</span><h3>Окрашивание и стрижки</h3><p>Работу мастеров-колористов оценивают на высоком уровне, а результат — как попадание в желаемый образ.</p></article>
+      <article class="pr rv d2"><span class="num">III</span><h3>Аккуратный маникюр</h3><p>Постоянные клиенты хвалят безупречный маникюр у своих мастеров и возвращаются снова.</p></article>
+    </div>
+    <div class="score rv">
+      <a href="https://2gis.ru/spb/firm/70000001062860026" target="_blank" rel="noopener"><strong>4.7</strong><span><b>★★★★★</b>2ГИС · 60 оценок</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1" style="margin-top:14px">Как <em>нас найти</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Санкт-Петербург, Лиговский пр., 271, пом.&nbsp;36Н<span>Фрунзенский район, ЖК «Первый квартал»</span></p></div>
+        <div class="ci"><small>Часы работы</small><p>Ежедневно, 10:00–22:00</p></div>
+        <div class="ci"><small>Телефон, WhatsApp, Telegram</small><a class="big" href="tel:+79313000300">+7 931 300-03-00</a></div>
+        <div class="ci"><small>Мессенджеры и соцсети</small>
+          <div class="socials">
+            <a data-wa="Здравствуйте! Хочу записаться в Twoy Secret." href="https://wa.me/79313000300?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F." target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://t.me/twoy_secret_beauty" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://t.me/twoysecretbeautychanel" target="_blank" rel="noopener">Telegram-канал</a>
+            <a href="https://vk.com/twoysecret.beauty" target="_blank" rel="noopener">ВКонтакте</a>
+            <a href="https://pinterest.com/twoysecret/_created" target="_blank" rel="noopener">Pinterest</a>
+          </div>
+        </div>
+        <div class="ci"><small>Удобства и оплата</small>
+          <div class="facts"><span>Wi-Fi</span><span>Пандус</span><span>Подъёмник</span><span>Карта</span><span>Наличные</span><span>Перевод</span><span>QR</span></div>
+        </div>
+        <div class="ctas"><a class="btn ghost" href="https://yandex.ru/maps/?rtext=~59.906286%2C30.33971&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a></div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?ll=30.33971%2C59.906286&z=16&pt=30.33971%2C59.906286%2Cpm2rdm" title="Twoy Secret на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final dk">
+  <div class="wrap">
+    <span class="eyebrow rv">Запись</span>
+    <h2 class="rv d1">Расскажите, <em>какой образ</em> вы хотите</h2>
+    <p class="lead rv d2">Напишите в WhatsApp или позвоните — подскажем, как лучше сделать.</p>
+    <div class="ctas rv d3">
+      <a class="btn" data-wa="Здравствуйте! Хочу записаться в Twoy Secret." href="https://wa.me/79313000300?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F." target="_blank" rel="noopener">Записаться в WhatsApp</a>
+      <a class="btn ghost" href="tel:+79313000300">+7 931 300-03-00</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Twoy Secret — салон красоты, Санкт-Петербург</span>
+    <span>Демо-концепт. Цены и фото — из карточки 2ГИС, обновлено 21.10.2026.</span>
+  </div>
+</footer>
+
+<div class="fab" id="fab">
+  <a class="wa" data-wa="Здравствуйте! Хочу записаться в Twoy Secret." href="https://wa.me/79313000300?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F." target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg></a>
+  <a class="call" href="tel:+79313000300"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+</div>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const WA = '79313000300';
+  const wa = t => 'https://wa.me/' + WA + '?text=' + encodeURIComponent(t);
+  document.querySelectorAll('[data-wa]').forEach(a => { a.href = wa(a.dataset.wa); });
+
+  // Статус «открыто/закрыто» по московскому времени (ежедневно 10:00–22:00)
+  const st = document.getElementById('status');
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
+  const m = now.getHours() * 60 + now.getMinutes();
+  const open = m >= 10 * 60 && m < 22 * 60;
+  st.classList.toggle('closed', !open);
+  st.querySelector('span').textContent = open ? 'Открыто сейчас · до 22:00' : (m < 10 * 60 ? 'Сейчас закрыто · откроемся в 10:00' : 'Сейчас закрыто · откроемся завтра в 10:00');
+
+  // Шапка, плавающая кнопка
+  const hdr = document.querySelector('.hdr'), fab = document.getElementById('fab');
+  const veils = [...document.querySelectorAll('.sc')];
+  const onScroll = () => {
+    hdr.classList.toggle('scrolled', scrollY > 8);
+    fab.classList.toggle('show', scrollY > 360);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Перья в первом экране
+  const fe = document.getElementById('feathers');
+  if (!reduce && fe) {
+    for (let i = 0; i < 9; i++) {
+      const f = document.createElement('i');
+      f.style.cssText = `--x:${6 + Math.round(Math.random() * 88)}%;--t:${12 + Math.round(Math.random() * 8)}s;--d:-${Math.round(Math.random() * 16)}s;--r:${Math.round(Math.random() * 50 - 25)}deg;--dx:${Math.round(Math.random() * 70 - 35)}px`;
+      fe.appendChild(f);
+    }
+  }
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Вуаль сходит с фото при прокрутке
+  if (!reduce) {
+    let tick = false;
+    const veil = () => {
+      const vh = innerHeight;
+      veils.forEach(c => {
+        const r = c.getBoundingClientRect();
+        const p = Math.min(1, Math.max(0, (vh * .92 - r.top) / (vh * .5)));
+        c.style.setProperty('--p', p.toFixed(3));
+      });
+      tick = false;
+    };
+    addEventListener('scroll', () => { if (!tick) { tick = true; requestAnimationFrame(veil); } }, { passive: true });
+    addEventListener('resize', veil);
+    veil();
+  }
+
+  // Калькулятор наращивания Ring Star (цены из прайса)
+  const fmt = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽';
+  const form = document.getElementById('ringForm');
+  const total = document.getElementById('total'), lines = document.getElementById('lines'), ringWa = document.getElementById('ringWa');
+  const slots = document.querySelectorAll('#trs i');
+  const calc = () => {
+    let sum = 0, html = '', names = [];
+    const tr = form.querySelector('input[name=tr]:checked');
+    form.querySelectorAll('input:checked').forEach(i => {
+      const price = +i.dataset.price;
+      sum += price; names.push(i.dataset.name);
+      html += `<li><span>${i.dataset.name}</span><b>${fmt(price)}</b></li>`;
+    });
+    const n = +tr.dataset.n;
+    slots.forEach((s, k) => s.classList.toggle('on', s.classList.contains('t') ? document.getElementById('temple').checked : k < n));
+    total.textContent = fmt(sum);
+    lines.innerHTML = html;
+    ringWa.href = wa('Здравствуйте! Хочу записаться на наращивание волос Ring Star: ' + names.join(', ') + '. Ориентировочно ' + fmt(sum).replace(/ /g, ' ') + '.');
+  };
+  form.addEventListener('change', calc); calc();
+})();
+</script>
+</body>
+</html>

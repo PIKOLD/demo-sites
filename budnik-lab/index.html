@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Budnik lab — салон красоты на Малой Митрофаньевской, Санкт-Петербург</title>
+<meta name="description" content="Budnik lab: маникюр и педикюр, брови, ресницы, макияж. Малая Митрофаньевская ул., 5 к1 ст1, 2 этаж. Ежедневно 11:00–21:00.">
+<meta name="theme-color" content="#F8F5F3">
+<script>document.documentElement.className='js'</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>
+<style>
+img{height:auto}
+:root{
+  --marble:#F8F5F3; --marble-2:#EFE8E5; --paper:#FFFFFF; --blush:#F4DEE3;
+  --rose:#D9A0AF; --velvet:#B5637C; --velvet-d:#8A3A55; --velvet-dd:#3A1A27;
+  --gold:#B8923F; --gold-l:#E4C985; --gold-grad:linear-gradient(135deg,#A8802F 0%,#E9D08E 45%,#B8923F 70%,#F1DDA2 100%);
+  --ink:#2E1B23; --ink-2:#55404A; --muted:#7F6A74; --line:rgba(46,27,35,.14);
+  --shadow:0 28px 50px -30px rgba(58,26,39,.45);
+  --serif:"Playfair Display", Georgia, "Times New Roman", serif;
+  --sans:"Jost", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--marble);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+section[id]{scroll-margin-top:72px}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.i{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tag{font:500 11.5px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--velvet-d)}
+.tag b{color:var(--gold);font-weight:500}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.05;margin:0;letter-spacing:-.005em;overflow-wrap:break-word}
+h2{font-size:clamp(34px,5.6vw,60px)}
+h1 em,h2 em{font-style:italic;font-weight:500;color:var(--velvet)}
+.lead{font-size:clamp(16px,1.6vw,18px);color:var(--ink-2);max-width:52ch}
+section{padding:clamp(64px,9vw,112px) 0}
+.head{display:grid;gap:16px;margin-bottom:40px}
+.head h2{margin-top:14px}
+.head p{margin:0;color:var(--muted);font-size:14px}
+@media (min-width:960px){.head{grid-template-columns:minmax(0,1fr) auto;align-items:end}}
+
+/* demo bar */
+.demo{background:var(--velvet-dd);color:#F0DFE5;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:var(--gold-l);font:500 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;border:1px solid rgba(228,201,133,.5);padding:4px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(248,245,243,.9);backdrop-filter:saturate(1.3) blur(14px);-webkit-backdrop-filter:saturate(1.3) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:8px;text-decoration:none;min-width:0}
+.logo b{font:600 22px/1 var(--serif);letter-spacing:.02em}
+.logo span{font:500 11px/1 var(--mono);letter-spacing:.16em;color:var(--gold);border:1px solid var(--gold);padding:4px 6px 3px}
+.nav{display:none;gap:26px}
+.nav a{text-decoration:none;font-weight:500;font-size:15px;color:var(--ink-2);position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 22px;border-radius:4px;border:1px solid var(--velvet-d);background:var(--velvet-d);color:#fff;font:500 13px/1 var(--mono);letter-spacing:.07em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:transform .25s, background .25s, color .25s, border-color .25s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px);background:var(--velvet);border-color:var(--velvet)}
+.btn.gold{background:var(--gold-grad);border-color:var(--gold);color:#2E1B23}
+.btn.gold:hover{filter:brightness(1.06);background:var(--gold-grad);border-color:var(--gold)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn.sm{min-height:42px;padding:0 16px;font-size:12px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--paper);display:grid;place-items:center;cursor:pointer;flex:none}
+.burger span{display:block;width:18px;height:1.5px;background:var(--ink);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:var(--ink);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--marble);padding:120px 24px 40px;display:flex;flex-direction:column;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:600 32px/1.25 var(--serif);text-decoration:none;padding:6px 0;border-bottom:1px solid var(--line)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:clamp(28px,5vw,64px) 0 clamp(56px,8vw,96px);background:radial-gradient(60% 50% at 88% 8%,rgba(217,160,175,.38),transparent 70%),radial-gradient(50% 50% at 0% 100%,rgba(228,201,133,.28),transparent 70%),var(--marble)}
+.vein{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:.55}
+.vein path{fill:none;stroke:#C2AAB2;stroke-width:.9;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:44px;align-items:center}
+.hero .wrap>*{min-width:0}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:64px}}
+.status{display:inline-flex;align-items:center;gap:10px;background:var(--paper);border:1px solid var(--line);padding:8px 14px 8px 12px;font:500 12.5px/1.2 var(--mono);letter-spacing:.04em}
+.status i{width:9px;height:9px;border-radius:50%;background:#3BA55C;box-shadow:0 0 0 0 rgba(59,165,92,.5);animation:pulse 2s infinite;flex:none}
+.status.closed i{background:#C2554B;animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(59,165,92,0)}100%{box-shadow:0 0 0 0 rgba(59,165,92,0)}}
+.hero .tag{display:block;margin:26px 0 14px}
+.hero h1{font-size:clamp(42px,6.6vw,92px);line-height:.98;margin:0 0 22px}
+.hero .lead{margin:0 0 22px}
+.place{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:14.5px;margin-bottom:28px}
+.place .i{margin-top:3px;color:var(--velvet)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:640px){.ctas .btn{flex:0 0 auto}}
+.ratings{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:32px;padding-top:24px;border-top:1px solid var(--line)}
+.rate{display:flex;align-items:center;gap:12px}
+.rate strong{font:600 44px/1 var(--serif)}
+.rate span{font-size:13px;line-height:1.35;color:var(--muted)}
+.rate span b{display:block;color:var(--gold);letter-spacing:2px;font-size:12px}
+.visual{position:relative;width:100%;max-width:560px;margin-inline:auto}
+.slide{position:relative;aspect-ratio:4/3;background:var(--paper);padding:10px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.slide img{width:100%;height:100%;object-fit:cover;object-position:46% 50%}
+.slide .c{position:absolute;width:24px;height:24px;border:2px solid var(--gold);pointer-events:none}
+.c.tl{left:-7px;top:-7px;border-right:0;border-bottom:0}
+.c.tr{right:-7px;top:-7px;border-left:0;border-bottom:0}
+.c.bl{left:-7px;bottom:-7px;border-right:0;border-top:0}
+.c.br{right:-7px;bottom:-7px;border-left:0;border-top:0}
+.cap{display:flex;justify-content:space-between;gap:12px;margin-top:14px;font:400 11px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.ruler{height:9px;margin-top:8px;background:repeating-linear-gradient(90deg,var(--ink-2) 0 1px,transparent 1px 12px);opacity:.5}
+.chip{position:absolute;z-index:3;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);padding:10px 14px;box-shadow:var(--shadow);font-size:13px;line-height:1.3;animation:float 6s ease-in-out infinite}
+.chip b{display:block;font:600 21px/1.1 var(--serif);margin-top:2px;color:var(--velvet-d)}
+.chip.c1{right:-3%;top:10%}
+.chip.c2{left:-3%;bottom:20%;animation-delay:-3s}
+@media (max-width:560px){.chip.c1{right:2%}.chip.c2{left:2%}}
+@keyframes float{50%{transform:translateY(-9px)}}
+
+/* marquee */
+.marquee{border-block:1px solid var(--line);background:var(--paper);overflow:hidden;padding:16px 0}
+.track{display:flex;width:max-content;animation:run 40s linear infinite}
+.track span{font:500 12.5px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;padding:0 22px;white-space:nowrap;display:flex;align-items:center;gap:44px;color:var(--ink-2)}
+.track span::after{content:"◆";font-size:9px;color:var(--gold)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* services */
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:28px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;border:1px solid var(--line);background:var(--paper);padding:11px 16px;font:500 12.5px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;cursor:pointer;transition:all .25s}
+.tab[aria-selected="true"],.tab[aria-pressed="true"]{background:var(--velvet-d);color:#fff;border-color:var(--velvet-d)}
+.svc{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
+@media (min-width:960px){.svc{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:56px;align-items:start}}
+.panel{display:none}
+.panel.on{display:block;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.row{display:flex;align-items:baseline;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.row:first-child{border-top:1px solid var(--line)}
+.row .n{flex:1 1 auto;min-width:0}
+.row .n b{display:block;font-weight:500;font-size:16.5px;line-height:1.35}
+.row .n small{color:var(--muted);font-size:13.5px}
+.row .p{font:600 22px/1 var(--serif);white-space:nowrap}
+.row .p i{font:400 12px/1 var(--mono);font-style:normal;color:var(--muted);margin-right:4px;letter-spacing:.04em}
+.svc-photo{position:relative;overflow:hidden;aspect-ratio:1;background:var(--blush);display:none;border:1px solid var(--line)}
+@media (min-width:960px){.svc-photo{display:block;position:sticky;top:96px}}
+.svc-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .7s, transform 1.2s}
+.svc-photo img.on{opacity:1;transform:none}
+
+/* constructor */
+.cons-sec{background:var(--blush)}
+.cons{background:var(--paper);border:1px solid var(--line);padding:clamp(18px,4vw,44px);display:grid;grid-template-columns:minmax(0,1fr);gap:36px;box-shadow:var(--shadow)}
+@media (min-width:960px){.cons{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:52px}}
+.cons h3{font-size:clamp(26px,3.4vw,34px);margin:0 0 6px}
+.cons .step{margin-top:26px}
+.opts{display:grid;gap:10px;margin-top:14px}
+.opt{position:relative;display:flex;align-items:center;gap:12px;padding:14px;border:1px solid var(--line);cursor:pointer;transition:border-color .25s, background .25s}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt .mk{width:22px;height:22px;border:1.5px solid var(--ink-2);flex:none;display:grid;place-items:center;border-radius:50%;transition:all .2s}
+.opt.chk .mk{border-radius:4px}
+.opt .mk::after{content:"";width:10px;height:6px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg) translate(1px,-1px);opacity:0}
+.opt .t{flex:1;min-width:0;line-height:1.3}
+.opt .t b{display:block;font-weight:500}
+.opt .t small{color:var(--muted);font-size:13px}
+.opt .pr{font:600 19px/1 var(--serif);white-space:nowrap}
+.opt .pr small{font:400 12px/1 var(--mono);color:var(--muted)}
+.opt:has(input:checked){border-color:var(--velvet-d);background:#FBF1F4}
+.opt:has(input:checked) .mk{background:var(--velvet-d);border-color:var(--velvet-d)}
+.opt:has(input:checked) .mk::after{opacity:1}
+.opt:has(input:focus-visible){outline:2px solid var(--gold);outline-offset:2px}
+.sum{background:var(--velvet-dd);color:#F3E6EA;padding:26px;display:flex;flex-direction:column;gap:14px;align-self:start;min-width:0}
+.sum .lbl{font:500 11.5px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gold-l)}
+.sum .total{font:600 clamp(40px,6.4vw,60px)/1 var(--serif);color:#fff;overflow-wrap:anywhere}
+.sum ul{list-style:none;margin:0;padding:0;font-size:14.5px;display:grid;gap:8px}
+.sum li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed rgba(255,255,255,.22);padding-bottom:8px}
+.sum li span:first-child{min-width:0}
+.sum li span:last-child{white-space:nowrap}
+.sum .fine{margin:0;font-size:13px;color:#D8C2CA;line-height:1.5}
+
+/* brows levels */
+.dark{background:var(--velvet-dd);color:#F3E6EA}
+.dark .tag{color:var(--gold-l)}
+.dark h2 em{color:var(--rose)}
+.levels{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;margin-top:40px}
+@media (min-width:860px){.levels{grid-template-columns:repeat(3,minmax(0,1fr));align-items:end}}
+.lvl{display:flex;flex-direction:column;gap:12px;padding:26px;border:1px solid rgba(228,201,133,.32);background:rgba(255,255,255,.04);min-width:0}
+@media (min-width:860px){.lvl.l1{min-height:300px}.lvl.l2{min-height:370px}.lvl.l3{min-height:440px}}
+.lvl h3{font-size:clamp(26px,3vw,32px);color:#fff}
+.lvl .brow{width:100%;max-width:170px;color:var(--gold-l)}
+.lvl .brow path{fill:none;stroke:currentColor;stroke-linecap:round}
+.l1 .brow path{stroke-width:2}.l2 .brow path{stroke-width:4.5}.l3 .brow path{stroke-width:8}
+.lvl .price{font:600 clamp(38px,5vw,52px)/1 var(--serif);color:var(--gold-l);margin-top:auto}
+.lvl p{margin:0;font-size:14.5px;color:#DCC8CF}
+.lvl .btn{margin-top:6px}
+.others{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px}
+.others span{border:1px solid rgba(255,255,255,.22);padding:9px 14px;font-size:14px;color:#E8D6DC}
+.others span b{font-weight:500;color:var(--gold-l);margin-left:6px;white-space:nowrap}
+
+/* space */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:760px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}}
+.gi{position:relative;overflow:hidden;aspect-ratio:1;background:var(--blush);cursor:zoom-in;border:0;padding:0}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.07)}
+.gi span{position:absolute;left:8px;bottom:8px;max-width:calc(100% - 16px);background:rgba(255,255,255,.92);font:500 10.5px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:5px 8px}
+.gi.wide{grid-column:span 2;aspect-ratio:2/1}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,1000px);max-height:90vh}
+.lb::backdrop{background:rgba(30,14,20,.88)}
+.lb img{max-height:84vh;width:auto;margin:auto}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:#fff;font-size:22px;cursor:pointer}
+
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pr-card{background:var(--marble);border:1px solid var(--line);padding:28px;position:relative;overflow:hidden}
+.pr-card .num{position:absolute;right:18px;top:12px;font:400 12px/1 var(--mono);letter-spacing:.14em;color:var(--gold)}
+.pr-card h3{font-size:28px;margin:30px 0 12px}
+.pr-card p{margin:0;color:var(--ink-2)}
+.score{display:flex;flex-wrap:wrap;gap:14px;margin-top:22px}
+.score a{display:flex;align-items:center;gap:14px;background:var(--marble);border:1px solid var(--line);padding:14px 20px;text-decoration:none;flex:1 1 240px}
+.score strong{font:600 44px/1 var(--serif)}
+.score span{font-size:13.5px;color:var(--muted)}
+.score span b{color:var(--ink);display:block;font-weight:500}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start;min-width:0}
+.ci small{display:block;font:500 11.5px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ci p,.ci a{margin:0;font-size:18px;font-weight:500;text-decoration:none}
+.ci a.big{font:600 32px/1.1 var(--serif)}
+.facts{display:flex;flex-wrap:wrap;gap:8px}
+.facts span{border:1px solid var(--line);background:var(--paper);padding:8px 12px;font-size:14px}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{display:inline-flex;align-items:center;border:1px solid var(--line);background:var(--paper);padding:10px 16px;font:500 12.5px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:background .25s,color .25s}
+.socials a:hover{background:var(--velvet-d);color:#fff}
+.map{overflow:hidden;min-height:380px;background:var(--marble-2);border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* final */
+.final{text-align:center;color:#F3E6EA;background:linear-gradient(135deg,var(--velvet-d),var(--velvet-dd) 70%)}
+.final .tag{color:var(--gold-l)}
+.final h2{font-size:clamp(38px,6.6vw,76px);max-width:15ch;margin:16px auto}
+.final h2 em{color:var(--gold-l)}
+.final .lead{color:#E8D6DC;margin:0 auto}
+.final .ctas{justify-content:center;margin-top:30px}
+.final .btn.ghost{color:#fff;border-color:rgba(255,255,255,.6)}
+.final .btn.ghost:hover{background:#fff;color:var(--velvet-dd)}
+footer{padding:34px 0 120px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.3fr);gap:8px;padding:8px;background:rgba(58,26,39,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:6px;box-shadow:0 18px 40px -12px rgba(0,0,0,.45);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;color:#fff;text-decoration:none;font:500 11px/1 var(--mono);letter-spacing:.04em;text-transform:uppercase}
+.mbar a .i{width:20px;height:20px}
+.mbar a.main{background:var(--gold-grad);color:#2E1B23;flex-direction:row;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><path d="M3 11l18-8-8 18-2-8-8-2z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+</svg>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо-концепт</b><span>Концепт сайта для салона Budnik lab. Данные из открытой карточки 2ГИС, прайс от 13.02.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Budnik lab — наверх"><b>Budnik</b><span>LAB</span></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#services">Услуги и цены</a>
+      <a href="#builder">Конструктор</a>
+      <a href="#brows">Брови</a>
+      <a href="#space">Пространство</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm" data-wa="Здравствуйте! Хочу записаться в Budnik lab." href="https://wa.me/79991228859?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20Budnik%20lab." target="_blank" rel="noopener">Записаться</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#services">Услуги и цены</a>
+  <a href="#builder">Конструктор маникюра</a>
+  <a href="#brows">Брови</a>
+  <a href="#space">Пространство</a>
+  <a href="#praise">Отзывы</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <svg class="vein" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M-20 120 C 180 60, 260 220, 430 170 S 700 40, 860 150 S 1100 260, 1240 180"/>
+    <path d="M-20 520 C 120 440, 300 600, 520 520 S 800 400, 1000 520 S 1160 640, 1240 600" opacity=".7"/>
+    <path d="M300 -10 C 340 140, 280 260, 380 380 S 420 620, 360 820" opacity=".6"/>
+    <path d="M880 -10 C 840 120, 960 220, 900 360 S 960 640, 1020 820" opacity=".5"/>
+  </svg>
+  <div class="wrap">
+    <div>
+      <span class="status rv" id="status"><i></i><span>Ежедневно 11:00–21:00</span></span>
+      <span class="tag rv d1"><b>Lab</b> / Салон красоты · Адмиралтейский район</span>
+      <h1 class="rv d1">Салон красоты <em>Budnik&nbsp;lab</em></h1>
+      <p class="lead rv d2">Маникюр и педикюр, брови, ресницы и макияж. Розовый бархат, золото и белый мрамор в ЖК&nbsp;«Галактика».</p>
+      <div class="place rv d2">
+        <svg class="i"><use href="#i-pin"/></svg>
+        <span>ул. Малая Митрофаньевская, 5&nbsp;к1&nbsp;ст1, 2&nbsp;этаж · Санкт-Петербург</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn" data-wa="Здравствуйте! Хочу записаться в Budnik lab." href="https://wa.me/79991228859?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20Budnik%20lab." target="_blank" rel="noopener"><svg class="i"><use href="#i-chat"/></svg>Записаться</a>
+        <a class="btn ghost" href="tel:+79991228859"><svg class="i"><use href="#i-phone"/></svg>Позвонить</a>
+        <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~59.898884%2C30.307728&rtt=auto" target="_blank" rel="noopener"><svg class="i"><use href="#i-route"/></svg>Маршрут</a>
+      </div>
+      <div class="ratings rv d3">
+        <div class="rate"><strong>4.9</strong><span><b>★★★★★</b>2ГИС · 157&nbsp;оценок</span></div>
+      </div>
+    </div>
+    <div class="visual rv d2">
+      <div class="slide">
+        <img src="img/hero.jpg" alt="Зал салона: розовые бархатные диваны, золотые стеллажи, хрустальная люстра и мраморный пол" width="1024" height="768" fetchpriority="high">
+        <i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i>
+      </div>
+      <div class="ruler" aria-hidden="true"></div>
+      <div class="cap"><span>Fig.&nbsp;01 — Зал</span><span>Фото из 2ГИС</span></div>
+      <div class="chip c1">Брови · архитектура<b>1&nbsp;500&nbsp;₽</b></div>
+      <div class="chip c2">Японский маникюр<b>3&nbsp;000&nbsp;₽</b></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Маникюр</span><span>Японский маникюр</span><span>Наращивание</span><span>Педикюр</span><span>Архитектура бровей</span><span>Ламинирование</span><span>Макияж</span>
+  <span>Маникюр</span><span>Японский маникюр</span><span>Наращивание</span><span>Педикюр</span><span>Архитектура бровей</span><span>Ламинирование</span><span>Макияж</span>
+</div></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="tag rv"><b>01</b> / Каталог</span><h2 class="rv d1">Услуги <em>и цены</em></h2></div>
+      <p class="rv d2">Цены из карточки 2ГИС, обновлены 13.02.2026</p>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Категории услуг">
+      <button class="tab" role="tab" aria-selected="true" data-tab="man" data-img="nails-2">Маникюр</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="ped" data-img="pedi-1">Педикюр</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="brw" data-img="makeup">Брови</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="mk" data-img="makeup">Ресницы и макияж</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="ext" data-img="nails-1">Дополнительно</button>
+    </div>
+    <div class="svc">
+      <div>
+        <div class="panel on" id="p-man" role="tabpanel">
+          <div class="row"><div class="n"><b>Маникюр комбинированный без покрытия</b></div><div class="p">2&nbsp;200&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Комплекс «Совершенный маникюр»</b><small>Снятие + гель-лак</small></div><div class="p">3&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Японский маникюр</b></div><div class="p">3&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Мужской комбинированный маникюр</b></div><div class="p">2&nbsp;800&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>«Безупречное наращивание»</b></div><div class="p">4&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Коррекция нарощенных ногтей</b></div><div class="p">4&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>SPA для рук Bandi</b></div><div class="p">1&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>SPA для рук</b><small>Скраб, холодный парафин</small></div><div class="p">500&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-ped" role="tabpanel">
+          <div class="row"><div class="n"><b>Аппаратный педикюр</b><small>Без обработки стоп и покрытия</small></div><div class="p">2&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Педикюр с обработкой стоп</b><small>Без покрытия</small></div><div class="p">3&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Педикюр с гель-лаком</b><small>Без обработки стоп</small></div><div class="p">3&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Педикюр с обработкой стоп и покрытием</b></div><div class="p">3&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Мужской полный педикюр</b></div><div class="p">3&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>SPA для ног</b></div><div class="p">800&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-brw" role="tabpanel">
+          <div class="row"><div class="n"><b>Архитектура бровей</b></div><div class="p">1&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Окрашивание бровей</b></div><div class="p">1&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Осветление / прореживание</b></div><div class="p">800&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Архитектура + окрашивание</b></div><div class="p">2&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Архитектура + ламинирование</b></div><div class="p">2&nbsp;800&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Ламинирование бровей</b></div><div class="p">2&nbsp;800&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Архитектура + окрашивание + ламинирование</b></div><div class="p">3&nbsp;200&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Мужская коррекция бровей</b></div><div class="p">2&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Удаление нежелательных волос на лице</b></div><div class="p">400&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-mk" role="tabpanel">
+          <div class="row"><div class="n"><b>Окрашивание ресниц</b></div><div class="p">800&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Ламинирование ресниц</b></div><div class="p">3&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Макияж экспресс</b></div><div class="p">3&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Макияж дневной / вечерний</b></div><div class="p">5&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Макияж для себя</b><small>Обучение</small></div><div class="p">8&nbsp;000&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-ext" role="tabpanel">
+          <div class="row"><div class="n"><b>Экспресс-сервис в 4 руки</b></div><div class="p">800&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Укрепление гелем</b></div><div class="p"><i>от</i>500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Восстановление архитектуры ногтей</b></div><div class="p">1&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Снятие без покрытия</b></div><div class="p">500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Снятие с приданием формы</b></div><div class="p">1&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Снятие нарощенных</b></div><div class="p">700&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Ремонт ногтя</b></div><div class="p">200&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Наращивание 1 ногтя</b></div><div class="p">300&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Френч / кошачий глаз / втирка</b></div><div class="p">800&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Light-дизайн</b><small>Фольга, блёстки, стемпинг</small></div><div class="p"><i>от</i>200&nbsp;₽</div></div>
+        </div>
+      </div>
+      <div class="svc-photo" aria-hidden="true">
+        <img src="img/nails-2.jpg" alt="" data-k="nails-2" class="on" loading="lazy">
+        <img src="img/pedi-1.jpg" alt="" data-k="pedi-1" loading="lazy">
+        <img src="img/makeup.jpg" alt="" data-k="makeup" loading="lazy">
+        <img src="img/nails-1.jpg" alt="" data-k="nails-1" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUILDER -->
+<section id="builder" class="cons-sec">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="tag rv"><b>02</b> / Конструктор</span><h2 class="rv d1">Соберите <em>свой</em> маникюр</h2></div>
+      <p class="rv d2">Выберите основу и дополнения — сумма посчитается по прайсу</p>
+    </div>
+    <div class="cons rv">
+      <div>
+        <h3>Основа</h3>
+        <div class="opts" role="radiogroup" aria-label="Основа маникюра">
+          <label class="opt"><input type="radio" name="base" value="Комбинированный маникюр без покрытия" data-price="2200" checked><span class="mk"></span><span class="t"><b>Комбинированный</b><small>Без покрытия</small></span><span class="pr">2&nbsp;200&nbsp;₽</span></label>
+          <label class="opt"><input type="radio" name="base" value="Комплекс «Совершенный маникюр»" data-price="3000"><span class="mk"></span><span class="t"><b>«Совершенный маникюр»</b><small>Снятие + гель-лак</small></span><span class="pr">3&nbsp;000&nbsp;₽</span></label>
+          <label class="opt"><input type="radio" name="base" value="Японский маникюр" data-price="3000"><span class="mk"></span><span class="t"><b>Японский</b></span><span class="pr">3&nbsp;000&nbsp;₽</span></label>
+          <label class="opt"><input type="radio" name="base" value="«Безупречное наращивание»" data-price="4500"><span class="mk"></span><span class="t"><b>«Безупречное наращивание»</b></span><span class="pr">4&nbsp;500&nbsp;₽</span></label>
+        </div>
+        <h3 class="step">Дополнения</h3>
+        <div class="opts">
+          <label class="opt chk"><input type="checkbox" class="add" value="Френч / кошачий глаз / втирка" data-price="800"><span class="mk"></span><span class="t"><b>Френч / кошачий глаз / втирка</b></span><span class="pr">800&nbsp;₽</span></label>
+          <label class="opt chk"><input type="checkbox" class="add" value="Light-дизайн" data-price="200" data-from="1"><span class="mk"></span><span class="t"><b>Light-дизайн</b><small>Фольга, блёстки, стемпинг</small></span><span class="pr"><small>от</small> 200&nbsp;₽</span></label>
+          <label class="opt chk"><input type="checkbox" class="add" value="Укрепление гелем" data-price="500" data-from="1"><span class="mk"></span><span class="t"><b>Укрепление гелем</b></span><span class="pr"><small>от</small> 500&nbsp;₽</span></label>
+          <label class="opt chk"><input type="checkbox" class="add" value="SPA для рук Bandi" data-price="1000"><span class="mk"></span><span class="t"><b>SPA для рук Bandi</b></span><span class="pr">1&nbsp;000&nbsp;₽</span></label>
+          <label class="opt chk"><input type="checkbox" class="add" value="SPA для рук (скраб, холодный парафин)" data-price="500"><span class="mk"></span><span class="t"><b>SPA для рук</b><small>Скраб, холодный парафин</small></span><span class="pr">500&nbsp;₽</span></label>
+        </div>
+      </div>
+      <div class="sum" aria-live="polite">
+        <span class="lbl">Ориентировочно</span>
+        <div class="total" id="total">2&nbsp;200&nbsp;₽</div>
+        <ul id="lines"></ul>
+        <p class="fine">Если у дополнения в прайсе стоит «от», итог уточняется при записи.</p>
+        <a class="btn gold" id="consWa" href="https://wa.me/79991228859?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20Budnik%20lab." target="_blank" rel="noopener"><svg class="i"><use href="#i-chat"/></svg>Записаться в WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BROWS -->
+<section id="brows" class="dark">
+  <div class="wrap">
+    <div class="head" style="margin-bottom:0">
+      <div><span class="tag rv"><b>03</b> / Брови</span><h2 class="rv d1">Брови: <em>три уровня</em> оформления</h2></div>
+      <p class="rv d2" style="color:#DCC8CF">Цены из прайса салона</p>
+    </div>
+    <div class="levels">
+      <article class="lvl l1 rv">
+        <span class="tag">Уровень 01</span>
+        <svg class="brow" viewBox="0 0 120 40" aria-hidden="true"><path d="M8 30 C 32 8, 72 4, 112 22"/></svg>
+        <h3>Архитектура</h3>
+        <p>Оформление формы бровей.</p>
+        <div class="price">1&nbsp;500&nbsp;₽</div>
+        <a class="btn gold" data-wa="Здравствуйте! Хочу записаться на брови: архитектура (1 500 ₽)." href="https://wa.me/79991228859" target="_blank" rel="noopener">Выбрать</a>
+      </article>
+      <article class="lvl l2 rv d1">
+        <span class="tag">Уровень 02</span>
+        <svg class="brow" viewBox="0 0 120 40" aria-hidden="true"><path d="M8 30 C 32 8, 72 4, 112 22"/></svg>
+        <h3>Архитектура + окрашивание</h3>
+        <p>Форма и цвет за один визит.</p>
+        <div class="price">2&nbsp;500&nbsp;₽</div>
+        <a class="btn gold" data-wa="Здравствуйте! Хочу записаться на брови: архитектура + окрашивание (2 500 ₽)." href="https://wa.me/79991228859" target="_blank" rel="noopener">Выбрать</a>
+      </article>
+      <article class="lvl l3 rv d2">
+        <span class="tag">Уровень 03</span>
+        <svg class="brow" viewBox="0 0 120 40" aria-hidden="true"><path d="M8 30 C 32 8, 72 4, 112 22"/></svg>
+        <h3>Архитектура + окрашивание + ламинирование</h3>
+        <p>Полный комплекс для бровей.</p>
+        <div class="price">3&nbsp;200&nbsp;₽</div>
+        <a class="btn gold" data-wa="Здравствуйте! Хочу записаться на брови: архитектура + окрашивание + ламинирование (3 200 ₽)." href="https://wa.me/79991228859" target="_blank" rel="noopener">Выбрать</a>
+      </article>
+    </div>
+    <div class="others rv">
+      <span>Архитектура + ламинирование<b>2&nbsp;800&nbsp;₽</b></span>
+      <span>Ламинирование<b>2&nbsp;800&nbsp;₽</b></span>
+      <span>Окрашивание<b>1&nbsp;500&nbsp;₽</b></span>
+      <span>Осветление / прореживание<b>800&nbsp;₽</b></span>
+      <span>Мужская коррекция<b>2&nbsp;000&nbsp;₽</b></span>
+    </div>
+  </div>
+</section>
+
+<!-- SPACE -->
+<section id="space">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="tag rv"><b>04</b> / Пространство</span><h2 class="rv d1">Салон <em>изнутри</em></h2></div>
+      <p class="rv d2">Фото из карточки салона в 2ГИС</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр фото">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="int">Интерьер</button>
+      <button class="tab" aria-pressed="false" data-f="work">Работы</button>
+    </div>
+    <div class="grid" id="grid">
+      <button class="gi wide rv" data-c="int"><img src="img/hall.jpg" alt="Маникюрные столы с розовыми креслами на золотых ножках" loading="lazy"><span>Зал</span></button>
+      <button class="gi rv d1" data-c="int"><img src="img/lounge.jpg" alt="Зона ожидания у окна: розовый диван и мраморный столик" loading="lazy"><span>Зона ожидания</span></button>
+      <button class="gi rv d2" data-c="work"><img src="img/nails-1.jpg" alt="Френч на коротких ногтях" loading="lazy"><span>Маникюр</span></button>
+      <button class="gi rv" data-c="int"><img src="img/collage.jpg" alt="Коллаж интерьера: золотые буквы логотипа, золотые зеркала, хрустальная люстра" loading="lazy"><span>Детали</span></button>
+      <button class="gi rv d1" data-c="work"><img src="img/nails-2.jpg" alt="Молочный маникюр с тонким рисунком и золотыми кольцами" loading="lazy"><span>Маникюр</span></button>
+      <button class="gi rv d2" data-c="int"><img src="img/decor-1.jpg" alt="Розовые свечи и белые тюльпаны" loading="lazy"><span>Декор</span></button>
+      <button class="gi rv" data-c="work"><img src="img/pedi-1.jpg" alt="Педикюр с французским покрытием" loading="lazy"><span>Педикюр</span></button>
+      <button class="gi rv d1" data-c="int"><img src="img/decor-2.jpg" alt="Свечи, тюльпаны и угощения на столике" loading="lazy"><span>Декор</span></button>
+      <button class="gi rv d2" data-c="work"><img src="img/pedi-2.jpg" alt="Педикюр с розовым френчем" loading="lazy"><span>Педикюр</span></button>
+      <button class="gi rv" data-c="int"><img src="img/decor-3.jpg" alt="Свечи и букет на мраморном столике у ресепшена" loading="lazy"><span>Ресепшен</span></button>
+      <button class="gi rv d1" data-c="work"><img src="img/makeup.jpg" alt="Макияж: стрелки и акцент на бровях" loading="lazy"><span>Макияж</span></button>
+      <button class="gi rv d2" data-c="int"><img src="img/treats.jpg" alt="Угощения на столике: ягоды, попкорн и конфеты" loading="lazy"><span>Угощения</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""></dialog>
+
+<!-- PRAISE -->
+<section id="praise" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="tag rv"><b>05</b> / Отзывы</span><h2 class="rv d1">За что <em>хвалят</em></h2></div>
+      <p class="rv d2">Пересказ отзывов клиентов в 2ГИС</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card rv"><span class="num">01</span><h3>Красивое пространство</h3><p>Клиенты пишут о невероятно эстетичном интерьере и приятном ресепшене.</p></article>
+      <article class="pr-card rv d1"><span class="num">02</span><h3>Архитектура ногтей</h3><p>Маникюр с «красивой архитектурой» получается даже на сложных ногтях. К мастерам ходят больше года.</p></article>
+      <article class="pr-card rv d2"><span class="num">03</span><h3>Брови и педикюр</h3><p>Хвалят бровиста и мастера педикюра и пишут, что после визита остаются приятные эмоции.</p></article>
+    </div>
+    <div class="score rv">
+      <a href="https://2gis.ru/spb/firm/70000001055536769" target="_blank" rel="noopener"><strong>4.9</strong><span><b>2ГИС</b>157&nbsp;оценок</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="wrap">
+    <div class="head"><div><span class="tag rv"><b>06</b> / Контакты</span><h2 class="rv d1">Как <em>добраться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Санкт-Петербург, ул. Малая Митрофаньевская, 5&nbsp;к1&nbsp;ст1, 2&nbsp;этаж, ЖК&nbsp;«Галактика»</p></div>
+        <div class="ci"><small>Часы работы</small><p>Ежедневно, 11:00–21:00</p></div>
+        <div class="ci"><small>Телефон</small><a class="big" href="tel:+79991228859">+7&nbsp;999&nbsp;122-88-59</a></div>
+        <div class="ci"><small>Мессенджеры и соцсети</small>
+          <div class="socials">
+            <a href="https://wa.me/79991228859" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://t.me/+79991228859" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://vk.com/budnik_lab" target="_blank" rel="noopener">ВКонтакте</a>
+          </div>
+        </div>
+        <div class="ci"><small>Удобства и оплата</small>
+          <div class="facts"><span>Wi-Fi</span><span>Можно с собакой</span><span>Карта</span><span>Наличные</span><span>Перевод</span><span>QR</span></div>
+        </div>
+        <div class="ctas"><a class="btn ghost" href="https://yandex.ru/maps/?rtext=~59.898884%2C30.307728&rtt=auto" target="_blank" rel="noopener"><svg class="i"><use href="#i-route"/></svg>Построить маршрут</a></div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?ll=30.307728%2C59.898884&z=16&pt=30.307728%2C59.898884%2Cpm2rdm" title="Budnik lab на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="tag rv">Запись</span>
+    <h2 class="rv d1">Ждём вас <em>в&nbsp;розовом бархате</em></h2>
+    <p class="lead rv d2">Напишите в WhatsApp или позвоните — подберём удобное время.</p>
+    <div class="ctas rv d3">
+      <a class="btn gold" data-wa="Здравствуйте! Хочу записаться в Budnik lab." href="https://wa.me/79991228859?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20Budnik%20lab." target="_blank" rel="noopener"><svg class="i"><use href="#i-chat"/></svg>Записаться в WhatsApp</a>
+      <a class="btn ghost" href="tel:+79991228859"><svg class="i"><use href="#i-phone"/></svg>+7&nbsp;999&nbsp;122-88-59</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Budnik lab — салон красоты, Санкт-Петербург</span>
+    <span>Демо-концепт. Данные — из открытой карточки 2ГИС (прайс от 13.02.2026).</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79991228859"><svg class="i"><use href="#i-phone"/></svg>Позвонить</a>
+  <a href="https://yandex.ru/maps/?rtext=~59.898884%2C30.307728&rtt=auto" target="_blank" rel="noopener"><svg class="i"><use href="#i-route"/></svg>Маршрут</a>
+  <a class="main" data-wa="Здравствуйте! Хочу записаться в Budnik lab." href="https://wa.me/79991228859?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20Budnik%20lab." target="_blank" rel="noopener">Записаться</a>
+</nav>
+
+<script>
+(() => {
+  const NB = ' ';
+  const fmt = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, NB) + NB + '₽';
+  const WA = 'https://wa.me/79991228859?text=';
+
+  // Ссылки WhatsApp с готовым текстом
+  document.querySelectorAll('[data-wa]').forEach(a => { a.href = WA + encodeURIComponent(a.dataset.wa); });
+
+  // Статус «открыто / закрыто» по московскому времени (ежедневно 11:00–21:00)
+  const st = document.getElementById('status');
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
+  const m = now.getHours() * 60 + now.getMinutes();
+  const open = m >= 11 * 60 && m < 21 * 60;
+  st.classList.toggle('closed', !open);
+  st.querySelector('span').textContent = open ? 'Открыто сейчас · до 21:00' : 'Сейчас закрыто · откроемся в 11:00';
+
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    hdr.classList.toggle('scrolled', scrollY > 8);
+    mbar.classList.toggle('show', scrollY > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const rv = document.querySelectorAll('.rv');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+    rv.forEach(el => io.observe(el));
+  } else rv.forEach(el => el.classList.add('in'));
+
+  // Вкладки прайса + смена фото
+  const tabs = document.querySelectorAll('.tabs [role=tab]');
+  const pics = document.querySelectorAll('.svc-photo img');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === 'p-' + t.dataset.tab));
+    pics.forEach(p => p.classList.toggle('on', p.dataset.k === t.dataset.img));
+  }));
+
+  // Конструктор маникюра
+  const bases = [...document.querySelectorAll('input[name=base]')];
+  const adds = [...document.querySelectorAll('input.add')];
+  const total = document.getElementById('total'), lines = document.getElementById('lines'), consWa = document.getElementById('consWa');
+  const calc = () => {
+    const b = bases.find(x => x.checked);
+    let sum = +b.dataset.price, from = false, html = `<li><span>${b.value}</span><span>${fmt(+b.dataset.price)}</span></li>`;
+    const names = [b.value];
+    adds.forEach(a => {
+      if (!a.checked) return;
+      const p = +a.dataset.price; sum += p; names.push(a.value);
+      const f = a.dataset.from ? 'от' + NB : '';
+      if (a.dataset.from) from = true;
+      html += `<li><span>${a.value}</span><span>${f}${fmt(p)}</span></li>`;
+    });
+    total.textContent = (from ? 'от' + NB : '') + fmt(sum);
+    lines.innerHTML = html;
+    const msg = 'Здравствуйте! Хочу записаться на маникюр: ' + names.join(' + ') + '. Ориентировочно ' + (from ? 'от ' : '') + fmt(sum).replace(/ /g, ' ') + '.';
+    consWa.href = WA + encodeURIComponent(msg);
+  };
+  [...bases, ...adds].forEach(i => i.addEventListener('change', calc));
+  calc();
+
+  // Фильтр фото и лайтбокс
+  const items = document.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt;
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>
