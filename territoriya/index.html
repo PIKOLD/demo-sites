@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Территория красоты — ресницы, брови, перманент, ногти в Сестрорецке</title>
+<meta name="description" content="Территория красоты в Сестрорецке: ресницы, брови, перманентный макияж, лазерное удаление татуажа и тату, маникюр, педикюр. ул. Володарского, 26/2. Ежедневно 09:00–20:00.">
+<meta name="theme-color" content="#0A2E27">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Prata&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Prata&display=swap"></noscript>
+<style>
+:root{
+  --em9:#061F1A; --em8:#0A2E27; --em7:#0F3F35; --em6:#17564A;
+  --coral:#FF7A5C; --coral-h:#FF9279; --coral-t:#B73E22;
+  --sand:#EDE1C8; --sand-l:#F7F1E3; --sand-d:#D8C7A3; --paper:#FFFCF4;
+  --ink:#0B221D; --ink2:#2C423A; --mut:#56675E; --mut-d:#A9BDB3;
+  --line:rgba(11,34,29,.14); --line-d:rgba(237,225,200,.2);
+  --r:26px; --rm:16px;
+  --disp:"Prata", Georgia, "Times New Roman", serif;
+  --sans:"Onest", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:76px}
+body{margin:0;background:var(--sand-l);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto;position:relative}
+.ic{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+h1,h2,h3,h4{font-family:var(--disp);font-weight:400;line-height:1.08;margin:0;overflow-wrap:break-word}
+h2{font-size:clamp(31px,5.4vw,58px)}
+em{font-style:normal;color:var(--coral-t)}
+.dark em,.hero em{color:var(--coral)}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font:600 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--coral-t)}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.dark .eyebrow,.hero .eyebrow{color:var(--coral)}
+.lead{font-size:clamp(16px,1.6vw,18px);color:var(--ink2);max-width:54ch;margin:0}
+.dark .lead,.hero .lead{color:var(--mut-d)}
+section{padding:clamp(64px,9vw,112px) 0}
+.dark{background:var(--em8);color:var(--sand);position:relative;overflow:hidden}
+
+/* topo lines */
+.topo{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;color:var(--sand)}
+.topo path{fill:none;stroke:currentColor;stroke-width:1;opacity:.12}
+.topo path.ix{stroke-width:1.5;opacity:.26}
+
+/* demo bar */
+.demo{background:var(--em9);color:#DCD3BD;font-size:12.5px;line-height:1.4;padding:9px 0;border-bottom:1px solid var(--line-d)}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:var(--ink);background:var(--coral);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:11px;border-radius:99px;padding:3px 9px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(6,31,26,.92);backdrop-filter:saturate(1.3) blur(14px);-webkit-backdrop-filter:saturate(1.3) blur(14px);color:var(--sand);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line-d)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:14px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.logo svg{width:34px;height:34px;flex:none}
+.logo span{display:block;min-width:0}
+.logo b{display:block;font:700 15px/1.05 var(--sans);letter-spacing:.17em}
+.logo small{display:block;font:500 11px/1.3 var(--sans);color:var(--mut-d);letter-spacing:.1em;text-transform:uppercase}
+.nav{display:none;gap:26px}
+.nav a{text-decoration:none;font-weight:500;font-size:14.5px;color:#D9D0BA;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:1px;background:var(--coral);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;border-radius:99px;border:1.5px solid var(--coral);background:var(--coral);color:var(--ink);font-weight:600;font-size:15px;text-decoration:none;cursor:pointer;transition:transform .25s, background .25s, color .25s, border-color .25s;text-align:center}
+.btn:hover{transform:translateY(-2px);background:var(--coral-h);border-color:var(--coral-h)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--sand);border-color:var(--ink)}
+.dark .btn.ghost,.hero .btn.ghost{color:var(--sand);border-color:rgba(237,225,200,.5)}
+.dark .btn.ghost:hover,.hero .btn.ghost:hover{background:var(--sand);color:var(--ink);border-color:var(--sand)}
+.btn.ink{background:var(--ink);border-color:var(--ink);color:var(--sand)}
+.btn.ink:hover{background:var(--em7);border-color:var(--em7)}
+.btn.sm{min-height:42px;padding:0 18px;font-size:14px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border-radius:50%;border:1px solid var(--line-d);background:transparent;display:grid;place-items:center;cursor:pointer;flex:none}
+.burger span{display:block;width:18px;height:1.5px;background:var(--sand);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:var(--sand);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--em9);padding:120px 24px 40px;display:flex;flex-direction:column;gap:4px;opacity:0;pointer-events:none;transition:opacity .3s;overflow-y:auto}
+.mnav a{font:400 32px/1.25 var(--disp);color:var(--sand);text-decoration:none;padding:8px 0;border-bottom:1px solid var(--line-d)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{background:var(--em8);color:var(--sand);position:relative;overflow:hidden;padding:clamp(32px,5vw,72px) 0 clamp(56px,8vw,104px)}
+.hero .topo{color:var(--sand)}
+.hero .wrap{display:grid;gap:44px;align-items:center;grid-template-columns:minmax(0,1fr)}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:56px}}
+.status{display:inline-flex;align-items:center;gap:10px;background:rgba(237,225,200,.1);border:1px solid var(--line-d);border-radius:99px;padding:8px 14px 8px 12px;font-size:13.5px;font-weight:600;margin-bottom:22px}
+.status i{width:9px;height:9px;border-radius:50%;background:#4FD08A;box-shadow:0 0 0 0 rgba(79,208,138,.55);animation:pulse 2s infinite;flex:none}
+.status.closed i{background:var(--coral);animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(79,208,138,0)}100%{box-shadow:0 0 0 0 rgba(79,208,138,0)}}
+.hero h1{font-size:clamp(40px,8.2vw,98px);margin:20px 0 22px;line-height:1}
+.hero h1 em{display:block}
+.hero .lead{margin-bottom:24px}
+.place{display:flex;gap:10px;align-items:flex-start;color:var(--mut-d);font-size:14.5px;margin-bottom:28px}
+.place .ic{margin-top:3px;color:var(--coral)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.ratings{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:32px;padding-top:24px;border-top:1px solid var(--line-d)}
+.rate{display:flex;align-items:center;gap:12px}
+.rate strong{font:400 42px/1 var(--disp)}
+.rate span{font-size:13px;line-height:1.35;color:var(--mut-d)}
+.stars{color:var(--coral);letter-spacing:2px;font-size:12px;display:block}
+
+.tile{position:relative;padding:30px 0 30px 30px;max-width:560px;width:100%;margin-inline:auto}
+.rl{position:absolute;pointer-events:none}
+.rl-t{left:30px;right:0;top:15px;height:8px;background:repeating-linear-gradient(90deg,rgba(237,225,200,.5) 0 1px,transparent 1px 14px)}
+.rl-l{top:30px;bottom:30px;left:15px;width:8px;background:repeating-linear-gradient(180deg,rgba(237,225,200,.5) 0 1px,transparent 1px 14px)}
+.cd{position:absolute;font:600 10.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--mut-d)}
+.cd-t{top:0;left:30px}
+.cd-b{bottom:6px;right:0}
+.tile-img{position:relative;aspect-ratio:4/3.4;overflow:hidden;background:var(--em7);clip-path:polygon(0 0,calc(100% - 38px) 0,100% 38px,100% 100%,38px 100%,0 calc(100% - 38px))}
+@media (min-width:960px){.tile-img{aspect-ratio:1/1.02}}
+.tile-img img{width:100%;height:100%;object-fit:cover}
+.tile-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,31,26,0) 50%,rgba(6,31,26,.5))}
+.route{position:absolute;inset:0;width:100%;height:100%;z-index:2;pointer-events:none}
+.route path{fill:none;stroke:var(--coral);stroke-width:2.4;stroke-linecap:round;stroke-dasharray:3 9;animation:march 1.6s linear infinite}
+@keyframes march{to{stroke-dashoffset:-24}}
+.pin{position:absolute;left:54%;top:42%;z-index:3;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:8px;pointer-events:none}
+.pin i{width:20px;height:20px;border-radius:50%;background:var(--coral);border:3px solid var(--sand);box-shadow:0 0 0 0 rgba(255,122,92,.6);animation:ping 2.4s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 16px rgba(255,122,92,0)}100%{box-shadow:0 0 0 0 rgba(255,122,92,0)}}
+.pin b{background:var(--sand);color:var(--ink);font:600 12px/1.25 var(--sans);padding:6px 11px;border-radius:99px;white-space:nowrap}
+.chip{position:absolute;z-index:4;background:rgba(6,31,26,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line-d);border-radius:14px;padding:10px 13px;font-size:12.5px;line-height:1.3;max-width:58%;color:var(--sand)}
+.chip b{display:block;font:400 20px/1.15 var(--disp);color:#fff;margin-top:3px}
+.chip.c1{left:14px;top:14px}
+.chip.c2{right:12px;bottom:14px;text-align:right}
+.compass{position:absolute;z-index:5;top:2px;right:8px;width:62px;height:62px;pointer-events:none}
+.compass .nd{transform-origin:32px 32px;animation:sway 7s ease-in-out infinite}
+@keyframes sway{0%,100%{transform:rotate(-14deg)}50%{transform:rotate(22deg)}}
+
+/* legend */
+.legend{background:var(--sand);border-bottom:1px solid var(--line);padding:0}
+.legend .wrap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (min-width:760px){.legend .wrap{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.lg{padding:20px 14px;display:flex;align-items:center;gap:12px;border-left:1px solid var(--line)}
+.lg:nth-child(odd){border-left:0}
+@media (min-width:760px){.lg:nth-child(odd){border-left:1px solid var(--line)}.lg:first-child{border-left:0}}
+.lg strong{font:400 clamp(26px,3.4vw,36px)/1 var(--disp);white-space:nowrap}
+.lg span{font-size:12.5px;line-height:1.3;color:var(--mut);min-width:0}
+@media (max-width:420px){.lg{flex-direction:column;align-items:flex-start;gap:6px;min-width:0}}
+
+/* head */
+.head{display:grid;gap:16px;margin-bottom:40px}
+.head h2{margin-top:14px}
+.head p{margin:0;color:var(--mut);font-size:14px;max-width:46ch}
+.dark .head p{color:var(--mut-d)}
+@media (min-width:960px){.head{grid-template-columns:minmax(0,1fr) auto;align-items:end}}
+
+/* zones */
+.zwrap{display:grid;gap:24px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:960px){.zwrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:36px;align-items:start}}
+.mapcard{position:relative;background:var(--em9);border-radius:var(--r);overflow:hidden;aspect-ratio:600/440;box-shadow:0 26px 50px -28px rgba(6,31,26,.7)}
+.mapcard .topo{color:var(--sand)}
+.zmap{position:absolute;inset:0;width:100%;height:100%;display:block}
+.zmap .z{cursor:pointer;outline:none}
+.zmap polygon{fill:rgba(237,225,200,.07);stroke:var(--em9);stroke-width:8;stroke-linejoin:round;transition:fill .3s}
+.zmap .z:hover polygon{fill:rgba(255,122,92,.3)}
+.zmap .z.on polygon{fill:var(--coral)}
+.zmap .z:focus-visible polygon{stroke:var(--sand);stroke-width:3;stroke-dasharray:6 5}
+.zmap text{font:600 25px/1 var(--sans);fill:var(--sand);text-anchor:middle;pointer-events:none;transition:fill .3s}
+.zmap text.nm{font:600 14px/1 var(--sans);letter-spacing:.14em;fill:rgba(237,225,200,.7)}
+.zmap .z.on text{fill:var(--ink)}
+.zmap circle{fill:var(--coral);stroke:var(--sand);stroke-width:3;pointer-events:none;transition:fill .3s}
+.zmap .z.on circle{fill:var(--ink);stroke:var(--ink)}
+.mapcap{position:absolute;left:14px;bottom:10px;font:600 10px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--mut-d);z-index:2;pointer-events:none}
+.ztabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tab{border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:10px 16px;font-weight:600;font-size:14px;cursor:pointer;transition:all .25s}
+.tab[aria-selected="true"],.tab[aria-pressed="true"]{background:var(--ink);color:var(--sand);border-color:var(--ink)}
+.hint{margin:14px 0 0;font-size:13.5px;color:var(--mut)}
+.zpanel{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:clamp(20px,3.4vw,34px);scroll-margin-top:84px;position:relative;overflow:hidden}
+.zpanel::before{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:repeating-radial-gradient(circle,transparent 0 12px,rgba(11,34,29,.07) 12px 13px);pointer-events:none}
+.zp{display:none;position:relative}
+.zp.on{display:block;animation:fade .45s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.zhead{display:flex;align-items:baseline;gap:14px;margin-bottom:10px}
+.zhead .zn{font:600 12px/1 var(--sans);letter-spacing:.14em;color:var(--coral-t);border:1px solid var(--coral-t);border-radius:99px;padding:5px 9px;flex:none}
+.zhead h3{font-size:clamp(28px,4vw,40px)}
+.sub{font:600 12px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin:22px 0 4px}
+.row{display:flex;align-items:baseline;gap:14px;padding:13px 0;border-bottom:1px solid var(--line)}
+.row .n{flex:1 1 auto;min-width:0;font-weight:500;font-size:15.5px}
+.row .p{font:400 20px/1.1 var(--disp);white-space:nowrap}
+.zp .row:first-of-type{border-top:1px solid var(--line)}
+.zact{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;position:relative}
+.zact .btn{flex:1 1 170px}
+.care{margin-top:18px;display:flex;align-items:baseline;gap:14px;border:1px dashed var(--coral-t);border-radius:var(--rm);padding:14px 16px;background:rgba(255,122,92,.08)}
+.care div{flex:1;min-width:0}
+.care small{display:block;font:600 11px/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--coral-t);margin-bottom:4px}
+.care span.p{font:400 20px/1.1 var(--disp);white-space:nowrap}
+.src{margin:18px 0 0;font-size:12.5px;color:var(--mut)}
+
+/* removal */
+.rmv{display:grid;gap:40px;grid-template-columns:minmax(0,1fr);position:relative}
+@media (min-width:960px){.rmv{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:64px;align-items:center}}
+.rmv h2{margin:14px 0 20px}
+.p2{display:grid;gap:12px;margin:28px 0}
+@media (min-width:560px){.p2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.pcard{border:1px solid var(--line-d);border-radius:var(--rm);padding:20px;background:rgba(237,225,200,.05)}
+.pcard small{color:var(--mut-d);font-size:13.5px;display:block}
+.pcard b{display:block;font:400 clamp(28px,4vw,38px)/1.1 var(--disp);color:#fff;margin-top:8px}
+.rmimg{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--em7);clip-path:polygon(0 0,calc(100% - 44px) 0,100% 44px,100% 100%,44px 100%,0 calc(100% - 44px))}
+.rmimg img{width:100%;height:100%;object-fit:cover}
+.rmimg figcaption{position:absolute;left:14px;right:14px;bottom:14px;background:rgba(6,31,26,.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:10px 14px;border-radius:12px;font-size:13px;color:var(--sand)}
+.rmfig{margin:0}
+
+/* gallery */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:760px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}}
+.gi{position:relative;border-radius:var(--rm);overflow:hidden;aspect-ratio:4/3;background:var(--sand-d);cursor:zoom-in;border:0;padding:0}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.07)}
+.gi span{position:absolute;left:8px;bottom:8px;right:8px;background:rgba(247,241,227,.92);font-size:12px;font-weight:600;padding:5px 10px;border-radius:10px;text-align:left;line-height:1.25;color:var(--ink)}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,1000px);max-height:90vh;overflow:visible}
+.lb::backdrop{background:rgba(6,31,26,.9)}
+.lb img{max-height:80vh;width:auto;margin:auto;border-radius:16px;object-fit:contain}
+.lb p{margin:10px 0 0;text-align:center;color:var(--sand);font-size:14px}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:var(--sand);color:var(--ink);font-size:22px;cursor:pointer}
+
+/* praise */
+.praise-sec{background:var(--sand)}
+.praise{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pc{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:28px;position:relative;overflow:hidden}
+.pc::before{content:"";position:absolute;right:-50px;top:-50px;width:170px;height:170px;border-radius:50%;background:repeating-radial-gradient(circle,transparent 0 10px,rgba(11,34,29,.07) 10px 11px)}
+.pc .alt{position:relative;display:inline-block;font:600 11px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--coral-t);border:1px solid var(--coral-t);border-radius:99px;padding:5px 9px}
+.pc h3{font-size:26px;margin:24px 0 12px;position:relative}
+.pc p{margin:0;color:var(--ink2);position:relative}
+.score{display:flex;flex-wrap:wrap;gap:14px;margin-top:20px}
+.score a{display:flex;align-items:center;gap:14px;background:var(--em8);color:var(--sand);border-radius:var(--rm);padding:16px 20px;text-decoration:none;flex:1 1 260px;min-width:0}
+.score a.plain{background:transparent;border:1px dashed var(--ink2);color:var(--ink)}
+.score strong{font:400 44px/1 var(--disp);color:#fff}
+.score span{font-size:13.5px;color:var(--mut-d);line-height:1.4}
+.score span b{color:var(--sand);display:block;font-weight:600}
+.score a.plain span{color:var(--mut)}
+.score a.plain span b{color:var(--ink)}
+
+/* about */
+.path{list-style:none;margin:0 0 36px;padding:0;display:grid;gap:0;counter-reset:p;position:relative}
+.path li{position:relative;padding:0 0 26px 48px;counter-increment:p}
+.path li::before{content:counter(p);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--coral);color:var(--ink);font:700 14px/32px var(--sans);text-align:center}
+.path li::after{content:"";position:absolute;left:15px;top:36px;bottom:4px;border-left:2px dashed rgba(237,225,200,.3)}
+.path li:last-child{padding-bottom:0}
+.path li:last-child::after{display:none}
+.path b{display:block;font:400 clamp(22px,3vw,28px)/1.2 var(--disp);color:#fff}
+.path small{display:block;color:var(--mut-d);font-size:13.5px;margin-top:4px}
+@media (min-width:860px){
+  .path{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+  .path li{padding:54px 0 0}
+  .path li::after{left:40px;right:-20px;top:15px;bottom:auto;border-left:0;border-top:2px dashed rgba(237,225,200,.3);height:0}
+}
+.facts{display:flex;flex-wrap:wrap;gap:10px}
+.fact{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line-d);background:rgba(237,225,200,.06);border-radius:99px;padding:10px 16px;font-size:14px;font-weight:500}
+.fact .ic{width:16px;height:16px;color:var(--coral)}
+.geo{margin-top:30px;display:flex;flex-wrap:wrap;gap:8px 28px;font:600 12px/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--mut-d)}
+
+/* contacts */
+.ct{display:grid;gap:28px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start}
+.ci small{display:block;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin-bottom:6px}
+.ci p,.ci a{margin:0;font-size:18px;font-weight:500;text-decoration:none}
+.ci a.big{font:400 clamp(28px,4vw,36px)/1.1 var(--disp)}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:10px 16px;font-size:14px;font-weight:600;transition:background .25s,color .25s}
+.socials a:hover{background:var(--ink);color:var(--sand)}
+.map{border-radius:var(--r);overflow:hidden;min-height:380px;background:var(--sand-d);border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* final */
+.final{background:var(--coral);color:var(--ink);text-align:center;position:relative;overflow:hidden}
+.final .topo{color:var(--ink)}
+.final .topo path{opacity:.1}
+.final .topo path.ix{opacity:.22}
+.final .eyebrow{color:var(--ink)}
+.final h2{font-size:clamp(36px,7vw,80px);max-width:15ch;margin:18px auto}
+.final em{color:var(--em7)}
+.final .lead{margin:0 auto;color:var(--ink)}
+.final .ctas{justify-content:center;margin-top:30px}
+.final .btn.ghost{border-color:var(--ink)}
+footer{background:var(--em9);color:var(--mut-d);padding:34px 0 120px;font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer span{max-width:70ch}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px;padding:8px;background:rgba(6,31,26,.94);border:1px solid var(--line-d);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:22px;box-shadow:0 18px 40px -12px rgba(0,0,0,.5);transform:translateY(150%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:15px;color:var(--sand);text-decoration:none;font-size:11.5px;font-weight:600}
+.mbar a .ic{width:20px;height:20px}
+.mbar a.main{background:var(--coral);color:var(--ink);flex-direction:row;font-size:14px;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-ph" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+    <symbol id="i-rt" viewBox="0 0 24 24"><path d="M3 11l18-8-8 18-2-8-8-2z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></symbol>
+    <symbol id="i-pn" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-ck" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-st" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.2 1.1 6-5.4-3-5.4 3 1.1-6L3.2 9.4l6.1-.8z"/></symbol>
+    <symbol id="i-us" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6M16 5.2a3.2 3.2 0 0 1 0 5.6M18 14.3c2 .8 3 2.7 3 5.7"/></symbol>
+  </defs>
+</svg>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта для «Территории красоты». Данные из открытых источников (2ГИС / DIKIDI) на 24.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Территория красоты — наверх">
+      <svg viewBox="0 0 40 40" fill="none" stroke="#EDE1C8" stroke-width="1.3" aria-hidden="true"><ellipse cx="20" cy="20" rx="18" ry="14"/><ellipse cx="20" cy="20" rx="12" ry="9" transform="rotate(-12 20 20)"/><ellipse cx="20" cy="20" rx="6" ry="4.4" transform="rotate(-24 20 20)"/><circle cx="20" cy="20" r="2.6" fill="#FF7A5C" stroke="none"/></svg>
+      <span><b>ТЕРРИТОРИЯ</b><small>красоты · Сестрорецк</small></span>
+    </a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#zones">Зоны и цены</a>
+      <a href="#removal">Удаление</a>
+      <a href="#photos">Фото</a>
+      <a href="#praise">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm" href="https://dikidi.ru/733331" target="_blank" rel="noopener">Записаться онлайн</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#zones">Зоны и цены</a>
+  <a href="#removal">Удаление перманента и тату</a>
+  <a href="#photos">Фото</a>
+  <a href="#praise">За что хвалят</a>
+  <a href="#about">Как найти</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <svg class="topo" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true" data-h="900,360,540,13,1;170,700,300,8,2"></svg>
+  <div class="wrap">
+    <div>
+      <span class="status rv" id="status"><i></i><span>Ежедневно 09:00–20:00</span></span>
+      <span class="eyebrow rv" style="display:flex">Сестрорецк · Курортный район</span>
+      <h1 class="rv d1">Территория <em>красоты</em></h1>
+      <p class="lead rv d2">Ресницы, брови, перманентный макияж, ногти и лазерное удаление татуажа и тату — пять зон в одном кабинете.</p>
+      <div class="place rv d2">
+        <svg class="ic"><use href="#i-pn"/></svg>
+        <span>Сестрорецк, ул. Володарского, 26/2, 3 этаж, кабинет 4</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn" href="tel:+79627211801"><svg class="ic"><use href="#i-ph"/></svg>Позвонить</a>
+        <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~60.101147%2C29.972617&rtt=auto" target="_blank" rel="noopener"><svg class="ic"><use href="#i-rt"/></svg>Маршрут</a>
+      </div>
+      <div class="ratings rv d3">
+        <div class="rate"><strong>5.0</strong><span><i class="stars">★★★★★</i>DIKIDI · 350&nbsp;оценок</span></div>
+      </div>
+    </div>
+    <div class="tile rv d2">
+      <span class="rl rl-t" aria-hidden="true"></span><span class="rl rl-l" aria-hidden="true"></span>
+      <span class="cd cd-t">60.1011° с.&nbsp;ш.</span><span class="cd cd-b">29.9726° в.&nbsp;д.</span>
+      <div class="tile-img">
+        <img src="img/hero.jpg" alt="Кабинет: кресло для процедур" width="1024" height="768" fetchpriority="high">
+        <svg class="route" viewBox="0 0 300 260" preserveAspectRatio="none" aria-hidden="true"><path vector-effect="non-scaling-stroke" d="M10 200 C 50 214, 70 150, 112 150 S 150 112, 162 108"/></svg>
+        <span class="pin"><i></i><b>3 этаж · кабинет 4</b></span>
+        <div class="chip c1">Перманент бровей<b>6&nbsp;000&nbsp;₽</b></div>
+        <div class="chip c2">Лазерное удаление татуажа и тату<b>2&nbsp;000–2&nbsp;500&nbsp;₽</b></div>
+      </div>
+      <svg class="compass" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="#061F1A" stroke="#EDE1C8" stroke-opacity=".6" stroke-width="1.2"/><path d="M32 6v6M32 52v6M6 32h6M52 32h6" stroke="#EDE1C8" stroke-width="1.4" stroke-linecap="round"/><g class="nd"><path d="M32 14l6 18H26z" fill="#FF7A5C"/><path d="M32 50l-6-18h12z" fill="#EDE1C8" fill-opacity=".7"/></g><circle cx="32" cy="32" r="2.4" fill="#061F1A"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- LEGEND -->
+<div class="legend"><div class="wrap">
+  <div class="lg rv"><strong>5.0</strong><span>рейтинг<br>в DIKIDI</span></div>
+  <div class="lg rv d1"><strong>350</strong><span>оценок<br>в DIKIDI</span></div>
+  <div class="lg rv d2"><strong>3</strong><span>мастера<br>по данным DIKIDI</span></div>
+  <div class="lg rv d3"><strong>3 этаж</strong><span>кабинет 4,<br>Сестрорецк</span></div>
+</div></div>
+
+<!-- ZONES -->
+<section id="zones">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Прайс по зонам</span><h2 class="rv d1">Карта <em>территории</em></h2></div>
+      <p class="rv d2">Нажмите на зону — покажем цены. Цены по данным DIKIDI и 2ГИС на 24.10.2026.</p>
+    </div>
+    <div class="zwrap">
+      <div class="rv">
+        <div class="mapcard">
+          <svg class="topo" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true" data-h="760,260,560,12,3;120,430,260,8,5"></svg>
+          <svg class="zmap" viewBox="0 0 600 440" role="group" aria-label="Карта территории: пять зон, нажмите на зону, чтобы увидеть цены">
+            <defs><pattern id="gr" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50 0H0V50" fill="none" stroke="rgba(237,225,200,.07)" stroke-width="1"/></pattern></defs>
+            <rect width="600" height="440" fill="url(#gr)"/>
+            <g class="z" data-z="lash" tabindex="0" role="button" aria-pressed="false" aria-label="Зона Ресницы, показать цены">
+              <polygon points="20,30 270,22 300,170 170,225 25,190"/>
+              <circle cx="150" cy="92" r="6"/><text x="150" y="132">Ресницы</text>
+            </g>
+            <g class="z" data-z="brows" tabindex="0" role="button" aria-pressed="false" aria-label="Зона Брови, показать цены">
+              <polygon points="270,22 580,40 580,195 420,225 300,170"/>
+              <circle cx="440" cy="92" r="6"/><text x="440" y="132">Брови</text>
+            </g>
+            <g class="z on" data-z="perm" tabindex="0" role="button" aria-pressed="true" aria-label="Зона Перманент, показать цены">
+              <polygon points="25,190 170,225 300,170 420,225 330,300 170,285 25,300"/>
+              <circle cx="215" cy="226" r="6"/><text x="215" y="266">Перманент</text>
+            </g>
+            <g class="z" data-z="nails" tabindex="0" role="button" aria-pressed="false" aria-label="Зона Ногти, показать цены">
+              <polygon points="25,300 170,285 330,300 280,418 25,418"/>
+              <circle cx="150" cy="332" r="6"/><text x="150" y="372">Ногти</text>
+            </g>
+            <g class="z" data-z="laser" tabindex="0" role="button" aria-pressed="false" aria-label="Зона Удаление, показать цены">
+              <polygon points="330,300 420,225 580,195 580,418 280,418"/>
+              <circle cx="440" cy="298" r="6"/><text x="440" y="338">Удаление</text>
+            </g>
+          </svg>
+          <span class="mapcap" aria-hidden="true">Схема зон · масштаб условный</span>
+        </div>
+        <div class="ztabs" role="tablist" aria-label="Зоны территории">
+          <button class="tab" role="tab" data-z="lash" aria-selected="false">Ресницы</button>
+          <button class="tab" role="tab" data-z="brows" aria-selected="false">Брови</button>
+          <button class="tab" role="tab" data-z="perm" aria-selected="true">Перманент</button>
+          <button class="tab" role="tab" data-z="nails" aria-selected="false">Ногти</button>
+          <button class="tab" role="tab" data-z="laser" aria-selected="false">Удаление</button>
+        </div>
+      </div>
+
+      <div class="rv d1">
+        <div class="zpanel" id="zpanel">
+          <div class="zp" id="zp-lash" role="tabpanel">
+            <div class="zhead"><span class="zn">01</span><h3>Ресницы</h3></div>
+            <div class="row"><span class="n">Классика</span><span class="p">2&nbsp;000&nbsp;₽</span></div>
+            <div class="row"><span class="n">2D</span><span class="p">2&nbsp;300&nbsp;₽</span></div>
+            <div class="row"><span class="n">3D</span><span class="p">2&nbsp;500–3&nbsp;000&nbsp;₽</span></div>
+            <div class="row"><span class="n">4–5D</span><span class="p">3&nbsp;000–3&nbsp;500&nbsp;₽</span></div>
+            <div class="row"><span class="n">LED</span><span class="p">2&nbsp;800&nbsp;₽</span></div>
+            <div class="row"><span class="n">Экспресс</span><span class="p">2&nbsp;000&nbsp;₽</span></div>
+            <div class="row"><span class="n">Ламинирование</span><span class="p">2&nbsp;000&nbsp;₽</span></div>
+            <div class="row"><span class="n">Окрашивание</span><span class="p">500&nbsp;₽</span></div>
+            <div class="row"><span class="n">Снятие</span><span class="p">300–350&nbsp;₽</span></div>
+          </div>
+          <div class="zp" id="zp-brows" role="tabpanel">
+            <div class="zhead"><span class="zn">02</span><h3>Брови</h3></div>
+            <div class="row"><span class="n">Долговременная укладка</span><span class="p">2&nbsp;000&nbsp;₽</span></div>
+            <div class="row"><span class="n">Коррекция и окрашивание</span><span class="p">1&nbsp;300–1&nbsp;500&nbsp;₽</span></div>
+            <div class="row"><span class="n">Комплекс: ламинирование, окрашивание, уход</span><span class="p">2&nbsp;000&nbsp;₽</span></div>
+          </div>
+          <div class="zp on" id="zp-perm" role="tabpanel">
+            <div class="zhead"><span class="zn">03</span><h3>Перманент</h3></div>
+            <div class="row"><span class="n">Брови</span><span class="p">6&nbsp;000&nbsp;₽</span></div>
+            <div class="row"><span class="n">Губы</span><span class="p">7&nbsp;000&nbsp;₽</span></div>
+            <div class="row"><span class="n">Межресничка / стрелка</span><span class="p">5&nbsp;000&nbsp;₽</span></div>
+          </div>
+          <div class="zp" id="zp-nails" role="tabpanel">
+            <div class="zhead"><span class="zn">04</span><h3>Ногти</h3></div>
+            <h4 class="sub">Маникюр</h4>
+            <div class="row"><span class="n">Маникюр</span><span class="p">1&nbsp;000&nbsp;₽</span></div>
+            <div class="row"><span class="n">С обычным лаком</span><span class="p">1&nbsp;500&nbsp;₽</span></div>
+            <div class="row"><span class="n">Снятие + маникюр + гель-лак</span><span class="p">2&nbsp;500&nbsp;₽</span></div>
+            <div class="row"><span class="n">Покрытие IBX</span><span class="p">1&nbsp;500&nbsp;₽</span></div>
+            <div class="row"><span class="n">Наращивание</span><span class="p">4&nbsp;000&nbsp;₽</span></div>
+            <div class="row"><span class="n">Френч</span><span class="p">+500&nbsp;₽</span></div>
+            <div class="row"><span class="n">Дизайн</span><span class="p">200&nbsp;₽</span></div>
+            <div class="row"><span class="n">Ремонт ногтя</span><span class="p">350&nbsp;₽</span></div>
+            <div class="row"><span class="n">Снятие гель-лака</span><span class="p">500&nbsp;₽</span></div>
+            <h4 class="sub">Педикюр</h4>
+            <div class="row"><span class="n">Экспресс</span><span class="p">2&nbsp;500&nbsp;₽</span></div>
+            <div class="row"><span class="n">+ гель-лак</span><span class="p">3&nbsp;000&nbsp;₽</span></div>
+            <div class="row"><span class="n">Пальцы без покрытия</span><span class="p">1&nbsp;000&nbsp;₽</span></div>
+            <div class="row"><span class="n">Комплекс: маникюр + педикюр с покрытием</span><span class="p">5&nbsp;500&nbsp;₽</span></div>
+          </div>
+          <div class="zp" id="zp-laser" role="tabpanel">
+            <div class="zhead"><span class="zn">05</span><h3>Удаление</h3></div>
+            <div class="row"><span class="n">Удаление перманента</span><span class="p">2&nbsp;500&nbsp;₽</span></div>
+            <div class="row"><span class="n">Лазерное удаление татуажа / тату</span><span class="p">2&nbsp;000–2&nbsp;500&nbsp;₽</span></div>
+          </div>
+          <div class="zact">
+            <a class="btn" href="https://dikidi.ru/733331" target="_blank" rel="noopener">Записаться онлайн</a>
+            <a class="btn ghost" href="https://wa.me/79627211801?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20%D0%A2%D0%B5%D1%80%D1%80%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8E%20%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D1%82%D1%8B." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg>WhatsApp</a>
+          </div>
+        </div>
+        <div class="care rv">
+          <div><small>Отдельная точка · уход</small>Карбоновый пилинг лицо / декольте</div>
+          <span class="p">2&nbsp;000&nbsp;₽</span>
+        </div>
+        <p class="src">Источник цен: DIKIDI и 2ГИС, 24.10.2026.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REMOVAL -->
+<section id="removal" class="dark">
+  <svg class="topo" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true" data-h="260,420,520,12,4"></svg>
+  <div class="wrap rmv">
+    <div>
+      <span class="eyebrow rv">Зона 05</span>
+      <h2 class="rv d1">Удаление перманента <em>и тату лазером</em></h2>
+      <p class="lead rv d2">Отдельное направление территории: лазерное удаление татуажа и тату и удаление перманентного макияжа.</p>
+      <div class="p2 rv d2">
+        <div class="pcard"><small>Лазерное удаление татуажа / тату</small><b>2&nbsp;000–2&nbsp;500&nbsp;₽</b></div>
+        <div class="pcard"><small>Удаление перманента</small><b>2&nbsp;500&nbsp;₽</b></div>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn" href="https://dikidi.ru/733331" target="_blank" rel="noopener">Записаться на удаление</a>
+        <a class="btn ghost" href="tel:+79627211801"><svg class="ic"><use href="#i-ph"/></svg>Позвонить</a>
+      </div>
+    </div>
+    <figure class="rmfig rv d1">
+      <div class="rmimg"><img src="img/laser.jpg" alt="Процедура лазерного удаления, защитные очки" width="1024" height="768" loading="lazy"><figcaption>Процедура лазерного удаления, защитные очки</figcaption></div>
+    </figure>
+  </div>
+</section>
+
+<!-- PHOTOS -->
+<section id="photos">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Фото</span><h2 class="rv d1">Снимки <em>с территории</em></h2></div>
+      <p class="rv d2">Фото из карточки в 2ГИС. Нажмите, чтобы открыть крупнее.</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр фото">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="brows">Брови</button>
+      <button class="tab" aria-pressed="false" data-f="pm">Перманент</button>
+      <button class="tab" aria-pressed="false" data-f="laser">Лазер</button>
+      <button class="tab" aria-pressed="false" data-f="cab">Кабинет и детали</button>
+    </div>
+    <div class="grid" id="grid">
+      <button class="gi rv" data-c="cab"><img src="img/hero.jpg" alt="Кабинет: кресло для процедур" width="1024" height="768" loading="lazy"><span>Кабинет: кресло для процедур</span></button>
+      <button class="gi rv d1" data-c="brows"><img src="img/brows-1.jpg" alt="Брови" width="1024" height="768" loading="lazy"><span>Брови</span></button>
+      <button class="gi rv d2" data-c="pm"><img src="img/pm-1.jpg" alt="Перманент бровей" width="1024" height="768" loading="lazy"><span>Перманент бровей</span></button>
+      <button class="gi rv d3" data-c="laser"><img src="img/laser.jpg" alt="Процедура лазерного удаления, защитные очки" width="1024" height="768" loading="lazy"><span>Лазерное удаление, защитные очки</span></button>
+      <button class="gi rv" data-c="brows"><img src="img/brows-2.jpg" alt="Брови" width="1024" height="768" loading="lazy"><span>Брови</span></button>
+      <button class="gi rv d1" data-c="pm"><img src="img/pm-2.jpg" alt="Перманент бровей" width="1024" height="768" loading="lazy"><span>Перманент бровей</span></button>
+      <button class="gi rv d2" data-c="cab"><img src="img/gift.jpg" alt="Подарочные боксы" width="1024" height="768" loading="lazy"><span>Подарочные боксы</span></button>
+      <button class="gi rv d3" data-c="cab"><img src="img/tools.jpg" alt="Рабочие инструменты" width="1024" height="768" loading="lazy"><span>Рабочие инструменты</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""><p id="lbCap"></p></dialog>
+
+<!-- PRAISE -->
+<section id="praise" class="praise-sec">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Отзывы</span><h2 class="rv d1">За что <em>хвалят</em></h2></div>
+      <p class="rv d2">Пересказ отзывов клиентов в DIKIDI.</p>
+    </div>
+    <div class="praise">
+      <article class="pc rv"><span class="alt">Отметка 01</span><h3>Перманент без боли</h3><p>Клиенты пишут, что перманент бровей прошёл без боли, а результатом остались довольны.</p></article>
+      <article class="pc rv d1"><span class="alt">Отметка 02</span><h3>Аккуратный маникюр</h3><p>Про маникюр говорят: работа аккуратная, мастер внимательный к деталям и пожеланиям.</p></article>
+      <article class="pc rv d2"><span class="alt">Отметка 03</span><h3>Чёткая работа</h3><p>Работу называют чёткой и профессиональной. Клиенты отмечают, что и спустя несколько дней остаются в восторге.</p></article>
+    </div>
+    <div class="score rv">
+      <a href="https://dikidi.ru/733331" target="_blank" rel="noopener"><strong>5.0</strong><span><b>DIKIDI</b>350&nbsp;оценок · 3&nbsp;мастера</span></a>
+      <a class="plain" href="https://2gis.ru/spb/firm/70000001095281520" target="_blank" rel="noopener"><strong>2ГИС</strong><span><b>Карточка в 2ГИС</b>рейтинга пока нет</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="dark">
+  <svg class="topo" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true" data-h="980,300,520,12,6;100,640,240,7,3"></svg>
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Привязка к местности</span><h2 class="rv d1">Как <em>найти нас</em></h2></div>
+    </div>
+    <ol class="path rv">
+      <li><b>Сестрорецк</b><small>Курортный район</small></li>
+      <li><b>ул. Володарского, 26/2</b><small>адрес на карте</small></li>
+      <li><b>3 этаж</b><small>поднимитесь в здании</small></li>
+      <li><b>Кабинет 4</b><small>ежедневно 09:00–20:00</small></li>
+    </ol>
+    <div class="facts rv">
+      <span class="fact"><svg class="ic"><use href="#i-ck"/></svg>Ежедневно 09:00–20:00</span>
+      <span class="fact"><svg class="ic"><use href="#i-us"/></svg>3 мастера (по данным DIKIDI)</span>
+      <span class="fact"><svg class="ic"><use href="#i-st"/></svg>5.0 в DIKIDI · 350 оценок</span>
+      <span class="fact"><svg class="ic"><use href="#i-pn"/></svg>Курортный район</span>
+    </div>
+    <div class="geo rv" aria-label="Координаты"><span>60.1011° с.&nbsp;ш.</span><span>29.9726° в.&nbsp;д.</span></div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1">Как <em>добраться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Сестрорецк, ул. Володарского, 26/2, 3 этаж, кабинет 4 (Курортный район)</p></div>
+        <div class="ci"><small>Часы работы</small><p>Ежедневно, 09:00–20:00</p></div>
+        <div class="ci"><small>Телефон и WhatsApp</small><a class="big" href="tel:+79627211801">+7 962 721-18-01</a></div>
+        <div class="ci"><small>Мессенджеры и соцсети</small>
+          <div class="socials">
+            <a href="https://wa.me/79627211801?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20%D0%A2%D0%B5%D1%80%D1%80%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8E%20%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D1%82%D1%8B." target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://t.me/TerritoriyaKrasotySestroreck" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://vk.com/lashesclubb" target="_blank" rel="noopener">ВКонтакте · lashesclubb</a>
+            <a href="https://vk.com/manikasya" target="_blank" rel="noopener">ВКонтакте · manikasya</a>
+            <a href="https://dikidi.ru/733331" target="_blank" rel="noopener">Онлайн-запись</a>
+          </div>
+        </div>
+        <div class="ctas"><a class="btn ghost" href="https://yandex.ru/maps/?rtext=~60.101147%2C29.972617&rtt=auto" target="_blank" rel="noopener"><svg class="ic"><use href="#i-rt"/></svg>Построить маршрут</a></div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?ll=29.972617%2C60.101147&z=16&pt=29.972617%2C60.101147%2Cpm2rdm" title="Территория красоты на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <svg class="topo" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true" data-h="900,320,500,12,7;170,620,260,8,2"></svg>
+  <div class="wrap">
+    <span class="eyebrow rv">Запись</span>
+    <h2 class="rv d1">Выберите зону — <em>и&nbsp;приходите</em></h2>
+    <p class="lead rv d2">Ресницы, брови, перманент, ногти или удаление. Запишитесь онлайн или позвоните.</p>
+    <div class="ctas rv d3">
+      <a class="btn ink" href="https://dikidi.ru/733331" target="_blank" rel="noopener">Записаться онлайн</a>
+      <a class="btn ghost" href="tel:+79627211801">+7 962 721-18-01</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Территория красоты, Сестрорецк, ул. Володарского, 26/2</span>
+    <span>Демо-концепт. Цены — DIKIDI и 2ГИС, 24.10.2026. Рейтинг 5.0 и 350 оценок — DIKIDI (в 2ГИС рейтинга нет). Отзывы — пересказ DIKIDI. Фото — карточка в 2ГИС.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79627211801"><svg class="ic"><use href="#i-ph"/></svg>Позвонить</a>
+  <a href="https://wa.me/79627211801?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20%D0%A2%D0%B5%D1%80%D1%80%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8E%20%D0%BA%D1%80%D0%B0%D1%81%D0%BE%D1%82%D1%8B." target="_blank" rel="noopener"><svg class="ic"><use href="#i-wa"/></svg>WhatsApp</a>
+  <a class="main" href="https://dikidi.ru/733331" target="_blank" rel="noopener">Записаться</a>
+</nav>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Статус «открыто/закрыто» по московскому времени (ежедневно 09:00–20:00)
+  const st = document.getElementById('status');
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
+  const m = now.getHours() * 60 + now.getMinutes();
+  const open = m >= 9 * 60 && m < 20 * 60;
+  st.classList.toggle('closed', !open);
+  st.querySelector('span').textContent = open ? 'Открыто сейчас · до 20:00' : 'Сейчас закрыто · откроемся в 09:00';
+
+  // Изолинии рельефа (декор)
+  document.querySelectorAll('svg.topo').forEach(svg => {
+    const hills = (svg.dataset.h || '').split(';').filter(Boolean).map(s => s.split(',').map(Number));
+    let html = '';
+    hills.forEach(([cx, cy, R, n, seed]) => {
+      for (let k = 1; k <= n; k++) {
+        const r = R * k / n, pts = [];
+        for (let i = 0; i < 72; i++) {
+          const t = i / 72 * Math.PI * 2;
+          const w = 1 + .14 * Math.sin(2 * t + seed + k * .09) + .09 * Math.sin(3 * t + seed * 2.1 - k * .07) + .05 * Math.sin(5 * t + seed * 3.3 + k * .15);
+          pts.push((cx + r * w * Math.cos(t) * 1.25).toFixed(1) + ' ' + (cy + r * w * Math.sin(t) * .82).toFixed(1));
+        }
+        html += '<path d="M' + pts.join('L') + 'Z"' + (k % 4 === 0 ? ' class="ix"' : '') + '/>';
+      }
+    });
+    svg.innerHTML = html;
+  });
+
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    const y = scrollY;
+    hdr.classList.toggle('scrolled', y > 8);
+    mbar.classList.toggle('show', y > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Карта территории: выбор зоны
+  const zs = document.querySelectorAll('[data-z]');
+  const panel = document.getElementById('zpanel');
+  const pick = (id, fromMap) => {
+    zs.forEach(e => {
+      const on = e.dataset.z === id;
+      if (e.classList.contains('z')) { e.classList.toggle('on', on); e.setAttribute('aria-pressed', on); }
+      else e.setAttribute('aria-selected', on);
+    });
+    document.querySelectorAll('.zp').forEach(p => p.classList.toggle('on', p.id === 'zp-' + id));
+    if (fromMap && innerWidth < 960) panel.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+  };
+  zs.forEach(e => {
+    const isMap = e.classList.contains('z');
+    e.addEventListener('click', () => pick(e.dataset.z, isMap));
+    if (isMap) e.addEventListener('keydown', ev => {
+      if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); pick(e.dataset.z, false); }
+    });
+  });
+
+  // Фильтр фото и лайтбокс
+  const items = document.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt; lbCap.textContent = img.alt;
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>

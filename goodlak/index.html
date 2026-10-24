@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Студия Goodлак — маникюр и педикюр в Выборге</title>
+<meta name="description" content="Маникюр и педикюр в центре Выборга: Ленинградское шоссе, 21А. Палитра более 450 цветов. Ежедневно 09:00–22:00.">
+<meta name="theme-color" content="#1B0A24">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Onest:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Onest:wght@400;500;600;700&display=swap"></noscript>
+<style>
+:root{
+  --night:#1B0A24; --aub:#2E1239; --plum:#4B1E5E; --lav:#CDB6F2; --lav-2:#E9DEFA; --mist:#F7F2FC; --paper:#FFFFFF;
+  --viol:#7A3FA8; --ink:#26112E; --muted:#6C5E76; --line:rgba(38,17,46,.13);
+  --chrome:linear-gradient(120deg,#8D89A2 0%,#F4F2FB 20%,#B6B2C7 38%,#FFFFFF 52%,#A09CB4 70%,#ECE9F5 86%,#9591AA 100%);
+  --r-lg:30px; --r-md:20px; --r-sm:12px;
+  --shadow:0 24px 60px -28px rgba(46,18,57,.45);
+  --serif:"Playfair Display", Georgia, "Times New Roman", serif; --sans:"Onest", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--mist);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.eyebrow{font:600 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--viol)}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.05;margin:0;letter-spacing:-.012em}
+h2{font-size:clamp(34px,6vw,62px)}
+h2 em,h1 em{font-style:italic;font-weight:500;color:var(--viol)}
+.lead{font-size:clamp(16px,1.6vw,18px);max-width:54ch;color:#4B3A56}
+section{padding:clamp(68px,10vw,120px) 0}
+.chrome-t{background:var(--chrome);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;animation:sheen 8s ease-in-out infinite alternate}
+@keyframes sheen{to{background-position:100% 0}}
+
+/* dark helpers */
+.dark,.on-dark{color:#EFE6F7}
+.dark{background:var(--night)}
+.dark .eyebrow,.on-dark .eyebrow{color:var(--lav)}
+.dark h2 em,.on-dark h2 em{color:var(--lav)}
+.dark .lead,.on-dark .lead{color:#CDBFDA}
+
+/* demo bar */
+.demo{background:var(--lav);color:var(--night);font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:11px;border:1px solid rgba(27,10,36,.5);border-radius:99px;padding:3px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(27,10,36,.86);backdrop-filter:saturate(1.3) blur(14px);-webkit-backdrop-filter:saturate(1.3) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s;color:#fff}
+.hdr.scrolled{border-color:rgba(205,182,242,.22)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.logo{text-decoration:none;font:700 26px/1 var(--serif);letter-spacing:.01em;display:flex;align-items:center;gap:8px}
+.logo b{font-weight:700}
+.logo b span{font-style:italic;font-weight:500}
+.logo i{font-style:normal;font-size:13px;color:var(--lav)}
+.nav{display:none;gap:28px}
+.nav a{text-decoration:none;font-weight:500;font-size:14.5px;color:#DCCFEA;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--lav);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;border-radius:99px;border:1px solid var(--aub);background:var(--aub);color:#fff;font-weight:600;font-size:15px;text-decoration:none;cursor:pointer;transition:transform .25s, background .25s, color .25s, border-color .25s, background-position .5s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.lav{background:var(--lav);border-color:var(--lav);color:var(--night)}
+.btn.lav:hover{background:#DDCBF8;border-color:#DDCBF8}
+.btn.chrome{background:var(--chrome);background-size:220% 100%;background-position:0 0;border-color:transparent;color:var(--night)}
+.btn.chrome:hover{background-position:100% 0}
+.btn.ghost{background:transparent;color:var(--ink);border-color:rgba(38,17,46,.35)}
+.btn.ghost:hover{background:var(--aub);color:#fff;border-color:var(--aub)}
+.on-dark .btn.ghost,.dark .btn.ghost{color:#fff;border-color:rgba(255,255,255,.42)}
+.on-dark .btn.ghost:hover,.dark .btn.ghost:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.7)}
+.btn.sm{min-height:42px;padding:0 18px;font-size:14px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border-radius:50%;border:1px solid rgba(205,182,242,.35);background:transparent;display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:18px;height:1.5px;background:#fff;position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:#fff;transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--night);padding:120px 24px 40px;display:flex;flex-direction:column;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:700 32px/1.25 var(--serif);text-decoration:none;padding:6px 0;border-bottom:1px solid rgba(205,182,242,.2);color:#F3EBFB}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{padding:clamp(34px,5vw,72px) 0 clamp(60px,8vw,104px);position:relative;overflow:hidden;overflow:clip;color:#F3EBFB;
+  background:radial-gradient(60% 55% at 82% 18%,rgba(142,86,214,.5),transparent 70%),radial-gradient(45% 45% at 6% 92%,rgba(205,182,242,.2),transparent 70%),linear-gradient(165deg,#34144A 0%,#1B0A24 70%)}
+.hero::before{content:"✦";position:absolute;left:6%;top:14%;font-size:22px;color:var(--lav);opacity:.55;animation:tw 4s ease-in-out infinite}
+.hero::after{content:"✦";position:absolute;right:46%;bottom:9%;font-size:14px;color:var(--lav);opacity:.5;animation:tw 5s -2s ease-in-out infinite}
+@keyframes tw{50%{opacity:.12;transform:scale(.7)}}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:48px;align-items:center;position:relative}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px}}
+.status{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);border:1px solid rgba(205,182,242,.3);border-radius:99px;padding:8px 14px 8px 12px;font-size:13.5px;font-weight:600;color:#fff}
+.status i{width:9px;height:9px;border-radius:50%;background:#52D17C;box-shadow:0 0 0 0 rgba(82,209,124,.5);animation:pulse 2s infinite;flex:none}
+.status.closed i{background:#E26B7C;animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(82,209,124,0)}100%{box-shadow:0 0 0 0 rgba(82,209,124,0)}}
+.hero h1{margin:26px 0 22px;display:flex;flex-direction:column;line-height:.98}
+.hero h1 .pre{font:italic 500 clamp(22px,4vw,34px)/1.2 var(--serif);color:var(--lav);letter-spacing:.02em}
+.hero h1 .name{font-size:clamp(52px,14.5vw,112px);padding-bottom:.08em}
+@media (min-width:960px){.hero h1 .name{font-size:clamp(84px,9vw,128px)}}
+.hero .lead{margin:0 0 24px;color:#D8CAE6}
+.place{display:flex;gap:10px;align-items:flex-start;color:#C5B5D6;font-size:14.5px;margin-bottom:28px}
+.place svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--lav)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.ratings{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:32px;padding-top:24px;border-top:1px solid rgba(205,182,242,.22)}
+.rate{display:flex;align-items:center;gap:12px}
+.rate strong{font:700 44px/1 var(--serif);color:#fff}
+.rate span{font-size:13px;line-height:1.4;color:#C5B5D6}
+.stars{color:var(--lav);letter-spacing:2px;font-size:12px;display:block;font-weight:700}
+
+.mirror{position:relative;width:min(86%,460px);margin-inline:auto;aspect-ratio:5/6}
+.orbit{position:absolute;inset:-8%;border-radius:50%;border:1px dashed rgba(205,182,242,.45);animation:spin 70s linear infinite;pointer-events:none}
+.orbit i{position:absolute;width:20px;height:20px;border-radius:50%;box-shadow:0 0 0 3px rgba(255,255,255,.12)}
+.orbit i:nth-child(1){top:-10px;left:50%;background:#B58CF0}
+.orbit i:nth-child(2){bottom:12%;right:2%;background:var(--chrome)}
+.orbit i:nth-child(3){bottom:20%;left:-1%;background:#E8C7D2}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ring{position:absolute;inset:0;border-radius:50%;padding:7px;background:var(--chrome);box-shadow:0 34px 80px -22px rgba(0,0,0,.7),0 0 90px rgba(150,100,220,.35)}
+.ring>div{position:relative;width:100%;height:100%;border-radius:50%;overflow:hidden;background:#000}
+.ring img{width:100%;height:100%;object-fit:cover;object-position:46% 50%}
+.ring>div::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 38%,rgba(255,255,255,.28) 50%,transparent 62%);background-size:260% 100%;background-position:130% 0;animation:glint 7s 1.2s ease-in-out infinite}
+@keyframes glint{0%{background-position:130% 0}45%,100%{background-position:-60% 0}}
+.chip{position:absolute;z-index:4;background:rgba(27,10,36,.74);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(205,182,242,.35);border-radius:var(--r-md);padding:12px 16px;box-shadow:0 18px 40px -16px rgba(0,0,0,.7);font-size:13px;line-height:1.35;color:#E9DEFA;animation:float 6s ease-in-out infinite;max-width:70%}
+.chip b{display:block;font:700 22px/1.1 var(--serif);margin-top:2px;color:#fff}
+.chip.c1{right:-8%;top:50%}
+.chip.c2{left:-10%;top:10%;animation-delay:-3s}
+@media (max-width:520px){.chip.c1{right:-6%}.chip.c2{left:-6%}}
+@keyframes float{50%{transform:translateY(-10px)}}
+
+/* marquee */
+.marquee{background:var(--chrome);overflow:hidden;padding:16px 0;border-block:1px solid rgba(38,17,46,.18)}
+.track{display:flex;width:max-content;animation:run 40s linear infinite}
+.track span{font:italic 500 clamp(22px,3vw,32px)/1 var(--serif);padding:0 24px;white-space:nowrap;display:flex;align-items:center;gap:48px;color:var(--night)}
+.track span::after{content:"✦";font-style:normal;font-size:14px;color:var(--plum)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* services */
+.head{display:grid;gap:16px;margin-bottom:40px}
+@media (min-width:960px){.head{grid-template-columns:1fr auto;align-items:end}}
+.head p{margin:0;color:var(--muted);font-size:14px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.tab{border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:11px 18px;font-weight:600;font-size:14px;cursor:pointer;transition:all .25s}
+.tab:hover{border-color:var(--viol)}
+.tab[aria-selected="true"],.tab[aria-pressed="true"]{background:var(--aub);color:#fff;border-color:var(--aub)}
+.svc{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
+@media (min-width:960px){.svc{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:56px;align-items:start}}
+.panel{display:none}
+.panel.on{display:block;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.row{display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--line)}
+.row:first-child{border-top:1px solid var(--line)}
+.row .n{flex:1 1 auto;min-width:0}
+.row .n b{display:block;font-weight:600;font-size:16px}
+.row .n small{color:var(--muted);font-size:13.5px}
+.row .p{font:700 23px/1 var(--serif);white-space:nowrap;color:var(--aub)}
+.row .p.soft{font:italic 500 19px/1 var(--serif);color:var(--viol)}
+.svc-photo{position:relative;border-radius:200px 200px var(--r-lg) var(--r-lg);overflow:hidden;aspect-ratio:4/3;background:var(--lav-2);box-shadow:var(--shadow)}
+@media (min-width:960px){.svc-photo{aspect-ratio:4/5;position:sticky;top:96px}}
+.svc-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .7s, transform 1.2s}
+.svc-photo img.on{opacity:1;transform:none}
+.note{margin-top:22px;font-size:13px;color:var(--muted)}
+.svc .btn{margin-top:24px}
+
+/* palette */
+.pal{background:radial-gradient(70% 60% at 100% 0%,rgba(142,86,214,.38),transparent 70%),linear-gradient(180deg,#2E1239,#1B0A24)}
+.pal-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.pal-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:44px;align-items:start}}
+.big450{font:700 clamp(64px,13vw,150px)/.9 var(--serif);display:inline-block;padding-bottom:.06em}
+.pal .head{margin-bottom:34px}
+.glass{background:rgba(255,255,255,.06);border:1px solid rgba(205,182,242,.22);border-radius:var(--r-lg);padding:clamp(14px,3vw,26px)}
+.swatches{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+@media (min-width:640px){.swatches{grid-template-columns:repeat(12,minmax(0,1fr))}}
+.sw{aspect-ratio:1;border-radius:50%;border:1px solid rgba(255,255,255,.28);padding:0;cursor:pointer;transition:transform .25s, box-shadow .25s;box-shadow:inset 0 -4px 8px rgba(0,0,0,.18),inset 0 3px 5px rgba(255,255,255,.28)}
+.sw:hover{transform:scale(1.14)}
+.sw[aria-pressed="true"]{outline:2px solid #fff;outline-offset:2px;transform:scale(1.1)}
+.sw:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.prev{text-align:center}
+.hand{--c:#9B7ED0;display:flex;align-items:flex-end;justify-content:center;gap:clamp(6px,2vw,12px);padding:30px 0 6px;min-height:200px}
+.nail{width:clamp(38px,11vw,54px);background:var(--c);border-radius:999px 999px 14px 14px / 64% 64% 14px 14px;position:relative;box-shadow:inset 0 -10px 16px rgba(0,0,0,.18),0 14px 26px -10px rgba(0,0,0,.7);transition:background .35s}
+.nail::after{content:"";position:absolute;left:14%;top:10%;width:30%;height:56%;border-radius:999px;background:linear-gradient(180deg,rgba(255,255,255,.65),rgba(255,255,255,0));transform:rotate(8deg)}
+.nail:nth-child(1){height:clamp(66px,19vw,88px);transform:rotate(-15deg) translateY(12px)}
+.nail:nth-child(2){height:clamp(88px,26vw,116px);transform:rotate(-7deg)}
+.nail:nth-child(3){height:clamp(98px,29vw,130px)}
+.nail:nth-child(4){height:clamp(90px,26vw,118px);transform:rotate(7deg)}
+.nail:nth-child(5){height:clamp(70px,20vw,92px);transform:rotate(16deg) translateY(14px)}
+.prev p{margin:14px 0 18px;font-size:13.5px;color:#CDBFDA}
+.four{margin-top:16px;border-radius:var(--r-lg);padding:2px;background:var(--chrome)}
+.four>div{background:var(--aub);border-radius:calc(var(--r-lg) - 2px);padding:22px;display:grid;gap:12px}
+.four .ic{display:flex}
+.four .ic span{width:38px;height:38px;border-radius:50%;border:2px solid var(--lav);background:rgba(205,182,242,.18)}
+.four .ic span+span{margin-left:-12px;background:rgba(255,255,255,.14)}
+.four h3{font-size:26px;color:#fff}
+.four p{margin:0;color:#CDBFDA;font-size:14.5px}
+.four .price{font:italic 500 22px/1 var(--serif);color:var(--lav)}
+
+/* gallery */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.grid{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+@media (min-width:760px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}}
+.gi{position:relative;border-radius:200px 200px var(--r-md) var(--r-md);overflow:hidden;aspect-ratio:4/3;background:var(--lav-2);cursor:zoom-in;border:0;padding:0;transition:opacity .4s, transform .4s}
+@media (min-width:760px){.gi{aspect-ratio:3/4}}
+@media (max-width:759px){.gi{border-radius:var(--r-lg)}}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.07)}
+.gi span{position:absolute;left:12px;right:12px;bottom:12px;background:rgba(27,10,36,.78);color:#fff;font-size:12.5px;font-weight:500;line-height:1.35;padding:7px 12px;border-radius:14px;text-align:left}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,1000px);max-height:92vh;color:#fff;overflow:visible}
+.lb::backdrop{background:rgba(20,6,28,.88)}
+.lb img{max-height:78vh;width:auto;margin:auto;border-radius:18px}
+.lb p{margin:12px 0 0;text-align:center;font-size:14px}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:#fff;color:var(--night);font-size:22px;cursor:pointer}
+
+/* praise */
+.praise-s{background:linear-gradient(180deg,var(--mist),var(--lav-2))}
+.praise{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pr-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-lg);padding:30px;position:relative;overflow:hidden;box-shadow:0 18px 40px -28px rgba(46,18,57,.4)}
+.pr-card .num{font:italic 500 78px/1 var(--serif);color:var(--lav);position:absolute;right:20px;top:6px}
+.pr-card h3{font-size:28px;margin:48px 0 12px;position:relative}
+.pr-card p{margin:0;color:#4B3A56;position:relative}
+.score{display:flex;flex-wrap:wrap;gap:14px;margin-top:22px}
+.score a{display:flex;align-items:center;gap:14px;background:var(--aub);color:#fff;border-radius:var(--r-md);padding:16px 22px;text-decoration:none;flex:1 1 260px}
+.score strong{font:700 46px/1 var(--serif)}
+.score span{font-size:13.5px;color:#CDBFDA}
+.score span b{color:#fff;display:block}
+
+/* studio */
+.studio-g{display:grid;grid-template-columns:minmax(0,1fr);gap:36px}
+@media (min-width:960px){.studio-g{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:60px;align-items:center}}
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.tile{border:1px solid rgba(205,182,242,.25);border-radius:var(--r-md);padding:22px 18px;background:rgba(255,255,255,.05)}
+.tile b{display:block;font:700 clamp(32px,6vw,46px)/1 var(--serif);margin-bottom:8px}
+.tile small{color:#CDBFDA;font-size:13.5px;line-height:1.4;display:block}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.fact{display:inline-flex;align-items:center;gap:8px;background:rgba(205,182,242,.12);border:1px solid rgba(205,182,242,.28);border-radius:99px;padding:9px 15px;font-size:14px;font-weight:500;color:#F3EBFB}
+.fact::before{content:"✦";color:var(--lav);font-size:11px}
+.master{margin-top:26px;display:flex;gap:14px;align-items:center;border-top:1px solid rgba(205,182,242,.22);padding-top:22px}
+.master .av{width:52px;height:52px;border-radius:50%;background:var(--chrome);display:grid;place-items:center;font:700 22px/1 var(--serif);color:var(--night);flex:none}
+.master b{display:block;font-size:17px}
+.master small{color:#CDBFDA;font-size:13.5px}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start}
+.ci small{display:block;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ci p,.ci a{margin:0;font-size:18px;font-weight:500;text-decoration:none}
+.ci a.big{font:700 34px/1.1 var(--serif);color:var(--aub)}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:10px 16px;font-size:14px;font-weight:600;text-decoration:none;transition:background .25s,color .25s}
+.socials a:hover{background:var(--aub);color:#fff}
+.map{border-radius:var(--r-lg);overflow:hidden;min-height:380px;background:var(--lav-2);border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* final */
+.final{text-align:center;color:#F3EBFB;background:radial-gradient(90% 90% at 50% 0%,rgba(142,86,214,.5),transparent 70%),linear-gradient(180deg,#34144A,#1B0A24)}
+.final .eyebrow{color:var(--lav)}
+.final h2{font-size:clamp(36px,7vw,78px);max-width:16ch;margin:18px auto}
+.final h2 em{color:var(--lav)}
+.final .lead{margin:0 auto;color:#D8CAE6}
+.final .ctas{justify-content:center;margin-top:30px}
+footer{padding:36px 0 120px;font-size:13px;color:#BBAACB;background:var(--night);border-top:1px solid rgba(205,182,242,.18)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer span{max-width:62ch}
+footer a{color:var(--lav)}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.3fr);gap:8px;padding:8px;background:rgba(27,10,36,.94);border:1px solid rgba(205,182,242,.28);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:22px;box-shadow:0 18px 40px -12px rgba(0,0,0,.55);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:15px;color:#fff;text-decoration:none;font-size:11.5px;font-weight:600}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--lav);color:var(--night);font-size:14px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта для студии Goodлак. Данные из открытых источников (2ГИС / DIKIDI) на 24.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Goodлак — наверх"><i aria-hidden="true">✦</i><b class="chrome-t">Good<span>лак</span></b></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#services">Услуги и цены</a>
+      <a href="#palette">Палитра</a>
+      <a href="#works">Работы</a>
+      <a href="#praise">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm chrome" href="https://dikidi.ru/1790353" target="_blank" rel="noopener">Записаться онлайн</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#services">Услуги и цены</a>
+  <a href="#palette">Палитра 450+</a>
+  <a href="#works">Работы</a>
+  <a href="#praise">Отзывы</a>
+  <a href="#studio">О студии</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="status rv" id="status"><i></i><span>Ежедневно 09:00–22:00</span></span>
+      <h1 class="rv d1"><span class="pre">Студия маникюра и педикюра</span><span class="name chrome-t">Goodлак</span></h1>
+      <p class="lead rv d2">Уютная студия в центре Выборга. Палитра более 450 цветов, дизайны, стерильность и чай с кофе «с вкусняшками».</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Выборг, Ленинградское шоссе, 21А, 1 этаж · центр города, напротив роддома</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn chrome" href="tel:+79319511231"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+        <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~60.710239%2C28.761133&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+        <a class="btn lav" href="https://dikidi.ru/1790353" target="_blank" rel="noopener">Записаться</a>
+      </div>
+      <div class="ratings rv d3">
+        <div class="rate"><strong>5.0</strong><span><b class="stars">★★★★★</b>DIKIDI · 26 оценок</span></div>
+      </div>
+    </div>
+    <div class="mirror rv d2">
+      <div class="orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="ring"><div><img src="img/hero.jpg" alt="Рабочее место мастера маникюра у окна в студии Goodлак" width="1024" height="768" fetchpriority="high"></div></div>
+      <div class="chip c2">Палитра<b>450+ цветов</b></div>
+      <div class="chip c1">Комбинированный маникюр<b>1&nbsp;200&nbsp;₽</b></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Маникюр</span><span>Педикюр</span><span>В 4 руки</span><span>Палитра 450+</span><span>Дизайны</span><span>Французский маникюр</span><span>Втирка</span><span>Наращивание</span>
+  <span>Маникюр</span><span>Педикюр</span><span>В 4 руки</span><span>Палитра 450+</span><span>Дизайны</span><span>Французский маникюр</span><span>Втирка</span><span>Наращивание</span>
+</div></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Прайс</span><h2 class="rv d1" style="margin-top:14px">Услуги <em>и цены</em></h2></div>
+      <p class="rv d2">Цены из прайса студии в DIKIDI на 24.10.2026</p>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Категории услуг">
+      <button class="tab" role="tab" aria-selected="true" data-tab="man" data-img="nails-1">Маникюр</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="rem" data-img="nails-2">Снятие и уход</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="dec" data-img="nails-1">Декор</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="ped" data-img="hero">Педикюр и 4 руки</button>
+    </div>
+    <div class="svc">
+      <div>
+        <div class="panel on" id="p-man" role="tabpanel">
+          <div class="row"><div class="n"><b>Комбинированный маникюр</b></div><div class="p">1&nbsp;200&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Комбинированный маникюр + снятие + гель-лак</b></div><div class="p">2&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Маникюр с покрытием гель-лак</b><small>без снятия</small></div><div class="p">2&nbsp;300&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Снятие старого материала + френч</b></div><div class="p">3&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Наращивание</b></div><div class="p">5&nbsp;000&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-rem" role="tabpanel">
+          <div class="row"><div class="n"><b>Снятие гель-лака</b></div><div class="p">500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Укрепление, ремонт, поднятие «клюющих» ногтей</b></div><div class="p">100&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-dec" role="tabpanel">
+          <div class="row"><div class="n"><b>Французский маникюр, втирка</b></div><div class="p">+500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Дизайн</b></div><div class="p">100&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-ped" role="tabpanel">
+          <div class="row"><div class="n"><b>Маникюр / педикюр</b><small>из описания студии на DIKIDI</small></div><div class="p">от&nbsp;1&nbsp;900&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Маникюр и педикюр в 4 руки</b></div><div class="p soft">по записи</div></div>
+        </div>
+        <p class="note">Источник цен — DIKIDI, 24.10.2026. Актуальный прайс и свободное время — в онлайн-записи.</p>
+        <a class="btn" href="https://dikidi.ru/1790353" target="_blank" rel="noopener">Записаться онлайн</a>
+      </div>
+      <div class="svc-photo" aria-hidden="true">
+        <img src="img/nails-1.jpg" alt="" data-k="nails-1" class="on" loading="lazy" width="1024" height="768">
+        <img src="img/nails-2.jpg" alt="" data-k="nails-2" loading="lazy" width="1024" height="768">
+        <img src="img/hero.jpg" alt="" data-k="hero" loading="lazy" width="1024" height="768">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PALETTE -->
+<section id="palette" class="dark pal">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="eyebrow rv">Фишка студии</span>
+        <h2 class="rv d1" style="margin-top:14px">Палитра <em class="chrome-t big450" style="font-style:normal">450+</em></h2>
+      </div>
+      <p class="rv d2" style="color:#CDBFDA;max-width:44ch">В студии — более 450 цветов. Нажмите на кружок и посмотрите, как оттенок ляжет на ноготки. Это декоративная палитра: оттенки на экране условны.</p>
+    </div>
+    <div class="pal-grid">
+      <div class="glass rv"><div class="swatches" id="sw" role="group" aria-label="Декоративная палитра оттенков"></div></div>
+      <div>
+        <div class="glass prev rv d1">
+          <div class="hand" id="hand" aria-hidden="true"><span class="nail"></span><span class="nail"></span><span class="nail"></span><span class="nail"></span><span class="nail"></span></div>
+          <p>Нажмите на кружок: ногти на экране перекрасятся. Живую палитру смотрите в студии.</p>
+          <button class="btn lav sm" type="button" id="rand">Случайный оттенок</button>
+        </div>
+        <div class="four rv d2"><div>
+          <div class="ic" aria-hidden="true"><span></span><span></span></div>
+          <h3>Маникюр и педикюр в&nbsp;4&nbsp;руки</h3>
+          <p>Услуга из описания студии.</p>
+          <span class="price">Стоимость — по записи</span>
+          <a class="btn ghost sm" href="https://dikidi.ru/1790353" target="_blank" rel="noopener">Записаться</a>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section id="works">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Портфолио</span><h2 class="rv d1" style="margin-top:14px">Работы <em>и студия</em></h2></div>
+      <p class="rv d2">Фото из карточки студии в 2ГИС</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр фото">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="works">Маникюр</button>
+      <button class="tab" aria-pressed="false" data-f="studio">Студия</button>
+    </div>
+    <div class="grid" id="grid">
+      <button class="gi rv" data-c="works"><img src="img/nails-1.jpg" alt="Длинные красные ногти с металлическим декором" loading="lazy" width="1024" height="768"><span>Длинные красные ногти с металлическим декором</span></button>
+      <button class="gi rv d1" data-c="works"><img src="img/nails-2.jpg" alt="Нюдовый маникюр с серебром" loading="lazy" width="1024" height="768"><span>Нюд с серебром</span></button>
+      <button class="gi rv d2" data-c="studio"><img src="img/hero.jpg" alt="Рабочее место мастера у окна" loading="lazy" width="1024" height="768"><span>Рабочее место у окна</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""><p id="lbCap"></p></dialog>
+
+<!-- PRAISE -->
+<section id="praise" class="praise-s" style="padding-top:clamp(68px,10vw,120px)">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Отзывы</span><h2 class="rv d1" style="margin-top:14px">За что <em>хвалят</em></h2></div>
+      <p class="rv d2">Пересказ отзывов клиентов в DIKIDI</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card rv"><span class="num">01</span><h3>Безупречный маникюр</h3><p>Работу мастера Элины называют образцовой и безупречной. Клиентки сравнивали студию с салонами разного уровня и выбирали её.</p></article>
+      <article class="pr-card rv d1"><span class="num">02</span><h3>Заботливая атмосфера</h3><p>Гостям предлагают кофе и угощение, а время в кресле пролетает незаметно. Здесь хочется остаться подольше.</p></article>
+      <article class="pr-card rv d2"><span class="num">03</span><h3>Любимый мастер</h3><p>Постоянные клиентки называют Элину лучшим мастером и приходят к ней снова.</p></article>
+    </div>
+    <div class="score rv">
+      <a href="https://dikidi.ru/1790353" target="_blank" rel="noopener"><strong>5.0</strong><span><b>DIKIDI</b>26 оценок</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- STUDIO -->
+<section id="studio" class="dark">
+  <div class="wrap studio-g">
+    <div>
+      <span class="eyebrow rv">О студии</span>
+      <h2 class="rv d1" style="margin:14px 0 20px">Уютная студия <em>в центре Выборга</em></h2>
+      <p class="lead rv d2">Ленинградское шоссе, 21А, 1 этаж — центр города, напротив роддома. Маникюр, педикюр, дизайны и металлический декор.</p>
+      <div class="facts rv d2">
+        <span class="fact">Стерильно</span>
+        <span class="fact">Опытные специалисты</span>
+        <span class="fact">Дизайны</span>
+        <span class="fact">Чай и кофе «с вкусняшками»</span>
+      </div>
+      <div class="master rv d3">
+        <div class="av" aria-hidden="true">Э</div>
+        <div><b>Элина Кулагина</b><small>Топ-мастер (DIKIDI)</small></div>
+      </div>
+    </div>
+    <div class="tiles">
+      <div class="tile rv"><b class="chrome-t">450+</b><small>цветов в палитре</small></div>
+      <div class="tile rv d1"><b class="chrome-t">4 руки</b><small>маникюр и педикюр</small></div>
+      <div class="tile rv d2"><b class="chrome-t">09–22</b><small>ежедневно</small></div>
+      <div class="tile rv d3"><b class="chrome-t">1 этаж</b><small>Ленинградское шоссе, 21А</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1" style="margin-top:14px">Как <em>добраться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Выборг, Ленинградское шоссе, 21А, 1 этаж. Центр города, напротив роддома</p></div>
+        <div class="ci"><small>Часы работы</small><p>Ежедневно, 09:00–22:00</p></div>
+        <div class="ci"><small>Телефон</small><a class="big" href="tel:+79319511231">+7 931 951-12-31</a></div>
+        <div class="ci"><small>Запись и мессенджеры</small>
+          <div class="socials">
+            <a href="https://dikidi.ru/1790353" target="_blank" rel="noopener">Онлайн-запись DIKIDI</a>
+            <a href="https://wa.me/79319511231?text=Здравствуйте!%20Хочу%20записаться%20на%20маникюр%20в%20студию%20Goodлак." target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://t.me/+79319511231" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://2gis.ru/spb/firm/70000001065375460" target="_blank" rel="noopener">2ГИС</a>
+          </div>
+        </div>
+        <div class="ctas"><a class="btn ghost" href="https://yandex.ru/maps/?rtext=~60.710239%2C28.761133&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a></div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?ll=28.761133%2C60.710239&z=16&pt=28.761133%2C60.710239%2Cpm2rdm" title="Студия Goodлак на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow rv">Запись</span>
+    <h2 class="rv d1">Записывайтесь на маникюр <em>и приходите на чай</em></h2>
+    <p class="lead rv d2">Выберите оттенок из палитры 450+ — а кофе и угощение в студии найдутся.</p>
+    <div class="ctas rv d3">
+      <a class="btn chrome" href="https://dikidi.ru/1790353" target="_blank" rel="noopener">Записаться онлайн</a>
+      <a class="btn ghost" href="tel:+79319511231">+7 931 951-12-31</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Студия Goodлак — маникюр и педикюр, Выборг</span>
+    <span>Демо-концепт. Данные из открытых источников на 24.10.2026: прайс, описание, рейтинг и отзывы — <a href="https://dikidi.ru/1790353" target="_blank" rel="noopener">DIKIDI</a>; адрес, часы и фото — <a href="https://2gis.ru/spb/firm/70000001065375460" target="_blank" rel="noopener">2ГИС</a>. Страница не индексируется.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79319511231"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+  <a href="https://wa.me/79319511231?text=Здравствуйте!%20Хочу%20записаться%20на%20маникюр%20в%20студию%20Goodлак." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>WhatsApp</a>
+  <a class="main" href="https://dikidi.ru/1790353" target="_blank" rel="noopener">Записаться</a>
+</nav>
+
+<script>
+(() => {
+  // Статус «открыто/закрыто» по московскому времени (ежедневно 09:00–22:00)
+  const st = document.getElementById('status');
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
+  const m = now.getHours() * 60 + now.getMinutes();
+  const open = m >= 9 * 60 && m < 22 * 60;
+  st.classList.toggle('closed', !open);
+  st.querySelector('span').textContent = open ? 'Открыто сейчас · до 22:00' : 'Сейчас закрыто · откроемся в 09:00';
+
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    const y = scrollY;
+    hdr.classList.toggle('scrolled', y > 8);
+    mbar.classList.toggle('show', y > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Вкладки прайса + смена фото
+  const tabs = document.querySelectorAll('[role=tab]');
+  const pics = document.querySelectorAll('.svc-photo img');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === 'p-' + t.dataset.tab));
+    pics.forEach(p => p.classList.toggle('on', p.dataset.k === t.dataset.img));
+  }));
+
+  // Декоративная палитра 450+ (без названий оттенков)
+  const CH1 = 'linear-gradient(135deg,#8D89A2,#F4F2FB 40%,#B6B2C7 62%,#fff)';
+  const CH2 = 'linear-gradient(135deg,#8F6FC8,#E9DEFA 42%,#B79CEB 64%,#fff)';
+  const hues = [345, 2, 20, 36, 50, 95, 160, 190, 215, 245, 272, 305];
+  const rows = [[80, 70], [62, 72], [44, 62], [26, 55]];
+  const fills = [];
+  rows.forEach(([l, s]) => hues.forEach(h => fills.push('hsl(' + h + ',' + s + '%,' + l + '%)')));
+  ['#F4E4DA', '#E8CDBE', '#D5AE9A', '#BE8B78', '#9C6657', '#6F4339', '#F7F4FB', CH1, CH2, '#8D88A3', '#4A4458', '#241A2C'].forEach(f => fills.push(f));
+  const sw = document.getElementById('sw'), hand = document.getElementById('hand');
+  const pick = i => {
+    hand.style.setProperty('--c', fills[i]);
+    sw.querySelectorAll('.sw').forEach((b, k) => b.setAttribute('aria-pressed', k === i));
+  };
+  fills.forEach((f, i) => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'sw'; b.style.background = f;
+    b.setAttribute('aria-label', 'Оттенок ' + (i + 1)); b.setAttribute('aria-pressed', 'false'); b.dataset.i = i;
+    sw.appendChild(b);
+  });
+  sw.addEventListener('click', e => { const b = e.target.closest('.sw'); if (b) pick(+b.dataset.i); });
+  document.getElementById('rand').addEventListener('click', () => pick(Math.floor(Math.random() * fills.length)));
+  pick(22);
+
+  // Фильтр фото и лайтбокс
+  const items = document.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt; lbCap.textContent = img.alt;
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>

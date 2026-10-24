@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Женская сила | Girl Power — студия оформления взгляда в Петергофе</title>
+<meta name="description" content="Перманентный макияж бровей и губ, оформление бровей, наращивание и ламинирование ресниц. Петергоф, Санкт-Петербургский пр., 60 лит. Ю, 3 этаж. Ежедневно 10:00–22:00.">
+<meta name="theme-color" content="#B8132B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Onest:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Onest:wght@400;500;600;700&display=swap"></noscript>
+<style>
+:root{
+  --red:#B8132B; --red-d:#8E0F22; --red-b:#FF5468; --ink:#0E0C0C; --ink-2:#2B2626; --white:#fff;
+  --cream:#F6F1EE; --tint:#FFE9EC; --muted:#6B6262;
+  --display:"Unbounded","Arial Black",Impact,sans-serif;
+  --sans:"Onest",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--white);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+body.menu-open{overflow:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+section[id]{scroll-margin-top:66px}
+section{padding:clamp(64px,9vw,112px) 0}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;margin:0;letter-spacing:-.02em;overflow-wrap:break-word}
+h2{font-size:clamp(26px,6.4vw,54px)}
+h2 em,h1 em{font-style:normal;color:var(--red)}
+.dark h2 em{color:var(--red-b)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:700 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.eyebrow::before{content:"";width:12px;height:12px;border-radius:50%;background:currentColor;flex:none}
+.dark .eyebrow{color:var(--red-b)}
+.lead{font-size:clamp(16px,1.6vw,19px);max-width:56ch}
+
+/* demo bar */
+.demo{background:var(--cream);color:var(--ink);font-size:12.5px;line-height:1.4;padding:9px 0;border-bottom:2px solid var(--ink)}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{background:var(--ink);color:#fff;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:11px;border-radius:99px;padding:4px 9px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:#fff;border-bottom:2px solid var(--ink)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.logo svg{width:36px;height:36px;flex:none}
+.logo span{display:flex;flex-direction:column;gap:3px;min-width:0}
+.logo b{font:700 13px/1 var(--display);letter-spacing:.02em;text-transform:uppercase;white-space:nowrap}
+.logo small{font:600 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--red)}
+.nav{display:none;gap:26px}
+.nav a{text-decoration:none;font-weight:600;font-size:14.5px;transition:color .2s}
+.nav a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:99px;border:2px solid var(--ink);background:var(--ink);color:#fff;font:700 15px/1.1 var(--sans);text-decoration:none;cursor:pointer;box-shadow:4px 4px 0 var(--ink);transition:transform .2s, box-shadow .2s, background .2s, color .2s;white-space:nowrap}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.red{background:var(--red);color:#fff}
+.btn.white{background:#fff;color:var(--ink)}
+.btn.line{background:transparent;color:var(--ink)}
+.btn.sm{min-height:44px;padding:0 20px;font-size:14px}
+.hdr .btn{display:none}
+.burger{width:46px;height:46px;border-radius:50%;border:2px solid var(--ink);background:#fff;display:grid;place-items:center;cursor:pointer;flex:none}
+.burger span{display:block;width:18px;height:2px;background:var(--ink);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--ink);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--ink);color:#fff;padding:108px 24px 40px;display:flex;flex-direction:column;gap:2px;opacity:0;pointer-events:none;transition:opacity .3s;overflow-y:auto}
+.mnav a{font:700 clamp(20px,6.4vw,28px)/1.2 var(--display);text-decoration:none;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.2)}
+.mnav a:hover{color:var(--red-b)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{background:var(--red);color:#fff;position:relative;overflow:hidden;padding:clamp(32px,6vw,72px) 0 clamp(60px,8vw,100px);border-bottom:2px solid var(--ink)}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;border:2px solid rgba(255,255,255,.22);pointer-events:none}
+.hero::before{width:90vmin;height:90vmin;right:-28vmin;top:-30vmin}
+.hero::after{width:56vmin;height:56vmin;left:-22vmin;bottom:-26vmin}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr);gap:48px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px}}
+.status{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--ink);border:2px solid var(--ink);border-radius:99px;padding:8px 14px 8px 12px;font-size:13.5px;font-weight:700;box-shadow:3px 3px 0 var(--ink)}
+.status i{width:10px;height:10px;border-radius:50%;background:#1FA14B;box-shadow:0 0 0 0 rgba(31,161,75,.5);animation:pulse 2s infinite;flex:none}
+.status.closed i{background:var(--red);animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(31,161,75,0)}100%{box-shadow:0 0 0 0 rgba(31,161,75,0)}}
+.hero h1{font-weight:900;font-size:clamp(40px,12.5vw,104px);line-height:.98;letter-spacing:-.03em;margin:26px 0 24px;color:#fff}
+@media (min-width:960px){.hero h1{font-size:clamp(48px,6vw,92px)}}
+.hero h1 .hl{display:inline-block;background:var(--ink);color:#fff;padding:.04em .22em .1em;border-radius:.2em;transform:rotate(-2.5deg);margin-top:.1em}
+.hero .lead{margin:0 0 22px;color:#fff;opacity:.95}
+.place{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;margin-bottom:28px}
+.place svg{width:18px;height:18px;flex:none;margin-top:3px}
+.ctas{display:flex;flex-wrap:wrap;gap:14px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.ratings{display:flex;flex-wrap:wrap;gap:10px 12px;margin-top:34px}
+.rate{display:flex;align-items:center;gap:12px;background:var(--ink);color:#fff;border-radius:18px;padding:10px 18px 10px 14px}
+.rate strong{font:700 26px/1 var(--display)}
+.rate span{font-size:12.5px;line-height:1.35;color:#E9E1E1}
+.rate span b{display:block;color:#fff;font-weight:700;font-size:13.5px}
+.rate span b::before{content:"★ ";color:#FFC857}
+
+.mirrors{position:relative;width:100%;max-width:560px;margin-inline:auto;aspect-ratio:1/1}
+.mir{position:absolute;border-radius:50%;overflow:hidden;border:6px solid #fff;box-shadow:10px 12px 0 var(--ink);background:var(--ink-2)}
+.mir img{width:100%;height:100%;object-fit:cover}
+.m1{right:2%;top:0;width:80%;aspect-ratio:1}
+.m2{left:0;bottom:4%;width:44%;aspect-ratio:1;z-index:2}
+.badge{position:absolute;left:3%;top:2%;width:27%;aspect-ratio:1;border-radius:50%;background:var(--ink);border:3px solid #fff;z-index:3;display:grid;place-items:center}
+.badge svg{width:100%;height:100%;animation:spin 24s linear infinite}
+.badge text{font:700 10px var(--display);fill:#fff;letter-spacing:.04em}
+.badge::after{content:"✦";position:absolute;color:var(--red-b);font-size:clamp(14px,3.4vw,24px);line-height:1}
+@keyframes spin{to{transform:rotate(360deg)}}
+.chip{position:absolute;right:0;bottom:2%;z-index:4;max-width:58%;background:#fff;color:var(--ink);border:2px solid var(--ink);border-radius:18px;padding:10px 14px;box-shadow:4px 4px 0 var(--ink);font-size:12.5px;line-height:1.3;animation:float 6s ease-in-out infinite}
+.chip b{display:block;font:700 clamp(15px,4.4vw,19px)/1.15 var(--display);margin-top:3px;white-space:nowrap}
+@keyframes float{50%{transform:translateY(-8px)}}
+
+/* marquee */
+.marquee{background:var(--ink);color:#fff;overflow:hidden;padding:16px 0;border-bottom:2px solid var(--ink)}
+.track{display:flex;width:max-content;animation:run 36s linear infinite}
+.track span{font:700 clamp(16px,2.4vw,22px)/1 var(--display);text-transform:uppercase;padding:0 22px;white-space:nowrap;display:flex;align-items:center;gap:44px}
+.track span::after{content:"✦";font-size:.8em;color:var(--red-b)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* head + tabs */
+.head{display:grid;gap:16px;margin-bottom:40px}
+.head h2{margin-top:14px}
+@media (min-width:960px){.head{grid-template-columns:minmax(0,1fr) auto;align-items:end}}
+.head p{margin:0;color:var(--muted);font-size:14px;max-width:44ch}
+.dark .head p{color:#CFC6C6}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.tab{border:2px solid var(--ink);background:#fff;border-radius:99px;padding:11px 18px;font:700 14px/1.2 var(--sans);cursor:pointer;transition:background .2s,color .2s;text-align:center;max-width:100%}
+.tab:hover{background:var(--tint)}
+.tab[aria-selected="true"],.tab[aria-pressed="true"]{background:var(--ink);color:#fff}
+
+/* services */
+.svc{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
+@media (min-width:960px){.svc{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:64px;align-items:start}}
+.panel{display:none}
+.panel.on{display:block;animation:fade .45s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.row{display:flex;align-items:baseline;gap:14px;padding:16px 0;border-bottom:2px solid var(--ink)}
+.row:first-child{border-top:2px solid var(--ink)}
+.row .n{flex:1 1 auto;min-width:0}
+.row .n b{font-weight:600;font-size:16px;overflow-wrap:break-word}
+.row .n small{display:block;color:var(--muted);font-size:13.5px}
+.row .p{font:700 clamp(15px,4.4vw,20px)/1.1 var(--display);white-space:nowrap}
+.row.key .n b::after{content:"комплекс";margin-left:8px;font:700 10px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;background:var(--red);color:#fff;padding:4px 8px;border-radius:99px;vertical-align:2px}
+.note{margin:22px 0 0;font-size:13.5px;color:var(--muted)}
+.svc-photo{display:none}
+@media (min-width:960px){.svc-photo{display:block;position:sticky;top:96px}}
+.mirror-photo{position:relative;aspect-ratio:1;border-radius:50%;overflow:hidden;border:8px solid var(--ink);box-shadow:14px 14px 0 var(--red);background:var(--cream)}
+.mirror-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .6s, transform 1s}
+.mirror-photo img.on{opacity:1;transform:none}
+
+/* tool (dark) */
+.dark{background:var(--ink);color:#fff}
+.dark .lead{color:#E3DBDB}
+.tool{border:2px solid rgba(255,255,255,.3);border-radius:32px;padding:clamp(18px,4vw,48px);display:grid;grid-template-columns:minmax(0,1fr);gap:40px}
+@media (min-width:960px){.tool{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px;align-items:center}}
+.grp{margin-top:26px}
+.grp .gl{font:600 12.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#CFC6C6;margin:0 0 12px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{border:2px solid #fff;background:transparent;color:#fff;border-radius:22px;padding:11px 16px;font:600 14px/1.25 var(--sans);cursor:pointer;text-align:center;max-width:100%;transition:background .2s,color .2s,border-color .2s}
+.opt small{display:block;font-weight:500;font-size:12px;opacity:.85}
+.opt:hover{border-color:var(--red-b)}
+.opt[aria-pressed="true"]{background:var(--red-b);border-color:var(--red-b);color:var(--ink)}
+.opt:focus-visible,.tab:focus-visible,.btn:focus-visible{outline:3px solid var(--red-b);outline-offset:3px}
+.res{display:flex;flex-direction:column;align-items:center;gap:22px;text-align:center;min-width:0}
+.mirror{position:relative;width:min(100%,340px);aspect-ratio:1;border-radius:50%;border:6px solid #fff;background:radial-gradient(circle at 32% 26%,#E0374D 0,var(--red) 52%,#6f0a1a 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:13%;box-shadow:10px 12px 0 rgba(255,84,104,.35)}
+.mirror::before{content:"";position:absolute;left:15%;top:13%;width:30%;height:11%;border-radius:50%;background:rgba(255,255,255,.28);transform:rotate(-38deg)}
+.mirror .lbl{font:600 11.5px/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase}
+.mirror .total{font:900 clamp(28px,8.4vw,46px)/1 var(--display);white-space:nowrap}
+.mirror .sub{font-size:13px;line-height:1.3;max-width:20ch}
+.lines{list-style:none;margin:0;padding:0;width:100%;display:grid;gap:8px;text-align:left;font-size:14.5px}
+.lines li{display:flex;justify-content:space-between;gap:14px;border-bottom:1px dashed rgba(255,255,255,.35);padding-bottom:8px}
+.lines li span:last-child{white-space:nowrap;font-weight:700}
+.tnote{margin:0;font-size:13.5px;color:#CFC6C6;text-align:left;width:100%}
+.res .btn{width:100%}
+
+/* gallery */
+#gallery{background:var(--cream)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;grid-auto-flow:dense}
+@media (min-width:760px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}}
+.gi{position:relative;display:block;width:100%;border-radius:20px;overflow:hidden;aspect-ratio:1;background:#E4DBD6;cursor:zoom-in;border:2px solid var(--ink);padding:0;box-shadow:4px 4px 0 var(--ink)}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.07)}
+.gi span{position:absolute;left:10px;bottom:10px;max-width:calc(100% - 20px);background:#fff;border:2px solid var(--ink);font:700 11.5px/1.2 var(--sans);padding:5px 10px;border-radius:99px;text-align:left}
+.gi.wide{grid-column:span 2;aspect-ratio:2/1}
+.gi.rd{border-radius:50%}
+.gi.rd span{left:50%;transform:translateX(-50%);bottom:12%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,1000px);max-height:92vh;overflow:visible}
+.lb::backdrop{background:rgba(14,12,12,.92)}
+.lb img{max-height:76vh;width:auto;max-width:100%;margin:auto;border-radius:20px;border:4px solid #fff}
+.lb p{color:#fff;text-align:center;margin:12px 0 0;font-size:14px}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:2px solid var(--ink);background:#fff;font-size:24px;line-height:1;cursor:pointer}
+
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,1fr);gap:22px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}}
+.pr-card{position:relative;overflow:hidden;border:2px solid var(--ink);border-radius:28px;padding:30px;box-shadow:8px 8px 0 var(--ink);background:#fff}
+.pr-card.k1{background:var(--ink);color:#fff;box-shadow:8px 8px 0 var(--red)}
+.pr-card.k2{background:var(--red);color:#fff}
+.pr-card .num{font:900 64px/1 var(--display);position:absolute;right:20px;top:12px;opacity:.28}
+.pr-card.k3 .num{color:var(--red);opacity:.5}
+.pr-card h3{font-size:clamp(20px,5vw,24px);margin:44px 0 12px;position:relative}
+.pr-card p{margin:0;position:relative}
+.score{display:flex;flex-wrap:wrap;gap:16px;margin-top:40px}
+.score a{display:flex;align-items:center;gap:16px;background:#fff;border:2px solid var(--ink);border-radius:99px;padding:10px 26px 10px 10px;text-decoration:none;flex:1 1 280px;box-shadow:4px 4px 0 var(--ink);min-width:0}
+.score strong{flex:none;width:76px;height:76px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font:700 22px/1 var(--display)}
+.score span{font-size:13.5px;color:var(--muted);line-height:1.35;min-width:0}
+.score span b{display:block;color:var(--ink);font-size:15px}
+
+/* studio */
+.collage{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.collage figure{position:relative;margin:0;overflow:hidden;border:2px solid var(--ink);border-radius:24px;aspect-ratio:1;background:var(--cream);box-shadow:4px 4px 0 var(--ink)}
+.collage figure.rd{border-radius:50%}
+.collage figure.big{grid-column:span 2;aspect-ratio:16/10}
+.collage img{width:100%;height:100%;object-fit:cover}
+.collage figcaption{position:absolute;left:10px;bottom:10px;max-width:calc(100% - 20px);background:#fff;border:2px solid var(--ink);border-radius:99px;font:700 11.5px/1.2 var(--sans);padding:5px 10px}
+.collage figure.rd figcaption{left:50%;transform:translateX(-50%);bottom:12%;white-space:nowrap}
+@media (min-width:900px){
+  .collage{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+  .collage figure.big{grid-column:span 2;grid-row:span 2;aspect-ratio:auto;min-height:0}
+}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px}
+.fact{display:inline-flex;align-items:center;gap:8px;background:var(--tint);border:2px solid var(--ink);border-radius:99px;padding:9px 16px;font-size:14px;font-weight:600}
+.fact::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--red);flex:none}
+.dirs{margin-top:34px;border:2px dashed var(--red);border-radius:24px;padding:22px}
+.dirs h3{font-size:clamp(17px,4.4vw,20px);margin-bottom:14px}
+.dirs ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.dirs li{border:2px solid var(--ink);border-radius:99px;padding:7px 14px;font-size:14px;font-weight:600;background:#fff}
+.dirs p{margin:14px 0 0;font-size:13.5px;color:var(--muted)}
+
+/* contacts */
+#contacts{background:var(--cream)}
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start;min-width:0}
+.ci small{display:block;font:700 12px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:8px}
+.ci p,.ci a{margin:0;font-size:18px;font-weight:600;text-decoration:none;overflow-wrap:break-word}
+.ci p span{display:block;font-size:13.5px;font-weight:400;color:var(--muted);margin-top:4px}
+.ci a.big{font:700 clamp(18px,5.6vw,30px)/1.15 var(--display);white-space:nowrap}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{display:inline-flex;align-items:center;border:2px solid var(--ink);background:#fff;border-radius:99px;padding:9px 16px;font-size:14px;font-weight:700;transition:background .2s,color .2s}
+.socials a:hover{background:var(--ink);color:#fff}
+.map{border-radius:28px;overflow:hidden;min-height:400px;background:#E4DBD6;border:2px solid var(--ink);box-shadow:8px 8px 0 var(--ink);min-width:0}
+.map iframe{width:100%;height:100%;min-height:400px;border:0;display:block}
+
+/* final */
+.final{position:relative;overflow:hidden;text-align:center;background:var(--red);color:#fff;border-top:2px solid var(--ink)}
+.final::before,.final::after{content:"";position:absolute;border-radius:50%;border:2px solid rgba(255,255,255,.22);pointer-events:none}
+.final::before{width:70vmin;height:70vmin;left:-22vmin;top:-26vmin}
+.final::after{width:50vmin;height:50vmin;right:-16vmin;bottom:-22vmin}
+.final .wrap{position:relative;z-index:1}
+.final .eyebrow{color:#fff}
+.final h2{font-weight:900;font-size:clamp(30px,8.4vw,76px);max-width:14ch;margin:20px auto}
+.final h2 em{color:var(--ink)}
+.final .lead{margin:0 auto}
+.final .ctas{justify-content:center;margin-top:32px}
+footer{background:var(--ink);color:#CFC6C6;padding:34px 0 120px;font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer span{max-width:70ch}
+footer a{color:#fff}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.3fr);gap:8px;padding:8px;background:rgba(14,12,12,.95);border:2px solid #fff;border-radius:24px;box-shadow:0 18px 40px -12px rgba(0,0,0,.5);transform:translateY(150%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:16px;color:#fff;text-decoration:none;font-size:11.5px;font-weight:600;text-align:center}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--red);flex-direction:row;font-size:14px;font-weight:700;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта студии «Женская сила | Girl Power». Данные из открытых источников (2ГИС и DIKIDI) на 24.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Женская сила | Girl Power — наверх">
+      <svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15" fill="#B8132B" stroke="#0E0C0C" stroke-width="2.5"/><path d="M10.5 14a9 9 0 0 1 6.5-5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/></svg>
+      <span><b>Женская сила</b><small>Girl Power</small></span>
+    </a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#services">Услуги и цены</a>
+      <a href="#tool">Взгляд под ключ</a>
+      <a href="#gallery">Фото</a>
+      <a href="#praise">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm red" href="https://dikidi.ru/1533518" target="_blank" rel="noopener">Записаться</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#services">Услуги и цены</a>
+  <a href="#tool">Взгляд под ключ</a>
+  <a href="#gallery">Фото</a>
+  <a href="#praise">Отзывы</a>
+  <a href="#studio">Студия</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero" style="padding-bottom:clamp(60px,8vw,100px)">
+  <div class="wrap">
+    <div>
+      <span class="status rv" id="status"><i></i><span>Ежедневно 10:00–22:00</span></span>
+      <h1 class="rv d1">Женская <span class="hl">сила</span></h1>
+      <p class="lead rv d2"><strong>Girl Power</strong> — студия оформления взгляда. Перманентный макияж бровей, оформление бровей, ламинирование и наращивание ресниц в месте, которое создавалось с душой и любовью.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Петергоф, Санкт-Петербургский пр., 60 лит. Ю, 3 этаж · Петродворцовый район</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn white" href="tel:+79317084480"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+        <a class="btn" href="https://yandex.ru/maps/?rtext=~59.881841%2C29.894311&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+      </div>
+      <div class="ratings rv d3">
+        <div class="rate"><strong>5.0</strong><span><b>2ГИС</b>11 оценок</span></div>
+        <div class="rate"><strong>5.0</strong><span><b>DIKIDI</b>77 оценок · 3 мастера</span></div>
+      </div>
+    </div>
+    <div class="mirrors rv d2">
+      <div class="mir m1"><img src="img/hero.jpg" alt="Светлая студия с круглыми зеркалами" width="1024" height="768" fetchpriority="high"></div>
+      <div class="mir m2"><img src="img/lashes.jpg" alt="Ресницы крупным планом" width="1024" height="768" loading="lazy"></div>
+      <div class="badge" aria-hidden="true">
+        <svg viewBox="0 0 100 100"><defs><path id="ring" d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0"/></defs><text><textPath href="#ring" textLength="226" lengthAdjust="spacing">GIRL POWER · ЖЕНСКАЯ СИЛА · </textPath></text></svg>
+      </div>
+      <div class="chip">Перманент бровей<b>10&nbsp;000&nbsp;₽</b></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Брови</span><span>Перманент</span><span>Ресницы</span><span>Ламинирование</span><span>Наращивание</span><span>Girl Power</span>
+  <span>Брови</span><span>Перманент</span><span>Ресницы</span><span>Ламинирование</span><span>Наращивание</span><span>Girl Power</span>
+</div></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Прайс</span><h2 class="rv d1">Услуги <em>и цены</em></h2></div>
+      <p class="rv d2">Цены из прайса студии в DIKIDI, 24.10.2026</p>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Категории услуг">
+      <button class="tab" role="tab" aria-selected="true" data-tab="br" data-img="portrait-1">Брови</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="pm" data-img="portrait-2">Перманент</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="ex" data-img="portrait-3">Наращивание</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="lm" data-img="lashes">Ламинирование ресниц</button>
+    </div>
+    <div class="svc">
+      <div>
+        <div class="panel on" id="p-br" role="tabpanel">
+          <div class="row"><div class="n"><b>Коррекция</b></div><div class="p">1&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Оформление с окрашиванием</b></div><div class="p">1&nbsp;900&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Мужское оформление</b></div><div class="p">1&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Комплекс долговременной укладки</b></div><div class="p">2&nbsp;300&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Долговременная укладка без окрашивания</b></div><div class="p">1&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Осветление / цветные брови</b></div><div class="p">2&nbsp;300&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-pm" role="tabpanel">
+          <div class="row"><div class="n"><b>Перманент бровей</b></div><div class="p">10&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Перманент губ</b></div><div class="p">10&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Коррекция перманента</b></div><div class="p">4&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Консультация</b></div><div class="p">1&nbsp;500&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-ex" role="tabpanel">
+          <div class="row"><div class="n"><b>Классика</b></div><div class="p">2&nbsp;200&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>1.5D</b></div><div class="p">2&nbsp;300&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>2D</b></div><div class="p">2&nbsp;400&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>2.5D</b></div><div class="p">2&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>3D</b></div><div class="p">2&nbsp;700&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Коррекция</b></div><div class="p">1&nbsp;650&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Снятие</b></div><div class="p">500&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-lm" role="tabpanel">
+          <div class="row"><div class="n"><b>Ламинирование ресниц</b></div><div class="p">2&nbsp;100&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Ламинирование / вельвет</b></div><div class="p">2&nbsp;300&nbsp;₽</div></div>
+          <div class="row key"><div class="n"><b>Ламинирование + коррекция бровей</b></div><div class="p">3&nbsp;200&nbsp;₽</div></div>
+          <div class="row key"><div class="n"><b>Ламинирование + укладка бровей без окрашивания</b></div><div class="p">3&nbsp;500&nbsp;₽</div></div>
+          <div class="row key"><div class="n"><b>Ламинирование + окрашивание бровей</b></div><div class="p">3&nbsp;900&nbsp;₽</div></div>
+          <div class="row key"><div class="n"><b>Ламинирование + укладка / осветление бровей</b></div><div class="p">4&nbsp;100&nbsp;₽</div></div>
+        </div>
+        <p class="note">Цены указаны как в прайсе DIKIDI. Запись — онлайн в DIKIDI или по телефону.</p>
+      </div>
+      <div class="svc-photo" aria-hidden="true">
+        <div class="mirror-photo">
+          <img src="img/portrait-1.jpg" alt="" data-k="portrait-1" class="on" loading="lazy">
+          <img src="img/portrait-2.jpg" alt="" data-k="portrait-2" loading="lazy">
+          <img src="img/portrait-3.jpg" alt="" data-k="portrait-3" loading="lazy">
+          <img src="img/lashes.jpg" alt="" data-k="lashes" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOL -->
+<section id="tool" class="dark">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Фишка</span><h2 class="rv d1">Взгляд <em>под ключ</em></h2></div>
+      <p class="rv d2">Выберите ресницы и брови — покажем цену готового комплекса из прайса DIKIDI.</p>
+    </div>
+    <div class="tool rv">
+      <div>
+        <div class="grp">
+          <p class="gl" id="gl1">Ресницы</p>
+          <div class="opts" role="group" aria-labelledby="gl1" id="optL">
+            <button type="button" class="opt" aria-pressed="true" data-v="lam">Ламинирование ресниц<small>2&nbsp;100&nbsp;₽</small></button>
+            <button type="button" class="opt" aria-pressed="false" data-v="vel">Ламинирование / вельвет<small>2&nbsp;300&nbsp;₽</small></button>
+          </div>
+        </div>
+        <div class="grp">
+          <p class="gl" id="gl2">Брови</p>
+          <div class="opts" role="group" aria-labelledby="gl2" id="optB">
+            <button type="button" class="opt" aria-pressed="true" data-v="none">Без бровей</button>
+            <button type="button" class="opt" aria-pressed="false" data-v="cor">Коррекция</button>
+            <button type="button" class="opt" aria-pressed="false" data-v="lay">Укладка без окрашивания</button>
+            <button type="button" class="opt" aria-pressed="false" data-v="col">Окрашивание</button>
+            <button type="button" class="opt" aria-pressed="false" data-v="lig">Укладка / осветление</button>
+          </div>
+        </div>
+      </div>
+      <div class="res" aria-live="polite">
+        <div class="mirror">
+          <span class="lbl" id="tLbl">Ресницы</span>
+          <div class="total" id="tTotal">2&nbsp;100&nbsp;₽</div>
+          <span class="sub" id="tSub">Ламинирование ресниц</span>
+        </div>
+        <ul class="lines" id="tLines"></ul>
+        <p class="tnote" id="tNote"></p>
+        <a class="btn red" href="https://dikidi.ru/1533518" target="_blank" rel="noopener">Записаться в DIKIDI</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Фото</span><h2 class="rv d1">Студия <em>и атмосфера</em></h2></div>
+      <p class="rv d2">Фотографии из карточки студии</p>
+    </div>
+    <div class="tabs rv" role="group" aria-label="Фильтр фото">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="studio">Студия</button>
+      <button class="tab" aria-pressed="false" data-f="models">Модели</button>
+      <button class="tab" aria-pressed="false" data-f="details">Детали</button>
+    </div>
+    <div class="grid" id="grid">
+      <button class="gi wide rv" data-c="studio" data-cap="Светлая студия с круглыми зеркалами"><img src="img/hero.jpg" alt="Светлая студия с круглыми зеркалами" width="1024" height="768" loading="lazy"><span>Круглые зеркала</span></button>
+      <button class="gi rd rv d1" data-c="studio" data-cap="Круглые зеркала в студии"><img src="img/mirrors.jpg" alt="Круглые зеркала в студии" width="1024" height="768" loading="lazy"><span>Зеркала</span></button>
+      <button class="gi rv d2" data-c="models" data-cap="Портрет модели"><img src="img/portrait-1.jpg" alt="Портрет модели" width="1024" height="768" loading="lazy"><span>Портрет</span></button>
+      <button class="gi rv" data-c="studio" data-cap="Кресла в студии"><img src="img/lounge.jpg" alt="Кресла в студии" width="1024" height="768" loading="lazy"><span>Кресла</span></button>
+      <button class="gi rd rv d1" data-c="models" data-cap="Ресницы крупным планом"><img src="img/lashes.jpg" alt="Ресницы крупным планом" width="1024" height="768" loading="lazy"><span>Ресницы</span></button>
+      <button class="gi rv d2" data-c="details" data-cap="Тюльпаны в студии"><img src="img/flowers.jpg" alt="Тюльпаны в студии" width="1024" height="768" loading="lazy"><span>Тюльпаны</span></button>
+      <button class="gi rv" data-c="models" data-cap="Портрет модели"><img src="img/portrait-2.jpg" alt="Портрет модели" width="1024" height="768" loading="lazy"><span>Портрет</span></button>
+      <button class="gi wide rv d1" data-c="studio" data-cap="Холл студии"><img src="img/hall.jpg" alt="Холл студии" width="1024" height="768" loading="lazy"><span>Холл</span></button>
+      <button class="gi rd rv d2" data-c="details" data-cap="Надпись на стене студии"><img src="img/wall.jpg" alt="Надпись на стене студии" width="1024" height="768" loading="lazy"><span>Надпись на стене</span></button>
+      <button class="gi rv" data-c="models" data-cap="Портрет модели"><img src="img/portrait-3.jpg" alt="Портрет модели" width="1024" height="768" loading="lazy"><span>Портрет</span></button>
+      <button class="gi rv d1" data-c="details" data-cap="Наклейка «Хорошее место 2026»"><img src="img/award.jpg" alt="Наклейка «Хорошее место 2026»" width="1024" height="768" loading="lazy"><span>Хорошее место 2026</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""><p id="lbCap"></p></dialog>
+
+<!-- PRAISE -->
+<section id="praise">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Отзывы</span><h2 class="rv d1">За что <em>хвалят</em></h2></div>
+      <p class="rv d2">Пересказ отзывов клиентов в DIKIDI и 2ГИС</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card k1 rv"><span class="num">01</span><h3>Перманент по референсу</h3><p>Перманент губ и бровей делают точно по принесённому референсу и подбирают под форму лица.</p></article>
+      <article class="pr-card k2 rv d1"><span class="num">02</span><h3>Стабильный результат</h3><p>Ламинирование бровей и ресниц получается ровным и предсказуемым — многие клиенты ходят на него постоянно.</p></article>
+      <article class="pr-card k3 rv d2"><span class="num">03</span><h3>Интерьер с характером</h3><p>Креативный дизайнерский интерьер и тёплая атмосфера: в отзывах студию называют лучшим местом в Петергофе.</p></article>
+    </div>
+    <div class="score rv">
+      <a href="https://2gis.ru/spb/firm/70000001093774444" target="_blank" rel="noopener"><strong>5.0</strong><span><b>2ГИС</b>11 оценок</span></a>
+      <a href="https://dikidi.ru/1533518" target="_blank" rel="noopener"><strong>5.0</strong><span><b>DIKIDI</b>77 оценок · 3 мастера</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- STUDIO -->
+<section id="studio" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Студия</span><h2 class="rv d1">Место <em>с характером</em></h2></div>
+      <p class="rv d2">По описанию студии, она создавалась с душой и любовью</p>
+    </div>
+    <div class="collage">
+      <figure class="big rv"><img src="img/hall.jpg" alt="Холл студии" width="1024" height="768" loading="lazy"><figcaption>Холл</figcaption></figure>
+      <figure class="rd rv d1"><img src="img/mirrors.jpg" alt="Круглые зеркала в студии" width="1024" height="768" loading="lazy"><figcaption>Зеркала</figcaption></figure>
+      <figure class="rv d2"><img src="img/lounge.jpg" alt="Кресла в студии" width="1024" height="768" loading="lazy"><figcaption>Кресла</figcaption></figure>
+      <figure class="rv"><img src="img/flowers.jpg" alt="Тюльпаны в студии" width="1024" height="768" loading="lazy"><figcaption>Тюльпаны</figcaption></figure>
+      <figure class="rd rv d1"><img src="img/award.jpg" alt="Наклейка «Хорошее место 2026»" width="1024" height="768" loading="lazy"><figcaption>Хорошее место 2026</figcaption></figure>
+    </div>
+    <div class="facts rv">
+      <span class="fact">Петергоф, Петродворцовый район</span>
+      <span class="fact">3 этаж</span>
+      <span class="fact">Ежедневно 10:00–22:00</span>
+      <span class="fact">3 мастера в DIKIDI</span>
+    </div>
+    <div class="dirs rv">
+      <h3>Направления по описанию студии в DIKIDI</h3>
+      <ul>
+        <li>Перманентный макияж бровей</li>
+        <li>Оформление бровей</li>
+        <li>Наращивание ресниц</li>
+        <li>Ламинирование ресниц</li>
+        <li>Татуировка</li>
+        <li>Маникюр</li>
+      </ul>
+      <p>Цен на татуировку и маникюр в прайсе DIKIDI на 24.10.2026 нет — уточняйте по телефону.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1">Как <em>добраться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Петергоф, Санкт-Петербургский пр., 60 лит. Ю, 3 этаж<span>Петродворцовый район. В DIKIDI адрес указан как 60Ф, каб. 305.</span></p></div>
+        <div class="ci"><small>Часы работы</small><p>Ежедневно, 10:00–22:00</p></div>
+        <div class="ci"><small>Телефон</small><a class="big" href="tel:+79317084480">+7 931 708-44-80</a></div>
+        <div class="ci"><small>Запись и соцсети</small>
+          <div class="socials">
+            <a href="https://dikidi.ru/1533518" target="_blank" rel="noopener">Запись в DIKIDI</a>
+            <a href="https://vk.com/brows_girlpower" target="_blank" rel="noopener">ВКонтакте</a>
+            <a href="https://2gis.ru/spb/firm/70000001093774444" target="_blank" rel="noopener">2ГИС</a>
+          </div>
+        </div>
+        <div class="ctas"><a class="btn line" href="https://yandex.ru/maps/?rtext=~59.881841%2C29.894311&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a></div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?ll=29.894311%2C59.881841&z=16&pt=29.894311%2C59.881841%2Cpm2rdm" title="Женская сила | Girl Power на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow rv">Запись</span>
+    <h2 class="rv d1">Ваш взгляд — <em>под ключ</em></h2>
+    <p class="lead rv d2">Выберите услугу в DIKIDI или позвоните — подскажем по бровям, перманенту и ресницам.</p>
+    <div class="ctas rv d3">
+      <a class="btn white" href="https://dikidi.ru/1533518" target="_blank" rel="noopener">Записаться в DIKIDI</a>
+      <a class="btn" href="tel:+79317084480">+7 931 708-44-80</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Женская сила | Girl Power — студия оформления взгляда, Петергоф</span>
+    <span>Демо-концепт. Источники: 2ГИС (рейтинг 5.0, 11 оценок), DIKIDI (прайс на 24.10.2026, рейтинг 5.0, 77 оценок). Данные на 24.10.2026.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79317084480"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+  <a href="https://vk.com/brows_girlpower" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>ВКонтакте</a>
+  <a class="main" href="https://dikidi.ru/1533518" target="_blank" rel="noopener">Записаться</a>
+</nav>
+
+<script>
+(() => {
+  // Статус «открыто/закрыто» по московскому времени (ежедневно 10:00–22:00)
+  const st = document.getElementById('status');
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
+  const m = now.getHours() * 60 + now.getMinutes();
+  const open = m >= 10 * 60 && m < 22 * 60;
+  st.classList.toggle('closed', !open);
+  st.querySelector('span').textContent = open ? 'Открыто сейчас · до 22:00' : 'Сейчас закрыто · откроемся в 10:00';
+
+  // Шапка и мобильная панель
+  const mbar = document.getElementById('mbar');
+  const onScroll = () => mbar.classList.toggle('show', scrollY > 420);
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Вкладки прайса + смена фото
+  const tabs = document.querySelectorAll('[role=tab]');
+  const pics = document.querySelectorAll('.mirror-photo img');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === 'p-' + t.dataset.tab));
+    pics.forEach(p => p.classList.toggle('on', p.dataset.k === t.dataset.img));
+  }));
+
+  // «Взгляд под ключ»: цены только из прайса DIKIDI
+  const NB = ' ';
+  const fmt = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, NB) + NB + '₽';
+  const L = { lam: { n: 'Ламинирование ресниц', p: 2100 }, vel: { n: 'Ламинирование / вельвет', p: 2300 } };
+  const B = {
+    cor: { n: 'коррекция бровей', p: 3200 },
+    lay: { n: 'укладка бровей без окрашивания', p: 3500 },
+    col: { n: 'окрашивание бровей', p: 3900 },
+    lig: { n: 'укладка / осветление бровей', p: 4100 }
+  };
+  let l = 'lam', b = 'none';
+  const $ = id => document.getElementById(id);
+  const render = () => {
+    let total, lbl, sub, lines, note;
+    if (b === 'none') {
+      total = L[l].p; lbl = 'Ресницы'; sub = L[l].n;
+      lines = [[L[l].n, fmt(L[l].p)]];
+      note = 'Добавьте брови — покажем готовый комплекс из прайса.';
+    } else if (l === 'lam') {
+      total = B[b].p; lbl = 'Готовый комплекс'; sub = 'Ламинирование + ' + B[b].n;
+      lines = [['Ламинирование + ' + B[b].n, fmt(total)]];
+      note = 'Цена комплекса — как в прайсе DIKIDI на 24.10.2026.';
+    } else {
+      total = L.vel.p; lbl = 'Ресницы'; sub = 'Вельвет · брови отдельно';
+      lines = [[L.vel.n, fmt(L.vel.p)], ['Брови: ' + B[b].n, 'отдельно']];
+      note = 'Готовых комплексов с вельветом в прайсе нет: брови — отдельной услугой, цены во вкладке «Брови».';
+    }
+    $('tTotal').textContent = fmt(total);
+    $('tLbl').textContent = lbl; $('tSub').textContent = sub; $('tNote').textContent = note;
+    $('tLines').innerHTML = lines.map(x => `<li><span>${x[0]}</span><span>${x[1]}</span></li>`).join('');
+  };
+  const bind = (id, set) => {
+    const btns = document.querySelectorAll('#' + id + ' .opt');
+    btns.forEach(btn => btn.addEventListener('click', () => {
+      btns.forEach(x => x.setAttribute('aria-pressed', x === btn));
+      set(btn.dataset.v); render();
+    }));
+  };
+  bind('optL', v => { l = v; });
+  bind('optB', v => { b = v; });
+  render();
+
+  // Фильтр фото и лайтбокс
+  const items = document.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt; lbCap.textContent = i.dataset.cap || '';
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>

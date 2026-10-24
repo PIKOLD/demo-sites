@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>АУРА — home-студия маникюра и педикюра в Мурино</title>
+<meta name="description" content="АУРА — пространство красоты: уютная home-студия в Мурино. Маникюр и педикюр, Воронцовский бульвар, 21 к2. Рейтинг 5.0, 483 оценки в DIKIDI. Онлайн-запись.">
+<meta name="theme-color" content="#FAF7FF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600&family=Onest:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600&family=Onest:wght@400;500;600;700&display=swap"></noscript>
+<style>
+:root{
+  --bg:#FAF7FF; --ink:#2B2140; --ink-2:#4A4063; --muted:#756B90; --line:rgba(70,45,150,.14);
+  --lav:#B7A4FF; --violet:#6B4DE0; --violet-d:#5638C9; --peach:#FFB79B; --peach-d:#F08A66; --mint:#A8EBD2; --mint-d:#2E9E7B;
+  --grad:linear-gradient(115deg,#5E43D6 0%,#9A52D0 55%,#CF5F86 100%);
+  --r-lg:30px; --r-md:20px; --r-sm:14px;
+  --disp:"Unbounded","Trebuchet MS",system-ui,sans-serif; --sans:"Onest",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1160px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;background:var(--bg)}
+body{margin:0;color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:min(100% - 32px,var(--wrap));margin-inline:auto}
+.eyebrow{display:inline-block;font:600 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--violet)}
+h1,h2,h3{font-family:var(--disp);font-weight:500;line-height:1.12;margin:0}
+h2{font-size:clamp(26px,4.4vw,46px);letter-spacing:-.01em}
+.grad{background:linear-gradient(100deg,#6B4DE0 0%,#B25FD0 52%,#F08A66 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.lead{font-size:clamp(16px,1.7vw,19px);color:var(--ink-2);max-width:50ch;margin:0}
+section{padding:clamp(64px,9vw,116px) 0;position:relative}
+
+/* living background */
+.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.bg i{position:absolute;border-radius:50%;will-change:transform}
+.bg i:nth-child(1){width:74vmax;height:74vmax;left:-28vmax;top:-26vmax;background:radial-gradient(circle,rgba(183,164,255,.6),transparent 64%);animation:d1 28s ease-in-out infinite alternate}
+.bg i:nth-child(2){width:66vmax;height:66vmax;right:-28vmax;top:18vh;background:radial-gradient(circle,rgba(255,183,155,.5),transparent 64%);animation:d2 32s ease-in-out infinite alternate}
+.bg i:nth-child(3){width:70vmax;height:70vmax;left:-6vmax;bottom:-36vmax;background:radial-gradient(circle,rgba(168,235,210,.55),transparent 64%);animation:d3 30s ease-in-out infinite alternate}
+@keyframes d1{to{transform:translate(9vmax,7vmax)}}
+@keyframes d2{to{transform:translate(-8vmax,-6vmax)}}
+@keyframes d3{to{transform:translate(8vmax,-5vmax)}}
+
+/* glass */
+.glass{background:rgba(255,255,255,.6);-webkit-backdrop-filter:blur(18px) saturate(1.5);backdrop-filter:blur(18px) saturate(1.5);border:1px solid rgba(255,255,255,.8);box-shadow:0 22px 50px -24px rgba(80,50,170,.4),inset 0 1px 0 rgba(255,255,255,.9);border-radius:var(--r-lg)}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.glass{background:rgba(255,255,255,.9)}}
+
+/* demo bar */
+.demo{background:var(--ink);color:#E9E3F7;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:#fff;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:11px;border:1px solid rgba(255,255,255,.35);border-radius:99px;padding:3px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(250,247,255,.72);-webkit-backdrop-filter:blur(16px) saturate(1.5);backdrop-filter:blur(16px) saturate(1.5);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:14px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo .mark{width:30px;height:30px;border-radius:50%;background:conic-gradient(from 20deg,#B7A4FF,#FFB79B,#A8EBD2,#B7A4FF);box-shadow:0 0 0 5px rgba(183,164,255,.22),0 0 18px rgba(183,164,255,.7);flex:none}
+.logo b{font:600 19px/1 var(--disp);letter-spacing:.1em}
+.nav{display:none;gap:26px}
+.nav a{text-decoration:none;font-weight:500;font-size:14.5px;color:var(--ink-2);position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;border-radius:2px;background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:99px;border:1px solid transparent;background:var(--ink);color:#fff;font-weight:600;font-size:15px;text-decoration:none;cursor:pointer;transition:transform .25s,box-shadow .25s,background .25s;text-align:center}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.prime{background:var(--grad);box-shadow:0 14px 30px -12px rgba(107,77,224,.7)}
+.btn.prime:hover{box-shadow:0 18px 36px -12px rgba(107,77,224,.85)}
+.btn.soft{background:rgba(255,255,255,.65);color:var(--ink);border-color:rgba(255,255,255,.9);box-shadow:0 10px 26px -16px rgba(80,50,170,.5);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.btn.soft:hover{background:#fff}
+.btn.sm{min-height:42px;padding:0 18px;font-size:14px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.9);background:rgba(255,255,255,.7);display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:18px;height:1.5px;background:var(--ink);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:var(--ink);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:rgba(250,247,255,.97);padding:110px 24px 40px;display:flex;flex-direction:column;gap:4px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:500 24px/1.3 var(--disp);text-decoration:none;padding:12px 0;border-bottom:1px solid var(--line)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{padding:clamp(28px,5vw,64px) 0 clamp(48px,7vw,88px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:40px;align-items:center}
+@media (min-width:960px){.hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px}}
+.pill{display:inline-flex;align-items:center;gap:9px;padding:8px 15px 8px 12px;font-size:13.5px;font-weight:600;border-radius:99px;max-width:100%}
+.pill svg{width:16px;height:16px;color:var(--peach-d);flex:none}
+.hero h1{margin:22px 0 14px;font-weight:600;font-size:clamp(56px,13vw,138px);line-height:.95;letter-spacing:.02em}
+.hero h1 small{display:block;margin-top:14px;font:600 clamp(12px,1.7vw,15px)/1.3 var(--sans);letter-spacing:.28em;text-transform:uppercase;color:var(--ink-2);-webkit-text-fill-color:currentColor}
+.hero .lead{margin:22px 0 22px}
+.place{display:flex;gap:10px;align-items:flex-start;color:var(--ink-2);font-size:14.5px;margin-bottom:26px}
+.place svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--violet)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+
+.orb{position:relative;width:min(100%,460px);aspect-ratio:1;margin:0 auto}
+.orb .halo{position:absolute;inset:-2%;border-radius:50%;background:conic-gradient(from 0deg,#BFAEFF,#FFC4AE,#B5F0DA,#D6C9FF,#FFC4AE,#BFAEFF);filter:blur(22px);opacity:.9;animation:spin 26s linear infinite;will-change:transform}
+.orb .ring{position:absolute;inset:-5%;width:110%;height:110%;animation:spin 60s linear infinite reverse;color:var(--violet);opacity:.5}
+.orb .core{position:absolute;inset:13%;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:14px;gap:6px;background:rgba(255,255,255,.55)}
+.core small{font:600 11px/1.2 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--ink-2)}
+.core .big{font:600 clamp(50px,10vw,84px)/1 var(--disp)}
+.core .stars{color:#E39A4A;letter-spacing:3px;font-size:14px}
+.core .cnt-line{font-weight:600;font-size:15px}
+.core .cnt-line b{font:600 22px/1 var(--disp);margin-right:2px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.chip{position:absolute;z-index:3;padding:11px 15px;border-radius:var(--r-md);font-size:13px;line-height:1.35;font-weight:600;max-width:62%;animation:float 7s ease-in-out infinite}
+.chip b{display:block;font:500 17px/1.15 var(--disp);margin-top:3px}
+.chip.c1{right:0;top:4%}
+.chip.c2{left:0;bottom:4%;animation-delay:-3.5s}
+@media (min-width:960px){.chip.c1{right:-4%}.chip.c2{left:-4%}}
+@keyframes float{50%{transform:translateY(-9px)}}
+
+/* swatches */
+.sw{padding:0 0 clamp(36px,6vw,64px)}
+.swbox{padding:22px 0 20px;overflow:hidden;text-align:center}
+.swbox p{margin:0 0 16px;font:500 clamp(15px,2.2vw,20px)/1.3 var(--disp);padding:0 16px}
+.swtrack{display:flex;gap:14px;width:max-content;animation:run 46s linear infinite}
+.swtrack i{width:34px;height:34px;border-radius:50%;flex:none;background:radial-gradient(circle at 32% 28%,rgba(255,255,255,.85),var(--c) 55%);box-shadow:0 8px 16px -8px var(--c)}
+@keyframes run{to{transform:translateX(calc(-50% - 7px))}}
+
+/* head */
+.head{display:grid;gap:14px;margin-bottom:38px}
+.head h2{margin-top:6px}
+.head p{margin:0;color:var(--muted);font-size:14px}
+@media (min-width:960px){.head{grid-template-columns:1fr auto;align-items:end}}
+
+/* services */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.tab{border:1px solid rgba(255,255,255,.9);background:rgba(255,255,255,.6);border-radius:99px;padding:12px 22px;font-weight:600;font-size:15px;cursor:pointer;transition:all .25s}
+.tab[aria-selected="true"]{background:var(--grad);color:#fff;border-color:transparent;box-shadow:0 12px 26px -12px rgba(107,77,224,.7)}
+.svc{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
+@media (min-width:960px){.svc{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:36px;align-items:start}}
+.plist{padding:10px clamp(16px,3vw,32px)}
+.panel{display:none}
+.panel.on{display:block;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.row{display:flex;align-items:baseline;gap:14px;padding:17px 0;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row .n{flex:1 1 auto;min-width:0;font-weight:500;font-size:16px;overflow-wrap:anywhere}
+.row .n small{display:block;color:var(--muted);font-size:13px;font-weight:400}
+.row .p{font:500 17px/1.2 var(--disp);white-space:nowrap}
+.note{margin:16px 4px 0;font-size:13px;color:var(--muted)}
+.side{padding:28px 24px;text-align:center;display:grid;gap:14px;justify-items:center}
+@media (min-width:960px){.side{position:sticky;top:94px}}
+.side .so{width:150px;height:150px;border-radius:50%;position:relative;display:grid;place-items:center;transition:background .6s,box-shadow .6s;background:radial-gradient(circle at 34% 30%,#fff 0,#E4DBFF 30%,#B7A4FF 70%,#8F78F0 100%);box-shadow:0 0 0 12px rgba(183,164,255,.2),0 0 60px 8px rgba(183,164,255,.65);animation:breath 6s ease-in-out infinite}
+.side[data-t="p"] .so{background:radial-gradient(circle at 34% 30%,#fff 0,#FFE2D6 30%,#FFB79B 70%,#F08A66 100%);box-shadow:0 0 0 12px rgba(255,183,155,.22),0 0 60px 8px rgba(255,183,155,.7)}
+.side .so span{font:500 15px/1.2 var(--disp);color:var(--ink)}
+@keyframes breath{50%{transform:scale(1.06)}}
+.side p{margin:0;color:var(--ink-2);font-size:14px}
+
+/* feature: pedicure levels */
+.deep{background:radial-gradient(90% 70% at 15% 0%,rgba(130,100,255,.45),transparent 60%),radial-gradient(80% 70% at 100% 100%,rgba(255,150,120,.28),transparent 60%),#241A45;color:#F1ECFF;overflow:hidden}
+.deep .eyebrow{color:#C9BAFF}
+.deep .head p{color:#BDB1DE}
+.lvl{display:grid;grid-template-columns:minmax(0,1fr);gap:22px}
+@media (min-width:960px){.lvl{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:36px;align-items:stretch}}
+.picks{display:grid;gap:14px;align-content:start}
+.lv{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;align-items:center;padding:20px;border-radius:var(--r-md);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);cursor:pointer;transition:background .3s,border-color .3s,transform .3s,box-shadow .3s}
+.lv:hover{transform:translateY(-2px)}
+.lv input{position:absolute;opacity:0;pointer-events:none}
+.lv:focus-within{outline:2px solid var(--mint);outline-offset:3px}
+.lv.sel{background:rgba(255,255,255,.17);border-color:rgba(168,235,210,.85);box-shadow:0 0 36px -8px rgba(168,235,210,.55)}
+.dots{display:flex;gap:5px}
+.dots i{width:11px;height:11px;border-radius:50%;background:rgba(255,255,255,.22)}
+.dots i.f{background:linear-gradient(135deg,#B7A4FF,#FFB79B);box-shadow:0 0 10px rgba(183,164,255,.9)}
+.lv .t b{display:block;font:500 17px/1.2 var(--disp)}
+.lv .t small{display:block;margin-top:5px;color:#C7BBE8;font-size:13.5px;line-height:1.45}
+.lv .pr{font:500 19px/1.1 var(--disp);white-space:nowrap}
+@media (max-width:420px){.lv{grid-template-columns:minmax(0,1fr) auto;padding:16px}.lv .dots{grid-column:1/-1}.lv .pr{font-size:17px}}
+.view{padding:30px 24px;text-align:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);box-shadow:0 30px 60px -30px rgba(0,0,0,.6);display:flex;flex-direction:column;align-items:center;gap:6px;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+.aura{position:relative;width:min(100%,280px);aspect-ratio:1;margin:0 auto 18px;animation:breath 7s ease-in-out infinite}
+.aura i{position:absolute;border-radius:50%;opacity:.14;transform:scale(.92);transition:opacity .6s,transform .6s,box-shadow .6s}
+.aura .a3{inset:0;background:radial-gradient(circle,#FFD3BF,#FF9F86);color:rgba(255,159,134,.55)}
+.aura .a2{inset:17%;background:radial-gradient(circle,#E3DAFF,#A58BFF);color:rgba(165,139,255,.6)}
+.aura .a1{inset:34%;background:radial-gradient(circle,#E4FFF5,#7FE0BC);color:rgba(127,224,188,.6)}
+.aura i.on{opacity:.95;transform:none;box-shadow:0 0 46px 4px currentColor}
+.view .lbl{font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#BDB1DE}
+.view .nm{font:500 clamp(20px,3vw,26px)/1.2 var(--disp)}
+.view .tot{font:600 clamp(40px,6vw,58px)/1.1 var(--disp);background:linear-gradient(100deg,#CDBEFF,#FFC4AE,#B5F0DA);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;margin:4px 0}
+.view p{margin:0 0 14px;color:#D4CAEE;font-size:14.5px;max-width:34ch}
+.deep .note{color:#BDB1DE;margin:22px 4px 0}
+.deep .btn.soft{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.3)}
+
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pc{padding:28px 26px 30px;position:relative;overflow:hidden}
+.pc .num{position:absolute;right:20px;top:14px;font:600 54px/1 var(--disp);background:linear-gradient(135deg,#C9B8FF,#FFC4AE);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;opacity:.8}
+.pc h3{font-size:18px;margin:56px 0 12px;position:relative}
+.pc p{margin:0;color:var(--ink-2);position:relative}
+.score{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;margin-top:18px}
+@media (min-width:760px){.score{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.sc{display:flex;align-items:center;gap:16px;padding:20px 24px;text-decoration:none}
+.sc strong{font:600 clamp(38px,6vw,54px)/1 var(--disp)}
+.sc span{font-size:14px;color:var(--muted);line-height:1.4}
+.sc span b{display:block;color:var(--ink);font-weight:600;font-size:15px}
+.sc .stars{color:#E39A4A;letter-spacing:2px;font-size:12px}
+
+/* studio */
+.facts{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+@media (min-width:620px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:960px){.facts{grid-template-columns:repeat(3,minmax(0,1fr))}.facts .w{grid-column:span 2}}
+.ft{padding:26px 24px;position:relative;overflow:hidden;display:grid;gap:12px;align-content:start}
+.ft::before{content:"";position:absolute;width:190px;height:190px;border-radius:50%;right:-60px;top:-70px;background:radial-gradient(circle,var(--g),transparent 68%);opacity:.8}
+.ft svg{width:30px;height:30px;color:var(--violet);position:relative}
+.ft h3{font-size:17px;position:relative}
+.ft p{margin:0;color:var(--ink-2);font-size:14.5px;position:relative}
+.ft:nth-child(1){--g:rgba(183,164,255,.7)}.ft:nth-child(2){--g:rgba(255,183,155,.7)}.ft:nth-child(3){--g:rgba(168,235,210,.8)}.ft:nth-child(4){--g:rgba(183,164,255,.6)}.ft:nth-child(5){--g:rgba(255,183,155,.65)}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:22px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:28px;align-items:stretch}}
+.cinfo{padding:30px 26px;display:grid;gap:22px;align-content:start}
+.ci small{display:block;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ci p,.ci a{margin:0;font-size:18px;font-weight:500;text-decoration:none;overflow-wrap:anywhere}
+.ci a.big{font:500 clamp(22px,3.4vw,30px)/1.2 var(--disp)}
+.ci .sub{display:block;margin-top:4px;font-size:14px;color:var(--muted);font-weight:400}
+.mapcard{position:relative;min-height:380px;overflow:hidden;display:flex;align-items:flex-end;padding:0;background:linear-gradient(160deg,#EDE6FF,#FFEDE4 55%,#E2F8EF)}
+.mapcard svg.mp{position:absolute;inset:0;width:100%;height:100%}
+.pulse{transform-box:fill-box;transform-origin:center;animation:pl 2.6s ease-out infinite}
+.pulse.p2{animation-delay:1.3s}
+@keyframes pl{from{transform:scale(.4);opacity:.8}to{transform:scale(2.6);opacity:0}}
+.maptxt{position:relative;margin:16px;padding:20px;width:calc(100% - 32px);display:grid;gap:12px}
+.maptxt b{font:500 17px/1.3 var(--disp)}
+.maptxt span{color:var(--ink-2);font-size:14.5px}
+.maptxt small{color:var(--muted);font-size:12.5px}
+
+/* final */
+.final{text-align:center;overflow:hidden}
+.final .box{padding:clamp(40px,7vw,84px) clamp(20px,5vw,60px);position:relative;overflow:hidden;background:rgba(255,255,255,.5)}
+.final .box::before{content:"";position:absolute;width:520px;height:520px;left:50%;top:50%;margin:-260px 0 0 -260px;border-radius:50%;background:conic-gradient(from 0deg,rgba(191,174,255,.7),rgba(255,196,174,.7),rgba(181,240,218,.7),rgba(191,174,255,.7));filter:blur(50px);opacity:.7;animation:spin 30s linear infinite;z-index:0}
+.final .box>*{position:relative;z-index:1}
+.final h2{font-size:clamp(28px,5.4vw,58px);max-width:18ch;margin:16px auto}
+.final .lead{margin:0 auto}
+.final .ctas{justify-content:center;margin-top:28px}
+footer{padding:34px 0 120px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer span{max-width:70ch}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:1fr 1fr 1.35fr;gap:8px;padding:8px;background:rgba(43,33,64,.9);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-radius:24px;box-shadow:0 18px 40px -12px rgba(30,15,80,.55);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:16px;color:#fff;text-decoration:none;font-size:11.5px;font-weight:600}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--grad);flex-direction:row;font-size:14px;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+section,header,.hero{overflow-x:clip}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><i></i><i></i><i></i></div>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта для студии «АУРА». Данные из открытой карточки DIKIDI на 24.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="АУРА — наверх"><span class="mark"></span><b>АУРА</b></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#services">Услуги и цены</a>
+      <a href="#pedicure">Педикюр</a>
+      <a href="#praise">Отзывы</a>
+      <a href="#studio">Студия</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm prime" href="https://dikidi.ru/1565306" target="_blank" rel="noopener">Записаться онлайн</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#services">Услуги и цены</a>
+  <a href="#pedicure">Педикюр</a>
+  <a href="#praise">Отзывы</a>
+  <a href="#studio">Студия</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="pill glass rv"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg>3 мастера · онлайн-запись в DIKIDI</span>
+      <h1 class="rv d1"><span class="grad">АУРА</span><small>пространство красоты</small></h1>
+      <p class="lead rv d2">Уютная home-студия с сервисом крупных салонов. Маникюр и педикюр в Мурино.</p>
+      <div class="place rv d2" style="margin-top:20px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Мурино, Воронцовский бульвар, 21&nbsp;к2, парадная&nbsp;4, 5&nbsp;этаж · Всеволожский район, Ленинградская область</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn prime" href="https://dikidi.ru/1565306" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg>Записаться</a>
+        <a class="btn soft" href="tel:+79819899679"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+        <a class="btn soft" href="https://yandex.ru/maps/?rtext=~Мурино,%20Воронцовский%20бульвар,%2021%20к2&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+      </div>
+    </div>
+    <div class="orb rv d2" aria-label="Рейтинг 5.0, 483 оценки в DIKIDI">
+      <div class="halo"></div>
+      <svg class="ring" viewBox="0 0 200 200" fill="none" stroke="currentColor" aria-hidden="true"><circle cx="100" cy="100" r="98" stroke-width=".8" stroke-dasharray="2 7"/><circle cx="100" cy="100" r="90" stroke-width=".5"/></svg>
+      <div class="core glass">
+        <small>Рейтинг DIKIDI</small>
+        <div class="big grad">5.0</div>
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <div class="cnt-line"><b data-count="483">483</b> оценки</div>
+      </div>
+      <div class="chip glass c1">Палитра<b>300+ цветов</b></div>
+      <div class="chip glass c2">Команда мастеров<b>3 мастера</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- SWATCHES -->
+<div class="sw rv">
+  <div class="wrap">
+    <div class="swbox glass">
+      <p>Палитра более 300 цветов</p>
+      <div class="swtrack" id="swtrack" aria-hidden="true"></div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Прайс</span><h2 class="rv d1">Услуги <span class="grad">и цены</span></h2></div>
+      <p class="rv d2">Цены из прайса студии в DIKIDI на 24.10.2026</p>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Категории услуг">
+      <button class="tab" role="tab" aria-selected="true" data-tab="m" data-label="Маникюр">Маникюр</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="p" data-label="Педикюр">Педикюр</button>
+    </div>
+    <div class="svc">
+      <div class="glass plist rv">
+        <div class="panel on" id="p-m" role="tabpanel">
+          <div class="row"><div class="n">Маникюр без покрытия</div><div class="p">1&nbsp;400&nbsp;₽</div></div>
+          <div class="row"><div class="n">Мужской маникюр</div><div class="p">1&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n">Снятие + маникюр + покрытие</div><div class="p">2&nbsp;800&nbsp;₽</div></div>
+          <div class="row"><div class="n">То же + френч</div><div class="p">3&nbsp;200&nbsp;₽</div></div>
+          <div class="row"><div class="n">То же + укрепление</div><div class="p">3&nbsp;300&nbsp;₽</div></div>
+          <div class="row"><div class="n">Наращивание</div><div class="p">4&nbsp;300&nbsp;₽</div></div>
+          <div class="row"><div class="n">Выкладной френч (наращивание)</div><div class="p">6&nbsp;200&nbsp;₽</div></div>
+          <div class="row"><div class="n">Коррекция</div><div class="p">3&nbsp;600&nbsp;₽</div></div>
+          <div class="row"><div class="n">Ремонт ногтя</div><div class="p">400&nbsp;₽</div></div>
+          <div class="row"><div class="n">Снятие</div><div class="p">500&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-p" role="tabpanel">
+          <div class="row"><div class="n">Обработка пальцев</div><div class="p">1&nbsp;600&nbsp;₽</div></div>
+          <div class="row"><div class="n">Пальцы + покрытие</div><div class="p">2&nbsp;300&nbsp;₽</div></div>
+          <div class="row"><div class="n">Педикюр без покрытия</div><div class="p">2&nbsp;600&nbsp;₽</div></div>
+          <div class="row"><div class="n">Мужской педикюр</div><div class="p">2&nbsp;600&nbsp;₽</div></div>
+          <div class="row"><div class="n">Снятие + педикюр + покрытие</div><div class="p">3&nbsp;200&nbsp;₽</div></div>
+          <div class="row"><div class="n">Педикюр, I степень сложности</div><div class="p">3&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n">Педикюр, II степень сложности</div><div class="p">3&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n">Педикюр, III степень сложности</div><div class="p">4&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n">Зачистка онихолизиса</div><div class="p">1&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n">Вросший ноготь</div><div class="p">1&nbsp;500&nbsp;₽</div></div>
+        </div>
+      </div>
+      <aside class="glass side rv d1" id="side" data-t="m">
+        <div class="so"><span id="sideLbl">Маникюр</span></div>
+        <p>Выберите удобное время в онлайн-записи DIKIDI.</p>
+        <a class="btn prime" href="https://dikidi.ru/1565306" target="_blank" rel="noopener">Записаться</a>
+      </aside>
+    </div>
+    <p class="note rv">Три степени сложности педикюра разобраны в блоке ниже.</p>
+  </div>
+</section>
+
+<!-- FEATURE: PEDICURE LEVELS -->
+<section id="pedicure" class="deep">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Педикюр</span><h2 class="rv d1">Степень сложности: <span class="grad" style="background:linear-gradient(100deg,#CDBEFF,#FFC4AE,#B5F0DA);-webkit-background-clip:text;background-clip:text">от&nbsp;I&nbsp;до&nbsp;III</span></h2></div>
+      <p class="rv d2">Выберите ступень — цена и «аура» изменятся</p>
+    </div>
+    <div class="lvl">
+      <div class="picks rv" role="radiogroup" aria-label="Степень сложности педикюра">
+        <label class="lv sel"><input type="radio" name="lv" value="1" checked>
+          <span class="dots" aria-hidden="true"><i class="f"></i><i></i><i></i></span>
+          <span class="t"><b>I степень</b><small>Первая ступень шкалы — самый простой уровень из трёх.</small></span>
+          <span class="pr">3&nbsp;000&nbsp;₽</span></label>
+        <label class="lv"><input type="radio" name="lv" value="2">
+          <span class="dots" aria-hidden="true"><i class="f"></i><i class="f"></i><i></i></span>
+          <span class="t"><b>II степень</b><small>Вторая ступень — средний уровень сложности.</small></span>
+          <span class="pr">3&nbsp;500&nbsp;₽</span></label>
+        <label class="lv"><input type="radio" name="lv" value="3">
+          <span class="dots" aria-hidden="true"><i class="f"></i><i class="f"></i><i class="f"></i></span>
+          <span class="t"><b>III степень</b><small>Третья ступень — самый сложный уровень из трёх.</small></span>
+          <span class="pr">4&nbsp;000&nbsp;₽</span></label>
+      </div>
+      <div class="view rv d1" aria-live="polite">
+        <div class="aura" id="aura" aria-hidden="true"><i class="a3"></i><i class="a2"></i><i class="a1 on"></i></div>
+        <span class="lbl">Выбрано</span>
+        <div class="nm" id="lvName">I степень сложности</div>
+        <div class="tot" id="lvPrice">3&nbsp;000&nbsp;₽</div>
+        <p id="lvText">Чем выше степень, тем сложнее работа мастера и тем выше цена.</p>
+        <a class="btn prime" href="https://dikidi.ru/1565306" target="_blank" rel="noopener">Записаться на педикюр</a>
+      </div>
+    </div>
+    <p class="note rv">Что входит в каждую степень и какая нужна именно вам — уточняйте у мастера при записи. Отдельно в прайсе: зачистка онихолизиса — 1&nbsp;000&nbsp;₽, вросший ноготь — 1&nbsp;500&nbsp;₽.</p>
+  </div>
+</section>
+
+<!-- PRAISE -->
+<section id="praise">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Отзывы</span><h2 class="rv d1">За что <span class="grad">хвалят</span></h2></div>
+      <p class="rv d2">Пересказ отзывов клиенток в DIKIDI</p>
+    </div>
+    <div class="praise">
+      <article class="glass pc rv"><span class="num">01</span><h3>Покрытие держится долго</h3><p>В отзывах отмечают: покрытие служит долго и не подводит.</p></article>
+      <article class="glass pc rv d1"><span class="num">02</span><h3>Качественные материалы</h3><p>Клиентки пишут о качественных материалах и о том, что после процедуры руки выглядят ухоженными.</p></article>
+      <article class="glass pc rv d2"><span class="num">03</span><h3>Постоянные клиентки</h3><p>Оценок много, средняя — высшая, а среди тех, кто их оставил, немало постоянных клиенток.</p></article>
+    </div>
+    <div class="score">
+      <a class="glass sc rv" href="https://dikidi.ru/1565306" target="_blank" rel="noopener"><strong class="grad">5.0</strong><span><b>DIKIDI</b><span class="stars">★★★★★</span><br><b data-count="483" style="display:inline">483</b> оценки</span></a>
+      <div class="glass sc rv d1"><strong class="grad">3</strong><span><b>мастера</b>в команде студии по данным DIKIDI</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- STUDIO -->
+<section id="studio" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Студия</span><h2 class="rv d1">Дом, где <span class="grad">красиво</span></h2></div>
+      <p class="rv d2">Из описания студии в DIKIDI</p>
+    </div>
+    <div class="facts">
+      <article class="glass ft w rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><h3>Уютная home-студия</h3><p>Пространство красоты с домашней атмосферой — парадная&nbsp;4, 5&nbsp;этаж.</p></article>
+      <article class="glass ft rv d1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 16l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></svg><h3>Сервис крупных салонов</h3><p>Уровень обслуживания, как в больших салонах.</p></article>
+      <article class="glass ft rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.5 3-5.5 6-5.5s6 2 6 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.5c3 0 4.5 1.8 4.5 5"/></svg><h3>Команда топ-мастеров</h3><p>В студии работают 3&nbsp;мастера.</p></article>
+      <article class="glass ft rv d1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></svg><h3>Оборудование и стерилизация</h3><p>Профессиональное оборудование и средства стерилизации.</p></article>
+      <article class="glass ft rv d2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3a9 9 0 1 0 0 18c1.4 0 2-1 1.6-2-.5-1.2.1-2.5 1.6-2.5H17a4 4 0 0 0 4-4C21 6.5 17 3 12 3z"/><circle cx="7.5" cy="11" r="1.2"/><circle cx="10.5" cy="7" r="1.2"/><circle cx="15.5" cy="7.5" r="1.2"/></svg><h3>Палитра более 300 цветов</h3><p>Большой выбор оттенков для покрытия.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1">Как <span class="grad">найти нас</span></h2></div></div>
+    <div class="ct">
+      <div class="glass cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Мурино, Воронцовский бульвар, 21&nbsp;к2, парадная&nbsp;4, 5&nbsp;этаж<span class="sub">Всеволожский район, Ленинградская область</span></p></div>
+        <div class="ci"><small>Телефон</small><a class="big" href="tel:+79819899679">+7&nbsp;981&nbsp;989-96-79</a></div>
+        <div class="ci"><small>Онлайн-запись</small><a href="https://dikidi.ru/1565306" target="_blank" rel="noopener">dikidi.ru/1565306</a></div>
+        <div class="ctas">
+          <a class="btn prime" href="https://dikidi.ru/1565306" target="_blank" rel="noopener">Записаться</a>
+          <a class="btn soft" href="https://yandex.ru/maps/?rtext=~Мурино,%20Воронцовский%20бульвар,%2021%20к2&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a>
+        </div>
+      </div>
+      <div class="glass mapcard rv d1">
+        <svg class="mp" viewBox="0 0 400 380" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none">
+          <circle cx="70" cy="300" r="70" fill="rgba(168,235,210,.55)"/>
+          <circle cx="350" cy="60" r="56" fill="rgba(255,183,155,.4)"/>
+          <path d="M-10 120C80 100 140 150 230 140S360 90 420 110" stroke="rgba(255,255,255,.95)" stroke-width="16" stroke-linecap="round"/>
+          <path d="M60 -10C80 90 70 190 120 260S190 340 200 400" stroke="rgba(255,255,255,.95)" stroke-width="12" stroke-linecap="round"/>
+          <path d="M260 -10C250 70 270 150 290 220S340 330 360 400" stroke="rgba(255,255,255,.8)" stroke-width="9" stroke-linecap="round"/>
+          <path d="M-10 250C90 240 170 270 250 250S360 220 420 240" stroke="rgba(255,255,255,.8)" stroke-width="9" stroke-linecap="round"/>
+          <path d="M-10 120C80 100 140 150 230 140S360 90 420 110" stroke="rgba(107,77,224,.18)" stroke-width="1.5" stroke-dasharray="4 8"/>
+          <circle class="pulse" cx="235" cy="142" r="16" fill="rgba(107,77,224,.45)"/>
+          <circle class="pulse p2" cx="235" cy="142" r="16" fill="rgba(240,138,102,.4)"/>
+          <circle cx="235" cy="142" r="15" fill="#6B4DE0"/>
+          <circle cx="235" cy="142" r="6" fill="#fff"/>
+        </svg>
+        <div class="glass maptxt">
+          <b>Мурино, Воронцовский бульвар, 21&nbsp;к2</b>
+          <span>Парадная&nbsp;4, 5&nbsp;этаж. Маршрут откроется в Яндекс Картах.</span>
+          <small>Иллюстрация, не карта местности.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final" style="padding-top:0">
+  <div class="wrap">
+    <div class="glass box">
+      <span class="eyebrow rv">Запись</span>
+      <h2 class="rv d1">Подарите рукам <span class="grad">заботу</span></h2>
+      <p class="lead rv d2">Выберите услугу и время в онлайн-записи DIKIDI или позвоните в студию.</p>
+      <div class="ctas rv d3">
+        <a class="btn prime" href="https://dikidi.ru/1565306" target="_blank" rel="noopener">Записаться в DIKIDI</a>
+        <a class="btn soft" href="tel:+79819899679">+7&nbsp;981&nbsp;989-96-79</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© АУРА — пространство красоты, Мурино</span>
+    <span>Демо-концепт. Цены и данные — из открытых источников (DIKIDI) на 24.10.2026. Страница не индексируется.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79819899679"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+  <a href="https://yandex.ru/maps/?rtext=~Мурино,%20Воронцовский%20бульвар,%2021%20к2&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+  <a class="main" href="https://dikidi.ru/1565306" target="_blank" rel="noopener">Записаться</a>
+</nav>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const NB = ' ';
+
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    hdr.classList.toggle('scrolled', scrollY > 8);
+    mbar.classList.toggle('show', scrollY > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Счётчик оценок
+  const counters = document.querySelectorAll('[data-count]');
+  const runCount = el => {
+    const to = +el.dataset.count;
+    if (reduce) { el.textContent = to; return; }
+    const t0 = performance.now(), dur = 1500;
+    const step = t => {
+      const k = Math.min((t - t0) / dur, 1), e = 1 - Math.pow(1 - k, 3);
+      el.textContent = Math.round(to * e);
+      if (k < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+  const cio = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { runCount(e.target); cio.unobserve(e.target); }
+  }), { threshold: .4 });
+  counters.forEach(c => { if (!reduce) c.textContent = '0'; cio.observe(c); });
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Образцы палитры (декор)
+  const track = document.getElementById('swtrack');
+  const cols = [];
+  for (let i = 0; i < 24; i++) cols.push(`hsl(${(i * 37 + 255) % 360} ${58 + (i % 4) * 8}% ${72 - (i % 3) * 6}%)`);
+  track.innerHTML = cols.concat(cols).map(c => `<i style="--c:${c}"></i>`).join('');
+
+  // Вкладки прайса
+  const tabs = document.querySelectorAll('[role=tab]');
+  const side = document.getElementById('side'), sideLbl = document.getElementById('sideLbl');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === 'p-' + t.dataset.tab));
+    side.dataset.t = t.dataset.tab; sideLbl.textContent = t.dataset.label;
+  }));
+
+  // Педикюр по степени сложности
+  const L = {
+    1: { n: 'I степень сложности', p: '3' + NB + '000' + NB + '₽', t: 'Первая ступень шкалы — самый простой уровень из трёх.' },
+    2: { n: 'II степень сложности', p: '3' + NB + '500' + NB + '₽', t: 'Вторая ступень — средний уровень сложности.' },
+    3: { n: 'III степень сложности', p: '4' + NB + '000' + NB + '₽', t: 'Третья ступень — самый сложный уровень из трёх.' }
+  };
+  const radios = document.querySelectorAll('.lv input');
+  const rings = { 1: document.querySelector('.a1'), 2: document.querySelector('.a2'), 3: document.querySelector('.a3') };
+  const setLevel = n => {
+    document.querySelectorAll('.lv').forEach(l => l.classList.toggle('sel', l.querySelector('input').value == n));
+    Object.keys(rings).forEach(k => rings[k].classList.toggle('on', +k <= n));
+    document.getElementById('lvName').textContent = L[n].n;
+    document.getElementById('lvPrice').textContent = L[n].p;
+    document.getElementById('lvText').textContent = L[n].t;
+  };
+  radios.forEach(r => r.addEventListener('change', () => setLevel(+r.value)));
+  setLevel(1);
+})();
+</script>
+</body>
+</html>

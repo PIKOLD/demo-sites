@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>byDiana — nail-студия в Кудрово: маникюр и педикюр в геле</title>
+<meta name="description" content="Скоростной маникюр и педикюр только в геле: идеальное покрытие за 60–90 минут. Кудрово, проспект Строителей, 16. Запись в DIKIDI.">
+<meta name="theme-color" content="#0C0C0B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=JetBrains+Mono:wght@400;500;700&display=swap"></noscript>
+<style>
+:root{
+  --ink:#0C0C0B; --ink-2:#171715; --ink-3:#252522; --milk:#F2EFE6; --paper:#FBFAF5; --lime:#C8FF1F;
+  --muted:#5F5C52; --muted-d:#A9A79A; --line:rgba(12,12,11,.16); --line-d:rgba(242,239,230,.18);
+  --r:16px; --r-sm:6px;
+  --head:"Unbounded", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, "SFMono-Regular", Consolas, "Courier New", monospace;
+  --wrap:1160px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:76px}
+body{margin:0;background:var(--milk);color:var(--ink);font:400 15px/1.65 var(--mono);font-variant-numeric:tabular-nums;overflow-x:hidden}
+a{color:inherit}
+button{font:inherit;color:inherit}
+svg{display:block}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:700 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase}
+.eyebrow::before{content:"";width:22px;height:2px;background:currentColor;flex:none}
+h1,h2,h3{font-family:var(--head);font-weight:700;line-height:1.12;letter-spacing:-.02em;margin:0;overflow-wrap:break-word}
+h2{font-size:clamp(25px,4.6vw,46px)}
+.hl{background:var(--lime);color:var(--ink);padding:.02em .14em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.lead{font-size:clamp(15px,1.5vw,17px);max-width:54ch;margin:0}
+section{padding:clamp(60px,9vw,112px) 0}
+.dark{background:var(--ink);color:var(--milk);--sh:var(--lime)}
+.dark .eyebrow{color:var(--lime)}
+.dark .lead{color:var(--muted-d)}
+
+/* demo bar */
+.demo{background:var(--lime);color:var(--ink);font-size:12px;line-height:1.45;padding:8px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:11px;border:1.5px solid var(--ink);padding:2px 7px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(12,12,11,.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-d)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{display:flex;align-items:baseline;gap:10px;text-decoration:none;color:var(--milk)}
+.logo b{font:700 19px/1 var(--head);letter-spacing:-.02em}
+.logo b span{color:var(--lime)}
+.logo small{font:500 10.5px/1 var(--mono);color:var(--muted-d);letter-spacing:.14em;text-transform:uppercase}
+.nav{display:none;gap:26px}
+.nav a{text-decoration:none;font:500 12.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--milk);position:relative;padding:6px 0}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--lime);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border:2px solid var(--ink);background:var(--ink);color:var(--milk);font:700 13px/1.25 var(--mono);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;text-align:center;cursor:pointer;border-radius:var(--r-sm);transition:transform .2s, box-shadow .2s, background .2s, color .2s}
+.btn:hover{transform:translate(-3px,-3px);box-shadow:4px 4px 0 var(--sh,var(--ink))}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.lime{background:var(--lime);border-color:var(--lime);color:var(--ink)}
+.dark .btn.lime:hover{box-shadow:4px 4px 0 var(--milk)}
+.btn.ghost{background:transparent;color:inherit;border-color:currentColor}
+.btn.sm{min-height:44px;padding:0 16px;font-size:12px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border:2px solid var(--line-d);background:transparent;display:grid;place-items:center;cursor:pointer;border-radius:var(--r-sm)}
+.burger span{display:block;width:18px;height:2px;background:var(--milk);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--milk);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--ink);padding:104px 24px 40px;display:flex;flex-direction:column;gap:4px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:700 22px/1.3 var(--head);color:var(--milk);text-decoration:none;padding:12px 0;border-bottom:1px solid var(--line-d)}
+.mnav a:active{color:var(--lime)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:clamp(36px,6vw,80px) 0 clamp(56px,8vw,96px)}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line-d) 1px,transparent 1px),linear-gradient(90deg,var(--line-d) 1px,transparent 1px);background-size:44px 44px;opacity:.5;-webkit-mask-image:radial-gradient(70% 80% at 70% 40%,#000 0%,transparent 100%);mask-image:radial-gradient(70% 80% at 70% 40%,#000 0%,transparent 100%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:48px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px}}
+.tag{display:inline-flex;align-items:center;gap:10px;border:1.5px solid var(--lime);padding:7px 12px;font:600 12px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--lime)}
+.tag i{width:8px;height:8px;background:var(--lime);flex:none}
+.hero h1{font-size:clamp(28px,5.4vw,60px);margin:24px 0 22px}
+.hero .lead{color:#D8D5C9;margin-bottom:24px}
+.place{display:flex;gap:10px;align-items:flex-start;color:var(--muted-d);font-size:14px;margin-bottom:28px}
+.place svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--lime)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 170px}
+@media (min-width:640px){.ctas .btn{flex:0 0 auto}}
+.rating{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin-top:34px;padding-top:24px;border-top:1px solid var(--line-d);text-decoration:none}
+.rating strong{font:700 44px/1 var(--mono);color:var(--lime)}
+.rating span{font-size:13px;line-height:1.4;color:var(--muted-d)}
+.rating span b{display:block;color:var(--milk);font-weight:700;letter-spacing:.12em;font-size:13px}
+.visual{position:relative;max-width:440px;width:100%;margin-inline:auto}
+.nails{width:100%;height:auto;overflow:hidden}
+.gloss{animation:gl 4.6s ease-in-out infinite}
+@keyframes gl{0%{transform:translateX(-120px)}60%,100%{transform:translateX(480px)}}
+.chip{position:absolute;background:var(--ink-2);border:1.5px solid var(--lime);padding:9px 12px;font-size:12px;line-height:1.35;color:var(--milk);animation:float 6s ease-in-out infinite}
+.chip b{display:block;color:var(--lime);font:700 15px/1.2 var(--mono)}
+.chip.c1{right:0;top:6%}
+.chip.c2{left:0;bottom:12%;animation-delay:-3s}
+@keyframes float{50%{transform:translateY(-8px)}}
+
+/* marquee */
+.marquee{background:var(--lime);color:var(--ink);overflow:hidden;padding:14px 0;border-block:2px solid var(--ink)}
+.track{display:flex;width:max-content;animation:run 34s linear infinite}
+.track span{font:700 14px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;padding:0 18px;white-space:nowrap;display:flex;align-items:center;gap:36px}
+.track span::after{content:"/";font-weight:400}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* speed */
+.speed-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:40px;align-items:center}
+@media (min-width:960px){.speed-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:72px}}
+.speed-grid h2{margin:16px 0 20px}
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;background:var(--ink);border:2px solid var(--ink);margin-top:28px}
+.stat{background:var(--paper);padding:16px}
+.stat b{display:block;font:700 clamp(24px,4vw,34px)/1.1 var(--mono)}
+.stat span{display:block;font-size:12.5px;line-height:1.4;color:var(--muted);margin-top:6px}
+.dial{background:var(--ink);color:var(--milk);border-radius:var(--r);padding:clamp(16px,4vw,32px);display:grid;gap:18px;justify-items:center;box-shadow:8px 8px 0 var(--lime);border:2px solid var(--ink)}
+.dial-box{position:relative;width:100%;max-width:360px}
+.dial svg{width:100%;height:auto}
+.dial text{font:500 11px var(--mono);fill:var(--milk)}
+.dial-c{position:absolute;inset:0;display:grid;place-content:center;text-align:center}
+.dial-c b{font:700 clamp(30px,9vw,46px)/1 var(--mono);color:var(--lime)}
+.dial-c span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-d);margin-top:6px}
+.dial .note{margin:0;font-size:12px;color:var(--muted-d);text-align:center}
+.dial.done .band{animation:band 1.8s ease-in-out infinite}
+@keyframes band{50%{stroke-opacity:.75}}
+
+/* services */
+#services{background:var(--paper);border-block:2px solid var(--ink)}
+.head{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;margin-bottom:36px}
+.head h2{margin-top:16px}
+.head p{margin:0;color:var(--muted);font-size:13px}
+@media (min-width:960px){.head{grid-template-columns:minmax(0,1fr) auto;align-items:end}}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.tab{border:2px solid var(--ink);background:transparent;border-radius:var(--r-sm);padding:11px 20px;font:700 13px/1.2 var(--mono);letter-spacing:.06em;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--lime)}
+.svc{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
+@media (min-width:960px){.svc{grid-template-columns:minmax(0,1.5fr) minmax(0,.8fr);gap:56px;align-items:start}}
+.panel{display:none}
+.panel.on{display:block;animation:fade .45s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}}
+.row{display:flex;align-items:baseline;gap:14px;padding:17px 0;border-bottom:1px dashed var(--ink)}
+.row:first-child{border-top:2px solid var(--ink)}
+.row:last-child{border-bottom:2px solid var(--ink)}
+.row .n{flex:1 1 auto;min-width:0}
+.row .n b{display:block;font-weight:700;font-size:15px;line-height:1.4}
+.row .n small{display:block;color:var(--muted);font-size:12.5px;line-height:1.45;margin-top:2px}
+.row .p{font:700 19px/1.2 var(--mono);white-space:nowrap}
+.note{margin:20px 0 0;font-size:12.5px;color:var(--muted)}
+.side{background:var(--lime);border:2px solid var(--ink);border-radius:var(--r);box-shadow:8px 8px 0 var(--ink);padding:24px;display:grid;gap:16px}
+@media (min-width:960px){.side{position:sticky;top:96px}}
+.side svg{width:100%;max-width:240px;height:auto}
+.side h3{font-size:clamp(22px,3vw,28px)}
+.side p{margin:0;font-size:14px}
+
+/* included */
+.inc{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+@media (min-width:860px){.inc{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.inc-card{border:1.5px solid var(--line-d);background:var(--ink-2);padding:26px;border-radius:var(--r);position:relative;overflow:hidden}
+.inc-card .ic{width:56px;height:56px;border:2px solid var(--lime);display:grid;place-items:center;color:var(--lime);margin-bottom:22px;border-radius:var(--r-sm)}
+.inc-card .ic svg{width:30px;height:30px}
+.inc-card .num{position:absolute;right:20px;top:18px;font:700 14px/1 var(--mono);color:var(--muted-d)}
+.inc-card h3{font-size:clamp(17px,2vw,20px);margin-bottom:10px}
+.inc-card p{margin:0;color:var(--muted-d);font-size:14px}
+.inc-card .ok{display:inline-block;margin-top:16px;font:700 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;background:var(--lime);color:var(--ink);padding:6px 9px}
+.no{margin-top:18px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:20px;align-items:center;border:2px dashed var(--lime);padding:24px;border-radius:var(--r)}
+.no .x{width:56px;height:56px;background:var(--lime);color:var(--ink);display:grid;place-items:center;font:700 28px/1 var(--mono);border-radius:var(--r-sm)}
+.no b{display:block;font:700 clamp(17px,2.4vw,24px)/1.25 var(--head);margin-bottom:8px}
+.no b s{text-decoration-thickness:3px;text-decoration-color:var(--lime)}
+.no p{margin:0;color:var(--muted-d);font-size:14px}
+
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pr-card{background:var(--paper);border:2px solid var(--ink);border-radius:var(--r);padding:26px;position:relative}
+.pr-card .num{display:inline-block;font:700 13px/1 var(--mono);background:var(--ink);color:var(--lime);padding:6px 9px;margin-bottom:18px}
+.pr-card h3{font-size:clamp(18px,2.2vw,22px);margin-bottom:12px}
+.pr-card p{margin:0;font-size:14.5px}
+.score{display:flex;align-items:center;flex-wrap:wrap;gap:12px 20px;margin-top:20px;padding:18px 22px;border:2px solid var(--ink);background:var(--lime);text-decoration:none;border-radius:var(--r);box-shadow:6px 6px 0 var(--ink)}
+.score strong{font:700 48px/1 var(--mono)}
+.score span{font-size:13.5px;line-height:1.45}
+.score span b{display:block;letter-spacing:.12em}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start}
+.ci small{display:block;font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-d);margin-bottom:6px}
+.ci p,.ci a{margin:0;font-size:16.5px;font-weight:500;text-decoration:none;line-height:1.5}
+.ci a.big{font:700 clamp(20px,6vw,28px)/1.2 var(--mono);color:var(--lime)}
+.ci a.lnk{border-bottom:2px solid var(--lime);padding-bottom:1px}
+.map{border:2px solid var(--lime);border-radius:var(--r);overflow:hidden;min-height:380px;background:var(--ink-3)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* final */
+.final{background:var(--lime);color:var(--ink);text-align:center;--sh:var(--ink)}
+.final h2{font-size:clamp(26px,5.4vw,54px);max-width:18ch;margin:18px auto}
+.final .lead{margin:0 auto}
+.final .ctas{justify-content:center;margin-top:30px}
+.final .eyebrow{justify-content:center}
+footer{padding:34px 0 120px;font-size:12.5px;line-height:1.55;color:var(--muted-d)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer a{color:var(--milk)}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile bar */
+.mbar{position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.3fr);gap:6px;padding:6px;background:rgba(12,12,11,.94);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1.5px solid var(--line-d);border-radius:12px;box-shadow:0 18px 40px -12px rgba(0,0,0,.55);transform:translateY(140%);transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:8px;color:var(--milk);text-decoration:none;font:700 11px/1.2 var(--mono);letter-spacing:.04em;text-transform:uppercase}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--lime);color:var(--ink);flex-direction:row;gap:6px;font-size:12px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (max-width:420px){
+  .row .p{font-size:17px}
+  .chip{font-size:11px;padding:7px 9px}
+  .no{grid-template-columns:minmax(0,1fr);gap:14px}
+  .score strong{font-size:40px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта для nail-студии byDiana. Данные из открытой страницы DIKIDI на 24.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr dark" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="byDiana — наверх"><b>by<span>Diana</span></b><small>nail-студия</small></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#speed">Скорость</a>
+      <a href="#services">Услуги и цены</a>
+      <a href="#included">Что включено</a>
+      <a href="#praise">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm lime" href="https://dikidi.ru/2041282" target="_blank" rel="noopener">Записаться</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#speed">Скорость</a>
+  <a href="#services">Услуги и цены</a>
+  <a href="#included">Что включено</a>
+  <a href="#praise">Отзывы</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero dark">
+  <div class="wrap">
+    <div>
+      <span class="tag rv"><i></i>Кудрово · Ленинградская область</span>
+      <h1 class="rv d1">Идеальное покрытие <span class="hl">за&nbsp;60–90 минут</span></h1>
+      <p class="lead rv d2">Диана — скоростной мастер маникюра и педикюра. Работает только в геле: без сколов и отслоек.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Кудрово, проспект Строителей, 16 · Всеволожский район, Ленинградская область</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn lime" href="https://dikidi.ru/2041282" target="_blank" rel="noopener">Записаться в DIKIDI</a>
+        <a class="btn ghost" href="tel:+79810302212"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+        <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~%D0%9A%D1%83%D0%B4%D1%80%D0%BE%D0%B2%D0%BE%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%2C%2016&amp;rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+      </div>
+      <a class="rating rv d3" href="https://dikidi.ru/2041282" target="_blank" rel="noopener" aria-label="Рейтинг 5.0 в DIKIDI, 74 оценки">
+        <strong>5.0</strong><span><b>DIKIDI</b>74 оценки</span>
+      </a>
+    </div>
+    <div class="visual rv d2">
+      <svg class="nails" viewBox="0 0 360 400" role="img" aria-label="Абстрактная графика: пять пальцев с ногтями квадратной формы и глянцевым бликом">
+        <defs>
+          <clipPath id="nc">
+            <rect x="8" y="164" width="40" height="54" rx="6"/>
+            <rect x="84" y="94" width="40" height="54" rx="6"/>
+            <rect x="160" y="54" width="40" height="54" rx="6"/>
+            <rect x="236" y="84" width="40" height="54" rx="6"/>
+            <rect x="312" y="154" width="40" height="54" rx="6"/>
+          </clipPath>
+          <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#0C0C0B" stop-opacity="0"/>
+            <stop offset="1" stop-color="#0C0C0B"/>
+          </linearGradient>
+        </defs>
+        <g fill="#1B1B19" stroke="rgba(242,239,230,.2)" stroke-width="1.5">
+          <path d="M0 400V178A28 28 0 0 1 56 178V400Z"/>
+          <path d="M76 400V108A28 28 0 0 1 132 108V400Z"/>
+          <path d="M152 400V68A28 28 0 0 1 208 68V400Z"/>
+          <path d="M228 400V98A28 28 0 0 1 284 98V400Z"/>
+          <path d="M304 400V168A28 28 0 0 1 360 168V400Z"/>
+        </g>
+        <g>
+          <rect x="8" y="164" width="40" height="54" rx="6" fill="#C8FF1F"/>
+          <rect x="84" y="94" width="40" height="54" rx="6" fill="#F2EFE6"/>
+          <rect x="160" y="54" width="40" height="54" rx="6" fill="#C8FF1F"/>
+          <rect x="236" y="84" width="40" height="54" rx="6" fill="#F2EFE6"/>
+          <rect x="312" y="154" width="40" height="54" rx="6" fill="#C8FF1F"/>
+        </g>
+        <g stroke="#0C0C0B" stroke-width="2" stroke-linecap="round" opacity=".28">
+          <path d="M15 172v20"/><path d="M91 102v20"/><path d="M167 62v20"/><path d="M243 92v20"/><path d="M319 162v20"/>
+        </g>
+        <g clip-path="url(#nc)"><g class="gloss"><rect x="0" y="0" width="34" height="400" fill="#fff" opacity=".7" transform="skewX(-20)"/></g></g>
+        <g stroke="#C8FF1F" stroke-width="1.5" fill="none" opacity=".8">
+          <path d="M160 40h40M160 36v8M200 36v8"/>
+        </g>
+        <rect y="250" width="360" height="150" fill="url(#fade)"/>
+      </svg>
+      <div class="chip c1"><b>Только гель</b>без сколов и отслоек</div>
+      <div class="chip c2"><b>7 лет</b>непрерывный стаж</div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Только гель</span><span>60–90 минут</span><span>Без сколов и отслоек</span><span>Тонкие ногти</span><span>Исправленная архитектура</span><span>Укрепление</span>
+  <span>Только гель</span><span>60–90 минут</span><span>Без сколов и отслоек</span><span>Тонкие ногти</span><span>Исправленная архитектура</span><span>Укрепление</span>
+</div></div>
+
+<!-- SPEED -->
+<section id="speed">
+  <div class="wrap speed-grid">
+    <div>
+      <span class="eyebrow rv">01 / Скорость</span>
+      <h2 class="rv d1">Покрытие <span class="hl">за&nbsp;60–90 минут</span></h2>
+      <p class="lead rv d2">Диана — скоростной мастер маникюра и педикюра с непрерывным стажем 7 лет. Идеальное покрытие выходит за 60–90 минут — без сколов и отслоек.</p>
+      <div class="stats rv d2">
+        <div class="stat"><b>7 лет</b><span>непрерывный стаж</span></div>
+        <div class="stat"><b>60–90</b><span>минут на покрытие</span></div>
+        <div class="stat"><b>5.0</b><span>рейтинг в DIKIDI</span></div>
+        <div class="stat"><b>74</b><span>оценки клиентов</span></div>
+      </div>
+    </div>
+    <div class="dial rv d1" id="dial">
+      <div class="dial-box">
+        <svg viewBox="0 0 260 260" aria-hidden="true">
+          <g transform="rotate(-90 130 130)" fill="none">
+            <circle cx="130" cy="130" r="108" pathLength="90" stroke="rgba(242,239,230,.5)" stroke-width="8" stroke-dasharray="0.22 0.78"/>
+            <circle cx="130" cy="130" r="92" stroke="rgba(242,239,230,.1)" stroke-width="12"/>
+            <circle class="band" cx="130" cy="130" r="92" pathLength="100" stroke="#C8FF1F" stroke-opacity=".3" stroke-width="12" stroke-dasharray="0 66.667 33.333 0"/>
+            <circle id="ring" cx="130" cy="130" r="92" pathLength="100" stroke="#C8FF1F" stroke-width="12" stroke-dasharray="100 100" stroke-dashoffset="33.333"/>
+          </g>
+          <line x1="57.3" y1="172" x2="41.7" y2="181" stroke="#F2EFE6" stroke-width="2.5"/>
+          <text x="130" y="10" text-anchor="middle">90</text>
+          <text x="22.6" y="192" text-anchor="middle" dominant-baseline="middle">60</text>
+        </svg>
+        <div class="dial-c"><b id="tmin">60–90</b><span id="tcap">минут</span></div>
+      </div>
+      <button class="btn lime sm" id="replay" type="button">Запустить таймер</button>
+      <p class="note">Время покрытия — из описания мастера в DIKIDI</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">02 / Прайс</span><h2 class="rv d1">Услуги <span class="hl">и цены</span></h2></div>
+      <p class="rv d2">Цены из DIKIDI на 24.10.2026</p>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Категории услуг">
+      <button class="tab" role="tab" aria-selected="true" data-tab="man" type="button">Маникюр</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="ped" type="button">Педикюр</button>
+    </div>
+    <div class="svc">
+      <div>
+        <div class="panel on" id="p-man" role="tabpanel">
+          <div class="row"><div class="n"><b>Маникюр без покрытия</b></div><div class="p">1&nbsp;600&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Маникюр с покрытием</b><small>Гель</small></div><div class="p">3&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Маникюр: + восстановление архитектуры</b><small>Переход в чёткий квадрат</small></div><div class="p">3&nbsp;300&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Японский маникюр</b></div><div class="p">2&nbsp;200&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Мужской маникюр</b></div><div class="p">2&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Наращивание, длина 1–3</b></div><div class="p">3&nbsp;700&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Наращивание, длина 3–6</b></div><div class="p">4&nbsp;300&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Френч</b><small>Доплата к услуге</small></div><div class="p">+400&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-ped" role="tabpanel">
+          <div class="row"><div class="n"><b>Пальчики без покрытия</b></div><div class="p">1&nbsp;800&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Пальчики с покрытием</b></div><div class="p">2&nbsp;600&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Полный педикюр без покрытия</b></div><div class="p">2&nbsp;100&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Полный педикюр с покрытием</b></div><div class="p">3&nbsp;000&nbsp;₽</div></div>
+        </div>
+        <p class="note">Тонкие ногти, исправленная архитектура и укрепление включены в услуги.</p>
+      </div>
+      <aside class="side rv" aria-label="О работе мастера">
+        <svg viewBox="0 0 240 70" fill="none" stroke="#0C0C0B" stroke-width="2.5" aria-hidden="true">
+          <rect x="4" y="22" width="36" height="44" rx="5"/><rect x="52" y="10" width="36" height="56" rx="5" fill="#0C0C0B"/><rect x="100" y="4" width="36" height="62" rx="5"/><rect x="148" y="12" width="36" height="54" rx="5" fill="#0C0C0B"/><rect x="196" y="24" width="36" height="42" rx="5"/>
+        </svg>
+        <h3>Только гель</h3>
+        <p>Работа без сколов и отслоек. В устаревших техниках мастер не работает.</p>
+        <a class="btn" href="https://dikidi.ru/2041282" target="_blank" rel="noopener">Записаться в DIKIDI</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- INCLUDED -->
+<section id="included" class="dark">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">03 / Включено</span><h2 class="rv d1">Что уже включено <span class="hl">в цену</span></h2></div>
+      <p class="rv d2" style="color:var(--muted-d)">По описанию мастера в DIKIDI</p>
+    </div>
+    <div class="inc">
+      <article class="inc-card rv"><span class="num">01</span>
+        <div class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 28V10a6 6 0 0 1 12 0v18"/><path d="M13 14h6M13 19h6" opacity=".6"/></svg></div>
+        <h3>Тонкие ногти</h3><p>Работа с тонкими ногтями входит в услуги мастера.</p><span class="ok">Включено</span></article>
+      <article class="inc-card rv d1"><span class="num">02</span>
+        <div class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 26V8h20v18"/><path d="M6 8l10-4 10 4" opacity=".6"/></svg></div>
+        <h3>Исправленная архитектура</h3><p>Исправление архитектуры ногтя входит в услуги мастера.</p><span class="ok">Включено</span></article>
+      <article class="inc-card rv d2"><span class="num">03</span>
+        <div class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4l10 4v8c0 6-4 10-10 12C10 26 6 22 6 16V8z"/><path d="M12 16l3 3 5-6"/></svg></div>
+        <h3>Укрепление</h3><p>Укрепление ногтей входит в услуги мастера.</p><span class="ok">Включено</span></article>
+    </div>
+    <div class="no rv">
+      <div class="x" aria-hidden="true">✕</div>
+      <div><b>В&nbsp;<s>устаревших техниках</s> мастер не работает</b><p>Только гель — чтобы покрытие держалось без сколов и отслоек.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRAISE -->
+<section id="praise">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">04 / Отзывы</span><h2 class="rv d1">За что <span class="hl">хвалят</span></h2></div>
+      <p class="rv d2">Пересказ отзывов клиентов в DIKIDI</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card rv"><span class="num">01</span><h3>Возвращаются годами</h3><p>Клиенты ходят к мастеру уже около шести лет, хвалят сервис и работу и отмечают, что покрытие отлично носится.</p></article>
+      <article class="pr-card rv d1"><span class="num">02</span><h3>Нашли своего мастера</h3><p>После проблем с ногтями клиенты наконец нашли мастера, к которому хочется возвращаться.</p></article>
+      <article class="pr-card rv d2"><span class="num">03</span><h3>Приятная беседа</h3><p>За час общения — спокойный разговор и маникюр, который потом собирает комплименты.</p></article>
+    </div>
+    <a class="score rv" href="https://dikidi.ru/2041282" target="_blank" rel="noopener"><strong>5.0</strong><span><b>DIKIDI</b>74 оценки</span></a>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" class="dark">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">05 / Контакты</span><h2 class="rv d1">Как <span class="hl">добраться</span></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Кудрово, проспект Строителей, 16<br>Всеволожский район, Ленинградская область</p></div>
+        <div class="ci"><small>Телефон</small><a class="big" href="tel:+79810302212">+7 981 030-22-12</a></div>
+        <div class="ci"><small>Онлайн-запись</small><a class="lnk" href="https://dikidi.ru/2041282" target="_blank" rel="noopener">dikidi.ru/2041282</a></div>
+        <div class="ctas">
+          <a class="btn lime" href="https://dikidi.ru/2041282" target="_blank" rel="noopener">Записаться</a>
+          <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~%D0%9A%D1%83%D0%B4%D1%80%D0%BE%D0%B2%D0%BE%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%2C%2016&amp;rtt=auto" target="_blank" rel="noopener">Построить маршрут</a>
+        </div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?mode=search&amp;text=%D0%9A%D1%83%D0%B4%D1%80%D0%BE%D0%B2%D0%BE%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%2C%2016&amp;z=16" title="byDiana на карте: Кудрово, проспект Строителей, 16" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow rv">Запись</span>
+    <h2 class="rv d1">Выберите удобное время в&nbsp;DIKIDI</h2>
+    <p class="lead rv d2">Онлайн-запись — на странице мастера в DIKIDI. Или позвоните: +7&nbsp;981&nbsp;030-22-12.</p>
+    <div class="ctas rv d3">
+      <a class="btn" href="https://dikidi.ru/2041282" target="_blank" rel="noopener">Записаться онлайн</a>
+      <a class="btn ghost" href="tel:+79810302212">Позвонить</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="dark">
+  <div class="wrap">
+    <span>© byDiana — nail-студия, Кудрово</span>
+    <span>Демо-концепт. Цены и данные — из открытой страницы <a href="https://dikidi.ru/2041282" target="_blank" rel="noopener">DIKIDI</a> на 24.10.2026. Часы работы в источнике не указаны.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79810302212"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+  <a href="https://yandex.ru/maps/?rtext=~%D0%9A%D1%83%D0%B4%D1%80%D0%BE%D0%B2%D0%BE%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%2C%2016&amp;rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+  <a class="main" href="https://dikidi.ru/2041282" target="_blank" rel="noopener">Записаться</a>
+</nav>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Шапка и мобильная панель
+  const mbar = document.getElementById('mbar');
+  const onScroll = () => { mbar.classList.toggle('show', scrollY > 420); };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Вкладки прайса
+  const tabs = document.querySelectorAll('[role=tab]');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === 'p-' + t.dataset.tab));
+  }));
+
+  // Таймер 60–90 минут: круговой прогресс (полный круг = 90 минут)
+  const dial = document.getElementById('dial'), ring = document.getElementById('ring');
+  const tmin = document.getElementById('tmin'), tcap = document.getElementById('tcap');
+  let raf = 0;
+  const settle = () => {
+    ring.style.strokeDashoffset = 33.333;
+    tmin.textContent = '60–90'; tcap.textContent = 'минут';
+    dial.classList.add('done');
+  };
+  const run = () => {
+    if (reduce) { settle(); return; }
+    cancelAnimationFrame(raf);
+    dial.classList.remove('done');
+    tcap.textContent = 'минут прошло';
+    const t0 = performance.now(), D = 3800;
+    const step = now => {
+      const k = Math.min((now - t0) / D, 1);
+      const m = 60 * (1 - Math.pow(1 - k, 2));
+      ring.style.strokeDashoffset = 100 - (m / 90) * 100;
+      tmin.textContent = String(Math.floor(m)).padStart(2, '0');
+      if (k < 1) raf = requestAnimationFrame(step); else settle();
+    };
+    raf = requestAnimationFrame(step);
+  };
+  document.getElementById('replay').addEventListener('click', run);
+  if (reduce) { settle(); }
+  else {
+    const dio = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { run(); dio.disconnect(); }
+    }), { threshold: .5 });
+    dio.observe(dial);
+  }
+})();
+</script>
+</body>
+</html>

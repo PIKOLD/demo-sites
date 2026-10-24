@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Brow-Ap — студия перманентного макияжа в Сестрорецке</title>
+<meta name="description" content="Перманентный макияж бровей, губ и межресничного пространства, стрелки, уход за лицом. Сестрорецк, ул. Коммунаров, 2/4, 2 этаж.">
+<meta name="theme-color" content="#242120">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Prata&family=Jost:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prata&family=Jost:wght@400;500;600&display=swap"></noscript>
+<style>
+:root{
+  --gr:#242120; --gr2:#322D2B; --milk:#F5F0EA; --paper:#FCFAF7; --sand:#EBE2D8; --nude:#E3C7B6; --terra:#B66F55; --terra-d:#97543D;
+  --muted:#756A64; --line:rgba(36,33,32,.14);
+  --serif:"Prata", Georgia, "Times New Roman", serif; --sans:"Jost", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1160px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--milk);color:var(--gr);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+a{color:inherit}
+button{font:inherit;color:inherit}
+svg{display:block}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.eyebrow{display:flex;align-items:center;gap:12px;font:500 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--terra-d)}
+.eyebrow::before{content:"";width:30px;height:1px;background:currentColor;flex:none}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;margin:0}
+h2{font-size:clamp(32px,5.2vw,56px)}
+h2 em,h1 em{font-style:normal;color:var(--terra-d)}
+.lead{font-size:clamp(16px,1.6vw,18px);color:#4A423E;max-width:54ch;margin:0}
+section{padding:clamp(64px,9vw,116px) 0;scroll-margin-top:68px}
+.sechead{display:grid;gap:14px;margin-bottom:38px}
+.sechead h2{margin-top:2px}
+
+/* demo bar */
+.demo{background:var(--nude);color:var(--gr);font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:11px;border:1px solid var(--gr);border-radius:3px;padding:3px 7px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(36,33,32,.92);color:var(--milk);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(245,240,234,.08)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+.logo b{font:400 24px/1 var(--serif);letter-spacing:.02em}
+.logo b span{color:var(--terra)}
+.logo small{font:500 10.5px/1 var(--sans);color:#B9ADA6;letter-spacing:.16em;text-transform:uppercase}
+.nav{display:none;gap:28px}
+.nav a{text-decoration:none;font-weight:400;font-size:14.5px;color:#D9CFC8;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--nude);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:10px 24px;border-radius:6px;border:1px solid currentColor;background:transparent;font:500 13px/1.25 var(--sans);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:transform .25s, background .25s, color .25s, border-color .25s;text-align:center}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.terra{background:var(--terra-d);border-color:var(--terra-d);color:#fff}
+.btn.terra:hover{background:#7E4531;border-color:#7E4531}
+.btn.nude{background:var(--nude);border-color:var(--nude);color:var(--gr)}
+.btn.nude:hover{background:#fff;border-color:#fff}
+.btn.light{color:var(--milk);border-color:rgba(245,240,234,.45)}
+.btn.light:hover{background:var(--milk);color:var(--gr);border-color:var(--milk)}
+.btn.dark{color:var(--gr);border-color:var(--gr)}
+.btn.dark:hover{background:var(--gr);color:var(--milk)}
+.btn.sm{min-height:42px;padding:8px 18px;font-size:12px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border-radius:6px;border:1px solid rgba(245,240,234,.3);background:transparent;display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:18px;height:1.5px;background:var(--milk);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:var(--milk);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--gr);color:var(--milk);padding:110px 24px 40px;display:flex;flex-direction:column;gap:4px;opacity:0;pointer-events:none;transition:opacity .3s;overflow-y:auto}
+.mnav a{font:400 30px/1.25 var(--serif);text-decoration:none;padding:8px 0;border-bottom:1px solid rgba(245,240,234,.14)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{background:var(--gr);color:var(--milk);position:relative;overflow:hidden;padding:clamp(40px,6vw,84px) 0 clamp(64px,8vw,112px)}
+.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-62deg,rgba(227,199,182,.09) 0 1px,transparent 1px 12px);-webkit-mask-image:radial-gradient(70% 90% at 88% 35%,#000,transparent);mask-image:radial-gradient(70% 90% at 88% 35%,#000,transparent);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:48px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:56px}}
+.hero .eyebrow{color:var(--nude)}
+.hero h1{font-size:clamp(34px,5.4vw,70px);margin:22px 0 22px}
+.hero h1 em{color:var(--nude)}
+.hero .lead{color:#D6CBC4;margin-bottom:24px}
+.place{display:flex;gap:10px;align-items:flex-start;color:#C9BDB6;font-size:15px;margin-bottom:28px}
+.place svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--terra)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.ratings{display:flex;flex-wrap:wrap;gap:14px 34px;margin-top:34px;padding-top:26px;border-top:1px solid rgba(245,240,234,.16)}
+.rate{display:flex;align-items:center;gap:12px}
+.rate strong{font:400 44px/1 var(--serif);color:var(--nude)}
+.rate span{font-size:13.5px;line-height:1.35;color:#B9ADA6}
+.rate span b{color:var(--milk);font-weight:500;display:block}
+.leaf{position:relative;background:var(--milk);border-radius:6px 120px 6px 120px;aspect-ratio:26/19;box-shadow:0 36px 70px -34px rgba(0,0,0,.7);overflow:hidden;width:100%;max-width:600px;margin-inline:auto}
+@media (max-width:600px){.leaf{border-radius:6px 76px 6px 76px}}
+.leaf svg{position:absolute;inset:0;width:100%;height:100%}
+.hh path{fill:none;stroke:var(--gr);stroke-linecap:round}
+.gd line{stroke:var(--terra);stroke-width:1.1;stroke-dasharray:4 6;opacity:.75}
+.gd circle{fill:var(--paper);stroke:var(--terra-d);stroke-width:1.6}
+.h{stroke-dasharray:1;animation:hd .55s ease-out backwards;animation-delay:calc(var(--i) * 9ms + 400ms)}
+@keyframes hd{0%{stroke-dashoffset:1;opacity:0}10%{opacity:1}100%{stroke-dashoffset:0;opacity:1}}
+.chip{position:absolute;z-index:2;background:var(--gr);color:var(--milk);padding:10px 14px;border-radius:6px;font-size:12.5px;line-height:1.3}
+.chip b{display:block;font:400 20px/1.15 var(--serif);color:var(--nude);margin-top:2px}
+.chip.c1{left:14px;top:14px}
+.chip.c2{right:14px;bottom:14px}
+@media (max-width:420px){.chip{padding:8px 10px;font-size:11.5px}.chip b{font-size:16px}}
+
+/* prices */
+.row{display:flex;align-items:baseline;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.row .n{flex:1 1 0;min-width:0}
+.row .n b{font-weight:500;font-size:16px}
+.row .n small{display:block;color:var(--muted);font-size:13px;line-height:1.4;margin-top:2px}
+.row .p{font:400 22px/1 var(--serif);white-space:nowrap;color:var(--gr)}
+@media (max-width:420px){.row .p{font-size:19px}.row{gap:12px}}
+.sub{font:500 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--terra-d);margin:30px 0 4px}
+.sub:first-child{margin-top:0}
+.med{display:block;margin-top:4px;font-size:12.5px;line-height:1.4;color:var(--terra-d)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.tab{border:1px solid var(--line);background:var(--paper);padding:11px 16px;border-radius:4px;font:500 12.5px/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.tab:hover{border-color:var(--gr)}
+.tab[aria-selected="true"]{background:var(--gr);color:var(--milk);border-color:var(--gr)}
+.panel,.zp{display:none}
+.panel.on,.zp.on{display:block;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}}
+.pgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:36px}
+@media (min-width:960px){.pgrid{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:64px;align-items:start}}
+.side{position:relative;background:var(--gr);color:var(--milk);border-radius:70px 6px 70px 6px;padding:40px 28px 30px;overflow:hidden}
+@media (min-width:960px){.side{position:sticky;top:96px}}
+.side::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-62deg,rgba(227,199,182,.08) 0 1px,transparent 1px 11px);pointer-events:none}
+.side>*{position:relative}
+.side h3{font-size:28px;margin-bottom:12px;color:var(--nude)}
+.side p{margin:0 0 20px;color:#D0C5BE;font-size:15px}
+.side .btn{width:100%}
+
+/* scheme */
+.scheme{display:grid;grid-template-columns:minmax(0,1fr);gap:30px}
+@media (min-width:900px){.scheme{grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:56px;align-items:start}}
+.facebox{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:6px 70px 6px 70px;padding:22px;max-width:430px;margin-inline:auto;width:100%}
+.fsvg{width:100%;height:auto}
+.guides line{stroke:var(--gr);stroke-opacity:.2;stroke-dasharray:3 5;stroke-width:1}
+.outline,.nose{fill:none;stroke:var(--gr);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.zn{cursor:pointer;outline:none}
+.zn .hit{fill:transparent}
+.zn .shape,.zn .lash,.zn .wing,.zn .mline{fill:none;stroke:var(--gr);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;transition:stroke .3s,fill .3s}
+.zn .lash{stroke-width:2.6}
+.zn .iris{fill:var(--gr);transition:fill .3s}
+.zn .hs path{fill:none;stroke:var(--gr);stroke-linecap:round;transition:stroke .3s}
+.zn .halo{fill:none;stroke:var(--terra);stroke-width:22;stroke-linecap:round;opacity:0;transition:opacity .3s}
+.zn .dot{fill:var(--terra-d)}
+.zn .ring{fill:none;stroke:var(--terra);stroke-width:1.2;transform-box:fill-box;transform-origin:center;animation:ring 2.4s ease-out infinite}
+@keyframes ring{0%{transform:scale(.5);opacity:.9}100%{transform:scale(1.9);opacity:0}}
+.zn.on .halo{opacity:.16}
+.zn.on .hs path,.zn.on .shape,.zn.on .lash,.zn.on .wing,.zn.on .mline{stroke:var(--terra-d)}
+.zn.on .iris{fill:var(--terra-d)}
+.zn.on .eye{fill:rgba(182,111,85,.14)}
+.zn.on .lipshape{fill:rgba(182,111,85,.5)}
+.zn.on .dot,.zn.on .ring{display:none}
+.zn:hover .shape,.zn:hover .lash{stroke:var(--terra)}
+.zn:focus-visible .hit{stroke:var(--terra-d);stroke-width:1.5;stroke-dasharray:4 4}
+.fcap{margin:14px 0 0;text-align:center;font-size:13px;color:var(--muted)}
+.zp h3{font-size:clamp(28px,4vw,38px);margin-bottom:6px}
+.zp .zl{margin:0 0 18px;color:var(--muted);font-size:14.5px}
+.zp .rows{border-top:1px solid var(--line)}
+.zp .btn{margin-top:26px}
+.pnote{margin:22px 0 0;font-size:13px;color:var(--muted)}
+
+/* care (dark) */
+.dark{background:var(--gr);color:var(--milk);position:relative;overflow:hidden}
+.dark::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-62deg,rgba(227,199,182,.06) 0 1px,transparent 1px 12px);-webkit-mask-image:linear-gradient(90deg,transparent 40%,#000);mask-image:linear-gradient(90deg,transparent 40%,#000);pointer-events:none}
+.dark .wrap{position:relative}
+.dark .eyebrow{color:var(--nude)}
+.dark h2 em{color:var(--nude)}
+.dark .lead{color:#CFC5BF}
+.care{display:grid;grid-template-columns:minmax(0,1fr);gap:40px}
+@media (min-width:960px){.care{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:72px;align-items:start}}
+.medbox{display:flex;gap:12px;align-items:flex-start;margin-top:26px;border:1px solid rgba(227,199,182,.4);border-radius:6px;padding:16px 18px;font-size:14.5px;color:var(--nude)}
+.medbox svg{width:20px;height:20px;flex:none;margin-top:2px}
+.dark .row{border-color:rgba(245,240,234,.14)}
+.dark .row .p{color:var(--nude)}
+.dark .row .n small{color:#B9ADA6}
+.dark .med{color:#EDB9A3}
+.dark .sub{color:var(--terra)}
+
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pr-card{background:var(--paper);border:1px solid var(--line);border-top:2px solid var(--terra);border-radius:6px;padding:28px 26px 30px;position:relative}
+.pr-card .num{font:400 44px/1 var(--serif);color:var(--nude)}
+.pr-card h3{font-size:25px;margin:18px 0 12px}
+.pr-card p{margin:0;color:#4A423E;font-size:15.5px}
+.score{display:flex;flex-wrap:wrap;gap:14px;margin-top:22px}
+.score a{display:flex;align-items:center;gap:16px;background:var(--gr);color:var(--milk);border-radius:6px;padding:16px 22px;text-decoration:none;flex:1 1 260px}
+.score strong{font:400 44px/1 var(--serif);color:var(--nude)}
+.score span{font-size:13.5px;color:#B9ADA6;line-height:1.4}
+.score span b{color:var(--milk);display:block;font-weight:500}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1fr);gap:36px;align-items:center}
+@media (min-width:900px){.about{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px}}
+.mono{position:relative;background:var(--gr);color:var(--milk);border-radius:70px 6px 70px 6px;aspect-ratio:5/4;overflow:hidden;display:grid;place-items:center}
+.mono::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-62deg,rgba(227,199,182,.1) 0 1px,transparent 1px 11px)}
+.mono svg{position:absolute;inset:0;width:100%;height:100%}
+.mono strong{position:relative;font:400 clamp(40px,8vw,76px)/1 var(--serif);letter-spacing:.02em;text-align:center}
+.mono strong span{color:var(--terra)}
+.mono small{position:absolute;left:0;right:0;bottom:22px;text-align:center;font:500 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#B9ADA6}
+.abt h2{margin:14px 0 18px}
+.abt p{margin:0 0 14px;color:#4A423E}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.fact{display:inline-flex;align-items:center;gap:8px;background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:9px 14px;font-size:14px;font-weight:500}
+.fact svg{width:16px;height:16px;color:var(--terra-d);flex:none}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start}
+.ci small{display:block;font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ci p,.ci a{margin:0;font-size:18px;font-weight:500;text-decoration:none}
+.ci a.big{font:400 30px/1.15 var(--serif)}
+.addr{position:relative;background:var(--gr);color:var(--milk);border-radius:6px 90px 6px 90px;min-height:340px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:32px 30px}
+.addr svg{position:absolute;inset:0;width:100%;height:100%}
+.addr>div{position:relative}
+.addr small{display:block;font:500 11.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--nude);margin-bottom:12px}
+.addr b{display:block;font:400 clamp(26px,4vw,38px)/1.15 var(--serif)}
+.addr span{display:block;margin-top:10px;color:#C9BDB6;font-size:15px}
+
+/* final */
+.final{text-align:center;background:var(--nude);position:relative;overflow:hidden}
+.final::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-62deg,rgba(36,33,32,.07) 0 1px,transparent 1px 12px);pointer-events:none}
+.final .wrap{position:relative}
+.final .eyebrow{justify-content:center;color:var(--gr)}
+.final h2{font-size:clamp(36px,6.4vw,72px);max-width:15ch;margin:18px auto}
+.final h2 em{color:var(--terra-d)}
+.final .lead{margin:0 auto;color:#3A3330}
+.final .ctas{justify-content:center;margin-top:30px}
+footer{background:var(--gr);color:#B9ADA6;padding:36px 0 120px;font-size:13px;line-height:1.55}
+footer .wrap{display:grid;gap:12px}
+footer b{color:var(--milk);font-weight:500}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.3fr);gap:8px;padding:8px;background:rgba(36,33,32,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:12px;box-shadow:0 18px 40px -12px rgba(0,0,0,.5);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:8px;color:#fff;text-decoration:none;font-size:11.5px;font-weight:500;letter-spacing:.04em}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--terra-d);flex-direction:row;font-size:13px;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+  .h{stroke-dashoffset:0!important;opacity:1!important}
+}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта для студии Brow-Ap. Данные из открытых источников (Яндекс Карты) на 24.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Brow-Ap — наверх"><b>Brow<span>·</span>Ap</b><small>Сестрорецк</small></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#scheme">Схема лица</a>
+      <a href="#prices">Услуги и цены</a>
+      <a href="#care">Уход за лицом</a>
+      <a href="#praise">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm nude" href="https://wa.me/79291111024?text=Здравствуйте!%20Хочу%20записаться%20в%20Brow-Ap.%20Подскажите%20свободное%20время." target="_blank" rel="noopener">Записаться</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#scheme">Схема лица</a>
+  <a href="#prices">Услуги и цены</a>
+  <a href="#care">Уход за лицом</a>
+  <a href="#praise">Отзывы</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero" style="scroll-margin-top:0">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow rv">Brow-Ap · студия перманентного макияжа</span>
+      <h1 class="rv d1">Естественные брови <em>правильной формы</em> и&nbsp;цвета</h1>
+      <p class="lead rv d2">Перманент бровей, губ и межресничного пространства, стрелки и уход за лицом в Сестрорецке. Принимает мастер Александра Панкина.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Сестрорецк, ул. Коммунаров, 2/4, 2 этаж · Курортный район</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn nude" href="tel:+79291111024"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+        <a class="btn light" href="https://yandex.ru/maps/?rtext=~%D0%A1%D0%B5%D1%81%D1%82%D1%80%D0%BE%D1%80%D0%B5%D1%86%D0%BA%2C%20%D1%83%D0%BB.%20%D0%9A%D0%BE%D0%BC%D0%BC%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B2%2C%202%2F4&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+      </div>
+      <div class="ratings rv d3">
+        <div class="rate"><strong>4.9</strong><span><b>Яндекс Карты</b>18 отзывов</span></div>
+      </div>
+    </div>
+    <div class="leaf rv d2" aria-hidden="true">
+      <svg viewBox="0 0 520 380" preserveAspectRatio="xMidYMid meet">
+        <g class="gd">
+          <line x1="70" y1="36" x2="70" y2="340"/>
+          <line x1="282" y1="36" x2="282" y2="340"/>
+          <line x1="460" y1="36" x2="460" y2="340"/>
+          <circle cx="70" cy="255" r="5"/><circle cx="282" cy="120" r="5"/><circle cx="460" cy="180" r="5"/>
+        </g>
+        <g class="hh" id="heroHairs"></g>
+      </svg>
+      <div class="chip c1">Брови<b>от&nbsp;5&nbsp;000&nbsp;₽</b></div>
+      <div class="chip c2">Губы<b>от&nbsp;6&nbsp;000&nbsp;₽</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEME (фишка) -->
+<section id="scheme">
+  <div class="wrap">
+    <div class="sechead">
+      <span class="eyebrow rv">Выберите зону</span>
+      <h2 class="rv d1">Схема <em>лица</em></h2>
+      <p class="lead rv d2">Нажмите на зону лица — покажем варианты перманентного макияжа и цены на них.</p>
+    </div>
+    <div class="scheme">
+      <div class="rv">
+        <div class="facebox">
+          <svg class="fsvg" viewBox="0 0 320 400" role="group" aria-label="Схема лица: брови, глаза, губы">
+            <g class="guides">
+              <line x1="160" y1="8" x2="160" y2="394"/>
+              <line x1="24" y1="140" x2="296" y2="140"/>
+              <line x1="24" y1="178" x2="296" y2="178"/>
+              <line x1="24" y1="292" x2="296" y2="292"/>
+            </g>
+            <path class="outline" d="M160 24C238 24 268 96 262 176C256 262 214 352 160 372C106 352 64 262 58 176C52 96 82 24 160 24Z"/>
+            <path class="nose" d="M160 186C159 214 152 232 146 242C153 250 167 250 174 242"/>
+
+            <g class="zn z-brows on" data-z="brows" role="button" tabindex="0" aria-pressed="true" aria-label="Брови">
+              <path class="halo" d="M170 134C188 118 222 116 244 152"/>
+              <path class="halo" d="M170 134C188 118 222 116 244 152" transform="translate(320 0) scale(-1 1)"/>
+              <g class="hs" id="fh"></g>
+              <g class="hs" id="fh2" transform="translate(320 0) scale(-1 1)"></g>
+              <circle class="dot" cx="160" cy="112" r="3.5"/><circle class="ring" cx="160" cy="112" r="8"/>
+              <rect class="hit" x="52" y="98" width="216" height="62" rx="18"/>
+            </g>
+
+            <g class="zn z-eyes" data-z="eyes" role="button" tabindex="0" aria-pressed="false" aria-label="Глаза">
+              <path class="shape eye" d="M92 178C106 164 134 164 148 178C134 190 106 190 92 178Z"/>
+              <path class="shape eye" d="M228 178C214 164 186 164 172 178C186 190 214 190 228 178Z"/>
+              <path class="lash" d="M92 178C106 164 134 164 148 178"/>
+              <path class="lash" d="M228 178C214 164 186 164 172 178"/>
+              <path class="wing" d="M92 178Q82 175 76 167"/>
+              <path class="wing" d="M228 178Q238 175 244 167"/>
+              <circle class="iris" cx="120" cy="177" r="5"/><circle class="iris" cx="200" cy="177" r="5"/>
+              <circle class="dot" cx="160" cy="176" r="3.5"/><circle class="ring" cx="160" cy="176" r="8"/>
+              <rect class="hit" x="66" y="162" width="188" height="44" rx="16"/>
+            </g>
+
+            <g class="zn z-lips" data-z="lips" role="button" tabindex="0" aria-pressed="false" aria-label="Губы">
+              <path class="shape lipshape" d="M120 292C138 282 152 284 160 290C168 284 182 282 200 292C186 312 134 312 120 292Z"/>
+              <path class="mline" d="M120 292C140 297 180 297 200 292"/>
+              <circle class="dot" cx="160" cy="334" r="3.5"/><circle class="ring" cx="160" cy="334" r="8"/>
+              <rect class="hit" x="100" y="268" width="120" height="82" rx="18"/>
+            </g>
+          </svg>
+        </div>
+        <p class="fcap">Схема условная, для выбора услуги</p>
+      </div>
+
+      <div class="rv d1">
+        <div class="tabs" role="tablist" aria-label="Зона лица">
+          <button class="tab" role="tab" aria-selected="true" aria-controls="zp-brows" data-zt="brows">Брови</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="zp-eyes" data-zt="eyes">Глаза</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="zp-lips" data-zt="lips">Губы</button>
+        </div>
+
+        <div class="zp on" id="zp-brows" role="tabpanel">
+          <h3>Брови</h3>
+          <p class="zl">Перманентный макияж бровей и уход за ними</p>
+          <div class="rows">
+            <div class="row"><div class="n"><b>Перманентный макияж бровей</b></div><div class="p">от&nbsp;5&nbsp;000&nbsp;₽</div></div>
+            <div class="row"><div class="n"><b>Коррекция бровей</b></div><div class="p">от&nbsp;200&nbsp;₽</div></div>
+            <div class="row"><div class="n"><b>Окраска бровей</b></div><div class="p">от&nbsp;200&nbsp;₽</div></div>
+          </div>
+          <a class="btn terra" href="https://wa.me/79291111024?text=Здравствуйте!%20Хочу%20записаться%20в%20Brow-Ap%20на%20перманент%20бровей.%20Подскажите%20свободное%20время." target="_blank" rel="noopener">Записаться на брови</a>
+        </div>
+
+        <div class="zp" id="zp-eyes" role="tabpanel">
+          <h3>Глаза</h3>
+          <p class="zl">Межресничное пространство, стрелки и ресницы</p>
+          <div class="rows">
+            <div class="row"><div class="n"><b>Межресничное пространство</b></div><div class="p">от&nbsp;4&nbsp;000&nbsp;₽</div></div>
+            <div class="row"><div class="n"><b>Классические стрелки + межресничка</b></div><div class="p">от&nbsp;5&nbsp;000&nbsp;₽</div></div>
+            <div class="row"><div class="n"><b>«Гламурные» стрелки + межресничка</b></div><div class="p">от&nbsp;5&nbsp;500&nbsp;₽</div></div>
+          </div>
+          <div class="sub">Ресницы</div>
+          <div class="rows">
+            <div class="row"><div class="n"><b>Ламинирование ресниц</b></div><div class="p">от&nbsp;1&nbsp;500&nbsp;₽</div></div>
+            <div class="row"><div class="n"><b>Ботокс для ресниц</b></div><div class="p">от&nbsp;1&nbsp;500&nbsp;₽</div></div>
+            <div class="row"><div class="n"><b>Окраска ресниц</b></div><div class="p">от&nbsp;200&nbsp;₽</div></div>
+          </div>
+          <a class="btn terra" href="https://wa.me/79291111024?text=Здравствуйте!%20Хочу%20записаться%20в%20Brow-Ap%20на%20перманент%20межресничного%20пространства%20или%20стрелок.%20Подскажите%20свободное%20время." target="_blank" rel="noopener">Записаться на глаза</a>
+        </div>
+
+        <div class="zp" id="zp-lips" role="tabpanel">
+          <h3>Губы</h3>
+          <p class="zl">Перманентный макияж и коррекция формы</p>
+          <div class="rows">
+            <div class="row"><div class="n"><b>Перманентный макияж губ</b><small>Контур с мягкой растушёвкой</small></div><div class="p">от&nbsp;6&nbsp;000&nbsp;₽</div></div>
+            <div class="row"><div class="n"><b>Биоармирование, разглаживание морщин, коррекция формы губ</b><span class="med">Имеются противопоказания, необходима консультация специалиста</span></div><div class="p">от&nbsp;7&nbsp;000&nbsp;₽</div></div>
+          </div>
+          <a class="btn terra" href="https://wa.me/79291111024?text=Здравствуйте!%20Хочу%20записаться%20в%20Brow-Ap%20на%20перманент%20губ.%20Подскажите%20свободное%20время." target="_blank" rel="noopener">Записаться на губы</a>
+        </div>
+        <p class="pnote">Цены из Яндекс Карт. Прайс давно не обновлялся — цены уточняйте при записи.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section id="prices" style="background:var(--sand)">
+  <div class="wrap">
+    <div class="sechead">
+      <span class="eyebrow rv">Прайс</span>
+      <h2 class="rv d1">Услуги <em>и цены</em></h2>
+      <p class="lead rv d2">Цены из Яндекс Карт, все — «от». Прайс давно не обновлялся: цены уточняйте при записи.</p>
+    </div>
+    <div class="pgrid">
+      <div class="rv">
+        <div class="tabs" role="tablist" aria-label="Категории услуг" data-ptabs>
+          <button class="tab" role="tab" aria-selected="true" aria-controls="p-pm">Перманентный макияж</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="p-bl">Брови и ресницы</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="p-dp">Депиляция</button>
+        </div>
+        <div class="panel on" id="p-pm" role="tabpanel">
+          <div class="row"><div class="n"><b>Брови</b></div><div class="p">от&nbsp;5&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Губы</b><small>Контур с мягкой растушёвкой</small></div><div class="p">от&nbsp;6&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Межресничное пространство</b></div><div class="p">от&nbsp;4&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Классические стрелки + межресничка</b></div><div class="p">от&nbsp;5&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>«Гламурные» стрелки + межресничка</b></div><div class="p">от&nbsp;5&nbsp;500&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-bl" role="tabpanel">
+          <div class="sub">Брови</div>
+          <div class="row"><div class="n"><b>Коррекция</b></div><div class="p">от&nbsp;200&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Окраска бровей</b></div><div class="p">от&nbsp;200&nbsp;₽</div></div>
+          <div class="sub">Ресницы</div>
+          <div class="row"><div class="n"><b>Окраска ресниц</b></div><div class="p">от&nbsp;200&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Ламинирование</b></div><div class="p">от&nbsp;1&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Ботокс для ресниц</b></div><div class="p">от&nbsp;1&nbsp;500&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-dp" role="tabpanel">
+          <div class="sub">Восковая депиляция</div>
+          <div class="row"><div class="n"><b>Усики / подбородок</b></div><div class="p">от&nbsp;200&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Подмышки</b></div><div class="p">от&nbsp;500&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Руки</b></div><div class="p">от&nbsp;700&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Ноги</b></div><div class="p">от&nbsp;700&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Ноги полностью</b></div><div class="p">от&nbsp;1&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Бикини</b></div><div class="p">от&nbsp;1&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Глубокое бикини</b></div><div class="p">от&nbsp;1&nbsp;500&nbsp;₽</div></div>
+        </div>
+        <p class="pnote">Уход за лицом (чистки, мезотерапия и другое) — в отдельном разделе ниже.</p>
+      </div>
+      <aside class="side rv d1">
+        <h3>Цены — «от»</h3>
+        <p>Итоговая стоимость зависит от задачи и зоны. Напишите в WhatsApp — текст сообщения уже готов, останется отправить.</p>
+        <a class="btn nude" href="https://wa.me/79291111024?text=Здравствуйте!%20Хочу%20записаться%20в%20Brow-Ap.%20Подскажите%20свободное%20время%20и%20актуальные%20цены." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>Написать в WhatsApp</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- CARE -->
+<section id="care" class="dark">
+  <div class="wrap care">
+    <div>
+      <span class="eyebrow rv">Отдельно от перманента</span>
+      <h2 class="rv d1" style="margin:16px 0 20px">Уход <em>за лицом</em></h2>
+      <p class="lead rv d2">Чистки, уход на косметике Anna Lotan и процедуры, которые назначают по консультации.</p>
+      <div class="medbox rv d2" role="note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>
+        <span>Имеются противопоказания, необходима консультация специалиста</span>
+      </div>
+      <div class="ctas rv d3" style="margin-top:26px"><a class="btn nude" href="https://wa.me/79291111024?text=Здравствуйте!%20Хочу%20записаться%20в%20Brow-Ap%20на%20уход%20за%20лицом.%20Подскажите%20свободное%20время." target="_blank" rel="noopener">Записаться на уход</a></div>
+    </div>
+    <div class="rv d1">
+      <div class="sub">Чистки и уход</div>
+      <div class="row"><div class="n"><b>Ультразвуковая чистка</b></div><div class="p">от&nbsp;1&nbsp;300&nbsp;₽</div></div>
+      <div class="row"><div class="n"><b>Механическая + ультразвуковая чистка</b></div><div class="p">от&nbsp;1&nbsp;500&nbsp;₽</div></div>
+      <div class="row"><div class="n"><b>Уход на косметике Anna Lotan + классический массаж лица</b></div><div class="p">от&nbsp;1&nbsp;500&nbsp;₽</div></div>
+      <div class="sub">Процедуры по консультации</div>
+      <div class="row"><div class="n"><b>Мезотерапия</b><span class="med">Имеются противопоказания, необходима консультация специалиста</span></div><div class="p">от&nbsp;4&nbsp;500&nbsp;₽</div></div>
+      <div class="row"><div class="n"><b>Мезотерапия по проблеме</b><span class="med">Имеются противопоказания, необходима консультация специалиста</span></div><div class="p">от&nbsp;1&nbsp;500&nbsp;₽</div></div>
+      <div class="row"><div class="n"><b>Гиалуроновая кислота 1,5%</b><span class="med">Имеются противопоказания, необходима консультация специалиста</span></div><div class="p">от&nbsp;3&nbsp;500&nbsp;₽</div></div>
+      <div class="row"><div class="n"><b>Витамины для волос</b><span class="med">Имеются противопоказания, необходима консультация специалиста</span></div><div class="p">от&nbsp;1&nbsp;500&nbsp;₽</div></div>
+      <div class="row"><div class="n"><b>Биоармирование, разглаживание морщин, коррекция формы губ</b><span class="med">Имеются противопоказания, необходима консультация специалиста</span></div><div class="p">от&nbsp;7&nbsp;000&nbsp;₽</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRAISE -->
+<section id="praise">
+  <div class="wrap">
+    <div class="sechead">
+      <span class="eyebrow rv">Отзывы</span>
+      <h2 class="rv d1">За что <em>хвалят</em></h2>
+      <p class="lead rv d2">Пересказ отзывов клиентов на Яндекс Картах.</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card rv"><span class="num">01</span><h3>Естественный результат</h3><p>Клиенты пишут, что брови получаются естественными, правильного цвета и формы, а мастер подходит к делу педантично.</p></article>
+      <article class="pr-card rv d1"><span class="num">02</span><h3>Едут ради результата</h3><p>В отзывах рассказывают, что к мастеру приезжают даже с юга Петербурга — результат того стоит.</p></article>
+      <article class="pr-card rv d2"><span class="num">03</span><h3>Уютно и спокойно</h3><p>Отмечают чистоту, уют и спокойную атмосферу. Многие возвращаются уже на другие зоны.</p></article>
+    </div>
+    <div class="score rv">
+      <a href="https://yandex.ru/maps/org/studiya_permanentnogo_makiyazha_brow_ap/205863845951/" target="_blank" rel="noopener"><strong>4.9</strong><span><b>Яндекс Карты</b>18 отзывов</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="studio" style="padding-top:0">
+  <div class="wrap about">
+    <div class="mono rv" aria-hidden="true">
+      <svg viewBox="0 0 500 400" preserveAspectRatio="xMidYMid slice" fill="none" stroke="#E3C7B6" stroke-width="1" stroke-linecap="round">
+        <path d="M40 330C120 200 260 150 460 220" opacity=".5"/>
+        <path d="M60 350C150 240 280 200 470 250" opacity=".35"/>
+        <path d="M30 300C110 160 260 110 450 190" opacity=".25"/>
+      </svg>
+      <strong>Brow<span>·</span>Ap</strong>
+      <small>Сестрорецк</small>
+    </div>
+    <div class="abt rv d1">
+      <span class="eyebrow">Мастер и студия</span>
+      <h2>Точность <em>в&nbsp;деталях</em></h2>
+      <p>Brow-Ap — студия перманентного макияжа в Сестрорецке. Принимает мастер Александра Панкина: по отзывам клиентов, брови выходят естественными по форме и цвету.</p>
+      <p>Кроме перманента в прайсе есть уход за лицом, ресницы, брови и восковая депиляция.</p>
+      <div class="facts">
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Сестрорецк, Курортный район</span>
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 21V3h10v18M10 7h4M10 11h4"/></svg>2 этаж</span>
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-5 4-7 8-7s7 2 8 7"/></svg>Мастер: Александра Панкина</span>
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>Запись в WhatsApp</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="sechead">
+      <span class="eyebrow rv">Контакты</span>
+      <h2 class="rv d1">Как <em>добраться</em></h2>
+    </div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Сестрорецк, ул. Коммунаров, 2/4, 2 этаж (Курортный район)</p></div>
+        <div class="ci"><small>Часы работы</small><p>Уточняйте при записи</p></div>
+        <div class="ci"><small>Телефон</small><a class="big" href="tel:+79291111024">+7&nbsp;929&nbsp;111-10-24</a></div>
+        <div class="ci"><small>Запись и карты</small>
+          <div class="ctas">
+            <a class="btn terra" href="https://wa.me/79291111024?text=Здравствуйте!%20Хочу%20записаться%20в%20Brow-Ap.%20Подскажите%20свободное%20время." target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn dark" href="https://yandex.ru/maps/org/studiya_permanentnogo_makiyazha_brow_ap/205863845951/" target="_blank" rel="noopener">Яндекс Карты</a>
+          </div>
+        </div>
+      </div>
+      <div class="rv d1">
+        <div class="addr">
+          <svg viewBox="0 0 500 340" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true">
+            <g stroke="#E3C7B6" stroke-opacity=".22" stroke-width="1.2" stroke-linecap="round">
+              <path d="M-10 90L520 60"/><path d="M-10 190L520 230"/><path d="M120 -10L170 350"/><path d="M330 -10L300 350"/><path d="M-10 280L520 150" stroke-opacity=".14"/>
+            </g>
+            <circle cx="300" cy="104" r="26" stroke="#B66F55" stroke-opacity=".5"/>
+            <circle cx="300" cy="104" r="7" fill="#B66F55"/>
+          </svg>
+          <div>
+            <small>Сестрорецк · Курортный район</small>
+            <b>ул. Коммунаров, 2/4</b>
+            <span>2 этаж</span>
+            <div class="ctas" style="margin-top:22px">
+              <a class="btn nude" href="https://yandex.ru/maps/?rtext=~%D0%A1%D0%B5%D1%81%D1%82%D1%80%D0%BE%D1%80%D0%B5%D1%86%D0%BA%2C%20%D1%83%D0%BB.%20%D0%9A%D0%BE%D0%BC%D0%BC%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B2%2C%202%2F4&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow rv">Запись</span>
+    <h2 class="rv d1">Напишите <em>в&nbsp;WhatsApp</em></h2>
+    <p class="lead rv d2">Расскажите, какая зона вас интересует, — подберём время. Цены уточняйте при записи.</p>
+    <div class="ctas rv d3">
+      <a class="btn terra" href="https://wa.me/79291111024?text=Здравствуйте!%20Хочу%20записаться%20в%20Brow-Ap.%20Подскажите%20свободное%20время." target="_blank" rel="noopener">Записаться</a>
+      <a class="btn dark" href="tel:+79291111024">+7&nbsp;929&nbsp;111-10-24</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><b>© Brow-Ap</b> — студия перманентного макияжа, Сестрорецк, ул. Коммунаров, 2/4, 2 этаж</span>
+    <span>Демо-концепт. Данные — из открытых источников (Яндекс Карты) на 24.10.2026. Все цены — «от»; прайс давно не обновлялся, цены уточняйте при записи.</span>
+    <span>Имеются противопоказания, необходима консультация специалиста.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79291111024"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+  <a href="https://yandex.ru/maps/?rtext=~%D0%A1%D0%B5%D1%81%D1%82%D1%80%D0%BE%D1%80%D0%B5%D1%86%D0%BA%2C%20%D1%83%D0%BB.%20%D0%9A%D0%BE%D0%BC%D0%BC%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B2%2C%202%2F4&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+  <a class="main" href="https://wa.me/79291111024?text=Здравствуйте!%20Хочу%20записаться%20в%20Brow-Ap.%20Подскажите%20свободное%20время." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>Записаться</a>
+</nav>
+
+<script>
+(() => {
+  const NS = 'http://www.w3.org/2000/svg';
+
+  // Детерминированный генератор для «волосков»
+  const rng = s => () => { s |= 0; s = s + 0x6D2B79F5 | 0; let t = Math.imul(s ^ s >>> 15, 1 | s); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
+  const bez = (p, t) => { const u = 1 - t; return [u*u*u*p[0] + 3*u*u*t*p[2] + 3*u*t*t*p[4] + t*t*t*p[6], u*u*u*p[1] + 3*u*u*t*p[3] + 3*u*t*t*p[5] + t*t*t*p[7]]; };
+  const tan = (p, t) => { const u = 1 - t; return [3*u*u*(p[2]-p[0]) + 6*u*t*(p[4]-p[2]) + 3*t*t*(p[6]-p[4]), 3*u*u*(p[3]-p[1]) + 6*u*t*(p[5]-p[3]) + 3*t*t*(p[7]-p[5])]; };
+
+  // Бровь из тонких штрихов вдоль кривой: от головки к хвосту
+  function hairs(g, o) {
+    const r = rng(o.seed);
+    for (let i = 0; i < o.n; i++) {
+      const t = i / (o.n - 1), c = bez(o.p, t), d = tan(o.p, t), a = Math.atan2(d[1], d[0]);
+      const off = (r() - .5) * o.th * (1 - .65 * t);
+      const x = c[0] - Math.sin(a) * off, y = c[1] + Math.cos(a) * off;
+      const ang = (-84 + 104 * Math.pow(t, .85) + (r() - .5) * 10) * Math.PI / 180;
+      const L = o.len * (.75 + r() * .5) * (1 - .3 * t);
+      const x2 = x + Math.cos(ang) * L, y2 = y + Math.sin(ang) * L;
+      const mx = (x + x2) / 2 + Math.cos(ang + 1.57) * L * .12, my = (y + y2) / 2 + Math.sin(ang + 1.57) * L * .12;
+      const p = document.createElementNS(NS, 'path');
+      p.setAttribute('d', `M${x.toFixed(1)} ${y.toFixed(1)}Q${mx.toFixed(1)} ${my.toFixed(1)} ${x2.toFixed(1)} ${y2.toFixed(1)}`);
+      p.setAttribute('stroke-width', (o.w * (.75 + r() * .5) * (1 - .35 * t)).toFixed(2));
+      if (o.anim) { p.setAttribute('pathLength', '1'); p.setAttribute('class', 'h'); p.style.setProperty('--i', i); }
+      g.appendChild(p);
+    }
+  }
+  hairs(document.getElementById('heroHairs'), { p: [70,255,140,120,300,70,460,180], n: 170, th: 60, len: 44, w: 2.1, seed: 11, anim: true });
+  const faceBrow = { p: [170,134,188,118,222,116,244,152], n: 30, th: 7, len: 10, w: 1.3, seed: 3 };
+  hairs(document.getElementById('fh'), faceBrow);
+  hairs(document.getElementById('fh2'), faceBrow);
+
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => { mbar.classList.toggle('show', scrollY > 420); };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Схема лица: зона -> варианты и цены
+  const zn = document.querySelectorAll('.zn'), zt = document.querySelectorAll('[data-zt]'), zp = document.querySelectorAll('.zp');
+  const setZone = z => {
+    zn.forEach(n => { const on = n.dataset.z === z; n.classList.toggle('on', on); n.setAttribute('aria-pressed', on); });
+    zt.forEach(b => b.setAttribute('aria-selected', b.dataset.zt === z));
+    zp.forEach(p => p.classList.toggle('on', p.id === 'zp-' + z));
+  };
+  zn.forEach(n => {
+    n.addEventListener('click', () => setZone(n.dataset.z));
+    n.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setZone(n.dataset.z); } });
+  });
+  zt.forEach(b => b.addEventListener('click', () => setZone(b.dataset.zt)));
+
+  // Вкладки прайса
+  document.querySelectorAll('[data-ptabs]').forEach(list => {
+    const btns = [...list.querySelectorAll('[role=tab]')];
+    btns.forEach(b => b.addEventListener('click', () => btns.forEach(x => {
+      const on = x === b; x.setAttribute('aria-selected', on);
+      document.getElementById(x.getAttribute('aria-controls')).classList.toggle('on', on);
+    })));
+  });
+})();
+</script>
+</body>
+</html>

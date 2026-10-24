@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Натали — студия взгляда в Парголове: наращивание и ламинирование ресниц, брови</title>
+<meta name="description" content="Студия взгляда Натальи Ращупкиной: наращивание и ламинирование ресниц, оформление бровей. Парголово, Приозерское шоссе, 14 к1, подъезд 1.">
+<meta name="theme-color" content="#EAF4FB">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Jost:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Jost:wght@300;400;500;600&display=swap"></noscript>
+<style>
+:root{
+  --snow:#F7FBFE; --sky-1:#EAF4FB; --sky-2:#D3E8F6; --sky-3:#B5D5EC;
+  --blue:#3C78A5; --blue-d:#2B6190; --navy:#1C3045; --ink-2:#34495C; --muted:#5C7184;
+  --silver-1:#AEB9C4; --silver-2:#E9EEF2; --line:rgba(60,100,140,.18);
+  --silver:linear-gradient(135deg,#8E9BA8 0%,#E6EBF0 28%,#A7B3BF 52%,#F2F5F8 76%,#97A4B1 100%);
+  --r-lg:28px; --r-md:18px; --r-sm:12px;
+  --shadow:0 30px 70px -36px rgba(40,90,140,.45);
+  --script:"Bad Script","Segoe Script","Brush Script MT",cursive;
+  --sans:"Jost","Segoe UI",system-ui,-apple-system,sans-serif;
+  --wrap:1160px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--snow);color:var(--navy);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+svg{display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+section{padding:clamp(64px,9vw,112px) 0;scroll-margin-top:72px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:500 12px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--blue)}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--blue)}
+h1,h2,h3{margin:0;font-family:var(--sans);font-weight:300;line-height:1.1;letter-spacing:-.01em}
+h2{font-size:clamp(34px,5.6vw,60px)}
+h2 em,h1 em{font-family:var(--script);font-style:normal;font-weight:400;font-size:1.16em;color:var(--blue);line-height:1}
+.lead{font-size:clamp(16px,1.7vw,19px);font-weight:300;color:var(--ink-2);max-width:52ch}
+.center{text-align:center}
+.center .lead{margin-inline:auto}
+
+/* demo bar */
+.demo{background:var(--navy);color:#E3EEF7;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:#fff;font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:11px;border:1px solid rgba(255,255,255,.4);border-radius:99px;padding:3px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(247,251,254,.9);background:color-mix(in srgb,var(--snow) 84%,transparent);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.logo b{font:400 32px/1 var(--script);color:var(--blue)}
+.logo small{font:500 10.5px/1.2 var(--sans);color:var(--muted);letter-spacing:.16em;text-transform:uppercase;border-left:1px solid var(--silver-1);padding-left:10px}
+.nav{display:none;gap:30px}
+.nav a{text-decoration:none;font-weight:400;font-size:15px;color:var(--ink-2);position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 26px;border-radius:99px;border:1px solid var(--blue);background:var(--blue);color:#fff;font-weight:500;font-size:15px;letter-spacing:.02em;text-decoration:none;cursor:pointer;transition:transform .25s, background .25s, color .25s, border-color .25s, box-shadow .25s;box-shadow:0 12px 26px -14px rgba(43,97,144,.8)}
+.btn:hover{transform:translateY(-2px);background:var(--blue-d);border-color:var(--blue-d)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.ghost{background:transparent;color:var(--navy);border-color:var(--silver-1);box-shadow:none}
+.btn.ghost:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.btn.sm{min-height:42px;padding:0 20px;font-size:14px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border-radius:50%;border:1px solid var(--silver-1);background:#fff;display:grid;place-items:center;cursor:pointer;flex:none}
+.burger span{display:block;width:18px;height:1.5px;background:var(--navy);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:var(--navy);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--snow);padding:120px 24px 40px;display:flex;flex-direction:column;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:300 34px/1.25 var(--sans);text-decoration:none;padding:8px 0;border-bottom:1px solid var(--line)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+@media (max-width:420px){.logo small{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:clamp(28px,5vw,64px) 0 clamp(64px,9vw,112px);background:radial-gradient(90% 70% at 88% 8%,var(--sky-2) 0%,rgba(211,232,246,0) 62%),radial-gradient(60% 50% at 0% 100%,var(--sky-1),rgba(234,244,251,0) 72%)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:48px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px}}
+.hero h1{margin:20px 0 22px;line-height:1}
+.brand{display:block;font:400 clamp(84px,17vw,176px)/1.05 var(--script);padding-bottom:.06em;color:#6C8196}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  .brand{background:linear-gradient(100deg,#5F7A92 0%,#A3B4C4 28%,#5F7A92 50%,#B9C6D2 72%,#66819A 100%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;animation:shimmer 10s linear infinite}
+}
+@keyframes shimmer{to{background-position:-220% 0}}
+.sub{display:block;font:500 clamp(13px,1.6vw,15px)/1.5 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--blue);margin-top:6px}
+.hero .lead{margin:0 0 24px}
+.place{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:15px;margin-bottom:28px}
+.place svg{width:18px;height:18px;flex:none;margin-top:4px;color:var(--blue)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.ratings{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:34px;padding-top:24px;border-top:1px solid var(--line)}
+.rate{display:flex;align-items:center;gap:14px}
+.rate strong{font:300 46px/1 var(--sans)}
+.rate span{font-size:13.5px;line-height:1.35;color:var(--muted)}
+.rate span b{display:block;font-weight:500;color:var(--blue);letter-spacing:3px;font-size:12px}
+
+.mirror{position:relative;width:min(100%,430px);margin-inline:auto;aspect-ratio:4/5}
+.mirror::before{content:"";position:absolute;inset:-14px;border-radius:50%/48%;padding:4px;background:var(--silver);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)}
+.glass{position:absolute;inset:0;border-radius:50%/48%;overflow:hidden;background:radial-gradient(70% 55% at 32% 22%,#fff 0%,var(--sky-1) 38%,var(--sky-3) 100%);box-shadow:0 0 0 8px rgba(255,255,255,.7),var(--shadow)}
+.glass::before{content:"";position:absolute;left:10%;top:6%;width:46%;height:22%;border-radius:50%;background:linear-gradient(180deg,rgba(255,255,255,.75),rgba(255,255,255,0));transform:rotate(-24deg)}
+.glass::after{content:"";position:absolute;inset:7%;border-radius:50%/48%;border:1px solid rgba(255,255,255,.7)}
+.glass .eye{position:absolute;left:7%;right:7%;top:50%;transform:translateY(-52%)}
+.spark{position:absolute;width:20px;height:20px;color:#fff;animation:twinkle 4s ease-in-out infinite;filter:drop-shadow(0 0 6px rgba(60,120,165,.5))}
+.spark.s1{left:18%;top:24%}.spark.s2{right:16%;top:34%;width:14px;height:14px;animation-delay:-1.4s}.spark.s3{right:26%;bottom:20%;width:24px;height:24px;animation-delay:-2.6s}.spark.s4{left:22%;bottom:26%;width:12px;height:12px;animation-delay:-.8s}
+@keyframes twinkle{50%{transform:scale(.55);opacity:.5}}
+.chip{position:absolute;z-index:4;background:rgba(255,255,255,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid #fff;border-radius:var(--r-md);padding:11px 16px;box-shadow:0 18px 40px -20px rgba(40,90,140,.5);font-size:13px;line-height:1.35;color:var(--ink-2);animation:float 6s ease-in-out infinite}
+.chip b{display:block;font:400 22px/1.1 var(--sans);color:var(--navy);margin-top:2px}
+.chip.c1{right:-2%;top:10%}
+.chip.c2{left:-2%;bottom:9%;animation-delay:-3s}
+@media (max-width:520px){.chip.c1{right:0}.chip.c2{left:0}}
+@keyframes float{50%{transform:translateY(-9px)}}
+
+/* eye svg */
+.eye svg,.scheme svg{width:100%;height:auto;overflow:visible}
+.eye .scl{fill:#fff}
+.eye .lid{fill:none;stroke:var(--navy);stroke-width:2.4;stroke-linecap:round}
+.eye .low{fill:none;stroke:#7E97AE;stroke-width:1.4;stroke-linecap:round}
+.eye .ls{fill:none;stroke:var(--navy);stroke-linecap:round;stroke-dasharray:90;stroke-dashoffset:90;animation:draw .9s var(--d,0ms) cubic-bezier(.5,0,.3,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+
+/* strip */
+.strip{border-block:1px solid var(--silver-1);background:linear-gradient(90deg,var(--silver-2),#fff 50%,var(--silver-2))}
+.strip .wrap{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 30px;padding:16px 0;font:400 italic 22px/1.2 var(--script);color:var(--ink-2)}
+.strip .wrap span{display:flex;align-items:center;gap:30px}
+.strip .wrap span+span::before{content:"";width:6px;height:6px;border:1px solid var(--blue);transform:rotate(45deg)}
+.strip .wrap{font-style:normal}
+
+/* menu */
+.menu-sec{background:linear-gradient(180deg,var(--snow),var(--sky-1))}
+.menu{position:relative;max-width:780px;margin:0 auto;background:#fff;border-radius:var(--r-lg);padding:clamp(34px,5vw,60px) clamp(22px,5vw,60px);box-shadow:var(--shadow)}
+.menu::before{content:"";position:absolute;inset:10px;border:1px solid var(--silver-1);border-radius:20px;pointer-events:none}
+.menu::after{content:"";position:absolute;inset:15px;border:1px solid var(--silver-2);border-radius:16px;pointer-events:none}
+.menu>*{position:relative;z-index:1}
+.menu-title{text-align:center}
+.menu-title .sc{display:block;font:400 clamp(48px,9vw,78px)/1.1 var(--script);color:var(--blue)}
+.menu-title small{display:block;font-size:13px;color:var(--muted);margin-top:4px}
+.orn{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--silver-1);margin:14px 0 4px}
+.orn::before,.orn::after{content:"";height:1px;width:min(28%,120px);background:linear-gradient(90deg,rgba(174,185,196,0),var(--silver-1))}
+.orn::after{transform:scaleX(-1)}
+.orn svg{width:14px;height:14px}
+.mcat{font:500 12px/1 var(--sans);letter-spacing:.26em;text-transform:uppercase;color:var(--blue);text-align:center;margin:30px 0 4px}
+.dish{display:flex;align-items:baseline;gap:10px;padding:16px 0}
+.dish .n{flex:0 1 auto;min-width:0}
+.dish .n b{font-weight:500;font-size:clamp(17px,2.4vw,20px);line-height:1.3}
+.dish .n small{display:block;color:var(--muted);font-size:14px;line-height:1.4;margin-top:3px}
+.dish .dots{flex:1 1 16px;min-width:16px;border-bottom:2px dotted var(--silver-1)}
+.dish .p{font:400 clamp(22px,3vw,26px)/1 var(--sans);white-space:nowrap;color:var(--navy)}
+.menu .note{text-align:center;font-size:13px;color:var(--muted);margin:22px 0 0}
+.menu .ctas{justify-content:center;margin-top:26px}
+
+/* effect (feature) */
+.effect{background:radial-gradient(80% 60% at 50% 0%,var(--sky-2),rgba(211,232,246,0) 70%),var(--snow)}
+.cmp{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;margin-top:44px}
+@media (min-width:760px){.cmp{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}}
+.opt{position:relative;text-align:left;cursor:pointer;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:20px 20px 24px;display:flex;flex-direction:column;gap:14px;transition:border-color .3s, box-shadow .3s, transform .3s}
+.opt:hover{transform:translateY(-3px)}
+.opt[aria-checked="true"]{border-color:var(--blue);box-shadow:0 0 0 1px var(--blue),var(--shadow)}
+.opt:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.opt .top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.opt .top b{font:300 clamp(26px,3.4vw,34px)/1.1 var(--sans)}
+.opt .radio{width:26px;height:26px;border-radius:50%;border:1.5px solid var(--silver-1);flex:none;display:grid;place-items:center;transition:all .25s}
+.opt .radio::after{content:"";width:12px;height:12px;border-radius:50%;background:var(--blue);transform:scale(0);transition:transform .25s}
+.opt[aria-checked="true"] .radio{border-color:var(--blue)}
+.opt[aria-checked="true"] .radio::after{transform:scale(1)}
+.scheme{background:radial-gradient(90% 90% at 50% 0%,#fff,var(--sky-1));border-radius:var(--r-md);padding:16px 14px 6px;min-height:120px}
+.scheme .eye{max-width:360px;margin-inline:auto}
+.opt .desc{margin:0;color:var(--ink-2);font-size:15px;font-weight:300}
+.opt .price{font:400 36px/1 var(--sans);color:var(--navy)}
+.opt .price small{display:block;font-size:12.5px;color:var(--muted);letter-spacing:.04em;margin-bottom:6px;font-weight:400}
+.pick{margin-top:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 24px;background:var(--navy);color:#fff;border-radius:var(--r-lg);padding:20px 24px}
+.pick small{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#9DB8CE}
+.pick b{font:400 28px/1.2 var(--script);color:#fff}
+.pick .pp{font:300 32px/1 var(--sans);white-space:nowrap}
+.pick .btn{background:#fff;color:var(--navy);border-color:#fff;box-shadow:none}
+.pick .btn:hover{background:var(--sky-2);border-color:var(--sky-2)}
+.fine{font-size:13px;color:var(--muted);margin:18px 0 0}
+
+/* praise */
+.praise-sec{background:#fff}
+.head{display:grid;gap:14px;margin-bottom:44px}
+.praise{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pr-card{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--sky-1),#fff 70%);border:1px solid var(--line);border-radius:var(--r-lg);padding:34px 28px 30px}
+.pr-card::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--silver)}
+.pr-card .num{position:absolute;right:20px;top:10px;font:400 72px/1 var(--script);color:var(--sky-3);opacity:.7}
+.pr-card h3{font-size:26px;margin:40px 0 12px;position:relative;font-weight:400}
+.pr-card p{margin:0;color:var(--ink-2);position:relative;font-weight:300}
+.score{display:flex;flex-wrap:wrap;gap:14px;margin-top:22px}
+.score a{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid var(--silver-1);border-radius:var(--r-md);padding:14px 22px;text-decoration:none;flex:1 1 260px;transition:border-color .25s, transform .25s}
+.score a:hover{border-color:var(--blue);transform:translateY(-2px)}
+.score strong{font:300 50px/1 var(--sans)}
+.score span{font-size:14px;color:var(--muted)}
+.score span b{color:var(--navy);display:block;font-weight:500}
+
+/* studio */
+.studio{display:grid;grid-template-columns:minmax(0,1fr);gap:40px;align-items:center}
+@media (min-width:960px){.studio{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px}}
+.studio .lead{margin:22px 0 0}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.fact{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--silver-1);border-radius:99px;padding:9px 16px;font-size:14px;font-weight:400}
+.fact svg{width:16px;height:16px;color:var(--blue);flex:none}
+.tiles{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+@media (min-width:560px) and (max-width:959px){.tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.tile{display:flex;align-items:center;gap:18px;background:linear-gradient(135deg,#fff,var(--sky-1));border:1px solid var(--line);border-radius:var(--r-lg);padding:20px 22px}
+@media (min-width:560px) and (max-width:959px){.tile{flex-direction:column;align-items:flex-start}}
+.tile .ic{width:72px;height:72px;border-radius:50%;background:#fff;border:1px solid var(--silver-1);display:grid;place-items:center;flex:none;color:var(--blue)}
+.tile .ic svg{width:44px;height:44px}
+.tile b{display:block;font:400 21px/1.2 var(--sans)}
+.tile span{display:block;color:var(--muted);font-size:14.5px;margin-top:3px}
+
+/* contacts */
+.contacts{background:linear-gradient(180deg,var(--snow),var(--sky-1))}
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start}
+.ci small{display:block;font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ci p,.ci a{margin:0;font-size:18px;font-weight:400;text-decoration:none}
+.ci a.big{font:300 clamp(30px,5vw,38px)/1.1 var(--sans);white-space:nowrap}
+.ci a.link{color:var(--blue);word-break:break-word;border-bottom:1px solid rgba(60,120,165,.35)}
+.map{border-radius:var(--r-lg);overflow:hidden;min-height:380px;background:var(--sky-2);border:1px solid var(--line);box-shadow:var(--shadow)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* final */
+.final{position:relative;overflow:hidden;text-align:center;background:radial-gradient(110% 90% at 50% 0%,var(--sky-2) 0%,var(--snow) 62%)}
+.final .mark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:400 clamp(150px,36vw,380px)/1 var(--script);color:rgba(60,120,165,.08);white-space:nowrap;pointer-events:none;user-select:none}
+.final .wrap{position:relative}
+.final h2{font-size:clamp(38px,7vw,78px);max-width:16ch;margin:18px auto}
+.final .lead{margin:0 auto}
+.final .ctas{justify-content:center;margin-top:30px}
+footer{padding:36px 0 120px;font-size:13px;color:var(--muted);border-top:1px solid var(--line);background:#fff}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 32px;justify-content:space-between}
+footer p{margin:0;max-width:62ch}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.3fr);gap:8px;padding:8px;background:rgba(28,48,69,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:22px;box-shadow:0 18px 40px -12px rgba(0,0,0,.45);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:15px;color:#fff;text-decoration:none;font-size:11.5px;font-weight:500}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--blue);flex-direction:row;font-size:14px;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+  .eye .ls{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Концепт сайта для студии «Натали». Данные из открытых источников (Яндекс Карты) на 24.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Натали — наверх"><b>Натали</b><small>студия взгляда</small></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#menu">Меню услуг</a>
+      <a href="#effect">Утро без туши</a>
+      <a href="#praise">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm" href="https://mst.link/rashchupkina_natalya1" target="_blank" rel="noopener">Записаться онлайн</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#menu">Меню услуг</a>
+  <a href="#effect">Утро без туши</a>
+  <a href="#praise">Отзывы</a>
+  <a href="#studio">Студия</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero" style="scroll-margin-top:0">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow rv">Парголово · Выборгский район</span>
+      <h1 class="rv d1"><span class="brand">Натали</span><span class="sub">студия взгляда Натальи&nbsp;Ращупкиной</span></h1>
+      <p class="lead rv d2">Наращивание и ламинирование ресниц, оформление бровей.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Санкт-Петербург, Парголово, Приозерское шоссе, 14&nbsp;к1, подъезд&nbsp;1</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn" href="tel:+79217913154"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+        <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%9F%D0%B0%D1%80%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%2C%20%D0%9F%D1%80%D0%B8%D0%BE%D0%B7%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5%2C%2014%D0%BA1&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+      </div>
+      <div class="ratings rv d3">
+        <div class="rate"><strong>4.7</strong><span><b>★★★★★</b>Яндекс Карты · 16&nbsp;отзывов</span></div>
+      </div>
+    </div>
+    <div class="mirror rv d2">
+      <div class="glass" aria-hidden="true">
+        <div class="eye" id="heroEye"></div>
+        <svg class="spark s1" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C13 8 16 11 24 12 16 13 13 16 12 24 11 16 8 13 0 12 8 11 11 8 12 0z"/></svg>
+        <svg class="spark s2" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C13 8 16 11 24 12 16 13 13 16 12 24 11 16 8 13 0 12 8 11 11 8 12 0z"/></svg>
+        <svg class="spark s3" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C13 8 16 11 24 12 16 13 13 16 12 24 11 16 8 13 0 12 8 11 11 8 12 0z"/></svg>
+        <svg class="spark s4" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C13 8 16 11 24 12 16 13 13 16 12 24 11 16 8 13 0 12 8 11 11 8 12 0z"/></svg>
+      </div>
+      <div class="chip c1">Объёмное наращивание (1,5D)<b>2&nbsp;700&nbsp;₽</b></div>
+      <div class="chip c2">Ламинирование ресниц<b>2&nbsp;200&nbsp;₽</b></div>
+    </div>
+  </div>
+</section>
+
+<div class="strip" aria-hidden="true"><div class="wrap"><span>Наращивание ресниц</span><span>Ламинирование ресниц</span><span>Оформление бровей</span></div></div>
+
+<!-- MENU -->
+<section id="menu" class="menu-sec">
+  <div class="wrap">
+    <div class="menu rv">
+      <div class="menu-title">
+        <span class="sc">Меню</span>
+        <small>Цены из карточки студии на Яндекс Картах, обновлено 21.09.2026</small>
+        <div class="orn" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C13 8 16 11 24 12 16 13 13 16 12 24 11 16 8 13 0 12 8 11 11 8 12 0z"/></svg></div>
+      </div>
+
+      <div class="mcat">Ресницы</div>
+      <div class="dish"><div class="n"><b>Классическое наращивание ресниц</b></div><span class="dots"></span><span class="p">2&nbsp;500&nbsp;₽</span></div>
+      <div class="dish"><div class="n"><b>Объёмное наращивание (1,5D)</b></div><span class="dots"></span><span class="p">2&nbsp;700&nbsp;₽</span></div>
+      <div class="dish"><div class="n"><b>Ламинирование ресниц</b></div><span class="dots"></span><span class="p">2&nbsp;200&nbsp;₽</span></div>
+
+      <div class="mcat">Брови</div>
+      <div class="dish"><div class="n"><b>Оформление бровей</b><small>Коррекция и окрашивание краской или хной</small></div><span class="dots"></span><span class="p">1&nbsp;400&nbsp;₽</span></div>
+
+      <p class="note">Цены указаны так, как в источнике.</p>
+      <div class="ctas"><a class="btn" href="https://mst.link/rashchupkina_natalya1" target="_blank" rel="noopener">Записаться онлайн</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- EFFECT -->
+<section id="effect" class="effect">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow rv">Выберите эффект</span>
+      <h2 class="rv d1" style="margin:16px 0 18px">Утро <em>без туши</em></h2>
+      <p class="lead rv d2">Клиентки Натальи пишут о натуральном результате: утром можно обойтись без макияжа глаз. Сравните два эффекта наращивания и выберите, с чем прийти на запись.</p>
+    </div>
+    <div class="cmp rv" id="cmp" role="radiogroup" aria-label="Эффект наращивания ресниц">
+      <button type="button" class="opt" role="radio" aria-checked="true" data-k="classic" data-name="Классика" data-price="2&#160;500&#160;₽">
+        <span class="top"><b>Классика</b><span class="radio"></span></span>
+        <span class="scheme" data-k="classic" aria-hidden="true"></span>
+        <p class="desc">Спокойный, сдержанный вид взгляда. Классическое наращивание ресниц.</p>
+        <span class="price"><small>Цена по прайсу</small>2&nbsp;500&nbsp;₽</span>
+      </button>
+      <button type="button" class="opt" role="radio" aria-checked="false" data-k="volume" data-name="Объём 1,5D" data-price="2&#160;700&#160;₽">
+        <span class="top"><b>Объём 1,5D</b><span class="radio"></span></span>
+        <span class="scheme" data-k="volume" aria-hidden="true"></span>
+        <p class="desc">Более густой и выразительный вид. Объёмное наращивание (1,5D).</p>
+        <span class="price"><small>Цена по прайсу</small>2&nbsp;700&nbsp;₽</span>
+      </button>
+    </div>
+    <div class="pick rv" aria-live="polite">
+      <div><small>Ваш выбор</small><b id="pickName">Классика</b></div>
+      <span class="pp" id="pickPrice">2&nbsp;500&nbsp;₽</span>
+      <a class="btn" href="https://mst.link/rashchupkina_natalya1" target="_blank" rel="noopener">Записаться онлайн</a>
+    </div>
+    <p class="fine rv">Схемы условные: они показывают разницу в густоте, а не реальную работу. Какой эффект подойдёт именно вам, поможет выбрать мастер.</p>
+  </div>
+</section>
+
+<!-- PRAISE -->
+<section id="praise" class="praise-sec">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Отзывы</span><h2 class="rv d1" style="margin-top:16px">За что <em>хвалят</em></h2></div>
+      <p class="lead rv d2" style="margin:0;font-size:15px">Пересказ отзывов клиенток на Яндекс Картах</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card rv"><span class="num">01</span><h3>Едут издалека</h3><p>Клиентки приезжают к Наталье с другого конца города.</p></article>
+      <article class="pr-card rv d1"><span class="num">02</span><h3>Натуральный результат</h3><p>Наталья помогает выбрать эффект, а утром, по словам клиенток, можно не краситься.</p></article>
+      <article class="pr-card rv d2"><span class="num">03</span><h3>Тепло и внимательно</h3><p>Доброжелательная атмосфера и внимание к пожеланиям. Многие приходят по рекомендации.</p></article>
+    </div>
+    <div class="score rv">
+      <a href="https://yandex.ru/maps/org/natali/109459351404/" target="_blank" rel="noopener"><strong>4.7</strong><span><b>Яндекс Карты</b>16 отзывов</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- STUDIO -->
+<section id="studio">
+  <div class="wrap studio">
+    <div>
+      <span class="eyebrow rv">Студия</span>
+      <h2 class="rv d1" style="margin-top:16px">Камерная студия <em>взгляда</em></h2>
+      <p class="lead rv d2">Авторская студия Натальи Ращупкиной в Парголове. Три направления: наращивание ресниц, ламинирование ресниц и оформление бровей.</p>
+      <div class="facts rv d3">
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Парголово</span>
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 21V3h10v18M10 7h4M10 11h4"/></svg>Приозерское шоссе, 14&nbsp;к1</span>
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="15" cy="12" r="1"/></svg>Подъезд 1</span>
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Онлайн-запись</span>
+      </div>
+    </div>
+    <div class="tiles">
+      <div class="tile rv"><span class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 36Q24 18 42 36" stroke-width="2.4"/><path d="M10 33 7 22M16 29 13 16M24 26V12M32 29l3-13M38 33l3-11"/></svg></span><div><b>Наращивание</b><span>Классическое 2&nbsp;500&nbsp;₽ · 1,5D 2&nbsp;700&nbsp;₽</span></div></div>
+      <div class="tile rv d1"><span class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 38Q24 22 42 38" stroke-width="2.4"/><path d="M10 35Q8 26 14 20M17 31Q16 22 22 15M25 29Q26 20 32 14M33 31Q35 23 41 20"/></svg></span><div><b>Ламинирование</b><span>Ресницы · 2&nbsp;200&nbsp;₽</span></div></div>
+      <div class="tile rv d2"><span class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 32Q18 14 42 22" stroke-width="2.6"/><path d="M12 30Q20 20 30 20M16 33Q26 23 38 25" opacity=".5"/></svg></span><div><b>Брови</b><span>Оформление · 1&nbsp;400&nbsp;₽</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" class="contacts">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1" style="margin-top:16px">Как <em>добраться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Санкт-Петербург, Парголово, Приозерское шоссе, 14&nbsp;к1, подъезд&nbsp;1 (Выборгский район)</p></div>
+        <div class="ci"><small>Часы работы</small><p>Уточняйте по телефону или при онлайн-записи</p></div>
+        <div class="ci"><small>Телефон</small><a class="big" href="tel:+79217913154">+7 921 791-31-54</a></div>
+        <div class="ci"><small>Онлайн-запись</small><a class="link" href="https://mst.link/rashchupkina_natalya1" target="_blank" rel="noopener">mst.link/rashchupkina_natalya1</a></div>
+        <div class="ci"><small>На Яндекс Картах</small><a class="link" href="https://yandex.ru/maps/org/natali/109459351404/" target="_blank" rel="noopener">Карточка студии «Натали»</a></div>
+        <div class="ctas"><a class="btn ghost" href="https://yandex.ru/maps/?rtext=~%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%9F%D0%B0%D1%80%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%2C%20%D0%9F%D1%80%D0%B8%D0%BE%D0%B7%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5%2C%2014%D0%BA1&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a></div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?text=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%9F%D0%B0%D1%80%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%2C%20%D0%9F%D1%80%D0%B8%D0%BE%D0%B7%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5%2C%2014%D0%BA1&z=16" title="Студия «Натали» на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="mark" aria-hidden="true">Натали</div>
+  <div class="wrap">
+    <span class="eyebrow rv">Запись</span>
+    <h2 class="rv d1">Выберите эффект <em>и приходите</em></h2>
+    <p class="lead rv d2">Записаться можно онлайн по ссылке или по телефону.</p>
+    <div class="ctas rv d3">
+      <a class="btn" href="https://mst.link/rashchupkina_natalya1" target="_blank" rel="noopener">Записаться онлайн</a>
+      <a class="btn ghost" href="tel:+79217913154">+7 921 791-31-54</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© Натали — студия взгляда Натальи Ращупкиной, Парголово, Санкт-Петербург</p>
+    <p>Демо-концепт. Цены и данные — из открытых источников (Яндекс Карты, цены обновлены 21.09.2026) на 24.10.2026.</p>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79217913154"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+  <a href="https://yandex.ru/maps/?rtext=~%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%9F%D0%B0%D1%80%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%2C%20%D0%9F%D1%80%D0%B8%D0%BE%D0%B7%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5%2C%2014%D0%BA1&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+  <a class="main" href="https://mst.link/rashchupkina_natalya1" target="_blank" rel="noopener">Записаться</a>
+</nav>
+
+<script>
+(() => {
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    const y = scrollY;
+    hdr.classList.toggle('scrolled', y > 8);
+    mbar.classList.toggle('show', y > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Схема глаза и ресниц (условная графика)
+  const P0 = [22, 92], P1 = [120, 12], P2 = [218, 92];
+  const pt = t => { const u = 1 - t; return [u*u*P0[0] + 2*u*t*P1[0] + t*t*P2[0], u*u*P0[1] + 2*u*t*P1[1] + t*t*P2[1]]; };
+  const nm = t => {
+    const u = 1 - t;
+    const tx = 2*u*(P1[0]-P0[0]) + 2*t*(P2[0]-P1[0]), ty = 2*u*(P1[1]-P0[1]) + 2*t*(P2[1]-P1[1]);
+    const l = Math.hypot(tx, ty); return [ty / l, -tx / l];
+  };
+  const rot = (v, a) => [v[0]*Math.cos(a) - v[1]*Math.sin(a), v[0]*Math.sin(a) + v[1]*Math.cos(a)];
+  const f = n => n.toFixed(1);
+  const lash = (t, L, w, delay) => {
+    const b = pt(t), n = nm(t), a = .18 + (t - .5) * .5;
+    const e = rot(n, a), c = rot(n, a * .35);
+    return `<path class="ls" style="--d:${delay}ms" stroke-width="${w}" d="M${f(b[0])} ${f(b[1])}Q${f(b[0] + c[0]*L*.6)} ${f(b[1] + c[1]*L*.6)} ${f(b[0] + e[0]*L)} ${f(b[1] + e[1]*L)}"/>`;
+  };
+  const sets = {
+    classic: () => { let s = ''; const n = 10; for (let i = 0; i < n; i++) { const t = .05 + .9 * i / (n - 1); s += lash(t, 15 + 16 * t, 2.3, i * 55); } return s; },
+    volume: () => { let s = ''; const n = 19; for (let i = 0; i < n; i++) { const t = .04 + .92 * i / (n - 1); s += lash(t, (i % 2 ? 18 : 25) + 18 * t, 1.7, i * 35); } return s; }
+  };
+  const eye = (set, id) => `<svg viewBox="0 0 240 140" aria-hidden="true">
+    <defs>
+      <radialGradient id="ir${id}" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#BFE0F5"/><stop offset=".55" stop-color="#5A9CCB"/><stop offset="1" stop-color="#1C3045"/></radialGradient>
+      <clipPath id="cp${id}"><path d="M22 92Q120 12 218 92Q120 138 22 92Z"/></clipPath>
+    </defs>
+    <path class="scl" d="M22 92Q120 12 218 92Q120 138 22 92Z"/>
+    <g clip-path="url(#cp${id})"><circle cx="120" cy="83" r="30" fill="url(#ir${id})"/><circle cx="120" cy="83" r="12" fill="#12202E"/><circle cx="111" cy="73" r="5" fill="#fff" opacity=".85"/></g>
+    <path class="low" d="M22 92Q120 138 218 92"/>
+    <path class="lid" d="M22 92Q120 12 218 92"/>
+    <g>${sets[set]()}</g>
+  </svg>`;
+  document.getElementById('heroEye').innerHTML = eye('volume', 'h');
+
+  // Фишка «Утро без туши»
+  const cmp = document.getElementById('cmp');
+  const opts = cmp.querySelectorAll('.opt');
+  const draw = o => { const s = o.querySelector('.scheme'); s.innerHTML = `<div class="eye">${eye(o.dataset.k, o.dataset.k)}</div>`; };
+  let drawn = false;
+  new IntersectionObserver((es, ob) => es.forEach(e => {
+    if (e.isIntersecting && !drawn) { drawn = true; opts.forEach(draw); ob.disconnect(); }
+  }), { threshold: .2 }).observe(cmp);
+  const pickName = document.getElementById('pickName'), pickPrice = document.getElementById('pickPrice');
+  opts.forEach(o => o.addEventListener('click', () => {
+    opts.forEach(x => x.setAttribute('aria-checked', x === o));
+    pickName.textContent = o.dataset.name; pickPrice.textContent = o.dataset.price;
+    if (drawn) draw(o);
+  }));
+})();
+</script>
+</body>
+</html>
