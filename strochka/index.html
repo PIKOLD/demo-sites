@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Строчка Строкиной — бренд одежды для питерской непогоды</title>
+<meta name="description" content="Строчка Строкиной — бренд одежды из Санкт-Петербурга: худи «ТУЧА», куртка-кофта, бомбер, футболка оверсайз, свитшот, платье. Заказ во ВКонтакте.">
+<meta name="theme-color" content="#14181A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Golos+Text:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Golos+Text:wght@400;500;600;700&display=swap"></noscript>
+<style>
+:root{
+  --g:#14181A; --a:#1C2225; --w:#262E32; --fog:#DCDFD7; --paper:#EEF0EA;
+  --moss:#7F8E5C; --moss-d:#4A5636; --mus:#E3A92A; --mus-d:#C98F12;
+  --t:#E8EAE5; --m:#9AA39E; --line:rgba(232,234,229,.15);
+  --ink:#161A1C; --ink-m:#566059;
+  --disp:"Oswald","Arial Narrow",Impact,sans-serif;
+  --sans:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --wrap:1180px; --r:6px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--g);color:var(--t);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+section[id]{scroll-margin-top:68px}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.eyebrow{display:flex;align-items:center;gap:12px;font:600 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--mus)}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+h1,h2,h3{font-family:var(--disp);font-weight:600;line-height:1.02;margin:0;letter-spacing:.01em;text-transform:uppercase;overflow-wrap:break-word}
+h2{font-size:clamp(33px,6vw,64px)}
+h1 em,h2 em{font-style:normal;color:var(--mus)}
+.lead{font-size:clamp(16px,1.6vw,18px);color:#C6CCC7;max-width:54ch}
+section{padding:clamp(64px,9vw,120px) 0}
+
+/* demo bar */
+.demo{background:var(--mus);color:var(--ink);font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:11px;border:1px solid var(--ink);border-radius:3px;padding:3px 7px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(20,24,26,.88);backdrop-filter:saturate(1.3) blur(14px);-webkit-backdrop-filter:saturate(1.3) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.logo i{font:700 19px/1 var(--disp);font-style:normal;letter-spacing:.06em;color:var(--mus);border:1.5px solid var(--mus);padding:7px 8px 6px;border-radius:3px}
+.logo b{font:600 11px/1.2 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--t)}
+.nav{display:none;gap:28px}
+.nav a{text-decoration:none;font-weight:500;font-size:14.5px;color:#C6CCC7;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--mus);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;border-radius:4px;border:1px solid var(--t);background:transparent;color:var(--t);font-weight:600;font-size:15px;text-decoration:none;cursor:pointer;transition:transform .25s, background .25s, color .25s, border-color .25s;text-align:center}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.mus{background:var(--mus);border-color:var(--mus);color:var(--ink)}
+.btn.mus:hover{background:#F0B93E;border-color:#F0B93E}
+.btn.ghost:hover{background:var(--t);color:var(--ink)}
+.btn.dark{background:var(--ink);border-color:var(--ink);color:var(--mus)}
+.btn.dark:hover{background:#000;border-color:#000}
+.btn.sm{min-height:42px;padding:0 18px;font-size:14px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border-radius:4px;border:1px solid var(--line);background:var(--a);display:grid;place-items:center;cursor:pointer;flex:none}
+.burger span{display:block;width:18px;height:1.5px;background:var(--t);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:var(--t);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--g);padding:120px 24px 40px;display:flex;flex-direction:column;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:600 34px/1.25 var(--disp);text-transform:uppercase;text-decoration:none;padding:6px 0;border-bottom:1px solid var(--line)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* rain (CSS only) */
+.rain{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.rain::before,.rain::after{content:"";position:absolute;inset:0}
+.rain::before{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' fill='none' stroke='%23DCE6E3' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M30 12l-6 24M110 90l-6 24M180 30l-5 20M70 170l-6 24M200 190l-6 24M150 140l-4 16'/%3E%3C/svg%3E");background-size:240px 240px;opacity:.42;animation:rainA 6s linear infinite}
+.rain::after{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='360' fill='none' stroke='%23DCE6E3' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M50 40l-8 32M210 120l-10 40M300 250l-8 32M120 300l-7 28M20 200l-6 24M260 20l-6 24'/%3E%3C/svg%3E");background-size:360px 360px;opacity:.26;animation:rainB 11s linear infinite}
+@keyframes rainA{to{background-position:-240px 960px}}
+@keyframes rainB{to{background-position:-360px 1440px}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;isolation:isolate;padding:clamp(32px,5vw,72px) 0 clamp(60px,8vw,104px);background:radial-gradient(70% 60% at 85% 0%,rgba(127,142,92,.26),transparent 62%),linear-gradient(180deg,#1A2124,var(--g))}
+.hero .wrap{position:relative;z-index:1;display:grid;gap:48px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:64px}}
+.pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:99px;padding:8px 14px 8px 12px;font-size:13.5px;font-weight:600}
+.pill i{width:9px;height:9px;border-radius:50%;background:var(--mus);box-shadow:0 0 0 0 rgba(227,169,42,.55);animation:pulse 2s infinite;flex:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(227,169,42,0)}100%{box-shadow:0 0 0 0 rgba(227,169,42,0)}}
+.hero h1{font-size:clamp(46px,8vw,104px);margin:22px 0 22px;line-height:.98}
+.hero .lead{margin:0 0 26px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 170px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.fine{margin:16px 0 0;font-size:13.5px;color:var(--m)}
+.go{margin-top:32px;padding-top:24px;border-top:1px solid var(--line)}
+.go small{display:block;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--m);margin-bottom:12px}
+.go div{display:flex;flex-wrap:wrap;gap:8px}
+.go a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;border:1px solid var(--line);border-radius:99px;padding:8px 14px 8px 10px;font-size:14px;font-weight:600;background:rgba(255,255,255,.04);transition:background .25s,color .25s,border-color .25s}
+.go a svg{width:18px;height:18px;color:var(--mus);flex:none;transition:color .25s}
+.go a:hover{background:var(--mus);border-color:var(--mus);color:var(--ink)}
+.go a:hover svg{color:var(--ink)}
+
+.vis{position:relative;max-width:540px;margin-inline:auto;width:100%}
+.vis::before{content:"";position:absolute;inset:0;background:var(--mus);clip-path:polygon(14% 0,100% 0,86% 100%,0 100%);transform:translate(14px,14px)}
+.frame{position:relative;aspect-ratio:1/1.05;clip-path:polygon(14% 0,100% 0,86% 100%,0 100%);background:var(--w)}
+.frame img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,24,26,0) 60%,rgba(20,24,26,.4))}
+.chip{position:absolute;z-index:4;background:rgba(20,24,26,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:var(--r);padding:11px 15px;font-size:12.5px;line-height:1.35;color:var(--m);animation:float 6s ease-in-out infinite}
+.chip b{display:block;font:600 20px/1.1 var(--disp);text-transform:uppercase;color:var(--t);margin-top:2px;letter-spacing:.02em}
+.chip.c1{right:0;top:12%}
+.chip.c2{left:0;bottom:7%;animation-delay:-3s}
+@keyframes float{50%{transform:translateY(-8px)}}
+
+/* marquee */
+.marquee{background:var(--mus);color:var(--ink);overflow:hidden;padding:16px 0}
+.track{display:flex;width:max-content;animation:run 36s linear infinite}
+.track span{font:600 clamp(20px,2.8vw,30px)/1 var(--disp);text-transform:uppercase;letter-spacing:.04em;padding:0 22px;white-space:nowrap;display:flex;align-items:center;gap:44px}
+.track span::after{content:"/";font-weight:400;opacity:.5}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* head */
+.head{display:grid;gap:18px;margin-bottom:40px}
+@media (min-width:960px){.head{grid-template-columns:1fr auto;align-items:end}}
+.head p{margin:0;color:var(--m);font-size:14px;max-width:44ch}
+.head h2{margin-top:14px}
+
+/* line + forecast */
+#line{position:relative;overflow:hidden;background:var(--a)}
+#line .wrap{position:relative;z-index:1}
+#line::before,#line::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .8s}
+#line::before{background:radial-gradient(60% 45% at 88% 0%,rgba(227,169,42,.3),transparent 70%)}
+#line::after{background:radial-gradient(60% 45% at 10% 0%,rgba(127,142,92,.34),transparent 70%)}
+#line[data-wx=sun]::before,#line[data-wx=cool]::after{opacity:1}
+.fx{opacity:0;transition:opacity .8s}
+#line[data-wx=rain] .fx.rn,#line[data-wx=wind] .fx.wd{opacity:1}
+.fx.wd{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' fill='none' stroke='%23DCE6E3' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M20 30h90M170 70h60M60 130h110M220 170h50M250 20h30'/%3E%3C/svg%3E");background-size:300px 200px;animation:windy 4s linear infinite;position:absolute;inset:0;pointer-events:none}
+.fx.wd{--o:.3}
+#line[data-wx=wind] .fx.wd{opacity:.32}
+@keyframes windy{to{background-position:300px 0}}
+.wx{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:18px}
+@media (min-width:760px){.wx{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}}
+.wxb{display:flex;align-items:center;gap:12px;padding:14px;min-height:64px;background:var(--w);border:1px solid var(--line);border-radius:var(--r);cursor:pointer;color:var(--t);font:600 15px/1.2 var(--sans);text-align:left;transition:background .25s,color .25s,border-color .25s,transform .25s}
+.wxb svg{width:28px;height:28px;flex:none;color:var(--mus);transition:color .25s}
+.wxb:hover{transform:translateY(-2px)}
+.wxb[aria-pressed="true"]{background:var(--mus);color:var(--ink);border-color:var(--mus)}
+.wxb[aria-pressed="true"] svg{color:var(--ink)}
+.verdict{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:16px 18px;border-left:3px solid var(--mus);background:rgba(255,255,255,.04);margin-bottom:28px;min-height:66px}
+.verdict svg{width:24px;height:24px;color:var(--mus);flex:none}
+.verdict p{margin:0;flex:1 1 240px;min-width:0;font-weight:500}
+.verdict button{border:0;background:transparent;color:var(--mus);font-weight:600;font-size:14px;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:6px 0}
+.cat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (min-width:760px){.cat{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
+.cat .cd{position:relative;display:flex;flex-direction:column;min-width:0;background:var(--w);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:opacity .45s,filter .45s,transform .45s,border-color .3s,box-shadow .3s}
+.cd.w2,.cd.w2m{grid-column:span 2}
+.ph{position:relative;aspect-ratio:4/5;background:#20272B;overflow:hidden}
+.cd.w2 .ph,.cd.w2m .ph{aspect-ratio:16/10}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+@media (min-width:760px){
+  .cd.w2m{grid-column:auto}
+  .cd.w2m .ph{aspect-ratio:4/5}
+  .cd.w2 .ph{aspect-ratio:auto;flex:1 1 auto;min-height:260px}
+}
+.cd .tx{padding:14px 14px 16px;display:grid;gap:6px;align-content:start}
+.cd .tg{font:600 11px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--moss)}
+.cd h3{font-size:clamp(19px,2.4vw,24px)}
+.cd p{margin:0;color:var(--m);font-size:13.5px;line-height:1.45}
+.cd .pr{display:inline-block;margin-top:4px;font-size:13px;color:var(--mus);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.art{position:absolute;inset:0;display:grid;place-items:center}
+.art svg{width:34%;max-width:130px;color:rgba(232,234,229,.8)}
+.art.dress{background:linear-gradient(160deg,var(--moss-d),#222A2D)}
+.art.mesh{background:repeating-linear-gradient(0deg,transparent 0 9px,rgba(232,234,229,.14) 9px 10px),repeating-linear-gradient(90deg,transparent 0 9px,rgba(232,234,229,.14) 9px 10px),linear-gradient(135deg,var(--moss-d),#1B2124)}
+.cat.on .cd:not(.match){opacity:.3;filter:grayscale(.9)}
+.cat .cd.match{border-color:var(--mus);transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(227,169,42,.55)}
+.cat .cd.match .ph::after{content:"Подходит";position:absolute;right:10px;top:10px;z-index:2;background:var(--mus);color:var(--ink);font:700 11px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;padding:6px 9px;border-radius:3px}
+
+/* materials (light) */
+.light{background:var(--fog);color:var(--ink)}
+.light .eyebrow{color:var(--moss-d)}
+.light h2 em{color:var(--moss-d)}
+.light .head p{color:var(--ink-m)}
+.mats{display:grid;gap:14px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:860px){.mats{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.mc{background:var(--paper);border:1px solid rgba(22,26,28,.12);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.mc .ph{aspect-ratio:4/3;background:#CED2C9}
+.mc .bd{padding:22px 22px 26px}
+.mc .num{font:600 15px/1 var(--disp);color:var(--moss-d);letter-spacing:.12em}
+.mc h3{font-size:26px;margin:10px 0 10px}
+.mc p{margin:0;color:var(--ink-m);font-size:15px}
+.split{position:absolute;inset:0;display:flex}
+.split div{display:flex;flex-direction:column;justify-content:flex-end;padding:16px;color:#fff;min-width:0}
+.split div:first-child{flex:40;background:var(--moss)}
+.split div:last-child{flex:60;background:var(--ink)}
+.split b{font:600 clamp(34px,6vw,52px)/1 var(--disp)}
+.split span{font:600 12px/1.2 var(--sans);letter-spacing:.12em;text-transform:uppercase;margin-top:6px}
+.mnote{margin:26px 0 0;font-size:14px;color:var(--ink-m)}
+
+/* about */
+.ab{display:grid;gap:36px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.ab{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px;align-items:center}}
+.lfig{position:relative;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--w);max-width:460px;width:100%;margin-inline:auto}
+.lfig img{width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.ab h2{margin:14px 0 20px}
+.q{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:28px 0}
+@media (min-width:560px){.q{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.q span{border:1px solid var(--line);border-radius:var(--r);padding:16px 8px;font:600 16px/1 var(--disp);text-transform:uppercase;letter-spacing:.03em;text-align:center;overflow-wrap:anywhere;background:rgba(255,255,255,.03)}
+.yel{position:relative;aspect-ratio:16/10;border-radius:var(--r);overflow:hidden;background:var(--w);margin:0}
+.yel img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.yel figcaption{position:absolute;left:12px;bottom:12px;background:rgba(20,24,26,.8);font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:3px}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.fact{display:inline-flex;align-items:center;gap:8px;background:var(--a);border:1px solid var(--line);border-radius:99px;padding:9px 15px;font-size:14px;font-weight:500}
+.fact svg{width:16px;height:16px;color:var(--mus);flex:none}
+
+/* gallery */
+#photos{background:var(--a)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.fl{border:1px solid var(--line);background:var(--w);border-radius:99px;padding:10px 16px;font-weight:600;font-size:14px;cursor:pointer;transition:all .25s}
+.fl[aria-pressed="true"]{background:var(--mus);color:var(--ink);border-color:var(--mus)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:760px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}}
+@media (min-width:1040px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.gi{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--w);cursor:zoom-in;border:0;padding:0;transition:opacity .4s,transform .4s}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.06)}
+.gi span{position:absolute;left:10px;bottom:10px;right:10px;width:max-content;max-width:calc(100% - 20px);background:rgba(20,24,26,.82);color:var(--t);font-size:12px;font-weight:600;padding:5px 10px;border-radius:3px;text-align:left}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,1000px);max-height:90vh;color:var(--t)}
+.lb::backdrop{background:rgba(10,13,14,.9)}
+.lb img{max-height:80vh;max-width:100%;width:auto;margin:auto;border-radius:8px}
+.lb p{margin:10px 0 0;text-align:center;font-size:14px}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:#fff;color:var(--ink);font-size:22px;cursor:pointer}
+
+/* order */
+.ord{display:grid;gap:28px}
+@media (min-width:960px){.ord{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:stretch}}
+.steps{display:grid;gap:12px;counter-reset:s;margin:0;padding:0;list-style:none}
+.steps li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:14px;padding:20px;border-radius:var(--r);background:var(--a);border:1px solid var(--line)}
+.steps li::before{counter-increment:s;content:"0" counter(s);font:600 30px/1 var(--disp);color:var(--mus)}
+.steps b{display:block;font-size:16px;margin-bottom:4px}
+.steps p{margin:0;color:var(--m);font-size:14.5px}
+.vk{background:var(--a);border:1px solid var(--line);border-radius:var(--r);padding:clamp(22px,4vw,40px);display:flex;flex-direction:column;gap:18px;justify-content:center;position:relative;overflow:hidden}
+.vk small{display:block;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--m);margin-bottom:6px}
+.vk .big{font:600 clamp(20px,5.2vw,32px)/1.15 var(--disp);text-decoration:none;overflow-wrap:anywhere;letter-spacing:.02em}
+.vk p{margin:0;color:#C6CCC7;font-size:15px}
+
+/* final */
+.final{background:var(--mus);color:var(--ink);text-align:center}
+.final .eyebrow{justify-content:center;color:var(--ink)}
+.final h2{font-size:clamp(40px,8vw,92px);max-width:13ch;margin:18px auto}
+.final h2 em{color:transparent;-webkit-text-stroke:1.5px var(--ink)}
+.final .lead{margin:0 auto;color:#2A2410}
+.final .ctas{justify-content:center;margin-top:30px}
+.final .btn.ghost{border-color:var(--ink);color:var(--ink)}
+.final .btn.ghost:hover{background:var(--ink);color:var(--mus)}
+footer{padding:36px 0 120px;font-size:13px;color:var(--m);border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer span{min-width:0}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.6fr);gap:8px;padding:8px;background:rgba(28,34,37,.94);border:1px solid var(--line);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:12px;box-shadow:0 18px 40px -12px rgba(0,0,0,.6);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:8px;color:var(--t);text-decoration:none;font-size:11.5px;font-weight:600}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--mus);color:var(--ink);flex-direction:row;font-size:13.5px;gap:8px;text-align:center;line-height:1.15}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо-концепт</b><span>Сайт для бренда «Строчка Строкиной». Данные из открытых источников (публикации бренда в соцсетях, ВКонтакте), фото — из публикаций бренда в соцсетях, на 25.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Строчка Строкиной — наверх"><i>СТР</i><b>Строчка<br>Строкиной</b></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#line">Линейка</a>
+      <a href="#materials">Из чего мы делаем</a>
+      <a href="#about">О бренде</a>
+      <a href="#photos">Фото</a>
+      <a href="#order">Заказ</a>
+    </nav>
+    <a class="btn sm mus" href="https://vk.com/strochka_srokinoy" target="_blank" rel="noopener">Заказать во ВКонтакте</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#line">Линейка</a>
+  <a href="#materials">Из чего мы делаем</a>
+  <a href="#about">О бренде</a>
+  <a href="#photos">Фото</a>
+  <a href="#order">Как заказать</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero" style="padding-bottom:clamp(60px,8vw,104px)">
+  <div class="rain" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <span class="pill rv"><i></i>Бренд одежды · Санкт-Петербург</span>
+      <h1 class="rv d1">Одежда<br>для <em>непогоды</em></h1>
+      <p class="lead rv d2">Для повседневной жизни и питерской погоды: сочетаем качество, практичность, комфорт и&nbsp;стиль. Твой тёплый Питер.</p>
+      <div class="ctas rv d3">
+        <a class="btn mus" href="https://vk.com/strochka_srokinoy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>Заказать во ВКонтакте</a>
+        <a class="btn ghost" href="#line">Смотреть линейку</a>
+      </div>
+      <p class="fine rv d3">Цен в открытых источниках нет — уточняйте у бренда во&nbsp;ВКонтакте.</p>
+      <div class="go rv d3">
+        <small>Какая сегодня погода?</small>
+        <div>
+          <a href="#line" data-go="rain"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 15a4 4 0 0 1 .5-8 5.5 5.5 0 0 1 10.5 1.5A3.5 3.5 0 0 1 17.5 15H7zM8 18l-1 3M12 18l-1 3M16 18l-1 3"/></svg>Дождь</a>
+          <a href="#line" data-go="wind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h11a3 3 0 1 0-3-3M3 12h16a3 3 0 1 1-3 3M3 16h8"/></svg>Ветер</a>
+          <a href="#line" data-go="cool"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14V5a2 2 0 0 1 4 0v9a4 4 0 1 1-4 0z"/></svg>Прохладно</a>
+          <a href="#line" data-go="sun"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>Солнце</a>
+        </div>
+      </div>
+    </div>
+    <div class="vis rv d2">
+      <div class="frame"><img id="heroImg" src="img/hero.jpg" alt="Худи бренда на фоне елей в лесу" fetchpriority="high"></div>
+      <div class="chip c1">Линейка<b>7 вещей</b></div>
+      <div class="chip c2">Заказ<b>во ВКонтакте</b></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Худи «ТУЧА»</span><span>Куртка-кофта</span><span>Бомбер «Чистый лист»</span><span>Футболка оверсайз</span><span>Свитшот</span><span>Платье</span><span>Топ-сетка</span>
+  <span>Худи «ТУЧА»</span><span>Куртка-кофта</span><span>Бомбер «Чистый лист»</span><span>Футболка оверсайз</span><span>Свитшот</span><span>Платье</span><span>Топ-сетка</span>
+</div></div>
+
+<!-- LINE + FORECAST -->
+<section id="line" data-wx="">
+  <div class="fx rn rain" aria-hidden="true"></div>
+  <div class="fx wd" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Линейка</span><h2 class="rv d1">Прогноз <em>гардероба</em></h2></div>
+      <p class="rv d2">Выберите погоду — подсветим вещи из линейки. Подборка составлена по описаниям бренда, цены в источниках не указаны.</p>
+    </div>
+    <div class="wx rv" role="group" aria-label="Выбор погоды">
+      <button class="wxb" type="button" aria-pressed="false" data-w="rain"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 15a4 4 0 0 1 .5-8 5.5 5.5 0 0 1 10.5 1.5A3.5 3.5 0 0 1 17.5 15H7zM8 18l-1 3M12 18l-1 3M16 18l-1 3"/></svg>Дождь</button>
+      <button class="wxb" type="button" aria-pressed="false" data-w="wind"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h11a3 3 0 1 0-3-3M3 12h16a3 3 0 1 1-3 3M3 16h8"/></svg>Ветер</button>
+      <button class="wxb" type="button" aria-pressed="false" data-w="cool"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14V5a2 2 0 0 1 4 0v9a4 4 0 1 1-4 0z"/></svg>Прохладно</button>
+      <button class="wxb" type="button" aria-pressed="false" data-w="sun"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>Солнце</button>
+    </div>
+    <div class="verdict rv">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 15a4 4 0 0 1 .5-8 5.5 5.5 0 0 1 10.5 1.5A3.5 3.5 0 0 1 17.5 15H7z"/></svg>
+      <p id="vtxt" aria-live="polite">Выберите погоду — подсветим подходящие вещи.</p>
+      <button type="button" id="wxReset" hidden>Показать всю линейку</button>
+    </div>
+
+    <div class="cat" id="cat">
+      <article class="cd w2 rv" data-w="rain wind">
+        <div class="ph"><img src="img/hoodie-tucha.jpg" alt="Худи «ТУЧА» на модели" style="object-position:50% 25%" loading="lazy"></div>
+        <div class="tx"><span class="tg">Дождь · Ветер</span><h3>Худи «ТУЧА»</h3><p>Для максимального комфорта и защиты в любую погоду.</p><a class="pr" href="https://vk.com/strochka_srokinoy" target="_blank" rel="noopener">Цену&nbsp;уточняйте во&nbsp;ВКонтакте</a></div>
+      </article>
+      <article class="cd rv" data-w="wind">
+        <div class="ph"><img src="img/jacket-flat.jpg" alt="Куртка на камнях у воды, предметная съёмка" loading="lazy"></div>
+        <div class="tx"><span class="tg">Ветер</span><h3>Куртка-кофта</h3><p>Удобство и функциональность.</p><a class="pr" href="https://vk.com/strochka_srokinoy" target="_blank" rel="noopener">Цену&nbsp;уточняйте во&nbsp;ВКонтакте</a></div>
+      </article>
+      <article class="cd rv" data-w="">
+        <div class="ph"><img src="img/bomber.jpg" alt="Бомбер бренда" loading="lazy"></div>
+        <div class="tx"><h3>Бомбер «Чистый лист»</h3><p>«Полотно для самовыражения».</p><a class="pr" href="https://vk.com/strochka_srokinoy" target="_blank" rel="noopener">Цену&nbsp;уточняйте во&nbsp;ВКонтакте</a></div>
+      </article>
+      <article class="cd rv" data-w="sun">
+        <div class="ph"><img src="img/tee-1.jpg" alt="Футболка оверсайз на модели" loading="lazy"></div>
+        <div class="tx"><span class="tg">Солнце</span><h3>Футболка оверсайз</h3><p>Свободный крой, премиальный хлопок.</p><a class="pr" href="https://vk.com/strochka_srokinoy" target="_blank" rel="noopener">Цену&nbsp;уточняйте во&nbsp;ВКонтакте</a></div>
+      </article>
+      <article class="cd rv" data-w="cool">
+        <div class="ph"><img src="img/sweat.jpg" alt="Коричневая кофта бренда" loading="lazy"></div>
+        <div class="tx"><span class="tg">Прохладно</span><h3>Свитшот</h3><p>«Согреет, как солнышко».</p><a class="pr" href="https://vk.com/strochka_srokinoy" target="_blank" rel="noopener">Цену&nbsp;уточняйте во&nbsp;ВКонтакте</a></div>
+      </article>
+      <article class="cd w2m rv" data-w="sun">
+        <div class="ph"><div class="art dress" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v5l-2 3-3 10h16l-3-10-2-3V3M9 8h6"/></svg></div></div>
+        <div class="tx"><span class="tg">Солнце</span><h3>Платье свободного силуэта</h3><p>Необработанные края, единый размер xs–s, вискоза 40&nbsp;% / полиэстер 60&nbsp;%.</p><a class="pr" href="https://vk.com/strochka_srokinoy" target="_blank" rel="noopener">Цену&nbsp;уточняйте во&nbsp;ВКонтакте</a></div>
+      </article>
+      <article class="cd w2 rv" data-w="">
+        <div class="ph"><div class="art mesh" aria-hidden="true"></div></div>
+        <div class="tx"><h3>Топ-сетка</h3><p>Отдельная позиция линейки.</p><a class="pr" href="https://vk.com/strochka_srokinoy" target="_blank" rel="noopener">Цену&nbsp;уточняйте во&nbsp;ВКонтакте</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- MATERIALS -->
+<section id="materials" class="light">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Материалы</span><h2 class="rv d1">Из чего <em>мы делаем</em></h2></div>
+      <p class="rv d2">По описаниям вещей в публикациях бренда.</p>
+    </div>
+    <div class="mats">
+      <article class="mc rv">
+        <div class="ph"><img src="img/tee-2.jpg" alt="Футболка оверсайз на модели" loading="lazy"></div>
+        <div class="bd"><span class="num">01</span><h3>Премиальный хлопок</h3><p>Футболка оверсайз: свободный крой и премиальный хлопок.</p></div>
+      </article>
+      <article class="mc rv d1">
+        <div class="ph"><img src="img/tee-flat.jpg" alt="Базовая футболка, предметная съёмка" loading="lazy"></div>
+        <div class="bd"><span class="num">02</span><h3>Плотная ткань</h3><p>Базовая футболка из плотной ткани держит форму после стирок.</p></div>
+      </article>
+      <article class="mc rv d2">
+        <div class="ph"><div class="split" role="img" aria-label="Состав платья: вискоза 40 %, полиэстер 60 %"><div><b>40&nbsp;%</b><span>вискоза</span></div><div><b>60&nbsp;%</b><span>полиэстер</span></div></div></div>
+        <div class="bd"><span class="num">03</span><h3>Вискоза и полиэстер</h3><p>Платье свободного силуэта: необработанные края, единый размер xs–s.</p></div>
+      </article>
+    </div>
+    <p class="mnote rv">Худи «ТУЧА» — для максимального комфорта и защиты в любую погоду.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap ab">
+    <div class="lfig rv"><img src="img/logo.jpg" alt="Логотип СТР «Строчка Строкиной» на фоне сосен" loading="lazy"></div>
+    <div>
+      <span class="eyebrow rv">О бренде</span>
+      <h2 class="rv d1">Твой <em>тёплый</em> Питер</h2>
+      <p class="lead rv d2">Одежда для непогоды и повседневной жизни. Сочетаем качество, практичность, комфорт и&nbsp;стиль.</p>
+      <div class="q rv d2"><span>Качество</span><span>Практичность</span><span>Комфорт</span><span>Стиль</span></div>
+      <figure class="yel rv d3"><img src="img/hoodie-yellow.jpg" alt="Жёлтая худи бренда" loading="lazy"><figcaption>Жёлтая худи</figcaption></figure>
+      <div class="facts rv">
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Санкт-Петербург</span>
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>Заказ — во ВКонтакте</span>
+        <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg>Представлены в @white_owl_kp</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTOS -->
+<section id="photos">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Фото</span><h2 class="rv d1">Вещи <em>в кадре</em></h2></div>
+      <p class="rv d2">Фото из публикаций бренда в соцсетях</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр фото">
+      <button class="fl" aria-pressed="true" data-f="all">Все</button>
+      <button class="fl" aria-pressed="false" data-f="hood">Худи</button>
+      <button class="fl" aria-pressed="false" data-f="jacket">Куртки</button>
+      <button class="fl" aria-pressed="false" data-f="tee">Футболки</button>
+      <button class="fl" aria-pressed="false" data-f="knit">Кофты и бомбер</button>
+    </div>
+    <div class="grid" id="grid">
+      <button class="gi rv" data-c="hood"><img src="img/hoodie-tucha.jpg" alt="Худи «ТУЧА» на модели" loading="lazy"><span>Худи «ТУЧА»</span></button>
+      <button class="gi rv" data-c="hood"><img src="img/hoodie-yellow.jpg" alt="Жёлтая худи" loading="lazy"><span>Жёлтая худи</span></button>
+      <button class="gi rv" data-c="hood"><img src="img/hero.jpg" alt="Худи в лесу" loading="lazy"><span>Худи в лесу</span></button>
+      <button class="gi rv" data-c="jacket"><img src="img/anorak.jpg" alt="Куртка-анорак на модели" style="object-position:50% 30%" loading="lazy"><span>Куртка-анорак</span></button>
+      <button class="gi rv" data-c="jacket"><img src="img/jacket-flat.jpg" alt="Куртка на камнях, предметная съёмка" loading="lazy"><span>Куртка на камнях</span></button>
+      <button class="gi rv" data-c="tee"><img src="img/tee-1.jpg" alt="Футболка на модели" loading="lazy"><span>Футболка на модели</span></button>
+      <button class="gi rv" data-c="tee"><img src="img/tee-2.jpg" alt="Футболка на модели, второй кадр" loading="lazy"><span>Футболка на модели</span></button>
+      <button class="gi rv" data-c="tee"><img src="img/tee-flat.jpg" alt="Футболка, предметная съёмка" loading="lazy"><span>Футболка, предметная съёмка</span></button>
+      <button class="gi rv" data-c="knit"><img src="img/bomber.jpg" alt="Бомбер бренда" loading="lazy"><span>Бомбер</span></button>
+      <button class="gi rv" data-c="knit"><img src="img/sweat.jpg" alt="Коричневая кофта" loading="lazy"><span>Коричневая кофта</span></button>
+      <button class="gi rv" data-c="knit"><img src="img/sweat-2.jpg" alt="Коричневая кофта, второй кадр" loading="lazy"><span>Коричневая кофта</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""><p id="lbCap"></p></dialog>
+
+<!-- ORDER -->
+<section id="order">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Заказ</span><h2 class="rv d1">Как <em>заказать</em></h2></div>
+    </div>
+    <div class="ord">
+      <ol class="steps">
+        <li class="rv"><div><b>Выберите вещь</b><p>В линейке или через прогноз гардероба.</p></div></li>
+        <li class="rv d1"><div><b>Откройте сообщество</b><p>ВКонтакте — главный канал заказа бренда.</p></div></li>
+        <li class="rv d2"><div><b>Напишите и уточните цену</b><p>Цен в открытых источниках нет — цену уточняйте во&nbsp;ВКонтакте.</p></div></li>
+      </ol>
+      <div class="vk rv d1">
+        <div><small>ВКонтакте</small><a class="big" href="https://vk.com/strochka_srokinoy" target="_blank" rel="noopener">vk.com/strochka_srokinoy</a></div>
+        <p>Адрес и часы работы в открытых источниках не указаны — заказ оформляется через сообщество бренда.</p>
+        <a class="btn mus" href="https://vk.com/strochka_srokinoy" target="_blank" rel="noopener">Заказать во ВКонтакте</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow rv">Строчка Строкиной</span>
+    <h2 class="rv d1">Тёплый Питер <em>в любую погоду</em></h2>
+    <p class="lead rv d2">Выберите вещь из линейки и напишите бренду во&nbsp;ВКонтакте — там же уточните цену.</p>
+    <div class="ctas rv d3">
+      <a class="btn dark" href="https://vk.com/strochka_srokinoy" target="_blank" rel="noopener">Заказать во ВКонтакте</a>
+      <a class="btn ghost" href="#line">Вернуться к линейке</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Строчка Строкиной — бренд одежды, Санкт-Петербург</span>
+    <span>Демо-концепт. Данные — из публикаций бренда в соцсетях и ВКонтакте на 25.10.2026. Цены в источниках не указаны.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="#line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7a2 2 0 1 0-2-2M12 7v2l8 6a1 1 0 0 1-.6 1.8H4.6A1 1 0 0 1 4 15l8-6"/></svg>Линейка</a>
+  <a href="#photos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-4-8 7"/></svg>Фото</a>
+  <a class="main" href="https://vk.com/strochka_srokinoy" target="_blank" rel="noopener">Заказать во&nbsp;ВК</a>
+</nav>
+
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+
+  // Шапка и мобильная панель
+  const hdr = $('.hdr'), mbar = $('#mbar');
+  const onScroll = () => {
+    const y = scrollY;
+    hdr.classList.toggle('scrolled', y > 8);
+    mbar.classList.toggle('show', y > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = $('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  $$('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  $$('.rv').forEach(el => io.observe(el));
+
+  // Прогноз гардероба: погода -> подсветка вещей (по описаниям бренда)
+  const sec = $('#line'), cat = $('#cat'), cards = $$('.cd', cat), btns = $$('.wxb');
+  const vtxt = $('#vtxt'), reset = $('#wxReset');
+  const IDLE = 'Выберите погоду — подсветим подходящие вещи.';
+  const TXT = {
+    rain: 'Дождь: худи «ТУЧА» — комфорт и защита в любую погоду.',
+    wind: 'Ветер: худи «ТУЧА» и куртка-кофта — удобство и функциональность.',
+    cool: 'Прохладно: свитшот — «согреет, как солнышко».',
+    sun: 'Солнце: футболка оверсайз и платье свободного силуэта.'
+  };
+  const setWx = k => {
+    sec.dataset.wx = k;
+    cat.classList.toggle('on', !!k);
+    cards.forEach(c => c.classList.toggle('match', !!k && c.dataset.w.split(' ').includes(k)));
+    btns.forEach(b => b.setAttribute('aria-pressed', b.dataset.w === k));
+    vtxt.textContent = k ? TXT[k] : IDLE;
+    reset.hidden = !k;
+  };
+  btns.forEach(b => b.addEventListener('click', () => setWx(b.getAttribute('aria-pressed') === 'true' ? '' : b.dataset.w)));
+  reset.addEventListener('click', () => setWx(''));
+  $$('[data-go]').forEach(a => a.addEventListener('click', () => setWx(a.dataset.go)));
+
+  // Фильтр фото и лайтбокс
+  const items = $$('.gi');
+  $$('[data-f]').forEach(f => f.addEventListener('click', () => {
+    $$('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = $('#lb'), lbImg = $('#lbImg'), lbCap = $('#lbCap');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = $('img', i); lbImg.src = img.src; lbImg.alt = img.alt; lbCap.textContent = $('span', i).textContent;
+    if (lb.showModal) lb.showModal();
+  }));
+  $('#lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>

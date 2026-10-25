@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>tu’m studio — окрашивание и восстановление волос в Санкт-Петербурге</title>
+<meta name="description" content="TU’M STUDIO (Tumanova studio): нежные окрашивания, безопасное выпрямление и восстановление волос. Литейный проспект, 41. Запись в окна 1-го и 15-го числа в 13:00.">
+<meta name="theme-color" content="#FBF1DC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Nunito:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Nunito:wght@400;500;600;700&display=swap"></noscript>
+<style>
+:root{
+  --cream:#FBF1DC; --ivory:#FFFAF0; --sand:#F1DFB8; --honey:#E2A53B; --honey-l:#F3C877; --honey-d:#C98A1E;
+  --amber:#8C5A12; --brown:#3A2615; --brown-2:#5A4230; --muted:#80684F; --line:rgba(58,38,21,.14);
+  --r-lg:30px; --r-md:20px; --r-sm:12px;
+  --shadow:0 22px 50px -26px rgba(90,52,10,.5);
+  --serif:"Playfair Display", Georgia, "Times New Roman", serif;
+  --sans:"Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1160px;
+  --hex:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--brown);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.eyebrow{font:700 12px/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--amber)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.1;margin:0;letter-spacing:-.005em;overflow-wrap:break-word}
+h2{font-size:clamp(32px,5.4vw,56px)}
+h2 em,h1 em{font-style:italic;font-weight:500;color:var(--honey-d)}
+.lead{font-size:clamp(16px,1.6vw,18px);color:var(--brown-2);max-width:54ch}
+section{padding:clamp(68px,9vw,118px) 0}
+
+/* demo bar */
+.demo{background:var(--brown);color:#F3E6CC;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:var(--honey-l);font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:11px;border:1px solid rgba(243,200,119,.5);border-radius:8px;padding:3px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(251,241,220,.9);background:color-mix(in srgb,var(--cream) 86%,transparent);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+.logo b{font:italic 600 30px/1 var(--serif);letter-spacing:-.01em}
+.logo small{font:700 10.5px/1 var(--sans);color:var(--muted);letter-spacing:.26em;text-transform:uppercase}
+.nav{display:none;gap:26px}
+.nav a{text-decoration:none;font-weight:600;font-size:14.5px;color:var(--brown-2);position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;border-radius:2px;background:var(--honey);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;border-radius:16px;border:1px solid var(--brown);background:var(--brown);color:var(--cream);font-weight:700;font-size:15px;text-decoration:none;cursor:pointer;transition:transform .25s, background .25s, color .25s, border-color .25s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.honey{background:var(--honey);border-color:var(--honey);color:var(--brown)}
+.btn.honey:hover{background:var(--honey-l);border-color:var(--honey-l)}
+.btn.ghost{background:transparent;color:var(--brown)}
+.btn.ghost:hover{background:var(--brown);color:var(--cream)}
+.btn.sm{min-height:42px;padding:0 18px;font-size:14px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border-radius:14px;border:1px solid var(--line);background:var(--ivory);display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:18px;height:1.5px;background:var(--brown);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:var(--brown);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--cream);padding:120px 24px 40px;display:flex;flex-direction:column;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:italic 600 32px/1.25 var(--serif);text-decoration:none;padding:6px 0;border-bottom:1px solid var(--line)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* honey drip */
+.drip{position:absolute;left:0;right:0;top:0;height:0;z-index:2;pointer-events:none}
+.drip::before{content:"";position:absolute;left:0;right:0;top:0;height:14px;background:linear-gradient(180deg,#F4C26A,#D8992C)}
+.drip i{position:absolute;top:0;left:var(--x);width:var(--w);height:var(--h);background:linear-gradient(90deg,#D4922A 0,#F4C26A 40%,#E1A238 72%,#CF8E26);border-radius:0 0 999px 999px;transform-origin:top;animation:ooze 8s ease-in-out infinite;animation-delay:var(--d)}
+@keyframes ooze{50%{transform:scaleY(1.25)}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:clamp(100px,11vw,124px) 0 clamp(56px,8vw,96px);background:radial-gradient(70% 60% at 100% 10%,rgba(226,165,59,.2),transparent 70%)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:44px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:64px}}
+.status{display:inline-flex;align-items:center;gap:10px;background:var(--ivory);border:1px solid var(--line);border-radius:12px;padding:8px 14px 8px 12px;font-size:13.5px;font-weight:700;max-width:100%}
+.status i{width:10px;height:11px;flex:none;background:var(--honey);clip-path:var(--hex);animation:pulse 2s infinite}
+@keyframes pulse{50%{transform:scale(1.35)}}
+.hero h1{font-size:clamp(34px,5vw,68px);margin:22px 0 22px}
+.hero .lead{margin:0 0 24px}
+.place{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:15px;margin-bottom:28px}
+.place svg{width:18px;height:18px;flex:none;margin-top:4px;color:var(--honey-d)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.visual{position:relative;max-width:500px;margin-inline:auto;width:100%;padding-bottom:34px}
+.blob{aspect-ratio:4/5;border-radius:58% 42% 46% 54% / 40% 46% 54% 60%;overflow:hidden;box-shadow:var(--shadow);background:var(--sand);animation:morph 14s ease-in-out infinite alternate}
+@keyframes morph{to{border-radius:44% 56% 56% 44% / 54% 40% 60% 46%}}
+.blob img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.orb{position:absolute;left:0;bottom:0;width:38%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:6px solid var(--cream);box-shadow:var(--shadow);background:var(--sand)}
+.orb img{width:100%;height:100%;object-fit:cover}
+.chip{position:absolute;z-index:4;background:rgba(255,250,240,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.9);border-radius:var(--r-md);padding:12px 16px;box-shadow:var(--shadow);font-size:13px;line-height:1.35;max-width:190px;animation:float 6s ease-in-out infinite}
+.chip b{display:block;font:italic 600 22px/1.15 var(--serif);margin-top:2px;color:var(--amber)}
+.chip.c1{right:0;top:9%}
+.chip.c2{right:0;bottom:6%;animation-delay:-3s}
+@keyframes float{50%{transform:translateY(-9px)}}
+.sprig{position:absolute;width:54px;height:136px;color:#B88E4B;opacity:.5;pointer-events:none}
+.sprig.s1{left:-4px;top:18%;transform:rotate(-14deg)}
+.sprig.s2{right:-6px;bottom:2%;transform:rotate(16deg) scaleX(-1)}
+@media (max-width:959px){.sprig.s1{display:none}}
+
+/* marquee */
+.marquee{border-block:1px solid var(--line);background:var(--ivory);overflow:hidden;padding:18px 0}
+.track{display:flex;width:max-content;animation:run 44s linear infinite}
+.track span{font:italic 500 clamp(21px,3vw,30px)/1 var(--serif);padding:0 24px;white-space:nowrap;display:flex;align-items:center;gap:48px}
+.track span::after{content:"";width:12px;height:13px;background:var(--honey);clip-path:var(--hex)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* windows (signature) */
+.windows{position:relative;overflow:hidden;color:var(--cream);padding:clamp(72px,10vw,124px) 0;background:radial-gradient(90% 80% at 88% 0%,rgba(226,165,59,.3),transparent 62%),linear-gradient(165deg,#4B3119,#2D1C0E)}
+.windows::before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='55.43' height='96' viewBox='0 0 55.43 96'%3E%3Cg fill='none' stroke='%23E2A53B' stroke-opacity='.2' stroke-width='1.2'%3E%3Cpath d='M27.71 0L55.42 16L55.42 48L27.71 64L0 48L0 16Z'/%3E%3Cpath d='M0 48L27.71 64L27.71 96L0 112L-27.71 96L-27.71 64Z'/%3E%3Cpath d='M55.43 48L83.14 64L83.14 96L55.43 112L27.72 96L27.72 64Z'/%3E%3Cpath d='M0 -48L27.71 -32L27.71 0L0 16L-27.71 0L-27.71 -32Z'/%3E%3Cpath d='M55.43 -48L83.14 -32L83.14 0L55.43 16L27.72 0L27.72 -32Z'/%3E%3C/g%3E%3C/svg%3E");-webkit-mask-image:linear-gradient(180deg,transparent,#000 35%,#000 65%,transparent);mask-image:linear-gradient(180deg,transparent,#000 35%,#000 65%,transparent)}
+.windows .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr);gap:40px;align-items:center}
+@media (min-width:960px){.windows .wrap{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:64px}}
+.windows .eyebrow{color:var(--honey-l)}
+.windows h2 em{color:var(--honey-l)}
+.windows .lead{color:#E7D5B3;margin:18px 0 26px}
+.vk{margin:22px 0 0;font-size:14px;color:#D9C3A0;max-width:50ch}
+.jar{background:rgba(255,250,240,.07);border:1px solid rgba(226,165,59,.42);border-radius:var(--r-lg);padding:clamp(20px,4vw,38px);position:relative;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.jar .lbl{font:700 12px/1.3 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--honey-l)}
+.jar .when{font:italic 600 clamp(24px,3.6vw,34px)/1.15 var(--serif);margin:8px 0 22px}
+.cd{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.cell{text-align:center;padding:14px 2px 12px;border-radius:20px 20px 20px 6px;background:rgba(255,250,240,.08);border:1px solid rgba(243,200,119,.28)}
+.cell b{display:block;font:600 clamp(30px,8.4vw,54px)/1 var(--serif);color:var(--honey-l);font-variant-numeric:tabular-nums}
+.cell span{display:block;margin-top:6px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#D9C3A0}
+.fill{margin-top:26px}
+.bar{position:relative;height:16px;border-radius:99px;background:rgba(255,250,240,.12);overflow:hidden}
+.bar i{position:absolute;left:0;top:0;bottom:0;width:0%;border-radius:99px;background:linear-gradient(90deg,#CF8E26,#F4C26A);transition:width 1s linear;box-shadow:inset 0 3px 0 rgba(255,255,255,.35)}
+.bar-l{display:flex;justify-content:space-between;gap:12px;margin-top:8px;font-size:12.5px;color:#D9C3A0}
+.today{display:none;margin-bottom:18px;background:var(--honey);color:var(--brown);border-radius:14px;padding:12px 16px;font-weight:700;font-size:14.5px}
+.today.on{display:block}
+.jar .btn{margin-top:24px;width:100%}
+.windows .sprig{color:var(--honey);opacity:.28}
+.windows .sprig.s3{right:10px;top:10px;transform:rotate(24deg)}
+
+/* services */
+.head{display:grid;gap:18px;margin-bottom:40px}
+@media (min-width:960px){.head{grid-template-columns:1fr auto;align-items:end}}
+.head p{margin:0;color:var(--muted);font-size:14px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.tab{border:1px solid var(--line);background:var(--ivory);border-radius:12px;padding:10px 16px;font-weight:700;font-size:14px;cursor:pointer;transition:all .25s;text-align:left;white-space:normal;max-width:100%}
+.tab:hover{border-color:var(--honey)}
+.tab[aria-selected="true"],.tab[aria-pressed="true"]{background:var(--honey);color:var(--brown);border-color:var(--honey)}
+.svc{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
+@media (min-width:960px){.svc{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:56px;align-items:start}}
+.panel{display:none}
+.panel.on{display:block;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 16px;align-items:baseline;padding:16px 18px;margin-bottom:10px;background:var(--ivory);border:1px solid var(--line);border-left:4px solid var(--honey);border-radius:16px;transition:transform .25s, box-shadow .25s}
+.row:hover{transform:translateX(4px);box-shadow:var(--shadow)}
+.row .n{min-width:0}
+.row .n b{display:block;font-weight:700;font-size:16px;overflow-wrap:break-word}
+.row .n small{display:block;color:var(--muted);font-size:13.5px;margin-top:2px}
+.row .p{font:600 22px/1.1 var(--serif);white-space:nowrap;color:var(--brown)}
+.row .p small{font:italic 500 15px/1 var(--serif);color:var(--amber)}
+.row .p.free{color:var(--amber);font-style:italic}
+.svc-photo{position:relative;border-radius:30px 140px 30px 140px;overflow:hidden;aspect-ratio:4/5;background:var(--sand);display:none;box-shadow:var(--shadow)}
+@media (min-width:960px){.svc-photo{display:block;position:sticky;top:96px}}
+.svc-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .7s, transform 1.2s}
+.svc-photo img.on{opacity:1;transform:none}
+.note{margin-top:20px;font-size:13.5px;color:var(--muted)}
+
+/* how */
+.how{background:var(--ivory)}
+.steps{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:860px){.steps{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.step{background:var(--cream);border:1px solid var(--line);border-radius:var(--r-lg);padding:30px 26px;position:relative}
+.step .hx{width:54px;height:60px;clip-path:var(--hex);background:linear-gradient(160deg,var(--honey-l),var(--honey-d));display:grid;place-items:center;font:600 24px/1 var(--serif);color:var(--brown)}
+.step h3{font-size:26px;margin:20px 0 10px}
+.step p{margin:0;color:var(--brown-2);font-size:15.5px}
+.step p + p{margin-top:8px}
+
+/* gallery */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:760px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
+.gi{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/5;background:var(--sand);cursor:zoom-in;border:0;padding:0;transition:opacity .4s, transform .4s}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.07)}
+.gi span{position:absolute;left:10px;bottom:10px;right:10px;width:fit-content;max-width:calc(100% - 20px);background:rgba(255,250,240,.9);font-size:12px;font-weight:700;padding:5px 10px;border-radius:8px;text-align:left}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,820px);max-height:90vh}
+.lb::backdrop{background:rgba(38,24,12,.88)}
+.lb img{max-height:84vh;width:auto;margin:auto;border-radius:16px}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:#fff;font-size:22px;cursor:pointer}
+
+/* studio */
+.studio-w{display:grid;grid-template-columns:minmax(0,1fr);gap:40px;align-items:center}
+@media (min-width:900px){.studio-w{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:64px}}
+.duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.duo figure{margin:0;aspect-ratio:3/4;overflow:hidden;background:var(--sand);box-shadow:var(--shadow)}
+.duo figure:first-child{border-radius:30px 100px 30px 30px}
+.duo figure:last-child{border-radius:100px 30px 30px 30px;margin-top:40px}
+.duo img{width:100%;height:100%;object-fit:cover}
+.studio-t p{margin:18px 0 0;color:var(--brown-2);max-width:56ch}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.fact{display:inline-flex;align-items:center;gap:10px;background:var(--ivory);border:1px solid var(--line);border-radius:12px;padding:9px 14px;font-size:14px;font-weight:600;max-width:100%}
+.fact::before{content:"";width:11px;height:12px;flex:none;background:var(--honey);clip-path:var(--hex)}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start}
+.ci small{display:block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ci p,.ci a{margin:0;font-size:18px;font-weight:600;text-decoration:none;overflow-wrap:break-word}
+.ci a.big{font:600 32px/1.15 var(--serif)}
+.ci .sub{display:block;margin-top:4px;font-size:14px;font-weight:500;color:var(--muted)}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--ivory);border-radius:12px;padding:10px 16px;font-size:14px;font-weight:700;text-decoration:none;transition:background .25s,color .25s}
+.socials a:hover{background:var(--brown);color:var(--cream)}
+.map{border-radius:var(--r-lg);overflow:hidden;min-height:380px;background:var(--sand);border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* final */
+.final{text-align:center;background:radial-gradient(120% 90% at 50% 0%,#F6DDA0 0%,var(--cream) 62%)}
+.final h2{font-size:clamp(36px,6.6vw,76px);max-width:15ch;margin:18px auto}
+.final .ctas{justify-content:center;margin-top:30px}
+footer{padding:36px 0 120px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px;padding:8px;background:rgba(58,38,21,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:22px;box-shadow:0 18px 40px -12px rgba(0,0,0,.45);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:15px;color:var(--cream);text-decoration:none;font-size:11.5px;font-weight:700}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--honey);color:var(--brown);flex-direction:row;font-size:14px;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><symbol id="sprig" viewBox="0 0 80 200"><path d="M40 198C40 150 42 90 40 22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><g fill="currentColor"><ellipse cx="40" cy="16" rx="5" ry="13"/><ellipse cx="29" cy="46" rx="5" ry="13" transform="rotate(-28 29 46)"/><ellipse cx="51" cy="46" rx="5" ry="13" transform="rotate(28 51 46)"/><ellipse cx="28" cy="76" rx="5" ry="13" transform="rotate(-30 28 76)"/><ellipse cx="52" cy="76" rx="5" ry="13" transform="rotate(30 52 76)"/><ellipse cx="29" cy="106" rx="4.6" ry="12" transform="rotate(-32 29 106)"/><ellipse cx="51" cy="106" rx="4.6" ry="12" transform="rotate(32 51 106)"/><ellipse cx="31" cy="134" rx="4" ry="10" transform="rotate(-34 31 134)"/><ellipse cx="49" cy="134" rx="4" ry="10" transform="rotate(34 49 134)"/></g></symbol></defs></svg>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Концепт сайта для студии TU’M STUDIO. Данные из открытых источников (MST) на 26.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="tu’m studio — наверх"><b>tu’m</b><small>studio</small></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#windows">Окна записи</a>
+      <a href="#services">Услуги и цены</a>
+      <a href="#how">Как записаться</a>
+      <a href="#gallery">Фото</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm honey" href="https://mst.link/tumanovastudio" target="_blank" rel="noopener">Записаться</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#windows">Окна записи</a>
+  <a href="#services">Услуги и цены</a>
+  <a href="#how">Как записаться</a>
+  <a href="#gallery">Фото</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="drip" aria-hidden="true">
+    <i style="--x:3%;--w:18px;--h:34px;--d:0s"></i>
+    <i style="--x:11%;--w:26px;--h:62px;--d:-2s"></i>
+    <i style="--x:21%;--w:16px;--h:28px;--d:-4s"></i>
+    <i style="--x:33%;--w:22px;--h:46px;--d:-1s"></i>
+    <i style="--x:47%;--w:30px;--h:74px;--d:-3s"></i>
+    <i style="--x:58%;--w:18px;--h:36px;--d:-5s"></i>
+    <i style="--x:68%;--w:24px;--h:54px;--d:-2.5s"></i>
+    <i style="--x:79%;--w:16px;--h:30px;--d:-6s"></i>
+    <i style="--x:88%;--w:28px;--h:66px;--d:-1.5s"></i>
+    <i style="--x:95%;--w:18px;--h:38px;--d:-3.5s"></i>
+  </div>
+  <div class="wrap">
+    <div>
+      <span class="status rv" id="status"><i></i><span id="stText">Новые окна — 1-го и 15-го числа в 13:00 МСК</span></span>
+      <h1 class="rv d1">Нежное окрашивание <em>и&nbsp;безопасное</em> выпрямление волос</h1>
+      <p class="lead rv d2">Студия окрашивания и восстановления волос на Литейном проспекте. Индивидуальный подход к каждому клиенту.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Литейный проспект, 41 · Санкт-Петербург</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn honey" href="https://mst.link/tumanovastudio" target="_blank" rel="noopener">Записаться</a>
+        <a class="btn ghost" href="tel:+79215505781"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+        <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%9B%D0%B8%D1%82%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%2C%2041&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+      </div>
+    </div>
+    <div class="visual rv d2">
+      <svg class="sprig s1" aria-hidden="true"><use href="#sprig"/></svg>
+      <div class="blob"><img id="heroImg" src="img/hero.jpg" alt="Светлые волнистые волосы после окрашивания" fetchpriority="high"></div>
+      <div class="orb"><img src="img/blond-1.jpg" alt="Блонд" loading="lazy"></div>
+      <svg class="sprig s2" aria-hidden="true"><use href="#sprig"/></svg>
+      <div class="chip c1">Консультация и подбор процедуры<b>бесплатно</b></div>
+      <div class="chip c2">Тест-прядь + консультация<b>от&nbsp;1&nbsp;500&nbsp;₽</b></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Блонд</span><span>Тонирование</span><span>Контуринг и блики</span><span>Сложное окрашивание</span><span>Безопасное выпрямление</span><span>Кератин</span><span>Протеиновая реконструкция</span><span>Стрижка</span><span>Пилинг кожи головы</span>
+  <span>Блонд</span><span>Тонирование</span><span>Контуринг и блики</span><span>Сложное окрашивание</span><span>Безопасное выпрямление</span><span>Кератин</span><span>Протеиновая реконструкция</span><span>Стрижка</span><span>Пилинг кожи головы</span>
+</div></div>
+
+<!-- WINDOWS -->
+<section class="windows" id="windows">
+  <svg class="sprig s3" aria-hidden="true"><use href="#sprig"/></svg>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow rv">Запись по окнам</span>
+      <h2 class="rv d1" style="margin-top:14px">Когда откроются <em>окна?</em></h2>
+      <p class="lead rv d2">Новые окошки появляются 1-го и 15-го числа каждого месяца в&nbsp;13:00. Считаем по московскому времени — до ближайшего из них.</p>
+      <div class="ctas rv d3">
+        <a class="btn honey" href="https://mst.link/tumanovastudio" target="_blank" rel="noopener">Записаться в MST</a>
+        <a class="btn ghost" style="color:var(--cream);border-color:rgba(251,241,220,.5)" href="tel:+79215505781">Позвонить</a>
+      </div>
+      <p class="vk rv d3">При записи просят заполнить профиль ВК — для связи.</p>
+    </div>
+    <div class="jar rv d1">
+      <div class="today" id="today">Сегодня в 13:00 появились новые окошки — загляните в MST.</div>
+      <span class="lbl">До ближайших окон</span>
+      <div class="when" id="whenTxt">1-го или 15-го числа, 13:00 МСК</div>
+      <div class="cd" role="timer" aria-live="off">
+        <div class="cell"><b id="cdD">--</b><span>дней</span></div>
+        <div class="cell"><b id="cdH">--</b><span>часов</span></div>
+        <div class="cell"><b id="cdM">--</b><span>минут</span></div>
+        <div class="cell"><b id="cdS">--</b><span>секунд</span></div>
+      </div>
+      <div class="fill">
+        <div class="bar" aria-hidden="true"><i id="barFill"></i></div>
+        <div class="bar-l"><span id="barFrom">1-е / 15-е</span><span id="barTo">1-е / 15-е</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Прайс</span><h2 class="rv d1" style="margin-top:14px">Услуги <em>и цены</em></h2></div>
+      <p class="rv d2">Цены «от» — по прайсу студии в MST</p>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Категории услуг">
+      <button class="tab" role="tab" aria-selected="true" data-tab="rs" data-img="straight">Восстановление и выпрямление</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="cl" data-img="blond-1">Окрашивание</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="ct" data-img="waves-1">Стрижка</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="ca" data-img="care">Уход</button>
+    </div>
+    <div class="svc">
+      <div>
+        <div class="panel on" id="p-rs" role="tabpanel">
+          <div class="row"><div class="n"><b>Безопасное выпрямление / дисциплинирование</b><small>Протеиновая реконструкция + кератин/ботокс</small></div><div class="p"><small>от</small>&nbsp;5&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Бесформальдегидный кератин</b></div><div class="p"><small>от</small>&nbsp;8&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Протеиновая реконструкция</b></div><div class="p"><small>от</small>&nbsp;3&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Холодное восстановление</b></div><div class="p"><small>от</small>&nbsp;4&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Холодное восстановление с окудрением</b></div><div class="p"><small>от</small>&nbsp;5&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Тотальная реконструкция</b></div><div class="p"><small>от</small>&nbsp;9&nbsp;000&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-cl" role="tabpanel">
+          <div class="row"><div class="n"><b>Тон в тон / тонирование</b></div><div class="p"><small>от</small>&nbsp;7&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Контуринг / блики</b></div><div class="p"><small>от</small>&nbsp;10&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Сложное окрашивание</b></div><div class="p"><small>от</small>&nbsp;15&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>«Не знаю, что хочу, но хочу красиво»</b></div><div class="p"><small>от</small>&nbsp;7&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Тест-прядь + консультация</b></div><div class="p"><small>от</small>&nbsp;1&nbsp;500&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-ct" role="tabpanel">
+          <div class="row"><div class="n"><b>Стрижка</b></div><div class="p"><small>от</small>&nbsp;3&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Стрижка при процедуре / окрашивании</b></div><div class="p"><small>от</small>&nbsp;2&nbsp;000&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-ca" role="tabpanel">
+          <div class="row"><div class="n"><b>Пилинг кожи головы / трихологическая консультация</b></div><div class="p"><small>от</small>&nbsp;3&nbsp;000&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Консультация и подбор процедуры</b></div><div class="p free">бесплатно</div></div>
+        </div>
+        <p class="note">Для точного определения стоимости студия просит присылать фото ваших волос.</p>
+      </div>
+      <div class="svc-photo" aria-hidden="true">
+        <img src="img/straight.jpg" alt="" data-k="straight" class="on" loading="lazy">
+        <img src="img/blond-1.jpg" alt="" data-k="blond-1" loading="lazy">
+        <img src="img/waves-1.jpg" alt="" data-k="waves-1" loading="lazy">
+        <img src="img/care.jpg" alt="" data-k="care" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="how" id="how">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Запись</span><h2 class="rv d1" style="margin-top:14px">Как <em>записаться</em></h2></div>
+    </div>
+    <div class="steps">
+      <article class="step rv"><div class="hx">1</div><h3>Дождитесь окон</h3><p>Новые окошки открываются 1-го и 15-го числа каждого месяца в 13:00.</p></article>
+      <article class="step rv d1"><div class="hx">2</div><h3>Запишитесь в MST</h3><p>Онлайн-запись — на странице студии в MST. WhatsApp и Telegram — кнопки там же.</p><p>При записи просят заполнить профиль ВК для связи.</p></article>
+      <article class="step rv d2"><div class="hx">3</div><h3>Пришлите фото волос</h3><p>Для точного определения стоимости студия просит присылать фото ваших волос. Консультация и подбор процедуры — бесплатно.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Фото</span><h2 class="rv d1" style="margin-top:14px">Волосы <em>и студия</em></h2></div>
+      <p class="rv d2">Фото из открытых источников</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр фото">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="blond">Блонд</button>
+      <button class="tab" aria-pressed="false" data-f="waves">Локоны</button>
+      <button class="tab" aria-pressed="false" data-f="care">Выпрямление и уход</button>
+      <button class="tab" aria-pressed="false" data-f="studio">Студия</button>
+    </div>
+    <div class="grid" id="grid">
+      <button class="gi rv" data-c="waves"><img src="img/hero.jpg" alt="Светлые волны" loading="lazy"><span>Светлые волны</span></button>
+      <button class="gi rv d1" data-c="blond"><img src="img/blond-1.jpg" alt="Блонд" loading="lazy"><span>Блонд</span></button>
+      <button class="gi rv d2" data-c="care"><img src="img/straight.jpg" alt="Выпрямление тёмных волос" loading="lazy"><span>Выпрямление тёмных волос</span></button>
+      <button class="gi rv" data-c="waves"><img src="img/waves-1.jpg" alt="Локоны" loading="lazy"><span>Локоны</span></button>
+      <button class="gi rv d1" data-c="blond"><img src="img/blond-2.jpg" alt="Блонд" loading="lazy"><span>Блонд</span></button>
+      <button class="gi rv d2" data-c="care"><img src="img/care.jpg" alt="Процедура восстановления волос" loading="lazy"><span>Процедура восстановления</span></button>
+      <button class="gi rv" data-c="studio"><img src="img/decor.jpg" alt="Логотип tu’m с сухоцветами" loading="lazy"><span>Логотип tu’m и сухоцветы</span></button>
+      <button class="gi rv d1" data-c="waves"><img src="img/waves-2.jpg" alt="Локоны" loading="lazy"><span>Локоны</span></button>
+      <button class="gi rv d2" data-c="studio"><img src="img/client.jpg" alt="Клиентка студии" loading="lazy"><span>Клиентка</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""></dialog>
+
+<!-- STUDIO -->
+<section id="studio" style="padding-top:0">
+  <div class="wrap studio-w">
+    <div class="duo">
+      <figure class="rv"><img src="img/decor.jpg" alt="Логотип tu’m с сухоцветами в студии" loading="lazy"></figure>
+      <figure class="rv d1"><img src="img/client.jpg" alt="Клиентка студии" loading="lazy"></figure>
+    </div>
+    <div class="studio-t">
+      <span class="eyebrow rv">О студии</span>
+      <h2 class="rv d1" style="margin-top:14px">TU’M STUDIO <em>с любовью к&nbsp;волосам</em></h2>
+      <p class="rv d2">Окрашивание и восстановление волос: безопасное выпрямление и нежные окрашивания с индивидуальным подходом. Интерьер студии — с сухоцветами.</p>
+      <div class="facts rv d2">
+        <span class="fact">Литейный проспект, 41</span>
+        <span class="fact">Окна: 1-го и 15-го числа в 13:00</span>
+        <span class="fact">Консультация и подбор процедуры — бесплатно</span>
+        <span class="fact">Тест-прядь + консультация — от&nbsp;1&nbsp;500&nbsp;₽</span>
+        <span class="fact">Стоимость уточняют по фото волос</span>
+        <span class="fact">«5 лет творю с любовью к каждому клиенту» — из профиля мастера-основателя</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1" style="margin-top:14px">Как <em>добраться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Санкт-Петербург, Литейный проспект, 41</p></div>
+        <div class="ci"><small>Запись</small><p>Новые окна — 1-го и 15-го числа каждого месяца в 13:00</p><span class="sub">При записи просят заполнить профиль ВК для связи</span></div>
+        <div class="ci"><small>Телефон</small><a class="big" href="tel:+79215505781">+7 921 550-57-81</a></div>
+        <div class="ci"><small>Онлайн-запись и мессенджеры</small>
+          <div class="socials">
+            <a href="https://mst.link/tumanovastudio" target="_blank" rel="noopener">MST — запись, WhatsApp, Telegram</a>
+          </div>
+        </div>
+        <div class="ctas"><a class="btn ghost" href="https://yandex.ru/maps/?rtext=~%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%9B%D0%B8%D1%82%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%2C%2041&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a></div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?mode=search&text=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%9B%D0%B8%D1%82%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%2C%2041&z=16" title="Литейный проспект, 41 на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow rv">Запись</span>
+    <h2 class="rv d1">Займите своё <em>окошко</em></h2>
+    <p class="lead rv d2" style="margin:0 auto">Новые окна — 1-го и 15-го числа в 13:00. Запись — в MST, стоимость уточняется по фото волос.</p>
+    <div class="ctas rv d3">
+      <a class="btn honey" href="https://mst.link/tumanovastudio" target="_blank" rel="noopener">Записаться в MST</a>
+      <a class="btn ghost" href="tel:+79215505781">+7 921 550-57-81</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© TU’M STUDIO (Tumanova studio) — окрашивание и восстановление волос, Санкт-Петербург</span>
+    <span>Демо-концепт. Цены «от» и данные — из открытых источников (MST) на 26.10.2026. Страница не индексируется.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79215505781"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+  <a href="#windows"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></svg>Когда окна</a>
+  <a class="main" href="https://mst.link/tumanovastudio" target="_blank" rel="noopener">Записаться</a>
+</nav>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    const y = scrollY;
+    hdr.classList.toggle('scrolled', y > 8);
+    mbar.classList.toggle('show', y > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Вкладки прайса + смена фото
+  const tabs = document.querySelectorAll('[role=tab]');
+  const pics = document.querySelectorAll('.svc-photo img');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === 'p-' + t.dataset.tab));
+    pics.forEach(p => p.classList.toggle('on', p.dataset.k === t.dataset.img));
+  }));
+
+  // Фильтр фото и лайтбокс
+  const items = document.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt;
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+
+  // «Когда откроются окна?» — обратный отсчёт до 1-го / 15-го числа, 13:00 по Москве (UTC+3, без перевода часов)
+  const MSK = 3 * 3600e3;
+  const at = (y, m, d) => Date.UTC(y, m, d, 10, 0, 0); // 13:00 МСК = 10:00 UTC
+  const fmtDate = t => {
+    try { return new Date(t).toLocaleDateString('ru-RU', { day: 'numeric', month: 'long', timeZone: 'Europe/Moscow' }); }
+    catch (e) { return ''; }
+  };
+  const pad = n => String(n).padStart(2, '0');
+  const $ = id => document.getElementById(id);
+  const el = { d: $('cdD'), h: $('cdH'), m: $('cdM'), s: $('cdS'), when: $('whenTxt'), st: $('stText'), from: $('barFrom'), to: $('barTo'), fill: $('barFill'), today: $('today') };
+  const tick = () => {
+    const now = Date.now();
+    const s = new Date(now + MSK), y = s.getUTCFullYear(), m = s.getUTCMonth();
+    const list = [at(y, m - 1, 15), at(y, m, 1), at(y, m, 15), at(y, m + 1, 1), at(y, m + 1, 15)];
+    const i = list.findIndex(t => t > now);
+    const prev = list[i - 1], next = list[i];
+    const diff = Math.max(0, next - now);
+    el.d.textContent = pad(Math.floor(diff / 864e5));
+    el.h.textContent = pad(Math.floor(diff % 864e5 / 36e5));
+    el.m.textContent = pad(Math.floor(diff % 36e5 / 6e4));
+    el.s.textContent = pad(Math.floor(diff % 6e4 / 1e3));
+    const nd = fmtDate(next);
+    el.when.textContent = nd + ', 13:00 МСК';
+    el.from.textContent = fmtDate(prev);
+    el.to.textContent = nd;
+    el.fill.style.width = Math.min(100, Math.max(0, (now - prev) / (next - prev) * 100)).toFixed(2) + '%';
+    const day = s.getUTCDate(), hr = s.getUTCHours();
+    const opened = (day === 1 || day === 15) && hr >= 13;
+    el.today.classList.toggle('on', opened);
+    el.st.textContent = opened ? 'Сегодня в 13:00 открылись новые окна' : 'Ближайшие окна · ' + nd + ', 13:00 МСК';
+  };
+  tick(); setInterval(tick, 1000);
+})();
+</script>
+</body>
+</html>

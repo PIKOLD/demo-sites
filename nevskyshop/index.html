@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>#NEVSKYSHOP — магазин женской одежды на Невском, 82</title>
+<meta name="description" content="#NEVSKYSHOP — магазин женской одежды на Невском пр., 82 (м. Маяковская). Пуховики, куртки, джинсы, костюмы, шапки. Ежедневно 11:00–21:00. Оплата «Долями», есть доставка.">
+<meta name="theme-color" content="#F3F6F9">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Onest:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Onest:wght@400;500;600;700&display=swap"></noscript>
+<style>
+:root{
+  --snow:#F3F6F9; --white:#FFFFFF; --ice:#E3E9F0; --ink:#0D0D0F; --ink-2:#2B2C31; --muted:#656B75;
+  --red:#D5192E; --red-d:#AE1022; --red-l:#FF5566; --line:rgba(13,13,15,.14);
+  --r:4px;
+  --disp:"Oswald","Arial Narrow",Impact,sans-serif; --sans:"Onest",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:76px}
+body{margin:0;background:var(--snow);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.eyebrow{font:600 12px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--red)}
+.dark .eyebrow,.final .eyebrow{color:var(--red-l)}
+h1,h2,h3{font-family:var(--disp);font-weight:700;line-height:.98;margin:0;text-transform:uppercase;letter-spacing:.005em}
+h2{font-size:clamp(38px,7vw,78px)}
+h2 em{font-style:normal;color:var(--red)}
+.dark h2 em{color:var(--red-l)}
+.lead{font-size:clamp(16px,1.6vw,18px);color:var(--ink-2);max-width:54ch}
+section{padding:clamp(64px,9vw,112px) 0}
+
+/* demo bar */
+.demo{background:var(--ink);color:#E9ECF1;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:#fff;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:11px;border:1px solid rgba(255,255,255,.4);border-radius:3px;padding:3px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(243,246,249,.9);background:color-mix(in srgb,var(--snow) 86%,transparent);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:2px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--ink)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.logo{display:flex;align-items:baseline;gap:10px;text-decoration:none;min-width:0}
+.logo b{font:700 24px/1 var(--disp);letter-spacing:.02em}
+.logo b span{color:var(--red)}
+.logo small{display:none;font:500 11px/1 var(--sans);color:var(--muted);letter-spacing:.14em;text-transform:uppercase}
+@media (min-width:460px){.logo small{display:inline}}
+.nav{display:none;gap:28px}
+.nav a{text-decoration:none;font-weight:600;font-size:13.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 20px;border-radius:var(--r);border:2px solid var(--ink);background:var(--ink);color:#fff;font:600 13.5px/1.15 var(--sans);letter-spacing:.07em;text-transform:uppercase;text-align:center;text-decoration:none;cursor:pointer;transition:transform .25s, background .25s, color .25s, border-color .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.red{background:var(--red);border-color:var(--red)}
+.btn.red:hover{background:var(--red-d);border-color:var(--red-d)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+.btn.white{background:#fff;border-color:#fff;color:var(--ink)}
+.btn.white:hover{background:var(--ink);border-color:var(--ink);color:#fff}
+.btn.ghost-w{background:transparent;border-color:#fff;color:#fff}
+.btn.ghost-w:hover{background:#fff;color:var(--ink)}
+.btn.sm{min-height:42px;padding:0 16px;font-size:12.5px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border-radius:var(--r);border:2px solid var(--ink);background:var(--white);display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:18px;height:2px;background:var(--ink);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--ink);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--snow);padding:110px 24px 40px;display:flex;flex-direction:column;gap:4px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:700 40px/1.15 var(--disp);text-transform:uppercase;text-decoration:none;padding:6px 0;border-bottom:1px solid var(--line)}
+.mnav a:last-child{color:var(--red);border-bottom:0}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:clamp(24px,4vw,48px) 0 clamp(56px,8vw,96px);background:linear-gradient(180deg,#fff 0%,var(--snow) 75%)}
+.snow{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.snow::before,.snow::after{content:"";position:absolute;inset:0;background-repeat:repeat}
+.snow::before{background-image:radial-gradient(2px 2px at 30px 40px,#B5C3D3 60%,transparent 62%),radial-gradient(3px 3px at 130px 120px,#C6D2E0 60%,transparent 62%),radial-gradient(2px 2px at 180px 190px,#B5C3D3 60%,transparent 62%),radial-gradient(2.5px 2.5px at 80px 170px,#C6D2E0 60%,transparent 62%);background-size:220px 220px;animation:snow 16s linear infinite}
+.snow::after{background-image:radial-gradient(4px 4px at 60px 80px,#D3DDE9 60%,transparent 62%),radial-gradient(3px 3px at 230px 240px,#C0CCDA 60%,transparent 62%),radial-gradient(4px 4px at 150px 300px,#D3DDE9 60%,transparent 62%);background-size:340px 340px;animation:snow 26s linear infinite}
+@keyframes snow{to{background-position:0 440px}}
+.hero .wrap{position:relative;z-index:1}
+.topline{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center}
+.status{display:inline-flex;align-items:center;gap:10px;max-width:100%;background:var(--white);border:1px solid var(--line);border-radius:99px;padding:8px 14px 8px 12px;font-size:13.5px;font-weight:600}
+.status i{width:9px;height:9px;flex:none;border-radius:50%;background:#2FA55B;box-shadow:0 0 0 0 rgba(47,165,91,.5);animation:pulse 2s infinite}
+.status.closed i{background:var(--red);animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(47,165,91,0)}100%{box-shadow:0 0 0 0 rgba(47,165,91,0)}}
+.where{font-size:13.5px;font-weight:600;color:var(--muted)}
+.mega{font-family:var(--disp);font-weight:700;font-size:min(14.2vw,186px);line-height:.95;letter-spacing:-.005em;white-space:nowrap;margin:18px 0 10px;max-width:100%;overflow:hidden}
+.mega .hash{color:var(--red)}
+.hgrid{display:grid;gap:36px;align-items:center}
+@media (min-width:960px){.hgrid{grid-template-columns:minmax(0,1.1fr) minmax(0,.8fr);gap:72px}}
+.kicker{font:600 13px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin:0 0 14px}
+.hero .lead{margin:0 0 26px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.perks{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.perks li{border:1.5px solid var(--ink);border-radius:99px;padding:6px 14px;font-size:13px;font-weight:600;background:var(--white)}
+.perks li.hot{background:var(--red);border-color:var(--red);color:#fff}
+.ratings{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:30px;padding-top:24px;border-top:2px solid var(--ink)}
+.rate{display:flex;align-items:center;gap:12px}
+.rate strong{font:700 46px/1 var(--disp)}
+.rate span{font-size:13px;line-height:1.35;color:var(--muted)}
+.rate span b{color:var(--ink);font-weight:600;display:block}
+.stars{color:#E0A02F;letter-spacing:2px;font-size:12px}
+
+.visual{position:relative;width:100%;max-width:460px;margin:14px 10px 10px auto}
+@media (min-width:960px){.visual{margin:14px 10px 10px auto}}
+.frame{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--ice);box-shadow:10px 10px 0 var(--red)}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.seal{position:absolute;z-index:3;right:-8px;top:-20px;width:104px;height:104px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-content:center;text-align:center;font:700 22px/1 var(--disp);text-transform:uppercase;box-shadow:0 0 0 4px var(--snow);transform:rotate(10deg);animation:wob 5s ease-in-out infinite}
+.seal small{display:block;font:600 10px/1.15 var(--sans);letter-spacing:.06em;margin-bottom:4px}
+@keyframes wob{50%{transform:rotate(2deg) scale(1.04)}}
+.tag{position:absolute;z-index:3;left:6px;bottom:9%;text-decoration:none;transform:rotate(-5deg);filter:drop-shadow(0 8px 12px rgba(0,0,0,.28));transition:transform .3s}
+.tag:hover{transform:rotate(-2deg) scale(1.03)}
+.tag span{position:relative;display:block;background:var(--white);color:var(--ink);padding:12px 16px 12px 40px;font-size:12.5px;line-height:1.3;clip-path:polygon(24px 0,100% 0,100% 100%,24px 100%,0 50%)}
+.tag span::before{content:"";position:absolute;left:21px;top:50%;width:9px;height:9px;border-radius:50%;background:var(--ink);transform:translateY(-50%)}
+.tag b{display:block;font:700 18px/1.1 var(--disp);text-transform:uppercase;color:var(--red)}
+@media (min-width:960px){.tag{left:-26px}}
+
+/* marquee */
+.marquee{background:var(--red);color:#fff;overflow:hidden;padding:14px 0}
+.track{display:flex;width:max-content;animation:run 32s linear infinite}
+.track span{font:600 clamp(22px,3.4vw,34px)/1 var(--disp);text-transform:uppercase;letter-spacing:.02em;padding:0 22px;white-space:nowrap;display:flex;align-items:center;gap:44px}
+.track span::after{content:"#";color:var(--ink)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* heads */
+.head{display:grid;gap:16px;margin-bottom:38px}
+@media (min-width:960px){.head{grid-template-columns:1fr auto;align-items:end}}
+.head p{margin:0;color:var(--muted);font-size:14px;max-width:44ch}
+.dark .head p{color:#B4BAC4}
+
+/* now (stories) */
+.dark{background:var(--ink);color:#F1F3F6}
+.controls{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin-bottom:22px}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.tab{border:1.5px solid var(--line);background:var(--white);border-radius:99px;padding:10px 18px;font-weight:600;font-size:13.5px;cursor:pointer;transition:all .25s}
+.dark .tab{background:transparent;border-color:rgba(255,255,255,.3);color:#fff}
+.tab[aria-pressed="true"]{background:var(--red);color:#fff;border-color:var(--red)}
+.arrows{display:none;gap:8px}
+@media (min-width:760px){.arrows{display:flex}}
+.arrows button{width:48px;height:48px;border-radius:50%;border:1.5px solid rgba(255,255,255,.4);background:transparent;color:#fff;cursor:pointer;display:grid;place-items:center;transition:background .25s,border-color .25s}
+.arrows button:hover{background:var(--red);border-color:var(--red)}
+.arrows svg{width:20px;height:20px}
+.rail{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 0 20px;scrollbar-width:thin;scrollbar-color:var(--red) rgba(255,255,255,.14);-webkit-overflow-scrolling:touch}
+.story{flex:0 0 min(66vw,272px);scroll-snap-align:start;display:grid;gap:10px;align-content:start}
+.story[hidden]{display:none}
+.shot{position:relative;aspect-ratio:9/14;border:0;padding:0;background:#1d1e22;overflow:hidden;cursor:zoom-in;border-radius:6px}
+.shot img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.shot:hover img{transform:scale(1.06)}
+.shot::before{content:"";position:absolute;z-index:2;left:10px;right:10px;top:10px;height:3px;background:linear-gradient(90deg,#fff 0 32%,transparent 32% 34%,rgba(255,255,255,.45) 34% 66%,transparent 66% 68%,rgba(255,255,255,.45) 68% 100%);border-radius:3px}
+.shot::after{content:"";position:absolute;inset:55% 0 0;background:linear-gradient(180deg,transparent,rgba(13,13,15,.7))}
+.shot span{position:absolute;z-index:2;left:12px;bottom:12px;font:600 20px/1 var(--disp);text-transform:uppercase;letter-spacing:.03em;color:#fff;text-align:left}
+.shot span small{display:block;font:500 11px/1 var(--sans);letter-spacing:.14em;color:#FFC9CF;margin-bottom:5px}
+.story .btn{width:100%}
+.nowcta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:10px}
+.nowcta p{margin:0;flex:1 1 260px;color:#B4BAC4;font-size:14px}
+
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,520px);max-height:94vh;overflow:visible}
+.lb[open]{display:grid;gap:12px;justify-items:center}
+.lb::backdrop{background:rgba(10,10,12,.88)}
+.lb img{max-height:76vh;max-width:100%;width:auto;height:auto;border-radius:6px}
+.lb .x{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:#fff;font-size:22px;cursor:pointer}
+
+/* assortment */
+.asg{display:grid;gap:36px}
+@media (min-width:960px){.asg{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:64px;align-items:start}}
+.alist{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.alist a{display:grid;grid-template-columns:40px minmax(0,1fr) 40px;gap:12px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.alist .no{font:600 17px/1 var(--disp);color:var(--red)}
+.alist b{display:block;font:600 clamp(24px,4vw,40px)/1.05 var(--disp);text-transform:uppercase;letter-spacing:.01em;transition:color .25s,transform .3s}
+.alist small{display:block;color:var(--muted);font-size:13.5px;margin-top:4px}
+.alist .ar{width:40px;height:40px;border:1.5px solid var(--ink);border-radius:50%;display:grid;place-items:center;transition:background .25s,border-color .25s,color .25s}
+.alist .ar svg{width:18px;height:18px}
+.alist a:hover b{color:var(--red);transform:translateX(8px)}
+.alist a:hover .ar{background:var(--red);border-color:var(--red);color:#fff}
+.note{margin:22px 0 0;font-size:14px;color:var(--ink-2)}
+.note b{color:var(--red)}
+.apic{position:relative;aspect-ratio:4/5;max-width:440px;width:100%;margin-inline:auto;overflow:hidden;background:var(--ice);border-radius:6px}
+@media (min-width:960px){.apic{position:sticky;top:96px}}
+.apic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.apic figcaption{position:absolute;left:12px;right:12px;bottom:12px;background:rgba(13,13,15,.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:#fff;padding:10px 14px;font-size:13px;border-radius:4px}
+.apic{margin-block:0}
+
+/* praise */
+.praise{display:grid;gap:16px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pr-card{background:var(--snow);border:1px solid var(--line);border-top:6px solid var(--red);padding:28px;position:relative}
+.pr-card .num{font:700 60px/1 var(--disp);color:var(--ice);position:absolute;right:20px;top:14px}
+.pr-card h3{font-size:30px;margin:34px 0 12px;position:relative}
+.pr-card p{margin:0;color:var(--ink-2);position:relative}
+.score{display:flex;flex-wrap:wrap;gap:14px;margin-top:22px}
+.score a{display:flex;align-items:center;gap:14px;background:var(--ink);color:#fff;border-radius:4px;padding:14px 22px;text-decoration:none;flex:1 1 240px}
+.score strong{font:700 48px/1 var(--disp);color:#fff}
+.score span{font-size:13.5px;color:#B4BAC4}
+.score span b{color:#fff;display:block}
+
+/* buy facts */
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:960px){.facts{grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}}
+.fact{border:1px solid rgba(255,255,255,.2);border-radius:6px;padding:20px 16px;display:grid;gap:12px;align-content:start;min-width:0}
+.fact:first-child{background:var(--red);border-color:var(--red)}
+.fact svg{width:30px;height:30px;color:var(--red-l)}
+.fact:first-child svg{color:#fff}
+.fact small{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#B4BAC4;font-weight:600}
+.fact:first-child small{color:#FFD6DA}
+.fact b{font:600 clamp(20px,2.6vw,26px)/1.1 var(--disp);text-transform:uppercase;overflow-wrap:anywhere}
+
+/* contacts */
+.ct{display:grid;gap:28px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start}
+.ci small{display:block;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ci p,.ci a{margin:0;font-size:18px;font-weight:500;text-decoration:none}
+.ci a.big{font:700 clamp(32px,5vw,46px)/1.05 var(--disp);letter-spacing:.01em}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--ink);background:var(--white);border-radius:99px;padding:10px 16px;font-size:14px;font-weight:600;text-decoration:none;transition:background .25s,color .25s}
+.socials a:hover{background:var(--ink);color:#fff}
+.map{border-radius:6px;overflow:hidden;min-height:380px;background:var(--ice);border:2px solid var(--ink)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* final */
+.final{text-align:center;background:var(--red);color:#fff;position:relative;overflow:hidden}
+.final h2{font-size:clamp(42px,8vw,96px);max-width:14ch;margin:18px auto}
+.final h2 em{color:var(--ink)}
+.final .lead{color:#FFE3E6;margin:0 auto}
+.final .ctas{justify-content:center;margin-top:30px}
+.final .eyebrow{color:#FFD6DA}
+footer{background:var(--ink);color:#B4BAC4;padding:32px 0 120px;font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+@media (min-width:960px){footer{padding-bottom:36px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:1fr 1fr 1.35fr;gap:8px;padding:8px;background:rgba(13,13,15,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:10px;box-shadow:0 18px 40px -12px rgba(0,0,0,.5);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:6px;color:#fff;text-decoration:none;font-size:11.5px;font-weight:600}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--red);flex-direction:row;font-size:13px;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта для магазина #NEVSKYSHOP. Данные из открытых источников (2ГИС) на 25.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="#NEVSKYSHOP — наверх"><b><span>#</span>NEVSKYSHOP</b><small>женская одежда</small></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#now">В наличии</a>
+      <a href="#assortment">Ассортимент</a>
+      <a href="#praise">Отзывы</a>
+      <a href="#buy">Как купить</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm red" href="https://t.me/nevsky_shop" target="_blank" rel="noopener">Telegram-канал</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#now">В наличии</a>
+  <a href="#assortment">Ассортимент</a>
+  <a href="#praise">Отзывы</a>
+  <a href="#buy">Как купить</a>
+  <a href="#contacts">Контакты</a>
+  <a href="https://t.me/nevsky_shop" target="_blank" rel="noopener">Telegram-канал</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="snow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="topline rv">
+      <span class="status" id="status"><i></i><span>Ежедневно 11:00–21:00</span></span>
+      <span class="where">Невский&nbsp;пр.,&nbsp;82 · м.&nbsp;Маяковская</span>
+    </div>
+    <h1 class="mega rv d1"><span class="hash">#</span>NEVSKYSHOP</h1>
+    <div class="hgrid">
+      <div>
+        <p class="kicker rv d1">Магазин женской одежды · Центральный район</p>
+        <p class="lead rv d2">Пуховики, куртки, джинсы, костюмы, вязаные шапки и необычные вещи в центре Петербурга. Новинки и цены — в Telegram-канале.</p>
+        <div class="ctas rv d2">
+          <a class="btn red" href="tel:+79819037447"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+          <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~59.933279%2C30.34997&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+          <a class="btn" href="https://t.me/nevsky_shop" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M21 4 3 11l5.5 2L10 19l3-3.5 4.5 3.3z"/><path d="M8.5 13 21 4"/></svg>Telegram</a>
+        </div>
+        <ul class="perks rv d3">
+          <li class="hot">Можно оплатить «Долями»</li>
+          <li>Есть доставка</li>
+          <li>Карта · наличные · QR</li>
+        </ul>
+        <div class="ratings rv d3">
+          <div class="rate"><strong>4.8</strong><span><b class="stars">★★★★★</b>2ГИС · 36&nbsp;оценок</span></div>
+        </div>
+      </div>
+      <div class="visual rv d2">
+        <div class="seal"><span><small>можно оплатить</small>долями</span></div>
+        <div class="frame"><img src="img/hero.jpg" alt="Кожаная куртка с мехом из публикаций магазина" fetchpriority="high"></div>
+        <a class="tag" href="https://t.me/nevsky_shop" target="_blank" rel="noopener"><span>Новинки и цены<b>в Telegram-канале</b></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Пуховики</span><span>Куртки</span><span>Джинсы</span><span>Костюмы</span><span>Вязаные шапки</span><span>Необычные вещи</span>
+  <span>Пуховики</span><span>Куртки</span><span>Джинсы</span><span>Костюмы</span><span>Вязаные шапки</span><span>Необычные вещи</span>
+</div></div>
+
+<!-- NOW IN STOCK -->
+<section id="now" class="dark">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Лента образов</span><h2 class="rv d1" style="margin-top:14px">Сегодня <em>в наличии</em></h2></div>
+      <p class="rv d2">Образы из публикаций магазина. Что есть прямо сейчас — уточняйте в Telegram-канале или по телефону.</p>
+    </div>
+    <div class="controls rv">
+      <div class="filters" role="group" aria-label="Фильтр образов">
+        <button class="tab" aria-pressed="true" data-f="all">Все</button>
+        <button class="tab" aria-pressed="false" data-f="look">Образы</button>
+        <button class="tab" aria-pressed="false" data-f="hat">Шапки</button>
+      </div>
+      <div class="arrows">
+        <button type="button" id="prev" aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button type="button" id="next" aria-label="Вперёд"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+    <div class="rail rv" id="rail" tabindex="0" aria-label="Образы из публикаций магазина">
+      <article class="story" data-c="look"><button class="shot"><img src="img/look-1.jpg" alt="Образ 1 из публикаций магазина" loading="lazy" decoding="async"><span><small>Образ</small>01</span></button><a class="btn red sm" href="https://t.me/nevsky_shop" target="_blank" rel="noopener">Хочу так же</a></article>
+      <article class="story" data-c="look"><button class="shot"><img src="img/look-2.jpg" alt="Образ 2 из публикаций магазина" loading="lazy" decoding="async"><span><small>Образ</small>02</span></button><a class="btn red sm" href="https://t.me/nevsky_shop" target="_blank" rel="noopener">Хочу так же</a></article>
+      <article class="story" data-c="look"><button class="shot"><img src="img/look-3.jpg" alt="Образ 3 из публикаций магазина" loading="lazy" decoding="async"><span><small>Образ</small>03</span></button><a class="btn red sm" href="https://t.me/nevsky_shop" target="_blank" rel="noopener">Хочу так же</a></article>
+      <article class="story" data-c="look"><button class="shot"><img src="img/look-4.jpg" alt="Образ 4 из публикаций магазина" loading="lazy" decoding="async"><span><small>Образ</small>04</span></button><a class="btn red sm" href="https://t.me/nevsky_shop" target="_blank" rel="noopener">Хочу так же</a></article>
+      <article class="story" data-c="hat"><button class="shot"><img src="img/hats.jpg" alt="Вязаные шапки из публикаций магазина" loading="lazy" decoding="async"><span><small>Аксессуары</small>Вязаные шапки</span></button><a class="btn red sm" href="https://t.me/nevsky_shop" target="_blank" rel="noopener">Хочу так же</a></article>
+      <article class="story" data-c="look"><button class="shot"><img src="img/look-5.jpg" alt="Образ 5 из публикаций магазина" loading="lazy" decoding="async"><span><small>Образ</small>05</span></button><a class="btn red sm" href="https://t.me/nevsky_shop" target="_blank" rel="noopener">Хочу так же</a></article>
+      <article class="story" data-c="look"><button class="shot"><img src="img/look-6.jpg" alt="Образ 6 из публикаций магазина" loading="lazy" decoding="async"><span><small>Образ</small>06</span></button><a class="btn red sm" href="https://t.me/nevsky_shop" target="_blank" rel="noopener">Хочу так же</a></article>
+      <article class="story" data-c="look"><button class="shot"><img src="img/look-7.jpg" alt="Образ 7 из публикаций магазина" loading="lazy" decoding="async"><span><small>Образ</small>07</span></button><a class="btn red sm" href="https://t.me/nevsky_shop" target="_blank" rel="noopener">Хочу так же</a></article>
+      <article class="story" data-c="look"><button class="shot"><img src="img/look-8.jpg" alt="Образ 8 из публикаций магазина" loading="lazy" decoding="async"><span><small>Образ</small>08</span></button><a class="btn red sm" href="https://t.me/nevsky_shop" target="_blank" rel="noopener">Хочу так же</a></article>
+    </div>
+    <div class="nowcta rv">
+      <a class="btn white" href="https://t.me/nevsky_shop" target="_blank" rel="noopener">Смотреть новинки в Telegram</a>
+      <a class="btn ghost-w" href="https://wa.me/79819037447?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D0%B0%20Nevsky%20Shop.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%2C%20%D1%87%D1%82%D0%BE%20%D1%81%D0%B5%D0%B9%D1%87%D0%B0%D1%81%20%D0%B5%D1%81%D1%82%D1%8C%20%D0%B2%20%D0%BD%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D0%B8%3F" target="_blank" rel="noopener">Спросить в WhatsApp</a>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button class="x" aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""><a class="btn red" href="https://t.me/nevsky_shop" target="_blank" rel="noopener">Хочу так же</a></dialog>
+
+<!-- ASSORTMENT -->
+<section id="assortment">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Ассортимент</span><h2 class="rv d1" style="margin-top:14px">Что у нас <em>искать</em></h2></div>
+      <p class="rv d2">В открытых источниках цен нет — новинки и цены смотрите в Telegram-канале магазина.</p>
+    </div>
+    <div class="asg">
+      <div>
+        <ul class="alist rv">
+          <li><a href="https://t.me/nevsky_shop" target="_blank" rel="noopener"><span class="no">01</span><span><b>Пуховики</b><small>Хвалят в отзывах</small></span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+          <li><a href="https://t.me/nevsky_shop" target="_blank" rel="noopener"><span class="no">02</span><span><b>Куртки</b><small>Например, кожаная с мехом</small></span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+          <li><a href="https://t.me/nevsky_shop" target="_blank" rel="noopener"><span class="no">03</span><span><b>Джинсы</b><small>Хвалят в отзывах</small></span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+          <li><a href="https://t.me/nevsky_shop" target="_blank" rel="noopener"><span class="no">04</span><span><b>Костюмы</b><small>Есть среди образов магазина</small></span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+          <li><a href="https://t.me/nevsky_shop" target="_blank" rel="noopener"><span class="no">05</span><span><b>Вязаные шапки</b><small>Есть в публикациях магазина</small></span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+          <li><a href="https://t.me/nevsky_shop" target="_blank" rel="noopener"><span class="no">06</span><span><b>Необычные и индивидуальные вещи</b><small>Отмечают в отзывах</small></span><span class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+        </ul>
+        <p class="note rv">Новинки и цены — <b>в Telegram-канале</b>. Можно оплатить «Долями», есть доставка.</p>
+      </div>
+      <figure class="apic rv d1" style="margin-top:0;margin-bottom:0"><img src="img/hats.jpg" alt="Вязаные шапки из публикаций магазина" loading="lazy"><figcaption>Вязаные шапки · из публикаций магазина</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- PRAISE -->
+<section id="praise" style="background:var(--white)">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Отзывы</span><h2 class="rv d1" style="margin-top:14px">За что <em>хвалят</em></h2></div>
+      <p class="rv d2">Пересказ отзывов покупателей в 2ГИС</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card rv"><span class="num">01</span><h3>Модные вещи</h3><p>Покупатели хвалят подборку: пуховики, джинсы, необычные и индивидуальные вещи, которых хочется примерить сразу несколько.</p></article>
+      <article class="pr-card rv d1"><span class="num">02</span><h3>Огромный выбор</h3><p>Пишут, что в магазин заходят вместе с подругами и надолго задерживаются: глаза разбегаются, выбрать что-то одно непросто.</p></article>
+      <article class="pr-card rv d2"><span class="num">03</span><h3>Приятные консультанты</h3><p>Девушки-консультанты приветливые, а для многих это любимый магазин в Петербурге — сюда возвращаются.</p></article>
+    </div>
+    <div class="score rv">
+      <a href="https://2gis.ru/spb/firm/70000001048411624" target="_blank" rel="noopener"><strong>4.8</strong><span><b>2ГИС</b>36&nbsp;оценок</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- BUY -->
+<section id="buy" class="dark">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Как купить</span><h2 class="rv d1" style="margin-top:14px">Удобно <em>купить</em></h2></div>
+      <p class="rv d2">Приходите на Невский, 82 или спрашивайте по телефону, в WhatsApp и Telegram.</p>
+    </div>
+    <div class="facts rv">
+      <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg><small>Оплата</small><b>Можно оплатить «Долями»</b></div>
+      <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M2 6h11v9H2zM13 9h4l3 3v3h-7"/><circle cx="6.5" cy="18" r="1.6"/><circle cx="16.5" cy="18" r="1.6"/></svg><small>Доставка</small><b>Есть доставка</b></div>
+      <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><small>Способы оплаты</small><b>Карта, наличные, QR</b></div>
+      <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><small>Часы</small><b>Ежедневно 11:00–21:00</b></div>
+      <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><small>Где</small><b>Невский&nbsp;пр., 82 · м.&nbsp;Маяковская</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1" style="margin-top:14px">Как <em>добраться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Санкт-Петербург, Невский пр., 82 · Центральный район, м.&nbsp;Маяковская</p></div>
+        <div class="ci"><small>Часы работы</small><p>Ежедневно, 11:00–21:00</p></div>
+        <div class="ci"><small>Телефон · WhatsApp · Telegram</small><a class="big" href="tel:+79819037447">+7 981 903-74-47</a></div>
+        <div class="ci"><small>Мессенджеры и соцсети</small>
+          <div class="socials">
+            <a href="https://t.me/nevsky_shop" target="_blank" rel="noopener">Telegram-канал</a>
+            <a href="https://wa.me/79819037447" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://vk.com/nevsky_shop" target="_blank" rel="noopener">ВКонтакте</a>
+            <a href="https://max.ru/nevsky_shop" target="_blank" rel="noopener">MAX</a>
+          </div>
+        </div>
+        <div class="ctas"><a class="btn ghost" href="https://yandex.ru/maps/?rtext=~59.933279%2C30.34997&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a></div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?ll=30.34997%2C59.933279&z=16&pt=30.34997%2C59.933279%2Cpm2rdm" title="#NEVSKYSHOP на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow rv">Новинки</span>
+    <h2 class="rv d1">Свежие образы — <em>в Telegram</em></h2>
+    <p class="lead rv d2">Новинки и цены — в Telegram-канале. Есть вопрос — позвоните или напишите в WhatsApp.</p>
+    <div class="ctas rv d3">
+      <a class="btn" href="https://t.me/nevsky_shop" target="_blank" rel="noopener">Telegram-канал</a>
+      <a class="btn ghost-w" href="https://wa.me/79819037447?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D0%B0%20Nevsky%20Shop.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%2C%20%D1%87%D1%82%D0%BE%20%D1%81%D0%B5%D0%B9%D1%87%D0%B0%D1%81%20%D0%B5%D1%81%D1%82%D1%8C%20%D0%B2%20%D0%BD%D0%B0%D0%BB%D0%B8%D1%87%D0%B8%D0%B8%3F" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn white" href="tel:+79819037447">+7 981 903-74-47</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© #NEVSKYSHOP — магазин женской одежды, Санкт-Петербург</span>
+    <span>Демо-концепт. Данные — из открытых источников (2ГИС) на 25.10.2026. Фото — из публикаций магазина.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79819037447"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+  <a href="https://wa.me/79819037447" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>WhatsApp</a>
+  <a class="main" href="https://t.me/nevsky_shop" target="_blank" rel="noopener">Telegram-канал</a>
+</nav>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Статус «открыто/закрыто» по московскому времени (ежедневно 11:00–21:00)
+  const st = document.getElementById('status');
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
+  const m = now.getHours() * 60 + now.getMinutes();
+  const open = m >= 11 * 60 && m < 21 * 60;
+  st.classList.toggle('closed', !open);
+  st.querySelector('span').textContent = open
+    ? 'Открыто сейчас · до 21:00'
+    : (m < 11 * 60 ? 'Сейчас закрыто · откроемся сегодня в 11:00' : 'Сейчас закрыто · откроемся завтра в 11:00');
+
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    const y = scrollY;
+    hdr.classList.toggle('scrolled', y > 8);
+    mbar.classList.toggle('show', y > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Лента «Сегодня в наличии»: фильтр, стрелки, лайтбокс
+  const rail = document.getElementById('rail');
+  const stories = rail.querySelectorAll('.story');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    stories.forEach(s => { s.hidden = f.dataset.f !== 'all' && s.dataset.c !== f.dataset.f; });
+    rail.scrollTo({ left: 0, behavior: 'auto' });
+  }));
+  const step = () => (rail.querySelector('.story:not([hidden])') || { offsetWidth: 280 }).offsetWidth + 12;
+  document.getElementById('prev').addEventListener('click', () => rail.scrollBy({ left: -step(), behavior: reduce ? 'auto' : 'smooth' }));
+  document.getElementById('next').addEventListener('click', () => rail.scrollBy({ left: step(), behavior: reduce ? 'auto' : 'smooth' }));
+
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg');
+  rail.querySelectorAll('.shot').forEach(b => b.addEventListener('click', () => {
+    const img = b.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt;
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>

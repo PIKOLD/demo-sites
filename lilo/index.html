@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>LILO — шоурум женской одежды в Санкт-Петербурге</title>
+<meta name="description" content="Шоурум женской одежды LILO: пальто, тренчи, платья, костюмы и свитера. Лиговский пр., 43–45. Доставка по Санкт-Петербургу и России. Заказ через Taplink.">
+<meta name="theme-color" content="#F3EFE9">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap"></noscript>
+<style>
+:root{
+  --bone:#F3EFE9; --paper:#FBF9F6; --greige:#E3DCD1; --greige-d:#C9BEAF; --graphite:#2A2927; --graphite-2:#3D3B38;
+  --bronze:#6E604E; --muted:#6B655D; --line:rgba(42,41,39,.16);
+  --serif:"Noto Serif Display", "Times New Roman", Georgia, serif; --sans:"Jost", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bone);color:var(--graphite);font:400 16px/1.65 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.eyebrow{font:500 11.5px/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--bronze)}
+h1,h2,h3{font-family:var(--serif);font-weight:300;line-height:1.04;margin:0;letter-spacing:-.012em}
+h2{font-size:clamp(34px,6vw,60px)}
+h1 em,h2 em{font-style:italic;font-weight:300;color:var(--bronze)}
+.lead{font-size:clamp(16px,1.6vw,18px);font-weight:300;color:var(--graphite-2);max-width:50ch}
+section{padding:clamp(72px,10vw,120px) 0;scroll-margin-top:68px}
+
+/* demo bar */
+.demo{background:var(--graphite);color:#E6DFD4;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:#fff;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:10.5px;border:1px solid rgba(255,255,255,.35);padding:3px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(243,239,233,.9);background:color-mix(in srgb,var(--bone) 86%,transparent);backdrop-filter:saturate(1.2) blur(14px);-webkit-backdrop-filter:saturate(1.2) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:baseline;gap:12px;text-decoration:none}
+.logo b{font:300 26px/1 var(--serif);letter-spacing:.34em;margin-right:-.34em}
+.logo small{font:400 10.5px/1 var(--sans);color:var(--muted);letter-spacing:.26em;text-transform:uppercase}
+.nav{display:none;gap:34px}
+.nav a{text-decoration:none;font-weight:400;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--graphite-2);position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:1px;background:var(--bronze);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border:1px solid var(--graphite);background:var(--graphite);color:var(--bone);font:500 12.5px/1.2 var(--sans);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;text-align:center;cursor:pointer;transition:background .3s,color .3s,border-color .3s,transform .3s}
+.btn:hover{background:var(--bronze);border-color:var(--bronze);transform:translateY(-2px)}
+.btn svg{width:17px;height:17px;flex:none}
+.btn.ghost{background:transparent;color:var(--graphite)}
+.btn.ghost:hover{background:var(--graphite);border-color:var(--graphite);color:var(--bone)}
+.btn.light{background:var(--bone);border-color:var(--bone);color:var(--graphite)}
+.btn.light:hover{background:var(--greige-d);border-color:var(--greige-d);color:var(--graphite)}
+.btn.sm{min-height:44px;padding:0 20px;font-size:11.5px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border:1px solid var(--line);background:var(--paper);display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:18px;height:1px;background:var(--graphite);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1px;background:var(--graphite);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--bone);padding:120px 24px 40px;display:flex;flex-direction:column;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:300 36px/1.25 var(--serif);text-decoration:none;padding:6px 0;border-bottom:1px solid var(--line)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:clamp(36px,6vw,80px) 0 clamp(64px,8vw,104px);background:linear-gradient(180deg,var(--bone) 0%,var(--greige) 150%)}
+.ghost{position:absolute;right:-2vw;bottom:-.14em;font:300 clamp(190px,38vw,560px)/1 var(--serif);letter-spacing:.04em;color:transparent;-webkit-text-stroke:1px rgba(110,96,78,.22);pointer-events:none;user-select:none;z-index:0}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr);gap:56px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:80px}}
+.pill{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);background:var(--paper);padding:8px 14px;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:500}
+.pill i{width:7px;height:7px;background:var(--bronze);transform:rotate(45deg);flex:none}
+.hero h1{font-size:clamp(42px,8.4vw,98px);margin:26px 0 24px}
+.hero .lead{margin:0 0 26px}
+.place{display:flex;gap:12px;align-items:flex-start;color:var(--graphite-2);font-size:15px;margin-bottom:30px}
+.place svg{width:18px;height:18px;flex:none;margin-top:4px;color:var(--bronze)}
+.place small{display:block;color:var(--muted);font-size:13px;font-style:italic}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 200px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.prices{display:flex;flex-wrap:wrap;gap:16px 34px;margin:38px 0 0;padding:24px 0 0;border-top:1px solid var(--line)}
+.prices div{min-width:0}
+.prices dt{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.prices dd{margin:4px 0 0;font:300 26px/1.1 var(--serif);white-space:nowrap}
+.pnote{margin:16px 0 0;font-size:13px;color:var(--muted)}
+.frame{position:relative;max-width:460px;margin:0 14px 14px 0;width:calc(100% - 14px)}
+@media (min-width:960px){.frame{margin-inline:auto 18px;width:100%}}
+.frame::before{content:"";position:absolute;inset:16px -14px -14px 16px;border:1px solid var(--bronze);z-index:0}
+.frame .ph{position:relative;z-index:1;aspect-ratio:4/5;overflow:hidden;background:var(--greige-d);animation:unveil 1.3s cubic-bezier(.7,0,.2,1) both}
+.frame .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+@keyframes unveil{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0)}}
+.tag{position:absolute;z-index:2;left:-1px;bottom:26px;background:var(--bone);border:1px solid var(--line);padding:12px 18px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;line-height:1.4}
+.tag b{display:block;font:300 26px/1.1 var(--serif);letter-spacing:0;text-transform:none;margin-top:2px}
+.vlabel{display:none}
+@media (min-width:1100px){.vlabel{display:block;position:absolute;right:-48px;top:50%;writing-mode:vertical-rl;transform:rotate(180deg) translateY(50%);font-size:11px;letter-spacing:.36em;text-transform:uppercase;color:var(--muted);white-space:nowrap}}
+
+/* heads */
+.head{display:grid;gap:16px;margin-bottom:44px}
+@media (min-width:960px){.head{grid-template-columns:1fr auto;align-items:end}}
+.head p{margin:0;color:var(--muted);font-size:14px;max-width:38ch}
+.head h2{margin-top:16px}
+
+/* catalog */
+.filters{display:flex;flex-wrap:wrap;gap:6px 26px;margin-bottom:34px;border-bottom:1px solid var(--line)}
+.fbtn{border:0;background:transparent;padding:10px 0 12px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:color .25s,border-color .25s}
+.fbtn:hover{color:var(--graphite)}
+.fbtn[aria-pressed="true"]{color:var(--graphite);border-bottom-color:var(--graphite)}
+.cat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 12px}
+@media (min-width:760px){.cat{grid-template-columns:repeat(3,minmax(0,1fr));gap:44px 24px}}
+.cat.stag .tile:nth-child(even){margin-top:26px}
+@media (min-width:760px){.cat.stag .tile:nth-child(even){margin-top:0}.cat.stag .tile:nth-child(3n+2){margin-top:60px}}
+.tile{margin:0;min-width:0}
+.tile.hide{display:none}
+.tile .ph{display:block;position:relative;width:100%;aspect-ratio:3/4;overflow:hidden;background:var(--greige);border:0;padding:0;cursor:zoom-in}
+.tile .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.tile .ph:hover img{transform:scale(1.045)}
+.tile .ph:focus-visible{outline:2px solid var(--bronze);outline-offset:3px}
+.tile figcaption{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:2px 10px;padding-top:12px}
+.nm{font-weight:500;font-size:15px}
+.pc{font:300 22px/1 var(--serif);white-space:nowrap}
+.tile small{flex-basis:100%;color:var(--muted);font-size:13px;line-height:1.4}
+.note{margin-top:34px;font-size:13.5px;color:var(--muted);max-width:70ch}
+.note b{font-weight:500;color:var(--graphite-2)}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,720px);max-height:92vh;overflow:visible}
+.lb::backdrop{background:rgba(24,23,21,.9)}
+.lb img{max-height:78vh;width:auto;max-width:100%;margin:auto}
+.lb p{margin:12px 0 0;text-align:center;color:#EFE9DF;font-size:14px;letter-spacing:.1em;text-transform:uppercase}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border:0;background:var(--bone);font-size:24px;cursor:pointer}
+
+/* capsule */
+.cap{background:var(--graphite);color:#ECE6DC}
+.cap .eyebrow{color:var(--greige-d)}
+.cap h2 em{color:var(--greige-d)}
+.cap .lead{color:#C9C1B5}
+.capgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:40px}
+@media (min-width:960px){.capgrid{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:72px;align-items:start}}
+.pick{margin-top:30px;border-top:1px solid rgba(255,255,255,.18)}
+.item{position:relative;display:grid;grid-template-columns:52px minmax(0,1fr) auto 24px;gap:12px;align-items:center;padding:14px 8px;border-bottom:1px solid rgba(255,255,255,.18);cursor:pointer;transition:background .3s}
+.item.on{background:rgba(255,255,255,.06)}
+.item input{position:absolute;opacity:0;pointer-events:none}
+.item:focus-within{outline:2px solid var(--greige-d);outline-offset:-2px}
+.item img{width:52px;height:68px;object-fit:cover}
+.item .t{min-width:0}
+.item .t b{display:block;font-weight:500;font-size:16px}
+.item .t small{display:block;color:#ABA396;font-size:12.5px;line-height:1.35}
+.item .pr{font:300 22px/1 var(--serif);white-space:nowrap}
+.item .box{width:24px;height:24px;border:1px solid rgba(255,255,255,.5);display:grid;place-items:center;transition:background .2s,border-color .2s}
+.item .box::after{content:"";width:11px;height:6px;border-left:2px solid var(--graphite);border-bottom:2px solid var(--graphite);transform:rotate(-45deg) translate(1px,-1px);opacity:0}
+.item.on .box{background:var(--bone);border-color:var(--bone)}
+.item.on .box::after{opacity:1}
+.sum{background:var(--bone);color:var(--graphite);padding:clamp(20px,4vw,38px);display:flex;flex-direction:column;gap:16px}
+@media (min-width:960px){.sum{position:sticky;top:96px}}
+.sum .lbl{font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--bronze);font-weight:500}
+.slots{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+.slot{aspect-ratio:3/4;border:1px dashed var(--greige-d);background:var(--paper);overflow:hidden}
+.slot.full{border-style:solid;border-color:transparent}
+.slot img{width:100%;height:100%;object-fit:cover;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:scale(1.06)}}
+.state{margin:0;font-size:14px;color:var(--graphite-2)}
+.total{font:300 clamp(46px,7vw,68px)/1 var(--serif);white-space:nowrap}
+.sum ul{list-style:none;margin:0;padding:0;font-size:14.5px;display:grid;gap:8px}
+.sum li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed var(--line);padding-bottom:8px}
+.sum .btn{width:100%}
+.btn.dis{opacity:.4;pointer-events:none}
+.sum .fine{font-size:12.5px;color:var(--muted);margin:0}
+.copymsg{min-height:1.4em;font-size:13px;color:var(--bronze)}
+
+/* order steps */
+.steps{display:grid;grid-template-columns:minmax(0,1fr);gap:34px}
+@media (min-width:860px){.steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}}
+.step{border-top:1px solid var(--graphite);padding-top:20px}
+.step .num{font:300 56px/1 var(--serif);color:transparent;-webkit-text-stroke:1px var(--bronze)}
+.step h3{font-size:30px;margin:16px 0 10px}
+.step p{margin:0;color:var(--graphite-2);font-weight:300}
+.deliv{margin-top:50px;display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;justify-content:space-between;border:1px solid var(--line);background:var(--paper);padding:22px 26px}
+.deliv b{font:300 26px/1.2 var(--serif)}
+.deliv span{color:var(--muted);font-size:14px}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:36px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:72px;align-items:stretch}}
+.cinfo{display:grid;gap:26px;align-content:start}
+.ci small{display:block;font-size:11.5px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--bronze);margin-bottom:8px}
+.ci p{margin:0;font-size:17px}
+.ci .big{font:300 clamp(26px,4vw,34px)/1.15 var(--serif);text-decoration:none;word-break:break-word;overflow-wrap:anywhere}
+.ci .big:hover{color:var(--bronze)}
+.ci em{display:block;margin-top:6px;font-size:13.5px;color:var(--muted)}
+.cphoto{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--greige)}
+@media (min-width:960px){.cphoto{aspect-ratio:auto;min-height:440px}}
+.cphoto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+
+/* final */
+.final{text-align:center;background:var(--greige)}
+.final h2{font-size:clamp(38px,7vw,80px);max-width:15ch;margin:20px auto}
+.final .ctas{justify-content:center;margin-top:30px}
+footer{padding:36px 0 120px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.3fr);gap:6px;padding:6px;background:rgba(42,41,39,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 18px 40px -12px rgba(0,0,0,.45);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;color:#fff;text-decoration:none;font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase}
+.mbar a svg{width:19px;height:19px}
+.mbar a.main{background:var(--bone);color:var(--graphite);flex-direction:row;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта для шоурума LILO. Данные из открытых источников (публикации шоурума, Taplink) на 25.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="LILO — наверх"><b>LILO</b><small>showroom</small></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#catalog">Каталог</a>
+      <a href="#capsule">Капсула</a>
+      <a href="#order">Как заказать</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm" href="https://taplink.cc/lilo_spb" target="_blank" rel="noopener">Заказать</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#catalog">Каталог</a>
+  <a href="#capsule">Капсула за 5 вещей</a>
+  <a href="#order">Как заказать</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero" style="padding-bottom:clamp(64px,8vw,104px)">
+  <div class="ghost" aria-hidden="true">LILO</div>
+  <div class="wrap">
+    <div>
+      <span class="pill rv"><i></i>Доставка по СПб и России</span>
+      <h1 class="rv d1">Шоурум женской <em>одежды</em></h1>
+      <p class="lead rv d2">Пальто, тренчи, платья, костюмы и свитера. Выберите вещи в каталоге, соберите капсулу из трёх–пяти позиций и оформите заказ через Taplink.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Санкт-Петербург, Лиговский пр., 43–45, офис 504<small>адрес уточняйте перед визитом</small></span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn" href="https://taplink.cc/lilo_spb" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>Написать / заказать</a>
+        <a class="btn ghost" href="#capsule">Собрать капсулу</a>
+      </div>
+      <dl class="prices rv d3">
+        <div><dt>Платье</dt><dd>2&nbsp;400&nbsp;₽</dd></div>
+        <div><dt>Свитер</dt><dd>2&nbsp;900&nbsp;₽</dd></div>
+        <div><dt>Костюм</dt><dd>4&nbsp;500&nbsp;₽</dd></div>
+        <div><dt>Пальто</dt><dd>5&nbsp;300&nbsp;₽</dd></div>
+        <div><dt>Тренч</dt><dd>6&nbsp;500&nbsp;₽</dd></div>
+      </dl>
+      <p class="pnote rv d3">Цены из публикаций шоурума, актуальность уточняйте.</p>
+    </div>
+    <div class="frame rv d2">
+      <div class="ph"><img src="img/hero.jpg" alt="Тренч из коллекции шоурума LILO" fetchpriority="high"></div>
+      <div class="tag">Тренч<b>6&nbsp;500&nbsp;₽</b></div>
+      <span class="vlabel" aria-hidden="true">showroom · Санкт-Петербург</span>
+    </div>
+  </div>
+</section>
+
+<!-- CATALOG -->
+<section id="catalog">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Каталог</span><h2 class="rv d1">Вещи <em>и цены</em></h2></div>
+      <p class="rv d2">Фото и цены из публикаций шоурума. Нажмите на фото, чтобы увеличить.</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр каталога">
+      <button class="fbtn" aria-pressed="true" data-f="all">Все</button>
+      <button class="fbtn" aria-pressed="false" data-f="outer">Пальто и тренчи</button>
+      <button class="fbtn" aria-pressed="false" data-f="dress">Платья</button>
+      <button class="fbtn" aria-pressed="false" data-f="suit">Костюмы</button>
+      <button class="fbtn" aria-pressed="false" data-f="knit">Свитеры</button>
+    </div>
+    <div class="cat stag" id="cat">
+      <figure class="tile rv" data-c="outer"><button class="ph" type="button" aria-label="Открыть фото: тренч"><img src="img/hero.jpg" alt="Тренч" loading="lazy"></button><figcaption><span class="nm">Тренч</span><span class="pc">6&nbsp;500&nbsp;₽</span><small>размеры от 42</small></figcaption></figure>
+      <figure class="tile rv d1" data-c="outer"><button class="ph" type="button" aria-label="Открыть фото: чёрное пальто"><img src="img/coat-black.jpg" alt="Чёрное пальто" loading="lazy"></button><figcaption><span class="nm">Пальто чёрное</span><span class="pc">5&nbsp;300&nbsp;₽</span><small>размеры 42–48</small></figcaption></figure>
+      <figure class="tile rv d2" data-c="outer"><button class="ph" type="button" aria-label="Открыть фото: чёрное пальто, второй кадр"><img src="img/coat-black-2.jpg" alt="Чёрное пальто, второй кадр" loading="lazy"></button><figcaption><span class="nm">Пальто чёрное</span><span class="pc">5&nbsp;300&nbsp;₽</span><small>размеры 42–48</small></figcaption></figure>
+      <figure class="tile rv" data-c="outer"><button class="ph" type="button" aria-label="Открыть фото: коричневое пальто"><img src="img/coat-brown.jpg" alt="Коричневое пальто" loading="lazy"></button><figcaption><span class="nm">Пальто коричневое</span><span class="pc">5&nbsp;300&nbsp;₽</span><small>размеры 42–48</small></figcaption></figure>
+      <figure class="tile rv d1" data-c="dress"><button class="ph" type="button" aria-label="Открыть фото: платье"><img src="img/dress.jpg" alt="Бордовое платье" loading="lazy"></button><figcaption><span class="nm">Платье</span><span class="pc">2&nbsp;400&nbsp;₽</span><small>единый размер</small></figcaption></figure>
+      <figure class="tile rv d2" data-c="knit"><button class="ph" type="button" aria-label="Открыть фото: серый свитер"><img src="img/sweater.jpg" alt="Серый свитер" loading="lazy"></button><figcaption><span class="nm">Свитер серый</span><span class="pc">2&nbsp;900&nbsp;₽</span></figcaption></figure>
+      <figure class="tile rv" data-c="knit"><button class="ph" type="button" aria-label="Открыть фото: серый свитер, второй кадр"><img src="img/sweater-2.jpg" alt="Серый свитер, второй кадр" loading="lazy"></button><figcaption><span class="nm">Свитер серый</span><span class="pc">2&nbsp;900&nbsp;₽</span></figcaption></figure>
+      <figure class="tile rv d1" data-c="suit"><button class="ph" type="button" aria-label="Открыть фото: светлый спортивный костюм"><img src="img/suit.jpg" alt="Светлый спортивный костюм" loading="lazy"></button><figcaption><span class="nm">Костюм светлый спортивный</span><span class="pc">4&nbsp;500&nbsp;₽</span></figcaption></figure>
+      <figure class="tile rv d2" data-c="suit"><button class="ph" type="button" aria-label="Открыть фото: бежевый костюм"><img src="img/suit-beige.jpg" alt="Бежевый костюм" loading="lazy"></button><figcaption><span class="nm">Костюм бежевый</span><span class="pc">4&nbsp;500&nbsp;₽</span></figcaption></figure>
+    </div>
+    <p class="note rv"><b>Цены из публикаций шоурума, актуальность уточняйте.</b> Трикотажные костюмы по акции бывают от&nbsp;3&nbsp;000&nbsp;₽. В профиле шоурума также есть разделы: костюмы, платья, брюки и юбки, пиджаки и рубашки.</p>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button type="button" aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""><p id="lbCap"></p></dialog>
+
+<!-- CAPSULE -->
+<section id="capsule" class="cap">
+  <div class="wrap">
+    <div class="head" style="margin-bottom:0">
+      <div><span class="eyebrow rv">Подбор гардероба</span><h2 class="rv d1">Капсула <em>за 5 вещей</em></h2></div>
+      <p class="rv d2" style="color:#B9B1A4">Выберите от трёх до пяти позиций — посчитаем сумму по ценам из публикаций шоурума.</p>
+    </div>
+    <div class="capgrid">
+      <div class="pick rv" id="pick">
+        <label class="item" data-name="Пальто" data-price="5300" data-img="img/coat-black.jpg"><input type="checkbox" checked>
+          <img src="img/coat-black.jpg" alt="" loading="lazy">
+          <span class="t"><b>Пальто</b><small>размеры 42–48 · чёрное, капучино</small></span>
+          <span class="pr">5&nbsp;300&nbsp;₽</span><span class="box"></span></label>
+        <label class="item" data-name="Свитер" data-price="2900" data-img="img/sweater.jpg"><input type="checkbox" checked>
+          <img src="img/sweater.jpg" alt="" loading="lazy">
+          <span class="t"><b>Свитер</b><small>серый — в каталоге</small></span>
+          <span class="pr">2&nbsp;900&nbsp;₽</span><span class="box"></span></label>
+        <label class="item" data-name="Платье" data-price="2400" data-img="img/dress.jpg"><input type="checkbox" checked>
+          <img src="img/dress.jpg" alt="" loading="lazy">
+          <span class="t"><b>Платье</b><small>единый размер · в публикации: чёрное, бежевое</small></span>
+          <span class="pr">2&nbsp;400&nbsp;₽</span><span class="box"></span></label>
+        <label class="item" data-name="Костюм" data-price="4500" data-img="img/suit-beige.jpg"><input type="checkbox">
+          <img src="img/suit-beige.jpg" alt="" loading="lazy">
+          <span class="t"><b>Костюм</b><small>светлый и бежевый — в каталоге</small></span>
+          <span class="pr">4&nbsp;500&nbsp;₽</span><span class="box"></span></label>
+        <label class="item" data-name="Тренч" data-price="6500" data-img="img/hero.jpg"><input type="checkbox">
+          <img src="img/hero.jpg" alt="" loading="lazy">
+          <span class="t"><b>Тренч</b><small>размеры от 42</small></span>
+          <span class="pr">6&nbsp;500&nbsp;₽</span><span class="box"></span></label>
+      </div>
+      <div class="sum rv d1" aria-live="polite">
+        <span class="lbl">Ваша капсула</span>
+        <div class="slots" id="slots"><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div><div class="slot"></div></div>
+        <p class="state" id="state"></p>
+        <div class="total" id="total">0&nbsp;₽</div>
+        <ul id="lines"></ul>
+        <a class="btn" id="go" href="https://taplink.cc/lilo_spb" target="_blank" rel="noopener">Собрать капсулу</a>
+        <button class="btn ghost sm" type="button" id="copy">Скопировать список для сообщения</button>
+        <div class="copymsg" id="copymsg" role="status"></div>
+        <p class="fine">Сумма по регулярным ценам из публикаций шоурума, без акций. Актуальность и наличие размеров уточняйте при заказе.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER -->
+<section id="order">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Заказ</span><h2 class="rv d1">Как <em>заказать</em></h2></div>
+    </div>
+    <div class="steps">
+      <article class="step rv"><div class="num">01</div><h3>Выберите вещи</h3><p>Посмотрите каталог, цены и размеры. Соберите капсулу из трёх–пяти позиций.</p></article>
+      <article class="step rv d1"><div class="num">02</div><h3>Напишите в Taplink</h3><p>В профиле шоурума на Taplink собраны все контакты — оттуда можно написать и оформить заказ.</p></article>
+      <article class="step rv d2"><div class="num">03</div><h3>Получите заказ</h3><p>Доставка по Санкт-Петербургу и России. Визит в шоурум — после уточнения адреса.</p></article>
+    </div>
+    <div class="deliv rv">
+      <div><b>Доставка по Санкт-Петербургу и России</b><br><span>Условия и сроки уточняйте при заказе.</span></div>
+      <a class="btn sm" href="https://taplink.cc/lilo_spb" target="_blank" rel="noopener">Написать / заказать</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1">Как <em>нас найти</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p class="big" style="font:300 clamp(26px,4vw,34px)/1.15 var(--serif)">Лиговский пр., 43–45, офис 504</p><em>Санкт-Петербург. Адрес из публикации весны 2025 — уточняйте перед визитом.</em></div>
+        <div class="ci"><small>Заказ и контакты</small><a class="big" href="https://taplink.cc/lilo_spb" target="_blank" rel="noopener">taplink.cc/lilo_spb</a><em>В Taplink-профиле шоурума собраны все контакты.</em></div>
+        <div class="ci"><small>Доставка</small><p>По Санкт-Петербургу и России</p></div>
+        <div class="ci"><small>Часы работы</small><p>Не указаны — уточняйте при заказе</p></div>
+        <div class="ctas">
+          <a class="btn" href="https://taplink.cc/lilo_spb" target="_blank" rel="noopener">Написать / заказать</a>
+          <a class="btn ghost" href="https://yandex.ru/maps/?text=Санкт-Петербург%20Лиговский%20проспект%2043-45" target="_blank" rel="noopener">Найти на Яндекс Картах</a>
+        </div>
+      </div>
+      <div class="cphoto rv d1"><img src="img/suit-beige.jpg" alt="Бежевый костюм из коллекции шоурума" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow rv">Заказ</span>
+    <h2 class="rv d1">Выберите вещи <em>и напишите нам</em></h2>
+    <p class="lead rv d2" style="margin:0 auto">Соберите капсулу в каталоге — оформить заказ можно через Taplink.</p>
+    <div class="ctas rv d3">
+      <a class="btn" href="https://taplink.cc/lilo_spb" target="_blank" rel="noopener">Написать / заказать</a>
+      <a class="btn ghost" href="#capsule">Собрать капсулу</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© LILO — шоурум женской одежды, Санкт-Петербург</span>
+    <span>Демо-концепт. Данные и цены — из публикаций шоурума и профиля Taplink на 25.10.2026; цены регулярные, актуальность уточняйте.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="#catalog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="6.5" height="6.5"/><rect x="13.5" y="4" width="6.5" height="6.5"/><rect x="4" y="13.5" width="6.5" height="6.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5"/></svg>Каталог</a>
+  <a href="#capsule"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 4h6l5 4-2.5 2.5L16 9v11H8V9l-1.5 1.5L4 8z"/></svg>Капсула</a>
+  <a class="main" href="https://taplink.cc/lilo_spb" target="_blank" rel="noopener">Заказать</a>
+</nav>
+
+<script>
+(() => {
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    hdr.classList.toggle('scrolled', scrollY > 8);
+    mbar.classList.toggle('show', scrollY > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Фильтр каталога и лайтбокс
+  const cat = document.getElementById('cat');
+  const tiles = document.querySelectorAll('.tile');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    tiles.forEach(t => t.classList.toggle('hide', f.dataset.f !== 'all' && t.dataset.c !== f.dataset.f));
+    cat.classList.toggle('stag', f.dataset.f === 'all');
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+  tiles.forEach(t => t.querySelector('.ph').addEventListener('click', () => {
+    const img = t.querySelector('img');
+    lbImg.src = img.src; lbImg.alt = img.alt;
+    lbCap.textContent = t.querySelector('.nm').textContent + ' · ' + t.querySelector('.pc').textContent.replace(/ /g, ' ');
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+
+  // Капсула за 5 вещей
+  const fmt = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₽';
+  const items = [...document.querySelectorAll('.item')];
+  const slots = [...document.querySelectorAll('.slot')];
+  const total = document.getElementById('total'), lines = document.getElementById('lines');
+  const state = document.getElementById('state'), go = document.getElementById('go');
+  const copyBtn = document.getElementById('copy'), copyMsg = document.getElementById('copymsg');
+  let sel = [], sum = 0;
+  const render = () => {
+    sel = items.filter(i => i.querySelector('input').checked);
+    items.forEach(i => i.classList.toggle('on', i.querySelector('input').checked));
+    sum = sel.reduce((s, i) => s + +i.dataset.price, 0);
+    total.textContent = fmt(sum);
+    lines.innerHTML = sel.length
+      ? sel.map(i => `<li><span>${i.dataset.name}</span><span>${fmt(+i.dataset.price)}</span></li>`).join('')
+      : '<li><span>Пока ничего не выбрано</span></li>';
+    slots.forEach((s, k) => {
+      const it = sel[k];
+      s.innerHTML = it ? `<img src="${it.dataset.img}" alt="">` : '';
+      s.classList.toggle('full', !!it);
+    });
+    const n = sel.length, ok = n >= 3, need = 3 - n;
+    state.textContent = ok ? `Вещей в капсуле: ${n} из 5` : `Выберите ещё ${need} ${need === 1 ? 'вещь' : 'вещи'}: капсула начинается с трёх`;
+    go.classList.toggle('dis', !ok);
+    go.setAttribute('aria-disabled', !ok);
+    copyBtn.disabled = !n;
+    copyMsg.textContent = '';
+  };
+  items.forEach(i => i.querySelector('input').addEventListener('change', render));
+  go.addEventListener('click', e => { if (go.classList.contains('dis')) e.preventDefault(); });
+  copyBtn.addEventListener('click', () => {
+    const txt = `Капсула LILO: ${sel.map(i => i.dataset.name.toLowerCase()).join(', ')}. Сумма по ценам из публикаций: ${fmt(sum)}`.replace(/ /g, ' ');
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(txt).then(() => { copyMsg.textContent = 'Список скопирован — вставьте его в сообщение'; }, () => { copyMsg.textContent = txt; });
+    } else { copyMsg.textContent = txt; }
+  });
+  render();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>KOFTA — шоурум женской одежды в Санкт-Петербурге</title>
+<meta name="description" content="Шоурум женской одежды KOFTA: куртки, кофты, джинсы, шубы, пальто, костюмы. ул. Ефимова, 2, ТРК «Пик», 2 этаж. Ежедневно 10:00–22:00. Доставка по России.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap"></noscript>
+<style>
+:root{
+  --white:#FFFFFF; --gray:#EFEEEA; --black:#0B0B0B; --ink-2:#2A2A2A; --muted:#6B6B68;
+  --red:#E3120B; --red-d:#B80C07; --red-l:#FF4A40;
+  --display:"Oswald","Arial Narrow","Roboto Condensed",Impact,sans-serif;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --wrap:1240px;
+  --gut:max(16px,calc((100vw - var(--wrap)) / 2));
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--white);color:var(--black);font:400 16px/1.55 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.eyebrow{display:block;font:700 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:.95;margin:0;text-transform:uppercase;letter-spacing:.005em;overflow-wrap:break-word}
+h2{font-size:clamp(44px,9vw,120px)}
+h2 em,h1 em{font-style:normal;color:var(--red)}
+.lead{font-size:clamp(16px,1.6vw,19px);color:var(--ink-2);max-width:54ch;margin:0}
+section{padding:clamp(64px,9vw,120px) 0}
+.head{display:grid;gap:16px;margin-bottom:clamp(28px,4vw,52px)}
+.head h2{margin:0}
+.head p{margin:0;color:var(--muted);font-size:14px;max-width:60ch}
+.dark{background:var(--black);color:#fff}
+.dark .eyebrow,.dark h2 em{color:var(--red-l)}
+.dark .head p{color:#B9B9B5}
+
+/* demo bar */
+.demo{background:var(--black);color:#E8E8E4;font-size:12.5px;line-height:1.4;padding:9px 0;border-bottom:1px solid #2a2a2a}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{background:var(--red);color:#fff;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:11px;padding:3px 8px;white-space:nowrap}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 24px;border:2px solid var(--black);background:var(--black);color:#fff;font:700 13px/1.2 var(--sans);letter-spacing:.09em;text-transform:uppercase;text-decoration:none;text-align:center;cursor:pointer;transition:transform .2s, box-shadow .2s, background .2s, color .2s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn:hover{transform:translate(-3px,-3px);box-shadow:4px 4px 0 var(--black)}
+.btn.red{background:var(--red);border-color:var(--red)}
+.btn.ghost{background:transparent;color:var(--black)}
+.btn.ghost:hover{background:var(--black);color:#fff}
+.btn.sm{min-height:46px;padding:0 16px;font-size:12px}
+.dark .btn:hover,.band .btn:hover{box-shadow:4px 4px 0 #fff}
+.dark .btn.ghost{color:#fff;border-color:#fff}
+.dark .btn.ghost:hover{background:#fff;color:var(--black)}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:2px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--black)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo i{width:14px;height:14px;background:var(--red);flex:none}
+.logo b{font:700 28px/1 var(--display);letter-spacing:.08em}
+.nav{display:none;gap:28px}
+.nav a{text-decoration:none;font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.nav a:hover::after{transform:scaleX(1)}
+.hdr .btn{display:none;min-height:44px}
+.burger{width:46px;height:46px;border:2px solid var(--black);background:var(--white);display:grid;place-items:center;cursor:pointer;padding:0}
+.burger span{display:block;width:20px;height:2px;background:var(--black);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:20px;height:2px;background:var(--black);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--white);padding:118px 20px 40px;display:flex;flex-direction:column;gap:2px;opacity:0;pointer-events:none;transition:opacity .3s;overflow-y:auto}
+.mnav a{font:600 40px/1.15 var(--display);text-transform:uppercase;text-decoration:none;padding:8px 0;border-bottom:2px solid var(--black)}
+.mnav a:last-child{color:var(--red)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{position:relative;padding:clamp(24px,4vw,56px) 0 clamp(56px,8vw,110px);overflow-x:clip}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:44px;align-items:center}
+@media (min-width:960px){.hero-grid{grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:56px}}
+.status{display:inline-flex;align-items:center;gap:10px;border:2px solid var(--black);padding:8px 14px 8px 12px;font-size:13px;font-weight:600;line-height:1.3}
+.status i{width:9px;height:9px;border-radius:50%;background:#1FA24A;flex:none;box-shadow:0 0 0 0 rgba(31,162,74,.5);animation:pulse 2s infinite}
+.status.closed i{background:#8A8A86;animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(31,162,74,0)}100%{box-shadow:0 0 0 0 rgba(31,162,74,0)}}
+.hero h1{margin:22px 0 0;line-height:1}
+.word{display:block;font:700 clamp(88px,30vw,280px)/.9 var(--display);letter-spacing:-.01em;white-space:nowrap}
+.word span{color:var(--red)}
+@media (min-width:960px){.word{font-size:clamp(150px,17vw,232px)}}
+.sub{display:flex;align-items:center;gap:12px;margin-top:14px;font:600 clamp(20px,3.4vw,34px)/1.1 var(--display);letter-spacing:.04em}
+.sub::before{content:"";width:clamp(28px,5vw,56px);height:6px;background:var(--red);flex:none}
+.hero .lead{margin:26px 0 22px}
+.place{display:flex;gap:10px;align-items:flex-start;color:var(--ink-2);font-size:14.5px;margin-bottom:26px}
+.place svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--red)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 200px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.pricenote{margin:22px 0 0;padding-top:18px;border-top:2px solid var(--black);font:600 clamp(20px,2.6vw,26px)/1.15 var(--display);text-transform:uppercase}
+.pricenote em{font-style:normal;color:var(--red)}
+
+.poster{position:relative;width:calc(100% - 16px);max-width:460px;margin-right:auto}
+@media (min-width:960px){.poster{margin-left:auto;margin-right:0}}
+.poster::before{content:"";position:absolute;inset:0;transform:translate(16px,16px);background:var(--red)}
+.poster .ph{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--gray);border:2px solid var(--black)}
+.poster .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.poster .tag{position:absolute;left:-2px;bottom:-2px;z-index:2;background:var(--black);color:#fff;padding:12px 16px;font:600 clamp(18px,2.4vw,24px)/1 var(--display);text-transform:uppercase;letter-spacing:.03em}
+.sticker{position:absolute;right:-6px;top:-26px;width:116px;height:116px;z-index:3}
+@media (min-width:560px){.sticker{width:136px;height:136px;right:-12px}}
+.sticker .spin{transform-origin:60px 60px;animation:spin 20s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* marquee */
+.marquee{background:var(--black);color:#fff;overflow:hidden;padding:16px 0}
+.track{display:flex;width:max-content;animation:run 40s linear infinite}
+.track span{font:600 clamp(24px,3.4vw,40px)/1 var(--display);text-transform:uppercase;padding:0 22px;white-space:nowrap;display:flex;align-items:center;gap:44px}
+.track span::after{content:"";width:12px;height:12px;background:var(--red);flex:none}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* range */
+.range{display:grid;grid-template-columns:minmax(0,1fr);gap:40px}
+@media (min-width:960px){.range{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:64px;align-items:start}}
+.list{list-style:none;margin:0;padding:0;border-bottom:2px solid var(--black)}
+.it{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:12px;align-items:center;padding:14px 0;border-top:2px solid var(--black);text-decoration:none;transition:background .25s,color .25s,padding .25s}
+.it .no{font:600 14px/1 var(--sans);letter-spacing:.1em;color:var(--red)}
+.it .nm{font:600 clamp(34px,7vw,84px)/1 var(--display);text-transform:uppercase;overflow-wrap:break-word;min-width:0}
+.it .ar{width:28px;height:28px;transition:transform .25s}
+.it:hover{background:var(--black);color:#fff;padding-left:14px;padding-right:14px}
+.it:hover .no{color:var(--red-l)}
+.it:hover .ar{transform:translate(4px,-4px)}
+.side{background:var(--black);color:#fff;padding:clamp(22px,3vw,34px);display:grid;gap:22px}
+@media (min-width:960px){.side{position:sticky;top:96px}}
+.side h3{font-size:clamp(28px,3vw,38px);line-height:1}
+.side ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.side li{display:flex;gap:12px;font-size:15px;color:#E4E4E0}
+.side li::before{content:"";width:10px;height:10px;background:var(--red);flex:none;margin-top:7px}
+.side .big{font:600 clamp(26px,3vw,34px)/1.05 var(--display);text-transform:uppercase;border-top:2px solid #333;padding-top:20px}
+.side .big em{font-style:normal;color:var(--red-l)}
+
+/* looks (feature) */
+.looks-sub{display:inline-block;background:var(--red);color:#fff;font:600 clamp(18px,2.2vw,24px)/1 var(--display);text-transform:uppercase;padding:10px 14px;letter-spacing:.04em;justify-self:start}
+.rail{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px var(--gut) 26px;scroll-padding-inline:var(--gut);scrollbar-width:none;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+.rail::-webkit-scrollbar{display:none}
+.look{flex:0 0 min(78vw,340px);scroll-snap-align:start;background:#fff;color:var(--black);display:flex;flex-direction:column;margin:0}
+.lk-img{position:relative;display:block;width:100%;aspect-ratio:3/4;padding:0;border:0;background:var(--gray);cursor:zoom-in;overflow:hidden}
+.lk-img img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.lk-img:hover img{transform:scale(1.05)}
+.look figcaption{padding:16px;display:grid;gap:14px}
+.lk-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.lk-top b{font:600 30px/1 var(--display);text-transform:uppercase}
+.lk-top span{font:700 11px/1.25 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--red);text-align:right}
+.ctrl{display:flex;align-items:center;gap:18px}
+.ctrl .cnt{font:600 28px/1 var(--display);letter-spacing:.04em;flex:none}
+.ctrl .bar{flex:1 1 auto;min-width:0;height:4px;background:#333;position:relative}
+.ctrl .bar::after{content:"";position:absolute;left:0;top:0;bottom:0;width:calc(14% + var(--p, 0) * 86%);background:var(--red-l)}
+.arr{width:52px;height:52px;border:2px solid #fff;background:transparent;color:#fff;display:grid;place-items:center;cursor:pointer;padding:0;flex:none;transition:background .2s,color .2s,opacity .2s}
+.arr svg{width:22px;height:22px}
+.arr:hover:not(:disabled){background:#fff;color:var(--black)}
+.arr:disabled{opacity:.3;cursor:default}
+
+/* room */
+.room{display:grid;grid-template-columns:minmax(0,1fr);gap:36px}
+@media (min-width:900px){.room{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:56px;align-items:start}}
+.facts{display:grid;gap:10px;margin-top:28px}
+.fact{display:flex;align-items:center;gap:12px;padding:13px 14px;border:2px solid var(--black);font-weight:600;font-size:14.5px;line-height:1.35}
+.fact::before{content:"";width:10px;height:10px;background:var(--red);flex:none}
+.pics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (min-width:900px){.pics{gap:20px}.pics figure:nth-child(2){margin-top:56px}}
+.pic{position:relative;margin:0;aspect-ratio:3/4;overflow:hidden;background:var(--gray);border:2px solid var(--black)}
+.pic button{display:block;width:100%;height:100%;padding:0;border:0;background:none;cursor:zoom-in}
+.pic img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.pic:hover img{transform:scale(1.05)}
+.pic figcaption{position:absolute;left:0;bottom:0;max-width:92%;background:var(--black);color:#fff;font:600 clamp(14px,1.8vw,18px)/1.15 var(--display);text-transform:uppercase;letter-spacing:.03em;padding:9px 12px;pointer-events:none}
+
+/* delivery band */
+.band{background:var(--red);color:#fff;padding:clamp(48px,7vw,88px) 0}
+.band .wrap{display:grid;gap:22px;grid-template-columns:minmax(0,1fr);align-items:center}
+@media (min-width:900px){.band .wrap{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:48px}}
+.band h2{font-size:clamp(44px,10vw,132px);line-height:.92}
+.band p{margin:0;font-size:16px;max-width:46ch}
+.band .btn{margin-top:20px;background:var(--black);border-color:var(--black)}
+.band b{font-weight:700}
+
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,1fr);gap:26px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}}
+.pr-card{background:var(--white);border:2px solid var(--black);box-shadow:6px 6px 0 var(--red);padding:28px 24px;position:relative}
+.pr-card .num{display:block;font:700 76px/1 var(--display);color:transparent;-webkit-text-stroke:2px var(--red);margin-bottom:14px}
+.pr-card h3{font-size:clamp(28px,3vw,36px);margin:0 0 12px}
+.pr-card p{margin:0;color:var(--ink-2)}
+.score{margin-top:34px;font-size:14px;color:var(--muted)}
+.score a{font-weight:600;color:var(--black);text-decoration-thickness:2px;text-underline-offset:4px;text-decoration-color:var(--red)}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start}
+.ci small{display:block;font:700 12px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:8px}
+.ci p{margin:0;font-size:18px;font-weight:500}
+.ci a.big{font:600 clamp(28px,5vw,40px)/1.1 var(--display);text-decoration:none;overflow-wrap:anywhere}
+.ci a.big:hover{color:var(--red)}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{display:inline-flex;align-items:center;border:2px solid var(--black);padding:10px 16px;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:background .2s,color .2s}
+.socials a:hover{background:var(--black);color:#fff}
+.map{overflow:hidden;min-height:380px;background:var(--gray);border:2px solid var(--black)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* final */
+.final{text-align:left}
+.final h2{font-size:clamp(38px,8.5vw,112px);max-width:16ch;margin:18px 0 28px}
+.final .ctas .btn{flex:1 1 220px}
+@media (min-width:560px){.final .ctas .btn{flex:0 0 auto}}
+footer{padding:30px 0 120px;font-size:13px;color:#B9B9B5;background:var(--black);border-top:1px solid #2a2a2a}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 32px;justify-content:space-between}
+footer span{max-width:70ch}
+@media (min-width:960px){footer{padding-bottom:36px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.3fr);gap:8px;padding:8px;background:rgba(11,11,11,.94);border:1px solid #333;box-shadow:0 18px 40px -12px rgba(0,0,0,.5);transform:translateY(150%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;color:#fff;text-decoration:none;font-size:11.5px;font-weight:600;text-align:center;line-height:1.15}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--red);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+@media (min-width:960px){.mbar{display:none}}
+
+/* lightbox */
+.lb{border:0;padding:0;background:transparent;max-width:min(94vw,900px);max-height:92vh;overflow:visible}
+.lb::backdrop{background:rgba(0,0,0,.92)}
+.lb img{max-height:86vh;max-width:94vw;width:auto;height:auto;margin:auto;display:block}
+.lb button{position:fixed;top:14px;right:14px;width:48px;height:48px;border:0;background:#fff;color:#000;font-size:26px;line-height:1;cursor:pointer}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта для шоурума KOFTA. Данные из открытых источников (2ГИС, Telegram-канал и ВК шоурума) на 25.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="KOFTA — наверх"><i></i><b>KOFTA</b></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#range">Ассортимент</a>
+      <a href="#looks">Лук целиком</a>
+      <a href="#room">Шоурум</a>
+      <a href="#praise">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm red" href="https://t.me/koftaspb" target="_blank" rel="noopener">Цены в Telegram</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#range">Ассортимент</a>
+  <a href="#looks">Лук целиком</a>
+  <a href="#room">Шоурум</a>
+  <a href="#praise">Отзывы</a>
+  <a href="#contacts">Контакты</a>
+  <a href="https://t.me/koftaspb" target="_blank" rel="noopener">Цены в Telegram</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="status rv" id="status"><i></i><span>Ежедневно 10:00–22:00</span></span>
+      <h1 class="rv d1"><span class="word">K<span>O</span>FTA</span><span class="sub">Шоурум женской одежды</span></h1>
+      <p class="lead rv d2">Куртки, кофты и свитеры, джинсы, шубы, пальто, костюмы. Новые лимитированные коллекции — и весь образ в наличии.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>ул. Ефимова, 2, ТРК «Пик», 2 этаж · Адмиралтейский район · м. Сенная / Спасская</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn red" href="https://t.me/koftaspb" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M21 4 3 11l6 2.5L11.5 20l3.2-4.6L19 19z"/><path d="M9 13.5 21 4"/></svg>Telegram-канал</a>
+        <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~59.926575%2C30.320396&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+      </div>
+      <p class="pricenote rv d3">Все цены — <em>в нашем Telegram-канале</em></p>
+    </div>
+    <div class="poster rv d2">
+      <div class="ph"><img id="heroImg" src="img/hero.jpg" alt="Образ в шоуруме KOFTA" fetchpriority="high"></div>
+      <span class="tag">Весь образ в наличии</span>
+      <svg class="sticker" viewBox="0 0 120 120" role="img" aria-label="Доставка по России">
+        <defs><path id="cp" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0"/></defs>
+        <circle cx="60" cy="60" r="59" fill="#E3120B"/>
+        <circle cx="60" cy="60" r="55" fill="none" stroke="#fff" stroke-width="1"/>
+        <g class="spin"><text font-size="12" font-weight="700" fill="#fff" font-family="Inter, Arial, sans-serif" textLength="268" lengthAdjust="spacing"><textPath href="#cp">ДОСТАВКА ПО РОССИИ • </textPath></text></g>
+        <path d="M40 60h40M68 47l12 13-12 13" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="square"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Sale</span><span>Куртки</span><span>Кофты / свитеры</span><span>Джинсы</span><span>Спорт</span><span>Шубы</span><span>Пальто</span><span>Костюмы</span>
+  <span>Sale</span><span>Куртки</span><span>Кофты / свитеры</span><span>Джинсы</span><span>Спорт</span><span>Шубы</span><span>Пальто</span><span>Костюмы</span>
+</div></div>
+
+<!-- RANGE -->
+<section id="range">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow rv">[01] Ассортимент</span>
+      <h2 class="rv d1">Что у нас <em>есть</em></h2>
+      <p class="rv d2">Разделы из профиля шоурума и его публикаций. Цены на сайте не указаны — они выложены в Telegram-канале.</p>
+    </div>
+    <div class="range">
+      <ol class="list rv" style="list-style:none">
+        <li><a class="it" href="https://t.me/koftaspb" target="_blank" rel="noopener" aria-label="Sale — цены в Telegram-канале"><span class="no">01</span><span class="nm">Sale</span><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 18 18 6M8 6h10v10"/></svg></a></li>
+        <li><a class="it" href="https://t.me/koftaspb" target="_blank" rel="noopener" aria-label="Куртки — цены в Telegram-канале"><span class="no">02</span><span class="nm">Куртки</span><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 18 18 6M8 6h10v10"/></svg></a></li>
+        <li><a class="it" href="https://t.me/koftaspb" target="_blank" rel="noopener" aria-label="Кофты и свитеры — цены в Telegram-канале"><span class="no">03</span><span class="nm">Кофты / свитеры</span><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 18 18 6M8 6h10v10"/></svg></a></li>
+        <li><a class="it" href="https://t.me/koftaspb" target="_blank" rel="noopener" aria-label="Джинсы — цены в Telegram-канале"><span class="no">04</span><span class="nm">Джинсы</span><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 18 18 6M8 6h10v10"/></svg></a></li>
+        <li><a class="it" href="https://t.me/koftaspb" target="_blank" rel="noopener" aria-label="Спорт — цены в Telegram-канале"><span class="no">05</span><span class="nm">Спорт</span><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 18 18 6M8 6h10v10"/></svg></a></li>
+        <li><a class="it" href="https://t.me/koftaspb" target="_blank" rel="noopener" aria-label="Шубы — цены в Telegram-канале"><span class="no">06</span><span class="nm">Шубы</span><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 18 18 6M8 6h10v10"/></svg></a></li>
+        <li><a class="it" href="https://t.me/koftaspb" target="_blank" rel="noopener" aria-label="Пальто — цены в Telegram-канале"><span class="no">07</span><span class="nm">Пальто</span><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 18 18 6M8 6h10v10"/></svg></a></li>
+        <li><a class="it" href="https://t.me/koftaspb" target="_blank" rel="noopener" aria-label="Костюмы — цены в Telegram-канале"><span class="no">08</span><span class="nm">Костюмы</span><svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 18 18 6M8 6h10v10"/></svg></a></li>
+      </ol>
+      <aside class="side rv d1">
+        <h3>Из публикаций шоурума</h3>
+        <ul>
+          <li>Новые лимитированные коллекции</li>
+          <li>Премиум Корея: бомберы, свитеры, лонгсливы</li>
+          <li>Размеры обычно единые 42–48 или XS–M</li>
+          <li>Весь образ в наличии</li>
+        </ul>
+        <div class="big">Все цены — <em>в нашем Telegram-канале</em></div>
+        <a class="btn red" href="https://t.me/koftaspb" target="_blank" rel="noopener">Открыть канал</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- LOOKS (фишка) -->
+<section id="looks" class="dark" style="padding-bottom:clamp(48px,7vw,88px)">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow rv">[02] Лук целиком</span>
+      <h2 class="rv d1">Образ — <em>целиком</em></h2>
+      <span class="looks-sub rv d2">Весь образ в наличии</span>
+      <p class="rv d2">Листайте образы из шоурума вбок. Нажмите на фото, чтобы рассмотреть крупно, а цену посмотрите в Telegram-канале.</p>
+    </div>
+  </div>
+  <div class="rail rv" id="rail" tabindex="0" aria-label="Образы шоурума, листайте вбок">
+    <figure class="look"><button class="lk-img" data-full="img/look-1.jpg" aria-label="Открыть образ 1 крупно"><img src="img/look-1.jpg" alt="Образ 1 в шоуруме KOFTA" loading="lazy"></button><figcaption><div class="lk-top"><b>Образ 01</b><span>Весь образ в наличии</span></div><a class="btn red sm" href="https://t.me/koftaspb" target="_blank" rel="noopener">Узнать цену в Telegram</a></figcaption></figure>
+    <figure class="look"><button class="lk-img" data-full="img/look-2.jpg" aria-label="Открыть образ 2 крупно"><img src="img/look-2.jpg" alt="Образ 2 в шоуруме KOFTA" loading="lazy"></button><figcaption><div class="lk-top"><b>Образ 02</b><span>Весь образ в наличии</span></div><a class="btn red sm" href="https://t.me/koftaspb" target="_blank" rel="noopener">Узнать цену в Telegram</a></figcaption></figure>
+    <figure class="look"><button class="lk-img" data-full="img/look-3.jpg" aria-label="Открыть образ 3 крупно"><img src="img/look-3.jpg" alt="Образ 3 в шоуруме KOFTA" loading="lazy"></button><figcaption><div class="lk-top"><b>Образ 03</b><span>Весь образ в наличии</span></div><a class="btn red sm" href="https://t.me/koftaspb" target="_blank" rel="noopener">Узнать цену в Telegram</a></figcaption></figure>
+    <figure class="look"><button class="lk-img" data-full="img/look-4.jpg" aria-label="Открыть образ 4 крупно"><img src="img/look-4.jpg" alt="Образ 4 в шоуруме KOFTA" loading="lazy"></button><figcaption><div class="lk-top"><b>Образ 04</b><span>Весь образ в наличии</span></div><a class="btn red sm" href="https://t.me/koftaspb" target="_blank" rel="noopener">Узнать цену в Telegram</a></figcaption></figure>
+    <figure class="look"><button class="lk-img" data-full="img/look-5.jpg" aria-label="Открыть образ 5 крупно"><img src="img/look-5.jpg" alt="Образ 5 в шоуруме KOFTA" loading="lazy"></button><figcaption><div class="lk-top"><b>Образ 05</b><span>Весь образ в наличии</span></div><a class="btn red sm" href="https://t.me/koftaspb" target="_blank" rel="noopener">Узнать цену в Telegram</a></figcaption></figure>
+    <figure class="look"><button class="lk-img" data-full="img/look-6.jpg" aria-label="Открыть образ 6 крупно"><img src="img/look-6.jpg" alt="Образ 6 в шоуруме KOFTA" loading="lazy"></button><figcaption><div class="lk-top"><b>Образ 06</b><span>Весь образ в наличии</span></div><a class="btn red sm" href="https://t.me/koftaspb" target="_blank" rel="noopener">Узнать цену в Telegram</a></figcaption></figure>
+    <figure class="look"><button class="lk-img" data-full="img/look-7.jpg" aria-label="Открыть образ 7 крупно"><img src="img/look-7.jpg" alt="Образ 7 в шоуруме KOFTA" loading="lazy"></button><figcaption><div class="lk-top"><b>Образ 07</b><span>Весь образ в наличии</span></div><a class="btn red sm" href="https://t.me/koftaspb" target="_blank" rel="noopener">Узнать цену в Telegram</a></figcaption></figure>
+    <figure class="look"><button class="lk-img" data-full="img/look-8.jpg" aria-label="Открыть образ 8 крупно"><img src="img/look-8.jpg" alt="Образ 8 в шоуруме KOFTA" loading="lazy"></button><figcaption><div class="lk-top"><b>Образ 08</b><span>Весь образ в наличии</span></div><a class="btn red sm" href="https://t.me/koftaspb" target="_blank" rel="noopener">Узнать цену в Telegram</a></figcaption></figure>
+  </div>
+  <div class="wrap ctrl">
+    <span class="cnt" id="cnt" aria-live="polite">01 / 08</span>
+    <span class="bar" id="bar" aria-hidden="true"></span>
+    <button class="arr" id="prev" aria-label="Предыдущий образ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <button class="arr" id="next" aria-label="Следующий образ"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 5l7 7-7 7"/></svg></button>
+  </div>
+</section>
+
+<!-- ROOM -->
+<section id="room">
+  <div class="wrap">
+    <div class="room">
+      <div>
+        <span class="eyebrow rv">[03] Шоурум</span>
+        <h2 class="rv d1" style="margin-top:16px"><em>Красный</em> интерьер</h2>
+        <p class="lead rv d2" style="margin-top:20px">Шоурум на втором этаже ТРК «Пик». Фото — из публикаций шоурума.</p>
+        <div class="facts rv d2">
+          <span class="fact">2 этаж, ТРК «Пик», ул. Ефимова, 2</span>
+          <span class="fact">Ежедневно с 10:00 до 22:00</span>
+          <span class="fact">Доставка по РФ</span>
+          <span class="fact">Оплата: карта, наличные, перевод, QR</span>
+        </div>
+      </div>
+      <div class="pics">
+        <figure class="pic rv d1"><button data-full="img/interior.jpg" aria-label="Открыть фото интерьера крупно"><img src="img/interior.jpg" alt="Красный интерьер шоурума KOFTA" loading="lazy"></button><figcaption>Красный интерьер</figcaption></figure>
+        <figure class="pic rv d2"><button data-full="img/street.jpg" aria-label="Открыть фото образа на улице крупно"><img src="img/street.jpg" alt="Образ на улице" loading="lazy"></button><figcaption>Образ на улице</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DELIVERY -->
+<section class="band">
+  <div class="wrap">
+    <h2 class="rv">Доставка по России</h2>
+    <div class="rv d1">
+      <p><b>Доставка по РФ.</b> Оплата: карта, наличные, перевод, QR.</p>
+      <a class="btn" href="https://t.me/kofta_showroom" target="_blank" rel="noopener">Написать в Telegram</a>
+    </div>
+  </div>
+</section>
+
+<!-- PRAISE -->
+<section id="praise">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow rv">[04] Отзывы</span>
+      <h2 class="rv d1">За что <em>хвалят</em></h2>
+      <p class="rv d2">Пересказ отзывов гостей в 2ГИС</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card rv"><span class="num">01</span><h3>Красивый магазин</h3><p>Гости называют шоурум красивым, а ассортимент — модным.</p></article>
+      <article class="pr-card rv d1"><span class="num">02</span><h3>Уют и выбор</h3><p>Пишут об уютной атмосфере и о большом выборе стильных вещей.</p></article>
+      <article class="pr-card rv d2"><span class="num">03</span><h3>Внимательные продавцы</h3><p>Отдельно отмечают внимательных продавцов.</p></article>
+    </div>
+    <p class="score rv">Рейтинг в <a href="https://2gis.ru/spb/firm/70000001054515228" target="_blank" rel="noopener">2ГИС</a>: 4.6 · 9 оценок</p>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow rv">[05] Контакты</span><h2 class="rv d1">Как <em>добраться</em></h2></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Санкт-Петербург, ул. Ефимова, 2, ТРК «Пик», 2 этаж. Адмиралтейский район, м. Сенная / Спасская</p></div>
+        <div class="ci"><small>Часы работы</small><p>Ежедневно, 10:00–22:00</p></div>
+        <div class="ci"><small>Цены и новинки</small><a class="big" href="https://t.me/koftaspb" target="_blank" rel="noopener">t.me/koftaspb</a></div>
+        <div class="ci"><small>Мессенджеры и соцсети</small>
+          <div class="socials">
+            <a href="https://t.me/koftaspb" target="_blank" rel="noopener">Telegram-канал</a>
+            <a href="https://t.me/kofta_showroom" target="_blank" rel="noopener">Написать в Telegram</a>
+            <a href="https://vk.com/kofta__spb" target="_blank" rel="noopener">ВКонтакте</a>
+          </div>
+        </div>
+        <div class="ci"><small>Оплата и доставка</small><p>Карта, наличные, перевод, QR. Доставка по РФ</p></div>
+        <div class="ctas"><a class="btn ghost" href="https://yandex.ru/maps/?rtext=~59.926575%2C30.320396&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Построить маршрут</a></div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?ll=30.320396%2C59.926575&z=16&pt=30.320396%2C59.926575%2Cpm2rdm" title="KOFTA на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final dark">
+  <div class="wrap">
+    <span class="eyebrow rv">Цены</span>
+    <h2 class="rv d1">Все цены — в нашем <em>Telegram-канале</em></h2>
+    <div class="ctas rv d2">
+      <a class="btn red" href="https://t.me/koftaspb" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M21 4 3 11l6 2.5L11.5 20l3.2-4.6L19 19z"/><path d="M9 13.5 21 4"/></svg>Открыть Telegram-канал</a>
+      <a class="btn ghost" href="https://t.me/kofta_showroom" target="_blank" rel="noopener">Написать в Telegram</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© KOFTA — шоурум женской одежды, Санкт-Петербург</span>
+    <span>Демо-концепт. Данные — из открытых источников (2ГИС, Telegram-канал и ВК шоурума) на 25.10.2026. Фото — из публикаций шоурума. Рейтинг 2ГИС: 4.6 · 9 оценок.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="https://yandex.ru/maps/?rtext=~59.926575%2C30.320396&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+  <a href="https://t.me/kofta_showroom" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M21 4 3 11l6 2.5L11.5 20l3.2-4.6L19 19z"/></svg>Написать</a>
+  <a class="main" href="https://t.me/koftaspb" target="_blank" rel="noopener">Цены в канале</a>
+</nav>
+
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""></dialog>
+
+<script>
+(() => {
+  // Статус «открыто/закрыто» по московскому времени (ежедневно 10:00–22:00)
+  const st = document.getElementById('status');
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
+  const m = now.getHours() * 60 + now.getMinutes();
+  const open = m >= 10 * 60 && m < 22 * 60;
+  st.classList.toggle('closed', !open);
+  st.querySelector('span').textContent = open ? 'Открыто сейчас · до 22:00' : 'Сейчас закрыто · откроемся в 10:00';
+
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    hdr.classList.toggle('scrolled', scrollY > 8);
+    mbar.classList.toggle('show', scrollY > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // «Лук целиком»: свайп-галерея, счётчик, прогресс
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const rail = document.getElementById('rail'), cards = [...rail.children];
+  const cnt = document.getElementById('cnt'), bar = document.getElementById('bar');
+  const prev = document.getElementById('prev'), next = document.getElementById('next');
+  const pad = n => String(n).padStart(2, '0');
+  const step = () => cards.length > 1 ? cards[1].offsetLeft - cards[0].offsetLeft : rail.clientWidth;
+  const upd = () => {
+    const max = rail.scrollWidth - rail.clientWidth;
+    let i = Math.round(rail.scrollLeft / step());
+    if (max > 0 && rail.scrollLeft >= max - 4) i = cards.length - 1;
+    i = Math.max(0, Math.min(cards.length - 1, i));
+    cnt.textContent = pad(i + 1) + ' / ' + pad(cards.length);
+    bar.style.setProperty('--p', max > 0 ? Math.min(1, rail.scrollLeft / max) : 0);
+    prev.disabled = rail.scrollLeft <= 4;
+    next.disabled = max <= 0 || rail.scrollLeft >= max - 4;
+  };
+  const go = d => rail.scrollBy({ left: d * step(), behavior: reduce ? 'auto' : 'smooth' });
+  prev.addEventListener('click', () => go(-1));
+  next.addEventListener('click', () => go(1));
+  rail.addEventListener('scroll', upd, { passive: true });
+  rail.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') { e.preventDefault(); go(1); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); go(-1); }
+  });
+  addEventListener('resize', upd); upd();
+
+  // Лайтбокс
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg');
+  document.querySelectorAll('[data-full]').forEach(b => b.addEventListener('click', () => {
+    const img = b.querySelector('img');
+    lbImg.src = b.dataset.full; lbImg.alt = img ? img.alt : '';
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>

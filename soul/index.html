@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Soul nail studio — маникюр и наращивание ногтей на Московском проспекте, Санкт-Петербург</title>
+<meta name="description" content="Soul nail studio: маникюр без покрытия — 1 299 ₽, с гель-лаком — 2 499 ₽, наращивание ногтей — 3 199 ₽. Московский пр., 54. Запись через DIKIDI.">
+<meta name="theme-color" content="#3A1A4D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Comfortaa:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Comfortaa:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap"></noscript>
+<style>
+:root{
+  --plum-d:#27103A; --plum:#3A1A4D; --plum-2:#6A3589; --lav:#CBB6EC; --lav-l:#EAE1F7;
+  --beige:#F6EDE2; --beige-d:#EBDCC9; --nude:#E6C7B3; --paper:#FFFBF6;
+  --ink:#2A1B33; --ink-2:#4B3A55; --muted:#6F6177; --line:rgba(58,26,77,.14);
+  --r-lg:40px; --r-md:26px; --r-sm:16px;
+  --shadow:0 24px 50px -26px rgba(58,26,77,.5);
+  --head:"Comfortaa","Nunito",system-ui,sans-serif; --body:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif; --hand:"Caveat","Segoe Script",cursive;
+  --wrap:1160px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--beige);color:var(--ink);font:400 16.5px/1.6 var(--body);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.eyebrow{font:700 12px/1 var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--plum-2)}
+h1,h2,h3{font-family:var(--head);font-weight:700;line-height:1.12;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(30px,5.2vw,54px)}
+h2 em,h1 em{font:700 1.3em/.9 var(--hand);font-style:normal;color:var(--plum-2);letter-spacing:0}
+.lead{font-size:clamp(16px,1.6vw,19px);color:var(--ink-2);max-width:52ch}
+section{padding:clamp(64px,9vw,112px) 0}
+.hand{font-family:var(--hand);font-weight:700}
+
+/* demo bar */
+.demo{background:var(--plum-d);color:#E9DDF3;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:#fff;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:11px;border:1px solid rgba(255,255,255,.4);border-radius:99px;padding:3px 9px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(246,237,226,.9);background:color-mix(in srgb,var(--beige) 86%,transparent);backdrop-filter:saturate(1.3) blur(14px);-webkit-backdrop-filter:saturate(1.3) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.logo{display:flex;align-items:baseline;gap:8px;text-decoration:none}
+.logo .hand{font-size:38px;line-height:1;color:var(--plum)}
+.logo small{font:700 11px/1 var(--body);color:var(--muted);letter-spacing:.14em;text-transform:uppercase}
+.nav{display:none;gap:28px}
+.nav a{text-decoration:none;font-weight:700;font-size:14.5px;color:var(--ink-2);position:relative}
+.nav a::after{content:"";position:absolute;left:50%;bottom:-8px;width:6px;height:6px;border-radius:50%;background:var(--plum-2);transform:translateX(-50%) scale(0);transition:transform .3s}
+.nav a:hover::after{transform:translateX(-50%) scale(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:99px;border:1.5px solid var(--plum);background:var(--plum);color:#fff;font-weight:700;font-size:15px;text-decoration:none;cursor:pointer;transition:transform .25s, background .25s, color .25s, border-color .25s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.lav{background:var(--lav);border-color:var(--lav);color:var(--plum-d)}
+.btn.lav:hover{background:#fff;border-color:#fff}
+.btn.ghost{background:transparent;color:var(--plum)}
+.btn.ghost:hover{background:var(--plum);color:#fff}
+.btn.out{background:transparent;border-color:rgba(255,255,255,.45);color:#fff}
+.btn.out:hover{background:rgba(255,255,255,.12)}
+.btn.sm{min-height:42px;padding:0 20px;font-size:14px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--line);background:var(--paper);display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:18px;height:2px;border-radius:2px;background:var(--plum);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;border-radius:2px;background:var(--plum);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--beige);padding:120px 24px 40px;display:flex;flex-direction:column;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:700 28px/1.3 var(--head);text-decoration:none;padding:8px 0;border-bottom:1px dashed var(--line)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;color:#F4ECF9;background:radial-gradient(90% 70% at 85% 10%,rgba(203,182,236,.22),transparent 60%),linear-gradient(165deg,var(--plum-d),var(--plum) 62%,#4D2569);border-radius:0 0 clamp(36px,6vw,84px) clamp(36px,6vw,84px);padding:clamp(34px,6vw,76px) 0 clamp(64px,9vw,112px)}
+.bg-soul{position:absolute;right:-3%;top:-3%;font:700 clamp(200px,38vw,500px)/1 var(--hand);color:rgba(203,182,236,.08);transform:rotate(-8deg);pointer-events:none;user-select:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:48px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:64px}}
+.pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:99px;padding:8px 16px 8px 12px;font-size:13.5px;font-weight:700}
+.pill i{width:9px;height:9px;border-radius:50%;background:var(--lav);box-shadow:0 0 0 0 rgba(203,182,236,.6);animation:pulse 2.4s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(203,182,236,0)}100%{box-shadow:0 0 0 0 rgba(203,182,236,0)}}
+.hero h1{font-size:clamp(32px,5.2vw,62px);margin:24px 0 20px}
+.hero h1 .hand{display:block;font-size:2.3em;line-height:.8;color:var(--lav);margin-bottom:6px;letter-spacing:0}
+.hero .lead{color:#DCCBEA;margin:0 0 24px}
+.place{display:flex;gap:10px;align-items:flex-start;color:#DCCBEA;font-size:15px;margin-bottom:28px}
+.place svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--lav)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 170px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px;padding-top:24px;border-top:1px dashed rgba(255,255,255,.22)}
+.tags span{border:1px solid rgba(255,255,255,.22);border-radius:99px;padding:6px 14px;font-size:13.5px;font-weight:600;color:#E9DDF3}
+
+.visual{position:relative;max-width:440px;margin-inline:auto;width:100%}
+.blob{position:relative;aspect-ratio:4/5;border-radius:58% 42% 46% 54% / 46% 56% 44% 54%;overflow:hidden;border:6px solid rgba(203,182,236,.28);box-shadow:0 30px 70px -30px rgba(0,0,0,.6);background:var(--plum-2);animation:morph 16s ease-in-out infinite}
+.blob img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+@keyframes morph{50%{border-radius:44% 56% 56% 44% / 56% 44% 56% 44%}}
+.badge{position:absolute;left:-3%;bottom:6%;z-index:3;width:124px;height:124px;border-radius:50%;background:var(--lav);color:var(--plum-d);display:grid;place-items:center;text-align:center;font:700 25px/.95 var(--hand);transform:rotate(-10deg);box-shadow:0 16px 36px -14px rgba(0,0,0,.55);padding:14px}
+.hn{position:absolute;right:-4%;top:-5%;width:42%;z-index:3;animation:float 7s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px) rotate(2deg)}}
+@media (max-width:520px){.badge{left:0;width:108px;height:108px;font-size:22px}.hn{right:0}}
+
+/* ribbon */
+.ribbon{overflow:hidden;padding:20px 0 0}
+.track{display:flex;width:max-content;animation:run 40s linear infinite}
+.track span{font:700 clamp(26px,3.6vw,38px)/1 var(--hand);color:var(--plum-2);padding:0 22px;white-space:nowrap;display:flex;align-items:center;gap:44px}
+.track span::after{content:"";width:9px;height:9px;border-radius:50%;background:var(--lav)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* services */
+.head{display:grid;gap:16px;margin-bottom:40px}
+@media (min-width:960px){.head{grid-template-columns:1fr auto;align-items:end}}
+.head p{margin:0;color:var(--muted);font-size:14px}
+.cards{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+@media (min-width:900px){.cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}}
+.card{position:relative;border-radius:46px 46px 46px 12px;padding:26px 26px 28px;display:flex;flex-direction:column;gap:12px;overflow:hidden;transition:transform .35s}
+.card:hover{transform:translateY(-6px) rotate(-.4deg)}
+.card.c1{background:var(--lav-l)}
+.card.c2{background:var(--beige-d);border-radius:46px 46px 12px 46px}
+.card.c3{background:var(--plum);color:#fff}
+.card .no{position:absolute;right:24px;top:14px;font:700 54px/1 var(--hand);opacity:.28}
+.card .art{width:100%;max-width:240px;height:auto;margin:6px auto 4px}
+.card h3{font-size:21px;line-height:1.25;min-height:2.5em}
+.card .price{font:700 36px/1 var(--head);margin-top:2px}
+.card.c3 .price{color:var(--lav)}
+.card .btn{margin-top:10px;align-self:stretch}
+.card.c3 .btn{background:var(--lav);border-color:var(--lav);color:var(--plum-d)}
+.note{margin:26px 0 0;font-size:13.5px;color:var(--muted)}
+
+/* switcher feature */
+.sw{margin-top:48px;background:var(--paper);border-radius:var(--r-lg);border:1.5px solid var(--line);padding:clamp(20px,4vw,40px);box-shadow:var(--shadow)}
+.sw-top{display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center;justify-content:space-between;margin-bottom:24px}
+.sw-top h3{font-size:clamp(22px,3vw,30px)}
+.seg{display:flex;flex-wrap:wrap;gap:6px;background:var(--lav-l);border-radius:99px;padding:5px}
+.seg button{border:0;background:transparent;border-radius:99px;padding:10px 20px;font-weight:700;font-size:14.5px;cursor:pointer;color:var(--ink-2);transition:background .25s,color .25s}
+.seg button[aria-selected="true"]{background:var(--plum);color:#fff}
+.ipanel{display:none}
+.ipanel.on{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;align-items:center;animation:fade .5s ease}
+@media (min-width:760px){.ipanel.on{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)}}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.ipanel .big{font:700 clamp(26px,4vw,40px)/1.15 var(--head);margin:0 0 10px;overflow-wrap:anywhere}
+.ipanel p{margin:0;color:var(--ink-2)}
+.ipanel .acts{display:flex;flex-wrap:wrap;gap:10px}
+.ipanel .acts .btn{flex:1 1 170px}
+.ipanel .tip{margin-top:12px;font-size:13.5px;color:var(--muted)}
+
+/* praise */
+.praise-sec{background:var(--lav-l);border-radius:clamp(36px,6vw,84px);margin-inline:clamp(0px,1vw,16px)}
+.pr-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:36px;align-items:center}
+@media (min-width:900px){.pr-grid{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px}}
+.arch{position:relative;aspect-ratio:4/5;max-width:420px;margin-inline:auto;width:100%;border-radius:999px 999px var(--r-lg) var(--r-lg);overflow:hidden;box-shadow:var(--shadow);background:var(--lav)}
+.arch img{width:100%;height:100%;object-fit:cover}
+.arch figcaption{position:absolute;left:14px;right:14px;bottom:14px;background:rgba(255,251,246,.9);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:9px 14px;border-radius:99px;font-size:13px;font-weight:700;text-align:center}
+.arch{margin:0}
+.pcards{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:30px}
+@media (min-width:640px){.pcards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.pc{background:var(--paper);border-radius:34px 34px 34px 10px;padding:26px;position:relative;overflow:hidden}
+.pc:nth-child(2){border-radius:34px 34px 10px 34px}
+.pc .ico{width:54px;height:54px;border-radius:50%;background:var(--lav);display:grid;place-items:center;color:var(--plum);margin-bottom:14px}
+.pc .ico svg{width:28px;height:28px}
+.pc h3{font-size:21px;margin-bottom:8px}
+.pc p{margin:0;color:var(--ink-2);font-size:15.5px}
+.secs{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;align-items:center}
+.secs b{font-size:13.5px;color:var(--muted);font-weight:700;margin-right:4px}
+.secs span{border:1.5px dashed var(--plum-2);border-radius:99px;padding:5px 14px;font-size:13.5px;font-weight:700;color:var(--plum)}
+
+/* gallery */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.tab{border:1.5px solid var(--line);background:var(--paper);border-radius:99px;padding:10px 18px;font-weight:700;font-size:14px;cursor:pointer;transition:all .25s}
+.tab[aria-pressed="true"]{background:var(--plum);color:#fff;border-color:var(--plum)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (min-width:700px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}}
+.gi{position:relative;border-radius:30px 30px 30px 10px;overflow:hidden;aspect-ratio:4/5;background:var(--lav-l);cursor:zoom-in;border:0;padding:0;transition:transform .4s}
+.gi:nth-child(even){border-radius:30px 30px 10px 30px}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.07)}
+.gi span{position:absolute;left:10px;bottom:10px;right:10px;background:rgba(255,251,246,.92);font-size:12.5px;font-weight:700;padding:6px 12px;border-radius:99px;text-align:left}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,720px);max-height:92vh;overflow:visible}
+.lb::backdrop{background:rgba(25,10,36,.88)}
+.lb img{max-height:80vh;width:auto;max-width:100%;margin:auto;border-radius:24px}
+.lb p{margin:12px 0 0;text-align:center;color:#fff;font-weight:700}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:#fff;font-size:22px;cursor:pointer}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
+@media (min-width:900px){.ct{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:stretch}}
+.cinfo{background:var(--paper);border:1.5px solid var(--line);border-radius:var(--r-lg);padding:clamp(22px,4vw,40px);display:grid;gap:22px;align-content:start}
+.ci small{display:block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ci p{margin:0;font-size:19px;font-weight:700;overflow-wrap:anywhere}
+.plate{position:relative;overflow:hidden;border-radius:var(--r-lg);background:linear-gradient(160deg,var(--plum),#51276F);color:#fff;padding:clamp(26px,4vw,44px);display:flex;flex-direction:column;justify-content:flex-end;min-height:300px}
+.plate .hand{position:absolute;right:-2%;top:-8%;font-size:clamp(150px,22vw,260px);line-height:1;color:rgba(203,182,236,.12);transform:rotate(-8deg);pointer-events:none}
+.plate .pin{width:56px;height:56px;color:var(--lav);margin-bottom:16px;position:relative}
+.plate b{font:700 clamp(26px,4vw,38px)/1.15 var(--head);position:relative;display:block}
+.plate span.s{position:relative;color:#DCCBEA;margin-top:8px;display:block;font-size:15px}
+
+/* final */
+.final{position:relative;overflow:hidden;text-align:center;color:#F4ECF9;background:linear-gradient(165deg,var(--plum-d),var(--plum));border-radius:clamp(36px,6vw,84px) clamp(36px,6vw,84px) 0 0}
+.final .bgs{position:absolute;left:50%;top:-6%;transform:translateX(-50%) rotate(-6deg);font:700 clamp(240px,46vw,560px)/1 var(--hand);color:rgba(203,182,236,.07);pointer-events:none;white-space:nowrap}
+.final .wrap{position:relative}
+.final .eyebrow{color:var(--lav)}
+.final h2{font-size:clamp(34px,6.4vw,70px);max-width:15ch;margin:18px auto}
+.final h2 em{color:var(--lav)}
+.final .lead{color:#DCCBEA;margin:0 auto}
+.final .ctas{justify-content:center;margin-top:30px}
+footer{padding:34px 0 120px;font-size:13px;color:var(--muted);background:var(--beige-d)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer a{text-decoration:underline}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:8px;padding:8px;background:rgba(39,16,58,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:26px;box-shadow:0 18px 40px -12px rgba(0,0,0,.5);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:19px;color:#fff;text-decoration:none;font-size:11.5px;font-weight:700}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--lav);color:var(--plum-d);flex-direction:row;font-size:14px;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="n-bare" viewBox="0 0 40 56"><path d="M5 56V20C5 8 11 2 20 2s15 6 15 18v36z" fill="currentColor"/><path d="M5 56a15 15 0 0 1 30 0z" fill="#fff" fill-opacity=".38"/><path d="M11 22c0-6 2-11 5-14" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="3" stroke-linecap="round"/></symbol>
+    <symbol id="n-gel" viewBox="0 0 40 56"><path d="M5 56V20C5 8 11 2 20 2s15 6 15 18v36z" fill="currentColor"/><path d="M11 24c0-7 2-12 5-16" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="3.5" stroke-linecap="round"/><path d="M28 14l1.2 3 3 1.2-3 1.2L28 22.4l-1.2-3-3-1.2 3-1.2z" fill="#fff" fill-opacity=".85"/></symbol>
+    <symbol id="n-long" viewBox="0 0 40 84"><path d="M6 84V34C6 16 14 2 20 2s14 14 14 32v50z" fill="currentColor"/><path d="M12 36c0-11 3-20 6-27" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="3.5" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Концепт сайта для nail-студии Soul. Данные из открытых источников (DIKIDI и профиль студии) на 25.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Soul nail studio — наверх"><span class="hand">Soul</span><small>nail studio</small></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#services">Услуги и цены</a>
+      <a href="#info">Как найти</a>
+      <a href="#about">О студии</a>
+      <a href="#works">Фото</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm" href="https://dikidi.net/747855" target="_blank" rel="noopener">Записаться</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#services">Услуги и цены</a>
+  <a href="#info">Как найти</a>
+  <a href="#about">О студии</a>
+  <a href="#works">Фото</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero" style="padding-bottom:clamp(64px,9vw,112px)">
+  <div class="bg-soul" aria-hidden="true">Soul</div>
+  <div class="wrap">
+    <div>
+      <span class="pill rv"><i></i><span>Запись онлайн — через DIKIDI</span></span>
+      <h1 class="rv d1"><span class="hand">Soul</span>мама маникюра</h1>
+      <p class="lead rv d2">Nail-студия на Московском проспекте. Маникюр, покрытие гель-лаком и наращивание ногтей — чисто, безопасно и с душой.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Московский&nbsp;пр.,&nbsp;54 · Санкт-Петербург</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn lav" href="https://dikidi.net/747855" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M8 3v4M16 3v4M4 10h16"/></svg>Записаться в DIKIDI</a>
+        <a class="btn out" href="https://yandex.ru/maps/?rtext=~Санкт-Петербург%2C%20Московский%20проспект%2C%2054&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+      </div>
+      <div class="tags rv d3"><span>Маникюр</span><span>Гель-лак</span><span>Наращивание</span></div>
+    </div>
+    <div class="visual rv d2">
+      <svg class="hn" viewBox="0 0 160 90" aria-hidden="true">
+        <use href="#n-gel" x="10" y="20" width="40" height="56" style="color:#E6C7B3" transform="rotate(-14 30 48)"/>
+        <use href="#n-gel" x="60" y="8" width="40" height="56" style="color:#CBB6EC"/>
+        <use href="#n-gel" x="110" y="20" width="40" height="56" style="color:#8E55B5" transform="rotate(14 130 48)"/>
+      </svg>
+      <div class="blob"><img id="heroImg" src="img/hero.jpg" alt="Нюдовый маникюр с декором" fetchpriority="high"></div>
+      <div class="badge" aria-hidden="true">чисто и безопасно</div>
+    </div>
+  </div>
+</section>
+
+<div class="ribbon" aria-hidden="true"><div class="track">
+  <span>маникюр</span><span>гель-лак</span><span>наращивание</span><span>чисто и безопасно</span><span>сервис с душой</span>
+  <span>маникюр</span><span>гель-лак</span><span>наращивание</span><span>чисто и безопасно</span><span>сервис с душой</span>
+</div></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Прайс</span><h2 class="rv d1" style="margin-top:14px">Услуги <em>и цены</em></h2></div>
+      <p class="rv d2">Цены из онлайн-записи DIKIDI на 25.10.2026</p>
+    </div>
+    <div class="cards">
+      <article class="card c1 rv">
+        <span class="no" aria-hidden="true">01</span>
+        <svg class="art" viewBox="0 0 200 130" aria-hidden="true">
+          <use href="#n-bare" x="26" y="50" width="40" height="56" style="color:#E6C7B3" transform="rotate(-12 46 78)"/>
+          <use href="#n-bare" x="80" y="32" width="40" height="56" style="color:#EBCDBB"/>
+          <use href="#n-bare" x="134" y="50" width="40" height="56" style="color:#E6C7B3" transform="rotate(12 154 78)"/>
+        </svg>
+        <h3>Маникюр без покрытия</h3>
+        <div class="price">1&nbsp;299&nbsp;₽</div>
+        <a class="btn" href="https://dikidi.net/747855" target="_blank" rel="noopener">Записаться</a>
+      </article>
+      <article class="card c2 rv d1">
+        <span class="no" aria-hidden="true">02</span>
+        <svg class="art" viewBox="0 0 200 130" aria-hidden="true">
+          <use href="#n-gel" x="26" y="50" width="40" height="56" style="color:#4A1F63" transform="rotate(-12 46 78)"/>
+          <use href="#n-gel" x="80" y="32" width="40" height="56" style="color:#7A3FA0"/>
+          <use href="#n-gel" x="134" y="50" width="40" height="56" style="color:#4A1F63" transform="rotate(12 154 78)"/>
+        </svg>
+        <h3>Маникюр с покрытием гель-лак</h3>
+        <div class="price">2&nbsp;499&nbsp;₽</div>
+        <a class="btn" href="https://dikidi.net/747855" target="_blank" rel="noopener">Записаться</a>
+      </article>
+      <article class="card c3 rv d2">
+        <span class="no" aria-hidden="true">03</span>
+        <svg class="art" viewBox="0 0 200 130" aria-hidden="true">
+          <use href="#n-long" x="28" y="34" width="40" height="84" style="color:#CBB6EC" transform="rotate(-12 48 76)"/>
+          <use href="#n-long" x="80" y="12" width="40" height="84" style="color:#EAE1F7"/>
+          <use href="#n-long" x="132" y="34" width="40" height="84" style="color:#E6C7B3" transform="rotate(12 152 76)"/>
+        </svg>
+        <h3>Наращивание ногтей</h3>
+        <div class="price">3&nbsp;199&nbsp;₽</div>
+        <a class="btn" href="https://dikidi.net/747855" target="_blank" rel="noopener">Записаться</a>
+      </article>
+    </div>
+    <p class="note rv">Других позиций в открытом прайсе нет.</p>
+
+    <!-- FEATURE: switcher -->
+    <div class="sw rv" id="info">
+      <div class="sw-top">
+        <h3>Перед визитом</h3>
+        <div class="seg" role="tablist" aria-label="Информация перед визитом">
+          <button type="button" role="tab" aria-selected="true" data-sw="where">Как найти?</button>
+          <button type="button" role="tab" aria-selected="false" data-sw="note">Важно</button>
+        </div>
+      </div>
+      <div class="ipanel on" id="ip-where" role="tabpanel">
+        <div>
+          <p class="big">Санкт-Петербург, Московский&nbsp;пр.,&nbsp;54</p>
+          <p>Откройте маршрут в Яндекс Картах — построим дорогу от вашего местоположения.</p>
+        </div>
+        <div class="acts">
+          <a class="btn" href="https://yandex.ru/maps/?rtext=~Санкт-Петербург%2C%20Московский%20проспект%2C%2054&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+          <a class="btn ghost" href="https://yandex.ru/maps/?text=Санкт-Петербург%2C%20Московский%20проспект%2C%2054" target="_blank" rel="noopener">На карте</a>
+        </div>
+      </div>
+      <div class="ipanel" id="ip-note" role="tabpanel">
+        <div>
+          <p class="big">Запись — только через DIKIDI</p>
+          <p>Выберите услугу и удобное время на странице студии в онлайн-записи DIKIDI.</p>
+        </div>
+        <div class="acts">
+          <a class="btn" href="https://dikidi.net/747855" target="_blank" rel="noopener">Открыть запись</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / PRAISE REPLACEMENT -->
+<section id="about" class="praise-sec">
+  <div class="wrap">
+    <div class="pr-grid">
+      <figure class="arch rv">
+        <img src="img/decor.jpg" alt="Рабочее место с открытками" loading="lazy">
+        <figcaption>Рабочее место с открытками</figcaption>
+      </figure>
+      <div>
+        <span class="eyebrow rv">О студии</span>
+        <h2 class="rv d1" style="margin-top:14px">Что в студии <em>важно</em></h2>
+        <div class="pcards">
+          <article class="pc rv">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.500-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <h3>Стерильно и безопасно</h3>
+            <p>В профиле студия пишет, что у неё чисто и безопасно, и выделяет отдельный раздел «стерильно».</p>
+          </article>
+          <article class="pc rv d1">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 11h1.500a2.500 2.500 0 0 1 0 5H17"/><path d="M8 3c-1 1.500 1 2 0 3.500M12 3c-1 1.500 1 2 0 3.500"/></svg></div>
+            <h3>Сервис с душой: кофе</h3>
+            <p>Комфорт и сервис с душой — так студия описывает себя, а к визиту добавляется чашка кофе.</p>
+          </article>
+        </div>
+        <div class="secs rv"><b>Разделы профиля студии:</b><span>Важно</span><span>Прайс</span><span>Как найти</span><span>Носка</span><span>Стерильно</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section id="works">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Фото</span><h2 class="rv d1" style="margin-top:14px">Цвет <em>и настроение</em></h2></div>
+      <p class="rv d2">Фото из профиля студии</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр фото">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="nude">Нюд</button>
+      <button class="tab" aria-pressed="false" data-f="dark">Тёмные</button>
+      <button class="tab" aria-pressed="false" data-f="gel">Гель</button>
+      <button class="tab" aria-pressed="false" data-f="studio">Студия</button>
+    </div>
+    <div class="grid" id="grid">
+      <button class="gi rv" data-c="nude" data-cap="Нюдовый маникюр с декором"><img src="img/hero.jpg" alt="Нюдовый маникюр с декором" loading="lazy"><span>Нюд с декором</span></button>
+      <button class="gi rv d1" data-c="dark" data-cap="Тёмно-фиолетовый маникюр"><img src="img/nails-2.jpg" alt="Тёмно-фиолетовый маникюр" loading="lazy"><span>Тёмно-фиолетовый</span></button>
+      <button class="gi rv d2" data-c="dark" data-cap="Чёрный глянцевый маникюр"><img src="img/nails-3.jpg" alt="Чёрный глянцевый маникюр" loading="lazy"><span>Чёрный глянец</span></button>
+      <button class="gi rv" data-c="gel" data-cap="Капля геля"><img src="img/gel.jpg" alt="Капля геля" loading="lazy"><span>Капля геля</span></button>
+      <button class="gi rv d1" data-c="studio" data-cap="Рабочее место с открытками"><img src="img/decor.jpg" alt="Рабочее место с открытками" loading="lazy"><span>Рабочее место</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""><p id="lbCap"></p></dialog>
+
+<!-- CONTACTS -->
+<section id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1" style="margin-top:14px">Как <em>добраться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Санкт-Петербург, Московский&nbsp;пр.,&nbsp;54</p></div>
+        <div class="ci"><small>Запись</small><p>Онлайн через DIKIDI</p></div>
+        <div class="ctas">
+          <a class="btn" href="https://dikidi.net/747855" target="_blank" rel="noopener">Записаться</a>
+          <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~Санкт-Петербург%2C%20Московский%20проспект%2C%2054&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a>
+        </div>
+      </div>
+      <div class="plate rv d1">
+        <span class="hand" aria-hidden="true">Soul</span>
+        <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-6.200-7-11.500A7 7 0 0 1 19 9.500C19 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg>
+        <b>Московский&nbsp;пр.,&nbsp;54</b>
+        <span class="s">Санкт-Петербург · nail studio Soul</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="bgs" aria-hidden="true">Soul</div>
+  <div class="wrap">
+    <span class="eyebrow rv">Запись</span>
+    <h2 class="rv d1">Время <em>для себя</em></h2>
+    <p class="lead rv d2">Выберите услугу и удобное время в онлайн-записи DIKIDI.</p>
+    <div class="ctas rv d3">
+      <a class="btn lav" href="https://dikidi.net/747855" target="_blank" rel="noopener">Записаться в DIKIDI</a>
+      <a class="btn out" href="https://yandex.ru/maps/?rtext=~Санкт-Петербург%2C%20Московский%20проспект%2C%2054&rtt=auto" target="_blank" rel="noopener">Маршрут</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Soul nail studio — мама маникюра, Санкт-Петербург</span>
+    <span>Демо-концепт. Данные из открытых источников (<a href="https://dikidi.net/747855" target="_blank" rel="noopener">DIKIDI</a>, профиль студии) на 25.10.2026.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="https://yandex.ru/maps/?rtext=~Санкт-Петербург%2C%20Московский%20проспект%2C%2054&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+  <a href="#services"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12v18l-6-3-6 3z"/></svg>Прайс</a>
+  <a class="main" href="https://dikidi.net/747855" target="_blank" rel="noopener">Записаться</a>
+</nav>
+
+<script>
+(() => {
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    const y = scrollY;
+    hdr.classList.toggle('scrolled', y > 8);
+    mbar.classList.toggle('show', y > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Переключатель «Как найти? / Важно»
+  const sw = document.querySelectorAll('[data-sw]');
+  sw.forEach(b => b.addEventListener('click', () => {
+    sw.forEach(x => x.setAttribute('aria-selected', x === b));
+    document.querySelectorAll('.ipanel').forEach(p => p.classList.toggle('on', p.id === 'ip-' + b.dataset.sw));
+  }));
+
+  // Фильтр фото и лайтбокс
+  const items = document.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt; lbCap.textContent = i.dataset.cap || '';
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>
