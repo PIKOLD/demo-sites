@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>LE MON — бренд одежды из Оренбурга: костюмы, джоггеры, Kids 80–130</title>
+<meta name="description" content="LE MON — бренд одежды с собственным производством, Оренбург. Костюмы, джоггеры, лонгсливы, анораки, детская коллекция 80–130. Магазин на ул. Автомобилистов, 13, ежедневно 10:00–22:00. Отправка по всей России.">
+<meta name="theme-color" content="#FFE81F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"><style>.rv{opacity:1!important;transform:none!important}</style></noscript>
+<style>
+:root{
+  --lemon:#FFE81F; --lemon-d:#F0D500; --lemon-l:#FFF9C9;
+  --cobalt:#1D3DDB; --cobalt-d:#1230A8;
+  --ink:#0A1036; --ink-2:#2A3160; --muted:#4D5478; --off:#F3F4FA; --line:rgba(10,16,54,.16);
+  --r:6px; --bd:2.5px solid var(--ink); --hard:6px 6px 0 var(--ink);
+  --disp:"Oswald","Arial Narrow","Roboto Condensed",Impact,sans-serif;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:76px}
+body{margin:0;background:#fff;color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+h1,h2,h3{font-family:var(--disp);font-weight:700;text-transform:uppercase;line-height:.95;margin:0;letter-spacing:.005em}
+h2{font-size:clamp(38px,7vw,78px)}
+h2 em{font-style:normal;color:var(--cobalt);background:linear-gradient(transparent 60%,var(--lemon) 60%);padding:0 .08em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.eyebrow{display:inline-block;font:600 14px/1 var(--disp);letter-spacing:.18em;text-transform:uppercase;background:var(--ink);color:var(--lemon);padding:7px 11px 6px;border-radius:3px}
+.lead{font-size:clamp(16px,1.6vw,18px);color:var(--ink-2);max-width:54ch;margin:0}
+section{padding:clamp(64px,9vw,112px) 0}
+.fn{font-size:11.5px;line-height:1.45;color:var(--muted);margin:12px 0 0;max-width:52ch}
+
+/* demo bar */
+.demo{background:var(--ink);color:#E9EBFA;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:var(--ink);background:var(--lemon);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:11px;border-radius:3px;padding:3px 7px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:#fff;border-bottom:var(--bd)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo i{width:18px;height:18px;border-radius:50%;background:var(--lemon);border:2.5px solid var(--ink);flex:none}
+.logo b{font:700 27px/1 var(--disp);letter-spacing:.08em;color:var(--cobalt)}
+.nav{display:none;gap:24px}
+.nav a{font:600 16px/1 var(--disp);letter-spacing:.07em;text-transform:uppercase;text-decoration:none;color:var(--ink);background:linear-gradient(var(--lemon),var(--lemon)) 0 100%/0 .45em no-repeat;transition:background-size .3s}
+.nav a:hover{background-size:100% .45em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 24px;border-radius:var(--r);border:var(--bd);background:var(--cobalt);color:#fff;font:600 17px/1.1 var(--disp);letter-spacing:.07em;text-transform:uppercase;text-align:center;text-decoration:none;cursor:pointer;box-shadow:4px 4px 0 var(--ink);transition:transform .15s,box-shadow .15s,background .2s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.lem{background:var(--lemon);color:var(--ink)}
+.btn.ghost{background:#fff;color:var(--ink)}
+.btn.sm{min-height:44px;padding:0 16px;font-size:15px}
+.hdr .btn{display:none}
+.burger{width:46px;height:46px;border-radius:var(--r);border:var(--bd);background:var(--lemon);display:grid;place-items:center;cursor:pointer;padding:0}
+.burger span{display:block;width:20px;height:2.5px;background:var(--ink);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:20px;height:2.5px;background:var(--ink);transition:transform .3s}
+.burger span::before{top:-7px}.burger span::after{top:7px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(7px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-7px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--cobalt);padding:128px 24px 40px;display:flex;flex-direction:column;gap:2px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .25s,visibility .25s;overflow-y:auto}
+.mnav a{font:700 38px/1.15 var(--disp);text-transform:uppercase;letter-spacing:.02em;color:#fff;text-decoration:none;padding:8px 0;border-bottom:2px solid rgba(255,255,255,.22)}
+.mnav a:hover{color:var(--lemon)}
+.menu-open .mnav{opacity:1;visibility:visible;pointer-events:auto}
+@media (min-width:1020px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{padding:30px 0 0;position:relative;overflow:hidden;border-bottom:var(--bd);background:repeating-conic-gradient(from 0deg at 76% 34%,rgba(255,255,255,.28) 0 6deg,transparent 6deg 12deg),var(--lemon)}
+.hgrid{display:grid;grid-template-columns:minmax(0,1fr);grid-template-areas:"mark" "info" "vis";gap:26px 0;padding-bottom:52px}
+.hmark{grid-area:mark;min-width:0}.hinfo{grid-area:info;min-width:0}.hvis{grid-area:vis;min-width:0}
+@media (min-width:960px){.hgrid{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);grid-template-rows:auto 1fr;grid-template-areas:"mark vis" "info vis";gap:22px 56px;align-items:start;padding-bottom:76px}}
+.status{display:inline-flex;align-items:center;gap:10px;background:#fff;border:var(--bd);border-radius:99px;padding:7px 14px 7px 11px;font:700 13px/1.2 var(--sans);box-shadow:3px 3px 0 var(--ink)}
+.status i{width:10px;height:10px;border-radius:50%;background:#18A558;flex:none;animation:pulse 2s infinite}
+.status.closed i{background:#D6392F;animation:none}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(24,165,88,.55)}70%,100%{box-shadow:0 0 0 10px rgba(24,165,88,0)}}
+.mark{font-size:clamp(84px,27vw,210px);line-height:.88;color:var(--cobalt);margin:16px 0 0;white-space:nowrap;text-shadow:.035em .035em 0 var(--ink)}
+@media (min-width:960px){.mark{font-size:clamp(150px,15.5vw,225px)}}
+.tagbar{display:inline-block;max-width:100%;margin-top:18px;background:var(--ink);color:var(--lemon);font:600 clamp(14px,2.2vw,19px)/1.25 var(--disp);letter-spacing:.12em;text-transform:uppercase;padding:9px 14px;transform:rotate(-1.2deg)}
+.hinfo .lead{margin:6px 0 0;color:var(--ink);font-weight:500}
+.place{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;font-weight:600;margin:18px 0 24px}
+.place svg{width:20px;height:20px;flex:none;margin-top:2px;color:var(--cobalt)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 170px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:30px}
+.stat{border-top:var(--bd);padding-top:10px;min-width:0}
+.stat strong{display:block;font:700 clamp(26px,4vw,38px)/1 var(--disp);color:var(--cobalt)}
+.stat span{display:block;font-size:12.5px;line-height:1.35;margin-top:4px;font-weight:600}
+.hvis{position:relative;width:min(100%,460px);margin:10px auto 0;padding:0 16px 16px 0}
+.frame{position:relative;aspect-ratio:4/5;border:var(--bd);border-radius:var(--r);background:var(--cobalt);box-shadow:16px 16px 0 var(--cobalt-d);overflow:hidden;transform:rotate(1.4deg)}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;left:-6px;top:-22px;width:108px;height:108px;z-index:3;filter:drop-shadow(3px 3px 0 var(--ink))}
+.badge .spin{transform-box:fill-box;transform-origin:center;animation:spin 24s linear infinite}
+.badge text{font:600 12px var(--disp);letter-spacing:.1em;fill:var(--lemon);text-transform:uppercase}
+@keyframes spin{to{transform:rotate(360deg)}}
+.sticker{position:absolute;z-index:4;background:var(--lemon);color:var(--ink);border:var(--bd);border-radius:var(--r);padding:8px 12px;font:700 11px/1.25 var(--sans);text-transform:uppercase;letter-spacing:.05em;box-shadow:3px 3px 0 var(--ink)}
+.sticker b{display:block;font:700 24px/1 var(--disp);letter-spacing:.01em;margin-top:2px}
+.s1{left:-6px;bottom:42px;transform:rotate(-3deg)}
+.s2{right:0;top:44%;transform:rotate(3deg);text-align:right}
+.stripe{height:22px;border-top:var(--bd);background:repeating-linear-gradient(-45deg,var(--cobalt) 0 14px,var(--lemon) 14px 28px)}
+
+/* marquee */
+.marquee{background:var(--cobalt);color:var(--lemon);border-bottom:var(--bd);overflow:hidden;padding:14px 0}
+.track{display:flex;width:max-content;animation:run 42s linear infinite}
+.track span{font:600 clamp(22px,3vw,30px)/1 var(--disp);text-transform:uppercase;letter-spacing:.07em;padding:0 22px;white-space:nowrap;display:flex;align-items:center;gap:44px}
+.track span::after{content:"";width:12px;height:12px;border-radius:50%;background:var(--lemon)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* head */
+.head{display:grid;gap:14px;margin-bottom:38px}
+@media (min-width:960px){.head{grid-template-columns:minmax(0,1fr) auto;align-items:end}}
+.head h2{margin-top:16px}
+.head p{margin:0;color:var(--muted);font-size:14px;max-width:42ch}
+
+/* collections */
+.cols{display:grid;grid-template-columns:minmax(0,1fr);gap:22px}
+@media (min-width:860px){.cols{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}}
+.cc{position:relative;border:var(--bd);border-radius:var(--r);box-shadow:var(--hard);padding:26px 22px 24px;display:flex;flex-direction:column;gap:12px;min-width:0;overflow:hidden}
+.cc .num{position:absolute;right:14px;top:6px;font:700 84px/1 var(--disp);opacity:.18}
+.cc h3{font-size:clamp(30px,3.4vw,40px);margin-top:36px;overflow-wrap:anywhere}
+.cc p{margin:0;font-size:15px}
+.cc .tag{margin-top:auto;padding-top:14px;font:700 13px/1.3 var(--sans);text-transform:uppercase;letter-spacing:.05em}
+.cc.c1{background:var(--lemon)}
+.cc.c2{background:var(--cobalt);color:#fff}
+.cc.c2 .tag b{color:var(--lemon)}
+.cc.c3{background:#fff}
+.cc a.more{font:600 16px/1 var(--disp);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-bottom:3px solid currentColor;align-self:flex-start;padding-bottom:3px}
+.ptags{display:flex;flex-wrap:wrap;gap:8px;margin-top:34px;align-items:center}
+.ptags span.l{font-size:13px;font-weight:700;margin-right:6px}
+.ptag{border:var(--bd);border-radius:99px;padding:7px 14px;font:600 14px/1 var(--disp);letter-spacing:.07em;text-transform:uppercase;background:var(--off)}
+
+/* prices */
+.prices{background:var(--off);border-block:var(--bd)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.tab{border:var(--bd);background:#fff;border-radius:var(--r);min-height:44px;padding:0 16px;font:600 16px/1 var(--disp);letter-spacing:.07em;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s,transform .15s}
+.tab:hover{transform:translateY(-2px)}
+.tab[aria-selected="true"],.tab[aria-pressed="true"]{background:var(--cobalt);color:#fff}
+.svc{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
+@media (min-width:960px){.svc{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:64px;align-items:start}}
+.panel{display:none}
+.panel.on{display:block;animation:fade .45s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.row{display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:2px solid var(--line)}
+.row:first-child{border-top:2px solid var(--line)}
+.row .n{flex:1 1 auto;min-width:0}
+.row .n b{font-weight:700;font-size:16.5px;overflow-wrap:anywhere}
+.row .n small{display:block;color:var(--muted);font-size:13.5px}
+.row .p{font:700 28px/1 var(--disp);white-space:nowrap;color:var(--cobalt)}
+.row .p.txt{font:700 14px/1.3 var(--sans);color:var(--muted);white-space:normal;text-align:right;max-width:11ch}
+.os{display:inline-block;font:800 10px/1 var(--sans);background:var(--ink);color:var(--lemon);padding:4px 6px;border-radius:3px;letter-spacing:.08em;margin-left:8px;vertical-align:2px}
+.note{margin-top:22px;font-size:13.5px;color:var(--muted);max-width:60ch}
+.sidephoto{display:none;position:relative;aspect-ratio:4/5;border:var(--bd);border-radius:var(--r);overflow:hidden;background:var(--cobalt);box-shadow:var(--hard)}
+@media (min-width:960px){.sidephoto{display:block;position:sticky;top:96px}}
+.sidephoto>*{position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity .5s}
+.sidephoto img{object-fit:cover}
+.sidephoto .on{opacity:1}
+.sidephoto .kidsbox{background:var(--lemon);display:flex;flex-direction:column;align-items:center;justify-content:center;font:700 clamp(60px,7vw,100px)/1 var(--disp);color:var(--cobalt);text-shadow:.04em .04em 0 var(--ink)}
+.sidephoto .kidsbox small{font:600 18px/1 var(--disp);letter-spacing:.2em;color:var(--ink);text-shadow:none;margin-bottom:10px}
+
+/* build (feature) */
+.build{background:repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0 2px,transparent 2px 20px),var(--cobalt);color:#fff;border-bottom:var(--bd)}
+.build h2{margin-top:16px}
+.build h2 em{color:var(--lemon);background:none;padding:0}
+.build .eyebrow{background:var(--lemon);color:var(--ink)}
+.build .lead{color:#DCE2FF;margin-top:18px}
+.bgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:32px;margin-top:40px}
+@media (min-width:960px){.bgrid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:start}}
+.grp{margin-bottom:28px}
+.grp h3{font-size:24px;letter-spacing:.08em;color:var(--lemon);display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.stepn{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--lemon);color:var(--ink);border:2.5px solid var(--ink);font:700 18px/1 var(--disp)}
+.opts{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+@media (min-width:560px){.opts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.opt{position:relative;display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;padding:14px 16px;background:#fff;color:var(--ink);border:var(--bd);border-radius:var(--r);cursor:pointer;box-shadow:4px 4px 0 var(--ink);transition:transform .15s,box-shadow .15s,background .2s;min-width:0}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt .nm{flex:1 1 110px;min-width:0;font:700 15.5px/1.25 var(--sans);overflow-wrap:anywhere}
+.opt .pr{font:700 25px/1 var(--disp);white-space:nowrap;color:var(--cobalt)}
+.opt .sub{flex-basis:100%;font-size:12.5px;color:var(--muted)}
+.opt.on{background:var(--lemon);transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+.opt.on .nm::before{content:"✓ "}
+.opt:has(input:focus-visible){outline:3px solid var(--lemon);outline-offset:3px}
+.opt.none .pr{color:var(--muted)}
+.sumcard{background:#fff;color:var(--ink);border:var(--bd);border-radius:var(--r);box-shadow:8px 8px 0 var(--lemon);padding:24px 22px;display:flex;flex-direction:column;gap:14px;min-width:0}
+@media (min-width:960px){.sumcard{position:sticky;top:96px}}
+.sumcard .lbl{font:600 15px/1 var(--disp);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.sumcard .total{font:700 clamp(56px,8vw,84px)/1 var(--disp);color:var(--cobalt);text-shadow:.03em .03em 0 var(--lemon)}
+.sumcard ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:15px}
+.sumcard li{display:flex;justify-content:space-between;gap:12px;border-bottom:2px dashed var(--line);padding-bottom:8px}
+.sumcard li b{white-space:nowrap}
+.sumcard .small{font-size:12.5px;color:var(--muted);margin:0}
+.sumcard .btn{width:100%}
+.sumcard .ok{min-height:1.2em;font-size:12.5px;font-weight:700;color:#0E7A3E;margin:-4px 0 0}
+.sets{margin-top:6px;border:2.5px dashed rgba(255,255,255,.55);border-radius:var(--r);padding:14px 16px;font-size:14px;color:#DCE2FF}
+.sets b{color:#fff}
+
+/* kids */
+.kgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:36px;align-items:center}
+@media (min-width:960px){.kgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px}}
+.kgrid h2{margin:16px 0 20px}
+.kgrid .ctas{margin-top:26px}
+.ruler{background:var(--lemon);border:var(--bd);border-radius:var(--r);box-shadow:var(--hard);padding:26px 22px 22px;transform:rotate(-1.2deg)}
+.ruler small{font:600 15px/1 var(--disp);letter-spacing:.2em;text-transform:uppercase}
+.ruler .big{font:700 clamp(72px,17vw,150px)/1 var(--disp);color:var(--cobalt);text-shadow:.035em .035em 0 var(--ink);margin:10px 0 18px;white-space:nowrap}
+.scale{height:20px;border-top:3px solid var(--ink);background:repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 14px) 0 0/100% 14px no-repeat}
+.scale-l{display:flex;justify-content:space-between;font:700 22px/1 var(--disp);margin-top:2px}
+
+/* looks */
+.looks{background:var(--lemon-l);border-block:var(--bd)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.mas{column-count:2;column-gap:12px}
+@media (min-width:760px){.mas{column-count:3;column-gap:18px}}
+.gi{position:relative;display:block;width:100%;margin:0 0 12px;break-inside:avoid;aspect-ratio:4/5;padding:0;border:var(--bd);border-radius:var(--r);overflow:hidden;background:var(--cobalt);cursor:zoom-in;box-shadow:3px 3px 0 var(--ink)}
+@media (min-width:760px){.gi{margin-bottom:18px}}
+.gi.sq{aspect-ratio:1}.gi.t3{aspect-ratio:3/4}
+.gi img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.06)}
+.gi span{position:absolute;left:8px;bottom:8px;max-width:calc(100% - 16px);background:var(--lemon);border:2px solid var(--ink);border-radius:3px;font:700 11px/1.2 var(--sans);text-transform:uppercase;letter-spacing:.05em;padding:5px 8px}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,900px);max-height:92vh;overflow:visible}
+.lb::backdrop{background:rgba(10,16,54,.88)}
+.lb img{max-height:84vh;width:auto;max-width:100%;margin:auto;border:var(--bd);border-radius:var(--r)}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:var(--r);border:var(--bd);background:var(--lemon);font-size:24px;cursor:pointer}
+
+/* store */
+.sgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:36px}
+@media (min-width:960px){.sgrid{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:72px;align-items:center}}
+.sfig{margin:0;position:relative;aspect-ratio:4/5;max-width:480px;width:100%;border:var(--bd);border-radius:var(--r);overflow:hidden;background:var(--cobalt);box-shadow:-8px 8px 0 var(--lemon-d)}
+.sfig img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sfig figcaption{position:absolute;left:10px;bottom:10px;background:var(--lemon);border:2px solid var(--ink);border-radius:3px;font:700 11px/1.2 var(--sans);text-transform:uppercase;letter-spacing:.05em;padding:5px 8px}
+.frows{margin-top:6px}
+.frow{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:2px solid var(--line)}
+.frow:first-child{border-top:2px solid var(--line)}
+.frow .ic{width:44px;height:44px;flex:none;display:grid;place-items:center;background:var(--lemon);border:var(--bd);border-radius:var(--r)}
+.frow .ic svg{width:22px;height:22px}
+.frow small{display:block;font:600 12px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+.frow p{margin:0;font-size:17px;font-weight:600;overflow-wrap:anywhere}
+.sgrid .ctas{margin-top:26px}
+
+/* contacts */
+.contacts{background:var(--off);border-top:var(--bd)}
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start}
+.ci small{display:block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ci p,.ci a.t{margin:0;font-size:18px;font-weight:600;text-decoration:none;overflow-wrap:anywhere}
+.ci a.big{font:700 clamp(30px,5vw,40px)/1.1 var(--disp);letter-spacing:.03em;color:var(--cobalt);text-decoration:none}
+.map{border:var(--bd);border-radius:var(--r);overflow:hidden;min-height:380px;background:#fff;box-shadow:var(--hard)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* final */
+.final{text-align:center;background:repeating-conic-gradient(from 0deg at 50% 0%,rgba(255,255,255,.28) 0 6deg,transparent 6deg 12deg),var(--lemon);border-top:var(--bd);padding-bottom:0}
+.final .wrap{padding-bottom:clamp(64px,9vw,112px)}
+.final h2{font-size:clamp(44px,8.5vw,104px);max-width:12ch;margin:20px auto;color:var(--ink)}
+.final h2 em{background:none;color:var(--cobalt);padding:0;text-shadow:.04em .04em 0 var(--ink)}
+.final .lead{margin:0 auto}
+.final .ctas{justify-content:center;margin-top:30px}
+.final .fn{margin-inline:auto;color:var(--ink-2)}
+footer{background:var(--ink);color:#B9BFE0;padding:36px 0 120px;font-size:13px;line-height:1.55}
+footer .wrap{display:grid;gap:10px}
+footer b{color:var(--lemon);font-family:var(--disp);letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+footer .fn{color:#B9BFE0;margin:4px 0 0;font-size:12.5px;max-width:none}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.5fr);gap:8px;padding:8px;background:var(--ink);border:2.5px solid var(--lemon);border-radius:var(--r);box-shadow:0 14px 30px -8px rgba(10,16,54,.6);transform:translateY(150%);transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:4px;color:#fff;text-decoration:none;font:600 13px/1.1 var(--disp);letter-spacing:.07em;text-transform:uppercase;text-align:center}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--lemon);color:var(--ink);flex-direction:row;font-size:15px;gap:8px;padding:0 6px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+.frame.rv.in{transform:rotate(1.4deg)}
+.ruler.rv.in{transform:rotate(-1.2deg)}
+.frame.rv{transform:translateY(26px) rotate(1.4deg)}
+.ruler.rv{transform:translateY(26px) rotate(-1.2deg)}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1}
+  .rv:not(.frame):not(.ruler){transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта для бренда LE MON. Данные из открытых источников (профиль бренда в Instagram*) на 26.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="LE MON — наверх"><i></i><b>LE MON</b></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#prices">Прайс</a>
+      <a href="#build">Собери комплект</a>
+      <a href="#kids">Kids 80–130</a>
+      <a href="#looks">Образы</a>
+      <a href="#store">Магазин</a>
+    </nav>
+    <a class="btn sm" href="https://instagram.com/le.mon.rf" target="_blank" rel="noopener">Заказать в Direct*</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#collections">Коллекции</a>
+  <a href="#prices">Прайс</a>
+  <a href="#build">Собери комплект</a>
+  <a href="#kids">Kids 80–130</a>
+  <a href="#looks">Образы</a>
+  <a href="#store">Магазин</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hgrid">
+    <div class="hmark">
+      <span class="status rv" id="status"><i></i><span>Ежедневно 10:00–22:00</span></span>
+      <h1 class="mark rv d1" aria-label="LE MON">LE MON</h1>
+      <span class="tagbar rv d2">Бренд одежды · собственное производство · Оренбург</span>
+    </div>
+    <div class="hinfo">
+      <p class="lead rv d2">Костюмы, джоггеры, лонгсливы, анораки, пиджаки и детская коллекция 80–130. Магазин в Оренбурге и отправка по всей России.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Оренбург, ул. Автомобилистов, 13</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn" href="https://instagram.com/le.mon.rf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg>Написать в Direct*</a>
+        <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~%D0%9E%D1%80%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%B2%2C%2013&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+      </div>
+      <p class="fn rv d3">*Instagram — продукт компании Meta, признанной экстремистской организацией и запрещённой в РФ.</p>
+      <div class="stats rv d3">
+        <div class="stat"><strong>9&nbsp;742</strong><span>подписчика в Instagram*</span></div>
+        <div class="stat"><strong>10–22</strong><span>открыты каждый день</span></div>
+        <div class="stat"><strong>РФ</strong><span>отправка по всей России</span></div>
+      </div>
+    </div>
+    <div class="hvis">
+      <svg class="badge" viewBox="0 0 120 120" aria-hidden="true">
+        <defs><path id="cp" d="M60 60 m-43 0 a43 43 0 1 1 86 0 a43 43 0 1 1 -86 0"/></defs>
+        <circle cx="60" cy="60" r="57" fill="#1D3DDB" stroke="#0A1036" stroke-width="3"/>
+        <g class="spin"><text><textPath href="#cp" textLength="262" lengthAdjust="spacing">AUTUMN COLLECTION 2026 •</textPath></text></g>
+        <circle cx="60" cy="60" r="20" fill="#FFE81F" stroke="#0A1036" stroke-width="3"/>
+        <g stroke="#0A1036" stroke-width="2" stroke-linecap="round"><path d="M60 42v36M42 60h36M47 47l26 26M73 47L47 73"/></g>
+      </svg>
+      <div class="frame rv d1"><img id="heroImg" src="img/hero.jpg" alt="Магазин LE MON, образ в синем костюме" fetchpriority="high" decoding="async"></div>
+      <div class="sticker s1">Джоггеры<b>3&nbsp;600&nbsp;₽</b></div>
+      <div class="sticker s2">Утеплённый костюм · OS<b>7&nbsp;200&nbsp;₽</b></div>
+    </div>
+  </div>
+  <div class="stripe" aria-hidden="true"></div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Autumn Collection 2026</span><span>LE MON United People</span><span>Kids 80–130</span><span>Sale</span><span>Отправка по всей России</span><span>Оренбург</span>
+  <span>Autumn Collection 2026</span><span>LE MON United People</span><span>Kids 80–130</span><span>Sale</span><span>Отправка по всей России</span><span>Оренбург</span>
+</div></div>
+
+<!-- COLLECTIONS -->
+<section id="collections">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Коллекции</span><h2 class="rv d1">Что <em>в профиле</em></h2></div>
+      <p class="rv d2">Названия коллекций и разделы — как в профиле бренда</p>
+    </div>
+    <div class="cols">
+      <article class="cc c1 rv"><span class="num">01</span><h3>Autumn Collection 2026</h3><p>Актуальная коллекция сезона. Позиции и цены из постов бренда — в прайсе ниже.</p><a class="more" href="#prices">Смотреть цены</a></article>
+      <article class="cc c2 rv d1"><span class="num">02</span><h3>LE MON United People</h3><p>Утеплённый костюм «LE MON UNITED PEOPLE», единый размер (OS).</p><div class="tag">Цена в постах: <b>7&nbsp;200&nbsp;₽</b></div></article>
+      <article class="cc c3 rv d2"><span class="num">03</span><h3>Детская коллекция</h3><p>Размеры 80–130. Цены и наличие — в Direct*.</p><a class="more" href="#kids">Kids 80–130</a></article>
+    </div>
+    <div class="ptags rv"><span class="l">Разделы профиля:</span><span class="ptag">Актуальное по датам</span><span class="ptag">Для мужчин</span><span class="ptag">Sale</span><span class="ptag">Мужское</span></div>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section id="prices" class="prices">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Прайс</span><h2 class="rv d1">Коллекция <em>и цены</em></h2></div>
+      <p class="rv d2">Цены из публикаций бренда, октябрь 2026</p>
+    </div>
+    <div class="tabs ptabs rv" role="tablist" aria-label="Категории">
+      <button class="tab" role="tab" aria-selected="true" data-tab="top" data-img="blazer">Верх</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="bottom" data-img="grey">Низ</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="suit" data-img="blue-suit">Костюмы</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="kids" data-img="kids">Kids</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="sale" data-img="collage">Sale</button>
+    </div>
+    <div class="svc">
+      <div>
+        <div class="panel on" id="p-top" role="tabpanel">
+          <div class="row"><div class="n"><b>Лонгслив</b></div><div class="p">2&nbsp;200&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Флисовый анорак<span class="os" title="Единый размер">OS</span></b></div><div class="p">2&nbsp;800&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Пиджак<span class="os" title="Единый размер">OS</span></b><small>графит</small></div><div class="p">5&nbsp;200&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-bottom" role="tabpanel">
+          <div class="row"><div class="n"><b>Джоггеры</b></div><div class="p">3&nbsp;600&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Алладины<span class="os" title="Единый размер">OS</span></b><small>меланж</small></div><div class="p">2&nbsp;600&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-suit" role="tabpanel">
+          <div class="row"><div class="n"><b>Флисовый костюм</b></div><div class="p">5&nbsp;600&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Утеплённый костюм «LE MON UNITED PEOPLE»<span class="os" title="Единый размер">OS</span></b></div><div class="p">7&nbsp;200&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-kids" role="tabpanel">
+          <div class="row"><div class="n"><b>Детская коллекция</b><small>Размеры 80–130</small></div><div class="p txt">цены — в Direct*</div></div>
+        </div>
+        <div class="panel" id="p-sale" role="tabpanel">
+          <div class="row"><div class="n"><b>Уголок sale</b><small>Последние позиции</small></div><div class="p txt">цены — в Direct*</div></div>
+        </div>
+        <p class="note">OS — единый размер. Цены из публикаций бренда, актуальность — в Direct*.</p>
+      </div>
+      <div class="sidephoto" aria-hidden="true">
+        <img src="img/blazer.jpg" alt="" data-k="blazer" class="on" loading="lazy">
+        <img src="img/grey.jpg" alt="" data-k="grey" loading="lazy">
+        <img src="img/blue-suit.jpg" alt="" data-k="blue-suit" loading="lazy">
+        <div class="kidsbox" data-k="kids"><small>размеры</small>80–130</div>
+        <img src="img/collage.jpg" alt="" data-k="collage" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUILD -->
+<section id="build" class="build">
+  <div class="wrap">
+    <span class="eyebrow rv">Фишка</span>
+    <h2 class="rv d1">Собери <em>комплект</em></h2>
+    <p class="lead rv d2">Выбери верх и низ — сумма посчитается по ценам из постов бренда. Готовый список можно скопировать и отправить в Direct*.</p>
+    <div class="bgrid">
+      <div>
+        <div class="grp rv">
+          <h3><span class="stepn">1</span>Верх</h3>
+          <div class="opts" role="radiogroup" aria-label="Верх">
+            <label class="opt"><input type="radio" name="top" data-name="Лонгслив" data-price="2200" checked><span class="nm">Лонгслив</span><span class="pr">2&nbsp;200&nbsp;₽</span></label>
+            <label class="opt"><input type="radio" name="top" data-name="Флисовый анорак" data-price="2800"><span class="nm">Флисовый анорак</span><span class="pr">2&nbsp;800&nbsp;₽</span><span class="sub">единый размер (OS)</span></label>
+            <label class="opt"><input type="radio" name="top" data-name="Пиджак (графит)" data-price="5200"><span class="nm">Пиджак</span><span class="pr">5&nbsp;200&nbsp;₽</span><span class="sub">графит · единый размер (OS)</span></label>
+            <label class="opt none"><input type="radio" name="top" data-name="" data-price="0"><span class="nm">Без верха</span><span class="pr">—</span></label>
+          </div>
+        </div>
+        <div class="grp rv d1">
+          <h3><span class="stepn">2</span>Низ</h3>
+          <div class="opts" role="radiogroup" aria-label="Низ">
+            <label class="opt"><input type="radio" name="bottom" data-name="Джоггеры" data-price="3600" checked><span class="nm">Джоггеры</span><span class="pr">3&nbsp;600&nbsp;₽</span></label>
+            <label class="opt"><input type="radio" name="bottom" data-name="Алладины (меланж)" data-price="2600"><span class="nm">Алладины</span><span class="pr">2&nbsp;600&nbsp;₽</span><span class="sub">меланж · единый размер (OS)</span></label>
+            <label class="opt none"><input type="radio" name="bottom" data-name="" data-price="0"><span class="nm">Без низа</span><span class="pr">—</span></label>
+          </div>
+        </div>
+        <div class="sets rv d2">Готовые костюмы: <b>флисовый костюм — 5&nbsp;600&nbsp;₽</b>, <b>утеплённый костюм «LE MON UNITED PEOPLE» (OS) — 7&nbsp;200&nbsp;₽</b>. Детская коллекция — отдельно, <a href="#kids" style="color:var(--lemon)">Kids 80–130</a>.</div>
+      </div>
+      <div class="sumcard rv d1" aria-live="polite">
+        <span class="lbl">Твой комплект</span>
+        <div class="total" id="total">5&nbsp;800&nbsp;₽</div>
+        <ul id="lines"></ul>
+        <p class="small">Сумма по ценам из публикаций бренда. Актуальность и наличие — в Direct*.</p>
+        <button class="btn ghost" type="button" id="copyBtn">Скопировать список для Direct*</button>
+        <p class="ok" id="copyOk" role="status"></p>
+        <a class="btn" href="https://instagram.com/le.mon.rf" target="_blank" rel="noopener">Заказать в Direct*</a>
+        <p class="fn" style="margin:0">*Instagram — продукт компании Meta, признанной экстремистской организацией и запрещённой в РФ.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KIDS -->
+<section id="kids">
+  <div class="wrap kgrid">
+    <div>
+      <span class="eyebrow rv">Детская коллекция</span>
+      <h2 class="rv d1">Kids <em>80–130</em></h2>
+      <p class="lead rv d2">Детская коллекция LE MON — размеры от 80 до 130. Цены и наличие по моделям бренд называет в Direct*.</p>
+      <div class="ctas rv d3">
+        <a class="btn" href="https://instagram.com/le.mon.rf" target="_blank" rel="noopener">Спросить про Kids*</a>
+      </div>
+      <p class="fn rv d3">*Instagram — продукт компании Meta, признанной экстремистской организацией и запрещённой в РФ.</p>
+    </div>
+    <div class="ruler rv d1" aria-hidden="true">
+      <small>размеры</small>
+      <div class="big">80–130</div>
+      <div class="scale"></div>
+      <div class="scale-l"><span>80</span><span>130</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- LOOKS -->
+<section id="looks" class="looks">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Образы</span><h2 class="rv d1">LE MON <em>на людях</em></h2></div>
+      <p class="rv d2">Фото бренда из открытых источников</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр образов">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="suits">Пары и костюмы</button>
+      <button class="tab" aria-pressed="false" data-f="looks">Образы</button>
+    </div>
+    <div class="mas" id="grid">
+      <button class="gi rv" data-c="suits"><img src="img/duo.jpg" alt="Пара в костюмах LE MON" loading="lazy"><span>Пара в костюмах</span></button>
+      <button class="gi sq rv d1" data-c="looks"><img src="img/collage.jpg" alt="Подборка из шести образов LE MON" loading="lazy"><span>Подборка · 6 образов</span></button>
+      <button class="gi t3 rv" data-c="looks"><img src="img/hoodie.jpg" alt="Худи LE MON" loading="lazy"><span>Худи</span></button>
+      <button class="gi rv d1" data-c="suits"><img src="img/pair.jpg" alt="Пара в костюмах LE MON" loading="lazy"><span>Пара в костюмах</span></button>
+      <button class="gi t3 rv d2" data-c="looks"><img src="img/red-jacket.jpg" alt="Красная куртка LE MON" loading="lazy"><span>Красная куртка</span></button>
+      <button class="gi rv" data-c="suits"><img src="img/blue-suit.jpg" alt="Синий костюм LE MON" loading="lazy"><span>Синий костюм</span></button>
+      <button class="gi sq rv d1" data-c="looks"><img src="img/jacket.jpg" alt="Куртка LE MON" loading="lazy"><span>Куртка</span></button>
+      <button class="gi rv d2" data-c="looks"><img src="img/blazer.jpg" alt="Пиджак LE MON" loading="lazy"><span>Пиджак</span></button>
+      <button class="gi t3 rv" data-c="looks"><img src="img/grey.jpg" alt="Образ LE MON в сером" loading="lazy"><span>Образ в сером</span></button>
+      <button class="gi rv d1" data-c="looks"><img src="img/jeans.jpg" alt="Образ LE MON с джинсами" loading="lazy"><span>Образ с джинсами</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""></dialog>
+
+<!-- STORE -->
+<section id="store">
+  <div class="wrap sgrid">
+    <figure class="sfig rv"><img src="img/store.jpg" alt="Вывеска LE MON на магазине" loading="lazy"><figcaption>Магазин LE MON · Оренбург</figcaption></figure>
+    <div>
+      <span class="eyebrow rv">Магазин</span>
+      <h2 class="rv d1" style="margin:16px 0 22px">Заходи <em>или заказывай</em></h2>
+      <div class="frows">
+        <div class="frow rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><small>Адрес</small><p>Оренбург, ул. Автомобилистов, 13</p></div></div>
+        <div class="frow rv d1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><small>Часы работы</small><p>Каждый день, 10:00–22:00</p></div></div>
+        <div class="frow rv d2"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7l9-4 9 4-9 4zM3 7v10l9 4 9-4V7M12 11v10"/></svg></span><div><small>Отправка</small><p>По всей России</p></div></div>
+        <div class="frow rv d3"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg></span><div><small>Основной канал</small><p>Instagram* le.mon.rf · 9&nbsp;742 подписчика</p></div></div>
+      </div>
+      <div class="ctas rv">
+        <a class="btn" href="https://instagram.com/le.mon.rf" target="_blank" rel="noopener">Написать в Direct*</a>
+        <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~%D0%9E%D1%80%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%B2%2C%2013&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" class="contacts">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1">Как <em>добраться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Оренбург, ул. Автомобилистов, 13</p></div>
+        <div class="ci"><small>Часы работы</small><p>Каждый день, 10:00–22:00 (время Оренбурга)</p></div>
+        <div class="ci"><small>Связаться</small><a class="big" href="https://instagram.com/le.mon.rf" target="_blank" rel="noopener">@le.mon.rf*</a><p style="font-size:14px;font-weight:500;color:var(--muted);margin-top:6px">Других контактов в профиле нет — пишите в Direct.</p></div>
+        <div class="ctas"><a class="btn" href="https://instagram.com/le.mon.rf" target="_blank" rel="noopener">Написать в Direct*</a><a class="btn ghost" href="https://yandex.ru/maps/?rtext=~%D0%9E%D1%80%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%B2%2C%2013&rtt=auto" target="_blank" rel="noopener">Маршрут</a></div>
+        <p class="fn" style="margin:0">*Instagram — продукт компании Meta, признанной экстремистской организацией и запрещённой в РФ.</p>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?text=%D0%9E%D1%80%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%B2%2C%2013&z=16" title="LE MON на карте: Оренбург, ул. Автомобилистов, 13" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow rv">Заказ</span>
+    <h2 class="rv d1">Выбрал? <em>Пиши в Direct*</em></h2>
+    <p class="lead rv d2">Напиши, что хочешь заказать: вещи, размер, город. Магазин в Оренбурге, отправка по всей России.</p>
+    <div class="ctas rv d3">
+      <a class="btn" href="https://instagram.com/le.mon.rf" target="_blank" rel="noopener">Заказать в Direct*</a>
+      <a class="btn ghost" href="#build">Собрать комплект</a>
+    </div>
+    <p class="fn rv d3">*Instagram — продукт компании Meta, признанной экстремистской организацией и запрещённой в РФ.</p>
+  </div>
+  <div class="stripe" aria-hidden="true" style="border-bottom:0"></div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><b>LE MON</b> — бренд одежды, собственное производство, Оренбург</span>
+    <span>Демо-концепт. Данные — из открытых источников (профиль бренда в Instagram*: посты, разделы, коллекции) на 26.10.2026. Цены из публикаций бренда, октябрь 2026; актуальность — в Direct*.</span>
+    <p class="fn">*Instagram — продукт компании Meta, признанной экстремистской организацией и запрещённой в РФ.</p>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="https://yandex.ru/maps/?rtext=~%D0%9E%D1%80%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D0%B8%D1%81%D1%82%D0%BE%D0%B2%2C%2013&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+  <a href="#build"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M8 3L3 6l2 4 2-1v12h10V9l2 1 2-4-5-3a4 4 0 0 1-8 0z"/></svg>Комплект</a>
+  <a class="main" href="https://instagram.com/le.mon.rf" target="_blank" rel="noopener">Заказать*</a>
+</nav>
+
+<script>
+(() => {
+  // Статус «открыто/закрыто»: магазин в Оренбурге, ежедневно 10:00–22:00 по местному времени (UTC+5)
+  const st = document.getElementById('status');
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Yekaterinburg' }));
+  const m = now.getHours() * 60 + now.getMinutes();
+  const open = m >= 10 * 60 && m < 22 * 60;
+  st.classList.toggle('closed', !open);
+  st.querySelector('span').textContent = open ? 'Открыто сейчас · до 22:00' : 'Сейчас закрыто · откроемся в 10:00';
+
+  // Шапка и мобильная панель
+  const mbar = document.getElementById('mbar');
+  const onScroll = () => mbar.classList.toggle('show', scrollY > 420);
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const rvs = document.querySelectorAll('.rv');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+    rvs.forEach(el => io.observe(el));
+  } else rvs.forEach(el => el.classList.add('in'));
+
+  // Вкладки прайса + смена фото
+  const tabs = document.querySelectorAll('.ptabs [role=tab]');
+  const pics = document.querySelectorAll('.sidephoto > *');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === 'p-' + t.dataset.tab));
+    pics.forEach(p => p.classList.toggle('on', p.dataset.k === t.dataset.img));
+  }));
+
+  // «Собери комплект»: цены из постов бренда
+  const fmt = n => n.toLocaleString('ru-RU').replace(/\s/g, ' ') + ' ₽';
+  const total = document.getElementById('total'), lines = document.getElementById('lines');
+  const copyBtn = document.getElementById('copyBtn'), copyOk = document.getElementById('copyOk');
+  const labels = document.querySelectorAll('.opt');
+  let msg = '';
+  const calc = () => {
+    let s = 0, html = '', names = [];
+    labels.forEach(l => l.classList.toggle('on', l.querySelector('input').checked));
+    document.querySelectorAll('.opt input:checked').forEach(i => {
+      const p = +i.dataset.price; if (!p) return;
+      s += p; names.push(i.dataset.name.toLowerCase());
+      html += `<li><span>${i.dataset.name}</span><b>${fmt(p)}</b></li>`;
+    });
+    total.textContent = fmt(s);
+    lines.innerHTML = html || '<li><span>Выбери верх или низ</span><b></b></li>';
+    msg = names.length
+      ? `Здравствуйте! Хочу заказать: ${names.join(' + ')}. Сумма по ценам из постов: ${s.toLocaleString('ru-RU').replace(/\s/g, ' ')} ₽. Подскажите наличие и размеры.`
+      : 'Здравствуйте! Хочу заказать одежду LE MON. Подскажите наличие и размеры.';
+    copyOk.textContent = '';
+  };
+  document.querySelectorAll('.opt input').forEach(i => i.addEventListener('change', calc));
+  copyBtn.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(msg); }
+    catch (e) {
+      const ta = document.createElement('textarea'); ta.value = msg; document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); } catch (_) {}
+      ta.remove();
+    }
+    copyOk.textContent = 'Скопировано — вставь текст в Direct';
+    setTimeout(() => { copyOk.textContent = ''; }, 3500);
+  });
+  calc();
+
+  // Фильтр образов и лайтбокс
+  const items = document.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt;
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>

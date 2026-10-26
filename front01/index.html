@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>ФРОНТ /01 — одежда с авторской вышивкой</title>
+<meta name="description" content="Бренд одежды с авторской вышивкой: худи и футболки из хлопка, лимитированные дропы, доставка по всей России. Каталог и заказ в Telegram.">
+<meta name="theme-color" content="#171918">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"></noscript>
+<style>
+:root{
+  --g:#171918; --g2:#222523; --g3:#2E3230; --olive:#6C7144; --olive-d:#4F5430; --olive-l:#9AA066;
+  --sand:#D9CDAB; --sand-l:#E9E1C8; --bone:#F2EEE0; --ink:#171918; --muted:#65685E; --line:rgba(23,25,24,.18); --line-l:rgba(217,205,171,.22);
+  --r:4px;
+  --display:"Oswald","Arial Narrow",Impact,sans-serif; --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bone);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{width:min(100% - 32px,var(--wrap));margin-inline:auto}
+.eyebrow{font:500 13px/1 var(--display);letter-spacing:.24em;text-transform:uppercase;color:var(--olive-d)}
+.dk .eyebrow,.hero .eyebrow{color:var(--sand)}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.04;margin:0;text-transform:uppercase;letter-spacing:.015em;overflow-wrap:break-word}
+h2{font-size:clamp(34px,6vw,64px)}
+h2 em,h1 em{font-style:normal;color:var(--olive)}
+.dk h2 em{color:var(--olive-l)}
+.lead{font-size:clamp(16px,1.6vw,18px);max-width:54ch}
+section{padding:clamp(64px,9vw,120px) 0}
+.dk{background:var(--g);color:var(--sand-l)}
+
+/* demo */
+.demo{background:var(--olive-d);color:#F2EEE0;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{font:600 11px/1 var(--display);letter-spacing:.14em;text-transform:uppercase;border:1px solid rgba(255,255,255,.45);border-radius:2px;padding:4px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(23,25,24,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--sand-l);border-bottom:1px solid var(--line-l)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.logo{font:700 24px/1 var(--display);letter-spacing:.1em;text-decoration:none;text-transform:uppercase;white-space:nowrap}
+.logo span{color:var(--olive-l);margin-left:.18em}
+.nav{display:none;gap:26px}
+.nav a{font:500 14px/1 var(--display);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--sand);position:relative;padding:6px 0}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:repeating-linear-gradient(90deg,var(--olive-l) 0 5px,transparent 5px 9px);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:var(--r);border:1.5px solid var(--g);background:var(--g);color:var(--sand);font:500 15px/1 var(--display);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:transform .25s,background .25s,color .25s,border-color .25s;text-align:center}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.sand{background:var(--sand);border-color:var(--sand);color:var(--g)}
+.btn.sand:hover{background:var(--sand-l);border-color:var(--sand-l)}
+.btn.olive{background:var(--olive);border-color:var(--olive);color:var(--bone)}
+.btn.olive:hover{background:var(--olive-d);border-color:var(--olive-d)}
+.btn.ghost{background:transparent;color:inherit;border-color:currentColor}
+.btn.ghost:hover{background:var(--sand);color:var(--g);border-color:var(--sand)}
+.btn.sm{min-height:42px;padding:0 18px;font-size:13.5px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border-radius:var(--r);border:1px solid var(--line-l);background:transparent;display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:var(--sand);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:20px;height:2px;background:var(--sand);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--g);padding:110px 24px 40px;display:flex;flex-direction:column;gap:4px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:600 34px/1.2 var(--display);text-transform:uppercase;letter-spacing:.04em;text-decoration:none;color:var(--sand-l);padding:8px 0;border-bottom:2px dashed var(--line-l)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:1020px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero (канва для вышивки) */
+.hero{background-color:var(--g);background-image:linear-gradient(rgba(217,205,171,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(217,205,171,.06) 1px,transparent 1px);background-size:22px 22px;color:var(--sand-l);padding:clamp(36px,6vw,80px) 0 clamp(56px,8vw,100px);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:48px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:64px}}
+.hero h1{font-size:clamp(60px,13vw,168px);line-height:.92;letter-spacing:.03em;margin:22px 0 4px;color:var(--bone)}
+.hero h1 span{color:var(--olive-l);margin-left:.08em}
+.thread{height:3px;width:140px;background:repeating-linear-gradient(90deg,var(--sand) 0 12px,transparent 12px 20px);margin:22px 0 24px;animation:grow 1.4s .3s cubic-bezier(.65,0,.35,1) both}
+@keyframes grow{from{width:0}}
+.hero .lead{margin:0 0 24px;color:var(--sand-l)}
+.place{display:flex;gap:10px;align-items:flex-start;color:var(--sand);font-size:14.5px;margin-bottom:28px}
+.place svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--olive-l)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 180px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:36px;padding-top:24px;border-top:2px dashed var(--line-l)}
+.stat b{display:block;font:600 clamp(24px,4.4vw,38px)/1 var(--display);color:var(--bone);letter-spacing:.02em}
+.stat span{display:block;font-size:12.5px;line-height:1.35;color:var(--sand);margin-top:6px}
+.patch{position:relative;max-width:540px;margin-inline:auto;width:100%;padding:14px}
+.patch::before{content:"";position:absolute;inset:0;border:2px dashed var(--sand);border-radius:6px;animation:stitch 1.8s .3s cubic-bezier(.65,0,.35,1) both}
+@keyframes stitch{from{clip-path:inset(0 100% 100% 0)}to{clip-path:inset(0)}}
+.patch .ph{aspect-ratio:5/4;overflow:hidden;background:var(--g3);border-radius:2px}
+@media (min-width:960px){.patch .ph{aspect-ratio:1/1}}
+.patch img{width:100%;height:100%;object-fit:cover}
+.tagc{position:absolute;z-index:3;background:var(--sand);color:var(--g);padding:10px 14px 10px 16px;border-radius:2px;box-shadow:0 14px 30px -12px rgba(0,0,0,.6);font-size:12.5px;line-height:1.3;outline:1.5px dashed rgba(23,25,24,.55);outline-offset:-5px;animation:float 6s ease-in-out infinite}
+.tagc b{display:block;font:600 24px/1.1 var(--display);letter-spacing:.03em;margin-top:2px}
+.tagc.c1{right:0;top:9%}
+.tagc.c2{left:0;bottom:7%;animation-delay:-3s}
+@keyframes float{50%{transform:translateY(-8px)}}
+
+/* marquee */
+.marquee{background:var(--sand);color:var(--g);overflow:hidden;padding:16px 0;border-block:2px solid var(--g)}
+.track{display:flex;width:max-content;animation:run 40s linear infinite}
+.track span{font:500 clamp(20px,2.8vw,28px)/1 var(--display);letter-spacing:.14em;text-transform:uppercase;padding:0 24px;white-space:nowrap;display:flex;align-items:center;gap:48px}
+.track span::after{content:"✕";font-size:14px;color:var(--olive-d)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* head */
+.head{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-bottom:40px;padding-bottom:24px;border-bottom:2px dashed var(--line)}
+.dk .head{border-color:var(--line-l)}
+@media (min-width:960px){.head{grid-template-columns:minmax(0,1fr) auto;align-items:end}}
+.head p{margin:0;color:var(--muted);font-size:14px;max-width:46ch}
+.dk .head p{color:var(--sand)}
+
+/* lineup */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.tab{border:1.5px solid var(--g);background:transparent;border-radius:var(--r);padding:11px 20px;font:500 14.5px/1 var(--display);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:all .25s}
+.tab[aria-selected="true"],.tab[aria-pressed="true"]{background:var(--g);color:var(--sand)}
+.svc{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
+@media (min-width:960px){.svc{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:56px;align-items:start}}
+.panel{display:none}
+.panel.on{display:block;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.row{display:flex;align-items:baseline;gap:14px;padding:20px 0;border-bottom:2px dashed var(--line)}
+.row:first-child{border-top:2px dashed var(--line)}
+.row .n{flex:1 1 auto;min-width:0}
+.row .n b{display:block;font:600 20px/1.2 var(--display);letter-spacing:.04em;text-transform:uppercase}
+.row .n small{display:block;color:var(--muted);font-size:13.5px;margin-top:4px}
+.row .p{font:600 28px/1 var(--display);white-space:nowrap;letter-spacing:.02em}
+.row .p.ask{font:500 13px/1.3 var(--sans);white-space:normal;text-align:right;max-width:120px;color:var(--olive-d)}
+.sws{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;font-size:13.5px;color:var(--muted)}
+.sws span{display:inline-flex;align-items:center;gap:8px}
+.sws i{width:18px;height:18px;border-radius:50%;border:1px solid rgba(23,25,24,.35);flex:none}
+.note{margin-top:22px;font-size:13px;color:var(--muted)}
+.svc-photo{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--sand);display:none;outline:2px dashed var(--olive);outline-offset:8px}
+@media (min-width:960px){.svc-photo{display:block;position:sticky;top:96px}}
+.svc-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.05);transition:opacity .7s,transform 1.2s}
+.svc-photo img.on{opacity:1;transform:none}
+
+/* picker */
+.picker{display:grid;grid-template-columns:minmax(0,1fr);gap:36px}
+@media (min-width:960px){.picker{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:start}}
+.step-t{display:flex;align-items:baseline;gap:12px;margin:30px 0 14px;font:500 14px/1.2 var(--display);letter-spacing:.2em;text-transform:uppercase;color:var(--sand)}
+.step-t:first-of-type{margin-top:26px}
+.step-t i{font-style:normal;color:var(--olive-l)}
+.step-t b{font-weight:500;color:var(--bone);letter-spacing:.1em}
+.prints{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.pc{position:relative;display:block;padding:16px;border:2px dashed var(--line-l);border-radius:var(--r);cursor:pointer;transition:border-color .25s,background .25s;min-width:0}
+.pc input{position:absolute;opacity:0;pointer-events:none}
+.pc .no{display:block;font:500 13px/1 var(--display);letter-spacing:.2em;color:var(--olive-l)}
+.pc b{display:block;font:600 clamp(20px,5.2vw,28px)/1.1 var(--display);letter-spacing:.04em;text-transform:uppercase;margin:12px 0 6px;color:var(--bone);overflow-wrap:anywhere}
+.pc small{display:block;font-size:12.5px;line-height:1.4;color:var(--sand)}
+.pc:has(input:checked){border-style:solid;border-color:var(--sand);background:rgba(217,205,171,.1)}
+.pc:has(input:focus-visible),.sz:has(input:focus-visible),.sw:has(input:focus-visible){outline:2px solid var(--sand);outline-offset:3px}
+.cols{display:flex;flex-wrap:wrap;gap:14px}
+.sw{position:relative;cursor:pointer}
+.sw input{position:absolute;opacity:0;pointer-events:none}
+.sw i{display:block;width:46px;height:46px;border-radius:50%;border:2px solid rgba(217,205,171,.35);transition:transform .2s,border-color .2s,box-shadow .2s}
+.sw:hover i{transform:scale(1.06)}
+.sw:has(input:checked) i{border-color:var(--sand);box-shadow:0 0 0 3px var(--g),0 0 0 5px var(--sand)}
+fieldset:disabled .sw{cursor:not-allowed}
+fieldset:disabled .cols{opacity:.3}
+.colnote{font-size:13px;color:var(--sand);margin:10px 0 0;min-height:1.4em}
+.sizes{display:flex;flex-wrap:wrap;gap:8px}
+.sz{position:relative;cursor:pointer}
+.sz input{position:absolute;opacity:0;pointer-events:none}
+.sz span{display:grid;place-items:center;min-width:58px;min-height:46px;padding:0 12px;border:1.5px solid var(--line-l);border-radius:var(--r);font:500 16px/1 var(--display);letter-spacing:.08em;transition:all .2s}
+.sz:has(input:checked) span{background:var(--sand);color:var(--g);border-color:var(--sand)}
+.szn{font-size:13px;color:var(--sand);margin:12px 0 0}
+.out{background:var(--g2);border:1px solid var(--line-l);border-radius:var(--r);padding:clamp(16px,3vw,26px)}
+.stage{position:relative;background-color:var(--sand);background-image:linear-gradient(rgba(23,25,24,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(23,25,24,.07) 1px,transparent 1px);background-size:18px 18px;border-radius:2px;display:grid;place-items:center;padding:18px;--garm:#1B1C1B;--thread:#D9CDAB}
+.stage svg{width:min(100%,300px);height:auto;display:block}
+.g-tee path.b{fill:var(--garm);stroke:rgba(23,25,24,.45);stroke-width:1.5;transition:fill .35s}
+.g-tee .th,.g-hd .th{fill:none;stroke:var(--thread);stroke-width:2.2;stroke-dasharray:5 4;stroke-linecap:round;transition:stroke .35s}
+.g-hd path.b{fill:rgba(23,25,24,.06);stroke:var(--g);stroke-width:2}
+.g-hd .th{stroke:var(--olive)}
+.g-hd,.stage.is-hood .g-tee{display:none}
+.stage.is-hood .g-hd{display:block}
+.stage small{position:absolute;left:12px;bottom:8px;font-size:11.5px;color:var(--g);opacity:.75;right:12px}
+.sum{margin:20px 0 0;display:grid;gap:0}
+.sum div{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:1px dashed var(--line-l);font-size:14.5px}
+.sum dt{color:var(--sand)}
+.sum dd{margin:0;font-weight:600;text-align:right;color:var(--bone);min-width:0;overflow-wrap:anywhere}
+.msg{margin:18px 0 0;padding:14px 16px;background:rgba(0,0,0,.28);border-left:3px solid var(--olive-l);font-size:14px;line-height:1.55;color:var(--sand-l);white-space:pre-wrap;overflow-wrap:anywhere}
+.outb{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.outb .btn{flex:1 1 200px}
+
+/* fabric */
+.fab{background:var(--sand);color:var(--g)}
+.dens{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:760px){.dens{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}}
+.dcard{background:var(--bone);border:2px solid var(--g);border-radius:var(--r);padding:clamp(20px,3vw,32px)}
+.dcard .big{font:700 clamp(64px,12vw,112px)/.9 var(--display);letter-spacing:.01em}
+.dcard .big small{font-size:.36em;letter-spacing:.06em;margin-left:6px}
+.dcard h3{font-size:22px;margin:14px 0 8px;letter-spacing:.06em}
+.dcard p{margin:0 0 18px;color:var(--ink);font-size:15px}
+.weave{--gap:14px;height:84px;border-radius:2px;background-color:var(--sand-l);background-image:repeating-linear-gradient(90deg,var(--g) 0 2px,transparent 2px var(--gap)),repeating-linear-gradient(0deg,var(--g) 0 2px,transparent 2px var(--gap));opacity:.8}
+.weave.d{--gap:9px}
+.cap{font-size:12px;color:var(--muted);margin:8px 0 16px}
+.bar{height:10px;background:rgba(23,25,24,.12);border-radius:1px}
+.bar i{display:block;height:100%;width:0;background:var(--olive);transition:width 1.3s cubic-bezier(.2,.7,.2,1) .2s}
+.in .bar i{width:var(--w)}
+.dcard .which{margin-top:16px;font-size:14px;color:var(--muted)}
+.explain{margin-top:26px;font-size:15.5px;max-width:64ch}
+
+/* gallery */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;grid-auto-flow:dense}
+@media (min-width:760px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}}
+.gi{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:1;background:var(--sand);cursor:zoom-in;border:0;padding:0}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.07)}
+.gi span{position:absolute;left:8px;bottom:8px;max-width:calc(100% - 16px);background:var(--g);color:var(--sand);font:500 12px/1.2 var(--display);letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;border-radius:2px}
+.gi.wide{grid-column:span 2;aspect-ratio:2/1}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,1000px);max-height:90vh}
+.lb::backdrop{background:rgba(15,16,15,.88)}
+.lb img{max-height:84vh;width:auto;margin:auto;border-radius:var(--r)}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:var(--sand);color:var(--g);font-size:24px;cursor:pointer}
+
+/* about */
+.ab{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:860px){.ab{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.ab-card{position:relative;background:var(--g2);border:2px dashed var(--line-l);border-radius:var(--r);padding:30px 28px;overflow:hidden}
+.ab-card .num{position:absolute;right:18px;top:8px;font:700 72px/1 var(--display);color:rgba(217,205,171,.14)}
+.ab-card h3{font-size:28px;margin:44px 0 12px;position:relative;color:var(--bone);letter-spacing:.04em}
+.ab-card p{margin:0;position:relative;color:var(--sand-l);font-size:15.5px}
+.tline{margin:0 0 34px;font:500 clamp(20px,3vw,30px)/1.2 var(--display);letter-spacing:.1em;text-transform:uppercase;color:var(--sand)}
+
+/* order */
+.ord{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
+@media (min-width:960px){.ord{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px;align-items:start}}
+.steps{display:grid;gap:12px;counter-reset:s}
+.step{display:grid;grid-template-columns:56px minmax(0,1fr);gap:14px;padding:20px;border:2px dashed var(--line);border-radius:var(--r);background:var(--bone)}
+.step::before{counter-increment:s;content:"0" counter(s);font:700 36px/1 var(--display);color:var(--olive)}
+.step b{display:block;font:600 19px/1.2 var(--display);letter-spacing:.05em;text-transform:uppercase;margin-bottom:4px}
+.step p{margin:0;color:var(--muted);font-size:14.5px}
+.cbox{background:var(--g);color:var(--sand-l);border-radius:var(--r);padding:clamp(24px,4vw,40px);outline:2px dashed var(--olive);outline-offset:8px;margin:8px}
+.cbox small{display:block;font:500 12px/1 var(--display);letter-spacing:.22em;text-transform:uppercase;color:var(--sand);margin-bottom:10px}
+.cbox .big{display:block;font:600 clamp(30px,6vw,44px)/1.1 var(--display);letter-spacing:.04em;color:var(--bone);text-decoration:none;overflow-wrap:anywhere}
+.cbox p{margin:14px 0 22px;color:var(--sand-l);font-size:15px}
+.cbox ul{list-style:none;margin:0 0 24px;padding:0;display:grid;gap:8px;font-size:14.5px}
+.cbox li{padding-left:22px;position:relative}
+.cbox li::before{content:"✕";position:absolute;left:0;top:2px;font-size:11px;color:var(--olive-l)}
+
+/* final */
+.final{text-align:center;background-color:var(--g);background-image:linear-gradient(rgba(217,205,171,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(217,205,171,.06) 1px,transparent 1px);background-size:22px 22px;color:var(--sand-l)}
+.final h2{font-size:clamp(40px,8vw,96px);max-width:14ch;margin:18px auto;color:var(--bone)}
+.final .ctas{justify-content:center;margin-top:30px}
+footer{background:var(--g);color:var(--sand);padding:30px 0 120px;font-size:13px;border-top:2px dashed var(--line-l)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer span{max-width:60ch}
+@media (min-width:960px){footer{padding-bottom:36px}}
+
+/* mobile bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.5fr);gap:8px;padding:8px;background:rgba(23,25,24,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--line-l);border-radius:8px;box-shadow:0 18px 40px -12px rgba(0,0,0,.55);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:4px;color:var(--sand-l);text-decoration:none;font:500 12px/1.1 var(--display);letter-spacing:.1em;text-transform:uppercase;text-align:center}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--sand);color:var(--g);flex-direction:row;font-size:13px;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+  .bar i{width:var(--w)}
+}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта для бренда ФРОНТ /01. Данные из открытых источников (публикации бренда, Telegram) на 26.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="ФРОНТ /01 — наверх">Фронт<span>/01</span></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#lineup">Линейка</a>
+      <a href="#pick">Выбрать вышивку</a>
+      <a href="#fabric">Ткань</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#order">Заказ</a>
+    </nav>
+    <a class="btn sm sand" data-tg href="https://t.me/front01xx" target="_blank" rel="noopener">Заказать в Telegram</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#lineup">Линейка и цены</a>
+  <a href="#pick">Выбрать вышивку</a>
+  <a href="#fabric">Плотность ткани</a>
+  <a href="#gallery">Галерея</a>
+  <a href="#about">О бренде</a>
+  <a href="#order">Как заказать</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow rv">Бренд одежды · авторская вышивка</span>
+      <h1 class="rv d1">Фронт<span>/01</span></h1>
+      <div class="thread" aria-hidden="true"></div>
+      <p class="lead rv d2">Одежда для своей территории. Вышивка со смыслом, лимитированные дропы, худи и футболки из хлопка.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg>
+        <span>Доставка по всей России · каталог и заказ в Telegram</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn sand" data-tg href="https://t.me/front01xx" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 3 3 10.5l6 2.5 2 6.5 3-4 5 3.5z"/></svg>Заказать в Telegram</a>
+        <a class="btn ghost" href="#pick">Выбрать вышивку</a>
+      </div>
+      <div class="stats rv d3">
+        <div class="stat"><b>100&nbsp;%</b><span>хлопок</span></div>
+        <div class="stat"><b>300 и 420 г</b><span>плотность ткани</span></div>
+        <div class="stat"><b>S–2XL</b><span>размеры худи</span></div>
+      </div>
+    </div>
+    <div class="patch rv d2">
+      <div class="ph"><img src="img/hoodie-back.jpg" alt="Худи с авторской вышивкой на спине" width="720" height="960" fetchpriority="high"></div>
+      <div class="tagc c1">Худи · 420&nbsp;г<b>4&nbsp;390&nbsp;₽</b></div>
+      <div class="tagc c2">Худи «Вера»<b>4&nbsp;990&nbsp;₽</b></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Вечность</span><span>Связь</span><span>Шторм</span><span>Вера</span><span>Авторская вышивка</span><span>Лимитированные дропы</span><span>Хлопок 100&nbsp;%</span>
+  <span>Вечность</span><span>Связь</span><span>Шторм</span><span>Вера</span><span>Авторская вышивка</span><span>Лимитированные дропы</span><span>Хлопок 100&nbsp;%</span>
+</div></div>
+
+<!-- LINEUP -->
+<section id="lineup">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">/ 01 · Каталог</span><h2 class="rv d1" style="margin-top:14px">Линейка <em>и цены</em></h2></div>
+      <p class="rv d2">Данные из публикаций бренда. Актуальные цены и наличие — в Telegram.</p>
+    </div>
+    <div class="tabs rv" id="tabs" role="tablist" aria-label="Категории">
+      <button class="tab" role="tab" aria-selected="true" data-tab="hd" data-img="hoodie">Худи</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="te" data-img="tee">Футболки</button>
+    </div>
+    <div class="svc">
+      <div>
+        <div class="panel on" id="p-hd" role="tabpanel">
+          <div class="row"><div class="n"><b>Худи</b><small>Хлопок 100&nbsp;%, 420&nbsp;г/м², размеры S–2XL</small></div><div class="p">4&nbsp;390&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Худи «Вера»</b><small>Хлопок 100&nbsp;%, 420&nbsp;г</small></div><div class="p">4&nbsp;990&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-te" role="tabpanel">
+          <div class="row"><div class="n"><b>Футболка «Вечность»</b><small>Хлопок 100&nbsp;%, 300&nbsp;г</small></div><div class="p ask">цена — в Telegram</div></div>
+          <div class="row"><div class="n"><b>Футболка «Связь»</b><small>Хлопок 100&nbsp;%, 300&nbsp;г</small></div><div class="p ask">цена — в Telegram</div></div>
+          <div class="row"><div class="n"><b>Футболка «Шторм»</b><small>Хлопок 100&nbsp;%, 300/250&nbsp;г</small></div><div class="p ask">цена — в Telegram</div></div>
+          <div class="sws" aria-label="Цвета футболок">
+            <span><i style="background:#1B1C1B"></i>чёрный</span>
+            <span><i style="background:#F2F0EA"></i>белый</span>
+            <span><i style="background:#4A4D4E"></i>тёмно-серый</span>
+            <span><i style="background:#B9BCBD"></i>светло-серый</span>
+          </div>
+        </div>
+        <p class="note">Выпуски лимитированные — наличие уточняйте в Telegram.</p>
+      </div>
+      <div class="svc-photo" aria-hidden="true">
+        <img src="img/hoodie-back-2.jpg" alt="" data-k="hoodie" class="on" loading="lazy">
+        <img src="img/tee.jpg" alt="" data-k="tee" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PICKER -->
+<section id="pick" class="dk">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">/ 02 · Конструктор заказа</span><h2 class="rv d1" style="margin-top:14px">Выбери <em>вышивку</em></h2></div>
+      <p class="rv d2">Выберите принт, цвет и размер — соберём готовое сообщение для заказа в Telegram.</p>
+    </div>
+    <div class="picker">
+      <div class="rv">
+        <div class="step-t" style="margin-top:0"><i>01</i><b>Вышивка</b></div>
+        <fieldset class="prints" aria-label="Вышивка">
+          <label class="pc"><input type="radio" name="pr" value="vech" checked><span class="no">№ 01</span><b>Вечность</b><small>Футболка · хлопок 100&nbsp;%, 300&nbsp;г</small></label>
+          <label class="pc"><input type="radio" name="pr" value="svaz"><span class="no">№ 02</span><b>Связь</b><small>Футболка · хлопок 100&nbsp;%, 300&nbsp;г</small></label>
+          <label class="pc"><input type="radio" name="pr" value="shtorm"><span class="no">№ 03</span><b>Шторм</b><small>Футболка · хлопок 100&nbsp;%, 300/250&nbsp;г</small></label>
+          <label class="pc"><input type="radio" name="pr" value="vera"><span class="no">№ 04</span><b>Вера</b><small>Худи · хлопок 100&nbsp;%, 420&nbsp;г · 4&nbsp;990&nbsp;₽</small></label>
+        </fieldset>
+
+        <div class="step-t"><i>02</i><b>Цвет футболки: <span id="colName">чёрный</span></b></div>
+        <fieldset id="colSet" aria-label="Цвет футболки">
+          <div class="cols">
+            <label class="sw"><input type="radio" name="col" value="black" data-n="чёрный" data-f="#1B1C1B" data-t="#D9CDAB" checked><i style="background:#1B1C1B"></i><span class="vh">Чёрный</span></label>
+            <label class="sw"><input type="radio" name="col" value="white" data-n="белый" data-f="#F2F0EA" data-t="#4F5430"><i style="background:#F2F0EA"></i><span class="vh">Белый</span></label>
+            <label class="sw"><input type="radio" name="col" value="dgrey" data-n="тёмно-серый" data-f="#4A4D4E" data-t="#D9CDAB"><i style="background:#4A4D4E"></i><span class="vh">Тёмно-серый</span></label>
+            <label class="sw"><input type="radio" name="col" value="lgrey" data-n="светло-серый" data-f="#B9BCBD" data-t="#171918"><i style="background:#B9BCBD"></i><span class="vh">Светло-серый</span></label>
+          </div>
+        </fieldset>
+        <p class="colnote" id="colNote"></p>
+
+        <div class="step-t"><i>03</i><b>Размер</b></div>
+        <fieldset class="sizes" aria-label="Размер">
+          <label class="sz"><input type="radio" name="sz" value="S"><span>S</span></label>
+          <label class="sz"><input type="radio" name="sz" value="M" checked><span>M</span></label>
+          <label class="sz"><input type="radio" name="sz" value="L"><span>L</span></label>
+          <label class="sz"><input type="radio" name="sz" value="XL"><span>XL</span></label>
+          <label class="sz"><input type="radio" name="sz" value="2XL"><span>2XL</span></label>
+        </fieldset>
+        <p class="szn">Размерный ряд S–2XL указан в каталоге для худи. Размеры футболок и наличие уточняйте в Telegram.</p>
+      </div>
+
+      <div class="out rv d1" aria-live="polite">
+        <div class="stage" id="stage">
+          <svg viewBox="0 0 200 200" role="img" aria-label="Условная схема изделия">
+            <g class="g-tee">
+              <path class="b" d="M72 22 L38 36 L6 74 L34 98 L50 84 L50 184 L150 184 L150 84 L166 98 L194 74 L162 36 L128 22 C122 40 78 40 72 22 Z"/>
+              <rect class="th" x="78" y="76" width="44" height="44" rx="4"/>
+              <path class="th" d="M58 174 H142"/>
+            </g>
+            <g class="g-hd">
+              <path class="b" d="M76 28 L44 42 L10 150 L40 160 L52 104 L52 186 L148 186 L148 104 L160 160 L190 150 L156 42 L124 28 C124 6 76 6 76 28 Z"/>
+              <path class="th" d="M76 28 C84 56 116 56 124 28"/>
+              <path class="th" d="M70 142 H130 L138 172 H62 Z"/>
+              <rect class="th" x="82" y="72" width="36" height="36" rx="4"/>
+            </g>
+          </svg>
+          <small>Условная схема: изделие, цвет и место вышивки (пунктир).</small>
+        </div>
+        <dl class="sum">
+          <div><dt>Изделие</dt><dd id="sItem">Футболка «Вечность»</dd></div>
+          <div><dt>Ткань</dt><dd id="sFab">Хлопок 100&nbsp;%, 300&nbsp;г</dd></div>
+          <div><dt>Цвет</dt><dd id="sCol">чёрный</dd></div>
+          <div><dt>Размер</dt><dd id="sSize">M</dd></div>
+          <div><dt>Цена</dt><dd id="sPrice">уточнить в Telegram</dd></div>
+        </dl>
+        <p class="msg" id="msg"></p>
+        <div class="outb">
+          <a class="btn sand" id="tgPick" href="https://t.me/front01xx" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 3 3 10.5l6 2.5 2 6.5 3-4 5 3.5z"/></svg>Написать в Telegram</a>
+          <button class="btn ghost" type="button" id="copyBtn">Скопировать текст</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FABRIC -->
+<section id="fabric" class="fab">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">/ 03 · Материал</span><h2 class="rv d1" style="margin-top:14px">Плотность ткани: <em>300&nbsp;г и 420&nbsp;г</em></h2></div>
+      <p class="rv d2">Простыми словами: что значат цифры в описании.</p>
+    </div>
+    <div class="dens">
+      <article class="dcard rv">
+        <div class="big">300<small>г/м²</small></div>
+        <h3>Футболки</h3>
+        <p>Хлопок 100&nbsp;%. Такая плотность указана для футболок «Вечность» и «Связь». У «Шторм» в описании — 300/250&nbsp;г.</p>
+        <div class="weave" aria-hidden="true"></div>
+        <p class="cap">Схематично, не в масштабе.</p>
+        <div class="bar" aria-hidden="true"><i style="--w:71.4%"></i></div>
+      </article>
+      <article class="dcard rv d1">
+        <div class="big">420<small>г/м²</small></div>
+        <h3>Худи</h3>
+        <p>Хлопок 100&nbsp;%. Такая плотность указана для худи и худи «Вера» — это более плотное и тяжёлое полотно.</p>
+        <div class="weave d" aria-hidden="true"></div>
+        <p class="cap">Схематично, не в масштабе.</p>
+        <div class="bar" aria-hidden="true"><i style="--w:100%"></i></div>
+      </article>
+    </div>
+    <p class="explain rv">Граммы на квадратный метр — это вес ткани. Чем больше цифра, тем плотнее и тяжелее полотно. Полоски выше показывают соотношение 300 к 420.</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">/ 04 · Фото</span><h2 class="rv d1" style="margin-top:14px">Вещи <em>и вышивка</em></h2></div>
+      <p class="rv d2">Фото из публикаций бренда</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр фото">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="hoodie">Худи</button>
+      <button class="tab" aria-pressed="false" data-f="tee">Футболки</button>
+      <button class="tab" aria-pressed="false" data-f="emb">Вышивка</button>
+    </div>
+    <div class="grid" id="grid">
+      <button class="gi rv" data-c="hoodie emb"><img src="img/hoodie-back.jpg" alt="Вышивка на спине худи" loading="lazy"><span>Вышивка на спине</span></button>
+      <button class="gi rv d1" data-c="hoodie emb"><img src="img/hoodie-back-2.jpg" alt="Вышивка на спине худи, другой кадр" loading="lazy"><span>Худи в носке</span></button>
+      <button class="gi wide rv d2" data-c="tee emb"><img src="img/tee.jpg" alt="Футболка «Вечность»" loading="lazy"><span>«Вечность»</span></button>
+      <button class="gi wide rv" data-c="tee emb"><img src="img/tee-close.jpg" alt="Вышивка на футболке крупным планом" loading="lazy"><span>Вышивка крупно</span></button>
+      <button class="gi wide rv d1" data-c="tee"><img src="img/tee-worn.jpg" alt="Футболка в носке" loading="lazy"><span>Футболка в носке</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""></dialog>
+
+<!-- ABOUT -->
+<section id="about" class="dk">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">/ 05 · О бренде</span><h2 class="rv d1" style="margin-top:14px">Кто <em>мы</em></h2></div>
+    </div>
+    <p class="tline rv">Одежда для своей территории</p>
+    <div class="ab">
+      <article class="ab-card rv"><span class="num">01</span><h3>Вышивка со смыслом</h3><p>Авторская вышивка — основа бренда. Принты: «Вечность», «Связь», «Шторм» и «Вера».</p></article>
+      <article class="ab-card rv d1"><span class="num">02</span><h3>Лимитированные дропы</h3><p>Вещи выходят ограниченными выпусками. За новинками и наличием следите в Telegram.</p></article>
+      <article class="ab-card rv d2"><span class="num">03</span><h3>Доставка по России</h3><p>Каталог и заказ — в Telegram. Отправляем по всей России.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER -->
+<section id="order">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">/ 06 · Заказ</span><h2 class="rv d1" style="margin-top:14px">Как <em>заказать</em></h2></div>
+    </div>
+    <div class="ord">
+      <div class="steps">
+        <div class="step rv"><div><b>Выберите вышивку</b><p>Принт, цвет футболки и размер — в блоке «Выбери вышивку» выше.</p></div></div>
+        <div class="step rv d1"><div><b>Напишите в Telegram</b><p>Готовое сообщение откроется в чате бренда — останется отправить.</p></div></div>
+        <div class="step rv d2"><div><b>Уточните цену и наличие</b><p>Цены на футболки в публикациях не указаны — их подскажут в Telegram. Доставка по всей России.</p></div></div>
+      </div>
+      <div class="cbox rv d1">
+        <small>Каталог и заказ</small>
+        <a class="big" href="https://t.me/front01xx" target="_blank" rel="noopener">t.me/front01xx</a>
+        <p>Все вещи, новые дропы и заказ — в Telegram бренда.</p>
+        <ul>
+          <li>Худи — от&nbsp;4&nbsp;390&nbsp;₽, худи «Вера» — 4&nbsp;990&nbsp;₽</li>
+          <li>Футболки — цену уточняйте в Telegram</li>
+          <li>Доставка по всей России</li>
+        </ul>
+        <a class="btn sand" data-tg href="https://t.me/front01xx" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 3 3 10.5l6 2.5 2 6.5 3-4 5 3.5z"/></svg>Заказать в Telegram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow rv" style="color:var(--sand)">Фронт /01</span>
+    <h2 class="rv d1">Выберите <em style="color:var(--olive-l)">свою вышивку</em></h2>
+    <p class="lead rv d2" style="margin:0 auto">Принт, цвет, размер — и сообщение в Telegram готово.</p>
+    <div class="ctas rv d3">
+      <a class="btn sand" data-tg href="https://t.me/front01xx" target="_blank" rel="noopener">Заказать в Telegram</a>
+      <a class="btn ghost" href="#pick">Собрать сообщение</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© ФРОНТ /01 — бренд одежды с авторской вышивкой</span>
+    <span>Демо-концепт. Цены и данные — из открытых публикаций бренда (Telegram) на 26.10.2026. Цены на футболки уточняйте в Telegram.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="#lineup"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>Линейка</a>
+  <a href="#pick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Выбрать</a>
+  <a class="main" data-tg href="https://t.me/front01xx" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 3 3 10.5l6 2.5 2 6.5 3-4 5 3.5z"/></svg>Заказать</a>
+</nav>
+
+<script>
+(() => {
+  const TG = 'https://t.me/front01xx';
+  const tgLink = t => TG + '?text=' + encodeURIComponent(t);
+  const generic = 'Здравствуйте! Хочу посмотреть каталог ФРОНТ /01 и сделать заказ. Подскажите, пожалуйста, что сейчас есть в наличии.';
+  document.querySelectorAll('[data-tg]').forEach(a => { a.href = tgLink(generic); });
+
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    hdr.classList.toggle('scrolled', scrollY > 8);
+    mbar.classList.toggle('show', scrollY > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Вкладки линейки + смена фото
+  const tabs = document.querySelectorAll('#tabs [role=tab]');
+  const pics = document.querySelectorAll('.svc-photo img');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === 'p-' + t.dataset.tab));
+    pics.forEach(p => p.classList.toggle('on', p.dataset.k === t.dataset.img));
+  }));
+
+  // Выбери вышивку
+  const NB = ' ';
+  const PR = {
+    vech:   { n: 'Вечность', k: 'tee',    fab: 'Хлопок 100' + NB + '%, 300' + NB + 'г' },
+    svaz:   { n: 'Связь',    k: 'tee',    fab: 'Хлопок 100' + NB + '%, 300' + NB + 'г' },
+    shtorm: { n: 'Шторм',    k: 'tee',    fab: 'Хлопок 100' + NB + '%, 300/250' + NB + 'г' },
+    vera:   { n: 'Вера',     k: 'hoodie', fab: 'Хлопок 100' + NB + '%, 420' + NB + 'г' }
+  };
+  const $ = s => document.querySelector(s);
+  const stage = $('#stage'), colSet = $('#colSet'), colNote = $('#colNote');
+  const msgEl = $('#msg'), tgPick = $('#tgPick'), copyBtn = $('#copyBtn');
+  const upd = () => {
+    const p = PR[$('input[name=pr]:checked').value];
+    const c = $('input[name=col]:checked');
+    const s = $('input[name=sz]:checked').value;
+    const hood = p.k === 'hoodie';
+    colSet.disabled = hood;
+    stage.classList.toggle('is-hood', hood);
+    colNote.textContent = hood ? 'Для худи «Вера» цвета в каталоге не указаны — уточните в Telegram.' : '';
+    $('#colName').textContent = hood ? 'уточнить' : c.dataset.n;
+    if (!hood) {
+      stage.style.setProperty('--garm', c.dataset.f);
+      stage.style.setProperty('--thread', c.dataset.t);
+    }
+    $('#sItem').textContent = (hood ? 'Худи «' : 'Футболка «') + p.n + '»';
+    $('#sFab').textContent = p.fab;
+    $('#sCol').textContent = hood ? 'уточнить в Telegram' : c.dataset.n;
+    $('#sSize').textContent = s;
+    $('#sPrice').textContent = hood ? '4' + NB + '990' + NB + '₽' : 'уточнить в Telegram';
+    const msg = hood
+      ? 'Здравствуйте! Хочу заказать худи «' + p.n + '» (4 990 ₽), размер — ' + s + '. Подскажите, пожалуйста, какие цвета есть в наличии.'
+      : 'Здравствуйте! Хочу заказать футболку «' + p.n + '», цвет — ' + c.dataset.n + ', размер — ' + s + '. Подскажите, пожалуйста, цену и наличие.';
+    msgEl.textContent = msg;
+    tgPick.href = tgLink(msg);
+  };
+  document.querySelectorAll('input[name=pr],input[name=col],input[name=sz]').forEach(i => i.addEventListener('change', upd));
+  upd();
+  copyBtn.addEventListener('click', async () => {
+    const t = msgEl.textContent;
+    try { await navigator.clipboard.writeText(t); }
+    catch (e) {
+      const ta = document.createElement('textarea'); ta.value = t; document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); } catch (_) {}
+      ta.remove();
+    }
+    copyBtn.textContent = 'Скопировано';
+    setTimeout(() => { copyBtn.textContent = 'Скопировать текст'; }, 1800);
+  });
+
+  // Фильтр фото и лайтбокс
+  const items = document.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && !i.dataset.c.split(' ').includes(f.dataset.f)));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt;
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>

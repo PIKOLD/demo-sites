@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>VAINAH VOGUE — дизайнерский бренд с индивидуальным пошивом, Назрань</title>
+<meta name="description" content="VAINAH VOGUE — дизайнерский бренд с индивидуальным пошивом. Назрань, ТЦ «Маяк», ул. Базоркина, 44. Каталог и заказ в Telegram.">
+<meta name="theme-color" content="#F5EEE5">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Forum&family=Jost:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&family=Jost:wght@300;400;500;600&display=swap"><style>.rv{opacity:1;transform:none}</style></noscript>
+<style>
+:root{
+  --milk:#F5EEE5; --cream:#FBF8F3; --sand:#E9DCCB; --caramel:#8F5C28; --caramel-l:#D9A669;
+  --choc:#3B261C; --choc-d:#22150F; --sky:#DCE6EE; --sky-d:#A9BFD0;
+  --ink:#2A1C15; --ink-2:#4A382E; --muted:#7B685B; --line:rgba(42,28,21,.14);
+  --serif:"Forum", "Times New Roman", Georgia, serif; --sans:"Jost", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--milk);color:var(--ink);font:400 16px/1.65 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font:500 12px/1 var(--sans);letter-spacing:.28em;text-transform:uppercase;color:var(--caramel)}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;margin:0}
+h2{font-size:clamp(36px,6vw,66px)}
+h2 em,h1 em{font-style:normal;color:var(--caramel)}
+.lead{font-size:clamp(16px,1.6vw,18px);font-weight:300;color:var(--ink-2);max-width:52ch}
+section{padding:clamp(72px,10vw,128px) 0}
+
+/* demo bar */
+.demo{background:var(--choc-d);color:#E9DCCB;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:#fff;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:11px;border:1px solid rgba(255,255,255,.35);padding:3px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(245,238,229,.9);background:color-mix(in srgb,var(--milk) 86%,transparent);backdrop-filter:saturate(1.3) blur(14px);-webkit-backdrop-filter:saturate(1.3) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;flex-direction:column;align-items:flex-start;gap:3px;text-decoration:none}
+.logo b{font:400 22px/1 var(--serif);letter-spacing:.34em}
+.logo small{font:500 9.5px/1 var(--sans);color:var(--caramel);letter-spacing:.5em;text-transform:uppercase}
+.nav{display:none;gap:30px}
+.nav a{text-decoration:none;font-weight:400;font-size:14.5px;color:var(--ink-2);position:relative;letter-spacing:.02em}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--caramel);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:10px 28px;border-radius:2px;border:1px solid var(--choc);background:var(--choc);color:#fff;font:500 13px/1.25 var(--sans);letter-spacing:.16em;text-transform:uppercase;text-align:center;text-decoration:none;cursor:pointer;transition:transform .25s, background .25s, color .25s, border-color .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.car{background:var(--caramel);border-color:var(--caramel)}
+.btn.car:hover{background:#744719;border-color:#744719}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--choc);color:#fff}
+.btn.sm{min-height:42px;padding:8px 20px;font-size:12px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--cream);display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:18px;height:1.5px;background:var(--ink);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:var(--ink);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--milk);padding:112px 24px 40px;display:flex;flex-direction:column;gap:4px;overflow-y:auto;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:400 32px/1.25 var(--serif);text-decoration:none;padding:6px 0;border-bottom:1px solid var(--line)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:1040px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{padding:clamp(32px,5vw,72px) 0 clamp(56px,8vw,104px);position:relative}
+.hero .wrap{display:grid;gap:52px;align-items:center;grid-template-columns:minmax(0,1fr)}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:72px}}
+.soon{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);background:var(--cream);padding:9px 16px 9px 14px;font-size:13px;font-weight:500;letter-spacing:.04em}
+.soon i{flex:none;width:8px;height:8px;border-radius:50%;background:var(--caramel);animation:pulse 2.4s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(143,92,40,0)}100%{box-shadow:0 0 0 0 rgba(143,92,40,0)}}
+.hero h1{font-size:clamp(46px,7.2vw,104px);margin:26px 0 22px;line-height:1}
+.hero .lead{margin:0 0 24px}
+.place{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:15px;margin-bottom:28px}
+.place svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--caramel)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 180px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.hstats{display:flex;flex-wrap:wrap;gap:18px 34px;margin-top:36px;padding-top:26px;border-top:1px solid var(--line)}
+.hstats div{min-width:0}
+.hstats strong{display:block;font:400 32px/1 var(--serif)}
+.hstats span{display:block;margin-top:6px;font-size:13px;line-height:1.35;color:var(--muted);max-width:18ch}
+
+.visual{position:relative;max-width:500px;margin-inline:auto;width:100%;padding:0 16px 16px 0}
+.ph{position:relative}
+.ph::before{content:"";position:absolute;inset:0;transform:translate(16px,16px);border:1px solid var(--caramel);z-index:0}
+.ph .im{position:relative;z-index:1;aspect-ratio:3/4;overflow:hidden;background:var(--sand)}
+.ph .im img{width:100%;height:112%;object-fit:cover;object-position:50% 20%;will-change:transform}
+.ph .tag{position:absolute;z-index:2;left:0;bottom:0;right:34%;background:var(--cream);padding:12px 16px;font-size:12.5px;line-height:1.35;color:var(--ink-2)}
+.ph .tag b{display:block;font:400 18px/1.15 var(--serif);color:var(--ink);margin-bottom:2px}
+.stamp{position:absolute;z-index:3;right:-4px;top:7%;width:112px;height:112px;border-radius:50%;background:var(--sky);color:var(--choc);animation:spin 28s linear infinite}
+.stamp text{font:500 8.6px var(--sans);letter-spacing:.06em;text-transform:uppercase;fill:currentColor}
+.stamp .v{font:400 34px var(--serif);text-transform:none;letter-spacing:0}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (min-width:560px){.stamp{right:-26px;width:128px;height:128px}}
+
+/* marquee */
+.marquee{border-block:1px solid var(--line);background:var(--cream);overflow:hidden;padding:20px 0}
+.track{display:flex;width:max-content;animation:run 44s linear infinite}
+.track span{font:400 clamp(20px,2.6vw,28px)/1 var(--serif);letter-spacing:.14em;text-transform:uppercase;padding:0 26px;white-space:nowrap;display:flex;align-items:center;gap:52px;color:var(--ink-2)}
+.track span::after{content:"";width:6px;height:6px;transform:rotate(45deg);background:var(--caramel)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* collections */
+.head{display:grid;gap:18px;margin-bottom:44px}
+@media (min-width:960px){.head{grid-template-columns:minmax(0,1fr) auto;align-items:end}}
+.head p{margin:0;color:var(--muted);font-size:14px;max-width:46ch}
+.tabs{display:flex;flex-wrap:wrap;gap:4px 26px;margin-bottom:34px;border-bottom:1px solid var(--line)}
+.tab{background:none;border:0;padding:12px 0;font:500 13px/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);cursor:pointer;position:relative;transition:color .25s}
+.tab::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--caramel);transform:scaleX(0);transition:transform .3s}
+.tab[aria-selected="true"],.tab[aria-pressed="true"]{color:var(--ink)}
+.tab[aria-selected="true"]::after,.tab[aria-pressed="true"]::after{transform:scaleX(1)}
+.svc{display:grid;gap:30px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:960px){.svc{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:72px;align-items:start}}
+.panel{display:none}
+.panel.on{display:block;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.panel h3{font-size:clamp(30px,4.4vw,48px);margin-bottom:16px}
+.panel p{margin:0 0 22px;font-weight:300;font-size:17px;color:var(--ink-2);max-width:46ch}
+.cost{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;padding:18px 0;margin-bottom:26px;border-block:1px solid var(--line)}
+.cost span{font:500 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.cost b{font:400 22px/1.2 var(--serif)}
+.svc-photo{position:relative;aspect-ratio:5/6;background:var(--sand);overflow:hidden;order:-1;width:100%;max-width:420px;margin-inline:auto}
+@media (min-width:960px){.svc-photo{order:0;aspect-ratio:3/4;max-width:none;position:sticky;top:96px}}
+.svc-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.05);transition:opacity .7s, transform 1.2s}
+.svc-photo img.on{opacity:1;transform:none}
+.sections-note{margin-top:28px;font-size:13.5px;color:var(--muted)}
+
+/* lookbook */
+.filters{display:flex;flex-wrap:wrap;gap:4px 26px;margin-bottom:30px;border-bottom:1px solid var(--line)}
+.mas{column-count:2;column-gap:10px}
+@media (min-width:760px){.mas{column-count:3;column-gap:16px}}
+.gi{display:block;position:relative;width:100%;margin:0 0 10px;break-inside:avoid;aspect-ratio:3/4;overflow:hidden;background:var(--sand);cursor:zoom-in;border:0;padding:0}
+.gi:nth-child(3n+2){aspect-ratio:4/5}
+.gi:nth-child(3n){aspect-ratio:2/3}
+@media (min-width:760px){.gi{margin-bottom:16px}}
+.gi img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.06)}
+.gi span{position:absolute;left:8px;bottom:8px;max-width:calc(100% - 16px);background:rgba(251,248,243,.92);font-size:11.5px;line-height:1.3;font-weight:500;letter-spacing:.04em;padding:5px 10px;text-align:left}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,820px);max-height:92vh;color:#fff;overflow:visible}
+.lb::backdrop{background:rgba(26,15,10,.9)}
+.lb img{max-height:80vh;width:auto;max-width:100%;margin:auto}
+.lb p{margin:10px 0 0;text-align:center;font-size:14px;color:#E9DCCB}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:#fff;color:var(--ink);font-size:22px;cursor:pointer}
+
+/* sketch feature */
+.dark{background:var(--choc-d);color:#EBDFD2}
+.dark .eyebrow{color:var(--caramel-l)}
+.dark h2 em{color:var(--caramel-l)}
+.dark .lead{color:#C9B8A8}
+.feat{display:grid;gap:44px;grid-template-columns:minmax(0,1fr);--p:0}
+@media (min-width:960px){.feat{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:72px;align-items:center}}
+.stage{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:560px){.stage{gap:16px}}
+.sf{position:relative;margin:0;aspect-ratio:3/4;overflow:hidden;background:#33211A;border:1px solid rgba(255,255,255,.14)}
+.sf img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sf figcaption{position:absolute;left:8px;right:8px;bottom:8px;z-index:3;background:rgba(34,21,15,.78);padding:8px 10px;font-size:12px;line-height:1.35;color:#EBDFD2}
+.sf.fin{border-style:dashed;background:repeating-linear-gradient(135deg,rgba(220,230,238,.08) 0 10px,transparent 10px 20px)}
+.sf.fin .ph-t{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:16px;font:400 20px/1.2 var(--serif);color:#A99685}
+.sf.fin img{z-index:1;clip-path:inset(calc((1 - var(--p)) * 100%) 0 0 0);transition:clip-path 1.1s cubic-bezier(.65,0,.35,1),opacity .4s}
+.sf.fin .edge{position:absolute;left:0;right:0;top:calc((1 - var(--p)) * 100%);height:2px;background:var(--caramel-l);z-index:2;transition:top 1.1s cubic-bezier(.65,0,.35,1),opacity .4s}
+.feat.full .edge{opacity:0}
+.seg{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.seg button{border:1px solid rgba(255,255,255,.26);background:transparent;color:#DCCDBE;padding:9px 14px;font-size:13px;font-weight:500;cursor:pointer;transition:background .25s,color .25s}
+.seg button[aria-pressed="true"]{background:var(--caramel-l);border-color:var(--caramel-l);color:var(--choc-d)}
+.bar{height:2px;background:rgba(255,255,255,.16);margin:26px 0 0;position:relative}
+.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--caramel-l);width:calc(var(--p) * 100%);transition:width 1.1s cubic-bezier(.65,0,.35,1)}
+.steps{list-style:none;margin:0;padding:0}
+.stp{display:grid;grid-template-columns:44px minmax(0,1fr);column-gap:14px;width:100%;text-align:left;padding:18px 0;background:none;border:0;border-bottom:1px solid rgba(255,255,255,.14);color:#BFAE9F;cursor:pointer}
+.stp .no{grid-row:span 2;font:400 26px/1 var(--serif);color:#85715F;transition:color .3s}
+.stp b{display:block;font:400 25px/1.1 var(--serif);color:#E9DCCB}
+.stp .tx{display:block;max-height:0;opacity:0;overflow:hidden;font-size:14.5px;line-height:1.55;transition:max-height .5s ease,opacity .5s ease,margin .5s}
+.stp[aria-current="step"] .no{color:var(--caramel-l)}
+.stp[aria-current="step"] b{color:#fff}
+.stp[aria-current="step"] .tx{max-height:140px;opacity:1;margin-top:8px}
+.fnote{margin:22px 0 0;font-size:13px;color:#A99685}
+
+/* bridal */
+.bridal{background:var(--sky)}
+.br{display:grid;gap:56px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:960px){.br{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:80px;align-items:center}}
+.br .lead{color:var(--ink-2);margin:20px 0 6px}
+.blist{list-style:none;margin:24px 0 30px;padding:0;border-top:1px solid rgba(42,28,21,.2)}
+.blist li{padding:14px 0;border-bottom:1px solid rgba(42,28,21,.2);font:400 26px/1.2 var(--serif)}
+.blist li small{display:block;font:300 14.5px/1.5 var(--sans);color:var(--ink-2);margin-top:3px}
+.collage{position:relative;padding-bottom:72px}
+.collage figure{margin:0;overflow:hidden;background:var(--sand)}
+.collage img{width:100%;height:100%;object-fit:cover}
+.collage .c1{width:70%;aspect-ratio:3/4}
+.collage .c2{position:absolute;right:0;bottom:0;width:52%;aspect-ratio:3/4;border:8px solid var(--sky)}
+.collage figcaption{position:absolute;left:8px;bottom:8px;right:8px;background:rgba(251,248,243,.92);font-size:11.5px;line-height:1.3;font-weight:500;padding:5px 9px}
+
+/* principles */
+.praise{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pr-card{background:var(--cream);border:1px solid var(--line);padding:30px;position:relative;overflow:hidden}
+.pr-card .num{font:400 80px/1 var(--serif);color:var(--sand);position:absolute;right:20px;top:6px}
+.pr-card h3{font-size:30px;margin:52px 0 12px;position:relative}
+.pr-card p{margin:0;color:var(--ink-2);font-weight:300;position:relative}
+.stats{display:grid;gap:14px;margin-top:22px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:760px){.stats{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.stat{display:flex;align-items:center;gap:16px;background:var(--cream);border:1px solid var(--line);padding:16px 22px}
+.stat strong{flex:none;font:400 40px/1 var(--serif)}
+.stat span{font-size:14px;line-height:1.4;color:var(--muted)}
+.stat span b{display:block;color:var(--ink);font-weight:500}
+
+/* store */
+.store{display:grid;gap:10px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (min-width:900px){.store{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
+.store figure{margin:0;position:relative;overflow:hidden;background:var(--sand);aspect-ratio:1/1}
+.store figure:first-child{grid-row:span 2;aspect-ratio:auto}
+@media (min-width:900px){.store figure,.store figure:first-child{grid-row:auto;aspect-ratio:3/4}}
+.store img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.store figcaption{position:absolute;left:8px;bottom:8px;right:8px;background:rgba(251,248,243,.92);font-size:11.5px;line-height:1.3;font-weight:500;padding:5px 10px;width:max-content;max-width:calc(100% - 16px)}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.fact{display:inline-flex;align-items:center;gap:8px;background:var(--cream);border:1px solid var(--line);padding:10px 16px;font-size:14px;font-weight:400}
+.fact svg{width:16px;height:16px;color:var(--caramel);flex:none}
+.soonbox{margin-top:28px;border:1px dashed var(--caramel);padding:20px 22px;background:var(--cream)}
+.soonbox b{font:400 24px/1.2 var(--serif);display:block;margin-bottom:4px}
+.soonbox span{color:var(--muted);font-size:14.5px}
+
+/* contacts */
+.ct{display:grid;gap:28px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:stretch}}
+.cinfo{display:grid;gap:24px;align-content:start}
+.ci small{display:block;font-size:12px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ci p,.ci a{margin:0;font-size:19px;font-weight:400;text-decoration:none}
+.ci a.big{font:400 30px/1.15 var(--serif);text-decoration:underline;text-decoration-color:var(--caramel);text-underline-offset:6px}
+.map{overflow:hidden;min-height:380px;background:var(--sand);border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+/* final */
+.final{text-align:center;background:radial-gradient(120% 90% at 50% 0%,#EAD9C2 0%,var(--milk) 62%)}
+.final h2{font-size:clamp(40px,7vw,84px);max-width:14ch;margin:20px auto}
+.final .ctas{justify-content:center;margin-top:30px}
+footer{padding:36px 0 120px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer .wrap span{flex:1 1 300px;min-width:0}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.5fr);gap:8px;padding:8px;background:rgba(34,21,15,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 18px 40px -12px rgba(0,0,0,.5);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;color:#fff;text-decoration:none;font-size:11.5px;font-weight:500;letter-spacing:.04em;text-align:center}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--caramel);flex-direction:row;font-size:13px;gap:8px;letter-spacing:.08em;text-transform:uppercase}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+.visual{overflow:hidden}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта для бренда VAINAH VOGUE. Данные из открытых источников (профиль бренда и Telegram-канал) на 26.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="VAINAH VOGUE — наверх"><b>VAINAH</b><small>Vogue</small></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#collections">Коллекции</a>
+      <a href="#sketch">От эскиза до вещи</a>
+      <a href="#bridal">Свадебные</a>
+      <a href="#store">Магазин</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm car" href="https://t.me/+E-hRPbMWwfg1OGI6" target="_blank" rel="noopener">Каталог и заказ</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#collections">Коллекции</a>
+  <a href="#lookbook">Лукбук</a>
+  <a href="#sketch">От эскиза до вещи</a>
+  <a href="#bridal">Свадебные образы</a>
+  <a href="#store">Магазин</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="soon rv"><i></i><span>Готовим официальное открытие магазина</span></span>
+      <h1 class="rv d1">Мы создаём <em>тренды</em></h1>
+      <p class="lead rv d2">VAINAH VOGUE — дизайнерский бренд с индивидуальным пошивом. Женская одежда: костюмы, комплекты, юбки, свадебные образы.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Назрань, ТЦ&nbsp;«Маяк», ул.&nbsp;Базоркина,&nbsp;44</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn car" href="https://t.me/+E-hRPbMWwfg1OGI6" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M21 3L3 10.5l6 2.2L11.2 19l3.3-4.2L19 18z"/></svg>Каталог и заказ</a>
+        <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~%D0%9D%D0%B0%D0%B7%D1%80%D0%B0%D0%BD%D1%8C%2C%20%D1%83%D0%BB.%20%D0%91%D0%B0%D0%B7%D0%BE%D1%80%D0%BA%D0%B8%D0%BD%D0%B0%2C%2044&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+      </div>
+      <div class="hstats rv d3">
+        <div><strong>90,2 тыс.</strong><span>подписчиков в Instagram*</span></div>
+        <div><strong>Для неё</strong><span>одежда для женщин</span></div>
+      </div>
+    </div>
+    <div class="visual rv d2">
+      <div class="ph">
+        <div class="im"><img id="heroImg" src="img/hero.jpg" alt="Костюм с укороченным тренчем" width="900" height="1200" fetchpriority="high"></div>
+        <div class="tag"><b>Костюм с укороченным тренчем</b>Из постов бренда</div>
+      </div>
+      <svg class="stamp" viewBox="0 0 120 120" aria-hidden="true">
+        <defs><path id="cp" d="M60 60 m-45 0 a45 45 0 1 1 90 0 a45 45 0 1 1 -90 0"/></defs>
+        <text><textPath href="#cp" textLength="280" lengthAdjust="spacing">индивидуальный пошив · мы создаём тренды ·</textPath></text>
+        <text class="v" x="60" y="72" text-anchor="middle">V</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Индивидуальный пошив</span><span>Свадебные</span><span>Невестам</span><span>Каталог</span><span>Sale</span><span>Отзывы</span>
+  <span>Индивидуальный пошив</span><span>Свадебные</span><span>Невестам</span><span>Каталог</span><span>Sale</span><span>Отзывы</span>
+</div></div>
+
+<!-- COLLECTIONS -->
+<section id="collections">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Коллекции и пошив</span><h2 class="rv d1" style="margin-top:16px">Что <em>мы шьём</em></h2></div>
+      <p class="rv d2">Изделия из постов бренда. Каталог и заказ — в Telegram-канале.</p>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Коллекции">
+      <button class="tab" role="tab" aria-selected="true" data-tab="suit" data-img="hero">Костюмы</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="leather" data-img="leather-1">Экокожа</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="velvet" data-img="detail">Вельвет</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="skirt" data-img="skirt-1">Юбки</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="custom" data-img="sketch">Пошив на заказ</button>
+    </div>
+    <div class="svc">
+      <div>
+        <div class="panel on" id="p-suit" role="tabpanel">
+          <h3>Костюмы с укороченным тренчем</h3>
+          <p>Костюм с укороченным тренчем — одна из вещей, которые бренд показывает в своих постах.</p>
+          <div class="cost"><span>Стоимость</span><b>в Telegram-канале / при заказе</b></div>
+          <a class="btn car" href="https://t.me/+E-hRPbMWwfg1OGI6" target="_blank" rel="noopener">Каталог и заказ</a>
+        </div>
+        <div class="panel" id="p-leather" role="tabpanel">
+          <h3>Костюмы из экокожи</h3>
+          <p>Оттенки — шоколад, чёрный и другие.</p>
+          <div class="cost"><span>Стоимость</span><b>в Telegram-канале / при заказе</b></div>
+          <a class="btn car" href="https://t.me/+E-hRPbMWwfg1OGI6" target="_blank" rel="noopener">Каталог и заказ</a>
+        </div>
+        <div class="panel" id="p-velvet" role="tabpanel">
+          <h3>Комплекты с вельветом</h3>
+          <p>Ограниченная серия.</p>
+          <div class="cost"><span>Стоимость</span><b>в Telegram-канале / при заказе</b></div>
+          <a class="btn car" href="https://t.me/+E-hRPbMWwfg1OGI6" target="_blank" rel="noopener">Каталог и заказ</a>
+        </div>
+        <div class="panel" id="p-skirt" role="tabpanel">
+          <h3>Юбки — коллекция осень 2025</h3>
+          <p>Юбки в образах с рубашкой и пиджаком.</p>
+          <div class="cost"><span>Стоимость</span><b>в Telegram-канале / при заказе</b></div>
+          <a class="btn car" href="https://t.me/+E-hRPbMWwfg1OGI6" target="_blank" rel="noopener">Каталог и заказ</a>
+        </div>
+        <div class="panel" id="p-custom" role="tabpanel">
+          <h3>Индивидуальный пошив</h3>
+          <p>Всё начинается с зарисовки. А детали, которые вы увидите только при заказе, остаются приятным сюрпризом.</p>
+          <div class="cost"><span>Стоимость</span><b>в Telegram-канале / при заказе</b></div>
+          <a class="btn car" href="https://t.me/+E-hRPbMWwfg1OGI6" target="_blank" rel="noopener">Заказать пошив</a>
+        </div>
+        <p class="sections-note">Разделы профиля бренда: индивидуальный пошив · свадебные · невестам · каталог · sale · отзывы.</p>
+      </div>
+      <div class="svc-photo" aria-hidden="true">
+        <img src="img/hero.jpg" alt="" data-k="hero" class="on" loading="lazy">
+        <img src="img/leather-1.jpg" alt="" data-k="leather-1" loading="lazy">
+        <img src="img/detail.jpg" alt="" data-k="detail" loading="lazy">
+        <img src="img/skirt-1.jpg" alt="" data-k="skirt-1" loading="lazy">
+        <img src="img/sketch.jpg" alt="" data-k="sketch" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOOKBOOK -->
+<section id="lookbook" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Лукбук</span><h2 class="rv d1" style="margin-top:16px">Кадры <em>коллекций</em></h2></div>
+      <p class="rv d2">Фото из материалов бренда. Нажмите, чтобы увеличить.</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр лукбука">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="suit">Костюмы</button>
+      <button class="tab" aria-pressed="false" data-f="leather">Экокожа</button>
+      <button class="tab" aria-pressed="false" data-f="skirt">Юбки</button>
+      <button class="tab" aria-pressed="false" data-f="atelier">Эскиз и детали</button>
+    </div>
+    <div class="mas" id="grid">
+      <button class="gi rv" data-c="suit"><img src="img/hero.jpg" alt="Костюм с укороченным тренчем" loading="lazy"><span>Костюм с укороченным тренчем</span></button>
+      <button class="gi rv d1" data-c="leather"><img src="img/leather-1.jpg" alt="Костюм из экокожи" loading="lazy"><span>Экокожа</span></button>
+      <button class="gi rv d2" data-c="skirt"><img src="img/skirt-1.jpg" alt="Юбка из коллекции осень 2025" loading="lazy"><span>Юбка · осень 2025</span></button>
+      <button class="gi rv" data-c="atelier"><img src="img/sketch.jpg" alt="Эскиз и готовое платье" loading="lazy"><span>Эскиз и готовое платье</span></button>
+      <button class="gi rv d1" data-c="leather"><img src="img/leather-2.jpg" alt="Костюм из экокожи" loading="lazy"><span>Экокожа</span></button>
+      <button class="gi rv d2" data-c="skirt"><img src="img/stripe.jpg" alt="Рубашка в полоску и юбка" loading="lazy"><span>Рубашка в полоску и юбка</span></button>
+      <button class="gi rv" data-c="atelier"><img src="img/moodboard.jpg" alt="Мудборд осенней коллекции" loading="lazy"><span>Мудборд осенней коллекции</span></button>
+      <button class="gi rv d1" data-c="skirt"><img src="img/skirt-2.jpg" alt="Юбка из коллекции осень 2025" loading="lazy"><span>Юбка · осень 2025</span></button>
+      <button class="gi rv d2" data-c="atelier"><img src="img/detail.jpg" alt="Детали ткани" loading="lazy"><span>Детали ткани</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""><p id="lbCap"></p></dialog>
+
+<!-- SKETCH -> THING -->
+<section id="sketch" class="dark">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Принцип индивидуального пошива</span><h2 class="rv d1" style="margin-top:16px">От эскиза <em>до вещи</em></h2></div>
+      <p class="rv d2" style="color:#C9B8A8">Выберите шаг — и вещь проявится.</p>
+    </div>
+    <div class="feat rv" id="feat">
+      <div>
+        <div class="stage" id="stage">
+          <figure class="sf"><img src="img/sketch.jpg" alt="Эскиз и готовое платье" loading="lazy"><figcaption>Эскиз и готовое платье</figcaption></figure>
+          <figure class="sf fin"><span class="ph-t">Готовая вещь</span><img id="finImg" src="img/hero.jpg" alt="Костюм с укороченным тренчем" loading="lazy"><span class="edge"></span><figcaption id="finCap">Костюм с укороченным тренчем</figcaption></figure>
+        </div>
+        <div class="seg" role="group" aria-label="Готовое изделие">
+          <button type="button" aria-pressed="true" data-src="img/hero.jpg" data-alt="Костюм с укороченным тренчем">Костюм</button>
+          <button type="button" aria-pressed="false" data-src="img/leather-2.jpg" data-alt="Костюм из экокожи">Экокожа</button>
+          <button type="button" aria-pressed="false" data-src="img/stripe.jpg" data-alt="Рубашка в полоску и юбка">Рубашка и юбка</button>
+          <button type="button" aria-pressed="false" data-src="img/skirt-2.jpg" data-alt="Юбка из коллекции осень 2025">Юбка</button>
+        </div>
+      </div>
+      <div>
+        <div class="bar" aria-hidden="true"><i></i></div>
+        <ol class="steps">
+          <li><button class="stp" type="button" aria-current="step"><span class="no">01</span><b>Эскиз</b><span class="tx">Всё начинается с зарисовки: идея становится рисунком будущей вещи.</span></button></li>
+          <li><button class="stp" type="button" aria-current="false"><span class="no">02</span><b>Мерки</b><span class="tx">Снимаются мерки, чтобы вещь была сшита по вашей фигуре.</span></button></li>
+          <li><button class="stp" type="button" aria-current="false"><span class="no">03</span><b>Пошив</b><span class="tx">По эскизу и меркам изделие шьётся индивидуально.</span></button></li>
+          <li><button class="stp" type="button" aria-current="false"><span class="no">04</span><b>Примерка</b><span class="tx">Примеряем готовую вещь. А детали, которые видно только при заказе, раскрываются в готовом изделии.</span></button></li>
+        </ol>
+        <p class="fnote">Это общий принцип индивидуального пошива. Стоимость — в Telegram-канале / при заказе.</p>
+        <div class="ctas" style="margin-top:22px"><a class="btn car" href="https://t.me/+E-hRPbMWwfg1OGI6" target="_blank" rel="noopener">Заказать пошив</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRIDAL -->
+<section id="bridal" class="bridal">
+  <div class="wrap br">
+    <div>
+      <span class="eyebrow rv">Свадебные · Невестам</span>
+      <h2 class="rv d1" style="margin-top:16px">Свадебные и вечерние образы — <em>индивидуально</em></h2>
+      <p class="lead rv d2">В профиле бренда есть отдельные разделы для свадебных образов и для невест. Образ создаётся так же, как любая вещь на заказ.</p>
+      <ul class="blist rv d2">
+        <li>Свадебные образы<small>Индивидуальный пошив по эскизу</small></li>
+        <li>Невестам<small>Отдельный раздел профиля бренда</small></li>
+        <li>Вечерние образы<small>Эскиз, мерки, пошив, примерка</small></li>
+      </ul>
+      <div class="ctas rv d3"><a class="btn car" href="https://t.me/+E-hRPbMWwfg1OGI6" target="_blank" rel="noopener">Обсудить образ в Telegram</a></div>
+    </div>
+    <div class="collage rv d1">
+      <figure class="c1"><img src="img/moodboard.jpg" alt="Мудборд осенней коллекции" loading="lazy"><figcaption>Мудборд осенней коллекции</figcaption></figure>
+      <figure class="c2"><img src="img/detail.jpg" alt="Детали ткани" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- PRINCIPLES -->
+<section id="praise">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">О бренде</span><h2 class="rv d1" style="margin-top:16px">Из профиля <em>бренда</em></h2></div>
+      <p class="rv d2">Отзывов с текстами в открытых источниках нет — вот что бренд говорит о себе.</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card rv"><span class="num">01</span><h3>Начинается с зарисовки</h3><p>Каждая вещь стартует с эскиза — именно так бренд описывает свой подход к индивидуальному пошиву.</p></article>
+      <article class="pr-card rv d1"><span class="num">02</span><h3>Детали — при заказе</h3><p>Есть детали, которые вы увидите только при заказе. Остальное — в каталоге Telegram-канала.</p></article>
+      <article class="pr-card rv d2"><span class="num">03</span><h3>Ограниченные серии</h3><p>Часть комплектов выходит ограниченной серией — например, комплекты с вельветом.</p></article>
+    </div>
+    <div class="stats rv">
+      <div class="stat"><strong>90,2 тыс.</strong><span><b>подписчиков</b>в Instagram*</span></div>
+      <div class="stat"><strong>Для неё</strong><span><b>Аудитория</b>женщины</span></div>
+      <div class="stat"><strong>TG</strong><span><b>Каталог и заказ</b>в Telegram-канале</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- STORE -->
+<section id="store" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Магазин</span><h2 class="rv d1" style="margin-top:16px">Новый <em>магазин</em></h2></div>
+      <p class="rv d2">Интерьер нового магазина в ТЦ&nbsp;«Маяк»</p>
+    </div>
+    <div class="store">
+      <figure class="rv"><img src="img/store-1.jpg" alt="Интерьер нового магазина" loading="lazy"><figcaption>Интерьер нового магазина</figcaption></figure>
+      <figure class="rv d1"><img src="img/store-2.jpg" alt="Интерьер нового магазина, другой ракурс" loading="lazy"></figure>
+      <figure class="rv d2"><img src="img/store-3.jpg" alt="Интерьер нового магазина, детали" loading="lazy"></figure>
+    </div>
+    <div class="facts rv">
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Назрань</span>
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 21V3h10v18M10 7h4M10 11h4"/></svg>ТЦ&nbsp;«Маяк»</span>
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M12 3v18"/></svg>ул.&nbsp;Базоркина,&nbsp;44</span>
+    </div>
+    <div class="soonbox rv">
+      <b>Готовим официальное открытие</b>
+      <span>Подробности — в Telegram-канале бренда.</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1" style="margin-top:16px">Как <em>нас найти</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Адрес</small><p>Назрань, ТЦ&nbsp;«Маяк», ул.&nbsp;Базоркина,&nbsp;44</p></div>
+        <div class="ci"><small>Часы работы</small><p>В источниках не указаны — уточняйте в Telegram-канале</p></div>
+        <div class="ci"><small>Каталог и заказ</small><a class="big" href="https://t.me/+E-hRPbMWwfg1OGI6" target="_blank" rel="noopener">Telegram-канал VAINAH VOGUE</a></div>
+        <div class="ctas">
+          <a class="btn car" href="https://t.me/+E-hRPbMWwfg1OGI6" target="_blank" rel="noopener">Каталог и заказ</a>
+          <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~%D0%9D%D0%B0%D0%B7%D1%80%D0%B0%D0%BD%D1%8C%2C%20%D1%83%D0%BB.%20%D0%91%D0%B0%D0%B7%D0%BE%D1%80%D0%BA%D0%B8%D0%BD%D0%B0%2C%2044&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a>
+        </div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?text=%D0%9D%D0%B0%D0%B7%D1%80%D0%B0%D0%BD%D1%8C%2C%20%D1%83%D0%BB.%20%D0%91%D0%B0%D0%B7%D0%BE%D1%80%D0%BA%D0%B8%D0%BD%D0%B0%2C%2044&z=16" title="VAINAH VOGUE на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow rv">Заказ</span>
+    <h2 class="rv d1">Всё начинается <em>с зарисовки</em></h2>
+    <p class="lead rv d2" style="margin:0 auto">Каталог и заказ — в Telegram-канале бренда. Стоимость — в Telegram-канале / при заказе.</p>
+    <div class="ctas rv d3">
+      <a class="btn car" href="https://t.me/+E-hRPbMWwfg1OGI6" target="_blank" rel="noopener">Каталог и заказ</a>
+      <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~%D0%9D%D0%B0%D0%B7%D1%80%D0%B0%D0%BD%D1%8C%2C%20%D1%83%D0%BB.%20%D0%91%D0%B0%D0%B7%D0%BE%D1%80%D0%BA%D0%B8%D0%BD%D0%B0%2C%2044&rtt=auto" target="_blank" rel="noopener">Маршрут</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© VAINAH VOGUE — дизайнерский бренд с индивидуальным пошивом, Назрань</span>
+    <span>Демо-концепт. Данные — из открытых источников (профиль бренда, Telegram-канал) на 26.10.2026. Цены в источниках не указаны.</span>
+    <span>* Instagram принадлежит компании Meta, признанной в РФ экстремистской организацией и запрещённой.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="https://yandex.ru/maps/?rtext=~%D0%9D%D0%B0%D0%B7%D1%80%D0%B0%D0%BD%D1%8C%2C%20%D1%83%D0%BB.%20%D0%91%D0%B0%D0%B7%D0%BE%D1%80%D0%BA%D0%B8%D0%BD%D0%B0%2C%2044&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+  <a href="#lookbook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 15l5-5 4 4 3-3 4 4"/></svg>Лукбук</a>
+  <a class="main" href="https://t.me/+E-hRPbMWwfg1OGI6" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M21 3L3 10.5l6 2.2L11.2 19l3.3-4.2L19 18z"/></svg>Заказать</a>
+</nav>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    const y = scrollY;
+    hdr.classList.toggle('scrolled', y > 8);
+    mbar.classList.toggle('show', y > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Лёгкий параллакс фото на первом экране
+  const hero = document.getElementById('heroImg');
+  if (!reduce && hero) {
+    let tick = false;
+    addEventListener('scroll', () => {
+      if (tick) return; tick = true;
+      requestAnimationFrame(() => { hero.style.transform = `translateY(${Math.min(scrollY, 700) * -0.05}px)`; tick = false; });
+    }, { passive: true });
+  }
+
+  // Вкладки коллекций + смена фото
+  const tabs = document.querySelectorAll('[role=tab]');
+  const pics = document.querySelectorAll('.svc-photo img');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === 'p-' + t.dataset.tab));
+    pics.forEach(p => p.classList.toggle('on', p.dataset.k === t.dataset.img));
+  }));
+
+  // Фильтр лукбука и лайтбокс
+  const items = document.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt; lbCap.textContent = img.alt;
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+
+  // «От эскиза до вещи»
+  const feat = document.getElementById('feat');
+  const steps = [...feat.querySelectorAll('.stp')];
+  const P = [0, .38, .72, 1];
+  let timer = null;
+  const setStep = i => {
+    feat.style.setProperty('--p', P[i]);
+    feat.classList.toggle('full', i === P.length - 1);
+    steps.forEach((s, k) => s.setAttribute('aria-current', k === i ? 'step' : 'false'));
+  };
+  const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
+  steps.forEach((s, i) => s.addEventListener('click', () => { stop(); setStep(i); }));
+  setStep(0);
+  const finImg = document.getElementById('finImg'), finCap = document.getElementById('finCap');
+  feat.querySelectorAll('.seg button').forEach(b => b.addEventListener('click', () => {
+    feat.querySelectorAll('.seg button').forEach(x => x.setAttribute('aria-pressed', x === b));
+    finImg.src = b.dataset.src; finImg.alt = b.dataset.alt; finCap.textContent = b.dataset.alt;
+  }));
+  if (!reduce) {
+    const auto = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return;
+      auto.disconnect();
+      let i = 0;
+      timer = setInterval(() => { i++; setStep(i); if (i >= P.length - 1) stop(); }, 1600);
+    }), { threshold: .45 });
+    auto.observe(feat);
+  } else {
+    setStep(P.length - 1);
+  }
+})();
+</script>
+</body>
+</html>

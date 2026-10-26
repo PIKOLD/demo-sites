@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>VETER — уральский бренд одежды</title>
+<meta name="description" content="VETER — уральский бренд одежды с собственным производством. Путь бренда, образы, подиум. Связь — в Direct.">
+<meta name="theme-color" content="#FFFDF9">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Jost:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Jost:wght@300;400;500;600&display=swap"></noscript>
+<style>
+:root{
+  --white:#FFFDF9; --linen:#F4EEE3; --linen-2:#E8DDCB; --flax:#D9C9AE;
+  --terra:#B4533A; --terra-d:#8E3D29; --ochre:#D39A3A;
+  --ink:#2B2118; --ink-2:#4A3C30; --muted:#766757; --line:rgba(43,33,24,.14);
+  --leaf:28px 6px 28px 6px; --r-md:20px;
+  --shadow:0 24px 50px -26px rgba(90,45,25,.45);
+  --serif:"Philosopher", Georgia, "Times New Roman", serif;
+  --sans:"Jost", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1180px;
+  --wvmask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='8' viewBox='0 0 32 8'%3E%3Cpath d='M0 4Q4 0 8 4T16 4T24 4T32 4' fill='none' stroke='%23000' stroke-width='1.6'/%3E%3C/svg%3E");
+  --orn:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='20' viewBox='0 0 40 20'%3E%3Cpath d='M20 2l8 8-8 8-8-8z' fill='none' stroke='%23B4533A' stroke-width='1.5'/%3E%3Cpath d='M20 6l4 4-4 4-4-4z' fill='%23D39A3A'/%3E%3Cpath d='M0 10h10M30 10h10' stroke='%23D9C9AE' stroke-width='1.5'/%3E%3C/svg%3E");
+  --orn2:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cpath d='M28 4l24 24-24 24L4 28z' fill='none' stroke='%23B4533A' stroke-opacity='.55' stroke-width='1.5'/%3E%3Cpath d='M28 16l12 12-12 12-12-12z' fill='%23D39A3A' fill-opacity='.45'/%3E%3Cpath d='M0 0l4 4M56 0l-4 4M0 56l4-4M56 56l-4-4' stroke='%23B4533A' stroke-opacity='.5' stroke-width='1.5'/%3E%3C/svg%3E");
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--white);color:var(--ink);font:400 16px/1.65 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:500 12px/1.2 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--terra-d)}
+.eyebrow::before{content:"";flex:none;width:32px;height:8px;background:currentColor;-webkit-mask:var(--wvmask) no-repeat center/contain;mask:var(--wvmask) no-repeat center/contain}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.1;margin:0}
+h2{font-size:clamp(34px,5.6vw,60px)}
+h1 em,h2 em{font-style:italic;color:var(--terra)}
+.lead{font-size:clamp(16px,1.6vw,18.5px);font-weight:300;color:var(--ink-2);max-width:54ch}
+section{padding:clamp(64px,9vw,120px) 0}
+section[id]{scroll-margin-top:68px}
+.fn{margin:14px 0 0;font-size:12px;line-height:1.45;color:var(--muted);max-width:60ch}
+
+/* demo bar */
+.demo{background:var(--ink);color:#EFE6D8;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:#fff;font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:11px;border:1px solid rgba(255,255,255,.35);border-radius:99px;padding:3px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(255,253,249,.9);backdrop-filter:saturate(1.3) blur(14px);-webkit-backdrop-filter:saturate(1.3) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo svg{width:34px;height:26px;color:var(--terra)}
+.logo b{font:700 22px/1 var(--serif);letter-spacing:.26em}
+.nav{display:none;gap:28px}
+.nav a{text-decoration:none;font-weight:400;font-size:15px;color:var(--ink-2);position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:8px;background:var(--terra);-webkit-mask:var(--wvmask) repeat-x left center/32px 8px;mask:var(--wvmask) repeat-x left center/32px 8px;transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:26px 8px 26px 8px;border:1px solid var(--ink);background:var(--ink);color:#fff;font-weight:500;font-size:15.5px;text-decoration:none;cursor:pointer;transition:transform .25s, background .25s, color .25s, border-color .25s;text-align:center}
+.btn:hover{transform:translateY(-2px) rotate(-.6deg)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.terra{background:var(--terra);border-color:var(--terra)}
+.btn.terra:hover{background:var(--terra-d);border-color:var(--terra-d)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+.btn.light{background:var(--white);border-color:var(--white);color:var(--terra-d)}
+.btn.light:hover{background:var(--linen);border-color:var(--linen)}
+.btn.sm{min-height:44px;padding:0 20px;font-size:14.5px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--white);display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:18px;height:1.5px;background:var(--ink);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:var(--ink);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--linen);padding:120px 24px 40px;display:flex;flex-direction:column;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s;background-image:var(--orn);background-repeat:repeat-x;background-position:0 100px}
+.mnav a{font:400 34px/1.25 var(--serif);text-decoration:none;padding:6px 0;border-bottom:1px solid var(--line)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:clamp(28px,5vw,64px) 0 clamp(64px,8vw,110px)}
+.wind{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.wind path{fill:none;stroke-linecap:round}
+.wind .st0{stroke:var(--flax);stroke-width:1.4;opacity:.55}
+.wind .gu{stroke-dasharray:260 1500;animation:gust 17s linear infinite}
+.wind .g1{stroke:var(--ochre);stroke-width:1.8;opacity:.75}
+.wind .g2{stroke:var(--terra);stroke-width:1.3;opacity:.5;animation-duration:23s;animation-delay:-7s}
+.wind .g3{stroke:var(--flax);stroke-width:2.2;animation-duration:20s;animation-delay:-12s}
+@keyframes gust{from{stroke-dashoffset:260}to{stroke-dashoffset:-1500}}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1fr);gap:48px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:64px}}
+.hero h1{font-size:clamp(42px,6.2vw,92px);margin:20px 0 22px;letter-spacing:-.01em}
+.hero .lead{margin:0 0 24px}
+.place{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:14.5px;margin-bottom:28px}
+.place svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--terra)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 170px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 18px;margin-top:34px;padding-top:24px;border-top:1px solid var(--line)}
+.stat strong{display:block;font:400 clamp(26px,3.4vw,38px)/1.05 var(--serif);color:var(--terra-d)}
+.stat span{display:block;margin-top:4px;font-size:13px;line-height:1.35;color:var(--muted)}
+
+.visual{position:relative;max-width:520px;width:100%;margin-inline:auto;padding:0 0 18px 18px}
+.fw{position:relative;aspect-ratio:4/5;filter:drop-shadow(0 22px 22px rgba(90,45,25,.28));animation:sway 11s ease-in-out infinite;transform-origin:50% 0}
+.fabric,.fback{position:absolute;inset:0;clip-path:url(#waveClip)}
+.fback{background:linear-gradient(160deg,var(--ochre),var(--terra));transform:translate(-16px,18px) rotate(-2.2deg)}
+.fabric{overflow:hidden;background:var(--linen-2)}
+.fabric img{width:100%;height:112%;object-fit:cover;object-position:50% 30%;will-change:transform}
+@keyframes sway{50%{transform:rotate(1.1deg) translateY(-6px)}}
+.tag{position:absolute;z-index:4;background:var(--white);padding:16px 16px 12px;border-radius:6px 6px 16px 16px;font-size:12.5px;line-height:1.35;color:var(--muted);box-shadow:0 14px 28px -14px rgba(60,35,25,.5);transform-origin:50% -26px;animation:swing 5.5s ease-in-out infinite;max-width:180px}
+.tag::before{content:"";position:absolute;left:50%;top:5px;width:9px;height:9px;border-radius:50%;background:var(--linen-2);border:1.5px solid var(--terra);transform:translateX(-50%)}
+.tag::after{content:"";position:absolute;left:50%;top:-30px;width:1.5px;height:36px;background:var(--terra)}
+.tag b{display:block;margin-top:2px;font:400 18px/1.2 var(--serif);color:var(--ink)}
+.tag.t1{right:-3%;top:16%}
+.tag.t2{left:0;bottom:12%;animation-delay:-2.7s}
+@media (max-width:520px){.tag.t1{right:2%}.tag.t2{left:4%}}
+@keyframes swing{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+
+/* marquee */
+.marquee{background:var(--terra);color:#FCEFE2;overflow:hidden;padding:16px 0}
+.track{display:flex;width:max-content;animation:run 42s linear infinite}
+.track span{font:italic 400 clamp(21px,2.8vw,30px)/1 var(--serif);padding:0 24px;white-space:nowrap;display:flex;align-items:center;gap:48px}
+.track span::after{content:"";width:9px;height:9px;background:var(--ochre);transform:rotate(45deg);flex:none}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* section head */
+.head{display:grid;gap:16px;margin-bottom:44px}
+@media (min-width:960px){.head{grid-template-columns:1fr auto;align-items:end}}
+.head p{margin:0;color:var(--muted);font-size:14.5px;max-width:42ch}
+
+/* brand */
+.brand{background:var(--linen)}
+.bgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:40px;align-items:center}
+@media (min-width:900px){.bgrid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px}}
+.fig{margin:0;position:relative;border-radius:var(--leaf);overflow:hidden;background:var(--linen-2)}
+.fig img{width:100%;height:100%;object-fit:cover}
+.fig figcaption{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:rgba(255,253,249,.9);padding:6px 12px;border-radius:99px;font-size:12.5px;font-weight:500}
+.bfig{aspect-ratio:4/3}
+blockquote{margin:26px 0 22px;padding:0 0 0 22px;border-left:2px solid var(--terra)}
+blockquote p{margin:0;font:italic 400 clamp(24px,3.4vw,36px)/1.25 var(--serif)}
+blockquote cite{display:block;margin-top:10px;font:500 13px/1.3 var(--sans);font-style:normal;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.cards3{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:48px}
+@media (min-width:860px){.cards3{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.card{position:relative;background:var(--white);border:1px solid var(--line);border-radius:var(--leaf);padding:30px 28px 28px;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;right:0;top:0;height:20px;background:var(--orn) repeat-x center/40px 20px;opacity:.9}
+.card .num{position:absolute;right:20px;top:30px;font:italic 400 64px/1 var(--serif);color:var(--linen-2)}
+.card h3{font-size:30px;margin:34px 0 10px;position:relative}
+.card p{margin:0;color:var(--ink-2);font-weight:300;position:relative}
+
+/* path timeline */
+.tl{position:relative;list-style:none;margin:0;padding:0}
+.rail{position:absolute;left:0;top:0;bottom:0;width:44px;pointer-events:none}
+.rail svg{position:absolute;inset:0;width:100%;height:100%}
+.rail path{fill:none;stroke-width:2.5;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.rail .base path{stroke:var(--flax)}
+.rail .fill{clip-path:inset(0 0 100% 0)}
+.rail .fill path{stroke:var(--terra)}
+.stage{position:relative;display:grid;grid-template-columns:44px minmax(0,1fr);gap:0 14px;margin-bottom:36px}
+.stage:last-child{margin-bottom:0}
+.mk{position:relative;z-index:2;width:44px;height:44px;border-radius:50%;background:var(--white);border:1.5px solid var(--flax);display:grid;place-items:center;font:700 14px/1 var(--serif);color:var(--muted);transition:background .5s,color .5s,border-color .5s,transform .5s}
+.stage.on .mk{background:var(--terra);border-color:var(--terra);color:#fff;transform:scale(1.1)}
+.st{background:var(--linen);border-radius:var(--leaf);overflow:hidden;min-width:0}
+.st .fig{border-radius:0;aspect-ratio:4/3}
+.st .fig img{filter:saturate(.55);transition:filter 1s}
+.stage.on .st .fig img{filter:none}
+.opanel{position:relative;aspect-ratio:4/3;background:var(--linen-2) var(--orn2) repeat;display:grid;place-items:center;overflow:hidden}
+.opanel span{background:var(--white);padding:12px 26px;border-radius:99px;font:italic 400 clamp(26px,5vw,38px)/1.1 var(--serif);color:var(--terra-d);box-shadow:0 14px 28px -16px rgba(60,35,25,.5)}
+.tx{padding:22px 22px 26px}
+.tg{display:inline-block;background:var(--white);border:1px solid var(--flax);color:var(--terra-d);border-radius:99px;padding:5px 12px;font:500 11.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase}
+.tx h3{font-size:clamp(26px,3.2vw,34px);margin:14px 0 8px}
+.tx p{margin:0;color:var(--ink-2);font-weight:300}
+@media (min-width:900px){
+  .rail{left:50%;margin-left:-40px;width:80px}
+  .stage{grid-template-columns:minmax(0,1fr) 80px minmax(0,1fr);gap:0 24px;margin-bottom:56px;align-items:start}
+  .mk{grid-column:2;grid-row:1;justify-self:center;margin-top:28px}
+  .stage:nth-child(odd) .st{grid-column:1;grid-row:1}
+  .stage:nth-child(even) .st{grid-column:3;grid-row:1}
+}
+
+/* looks */
+.looks{background:var(--linen)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.tab{border:1px solid var(--line);background:var(--white);border-radius:99px;padding:11px 20px;font-weight:500;font-size:14.5px;cursor:pointer;transition:all .25s}
+.tab[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.gal{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-items:start}
+@media (min-width:760px){.gal{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.gal .gi:nth-child(3n+2){margin-top:30px}}
+.gi{position:relative;display:block;width:100%;aspect-ratio:4/5;border:0;padding:0;border-radius:var(--leaf);overflow:hidden;background:var(--linen-2);cursor:zoom-in}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.07)}
+.gi span{position:absolute;left:10px;bottom:10px;background:rgba(255,253,249,.92);font-size:12px;font-weight:500;padding:5px 11px;border-radius:99px}
+.gi.hide{display:none}
+.pricebox{margin-top:48px;display:flex;flex-wrap:wrap;gap:16px 24px;align-items:center;justify-content:space-between;border:1px dashed var(--terra);border-radius:var(--leaf);padding:22px 26px;background:var(--white)}
+.pricebox b{display:block;font:400 26px/1.2 var(--serif)}
+.pricebox span{color:var(--muted);font-size:14.5px}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,1000px);max-height:92vh;overflow:visible}
+.lb::backdrop{background:rgba(30,22,15,.88)}
+.lb img{max-height:80vh;width:auto;margin:auto;border-radius:16px}
+.lb p{margin:10px 0 0;text-align:center;color:#F4EEE3;font-size:14px}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:#fff;font-size:22px;cursor:pointer}
+
+/* runway */
+.runway{position:relative;color:#FBF1E6;background:linear-gradient(160deg,#9A442F 0%,#7C3322 100%);overflow:hidden}
+.runway .eyebrow{color:#F0CB8A}
+.runway h2 em{color:#F0CB8A}
+.runway .lead{color:#F3DFCF}
+.rwind{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.rwind path{fill:none;stroke:#fff;stroke-width:1.4;stroke-linecap:round;opacity:.16}
+.rwind .gu{stroke-dasharray:240 1500;animation:gust 19s linear infinite;opacity:.4}
+.rgrid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1fr);gap:44px;align-items:center}
+@media (min-width:900px){.rgrid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px}}
+.rtext p{margin:18px 0 0}
+.rlist{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:12px}
+.rlist li{display:flex;gap:14px;align-items:flex-start;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.18);font-size:15.5px}
+.rlist li::before{content:"";flex:none;width:9px;height:9px;margin-top:8px;background:var(--ochre);transform:rotate(45deg)}
+.rpics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:start}
+.rpics .gi{aspect-ratio:3/4;box-shadow:0 26px 40px -24px rgba(0,0,0,.55);background:#6B2B1C}
+.rpics .gi:nth-child(2){margin-top:44px}
+.wv{position:absolute;left:0;width:100%;height:46px;z-index:1}
+.wv.top{top:-1px}.wv.bot{bottom:-1px}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start}
+.ci small{display:block;font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ci p,.ci a{margin:0;font-size:18px;font-weight:400;text-decoration:none;overflow-wrap:anywhere}
+.ci a.big{font:400 clamp(26px,4vw,36px)/1.15 var(--serif)}
+.cside{position:relative;border-radius:var(--leaf);overflow:hidden;min-height:340px;background:var(--linen) var(--orn2) repeat;display:grid;place-items:center;padding:24px}
+.cbox{background:var(--white);border-radius:var(--leaf);padding:clamp(24px,4vw,40px);text-align:center;max-width:420px;box-shadow:var(--shadow)}
+.cbox h3{font-size:clamp(30px,4.4vw,44px);margin:12px 0 10px}
+.cbox p{margin:0 0 20px;color:var(--ink-2);font-weight:300}
+.cbox .fn{text-align:left;margin-inline:auto}
+
+/* final */
+.final{text-align:center;background:radial-gradient(120% 90% at 50% 0%,#F0E2CF 0%,var(--white) 62%)}
+.final h2{font-size:clamp(38px,7vw,80px);max-width:14ch;margin:18px auto}
+.final .ctas{justify-content:center;margin-top:30px}
+.final .fn{margin-inline:auto}
+footer{padding:36px 0 120px;font-size:13px;line-height:1.5;color:var(--muted);border-top:1px solid var(--line)}
+footer .wrap{display:grid;gap:10px}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.2fr);gap:8px;padding:8px;background:rgba(43,33,24,.93);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:22px;box-shadow:0 18px 40px -12px rgba(0,0,0,.45);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:15px;color:#fff;text-decoration:none;font-size:12px;font-weight:500}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--terra);flex-direction:row;font-size:14px;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+  .wind .gu,.rwind .gu{stroke-dasharray:none}
+  .rail .fill{clip-path:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><clipPath id="waveClip" clipPathUnits="objectBoundingBox"><path d="M0,0.035 C0.14,-0.012 0.28,0.075 0.45,0.03 S0.8,-0.02 1,0.03 L1,0.965 C0.86,1.012 0.7,0.93 0.52,0.972 S0.16,1.015 0,0.968 Z"/></clipPath></defs></svg>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта для бренда VETER. Данные из открытых источников (публичные посты бренда) на 26.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="VETER — наверх">
+      <svg viewBox="0 0 34 26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2 8C10 1 17 13 25 6s7-3 7 1"/><path d="M2 14C10 7 17 19 27 12"/><path d="M2 20c6-5 12 1 19-3"/></svg>
+      <b>VETER</b>
+    </a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#brand">О бренде</a>
+      <a href="#path">Путь бренда</a>
+      <a href="#looks">Образы</a>
+      <a href="#runway">Подиум</a>
+      <a href="#contacts">Связь</a>
+    </nav>
+    <a class="btn sm terra" href="https://instagram.com/veter_brand_ural" target="_blank" rel="noopener">Написать в Direct*</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#brand">О бренде</a>
+  <a href="#path">Путь бренда</a>
+  <a href="#looks">Образы</a>
+  <a href="#runway">Подиум</a>
+  <a href="#contacts">Связь</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <svg class="wind" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <path class="st0" d="M-20 560 C 200 460, 340 660, 560 560 S 900 420, 1100 510 S 1360 600, 1480 480"/>
+    <path class="st0" d="M-20 240 C 180 160, 380 300, 620 200 S 1000 110, 1200 190 S 1400 260, 1480 160"/>
+    <path class="gu g1" d="M-20 560 C 200 460, 340 660, 560 560 S 900 420, 1100 510 S 1360 600, 1480 480"/>
+    <path class="gu g2" d="M-20 240 C 180 160, 380 300, 620 200 S 1000 110, 1200 190 S 1400 260, 1480 160"/>
+    <path class="gu g3" d="M-20 400 C 240 330, 420 480, 700 390 S 1060 280, 1260 350 S 1420 410, 1480 330"/>
+  </svg>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow rv">Бренд одежды · Урал</span>
+      <h1 class="rv d1">Одежда про <em>абсолютную свободу</em></h1>
+      <p class="lead rv d2">VETER — уральский бренд одежды с собственным производством: показы на неделях моды, публикация в журнале «Стольник» и победа на конкурсе в Москве.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Урал · собственное производство</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn terra" href="https://instagram.com/veter_brand_ural" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 3 10.5l7 3 3 7z"/><path d="m10 13.5 11-10.5"/></svg>Написать в Direct*</a>
+        <a class="btn ghost" href="#path">Путь бренда</a>
+      </div>
+      <p class="fn rv d3">*Instagram — продукт компании Meta, признанной экстремистской организацией и запрещённой в РФ</p>
+      <div class="stats rv d3">
+        <div class="stat"><strong>9 сезон</strong><span>Неделя моды «Сибирь»</span></div>
+        <div class="stat"><strong>224</strong><span>подписчика бренда в Instagram*</span></div>
+        <div class="stat"><strong>Урал</strong><span>собственное производство</span></div>
+      </div>
+    </div>
+    <div class="visual rv d2">
+      <div class="fw">
+        <div class="fback"></div>
+        <div class="fabric"><img id="heroImg" src="img/hero.jpg" alt="Образ VETER на этно-ковре" width="1024" height="768" fetchpriority="high"></div>
+      </div>
+      <div class="tag t1">Платье<b>«Этно»</b>муза конкурса nail-мастеров</div>
+      <div class="tag t2">Неделя моды<b>«Сибирь»</b>9 сезон</div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Уральский бренд</span><span>Собственное производство</span><span>Платье «Этно»</span><span>Неделя моды «Сибирь»</span><span>Журнал «Стольник»</span><span>Победа в Москве</span>
+  <span>Уральский бренд</span><span>Собственное производство</span><span>Платье «Этно»</span><span>Неделя моды «Сибирь»</span><span>Журнал «Стольник»</span><span>Победа в Москве</span>
+</div></div>
+
+<!-- BRAND -->
+<section id="brand" class="brand">
+  <div class="wrap">
+    <div class="bgrid">
+      <figure class="fig bfig rv"><img src="img/labels.jpg" alt="Бирки VETER brand" width="1024" height="768" loading="lazy"><figcaption>Бирки VETER brand</figcaption></figure>
+      <div>
+        <span class="eyebrow rv">О бренде</span>
+        <h2 class="rv d1" style="margin-top:14px">История <em>бренда</em></h2>
+        <blockquote class="rv d2"><p>Самое первое, что я придумала — это название</p><cite>основательница VETER</cite></blockquote>
+        <p class="lead rv d3">VETER — уральский бренд одежды. Здесь всё начинается с названия, а дальше — образы, показы и публикации, которые можно пройти по таймлайну ниже.</p>
+      </div>
+    </div>
+    <div class="cards3">
+      <article class="card rv"><span class="num">01</span><h3>Свобода</h3><p>В публикациях бренд называет себя брендом «про абсолютную свободу».</p></article>
+      <article class="card rv d1"><span class="num">02</span><h3>Своё производство</h3><p>VETER — уральский бренд одежды с собственным производством.</p></article>
+      <article class="card rv d2"><span class="num">03</span><h3>Признание</h3><p>Показ на Неделе моды «Сибирь», публикация в журнале «Стольник» и победа на конкурсе в Москве.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- PATH (фишка) -->
+<section id="path">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Таймлайн</span><h2 class="rv d1" style="margin-top:14px">Путь <em>бренда</em></h2></div>
+      <p class="rv d2">От названия до победы в Москве — по публикациям бренда</p>
+    </div>
+    <ol class="tl" id="tl">
+      <div class="rail" aria-hidden="true">
+        <svg class="base" viewBox="0 0 44 1000" preserveAspectRatio="none"><path d="M22 0C30 120 14 240 22 360S30 600 22 720 14 880 22 1000"/></svg>
+        <svg class="fill" id="railFill" viewBox="0 0 44 1000" preserveAspectRatio="none"><path d="M22 0C30 120 14 240 22 360S30 600 22 720 14 880 22 1000"/></svg>
+      </div>
+      <li class="stage rv">
+        <span class="mk">01</span>
+        <article class="st">
+          <figure class="fig"><img src="img/labels.jpg" alt="Бирки VETER brand" width="1024" height="768" loading="lazy"><figcaption>Бирки VETER brand</figcaption></figure>
+          <div class="tx"><span class="tg">Начало</span><h3>Название</h3><p>Первое, что придумала основательница бренда, — название.</p></div>
+        </article>
+      </li>
+      <li class="stage rv">
+        <span class="mk">02</span>
+        <article class="st">
+          <figure class="fig"><img src="img/ethno.jpg" alt="Этно-образ VETER, портрет" width="1024" height="768" loading="lazy"><figcaption>Этно-образ</figcaption></figure>
+          <div class="tx"><span class="tg">Этно</span><h3>Платье «Этно»</h3><p>Платье стало музой конкурса nail-мастеров.</p></div>
+        </article>
+      </li>
+      <li class="stage rv">
+        <span class="mk">03</span>
+        <article class="st">
+          <figure class="fig"><img src="img/runway.jpg" alt="Подиум: показ VETER" width="1024" height="768" loading="lazy"><figcaption>Подиум</figcaption></figure>
+          <div class="tx"><span class="tg">Подиум</span><h3>Неделя моды «Сибирь»</h3><p>Показ VETER на Неделе моды «Сибирь», 9 сезон.</p></div>
+        </article>
+      </li>
+      <li class="stage rv">
+        <span class="mk">04</span>
+        <article class="st">
+          <figure class="fig"><img src="img/magazine.jpg" alt="Обложка журнала «Стольник»" width="1024" height="768" loading="lazy"><figcaption>Журнал «Стольник»</figcaption></figure>
+          <div class="tx"><span class="tg">Пресса</span><h3>Журнал «Стольник»</h3><p>Публикация о бренде в журнале «Стольник».</p></div>
+        </article>
+      </li>
+      <li class="stage rv">
+        <span class="mk">05</span>
+        <article class="st">
+          <div class="opanel" aria-hidden="true"><span>Москва</span></div>
+          <div class="tx"><span class="tg">Признание</span><h3>Победа в Москве</h3><p>Победа на конкурсе в Москве.</p></div>
+        </article>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- LOOKS -->
+<section id="looks" class="looks">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Коллекции</span><h2 class="rv d1" style="margin-top:14px">Образы <em>VETER</em></h2></div>
+      <p class="rv d2">Кадры из публикаций бренда, в том числе съёмка новой коллекции</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр образов">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="look">Образы</button>
+      <button class="tab" aria-pressed="false" data-f="ethno">Этно</button>
+      <button class="tab" aria-pressed="false" data-f="runway">Подиум</button>
+    </div>
+    <div class="gal" id="gal">
+      <button class="gi rv" data-c="look" data-cap="Образ на этно-ковре"><img src="img/hero.jpg" alt="Образ VETER на этно-ковре" width="1024" height="768" loading="lazy"><span>Образ</span></button>
+      <button class="gi rv d1" data-c="look" data-cap="Образ VETER"><img src="img/look-1.jpg" alt="Образ VETER" width="1024" height="768" loading="lazy"><span>Образ</span></button>
+      <button class="gi rv d2" data-c="look" data-cap="Образ VETER"><img src="img/look-2.jpg" alt="Образ VETER, второй кадр" width="1024" height="768" loading="lazy"><span>Образ</span></button>
+      <button class="gi rv" data-c="ethno" data-cap="Этно-образ, портрет"><img src="img/ethno.jpg" alt="Этно-образ VETER, портрет" width="1024" height="768" loading="lazy"><span>Этно</span></button>
+      <button class="gi rv d1" data-c="runway" data-cap="Подиум"><img src="img/runway.jpg" alt="Подиум: показ VETER" width="1024" height="768" loading="lazy"><span>Подиум</span></button>
+      <button class="gi rv d2" data-c="runway" data-cap="Подиум"><img src="img/runway-2.jpg" alt="Подиум: показ VETER, второй кадр" width="1024" height="768" loading="lazy"><span>Подиум</span></button>
+    </div>
+    <div class="pricebox rv">
+      <div><b>Стоимость — в Direct*</b><span>Цен на странице нет: бренд называет их в личных сообщениях.</span></div>
+      <a class="btn terra sm" href="https://instagram.com/veter_brand_ural" target="_blank" rel="noopener">Написать в Direct*</a>
+    </div>
+    <p class="fn rv">*Instagram — продукт компании Meta, признанной экстремистской организацией и запрещённой в РФ</p>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""><p id="lbCap"></p></dialog>
+
+<!-- RUNWAY -->
+<section id="runway" class="runway">
+  <svg class="wv top" viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0H1440V14C1200 52 960 -4 720 22S240 50 0 16Z" fill="#F4EEE3"/></svg>
+  <svg class="rwind" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <path d="M-20 300 C 240 220, 420 400, 700 300 S 1100 190, 1300 280 S 1420 330, 1480 250"/>
+    <path d="M-20 560 C 200 470, 400 640, 660 540 S 1060 430, 1260 520 S 1420 580, 1480 500"/>
+    <path class="gu" d="M-20 300 C 240 220, 420 400, 700 300 S 1100 190, 1300 280 S 1420 330, 1480 250"/>
+    <path class="gu" style="animation-delay:-9s;animation-duration:24s" d="M-20 560 C 200 470, 400 640, 660 540 S 1060 430, 1260 520 S 1420 580, 1480 500"/>
+  </svg>
+  <div class="wrap rgrid">
+    <div class="rtext">
+      <span class="eyebrow rv">Подиум</span>
+      <h2 class="rv d1" style="margin-top:14px">Платья <em>в движении</em></h2>
+      <p class="lead rv d2">Одежда VETER выходила на подиум: в публикациях бренда — показ на Неделе моды «Сибирь» (9 сезон).</p>
+      <ul class="rlist rv d3">
+        <li>Показ на Неделе моды «Сибирь», 9 сезон</li>
+        <li>Съёмка новой коллекции</li>
+        <li>Набор моделей на неделю моды в Тюмени</li>
+      </ul>
+    </div>
+    <div class="rpics">
+      <button class="gi rv d1" data-cap="Подиум"><img src="img/runway.jpg" alt="Подиум: показ VETER" width="1024" height="768" loading="lazy"><span>Подиум</span></button>
+      <button class="gi rv d2" data-cap="Подиум"><img src="img/runway-2.jpg" alt="Подиум: показ VETER, второй кадр" width="1024" height="768" loading="lazy"><span>Подиум</span></button>
+    </div>
+  </div>
+  <svg class="wv bot" viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 46H1440V28C1180 -6 940 52 700 24S220 -2 0 30Z" fill="#FFFDF9"/></svg>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Связь</span><h2 class="rv d1" style="margin-top:14px">Как <em>с нами связаться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Связь</small><a class="big" href="https://instagram.com/veter_brand_ural" target="_blank" rel="noopener">Написать в Direct*</a></div>
+        <div class="ci"><small>Аккаунт бренда</small><p>veter_brand_ural · 224 подписчика</p></div>
+        <div class="ci"><small>Где</small><p>Урал. Точный адрес и часы работы в открытых источниках не указаны.</p></div>
+        <div class="ci"><small>Стоимость</small><p>Называется в Direct*</p></div>
+        <p class="fn">*Instagram — продукт компании Meta, признанной экстремистской организацией и запрещённой в РФ</p>
+      </div>
+      <div class="cside rv d1">
+        <div class="cbox">
+          <span class="eyebrow">Direct</span>
+          <h3>Напишите бренду</h3>
+          <p>Вопросы про образы, стоимость и сотрудничество — в личные сообщения.</p>
+          <a class="btn terra" href="https://instagram.com/veter_brand_ural" target="_blank" rel="noopener">Написать в Direct*</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow rv">VETER</span>
+    <h2 class="rv d1">Выберите свой <em>образ</em></h2>
+    <p class="lead rv d2" style="margin:0 auto">Стоимость и детали — в Direct*. Напишите бренду.</p>
+    <div class="ctas rv d3">
+      <a class="btn terra" href="https://instagram.com/veter_brand_ural" target="_blank" rel="noopener">Написать в Direct*</a>
+      <a class="btn ghost" href="#path">Путь бренда</a>
+    </div>
+    <p class="fn rv d3">*Instagram — продукт компании Meta, признанной экстремистской организацией и запрещённой в РФ</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© VETER — уральский бренд одежды</span>
+    <span>Демо-концепт. Данные — из открытых источников (публичные посты бренда) на 26.10.2026.</span>
+    <span>*Instagram — продукт компании Meta, признанной экстремистской организацией и запрещённой в РФ</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="#path"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 8c4-5 7 4 11-1s6-1 7 0M3 15c4-5 7 4 11-1"/></svg>Путь</a>
+  <a href="#looks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 9-8 9-8-9z"/></svg>Образы</a>
+  <a class="main" href="https://instagram.com/veter_brand_ural" target="_blank" rel="noopener" aria-label="Написать в Direct (Instagram, см. сноску внизу страницы)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 3 10.5l7 3 3 7z"/><path d="m10 13.5 11-10.5"/></svg>Direct*</a>
+</nav>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    const y = scrollY;
+    hdr.classList.toggle('scrolled', y > 8);
+    mbar.classList.toggle('show', y > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Лёгкий параллакс фото на первом экране
+  const hero = document.getElementById('heroImg');
+  if (!reduce && hero) {
+    let tick = false;
+    addEventListener('scroll', () => {
+      if (tick) return; tick = true;
+      requestAnimationFrame(() => { hero.style.transform = `translateY(${Math.min(scrollY, 700) * -0.05}px)`; tick = false; });
+    }, { passive: true });
+  }
+
+  // Путь бренда: линия «растёт» по мере прокрутки, этапы загораются
+  const tl = document.getElementById('tl'), fill = document.getElementById('railFill');
+  const stages = [...tl.querySelectorAll('.stage')];
+  let ticking = false;
+  const upd = () => {
+    ticking = false;
+    const r = tl.getBoundingClientRect();
+    const line = innerHeight * 0.65;
+    const p = reduce ? 1 : Math.min(1, Math.max(0, (line - r.top) / r.height));
+    fill.style.clipPath = `inset(0 0 ${((1 - p) * 100).toFixed(2)}% 0)`;
+    stages.forEach(s => { s.classList.toggle('on', reduce || s.getBoundingClientRect().top < line); });
+  };
+  const req = () => { if (!ticking) { ticking = true; requestAnimationFrame(upd); } };
+  addEventListener('scroll', req, { passive: true });
+  addEventListener('resize', req);
+  upd();
+
+  // Фильтр образов и лайтбокс
+  const items = document.querySelectorAll('#gal .gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+  document.querySelectorAll('.gi').forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.currentSrc || img.src; lbImg.alt = img.alt;
+    lbCap.textContent = i.dataset.cap || img.alt;
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>

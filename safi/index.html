@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Safi — бренд одежды и ателье в Грозном: индивидуальный пошив, коллекции, курсы кроя и шитья</title>
+<meta name="description" content="Safi — бренд одежды и ателье в Грозном. Индивидуальный пошив, стильные коллекции, курсы кроя и шитья. Стоимость — по запросу.">
+<meta name="theme-color" content="#470917">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Jost:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Forum&family=Great+Vibes&family=Jost:wght@300;400;500;600&display=swap"></noscript>
+<style>
+:root{
+  --pearl:#F6F0E8; --pearl-2:#ECE2D6; --paper:#FFFBF6;
+  --wine:#6B0F22; --wine-d:#470917; --wine-l:#8E1B33;
+  --black:#150F11; --ink:#241A1C; --ink-2:#4A3A3C; --muted:#6F5F5C;
+  --gold:#B8955A; --gold-l:#E3CC9A; --gold-d:#7E5E2B;
+  --line:rgba(36,26,28,.15); --gl:rgba(227,204,154,.32);
+  --serif:"Forum", Georgia, "Times New Roman", serif;
+  --sans:"Jost", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --script:"Great Vibes", "Snell Roundhand", "Segoe Script", cursive;
+  --shadow:0 26px 50px -26px rgba(71,9,23,.6);
+  --wrap:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:80px}
+body{margin:0;background:var(--pearl);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.05;margin:0}
+h2{font-size:clamp(34px,5.6vw,60px)}
+h2 em{font-style:normal;color:var(--wine);background:linear-gradient(var(--gold),var(--gold)) 0 94%/100% 1px no-repeat;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font:500 12px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--gold-d)}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--gold)}
+.lead{font-size:clamp(16px,1.6vw,18px);color:var(--ink-2);max-width:54ch;margin:0}
+.fn{margin:16px 0 0;font-size:12px;line-height:1.5;color:var(--muted);max-width:62ch}
+section{padding:clamp(72px,10vw,120px) 0}
+.script{font-family:var(--script);font-weight:400}
+
+/* dark / wine contexts */
+.dk{background:var(--black);color:var(--pearl)}
+.wn{background:var(--wine-d);color:var(--pearl)}
+.dk .eyebrow,.wn .eyebrow,.hero .eyebrow,.final .eyebrow{color:var(--gold-l)}
+.dk h2 em,.wn h2 em,.final h2 em{color:var(--gold-l);background-image:linear-gradient(var(--gold-l),var(--gold-l))}
+.dk .lead,.wn .lead,.final .lead{color:rgba(246,240,232,.82)}
+.dk .fn,.wn .fn,.hero .fn,.final .fn{color:rgba(246,240,232,.62)}
+
+/* demo bar */
+.demo{background:var(--black);color:#EBE2DA;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:var(--gold-l);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:11px;border:1px solid var(--gl);padding:3px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(246,240,232,.9);background:color-mix(in srgb,var(--pearl) 86%,transparent);backdrop-filter:saturate(1.3) blur(14px);-webkit-backdrop-filter:saturate(1.3) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo .script{font-size:42px;line-height:1;color:var(--wine);padding-bottom:6px}
+.logo small{font:500 10.5px/1.3 var(--sans);color:var(--muted);letter-spacing:.2em;text-transform:uppercase;border-left:1px solid var(--gold);padding-left:12px}
+.nav{display:none;gap:28px}
+.nav a{text-decoration:none;font-weight:500;font-size:14px;letter-spacing:.04em;color:var(--ink-2);position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 26px;border:1px solid var(--wine);background:var(--wine);color:var(--pearl);font:500 13px/1.25 var(--sans);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;text-align:center;cursor:pointer;transition:transform .25s, background .25s, color .25s, border-color .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.wine:hover{background:var(--wine-d);border-color:var(--wine-d)}
+.btn.gold{background:var(--gold-l);border-color:var(--gold-l);color:var(--black)}
+.btn.gold:hover{background:#F0DFB6;border-color:#F0DFB6}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--pearl)}
+.btn.ghost-l{background:transparent;color:var(--pearl);border-color:rgba(246,240,232,.5)}
+.btn.ghost-l:hover{background:var(--pearl);color:var(--wine-d)}
+.btn.sm{min-height:42px;padding:8px 18px;font-size:12px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border:1px solid var(--line);background:var(--paper);display:grid;place-items:center;cursor:pointer;border-radius:50%}
+.burger span{display:block;width:18px;height:1.5px;background:var(--ink);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:var(--ink);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--pearl);padding:116px 24px 40px;display:flex;flex-direction:column;gap:4px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:400 34px/1.25 var(--serif);text-decoration:none;padding:8px 0;border-bottom:1px dashed var(--gold)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;color:var(--pearl);padding:clamp(40px,6vw,84px) 0 clamp(96px,11vw,140px);
+  background:radial-gradient(90% 70% at 88% 6%,rgba(142,27,51,.6),transparent 62%),repeating-linear-gradient(115deg,rgba(227,204,154,.05) 0 1px,transparent 1px 22px),var(--wine-d)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1fr);gap:60px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:72px}}
+.pill{display:inline-flex;align-items:center;gap:12px;border:1px solid var(--gl);padding:9px 16px;font:500 11.5px/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-l)}
+.pill i{width:6px;height:6px;background:var(--gold-l);transform:rotate(45deg);flex:none}
+.hero h1{margin:22px 0 24px}
+.hero h1 .script{display:block;font-size:clamp(100px,22vw,200px);line-height:.85;color:var(--gold-l);margin-left:-.03em;padding-bottom:10px}
+.hero h1 .h1t{display:block;font:400 clamp(26px,3.6vw,44px)/1.15 var(--serif);max-width:20ch}
+.hero .lead{color:rgba(246,240,232,.84);margin-bottom:26px}
+.place{display:flex;gap:10px;align-items:flex-start;color:rgba(246,240,232,.75);font-size:14.5px;margin-bottom:28px}
+.place svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--gold-l)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 220px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.visual{position:relative;max-width:480px;width:100%;margin-inline:auto;padding:14px 40px 14px 14px}
+.photo{position:relative;aspect-ratio:4/5;background:var(--wine);box-shadow:var(--shadow)}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.photo::before{content:"";position:absolute;inset:-9px;border:1.5px dashed var(--gold-l);opacity:.75;z-index:2;pointer-events:none}
+.ruler{position:absolute;right:4px;top:14px;bottom:14px;width:22px;
+  background:repeating-linear-gradient(0deg,rgba(227,204,154,.85) 0 1px,transparent 1px 8px) right/9px 100% no-repeat,repeating-linear-gradient(0deg,rgba(227,204,154,.95) 0 1.5px,transparent 1.5px 40px) right/18px 100% no-repeat}
+.tag{position:absolute;z-index:4;left:-2px;bottom:9%;background:var(--pearl);color:var(--ink);padding:14px 22px 14px 42px;clip-path:polygon(22px 0,100% 0,100% 100%,22px 100%,0 50%);max-width:220px;font-size:12.5px;line-height:1.35;transform-origin:left center;animation:sway 7s ease-in-out infinite}
+.tag::before{content:"";position:absolute;left:19px;top:50%;width:8px;height:8px;margin-top:-4px;border-radius:50%;background:var(--wine-d);box-shadow:0 0 0 1.5px var(--gold)}
+.tag b{display:block;font:400 28px/1.1 var(--serif);color:var(--wine)}
+@keyframes sway{50%{transform:rotate(-2.5deg)}}
+.thread{position:absolute;left:0;bottom:0;width:100%;height:100px;z-index:1;pointer-events:none}
+.thread path{fill:none;stroke:var(--gold-l);stroke-width:1.5}
+.thread .solid{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 3.2s .5s cubic-bezier(.65,0,.35,1) forwards}
+.thread .dash{stroke-dasharray:6 9;opacity:.4}
+@keyframes draw{to{stroke-dashoffset:0}}
+
+/* tape */
+.tape{position:relative;background:#E9DAB0;color:var(--wine-d);overflow:hidden;padding:26px 0 18px;border-block:1px solid var(--gold)}
+.tape::before,.tape::after{content:"";position:absolute;left:0;right:0;top:0;pointer-events:none}
+.tape::before{height:11px;background:repeating-linear-gradient(90deg,rgba(21,15,17,.7) 0 1px,transparent 1px 10px)}
+.tape::after{height:20px;background:repeating-linear-gradient(90deg,rgba(21,15,17,.85) 0 1.5px,transparent 1.5px 50px)}
+.track{display:flex;width:max-content;animation:run 40s linear infinite}
+.track span{display:flex;align-items:center;gap:48px;padding:0 24px;font:400 clamp(20px,2.6vw,28px)/1 var(--serif);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+.track span::after{content:"";width:7px;height:7px;background:var(--wine);transform:rotate(45deg)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* head */
+.head{display:grid;gap:18px;margin-bottom:44px}
+.head h2{margin-top:16px}
+@media (min-width:960px){.head{grid-template-columns:minmax(0,1fr) auto;align-items:end}}
+.head p{margin:0;color:var(--muted);font-size:14px;max-width:36ch}
+.dk .head p,.wn .head p{color:rgba(246,240,232,.7)}
+
+/* directions (feature) */
+.dirs{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;margin-bottom:30px}
+@media (min-width:760px){.dirs{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}}
+.dcard{position:relative;text-align:left;display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 16px;align-items:center;padding:20px;border:1px solid var(--line);background:var(--paper);cursor:pointer;transition:background .3s,color .3s,border-color .3s}
+.dcard:hover{border-color:var(--gold)}
+.dcard .ic{grid-row:span 3;width:56px;height:56px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--wine);transition:all .3s}
+.dcard .ic svg{width:28px;height:28px}
+.dcard .num{font:500 11px/1 var(--sans);letter-spacing:.24em;color:var(--gold-d)}
+.dcard b{font:400 25px/1.1 var(--serif)}
+.dcard small{color:var(--muted);font-size:13.5px;line-height:1.4}
+.dcard[aria-selected="true"]{background:var(--wine);border-color:var(--wine);color:var(--pearl)}
+.dcard[aria-selected="true"]::before{content:"";position:absolute;inset:5px;border:1px dashed rgba(227,204,154,.55);pointer-events:none}
+.dcard[aria-selected="true"] .ic{background:var(--gold-l);border-color:var(--gold-l);color:var(--wine-d)}
+.dcard[aria-selected="true"] .num{color:var(--gold-l)}
+.dcard[aria-selected="true"] small{color:rgba(246,240,232,.78)}
+.dcard:focus-visible,.tab:focus-visible,.btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.dpanel{display:none}
+.dpanel.on{display:grid;grid-template-columns:minmax(0,1fr);gap:30px;animation:fade .5s ease}
+@media (min-width:900px){.dpanel.on{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px;align-items:start}}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.dpanel h3{font-size:clamp(30px,4vw,42px);margin-bottom:12px}
+.dpanel .lead{margin-bottom:24px}
+.row{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;padding:18px 0;border-bottom:1px solid var(--line)}
+.row:first-of-type{border-top:1px solid var(--line)}
+.row .n{flex:1 1 200px;min-width:0}
+.row .n b{display:block;font-weight:500;font-size:16.5px}
+.row .n small{color:var(--muted);font-size:13.5px}
+.row .p{font:400 22px/1 var(--serif);color:var(--wine);white-space:nowrap}
+.note{margin:20px 0 0;font-size:13.5px;color:var(--muted)}
+.msg{position:relative;background:var(--wine-d);color:var(--pearl);padding:clamp(24px,3vw,36px)}
+.msg::before{content:"";position:absolute;inset:7px;border:1px dashed rgba(227,204,154,.45);pointer-events:none}
+.msg .eyebrow{color:var(--gold-l)}
+.msg h4{font:400 28px/1.15 var(--serif);margin:14px 0 0}
+.say{margin:18px 0 22px;padding:16px 18px;background:rgba(255,255,255,.07);border-left:2px solid var(--gold-l);font-size:15.5px;line-height:1.55}
+.msg .ctas{position:relative}
+.msg .ctas .btn{flex:1 1 200px}
+.msg .hint{position:relative;margin:16px 0 0;font-size:12.5px;line-height:1.5;color:rgba(246,240,232,.7)}
+
+/* looks */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.tab{border:1px solid var(--line);background:transparent;color:inherit;padding:11px 20px;font:500 12.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:all .25s}
+.dk .tab{border-color:var(--gl)}
+.tab[aria-pressed="true"]{background:var(--gold-l);color:var(--black);border-color:var(--gold-l)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:760px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
+.gi{position:relative;display:block;width:100%;overflow:hidden;aspect-ratio:4/5;background:var(--wine-d);cursor:zoom-in;border:0;padding:0}
+.gi img{width:100%;height:100%;object-fit:cover;object-position:50% 25%;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.06)}
+.cap{position:absolute;left:0;right:0;bottom:0;padding:38px 14px 14px;background:linear-gradient(transparent,rgba(21,15,17,.85));font:400 17px/1.25 var(--serif);color:#fff;text-align:left}
+.gi.info{cursor:default;display:grid;place-items:center;background:linear-gradient(160deg,var(--wine),var(--wine-d));border:1px solid var(--gl)}
+.gi.info svg{width:58%;height:auto;margin-bottom:34px}
+.gi.info::before{content:"";position:absolute;inset:7px;border:1px dashed rgba(227,204,154,.4);pointer-events:none}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,1000px);max-height:90vh}
+.lb::backdrop{background:rgba(20,13,15,.88)}
+.lb img{max-height:84vh;width:auto;margin:auto}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:50%;border:0;background:#fff;color:var(--ink);font-size:22px;cursor:pointer}
+
+/* profile */
+.praise{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pr-card{position:relative;background:var(--paper);border:1px solid var(--line);padding:34px 28px 30px}
+.pr-card::before{content:"";position:absolute;left:28px;top:-1px;width:44px;height:3px;background:var(--wine)}
+.pr-card .num{font:400 54px/1 var(--serif);color:var(--gold);opacity:.6}
+.pr-card h3{font-size:28px;margin:12px 0 12px}
+.pr-card p{margin:0;color:var(--ink-2)}
+.score{display:flex;flex-wrap:wrap;gap:14px;margin-top:20px}
+.score a{display:flex;align-items:center;gap:16px;background:var(--paper);border:1px solid var(--line);padding:16px 22px;text-decoration:none;flex:1 1 260px;transition:border-color .25s}
+.score a:hover{border-color:var(--gold)}
+.score strong{font:400 42px/1 var(--serif);color:var(--wine)}
+.score span{font-size:13.5px;color:var(--muted);line-height:1.4}
+.score span b{color:var(--ink);display:block;font-weight:500}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1fr);gap:48px;align-items:center}
+@media (min-width:900px){.about{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:72px}}
+.about h2{margin:16px 0 20px}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0}
+.fact{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--gl);padding:10px 16px;font-size:14px;font-weight:500}
+.fact::before{content:"";width:6px;height:6px;background:var(--gold-l);transform:rotate(45deg);flex:none}
+.art{max-width:440px;width:100%;margin-inline:auto}
+.art svg{width:100%;height:auto;display:block;overflow:visible}
+.art .draw{stroke-dasharray:1;stroke-dashoffset:1}
+.art.in .draw{animation:draw 3s .3s cubic-bezier(.65,0,.35,1) forwards}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:56px;align-items:stretch}}
+.cinfo{display:grid;gap:24px;align-content:start}
+.ci small{display:block;font:500 11.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-d);margin-bottom:8px}
+.ci p,.ci a{margin:0;font-size:18px;font-weight:400;text-decoration:none}
+.ci a.big{display:inline-block;font:400 clamp(28px,5vw,38px)/1.1 var(--serif);color:var(--wine);overflow-wrap:anywhere;border-bottom:1px solid var(--gold)}
+.how{position:relative;background:var(--paper);border:1px solid var(--line);padding:clamp(24px,4vw,40px)}
+.how::before{content:"";position:absolute;inset:7px;border:1px dashed var(--gold);opacity:.5;pointer-events:none}
+.how h3{font-size:32px;margin-bottom:26px;position:relative}
+.how ol{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;gap:28px;position:relative}
+.how li{position:relative;display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;counter-increment:s}
+.how li::before{content:counter(s);width:44px;height:44px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;font:400 22px/1 var(--serif);color:var(--wine);background:var(--paper);position:relative;z-index:1}
+.how li:not(:last-child)::after{content:"";position:absolute;left:21.5px;top:44px;bottom:-28px;border-left:1.5px dashed var(--gold)}
+.how li b{display:block;font-weight:500;margin-bottom:2px}
+.how li p{margin:0;color:var(--muted);font-size:14.5px}
+
+/* final */
+.final{position:relative;text-align:center;color:var(--pearl);background:radial-gradient(90% 90% at 50% 0%,rgba(142,27,51,.7),transparent 65%),var(--wine-d);overflow:hidden}
+.final .big{display:block;font-size:clamp(80px,16vw,150px);line-height:.9;color:var(--gold-l);padding-bottom:10px}
+.final h2{font-size:clamp(34px,6vw,64px);max-width:18ch;margin:14px auto 20px}
+.final .lead{margin:0 auto}
+.final .ctas{justify-content:center;margin-top:30px}
+.final .fn{margin-inline:auto}
+footer{background:var(--black);color:rgba(246,240,232,.7);padding:36px 0 120px;font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer .fn{flex-basis:100%;color:rgba(246,240,232,.55);margin:0}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:.8fr .8fr 1.6fr;gap:8px;padding:8px;background:rgba(21,15,17,.94);border:1px solid var(--gl);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 18px 40px -12px rgba(0,0,0,.5);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;color:var(--pearl);text-decoration:none;font-size:11.5px;font-weight:500;letter-spacing:.04em;text-align:center;line-height:1.2}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--wine-l);flex-direction:row;font-size:12.5px;gap:8px;padding:0 6px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+  .thread .solid,.art .draw{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта для бренда и ателье Safi. Данные из открытого профиля Instagram* на 26.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Safi — наверх"><span class="script">Safi</span><small>бренд<br>и ателье</small></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#direction">Направления</a>
+      <a href="#looks">Образы</a>
+      <a href="#profile">Из профиля</a>
+      <a href="#about">О бренде</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm wine" href="https://instagram.com/_safi_brand_" target="_blank" rel="noopener">Написать в Direct*</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#direction">Направления</a>
+  <a href="#looks">Образы</a>
+  <a href="#profile">Из профиля</a>
+  <a href="#about">О бренде</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero" style="padding-bottom:clamp(96px,11vw,140px)">
+  <svg class="thread" viewBox="0 0 1200 120" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <path class="dash" d="M-10 102 C 150 22, 260 142, 420 82 S 700 32, 840 92 S 1060 132, 1210 52"/>
+    <path class="solid" pathLength="1" d="M-10 90 C 150 10, 260 130, 420 70 S 700 20, 840 80 S 1060 120, 1210 40"/>
+  </svg>
+  <div class="wrap">
+    <div>
+      <span class="pill rv"><i></i>Бренд и ателье · Грозный</span>
+      <h1 class="rv d1"><span class="script">Safi</span><span class="h1t">Индивидуальный пошив, коллекции и&nbsp;курсы кроя</span></h1>
+      <p class="lead rv d2">Бренд одежды и ателье: платья и юбки на заказ по индивидуальным меркам, стильные коллекции, курсы кроя и шитья.</p>
+      <div class="place rv d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Грозный · Instagram* _safi_brand_ · 43,5&nbsp;тыс. подписчиков</span>
+      </div>
+      <div class="ctas rv d3">
+        <a class="btn gold" href="https://instagram.com/_safi_brand_" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Написать в Direct*</a>
+        <a class="btn ghost-l" href="#direction">Выбрать направление</a>
+      </div>
+      <p class="fn rv d3">*Instagram — продукт компании Meta, признанной экстремистской организацией и запрещённой в РФ</p>
+    </div>
+    <div class="visual rv d2">
+      <div class="photo"><img id="heroImg" src="img/hero.jpg" alt="Красное вечернее платье Safi" width="1024" height="768" fetchpriority="high"></div>
+      <div class="ruler" aria-hidden="true"></div>
+      <div class="tag">Бренд и ателье<b>43,5&nbsp;тыс.</b>подписчиков в Instagram*</div>
+    </div>
+  </div>
+</section>
+
+<div class="tape" aria-hidden="true"><div class="track">
+  <span>Индивидуальный пошив</span><span>Стильные коллекции</span><span>Курсы кроя и шитья</span><span>Лекала</span><span>Юбка на заказ</span>
+  <span>Индивидуальный пошив</span><span>Стильные коллекции</span><span>Курсы кроя и шитья</span><span>Лекала</span><span>Юбка на заказ</span>
+</div></div>
+
+<!-- DIRECTIONS (фишка) -->
+<section id="direction">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Три направления</span><h2 class="rv d1">Что вы хотите <em>заказать</em></h2></div>
+      <p class="rv d2">Выберите направление — получите готовый текст для сообщения в Direct*</p>
+    </div>
+    <div class="dirs rv" role="tablist" aria-label="Направления Safi">
+      <button class="dcard" role="tab" aria-selected="true" data-d="sew" id="t-sew" aria-controls="d-sew">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="7" cy="18" r="3"/><circle cx="17" cy="18" r="3"/><path d="M9 16 19 3M15 16 5 3"/></svg></span>
+        <span class="num">01</span><b>Пошив на заказ</b><small>По индивидуальным меркам</small>
+      </button>
+      <button class="dcard" role="tab" aria-selected="false" data-d="coll" id="t-coll" aria-controls="d-coll">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7.5a2.5 2.5 0 1 0-2.5-2.5M12 7.5V9L3.2 15.6A1.4 1.4 0 0 0 4 18.2h16a1.4 1.4 0 0 0 .8-2.6L12 9"/></svg></span>
+        <span class="num">02</span><b>Коллекции</b><small>Стильные коллекции бренда</small>
+      </button>
+      <button class="dcard" role="tab" aria-selected="false" data-d="courses" id="t-courses" aria-controls="d-courses">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(-35 12 12)"><rect x="2" y="8.5" width="20" height="7" rx="1"/><path d="M6 8.5v3M10 8.5v2M14 8.5v3M18 8.5v2"/></g></svg></span>
+        <span class="num">03</span><b>Курсы кроя и шитья</b><small>Обучение от бренда</small>
+      </button>
+    </div>
+
+    <div class="dpanel on" id="d-sew" role="tabpanel" aria-labelledby="t-sew">
+      <div>
+        <h3>Пошив на заказ</h3>
+        <p class="lead">Индивидуальный пошив в ателье Safi — вещь создаётся по вашим меркам.</p>
+        <div class="row"><div class="n"><b>Индивидуальный пошив</b><small>По индивидуальным меркам</small></div><div class="p">по запросу</div></div>
+        <div class="row"><div class="n"><b>Юбка на заказ</b><small>Пример из публикаций профиля</small></div><div class="p">по запросу</div></div>
+        <p class="note">Стоимость в открытом профиле не указана — уточняйте в Direct*.</p>
+      </div>
+      <div class="msg">
+        <span class="eyebrow">Что написать</span>
+        <h4>Текст для Direct*</h4>
+        <p class="say">Здравствуйте! Хочу заказать индивидуальный пошив по моим меркам. Расскажите, как всё устроено и сколько это стоит?</p>
+        <div class="ctas">
+          <button class="btn ghost-l copy" type="button">Скопировать текст</button>
+          <a class="btn gold" href="https://instagram.com/_safi_brand_" target="_blank" rel="noopener">Написать в Direct*</a>
+        </div>
+        <p class="hint">Direct не подставляет текст сам: скопируйте его и вставьте в сообщение.</p>
+      </div>
+    </div>
+
+    <div class="dpanel" id="d-coll" role="tabpanel" aria-labelledby="t-coll">
+      <div>
+        <h3>Коллекции</h3>
+        <p class="lead">Стильные коллекции Safi — модели можно посмотреть в профиле бренда.</p>
+        <div class="row"><div class="n"><b>Стильные коллекции Safi</b><small>Одежда бренда</small></div><div class="p">по запросу</div></div>
+        <p class="note">Какие модели доступны и как их заказать — уточняйте в Direct*.</p>
+      </div>
+      <div class="msg">
+        <span class="eyebrow">Что написать</span>
+        <h4>Текст для Direct*</h4>
+        <p class="say">Здравствуйте! Интересуют коллекции Safi. Расскажите, какие модели есть и как их заказать?</p>
+        <div class="ctas">
+          <button class="btn ghost-l copy" type="button">Скопировать текст</button>
+          <a class="btn gold" href="https://instagram.com/_safi_brand_" target="_blank" rel="noopener">Написать в Direct*</a>
+        </div>
+        <p class="hint">Direct не подставляет текст сам: скопируйте его и вставьте в сообщение.</p>
+      </div>
+    </div>
+
+    <div class="dpanel" id="d-courses" role="tabpanel" aria-labelledby="t-courses">
+      <div>
+        <h3>Курсы кроя и шитья</h3>
+        <p class="lead">Курсы — одно из направлений Safi. Также в профиле есть отдельные разделы «Курсы» и «Лекала».</p>
+        <div class="row"><div class="n"><b>Курсы кроя и шитья</b><small>Программа, даты и формат — уточняйте в Direct*</small></div><div class="p">по запросу</div></div>
+        <div class="row"><div class="n"><b>Лекала</b><small>Отдельный раздел в профиле</small></div><div class="p">в профиле</div></div>
+        <p class="note">Стоимость в открытом профиле не указана — уточняйте в Direct*.</p>
+      </div>
+      <div class="msg">
+        <span class="eyebrow">Что написать</span>
+        <h4>Текст для Direct*</h4>
+        <p class="say">Здравствуйте! Интересуют курсы кроя и шитья. Расскажите, как проходит обучение, когда набор и сколько это стоит?</p>
+        <div class="ctas">
+          <button class="btn ghost-l copy" type="button">Скопировать текст</button>
+          <a class="btn gold" href="https://instagram.com/_safi_brand_" target="_blank" rel="noopener">Написать в Direct*</a>
+        </div>
+        <p class="hint">Direct не подставляет текст сам: скопируйте его и вставьте в сообщение.</p>
+      </div>
+    </div>
+    <p class="fn">*Instagram — продукт компании Meta, признанной экстремистской организацией и запрещённой в РФ</p>
+  </div>
+</section>
+
+<!-- LOOKS -->
+<section id="looks" class="dk">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Образы</span><h2 class="rv d1">Фото <em>из профиля</em></h2></div>
+      <p class="rv d2">Кадры из открытого профиля Safi</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр образов">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="dress">Платья</button>
+      <button class="tab" aria-pressed="false" data-f="look">Образы</button>
+    </div>
+    <div class="grid" id="grid">
+      <button class="gi rv" data-c="dress"><img src="img/hero.jpg" alt="Красное вечернее платье" loading="lazy"><span class="cap">Красное вечернее платье</span></button>
+      <div class="gi info rv d1" data-c="info" aria-hidden="true">
+        <svg viewBox="0 0 200 240" fill="none" stroke="#E3CC9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M60 20H140C146 80 156 150 172 215Q100 232 28 215C44 150 54 80 60 20Z"/><path d="M60 20H140C146 80 156 150 172 215Q100 232 28 215C44 150 54 80 60 20Z" transform="translate(7 8.4) scale(.93)" stroke-dasharray="4 5" opacity=".7"/><path d="M100 72V190M94 84 100 70 106 84M94 178 100 192 106 178"/><path d="M52 120h9M148 120h-9"/></svg>
+        <span class="cap">Лекала</span>
+      </div>
+      <button class="gi rv d2" data-c="look"><img src="img/outfit.jpg" alt="Чёрно-красный образ" loading="lazy"><span class="cap">Чёрно-красный образ</span></button>
+      <div class="gi info rv" data-c="info" aria-hidden="true">
+        <svg viewBox="0 0 200 240" fill="none" stroke="#E3CC9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="68" cy="190" r="16"/><circle cx="132" cy="190" r="16"/><path d="M79 177 150 48M121 177 50 48"/><path d="M24 222C64 240 118 200 176 226" stroke-dasharray="4 5"/></svg>
+        <span class="cap">Курсы кроя и шитья</span>
+      </div>
+      <button class="gi rv d1" data-c="dress"><img src="img/dress-pink.jpg" alt="Платье с принтом" loading="lazy"><span class="cap">Платье с принтом</span></button>
+      <button class="gi rv d2" data-c="dress"><img src="img/dress-event.jpg" alt="Платье на событии" loading="lazy"><span class="cap">Платье на событии</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""></dialog>
+
+<!-- PROFILE -->
+<section id="profile">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Профиль</span><h2 class="rv d1">Что видно <em>в профиле</em></h2></div>
+      <p class="rv d2">По открытым данным профиля Safi в Instagram*</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card rv"><span class="num">01</span><h3>Бренд и ателье</h3><p>В одном профиле собраны и одежда бренда, и ателье: индивидуальный пошив, стильные коллекции, курсы кроя и шитья.</p></article>
+      <article class="pr-card rv d1"><span class="num">02</span><h3>По вашим меркам</h3><p>Среди публикаций — юбка на заказ, сшитая по индивидуальным меркам.</p></article>
+      <article class="pr-card rv d2"><span class="num">03</span><h3>Отзывы, курсы, лекала</h3><p>В профиле есть отдельные разделы с отзывами, курсами и лекалами — загляните в них, прежде чем написать.</p></article>
+    </div>
+    <div class="score rv">
+      <a href="https://instagram.com/_safi_brand_" target="_blank" rel="noopener"><strong>43,5&nbsp;тыс.</strong><span><b>Instagram*</b>подписчиков у профиля _safi_brand_</span></a>
+    </div>
+    <p class="fn">*Instagram — продукт компании Meta, признанной экстремистской организацией и запрещённой в РФ</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="wn">
+  <div class="wrap about">
+    <div>
+      <span class="eyebrow rv">О бренде</span>
+      <h2 class="rv d1">Бренд и <em>ателье</em> в Грозном</h2>
+      <p class="lead rv d2">Safi — это стильные коллекции, индивидуальный пошив и курсы кроя и шитья. Всё под одним именем и в одном профиле.</p>
+      <div class="facts rv d2">
+        <span class="fact">Грозный</span>
+        <span class="fact">Бренд и ателье</span>
+        <span class="fact">Индивидуальный пошив</span>
+        <span class="fact">Стильные коллекции</span>
+        <span class="fact">Курсы кроя и шитья</span>
+        <span class="fact">Лекала</span>
+      </div>
+      <a class="btn ghost-l rv d3" href="https://instagram.com/_safi_brand_" target="_blank" rel="noopener">Профиль в Instagram*</a>
+    </div>
+    <div class="art rv d1" aria-hidden="true">
+      <svg viewBox="0 0 400 500" fill="none" stroke="#E3CC9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <defs>
+          <pattern id="tk1" width="8" height="18" patternUnits="userSpaceOnUse"><path d="M.5 0v6" stroke="#150F11" stroke-width="1"/></pattern>
+          <pattern id="tk2" width="40" height="18" patternUnits="userSpaceOnUse"><path d="M.75 0v12" stroke="#150F11" stroke-width="1.5"/></pattern>
+        </defs>
+        <path class="draw" pathLength="1" d="M120 40H280C290 140 310 300 340 430Q200 460 60 430C90 300 110 140 120 40Z"/>
+        <path d="M120 40H280C290 140 310 300 340 430Q200 460 60 430C90 300 110 140 120 40Z" transform="translate(14 17) scale(.93)" stroke-dasharray="5 6" opacity=".6"/>
+        <path d="M200 120V190M194 132 200 118 206 132M200 330V392M194 380 200 394 206 380"/>
+        <path d="M100 220h12M288 220h-12M92 320h12M300 320h-12" opacity=".7"/>
+        <text x="200" y="285" text-anchor="middle" font-family="'Great Vibes','Snell Roundhand',cursive" font-size="96" fill="#E3CC9A" stroke="none">Safi</text>
+        <rect x="40" y="462" width="320" height="18" fill="#E9DAB0" stroke="none"/>
+        <rect x="40" y="462" width="320" height="18" fill="url(#tk1)" stroke="none"/>
+        <rect x="40" y="462" width="320" height="18" fill="url(#tk2)" stroke="none"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Контакты</span><h2 class="rv d1">Как <em>связаться</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Город</small><p>Грозный</p></div>
+        <div class="ci"><small>Instagram*</small><a class="big" href="https://instagram.com/_safi_brand_" target="_blank" rel="noopener">@_safi_brand_</a></div>
+        <div class="ci"><small>Как написать</small><p>Единственный канал связи в открытом профиле — «Написать в Direct*». Телефон, адрес и часы работы там не указаны.</p></div>
+        <div class="ctas"><a class="btn wine" href="https://instagram.com/_safi_brand_" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Написать в Direct*</a></div>
+        <p class="fn" style="margin:0">*Instagram — продукт компании Meta, признанной экстремистской организацией и запрещённой в РФ</p>
+      </div>
+      <div class="how rv d1">
+        <h3>Как заказать</h3>
+        <ol>
+          <li><div><b>Выберите направление</b><p>Пошив на заказ, коллекции или курсы кроя и шитья — вкладки выше.</p></div></li>
+          <li><div><b>Скопируйте готовый текст</b><p>Для каждого направления есть подсказка, что написать.</p></div></li>
+          <li><div><b>Отправьте в Direct*</b><p>Откройте профиль, нажмите «Написать» и вставьте текст. Стоимость — по запросу.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="script big rv" aria-hidden="true">Safi</span>
+    <span class="eyebrow rv">Связь</span>
+    <h2 class="rv d1">Напишите, что <em>хотите сшить</em></h2>
+    <p class="lead rv d2">Пошив по меркам, коллекция или курсы кроя и шитья — опишите, что вас интересует, в Direct*.</p>
+    <div class="ctas rv d3">
+      <a class="btn gold" href="https://instagram.com/_safi_brand_" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Написать в Direct*</a>
+      <a class="btn ghost-l" href="#direction">Выбрать направление</a>
+    </div>
+    <p class="fn rv d3">*Instagram — продукт компании Meta, признанной экстремистской организацией и запрещённой в РФ</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Safi — бренд одежды и ателье, Грозный</span>
+    <span>Демо-концепт. Данные — из открытого профиля Instagram* на 26.10.2026.</span>
+    <p class="fn">*Instagram — продукт компании Meta, признанной экстремистской организацией и запрещённой в РФ</p>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="#direction" data-pick="sew"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="18" r="3"/><circle cx="17" cy="18" r="3"/><path d="M9 16 19 3M15 16 5 3"/></svg>Пошив</a>
+  <a href="#direction" data-pick="courses"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(-35 12 12)"><rect x="2" y="8.5" width="20" height="7" rx="1"/><path d="M6 8.5v3M10 8.5v2M14 8.5v3M18 8.5v2"/></g></svg>Курсы</a>
+  <a class="main" href="https://instagram.com/_safi_brand_" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Написать в Direct*</a>
+</nav>
+
+<script>
+(() => {
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    hdr.classList.toggle('scrolled', scrollY > 8);
+    mbar.classList.toggle('show', scrollY > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Три направления: вкладки
+  const cards = [...document.querySelectorAll('.dcard')], panels = document.querySelectorAll('.dpanel');
+  const pick = k => {
+    cards.forEach(c => { const on = c.dataset.d === k; c.setAttribute('aria-selected', on); c.tabIndex = on ? 0 : -1; });
+    panels.forEach(p => p.classList.toggle('on', p.id === 'd-' + k));
+  };
+  cards.forEach((c, i) => {
+    c.addEventListener('click', () => pick(c.dataset.d));
+    c.addEventListener('keydown', e => {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      const n = cards[(i + (e.key === 'ArrowRight' ? 1 : cards.length - 1)) % cards.length];
+      pick(n.dataset.d); n.focus();
+    });
+  });
+  document.querySelectorAll('[data-pick]').forEach(a => a.addEventListener('click', () => pick(a.dataset.pick)));
+
+  // Копирование текста для Direct
+  document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', async () => {
+    const t = b.closest('.dpanel').querySelector('.say').textContent.trim();
+    try { await navigator.clipboard.writeText(t); }
+    catch (err) {
+      const a = document.createElement('textarea');
+      a.value = t; a.style.cssText = 'position:fixed;opacity:0'; document.body.appendChild(a); a.select();
+      try { document.execCommand('copy'); } catch (_) {}
+      a.remove();
+    }
+    const o = b.dataset.l || b.textContent; b.dataset.l = o;
+    b.textContent = 'Текст скопирован';
+    setTimeout(() => { b.textContent = o; }, 2200);
+  }));
+
+  // Фильтр образов и лайтбокс
+  const items = document.querySelectorAll('#grid [data-c]');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg');
+  document.querySelectorAll('button.gi').forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt;
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>INTRAVEL — мужская одежда: брюки, джинсы, пиджаки на Wildberries</title>
+<meta name="description" content="INTRAVEL — мужской бренд одежды: брюки, джинсы, жилетки, пиджаки, рубашки. Вещи с артикулами и переход в каталог на Wildberries.">
+<meta name="theme-color" content="#ECE8E1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"></noscript>
+<style>
+:root{
+  --bone:#ECE8E1; --paper:#F7F5F0; --sand:#D9CDB5; --sand-d:#A8946B;
+  --graphite:#232527; --graphite-2:#323538; --denim:#35506F; --denim-d:#263E58;
+  --ink:#1F2123; --ink-2:#3B3E41; --muted:#6C685F; --line:rgba(31,33,35,.14);
+  --shadow:0 26px 50px -30px rgba(31,33,35,.5);
+  --sans:"Onest", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, "SFMono-Regular", Consolas, "Courier New", monospace;
+  --wrap:1200px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bone);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.eyebrow{font:500 12px/1.3 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--denim)}
+h1,h2,h3{font-family:var(--sans);margin:0;overflow-wrap:break-word}
+h2{font-size:clamp(32px,5.2vw,60px);font-weight:300;line-height:1.04;letter-spacing:-.03em}
+h2 em,h1 em{font-style:normal;font-weight:600;color:var(--denim)}
+h3{font-weight:600;letter-spacing:-.01em}
+.lead{font-size:clamp(16px,1.6vw,18px);color:var(--ink-2);max-width:54ch}
+section{padding:clamp(64px,9vw,120px) 0}
+
+/* demo bar */
+.demo{background:var(--graphite);color:#E4DFD4;font-size:12.5px;line-height:1.4;padding:9px 0}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
+.demo b{color:var(--graphite);background:var(--sand);font:600 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(236,232,225,.9);background:color-mix(in srgb,var(--bone) 86%,transparent);backdrop-filter:saturate(1.3) blur(14px);-webkit-backdrop-filter:saturate(1.3) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.logo{display:flex;align-items:baseline;gap:10px;text-decoration:none;min-width:0}
+.logo b{font:700 18px/1 var(--sans);letter-spacing:.3em}
+.logo small{display:none;font:500 10.5px/1 var(--mono);color:var(--muted);letter-spacing:.14em;text-transform:uppercase}
+@media (min-width:520px){.logo small{display:inline}}
+.nav{display:none;gap:30px}
+.nav a{text-decoration:none;font-weight:500;font-size:14px;color:var(--ink-2);position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--denim);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 24px;border:1px solid var(--graphite);border-radius:2px;background:var(--graphite);color:#fff;font:600 13.5px/1.2 var(--sans);letter-spacing:.07em;text-transform:uppercase;text-decoration:none;text-align:center;cursor:pointer;transition:transform .25s, background .25s, color .25s, border-color .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.denim{background:var(--denim);border-color:var(--denim)}
+.btn.denim:hover{background:var(--denim-d);border-color:var(--denim-d)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--graphite);color:#fff}
+.btn.sand{background:var(--sand);border-color:var(--sand);color:var(--graphite)}
+.btn.sand:hover{background:#E6DCC8;border-color:#E6DCC8}
+.btn.sm{min-height:44px;padding:10px 18px;font-size:12.5px}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border:1px solid var(--line);border-radius:2px;background:var(--paper);display:grid;place-items:center;cursor:pointer;flex:none}
+.burger span{display:block;width:18px;height:1.5px;background:var(--ink);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:1.5px;background:var(--ink);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background:var(--bone);padding:112px 24px 40px;display:flex;flex-direction:column;gap:4px;opacity:0;pointer-events:none;transition:opacity .3s}
+.mnav a{font:300 34px/1.25 var(--sans);letter-spacing:-.02em;text-decoration:none;padding:8px 0;border-bottom:1px solid var(--line)}
+.mnav a:last-child{font-weight:600;color:var(--denim);border-bottom:0}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:960px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{padding:clamp(28px,5vw,60px) 0 clamp(56px,8vw,96px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:44px;align-items:center}
+@media (min-width:960px){.hero .wrap{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:72px}}
+.badge{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);background:var(--paper);padding:8px 14px;font:500 11.5px/1.3 var(--mono);letter-spacing:.07em;text-transform:uppercase}
+.badge i{width:8px;height:8px;background:var(--denim);flex:none}
+.hero h1{font-size:clamp(40px,6.4vw,92px);font-weight:300;line-height:1;letter-spacing:-.035em;margin:24px 0}
+.hero .lead{margin:0 0 30px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 170px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:38px;padding-top:26px;border-top:1px solid var(--line)}
+.stat strong{display:block;font:300 clamp(34px,5vw,48px)/1 var(--sans);letter-spacing:-.03em}
+.stat span{display:block;margin-top:8px;font:400 12px/1.4 var(--mono);color:var(--muted)}
+
+.visual{position:relative;max-width:500px;width:100%;margin-inline:auto;padding:0 12px 12px 0}
+.visual::before{content:"";position:absolute;right:0;bottom:0;left:24px;top:24px;background:var(--sand)}
+.frame{position:relative;z-index:1;aspect-ratio:3/4;background:var(--graphite-2);box-shadow:var(--shadow);overflow:hidden}
+.frame img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.frame::after{content:"";position:absolute;inset:10px;border:1.5px dashed rgba(255,255,255,.8);pointer-events:none}
+.hangtag{position:absolute;z-index:3;left:-4px;bottom:44px;background:var(--paper);border:1px solid var(--line);padding:12px 16px 12px 40px;box-shadow:var(--shadow);animation:float 6s ease-in-out infinite;max-width:72%}
+.hangtag::before{content:"";position:absolute;left:14px;top:50%;width:12px;height:12px;margin-top:-6px;border-radius:50%;background:var(--bone);border:1px solid var(--line)}
+.hangtag small{display:block;font:500 10.5px/1.2 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.hangtag b{display:block;font:600 15px/1.25 var(--sans);margin-top:4px}
+@keyframes float{50%{transform:translateY(-8px)}}
+
+/* marquee */
+.marquee{background:var(--denim);color:var(--bone);overflow:hidden;padding:16px 0}
+.track{display:flex;width:max-content;animation:run 40s linear infinite}
+.track span{font:500 clamp(14px,2vw,18px)/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;padding:0 22px;white-space:nowrap;display:flex;align-items:center;gap:44px}
+.track span::after{content:"";width:6px;height:6px;background:var(--sand);flex:none}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* head + tabs */
+.head{display:grid;gap:16px;margin-bottom:40px}
+@media (min-width:960px){.head{grid-template-columns:1fr auto;align-items:end}}
+.head p{margin:0;color:var(--muted);font-size:14px;max-width:46ch}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.tab{border:1px solid var(--line);border-radius:2px;background:var(--paper);padding:12px 18px;font:600 12.5px/1.2 var(--sans);letter-spacing:.07em;text-transform:uppercase;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.tab:hover{border-color:var(--graphite)}
+.tab[aria-selected="true"],.tab[aria-pressed="true"]{background:var(--graphite);color:#fff;border-color:var(--graphite)}
+
+/* catalog */
+.cat{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
+@media (min-width:960px){.cat{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:64px;align-items:start}}
+.panel{display:none}
+.panel.on{display:grid;gap:14px;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.tagc{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:14px;background:var(--paper);border:1px solid var(--line);padding:22px 20px 20px 58px}
+.tagc::before{content:"";position:absolute;left:18px;top:24px;width:14px;height:14px;border-radius:50%;background:var(--bone);border:1px solid var(--line);box-shadow:inset 0 1px 2px rgba(0,0,0,.18)}
+.tagc::after{content:"";position:absolute;left:42px;top:10px;bottom:10px;border-left:1.5px dashed var(--line)}
+.kind{font:500 11px/1.2 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.tagc h3{font-size:clamp(19px,2.4vw,24px);line-height:1.2;margin-top:6px}
+.art{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px}
+.art small{font:400 12px/1.2 var(--mono);color:var(--muted)}
+.art code{font:500 clamp(20px,3vw,26px)/1.1 var(--mono);letter-spacing:.04em;background:rgba(217,205,181,.45);padding:6px 10px}
+.tact{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.copy{border:1px solid var(--line);border-radius:2px;background:transparent;min-height:44px;padding:8px 16px;font:500 12.5px/1.2 var(--mono);cursor:pointer;transition:background .25s,border-color .25s}
+.copy:hover{border-color:var(--graphite);background:var(--bone)}
+.pnote{margin:0;font-size:12.5px;color:var(--muted)}
+.note{margin-top:22px;font-size:13px;color:var(--muted);max-width:60ch}
+.cat-photo{position:relative;aspect-ratio:3/4;background:var(--sand);display:none}
+@media (min-width:960px){.cat-photo{display:block;position:sticky;top:96px}}
+.cat-photo figure{position:absolute;inset:0;margin:0;opacity:0;transition:opacity .7s}
+.cat-photo figure.on{opacity:1}
+.cat-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.cat-photo figcaption,.pair figcaption{position:absolute;left:10px;bottom:10px;max-width:calc(100% - 20px);background:rgba(35,37,39,.82);color:#EDE8DD;font:500 11px/1.3 var(--mono);letter-spacing:.06em;padding:6px 10px}
+
+/* looks (feature) */
+.dark{background:var(--graphite);color:#E9E4DA}
+.dark .eyebrow{color:var(--sand)}
+.dark h2 em{color:var(--sand)}
+.dark .lead{color:#C4BEB2}
+.looks{display:grid;grid-template-columns:minmax(0,1fr);gap:44px}
+@media (min-width:960px){.looks{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:72px;align-items:center}}
+.modes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:30px 0 16px}
+.mode{border:1px solid rgba(255,255,255,.24);border-radius:2px;background:transparent;color:#E9E4DA;padding:14px 10px;text-align:left;cursor:pointer;display:grid;gap:8px;font:600 14px/1.2 var(--sans);overflow-wrap:anywhere;transition:background .25s,color .25s,border-color .25s}
+.mode small{font:500 11px/1 var(--mono);letter-spacing:.1em;color:var(--sand)}
+.mode:hover{border-color:var(--sand)}
+.mode[aria-pressed="true"]{background:var(--sand);color:var(--graphite);border-color:var(--sand)}
+.mode[aria-pressed="true"] small{color:var(--graphite-2)}
+.modenote{margin:0 0 26px;font:400 13px/1.5 var(--mono);color:#B9B3A7}
+.pair{display:none;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-items:start}
+.pair.on{display:grid;animation:fade .55s ease}
+.pair figure{position:relative;margin:0;aspect-ratio:3/4;background:var(--graphite-2);overflow:hidden}
+.pair img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+@media (min-width:600px){.pair{gap:16px}.pair figure:nth-child(2){margin-top:44px}}
+
+/* gallery */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:760px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}}
+.gi{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--sand);cursor:zoom-in;border:0;border-radius:0;padding:0;transition:opacity .4s, transform .4s}
+.gi img{width:100%;height:100%;object-fit:cover;object-position:50% 25%;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.05)}
+.gi span{position:absolute;left:8px;bottom:8px;right:8px;width:fit-content;max-width:calc(100% - 16px);background:rgba(247,245,240,.92);font:500 11px/1.3 var(--mono);letter-spacing:.04em;padding:5px 9px;text-align:left}
+.gi.hide{display:none}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,720px);max-height:92vh}
+.lb::backdrop{background:rgba(20,22,24,.88)}
+.lb img{max-height:86vh;width:auto;margin:auto}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border-radius:2px;border:0;background:#fff;font-size:22px;cursor:pointer}
+
+/* about */
+.about{background:var(--paper)}
+.praise{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pr-card{background:var(--bone);border:1px solid var(--line);padding:30px;position:relative;overflow:hidden}
+.pr-card .num{font:300 64px/1 var(--mono);color:var(--sand);position:absolute;right:18px;top:12px}
+.pr-card h3{font-size:24px;line-height:1.2;margin:56px 0 12px;position:relative}
+.pr-card p{margin:0;color:var(--ink-2);position:relative}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:36px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px;align-items:start}}
+.cinfo{display:grid;gap:24px;align-content:start}
+.ci small{display:block;font:500 11.5px/1.2 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.ci p{margin:0;font-size:18px;font-weight:500}
+.ci code{font:500 18px/1.3 var(--mono);background:rgba(217,205,181,.45);padding:2px 8px}
+.steps{display:grid;gap:12px;counter-reset:s;margin:0;padding:0;list-style:none}
+.steps li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:14px;padding:22px;background:var(--paper);border:1px solid var(--line)}
+.steps li::before{counter-increment:s;content:"0" counter(s);font:300 30px/1 var(--mono);color:var(--denim)}
+.steps b{display:block;font-size:17px;margin-bottom:4px}
+.steps p{margin:0;color:var(--ink-2);font-size:14.5px}
+
+/* final */
+.final{text-align:center;background:linear-gradient(180deg,var(--bone) 0%,#E0D6C2 100%)}
+.final h2{font-size:clamp(38px,7vw,84px);max-width:15ch;margin:18px auto}
+.final .ctas{justify-content:center;margin-top:30px}
+footer{padding:36px 0 120px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile action bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.5fr);gap:8px;padding:8px;background:rgba(35,37,39,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:4px;box-shadow:0 18px 40px -12px rgba(0,0,0,.45);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;border-radius:2px;color:#fff;text-decoration:none;font-size:11.5px;font-weight:600}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--denim);flex-direction:row;font-size:12.5px;gap:8px;text-transform:uppercase;letter-spacing:.05em;text-align:center}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта для бренда INTRAVEL. Данные из открытых источников (профиль бренда и каталог Wildberries) на 26.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="INTRAVEL — наверх"><b>INTRAVEL</b><small>мужская одежда</small></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#catalog">Вещи</a>
+      <a href="#looks">Образы</a>
+      <a href="#gallery">Фото</a>
+      <a href="#about">О бренде</a>
+      <a href="#contacts">Где купить</a>
+    </nav>
+    <a class="btn sm denim" href="https://www.wildberries.ru/catalog/0/search.aspx?search=Intravel" target="_blank" rel="noopener">На Wildberries</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#catalog">Вещи и артикулы</a>
+  <a href="#looks">1 брюки — 3 образа</a>
+  <a href="#gallery">Фото</a>
+  <a href="#about">О бренде</a>
+  <a href="#contacts">Где купить</a>
+  <a href="https://www.wildberries.ru/catalog/0/search.aspx?search=Intravel" target="_blank" rel="noopener">На Wildberries →</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="badge rv"><i></i>Мужской бренд · продаётся на Wildberries</span>
+      <h1 class="rv d1">Одежда для ваших <em>путешествий по&nbsp;жизни</em></h1>
+      <p class="lead rv d2">Джинсы, брюки и верх, которые садятся с первого раза — без возвратов и ошибок. Выберите вещь по артикулу и переходите в каталог на Wildberries.</p>
+      <div class="ctas rv d3">
+        <a class="btn denim" href="https://www.wildberries.ru/catalog/0/search.aspx?search=Intravel" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7h14l-1.2 12H6.2z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>На Wildberries</a>
+        <a class="btn ghost" href="#catalog">Смотреть вещи</a>
+      </div>
+      <div class="stats rv d3">
+        <div class="stat"><strong>5</strong><span>разделов: брюки, джинсы, жилетки, пиджаки, рубашки</span></div>
+        <div class="stat"><strong>5</strong><span>вещей с артикулами WB в подборке</span></div>
+        <div class="stat"><strong>WB</strong><span>цену смотрите в карточке товара</span></div>
+      </div>
+    </div>
+    <div class="visual rv d2">
+      <div class="frame"><img src="img/hero.jpg" alt="Мужской образ INTRAVEL: чёрный пиджак и брюки" fetchpriority="high"></div>
+      <div class="hangtag" aria-hidden="true"><small>Wildberries</small><b>Цену смотрите на&nbsp;WB</b></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Брюки</span><span>Джинсы</span><span>Жилетки</span><span>Пиджаки</span><span>Рубашки</span>
+  <span>Брюки</span><span>Джинсы</span><span>Жилетки</span><span>Пиджаки</span><span>Рубашки</span>
+  <span>Брюки</span><span>Джинсы</span><span>Жилетки</span><span>Пиджаки</span><span>Рубашки</span>
+  <span>Брюки</span><span>Джинсы</span><span>Жилетки</span><span>Пиджаки</span><span>Рубашки</span>
+</div></div>
+
+<!-- CATALOG -->
+<section id="catalog">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Каталог</span><h2 class="rv d1" style="margin-top:14px">Вещи <em>и артикулы</em></h2></div>
+      <p class="rv d2">Артикулы Wildberries из постов бренда. Цены не указаны: на WB они меняются.</p>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Категории вещей">
+      <button class="tab" role="tab" aria-selected="true" data-tab="pants">Брюки</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="jeans">Джинсы</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="jacket">Пиджак</button>
+    </div>
+    <div class="cat">
+      <div>
+        <div class="panel on" id="p-pants" role="tabpanel">
+          <article class="tagc">
+            <div><span class="kind">Брюки</span><h3>Брюки широкие, серые</h3></div>
+            <div class="art"><small>Артикул WB</small><code>WW426191</code></div>
+            <div class="tact"><a class="btn sm denim" href="https://www.wildberries.ru/catalog/0/search.aspx?search=Intravel" target="_blank" rel="noopener">На Wildberries</a><button class="copy" type="button" data-copy="WW426191">Скопировать артикул</button></div>
+            <p class="pnote">Цену смотрите на WB</p>
+          </article>
+          <article class="tagc">
+            <div><span class="kind">Брюки</span><h3>Брюки широкие, чёрные</h3></div>
+            <div class="art"><small>Артикул WB</small><code>WW368443</code></div>
+            <div class="tact"><a class="btn sm denim" href="https://www.wildberries.ru/catalog/0/search.aspx?search=Intravel" target="_blank" rel="noopener">На Wildberries</a><button class="copy" type="button" data-copy="WW368443">Скопировать артикул</button></div>
+            <p class="pnote">Цену смотрите на WB</p>
+          </article>
+          <article class="tagc">
+            <div><span class="kind">Брюки</span><h3>Брюки-бананы</h3></div>
+            <div class="art"><small>Артикул WB</small><code>WW367057</code></div>
+            <div class="tact"><a class="btn sm denim" href="https://www.wildberries.ru/catalog/0/search.aspx?search=Intravel" target="_blank" rel="noopener">На Wildberries</a><button class="copy" type="button" data-copy="WW367057">Скопировать артикул</button></div>
+            <p class="pnote">Цену смотрите на WB</p>
+          </article>
+        </div>
+        <div class="panel" id="p-jeans" role="tabpanel">
+          <article class="tagc">
+            <div><span class="kind">Джинсы</span><h3>Джинсы-бананы</h3></div>
+            <div class="art"><small>Артикул WB</small><code>WW375036</code></div>
+            <div class="tact"><a class="btn sm denim" href="https://www.wildberries.ru/catalog/0/search.aspx?search=Intravel" target="_blank" rel="noopener">На Wildberries</a><button class="copy" type="button" data-copy="WW375036">Скопировать артикул</button></div>
+            <p class="pnote">Цену смотрите на WB</p>
+          </article>
+        </div>
+        <div class="panel" id="p-jacket" role="tabpanel">
+          <article class="tagc">
+            <div><span class="kind">Верх</span><h3>Пиджак</h3></div>
+            <div class="art"><small>Артикул WB</small><code>WW458534</code></div>
+            <div class="tact"><a class="btn sm denim" href="https://www.wildberries.ru/catalog/0/search.aspx?search=Intravel" target="_blank" rel="noopener">На Wildberries</a><button class="copy" type="button" data-copy="WW458534">Скопировать артикул</button></div>
+            <p class="pnote">Цену смотрите на WB</p>
+          </article>
+        </div>
+        <p class="note">В линейке бренда также жилетки и рубашки — их смотрите в каталоге на Wildberries. Фото рядом показывает категорию, а не конкретный артикул.</p>
+      </div>
+      <div class="cat-photo" aria-hidden="true">
+        <figure class="on" data-k="pants"><img src="img/pants.jpg" alt="" loading="lazy"><figcaption>Брюки в руках</figcaption></figure>
+        <figure data-k="jeans"><img src="img/jeans.jpg" alt="" loading="lazy"><figcaption>Джинсы на улице</figcaption></figure>
+        <figure data-k="jacket"><img src="img/hero.jpg" alt="" loading="lazy"><figcaption>Чёрный пиджак и брюки</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOOKS: 1 брюки — 3 образа -->
+<section id="looks" class="dark">
+  <div class="wrap looks">
+    <div>
+      <span class="eyebrow rv">Фишка бренда</span>
+      <h2 class="rv d1" style="margin:14px 0 20px">1&nbsp;брюки — <em>3&nbsp;образа</em></h2>
+      <p class="lead rv d2">Тот самый силуэт: свободные брюки создают дорогой расслабленный образ. Переключайте режим и смотрите, как одни и те же брюки работают в разных сочетаниях.</p>
+      <div class="modes rv d2" role="group" aria-label="Режим образа">
+        <button class="mode" type="button" aria-pressed="true" data-mode="office"><small>01</small>Офис</button>
+        <button class="mode" type="button" aria-pressed="false" data-mode="weekend"><small>02</small>Выходные</button>
+        <button class="mode" type="button" aria-pressed="false" data-mode="evening"><small>03</small>Вечер</button>
+      </div>
+      <p class="modenote" id="modeNote" aria-live="polite">Режим «Офис» · образы 1 и 2 из 6</p>
+      <div class="ctas rv d3">
+        <a class="btn sand" href="#catalog">Брюки и артикулы</a>
+        <a class="btn ghost" style="color:#E9E4DA;border-color:rgba(255,255,255,.35)" href="https://www.wildberries.ru/catalog/0/search.aspx?search=Intravel" target="_blank" rel="noopener">На Wildberries</a>
+      </div>
+    </div>
+    <div class="rv d1">
+      <div class="pair on" data-mode="office">
+        <figure><img src="img/look-1.jpg" alt="Образ 1 бренда INTRAVEL, режим «офис»" loading="lazy"><figcaption>Образ 1 · офис</figcaption></figure>
+        <figure><img src="img/look-2.jpg" alt="Образ 2 бренда INTRAVEL, режим «офис»" loading="lazy"><figcaption>Образ 2 · офис</figcaption></figure>
+      </div>
+      <div class="pair" data-mode="weekend">
+        <figure><img src="img/look-3.jpg" alt="Образ 3 бренда INTRAVEL, режим «выходные»" loading="lazy"><figcaption>Образ 3 · выходные</figcaption></figure>
+        <figure><img src="img/look-4.jpg" alt="Образ 4 бренда INTRAVEL, режим «выходные»" loading="lazy"><figcaption>Образ 4 · выходные</figcaption></figure>
+      </div>
+      <div class="pair" data-mode="evening">
+        <figure><img src="img/look-5.jpg" alt="Образ 5 бренда INTRAVEL, режим «вечер»" loading="lazy"><figcaption>Образ 5 · вечер</figcaption></figure>
+        <figure><img src="img/look-6.jpg" alt="Образ 6 бренда INTRAVEL, режим «вечер»" loading="lazy"><figcaption>Образ 6 · вечер</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">Фото</span><h2 class="rv d1" style="margin-top:14px">Образы <em>и вещи</em></h2></div>
+      <p class="rv d2">Фотографии бренда INTRAVEL</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр фото">
+      <button class="tab" type="button" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" type="button" aria-pressed="false" data-f="looks">Образы</button>
+      <button class="tab" type="button" aria-pressed="false" data-f="items">Вещи</button>
+    </div>
+    <div class="grid" id="grid">
+      <button class="gi rv" type="button" data-c="looks"><img src="img/hero.jpg" alt="Чёрный пиджак и брюки" loading="lazy"><span>Пиджак и брюки</span></button>
+      <button class="gi rv d1" type="button" data-c="looks"><img src="img/look-1.jpg" alt="Образ 1" loading="lazy"><span>Образ 1</span></button>
+      <button class="gi rv d2" type="button" data-c="looks"><img src="img/look-2.jpg" alt="Образ 2" loading="lazy"><span>Образ 2</span></button>
+      <button class="gi rv" type="button" data-c="items"><img src="img/pants.jpg" alt="Брюки в руках" loading="lazy"><span>Брюки</span></button>
+      <button class="gi rv d1" type="button" data-c="looks"><img src="img/look-3.jpg" alt="Образ 3" loading="lazy"><span>Образ 3</span></button>
+      <button class="gi rv d2" type="button" data-c="looks"><img src="img/couple.jpg" alt="Пара в одежде INTRAVEL" loading="lazy"><span>Пара</span></button>
+      <button class="gi rv" type="button" data-c="items"><img src="img/jeans.jpg" alt="Джинсы на улице" loading="lazy"><span>Джинсы на улице</span></button>
+      <button class="gi rv d1" type="button" data-c="looks"><img src="img/look-4.jpg" alt="Образ 4" loading="lazy"><span>Образ 4</span></button>
+      <button class="gi rv d2" type="button" data-c="items"><img src="img/shirt.jpg" alt="Рубашка" loading="lazy"><span>Рубашка</span></button>
+      <button class="gi rv" type="button" data-c="looks"><img src="img/look-5.jpg" alt="Образ 5" loading="lazy"><span>Образ 5</span></button>
+      <button class="gi rv d1" type="button" data-c="looks"><img src="img/look-6.jpg" alt="Образ 6" loading="lazy"><span>Образ 6</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose" type="button">×</button><img id="lbImg" alt=""></dialog>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">О бренде</span><h2 class="rv d1" style="margin-top:14px">Садится <em>с первого раза</em></h2></div>
+      <p class="rv d2">По описанию профиля и постам бренда</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card rv"><span class="num">01</span><h3>Без возвратов и ошибок</h3><p>Бренд делает джинсы, брюки и верх, которые садятся с первого раза. Так INTRAVEL описывает свою одежду.</p></article>
+      <article class="pr-card rv d1"><span class="num">02</span><h3>Тот самый силуэт</h3><p>В постах бренда: свободные брюки, будь то широкие или бананы, создают дорогой расслабленный образ.</p></article>
+      <article class="pr-card rv d2"><span class="num">03</span><h3>Одни брюки — три образа</h3><p>Одну пару можно собрать по-разному: для офиса, выходных и вечера. Примеры — в блоке «1&nbsp;брюки — 3&nbsp;образа».</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">Где купить</span><h2 class="rv d1" style="margin-top:14px">Магазин <em>на Wildberries</em></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Площадка</small><p>Wildberries</p></div>
+        <div class="ci"><small>Поиск по бренду</small><p><code>Intravel</code></p></div>
+        <div class="ci"><small>Цены</small><p>Меняются — актуальную стоимость смотрите в карточке товара на WB</p></div>
+        <div class="ctas"><a class="btn denim" href="https://www.wildberries.ru/catalog/0/search.aspx?search=Intravel" target="_blank" rel="noopener">Открыть каталог на WB</a></div>
+      </div>
+      <ol class="steps">
+        <li class="rv"><div><b>Откройте каталог</b><p>Кнопка «На Wildberries» ведёт в поиск по бренду Intravel.</p></div></li>
+        <li class="rv d1"><div><b>Сверьте артикул</b><p>Артикул вещи указан в карточках выше — его можно скопировать одним нажатием.</p></div></li>
+        <li class="rv d2"><div><b>Посмотрите цену на WB</b><p>Стоимость и наличие размеров показывает сам маркетплейс.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow rv">Каталог</span>
+    <h2 class="rv d1">Найдите <em>свой силуэт</em></h2>
+    <p class="lead rv d2" style="margin:0 auto">Брюки, джинсы, жилетки, пиджаки и рубашки INTRAVEL — на Wildberries.</p>
+    <div class="ctas rv d3">
+      <a class="btn denim" href="https://www.wildberries.ru/catalog/0/search.aspx?search=Intravel" target="_blank" rel="noopener">На Wildberries</a>
+      <a class="btn ghost" href="#catalog">Артикулы вещей</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© INTRAVEL — мужской бренд одежды</span>
+    <span>Демо-концепт. Данные — из открытых источников (профиль бренда, каталог Wildberries) на 26.10.2026. Цены не указаны: смотрите на Wildberries.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="#catalog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h8l8 8-8 8-8-8z"/><circle cx="8.5" cy="8.5" r="1.2"/></svg>Вещи</a>
+  <a href="#looks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="7" height="16"/><rect x="13" y="4" width="7" height="16"/></svg>Образы</a>
+  <a class="main" href="https://www.wildberries.ru/catalog/0/search.aspx?search=Intravel" target="_blank" rel="noopener">На Wildberries</a>
+</nav>
+
+<script>
+(() => {
+  // Шапка и мобильная панель
+  const hdr = document.querySelector('.hdr'), mbar = document.getElementById('mbar');
+  const onScroll = () => {
+    const y = scrollY;
+    hdr.classList.toggle('scrolled', y > 8);
+    mbar.classList.toggle('show', y > 420);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false);
+  }));
+
+  // Появление блоков
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // Вкладки каталога + смена фото категории
+  const tabs = document.querySelectorAll('[role=tab]');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === 'p-' + t.dataset.tab));
+    document.querySelectorAll('.cat-photo figure').forEach(f => f.classList.toggle('on', f.dataset.k === t.dataset.tab));
+  }));
+
+  // Копирование артикула
+  document.querySelectorAll('[data-copy]').forEach(b => b.addEventListener('click', async () => {
+    const v = b.dataset.copy; let ok = false;
+    try { await navigator.clipboard.writeText(v); ok = true; }
+    catch (e) {
+      const ta = document.createElement('textarea');
+      ta.value = v; ta.style.cssText = 'position:fixed;opacity:0;top:0;left:0';
+      document.body.appendChild(ta); ta.select();
+      try { ok = document.execCommand('copy'); } catch (_) {}
+      ta.remove();
+    }
+    if (!b.dataset.label) b.dataset.label = b.textContent;
+    b.textContent = ok ? 'Скопировано: ' + v : 'Не удалось скопировать';
+    clearTimeout(b._t); b._t = setTimeout(() => { b.textContent = b.dataset.label; }, 1800);
+  }));
+
+  // «1 брюки — 3 образа»
+  const notes = {
+    office: 'Режим «Офис» · образы 1 и 2 из 6',
+    weekend: 'Режим «Выходные» · образы 3 и 4 из 6',
+    evening: 'Режим «Вечер» · образы 5 и 6 из 6'
+  };
+  const modes = document.querySelectorAll('.mode');
+  modes.forEach(m => m.addEventListener('click', () => {
+    modes.forEach(x => x.setAttribute('aria-pressed', x === m));
+    document.querySelectorAll('.pair').forEach(p => p.classList.toggle('on', p.dataset.mode === m.dataset.mode));
+    document.getElementById('modeNote').textContent = notes[m.dataset.mode];
+  }));
+
+  // Фильтр фото и лайтбокс
+  const items = document.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', x === f));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt;
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+})();
+</script>
+</body>
+</html>

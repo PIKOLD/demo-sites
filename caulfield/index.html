@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>КОЛФИЛД / CAULFIELD — бренд одежды из Грозного</title>
+<meta name="description" content="КОЛФИЛД / CAULFIELD — бренд одежды из Грозного: худи, зип-худи, футболки, лонгсливы, кепки. Заказ в WhatsApp, доставка по миру. Магазин: ул. Мира, 52А к.1, 11:00–20:00.">
+<meta name="theme-color" content="#0D0D0E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Oswald:wght@500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Oswald:wght@500;600;700&display=swap"><style>.rv{opacity:1;transform:none}</style></noscript>
+<style>
+:root{
+  --bg:#0D0D0E; --bg2:#141516; --card:#1B1C1E; --fg:#EDEDE8; --muted:#9B9EA0; --line:rgba(237,237,232,.16);
+  --acid:#DEFF1A; --ink:#0D0D0E; --concrete:#CFCFC9;
+  --display:"Oswald","Arial Narrow",Impact,sans-serif;
+  --mono:"JetBrains Mono","IBM Plex Mono",ui-monospace,Consolas,"Courier New",monospace;
+  --wrap:1180px;
+  --noise:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.07'/%3E%3C/svg%3E");
+  --noise-d:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .6 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.12'/%3E%3C/svg%3E");
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background-color:var(--bg);background-image:var(--noise);color:var(--fg);font:400 15px/1.65 var(--mono);overflow-x:hidden}
+body.menu-open{overflow:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:2px dashed var(--acid);outline-offset:3px}
+.wrap{width:min(100% - 32px, var(--wrap));margin-inline:auto}
+.eyebrow{font:700 12px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--acid)}
+.light .eyebrow{color:var(--ink)}
+h1,h2,h3{font-family:var(--display);font-weight:700;text-transform:uppercase;line-height:.98;margin:0;letter-spacing:.01em;overflow-wrap:break-word}
+h2{font-size:clamp(38px,8.4vw,84px)}
+.out{color:transparent;-webkit-text-stroke:1.5px var(--acid)}
+.light .out{-webkit-text-stroke-color:var(--ink)}
+.hl{position:relative;display:inline-block}
+.scr{position:absolute;left:-2%;bottom:-.14em;width:104%;height:.26em;color:var(--acid);overflow:visible;transform:scaleX(0);transform-origin:left;transition:transform .9s .35s cubic-bezier(.65,0,.35,1);pointer-events:none}
+.scr path{fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.rv.in .scr{transform:scaleX(1)}
+.light .scr{color:var(--ink)}
+.lead{font-size:15.5px;color:#CFD0CC;max-width:54ch}
+section{padding:clamp(64px,9vw,112px) 0}
+
+/* demo bar */
+.demo{background:var(--acid);color:var(--ink);font-size:12px;line-height:1.45;padding:9px 0;font-weight:500}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:center;text-align:left}
+.demo b{background:var(--ink);color:var(--acid);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:11px;padding:3px 8px;white-space:nowrap}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:40;background:rgba(13,13,14,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.logo{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+.logo b{font:700 25px/1 var(--display);letter-spacing:.08em}
+.logo b span{color:var(--acid)}
+.logo small{font:500 10.5px/1 var(--mono);color:var(--muted);letter-spacing:.14em;text-transform:uppercase}
+.nav{display:none;gap:26px}
+.nav a{text-decoration:none;font-weight:500;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:#CFD0CC;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--acid);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.nav a:hover::after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:12px 22px;border:2px solid var(--acid);background:var(--acid);color:var(--ink);font:700 13px/1.25 var(--mono);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;cursor:pointer;text-align:center;transition:transform .2s, box-shadow .2s, background .2s, color .2s}
+.btn:hover{transform:translate(-3px,-3px);box-shadow:5px 5px 0 var(--fg)}
+.btn:active{transform:none;box-shadow:none}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.ghost{background:transparent;color:var(--fg);border-color:var(--fg)}
+.btn.ghost:hover{background:var(--fg);color:var(--ink);box-shadow:5px 5px 0 var(--acid)}
+.btn.sm{min-height:42px;padding:8px 16px;font-size:12px}
+.light .btn:hover{box-shadow:5px 5px 0 var(--ink)}
+.light .btn{border-color:var(--ink)}
+.light .btn.ghost{color:var(--ink)}
+.light .btn.ghost:hover{background:var(--ink);color:var(--acid)}
+.hdr .btn{display:none}
+.burger{width:44px;height:44px;border:2px solid var(--fg);background:transparent;display:grid;place-items:center;cursor:pointer}
+.burger span{display:block;width:18px;height:2px;background:var(--fg);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--fg);transition:transform .3s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:35;background-color:var(--bg);background-image:var(--noise);padding:110px 24px 40px;display:flex;flex-direction:column;gap:2px;opacity:0;pointer-events:none;transition:opacity .3s;overflow-y:auto}
+.mnav a{font:700 40px/1.2 var(--display);text-transform:uppercase;text-decoration:none;padding:8px 0;border-bottom:1px dashed var(--line)}
+.mnav a:hover{color:var(--acid)}
+.menu-open .mnav{opacity:1;pointer-events:auto}
+@media (min-width:1020px){.nav{display:flex}.hdr .btn{display:inline-flex}.burger,.mnav{display:none}}
+
+/* hero */
+.hero{padding:clamp(28px,5vw,60px) 0 clamp(48px,7vw,84px);position:relative;overflow:hidden}
+.hero-top{display:flex;flex-wrap:wrap;gap:10px 12px;align-items:center;margin-bottom:6px}
+.tag{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.soon{display:inline-flex;align-items:center;gap:8px;background:var(--acid);color:var(--ink);font:700 11.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:7px 10px;transform:rotate(-2deg)}
+.soon i{width:8px;height:8px;background:var(--ink);animation:blink 1.4s steps(2) infinite}
+@keyframes blink{50%{opacity:.15}}
+.hero h1{font-size:clamp(56px,17vw,250px);line-height:.88;letter-spacing:.015em;margin:4px 0 6px}
+.hero h1 span{color:transparent;-webkit-text-stroke:2px var(--acid)}
+.kol{display:block;font:500 clamp(13px,1.8vw,17px)/1.3 var(--mono);letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-bottom:32px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:48px;align-items:center}
+@media (min-width:960px){.hero-grid{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:64px}}
+.status{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);background:rgba(255,255,255,.04);padding:8px 12px;font-size:12.5px;font-weight:500;line-height:1.35}
+.status i{width:9px;height:9px;flex:none;background:var(--acid);box-shadow:0 0 0 0 rgba(222,255,26,.55);animation:pulse 2s infinite}
+.status.closed i{background:#E0563F;animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(222,255,26,0)}100%{box-shadow:0 0 0 0 rgba(222,255,26,0)}}
+.hero .lead{margin:22px 0 20px}
+.place{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:13.5px;margin-bottom:26px}
+.place svg{width:18px;height:18px;flex:none;margin-top:2px;color:var(--acid)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas .btn{flex:1 1 150px}
+@media (min-width:560px){.ctas .btn{flex:0 0 auto}}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:34px;padding-top:24px;border-top:1px dashed var(--line)}
+.stats strong{display:block;font:700 clamp(28px,5vw,42px)/1 var(--display);color:var(--acid)}
+.stats span{display:block;margin-top:6px;font-size:11.5px;line-height:1.4;color:var(--muted)}
+
+.collage{position:relative;width:min(100%,460px);margin:0 auto;padding-bottom:12%}
+.ph{margin:0;background:#E8E8E3;padding:6px;box-shadow:0 24px 50px -22px rgba(0,0,0,.9)}
+.ph img{width:100%;aspect-ratio:3/4;object-fit:cover;background:var(--bg2)}
+.p1{width:76%;transform:rotate(-2.2deg);position:relative}
+.p2{position:absolute;width:47%;right:0;bottom:0;transform:rotate(4deg)}
+.tape{position:absolute;top:-14px;left:50%;width:90px;height:26px;background:rgba(222,255,26,.78);transform:translateX(-50%) rotate(-3deg)}
+.sticker{position:absolute;top:3%;right:1%;background:var(--acid);color:var(--ink);font:700 15px/1.05 var(--display);text-transform:uppercase;letter-spacing:.05em;padding:10px 12px;transform:rotate(8deg);box-shadow:4px 4px 0 var(--ink);animation:wob 5s ease-in-out infinite}
+@keyframes wob{50%{transform:rotate(5deg) translateY(-4px)}}
+.cross{position:absolute;left:-2%;bottom:6%;width:22%;color:var(--acid);pointer-events:none}
+.cross path{fill:none;stroke:currentColor;stroke-width:3.5;stroke-linecap:round}
+
+/* tape strip */
+.tapewrap{overflow:hidden;padding:30px 0}
+.strip{background:var(--acid);color:var(--ink);transform:rotate(-1.6deg);margin:0 -4%;border-block:2px solid var(--ink);overflow:hidden;white-space:nowrap}
+.track{display:flex;width:max-content;animation:run 42s linear infinite}
+.track span{font:700 clamp(18px,2.4vw,26px)/1 var(--display);text-transform:uppercase;letter-spacing:.06em;padding:14px 20px;display:flex;align-items:center;gap:40px}
+.track span::after{content:"×";font-size:1.1em}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* heads */
+.head{display:grid;gap:16px;margin-bottom:40px}
+@media (min-width:960px){.head{grid-template-columns:minmax(0,1fr) minmax(0,.5fr);align-items:end}}
+.head h2{margin-top:14px}
+.head p{margin:0;color:var(--muted);font-size:13px;max-width:44ch}
+.light .head p{color:#3C3E40}
+
+/* drops */
+.drops{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
+@media (min-width:900px){.drops{grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;align-items:start}.drop:nth-child(2){margin-top:52px}}
+.drop{background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .3s, box-shadow .3s}
+.drop:hover{transform:translate(-4px,-4px);box-shadow:8px 8px 0 var(--acid)}
+.drop.rv.in:hover{transform:translate(-4px,-4px)}
+.drop-img{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--bg2)}
+.drop-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.drop:hover .drop-img img{transform:scale(1.05)}
+.drop-img .no{position:absolute;left:12px;top:6px;font:700 68px/1 var(--display);color:transparent;-webkit-text-stroke:1.5px var(--acid);text-shadow:0 0 0 transparent}
+.drop-img .badge{position:absolute;right:0;top:14px;background:var(--acid);color:var(--ink);font:700 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;padding:6px 10px}
+.drop-body{padding:20px 20px 22px;display:grid;gap:14px;align-content:start;flex:1}
+.drop h3{font-size:clamp(28px,3.2vw,36px)}
+.drop .about{margin:0;color:#CFD0CC;font-size:13.5px}
+.drop-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 12px;border-top:1px dashed var(--line);padding-top:12px;font-size:13px}
+.drop-row span{color:var(--muted)}
+.price{font:700 30px/1 var(--display);color:var(--acid);letter-spacing:.02em}
+.price.ask{font:500 12.5px/1.4 var(--mono);color:var(--fg);letter-spacing:0}
+.drops-note{margin:26px 0 0;color:var(--muted);font-size:13px}
+
+/* catalog (light) */
+.light{background-color:var(--concrete);background-image:var(--noise-d);color:var(--ink)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.tab{border:2px solid var(--fg);background:transparent;color:var(--fg);padding:9px 14px;font:700 12px/1.25 var(--mono);letter-spacing:.06em;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s}
+.tab:hover{background:rgba(255,255,255,.08)}
+.tab[aria-selected="true"],.tab[aria-pressed="true"]{background:var(--acid);color:var(--ink);border-color:var(--acid)}
+.light .tab{border-color:var(--ink);color:var(--ink)}
+.light .tab:hover{background:rgba(13,13,14,.08)}
+.light .tab[aria-selected="true"]{background:var(--ink);color:var(--acid);border-color:var(--ink)}
+.svc{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
+@media (min-width:960px){.svc{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:56px;align-items:start}}
+.panel{display:none}
+.panel.on{display:block;animation:fade .45s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.row{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;padding:18px 0;border-bottom:2px dashed rgba(13,13,14,.28)}
+.row:first-child{border-top:2px dashed rgba(13,13,14,.28)}
+.row .n{flex:1 1 200px;min-width:0}
+.row .n b{display:block;font:600 22px/1.15 var(--display);text-transform:uppercase;letter-spacing:.02em;overflow-wrap:break-word}
+.row .n small{display:block;margin-top:4px;color:#3C3E40;font-size:12.5px}
+.row .p{font:700 28px/1 var(--display);white-space:nowrap}
+.row .mini{font:700 12px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;text-decoration:none;border:2px solid var(--ink);padding:9px 12px;transition:background .2s,color .2s}
+.row .mini:hover{background:var(--ink);color:var(--acid)}
+.svc-photo{position:relative;aspect-ratio:3/4;overflow:hidden;background:#B8B8B1;border:2px solid var(--ink);display:none}
+@media (min-width:960px){.svc-photo{display:block;position:sticky;top:96px}}
+.svc-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .6s, transform 1s}
+.svc-photo img.on{opacity:1;transform:none}
+.note{margin-top:22px;font-size:12.5px;color:#3C3E40}
+
+/* lookbook */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.grid{column-count:2;column-gap:10px}
+@media (min-width:700px){.grid{column-count:3;column-gap:14px}}
+@media (min-width:1100px){.grid{column-count:4}}
+.gi{position:relative;display:block;width:100%;margin:0 0 10px;break-inside:avoid;overflow:hidden;border:0;padding:0;background:var(--bg2);cursor:zoom-in;transition:opacity .4s, transform .4s}
+@media (min-width:700px){.gi{margin-bottom:14px}}
+.gi:nth-child(3n+1){aspect-ratio:3/4}
+.gi:nth-child(3n+2){aspect-ratio:4/5}
+.gi:nth-child(3n){aspect-ratio:2/3}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.07)}
+.gi span{position:absolute;left:0;bottom:10px;max-width:calc(100% - 10px);background:var(--acid);color:var(--ink);font:700 11px/1.3 var(--mono);letter-spacing:.04em;text-transform:uppercase;padding:5px 9px;text-align:left}
+.gi.hide{display:none}
+.lb{border:2px solid var(--acid);padding:10px;background:var(--bg);color:var(--fg);max-width:min(92vw,560px);max-height:92vh;overflow:auto}
+.lb::backdrop{background:rgba(5,5,6,.9)}
+.lb img{max-height:74vh;width:auto;margin:auto}
+.lb p{margin:10px 0 0;font-size:12.5px;color:var(--muted);text-align:center}
+.lb button{position:fixed;top:16px;right:16px;width:48px;height:48px;border:2px solid var(--ink);background:var(--acid);color:var(--ink);font-size:24px;line-height:1;cursor:pointer}
+
+/* slogan band */
+.band{background:var(--acid);color:var(--ink);padding:clamp(44px,7vw,84px) 0;overflow:hidden;position:relative}
+.band .eyebrow{color:var(--ink)}
+.band blockquote{margin:14px 0 0;font:700 clamp(40px,10vw,128px)/.92 var(--display);text-transform:uppercase;letter-spacing:.01em;overflow-wrap:break-word}
+.band blockquote em{font-style:normal;color:transparent;-webkit-text-stroke:2px var(--ink)}
+.band small{display:block;margin-top:18px;font-size:12.5px;font-weight:500}
+
+/* brand cards */
+.praise{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:860px){.praise{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pr-card{background:var(--card);border:1px solid var(--line);padding:28px;position:relative;overflow:hidden}
+.pr-card .num{position:absolute;right:16px;top:4px;font:700 78px/1 var(--display);color:transparent;-webkit-text-stroke:1.5px rgba(222,255,26,.55)}
+.pr-card h3{font-size:30px;margin:46px 0 12px;position:relative}
+.pr-card p{margin:0;color:#CFD0CC;position:relative;font-size:14px}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.fact{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:rgba(255,255,255,.04);padding:9px 14px;font-size:12.5px;font-weight:500}
+.fact::before{content:"";width:8px;height:8px;background:var(--acid);flex:none}
+
+/* store */
+.store{display:grid;grid-template-columns:minmax(0,1fr);gap:40px;align-items:center}
+@media (min-width:860px){.store{grid-template-columns:minmax(0,.7fr) minmax(0,1fr);gap:64px}}
+.store .ph{position:relative;width:min(100%,380px);margin:0 auto;transform:rotate(-1.8deg)}
+.store .sticker{top:-12px;right:-10px}
+.store h2{margin:14px 0 18px}
+.nowshop{margin:24px 0;border:1px dashed var(--acid);padding:16px 18px;font-size:14px}
+.nowshop b{display:block;font:600 20px/1.2 var(--display);text-transform:uppercase;letter-spacing:.03em;margin-bottom:6px}
+
+/* order builder */
+#order{background-color:var(--bg2);background-image:var(--noise);border-block:1px solid var(--line)}
+.builder{display:grid;grid-template-columns:minmax(0,1fr);gap:34px;border:2px solid var(--acid);padding:clamp(18px,4vw,44px);background:var(--bg);box-shadow:10px 10px 0 rgba(222,255,26,.18)}
+@media (min-width:960px){.builder{grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:52px}}
+.fields{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:24px}
+@media (min-width:520px){.fields .two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
+.fields .two{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:520px){.fields .two{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.fld{display:grid;gap:7px;min-width:0}
+.fld label,.fld .lbl{font:700 11.5px/1.2 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.fld select,.fld input[type=text]{width:100%;min-height:50px;background:var(--card);border:2px solid var(--line);border-radius:0;padding:10px 12px;font-size:16px;color:var(--fg);appearance:none;-webkit-appearance:none}
+.fld select{background-image:linear-gradient(45deg,transparent 50%,var(--acid) 50%),linear-gradient(135deg,var(--acid) 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 14px) 50%;background-size:6px 6px;background-repeat:no-repeat;padding-right:36px}
+.fld select:focus,.fld input:focus{border-color:var(--acid);outline:0}
+.qty{display:inline-flex;align-items:center;border:2px solid var(--line);width:max-content}
+.qty button{width:50px;height:46px;background:transparent;border:0;font:700 22px/1 var(--mono);cursor:pointer;color:var(--acid)}
+.qty button:hover{background:rgba(222,255,26,.12)}
+.qty output{min-width:48px;text-align:center;font:700 22px/1 var(--display)}
+.preview{display:flex;flex-direction:column;gap:16px}
+.preview .lbl{font:700 11.5px/1.2 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.bubble{background:#1E2A1B;border:1px solid rgba(222,255,26,.35);padding:16px 18px;font-size:14px;line-height:1.55;position:relative;overflow-wrap:anywhere;min-height:120px}
+.bubble::after{content:"";position:absolute;right:18px;bottom:-9px;width:16px;height:16px;background:#1E2A1B;border-right:1px solid rgba(222,255,26,.35);border-bottom:1px solid rgba(222,255,26,.35);transform:rotate(45deg)}
+.osum{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 12px;border-top:1px dashed var(--line);padding-top:14px;margin-top:6px}
+.osum b{font:700 36px/1 var(--display);color:var(--acid)}
+.osum b.ask{font:500 13px/1.4 var(--mono);color:var(--fg)}
+.osum span{font-size:12.5px;color:var(--muted)}
+
+/* contacts */
+.ct{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.ct{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:stretch}}
+.cinfo{display:grid;gap:22px;align-content:start}
+.ci small{display:block;font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--acid);margin-bottom:6px}
+.ci p,.ci a{margin:0;font-size:16px;font-weight:500;text-decoration:none}
+.ci a.big{font:700 clamp(30px,6vw,40px)/1.1 var(--display);letter-spacing:.03em;overflow-wrap:break-word}
+.socials{display:flex;gap:10px;flex-wrap:wrap}
+.socials a{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--fg);padding:9px 14px;font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:background .2s,color .2s}
+.socials a:hover{background:var(--fg);color:var(--ink)}
+.map{overflow:hidden;min-height:380px;background:var(--card);border:2px solid var(--fg)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block;filter:grayscale(.85) contrast(1.05)}
+
+/* final */
+.final{text-align:center;position:relative;overflow:hidden;border-top:1px solid var(--line)}
+.final h2{font-size:clamp(46px,11vw,150px);line-height:.9;margin:18px auto}
+.final .lead{margin:0 auto}
+.final .ctas{justify-content:center;margin-top:30px}
+.final .slg{display:block;margin-top:26px;font-size:12.5px;color:var(--muted)}
+footer{padding:34px 0 120px;font-size:12px;color:var(--muted);border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer .wrap span{max-width:62ch}
+@media (min-width:960px){footer{padding-bottom:40px}}
+
+/* mobile bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.3fr);gap:8px;padding:8px;background:rgba(13,13,14,.95);border:1px solid var(--line);box-shadow:0 18px 40px -12px rgba(0,0,0,.7);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.mbar.show{transform:none}
+.mbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:52px;color:var(--fg);text-decoration:none;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.mbar a svg{width:20px;height:20px}
+.mbar a.main{background:var(--acid);color:var(--ink);flex-direction:row;font-size:12.5px;gap:8px}
+@media (min-width:960px){.mbar{display:none}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+.p1.rv.in{transform:rotate(-2.2deg)}
+.store .ph.rv.in{transform:rotate(-1.8deg)}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+  .p1.rv{transform:rotate(-2.2deg)}
+  .store .ph.rv{transform:rotate(-1.8deg)}
+  .scr{transform:scaleX(1)}
+}
+html,body{overflow-x:hidden}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note"><div class="wrap"><b>Демо</b><span>Демо-концепт сайта для бренда Caulfield. Данные из открытых источников (профиль и посты бренда) на 26.10.2026. Страница не индексируется.</span></div></div>
+
+<header class="hdr" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Caulfield — наверх"><b>CAUL<span>FIELD</span></b><small>колфилд</small></a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#drops">Дропы</a>
+      <a href="#catalog">Каталог</a>
+      <a href="#look">Лукбук</a>
+      <a href="#store">Магазин</a>
+      <a href="#order">Заказ</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn sm" href="https://wa.me/79286457690?text=Здравствуйте!%20Хочу%20заказать%20одежду%20Caulfield.%20Подскажите,%20пожалуйста,%20что%20сейчас%20есть%20в%20наличии." target="_blank" rel="noopener">Заказать в WhatsApp</a>
+    <button class="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Мобильное меню">
+  <a href="#drops">Дропы</a>
+  <a href="#catalog">Каталог и цены</a>
+  <a href="#look">Лукбук</a>
+  <a href="#store">Магазин</a>
+  <a href="#order">Собрать заказ</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-top rv">
+      <span class="tag">// Грозный</span>
+      <span class="tag">// бренд одежды</span>
+      <a class="soon" href="#store"><i></i>Скоро новый магазин</a>
+    </div>
+    <h1 class="rv d1" aria-label="Caulfield, Колфилд">CAUL<span>FIELD</span></h1>
+    <span class="kol rv d1">КОЛФИЛД</span>
+    <div class="hero-grid">
+      <div>
+        <span class="status rv" data-status><i></i><span>Магазин: 11:00–20:00</span></span>
+        <p class="lead rv d1">Бренд одежды из Грозного. Собственное производство: футболки, худи, кепки, зип-худи, лонгсливы. Доставка по миру.</p>
+        <div class="place rv d2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          <span>Магазин: Грозный, ул. Мира, 52А к.1</span>
+        </div>
+        <div class="ctas rv d2">
+          <a class="btn" href="https://wa.me/79286457690?text=Здравствуйте!%20Хочу%20заказать%20одежду%20Caulfield.%20Подскажите,%20пожалуйста,%20что%20сейчас%20есть%20в%20наличии." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>Заказать в WhatsApp</a>
+          <a class="btn ghost" href="tel:+79286457690"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+          <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~Грозный,%20ул.%20Мира,%2052А%20к.1&rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Маршрут</a>
+        </div>
+        <div class="stats rv d3">
+          <div><strong>9&nbsp;050</strong><span>подписчиков в соцсетях</span></div>
+          <div><strong>3</strong><span>коллекции в дропах</span></div>
+          <div><strong>мир</strong><span>доставка по миру</span></div>
+        </div>
+      </div>
+      <div class="collage rv d2">
+        <figure class="ph p1 rv"><i class="tape"></i><img src="img/hero.jpg" alt="Худи Rio de Caucasia, вид со спины" width="768" height="1024" fetchpriority="high"></figure>
+        <figure class="ph p2"><img src="img/poster.jpg" alt="Постер коллекции Caucasus Underground" width="768" height="1024" loading="lazy"></figure>
+        <span class="sticker">Rio de<br>Caucasia</span>
+        <svg class="cross" viewBox="0 0 60 60" aria-hidden="true"><path d="M8 10 L50 52"/><path d="M52 8 L10 50"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="tapewrap" aria-hidden="true"><div class="strip"><div class="track">
+  <span>Caucasus Underground</span><span>Rio de Caucasia</span><span>The North caucasian child</span><span>Доставка по миру</span><span>Собственное производство</span>
+  <span>Caucasus Underground</span><span>Rio de Caucasia</span><span>The North caucasian child</span><span>Доставка по миру</span><span>Собственное производство</span>
+</div></div></div>
+
+<!-- DROPS -->
+<section id="drops">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">// 01 · коллекции и принты</span><h2 class="rv d1"><span class="hl">Дропы<svg class="scr" viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 40 2, 70 13, 110 6 S 170 4, 198 8"/></svg></span></h2></div>
+      <p class="rv d2">Цены — из постов бренда. Если цены нет, её подскажут в WhatsApp.</p>
+    </div>
+    <div class="drops">
+      <article class="drop rv">
+        <div class="drop-img"><img src="img/poster.jpg" alt="Постер коллекции Caucasus Underground" width="768" height="1024" loading="lazy"><span class="no">01</span><span class="badge">Drop</span></div>
+        <div class="drop-body">
+          <h3>Caucasus Underground</h3>
+          <p class="about">Коллекция «про свободу творить не ради денег или признания». На фото — постер коллекции.</p>
+          <div class="drop-row"><span>Худи</span><b class="price">5&nbsp;900&nbsp;₽</b></div>
+          <a class="btn" href="https://wa.me/79286457690?text=Здравствуйте!%20Хочу%20заказать%20худи%20«Caucasus%20Underground»%20(5%20900%20₽).%20Подскажите,%20пожалуйста,%20наличие%20размеров%20и%20условия%20доставки." target="_blank" rel="noopener">Заказать в WhatsApp</a>
+        </div>
+      </article>
+      <article class="drop rv d1">
+        <div class="drop-img"><img src="img/hero.jpg" alt="Худи Rio de Caucasia, вид со спины" width="768" height="1024" loading="lazy"><span class="no">02</span><span class="badge">Drop</span></div>
+        <div class="drop-body">
+          <h3>Rio de Caucasia</h3>
+          <p class="about">Худи с принтом Rio de Caucasia. На фото — вид со спины.</p>
+          <div class="drop-row"><span>Худи</span><b class="price ask">Цену уточняйте в WhatsApp</b></div>
+          <a class="btn" href="https://wa.me/79286457690?text=Здравствуйте!%20Хочу%20заказать%20худи%20«Rio%20de%20Caucasia».%20Подскажите,%20пожалуйста,%20цену,%20наличие%20размеров%20и%20условия%20доставки." target="_blank" rel="noopener">Заказать в WhatsApp</a>
+        </div>
+      </article>
+      <article class="drop rv d2">
+        <div class="drop-img"><img src="img/zip.jpg" alt="Зип-худи" width="768" height="1024" loading="lazy"><span class="no">03</span><span class="badge">Drop</span></div>
+        <div class="drop-body">
+          <h3>The North caucasian child</h3>
+          <p class="about">Зип-худи с принтом The North caucasian child.</p>
+          <div class="drop-row"><span>Зип-худи</span><b class="price">6&nbsp;500&nbsp;₽</b></div>
+          <a class="btn" href="https://wa.me/79286457690?text=Здравствуйте!%20Хочу%20заказать%20зип-худи%20«The%20North%20caucasian%20child»%20(6%20500%20₽).%20Подскажите,%20пожалуйста,%20наличие%20размеров%20и%20условия%20доставки." target="_blank" rel="noopener">Заказать в WhatsApp</a>
+        </div>
+      </article>
+    </div>
+    <p class="drops-note rv">Также в коллекциях бренда — ветровки.</p>
+  </div>
+</section>
+
+<!-- CATALOG -->
+<section id="catalog" class="light">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">// 02 · прайс</span><h2 class="rv d1">Каталог <span class="hl">и цены<svg class="scr" viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 40 2, 70 13, 110 6 S 170 4, 198 8"/></svg></span></h2></div>
+      <p class="rv d2">Цены из постов бренда на 26.10.2026. Остальное — уточняйте в WhatsApp.</p>
+    </div>
+    <div class="tabs rv" role="tablist" aria-label="Разделы одежды">
+      <button class="tab" role="tab" aria-selected="true" data-tab="hd" data-img="hoodie-black">Худи</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="zp" data-img="zip">Зип-худи</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="tl" data-img="logo">Футболки и лонгсливы</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="cp" data-img="logo">Кепки</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="wb" data-img="logo">Ветровки</button>
+    </div>
+    <div class="svc">
+      <div>
+        <div class="panel on" id="p-hd" role="tabpanel">
+          <div class="row"><div class="n"><b>Худи «Caucasus Underground»</b></div><div class="p">5&nbsp;900&nbsp;₽</div></div>
+          <div class="row"><div class="n"><b>Худи «Rio de Caucasia»</b><small>Цену уточняйте в WhatsApp</small></div><a class="mini" href="https://wa.me/79286457690?text=Здравствуйте!%20Подскажите,%20пожалуйста,%20цену%20худи%20«Rio%20de%20Caucasia»." target="_blank" rel="noopener">Спросить</a></div>
+        </div>
+        <div class="panel" id="p-zp" role="tabpanel">
+          <div class="row"><div class="n"><b>Зип-худи «The North caucasian child»</b></div><div class="p">6&nbsp;500&nbsp;₽</div></div>
+        </div>
+        <div class="panel" id="p-tl" role="tabpanel">
+          <div class="row"><div class="n"><b>Футболки</b><small>Цену уточняйте в WhatsApp</small></div><a class="mini" href="https://wa.me/79286457690?text=Здравствуйте!%20Подскажите,%20пожалуйста,%20цены%20и%20наличие%20футболок." target="_blank" rel="noopener">Спросить</a></div>
+          <div class="row"><div class="n"><b>Лонгсливы</b><small>Цену уточняйте в WhatsApp</small></div><a class="mini" href="https://wa.me/79286457690?text=Здравствуйте!%20Подскажите,%20пожалуйста,%20цены%20и%20наличие%20лонгсливов." target="_blank" rel="noopener">Спросить</a></div>
+        </div>
+        <div class="panel" id="p-cp" role="tabpanel">
+          <div class="row"><div class="n"><b>Кепки</b><small>Цену уточняйте в WhatsApp</small></div><a class="mini" href="https://wa.me/79286457690?text=Здравствуйте!%20Подскажите,%20пожалуйста,%20цены%20и%20наличие%20кепок." target="_blank" rel="noopener">Спросить</a></div>
+        </div>
+        <div class="panel" id="p-wb" role="tabpanel">
+          <div class="row"><div class="n"><b>Ветровки</b><small>Цену уточняйте в WhatsApp</small></div><a class="mini" href="https://wa.me/79286457690?text=Здравствуйте!%20Подскажите,%20пожалуйста,%20цены%20и%20наличие%20ветровок." target="_blank" rel="noopener">Спросить</a></div>
+        </div>
+        <p class="note">Доставка по миру. Заказ оформляется в WhatsApp: +7&nbsp;928&nbsp;645-76-90.</p>
+      </div>
+      <div class="svc-photo" aria-hidden="true">
+        <img src="img/hoodie-black.jpg" alt="" data-k="hoodie-black" class="on" loading="lazy">
+        <img src="img/zip.jpg" alt="" data-k="zip" loading="lazy">
+        <img src="img/logo.jpg" alt="" data-k="logo" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOOKBOOK -->
+<section id="look">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">// 03 · фото бренда</span><h2 class="rv d1">Лук<span class="hl">бук<svg class="scr" viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 40 2, 70 13, 110 6 S 170 4, 198 8"/></svg></span></h2></div>
+      <p class="rv d2">Кадры бренда: худи, постер, упаковка, логотип.</p>
+    </div>
+    <div class="filters rv" role="group" aria-label="Фильтр фото">
+      <button class="tab" aria-pressed="true" data-f="all">Все</button>
+      <button class="tab" aria-pressed="false" data-f="hoodie">Худи</button>
+      <button class="tab" aria-pressed="false" data-f="brand">Бренд</button>
+      <button class="tab" aria-pressed="false" data-f="street">Street</button>
+    </div>
+    <div class="grid" id="grid">
+      <button class="gi rv" data-c="hoodie"><img src="img/hero.jpg" alt="Худи Rio de Caucasia, вид со спины" width="768" height="1024" loading="lazy"><span>Rio de Caucasia · спина</span></button>
+      <button class="gi rv d1" data-c="brand"><img src="img/poster.jpg" alt="Постер Caucasus Underground" width="768" height="1024" loading="lazy"><span>Постер Caucasus Underground</span></button>
+      <button class="gi rv d2" data-c="hoodie"><img src="img/hoodie-grey.jpg" alt="Серое худи" width="768" height="1024" loading="lazy"><span>Худи · серое</span></button>
+      <button class="gi rv" data-c="street"><img src="img/street.jpg" alt="Кадр бренда, street" width="768" height="1024" loading="lazy"><span>Street</span></button>
+      <button class="gi rv d1" data-c="hoodie"><img src="img/hoodie-black.jpg" alt="Чёрное худи" width="768" height="1024" loading="lazy"><span>Худи · чёрное</span></button>
+      <button class="gi rv d2" data-c="brand"><img src="img/logo.jpg" alt="Логотип Caulfield" width="768" height="1024" loading="lazy"><span>Логотип</span></button>
+      <button class="gi rv" data-c="hoodie"><img src="img/flat.jpg" alt="Худи с принтом, раскладка" width="768" height="1024" loading="lazy"><span>Худи с принтом</span></button>
+      <button class="gi rv d1" data-c="street"><img src="img/court.jpg" alt="Кадр бренда, court" width="768" height="1024" loading="lazy"><span>Court</span></button>
+      <button class="gi rv d2" data-c="hoodie"><img src="img/zip.jpg" alt="Зип-худи" width="768" height="1024" loading="lazy"><span>Зип-худи</span></button>
+      <button class="gi rv" data-c="brand"><img src="img/pack.jpg" alt="Упаковка Caulfield" width="768" height="1024" loading="lazy"><span>Упаковка</span></button>
+      <button class="gi rv d1" data-c="brand"><img src="img/store-soon.jpg" alt="Новый магазин, coming soon" width="768" height="1024" loading="lazy"><span>Новый магазин · скоро</span></button>
+    </div>
+  </div>
+</section>
+<dialog class="lb" id="lb"><button aria-label="Закрыть" id="lbClose">×</button><img id="lbImg" alt=""><p id="lbCap"></p></dialog>
+
+<!-- SLOGAN -->
+<div class="band">
+  <div class="wrap">
+    <span class="eyebrow rv">// из профиля бренда</span>
+    <blockquote class="rv d1">Держаться <em>на выжженных</em> полях</blockquote>
+    <small class="rv d2">Caulfield — собственное производство одежды, Грозный.</small>
+  </div>
+</div>
+
+<!-- BRAND -->
+<section id="brand">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="eyebrow rv">// 04 · о бренде</span><h2 class="rv d1">Что за <span class="hl">бренд<svg class="scr" viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 40 2, 70 13, 110 6 S 170 4, 198 8"/></svg></span></h2></div>
+      <p class="rv d2">По данным профиля и постов бренда.</p>
+    </div>
+    <div class="praise">
+      <article class="pr-card rv"><span class="num">01</span><h3>Свой цех</h3><p>Собственное производство: футболки, худи, кепки, зип-худи и лонгсливы. Есть и мерч-направление.</p></article>
+      <article class="pr-card rv d1"><span class="num">02</span><h3>Весь мир</h3><p>Доставка по миру. Заказать можно в WhatsApp, а в Грозном — прийти в магазин.</p></article>
+      <article class="pr-card rv d2"><span class="num">03</span><h3>Андеграунд</h3><p>Коллекция «Caucasus Underground» — про свободу творить не ради денег или признания.</p></article>
+    </div>
+    <div class="facts rv">
+      <span class="fact">9&nbsp;050 подписчиков в соцсетях</span>
+      <span class="fact">Футболки · худи · кепки · зип-худи · лонгсливы</span>
+      <span class="fact">Ветровки</span>
+      <span class="fact">Раздел «Размеры» в профиле бренда</span>
+    </div>
+  </div>
+</section>
+
+<!-- STORE -->
+<section id="store" style="padding-top:0">
+  <div class="wrap store">
+    <figure class="ph rv"><img src="img/store-soon.jpg" alt="Новый магазин Caulfield, надпись coming soon" width="768" height="1024" loading="lazy"><span class="sticker">Скоро</span></figure>
+    <div>
+      <span class="eyebrow rv">// 05 · магазин</span>
+      <h2 class="rv d1">Скоро <span class="hl">новый магазин<svg class="scr" viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 40 2, 70 13, 110 6 S 170 4, 198 8"/></svg></span></h2>
+      <p class="lead rv d2">В постах бренд готовит открытие нового магазина. Адрес пока не объявлен — узнать новости можно в WhatsApp.</p>
+      <div class="nowshop rv d2"><b>Сейчас работает</b>Грозный, ул. Мира, 52А к.1<br>Часы работы: 11:00–20:00</div>
+      <div class="ctas rv d3">
+        <a class="btn" href="https://wa.me/79286457690?text=Здравствуйте!%20Хочу%20узнать,%20когда%20откроется%20новый%20магазин%20Caulfield%20и%20где%20он%20будет." target="_blank" rel="noopener">Спросить об открытии</a>
+        <a class="btn ghost" href="https://yandex.ru/maps/?rtext=~Грозный,%20ул.%20Мира,%2052А%20к.1&rtt=auto" target="_blank" rel="noopener">Маршрут в магазин</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER BUILDER -->
+<section id="order">
+  <div class="wrap">
+    <div class="builder rv">
+      <div>
+        <span class="eyebrow">// 06 · заказ</span>
+        <h2 style="margin-top:14px;font-size:clamp(34px,6vw,60px)">Собери <span class="out">заказ</span></h2>
+        <div class="fields">
+          <div class="fld">
+            <label for="oItem">Что заказать</label>
+            <select id="oItem">
+              <option data-name="худи «Caucasus Underground»" data-price="5900">Худи «Caucasus Underground» — 5&nbsp;900&nbsp;₽</option>
+              <option data-name="худи «Rio de Caucasia»" data-price="0">Худи «Rio de Caucasia»</option>
+              <option data-name="зип-худи «The North caucasian child»" data-price="6500">Зип-худи «The North caucasian child» — 6&nbsp;500&nbsp;₽</option>
+              <option data-name="футболку" data-price="0">Футболка</option>
+              <option data-name="лонгслив" data-price="0">Лонгслив</option>
+              <option data-name="кепку" data-price="0">Кепка</option>
+              <option data-name="ветровку" data-price="0">Ветровка</option>
+            </select>
+          </div>
+          <div class="two">
+            <div class="fld"><label for="oSize">Размер</label><input type="text" id="oSize" placeholder="Ваш размер" autocomplete="off"></div>
+            <div class="fld"><label for="oCity">Город доставки</label><input type="text" id="oCity" placeholder="Город или страна" autocomplete="off"></div>
+          </div>
+          <div class="fld">
+            <span class="lbl" id="qLbl">Количество</span>
+            <div class="qty" role="group" aria-labelledby="qLbl"><button type="button" id="qMinus" aria-label="Меньше">−</button><output id="qVal" aria-live="polite">1</output><button type="button" id="qPlus" aria-label="Больше">+</button></div>
+          </div>
+        </div>
+      </div>
+      <div class="preview">
+        <span class="lbl">Сообщение в WhatsApp</span>
+        <div class="bubble" id="oMsg"></div>
+        <div class="osum" aria-live="polite"><span>Ориентировочно</span><b id="oSum">5&nbsp;900&nbsp;₽</b></div>
+        <a class="btn" id="oGo" href="https://wa.me/79286457690" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>Отправить в WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="wrap">
+    <div class="head"><div><span class="eyebrow rv">// 07 · контакты</span><h2 class="rv d1">Как <span class="hl">найти<svg class="scr" viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 C 40 2, 70 13, 110 6 S 170 4, 198 8"/></svg></span></h2></div></div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="ci"><small>Магазин</small><p>Грозный, ул. Мира, 52А к.1</p></div>
+        <div class="ci"><small>Часы работы</small><p>11:00–20:00</p><p><span class="status" data-status style="margin-top:8px"><i></i><span>Магазин: 11:00–20:00</span></span></p></div>
+        <div class="ci"><small>Телефон и WhatsApp</small><a class="big" href="tel:+79286457690">+7 928 645-76-90</a></div>
+        <div class="ci"><small>Мессенджер</small>
+          <div class="socials">
+            <a href="https://wa.me/79286457690?text=Здравствуйте!%20Хочу%20заказать%20одежду%20Caulfield.%20Подскажите,%20пожалуйста,%20что%20сейчас%20есть%20в%20наличии." target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+        <div class="ci"><small>Доставка</small><p>По миру</p></div>
+        <div class="ctas"><a class="btn ghost" href="https://yandex.ru/maps/?rtext=~Грозный,%20ул.%20Мира,%2052А%20к.1&rtt=auto" target="_blank" rel="noopener">Построить маршрут</a></div>
+      </div>
+      <div class="map rv d1"><iframe src="https://yandex.ru/map-widget/v1/?text=Грозный,%20ул.%20Мира,%2052А%20к.1&z=16" title="Магазин Caulfield на карте" loading="lazy" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow rv">// заказ</span>
+    <h2 class="rv d1">Выбери <span class="out">свой</span> дроп</h2>
+    <p class="lead rv d2">Напиши в WhatsApp — подскажем цену, наличие и доставку.</p>
+    <div class="ctas rv d3">
+      <a class="btn" href="https://wa.me/79286457690?text=Здравствуйте!%20Хочу%20заказать%20одежду%20Caulfield.%20Подскажите,%20пожалуйста,%20что%20сейчас%20есть%20в%20наличии." target="_blank" rel="noopener">Заказать в WhatsApp</a>
+      <a class="btn ghost" href="tel:+79286457690">+7 928 645-76-90</a>
+    </div>
+    <span class="slg rv d3">«Держаться на выжженных полях» — из профиля бренда</span>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Caulfield / Колфилд — бренд одежды, Грозный</span>
+    <span>Демо-концепт. Данные и цены — из открытых источников (профиль и посты бренда) на 26.10.2026. Страница не индексируется.</span>
+  </div>
+</footer>
+
+<nav class="mbar" id="mbar" aria-label="Быстрые действия">
+  <a href="tel:+79286457690"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+  <a href="https://wa.me/79286457690" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>WhatsApp</a>
+  <a class="main" href="#order">Заказать</a>
+</nav>
+
+<script>
+(() => {
+  const NB = ' ';
+  const fmt = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, NB) + NB + '₽';
+
+  // Статус «открыто/закрыто» по московскому времени (11:00–20:00)
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Moscow' }));
+  const m = now.getHours() * 60 + now.getMinutes();
+  const open = m >= 11 * 60 && m < 20 * 60;
+  document.querySelectorAll('[data-status]').forEach(st => {
+    st.classList.toggle('closed', !open);
+    st.querySelector('span').textContent = open ? 'Магазин открыт сейчас · до 20:00' : 'Магазин сейчас закрыт · откроется в 11:00';
+  });
+
+  // Шапка и мобильная панель
+  const mbar = document.getElementById('mbar');
+  const onScroll = () => mbar.classList.toggle('show', scrollY > 420);
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Мобильное меню
+  const burger = document.querySelector('.burger');
+  const closeMenu = () => { document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', 'false'); };
+  burger.addEventListener('click', () => {
+    const o = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', String(o));
+  });
+  document.querySelectorAll('.mnav a').forEach(a => a.addEventListener('click', closeMenu));
+  addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+  // Появление блоков
+  const rv = document.querySelectorAll('.rv');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+    rv.forEach(el => io.observe(el));
+  } else { rv.forEach(el => el.classList.add('in')); }
+
+  // Вкладки каталога + смена фото
+  const tabs = document.querySelectorAll('[role=tab]');
+  const pics = document.querySelectorAll('.svc-photo img');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', String(x === t)));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('on', p.id === 'p-' + t.dataset.tab));
+    pics.forEach(p => p.classList.toggle('on', p.dataset.k === t.dataset.img));
+  }));
+
+  // Фильтр лукбука и лайтбокс
+  const items = document.querySelectorAll('.gi');
+  document.querySelectorAll('[data-f]').forEach(f => f.addEventListener('click', () => {
+    document.querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-pressed', String(x === f)));
+    items.forEach(i => i.classList.toggle('hide', f.dataset.f !== 'all' && i.dataset.c !== f.dataset.f));
+  }));
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+  items.forEach(i => i.addEventListener('click', () => {
+    const img = i.querySelector('img');
+    lbImg.src = img.currentSrc || img.src; lbImg.alt = img.alt; lbCap.textContent = i.querySelector('span').textContent;
+    if (lb.showModal) lb.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+
+  // Конструктор заказа -> WhatsApp с готовым текстом
+  const sel = document.getElementById('oItem'), size = document.getElementById('oSize'), city = document.getElementById('oCity');
+  const qVal = document.getElementById('qVal'), msg = document.getElementById('oMsg'), sum = document.getElementById('oSum'), go = document.getElementById('oGo');
+  let qty = 1;
+  const build = () => {
+    const o = sel.selectedOptions[0], price = +o.dataset.price || 0;
+    let t = 'Здравствуйте! Хочу заказать ' + o.dataset.name + (qty > 1 ? ', ' + qty + ' шт.' : '') + '.';
+    if (size.value.trim()) t += ' Размер: ' + size.value.trim() + '.';
+    if (city.value.trim()) t += ' Доставка: ' + city.value.trim() + '.';
+    t += price ? ' Подскажите, пожалуйста, наличие и условия оплаты.' : ' Подскажите, пожалуйста, цену, наличие и условия оплаты.';
+    msg.textContent = t;
+    qVal.textContent = qty;
+    if (price) { sum.className = ''; sum.textContent = fmt(price * qty); }
+    else { sum.className = 'ask'; sum.textContent = 'Цену подскажут в WhatsApp'; }
+    go.href = 'https://wa.me/79286457690?text=' + encodeURIComponent(t);
+  };
+  sel.addEventListener('change', build);
+  size.addEventListener('input', build);
+  city.addEventListener('input', build);
+  document.getElementById('qMinus').addEventListener('click', () => { qty = Math.max(1, qty - 1); build(); });
+  document.getElementById('qPlus').addEventListener('click', () => { qty = Math.min(10, qty + 1); build(); });
+  build();
+})();
+</script>
+</body>
+</html>
