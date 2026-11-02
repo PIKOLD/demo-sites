@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>MASY — российский бренд одежды, Пермь</title>
+<meta name="description" content="MASY — российский бренд одежды: эко-шубы, бомберы, зимние парки. Производство в Перми, индивидуальный пошив по вашим параметрам, доставка.">
+<meta name="theme-color" content="#141210">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap"></noscript>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{--ink:#141210;--ink2:#4f4a45;--mute:#716c66;--taupe:#7f7265;--line:#dfdcd7;--mist:#f4f2ef;--pad:16px;--sans:"Jost","Century Gothic","Segoe UI",sans-serif}
+@media(min-width:900px){:root{--pad:40px}}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:60px}
+html.lock{overflow:hidden}
+body{margin:0;background:#fff;color:var(--ink);font:400 17px/1.5 var(--sans)}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;text-align:inherit}
+h1,h2,h3,p,figure,ul,dl,dd{margin:0;padding:0}
+ul{list-style:none}
+:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.demo{background:var(--ink);color:#fff;font-size:13px;line-height:1.35;padding:8px var(--pad);text-align:center}
+.demo b{font-weight:500;letter-spacing:.09em;text-transform:uppercase;margin-right:.6em}
+.demo span{color:#c9c5bf}.demo i{display:none;font-style:normal}@media(min-width:900px){.demo i{display:inline}}
+.tick{background:var(--mist);overflow:hidden;white-space:nowrap;font-size:13px;line-height:1;letter-spacing:.07em;text-transform:uppercase;color:#68635d;padding:10px 0}
+.tick div{display:inline-flex;animation:tick 46s linear infinite}
+.tick span{padding:0 16px;position:relative}
+.tick span::after{content:"";position:absolute;right:-2px;top:50%;width:4px;height:4px;margin-top:-2px;border-radius:50%;background:currentColor}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+.hero{position:relative;height:calc(var(--vh,100svh) - 66px);min-height:540px;overflow:hidden;background:#2a2320;color:#fff}
+.slide{position:absolute;inset:0;display:grid;grid-template-columns:minmax(0,1fr);opacity:0;visibility:hidden;transition:opacity 1.2s ease,visibility 0s 1.2s}
+.slide.on{opacity:1;visibility:visible;transition:opacity 1.2s ease}
+.slide figure{overflow:hidden;min-height:0}
+.slide figure+figure{display:none}
+.slide img{transform:scale(1.05);transition:transform 7s ease-out}
+.slide.on img{transform:none}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,16,.34) 0,rgba(20,18,16,0) 20%,rgba(20,18,16,0) 48%,rgba(20,18,16,.62) 100%);pointer-events:none}
+.htop{position:absolute;z-index:3;left:0;right:0;top:0;display:flex;justify-content:space-between;align-items:center;padding:14px var(--pad)}
+.logo{font-size:30px;font-weight:500;letter-spacing:.2em;line-height:1}
+.rnd{width:56px;height:56px;border-radius:50%;background:#fff;display:grid;place-content:center;gap:7px}
+.rnd i{display:block;width:26px;height:1px;background:var(--ink)}
+.chev{position:absolute;z-index:3;top:42%;width:44px;height:64px;display:grid;place-items:center}
+.chev svg{width:15px;height:34px;fill:none;stroke:#fff;stroke-width:1.1}
+.chev.l{left:2px}.chev.r{right:2px}
+.hcap{position:absolute;z-index:3;left:var(--pad);right:var(--pad);bottom:60px}
+.hcap h1{font-size:15px;font-weight:400;line-height:1.35;max-width:30em}
+.big{font-size:clamp(34px,4.4vw,60px);font-weight:400;line-height:1.05;text-transform:uppercase;margin:10px 0 4px;letter-spacing:.01em}
+.hsub{font-size:17px;font-weight:300;margin-bottom:18px}
+.ghost{display:inline-block;background:rgba(255,255,255,.2);-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);padding:13px 30px;font-size:15px;letter-spacing:.03em;transition:background .25s}
+.ghost:hover{background:rgba(255,255,255,.36)}
+.hinfo{position:absolute;z-index:3;left:var(--pad);right:var(--pad);bottom:16px;display:flex;justify-content:space-between;gap:12px;font-size:14px;line-height:1.3;border-top:1px solid rgba(255,255,255,.35);padding-top:10px}
+.hinfo a{text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.cnt{display:none}
+
+.bar{position:sticky;top:0;z-index:20;background:#fff;display:flex;align-items:center;gap:14px;padding:11px var(--pad);border-bottom:1px solid var(--line)}
+.bar .logo{font-size:23px;margin-right:auto}
+.bar .st,.bar .wide{display:none}
+.bar .ord{font-size:15px;text-decoration:underline;text-underline-offset:3px}
+.brg{width:34px;height:30px;display:grid;place-content:center;gap:7px}
+.brg i{display:block;width:30px;height:1px;background:var(--ink)}
+.blk{display:none}
+
+.sec{padding:clamp(56px,7vw,100px) 0}
+.ttl{text-align:center;font-weight:500;font-size:clamp(29px,2.8vw,40px);line-height:1.12;text-transform:uppercase;padding:0 var(--pad)}
+.lede{text-align:center;color:var(--mute);margin-top:10px;padding:0 var(--pad)}
+.flt{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 28px;margin:clamp(28px,4vw,52px) var(--pad) 22px;font-size:15px}
+.flt div{display:flex;gap:22px}
+.flt button{padding-bottom:3px;border-bottom:1px solid transparent;color:var(--mute)}
+.flt button[aria-pressed=true]{color:var(--ink);border-color:var(--ink)}
+.flt span{color:var(--mute)}
+.cat{display:grid;grid-template-columns:minmax(0,1fr);gap:34px 0;margin:0 var(--pad)}
+.card button{display:block;width:100%;text-align:center}
+.ph{display:block;position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--mist)}
+.ph img{position:absolute;inset:0;transition:opacity .7s ease,transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.ph img.h{opacity:0}
+.card button:hover .ph img:first-child{transform:scale(1.025)}
+.card button:hover .ph img.h{opacity:1}
+.nm{display:block;font-weight:500;font-size:19px;line-height:1.25;margin-top:16px;padding:0 10px}
+.pr{display:block;color:var(--mute);font-size:19px;margin-top:5px;padding:0 10px}
+.pr small{display:block;font-size:15px}
+.more{margin:clamp(40px,5vw,64px) auto 0;padding:0 var(--pad);max-width:820px}
+.more h3{font-weight:500;font-size:15px;letter-spacing:.07em;text-transform:uppercase;margin-bottom:8px}
+.more li{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-top:1px solid var(--line)}
+.more li span:last-child{color:var(--mute);text-align:right}
+
+.split{display:grid;grid-template-columns:minmax(0,1fr)}
+.pnl{background:var(--taupe);color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:56px var(--pad)}
+.pnl h2{font-weight:500;font-size:clamp(31px,3.3vw,46px);line-height:1.1;text-transform:uppercase}
+.pnl p{max-width:27em;margin:18px 0 28px}
+.wbtn{display:inline-block;background:#fff;color:var(--ink);padding:15px 34px;font-size:16px;transition:background .25s}
+.wbtn:hover{background:var(--mist)}
+.split figure{aspect-ratio:4/5;overflow:hidden}
+
+.th{max-width:860px;margin:clamp(28px,4vw,48px) auto 0;padding:0 var(--pad)}
+.stops{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1px solid var(--ink)}
+.stops button{padding:18px 4px;font-size:clamp(23px,3vw,34px);font-weight:300;text-align:center;line-height:1;transition:background .25s,color .25s}
+.stops button+button{border-left:1px solid var(--ink)}
+.stops button[aria-pressed=true]{background:var(--ink);color:#fff}
+.tr{display:grid;grid-template-columns:66px minmax(0,1fr) auto;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);transition:opacity .35s}
+.tr.off{opacity:.36}
+.tr figure{aspect-ratio:3/4;overflow:hidden}
+.tr b{display:block;font-weight:500;line-height:1.25}
+.tr small{font-size:15px;color:var(--mute)}
+.tr .p{white-space:nowrap}
+.note{font-size:15px;color:var(--mute);margin-top:16px}
+
+.acc{max-width:860px;margin:clamp(24px,4vw,44px) auto 0;padding:0 var(--pad)}
+details{border-top:1px solid var(--line)}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:17px;height:17px;background:linear-gradient(var(--ink),var(--ink)) center/100% 1px no-repeat,linear-gradient(var(--ink),var(--ink)) center/1px 100% no-repeat;transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--ink2);padding:0 34px 20px 0}
+
+.room{display:grid;grid-template-columns:minmax(0,1fr);border-top:1px solid var(--line)}
+.ri{padding:48px var(--pad)}
+.ri h2{font-weight:500;font-size:clamp(29px,2.8vw,40px);line-height:1.12;text-transform:uppercase;margin-bottom:24px}
+.ri dt{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin-top:18px}
+.tbtn{display:inline-block;background:var(--taupe);color:#fff;padding:14px 30px;margin-top:26px;transition:background .25s}
+.tbtn:hover{background:#6a5e52}
+.map{min-height:360px;background:var(--mist)}
+.map iframe{display:block;width:100%;height:100%;min-height:360px;border:0;filter:grayscale(1) contrast(1.02)}
+
+.end{position:relative;display:grid;grid-template-columns:minmax(0,1fr);height:min(92vw,88vh);min-height:420px;overflow:hidden;background:#222;color:#fff}
+.end figure{min-height:0;overflow:hidden}
+.end figure+figure{display:none}
+.end::after{content:"";position:absolute;inset:0;background:rgba(20,18,16,.3)}
+.endc{position:absolute;z-index:2;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 var(--pad)}
+.endc h2{font-weight:400;font-size:clamp(31px,4.2vw,60px);line-height:1.08;text-transform:uppercase;margin-bottom:24px;max-width:17em}
+footer{background:var(--ink);color:#d4d0ca;padding:44px var(--pad) 30px;font-size:15px}
+.ft{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
+footer .logo{color:#fff}
+footer a{text-decoration:underline;text-underline-offset:3px}
+.dm{margin-top:30px;padding-top:16px;border-top:1px solid #3a3531;font-size:13px;color:#a8a39c}
+
+dialog{border:0;padding:0;color:var(--ink);background:#fff}
+dialog::backdrop{background:rgba(20,18,16,.5)}
+#menu{margin:0 0 0 auto;width:min(340px,100%);height:100%;max-height:none}
+.mn{display:flex;flex-direction:column;min-height:100%;padding:18px 26px 26px}
+.x{align-self:flex-end;width:40px;height:40px;position:relative}
+.x::before,.x::after{content:"";position:absolute;left:8px;right:8px;top:50%;height:1px;background:var(--ink);transform:rotate(45deg)}
+.x::after{transform:rotate(-45deg)}
+.mn nav a{display:block;padding:11px 0;font-size:20px;border-bottom:1px solid var(--line)}
+.mn p{margin-top:auto;padding-top:26px;font-size:15px;color:var(--ink2)}
+#pd{margin:0;width:100%;max-width:none;height:100%;max-height:none}
+.pb{display:inline-flex;align-items:center;gap:10px;padding:16px var(--pad);color:var(--mute)}
+.pb svg{width:26px;height:10px;fill:none;stroke:currentColor}
+.pg{display:grid;grid-template-columns:minmax(0,1fr);gap:0 28px;padding:0 var(--pad) 40px;max-width:1240px;margin:0 auto}
+.pm{aspect-ratio:3/4;overflow:hidden;background:var(--mist)}
+.pt{display:flex;gap:8px;margin-top:8px}
+.pt button{width:62px;aspect-ratio:3/4;overflow:hidden;opacity:.55;transition:opacity .2s}
+.pt button[aria-current=true]{opacity:1}
+.pi{padding-top:22px}
+.pi h2{font-size:24px;font-weight:500;line-height:1.2}
+.pi .ps{color:var(--mute);margin-top:4px}
+.pi .pp{font-size:22px;margin-top:14px}
+.pi .pp small{display:block;font-size:17px;color:var(--mute)}
+.pi .tbtn{display:block;text-align:center;margin:20px 0 22px}
+.pi details p{padding-right:0}
+
+@media(min-width:900px){
+ .slide{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .slide figure+figure{display:block}
+ .chev.l{left:14px}.chev.r{right:14px}
+ .rnd{width:64px;height:64px}
+ .logo{font-size:36px}
+ .htop{padding:22px var(--pad)}
+ .hcap{bottom:40px;right:auto;max-width:50%}
+ .hinfo{left:auto;bottom:40px;border:0;padding:0;flex-direction:column;align-items:flex-end;text-align:right;gap:6px}
+ .cnt{display:block;opacity:.85}
+ .bar{position:static;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);padding:14px var(--pad);border:0}
+ .bar .logo{margin:0;font-size:30px;grid-column:2}
+ .bar .st{display:block;grid-column:1;grid-row:1;font-size:15px;color:var(--mute)}
+ .bar .wide{display:block;grid-column:3;justify-self:end}
+ .bar .ord,.bar .brg{display:none}
+ .blk{display:flex;justify-content:center;gap:clamp(30px,5vw,76px);position:sticky;top:0;z-index:20;background:var(--ink);color:#fff;font-size:14px;letter-spacing:.07em;text-transform:uppercase;padding:13px var(--pad)}
+ .blk a{opacity:.86;transition:opacity .2s}.blk a:hover{opacity:1}
+ .cat{grid-template-columns:repeat(2,minmax(0,1fr));gap:44px 0}
+ .split,.room{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .split figure{aspect-ratio:auto;height:min(52vw,820px)}
+ .tr{grid-template-columns:84px minmax(0,1fr) auto;gap:22px}
+ .ri{padding:64px var(--pad)}
+ .map iframe{min-height:520px}
+ .end{grid-template-columns:repeat(2,minmax(0,1fr));height:min(56vw,88vh)}
+ .end figure+figure{display:block}
+ .ft{grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr)}
+ .pb{padding:20px var(--pad)}
+ .pg{grid-template-columns:72px auto minmax(0,440px);justify-content:center;gap:0 14px}
+ .pt{order:-1;flex-direction:column;margin:0}
+ .pt button{width:100%}
+ .pm{height:calc(100vh - 90px);max-height:880px;aspect-ratio:3/4}
+ .pi{padding:0 0 0 34px}
+ .pi h2{font-size:28px}
+}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .tick div{animation:none}
+ .slide,.slide.on,.slide img,.ph img,.tr,summary::after{transition:none}
+ .slide img{transform:none}
+ .js .rv{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+<body>
+<div class="demo" role="note"><b>Демо-концепт</b><span>сайта для бренда MASY<i>. Данные — из открытых источников (профиль и посты бренда, Taplink) на 26.10.2026. Страница не индексируется.</i></span></div>
+<div class="tick" aria-hidden="true"><div>
+ <span>Производство в Перми</span><span>Пошив по вашим параметрам</span><span>Доставка по миру</span><span>Эко-шубы</span><span>Бомберы</span><span>Зимние парки</span><span>Шоурум в Перми</span>
+ <span>Производство в Перми</span><span>Пошив по вашим параметрам</span><span>Доставка по миру</span><span>Эко-шубы</span><span>Бомберы</span><span>Зимние парки</span><span>Шоурум в Перми</span>
+ <span>Производство в Перми</span><span>Пошив по вашим параметрам</span><span>Доставка по миру</span><span>Эко-шубы</span><span>Бомберы</span><span>Зимние парки</span><span>Шоурум в Перми</span>
+ <span>Производство в Перми</span><span>Пошив по вашим параметрам</span><span>Доставка по миру</span><span>Эко-шубы</span><span>Бомберы</span><span>Зимние парки</span><span>Шоурум в Перми</span>
+</div></div>
+
+<section class="hero" id="top" aria-label="MASY, сезон 2026">
+ <div class="slide on"><figure><img src="img/mink-dark.jpg" alt="Длинная тёмная шуба со стойкой на фоне медной стены" fetchpriority="high" style="object-position:50% 12%"></figure><figure><img src="img/fur-brown.jpg" alt="Длинная шуба шоколадного цвета" style="object-position:50% 30%"></figure></div>
+ <div class="slide"><figure><img src="img/leopard-2.jpg" alt="Шуба с леопардовым принтом у красной стены" style="object-position:50% 70%"></figure><figure><img src="img/leopard-3.jpg" alt="Шуба с леопардовым принтом, крупный план" style="object-position:50% 20%"></figure></div>
+ <div class="slide"><figure><img src="img/parka-brown.jpg" alt="Коричневая зимняя парка" style="object-position:50% 40%"></figure><figure><img src="img/parka-grey.jpg" alt="Графитовая зимняя парка" style="object-position:50% 40%"></figure></div>
+ <div class="htop"><a class="logo" href="#top" aria-label="MASY, наверх">MASY</a><button class="rnd" data-menu aria-label="Открыть меню"><i></i><i></i><i></i></button></div>
+ <button class="chev l" id="pv" aria-label="Предыдущий кадр"><svg viewBox="0 0 15 34"><path d="M14 1 2 17l12 16"/></svg></button>
+ <button class="chev r" id="nx" aria-label="Следующий кадр"><svg viewBox="0 0 15 34"><path d="m1 1 12 16L1 33"/></svg></button>
+ <div class="hcap">
+  <h1>MASY — российский бренд одежды. Производство в Перми</h1>
+  <p class="big" id="sT">Сезон 2026</p>
+  <p class="hsub" id="sS">Эко-шубы, бомберы и зимние парки</p>
+  <a class="ghost" href="#collection">Смотреть коллекцию</a>
+ </div>
+ <div class="hinfo"><span data-st>Шоурум: пн–пт 15:00–20:00, сб–вс 14:00–18:00</span><a href="https://yandex.ru/maps/?rtext=~%D0%9F%D0%B5%D1%80%D0%BC%D1%8C%2C%20%D1%83%D0%BB.%20%D0%A0%D0%B5%D0%B2%D0%BE%D0%BB%D1%8E%D1%86%D0%B8%D0%B8%2C%2020&amp;rtt=auto" target="_blank" rel="noopener">Маршрут в шоурум</a><span class="cnt" id="cnt">01 / 03</span></div>
+</section>
+
+<div class="bar">
+ <a class="logo" href="#top">MASY</a>
+ <span class="st" data-st>Шоурум: пн–пт 15:00–20:00, сб–вс 14:00–18:00</span>
+ <a class="wide" href="https://taplink.cc/bymasy" target="_blank" rel="noopener">Заказать в Taplink</a>
+ <a class="ord" href="https://taplink.cc/bymasy" target="_blank" rel="noopener">Заказать</a>
+ <button class="brg" data-menu aria-label="Открыть меню"><i></i><i></i><i></i></button>
+</div>
+<nav class="blk" aria-label="Основное меню"><a href="#collection">Коллекция</a><a href="#bespoke">На заказ</a><a href="#thermo">Термометр</a><a href="#info">Покупателю</a><a href="#room">Шоурум</a></nav>
+
+<main>
+<section class="sec" id="collection">
+ <h2 class="ttl rv">Коллекция</h2>
+ <p class="lede rv">Сезон 2026 · one size или пошив по вашим параметрам</p>
+ <div class="flt rv">
+  <div role="group" aria-label="Фильтр коллекции">
+   <button aria-pressed="true" data-f="all">Все</button><button aria-pressed="false" data-f="fur">Шубы</button><button aria-pressed="false" data-f="bomb">Бомбер</button><button aria-pressed="false" data-f="parka">Парка</button>
+  </div>
+  <span>Цены из постов бренда</span>
+ </div>
+ <div class="cat" id="cat">
+  <article class="card rv" data-c="fur"><button data-p="bars"><span class="ph"><img src="img/leopard-2.jpg" alt="Эко-шуба с принтом «снежный барс»" loading="lazy" style="object-position:50% 70%"><img class="h" src="img/leopard-3.jpg" alt="" loading="lazy"></span><span class="nm">Эко-шуба «снежный барс»</span><span class="pr">24&nbsp;900&nbsp;₽</span></button></article>
+  <article class="card rv" data-c="fur"><button data-p="mink"><span class="ph"><img src="img/look-1.jpg" alt="Чёрная шуба-куртка из эко-норки" loading="lazy" style="object-position:50% 72%"></span><span class="nm">Эко-норка, чёрная</span><span class="pr">26&nbsp;900&nbsp;₽</span></button></article>
+  <article class="card rv" data-c="bomb"><button data-p="bomb"><span class="ph"><img src="img/fur-light.jpg" alt="Светлый бомбер из эко-песца" loading="lazy" style="object-position:50% 38%"></span><span class="nm">Бомбер из эко-песца</span><span class="pr">22&nbsp;900&nbsp;₽</span></button></article>
+  <article class="card rv" data-c="parka"><button data-p="parka"><span class="ph"><img src="img/parka-brown.jpg" alt="Коричневая зимняя парка из мембраны" loading="lazy"><img class="h" src="img/parka-grey.jpg" alt="" loading="lazy"></span><span class="nm">Зимняя парка из мембраны</span><span class="pr">12&nbsp;900&nbsp;₽<small>с капюшоном 13&nbsp;900&nbsp;₽</small></span></button></article>
+  <article class="card rv" data-c="fur"><button data-p="choc"><span class="ph"><img src="img/fur-brown.jpg" alt="Шуба-полушалка макси, цвет шоколад" loading="lazy" style="object-position:50% 30%"></span><span class="nm">Шуба-полушалка макси из финской эко-норки</span><span class="pr">Цену уточняйте в Taplink</span></button></article>
+  <article class="card rv" data-c="fur"><button data-p="collar"><span class="ph"><img src="img/hero.jpg" alt="Длинная чёрная шуба со стойкой" loading="lazy" style="object-position:50% 20%"></span><span class="nm">Шуба со стойкой из эко-норки, чёрная</span><span class="pr">Цену уточняйте в Taplink</span></button></article>
+ </div>
+ <div class="more rv">
+  <h3>Также в коллекции</h3>
+  <ul>
+   <li><span>Эко-рысь, длина 65&nbsp;см</span><span>цену уточняйте в Taplink</span></li>
+   <li><span>Арктический песец</span><span>цену уточняйте в Taplink</span></li>
+  </ul>
+ </div>
+</section>
+
+<section class="split" id="bespoke">
+ <div class="pnl"><h2 class="rv">Пошив по вашим параметрам</h2><p class="rv">Индивидуальный пошив или модель из наличия. Производство — в Перми, доставка — по миру.</p><a class="wbtn rv" href="https://taplink.cc/bymasy" target="_blank" rel="noopener">Заказать пошив</a></div>
+ <figure><img src="img/brand.jpg" alt="Белая шуба с надписью MASY" loading="lazy"></figure>
+</section>
+
+<section class="sec" id="thermo">
+ <h2 class="ttl rv">Термометр</h2>
+ <p class="lede rv">До скольких градусов нужна вещь?</p>
+ <div class="th rv">
+  <div class="stops" role="group" aria-label="Выберите температуру">
+   <button type="button" aria-pressed="false" data-t="15">−15&nbsp;°C</button><button type="button" aria-pressed="true" data-t="20">−20&nbsp;°C</button><button type="button" aria-pressed="false" data-t="25">−25&nbsp;°C</button>
+  </div>
+  <div aria-live="polite">
+   <div class="tr" data-l="20"><figure><img src="img/fur-light.jpg" alt="" loading="lazy"></figure><div><b>Бомбер из эко-песца</b><small data-v></small></div><span class="p">22&nbsp;900&nbsp;₽</span></div>
+   <div class="tr" data-l="25"><figure><img src="img/parka-grey.jpg" alt="" loading="lazy"></figure><div><b>Зимняя парка из мембраны</b><small data-v></small></div><span class="p">12&nbsp;900&nbsp;₽</span></div>
+  </div>
+  <p class="note">Здесь только модели, для которых температурный режим указан в постах бренда. Для остальных уточняйте при заказе.</p>
+ </div>
+</section>
+
+<section class="sec" id="info" style="padding-top:0">
+ <h2 class="ttl rv">Покупателю</h2>
+ <div class="acc rv">
+  <details><summary>Как заказать</summary><p>Заказ и все контакты бренда — в Taplink: taplink.cc/bymasy. Там же ссылка на канал в MAX.</p></details>
+  <details><summary>Размер</summary><p>Модели сезона 2026 — one size. Можно сшить вещь индивидуально, по вашим параметрам.</p></details>
+  <details><summary>Доставка</summary><p>Доставка по миру. Детали — в Taplink.</p></details>
+  <details><summary>Производство</summary><p>Одежда MASY производится в Перми.</p></details>
+ </div>
+</section>
+
+<section class="room" id="room">
+ <div class="ri">
+  <h2 class="rv">Шоурум в Перми</h2>
+  <dl class="rv">
+   <dt>Адрес</dt><dd>ТЦ «Бонус», ул. Революции, 20, офис 604, 6 этаж</dd>
+   <dt>Часы</dt><dd>Пн–пт 15:00–20:00<br>Сб–вс 14:00–18:00</dd>
+   <dt>Сейчас</dt><dd data-st>См. часы работы</dd>
+   <dt>Все контакты</dt><dd><a href="https://taplink.cc/bymasy" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:3px">taplink.cc/bymasy</a></dd>
+  </dl>
+  <a class="tbtn rv" href="https://yandex.ru/maps/?rtext=~%D0%9F%D0%B5%D1%80%D0%BC%D1%8C%2C%20%D1%83%D0%BB.%20%D0%A0%D0%B5%D0%B2%D0%BE%D0%BB%D1%8E%D1%86%D0%B8%D0%B8%2C%2020&amp;rtt=auto" target="_blank" rel="noopener">Построить маршрут</a>
+ </div>
+ <div class="map"><iframe src="https://yandex.ru/map-widget/v1/?mode=search&amp;text=%D0%9F%D0%B5%D1%80%D0%BC%D1%8C%2C%20%D1%83%D0%BB.%20%D0%A0%D0%B5%D0%B2%D0%BE%D0%BB%D1%8E%D1%86%D0%B8%D0%B8%2C%2020&amp;z=16" title="Шоурум MASY на карте: Пермь, ул. Революции, 20" loading="lazy" allowfullscreen></iframe></div>
+</section>
+
+<section class="end">
+ <figure><img src="img/leopard-1.jpg" alt="Шуба с леопардовым принтом и чёрная шапка" loading="lazy" style="object-position:50% 25%"></figure>
+ <figure><img src="img/fur-black.jpg" alt="Чёрная пушистая шуба и чёрная шапка" loading="lazy" style="object-position:50% 20%"></figure>
+ <div class="endc"><h2 class="rv">Создаём одежду, в которую влюбляются</h2><a class="wbtn rv" href="https://taplink.cc/bymasy" target="_blank" rel="noopener">Заказать в Taplink</a></div>
+</section>
+</main>
+
+<footer>
+ <div class="ft">
+  <a class="logo" href="#top">MASY</a>
+  <div>Российский бренд одежды<br>Производство в Перми<br>Канал бренда в MAX — ссылка в Taplink</div>
+  <div>Пермь, ул. Революции, 20, офис 604<br><a href="https://taplink.cc/bymasy" target="_blank" rel="noopener">taplink.cc/bymasy</a></div>
+ </div>
+ <p class="dm">Демо-концепт. Цены и данные — из открытых источников (профиль и посты бренда, Taplink) на 26.10.2026. Фото — бренда MASY.</p>
+</footer>
+
+<dialog id="menu" aria-label="Меню"><div class="mn">
+ <button class="x" data-close aria-label="Закрыть меню"></button>
+ <nav><a href="#collection">Коллекция</a><a href="#bespoke">На заказ</a><a href="#thermo">Термометр</a><a href="#info">Покупателю</a><a href="#room">Шоурум</a><a href="https://taplink.cc/bymasy" target="_blank" rel="noopener">Заказать в Taplink</a></nav>
+ <p>Пермь, ТЦ «Бонус», ул. Революции, 20, офис 604, 6 этаж<br>Пн–пт 15:00–20:00, сб–вс 14:00–18:00</p>
+</div></dialog>
+
+<dialog id="pd" aria-label="Карточка модели">
+ <button class="pb" data-close><svg viewBox="0 0 26 10"><path d="M26 5H1M6 .5 1 5l5 4.5"/></svg>Назад</button>
+ <div class="pg">
+  <div class="pm"><img id="pdI" alt=""></div>
+  <div class="pt" id="pdT"></div>
+  <div class="pi">
+   <h2 id="pdN"></h2><p class="ps" id="pdS"></p><p class="pp" id="pdP"></p>
+   <a class="tbtn" href="https://taplink.cc/bymasy" target="_blank" rel="noopener">Заказать в Taplink</a>
+   <details open><summary>Пошив</summary><p>Можно сшить индивидуально, по вашим параметрам, или выбрать модель в наличии.</p></details>
+   <details><summary>Доставка</summary><p>Доставка по миру. Детали — в Taplink.</p></details>
+   <details><summary>Шоурум</summary><p>Пермь, ТЦ «Бонус», ул. Революции, 20, офис 604, 6 этаж. Пн–пт 15:00–20:00, сб–вс 14:00–18:00.</p></details>
+  </div>
+ </div>
+</dialog>
+
+<script>
+(function(){
+ var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
+ var rm=matchMedia('(prefers-reduced-motion: reduce)').matches,nb=' ';
+ var rv=$$('.rv');
+ if(rm||!('IntersectionObserver' in window)){rv.forEach(function(e){e.classList.add('in')})}
+ else{var ioOk=false,io=new IntersectionObserver(function(es){ioOk=true;es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -6% 0px'});rv.forEach(function(e){io.observe(e)});setTimeout(function(){if(!ioOk)rv.forEach(function(e){e.classList.add('in')})},1500)}
+
+ // Статус шоурума: часы из досье, время Перми
+ var n=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Yekaterinburg'})),d=n.getDay(),m=n.getHours()*60+n.getMinutes(),we=function(x){return x==0||x==6};
+ var a=we(d)?840:900,b=we(d)?1080:1200,s;
+ if(m>=a&&m<b)s='Шоурум открыт до '+(we(d)?'18:00':'20:00');
+ else if(m<a)s='Шоурум откроется сегодня в '+(we(d)?'14:00':'15:00');
+ else s='Шоурум откроется завтра в '+(we((d+1)%7)?'14:00':'15:00');
+ $$('[data-st]').forEach(function(e){e.textContent=s});
+
+ // Слайдер первого экрана
+ var sl=$$('.slide'),i=0,tm,T=[['Сезон 2026','Эко-шубы, бомберы и зимние парки'],['Снежный барс','Эко-шуба, полушалка, длина 80'+nb+'см'],['Парка до −25'+nb+'°C','Мембрана, утеплитель Аляска 200'+nb+'г']];
+ function go(k){i=(k+sl.length)%sl.length;sl.forEach(function(e,j){e.classList.toggle('on',j==i)});$('#sT').textContent=T[i][0];$('#sS').textContent=T[i][1];$('#cnt').textContent='0'+(i+1)+' / 0'+sl.length}
+ function stop(){clearInterval(tm)}
+ $('#nx').onclick=function(){stop();go(i+1)};$('#pv').onclick=function(){stop();go(i-1)};
+ if(!rm)tm=setInterval(function(){go(i+1)},6500);
+
+ // Меню
+ var menu=$('#menu'),pd=$('#pd');
+ function show(dl){dl.showModal();document.documentElement.classList.add('lock')}
+ function hide(dl){dl.close()}
+ [menu,pd].forEach(function(dl){dl.addEventListener('close',function(){document.documentElement.classList.remove('lock')});dl.addEventListener('click',function(e){if(e.target===dl||e.target.closest('[data-close]'))hide(dl)})});
+ $$('[data-menu]').forEach(function(b){b.onclick=function(){show(menu)}});
+ $$('#menu nav a').forEach(function(a){a.addEventListener('click',function(){hide(menu)})});
+
+ // Фильтр коллекции
+ $$('.flt button').forEach(function(b){b.onclick=function(){$$('.flt button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});var f=b.dataset.f;$$('#cat .card').forEach(function(c){c.style.display=(f=='all'||c.dataset.c==f)?'':'none';c.classList.add('in')})}});
+
+ // Карточка модели
+ var ask='Цену уточняйте в Taplink';
+ var P={
+  bars:{n:'Эко-шуба «снежный барс»',s:'Полушалка, длина 80'+nb+'см, one size',p:'24'+nb+'900'+nb+'₽',i:['leopard-2','leopard-3']},
+  mink:{n:'Эко-норка',s:'Чёрная, one size',p:'26'+nb+'900'+nb+'₽',i:['look-1']},
+  bomb:{n:'Бомбер из эко-песца',s:'До −20'+nb+'°C, one size',p:'22'+nb+'900'+nb+'₽',i:['fur-light']},
+  parka:{n:'Зимняя парка из мембраны',s:'Утеплитель Аляска 200'+nb+'г, до −25'+nb+'°C, one size',p:'12'+nb+'900'+nb+'₽<small>с капюшоном 13'+nb+'900'+nb+'₽</small>',i:['parka-brown','parka-grey']},
+  choc:{n:'Шуба-полушалка макси из финской эко-норки',s:'Цвет шоколад',p:ask,i:['fur-brown']},
+  collar:{n:'Шуба со стойкой из эко-норки',s:'Чёрная',p:ask,i:['hero']}
+ };
+ function pic(k,o){$('#pdI').src='img/'+k+'.jpg';$('#pdI').alt=o.n;$$('#pdT button').forEach(function(b){b.setAttribute('aria-current',b.dataset.k==k)})}
+ $$('#cat button').forEach(function(b){b.onclick=function(){var o=P[b.dataset.p];
+  $('#pdN').textContent=o.n;$('#pdS').textContent=o.s;$('#pdP').innerHTML=o.p;
+  $('#pdT').innerHTML=o.i.length>1?o.i.map(function(k){return '<button type="button" data-k="'+k+'" aria-label="Показать кадр"><img src="img/'+k+'.jpg" alt=""></button>'}).join(''):'';
+  $$('#pdT button').forEach(function(t){t.onclick=function(){pic(t.dataset.k,o)}});
+  pic(o.i[0],o);show(pd);pd.scrollTop=0}});
+
+ // Термометр
+ function th(t){$$('.stops button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.t==t)});$$('.tr').forEach(function(r){var l=+r.dataset.l,ok=l>=t;r.classList.toggle('off',!ok);$('[data-v]',r).textContent=(ok?'Подходит, заявлено до −':'Заявлено только до −')+l+nb+'°C'})}
+ $$('.stops button').forEach(function(b){b.onclick=function(){th(+b.dataset.t)}});th(20);
+})();
+</script>
+</body>
+</html>
