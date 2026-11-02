@@ -36,7 +36,11 @@ ul{list-style:none;padding:0}
 .top.solid{color:var(--ink)}
 .top.solid .hdr{background:#fff;box-shadow:0 1px 0 var(--line)}
 .logo{font-family:var(--disp);font-size:26px;line-height:1;letter-spacing:.3em;margin-right:-.3em;text-decoration:none;color:inherit}
-.order{justify-self:end;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:9px 14px;border:1px solid currentColor;transition:background-color .2s,color .2s}
+.hdr-r{justify-self:end;display:flex;gap:8px;align-items:center}
+.order{white-space:nowrap;font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:9px 14px;border:1px solid currentColor;transition:background-color .2s,color .2s}
+.l-m{display:none}
+@media(max-width:859px){.hdr{grid-template-columns:auto minmax(0,1fr)}.hdr>span{display:none}.hdr .logo{font-size:22px}.hdr-r{grid-column:2}}
+@media(max-width:519px){.l-d{display:none}.l-m{display:inline}.order{padding:9px 11px;letter-spacing:.1em}.hdr{padding:0 12px}.hdr-r{gap:6px}}
 .order:hover{background:#fff;color:var(--ink);border-color:#fff}
 .top.solid .order:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
 /* Кадры */
@@ -194,6 +198,14 @@ html.lock{overflow-y:scroll}
 .send{width:100%;margin-top:18px;background:var(--ink);color:#fff;border-color:var(--ink)}
 .send:hover{background:#fff;color:var(--ink)}
 .why{font-size:12.5px;margin-top:10px;opacity:.72}
+.sto{margin-top:6px;padding-top:14px;border-top:1px solid var(--line)}
+.sto-h{font-family:var(--disp);font-size:20px;line-height:1.2;margin-bottom:10px}
+.sto-b{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.btn.sto-btn{min-height:46px;padding:0 10px;gap:0;background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn.sto-btn:hover{background:#fff;color:var(--ink)}
+.sto-n,.sto-c,.sto-t{font-size:13px;margin-top:10px}
+.sto-n{opacity:.72;font-size:12.5px}
+.sto-c{font-weight:600}
 .unsure{font-size:13px;margin-top:12px;opacity:.85}
 .result{margin-top:14px}
 .res-msg{font-size:13.5px;margin-bottom:8px;font-weight:500}
@@ -244,7 +256,7 @@ html.lock{overflow-y:scroll}
 .t-dot{animation:hd 2.1s ease-in-out infinite}
 .t-pull .t-dot{animation-name:hd2}
 .gw:not(.live) .t-dot{animation-play-state:paused}
-.g-tape.drag .t-dot{display:none}
+.g-tape.drag .t-dot,.g-tape.stat .t-dot,.g-tape.stat .t-knob{display:none}
 @keyframes hd{0%{transform:translateY(4px);opacity:0}18%{opacity:1}72%{opacity:1;transform:translateY(-66px)}100%{opacity:0;transform:translateY(-78px)}}
 @keyframes hd2{0%{transform:translateX(0);opacity:0}18%{opacity:1}72%{opacity:1;transform:translateX(62px)}100%{opacity:0;transform:translateX(72px)}}
 .r-b,.r-f,.r-t{fill:none}
@@ -387,7 +399,10 @@ html.lock{overflow-y:scroll}
   <header class="hdr">
     <span></span>
     <a class="logo" href="#start" data-go="start" aria-label="MASY, в начало">MASY</a>
-    <a class="order" href="#order" data-go="order">Заказать</a>
+    <nav class="hdr-r" aria-label="Заказ">
+      <a class="order" href="#custom" data-go="custom" aria-label="Индивидуальный пошив"><span class="l-d">Индивидуальный пошив</span><span class="l-m" aria-hidden="true">Пошив</span></a>
+      <a class="order" href="#order" data-go="order">Заказать</a>
+    </nav>
   </header>
 </div>
 
@@ -805,9 +820,48 @@ function panelAskClose(after) {
 }
 function hdrState() { if (!pnOn) topbar.classList.toggle('solid', window.pageYOffset > 40); }
 
+/* ===== Куда отправить заявку: переопределяет sendBlock и deliver из kit.js =====
+   Контакты взяты со страницы Taplink бренда (https://taplink.cc/bymasy), см. data/masy.md.
+   Ссылки на MAX на Taplink нет, поэтому кнопки MAX нет. */
+var CT = { wa: '79194767048', tg: 'https://t.me/olgasutyagina1', tel: [['+79523332535', '+7&nbsp;952&nbsp;333-25-35'], ['+79194767048', '+7&nbsp;919&nbsp;476-70-48']] };
+WHY = 'Заявки сайт не принимает. После нажатия соберётся готовый текст и покажется, куда его отправить.';
+function sendBlock(label) {
+  return '<button class="btn send" type="submit">' + (label || 'Собрать заявку') + '</button><p class="why">' + WHY + '</p>' +
+    '<div class="result" hidden><p class="res-msg" role="status"></p><textarea readonly rows="7" aria-label="Текст заявки"></textarea>' +
+    '<div class="sto"><p class="sto-h">Куда отправить заявку</p>' +
+    '<div class="sto-b"><a class="btn sto-btn" data-ch="wa" href="https://wa.me/' + CT.wa + '" target="_blank" rel="noopener">WhatsApp</a><a class="btn sto-btn" data-ch="tg" href="' + CT.tg + '" target="_blank" rel="noopener">Telegram</a></div>' +
+    '<p class="sto-n">WhatsApp откроется с готовым текстом. В Telegram текст копируется при нажатии, вставьте его в чат.</p>' +
+    '<p class="sto-c" role="status" hidden></p>' +
+    '<p class="sto-t">Или позвоните: ' + CT.tel.map(function (t) { return '<a class="lnk" href="tel:' + t[0] + '">' + t[1] + '</a>'; }).join(' · ') + '</p>' +
+    '<p class="sto-t">Запасной вариант: <a class="lnk" href="' + TAP + '" target="_blank" rel="noopener">все контакты в Taplink</a></p></div></div>';
+}
+function copyText(text, cb) {
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { cb(true); }, function () { cb(legacyCopy(text)); });
+  else cb(legacyCopy(text));
+}
+function deliver(text, box) {
+  var ta = box.querySelector('textarea'), msg = box.querySelector('.res-msg'), wa = box.querySelector('[data-ch=wa]'), tg = box.querySelector('[data-ch=tg]'), cp = box.querySelector('.sto-c');
+  box.hidden = false; ta.value = text; cp.hidden = true;
+  wa.href = 'https://wa.me/' + CT.wa + '?text=' + encodeURIComponent(text);
+  if (!tg._b) {
+    tg._b = 1;
+    tg.addEventListener('click', function () {
+      copyText(ta.value, function (ok) {
+        cp.textContent = ok ? 'Текст скопирован, вставьте в чат.' : 'Скопировать не получилось: выделите текст выше, скопируйте и вставьте в чат.';
+        cp.hidden = false;
+        if (!ok) { ta.focus({ preventScroll: true }); ta.select(); }
+      });
+    });
+  }
+  copyText(text, function (ok) {
+    msg.textContent = ok ? 'Заявка готова, текст скопирован. Выберите, куда отправить.' : 'Заявка готова. Скопируйте текст ниже и выберите, куда отправить.';
+    box.scrollIntoView({ block: 'nearest', behavior: reduced ? 'auto' : 'smooth' });
+  });
+}
+
 /* ===== Игра «Примерь сантиметр» ===== */
 var GM = {
-  height: { mode: 'pull', lock: 1, o: [226, 497], e0: [226, 392], t: [226, 13], tol: 22, lab: [226, 6], ck: [226, 34], d: 'M226 13V497',
+  height: { mode: 'pull', lock: 1, direct: 1, o: [226, 497], e0: [226, 392], t: [226, 13], tol: 22, lab: [226, 6], ck: [226, 34], d: 'M226 13V497',
     ask: 'Потяните ленту вверх: от пола до самой макушки.', low: 'Выше: лента идёт от пола до самой макушки.', high: 'Чуть ниже: ровно до макушки.' },
   chest: { mode: 'ring', y: 150, x0: 80, x1: 160, b: 9, tol: 15, ask: 'Положите ленту на самую широкую часть груди.', why: 'грудь меряем по самым выступающим точкам' },
   waist: { mode: 'ring', y: 198, x0: 89, x1: 151, b: 7.5, tol: 13, ask: 'Положите ленту на самое узкое место корпуса.', why: 'талия — самое узкое место' },
@@ -815,8 +869,10 @@ var GM = {
   sleeve: { mode: 'pull', o: [169, 87], e0: [216, 172], t: [201, 258], tol: 24, lab: [209, 196], ck: [207, 276], d: 'M169 87C180 92 185 106 186 118L192 196L202 258',
     ask: 'Протяните ленту от края плеча через локоть до запястья.', low: 'Дальше: рукав идёт через локоть до косточки на запястье.', high: 'Чуть короче: лента заканчивается на косточке запястья.', off: 'Ведите ленту вдоль руки: от плеча до запястья.' }
 };
+/* Рост вводится сразу линейкой и цифрами, без ленты от пола до макушки */
+MEAS[0].how = 'Укажите свой рост без обуви. Не знаете точно: встаньте спиной к стене, пятки вместе, и отметьте верх головы.';
 var DEF = { height: 165, chest: 90, waist: 70, hips: 96, sleeve: 60 }, STEP = 14, RING_Y0 = 352;
-var G = { k: null, phase: '', miss: 0, raf: 0, tm: [], near: false, drag: false, moved: false, used: false, plain: false, raw: [0, 0], y: 0, sx: 1, e: [0, 0], wheel: null };
+var G = { ruled: false, k: null, phase: '', miss: 0, raf: 0, tm: [], near: false, drag: false, moved: false, used: false, plain: false, raw: [0, 0], y: 0, sx: 1, e: [0, 0], wheel: null };
 function eOut(p) { return 1 - Math.pow(1 - p, 3); }
 function eBack(p) { var c = 1.3, q = p - 1; return 1 + (c + 1) * q * q * q + c * q * q; }
 function later(fn, ms) { G.tm.push(setTimeout(fn, reduced ? 0 : ms)); }
@@ -963,10 +1019,11 @@ function tapeMove(x, y) {
   tapeDraw();
 }
 function gStep(k) {
+  if (GM[k].direct) return gWheel(k, !G.used);
   G.tm.forEach(clearTimeout); G.tm = []; cancelAnimationFrame(G.raf);
   if (G.wheel) { G.wheel.stop(); G.wheel = null; }
   G.k = k; G.phase = 'tape'; G.miss = 0; G.near = false; G.moved = false;
-  var c = GM[k], m = measOf(k), first = !G.used;
+  var c = GM[k], m = measOf(k), first = !G.ruled; G.ruled = true;
   gPhase('');
   gq('#gPanel').innerHTML = '<h3 class="g-h">' + m.t + '</h3><p class="g-say" id="gSay" role="status">' + c.ask + '</p>' + (first ? '<p class="g-rule">' + RULES + '</p>' : '');
   gq('#gGhost').innerHTML = '';
@@ -1065,14 +1122,15 @@ function mkWheel(el, m, val, cb) {
   api.set(val);
   return api;
 }
-function gWheel(k) {
+function gWheel(k, quiet) {
   G.tm.forEach(clearTimeout); G.tm = []; cancelAnimationFrame(G.raf);
   if (G.wheel) { G.wheel.stop(); G.wheel = null; }
-  G.k = k; G.phase = 'wheel'; G.used = true;
+  G.k = k; G.phase = 'wheel'; if (!quiet) G.used = true;
   var m = measOf(k), v = validM(k) ? +S.m[k] : DEF[k], len = (m.max - m.min) * STEP + 2, i, labs = '';
   for (i = m.min; i <= m.max; i += 10) labs += '<span style="left:' + (i - m.min) * STEP + 'px">' + i + '</span>';
   gPhase('p-wheel');
   gq('#gTape').innerHTML = ''; gq('#gGhost').innerHTML = ''; gq('#gHit').hidden = true;
+  if (GM[k].direct) { gq('#gTape').setAttribute('class', 'g-tape stat'); gq('#gTape').innerHTML = tapeHtml(k); G.e = GM[k].t.slice(); tapeDraw(); } else gq('#gTape').setAttribute('class', 'g-tape');
   gq('#gPanel').innerHTML = '<h3 class="g-h">' + m.t + '</h3><p class="g-how">' + m.how + '</p>' +
     '<div class="g-read"><output id="gNum">' + v + '</output><span>см</span></div>' +
     '<div class="wheel" id="gWheel" tabindex="0" role="slider" aria-label="' + m.t + ', сантиметры" aria-valuemin="' + m.min + '" aria-valuemax="' + m.max + '" aria-valuenow="' + v + '"><div class="wheel-t" style="width:' + len + 'px">' + labs + '</div><i class="needle"></i></div>' +
@@ -1087,12 +1145,13 @@ function gWheel(k) {
   inp.addEventListener('blur', function () { var e = checkM(k, inp.value); er.textContent = e; er.hidden = !e; });
   inp.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); gRecord(); } });
   gq('#gOk').addEventListener('click', gRecord);
-  renderTag(); gq('#gWheel').focus({ preventScroll: true }); gView();
+  renderTag();
+  if (!quiet) { gq('#gWheel').focus({ preventScroll: true }); gView(); }
 }
 function gRecord() {
   var inp = gq('#gIn'), k = G.k, er = gq('#gErr'), s = inp.value, e = s ? checkM(k, s) : 'Введите число или выставьте его на ленте.';
   if (e) { er.textContent = e; er.hidden = false; inp.focus(); return; }
-  S.m[k] = String(+s); gSync(); renderTag(k); swing(); gNext();
+  S.m[k] = String(+s); G.used = true; gSync(); renderTag(k); swing(); gNext();
 }
 function gNext() {
   for (var i = 0; i < MEAS.length; i++) if (!validM(MEAS[i].k)) return gStep(MEAS[i].k);
@@ -1115,6 +1174,7 @@ function gDone() {
 function gPlain(on) {
   G.plain = on; gq('#gPlain').textContent = on ? 'Вернуться к игре' : 'Без игры, введу цифрами';
   if (!on) { G.used = true; return gNext(); }
+  G.ruled = true;
   G.tm.forEach(clearTimeout); G.tm = []; cancelAnimationFrame(G.raf);
   if (G.wheel) { G.wheel.stop(); G.wheel = null; }
   G.phase = 'plain'; G.k = null; gq('#gHit').hidden = true; gq('#gTape').innerHTML = ''; gq('#gGhost').innerHTML = '';
