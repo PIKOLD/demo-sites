@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>MASY — российский бренд одежды, Пермь</title>
+<meta name="description" content="MASY: эко-шубы, бомберы, зимние парки. Производство в Перми, индивидуальный пошив по вашим параметрам или в наличии, доставка по миру.">
+<meta name="theme-color" content="#0e0c0b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Jost:wght@300..700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300..700&display=swap"></noscript>
+<script>
+(function(){var D=document.documentElement,rm=false;try{rm=matchMedia('(prefers-reduced-motion: reduce)').matches}catch(e){}
+window.__rm=rm;D.className='js'+(rm?' rm':'');
+var s=false;try{s=sessionStorage.getItem('masyIntro')}catch(e){}
+window.__intro=!rm&&!s&&location.hash!=='#nointro';
+if(!window.__intro)D.className+=' go';
+setTimeout(function(){if(!window.__ok){D.className=D.className.replace('js','nojs')+' go';var i=document.getElementById('intro');if(i)i.remove()}},3500)})();
+</script>
+<style>
+:root{--ink:#0e0c0b;--milk:#efe9df;--snow:#f6f4f0;--choc:#2b1c14;--copper:#b0693d;--grey:#8d8780;--e:cubic-bezier(.22,1,.36,1);--pad:clamp(16px,3vw,44px);--cold:0}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;border-radius:0}
+html{-webkit-text-size-adjust:100%;background:var(--ink)}
+html.lock{overflow:hidden}
+body{font-family:Jost,"Century Gothic",Futura,Arial,sans-serif;font-size:17px;line-height:1.4;color:var(--ink);background:var(--milk);overflow-x:clip;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--copper);outline-offset:2px}
+.ttl{font-size:clamp(44px,10vw,160px);font-weight:500;line-height:.92;letter-spacing:-.035em;text-transform:uppercase}
+.lab{font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:500}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 28px;background:var(--snow);color:var(--ink);text-decoration:none;font-weight:500;letter-spacing:.02em;border:1px solid var(--snow);transition:background .25s,color .25s;will-change:transform}
+.btn:hover{background:transparent;color:var(--snow)}
+.btn.dk{background:var(--ink);color:var(--snow);border-color:var(--ink)}
+.btn.dk:hover{background:transparent;color:var(--ink)}
+/* intro */
+#intro{position:fixed;inset:0;z-index:90;background:var(--ink);cursor:pointer;clip-path:inset(0);transition:clip-path .45s var(--e)}
+#intro.out{clip-path:inset(0 0 100% 0);pointer-events:none}
+#intro canvas{position:absolute;inset:0;width:100%;height:100%}
+#snow{position:fixed;inset:0;width:100%;height:100%;z-index:6;pointer-events:none}
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;align-items:center;gap:20px;padding:14px var(--pad);color:var(--snow);transition:color .3s}
+.nav[data-t=dark]{color:var(--ink);background:var(--milk)}
+.logo{font-size:24px;font-weight:600;letter-spacing:.02em;text-decoration:none}
+.demo{font-size:11px;line-height:1;letter-spacing:.06em;text-transform:uppercase;padding:6px 8px;border:1px solid currentColor;white-space:nowrap}
+.links{display:none;gap:24px;margin-left:auto}
+.links a{text-decoration:none;font-size:15px}
+.links a:hover{text-decoration:underline;text-underline-offset:4px}
+.ncta{margin-left:auto;font-size:15px;font-weight:500;text-underline-offset:4px}
+.links+.ncta{margin-left:0}
+@media(min-width:900px){.links{display:flex}.links+.ncta{margin-left:12px}}
+@media(max-width:899px){.links+.ncta{margin-left:auto}}
+/* hero */
+#hero{position:relative;height:100vh;height:100svh;min-height:540px;overflow:hidden;background:var(--ink);color:var(--snow);touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.h-post{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 88%;filter:brightness(.8)}
+#fur{position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity .5s}
+.fur-on #fur{opacity:1}
+.h-scrim{position:absolute;inset:0;pointer-events:none;background:linear-gradient(to top,rgba(14,12,11,.86),rgba(14,12,11,.42) 30%,transparent 48%),linear-gradient(to bottom,rgba(14,12,11,.5),transparent 16%)}
+.h-in{position:absolute;left:0;right:0;bottom:0;padding:0 var(--pad) calc(var(--pad) + env(safe-area-inset-bottom));display:grid;gap:18px;z-index:7;pointer-events:none}
+.h-in a,.h-in button{pointer-events:auto}
+h1{font-size:clamp(32px,5.4vw,84px);font-weight:500;line-height:.98;letter-spacing:-.03em;max-width:15em}
+.ln{display:block;overflow:hidden;padding-bottom:.06em}
+.ln>span{display:block}
+.js .ln>span{transform:translateY(110%);transition:transform 1s var(--e)}
+.go .ln>span{transform:none}
+.ln:nth-child(2)>span{transition-delay:.08s}
+.h-row{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;align-items:end}
+.h-row p{font-size:16px;line-height:1.3;max-width:28em}
+.js .h-row,.js .hint{opacity:0;transition:opacity .9s .25s}
+.go .h-row,.go .hint{opacity:1}
+.hint{position:absolute;right:var(--pad);top:64px;z-index:7;display:none;align-items:center;gap:10px;font-size:13px;letter-spacing:.04em}
+.fur-on .hint{display:flex}
+.hint i{display:block;width:34px;height:1px;background:currentColor;animation:hn 1.8s var(--e) infinite;transform-origin:left}
+@keyframes hn{0%{transform:scaleX(0)}60%{transform:scaleX(1)}100%{transform:scaleX(1);opacity:0}}
+.hint.off{opacity:0!important;transition:opacity .5s}
+.tilt{display:none;border:1px solid currentColor;padding:7px 9px;font-size:12px;pointer-events:auto}
+@media(min-width:760px){.h-row{grid-template-columns:minmax(0,1fr) auto}}
+/* marquee */
+.mq{overflow:hidden;background:var(--ink);color:var(--snow);padding:12px 0;white-space:nowrap;border-top:1px solid #3a3531}
+.mq div{display:inline-block;animation:mq 26s linear infinite;font-size:15px;letter-spacing:.06em;text-transform:uppercase;will-change:transform}
+.mq span{padding-right:44px}
+@keyframes mq{to{transform:translateX(-50%)}}
+.rm .mq div{animation:none}
+/* reveal */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s var(--e),transform .7s var(--e)}
+.js .rv.in{opacity:1;transform:none}
+.js .m{clip-path:inset(100% 0 0 0);transition:clip-path 1.15s var(--e)}
+.js .m.in{clip-path:inset(0)}
+.rm .rv,.rm .m{opacity:1!important;transform:none!important;clip-path:none!important;transition:none!important}
+/* collection */
+#col{padding:clamp(72px,10vw,150px) var(--pad) clamp(60px,8vw,120px)}
+.col-h{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:14px;margin-bottom:clamp(30px,5vw,70px)}
+.grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:34px 10px}
+.card{display:block;text-decoration:none;min-width:0}
+.card:nth-child(1){grid-column:1/7}
+.card:nth-child(2){grid-column:1/4}
+.card:nth-child(3){grid-column:4/7;margin-top:18vw}
+.card:nth-child(4){grid-column:1/6}
+.card:nth-child(5){grid-column:3/7}
+.card:nth-child(6){grid-column:1/5}
+.ph{display:block;position:relative;overflow:hidden;background:#d9d2c6}
+.ph img{width:100%;height:auto;transition:transform 1.2s var(--e)}
+.ph .alt{position:absolute;inset:0;height:100%;object-fit:cover;opacity:0;transition:opacity .45s}
+.card.fl .ph{visibility:hidden}
+.card b{display:block;font-weight:500;font-size:clamp(16px,1.7vw,24px);line-height:1.12;letter-spacing:-.01em;margin-top:12px;overflow-wrap:anywhere}
+.card small{display:block;font-size:14px;color:#5f5952;margin-top:4px}
+.card em{display:block;font-style:normal;font-size:clamp(16px,1.5vw,21px);margin-top:6px}
+@media(hover:hover){.card:hover .ph img{transform:scale(1.03)}.card:hover .alt{opacity:1}}
+@media(min-width:900px){
+.grid{grid-template-columns:repeat(12,minmax(0,1fr));gap:64px 16px}
+.card:nth-child(1){grid-column:1/6}
+.card:nth-child(2){grid-column:7/10;margin-top:9vw}
+.card:nth-child(3){grid-column:10/13;margin-top:0}
+.card:nth-child(4){grid-column:2/5}
+.card:nth-child(5){grid-column:6/9;margin-top:-8vw}
+.card:nth-child(6){grid-column:9/13;margin-top:4vw}
+}
+.also{margin-top:clamp(40px,6vw,80px);border-top:1px solid var(--ink);display:grid;grid-template-columns:minmax(0,1fr)}
+.also div{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 18px;padding:14px 0;border-bottom:1px solid #bdb5a8;font-size:clamp(18px,2vw,26px);letter-spacing:-.01em}
+.also small{font-size:14px;color:#5f5952;align-self:center}
+/* lookbook */
+#look{position:relative;background:var(--ink);color:var(--snow)}
+.lb-pin{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.lb-track{display:flex;width:max-content;height:78vh;gap:2px;will-change:transform}
+.lb-t{width:86vw;max-width:680px;flex:none;padding:calc(var(--pad) + 48px) var(--pad) var(--pad);display:flex;flex-direction:column;justify-content:space-between}
+.lb-t p{max-width:18em;font-size:18px;line-height:1.25}
+.fr{position:relative;flex:none;height:100%;width:88vw;overflow:hidden;background:#171411}
+@media(min-width:760px){.fr{width:auto;aspect-ratio:3/4}}
+.fr div{position:absolute;inset:0}
+.fr img{width:100%;height:100%;object-fit:cover;will-change:transform}
+.fr figcaption{position:absolute;left:12px;right:12px;bottom:12px;display:flex;justify-content:space-between;gap:10px;font-size:14px;line-height:1.15;z-index:2}
+.fr figcaption b{font-weight:500}
+.pin .lb-pin{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
+.pin .lb-track{height:100%}
+.lb-bar{display:none;position:absolute;left:0;right:0;bottom:0;height:3px;background:#3a3531;z-index:3}
+.lb-bar i{display:block;height:100%;background:var(--snow);transform:scaleX(0);transform-origin:left}
+.pin .lb-bar{display:block}
+/* thermo */
+#th{position:relative;min-height:100vh;min-height:100svh;color:var(--snow);background:rgb(43,28,20);padding:clamp(72px,8vw,110px) var(--pad) clamp(30px,5vw,60px);display:grid;gap:clamp(20px,3vw,40px);align-content:space-between;overflow:hidden}
+#th::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:var(--cold);background:radial-gradient(ellipse at center,transparent 48%,rgba(190,220,240,.3) 100%)}
+.th-top{position:relative;z-index:7;display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+.th-top h2{font-size:clamp(20px,2.4vw,34px);font-weight:400;letter-spacing:-.01em}
+.deg{font-size:clamp(112px,33vw,340px);font-weight:400;line-height:.86;letter-spacing:-.05em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.deg small{font-size:.34em;letter-spacing:-.02em;vertical-align:.92em;margin-left:.1em}
+.rule{position:relative;z-index:7;height:62px}
+.rule .tk{position:absolute;left:0;right:0;top:18px;height:14px;background:repeating-linear-gradient(90deg,currentColor 0 1px,transparent 1px 4%);opacity:.55}
+.rule .fill{position:absolute;left:0;top:24px;height:2px;width:calc(var(--p,0)*100%);background:var(--snow)}
+.rule .th{position:absolute;top:6px;left:calc(var(--p,0)*100%);width:4px;height:38px;margin-left:-2px;background:var(--snow)}
+.rule .nums{position:absolute;left:0;right:0;top:44px;font-size:13px}
+.rule .nums span{position:absolute;transform:translateX(-50%);white-space:nowrap}
+.rule .nums span:first-child{transform:none}
+.rule .nums span:last-child{transform:translateX(-100%)}
+.rule input{position:absolute;left:-8px;width:calc(100% + 16px);top:-6px;height:70px;opacity:0;cursor:ew-resize;margin:0}
+.nojs .rule,html:not(.js) .rule{display:none}
+.tc{position:relative;z-index:7;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.tc a{display:block;text-decoration:none;transition:opacity .4s;min-width:0}
+.tc .pc{display:block;overflow:hidden;aspect-ratio:4/5;background:#171411}
+.tc img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;transition:filter .5s,transform 1s var(--e)}
+.tc b{display:block;font-weight:500;font-size:clamp(15px,1.5vw,20px);line-height:1.12;margin-top:8px;overflow-wrap:anywhere}
+.tc em{display:block;font-style:normal;font-size:14px;margin-top:3px}
+.tc small{display:block;font-size:14px;margin-top:3px;line-height:1.2}
+.tc a.off{opacity:.65}
+.tc a.off img{filter:grayscale(1) brightness(.6);transform:scale(1.04)}
+.th-note{position:relative;z-index:7;font-size:14px;line-height:1.3;max-width:42em;opacity:.85}
+@media(max-width:899px){#th{padding-bottom:80px}}
+@media(min-width:900px){.deg{font-size:clamp(112px,23vw,340px)}#th{grid-template-columns:minmax(0,7fr) minmax(0,4fr);align-content:stretch;column-gap:40px}.th-top{grid-column:1/2}.tc{grid-column:2/3;grid-row:1/4;align-self:end}.rule{grid-column:1/2}.th-note{grid-column:1/2}}
+/* order */
+#order{padding:clamp(72px,10vw,150px) var(--pad);display:grid;grid-template-columns:minmax(0,1fr);gap:34px}
+#order .ttl{font-size:clamp(40px,7.4vw,118px)}
+.lede{font-size:clamp(18px,1.9vw,24px);line-height:1.25;margin-top:16px;max-width:26em}
+.opts{display:grid;grid-template-columns:minmax(0,1fr);margin-top:24px;border-top:1px solid var(--ink)}
+.opt{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 14px;align-items:baseline;padding:13px 0;border-bottom:1px solid #bdb5a8;cursor:pointer;position:relative;font-size:clamp(16px,1.5vw,20px);line-height:1.18;transition:padding .35s var(--e)}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt em{font-style:normal;font-size:15px;white-space:nowrap}
+.opt:has(input:checked),.opt.on{padding-left:18px;font-weight:500}
+.opt::before{content:"";position:absolute;left:0;top:50%;width:9px;height:9px;margin-top:-4px;background:var(--ink);transform:scale(0);transition:transform .3s var(--e)}
+.opt:has(input:checked)::before,.opt.on::before{transform:scale(1)}
+.opt:has(input:focus-visible){outline:2px solid var(--copper)}
+.sub{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.sub label{cursor:pointer}
+.sub input{position:absolute;opacity:0}
+.sub span{display:block;border:1px solid var(--ink);padding:9px 12px;font-size:15px}
+.sub input:checked+span{background:var(--ink);color:var(--snow)}
+.sub input:focus-visible+span{outline:2px solid var(--copper);outline-offset:2px}
+.tog{display:flex;align-items:center;gap:12px;margin-top:22px;cursor:pointer;font-size:clamp(17px,1.6vw,21px);line-height:1.15}
+.tog input{position:absolute;opacity:0}
+.tog i{flex:none;width:44px;height:22px;border:1px solid var(--ink);position:relative;transition:background .25s}
+.tog i::after{content:"";position:absolute;left:2px;top:2px;width:16px;height:16px;background:var(--ink);transition:transform .35s var(--e),background .25s}
+.tog input:checked+i{background:var(--ink)}
+.tog input:checked+i::after{transform:translateX(22px);background:var(--snow)}
+.tog input:focus-visible+i{outline:2px solid var(--copper);outline-offset:2px}
+.parm{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;overflow:hidden;max-height:0;opacity:0;transition:max-height .55s var(--e),opacity .4s,margin .4s}
+.parm.on{max-height:280px;opacity:1;margin-top:16px}
+.parm label{display:block;font-size:14px;min-width:0}
+.parm input{display:block;width:100%;min-width:0;margin-top:3px;height:48px;font:inherit;font-size:18px;padding:0 10px;background:transparent;border:1px solid var(--ink);color:var(--ink);-moz-appearance:textfield}
+.parm input::-webkit-outer-spin-button,.parm input::-webkit-inner-spin-button{-webkit-appearance:none}
+.tag{position:relative;background:var(--snow);padding:22px 20px 20px;border:1px solid var(--ink);align-self:start}
+.tag::before{content:"";position:absolute;inset:6px;border:1px dashed #9b948b;pointer-events:none}
+.tag h3{font-size:30px;font-weight:600;letter-spacing:.02em;display:flex;justify-content:space-between;align-items:baseline}
+.tag h3 small{font-size:12px;font-weight:400;letter-spacing:.06em;text-transform:uppercase}
+.tag pre{font:inherit;font-size:16px;line-height:1.35;white-space:pre-wrap;overflow-wrap:anywhere;margin:14px 0 18px;min-height:7em}
+.tag .btn{width:100%;position:relative;z-index:1;text-align:center;padding:8px 14px}
+.tag .why{position:relative;z-index:1;font-size:13px;line-height:1.25;margin-top:9px;color:#4f4a44}
+.nojs .cons,html:not(.js) .cons{display:none}
+.nocons{display:none}
+.nojs .nocons,html:not(.js) .nocons{display:block;margin-top:24px}
+@media(min-width:900px){#order{grid-template-columns:minmax(0,7fr) minmax(0,4fr);column-gap:clamp(30px,6vw,90px)}.tag{position:sticky;top:90px}.head{grid-column:1/3}}
+/* room */
+#room{background:var(--ink);color:var(--snow);display:grid;grid-template-columns:minmax(0,1fr)}
+.r-in{padding:clamp(60px,8vw,110px) var(--pad);display:grid;gap:26px;align-content:start}
+.r-in .ttl{font-size:clamp(40px,6.6vw,104px)}
+.dl{display:grid;grid-template-columns:minmax(0,1fr);border-top:1px solid #3a3531}
+.dl div{display:grid;grid-template-columns:minmax(0,5em) minmax(0,1fr);gap:12px;padding:12px 0;border-bottom:1px solid #3a3531}
+.dl dt{color:#a79f96;font-size:15px}
+.st{font-weight:500}
+.map{min-height:360px;background:#171411}
+.map iframe{display:block;width:100%;height:100%;min-height:360px;border:0;filter:grayscale(1) contrast(1.05)}
+@media(min-width:900px){#room{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+/* final */
+#end{position:relative;background:var(--milk);padding:clamp(60px,8vw,110px) var(--pad) 0;overflow:hidden}
+#end h2{font-size:clamp(28px,4.4vw,64px);font-weight:500;line-height:1;letter-spacing:-.03em;max-width:15em}
+#end .btn{margin-top:24px}
+.big{display:block;font-size:37vw;line-height:.74;font-weight:600;letter-spacing:-.045em;text-align:center;margin:clamp(30px,5vw,70px) calc(var(--pad)*-1) -.04em;white-space:nowrap;user-select:none}
+footer{background:var(--ink);color:#bdb5a8;font-size:14px;line-height:1.35;padding:22px var(--pad) calc(84px + env(safe-area-inset-bottom));display:grid;gap:8px}
+@media(min-width:900px){footer{padding-bottom:22px}}
+.fab{position:fixed;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:25;min-height:50px;padding:0 20px;background:var(--ink);color:var(--snow);display:flex;align-items:center;text-decoration:none;font-weight:500;border:1px solid var(--snow);transform:translateY(160%);transition:transform .5s var(--e)}
+.fab.on{transform:none}
+html:not(.js) .fab{transform:none}
+@media(min-width:900px){.fab{display:none}}
+/* viewer */
+#v{position:fixed;inset:0;z-index:60;overflow:hidden;color:var(--snow);touch-action:none;display:none;user-select:none;-webkit-user-select:none}
+#v.on{display:block}
+.v-bg{position:absolute;inset:0;background:var(--ink);opacity:0}
+.v-tr{position:absolute;inset:0;will-change:transform}
+.v-s{position:absolute;top:0;bottom:0;overflow:hidden}
+#v.flip .v-s{overflow:visible}
+#v.flip .v-s:not(.cur){visibility:hidden}
+.v-s img{position:absolute;max-width:none;transform-origin:0 0;will-change:transform;-webkit-user-drag:none;pointer-events:none}
+.v-ui{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .4s}
+#v.ui .v-ui{opacity:1}
+.v-ui a,.v-ui button{pointer-events:auto}
+.v-top{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:12px var(--pad)}
+.v-x{width:48px;height:48px;margin-right:-10px;position:relative}
+.v-x::before,.v-x::after{content:"";position:absolute;left:12px;right:12px;top:23px;height:2px;background:currentColor;transform:rotate(45deg)}
+.v-x::after{transform:rotate(-45deg)}
+.v-i{position:absolute;left:0;right:0;bottom:0;padding:80px var(--pad) calc(var(--pad) + env(safe-area-inset-bottom));background:linear-gradient(to top,rgba(14,12,11,.92) 55%,transparent)}
+.v-i h2{font-size:clamp(25px,2.6vw,40px);font-weight:500;line-height:1.02;letter-spacing:-.02em}
+.v-i p{font-size:15px;line-height:1.25;margin-top:6px}
+.v-i .pr{font-size:19px;margin-top:8px}
+.v-acts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:14px}
+.v-acts .btn{min-height:48px;padding:0 8px;font-size:15px;text-align:center;line-height:1.1}
+.v-acts .gh{background:transparent;color:var(--snow)}
+.v-nav{display:none}
+@media(min-width:900px){
+.v-i{left:auto;width:400px;top:0;background:var(--ink);padding:90px 32px 32px;display:flex;flex-direction:column;justify-content:flex-end}
+.v-acts{grid-template-columns:minmax(0,1fr)}
+.v-nav{display:flex;gap:2px;position:absolute;left:var(--pad);bottom:var(--pad)}
+.v-nav button{width:52px;height:52px;background:var(--snow);color:var(--ink);font-size:20px}
+}
+/* cursor */
+#cur{position:fixed;left:0;top:0;z-index:80;pointer-events:none;width:10px;height:10px;margin:-5px 0 0 -5px;background:#fff;mix-blend-mode:difference;display:none;will-change:transform;transition:width .25s var(--e),height .25s var(--e),margin .25s var(--e)}
+#cur span{position:absolute;left:18px;top:50%;transform:translateY(-50%);white-space:nowrap;background:#fff;color:#000;font-size:13px;line-height:1;padding:5px 7px;letter-spacing:.02em;opacity:0;transition:opacity .2s}
+#cur.lb span{opacity:1}
+.has-cur #cur{display:block}
+.cur-b{position:relative}
+</style>
+</head>
+<body>
+<script>if(window.__intro){var i=document.createElement('div');i.id='intro';i.setAttribute('aria-hidden','true');document.body.appendChild(i)}</script>
+
+<header class="nav" id="nav" data-t="light">
+ <a class="logo" href="#hero" aria-label="MASY, в начало">MASY</a>
+ <span class="demo">Демо-концепт</span>
+ <nav class="links" aria-label="Разделы"><a href="#col">Коллекция</a><a href="#look">Лукбук</a><a href="#th">Термометр</a><a href="#order">Заказ</a><a href="#room">Шоурум</a></nav>
+ <a class="ncta mag" href="https://taplink.cc/bymasy" target="_blank" rel="noopener">Заказать</a>
+</header>
+
+<canvas id="snow" aria-hidden="true"></canvas>
+
+<section id="hero" data-nav="light" data-cur="Гладить мех">
+ <img class="h-post" id="post" src="img/brand.jpg" alt="Белая шуба из эко-меха с надписью MASY" fetchpriority="high" width="720" height="947">
+ <canvas id="fur" aria-hidden="true"></canvas>
+ <div class="h-scrim"></div>
+ <div class="hint" id="hint" aria-hidden="true"><i></i><span>Проведите по меху</span></div>
+ <div class="h-in">
+  <h1><span class="ln"><span>Создаём одежду,</span></span><span class="ln"><span>в которую влюбляются</span></span></h1>
+  <div class="h-row">
+   <p>Производство в&nbsp;Перми. Индивидуальный пошив по&nbsp;вашим параметрам или в&nbsp;наличии. Доставка по&nbsp;миру.</p>
+   <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><a class="btn mag" href="https://taplink.cc/bymasy" target="_blank" rel="noopener">Заказать в&nbsp;Taplink</a><button class="tilt" id="tilt" type="button">Включить наклон</button></div>
+  </div>
+ </div>
+</section>
+
+<div class="mq" aria-hidden="true"><div><span>Эко-шубы</span><span>Бомберы</span><span>Зимние парки</span><span>Сезон 2026</span><span>Производство в Перми</span><span>Пошив по вашим параметрам</span><span>Эко-шубы</span><span>Бомберы</span><span>Зимние парки</span><span>Сезон 2026</span><span>Производство в Перми</span><span>Пошив по вашим параметрам</span></div></div>
+
+<main>
+<section id="col" data-nav="dark">
+ <div class="col-h"><h2 class="ttl rv">Коллекция</h2><p class="lab rv">Сезон 2026 · one size или пошив по&nbsp;вашим параметрам</p></div>
+ <div class="grid" id="grid">
+  <a class="card" href="img/leopard-2.jpg" data-fr="0" data-cur="Открыть"><span class="ph m"><img src="img/leopard-2.jpg" width="720" height="960" loading="lazy" alt="Эко-шуба с принтом «снежный барс» у красной стены"><img class="alt" src="img/leopard-3.jpg" loading="lazy" alt=""></span><b>Эко-шуба «снежный барс»</b><small>Полушалка, длина 80&nbsp;см, one size</small><em>24&nbsp;900&nbsp;₽</em></a>
+  <a class="card" href="img/look-1.jpg" data-fr="2" data-cur="Открыть"><span class="ph m"><img src="img/look-1.jpg" width="720" height="1278" loading="lazy" alt="Чёрная шуба из эко-норки"></span><b>Эко-норка</b><small>Чёрная, one size</small><em>26&nbsp;900&nbsp;₽</em></a>
+  <a class="card" href="img/fur-light.jpg" data-fr="3" data-cur="Открыть"><span class="ph m"><img src="img/fur-light.jpg" width="720" height="960" loading="lazy" alt="Светлый бомбер из эко-песца"></span><b>Бомбер из эко-песца</b><small>До −20&nbsp;°C, one size</small><em>22&nbsp;900&nbsp;₽</em></a>
+  <a class="card" href="img/parka-brown.jpg" data-fr="4" data-cur="Открыть"><span class="ph m"><img src="img/parka-brown.jpg" width="720" height="960" loading="lazy" alt="Коричневая зимняя парка из мембраны"><img class="alt" src="img/parka-grey.jpg" loading="lazy" alt=""></span><b>Зимняя парка из мембраны</b><small>Утеплитель Аляска 200&nbsp;г, до −25&nbsp;°C, one size</small><em>12&nbsp;900&nbsp;₽ без капюшона, 13&nbsp;900&nbsp;₽ с&nbsp;капюшоном</em></a>
+  <a class="card" href="img/fur-brown.jpg" data-fr="6" data-cur="Открыть"><span class="ph m"><img src="img/fur-brown.jpg" width="720" height="960" loading="lazy" alt="Шуба-полушалка макси, цвет шоколад"></span><b>Шуба-полушалка макси из&nbsp;финской эко-норки</b><small>Цвет шоколад</small><em>Цену уточняйте в&nbsp;Taplink</em></a>
+  <a class="card" href="img/hero.jpg" data-fr="7" data-cur="Открыть"><span class="ph m"><img src="img/hero.jpg" width="720" height="960" loading="lazy" alt="Длинная чёрная шуба со стойкой"></span><b>Шуба со&nbsp;стойкой из&nbsp;эко-норки</b><small>Чёрная</small><em>Цену уточняйте в&nbsp;Taplink</em></a>
+ </div>
+ <div class="also rv"><div><span>Эко-рысь, длина 65&nbsp;см</span><small>цену уточняйте в&nbsp;Taplink</small></div><div><span>Арктический песец</span><small>цену уточняйте в&nbsp;Taplink</small></div></div>
+</section>
+
+<section id="look" data-nav="light" data-cur="Листайте вниз">
+ <div class="lb-pin" id="lbp"><div class="lb-track" id="lbt">
+  <div class="lb-t"><h2 class="ttl">Лук&shy;бук</h2><p>Кадры бренда. Сезон&nbsp;2026.</p></div>
+  <figure class="fr"><div><img src="img/mink-dark.jpg" loading="lazy" alt="Длинная тёмная шуба со стойкой на фоне медной стены" style="object-position:50% 30%"></div><figcaption><span>01</span></figcaption></figure>
+  <figure class="fr"><div><img src="img/fur-black.jpg" loading="lazy" alt="Чёрная пушистая шуба и чёрная шапка"></div><figcaption><span>02</span></figcaption></figure>
+  <figure class="fr"><div><img src="img/leopard-1.jpg" loading="lazy" alt="Шуба с леопардовым принтом и чёрная шапка"></div><figcaption><span>03</span></figcaption></figure>
+  <figure class="fr"><div><img src="img/parka-grey.jpg" loading="lazy" alt="Графитовая зимняя парка"></div><figcaption><span>04</span><b>Зимняя парка</b></figcaption></figure>
+  <figure class="fr"><div><img src="img/leopard-3.jpg" loading="lazy" alt="Шуба с леопардовым принтом, крупный план"></div><figcaption><span>05</span><b>«Снежный барс»</b></figcaption></figure>
+  <figure class="fr"><div><img src="img/hero.jpg" loading="lazy" alt="Длинная чёрная шуба со стойкой"></div><figcaption><span>06</span><b>Шуба со&nbsp;стойкой</b></figcaption></figure>
+  <figure class="fr"><div><img src="img/fur-brown.jpg" loading="lazy" alt="Шуба-полушалка макси, цвет шоколад"></div><figcaption><span>07</span><b>Полушалка макси</b></figcaption></figure>
+ </div><div class="lb-bar"><i id="lbb"></i></div></div>
+</section>
+
+<section id="th" data-nav="light">
+ <div class="th-top">
+  <h2>Термометр. До скольких градусов нужна вещь?</h2>
+  <output class="deg" id="deg" for="tr"><span id="dv">−20</span><small>°C</small></output>
+ </div>
+ <div class="rule" id="rule" style="--p:.8"><div class="tk"></div><div class="fill"></div><div class="th"></div>
+  <div class="nums" aria-hidden="true"><span style="left:0">0</span><span style="left:20%">−5</span><span style="left:40%">−10</span><span style="left:60%">−15</span><span style="left:80%">−20</span><span style="left:100%">−25</span></div>
+  <input type="range" id="tr" min="0" max="25" step="1" value="20" aria-label="Температура, градусов ниже нуля">
+ </div>
+ <p class="th-note">Температурный режим бренд указал в&nbsp;постах только у&nbsp;двух моделей: они и&nbsp;показаны здесь. По&nbsp;остальным уточняйте в&nbsp;Taplink.</p>
+ <div class="tc" id="tc">
+  <a href="#order" data-pick="bomb" data-l="20" data-cur="В заказ"><span class="pc"><img src="img/fur-light.jpg" loading="lazy" alt="Светлый бомбер из эко-песца"></span><b>Бомбер из эко-песца</b><em>22&nbsp;900&nbsp;₽</em><small data-s>Заявлено до −20&nbsp;°C</small></a>
+  <a href="#order" data-pick="parka" data-l="25" data-cur="В заказ"><span class="pc"><img src="img/parka-grey.jpg" loading="lazy" alt="Графитовая зимняя парка из мембраны"></span><b>Зимняя парка из мембраны</b><em>12&nbsp;900&nbsp;₽, с&nbsp;капюшоном 13&nbsp;900&nbsp;₽</em><small data-s>Заявлено до −25&nbsp;°C</small></a>
+ </div>
+</section>
+
+<section id="order" data-nav="dark">
+ <div class="head"><h2 class="ttl rv">Пошив по&nbsp;вашим параметрам</h2><p class="lede rv">Индивидуальный пошив или модель из&nbsp;наличия. Производство в&nbsp;Перми, доставка по&nbsp;миру.</p></div>
+ <div class="cons">
+  <div class="lab">Модель</div>
+  <div class="opts" id="opts" role="radiogroup" aria-label="Модель"></div>
+  <div class="sub" id="sub" hidden></div>
+  <label class="tog"><input type="checkbox" id="cust"><i></i><span>Индивидуальный пошив по&nbsp;моим параметрам</span></label>
+  <div class="parm" id="parm">
+   <label>Рост, см<input type="number" inputmode="numeric" min="0" max="250" data-p="рост"></label>
+   <label>Обхват груди, см<input type="number" inputmode="numeric" min="0" max="250" data-p="грудь"></label>
+   <label>Обхват талии, см<input type="number" inputmode="numeric" min="0" max="250" data-p="талия"></label>
+   <label>Обхват бёдер, см<input type="number" inputmode="numeric" min="0" max="250" data-p="бёдра"></label>
+  </div>
+ </div>
+ <div class="tag cons" aria-live="polite">
+  <h3>MASY <small>Ваш заказ</small></h3>
+  <pre id="otext"></pre>
+  <a class="btn dk mag" id="ocopy" href="https://taplink.cc/bymasy" target="_blank" rel="noopener">Скопировать и открыть Taplink</a>
+  <p class="why">Taplink не принимает готовый текст в&nbsp;ссылке, поэтому мы копируем его: останется вставить в&nbsp;сообщение.</p>
+ </div>
+ <p class="nocons"><a class="btn dk" href="https://taplink.cc/bymasy" target="_blank" rel="noopener">Заказать в&nbsp;Taplink</a></p>
+</section>
+
+<section id="room" data-nav="light">
+ <div class="r-in">
+  <h2 class="ttl rv">Шоурум в&nbsp;Перми</h2>
+  <dl class="dl rv">
+   <div><dt>Адрес</dt><dd>ТЦ «Бонус», ул.&nbsp;Революции,&nbsp;20, офис&nbsp;604, 6&nbsp;этаж</dd></div>
+   <div><dt>Часы</dt><dd>Пн–пт 15:00–20:00<br>Сб–вс 14:00–18:00</dd></div>
+   <div id="stw" hidden><dt>Сейчас</dt><dd class="st" id="st"></dd></div>
+   <div><dt>Контакты</dt><dd><a href="https://taplink.cc/bymasy" target="_blank" rel="noopener">taplink.cc/bymasy</a>, там же ссылка на&nbsp;канал в&nbsp;MAX</dd></div>
+  </dl>
+  <p class="rv"><a class="btn mag" href="https://yandex.ru/maps/?text=%D0%9F%D0%B5%D1%80%D0%BC%D1%8C%2C%20%D1%83%D0%BB.%20%D0%A0%D0%B5%D0%B2%D0%BE%D0%BB%D1%8E%D1%86%D0%B8%D0%B8%2C%2020" target="_blank" rel="noopener">Построить маршрут</a></p>
+ </div>
+ <div class="map"><iframe src="https://yandex.ru/map-widget/v1/?mode=search&amp;text=%D0%9F%D0%B5%D1%80%D0%BC%D1%8C%2C%20%D1%83%D0%BB.%20%D0%A0%D0%B5%D0%B2%D0%BE%D0%BB%D1%8E%D1%86%D0%B8%D0%B8%2C%2020&amp;z=16" title="Шоурум MASY на карте: Пермь, ул. Революции, 20" loading="lazy"></iframe></div>
+</section>
+
+<section id="end" data-nav="dark">
+ <h2 class="rv">Создаём одежду, в&nbsp;которую влюбляются</h2>
+ <a class="btn dk mag rv" href="https://taplink.cc/bymasy" target="_blank" rel="noopener">Заказать в&nbsp;Taplink</a>
+ <span class="big" aria-hidden="true">MASY</span>
+</section>
+</main>
+<footer data-nav="light">
+ <div>Пермь, ТЦ «Бонус», ул.&nbsp;Революции,&nbsp;20, офис&nbsp;604, 6&nbsp;этаж. <a href="https://taplink.cc/bymasy" target="_blank" rel="noopener">taplink.cc/bymasy</a></div>
+ <div><b>Демо-концепт</b> сайта для бренда MASY. Цены и данные из&nbsp;открытых источников (профиль и&nbsp;посты бренда, Taplink). Фото бренда MASY. Страница не индексируется.</div>
+</footer>
+<a class="fab" id="fab" href="https://taplink.cc/bymasy" target="_blank" rel="noopener">Заказать</a>
+
+<div id="v" role="dialog" aria-modal="true" aria-label="Просмотр модели">
+ <div class="v-bg" id="vbg"></div>
+ <div class="v-tr" id="vtr"></div>
+ <div class="v-ui">
+  <div class="v-i"><h2 id="vn"></h2><p id="vs"></p><p class="pr" id="vp"></p>
+   <div class="v-acts"><a class="btn" href="https://taplink.cc/bymasy" target="_blank" rel="noopener">Заказать в&nbsp;Taplink</a><a class="btn gh" href="#order" id="vb">Собрать заказ</a></div></div>
+  <div class="v-top"><span class="lab" id="vc"></span><button class="v-x" id="vx" type="button" aria-label="Закрыть"></button></div>
+  <div class="v-nav"><button type="button" id="vl" aria-label="Предыдущий кадр">←</button><button type="button" id="vr" aria-label="Следующий кадр">→</button></div>
+ </div>
+</div>
+<div id="cur" aria-hidden="true"><span></span></div>
+
+<script>
+(function(){'use strict';
+var d=document,de=d.documentElement,rm=!!window.__rm,w=window;
+function $(s,r){return (r||d).querySelector(s)}
+function $$(s,r){return [].slice.call((r||d).querySelectorAll(s))}
+function cl(v,a,b){return v<a?a:v>b?b:v}
+var NB=' ',TOUCH=!(w.matchMedia&&matchMedia('(hover:hover) and (pointer:fine)').matches);
+var ask='Цену уточняйте в'+NB+'Taplink';
+var M={
+ bars:{n:'Эко-шуба «снежный барс»',s:'Полушалка, длина 80'+NB+'см, one size',p:'24'+NB+'900'+NB+'₽'},
+ mink:{n:'Эко-норка',s:'Чёрная, one size',p:'26'+NB+'900'+NB+'₽'},
+ bomb:{n:'Бомбер из эко-песца',s:'До −20'+NB+'°C, one size',p:'22'+NB+'900'+NB+'₽'},
+ parka:{n:'Зимняя парка из мембраны',s:'Утеплитель Аляска 200'+NB+'г, до −25'+NB+'°C, one size',p:'12'+NB+'900'+NB+'₽ без капюшона, 13'+NB+'900'+NB+'₽ с'+NB+'капюшоном',v:[['без капюшона','12'+NB+'900'+NB+'₽'],['с капюшоном','13'+NB+'900'+NB+'₽']]},
+ choc:{n:'Шуба-полушалка макси из финской эко-норки',s:'Цвет шоколад',p:ask},
+ collar:{n:'Шуба со стойкой из эко-норки',s:'Чёрная',p:ask},
+ lynx:{n:'Эко-рысь',s:'Длина 65'+NB+'см',p:ask},
+ fox:{n:'Арктический песец',s:'',p:ask}
+};
+var FR=[['leopard-2','bars',960],['leopard-3','bars',870],['look-1','mink',1278],['fur-light','bomb',960],['parka-brown','parka',960],['parka-grey','parka',960],['fur-brown','choc',960],['hero','collar',960]];
+var state={hero:true,th:false,look:false,viewer:false,thT:20};
+
+/* ===== общий цикл: один rAF, стоит на паузе вне экрана и в фоне ===== */
+var tasks=[],raf=0,last=0;
+function tick(now){raf=0;if(d.hidden)return;var raw=now-last||16,dt=Math.min(50,raw),any=false;last=now;w.__raw=raw;
+ for(var i=0;i<tasks.length;i++){if(tasks[i].on()){tasks[i].run(dt,now);any=true}}
+ if(any)raf=requestAnimationFrame(tick)}
+function wake(){if(!raf&&!d.hidden){last=performance.now();raf=requestAnimationFrame(tick)}}
+d.addEventListener('visibilitychange',wake);
+function watch(el,fn,m){if(!(typeof w.IntersectionObserver==='function')){fn(true);return}
+ new IntersectionObserver(function(e){fn(e[e.length-1].isIntersecting);wake()},{rootMargin:m||'0px'}).observe(el)}
+
+/* ===== ветер и скорость скролла: общие для меха и снега ===== */
+var wind={x:0,y:0,tx:0,ty:0},sv=0,sy=w.pageYOffset;
+w.addEventListener('scroll',function(){var y=w.pageYOffset;sv+=y-sy;sy=y;wake()},{passive:true});
+
+/* ===== 1. Мех: WebGL без библиотек ===== */
+var splat=function(){},furOK=false,furW=0,furH=0;
+function furInit(){
+ var cv=$('#fur'),hero=$('#hero'),post=$('#post');if(rm||!cv)return;
+ var gl;try{gl=cv.getContext('webgl',{alpha:false,antialias:false,depth:false,stencil:false,powerPreference:'low-power'})}catch(e){}
+ if(!gl)return;
+ var VS='attribute vec2 a;varying vec2 v;void main(){v=vec2(a.x*.5+.5,.5-a.y*.5);gl_Position=vec4(a,0.,1.);}';
+ var FS=['precision highp float;varying vec2 v;uniform sampler2D T,F,N;uniform vec2 R,W;uniform vec4 C;uniform float t;',
+ 'void main(){vec2 uv=C.xy+v*C.zw+W*.006*C.zw;vec2 f=(texture2D(F,v).xy-.5)*2.;float fl=length(f);',
+ 'float m=smoothstep(.405,.5,uv.y);',
+ 'vec2 am=vec2(sin(uv.y*11.+t*.8+sin(uv.x*7.+t*.45)*1.6),cos(uv.x*9.-t*.6+uv.y*4.))*.09+W;',
+ 'vec2 dd=f+am;vec2 dir=normalize(vec2(.08,.42)+dd);vec2 p=v*R/1.5;float s=0.;',
+ 'for(int i=0;i<5;i++){s+=texture2D(N,(p+dir*float(i)*2.4)/128.).r;}s=(s/5.-.5)*3.;',
+ 'vec2 o=dd*(.02+.042*s)*(min(R.x,R.y)/R)*C.zw*m;',
+ 'vec3 c=texture2D(T,uv-o).rgb;float sm=clamp(fl*1.8,0.,1.)*m;c=mix(c,texture2D(T,uv-o*2.1).rgb,.4*sm);',
+ 'c*=1.+s*m*(.1+.22*fl);',
+ 'float sh=dot(f,vec2(.28,-.96));float lum=dot(c,vec3(.33));',
+ 'c*=vec3(.74,.78,.84);',
+ 'c+=m*(max(sh,0.)*.42+fl*.1)*(.25+lum)*vec3(.96,.98,1.);c*=1.-m*max(-sh,0.)*.3;',
+ 'gl_FragColor=vec4(c,1.);}'].join('\n');
+ function sh(t,s){var o=gl.createShader(t);gl.shaderSource(o,s);gl.compileShader(o);if(!gl.getShaderParameter(o,gl.COMPILE_STATUS))throw new Error(gl.getShaderInfoLog(o));return o}
+ var pr,u={};
+ try{pr=gl.createProgram();gl.attachShader(pr,sh(gl.VERTEX_SHADER,VS));gl.attachShader(pr,sh(gl.FRAGMENT_SHADER,FS));gl.linkProgram(pr);if(!gl.getProgramParameter(pr,gl.LINK_STATUS))throw new Error('link');gl.useProgram(pr)}catch(e){if(w.console)console.warn(e);return}
+ ['T','F','N','R','W','C','t'].forEach(function(k){u[k]=gl.getUniformLocation(pr,k)});
+ var b=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,b);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);
+ var al=gl.getAttribLocation(pr,'a');gl.enableVertexAttribArray(al);gl.vertexAttribPointer(al,2,gl.FLOAT,false,0,0);
+ function tex(unit,rep){var o=gl.createTexture();gl.activeTexture(gl.TEXTURE0+unit);gl.bindTexture(gl.TEXTURE_2D,o);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);var wr=rep?gl.REPEAT:gl.CLAMP_TO_EDGE;gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,wr);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,wr);return o}
+ /* шум для волокон */
+ var nd=new Uint8Array(128*128);for(var i=0;i<nd.length;i++)nd[i]=Math.random()*256;
+ tex(2,true);gl.pixelStorei(gl.UNPACK_ALIGNMENT,1);gl.texImage2D(gl.TEXTURE_2D,0,gl.LUMINANCE,128,128,0,gl.LUMINANCE,gl.UNSIGNED_BYTE,nd);gl.pixelStorei(gl.UNPACK_ALIGNMENT,4);
+ /* поле направления ворса: считается на CPU, сетка маленькая */
+ var GX,GY,fx,fy,buf;
+ function grid(){GX=W_()>H_()?72:44;GY=W_()>H_()?44:72;fx=new Float32Array(GX*GY);fy=new Float32Array(GX*GY);buf=new Uint8Array(GX*GY*4);for(var i=3;i<buf.length;i+=4)buf[i]=255;tex(1,false);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,GX,GY,0,gl.RGBA,gl.UNSIGNED_BYTE,buf)}
+ function W_(){return hero.clientWidth}function H_(){return hero.clientHeight}
+ grid();
+ var scale=Math.min(w.devicePixelRatio||1,TOUCH?1.5:1.25),crop=[0,0,1,1];
+ function size(){var W=W_(),H=H_();furW=W;furH=H;var pxl=W*H*scale*scale;if(pxl>1.7e6)scale=Math.sqrt(1.7e6/(W*H));
+  cv.width=Math.round(W*scale);cv.height=Math.round(H*scale);gl.viewport(0,0,cv.width,cv.height);gl.uniform2f(u.R,cv.width,cv.height);
+  var iw=720,ih=947,s,ay;
+  if(W/H<.9){s=Math.max(.86*W/(.34*iw),H/ih);ay=.5}else{s=Math.max(W/iw,H/ih);ay=.44}
+  var vx=W/(iw*s),vy=H/(ih*s),top=cl(.74-ay*vy,0,1-vy),left=.5-vx/2;crop=[left,top,vx,vy];gl.uniform4f(u.C,left,top,vx,vy);
+  post.style.cssText='object-fit:fill;inset:auto;max-width:none;left:'+(-left*iw*s)+'px;top:'+(-top*ih*s)+'px;width:'+(iw*s)+'px;height:'+(ih*s)+'px'}
+ /* прочёс пальцем или курсором: ворс ложится по направлению и медленно встаёт */
+ splat=function(x0,y0,x1,y1,force){if(!furOK)return;var dx=(x1-x0)*furW,dy=(y1-y0)*furH,l=Math.sqrt(dx*dx+dy*dy);if(l<.5)return;
+  var nx=dx/l,ny=dy/l,a=(force==null?cl(l/16,.35,1):force),r=Math.max(GX,GY)*.085,xa=x0*GX,ya=y0*GY,xb=x1*GX,yb=y1*GY;
+  var mnx=Math.max(0,Math.floor(Math.min(xa,xb)-r*2)),mxx=Math.min(GX-1,Math.ceil(Math.max(xa,xb)+r*2)),mny=Math.max(0,Math.floor(Math.min(ya,yb)-r*2)),mxy=Math.min(GY-1,Math.ceil(Math.max(ya,yb)+r*2));
+  var sx=xb-xa,sy2=yb-ya,ss=sx*sx+sy2*sy2||1;
+  for(var j=mny;j<=mxy;j++)for(var i=mnx;i<=mxx;i++){var q=cl(((i-xa)*sx+(j-ya)*sy2)/ss,0,1),ex=i-xa-q*sx,ey=j-ya-q*sy2,g=Math.exp(-(ex*ex+ey*ey)/(r*r))*.85,k=j*GX+i;fx[k]+=(nx*a-fx[k])*g;fy[k]+=(ny*a-fy[k])*g}
+ };
+ var img=new Image();img.onload=function(){try{
+   tex(0,false);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGB,gl.RGB,gl.UNSIGNED_BYTE,img);
+   gl.uniform1i(u.T,0);gl.uniform1i(u.F,1);gl.uniform1i(u.N,2);size();furOK=true;gl.activeTexture(gl.TEXTURE1);
+   de.classList.add('fur-on');wake();
+   setTimeout(function(){autoT=0},window.__intro?1300:300);
+  }catch(e){if(w.console)console.warn('fur off',e);de.classList.remove('fur-on')}};
+ img.src='img/brand.jpg';
+ var lw=W_();w.addEventListener('resize',function(){if(!furOK)return;if(W_()!==lw||Math.abs(H_()-furH)>120){lw=W_();grid();size()}});
+ cv.addEventListener('webglcontextlost',function(e){e.preventDefault();furOK=false;de.classList.remove('fur-on')});
+ /* показ: «невидимая рука» проводит по меху, пока человек не тронул сам */
+ var autoT=-1,autoN=0,used=false,ax=0,ay2=0,hint=$('#hint');
+ function touched(){if(!used){used=true;autoT=-1;if(hint)hint.classList.add('off')}}
+ function pt(e,p){var r=hero.getBoundingClientRect();return [(p.clientX-r.left)/r.width,(p.clientY-r.top)/r.height]}
+ var lp=null;
+ hero.addEventListener('pointermove',function(e){if(e.pointerType==='touch')return;var q=pt(e,e);if(lp){splat(lp[0],lp[1],q[0],q[1]);touched()}lp=q;moved=now_();wake()});
+ hero.addEventListener('pointerleave',function(){lp=null});
+ var tp=null;
+ hero.addEventListener('touchstart',function(e){var q=pt(e,e.touches[0]);tp=q;touched()},{passive:true});
+ hero.addEventListener('touchmove',function(e){if(!tp)return;var q=pt(e,e.touches[0]);splat(tp[0],tp[1],q[0],q[1]);tp=q;wake()},{passive:true});
+ hero.addEventListener('touchend',function(){tp=null},{passive:true});
+ var moved=0;function now_(){return performance.now()}
+ var time=0,acc=0,cnt=0;
+ tasks.push({on:function(){return furOK&&state.hero&&!state.viewer},run:function(dt){
+  time+=dt*.001;
+  /* авто-штрих */
+  if(autoT>=0&&!used){var pr2=autoT/1500;if(pr2<=1){var s2=autoN%2,e=pr2*pr2*(3-2*pr2),x=s2?.86-.72*e:.14+.72*e,y=.62+Math.sin(e*5.2)*.13*(s2?-1:1);if(autoT>0)splat(ax,ay2,x,y,.95);ax=x;ay2=y}
+   autoT+=dt;if(autoT>5200){autoT=0;autoN++}}
+  /* ветер: наклон и скролл */
+  sv*=.86;wind.x+=(wind.tx-wind.x)*.06;wind.y+=(wind.ty+cl(sv/70,-1,1)*.55-wind.y)*.1;
+  /* упругий возврат ворса */
+  var dec=Math.pow(.9875,dt/16.7),n=fx.length;
+  for(var i=0;i<n;i++){fx[i]*=dec;fy[i]*=dec;var a=i*4;buf[a]=fx[i]*127+128;buf[a+1]=fy[i]*127+128}
+  gl.activeTexture(gl.TEXTURE1);gl.texSubImage2D(gl.TEXTURE_2D,0,0,0,GX,GY,gl.RGBA,gl.UNSIGNED_BYTE,buf);
+  gl.uniform1f(u.t,time);gl.uniform2f(u.W,wind.x,wind.y);gl.drawArrays(gl.TRIANGLE_STRIP,0,4);
+  /* адаптивное качество: на слабом телефоне снижаем разрешение, потом отключаем */
+  if(w.__raw<140){acc+=w.__raw;cnt++}if(cnt>=45){var avg=acc/cnt;acc=0;cnt=0;if(avg>26){if(scale>.72){scale*=.8;size()}else{furOK=false;de.classList.remove('fur-on')}}}
+ }});
+}
+
+/* ===== 2. Снег на canvas с глубиной ===== */
+function snowInit(){
+ var cv=$('#snow');if(rm||!cv)return;var c=cv.getContext('2d');if(!c)return;
+ var MAX=TOUCH?300:520,fl=[],W,H,r,cnt=0,sprites=[];
+ function spr(sz,soft){var o=d.createElement('canvas');o.width=o.height=sz;var x=o.getContext('2d'),g=x.createRadialGradient(sz/2,sz/2,0,sz/2,sz/2,sz/2);g.addColorStop(0,'rgba(255,255,255,1)');g.addColorStop(soft,'rgba(255,255,255,.75)');g.addColorStop(1,'rgba(255,255,255,0)');x.fillStyle=g;x.fillRect(0,0,sz,sz);return o}
+ sprites=[spr(16,.55),spr(48,.2)];
+ function size(){W=innerWidth;H=innerHeight;r=Math.min(w.devicePixelRatio||1,1.5);if(W*H*r*r>1.6e6)r=Math.sqrt(1.6e6/(W*H));cv.width=W*r;cv.height=H*r}
+ size();var lw=W;w.addEventListener('resize',function(){if(innerWidth!==lw||Math.abs(innerHeight-H)>120){lw=innerWidth;size()}});
+ for(var i=0;i<MAX;i++){var z=Math.random();z=z*z;fl.push({x:Math.random()*W,y:Math.random()*H,z:z,p:Math.random()*6.28})}
+ var hero=$('#hero'),th=$('#th'),tm=0,py=w.pageYOffset,cold=0;
+ w.__snow=function(){return Math.round(cnt)};
+ tasks.push({on:function(){return (state.hero||state.th)&&!state.viewer},run:function(dt){
+  var s=dt*.001;tm+=s;var ty=w.pageYOffset,dy=ty-py;py=ty;
+  var ch=state.th?state.thT/25:0;cold+=(ch-cold)*.05;
+  var tgt=state.th?(24+Math.pow(ch,1.5)*(MAX-24)):(TOUCH?70:110);cnt+=(tgt-cnt)*.04;
+  c.setTransform(r,0,0,r,0,0);c.clearRect(0,0,W,H);
+  var rects=[];if(state.hero){var a=hero.getBoundingClientRect();rects.push([a.top,a.bottom])}if(state.th){var q=th.getBoundingClientRect();rects.push([q.top,q.bottom])}
+  c.save();c.beginPath();rects.forEach(function(k){c.rect(0,k[0],W,k[1]-k[0])});c.clip();
+  var wx=wind.x*90+22+cold*230,sp=1+cold*1.5,n=Math.round(cnt);
+  for(var i=0;i<n;i++){var f=fl[i],z=f.z,sz=1.5+z*(TOUCH?11:15);
+   f.y+=(26+z*120)*sp*s-dy*(.15+z*.8);f.x+=(wx*(.35+z)+Math.sin(tm*.8+f.p)*(8+z*18))*s;
+   if(f.y>H+20){f.y=-20;f.x=Math.random()*W}else if(f.y<-24){f.y=H+18;f.x=Math.random()*W}
+   if(f.x>W+20)f.x=-20;else if(f.x<-20)f.x=W+20;
+   c.globalAlpha=z>.45?.32:.5+z*.7;c.drawImage(sprites[z>.45?1:0],f.x-sz/2,f.y-sz/2,sz,sz)}
+  c.restore();c.globalAlpha=1;
+ }});
+}
+
+/* ===== Вступление: снежинки собираются в логотип, до 1,5 сек, тап пропускает ===== */
+function runIntro(done){
+ var el=$('#intro');if(!el){done();return}
+ var c=d.createElement('canvas');el.appendChild(c);var x=c.getContext('2d'),W=innerWidth,H=innerHeight,r=Math.min(w.devicePixelRatio||1,2);c.width=W*r;c.height=H*r;
+ var t0=performance.now(),fin=false,pts=[],stop=false;
+ function end(fast){if(fin)return;fin=true;try{sessionStorage.setItem('masyIntro','1')}catch(e){}el.classList.add('out');de.classList.add('go');done();setTimeout(function(){stop=true;el.remove()},fast?300:560)}
+ el.addEventListener('pointerdown',function(){end(true)});
+ w.addEventListener('keydown',function k(){end(true);w.removeEventListener('keydown',k)});
+ function build(){
+  var o=d.createElement('canvas');o.width=W;o.height=H;var g=o.getContext('2d',{willReadFrequently:true}),fs=Math.min(W*.3,H*.36);
+  g.font='600 '+fs+'px Jost,"Century Gothic",Futura,Arial,sans-serif';g.textAlign='center';g.textBaseline='middle';g.fillStyle='#fff';g.fillText('MASY',W/2,H/2);
+  var dt=g.getImageData(0,0,W,H).data,st=Math.max(2,Math.round(fs/72));
+  for(var j=0;j<H;j+=st)for(var i=0;i<W;i+=st){if(dt[(j*W+i)*4+3]>128)pts.push({tx:i,ty:j,sx:Math.random()*W,sy:Math.random()*H-H*.3,de:Math.random()*.3,sz:st*(.7+Math.random()*.5)})}
+  draw();
+ }
+ function draw(){if(stop)return;var t=(performance.now()-t0)/1000;x.setTransform(r,0,0,r,0,0);x.clearRect(0,0,W,H);x.fillStyle='#f6f4f0';
+  for(var i=0;i<pts.length;i++){var p=pts[i],q=cl((t-p.de)/.55,0,1),e=1-Math.pow(1-q,3),ex=p.sx+(p.tx-p.sx)*e,ey=p.sy+(p.ty-p.sy)*e;
+   if(t>.98){var a=t-.98;ey+=a*a*(180+p.de*900);ex+=a*a*(p.de-.15)*420}
+   x.fillRect(ex,ey,p.sz,p.sz)}
+  if(t>=1&&!fin)end(false);requestAnimationFrame(draw)}
+ var go=false;function st(){if(go)return;go=true;build()}
+ if(d.fonts&&d.fonts.load){d.fonts.load('600 80px Jost').then(st,st);setTimeout(st,180)}else st();
+ setTimeout(function(){end(false)},1400);
+}
+
+/* ===== 4. Лукбук: закреплённая горизонталь от обычного скролла, кадры раскрываются маской ===== */
+function lookInit(){
+ var sec=$('#look'),pin=$('#lbp'),tr=$('#lbt'),bar=$('#lbb');
+ var fr=$$('.fr',tr),inner=fr.map(function(f){return $('div',f)}),im=fr.map(function(f){return $('img',f)});
+ function setup(){
+  fr.forEach(function(f,i){inner[i].style.clipPath='none'});
+  if(rm||!(typeof w.IntersectionObserver==='function')||!w.CSS||!CSS.supports('position','sticky'))return false;de.classList.add('pin');return true}
+ if(!setup())return;
+ var W,H,TW,X=0,prev=[],rangeY;
+ function size(){W=de.clientWidth;H=pin.clientHeight;TW=tr.scrollWidth;sec.style.height=(TW-W+H)+'px';rangeY=sec.offsetHeight-H;prev=[]}
+ size();var lw=W;w.addEventListener('resize',function(){if(de.clientWidth!==lw){lw=de.clientWidth;size()}});
+ w.addEventListener('load',size);
+ tasks.push({on:function(){return state.look&&!state.viewer},run:function(dt){
+  var y=-sec.getBoundingClientRect().top,p=cl(y/rangeY,0,1),tx=p*(TW-W);
+  var lr=1-Math.pow(TOUCH?.72:.84,dt/16.7);X+=(tx-X)*lr;if(Math.abs(tx-X)<.2)X=tx;
+  tr.style.transform='translate3d('+(-X)+'px,0,0)';bar.style.transform='scaleX('+p+')';
+  for(var i=0;i<fr.length;i++){var f=fr[i],l=f.offsetLeft-X,fw=f.offsetWidth;
+   if(l>W+40||l+fw<-40)continue;
+   var a=cl((W*1.0-l)/(Math.min(W,fw)*.92),0,1);a=1-Math.pow(1-a,2.4);
+   if(prev[i]!==a){prev[i]=a;var k=(1-a)*14,o=a*(50+k),L1=50-o+k,R1=50+o+k,L2=50-o-k,R2=50+o-k;
+    inner[i].style.clipPath=a>=1?'none':'polygon('+L1+'% 0,'+R1+'% 0,'+R2+'% 100%,'+L2+'% 100%)';}
+   var c=(l+fw/2-W/2)/W;im[i].style.transform='translate3d('+(-c*7).toFixed(2)+'%,0,0) scale('+(1.16+(1-a)*.16).toFixed(3)+')'}
+ }});
+ watch(sec,function(v){state.look=v},'10% 0px');
+}
+
+/* ===== 3. Термометр ===== */
+function thermoInit(){
+ var sec=$('#th'),inp=$('#tr'),dv=$('#dv'),rule=$('#rule'),cards=$$('#tc a');if(!inp)return;
+ var A=[43,28,20],B=[24,50,70],lastSnap=null;
+ function set(v,user){v=+v;state.thT=v;inp.value=v;var pc=v/25;
+  dv.textContent=v===0?'0':'−'+v;inp.setAttribute('aria-valuetext',(v===0?'0':'минус '+v)+' градусов');
+  rule.style.setProperty('--p',pc);sec.style.setProperty('--cold',pc);
+  sec.style.backgroundColor='rgb('+A.map(function(a,i){return Math.round(a+(B[i]-a)*pc)}).join(',')+')';
+  cards.forEach(function(a){var l=+a.dataset.l,ok=v<=l;a.classList.toggle('off',!ok);$('[data-s]',a).textContent=(ok?'Заявлено до −':'Заявлено только до −')+l+NB+'°C'});
+  if(user&&(v===15||v===20||v===25)&&lastSnap!==v&&navigator.vibrate&&(!navigator.userActivation||navigator.userActivation.hasBeenActive)){try{navigator.vibrate(10)}catch(e){}}
+  lastSnap=v;wake()}
+ var auto=false,userTouched=false;
+ inp.addEventListener('input',function(){userTouched=true;set(inp.value,true)});
+ set(20);
+ var sw=false;
+ watch(sec,function(v){state.th=v;if(v&&!sw&&!rm&&!userTouched){sw=true;var t0=performance.now();set(0);(function a(n){if(userTouched)return;var q=cl((n-t0-250)/1700,0,1),e=1-Math.pow(1-q,3);set(Math.round(e*20));if(q<1)requestAnimationFrame(a)})(t0)}},'-20% 0px');
+}
+
+/* ===== 5. FLIP-просмотр: карточка раскрывается на весь экран, листание, смахивание вниз ===== */
+var openViewer=function(){};
+function viewerInit(){
+ var V=$('#v'),bg=$('#vbg'),tr=$('#vtr'),nm=$('#vn'),sp=$('#vs'),pp=$('#vp'),cnt=$('#vc');
+ var cards=$$('#grid .card'),slides=[],cur=0,X=0,W,H,PW,busy=false,anim=0,opener=null;
+ FR.forEach(function(f,i){var s=d.createElement('div');s.className='v-s';var im=new Image();im.alt=M[f[1]].n;im.draggable=false;s.appendChild(im);tr.appendChild(s);slides.push({s:s,im:im,a:720/f[2],k:f[0]})});
+ function load(i){var o=slides[i];if(o&&!o.im.getAttribute('src'))o.im.src='img/'+o.k+'.jpg'}
+ function layout(){W=innerWidth;H=innerHeight;PW=W>=900?400:0;var SW=W-PW;
+  slides.forEach(function(o,i){o.s.style.left=i*SW+'px';o.s.style.width=SW+'px';var h,w2;
+   if(PW){h=H;w2=h*o.a;if(w2>SW){w2=SW;h=w2/o.a}}else{h=Math.max(H,W/o.a);w2=h*o.a}
+   o.w=w2;o.h=h;o.left=(SW-w2)/2;o.top=(H-h)/2;var st=o.im.style;st.width=w2+'px';st.height=h+'px';st.left=o.left+'px';st.top=o.top+'px'});
+  return SW}
+ function SW(){return W-PW}
+ function setX(x){X=x;tr.style.transform='translate3d('+(-x)+'px,0,0)';
+  var sw=SW(),c=x/sw;for(var i=Math.max(0,Math.floor(c)-1);i<=Math.min(FR.length-1,Math.ceil(c)+1);i++){var o=slides[i];if(!o.dr)o.im.style.transform='translate3d('+((i*sw-x)*-.18)+'px,0,0)'}}
+ function info(i){var m=M[FR[i][1]];nm.textContent=m.n;sp.textContent=m.s;pp.textContent=m.p;cnt.textContent=String(i+1).padStart(2,'0')+' / '+String(FR.length).padStart(2,'0');$('#vb').dataset.pick=FR[i][1];load(i-1);load(i);load(i+1)}
+ function go(i){i=cl(i,0,FR.length-1);cur=i;info(i);var from=X,to=i*SW(),t0=performance.now();cancelAnimationFrame(anim);
+  (function a(n){var q=cl((n-t0)/(rm?1:560),0,1),e=1-Math.pow(1-q,4);setX(from+(to-from)*e);if(q<1)anim=requestAnimationFrame(a)})(t0)}
+ function mark(i){slides.forEach(function(o,k){o.s.classList.toggle('cur',k===i)})}
+ function cardOf(i){var fr=FR[i],c=null;cards.forEach(function(k){var a=+k.dataset.fr;if(FR[a][1]===fr[1])c=k});return c}
+ function open(i,card){if(busy||state.viewer)return;busy=true;state.viewer=true;opener=card;de.classList.add('lock');V.classList.add('on');V.classList.remove('ui');V.classList.add('flip');
+  layout();cur=i;mark(i);info(i);setX(i*SW());
+  var o=slides[i],cimg=$('.ph img',card),C=cimg.getBoundingClientRect();
+  var T={left:o.left,top:o.top,w:o.w,h:o.h};
+  card.classList.add('fl');
+  var sx=C.width/T.w,dx=C.left-T.left,dy=C.top-T.top;
+  var dur=rm?1:720;o.im.style.transformOrigin='0 0';
+  var kf=o.im.animate([{transform:'translate3d('+dx+'px,'+dy+'px,0) scale('+sx+')'},{transform:'translate3d(0,0,0) scale(1)'}],{duration:dur,easing:'cubic-bezier(.22,1,.36,1)'});
+  bg.style.opacity=1;bg.animate([{opacity:0},{opacity:1}],{duration:dur*.6});
+  kf.onfinish=function(){busy=false;V.classList.remove('flip');V.classList.add('ui');$('#vx').focus({preventScroll:true})};
+ }
+ function close(){if(busy||!state.viewer)return;busy=true;V.classList.remove('ui');V.classList.add('flip');mark(cur);var o=slides[cur],card=cardOf(cur)||opener;
+  if(card!==opener&&opener)opener.classList.remove('fl');
+  var ci=$('.ph img',card),r=ci.getBoundingClientRect();
+  if(r.bottom<0||r.top>innerHeight){w.scrollTo(0,w.pageYOffset+r.top-innerHeight*.2);r=ci.getBoundingClientRect()}
+  card.classList.add('fl');
+  var cs=o.im.getBoundingClientRect(),sx=r.width/o.w,dx=r.left-(o.left+(cur*SW()-X)),dy=r.top-o.top;
+  o.im.style.transformOrigin='0 0';var dur=rm?1:560,from=getComputedStyle(o.im).transform;
+  bg.animate([{opacity:getComputedStyle(bg).opacity},{opacity:0}],{duration:dur*.8,fill:'forwards'});
+  var kf=o.im.animate([{transform:from==='none'?'none':from},{transform:'translate3d('+dx+'px,'+dy+'px,0) scale('+sx+')'}],{duration:dur,easing:'cubic-bezier(.22,1,.36,1)',fill:'forwards'});
+  kf.onfinish=function(){card.classList.remove('fl');V.classList.remove('on','flip');de.classList.remove('lock');kf.cancel();bg.getAnimations().forEach(function(a){a.cancel()});bg.style.opacity=0;o.im.style.transform='';o.im.style.transformOrigin='';busy=false;state.viewer=false;wake();try{(opener||card).focus({preventScroll:true})}catch(e){}}}
+ /* жесты */
+ var ptr=null;
+ V.addEventListener('pointerdown',function(e){if(busy||e.target.closest('a,button'))return;cancelAnimationFrame(anim);ptr={id:e.pointerId,x:e.clientX,y:e.clientY,t:e.timeStamp,ax:null,X0:X,lx:e.clientX,lt:e.timeStamp,v:0};try{V.setPointerCapture(e.pointerId)}catch(_){}});
+ V.addEventListener('pointermove',function(e){if(!ptr||e.pointerId!==ptr.id)return;var dx=e.clientX-ptr.x,dy=e.clientY-ptr.y;
+  if(!ptr.ax&&Math.abs(dx)+Math.abs(dy)>8)ptr.ax=Math.abs(dx)>Math.abs(dy)?'h':'v';
+  if(ptr.ax==='h'){var nx=ptr.X0-dx,mx=(FR.length-1)*SW();if(nx<0)nx*=.35;else if(nx>mx)nx=mx+(nx-mx)*.35;setX(nx);ptr.v=(e.clientX-ptr.lx)/Math.max(1,e.timeStamp-ptr.lt);ptr.lx=e.clientX;ptr.lt=e.timeStamp}
+  else if(ptr.ax==='v'){var o=slides[cur],q=Math.max(0,dy),s=1-q/H*.45;o.dr=1;o.im.style.transform='translate3d('+(dx*.6+o.w*(1-s)/2)+'px,'+(q+o.h*(1-s)/2)+'px,0) scale('+s+')';bg.style.opacity=1-q/H*1.2;V.classList.toggle('ui',q<20)}});
+ function up(e){if(!ptr||e.pointerId!==ptr.id)return;var p=ptr;ptr=null;
+  if(p.ax==='h'){var dx=e.clientX-p.x,dir=(Math.abs(dx)>SW()*.16||Math.abs(p.v)>.45)?(dx<0?1:-1):0;go(cur+dir)}
+  else if(p.ax==='v'){var dy=e.clientY-p.y,o=slides[cur];if(dy>H*.16){o.dr=0;close()}else{o.dr=0;o.im.animate([{transform:o.im.style.transform},{transform:'translate3d(0,0,0)'}],{duration:320,easing:'cubic-bezier(.22,1,.36,1)'});o.im.style.transform='';bg.style.opacity=1;V.classList.add('ui')}}}
+ V.addEventListener('pointerup',up);V.addEventListener('pointercancel',up);
+ $('#vx').addEventListener('click',close);$('#vl').addEventListener('click',function(){go(cur-1)});$('#vr').addEventListener('click',function(){go(cur+1)});
+ d.addEventListener('keydown',function(e){if(!state.viewer)return;if(e.key==='Escape')close();else if(e.key==='ArrowRight')go(cur+1);else if(e.key==='ArrowLeft')go(cur-1);else if(e.key==='Tab'){var f=$$('a,button',V).filter(function(n){return n.offsetParent!==null}),a=f.indexOf(d.activeElement);e.preventDefault();var n=f[(a+(e.shiftKey?-1:1)+f.length)%f.length];if(n)n.focus()}});
+ w.addEventListener('resize',function(){if(state.viewer){layout();setX(cur*SW())}});
+ cards.forEach(function(c){c.addEventListener('click',function(e){if(e.metaKey||e.ctrlKey)return;e.preventDefault();open(+c.dataset.fr,c)})});
+ $('#vb').addEventListener('click',function(e){e.preventDefault();var m=this.dataset.pick;close();var tt=setInterval(function(){if(!state.viewer){clearInterval(tt);pick(m,true)}},60)});
+}
+
+/* ===== 7. Конструктор заказа ===== */
+var pick=function(){};
+function orderInit(){
+ var box=$('#opts'),sub=$('#sub'),cust=$('#cust'),parm=$('#parm'),out=$('#otext'),btn=$('#ocopy');if(!box)return;
+ var S={m:'bars',v:0};
+ Object.keys(M).forEach(function(k){var m=M[k],l=d.createElement('label');l.className='opt';var pr=m.v?m.v[0][1]+' или '+m.v[1][1]:(m.p===ask?'цена в'+NB+'Taplink':m.p);
+  l.innerHTML='<input type="radio" name="mdl" value="'+k+'"><span></span><em></em>';$('span',l).textContent=m.n+(m.s&&k==='lynx'?', '+m.s.toLowerCase():'');$('em',l).textContent=pr;box.appendChild(l)});
+ function text(){var m=M[S.m],L=['Здравствуйте! Хочу заказать:',m.n];
+  if(m.v){L[1]+=', '+m.v[S.v][0]+', '+m.v[S.v][1]}else if(m.p!==ask)L[1]+=', '+m.p;
+  if(cust.checked){var a=$$('input',parm).filter(function(i){return i.value&&+i.value>0}).map(function(i){return i.dataset.p+' '+(+i.value)+NB+'см'});L.push('Индивидуальный пошив по моим параметрам'+(a.length?': '+a.join(', '):'.'))}
+  else if(m.p!==ask)L.push('Размер: one size.');
+  if(m.p===ask)L.push('Подскажите, пожалуйста, цену.');
+  return L.join('\n')}
+ function draw(){$$('.opt',box).forEach(function(l){var i=$('input',l),on=i.value===S.m;i.checked=on;l.classList.toggle('on',on)});
+  var m=M[S.m];sub.hidden=!m.v;if(m.v&&!sub.firstChild){sub.innerHTML=m.v.map(function(v,i){return '<label><input type="radio" name="var" value="'+i+'"><span>'+v[0]+', '+v[1]+'</span></label>'}).join('')}
+  $$('input',sub).forEach(function(i){i.checked=+i.value===S.v});parm.classList.toggle('on',cust.checked);$$('input',parm).forEach(function(i){i.tabIndex=cust.checked?0:-1});out.textContent=text()}
+ box.addEventListener('change',function(e){S.m=e.target.value;draw()});
+ sub.addEventListener('change',function(e){S.v=+e.target.value;draw()});
+ cust.addEventListener('change',draw);parm.addEventListener('input',draw);
+ function copy(t){if(navigator.clipboard&&navigator.clipboard.writeText)return navigator.clipboard.writeText(t).catch(function(){fb(t)});fb(t);return Promise.resolve()}
+ function fb(t){var a=d.createElement('textarea');a.value=t;a.style.cssText='position:fixed;opacity:0';d.body.appendChild(a);a.select();try{d.execCommand('copy')}catch(e){}a.remove()}
+ btn.addEventListener('click',function(){copy(out.textContent);var o=btn.textContent;btn.textContent='Текст скопирован';setTimeout(function(){btn.textContent=o},2600)});
+ pick=function(k,scroll){if(M[k]){S.m=k;S.v=0;draw()}if(scroll){var top=$('#order').getBoundingClientRect().top+w.pageYOffset-10;w.scrollTo({top:top,behavior:rm?'auto':'smooth'})}};
+ $$('[data-pick]').forEach(function(a){if(a.id==='vb')return;a.addEventListener('click',function(e){e.preventDefault();pick(a.dataset.pick,true)})});
+ draw();
+}
+
+/* ===== 6. Курсор с подписями и притягивающиеся кнопки: только десктоп ===== */
+function cursorInit(){
+ if(TOUCH||rm)return;var c=$('#cur'),lb=$('span',c),x=-50,y=-50,mx=-50,my=-50,alive=false;de.classList.add('has-cur');
+ function step(){x+=(mx-x)*.28;y+=(my-y)*.28;c.style.transform='translate3d('+x.toFixed(1)+'px,'+y.toFixed(1)+'px,0)';if(Math.abs(mx-x)+Math.abs(my-y)>.2)requestAnimationFrame(step);else alive=false}
+ d.addEventListener('pointermove',function(e){mx=e.clientX;my=e.clientY;if(!alive){alive=true;requestAnimationFrame(step)}
+  var t=state.viewer&&!e.target.closest('a,button')?{dataset:{cur:'Тащите'}}:e.target.closest('[data-cur]'),s=t&&!e.target.closest('.btn,.ncta')?t.dataset.cur:'';
+  if(s){if(lb.textContent!==s)lb.textContent=s;c.classList.add('lb')}else c.classList.remove('lb')},{passive:true});
+ $$('.mag').forEach(function(b){var rx=0,ry=0;
+  b.addEventListener('pointermove',function(e){var r=b.getBoundingClientRect();b.style.transition='transform .15s linear';rx=(e.clientX-r.left-r.width/2+rx)*.28;ry=(e.clientY-r.top-r.height/2+ry)*.28;b.style.transform='translate('+rx.toFixed(1)+'px,'+ry.toFixed(1)+'px)'});
+  b.addEventListener('pointerleave',function(){rx=ry=0;b.style.transition='transform .7s var(--e)';b.style.transform=''})});
+}
+
+/* ===== Мелочи: появление, тема шапки, статус шоурума, наклон ===== */
+function miscInit(){
+ var rv=$$('.rv,.m');
+ if(typeof w.IntersectionObserver==='function'&&!rm){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px'});rv.forEach(function(e){io.observe(e)})}
+ else rv.forEach(function(e){e.classList.add('in')});
+ /* страховка: если наблюдатель молчит, блоки всё равно появляются */
+ var guard=setInterval(function(){if(d.hidden)return;var left=rv.filter(function(e){return !e.classList.contains('in')});if(!left.length){clearInterval(guard);return}left.forEach(function(e){if(e.getBoundingClientRect().top<innerHeight)e.classList.add('in')})},900);
+ var nav=$('#nav');
+ if(typeof w.IntersectionObserver==='function'){var nio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)nav.dataset.t=e.target.dataset.nav})},{rootMargin:'-3% 0px -96% 0px'});$$('[data-nav]').forEach(function(e){nio.observe(e)})}
+ var hero=$('#hero'),order=$('#order'),fab=$('#fab'),hv=true,ov=false;
+ function fb(){fab.classList.toggle('on',!hv&&!ov)}
+ watch(hero,function(v){state.hero=v;hv=v;fb()});watch(order,function(v){ov=v;fb()});
+ /* статус: Пермь, UTC+5 */
+ var n=new Date(Date.now()+5*36e5),wd=n.getUTCDay(),h=n.getUTCHours()+n.getUTCMinutes()/60,we=wd===0||wd===6,a=we?14:15,b=we?18:20,o=h>=a&&h<b;
+ $('#st').textContent=o?'Открыто, до '+b+':00':'Сейчас закрыто';$('#stw').hidden=false;
+ /* наклон */
+ var bt=$('#tilt');function ori(e){if(e.gamma==null)return;bt.style.display='none';wind.tx=cl(e.gamma/28,-1,1)*.5;wind.ty=cl((e.beta-50)/36,-1,1)*.4;wake()}
+ if(!TOUCH||rm)return;var DOE=w.DeviceOrientationEvent;if(!DOE)return;
+ w.addEventListener('deviceorientation',ori,{passive:true});if(typeof DOE.requestPermission==='function'){bt.style.display='block';bt.addEventListener('click',function(){DOE.requestPermission().then(function(r){bt.style.display='none'}).catch(function(){bt.style.display='none'})})}
+}
+
+function safe(f){try{f()}catch(e){if(w.console)console.error(e)}}
+try{miscInit()}catch(e){$$('.rv,.m').forEach(function(n){n.classList.add('in')})}safe(furInit);safe(snowInit);safe(lookInit);safe(thermoInit);safe(viewerInit);safe(orderInit);safe(cursorInit);
+w.__ok=true;wake();
+if(w.__intro)safe(function(){runIntro(function(){wake()})});
+})();
+</script>
+</body>
+</html>
