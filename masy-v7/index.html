@@ -1,0 +1,914 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>MASY — одежда, производство в Перми</title>
+<meta name="description" content="MASY: российский бренд одежды. Производство в Перми, индивидуальный пошив по вашим параметрам или в наличии.">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F8F4EE'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' text-anchor='middle' fill='%233E2F26'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500&family=Prata&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500&family=Prata&display=swap"></noscript>
+<style>
+/* Общая основа MASY: вёрстка от телефона, цвета и шрифты задаёт тема варианта */
+:root{--pad:16px;--top:76px;--stick:var(--top);--vh:100vh;--tone:sepia(.04) saturate(.97) brightness(1.01);--sw:minmax(0,1fr)}
+@supports (height:100svh){:root{--vh:100svh}}
+@media (min-width:800px){:root{--pad:40px;--top:82px}}
+@media (min-width:1600px){:root{--pad:56px}}
+*,*::before,*::after{box-sizing:border-box}
+*{margin:0}
+html{-webkit-text-size-adjust:100%}
+body{display:flex;flex-direction:column;min-height:var(--vh);background:var(--bg);color:var(--ink);font:400 15px/1.6 var(--sans);letter-spacing:.005em;-webkit-font-smoothing:antialiased}
+main{flex:1 0 auto;outline:0}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none;padding:0}
+button,input,select,textarea{font:inherit;color:inherit;letter-spacing:inherit}
+:focus-visible{outline:1.5px solid var(--ink);outline-offset:2px}
+[hidden]{display:none!important}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.wrap{width:100%;max-width:1760px;margin-inline:auto;padding-inline:var(--pad)}
+.hd{font-family:var(--head);font-weight:var(--head-w,400);letter-spacing:var(--head-ls,.005em);line-height:1.25;text-transform:var(--head-tt,none)}
+.small{font-size:13.5px;color:var(--ink2);line-height:1.55}
+.lnk{display:inline-block;border-bottom:1px solid var(--rule);padding-bottom:1px;transition:border-color .3s}
+.lnk:hover{border-color:var(--ink)}
+
+/* Шапка */
+.top{position:sticky;top:0;z-index:20;background:var(--hdr-bg,var(--bg))}
+.demo{display:flex;align-items:center;justify-content:center;height:24px;background:var(--demo-bg);color:var(--demo-ink,var(--ink));font-size:12px;letter-spacing:.05em}
+.hdr{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;height:52px;padding-inline:var(--pad);border-bottom:1px solid var(--line);background:var(--hdr-bg,var(--bg))}
+.logo{font:400 22px/1 var(--logo);letter-spacing:.2em;padding-left:.2em}
+.order{justify-self:end;font-size:14px;padding:8px 0;border-bottom:1px solid transparent}
+.order:hover{border-bottom-color:var(--rule)}
+.burger{justify-self:start;display:flex;flex-direction:column;justify-content:center;gap:7px;width:44px;height:44px;margin-left:-10px;padding:0 10px;background:none;border:0;cursor:pointer}
+.burger i{display:block;height:1px;background:var(--ink);transition:transform .25s}
+.burger[aria-expanded=true] i:first-child{transform:translateY(4px) rotate(45deg)}
+.burger[aria-expanded=true] i:last-child{transform:translateY(-4px) rotate(-45deg)}
+.nav{position:absolute;left:0;right:0;top:100%;display:none;flex-direction:column;padding:8px var(--pad) 20px;background:var(--hdr-bg,var(--bg));border-bottom:1px solid var(--line)}
+.nav.open{display:flex}
+.nav a{padding:12px 0;font-size:17px;border-bottom:1px solid var(--line)}
+.nav a:last-child{border-bottom:0}
+@media (min-width:800px){
+  .demo{height:26px}
+  .hdr{height:56px}
+  .logo{font-size:24px}
+  .burger{display:none}
+  .nav{position:static;display:flex;flex-direction:row;gap:30px;padding:0;background:none;border:0}
+  .nav a,.nav a:last-child{padding:8px 0;font-size:14px;border-bottom:1px solid transparent;transition:border-color .3s}
+  .nav a:hover,.nav a[aria-current=page]{border-bottom-color:var(--rule)}
+}
+
+/* Кадр */
+.frame{position:relative;display:block;aspect-ratio:3/4;overflow:hidden;background:var(--ph)}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:var(--tone)}
+.frame img.alt{opacity:0;transition:opacity .7s ease}
+@media (hover:hover){.card:hover .frame img.alt{opacity:1}}
+
+/* Кнопки */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 30px;background:var(--btn-bg);color:var(--btn-ink);border:1px solid var(--btn-bg);border-radius:0;font-size:14px;letter-spacing:.02em;text-align:center;cursor:pointer;transition:background-color .3s,color .3s,border-color .3s}
+.btn:hover{background:var(--btn-hov);border-color:var(--btn-hov)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--rule)}
+.btn.ghost:hover{background:var(--sel-soft);border-color:var(--ink)}
+.txtb{padding:0;background:none;border:0;border-bottom:1px solid var(--rule);font-size:13px;line-height:1.5;color:var(--ink2);cursor:pointer}
+.txtb:hover{color:var(--ink);border-color:var(--ink)}
+
+/* Сетка моделей */
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 8px}
+.card{display:block}
+.name{display:block;margin-top:10px;font-size:14px;line-height:1.4}
+.price{display:block;margin-top:3px;font-size:14px;line-height:1.4;color:var(--ink2)}
+.card:hover .name{text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:3px}
+@media (min-width:800px){
+  .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:44px 12px}
+  .name{margin-top:12px;font-size:15px}
+  .price{font-size:15px}
+}
+@media (min-width:1100px){.grid.four{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.gridwrap{padding-inline:12px}
+@media (min-width:800px){.gridwrap{padding-inline:var(--pad)}}
+
+/* Появление */
+.js .rv{opacity:0;transition:opacity .7s ease}
+.js .rv.in{opacity:1}
+#view.enter{animation:fade .35s ease}
+@keyframes fade{from{opacity:.25}to{opacity:1}}
+
+/* Главная: первый экран (телефон) */
+.hero{--h:min(calc(var(--vh) - var(--top)),1040px,78vw);display:block;background:var(--hero-bg,var(--bg))}
+.hf{width:100%}
+.hf2,.hf3,.hf4{display:none}
+.hero-text{padding:24px var(--pad) 8px}
+.hero-text h1{font-size:var(--h1-m,25px)}
+.hero-text p{margin-top:10px;max-width:34em;color:var(--ink2)}
+.hero-text .btn{margin-top:18px}
+.hero-note{display:block;padding:16px var(--pad) 28px}
+.hero-note small{display:block;font-size:13px;color:var(--ink2)}
+.hero-note b{display:block;margin-top:2px;font-weight:400}
+
+/* Секции */
+.sec{padding-block:clamp(40px,5vw,84px)}
+.sec-h{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:clamp(18px,2.2vw,32px)}
+.sec-h h2{font-size:clamp(22px,1.9vw,30px)}
+
+/* Два пути на главной */
+.paths{background:var(--field)}
+.paths-in{max-width:1500px;display:grid;gap:32px}
+.paths-img{display:none}
+.paths-body h2{font-size:clamp(22px,1.9vw,30px);margin-bottom:clamp(18px,2.4vw,36px)}
+.pgrid{display:grid;grid-template-columns:minmax(0,1fr)}
+.path{display:block;padding-block:20px;border-top:1px solid var(--rule)}
+.path .hd{display:block;font-size:20px}
+.path p{margin-top:8px;color:var(--ink2);max-width:30em}
+.path .lnk{margin-top:12px;font-size:14px}
+.path:hover .lnk{border-color:var(--ink)}
+@media (min-width:800px){
+  .paths-in{grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(32px,5vw,96px);align-items:center}
+  .paths-img{display:block}
+  .pgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,3vw,56px)}
+  .path .hd{font-size:22px}
+}
+
+/* Заголовок страницы и список без кадров */
+.page-h{padding-block:clamp(26px,3.4vw,52px) clamp(18px,2.2vw,32px)}
+.page-h h1{font-size:clamp(26px,2.3vw,36px)}
+.page-h p{margin-top:8px}
+.more{margin-top:clamp(40px,5vw,72px);padding-bottom:clamp(40px,5vw,72px)}
+.more h2{font-size:20px;margin-bottom:12px}
+.more li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;padding-block:12px;border-top:1px solid var(--line)}
+.more li:last-child{border-bottom:1px solid var(--line)}
+.more .lnk{margin-top:16px;font-size:14px}
+.more-in{max-width:720px}
+
+/* Страница модели */
+.item{display:grid;grid-template-columns:minmax(0,1fr)}
+.stage{background:var(--stage,var(--field))}
+.gallery{display:flex;flex-direction:column-reverse}
+.shot{position:relative;width:100%;aspect-ratio:var(--r);background:var(--ph);overflow:hidden}
+.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;filter:var(--tone);transition:opacity .5s ease}
+.shot img.on{opacity:1}
+.thumbs{display:flex;gap:8px;padding:8px 12px}
+.th{display:block;flex:0 0 56px;aspect-ratio:3/4;padding:0;background:var(--ph);border:1px solid transparent;cursor:pointer;overflow:hidden}
+.th img{width:100%;height:100%;object-fit:cover;filter:var(--tone)}
+.th[aria-pressed=true]{border-color:var(--ink)}
+.info{padding:22px var(--pad) 36px;min-width:0}
+.back{display:inline-block;font-size:13.5px;color:var(--ink2);margin-bottom:14px}
+.back:hover{color:var(--ink)}
+.info h1{font-size:var(--h1-m,25px)}
+.info .cost{margin-top:8px;font-size:16px}
+.info .desc{margin-top:12px;color:var(--ink2)}
+.kv{display:grid;grid-template-columns:minmax(0,auto) minmax(0,1fr);gap:0 20px;margin-top:16px;font-size:14px}
+.kv dt,.kv dd{padding-block:8px;border-top:1px solid var(--line)}
+.kv dt{color:var(--ink2)}
+@media (min-width:960px){
+  .item{grid-template-columns:minmax(0,58fr) minmax(0,42fr);align-items:stretch}
+  .stage{padding-block:24px}
+  .gallery{position:sticky;top:calc(var(--stick) + 24px);flex-direction:row;justify-content:center;gap:12px;padding-inline:24px}
+  .shot{--h:min(calc(var(--vh) - var(--top) - 48px),var(--mh));flex:0 1 calc(var(--h) * var(--r));width:auto;min-width:0}
+  .thumbs{flex:0 0 64px;flex-direction:column;padding:0}
+  .th{flex:0 0 auto;width:64px}
+  .info{justify-self:center;width:100%;max-width:640px;padding:clamp(28px,3vw,44px) clamp(32px,4vw,64px) 72px}
+  .info h1{font-size:clamp(26px,2vw,32px)}
+}
+
+/* Поля */
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 16px;margin-top:14px}
+.f{display:block;min-width:0}
+.f.full{grid-column:1/-1}
+.f>span{display:block;font-size:12.5px;line-height:1.4;color:var(--ink2)}
+.f input,.f select,.f textarea{display:block;width:100%;min-height:40px;padding:8px 0;background:transparent;border:0;border-bottom:1px solid var(--rule);border-radius:0;font-size:16px;line-height:1.4;outline:0;transition:border-color .25s;appearance:none;-webkit-appearance:none}
+.f select{padding-right:22px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23777'/%3E%3C/svg%3E") no-repeat right 2px center}
+.f textarea{resize:vertical}
+.f input:focus,.f select:focus,.f textarea:focus{border-bottom-color:var(--ink)}
+.f input[aria-invalid=true]{border-bottom-color:var(--err)}
+@media (min-width:800px){.f input,.f select,.f textarea{font-size:15px}}
+.note{margin-top:12px;font-size:13.5px;color:var(--ink2);line-height:1.5}
+.send{width:100%;margin-top:18px}
+.why{margin-top:8px;font-size:12.5px;line-height:1.45;color:var(--ink2)}
+.result{margin-top:14px;padding:12px 14px;background:var(--field);border:1px solid var(--line)}
+.res-msg{font-size:13.5px;line-height:1.5}
+.result textarea{display:block;width:100%;margin-top:10px;padding:8px 10px;background:var(--bg);border:1px solid var(--line);border-radius:0;font-size:13px;line-height:1.5;resize:vertical}
+.result .lnk{margin-top:10px;font-size:14px}
+.unsure{margin-top:12px;font-size:13.5px;color:var(--ink2)}
+.err{margin-top:4px;font-size:12.5px;line-height:1.4;color:var(--err)}
+
+/* Поле мерки */
+.numf{position:relative;display:block}
+.numf input{display:block;width:100%;min-height:44px;padding:8px 26px 8px 0;background:transparent;border:0;border-bottom:1px solid var(--rule);border-radius:0;font-size:16px;outline:0;appearance:textfield;-moz-appearance:textfield;transition:border-color .25s}
+.numf input:focus{border-bottom-color:var(--ink)}
+.numf input[aria-invalid=true]{border-bottom-color:var(--err)}
+.numf i{position:absolute;right:0;bottom:11px;font-style:normal;font-size:13px;color:var(--ink2);pointer-events:none}
+
+/* Манекен */
+.mq{display:block;width:100%;height:auto;overflow:visible}
+.mq-body path,.mq-body ellipse{fill:none;stroke:var(--mq-stroke);stroke-width:1;vector-effect:non-scaling-stroke}
+.mq-body ellipse{fill:var(--mq-fill)}
+.mq-body .fl{fill:var(--mq-fill);stroke:none}
+.mq-line path{fill:none}
+.mq-line .t{stroke:var(--mq-tape);stroke-width:1.2}
+.mq-line .b{stroke:var(--mq-tape);stroke-width:1;stroke-dasharray:2 3;opacity:.75}
+.mq-line .m{stroke:var(--mq-tape);stroke-width:1.2}
+.mq-line .h{stroke:transparent;stroke-width:28;pointer-events:stroke;cursor:pointer}
+.mq-line{outline:0;transition:opacity .3s}
+.mq-line:focus-visible .t{stroke-width:3}
+.mq-line.on .t,.mq-line.on .m{stroke:var(--mq-on);stroke-width:2.2}
+.mq-line.on .b{stroke:var(--mq-on);opacity:1}
+.mq-line.done .t,.mq-line.done .m{stroke:var(--mq-on)}
+.mq-line.done .b{stroke:var(--mq-on)}
+.mq.solo .mq-line .t,.mq.solo .mq-line .m{stroke:var(--mq-on);stroke-width:2.6}
+.mq.solo .mq-line .b{stroke:var(--mq-on);opacity:1}
+.mq-n circle{fill:var(--bg);stroke:var(--mq-on);stroke-width:1}
+.mq-n text{font:500 10px var(--sans);fill:var(--mq-on);text-anchor:middle}
+.mq.draw .mq-line.on .t{stroke-dasharray:1;animation:mqd 1s ease both}
+@keyframes mqd{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+
+/* Экран «Пошив» (фото плюс текст) */
+.c-hero{--h:min(calc(var(--vh) - var(--top)),1040px);display:block;background:var(--field)}
+.c-frames .frame{aspect-ratio:auto;height:calc(var(--vh) * .62);min-height:380px}
+.c-frames img{object-position:50% 0}
+.c2{display:none}
+.c-text{padding:24px var(--pad) 32px}
+.c-text h1{font-size:27px}
+.c-text p{margin-top:10px;max-width:30em;color:var(--ink2)}
+.c-text .btn{margin-top:20px}
+@media (min-width:960px){
+  .c-hero{display:grid;grid-template-columns:auto minmax(0,1fr)}
+  .c-frames{display:flex}
+  .c-frames .frame{aspect-ratio:3/4;height:var(--h);min-height:0}
+  .c-text{align-self:center;justify-self:center;max-width:560px;padding:40px clamp(32px,5vw,72px)}
+  .c-text h1{font-size:clamp(30px,2.6vw,40px)}
+}
+@media (min-width:1800px){.c2{display:block}}
+.back-p{padding-top:18px}
+
+/* Шоурум */
+.sr{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;max-width:1500px;padding-top:26px;padding-bottom:clamp(40px,5vw,72px)}
+.sr-t{min-width:0}
+.sr h1{font-size:clamp(26px,2.3vw,36px)}
+.sr .kv{margin-top:20px;font-size:15px}
+.sr .kv dt,.sr .kv dd{padding-block:12px}
+.state{margin-top:14px;font-size:14px;color:var(--ink2)}
+.sr .btn{margin-top:20px}
+.map{min-width:0;height:340px;background:var(--ph)}
+.map iframe{display:block;width:100%;height:100%;border:0}
+@media (min-width:960px){
+  .sr{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(40px,5vw,96px);padding-top:clamp(26px,3.4vw,52px)}
+  .map{height:clamp(420px,calc(var(--vh) - var(--top) - 200px),820px)}
+}
+
+/* Подвал */
+.ftr{flex:none;background:var(--ftr-bg,var(--field));color:var(--ftr-ink,var(--ink));border-top:1px solid var(--line);font-size:14px}
+.ftr-in{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 20px;padding-block:32px 24px}
+.ftr .logo{display:inline-block;padding-left:0}
+.ftr-b{grid-column:1/-1}
+.ftr h3{font-weight:400;font-size:13px;color:var(--ftr-ink2,var(--ink2));margin-bottom:6px}
+.ftr li{padding-block:2px}
+.ftr a:hover{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--rule)}
+.ftr-s{margin-top:8px;font-size:13.5px;color:var(--ftr-ink2,var(--ink2))}
+.ftr-end{grid-column:1/-1;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ftr-ink2,var(--ink2))}
+@media (min-width:800px){
+  .ftr-in{grid-template-columns:minmax(0,2fr) repeat(3,minmax(0,1fr));gap:32px;padding-block:44px 28px}
+  .ftr-b{grid-column:auto}
+}
+
+/* Нижняя кнопка на телефоне */
+.dock{display:none;position:fixed;left:0;right:0;bottom:0;z-index:15;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:var(--bg);border-top:1px solid var(--line);transition:opacity .3s}
+.dock .btn{width:100%;min-height:44px;justify-content:space-between;padding-inline:16px;background:var(--dock-bg);color:var(--dock-ink,var(--ink));border-color:var(--rule)}
+.dock .btn span:only-child{margin-inline:auto}
+.dock.off{opacity:0;pointer-events:none}
+@media (max-width:959px){
+  .has-dock .dock{display:block}
+  .has-dock{padding-bottom:62px}
+}
+/* Два способа заказа на странице модели (общая заготовка) */
+.ways{margin-top:22px;display:grid;gap:8px}
+.ways .btn{width:100%}
+.ways-n{font-size:13.5px;color:var(--ink2);line-height:1.5}
+.ofrm{scroll-margin-top:calc(var(--stick) + 16px)}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rv{opacity:1}
+}
+
+/* v7: белый и чёрный, строгая сетка с линиями, чёрная кнопка */
+:root{--bg:#fff;--field:#fff;--ph:#F0F0EE;--line:#E2E2E0;--rule:#111;--ink:#111;--ink2:#595957;--err:#111;
+--btn-bg:#111;--btn-ink:#fff;--btn-hov:#333;--sel:#111;--sel-soft:#F3F3F1;--demo-bg:#F0F0EE;--dock-bg:#111;--dock-ink:#fff;
+--sans:'Onest','Segoe UI','Helvetica Neue',Arial,sans-serif;--head:var(--sans);--logo:'Prata','Times New Roman',serif;--head-w:500;--tone:none;--h1-m:23px;
+--mq-fill:#F6F6F4;--mq-stroke:#8E8E8B;--mq-tape:#BDBDBA;--mq-on:#111;--stage:#fff}
+.hdr{border-bottom:1px solid #111}
+.dock .btn{border-color:#111}
+.ftr{border-top:1px solid #111}
+.ftr-end{border-top-color:#111}
+.err{font-weight:500}
+/* Первый экран: чёрные кадры от края, справа слова сверху, подпись снизу */
+.hero-text .btn{min-width:210px}
+@media (min-width:800px){
+  .hero{display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-rows:auto 1fr;border-bottom:1px solid #111}
+  .hf1{grid-column:1;grid-row:1/3;width:auto;height:var(--h)}
+  .hero-text{grid-column:2;grid-row:1;padding:clamp(28px,4vw,56px) var(--pad) 0 clamp(28px,4vw,64px);max-width:640px}
+  .hero-text h1{font-size:clamp(26px,2.4vw,38px);line-height:1.15}
+  .hero-note{grid-column:2;grid-row:2;align-self:end;padding:0 var(--pad) clamp(28px,4vw,48px) clamp(28px,4vw,64px)}
+}
+@media (min-width:1800px){
+  .hero{grid-template-columns:auto auto minmax(0,1fr)}
+  .hf2{display:block;grid-column:2;grid-row:1/3;height:var(--h);width:auto;border-left:1px solid #111}
+  .hero-text,.hero-note{grid-column:3}
+}
+/* Каталог: ячейки с линиями, название слева, цена справа */
+.grid{gap:0;border-top:1px solid #111;border-left:1px solid #111}
+.cardw{border-right:1px solid #111;border-bottom:1px solid #111;min-width:0}
+.capt{display:block;padding:9px 10px 11px}
+.name{margin:0;font-size:13.5px}
+.price{color:#111}
+@media (min-width:800px){
+  .grid{gap:0}
+  .capt{display:flex;justify-content:space-between;gap:16px;padding:12px 14px}
+  .name{margin:0;font-size:14px}
+  .price{margin:0;font-size:14px;white-space:nowrap;text-align:right}
+}
+.gridwrap{padding-inline:var(--pad)}
+.more li{border-top-color:#111}
+.more li:last-child{border-bottom-color:#111}
+/* Модель */
+@media (min-width:960px){.stage{border-right:1px solid #111}}
+.kv dt,.kv dd{border-top-color:var(--line)}
+.path{border-top-color:#111}
+.paths{border-top:1px solid #111}
+/* Манекен */
+.mm{max-width:1320px;padding-block:clamp(22px,3vw,44px) clamp(40px,5vw,72px)}
+.mm-h h1{font-size:clamp(24px,2.3vw,34px)}
+.mm-h p{margin-top:6px;max-width:44em}
+.mm-g{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;margin-top:18px}
+.mm-l{background:var(--ph);padding:10px 0}
+.mm-s{width:min(36vw,130px);margin-inline:auto}
+.mm-r{min-width:0}
+.mm-line,.mq-line{cursor:pointer}
+.zones{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border-left:1px solid #111;border-top:1px solid #111}
+.z{display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;gap:2px;min-height:58px;padding:8px 6px;background:#fff;border:0;border-right:1px solid #111;border-bottom:1px solid #111;font-size:12.5px;line-height:1.25;text-align:left;cursor:pointer;transition:background-color .25s,color .25s}
+.z i{font-style:normal;font-size:13px;font-weight:500;min-height:17px}
+.z.done i::after{content:" ✓"}
+.z.on{background:#111;color:#fff}
+.z:not(.on):hover{background:var(--sel-soft)}
+.zp{margin-top:16px}
+.zp-t{font-size:17px;font-weight:500;line-height:1.3}
+.zp-h{margin-top:4px;font-size:14px;color:var(--ink2);max-width:36em}
+.zp-f{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;align-items:end;margin-top:10px;max-width:420px}
+.zp-f .numf input{font-size:22px;min-height:48px}
+.zp-f .numf i{bottom:15px}
+.mm-c{margin-top:26px;padding-top:16px;border-top:1px solid #111;scroll-margin-top:calc(var(--stick) + 12px)}
+@media (min-width:960px){
+  .mm-g{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,5vw,80px);align-items:start}
+  .mm-l{position:sticky;top:calc(var(--stick) + 16px);padding-block:24px}
+  .mm-s{width:auto;height:min(calc(var(--vh) - 260px),720px);aspect-ratio:240/510;margin-inline:auto}
+  .mm-s .mq{height:100%;width:auto;margin-inline:auto}
+  .z{font-size:13.5px;padding:9px 10px}
+}
+
+</style>
+</head>
+<body class="v7">
+<div class="top">
+  <div class="demo">Демо-концепт</div>
+  <header class="hdr">
+    <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav"><i></i><i></i></button>
+    <nav class="nav" id="nav" aria-label="Разделы">
+      <a href="#/catalog" data-r="catalog">Каталог</a>
+      <a href="#/custom" data-r="custom">Пошив по меркам</a>
+      <a href="#/showroom" data-r="showroom">Шоурум</a>
+    </nav>
+    <a class="logo" href="#/" aria-label="MASY, на главную">MASY</a>
+    <a class="order" href="https://taplink.cc/bymasy" target="_blank" rel="noopener">Заказать</a>
+  </header>
+</div>
+
+<main id="view" tabindex="-1">
+  <noscript><div class="wrap" style="padding-block:40px">Шоурум: Пермь, ТЦ «Бонус», ул. Революции, 20, офис 604, 6 этаж. Заказ: <a class="lnk" href="https://taplink.cc/bymasy">Taplink</a>.</div></noscript>
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr-in">
+    <div class="ftr-b">
+      <a class="logo" href="#/">MASY</a>
+      <p class="ftr-s">Производство в Перми. Доставка по миру.</p>
+    </div>
+    <div>
+      <h3>Разделы</h3>
+      <ul>
+        <li><a href="#/catalog">Каталог</a></li>
+        <li><a href="#/custom">Пошив по меркам</a></li>
+        <li><a href="#/showroom">Шоурум</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Часы шоурума</h3>
+      <ul>
+        <li>пн–пт 15:00–20:00</li>
+        <li>сб–вс 14:00–18:00</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Контакты</h3>
+      <ul>
+        <li><a href="https://taplink.cc/bymasy" target="_blank" rel="noopener">Taplink: все контакты</a></li>
+        <li>Пермь, ТЦ «Бонус», ул.&nbsp;Революции,&nbsp;20, офис&nbsp;604, 6&nbsp;этаж</li>
+      </ul>
+    </div>
+    <p class="ftr-end">Демо-концепт</p>
+  </div>
+</footer>
+
+<div class="dock" id="dock"><button class="btn" type="button" id="dockBtn">Заказать</button></div>
+
+<script>
+(function () {
+'use strict';
+document.documentElement.classList.add('js');
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+var CFG = {"id":"v7","nav":"Пошив по меркам","hero":["hero","look-1"],"note":true,"heroGhost":false,"pathsPhoto":"look-1","pathsLink":"К манекену","picks":[["stoika"],["norka"],["maxi"],["parka","parka-grey"]]};
+/* Данные и общие детали: модели из досье, мерки, манекен, форма, копирование заявки */
+var TAP = 'https://taplink.cc/bymasy';
+var reduced = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+var view = document.getElementById('view');
+
+/* Фото: pos нужен только кадрам, у которых 3:4 режет высоту */
+var PH = {
+  'parka-brown': { w: 720, h: 960, alt: 'Девушка в коричневой зимней парке на заснеженной улице' },
+  'parka-grey': { w: 720, h: 960, alt: 'Девушка в графитовой зимней парке у светлых колонн' },
+  'fur-light': { w: 720, h: 960, alt: 'Девушка в светлом бомбере из эко-песца на снегу' },
+  'mink-dark': { w: 720, h: 1278, pos: '50% 0%', alt: 'Девушка в длинной шубе цвета шоколад у медной стены' },
+  'look-1': { w: 720, h: 1278, pos: '50% 70%', alt: 'Девушка в чёрной короткой шубе из эко-норки на улице' },
+  'leopard-2': { w: 720, h: 960, alt: 'Девушка в эко-шубе с пятнистым принтом у красной стены' },
+  'leopard-1': { w: 720, h: 960, alt: 'Девушка в эко-шубе с пятнистым принтом у светлой стены' },
+  'hero': { w: 720, h: 960, alt: 'Девушка в длинной чёрной шубе со стойкой у медной стены' }
+};
+
+/* Модели и цены: только из data/masy.md */
+var ONE = ['Размер', 'one size'];
+var M = [
+  { id: 'bomber', name: 'Бомбер из эко-песца', price: '22&nbsp;900&nbsp;₽', imgs: ['fur-light'],
+    desc: 'Бомбер из эко-песца для морозов до −20&nbsp;°C.',
+    details: [['Материал', 'эко-песец'], ['Температура', 'до −20&nbsp;°C'], ONE] },
+  { id: 'parka', name: 'Зимняя парка из мембраны', price: 'от&nbsp;12&nbsp;900&nbsp;₽', imgs: ['parka-brown', 'parka-grey'],
+    cost: '12&nbsp;900&nbsp;₽ без капюшона, 13&nbsp;900&nbsp;₽ с&nbsp;капюшоном',
+    desc: 'Парка из мембраны с утеплителем Аляска 200&nbsp;г для морозов до −25&nbsp;°C. Два варианта: без капюшона и с&nbsp;капюшоном.',
+    details: [['Материал', 'мембрана'], ['Утеплитель', 'Аляска 200&nbsp;г'], ['Температура', 'до −25&nbsp;°C'], ONE],
+    variants: [['без капюшона', '12&nbsp;900&nbsp;₽'], ['с капюшоном', '13&nbsp;900&nbsp;₽']] },
+  { id: 'maxi', name: 'Шуба-полушалка макси из финской эко-норки', price: 'цена по запросу', imgs: ['mink-dark'],
+    desc: 'Шуба-полушалка макси из финской эко-норки, цвет шоколад.',
+    details: [['Материал', 'финская эко-норка'], ['Крой', 'полушалка, макси'], ['Цвет', 'шоколад']] },
+  { id: 'norka', name: 'Эко-норка, чёрная', price: '26&nbsp;900&nbsp;₽', imgs: ['look-1'],
+    desc: 'Модель из эко-норки, цвет чёрный.',
+    details: [['Материал', 'эко-норка'], ['Цвет', 'чёрный'], ONE] },
+  { id: 'bars', name: 'Эко-шуба «снежный барс»', price: '24&nbsp;900&nbsp;₽', imgs: ['leopard-2'],
+    desc: 'Эко-шуба «снежный барс», полушалка длиной 80&nbsp;см.',
+    details: [['Крой', 'полушалка'], ['Длина', '80&nbsp;см'], ONE] },
+  { id: 'stoika', name: 'Шуба со стойкой из эко-норки', price: 'цена по запросу', imgs: ['hero'],
+    desc: 'Шуба со стойкой из эко-норки, цвет чёрный.',
+    details: [['Материал', 'эко-норка'], ['Воротник', 'стойка'], ['Цвет', 'чёрный']] }
+];
+var X = [
+  { id: 'lynx', name: 'Эко-рысь', note: 'длина 65&nbsp;см' },
+  { id: 'fox', name: 'Арктический песец' }
+];
+var OWNER = { 'parka-brown': 'parka', 'parka-grey': 'parka', 'fur-light': 'bomber', 'mink-dark': 'maxi', 'look-1': 'norka', 'leopard-2': 'bars', 'hero': 'stoika' };
+
+function byId(id) { for (var i = 0; i < M.length; i++) if (M[i].id === id) return M[i]; return null; }
+function plain(s) { return String(s).replace(/&nbsp;/g, ' '); }
+function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;'); }
+function img(key, cls, opts) {
+  var p = PH[key]; opts = opts || {};
+  return '<img src="img/' + key + '.jpg" width="' + p.w + '" height="' + p.h + '" alt="' + (opts.noalt ? '' : p.alt) + '"' +
+    (cls ? ' class="' + cls + '"' : '') + (opts.eager ? ' fetchpriority="high"' : ' loading="lazy"') + ' decoding="async"' +
+    (p.pos && !opts.nopos ? ' style="object-position:' + p.pos + '"' : '') + '>';
+}
+
+/* Состояние заявки живёт, пока открыта страница */
+var S = { model: '', m: {}, who: '', contact: '', wish: '', variant: '0', size: '' };
+
+/* Мерки: общие правила снятия, диапазоны в сантиметрах */
+var MEAS = [
+  { k: 'height', t: 'Рост', s: 'рост', min: 130, max: 210, how: 'Встаньте без обуви спиной к стене, пятки вместе. Отметьте верх головы и измерьте от пола до отметки.' },
+  { k: 'chest', t: 'Обхват груди', s: 'грудь', min: 70, max: 150, how: 'Проведите ленту вокруг корпуса по самым выступающим точкам груди и под лопатками. Лента лежит ровно и не давит.' },
+  { k: 'waist', t: 'Обхват талии', s: 'талия', min: 50, max: 140, how: 'Найдите самое узкое место корпуса, обычно чуть выше пупка. Стойте спокойно, живот не втягивайте.' },
+  { k: 'hips', t: 'Обхват бёдер', s: 'бёдра', min: 70, max: 160, how: 'Поставьте ноги вместе. Проведите ленту по самым выступающим точкам ягодиц, параллельно полу.' },
+  { k: 'sleeve', t: 'Длина рукава', s: 'рукав', min: 40, max: 75, how: 'Слегка согните руку. Измерьте от края плеча через локоть до косточки на запястье. Удобнее, если поможет другой человек.' }
+];
+var RULES = 'Нужна сантиметровая лента. Измеряйте в тонкой одежде: лента прилегает, но не затягивается.';
+function measOf(k) { for (var i = 0; i < MEAS.length; i++) if (MEAS[i].k === k) return MEAS[i]; return null; }
+function unsure() { return '<p class="unsure">Не уверены? <a class="lnk" href="' + TAP + '" target="_blank" rel="noopener">Напишите нам</a></p>'; }
+function checkM(k, v) {
+  if (!v) return '';
+  var m = measOf(k), n = +v;
+  return n >= m.min && n <= m.max ? '' : 'Обычно это от ' + m.min + ' до ' + m.max + ' см. Проверьте замер.';
+}
+
+/* Манекен: половина фигуры зеркалится, линии замеров поверх */
+var MQ_HALF = 'M129 60L129 74C131 82 150 84 166 92C174 96 178 106 179 118L185 196L194 262C197 270 200 282 198 294C197 302 190 303 188 296C187 286 185 276 183 266L170 198L157 128C160 142 158 152 155 162C152 176 148 186 149 198C150 216 165 232 167 258C169 290 161 335 156 372C155 395 153 425 149 468C150 478 154 486 151 492C146 497 132 496 129 491C128 482 130 474 130 468C130 430 131 400 130 372C129 345 125 312 120 288';
+var MQ_L = {
+  height: { d: 'M222 13V497', marks: 'M214 13H230M214 497H230', num: [222, 255] },
+  chest: { d: 'M82 150Q120 160 158 150', back: 'M82 150Q120 141 158 150', num: [120, 155] },
+  waist: { d: 'M91 198Q120 206 149 198', back: 'M91 198Q120 191 149 198', num: [120, 202] },
+  hips: { d: 'M73 258Q120 268 167 258', back: 'M73 258Q120 250 167 258', num: [120, 263] },
+  sleeve: { d: 'M169 87C180 92 185 106 186 118L192 196L202 258', marks: 'M164 92L174 82M196 260L208 256', num: [193, 182] }
+};
+function mq(o) {
+  o = o || {};
+  var keys = o.only ? [o.only] : MEAS.map(function (m) { return m.k; });
+  var s = '<svg class="mq' + (o.only ? ' solo' : '') + (o.cls ? ' ' + o.cls : '') + '" viewBox="0 0 240 510" role="img" aria-label="Манекен с линиями замеров">' +
+    '<g class="mq-body"><path class="fl" d="' + MQ_HALF + 'L120 60Z"/><path class="fl" d="' + MQ_HALF + 'L120 60Z" transform="matrix(-1 0 0 1 240 0)"/><path d="' + MQ_HALF + '"/><path d="' + MQ_HALF + '" transform="matrix(-1 0 0 1 240 0)"/><ellipse cx="120" cy="38" rx="20" ry="25"/></g>';
+  keys.forEach(function (k, i) {
+    var l = MQ_L[k], m = measOf(k);
+    s += '<g class="mq-line" data-m="' + k + '"' + (o.hit ? ' tabindex="0" role="button" aria-label="' + m.t + '"' : '') + '>' +
+      (l.back ? '<path class="b" d="' + l.back + '"/>' : '') + '<path class="t" pathLength="1" d="' + l.d + '"/>' +
+      (l.marks ? '<path class="m" d="' + l.marks + '"/>' : '') +
+      (o.hit ? '<path class="h" d="' + l.d + '"/>' : '') +
+      (o.nums ? '<g class="mq-n"><circle cx="' + l.num[0] + '" cy="' + l.num[1] + '" r="8.5"/><text x="' + l.num[0] + '" y="' + (l.num[1] + 3.5) + '">' + (i + 1) + '</text></g>' : '') + '</g>';
+  });
+  return s + '</svg>';
+}
+function mqSet(root, active) {
+  root.querySelectorAll('.mq .mq-line').forEach(function (g) {
+    var k = g.getAttribute('data-m');
+    g.classList.toggle('on', k === active);
+    g.classList.toggle('done', !!S.m[k] && !checkM(k, S.m[k]));
+  });
+}
+
+/* Детали формы */
+function numInput(k, id) {
+  return '<span class="numf"><input id="' + (id || 'm_' + k) + '" data-m="' + k + '" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" value="' + esc(S.m[k] || '') + '" aria-describedby="e_' + k + '"><i>см</i></span>';
+}
+function errLine(k) { return '<p class="err" id="e_' + k + '" data-err="' + k + '" hidden></p>'; }
+function who() {
+  return '<label class="f"><span>Имя</span><input name="who" required autocomplete="name" value="' + esc(S.who) + '"></label>' +
+    '<label class="f"><span>Телефон или мессенджер</span><input name="contact" required autocomplete="tel" value="' + esc(S.contact) + '"></label>';
+}
+function wishField(label, rows) {
+  return '<label class="f full"><span data-lbl>' + (label || 'Комментарий') + ', необязательно</span><textarea name="wish" rows="' + (rows || 1) + '">' + esc(S.wish) + '</textarea></label>';
+}
+function variantSel(m) {
+  return m && m.variants ? '<label class="f full"><span>Вариант</span><select name="variant">' + m.variants.map(function (v, i) {
+    return '<option value="' + i + '"' + (String(i) === S.variant ? ' selected' : '') + '>' + v[0] + ', ' + v[1] + '</option>';
+  }).join('') + '</select></label>' : '';
+}
+function modelOptions() {
+  return '<option value="">Модель пока не выбрана</option>' + M.map(function (m) { return '<option value="' + m.id + '"' + (S.model === m.id ? ' selected' : '') + '>' + m.name + '</option>'; }).join('') +
+    X.map(function (x) { return '<option value="' + x.id + '"' + (S.model === x.id ? ' selected' : '') + '>' + x.name + '</option>'; }).join('');
+}
+function modelSel() { return '<label class="f full"><span>Модель</span><select name="model">' + modelOptions() + '</select></label>'; }
+function modelName(id) {
+  var m = byId(id); if (m) return m.name;
+  for (var i = 0; i < X.length; i++) if (X[i].id === id) return X[i].name;
+  return '';
+}
+var WHY = 'Своего сервера заявок у сайта нет: текст копируется, а отправляете его вы, через контакты в Taplink.';
+function sendBlock(label) {
+  return '<button class="btn send" type="submit">' + (label || 'Скопировать заявку и открыть Taplink') + '</button><p class="why">' + WHY + '</p>' +
+    '<div class="result" hidden><p class="res-msg" role="status"></p><textarea readonly rows="7" aria-label="Текст заявки"></textarea>' +
+    '<a class="lnk" href="' + TAP + '" target="_blank" rel="noopener">Открыть Taplink</a></div>';
+}
+
+/* Цифровое поле: только цифры, спокойная ошибка при уходе с поля */
+function bindNums(root, onchange) {
+  root.querySelectorAll('input[data-m]').forEach(function (inp) {
+    var k = inp.getAttribute('data-m');
+    inp.addEventListener('input', function () {
+      var v = inp.value.replace(/\D/g, ''); if (v !== inp.value) inp.value = v;
+      S.m[k] = v; showErr(root, k, '');
+      if (onchange) onchange(k);
+    });
+    inp.addEventListener('blur', function () { showErr(root, k, checkM(k, inp.value)); if (onchange) onchange(k); });
+    if (onchange) inp.addEventListener('focus', function () { onchange(k, true); });
+  });
+}
+function showErr(root, k, msg) {
+  var e = root.querySelector('[data-err=' + k + ']'), i = root.querySelector('input[data-m=' + k + ']');
+  if (e) { e.textContent = msg; e.hidden = !msg; }
+  if (i) { if (msg) i.setAttribute('aria-invalid', 'true'); else i.removeAttribute('aria-invalid'); }
+}
+function firstBad(root) {
+  var bad = null;
+  MEAS.forEach(function (m) {
+    var msg = checkM(m.k, S.m[m.k]); showErr(root, m.k, msg);
+    if (msg && !bad) bad = m.k;
+  });
+  if (bad) { var i = root.querySelector('input[data-m=' + bad + ']'); if (i) i.focus(); }
+  return bad;
+}
+function bindState(root) {
+  root.addEventListener('input', function (e) { var n = e.target.name; if (n === 'who' || n === 'contact' || n === 'wish') S[n] = e.target.value; });
+  root.addEventListener('change', function (e) { var n = e.target.name; if (n === 'model' || n === 'variant') S[n] = e.target.value; });
+}
+
+/* Текст заявки */
+function modelLine(id, useVariant) {
+  var m = byId(id);
+  if (m) {
+    if (m.variants && useVariant) { var v = m.variants[+S.variant] || m.variants[0]; return m.name + ', ' + v[0] + ', ' + plain(v[1]); }
+    return m.name + ', ' + plain(m.cost || m.price);
+  }
+  var n = modelName(id);
+  return n ? n + ', цена по запросу' : 'пока не выбрана';
+}
+function measLine() {
+  var a = MEAS.map(function (m) { return S.m[m.k] ? m.s + ' ' + S.m[m.k] : ''; }).filter(Boolean);
+  return a.length ? a.join(', ') : '';
+}
+function buildText(path, line, extra) {
+  var L = ['Здравствуйте! Заявка с сайта MASY.', 'Путь: ' + path, 'Модель: ' + line];
+  L.push('Имя: ' + S.who.trim());
+  L.push('Контакт: ' + S.contact.trim());
+  (extra || []).forEach(function (x) { if (x) L.push(x); });
+  if (S.wish.trim()) L.push('Пожелания: ' + S.wish.trim());
+  return L.join('\n');
+}
+function customText(useVariant) {
+  var ml = measLine();
+  return buildText('индивидуальный пошив', modelLine(S.model, useVariant), [ml ? 'Мерки, см: ' + ml : '']);
+}
+function stockText(m) { return buildText('из наличия', modelLine(m.id, true)); }
+
+/* Копирование с запасным вариантом */
+function legacyCopy(text) {
+  var t = document.createElement('textarea'), ok = false, a = document.activeElement;
+  t.value = text; t.setAttribute('readonly', ''); t.style.cssText = 'position:fixed;top:0;left:0;opacity:0';
+  document.body.appendChild(t); t.select();
+  try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+  document.body.removeChild(t);
+  if (a && a.focus) a.focus({ preventScroll: true });
+  return ok;
+}
+function deliver(text, box) {
+  var ta = box.querySelector('textarea'), msg = box.querySelector('.res-msg');
+  box.hidden = false; ta.value = text;
+  function done(ok) {
+    if (ok) {
+      var w = null;
+      try { w = window.open(TAP, '_blank'); if (w) w.opener = null; } catch (e) { w = null; }
+      msg.textContent = w
+        ? 'Текст заявки скопирован, Taplink открыт в новой вкладке. Вставьте текст в сообщение бренду.'
+        : 'Текст заявки скопирован. Откройте Taplink и вставьте текст в сообщение бренду.';
+    } else {
+      msg.textContent = 'Скопировать автоматически не получилось. Выделите текст ниже, скопируйте его и откройте Taplink.';
+      ta.focus({ preventScroll: true }); ta.select();
+    }
+    box.scrollIntoView({ block: 'nearest', behavior: reduced ? 'auto' : 'smooth' });
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(legacyCopy(text)); });
+  } else {
+    done(legacyCopy(text));
+  }
+}
+function bindStock(form, m) {
+  bindState(form);
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var fd = new FormData(form); S.who = fd.get('who') || ''; S.contact = fd.get('contact') || ''; S.wish = fd.get('wish') || '';
+    if (fd.get('variant') != null) S.variant = fd.get('variant');
+    deliver(stockText(m), form.querySelector('.result'));
+  });
+}
+
+/* Экран с кадром, заголовком и одной кнопкой */
+function customHero(p, title, text, action) {
+  return '<section class="c-hero"><div class="c-frames"><div class="frame c1">' + img(p[0], '', { eager: 1 }) + '</div>' + (p[1] ? '<div class="frame c2">' + img(p[1], '', { eager: 1 }) + '</div>' : '') + '</div>' +
+    '<div class="c-text"><h1 class="hd">' + title + '</h1><p>' + text + '</p>' + action + '</div></section>';
+}
+var CUSTOM_TEXT = 'Одежда MASY производится в&nbsp;Перми. Индивидуальный пошив идёт по&nbsp;вашим параметрам: выбираете модель, указываете мерки и&nbsp;пожелания, бренд отвечает на заявку.';
+function stockForm(m) {
+  return '<form id="orderForm" class="ofrm" autocomplete="on" hidden><p class="note">Есть ли модель сейчас, подтверждает бренд в ответе на заявку.</p>' +
+    '<div class="fields">' + variantSel(m) + who() + wishField('Комментарий') + '</div>' + sendBlock() + '</form>';
+}
+
+/* v7: интерактивный манекен: нажимаешь на зону, на нём загорается линия, рядом инструкция и поле, заполненное отмечается */
+var ZONE = 'chest';
+function zoneChips() {
+  return '<div class="zones" role="group" aria-label="Зоны замеров">' + MEAS.map(function (m) {
+    return '<button class="z" type="button" data-z="' + m.k + '"><span>' + m.s[0].toUpperCase() + m.s.slice(1) + '</span><i data-zv="' + m.k + '"></i></button>';
+  }).join('') + '</div>';
+}
+function zonePanes() {
+  return MEAS.map(function (m, i) {
+    return '<div class="zp" data-zp="' + m.k + '" hidden><h2 class="zp-t" id="zt_' + m.k + '">' + m.t + '</h2><p class="zp-h">' + m.how + '</p>' +
+      '<div class="zp-f"><label class="vh" for="m_' + m.k + '">' + m.t + ', сантиметры</label>' + numInput(m.k) +
+      '<button class="btn" type="button" data-znext>' + (i < MEAS.length - 1 ? 'Дальше' : 'К контактам') + '</button></div>' + errLine(m.k) + '</div>';
+  }).join('');
+}
+var ORDER = {
+  item: function (m) {
+    return '<div class="ways"><button class="btn" type="button" id="stockBtn" aria-expanded="false" aria-controls="orderForm">Заказать из наличия</button>' +
+      '<a class="btn ghost" href="#/custom" data-pre="' + m.id + '">Пошить по меркам</a></div>' + stockForm(m);
+  },
+  bindItem: function (m, root) {
+    var form = root.querySelector('#orderForm'), b = root.querySelector('#stockBtn');
+    bindStock(form, m);
+    b.addEventListener('click', function () { form.hidden = !form.hidden; b.setAttribute('aria-expanded', form.hidden ? 'false' : 'true'); });
+  },
+  custom: function () {
+    return '<div class="wrap mm"><div class="mm-h"><h1 class="hd">Пошив по меркам</h1><p class="small">Нажмите на зону манекена: появятся инструкция и поле.</p></div>' +
+      '<div class="mm-g"><div class="mm-l"><div class="mm-s">' + mq({ hit: true }) + '</div></div>' +
+      '<form class="mm-r" id="customForm" autocomplete="on">' + zoneChips() + zonePanes() + '<p class="note">' + RULES + '</p>' + unsure() +
+      '<div class="mm-c" id="mmContacts"><h2 class="zp-t">Модель и контакты</h2><div class="fields">' + modelSel() + who() + wishField('Пожелания') + '</div>' + sendBlock() + '</div></form></div></div>';
+  },
+  bindCustom: function (root) {
+    var form = root.querySelector('#customForm');
+    bindState(form);
+    function paint() {
+      mqSet(root, ZONE);
+      root.querySelectorAll('.z').forEach(function (b) {
+        var k = b.getAttribute('data-z'), v = S.m[k], ok = v && !checkM(k, v);
+        b.classList.toggle('on', k === ZONE); b.classList.toggle('done', !!ok);
+        b.setAttribute('aria-pressed', k === ZONE ? 'true' : 'false');
+        b.querySelector('i').textContent = ok ? v : '';
+      });
+      root.querySelectorAll('.zp').forEach(function (p) { p.hidden = p.getAttribute('data-zp') !== ZONE; });
+    }
+    function pick(k, focus) { ZONE = k; paint(); if (focus && matchMedia('(hover:hover)').matches) { var i = root.querySelector('#m_' + k); if (i) i.focus({ preventScroll: true }); } }
+    bindNums(form, function () { paint(); });
+    root.querySelectorAll('.mq-line').forEach(function (g) {
+      g.addEventListener('click', function () { pick(g.getAttribute('data-m'), true); });
+      g.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(g.getAttribute('data-m'), true); } });
+    });
+    root.querySelectorAll('.z').forEach(function (b) { b.addEventListener('click', function () { pick(b.getAttribute('data-z'), true); }); });
+    root.querySelectorAll('[data-znext]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var msg = checkM(ZONE, S.m[ZONE]); showErr(form, ZONE, msg); if (msg) return;
+        var ix = MEAS.map(function (m) { return m.k; }).indexOf(ZONE);
+        if (ix < MEAS.length - 1) pick(MEAS[ix + 1].k, true);
+        else { var c = root.querySelector('#mmContacts'); c.scrollIntoView({ block: 'start', behavior: reduced ? 'auto' : 'smooth' }); form.elements.who.focus({ preventScroll: true }); }
+      });
+    });
+    root.querySelectorAll('input[data-m]').forEach(function (i) {
+      i.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); i.closest('.zp').querySelector('[data-znext]').click(); } });
+    });
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var bad = null;
+      MEAS.forEach(function (m) { var msg = checkM(m.k, S.m[m.k]); showErr(form, m.k, msg); if (msg && !bad) bad = m.k; });
+      if (bad) { pick(bad, true); return; }
+      deliver(customText(false), form.querySelector('.result'));
+    });
+    paint();
+  }
+};
+
+/* Экраны и маршруты: общие для всех вариантов. ORDER приходит из файла варианта. */
+function card(m, photo) {
+  var a = photo || m.imgs[0], b = !photo && m.imgs[1];
+  return '<div class="cardw rv"><a class="card" href="#/item/' + m.id + '"><span class="frame">' + img(a) + (b ? img(b, 'alt', { noalt: 1 }) : '') +
+    '</span><span class="capt"><span class="name">' + m.name + '</span><span class="price">' + m.price + '</span></span></a>' + (ORDER.cardExtra ? ORDER.cardExtra(m) : '') + '</div>';
+}
+var V = {};
+V.home = function () {
+  var heroM = byId(OWNER[CFG.hero[0]]);
+  var frames = CFG.hero.map(function (k, i) {
+    var own = OWNER[k], cls = 'hf hf' + (i + 1) + ' frame';
+    return own ? '<a class="' + cls + '" href="#/item/' + own + '" aria-label="' + modelName(own) + '">' + img(k, '', { eager: 1 }) + '</a>' : '<div class="' + cls + '">' + img(k, '', { eager: 1 }) + '</div>';
+  }).join('');
+  return '<section class="hero">' + frames +
+    '<div class="hero-text"><h1 class="hd">Создаём одежду, в&nbsp;которую влюбляются</h1>' +
+    '<p>Производство в&nbsp;Перми. Индивидуальный пошив по&nbsp;вашим параметрам или&nbsp;в&nbsp;наличии.</p>' +
+    '<a class="btn' + (CFG.heroGhost ? ' ghost' : '') + '" href="#/catalog">Смотреть каталог</a></div>' +
+    (CFG.note && heroM ? '<a class="hero-note" href="#/item/' + heroM.id + '"><small>На кадре</small><b>' + heroM.name + '</b><small>' + heroM.price + '</small></a>' : '') +
+    '</section>' +
+    '<section class="sec"><div class="wrap gridwrap"><div class="sec-h"><h2 class="hd">Модели</h2><a class="lnk" href="#/catalog">Весь каталог</a></div>' +
+    '<div class="grid four">' + CFG.picks.map(function (p) { return card(byId(p[0]), p[1]); }).join('') + '</div></div></section>' +
+    '<section class="sec paths"><div class="wrap paths-in">' +
+    '<div class="paths-img frame rv">' + img(CFG.pathsPhoto) + '</div>' +
+    '<div class="paths-body"><h2 class="hd">Из наличия или на заказ</h2><div class="pgrid">' +
+    '<a class="path rv" href="#/catalog"><span class="hd">Из наличия</span><p>Выберите модель и оставьте короткую заявку. Есть ли она сейчас, подтверждает бренд в ответе.</p><span class="lnk">В каталог</span></a>' +
+    '<a class="path rv" href="#/custom"><span class="hd">Индивидуальный пошив</span><p>Та же модель по вашим параметрам. На сайте показано, как правильно снять мерки.</p><span class="lnk">' + CFG.pathsLink + '</span></a>' +
+    '</div></div></div></section>';
+};
+V.catalog = function () {
+  return '<div class="wrap gridwrap"><div class="page-h"><h1 class="hd">Каталог</h1>' +
+    '<p class="small">Цены сезона 2026. Из наличия или индивидуальный пошив: путь выбирается при заказе модели.</p></div>' +
+    '<div class="grid">' + M.map(function (m) { return card(m); }).join('') + '</div>' +
+    '<section class="more"><div class="more-in"><h2 class="hd">Ещё модели</h2><ul>' +
+    X.map(function (x) { return '<li><span>' + x.name + (x.note ? ', ' + x.note : '') + '</span><span class="price" style="margin:0">цена по запросу</span></li>'; }).join('') +
+    '</ul><a class="lnk" href="' + TAP + '" target="_blank" rel="noopener">Спросить в Taplink</a></div></section></div>';
+};
+V.item = function (m) {
+  var first = PH[m.imgs[0]];
+  var shots = m.imgs.map(function (k, i) { return img(k, i ? '' : 'on', { nopos: 1, eager: !i }); }).join('');
+  var thumbs = m.imgs.length > 1 ? '<div class="thumbs">' + m.imgs.map(function (k, i) {
+    return '<button class="th" type="button" data-i="' + i + '" aria-pressed="' + (i ? 'false' : 'true') + '" aria-label="Кадр ' + (i + 1) + '">' + img(k, '', { noalt: 1 }) + '</button>';
+  }).join('') + '</div>' : '';
+  var others = M.filter(function (x) { return x.id !== m.id; }).slice(0, 4);
+  return '<div class="item"><div class="stage"><div class="gallery">' + thumbs +
+    '<div class="shot" style="--r:' + (first.w / first.h).toFixed(4) + ';--mh:' + (first.h > 1000 ? 1160 : 960) + 'px">' + shots + '</div></div></div>' +
+    '<div class="info"><a class="back" href="#/catalog">Каталог</a><h1 class="hd">' + m.name + '</h1>' +
+    '<p class="cost">' + (m.cost || m.price) + '</p><p class="desc">' + m.desc + '</p>' +
+    '<dl class="kv">' + m.details.map(function (d) { return '<dt>' + d[0] + '</dt><dd>' + d[1] + '</dd>'; }).join('') + '<dt>Производство</dt><dd>Пермь</dd></dl>' +
+    '<div id="orderBlock">' + ORDER.item(m) + '</div></div></div>' +
+    '<section class="sec"><div class="wrap gridwrap"><div class="sec-h"><h2 class="hd">Ещё модели</h2><a class="lnk" href="#/catalog">Весь каталог</a></div>' +
+    '<div class="grid four">' + others.map(function (x) { return card(x); }).join('') + '</div></div></section>';
+};
+function openState() {
+  var d = new Date(Date.now() + 5 * 36e5), w = d.getUTCDay(), t = d.getUTCHours() * 60 + d.getUTCMinutes();
+  var wk = w >= 1 && w <= 5, from = wk ? 900 : 840, to = wk ? 1200 : 1080;
+  return t >= from && t < to ? 'Сейчас открыто, до ' + (wk ? '20:00' : '18:00') + ' по Перми' : 'Сейчас закрыто';
+}
+V.showroom = function () {
+  return '<div class="wrap sr"><div class="sr-t"><h1 class="hd">Шоурум</h1>' +
+    '<dl class="kv"><dt>Адрес</dt><dd>Пермь, ТЦ «Бонус», ул.&nbsp;Революции,&nbsp;20, офис&nbsp;604, 6&nbsp;этаж</dd>' +
+    '<dt>Часы</dt><dd>пн–пт 15:00–20:00<br>сб–вс 14:00–18:00</dd>' +
+    '<dt>Контакты</dt><dd><a class="lnk" href="' + TAP + '" target="_blank" rel="noopener">Taplink</a></dd></dl>' +
+    '<p class="state">' + openState() + '</p>' +
+    '<a class="btn ghost" href="https://yandex.ru/maps/?rtext=~58.005701%2C56.261082&amp;rtt=auto" target="_blank" rel="noopener">Маршрут в Яндекс Картах</a></div>' +
+    '<div class="map"><iframe src="https://yandex.ru/map-widget/v1/?ll=56.261082%2C58.005701&amp;z=16&amp;pt=56.261082,58.005701,pm2rdm" title="Шоурум MASY на карте: Пермь, ул. Революции, 20" loading="lazy"></iframe></div></div>';
+};
+
+/* Привязки общего */
+function bindGallery(root) {
+  var shotImgs = root.querySelectorAll('.shot img'), ths = root.querySelectorAll('.th');
+  ths.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var i = +b.getAttribute('data-i');
+      shotImgs.forEach(function (im, n) { im.classList.toggle('on', n === i); });
+      ths.forEach(function (t, n) { t.setAttribute('aria-pressed', n === i ? 'true' : 'false'); });
+    });
+  });
+}
+var nav = document.getElementById('nav'), burger = document.getElementById('burger'), dock = document.getElementById('dock'), dockBtn = document.getElementById('dockBtn');
+var dockIO = null, revealIO = null, curItem = null;
+function reveal() {
+  var els = view.querySelectorAll('.rv');
+  if (revealIO) revealIO.disconnect();
+  if (reduced || !('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+  revealIO = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); revealIO.unobserve(e.target); } });
+  });
+  els.forEach(function (e) { revealIO.observe(e); });
+}
+function setMenu(open) { nav.classList.toggle('open', open); burger.setAttribute('aria-expanded', open ? 'true' : 'false'); }
+burger.addEventListener('click', function () { setMenu(!nav.classList.contains('open')); });
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && nav.classList.contains('open')) { setMenu(false); burger.focus(); } });
+document.addEventListener('click', function (e) {
+  if (nav.classList.contains('open') && !e.target.closest('.hdr')) setMenu(false);
+  var pre = e.target.closest('[data-pre]');
+  if (pre) S.model = pre.getAttribute('data-pre');
+  var a = e.target.closest('a[href^="#/"]');
+  if (a && a.getAttribute('href') === location.hash) { setMenu(false); window.scrollTo(0, 0); }
+});
+dockBtn.addEventListener('click', function () {
+  if (ORDER.dock) return ORDER.dock(curItem);
+  var f = view.querySelector('#orderBlock');
+  if (f) f.scrollIntoView({ block: 'center', behavior: reduced ? 'auto' : 'smooth' });
+});
+function route() {
+  var parts = location.hash.replace(/^#\/?/, '').split('/');
+  var r = parts[0] || 'home', html, title = 'MASY — одежда, производство в Перми', m = null;
+  if (r === 'catalog') { html = V.catalog(); title = 'Каталог — MASY'; }
+  else if (r === 'custom') { html = ORDER.custom(parts.slice(1)); title = CFG.nav + ' — MASY'; }
+  else if (r === 'showroom') { html = V.showroom(); title = 'Шоурум — MASY'; }
+  else if (r === 'item') {
+    m = byId(parts[1]);
+    if (m) { html = V.item(m); title = plain(m.name) + ' — MASY'; }
+    else { html = '<div class="wrap page-h"><h1 class="hd">Такой модели нет</h1><p style="margin-top:12px"><a class="lnk" href="#/catalog">Перейти в каталог</a></p></div>'; }
+  } else { html = V.home(); r = 'home'; }
+
+  if (ORDER.onRoute) ORDER.onRoute();
+  if (dockIO) { dockIO.disconnect(); dockIO = null; }
+  dock.classList.remove('off');
+  view.innerHTML = html;
+  document.title = title;
+  curItem = m;
+  document.body.classList.toggle('has-dock', !!m);
+  document.body.setAttribute('data-route', r);
+  nav.querySelectorAll('a').forEach(function (a) {
+    if (a.getAttribute('data-r') === r || (r === 'item' && a.getAttribute('data-r') === 'catalog')) a.setAttribute('aria-current', 'page');
+    else a.removeAttribute('aria-current');
+  });
+  setMenu(false);
+  if (m) {
+    S.model = m.id;
+    dockBtn.innerHTML = '<span>Заказать</span>' + (m.price === 'цена по запросу' ? '' : '<span>' + m.price + '</span>');
+    bindGallery(view);
+    ORDER.bindItem(m, view);
+    var ob = view.querySelector('#orderBlock');
+    if (ob && 'IntersectionObserver' in window) {
+      dockIO = new IntersectionObserver(function (es) { dock.classList.toggle('off', es[0].isIntersecting); });
+      dockIO.observe(ob);
+    }
+  }
+  if (r === 'custom') ORDER.bindCustom(view, parts.slice(1));
+  if (ORDER.bindAny) ORDER.bindAny(view);
+  reveal();
+  view.classList.remove('enter'); void view.offsetWidth; view.classList.add('enter');
+  window.scrollTo(0, 0);
+  if (route.ready) view.focus({ preventScroll: true });
+  route.ready = true;
+}
+window.addEventListener('hashchange', route);
+if (ORDER.init) ORDER.init();
+route();
+
+})();
+</script>
+</body>
+</html>
