@@ -20,7 +20,7 @@ if(!window.__intro)D.className+=' go';
 setTimeout(function(){if(!window.__ok){D.className=D.className.replace('js','nojs')+' go';var i=document.getElementById('intro');if(i)i.remove()}},3500)})();
 </script>
 <style>
-:root{--ink:#0e0c0b;--milk:#efe9df;--snow:#f6f4f0;--choc:#2b1c14;--copper:#b0693d;--grey:#8d8780;--e:cubic-bezier(.22,1,.36,1);--pad:clamp(16px,3vw,44px);--cold:0}
+:root{--navh:76px;--ink:#0e0c0b;--milk:#efe9df;--snow:#f6f4f0;--choc:#2b1c14;--copper:#b0693d;--grey:#8d8780;--e:cubic-bezier(.22,1,.36,1);--pad:clamp(16px,3vw,44px);--cold:0}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;border-radius:0}
 html{-webkit-text-size-adjust:100%;background:var(--ink)}
 html.lock{overflow:hidden}
@@ -90,18 +90,12 @@ h1{font-size:clamp(32px,5.4vw,84px);font-weight:500;line-height:.98;letter-spaci
 .js .m.in{clip-path:inset(0)}
 .rm .rv,.rm .m{opacity:1!important;transform:none!important;clip-path:none!important;transition:none!important}
 /* collection */
-#col{padding:clamp(72px,10vw,150px) var(--pad) clamp(60px,8vw,120px)}
+#col{padding:clamp(72px,10vw,150px) var(--pad) clamp(60px,8vw,120px);max-width:2400px;margin-inline:auto}
 .col-h{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:14px;margin-bottom:clamp(30px,5vw,70px)}
-.grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:34px 10px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 10px}
 .card{display:block;text-decoration:none;min-width:0}
-.card:nth-child(1){grid-column:1/7}
-.card:nth-child(2){grid-column:1/4}
-.card:nth-child(3){grid-column:4/7;margin-top:18vw}
-.card:nth-child(4){grid-column:1/6}
-.card:nth-child(5){grid-column:3/7}
-.card:nth-child(6){grid-column:1/5}
-.ph{display:block;position:relative;overflow:hidden;background:#d9d2c6}
-.ph img{width:100%;height:auto;transition:transform 1.2s var(--e)}
+.ph{display:block;position:relative;overflow:hidden;background:#d9d2c6;aspect-ratio:3/4}
+.ph img{width:100%;height:100%;object-fit:cover;object-position:50% 0;transition:transform 1.2s var(--e)}
 .ph .alt{position:absolute;inset:0;height:100%;object-fit:cover;opacity:0;transition:opacity .45s}
 .card.fl .ph{visibility:hidden}
 .card b{display:block;font-weight:500;font-size:clamp(16px,1.7vw,24px);line-height:1.12;letter-spacing:-.01em;margin-top:12px;overflow-wrap:anywhere}
@@ -109,13 +103,7 @@ h1{font-size:clamp(32px,5.4vw,84px);font-weight:500;line-height:.98;letter-spaci
 .card em{display:block;font-style:normal;font-size:clamp(16px,1.5vw,21px);margin-top:6px}
 @media(hover:hover){.card:hover .ph img{transform:scale(1.03)}.card:hover .alt{opacity:1}}
 @media(min-width:900px){
-.grid{grid-template-columns:repeat(12,minmax(0,1fr));gap:64px 16px}
-.card:nth-child(1){grid-column:1/6}
-.card:nth-child(2){grid-column:7/10;margin-top:9vw}
-.card:nth-child(3){grid-column:10/13;margin-top:0}
-.card:nth-child(4){grid-column:2/5}
-.card:nth-child(5){grid-column:6/9;margin-top:-8vw}
-.card:nth-child(6){grid-column:9/13;margin-top:4vw}
+.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:56px 20px}
 }
 .also{margin-top:clamp(40px,6vw,80px);border-top:1px solid var(--ink);display:grid;grid-template-columns:minmax(0,1fr)}
 .also div{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 18px;padding:14px 0;border-bottom:1px solid #bdb5a8;font-size:clamp(18px,2vw,26px);letter-spacing:-.01em}
@@ -129,11 +117,13 @@ h1{font-size:clamp(32px,5.4vw,84px);font-weight:500;line-height:.98;letter-spaci
 .fr{position:relative;flex:none;height:100%;width:88vw;overflow:hidden;background:#171411}
 @media(min-width:760px){.fr{width:auto;aspect-ratio:3/4}}
 .fr div{position:absolute;inset:0}
-.fr img{width:100%;height:100%;object-fit:cover;will-change:transform}
+.fr img{width:100%;height:100%;object-fit:cover;object-position:50% 0;transform-origin:50% 0;will-change:transform}
 .fr figcaption{position:absolute;left:12px;right:12px;bottom:12px;display:flex;justify-content:space-between;gap:10px;font-size:14px;line-height:1.15;z-index:2}
 .fr figcaption b{font-weight:500}
 .pin .lb-pin{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
-.pin .lb-track{height:100%}
+.pin .lb-track{height:100%;padding:var(--navh) 0 var(--pad);align-items:center}
+.pin .lb-t{align-self:stretch;padding-top:var(--pad)}
+.pin .fr{width:auto;aspect-ratio:3/4;height:min(calc(100vh - var(--navh) - var(--pad)*2),calc(100svh - var(--navh) - var(--pad)*2),calc((100vw - var(--pad)*2)*4/3),1066px)}
 .lb-bar{display:none;position:absolute;left:0;right:0;bottom:0;height:3px;background:#3a3531;z-index:3}
 .lb-bar i{display:block;height:100%;background:var(--snow);transform:scaleX(0);transform-origin:left}
 .pin .lb-bar{display:block}
@@ -300,7 +290,7 @@ html:not(.js) .fab{transform:none}
  <div class="col-h"><h2 class="ttl rv">Коллекция</h2><p class="lab rv">Сезон 2026 · one size или пошив по&nbsp;вашим параметрам</p></div>
  <div class="grid" id="grid">
   <a class="card" href="img/leopard-2.jpg" data-fr="0" data-cur="Открыть"><span class="ph m"><img src="img/leopard-2.jpg" width="720" height="960" loading="lazy" alt="Эко-шуба с принтом «снежный барс» у красной стены"><img class="alt" src="img/leopard-3.jpg" loading="lazy" alt=""></span><b>Эко-шуба «снежный барс»</b><small>Полушалка, длина 80&nbsp;см, one size</small><em>24&nbsp;900&nbsp;₽</em></a>
-  <a class="card" href="img/look-1.jpg" data-fr="2" data-cur="Открыть"><span class="ph m"><img src="img/look-1.jpg" width="720" height="1278" loading="lazy" alt="Чёрная шуба из эко-норки"></span><b>Эко-норка</b><small>Чёрная, one size</small><em>26&nbsp;900&nbsp;₽</em></a>
+  <a class="card" href="img/look-1.jpg" data-fr="2" data-cur="Открыть"><span class="ph m"><img src="img/look-1.jpg" width="720" height="1278" loading="lazy" alt="Чёрная шуба из эко-норки" style="object-position:50% 70%"></span><b>Эко-норка</b><small>Чёрная, one size</small><em>26&nbsp;900&nbsp;₽</em></a>
   <a class="card" href="img/fur-light.jpg" data-fr="3" data-cur="Открыть"><span class="ph m"><img src="img/fur-light.jpg" width="720" height="960" loading="lazy" alt="Светлый бомбер из эко-песца"></span><b>Бомбер из эко-песца</b><small>До −20&nbsp;°C, one size</small><em>22&nbsp;900&nbsp;₽</em></a>
   <a class="card" href="img/parka-brown.jpg" data-fr="4" data-cur="Открыть"><span class="ph m"><img src="img/parka-brown.jpg" width="720" height="960" loading="lazy" alt="Коричневая зимняя парка из мембраны"><img class="alt" src="img/parka-grey.jpg" loading="lazy" alt=""></span><b>Зимняя парка из мембраны</b><small>Утеплитель Аляска 200&nbsp;г, до −25&nbsp;°C, one size</small><em>12&nbsp;900&nbsp;₽ без капюшона, 13&nbsp;900&nbsp;₽ с&nbsp;капюшоном</em></a>
   <a class="card" href="img/fur-brown.jpg" data-fr="6" data-cur="Открыть"><span class="ph m"><img src="img/fur-brown.jpg" width="720" height="960" loading="lazy" alt="Шуба-полушалка макси, цвет шоколад"></span><b>Шуба-полушалка макси из&nbsp;финской эко-норки</b><small>Цвет шоколад</small><em>Цену уточняйте в&nbsp;Taplink</em></a>
@@ -312,7 +302,7 @@ html:not(.js) .fab{transform:none}
 <section id="look" data-nav="light" data-cur="Листайте вниз">
  <div class="lb-pin" id="lbp"><div class="lb-track" id="lbt">
   <div class="lb-t"><h2 class="ttl">Лук&shy;бук</h2><p>Кадры бренда. Сезон&nbsp;2026.</p></div>
-  <figure class="fr"><div><img src="img/mink-dark.jpg" loading="lazy" alt="Длинная тёмная шуба со стойкой на фоне медной стены" style="object-position:50% 30%"></div><figcaption><span>01</span></figcaption></figure>
+  <figure class="fr"><div><img src="img/mink-dark.jpg" loading="lazy" alt="Длинная тёмная шуба со стойкой на фоне медной стены"></div><figcaption><span>01</span></figcaption></figure>
   <figure class="fr"><div><img src="img/fur-black.jpg" loading="lazy" alt="Чёрная пушистая шуба и чёрная шапка"></div><figcaption><span>02</span></figcaption></figure>
   <figure class="fr"><div><img src="img/leopard-1.jpg" loading="lazy" alt="Шуба с леопардовым принтом и чёрная шапка"></div><figcaption><span>03</span></figcaption></figure>
   <figure class="fr"><div><img src="img/parka-grey.jpg" loading="lazy" alt="Графитовая зимняя парка"></div><figcaption><span>04</span><b>Зимняя парка</b></figcaption></figure>
@@ -638,6 +628,7 @@ function viewerInit(){
  function go(i){i=cl(i,0,FR.length-1);cur=i;info(i);var from=X,to=i*SW(),t0=performance.now();cancelAnimationFrame(anim);
   (function a(n){var q=cl((n-t0)/(rm?1:560),0,1),e=1-Math.pow(1-q,4);setX(from+(to-from)*e);if(q<1)anim=requestAnimationFrame(a)})(t0)}
  function mark(i){slides.forEach(function(o,k){o.s.classList.toggle('cur',k===i)})}
+ function clipFor(ci,C,o){var k=1-C.height/(o.h*C.width/o.w);if(k<.004)return'inset(0)';var py=parseFloat((getComputedStyle(ci).objectPosition.split(' ')[1]||'0'))/100;return'inset('+(k*py*100).toFixed(2)+'% 0 '+(k*(1-py)*100).toFixed(2)+'% 0)'}
  function cardOf(i){var fr=FR[i],c=null;cards.forEach(function(k){var a=+k.dataset.fr;if(FR[a][1]===fr[1])c=k});return c}
  function open(i,card){if(busy||state.viewer)return;busy=true;state.viewer=true;opener=card;de.classList.add('lock');V.classList.add('on');V.classList.remove('ui');V.classList.add('flip');
   layout();cur=i;mark(i);info(i);setX(i*SW());
@@ -646,7 +637,7 @@ function viewerInit(){
   card.classList.add('fl');
   var sx=C.width/T.w,dx=C.left-T.left,dy=C.top-T.top;
   var dur=rm?1:720;o.im.style.transformOrigin='0 0';
-  var kf=o.im.animate([{transform:'translate3d('+dx+'px,'+dy+'px,0) scale('+sx+')'},{transform:'translate3d(0,0,0) scale(1)'}],{duration:dur,easing:'cubic-bezier(.22,1,.36,1)'});
+  var kf=o.im.animate([{transform:'translate3d('+dx+'px,'+dy+'px,0) scale('+sx+')',clipPath:clipFor(cimg,C,o)},{transform:'translate3d(0,0,0) scale(1)',clipPath:'inset(0)'}],{duration:dur,easing:'cubic-bezier(.22,1,.36,1)'});
   bg.style.opacity=1;bg.animate([{opacity:0},{opacity:1}],{duration:dur*.6});
   kf.onfinish=function(){busy=false;V.classList.remove('flip');V.classList.add('ui');$('#vx').focus({preventScroll:true})};
  }
@@ -658,7 +649,7 @@ function viewerInit(){
   var cs=o.im.getBoundingClientRect(),sx=r.width/o.w,dx=r.left-(o.left+(cur*SW()-X)),dy=r.top-o.top;
   o.im.style.transformOrigin='0 0';var dur=rm?1:560,from=getComputedStyle(o.im).transform;
   bg.animate([{opacity:getComputedStyle(bg).opacity},{opacity:0}],{duration:dur*.8,fill:'forwards'});
-  var kf=o.im.animate([{transform:from==='none'?'none':from},{transform:'translate3d('+dx+'px,'+dy+'px,0) scale('+sx+')'}],{duration:dur,easing:'cubic-bezier(.22,1,.36,1)',fill:'forwards'});
+  var kf=o.im.animate([{transform:from==='none'?'none':from,clipPath:'inset(0)'},{transform:'translate3d('+dx+'px,'+dy+'px,0) scale('+sx+')',clipPath:clipFor(ci,r,o)}],{duration:dur,easing:'cubic-bezier(.22,1,.36,1)',fill:'forwards'});
   kf.onfinish=function(){card.classList.remove('fl');V.classList.remove('on','flip');de.classList.remove('lock');kf.cancel();bg.getAnimations().forEach(function(a){a.cancel()});bg.style.opacity=0;o.im.style.transform='';o.im.style.transformOrigin='';busy=false;state.viewer=false;wake();try{(opener||card).focus({preventScroll:true})}catch(e){}}}
  /* жесты */
  var ptr=null;
