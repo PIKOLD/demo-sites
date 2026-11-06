@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Diversion · Premium Vintage Clothing &amp; More · Orlando, FL</title><meta property="og:type" content="website"><meta property="og:title" content="Diversion · Premium Vintage Clothing &amp;amp; More · Orlando, FL"><meta property="og:description" content="Diversion: premium vintage clothing and more at 823 Virginia Dr, right outside downtown Orlando. Open every day 12 to 6. Channel-surf the racks."><meta property="og:image" content="https://pikold.github.io/demo-sites/diversion/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Diversion: premium vintage clothing and more at 823 Virginia Dr, right outside downtown Orlando. Open every day 12 to 6. Channel-surf the racks.">
+<link rel="stylesheet" href="../_fonts/barlow-condensed.css">
+<link rel="stylesheet" href="../_fonts/young-serif.css">
+<style>
+:root{--paper:#F2EBD8;--paper2:#F8F3E6;--red:#E0402A;--ink:#1B1B1B;--lime:#B8F040;--mute:#4B463D;--bar:6px;
+--cond:'Barlow Condensed','Arial Narrow',sans-serif;--serif:'Young Serif',Georgia,serif}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font:500 19px/1.45 var(--cond);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;box-shadow:0 0 0 7px var(--lime)}
+.demo{background:var(--ink);color:var(--paper);font-size:13px;letter-spacing:.02em;text-align:center;padding:6px 16px;line-height:1.35}
+.wrap{max-width:1400px;margin:0 auto;padding:0 clamp(16px,3vw,40px)}
+.caps{text-transform:uppercase;letter-spacing:.07em;font-weight:700}
+.rule{height:var(--bar);background:var(--ink)}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border:3px solid var(--ink);border-radius:999px;font:700 19px/1 var(--cond);text-transform:uppercase;letter-spacing:.06em;text-decoration:none;cursor:pointer;background:var(--paper2);color:var(--ink);transition:transform .15s,box-shadow .15s,background .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 4px 0 var(--ink)}
+.btn:active{transform:translateY(1px);box-shadow:none}
+.btn.red{background:var(--red)}
+.btn.ink{background:var(--ink);color:var(--paper)}
+.btn svg{width:20px;height:20px;flex:none}
+/* masthead */
+.mast{padding-top:18px;padding-bottom:34px}
+.kick{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 20px;font-size:15px;padding:8px 0;border-bottom:3px solid var(--ink)}
+.kick span:nth-child(2){color:var(--red)}
+.mgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;margin-top:14px}
+h1{font:700 clamp(68px,20.5vw,236px)/.8 var(--cond);text-transform:uppercase;letter-spacing:-.005em;margin:6px 0 0 -.03em}
+.deck{font:400 clamp(22px,2.3vw,32px)/1.22 var(--serif);max-width:24ch;margin-top:18px}
+.deck em{font-style:normal;color:var(--red)}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin-top:18px;font-size:18px}
+.meta address{font-style:normal;font-weight:600}
+.chip{display:inline-flex;align-items:center;gap:9px;padding:6px 14px 6px 10px;border:3px solid var(--ink);border-radius:999px;background:var(--paper2);font:700 15px/1.1 var(--cond);text-transform:uppercase;letter-spacing:.07em;white-space:nowrap}
+.chip i{width:12px;height:12px;border-radius:50%;background:var(--mute);border:2px solid var(--ink)}
+.chip.on{background:var(--ink);color:var(--paper)}
+.chip.on i{background:var(--lime);border-color:var(--lime);box-shadow:0 0 0 3px rgba(184,240,64,.25)}
+.ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.cover{position:relative;border:var(--bar) solid var(--ink);border-radius:18px;overflow:hidden;background:var(--ink);aspect-ratio:16/10}
+.cover img{width:100%;height:100%;object-fit:cover;object-position:50% 28%}
+.cover figcaption{position:absolute;left:0;bottom:0;background:var(--paper);border-top:3px solid var(--ink);border-right:3px solid var(--ink);border-top-right-radius:12px;padding:6px 12px;font:700 13px/1.2 var(--cond);text-transform:uppercase;letter-spacing:.07em}
+.price{position:absolute;right:12px;top:12px;width:104px;height:104px;border-radius:50%;background:var(--red);border:3px solid var(--ink);display:grid;place-content:center;text-align:center;font:700 15px/1 var(--cond);text-transform:uppercase;letter-spacing:.04em}
+.price b{display:block;font-size:30px;letter-spacing:0;margin:3px 0}
+/* section bars */
+.sbar{background:var(--red);border-top:var(--bar) solid var(--ink);border-bottom:var(--bar) solid var(--ink);color:var(--ink)}
+.sbar .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:8px 20px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+.sbar h2{font:700 clamp(26px,3.4vw,42px)/1 var(--cond);text-transform:uppercase;letter-spacing:.02em}
+.sbar p{font-weight:700;font-size:16px;text-transform:uppercase;letter-spacing:.07em}
+/* listings + tv */
+.show{display:grid;grid-template-columns:minmax(0,1fr);gap:34px;padding-top:34px;padding-bottom:50px}
+.list h3{font:700 22px/1 var(--cond);text-transform:uppercase;letter-spacing:.08em;padding-bottom:8px;border-bottom:var(--bar) solid var(--ink)}
+.list ol{list-style:none;padding:0}
+.list li{display:grid;grid-template-columns:76px minmax(0,1fr);gap:12px;padding:13px 0;border-bottom:3px solid var(--ink)}
+.list .t{font:700 15px/1.15 var(--cond);text-transform:uppercase;letter-spacing:.05em;color:var(--red)}
+.list b{display:block;font:700 23px/1.05 var(--cond);text-transform:uppercase;letter-spacing:.03em}
+.list span{display:block;font-size:17px;color:var(--mute);margin-top:3px;line-height:1.3}
+.list a{font-weight:700}
+.tvrow{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;align-items:start}
+.tv{position:relative;background:var(--paper2);border:var(--bar) solid var(--ink);border-radius:38px;padding:16px 16px 0;box-shadow:10px 10px 0 var(--ink)}
+.screen{border:4px solid var(--ink);border-radius:24px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr);background:var(--paper)}
+.pic{position:relative;overflow:hidden;aspect-ratio:4/5;background:#d9d0b8;touch-action:pan-y;border-bottom:4px solid var(--ink)}
+.pic img{position:absolute;max-width:none;transition:opacity .28s,transform .4s}
+.pic img.off{opacity:0;transform:scale(1.03)}
+.osd{position:absolute;top:12px;left:12px;background:var(--ink);color:var(--lime);font:700 22px/1 var(--cond);letter-spacing:.06em;padding:7px 12px;border-radius:10px;opacity:0;transition:opacity .2s}
+.osd.show{opacity:1}
+.pic .chip{position:absolute;right:12px;bottom:12px}
+.info{padding:18px 18px 20px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.chno{display:flex;align-items:baseline;gap:10px}
+.chno b{font:700 clamp(64px,8vw,104px)/.8 var(--cond);color:var(--red);-webkit-text-stroke:2px var(--ink)}
+.chno span{font:700 15px/1.2 var(--cond);text-transform:uppercase;letter-spacing:.07em}
+.info h3{font:400 clamp(28px,2.6vw,38px)/1.05 var(--serif)}
+.info p.d{font-size:18px;line-height:1.35;color:var(--mute)}
+.msg{border:3px solid var(--ink);border-radius:14px;background:var(--paper2);padding:10px 10px 10px 14px;display:flex;gap:10px;align-items:center}
+.msg q{flex:1;quotes:none;font-size:16px;line-height:1.3;min-width:0}
+.msg button{min-height:44px;padding:0 14px;font-size:16px}
+.note{font-size:14px;color:var(--mute);line-height:1.3}
+.bezel{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 6px 14px}
+.bezel .plate{font:700 14px/1 var(--cond);letter-spacing:.2em;text-transform:uppercase}
+.grille{display:flex;gap:5px}.grille i{width:22px;height:6px;background:var(--ink);border-radius:3px}
+.knobs{display:flex;gap:8px}.knobs i{width:22px;height:22px;border-radius:50%;border:4px solid var(--ink);background:var(--red)}.knobs i+i{background:var(--paper)}
+.feet{display:flex;justify-content:space-between;padding:0 18%;margin-top:6px}
+.feet i{width:44px;height:14px;background:var(--ink);border-radius:0 0 8px 8px}
+.remote{background:var(--ink);border-radius:28px;padding:14px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;color:var(--paper)}
+.remote .top{display:none}
+.rb{min-height:56px;border:0;border-radius:14px;background:var(--paper);color:var(--ink);font:700 18px/1 var(--cond);letter-spacing:.06em;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;transition:transform .1s,background .15s;box-shadow:inset 0 -4px 0 rgba(0,0,0,.25)}
+.rb:hover{background:#fff}
+.rb:active{transform:translateY(2px);box-shadow:none}
+.rb.r{background:var(--red)}
+.rb:focus-visible{outline-color:var(--lime)}
+.tri{width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent}
+.tri.u{border-bottom:11px solid currentColor}.tri.d{border-top:11px solid currentColor}
+.keys{display:none}
+.dots{grid-column:1/-1;display:flex;justify-content:center;gap:6px;padding-top:4px}
+.dots i{width:9px;height:9px;border-radius:50%;background:#5c584f}.dots i.a{background:var(--lime)}
+.copied{min-height:1.2em;font-size:14px;font-weight:700;color:var(--ink)}
+/* reviews / visit */
+.lower{display:grid;grid-template-columns:minmax(0,1fr);gap:34px;padding-top:34px;padding-bottom:50px}
+.crit .score{display:flex;align-items:flex-end;gap:14px;padding-bottom:12px;border-bottom:var(--bar) solid var(--ink)}
+.crit .score b{font:700 clamp(84px,9vw,128px)/.78 var(--cond)}
+.crit .score span{font:700 17px/1.2 var(--cond);text-transform:uppercase;letter-spacing:.06em}
+.stars{display:flex;gap:3px;margin-bottom:6px}.stars i{width:20px;height:20px;background:var(--red);clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.crit ol{list-style:none;padding:0;counter-reset:c}
+.crit li{counter-increment:c;display:grid;grid-template-columns:44px minmax(0,1fr);gap:10px;padding:14px 0;border-bottom:3px solid var(--ink);font:400 21px/1.3 var(--serif)}
+.crit li::before{content:counter(c);font:700 40px/.9 var(--cond);color:var(--red)}
+.visit{border:var(--bar) solid var(--ink);border-radius:22px;background:var(--paper2);padding:22px;position:relative}
+.visit h3{font:400 clamp(30px,3vw,40px)/1.02 var(--serif)}
+.visit ul{list-style:none;padding:0;margin:14px 0 18px}
+.visit li{padding:10px 0 10px 30px;border-top:3px solid var(--ink);position:relative;font-size:19px;line-height:1.3}
+.visit li::before{content:"";position:absolute;left:2px;top:15px;width:14px;height:14px;background:var(--red);border:2px solid var(--ink);border-radius:3px}
+.visit li b{text-transform:uppercase;letter-spacing:.04em}
+.sched h3{font:700 22px/1 var(--cond);text-transform:uppercase;letter-spacing:.08em;padding-bottom:8px;border-bottom:var(--bar) solid var(--ink)}
+.axis,.day{display:grid;grid-template-columns:48px minmax(0,1fr);align-items:center;gap:8px}
+.axis{font:700 13px/1 var(--cond);letter-spacing:.05em;padding:8px 0 4px}
+.axis div{display:flex;justify-content:space-between}
+.day{padding:5px 0;font:700 16px/1 var(--cond);text-transform:uppercase;letter-spacing:.06em}
+.track{position:relative;height:22px;background:var(--paper2);border:2px solid var(--ink);border-radius:6px}
+.track i{position:absolute;left:20%;width:60%;top:0;bottom:0;background:var(--red)}
+.day.today{background:var(--ink);color:var(--paper);border-radius:8px;padding:5px 6px;margin:0 -6px}
+.day.today .track{border-color:var(--paper)}
+.now{position:absolute;top:-5px;bottom:-5px;width:4px;background:var(--lime);border:1px solid var(--ink);border-radius:2px}
+.vnote{font-size:15px;color:var(--mute);margin-top:10px}
+/* finale */
+.fin{border-top:var(--bar) solid var(--ink);padding:44px 0 60px}
+.fgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;align-items:end}
+.fin h2{font:700 clamp(58px,10vw,150px)/.85 var(--cond);text-transform:uppercase}
+.fin h2 span{color:var(--red)}
+.fin p{font:400 clamp(20px,2vw,26px)/1.3 var(--serif);margin-top:14px;max-width:30ch}
+.station{list-style:none;padding:0;border-top:var(--bar) solid var(--ink)}
+.station li{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:3px solid var(--ink);flex-wrap:wrap}
+.station li>span{font:700 15px/1.3 var(--cond);text-transform:uppercase;letter-spacing:.07em;color:var(--mute)}
+.station a{font-weight:700;text-decoration-thickness:2px;text-underline-offset:3px}
+footer{background:var(--ink);color:var(--paper);font-size:14px;padding:18px 0 90px}
+.fab{position:fixed;right:16px;bottom:16px;z-index:9;box-shadow:4px 4px 0 var(--ink)}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}
+.rv.in{opacity:1;transform:none}
+@media (min-width:640px){
+ .pic{aspect-ratio:1/1}
+ .remote{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media (min-width:760px){
+ .mgrid{grid-template-columns:minmax(0,1.9fr) minmax(0,1fr);align-items:end}
+ h1{font-size:clamp(68px,14.3vw,236px)}
+ .cover{aspect-ratio:4/5;max-height:560px}
+ .screen{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}
+ .pic{border-bottom:0;border-right:4px solid var(--ink)}
+ .lower{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .sched{grid-column:1/-1}
+ .fgrid{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)}
+ .fab{display:none}
+ footer{padding-bottom:18px}
+}
+@media (min-width:1100px){
+ .show{grid-template-columns:300px minmax(0,1fr);gap:40px}
+ .tvrow{grid-template-columns:minmax(0,1fr) 118px;gap:22px}
+ .remote{grid-template-columns:1fr 1fr;padding:16px 14px 22px;border-radius:44px;margin-top:40px;position:sticky;top:24px}
+ .remote .top{display:flex;grid-column:1/-1;justify-content:space-between;align-items:center;padding:4px 6px 8px;font:700 12px/1 var(--cond);letter-spacing:.14em}
+ .remote .top i{width:12px;height:12px;border-radius:50%;background:#5c584f}
+ .remote .top i.on{background:var(--lime)}
+ .remote .ch{grid-column:1/-1;min-height:64px;flex-direction:column;gap:4px}
+ .keys{display:contents}
+ .keys .rb{min-height:44px}
+ .lower{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr) minmax(0,1fr);gap:40px}
+ .sched{grid-column:auto}
+}
+@media (max-width:759px){
+ .mast{padding-top:10px}
+ .kick span:nth-child(3){display:none}
+ .ctas .btn{flex:1 1 auto}
+ body{padding-bottom:0}
+}
+@media (max-width:400px){.msg{flex-direction:column;align-items:stretch}.price{width:88px;height:88px;font-size:13px}.price b{font-size:24px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="demo">Demo concept by an independent developer — not the official website of Diversion. Not approved by the owner; removed on first request.</div>
+
+<header class="mast wrap">
+ <div class="kick caps"><span>The Diversion Guide</span><span>Every day 12–6</span><span>Orlando, FL · 823 Virginia Dr</span></div>
+ <div class="mgrid">
+  <div>
+   <h1>Diversion</h1>
+   <p class="deck">Premium vintage clothing <em>&amp; more</em>: a hole-in-the-wall for nostalgia, right outside downtown Orlando.</p>
+   <div class="meta">
+    <address>823 Virginia Dr, Orlando, FL 32803</address>
+    <span class="chip" data-status><i></i><span>Open every day · 12–6 pm</span></span>
+   </div>
+   <div class="ctas">
+    <a class="btn red" href="https://www.google.com/maps/dir/?api=1&amp;destination=28.5641684,-81.3663594" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M12 22s7-6.6 7-12a7 7 0 1 0-14 0c0 5.4 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Directions</a>
+    <a class="btn ink" href="tel:+14079869113"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>Call (407) 986-9113</a>
+    <a class="btn" href="https://ig.me/m/diversion.orlando" target="_blank" rel="noopener">Instagram DM</a>
+   </div>
+  </div>
+  <figure class="cover">
+   <img src="img/p11.jpg" alt="Red neon devil sign glowing over a table of tapes, records and vintage odds inside Diversion" width="816" height="1088">
+   <div class="price">Prices<b>$15</b>to $100s</div>
+   <figcaption>On the cover: the neon devil, 823 Virginia Dr</figcaption>
+  </figure>
+ </div>
+</header>
+
+<section class="sbar" aria-labelledby="now"><div class="wrap"><h2 id="now">Now showing · Channel surf the racks</h2><p>Straight from @diversion.orlando</p></div></section>
+
+<main>
+<div class="wrap show">
+ <section class="list rv" aria-labelledby="whats">
+  <h3 id="whats">What's on</h3>
+  <ol>
+   <li><span class="t">Daily<br>12–6</span><div><b>Doors open</b><span>Every day, noon to 6 pm.</span></div></li>
+   <li><span class="t">All week</span><div><b>Restock</b><span>New items every week, all available in store.</span></div></li>
+   <li><span class="t">Fan fave</span><div><b>Disney</b><span>Reviewers' favorite: a big vintage Disney &amp; HHN stash.</span></div></li>
+   <li><span class="t">Special</span><div><b>JNCOs</b><span>One family's long search for them ended right here.</span></div></li>
+   <li><span class="t">Live</span><div><b>Hand-designed denim</b><span>Shoppers have caught Gonzo designing jeans by hand.</span></div></li>
+   <li><span class="t">In store</span><div><b>Photobooth</b><span>Inside the shop. Bring a friend.</span></div></li>
+   <li><span class="t">Price</span><div><b>$15 to $100s</b><span>Fair prices, by the reviews.</span></div></li>
+   <li><span class="t">Also showing</span><div><b>Sanford</b><span>The second shop: <a href="https://www.instagram.com/diversion.sanford/" target="_blank" rel="noopener">@diversion.sanford</a></span></div></li>
+  </ol>
+ </section>
+
+ <section class="tvrow" aria-labelledby="tvh">
+  <h3 id="tvh" class="caps" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Channel surf: photos from the shop</h3>
+  <div>
+   <div class="tv" id="tv" tabindex="0" aria-roledescription="carousel" aria-label="Channel surf through Diversion's photos. Use arrow keys to change the channel.">
+    <div class="screen">
+     <div class="pic" id="pic">
+      <img id="img" src="img/p1.jpg" alt="">
+      <span class="osd" id="osd">CH 2</span>
+      <span class="chip" data-chip><i></i><span>On air · every day 12–6</span></span>
+     </div>
+     <div class="info" aria-live="polite">
+      <div class="chno"><b id="num">2</b><span id="of">Channel 1 of 7</span></div>
+      <h3 id="lab">Open the shop with me</h3>
+      <p class="d" id="desc">Keys out at noon, right outside downtown Orlando.</p>
+      <button class="btn red" id="ask" type="button">Ask about this piece</button>
+      <div class="msg"><q id="msg">Hi Diversion! I saw this on your page, is it still in the shop?</q><button class="btn" id="copy" type="button">Copy</button></div>
+      <p class="copied" id="copied" role="status"></p>
+      <p class="note">Instagram can't prefill a DM, so the button copies this message and opens your chat with @diversion.orlando. Just paste and send.</p>
+     </div>
+    </div>
+    <div class="bezel"><span class="grille"><i></i><i></i><i></i><i></i></span><span class="plate">Diversion</span><span class="knobs"><i></i><i></i></span></div>
+   </div>
+   <div class="feet" aria-hidden="true"><i></i><i></i></div>
+  </div>
+  <div class="remote" role="group" aria-label="Remote control">
+   <div class="top"><span>DIV·TV</span><i id="led"></i></div>
+   <button class="rb ch" data-d="1" type="button" aria-label="Channel up"><span class="tri u"></span>CH</button>
+   <button class="rb ch" data-d="-1" type="button" aria-label="Channel down">CH<span class="tri d"></span></button>
+   <div class="keys" id="keys"></div>
+   <button class="rb r" type="button" id="rdm" aria-label="Ask about this piece on Instagram">DM</button>
+   <a class="rb" href="https://www.google.com/maps/dir/?api=1&amp;destination=28.5641684,-81.3663594" target="_blank" rel="noopener" aria-label="Directions">Map</a>
+   <div class="dots" id="dots" aria-hidden="true"></div>
+  </div>
+ </section>
+</div>
+
+<section class="sbar" aria-labelledby="rev"><div class="wrap"><h2 id="rev">Critics' picks · Station info</h2><p>4.8 on Google · 186 reviews</p></div></section>
+
+<div class="wrap lower">
+ <section class="crit rv" aria-label="What reviewers praise">
+  <div class="score"><b>4.8</b><div><div class="stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><span>Google rating<br>186 reviews</span></div></div>
+  <ol>
+   <li>One of the best-curated vintage spots in Orlando, and the Disney selection gets called out again and again.</li>
+   <li>Visitors from out of town leave with bags full, and say everything is cool and priced very reasonably.</li>
+   <li>Great staff and a good vibe. Gonzo gets the shout-outs for helping hunt down exactly the right piece.</li>
+  </ol>
+ </section>
+
+ <aside class="visit rv" aria-labelledby="vis">
+  <h3 id="vis">Visiting Orlando?</h3>
+  <ul>
+   <li><b>Right outside downtown.</b> 823 Virginia Dr, Orlando, FL 32803.</li>
+   <li><b>Easy parking.</b> Reviewers say so, and that the shop is easy for tourists to navigate.</li>
+   <li><b>Open every day, 12–6.</b> No guessing which day it's on.</li>
+  </ul>
+  <a class="btn red" href="https://www.google.com/maps/dir/?api=1&amp;destination=28.5641684,-81.3663594" target="_blank" rel="noopener">Get directions</a>
+ </aside>
+
+ <section class="sched rv" aria-labelledby="sch">
+  <h3 id="sch">This week's schedule</h3>
+  <div class="axis" aria-hidden="true"><span></span><div><span>10a</span><span>12p</span><span>2p</span><span>4p</span><span>6p</span><span>8p</span></div></div>
+  <div id="days"></div>
+  <p class="vnote" id="vnote">Open 12–6 pm, Monday through Sunday. Eastern time.</p>
+ </section>
+</div>
+
+<section class="fin" aria-labelledby="fin">
+ <div class="wrap fgrid">
+  <div class="rv">
+   <h2 id="fin">Tune in <span>IRL.</span></h2>
+   <p>The racks change every week. The only way to see all of it is in person.</p>
+   <div class="ctas">
+    <a class="btn red" href="https://www.google.com/maps/dir/?api=1&amp;destination=28.5641684,-81.3663594" target="_blank" rel="noopener">Directions to 823 Virginia Dr</a>
+    <a class="btn" href="https://www.instagram.com/diversion.sanford/" target="_blank" rel="noopener">Sanford shop on IG</a>
+   </div>
+  </div>
+  <ul class="station rv">
+   <li><span>Call</span><a href="tel:+14079869113">(407) 986-9113</a></li>
+   <li><span>Instagram</span><a href="https://www.instagram.com/diversion.orlando/" target="_blank" rel="noopener">@diversion.orlando</a></li>
+   <li><span>TikTok</span><a href="https://www.tiktok.com/@diversion.orlando" target="_blank" rel="noopener">@diversion.orlando</a></li>
+   <li><span>Also showing</span><a href="https://www.instagram.com/diversion.sanford/" target="_blank" rel="noopener">@diversion.sanford</a></li>
+   <li><span>Hours</span><b>Every day 12–6 pm</b></li>
+  </ul>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap">Diversion · Premium vintage clothing &amp; more · 823 Virginia Dr, Orlando, FL 32803. Photos from @diversion.orlando. Demo concept, not the official website.</div></footer>
+<a class="btn red fab" href="tel:+14079869113">Call</a>
+
+<script>
+(()=>{
+const CH=[
+ {f:'p1',l:'Open the shop with me',d:'Keys out at noon, right outside downtown Orlando.',a:0,b:.41,x:.58,alt:'The front door of Diversion at 823 Virginia Dr, being unlocked for the day'},
+ {f:'p7',l:'New arrivals',d:'New items every week, racked and ready in the store.',a:0,b:.45,alt:'Neon signs over long racks of vintage tees and jackets'},
+ {f:'p5',l:'Banger restock',d:'All available in store. Every day 12 to 6.',a:0,b:.41,alt:'Racks of vintage clothing under shop lights and a neon sign'},
+ {f:'p2',l:'Vintage tees',d:'Your one stop shop for all things vintage, folded deep.',a:0,b:1,alt:'A stack of folded vintage graphic tees'},
+ {f:'p4',l:'Winter Park, Florida',d:'A local find: a tee printed with an old local TV commercial.',a:.36,b:1,alt:'Vintage tee printed with a Winter Park, Florida car graphic and an old TV commercial still'},
+ {f:'p9',l:'This week',d:'Ask what landed this week. Reviewers love the vintage Disney selection.',a:.22,b:.70,alt:'Shop staff at the door holding a vintage Mickey Mouse plush'},
+ {f:'p12',l:'& More',d:'Premium vintage clothing and more: a whole wall of shades, for one.',a:0,b:.6,x:.62,alt:'Staff member trying on sunglasses in front of a wall of vintage shades'}
+];
+const R=.5625,$=s=>document.getElementById(s),img=$('img'),pic=$('pic');
+const BASE='Hi Diversion! I saw this on your page, is it still in the shop?';
+let i=0,t;
+const keys=$('keys'),dots=$('dots');
+CH.forEach((c,k)=>{const b=document.createElement('button');b.className='rb';b.type='button';b.textContent=k+2;b.setAttribute('aria-label','Channel '+(k+2)+': '+c.l);b.onclick=()=>go(k);keys.appendChild(b);dots.appendChild(document.createElement('i'));
+ const p=new Image();p.src='img/'+c.f+'.jpg';});
+function fit(){const c=CH[i],A=pic.clientWidth/pic.clientHeight;const h=Math.min(c.b-c.a,R/A,1);const top=Math.max(0,Math.min(1-h,(c.a+c.b)/2-h/2));const H=100/h,W=H*R/A;let L=50-(c.x||.5)*W;L=Math.min(0,Math.max(100-W,L));
+ Object.assign(img.style,{height:H+'%',width:W+'%',top:(-top*H)+'%',left:L+'%'});}
+function msg(){return BASE+' (Channel '+(i+2)+': '+CH[i].l+')'}
+function go(n,first){i=(n+CH.length)%CH.length;const c=CH[i];
+ if(!first){img.classList.add('off');setTimeout(()=>{img.src='img/'+c.f+'.jpg';img.alt=c.alt;fit();img.classList.remove('off')},140)}else{img.alt=c.alt;fit()}
+ $('num').textContent=i+2;$('of').textContent='Channel '+(i+1)+' of '+CH.length;$('lab').textContent=c.l;$('desc').textContent=c.d;$('msg').textContent=msg();$('copied').textContent='';
+ const o=$('osd');o.textContent='CH '+(i+2);o.classList.add('show');clearTimeout(t);t=setTimeout(()=>o.classList.remove('show'),1400);
+ [...dots.children].forEach((d,k)=>d.classList.toggle('a',k===i));}
+document.querySelectorAll('[data-d]').forEach(b=>b.onclick=()=>go(i+ +b.dataset.d));
+$('tv').addEventListener('keydown',e=>{if(e.target!==$('tv'))return;if(e.key==='ArrowUp'||e.key==='ArrowRight'){e.preventDefault();go(i+1)}if(e.key==='ArrowDown'||e.key==='ArrowLeft'){e.preventDefault();go(i-1)}});
+let sx=null;pic.addEventListener('touchstart',e=>{sx=e.touches[0].clientX},{passive:true});
+pic.addEventListener('touchend',e=>{if(sx==null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)go(i+(dx<0?1:-1));sx=null});
+async function copy(){const s=msg();try{await navigator.clipboard.writeText(s)}catch(_){const ta=document.createElement('textarea');ta.value=s;document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(__){}ta.remove()}
+ $('copied').textContent='Copied. Paste it in the Instagram chat.';}
+$('copy').onclick=copy;
+const ask=()=>{copy();window.open('https://ig.me/m/diversion.orlando','_blank','noopener')};
+$('ask').onclick=ask;$('rdm').onclick=ask;
+addEventListener('resize',fit);
+go(0,true);
+/* status, New York time */
+const p={};new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',year:'numeric',month:'numeric',day:'numeric',hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(new Date()).forEach(x=>p[x.type]=x.value);
+const h=+p.hour%24+(+p.minute)/60,open=h>=12&&h<18;
+document.querySelectorAll('[data-status]').forEach(el=>{el.classList.toggle('on',open);el.lastElementChild.textContent=open?'Open now · until 6 pm':(h<12?'Closed · opens today at noon':'Closed · opens tomorrow at noon')});
+document.querySelectorAll('[data-chip]').forEach(el=>{el.classList.toggle('on',open);el.lastElementChild.textContent=open?'On air · open until 6':'Off air · back at noon'});
+$('led').classList.toggle('on',open);
+const D=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],days=$('days');
+D.forEach(d=>{const r=document.createElement('div');r.className='day'+(d===p.weekday?' today':'');r.innerHTML='<span>'+d+'</span><div class="track"><i></i></div>';
+ if(d===p.weekday&&h>=10&&h<=20){const n=document.createElement('span');n.className='now';n.style.left='calc('+((h-10)*10)+'% - 2px)';n.title='Now';r.querySelector('.track').appendChild(n)}
+ r.setAttribute('aria-label',d+': 12 to 6 pm'+(d===p.weekday?' (today)':''));days.appendChild(r)});
+const y=+p.year,mo=+p.month,dd=+p.day;
+if(y===2026&&(mo<11||(mo===11&&dd<=11)))$('vnote').textContent='Open 12–6 pm daily, Eastern time. Wed, Nov 11 (Veterans Day): hours might differ.';
+/* reveal */
+const els=document.querySelectorAll('.rv');
+if('IntersectionObserver'in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});els.forEach(e=>io.observe(e))}else els.forEach(e=>e.classList.add('in'));
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Demo concept|Demo-Konzept/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Pricing →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

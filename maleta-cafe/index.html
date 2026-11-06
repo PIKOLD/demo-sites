@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Maleta Cafe · Coffee & matcha at 147 E Adams St, Phoenix</title><meta property="og:type" content="website"><meta property="og:title" content="Maleta Cafe · Coffee &amp; matcha at 147 E Adams St, Phoenix"><meta property="og:description" content="Maleta Cafe: drinks built from the owner"><meta property="og:image" content="https://pikold.github.io/demo-sites/maleta-cafe/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Maleta Cafe: drinks built from the owner's travels, served inside a gift shop and art gallery at 147 E Adams St, downtown Phoenix. Mon–Sat 8a–3p, closed Sunday.">
+<link rel="stylesheet" href="../_fonts/bricolage-grotesque.css">
+<link rel="stylesheet" href="../_fonts/caveat.css">
+<style>
+:root{--pa:#F06A35;--cr:#FFF2E0;--pl:#351B36;--pk:#E8577E;--cr2:#FBE2C4;--paper:#FFF9F1;--mute:#6a4f6b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cr);color:var(--pl);font:400 17px/1.55 "Bricolage Grotesque",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--pk);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1320px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.demo{background:var(--pl);color:var(--cr);font-size:12.5px;text-align:center;padding:7px 16px;line-height:1.4}
+.hand{font-family:Caveat,cursive;font-weight:600}
+.lbl{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+h1,h2,h3{margin:0;line-height:.95;letter-spacing:-.035em;font-weight:700}
+h2{font-size:clamp(2.3rem,5.4vw,4.6rem)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:50px;padding:0 22px;border-radius:999px;font:600 16px/1 "Bricolage Grotesque",sans-serif;text-decoration:none;border:2px solid var(--pl);cursor:pointer;transition:transform .18s,background .18s,color .18s}
+.btn:hover{transform:translateY(-2px)}.btn:active{transform:translateY(1px)}
+.b-ink{background:var(--pl);color:var(--cr)}.b-ink:hover{background:#4b2a4d}
+.b-paper{background:var(--paper);color:var(--pl)}.b-paper:hover{background:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
+.mark{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:22px;letter-spacing:-.03em}
+.mark i{width:30px;height:24px;border:2.5px solid var(--pl);border-radius:6px;position:relative;background:var(--pa)}
+.mark i::before{content:"";position:absolute;left:7px;right:7px;top:-8px;height:7px;border:2.5px solid var(--pl);border-bottom:0;border-radius:5px 5px 0 0}
+.nav{display:flex;gap:clamp(12px,2.4vw,28px);font-weight:500;font-size:15px}
+.nav a{text-decoration:none;padding:10px 0;border-bottom:2px solid transparent}.nav a:hover{border-color:var(--pa)}
+/* boarding pass */
+.pass{position:relative;overflow:hidden;border-radius:24px;display:grid;grid-template-columns:minmax(0,1fr) clamp(200px,19vw,250px) 250px;margin:4px 0 0;filter:drop-shadow(0 18px 30px rgba(53,27,54,.18))}
+.pm{background:var(--pa);border-radius:24px 0 0 24px;padding:clamp(20px,2.6vw,34px) clamp(20px,3vw,40px);min-width:0}
+.route{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;border-bottom:2px solid var(--pl);padding-bottom:12px}
+.route b{font-weight:700;letter-spacing:.05em;font-size:clamp(13px,1.2vw,15px)}
+.route .lbl{opacity:.8}
+h1{font-size:clamp(3.5rem,9.6vw,8.6rem);margin:clamp(14px,2vw,22px) 0 10px;line-height:.86}
+h1 span{display:block}
+.lede{font-size:clamp(17px,1.5vw,20px);max-width:34ch;margin:0 0 18px;font-weight:500}
+.fields{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:2px solid var(--pl);border-bottom:2px solid var(--pl)}
+.f{padding:10px 12px 10px 0;min-width:0}.f+.f{padding-left:12px;border-left:1.5px dashed rgba(53,27,54,.55)}
+.f .lbl{display:block;opacity:.75;margin-bottom:3px;font-size:10.5px}
+.f strong{font-size:clamp(15px,1.35vw,19px);line-height:1.15;display:block}
+.live{display:inline-flex;align-items:center;gap:7px;font-weight:700}
+.live::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--pl);flex:none}
+.live.on::before{background:#2fbf71;box-shadow:0 0 0 0 rgba(47,191,113,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(47,191,113,0)}100%{box-shadow:0 0 0 0 rgba(47,191,113,0)}}
+.livesub{font-size:13.5px;margin-top:3px;display:block;font-weight:500}
+.acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.pp{background:var(--pa);padding:clamp(20px,2.6vw,34px) 18px clamp(20px,2.6vw,34px) 0;min-width:0}
+.pp figure{margin:0;height:100%;position:relative;border-radius:14px;overflow:hidden;border:2px solid var(--pl);min-height:260px}
+.pp img{width:100%;height:100%;object-fit:cover;object-position:50% 60%;position:absolute;inset:0}
+.pp figcaption{position:absolute;left:10px;bottom:10px;background:var(--cr);padding:2px 10px;border-radius:4px;font-size:20px;transform:rotate(-3deg)}
+.stub{background:var(--paper);border-radius:0 24px 24px 0;border-left:3px dashed var(--pl);padding:clamp(20px,2.4vw,30px) 22px;display:flex;flex-direction:column;gap:12px;position:relative}
+.stub::before,.stub::after{content:"";position:absolute;left:-17px;width:32px;height:32px;border-radius:50%;background:var(--cr)}
+.stub::before{top:-16px}.stub::after{bottom:-16px}
+.stub .big{font-size:42px;font-weight:700;letter-spacing:-.04em;line-height:1}
+.stub dl{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.stub dt{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;opacity:.7}
+.stub dd{margin:0;font-weight:700;font-size:15px}
+.bar{height:58px;margin-top:auto;background:repeating-linear-gradient(90deg,var(--pl) 0 3px,transparent 3px 5px,var(--pl) 5px 6px,transparent 6px 9px,var(--pl) 9px 13px,transparent 13px 15px,var(--pl) 15px 16px,transparent 16px 20px)}
+.stub small{font-size:12px;opacity:.8}
+.hero{padding-bottom:clamp(40px,6vw,80px)}
+/* section heads */
+.sh{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:24px 48px;align-items:end;margin-bottom:clamp(24px,4vw,48px)}
+.sh p{margin:0;font-size:18px;max-width:46ch}
+.kick{display:inline-block;background:var(--pl);color:var(--cr);padding:4px 10px;border-radius:4px;margin-bottom:14px}
+section{scroll-margin-top:12px}
+/* cord */
+.cord{padding:clamp(48px,7vw,96px) 0 clamp(40px,6vw,80px);background:var(--cr2)}
+.scroller{overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;padding-bottom:10px}
+.stage{position:relative;min-width:1180px;height:520px}
+.stage>svg{position:absolute;left:0;top:0;width:100%;height:90px;overflow:visible}
+.hang{position:absolute;top:calc(var(--y) + 0px);left:var(--x);transform-origin:50% 0;transform:rotate(var(--r));transition:transform .5s cubic-bezier(.3,1.6,.5,1)}
+.hang:hover,.hang:focus-within{transform:rotate(calc(var(--r) * -1.4))}
+.hang::before{content:"";position:absolute;left:50%;top:0;height:var(--s);border-left:2px solid var(--pl);transform:translateX(-1px)}
+.tag{display:block;margin-top:var(--s);width:var(--w);text-decoration:none;padding:46px 20px 20px;position:relative;clip-path:polygon(22% 0,78% 0,100% 13%,100% 100%,0 100%,0 13%);background:var(--paper);color:var(--pl)}
+.tag::before{content:"";position:absolute;left:50%;top:14px;width:18px;height:18px;margin-left:-9px;border-radius:50%;background:var(--cr2);box-shadow:0 0 0 4px rgba(53,27,54,.25)}
+.tag h3{font-size:clamp(30px,2.6vw,40px);letter-spacing:-.03em;margin-bottom:10px}
+.tag p{margin:0 0 12px;font-size:15px;line-height:1.45}
+.tag .go{font-weight:600;font-size:14px;border-bottom:2px solid currentColor}
+.t-pa{background:var(--pa)}.t-pl{background:var(--pl);color:var(--cr)}.t-pk{background:var(--pk);color:var(--pl)}
+.t-pl::before{background:var(--cr2);box-shadow:0 0 0 4px rgba(255,242,224,.35)}
+.tag.ph{padding:44px 12px 12px}
+.tag.ph img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 88%;border-radius:4px}
+.tag.ph span{display:block;font-size:24px;padding:8px 4px 0;line-height:1}
+.note{position:absolute;background:#fff;padding:14px 18px 12px;font-size:27px;line-height:1.05;width:210px;box-shadow:0 10px 20px rgba(53,27,54,.15);transform:rotate(var(--r));z-index:2}
+.note::before{content:"";position:absolute;top:-7px;left:50%;width:16px;height:16px;border-radius:50%;background:var(--pk);box-shadow:inset -3px -3px 0 rgba(0,0,0,.18)}
+.swipe{display:none;margin:0 0 10px;font-size:24px}
+/* praise */
+.praise{background:var(--pl);color:var(--cr);padding:clamp(56px,8vw,110px) 0}
+.pg{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);gap:clamp(32px,6vw,90px);align-items:start}
+.score{font-size:clamp(7rem,15vw,13rem);font-weight:700;line-height:.8;letter-spacing:-.06em;color:var(--pa)}
+.score+p{font-size:20px;margin:16px 0 0;max-width:20ch}
+.log{list-style:none;margin:0;padding:0;counter-reset:l}
+.log li{display:grid;grid-template-columns:70px minmax(0,1fr);gap:16px;padding:22px 0;border-top:2px solid rgba(255,242,224,.25)}
+.log li::before{counter-increment:l;content:"0" counter(l);font-weight:700;color:var(--pk);font-size:28px;line-height:1}
+.log strong{display:block;font-size:clamp(22px,2.2vw,30px);line-height:1.1;letter-spacing:-.02em;margin-bottom:6px}
+.log p{margin:0;opacity:.85;max-width:56ch}
+/* trip planner */
+.trip{padding:clamp(56px,8vw,110px) 0}
+.tg{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.3fr);gap:clamp(24px,4vw,56px);align-items:start}
+.ctl{background:var(--paper);border:2px solid var(--pl);border-radius:20px;padding:24px}
+.ctl fieldset{border:0;margin:0 0 20px;padding:0}
+.ctl legend{margin-bottom:10px}
+.days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+.days button{min-height:48px;border:2px solid var(--pl);background:transparent;border-radius:10px;font:600 15px "Bricolage Grotesque",sans-serif;color:var(--pl);cursor:pointer;transition:background .15s}
+.days button:hover{background:var(--cr2)}
+.days button[aria-pressed=true]{background:var(--pl);color:var(--cr)}
+.days button.sun{border-style:dashed;opacity:.75}
+.trow{display:flex;gap:8px;flex-wrap:wrap}
+select{min-height:48px;flex:1 1 150px;border:2px solid var(--pl);border-radius:10px;background:#fff;color:var(--pl);font:600 16px "Bricolage Grotesque",sans-serif;padding:0 12px}
+.ctl .hint{font-size:14px;color:var(--mute);margin:14px 0 0}
+.ticket{display:grid;grid-template-columns:minmax(0,1fr) 150px;background:var(--pa);border-radius:20px;position:relative;overflow:hidden}
+.ticket .tm{padding:22px 24px}
+.ticket .ts{background:var(--paper);border-left:3px dashed var(--pl);border-radius:0 20px 20px 0;padding:22px 16px;display:flex;flex-direction:column;justify-content:space-between;gap:12px;position:relative}
+.ticket .ts::before,.ticket .ts::after{content:"";position:absolute;left:-15px;width:28px;height:28px;border-radius:50%;background:var(--cr)}
+.ticket .ts::before{top:-14px}.ticket .ts::after{bottom:-14px}
+.big2{font-size:clamp(44px,5.4vw,72px);font-weight:700;letter-spacing:-.05em;line-height:.9;margin:6px 0 4px}
+.tfields{display:flex;flex-wrap:wrap;gap:6px 26px;margin-top:12px;border-top:2px solid var(--pl);padding-top:10px}
+.tfields .lbl{display:block;font-size:10.5px;opacity:.75}
+.tfields b{font-size:18px}
+.ts .bar{height:44px}
+.itin{list-style:none;margin:22px 0 0;padding:0}
+.itin li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px;padding:16px 0;border-bottom:2px dashed rgba(53,27,54,.3)}
+.itin li>span{width:44px;height:44px;border-radius:50%;border:2px solid var(--pl);display:grid;place-items:center;font-weight:700}
+.itin b{display:block;font-size:19px;letter-spacing:-.01em}
+.itin p{margin:2px 0 0;font-size:15.5px}
+.warn{background:var(--pk);color:var(--pl);border-radius:12px;padding:12px 16px;margin-top:16px;font-weight:500;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
+.warn[hidden]{display:none}
+.warn button{min-height:44px;border:2px solid var(--pl);background:var(--paper);border-radius:999px;padding:0 16px;font:600 15px "Bricolage Grotesque",sans-serif;color:var(--pl);cursor:pointer}
+.bio{margin-top:18px;background:var(--paper);border:2px solid var(--pl);border-radius:12px;padding:12px 16px;font-size:15px}
+.bio code{font:700 15px "Bricolage Grotesque",sans-serif;letter-spacing:.02em}
+.msg{margin-top:18px}
+.msg textarea{width:100%;min-height:86px;border:2px solid var(--pl);border-radius:12px;padding:12px 14px;font:500 15.5px/1.45 "Bricolage Grotesque",sans-serif;color:var(--pl);background:#fff;resize:vertical}
+.msg .acts{margin-top:10px}
+/* stamps */
+.stamps{background:var(--cr2);padding:clamp(56px,8vw,110px) 0}
+.sw{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(18px,3vw,36px);align-items:start}
+.st{position:relative;transform:rotate(var(--r,0deg));transition:transform .3s}
+.st:hover{transform:rotate(0) scale(1.02)}
+.st.photo{background:#fff;padding:12px 12px 16px;border:2px dashed var(--pl);box-shadow:0 12px 24px rgba(53,27,54,.14)}
+.st.photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.st.photo h3,.st.ink h3{font-size:22px;letter-spacing:-.02em;margin:12px 0 4px;line-height:1.1}
+.st p{margin:0;font-size:15px}
+.st.ink{border:4px double var(--pl);border-radius:14px;padding:22px;color:var(--pl);background:rgba(255,249,241,.55)}
+.st.round{border-radius:50%;aspect-ratio:1;display:flex;flex-direction:column;justify-content:center;text-align:center;padding:16%}
+.dep{position:absolute;right:-10px;top:18px;border:3px solid var(--pk);color:var(--pk);font-weight:700;letter-spacing:.12em;font-size:13px;padding:4px 10px;border-radius:6px;transform:rotate(12deg);background:rgba(255,255,255,.85)}
+.s1{grid-column:1/5;--r:-2deg}.s2{grid-column:5/8;--r:3deg;margin-top:60px}.s3{grid-column:8/13;--r:-1.5deg;margin-top:10px}.s4{grid-column:8/11;--r:4deg;margin-top:-40px}
+.s5{grid-column:5/8;--r:-3deg;margin-top:-20px}
+.next{grid-column:1/5;font-size:30px;line-height:1.05;margin-top:10px}
+/* visit */
+.visit{padding:clamp(56px,8vw,110px) 0}
+.vg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(28px,5vw,64px);align-items:start}
+.addr{font-size:clamp(28px,3.2vw,44px);font-weight:700;letter-spacing:-.035em;line-height:1.02;margin:6px 0 16px}
+table{border-collapse:collapse;width:100%;max-width:440px;margin:8px 0 18px}
+td{padding:9px 0;border-bottom:1.5px dashed rgba(53,27,54,.3);font-size:16.5px}
+td+td{text-align:right;font-weight:600}
+tr.today td{color:var(--pa);font-weight:700}
+.vimg{border-radius:20px;overflow:hidden;border:2px solid var(--pl)}
+.vimg img{width:100%;aspect-ratio:2/1;object-fit:cover;object-position:50% 0}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}
+.facts div{background:var(--paper);border-radius:14px;padding:14px 16px;font-size:15px}
+.facts b{display:block;font-size:17px}
+.end{background:var(--pa);padding:clamp(48px,7vw,90px) 0}
+.end h2{font-size:clamp(2.6rem,7vw,6.2rem);max-width:12ch}
+.endg{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:24px}
+footer{padding:28px 0 100px;font-size:13.5px;color:var(--mute)}
+.fab{display:none}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media (max-width:1080px){.pass{grid-template-columns:minmax(0,1fr) 240px}.pp{display:none}.pm{border-radius:24px 0 0 24px}}
+@media (max-width:900px){.sh,.pg,.tg,.vg{grid-template-columns:minmax(0,1fr)}.sw{grid-template-columns:repeat(2,minmax(0,1fr))}.sw>*{grid-column:auto!important;margin-top:0!important}.next{grid-column:1/-1!important}}
+@media (max-width:720px){
+ body{font-size:16px}.nav{display:none}
+ .pass{grid-template-columns:minmax(0,1fr)}
+ .pm{border-radius:22px 22px 0 0}
+ .pp{display:block;padding:0 16px 20px}.pp figure{min-height:0;aspect-ratio:4/3}
+ .stub{border-left:0;border-top:3px dashed var(--pl);border-radius:0 0 22px 22px;flex-direction:row;flex-wrap:wrap;align-items:center}
+ .stub::before{top:-17px;left:-16px}.stub::after{top:-17px;bottom:auto;left:auto;right:-16px}
+ .stub .bar{flex:1 1 100%;height:44px}
+ .fields{grid-template-columns:repeat(2,minmax(0,1fr))}.f:nth-child(3){padding-left:0;border-left:0}.f:nth-child(n+3){border-top:1.5px dashed rgba(53,27,54,.55)}
+ .acts .btn{flex:1 1 100%}
+ .swipe{display:block}
+ .ticket{grid-template-columns:minmax(0,1fr)}.ticket .ts{border-left:0;border-top:3px dashed var(--pl);border-radius:0 0 20px 20px;flex-direction:row;align-items:center}
+ .ticket .ts::before{top:-15px;left:-14px}.ticket .ts::after{top:-15px;bottom:auto;left:auto;right:-14px}.ts .bar{flex:1}
+ .days button{font-size:13px}
+ .sw{grid-template-columns:minmax(0,1fr)}.facts{grid-template-columns:minmax(0,1fr)}
+ .fab{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:20;gap:8px}
+ .fab .btn{flex:1;box-shadow:0 8px 20px rgba(53,27,54,.3)}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+@media print{body *{visibility:hidden}#ticket,#ticket *,#itin,#itin *{visibility:visible}#ticket{position:absolute;left:0;top:0;width:100%}#itin{position:absolute;left:0;top:300px;width:100%}.demo,.fab{display:none}}
+</style>
+</head>
+<body>
+<div class="demo">Demo concept by an independent developer — not the official website of Maleta Cafe. Not approved by the owner; removed on first request.</div>
+
+<header class="wrap top">
+ <a class="mark" href="#top" aria-label="Maleta Cafe, home"><i aria-hidden="true"></i>maleta</a>
+ <nav class="nav" aria-label="Sections"><a href="#tags">Tags</a><a href="#trip">Plan a stop</a><a href="#stamps">Stamps</a><a href="#visit">Visit</a></nav>
+</header>
+
+<main id="top">
+<section class="wrap hero" aria-label="Boarding pass">
+ <div class="pass">
+  <div class="pm">
+   <div class="route"><span class="lbl">Boarding pass</span><b>MALETA CAFE · 147 E ADAMS ST · PHOENIX</b></div>
+   <h1><span>Maleta</span><span>Cafe</span></h1>
+   <p class="lede">Coffee and matcha built from the places the owner has traveled, poured inside a gift shop and art gallery downtown.</p>
+   <div class="fields">
+    <div class="f"><span class="lbl">Departs</span><strong>Mon–Sat 8a–3p</strong></div>
+    <div class="f"><span class="lbl">Sunday</span><strong>Closed</strong></div>
+    <div class="f"><span class="lbl">Beans</span><strong>Pair Cupworks</strong></div>
+    <div class="f"><span class="lbl">Status</span><strong class="live" data-live>Checking…</strong><span class="livesub" data-livesub></span></div>
+   </div>
+   <div class="acts">
+    <a class="btn b-ink" href="https://www.google.com/maps/dir/?api=1&amp;destination=33.4491939,-112.071669" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 21s-7-6.3-7-11.5A7 7 0 0 1 19 9.5C19 14.7 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Directions</a>
+    <a class="btn b-paper" href="https://ig.me/m/maleta.cafe" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".8" fill="currentColor"/></svg>Message on Instagram</a>
+   </div>
+  </div>
+  <div class="pp"><figure><picture><source media="(max-width:720px)" srcset="img/p1-m.jpg"><img src="img/p1.jpg" alt="An iced fall-menu latte topped with a little Mexican flag, next to pumpkins and cinnamon sticks on the counter" width="800" height="1000"></picture><figcaption class="hand">fall menu, flag on top</figcaption></figure></div>
+  <aside class="stub" aria-label="Ticket stub">
+   <div><span class="lbl">Gate</span><div class="big">147</div></div>
+   <dl><div><dt>Passenger</dt><dd>You</dd></div><div><dt>Seat</dt><dd>Counter / to-go</dd></div><div><dt>Rating</dt><dd>5.0 ★</dd></div><div><dt>Reviews</dt><dd>61 Google</dd></div></dl>
+   <div class="bar" aria-hidden="true"></div>
+   <small>Shares the address with the Arizona Latino Arts &amp; Cultural Center</small>
+  </aside>
+ </div>
+</section>
+
+<section class="cord" id="tags" aria-labelledby="tags-h">
+ <div class="wrap">
+  <div class="sh rv"><div><span class="lbl kick">Carry-on</span><h2 id="tags-h">Five tags on the cord</h2></div><p>Their Instagram highlights, unpacked: what to order, when they're open, where to park, what's happening and who they're thanking.</p></div>
+  <p class="swipe hand" aria-hidden="true">swipe along the cord →</p>
+ </div>
+ <div class="wrap scroller" data-qa-skip tabindex="0" aria-label="Luggage tags, scrolls sideways">
+  <div class="stage">
+   <svg viewBox="0 0 1000 90" preserveAspectRatio="none" aria-hidden="true"><path d="M-10 12 C 280 88, 720 88, 1010 12" fill="none" stroke="#351B36" stroke-width="3" vector-effect="non-scaling-stroke"/></svg>
+   <div class="hang" style="--x:1%;--y:22px;--r:-3deg;--s:34px;--w:250px"><a class="tag t-pa" href="https://www.instagram.com/maleta.cafe/" target="_blank" rel="noopener"><h3>Menu</h3><p>The fall menu runs on homemade syrups. Reviewers single out the <b>Tokyo</b>: roasted Fuji apple cinnamon syrup and caramel under a graham cracker cold foam, as matcha or espresso.</p><span class="go">Open the Menu highlight</span></a></div>
+   <div class="hang" style="--x:23%;--y:48px;--r:2.5deg;--s:22px;--w:210px"><div class="tag ph"><img src="img/p11.jpg" alt="Three iced drinks on the bar, each topped with a small paper flag" width="800" height="1000"><span class="hand">a flag for every stop</span></div></div>
+   <div class="hang" style="--x:42%;--y:62px;--r:-2deg;--s:46px;--w:180px"><a class="tag t-pl" href="https://www.instagram.com/maleta.cafe/" target="_blank" rel="noopener"><h3>Schedule</h3><p>Monday to Saturday, 8a to 3p. Sunday the suitcase stays shut.</p><span class="go">See the week</span></a></div>
+   <div class="hang" style="--x:59%;--y:60px;--r:3.5deg;--s:26px;--w:200px"><a class="tag" href="https://www.instagram.com/maleta.cafe/" target="_blank" rel="noopener"><h3>Parking</h3><p>Downtown on E Adams St, with street meters out front. The Parking highlight has the details.</p><span class="go">Parking notes</span></a></div>
+   <div class="hang" style="--x:76%;--y:42px;--r:-2.5deg;--s:40px;--w:200px"><a class="tag t-pk" href="https://www.instagram.com/maleta.cafe/" target="_blank" rel="noopener"><h3>Events</h3><p>Pop-ups, civic talks and poster exhibitions, often next door at the Latino arts center.</p><span class="go">What's on</span></a></div>
+   <div class="hang" style="--x:91%;--y:14px;--r:4deg;--s:30px;--w:150px"><a class="tag" href="https://www.instagram.com/maleta.cafe/" target="_blank" rel="noopener"><h3 style="font-size:28px">Thank you</h3><p>The highlight they keep for the people who stop by.</p></a></div>
+   <div class="note hand" style="left:21%;top:400px;--r:-4deg">browse the gift shop while you wait</div>
+   <div class="note hand" style="left:3%;top:440px;--r:3deg">try the fall menu, homemade syrups</div>
+  </div>
+ </div>
+</section>
+
+<section class="praise" aria-labelledby="pr-h">
+ <div class="wrap pg">
+  <div class="rv"><span class="lbl">Google rating</span><div class="score">5.0</div><p>from 61 Google reviews of a small downtown counter.</p></div>
+  <div class="rv">
+   <h2 id="pr-h" style="margin-bottom:18px">What travelers write home about</h2>
+   <ol class="log">
+    <li><div><strong>Drinks that carry a passport</strong><p>Guests love that the owner builds each drink from a place she has traveled, with a little flag and toppings to match. The Tokyo matcha gets called the best matcha they've had.</p></div></li>
+    <li><div><strong>An owner who makes you feel expected</strong><p>Reviewers describe her and the barista as warm, knowledgeable and genuinely kind, the kind of welcome people say they haven't found elsewhere.</p></div></li>
+    <li><div><strong>A treasure cove around the counter</strong><p>The café sits inside a gift shop and art gallery, so the wait becomes a browse. Small room, a couple of tables, and one guest's to-go cup was carried out to him.</p></div></li>
+   </ol>
+  </div>
+ </div>
+</section>
+
+<section class="trip wrap" id="trip" aria-labelledby="trip-h">
+ <div class="sh rv"><div><span class="lbl kick">Your itinerary</span><h2 id="trip-h">Print your boarding pass</h2></div><p>Pick a day and time. The pass checks it against their hours, and the itinerary tells you what to order and what to do while you wait.</p></div>
+ <div class="tg">
+  <div class="ctl rv">
+   <fieldset><legend class="lbl">Day</legend><div class="days" id="days"></div></fieldset>
+   <fieldset><legend class="lbl">Arrival time (Phoenix)</legend><div class="trow"><select id="time" aria-label="Arrival time"></select><button class="btn b-paper" type="button" id="now">Now</button></div></fieldset>
+   <p class="hint">Hours are Mon–Sat 8a–3p, closed Sunday. Holiday hours can differ, so check Instagram before a holiday trip.</p>
+   <div class="msg">
+    <label class="lbl" for="msg">Message to send them</label>
+    <textarea id="msg" readonly></textarea>
+    <div class="acts"><button class="btn b-paper" type="button" id="copy">Copy text</button><a class="btn b-ink" href="https://ig.me/m/maleta.cafe" target="_blank" rel="noopener">Open Instagram DM</a></div>
+   </div>
+  </div>
+  <div>
+   <div class="ticket" id="ticket" aria-live="polite">
+    <div class="tm">
+     <span class="lbl">Maleta Cafe · 147 E Adams St · Phoenix</span>
+     <div class="big2" id="tStat">Open</div>
+     <div id="tSub" style="font-weight:600"></div>
+     <div class="tfields"><div><span class="lbl">Day</span><b id="tDay"></b></div><div><span class="lbl">Arrive</span><b id="tTime"></b></div><div><span class="lbl">Gate</span><b>147</b></div><div><span class="lbl">Beans</span><b>Pair Cupworks</b></div></div>
+    </div>
+    <div class="ts"><div><span class="lbl">Seat</span><div style="font-weight:700;font-size:18px">To-go works</div></div><div class="bar" aria-hidden="true"></div></div>
+   </div>
+   <div class="warn" id="warn" hidden><span id="warnT"></span><button type="button" id="jump">Move to next departure</button></div>
+   <ol class="itin" id="itin">
+    <li><span>1</span><div><b>Order the Tokyo matcha</b><p>Roasted Fuji apple cinnamon syrup, caramel and graham cracker cold foam. Or work through the fall menu with her homemade syrups.</p></div></li>
+    <li><span>2</span><div><b>While you wait: gift shop + gallery</b><p>Same address, 147 E Adams St, shared with the Arizona Latino Arts &amp; Cultural Center. Reviewers say don't skip either.</p></div></li>
+    <li><span>3</span><div><b>Small space, no outside seating</b><p>A couple of tables inside, none outdoors. Taking it to-go is an easy call.</p></div></li>
+    <li><span>4</span><div><b>Driving in?</b><p>Parking info lives in their <a href="https://www.instagram.com/maleta.cafe/" target="_blank" rel="noopener">Parking highlight on Instagram</a>.</p></div></li>
+   </ol>
+   <div class="bio">Pinned in their Instagram bio: <code>11.8 | BRUNCH 11AM - 4PM | <a href="https://www.instagram.com/graciestaxbar/" target="_blank" rel="noopener">@graciestaxbar</a></code></div>
+   <div class="acts"><button class="btn b-ink" type="button" id="print">Print boarding pass</button><a class="btn b-paper" href="https://www.google.com/maps/dir/?api=1&amp;destination=33.4491939,-112.071669" target="_blank" rel="noopener">Directions</a></div>
+  </div>
+ </div>
+</section>
+
+<section class="stamps" id="stamps" aria-labelledby="st-h">
+ <div class="wrap">
+  <div class="sh rv"><div><span class="lbl kick">Passport pages</span><h2 id="st-h">Stamped: past pop-ups</h2></div><p>Maleta travels too. A few of the stops they've already made, from poster shows to a civic talk over cafecito.</p></div>
+  <div class="sw">
+   <figure class="st photo s1 rv" style="margin:0"><img src="img/p7.jpg" alt="Hand-painted Ghanaian movie poster for Deadly Prey in Phoenix, presented by Maleta Cafe" width="800" height="1000"><figcaption><h3>Deadly Prey in Phoenix</h3><p>Hand-painted Ghanaian movie poster exhibition and print sale, presented by Maleta at the Arizona Latino Arts &amp; Cultural Center.</p></figcaption><span class="dep">DEPARTED</span></figure>
+   <div class="st ink round s2 rv"><span class="lbl">Pop-up</span><h3>Grunch at Gracie's</h3><p>A Filipino brunch pop-up with Pair Cupworks espresso and matcha from Maleta.</p></div>
+   <figure class="st photo s3 rv" style="margin:0"><img src="img/p2.jpg" alt="A layered pink and green iced matcha held up in front of a pink neon sign" width="800" height="1000" style="aspect-ratio:5/4"><figcaption><h3>Maleta @ Huarachis</h3><p>The layered pink drink, on the road.</p></figcaption><span class="dep">DEPARTED</span></figure>
+   <div class="st ink s5 rv"><span class="lbl">Civic talk · District 7</span><h3>But first, cafecito</h3><p>Maleta hosted a conversation on the Phoenix city budget and youth and family services.</p></div>
+   <p class="next hand rv">next stops go up in the Events highlight</p>
+  </div>
+ </div>
+</section>
+
+<section class="visit wrap" id="visit" aria-labelledby="v-h">
+ <div class="vg">
+  <div class="rv">
+   <span class="lbl kick">Arrivals</span>
+   <h2 id="v-h">Visit</h2>
+   <p class="addr">147 E Adams St<br>Phoenix, AZ 85004</p>
+   <p style="margin:0 0 4px"><span class="live" data-live>…</span> <span data-livesub></span></p>
+   <table aria-label="Opening hours"><tbody id="hours"></tbody></table>
+   <div class="acts"><a class="btn b-ink" href="https://www.google.com/maps/dir/?api=1&amp;destination=33.4491939,-112.071669" target="_blank" rel="noopener">Directions</a><a class="btn b-paper" href="https://www.instagram.com/maleta.cafe/" target="_blank" rel="noopener">@maleta.cafe</a></div>
+  </div>
+  <div class="rv">
+   <div class="vimg"><img src="img/p8.jpg" alt="Inside Maleta: shelves of gifts, framed art and the espresso bar" width="800" height="1000"></div>
+   <div class="facts">
+    <div><b>Inside a gift shop &amp; gallery</b>Same address as the Arizona Latino Arts &amp; Cultural Center.</div>
+    <div><b>A couple of tables</b>No outside seating. To-go is quick.</div>
+    <div><b>Beans</b>Espresso from Pair Cupworks.</div>
+    <div><b>Questions?</b><a href="https://ig.me/m/maleta.cafe" target="_blank" rel="noopener">Send them a DM</a></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="end" aria-label="See you there">
+ <div class="wrap endg">
+  <h2>See you at gate 147.</h2>
+  <div class="acts"><a class="btn b-ink" href="#trip">Plan your stop</a><a class="btn b-paper" href="https://ig.me/m/maleta.cafe" target="_blank" rel="noopener">Message on Instagram</a></div>
+ </div>
+</section>
+</main>
+
+<footer class="wrap">Maleta Cafe · 147 E Adams St, Phoenix, AZ 85004 · <a href="https://www.instagram.com/maleta.cafe/" target="_blank" rel="noopener">instagram.com/maleta.cafe</a><br>Demo concept by an independent developer, not affiliated with Maleta Cafe. Photos from @maleta.cafe.</footer>
+
+<div class="fab"><a class="btn b-ink" href="https://www.google.com/maps/dir/?api=1&amp;destination=33.4491939,-112.071669" target="_blank" rel="noopener">Directions</a><a class="btn b-paper" href="https://ig.me/m/maleta.cafe" target="_blank" rel="noopener">DM</a></div>
+
+<script>
+(function(){
+var D=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],DL=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],O=480,C=900;
+function az(){var o={};new Intl.DateTimeFormat('en-US',{timeZone:'America/Phoenix',weekday:'short',hour:'numeric',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date()).forEach(function(x){o[x.type]=x.value});return{d:D.indexOf(o.weekday),m:(+o.hour%24)*60+(+o.minute)}}
+function dur(n){var h=Math.floor(n/60),m=n%60;return(h?h+' h':'')+(h&&m?' ':'')+(m?m+' min':'')}
+function fmt(m){var h=Math.floor(m/60),mm=m%60,ap=h>=12?' pm':' am';h=h%12||12;return h+(mm?':'+(mm<10?'0':'')+mm:'')+ap}
+function st(d,m){if(d===0)return{o:0,s:'Sunday: closed · next departure Mon 8 am'};if(m<O)return{o:0,s:'Boards at 8 am · in '+dur(O-m)};if(m>=C)return{o:0,s:'Next departure '+(d===6?'Mon':D[d+1])+' 8 am'};return{o:1,s:'until 3 pm · last call in '+dur(C-m)}}
+function live(){var n=az(),s=st(n.d,n.m);document.querySelectorAll('[data-live]').forEach(function(e){e.textContent=s.o?'Open now':'Closed now';e.classList.toggle('on',!!s.o)});document.querySelectorAll('[data-livesub]').forEach(function(e){e.textContent=s.s});
+ var hb=document.getElementById('hours');if(hb&&!hb.children.length){[1,2,3,4,5,6,0].forEach(function(d){var tr=document.createElement('tr');if(d===n.d)tr.className='today';tr.innerHTML='<td>'+DL[d]+(d===n.d?' · today':'')+'</td><td>'+(d?'8 am – 3 pm':'Closed')+'</td>';hb.appendChild(tr)})}}
+live();setInterval(live,60000);
+/* planner */
+var sel={d:0,m:0,now:true},days=document.getElementById('days'),ts=document.getElementById('time');
+[1,2,3,4,5,6,0].forEach(function(d){var b=document.createElement('button');b.type='button';b.textContent=D[d];b.dataset.d=d;if(!d)b.className='sun';b.setAttribute('aria-label',DL[d]);b.onclick=function(){sel.d=d;sel.now=false;draw()};days.appendChild(b)});
+for(var m=360;m<=1080;m+=30){var op=document.createElement('option');op.value=m;op.textContent=fmt(m);ts.appendChild(op)}
+var nowOpt=document.createElement('option');nowOpt.id='nowOpt';ts.insertBefore(nowOpt,ts.firstChild);
+ts.onchange=function(){if(ts.value==='now'){setNow();return}sel.m=+ts.value;sel.now=false;draw()};
+function setNow(){var n=az();sel.d=n.d;sel.m=n.m;sel.now=true;draw()}
+document.getElementById('now').onclick=setNow;
+function next(){var d=sel.d,m=sel.m;if(d!==0&&m<O)return{d:d,m:O};var x=(d+1)%7;if(x===0)x=1;return{d:x,m:O}}
+document.getElementById('jump').onclick=function(){var n=next();sel.d=n.d;sel.m=n.m;sel.now=false;draw()};
+function draw(){var s=st(sel.d,sel.m);
+ [].forEach.call(days.children,function(b){b.setAttribute('aria-pressed',+b.dataset.d===sel.d)});
+ nowOpt.value='now';nowOpt.textContent='Now ('+fmt(sel.now?sel.m:az().m)+')';ts.value=sel.now?'now':String(sel.m);if(!sel.now&&ts.value!==String(sel.m))ts.value='now';
+ document.getElementById('tStat').textContent=s.o?'OPEN':'CLOSED';
+ document.getElementById('tSub').textContent=s.o?'Last call in '+dur(C-sel.m)+' · doors close 3 pm':s.s;
+ document.getElementById('tDay').textContent=DL[sel.d];document.getElementById('tTime').textContent=fmt(sel.m);
+ var w=document.getElementById('warn');w.hidden=!!s.o;
+ if(!s.o){var n=next();document.getElementById('warnT').textContent='The suitcase is closed then. Next departure: '+DL[n.d]+' at 8 am.'}
+ var when=(sel.now?'today':DL[sel.d])+' around '+fmt(sel.m);
+ document.getElementById('msg').value='Hi Maleta! I\'m planning to stop by '+when+' at 147 E Adams St. Is the Tokyo matcha still on the fall menu? I\'ll take it to-go. Thank you!';
+}
+setNow();
+document.getElementById('copy').onclick=function(){var t=document.getElementById('msg'),b=this;function ok(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy text'},1800)}
+ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(ok,function(){t.select();document.execCommand('copy');ok()})}else{t.select();document.execCommand('copy');ok()}};
+document.getElementById('print').onclick=function(){window.print()};
+/* reveal */
+var R=document.querySelectorAll('.rv');if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});R.forEach(function(e){io.observe(e)});setTimeout(function(){R.forEach(function(e){e.classList.add("in")})},1600)}else R.forEach(function(e){e.classList.add('in')});
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Demo concept|Demo-Konzept/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Pricing →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Yuma Barbershop · Pick your barber · S Jones Blvd, Las Vegas</title><meta property="og:type" content="website"><meta property="og:title" content="Yuma Barbershop · Pick your barber · S Jones Blvd, Las Vegas"><meta property="og:description" content="Yuma Barbershop on S Jones Blvd, Las Vegas. Pick Norma, Jonathan or Amaya, check today"><meta property="og:image" content="https://pikold.github.io/demo-sites/yuma-barbershop/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Yuma Barbershop on S Jones Blvd, Las Vegas. Pick Norma, Jonathan or Amaya, check today's hours, walk in or book. 4.9 on Google from 217 reviews.">
+<link rel="stylesheet" href="../_fonts/syne.css">
+<link rel="stylesheet" href="../_fonts/rubik.css">
+<style>
+:root{--grape:#46206F;--grape2:#5a2d8c;--sand:#F3E7D3;--sand2:#eadac0;--lemon:#FFD84A;--ink:#1B1030;--r:32px;--rs:20px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--sand);color:var(--ink);font:400 17px/1.55 Rubik,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,.syne{font-family:Syne,Rubik,sans-serif;letter-spacing:-.02em;line-height:.95}
+:focus-visible{outline:4px solid var(--lemon);outline-offset:3px;border-radius:12px;box-shadow:0 0 0 7px var(--ink)}
+.wrap{width:min(100% - 32px,1320px);margin-inline:auto}
+.demo{background:var(--ink);color:var(--sand);font-size:13px;line-height:1.4;padding:8px 16px;text-align:center}
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0}
+.logo{font:700 24px/1 Syne,sans-serif;text-decoration:none;display:flex;align-items:center;gap:10px;letter-spacing:.02em}
+.logo i{width:30px;height:30px;border-radius:50%;background:var(--grape);display:grid;place-items:center}
+.logo i::after{content:"";width:12px;height:12px;border-radius:50%;background:var(--lemon)}
+.nav{display:flex;gap:6px;font-weight:500;font-size:15px}
+.nav a{text-decoration:none;padding:10px 14px;border-radius:99px}
+.nav a:hover{background:var(--sand2)}
+/* buttons: arcade style */
+.btn{--bg:var(--lemon);--fg:var(--ink);display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:99px;border:0;background:var(--bg);color:var(--fg);font:600 16px/1 Rubik,sans-serif;text-decoration:none;cursor:pointer;box-shadow:0 6px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 0 var(--ink)}
+.btn:active{transform:translateY(5px);box-shadow:0 1px 0 var(--ink)}
+.btn.g{--bg:var(--grape);--fg:var(--sand)}
+.btn.s{--bg:var(--sand);--fg:var(--ink)}
+.btn svg{width:20px;height:20px;flex:none}
+.status{display:inline-flex;align-items:center;gap:10px;font-weight:500;background:var(--sand2);border-radius:99px;padding:8px 16px 8px 12px;font-size:15px}
+.status b{width:12px;height:12px;border-radius:50%;background:#9b8db0;flex:none}
+.status.on b{background:#2fbf71;box-shadow:0 0 0 5px rgba(47,191,113,.22)}
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:clamp(24px,4vw,64px);align-items:stretch;padding:clamp(8px,2vw,28px) 0 clamp(40px,5vw,72px)}
+.hero-l{display:flex;flex-direction:column;justify-content:center;gap:22px}
+.kick{font-weight:500;font-size:15px;display:flex;flex-wrap:wrap;gap:8px}
+.kick span{background:var(--grape);color:var(--sand);border-radius:99px;padding:6px 14px}
+h1{color:var(--grape);font-weight:700}
+h1 .y{display:block;font-size:clamp(5.2rem,2rem + 11vw,12rem);letter-spacing:-.05em;line-height:.82}
+h1 .b{display:block;font-size:clamp(2rem,1rem + 3.2vw,3.9rem);margin-top:.12em}
+.lede{font-size:clamp(18px,1.2vw + 12px,22px);max-width:30ch}
+.lede strong{font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+/* roster */
+.roster-wrap{background:var(--grape);border-radius:calc(var(--r) + 8px);padding:clamp(14px,1.6vw,22px);color:var(--sand);display:flex;flex-direction:column;gap:14px}
+.roster-h{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:4px 8px 0}
+.roster-h h2{font-size:clamp(22px,1.4vw + 12px,30px)}
+.roster-h small{font-size:14px;opacity:.8}
+.roster{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);grid-template-rows:1fr 1fr .78fr;gap:12px;min-height:clamp(420px,46vw,560px);grid-template-areas:"n j" "n j" "n a"}
+.roster[data-sel=jonathan]{grid-template-areas:"j n" "j n" "j a"}
+.roster[data-sel=amaya]{grid-template-areas:"a n" "a n" "a j"}
+.tile{position:relative;overflow:hidden;border:0;border-radius:var(--r);background:var(--grape2);color:var(--sand);text-align:left;padding:18px 20px;cursor:pointer;font:inherit;display:flex;flex-direction:column;justify-content:space-between;gap:10px;transition:background .25s,transform .2s;min-height:120px}
+.tile[data-k=norma]{grid-area:n}.tile[data-k=jonathan]{grid-area:j}.tile[data-k=amaya]{grid-area:a}
+.tile:hover{transform:translateY(-3px)}
+.tile .p{font:700 13px/1 Syne,sans-serif;letter-spacing:.12em;background:var(--ink);color:var(--lemon);border-radius:99px;padding:7px 11px;align-self:flex-start;position:relative;z-index:1}
+.tile .nm{font:700 clamp(28px,2.4vw + 10px,46px)/.95 Syne,sans-serif;position:relative;z-index:1}
+.tile .tg{font-size:15px;opacity:.9;position:relative;z-index:1;max-width:22ch}
+.tile .av{position:absolute;right:-6%;top:8%;width:62%;aspect-ratio:1;border-radius:50%;background:var(--grape);display:grid;place-items:center;font:700 clamp(80px,9vw,170px)/1 Syne,sans-serif;color:var(--grape2);transition:all .3s}
+.tile[aria-pressed=true]{background:var(--lemon);color:var(--ink)}
+.tile[aria-pressed=true] .av{background:var(--grape);color:var(--lemon);width:72%;top:14%}
+.tile[aria-pressed=true] .p::after{content:" · SELECTED"}
+.tile[aria-pressed=false] .tg{display:none}
+.roster[data-sel] .tile[aria-pressed=false] .av{width:46%;right:-10%;top:-8%}
+/* panel */
+.panel{background:var(--ink);color:var(--sand);border-radius:calc(var(--r) + 8px);padding:clamp(22px,4vw,56px);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);scroll-margin-top:16px}
+.panel .lbl{font:600 14px/1 Rubik,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--lemon)}
+.panel h2{font-size:clamp(3.4rem,2rem + 6vw,8rem);color:var(--lemon);margin:14px 0 22px;letter-spacing:-.04em}
+.says{list-style:none;display:grid;gap:14px}
+.says li{background:#2a1a45;border-radius:var(--rs);padding:16px 20px 16px 52px;position:relative;font-size:17px}
+.says li::before{content:"";position:absolute;left:20px;top:22px;width:14px;height:14px;border-radius:50%;background:var(--lemon)}
+.src{font-size:14px;opacity:.7;margin-top:14px}
+.act{background:var(--grape);border-radius:var(--r);padding:clamp(20px,2.4vw,32px);display:flex;flex-direction:column;gap:16px}
+.act h3{font-size:clamp(26px,1.6vw + 14px,36px)}
+.act p{font-size:16px;opacity:.92}
+.act .row{display:flex;flex-wrap:wrap;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;min-width:52px;padding:0 14px;border-radius:14px;border:0;background:#5d3590;color:var(--sand);font:500 15px/1 Rubik,sans-serif;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--lemon);color:var(--ink)}
+.chip.today::after{content:"•";margin-left:4px;color:var(--lemon)}
+.chip.today[aria-pressed=true]::after{color:var(--grape)}
+.dayline{font-weight:600;font-size:18px}
+.msg{background:var(--sand);color:var(--ink);border-radius:var(--rs);padding:14px 16px;font-size:16px}
+.small{font-size:14px;opacity:.8}
+/* level map */
+section{padding:clamp(56px,7vw,110px) 0 0}
+.sh{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 40px;margin-bottom:clamp(24px,3vw,40px)}
+.sh h2{font-size:clamp(2.4rem,1.3rem + 3.6vw,4.8rem);color:var(--grape);max-width:14ch}
+.sh p{max-width:42ch;font-size:18px}
+.map{position:relative;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:12px;padding-top:6px}
+.map::before{content:"";position:absolute;left:4%;right:4%;top:50%;height:26px;margin-top:-13px;border-radius:99px;background:var(--lemon)}
+.stage{position:relative;background:var(--grape);color:var(--sand);border-radius:var(--r);padding:20px 14px 22px;text-align:center;display:flex;flex-direction:column;gap:6px;align-items:center;min-height:190px;justify-content:center}
+.stage:nth-child(even){transform:translateY(22px)}
+.stage .lv{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.75}
+.stage .d{font:700 clamp(26px,2.2vw,36px)/1 Syne,sans-serif}
+.stage .h{font-weight:500;font-size:15px}
+.stage.off{background:var(--sand2);color:var(--ink)}
+.stage.off a{font-size:14px;font-weight:600}
+.stage.now{background:var(--ink);color:var(--lemon)}
+.stage .you{display:none;font-size:12px;font-weight:600;background:var(--lemon);color:var(--ink);border-radius:99px;padding:5px 10px;margin-top:4px}
+.stage.now .you{display:inline-block}
+.note{font-size:14px;margin-top:40px}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:44px}
+.steps div{display:flex;gap:14px;align-items:flex-start;font-size:16px}
+.steps b{flex:none;width:44px;height:44px;border-radius:50%;background:var(--lemon);display:grid;place-items:center;font:700 18px Syne,sans-serif}
+/* chair */
+.chair{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.8fr) minmax(0,1fr);grid-template-rows:auto auto;gap:14px}
+.ph{border-radius:var(--r);overflow:hidden;background:var(--grape)}
+.ph{position:relative}.ph picture{display:contents}.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.c1{grid-row:span 2;min-height:560px}.c1 img{object-position:50% 40%}
+.c2{min-height:250px;position:relative}.c2 img{position:absolute;inset:0;height:200%;object-position:50% 0}
+.blk{border-radius:var(--r);padding:clamp(20px,2.4vw,32px);display:flex;flex-direction:column;justify-content:flex-end;gap:10px}
+.blk h3{font-size:clamp(26px,1.6vw + 14px,38px)}
+.blk.gp{background:var(--grape);color:var(--sand)}
+.blk.lm{background:var(--lemon)}
+.blk.sd{background:var(--sand2)}
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.4fr);gap:14px}
+.score{background:var(--grape);color:var(--sand);border-radius:var(--r);padding:clamp(24px,3vw,44px);display:flex;flex-direction:column;justify-content:space-between;gap:20px}
+.score .big{font:700 clamp(6rem,4rem + 6vw,10rem)/.8 Syne,sans-serif;color:var(--lemon);letter-spacing:-.05em}
+.stars{display:flex;gap:6px}.stars svg{width:28px;height:28px;fill:var(--lemon)}
+.pts{display:grid;gap:14px}
+.pt{background:#fff8ec;border-radius:var(--r);padding:22px 26px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 18px;align-items:start}
+.pt:nth-child(2){margin-left:clamp(0px,4vw,60px)}
+.pt b{grid-row:span 2;width:48px;height:48px;border-radius:16px;background:var(--lemon);display:grid;place-items:center;font:700 20px Syne,sans-serif}
+.pt h3{font-size:24px}
+/* seven */
+.seven{background:var(--lemon);border-radius:calc(var(--r) + 16px);display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:clamp(16px,4vw,64px);padding:clamp(28px,4vw,64px) clamp(24px,5vw,80px);overflow:hidden}
+.seven .n{font:700 clamp(10rem,6rem + 14vw,22rem)/.72 Syne,sans-serif;color:var(--grape);letter-spacing:-.06em}
+.seven h2{font-size:clamp(2rem,1rem + 3vw,4rem);color:var(--grape)}
+.seven p{font-size:19px;margin-top:14px;max-width:38ch}
+/* kids */
+.kids{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:14px}
+.kids .ph{min-height:460px}.kids .ph img{object-position:30% 50%}
+.kids .blk{justify-content:center}
+.kids .blk h2{font-size:clamp(2.6rem,1.4rem + 3.6vw,5rem);color:var(--lemon)}
+.joy{width:110px;height:auto;margin-bottom:6px}
+/* visit */
+.visit{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+.visit .blk{justify-content:flex-start}
+dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 24px;font-size:17px}
+dt{font-weight:600}
+.addr{font:700 clamp(28px,1.8vw + 16px,44px)/1.05 Syne,sans-serif}
+.final{margin:clamp(56px,7vw,110px) 0 0;background:var(--grape);color:var(--sand);border-radius:calc(var(--r) + 16px) calc(var(--r) + 16px) 0 0;padding:clamp(40px,6vw,90px) 0 120px}
+.final h2{font-size:clamp(3rem,1.6rem + 6vw,8rem);color:var(--lemon);letter-spacing:-.04em;max-width:11ch}
+.final .cta{margin-top:30px}
+.final .foot{margin-top:56px;font-size:14px;opacity:.75;display:flex;flex-wrap:wrap;gap:8px 24px}
+.fab{display:none}
+.rv{transition:opacity .6s,transform .6s}
+.pre{opacity:0;transform:translateY(24px)}
+@media (max-width:1060px){
+ .hero{grid-template-columns:minmax(0,1fr)}
+ .panel,.praise,.kids,.visit{grid-template-columns:minmax(0,1fr)}
+ .chair{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .c1{grid-row:auto;grid-column:span 2;min-height:420px}
+ .map{grid-template-columns:repeat(4,minmax(0,1fr));row-gap:40px}
+ .map::before{display:none}
+}
+@media (max-width:700px){
+ body{font-size:16px}
+ .nav{display:none}
+ .roster{min-height:400px;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)}
+ .tile{padding:14px;border-radius:24px}
+ .tile .tg{font-size:14px}
+ .tile .p{font-size:11px;padding:6px 9px}
+ .tile[aria-pressed=true] .p::after{content:" · ON"}
+ .roster,.roster[data-sel]{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:1.5fr 1fr;min-height:380px}
+ .roster[data-sel=norma]{grid-template-areas:"n n" "j a"}.roster[data-sel=jonathan]{grid-template-areas:"j j" "n a"}.roster[data-sel=amaya]{grid-template-areas:"a a" "n j"}
+ .tile[aria-pressed=false] .nm{font-size:21px}
+ .tile .av{width:46%;right:-4%}.tile[aria-pressed=true] .av{width:42%;top:10%}
+ .cta .btn{flex:1 1 100%}
+ .map{grid-template-columns:minmax(0,1fr);gap:10px;padding-left:28px}
+ .map::before{display:block;left:6px;right:auto;top:10px;bottom:10px;width:16px;height:auto;margin:0}
+ .stage,.stage:nth-child(even){transform:none;min-height:0;flex-direction:row;justify-content:space-between;text-align:left;padding:16px 20px;border-radius:22px;flex-wrap:wrap}
+ .stage .lv{display:none}
+ .steps{grid-template-columns:minmax(0,1fr)}
+ .chair{grid-template-columns:minmax(0,1fr)}
+ .c1{grid-column:auto;min-height:440px}
+ .c2{min-height:300px}
+ .pt:nth-child(2){margin-left:0}
+ .seven{grid-template-columns:minmax(0,1fr)}
+ .kids .ph{min-height:300px}
+ .act .row .btn{flex:1 1 100%}
+ .fab{display:inline-flex;position:fixed;right:16px;bottom:16px;z-index:9}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}.pre{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="demo">Demo concept by an independent developer — not the official website of Yuma Barbershop. Not approved by the owner; removed on first request.</div>
+
+<header class="wrap top">
+ <a class="logo" href="#top" aria-label="Yuma Barbershop, top"><i></i>YUMA</a>
+ <nav class="nav" aria-label="Sections"><a href="#pick">Barbers</a><a href="#week">Hours</a><a href="#kids">Kids</a><a href="#visit">Visit</a></nav>
+</header>
+
+<main id="top">
+<div class="wrap hero">
+ <div class="hero-l">
+  <p class="kick"><span>Barbershop</span><span>S Jones Blvd · Las Vegas</span></p>
+  <h1><span class="y">Yuma</span><span class="b">Barbershop</span></h1>
+  <p class="lede">Fades, kids' cuts and clean detail work at <strong>3439 S Jones Blvd</strong>. People come back for their barber — so start by picking yours.</p>
+  <p class="status" data-status><b></b><span>Checking hours…</span></p>
+  <div class="cta">
+   <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=36.1265558,-115.2261114" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>Directions</a>
+   <a class="btn g" href="tel:+17022203839"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8Z"/></svg>Call (702) 220-3839</a>
+  </div>
+ </div>
+
+ <div class="roster-wrap" id="pick">
+  <div class="roster-h"><h2>Select your barber</h2><small>tap a player</small></div>
+  <div class="roster" data-sel="norma" role="group" aria-label="Barbers">
+   <button class="tile" data-k="norma" aria-pressed="true" aria-controls="panel"><span class="av" aria-hidden="true">N</span><span class="p">P1</span><span><span class="nm">Norma</span><br><span class="tg">Every detail, every time</span></span></button>
+   <button class="tile" data-k="jonathan" aria-pressed="false" aria-controls="panel"><span class="av" aria-hidden="true">J</span><span class="p">P2</span><span><span class="nm">Jonathan</span><br><span class="tg">Parents trust him with their kids</span></span></button>
+   <button class="tile" data-k="amaya" aria-pressed="false" aria-controls="panel"><span class="av" aria-hidden="true">A</span><span class="p">P3</span><span><span class="nm">Amaya</span><br><span class="tg">Takes his time on the fade</span></span></button>
+  </div>
+ </div>
+</div>
+
+<div class="wrap">
+ <div class="panel rv" id="panel" aria-live="polite">
+  <div>
+   <p class="lbl" data-p-lbl>Player 1 · selected</p>
+   <h2 data-p-name>Norma</h2>
+   <p class="small" style="margin-bottom:14px">What Google reviews say, in short:</p>
+   <ul class="says" data-p-says></ul>
+   <p class="src">Paraphrased from public Google reviews of Yuma Barbershop.</p>
+  </div>
+  <div class="act">
+   <h3 data-p-h>Walk in</h3>
+   <p data-p-how></p>
+   <div class="row" data-p-btns></div>
+   <hr style="border:0;height:4px;border-radius:4px;background:#5d3590;margin:6px 0">
+   <p class="lbl" style="color:var(--lemon)">When are you coming?</p>
+   <div class="chips" data-days role="group" aria-label="Day"></div>
+   <div class="chips" data-times role="group" aria-label="Time of day"></div>
+   <p class="dayline" data-dayline></p>
+   <p class="msg" data-msg></p>
+   <div class="row">
+    <button class="btn s" type="button" data-copy>Copy message</button>
+    <a class="btn" href="https://ig.me/m/yumabarbershoplv" target="_blank" rel="noopener">Instagram DM</a>
+   </div>
+   <p class="small">Instagram DMs can't be pre-filled — copy, then paste. Or just call the shop.</p>
+  </div>
+ </div>
+</div>
+
+<section id="week" class="wrap">
+ <div class="sh rv"><h2>The week, level by level</h2><p>No appointment needed with Norma or Jonathan — walk in during hours. Amaya takes bookings on Booksy. Today's stage is lit up.</p></div>
+ <div class="map rv" data-map>
+  <div class="stage" data-d="1"><span class="lv">Level 1</span><span class="d">Mon</span><span class="h">10 am – 5 pm</span><span class="you">You are here</span></div>
+  <div class="stage" data-d="2"><span class="lv">Level 2</span><span class="d">Tue</span><span class="h">9 am – 6 pm</span><span class="you">You are here</span></div>
+  <div class="stage" data-d="3"><span class="lv">Level 3</span><span class="d">Wed</span><span class="h">9 am – 6 pm</span><span class="you">You are here</span></div>
+  <div class="stage" data-d="4"><span class="lv">Level 4</span><span class="d">Thu</span><span class="h">9 am – 6 pm</span><span class="you">You are here</span></div>
+  <div class="stage" data-d="5"><span class="lv">Level 5</span><span class="d">Fri</span><span class="h">9 am – 6 pm</span><span class="you">You are here</span></div>
+  <div class="stage" data-d="6"><span class="lv">Level 6</span><span class="d">Sat</span><span class="h">9 am – 6 pm</span><span class="you">You are here</span></div>
+  <div class="stage off" data-d="0"><span class="lv">Bonus</span><span class="d">Sun</span><span class="h">Closed on Google</span><a href="https://www.instagram.com/yumabarbershoplv/" target="_blank" rel="noopener">check Instagram</a><span class="you">You are here</span></div>
+ </div>
+ <p class="note" data-vet hidden>Wed, Nov 11 is Veterans Day — Google notes hours might differ. Call ahead.</p>
+ <div class="steps rv">
+  <div><b>1</b><span>Walk in at 3439 S Jones Blvd, or book Amaya on Booksy.</span></div>
+  <div><b>2</b><span>Sit with your barber. Kids can play the arcade while they wait.</span></div>
+  <div><b>3</b><span>Leave clean — the cut you asked for, down to the detail.</span></div>
+ </div>
+</section>
+
+<section class="wrap">
+ <div class="sh rv"><h2>In the chair</h2><p>From their own feed: fresh cuts, clean fades and a busy floor.</p></div>
+ <div class="chair">
+  <figure class="ph c1 rv"><picture><source media="(max-width:700px)" srcset="img/p9-m.jpg"><img src="img/p9.jpg" alt="Back view of a freshly finished fade and textured top" width="640" height="1136"></picture></figure>
+  <div class="blk lm rv"><h3>Fades</h3><p>Reviewers single out a fade that comes out exactly as asked, with time taken on every edge.</p></div>
+  <figure class="ph c2 rv"><img src="img/p3.jpg" alt="A Yuma barber at work with the clipper" width="1800" height="1200"></figure>
+  <div class="blk gp rv"><h3>Kids' cuts</h3><p>Parents write about bringing their sons here — and the kids have an arcade.</p></div>
+  <div class="blk sd rv"><h3>Cuts, clean</h3><p>Walk in, ask for what you want, leave looking fresh.</p></div>
+ </div>
+</section>
+
+<section class="wrap" id="praise">
+ <div class="praise">
+  <div class="score rv">
+   <div><div class="big">4.9</div><div class="stars" aria-label="4.9 out of 5 stars"><svg viewBox="0 0 24 24"><path d="m12 2 3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6z"/></svg></div></div>
+   <p><strong>217 Google reviews.</strong> Here's what keeps coming up.</p>
+  </div>
+  <div class="pts">
+   <div class="pt rv"><b>1</b><h3>Detail, every visit</h3><p>Clients say their barber checks every line and won't rush it — they walk out looking fresh, every time.</p></div>
+   <div class="pt rv"><b>2</b><h3>Feels like home</h3><p>A clean shop, good music and a crew that makes everyone welcome. One reviewer also calls the prices great.</p></div>
+   <div class="pt rv"><b>3</b><h3>Good with kids</h3><p>A parent says the barber does a really good job with their son's hair — and the kids get the arcade.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="wrap">
+ <div class="seven rv">
+  <div class="n" aria-hidden="true">7</div>
+  <div><h2>years and counting</h2><p>One regular has been getting their hair cut at this shop for seven years — and still recommends it. Another followed Norma here and plans to keep coming back.</p></div>
+ </div>
+</section>
+
+<section class="wrap" id="kids">
+ <div class="kids">
+  <figure class="ph rv"><picture><source media="(max-width:700px)" srcset="img/p2-m.jpg"><img src="img/p2.jpg" alt="A boy with a fresh cut and line design playing the arcade cabinet inside Yuma Barbershop" width="1800" height="1200"></picture></figure>
+  <div class="blk gp rv">
+   <svg class="joy" viewBox="0 0 120 80" aria-hidden="true"><rect x="4" y="44" width="112" height="32" rx="16" fill="#1B1030"/><rect x="30" y="18" width="10" height="34" rx="5" fill="#F3E7D3"/><circle cx="35" cy="16" r="14" fill="#FFD84A"/><circle cx="76" cy="58" r="9" fill="#FFD84A"/><circle cx="98" cy="58" r="9" fill="#F3E7D3"/></svg>
+   <p class="lbl" style="color:var(--lemon);font-weight:600;letter-spacing:.14em;font-size:14px">KIDS' CORNER</p>
+   <h2>Insert coin. Get a fresh cut.</h2>
+   <p>There's a real arcade cabinet in the shop, so the wait is the fun part. One parent in the reviews names Jonathan for their son's haircuts.</p>
+   <div class="cta" style="margin-top:8px"><button class="btn" type="button" data-pick="jonathan">Pick Jonathan</button></div>
+  </div>
+ </div>
+</section>
+
+<section class="wrap" id="visit">
+ <div class="visit">
+  <div class="blk sd rv">
+   <p class="lbl" style="font-weight:600;letter-spacing:.14em;font-size:14px">FIND US</p>
+   <p class="addr">3439 S Jones Blvd<br>Las Vegas, NV 89146</p>
+   <p class="status" data-status style="align-self:flex-start"><b></b><span>Checking hours…</span></p>
+   <div class="cta"><a class="btn g" href="https://www.google.com/maps/dir/?api=1&amp;destination=36.1265558,-115.2261114" target="_blank" rel="noopener">Get directions</a><a class="btn s" href="https://www.google.com/maps/place/Yuma+Barbershop/data=!4m7!3m6!1s0x80c8c77fa56202b7:0x2310f5835b4c124d!8m2!3d36.1265558!4d-115.2261114!16s%2Fg%2F11q_xq_hgs!19sChIJtwJipX_HyIARTRJMW4P1ECM" target="_blank" rel="noopener">Open in Maps</a></div>
+  </div>
+  <div class="blk gp rv">
+   <p class="lbl" style="color:var(--lemon);font-weight:600;letter-spacing:.14em;font-size:14px">HOURS &amp; CONTACT</p>
+   <dl>
+    <dt>Mon</dt><dd>10 am – 5 pm</dd>
+    <dt>Tue – Sat</dt><dd>9 am – 6 pm</dd>
+    <dt>Sun</dt><dd>Closed on Google — check Instagram</dd>
+    <dt>Shop</dt><dd><a href="tel:+17022203839">(702) 220-3839</a></dd>
+    <dt>Amaya</dt><dd><a href="https://amayacuts.booksy.com/a/" target="_blank" rel="noopener">amayacuts on Booksy</a></dd>
+    <dt>Instagram</dt><dd><a href="https://www.instagram.com/yumabarbershoplv/" target="_blank" rel="noopener">@yumabarbershoplv</a></dd>
+   </dl>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="final">
+ <div class="wrap">
+  <h2 class="rv">Player ready?</h2>
+  <p style="font-size:19px;margin-top:18px;max-width:40ch">Walk in with Norma or Jonathan, book Amaya online, or call the shop first.</p>
+  <div class="cta">
+   <a class="btn" href="tel:+17022203839">Call the shop</a>
+   <a class="btn s" href="https://www.google.com/maps/dir/?api=1&amp;destination=36.1265558,-115.2261114" target="_blank" rel="noopener">Directions</a>
+   <a class="btn s" href="https://www.instagram.com/yumabarbershoplv/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+  <div class="foot"><span>Yuma Barbershop · 3439 S Jones Blvd, Las Vegas, NV 89146</span><span>Demo concept — not the official website. Removed on first request.</span></div>
+ </div>
+</footer>
+<a class="btn g fab" href="tel:+17022203839" aria-label="Call Yuma Barbershop"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8Z"/></svg>Call</a>
+
+<script>
+(function(){
+var H={0:null,1:[10,17],2:[9,18],3:[9,18],4:[9,18],5:[9,18],6:[9,18]};
+var DN=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+var DIR='https://www.google.com/maps/dir/?api=1&destination=36.1265558,-115.2261114';
+function f(h){return (h>12?h-12:h)+(h>=12?' pm':' am')}
+function now(){var p={};new Intl.DateTimeFormat('en-US',{timeZone:'America/Los_Angeles',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date()).forEach(function(x){p[x.type]=x.value});return{d:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(p.weekday),h:(+p.hour%24)+(+p.minute)/60}}
+var n=now(),t,on=false,o=H[n.d];
+if(o&&n.h>=o[0]&&n.h<o[1]){on=true;t='Open now · closes at '+f(o[1])}
+else if(o&&n.h<o[0]){t='Closed now · opens today at '+f(o[0])}
+else{var k=n.d;for(var i=1;i<8;i++){k=(n.d+i)%7;if(H[k])break}t='Closed now · opens '+(i==1?'tomorrow':DN[k].slice(0,3))+' at '+f(H[k][0])+(n.d==0?' · Sun: check Instagram':'')}
+document.querySelectorAll('[data-status]').forEach(function(s){s.classList.toggle('on',on);s.querySelector('span').textContent=t});
+var st=document.querySelector('.stage[data-d="'+n.d+'"]');if(st)st.classList.add('now');
+if(Date.now()<Date.UTC(2026,10,12,8)){document.querySelector('[data-vet]').hidden=false}
+
+var B={
+norma:{p:'Player 1',he:'her',says:['Pays attention to every detail and clearly cares about the work.','Makes sure you leave looking fresh — every single time.','One client followed her to Yuma and says they\'re staying for good.'],h:'Walk in',how:'Norma works the chairs at Yuma — walk in during shop hours. Call first if you want to check she\'s in.',btn:[['Walk in · directions',DIR,''],['Call the shop','tel:+17022203839','s']]},
+jonathan:{p:'Player 2',he:'him',says:['A parent says he does a really good job with their son\'s hair.','Welcoming and professional, like the rest of the shop.','Kids can hit the arcade cabinet while they wait.'],h:'Walk in',how:'Jonathan cuts at Yuma — walk in during shop hours. Call first if you want to check he\'s in.',btn:[['Walk in · directions',DIR,''],['Call the shop','tel:+17022203839','s']]},
+amaya:{p:'Player 3',he:'him',says:['Called one of the best barbers a client has ever had.','Cuts clean and exactly as asked — he takes his time on every detail.','The fade comes out right, and you can tell he loves the craft.'],h:'Book on Booksy',how:'Amaya takes appointments through his own Booksy page. You can also text him at (323) 365-1845, the number from his post.',btn:[['Book Amaya on Booksy','https://amayacuts.booksy.com/a/',''],['Text Amaya','sms:+13233651845','s']]}};
+var sel='norma',day=n.d,tm=1,TM=['in the morning','around midday','in the afternoon'],TL=['Morning','Midday','Afternoon'];
+var $=function(s){return document.querySelector(s)},R=$('.roster');
+var dz=$('[data-days]'),tz=$('[data-times]');
+[1,2,3,4,5,6,0].forEach(function(d){var b=document.createElement('button');b.type='button';b.className='chip'+(d==n.d?' today':'');b.textContent=DN[d].slice(0,3);b.dataset.d=d;b.setAttribute('aria-label',DN[d]+(d==n.d?' (today)':''));dz.appendChild(b)});
+TL.forEach(function(l,i){var b=document.createElement('button');b.type='button';b.className='chip';b.textContent=l;b.dataset.t=i;tz.appendChild(b)});
+dz.onclick=function(e){var b=e.target.closest('button');if(b){day=+b.dataset.d;draw()}};
+tz.onclick=function(e){var b=e.target.closest('button');if(b){tm=+b.dataset.t;draw()}};
+function draw(){
+ var b=B[sel],nm=sel[0].toUpperCase()+sel.slice(1);
+ R.dataset.sel=sel;
+ document.querySelectorAll('.tile').forEach(function(x){x.setAttribute('aria-pressed',x.dataset.k==sel)});
+ $('[data-p-lbl]').textContent=b.p+' · selected';$('[data-p-name]').textContent=nm;
+ $('[data-p-says]').innerHTML=b.says.map(function(s){return '<li>'+s+'</li>'}).join('');
+ $('[data-p-h]').textContent=b.h;$('[data-p-how]').textContent=b.how;
+ $('[data-p-btns]').innerHTML=b.btn.map(function(x){return '<a class="btn '+x[2]+'" href="'+x[1]+'"'+(x[1].indexOf('http')==0?' target="_blank" rel="noopener"':'')+'>'+x[0]+'</a>'}).join('');
+ dz.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',+x.dataset.d==day)});
+ tz.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',+x.dataset.t==tm)});
+ var o=H[day],dl,when=(day==n.d?'today':'on '+DN[day]);
+ if(!o){dl='Sunday: closed on Google — check Instagram before you come.';}
+ else dl=DN[day]+': open '+f(o[0])+' – '+f(o[1])+(day==n.d?' · '+t.toLowerCase():'');
+ if(day==3&&Date.now()<Date.UTC(2026,10,12,8))dl+=' (Nov 11 is Veterans Day — hours might differ)';
+ $('[data-dayline]').textContent=dl;
+ $('[data-msg]').textContent=o?'Hi Yuma! Is '+nm+' cutting '+when+'? I\'d like to come in '+TM[tm]+'.':'Hi Yuma! Are you open this Sunday? I\'d like to see '+nm+' '+TM[tm]+'.';
+}
+document.querySelectorAll('.tile,[data-pick]').forEach(function(x){x.addEventListener('click',function(){sel=x.dataset.k||x.dataset.pick;draw();if(x.dataset.pick||matchMedia('(max-width:1060px)').matches)$('#panel').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})})});
+$('[data-copy]').onclick=function(){var m=$('[data-msg]').textContent,btn=this;function ok(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy message'},1600)}
+ if(navigator.clipboard)navigator.clipboard.writeText(m).then(ok,ok);else{var a=document.createElement('textarea');a.value=m;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}a.remove();ok()}};
+draw();
+var io='IntersectionObserver' in window&&new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('pre');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+var vh=innerHeight;document.querySelectorAll('.rv').forEach(function(el){if(io&&el.getBoundingClientRect().top>vh){el.classList.add('pre');io.observe(el)}});setTimeout(function(){document.querySelectorAll('.pre').forEach(function(el){el.classList.remove('pre')})},1500);
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Demo concept|Demo-Konzept/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Pricing →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

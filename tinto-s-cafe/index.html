@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Tinto’s Café — Colombian coffee on N Eldridge Pkwy, Houston</title><meta property="og:type" content="website"><meta property="og:title" content="Tinto’s Café — Colombian coffee on N Eldridge Pkwy, Houston"><meta property="og:description" content="Tinto’s Café: Castillo coffee from Santander, Colombia, Argentine empanadas and sourdough rolls at 8302 N Eldridge Pkwy #210, Houston TX. 4.9 stars from 212 Google reviews."><meta property="og:image" content="https://pikold.github.io/demo-sites/tinto-s-cafe/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Tinto’s Café: Castillo coffee from Santander, Colombia, Argentine empanadas and sourdough rolls at 8302 N Eldridge Pkwy #210, Houston TX. 4.9 stars from 212 Google reviews.">
+<link rel="stylesheet" href="../_fonts/gloock.css">
+<link rel="stylesheet" href="../_fonts/plus-jakarta-sans.css">
+<style>
+:root{--g:#1E4637;--g2:#163428;--ink:#132B22;--cloud:#F7F4EE;--paper:#FFFDF9;--guava:#EB8072;--guava-d:#B5483B;--matcha:#B9C98C;--line:#1E463724;--muted:#4A5E55;--step:clamp(0px,5.5vw,96px);--rail:0px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{background:var(--cloud);color:var(--ink);font:400 17px/1.6 'Plus Jakarta Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,.serif{font-family:'Gloock',Georgia,serif;font-weight:400;letter-spacing:-.01em;line-height:1.02}
+:focus-visible{outline:3px solid var(--guava-d);outline-offset:3px;border-radius:6px}
+.demo{background:var(--g);color:var(--cloud);font-size:12.5px;line-height:1.4;padding:8px 16px;text-align:center}
+.wrap{max-width:1360px;margin:0 auto;padding:0 clamp(18px,4vw,56px)}
+main{padding-left:var(--rail)}
+/* rail */
+.rail{position:fixed;left:0;top:0;bottom:0;width:104px;display:none;z-index:20;pointer-events:none}
+.rail .lbl{position:absolute;left:22px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--g);line-height:1.3;width:76px}
+.rail .top{top:58px}.rail .bot{bottom:26px}
+.rail .track{position:absolute;left:30px;top:104px;bottom:78px;width:2px;background:repeating-linear-gradient(var(--g) 0 6px,transparent 6px 12px);opacity:.35}
+.rail .fill{position:absolute;left:30px;top:104px;width:2px;background:var(--g);height:0}
+.rail .mk{position:absolute;left:24px;top:104px;width:14px;height:14px;border-radius:50%;background:var(--guava);box-shadow:0 0 0 4px var(--cloud),0 0 0 5px var(--g);transform:translateY(-7px)}
+.rail .mk span{position:absolute;left:24px;top:-4px;white-space:nowrap;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);background:var(--cloud);padding:2px 6px;border-radius:4px}
+.strip{position:fixed;top:0;left:0;height:4px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--g),var(--matcha) 60%,var(--guava));z-index:30}
+@media(min-width:1024px){:root{--rail:104px}.rail{display:block}.strip{display:none}}
+/* buttons */
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:9px;min-height:48px;padding:12px 22px;border-radius:999px;font-weight:600;font-size:15.5px;text-decoration:none;border:1.5px solid var(--g);cursor:pointer;font-family:inherit;transition:transform .18s,background .18s,color .18s,box-shadow .18s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.pri{background:var(--g);color:var(--cloud)}
+.btn.pri:hover{background:var(--g2);transform:translateY(-2px);box-shadow:0 8px 18px #1e463733}
+.btn.gv{background:var(--guava);border-color:var(--guava);color:var(--ink)}
+.btn.gv:hover{background:#e46c5d;transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--g)}
+.btn.ghost:hover{background:#1e46370f;transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.status{display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:600;color:var(--g);background:var(--paper);border:1px solid var(--line);padding:7px 14px 7px 11px;border-radius:999px}
+.status i{width:9px;height:9px;border-radius:50%;background:#9aa69f}
+.status.open i{background:#2f8f5b;box-shadow:0 0 0 4px #2f8f5b26}
+.kick{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--guava-d);display:flex;align-items:center;gap:10px}
+.kick:before{content:"";width:26px;height:2px;background:currentColor}
+/* hero */
+.hero{padding:clamp(28px,4.5vw,64px) 0 clamp(40px,6vw,90px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(24px,4vw,64px);align-items:end}
+.hero h1{font-size:clamp(76px,12.5vw,192px);color:var(--g);line-height:.86;margin:18px 0 6px}
+.hero h1 small{display:block;font-size:.22em;letter-spacing:.02em;margin:0 0 .18em .08em;color:var(--guava-d)}
+.hero h1 .cw{display:block;font:700 clamp(15px,1.4vw,19px)/1 'Plus Jakarta Sans',sans-serif;letter-spacing:.42em;text-transform:uppercase;color:var(--g);margin:.7em 0 0 .3em}
+.hero .lede{font-size:clamp(18px,1.6vw,22px);max-width:30ch;line-height:1.45;margin:18px 0 6px}
+.hero .addr{color:var(--muted);font-size:15px;margin-bottom:22px}
+.hero .row{display:flex;flex-wrap:wrap;align-items:center;gap:14px 18px;margin-bottom:22px}
+.hero .rating{font-size:14px;color:var(--muted)}.hero .rating b{color:var(--ink)}
+.hero figure{position:relative}
+.hero figure img{width:100%;aspect-ratio:4/5;max-height:calc(100vh - 170px);min-height:340px;object-fit:cover;object-position:50% 40%;border-radius:22px 22px 22px 120px}
+.hero figcaption{position:absolute;left:-18px;bottom:28px;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:10px 14px;font-size:13px;line-height:1.35;max-width:210px;box-shadow:0 10px 30px #1e46371a}
+.ridge{position:absolute;right:0;top:-38px;width:62%;height:auto;z-index:-1;opacity:.9}
+/* descent sections */
+.step{position:relative;padding:clamp(60px,8vw,120px) 0}
+.step>.wrap>.in{margin-left:calc(var(--step)*var(--n,0))}
+.stairs{position:absolute;left:clamp(18px,4vw,56px);top:0;width:calc(var(--step)*var(--n,0) + 2px);height:clamp(60px,8vw,120px);border-right:2px dashed #1e463740;border-bottom:none;pointer-events:none}
+.sec-h{display:flex;align-items:baseline;gap:16px;margin-bottom:clamp(22px,3vw,40px)}
+.sec-h .no{font-family:'Gloock',serif;font-size:15px;color:var(--guava-d);border:1.5px solid currentColor;border-radius:999px;padding:2px 10px}
+h2{font-size:clamp(38px,5.4vw,80px);color:var(--g);max-width:16ch}
+/* origin label */
+.origin{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(28px,4vw,64px);align-items:start}
+.label{background:var(--g);color:var(--cloud);border-radius:20px;padding:clamp(24px,3.4vw,44px);position:relative;overflow:hidden}
+.label:after{content:"";position:absolute;inset:10px;border:1px solid #f7f4ee33;border-radius:14px;pointer-events:none}
+.label .t{font-family:'Gloock',serif;font-size:clamp(54px,7vw,96px);line-height:.9}
+.label .reg{color:var(--matcha);font-weight:600;letter-spacing:.06em;font-size:14px;text-transform:uppercase;margin:10px 0 24px}
+.cells{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.cell{border:1px solid #f7f4ee38;border-radius:12px;padding:12px 14px}
+.cell.w{grid-column:1/-1}
+.cell small{display:block;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--matcha);font-weight:700;margin-bottom:3px}
+.cell b{font-family:'Gloock',serif;font-weight:400;font-size:clamp(20px,2vw,26px);line-height:1.15;display:block}
+.cell p{font-size:13.5px;line-height:1.45;opacity:.88}
+.notes{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.notes span{font-size:13px;border-radius:999px;padding:4px 11px;background:#f7f4ee14;border:1px solid #f7f4ee30}
+.label .src{margin-top:16px;font-size:12px;opacity:.75}
+.origin .copy p{font-size:clamp(17px,1.4vw,19px);margin-bottom:16px;max-width:42ch}
+.origin .copy .big{font-family:'Gloock',serif;font-size:clamp(23px,2.2vw,30px);line-height:1.2;color:var(--g);margin:22px 0 20px;padding-left:16px;border-left:3px solid var(--matcha)}
+.origin .copy .big em{font-style:normal;color:var(--guava-d)}
+.path{width:100%;max-width:360px;height:auto;margin-top:18px}
+/* cafe */
+.cafe{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,60px);align-items:start}
+.pair{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:14px;align-items:start}
+.pair img{width:100%;object-fit:cover;border-radius:18px}
+.pair .a{aspect-ratio:4/5}.pair .b{aspect-ratio:3/4;margin-top:clamp(40px,7vw,110px)}
+.note{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 24px;margin:4px 0 24px;position:relative}
+.note:before{content:"";position:absolute;left:24px;top:-1px;width:56px;height:3px;background:var(--guava);border-radius:0 0 3px 3px}
+.note p{font-family:'Gloock',serif;font-size:clamp(22px,2.1vw,28px);line-height:1.22;color:var(--g)}
+.note span{display:block;margin-top:10px;font-size:13px;color:var(--muted)}
+.cafe .txt>p{margin-bottom:14px;max-width:46ch}
+.counter{margin-top:22px;border-top:1px solid var(--line)}
+.counter li{list-style:none;display:grid;grid-template-columns:120px minmax(0,1fr);gap:14px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.counter li b{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--guava-d);padding-top:3px}
+.counter ul{padding:0}
+.fine{font-size:13px;color:var(--muted);margin-top:10px}
+/* praise */
+.praise{margin-top:clamp(50px,7vw,100px);display:grid;grid-template-columns:minmax(0,.7fr) repeat(3,minmax(0,1fr));gap:clamp(16px,2.4vw,32px);align-items:start}
+.score .n{font-family:'Gloock',serif;font-size:clamp(70px,8vw,112px);line-height:.85;color:var(--g)}
+.score p{font-size:14px;color:var(--muted);margin-top:8px}
+.pt{padding-top:16px;border-top:2px solid var(--g)}
+.pt:nth-child(3){margin-top:28px}.pt:nth-child(4){margin-top:56px}
+.pt h3{font-size:23px;color:var(--g);margin-bottom:6px;line-height:1.15}
+.pt p{font-size:15px;color:var(--muted)}
+/* picker */
+.pick{background:var(--paper);border:1px solid var(--line);border-radius:26px;padding:clamp(20px,3.4vw,48px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px)}
+.pick h2{font-size:clamp(36px,4.6vw,64px)}
+.pick .sub{margin:12px 0 22px;color:var(--muted);max-width:38ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:46px;padding:10px 18px;border-radius:999px;border:1.5px solid var(--g);background:transparent;color:var(--g);font:600 15px 'Plus Jakarta Sans',sans-serif;cursor:pointer;transition:background .18s,color .18s,transform .18s}
+.chip:hover{transform:translateY(-2px);background:#1e46370d}
+.chip[aria-pressed=true]{background:var(--g);color:var(--cloud)}
+.items{display:grid;gap:10px;margin-top:22px}
+.item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 14px;align-items:start;text-align:left;width:100%;padding:16px 18px;border-radius:16px;border:1.5px solid var(--line);background:var(--cloud);cursor:pointer;font:inherit;color:inherit;transition:border-color .18s,background .18s,transform .18s;animation:rise .35s both}
+.item:hover{border-color:var(--g)}
+.item[aria-pressed=true]{border-color:var(--g);background:#b9c98c38}
+.item h3{font-size:24px;color:var(--g);line-height:1.1}
+.item p{grid-column:1/-1;font-size:14.5px;color:var(--muted);line-height:1.45}
+.tag{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 9px;border-radius:999px;white-space:nowrap;background:#eb807229;color:#8f3529}
+.tag.post{background:#b9c98c55;color:var(--g)}
+.tick{grid-column:1/-1;font-size:12.5px;font-weight:600;color:var(--g)}
+.out{display:flex;flex-direction:column;gap:16px}
+.msg{background:var(--g);color:var(--cloud);border-radius:20px 20px 20px 6px;padding:20px 22px;font-size:16.5px;line-height:1.5;min-height:120px}
+.msg small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--matcha);font-weight:700;margin-bottom:8px}
+.visit-line{border:1px dashed #1e463766;border-radius:16px;padding:14px 16px;font-size:14.5px}
+.visit-line b{color:var(--g)}
+.copied{font-size:13px;color:var(--g);min-height:20px}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}}
+/* moments */
+.mom{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(10px,1.6vw,22px);align-items:start}
+.mom figure{position:relative}
+.mom img{width:100%;height:100%;object-fit:cover;border-radius:16px}
+.mom .m1{grid-column:1/5}.mom .m1 img{aspect-ratio:3/4}
+.mom .m2{grid-column:5/10;margin-top:clamp(40px,6vw,90px)}.mom .m2 img{aspect-ratio:4/5}
+.mom .m3{grid-column:10/13;margin-top:clamp(120px,14vw,200px)}.mom .m3 img{aspect-ratio:3/4;object-position:50% 15%}
+.mom figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+/* visit */
+.visit{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(24px,4vw,64px);align-items:start}
+.visit img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:120px 22px 22px 22px}
+.hours{width:100%;border-collapse:collapse;margin:18px 0 8px;font-size:16px}
+.hours td{padding:10px 0;border-bottom:1px solid var(--line)}
+.hours td+td{text-align:right;font-weight:600}
+.hours tr.today td{color:var(--guava-d)}
+.hours tr.today td:first-child:after{content:" · today";font-size:12px;font-weight:700}
+.addr-big{font-family:'Gloock',serif;font-size:clamp(28px,3vw,42px);color:var(--g);line-height:1.12;margin:10px 0 6px}
+.links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:16px;font-size:15px}
+.links a{font-weight:600;color:var(--g);text-underline-offset:4px;min-height:44px;display:inline-flex;align-items:center}
+.final{background:var(--g);color:var(--cloud);border-radius:28px;padding:clamp(32px,5vw,72px);margin-top:clamp(60px,8vw,110px);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:24px;align-items:end;position:relative;overflow:hidden}
+.final h2{color:var(--cloud);max-width:14ch}
+.final p{margin-top:12px;opacity:.85;max-width:40ch}
+.final .btn.ghost{color:var(--cloud);border-color:var(--cloud)}
+.final .btn.ghost:hover{background:#f7f4ee1a}
+.cup{position:absolute;right:-30px;top:-40px;width:220px;opacity:.14}
+footer{padding:40px 0 110px;font-size:13px;color:var(--muted)}
+.fab{position:fixed;right:16px;bottom:16px;z-index:40;display:none;box-shadow:0 10px 26px #1e463759}
+.reveal.go{animation:rise .5s cubic-bezier(.2,.7,.2,1) both}
+
+@media(max-width:1023px){
+  .hero .wrap,.origin,.cafe,.pick,.visit,.final{grid-template-columns:minmax(0,1fr)}
+  .hero figure{max-width:520px}
+  .hero figure img{max-height:none;aspect-ratio:4/4.4}
+  .praise{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pt:nth-child(n){margin-top:0}
+  .visit figure{max-width:440px}
+}
+@media(max-width:700px){
+  body{font-size:16px}
+  :root{--step:14px}
+  .stairs{display:none}
+  .step>.wrap>.in{border-left:2px dashed #1e463733;padding-left:14px;margin-left:calc(var(--step)*var(--n,0)*.6)}
+  .hero h1{margin-top:12px}
+  .hero figcaption{left:10px;bottom:12px}
+  .ridge{width:80%;top:-24px}
+  .cells{grid-template-columns:minmax(0,1fr)}
+  .praise{grid-template-columns:minmax(0,1fr)}
+  .counter li{grid-template-columns:minmax(0,1fr);gap:2px}
+  .mom{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mom figure{grid-column:auto;margin-top:0}
+  .mom .m2{margin-top:36px}
+  .mom .m3{grid-column:1/-1}.mom .m3 img{aspect-ratio:4/3;object-position:50% 25%}
+  .fab{display:inline-flex}
+  .item{grid-template-columns:minmax(0,1fr)}.item .tag{justify-self:start}
+  .btn{padding:12px 18px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="demo" role="note">Demo concept by an independent developer — not the official website of Tinto’s Café. Not approved by the owner; removed on first request.</div>
+<div class="strip" id="strip" aria-hidden="true"></div>
+<aside class="rail" aria-hidden="true">
+  <div class="lbl top">1,450 m · Santander</div>
+  <div class="track"></div><div class="fill" id="fill"></div>
+  <div class="mk" id="mk"><span id="mkl">Origin</span></div>
+  <div class="lbl bot">your cup · Houston</div>
+</aside>
+
+<main>
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="kick">Colombian coffee · Argentine kitchen</span>
+      <h1><small>a small black coffee called</small>Tinto’s<span class="cw">Café</span></h1>
+      <p class="lede">A cozy café pouring Colombian specialty coffee, next to Argentine empanadas, guava pastries and sourdough rolls.</p>
+      <p class="addr">8302 N Eldridge Pkwy #210 · at Eldridge &amp; West Rd, Houston TX 77041</p>
+      <div class="row">
+        <span class="status" id="status"><i></i><span>Checking hours…</span></span>
+        <span class="rating"><b>4.9 ★</b> from 212 Google reviews</span>
+      </div>
+      <div class="btns">
+        <a class="btn pri" href="https://www.google.com/maps/dir/?api=1&amp;destination=29.8981411,-95.6053063"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Directions</a>
+        <a class="btn ghost" href="tel:+18326092064"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>(832) 609-2064</a>
+      </div>
+    </div>
+    <figure>
+      <svg class="ridge" viewBox="0 0 400 160" aria-hidden="true"><path d="M0 150 L70 70 L110 104 L182 22 L236 86 L268 60 L330 120 L400 150" fill="none" stroke="#1E4637" stroke-width="2.5" stroke-linejoin="round"/><path d="M182 22 L196 40 L182 36 L170 42z" fill="#1E4637"/><circle cx="182" cy="22" r="5" fill="#EB8072"/></svg>
+      <img src="img/p3.jpg" srcset="img/p3-m.jpg 506w, img/p3.jpg 1012w" sizes="(max-width:1023px) 92vw, 34vw" alt="Barista at Tinto’s hand-pouring coffee over a ribbed dripper and glass carafe">
+      <figcaption>Hand-poured at the counter: Castillo from Santander, Colombia.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<section class="step" id="origin" data-name="Origin" style="--n:0" aria-labelledby="h-origin">
+  <div class="wrap"><div class="in reveal">
+    <div class="sec-h"><span class="no">01</span><span class="kick">Where the cup begins</span></div>
+    <div class="origin">
+      <article class="label" aria-label="Coffee origin label">
+        <div class="t">Castillo</div>
+        <div class="reg">Santander, Colombia · 100% Arabica</div>
+        <div class="cells">
+          <div class="cell"><small>Altitude</small><b>1,450 m.a.s.l.</b><p>Grown under shade.</p></div>
+          <div class="cell"><small>SCA score</small><b>86.95</b><p>Specialty grade.</p></div>
+          <div class="cell w"><small>Process</small><b>Anaerobic fermentation</b><p>More than 80 hours of controlled fermentation, then a slow natural drying of 35–40 days.</p></div>
+          <div class="cell w"><small>In the cup</small><div class="notes"><span>White chocolate</span><span>Mandarin</span><span>Macadamia</span><span>Chamomile</span><span>Honey</span></div></div>
+        </div>
+        <p class="src">Sourced through Momento Colombia — as printed on Tinto’s own post.</p>
+      </article>
+      <div class="copy">
+        <h2 id="h-origin">From these mountains to your cup.</h2>
+        <p class="big">Three shipments from Santander so far — and the last post said they were <em>almost out again</em>.</p>
+        <p>In Colombia, a tinto is the small black coffee you drink all day. At Tinto’s it starts much higher up: shade-grown Castillo, fermented slowly and dried for weeks before it travels to Houston.</p>
+        <p>The owners say they chose it to represent quality, origin and Colombia — a coffee they’d be proud to pour every single day.</p>
+        <svg class="path" viewBox="0 0 360 70" aria-hidden="true"><path d="M6 10 C80 10 70 58 150 52 S260 20 300 56" fill="none" stroke="#1E4637" stroke-width="2" stroke-dasharray="5 6"/><circle cx="6" cy="10" r="5" fill="#1E4637"/><rect x="298" y="44" width="30" height="20" rx="4" fill="none" stroke="#EB8072" stroke-width="2.5"/><path d="M328 50 q10 0 8 8 q-2 5-8 4" fill="none" stroke="#EB8072" stroke-width="2.5"/><text x="18" y="30" font-size="11" fill="#4A5E55" font-family="Plus Jakarta Sans">Santander</text><text x="250" y="30" font-size="11" fill="#4A5E55" font-family="Plus Jakarta Sans">Eldridge Pkwy</text></svg>
+      </div>
+    </div>
+  </div></div>
+</section>
+
+<section class="step" id="cafe" data-name="The café" style="--n:1" aria-labelledby="h-cafe">
+  <span class="stairs" aria-hidden="true"></span>
+  <div class="wrap"><div class="in">
+    <div class="sec-h reveal"><span class="no">02</span><span class="kick">The café</span></div>
+    <div class="cafe">
+      <div class="pair">
+        <img class="a" src="img/p10.jpg" srcset="img/p10-m.jpg 506w, img/p10.jpg 1012w" sizes="(max-width:1023px) 55vw, 26vw" alt="Gallery wall of framed prints, records and plants glowing in a sunset lamp at Tinto’s" decoding="async">
+        <img class="b" src="img/p9.jpg" srcset="img/p9-m.jpg 506w, img/p9.jpg 1012w" sizes="(max-width:1023px) 38vw, 17vw" alt="Piping cream onto sourdough cinnamon rolls on a wooden board" decoding="async">
+      </div>
+      <div class="txt reveal">
+        <h2 id="h-cafe">Colombia and Argentina, one counter.</h2>
+        <div class="note"><p>The owner calls Tinto’s a way of sharing who they are — a little of themselves in every corner, every recipe and every cup.</p><span>Paraphrased from Tinto’s Instagram</span></div>
+        <p>Guests describe an Argentine &amp; Colombian owned spot that’s colorful, full of plants and busy in the good way — people talking, working, lingering over coffee.</p>
+        <div class="counter"><ul>
+          <li><b>Coffee</b><span>Pour-over, flat white, cold brew — Colombian beans</span></li>
+          <li><b>Matcha</b><span>Ceremonial matcha, Sparkling Matcha, matcha mango</span></li>
+          <li><b>Argentina</b><span>Empanadas, alfajores, mate, focaccia sandwiches</span></li>
+          <li><b>Bakery</b><span>Sourdough cinnamon rolls, guava pastries, sourdough bread</span></li>
+        </ul></div>
+        <p class="fine">Items named in Tinto’s posts and in guests’ reviews — ask at the counter for today’s case.</p>
+      </div>
+    </div>
+    <div class="praise">
+      <div class="score reveal"><div class="n">4.9</div><p>Google rating · 212 reviews</p></div>
+      <div class="pt reveal"><h3>Owners who greet you</h3><p>Reviewers keep coming back to how kind and welcoming the owners and staff are.</p></div>
+      <div class="pt reveal"><h3>A room to stay in</h3><p>Cozy, beautifully decorated, good music — people call it a place to chill with a coffee.</p></div>
+      <div class="pt reveal"><h3>Food made with care</h3><p>Fresh, full of flavor; the sourdough cinnamon roll gets called a must-try.</p></div>
+    </div>
+  </div></div>
+</section>
+
+<section class="step" id="order" data-name="The counter" style="--n:1.5" aria-labelledby="h-order">
+  <span class="stairs" aria-hidden="true"></span>
+  <div class="wrap"><div class="in reveal">
+    <div class="sec-h"><span class="no">03</span><span class="kick">At the counter</span></div>
+    <div class="pick">
+      <div>
+        <h2 id="h-order">What should I order?</h2>
+        <p class="sub">Pick a mood. Everything here is named in Tinto’s own posts or in guests’ reviews — tap what you want and we’ll write the message.</p>
+        <div class="chips" role="group" aria-label="Mood">
+          <button class="chip" data-m="coffee" aria-pressed="true">Coffee-forward</button>
+          <button class="chip" data-m="bright" aria-pressed="false">Something bright</button>
+          <button class="chip" data-m="sweet" aria-pressed="false">Something sweet</button>
+          <button class="chip" data-m="savory" aria-pressed="false">Something savory</button>
+        </div>
+        <div class="items" id="items" aria-live="polite"></div>
+      </div>
+      <div class="out">
+        <div class="msg" id="msg" aria-live="polite"><small>Your message to Tinto’s</small><span id="msgt"></span></div>
+        <div class="btns">
+          <a class="btn gv" href="https://ig.me/m/tinto.s.cafe" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram DM</a>
+          <button class="btn ghost" id="copy" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg>Copy message</button>
+        </div>
+        <p class="copied" id="copied" role="status">Instagram can’t pre-fill a DM — copy first, then paste.</p>
+        <div class="visit-line"><b id="today">Today</b><br>A guest who arrived 25 minutes before closing found it was to-go only by then — come early if you want to sit in.</div>
+        <div class="btns"><a class="btn pri" href="https://www.google.com/maps/dir/?api=1&amp;destination=29.8981411,-95.6053063">Directions</a><a class="btn ghost" href="tel:+18326092064">Call</a></div>
+      </div>
+    </div>
+  </div></div>
+</section>
+
+<section class="step" id="moments" data-name="Moments" style="--n:2" aria-labelledby="h-mom">
+  <span class="stairs" aria-hidden="true"></span>
+  <div class="wrap"><div class="in">
+    <div class="sec-h reveal"><span class="no">04</span><span class="kick">Cozy café moments</span></div>
+    <h2 id="h-mom" class="reveal" style="margin-bottom:clamp(24px,3vw,44px)">Little pauses, by the cup.</h2>
+    <div class="mom">
+      <figure class="m1"><img src="img/p7.jpg" srcset="img/p7-m.jpg 506w, img/p7.jpg 1012w" sizes="(max-width:700px) 46vw, 28vw" alt="Two lattes with heart and tulip latte art in blue patterned cups" decoding="async"><figcaption>Latte art for two</figcaption></figure>
+      <figure class="m2"><img src="img/p1.jpg" srcset="img/p1-m.jpg 506w, img/p1.jpg 1012w" sizes="(max-width:700px) 46vw, 36vw" alt="Merengón: meringue with whipped cream and fresh strawberries on a wooden board" decoding="async"><figcaption>Merengón — meringue, dulce de leche, house mango &amp; passion fruit jam, strawberries</figcaption></figure>
+      <figure class="m3"><img src="img/p4.jpg" srcset="img/p4-m.jpg 506w, img/p4.jpg 1012w" sizes="(max-width:700px) 46vw, 20vw" alt="Whisking ceremonial matcha through a sieve on a scale" decoding="async"><figcaption>Ceremonial matcha, weighed</figcaption></figure>
+    </div>
+  </div></div>
+</section>
+
+<section class="step" id="visit" data-name="Your cup" style="--n:2.5" aria-labelledby="h-visit">
+  <span class="stairs" aria-hidden="true"></span>
+  <div class="wrap"><div class="in">
+    <div class="sec-h reveal"><span class="no">05</span><span class="kick">Your cup · Houston</span></div>
+    <div class="visit">
+      <figure><img src="img/p11.jpg" srcset="img/p11-m.jpg 506w, img/p11.jpg 1012w" sizes="(max-width:1023px) 80vw, 30vw" alt="Tinto’s Café round green sign above the storefront on N Eldridge Pkwy" decoding="async"></figure>
+      <div class="reveal">
+        <h2 id="h-visit">Come down to Eldridge.</h2>
+        <p class="addr-big">8302 N Eldridge Pkwy #210<br>Houston, TX 77041</p>
+        <p style="color:var(--muted)">Near Eldridge &amp; West Rd.</p>
+        <table class="hours" aria-label="Opening hours"><tbody id="hours"></tbody></table>
+        <p class="fine">Hours from Google; holiday hours may differ.</p>
+        <div class="btns" style="margin-top:18px">
+          <a class="btn pri" href="https://www.google.com/maps/dir/?api=1&amp;destination=29.8981411,-95.6053063">Directions</a>
+          <a class="btn ghost" href="tel:+18326092064">Call (832) 609-2064</a>
+        </div>
+        <div class="links"><a href="https://www.instagram.com/tinto.s.cafe/" target="_blank" rel="noopener">Instagram @tinto.s.cafe</a><a href="https://ig.me/m/tinto.s.cafe" target="_blank" rel="noopener">Send a DM</a><a href="https://www.google.com/maps/place/Tinto%E2%80%99s+Caf%C3%A9/data=!4m7!3m6!1s0x8640d1bbe3fd2b9f:0x661ebe5f988b8b9e!8m2!3d29.8981411!4d-95.6053063!16s%2Fg%2F11nhf4ljqn!19sChIJnyv947vRQIYRnouLmF--HmY" target="_blank" rel="noopener">Google reviews</a></div>
+      </div>
+    </div>
+    <div class="final reveal">
+      <svg class="cup" viewBox="0 0 100 100" aria-hidden="true"><rect x="14" y="30" width="56" height="50" rx="10" fill="none" stroke="#F7F4EE" stroke-width="5"/><path d="M70 42 q20 0 16 16 q-4 12-16 10" fill="none" stroke="#F7F4EE" stroke-width="5"/></svg>
+      <div><h2>1,450 meters later, it’s your turn.</h2><p>Bring a friend, grab a table early, and ask what came out of the oven this morning.</p></div>
+      <div class="btns"><a class="btn gv" href="https://www.google.com/maps/dir/?api=1&amp;destination=29.8981411,-95.6053063">Get directions</a><a class="btn ghost" href="tel:+18326092064">Call</a></div>
+    </div>
+  </div></div>
+</section>
+</main>
+<footer><div class="wrap" style="padding-left:calc(var(--rail) + clamp(18px,4vw,56px))">Tinto’s Café · 8302 N Eldridge Pkwy #210, Houston, TX 77041 · Demo concept, not the official website.</div></footer>
+<a class="btn pri fab" href="tel:+18326092064" aria-label="Call Tinto’s Café"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>Call</a>
+
+<script>
+(function(){
+var H={0:[8,16],1:null,2:[7,17],3:[7,17],4:[7,17],5:[7,17],6:[8,16]};
+var D=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+function f(h){return (h%12||12)+(h<12?' am':' pm')}
+var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Chicago',weekday:'short',hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(new Date()),o={};
+p.forEach(function(x){o[x.type]=x.value});
+var d=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(o.weekday),t=(+o.hour%24)+(+o.minute)/60,h=H[d];
+var s=document.getElementById('status'),txt;
+if(h&&t>=h[0]&&t<h[1]){s.classList.add('open');txt='Open now · until '+f(h[1])}
+else{var n=d,k=0;if(h&&t<h[0]){txt='Closed · opens '+f(h[0])+' today'}else{do{n=(n+1)%7;k++}while(!H[n]);txt='Closed · opens '+(k==1?'tomorrow':D[n])+' '+f(H[n][0])}}
+s.lastChild.textContent=txt;
+var tb='';[2,3,4,5,6,0,1].forEach(function(i){tb+='<tr'+(i==d?' class="today"':'')+'><td>'+D[i]+'</td><td>'+(H[i]?f(H[i][0])+' – '+f(H[i][1]):'Closed')+'</td></tr>'});
+document.getElementById('hours').innerHTML=tb;
+document.getElementById('today').textContent=h?'Today: '+f(h[0])+' – '+f(h[1])+(s.classList.contains('open')?' · open now':''):'Today: closed (Mondays) · back '+D[(d+1)%7]+' at '+f(H[(d+1)%7][0]);
+
+var M={coffee:[['Flat white','One first-timer called theirs perfectly made; another tried it with banana foster.','g'],['Cold brew','On a guest’s list of things that were full of flavor.','g'],['Pour-over','Hand-poured Castillo from Santander — white chocolate, mandarin, honey notes.','p']],
+bright:[['Sparkling Matcha','Ceremonial matcha, house-made rosemary syrup, fresh lemon, a touch of sea salt and sparkling water.','p'],['Matcha mango','Two different guests named it among the highlights of their visit.','g']],
+sweet:[['Sourdough cinnamon roll','Called a must-try by a first-time guest.','g'],['Guava pastries','Named alongside the empanadas as a good pick.','g'],['Alfajores','On the Argentine side of the counter, per a guest.','g']],
+savory:[['Empanadas','Argentine-style; one visitor had the empanada de carne.','g'],['Emperatore sandwich','One guest called it one of the best sandwiches they’ve had.','g'],['Focaccia sandwiches','A nod to Argentina’s Italian side, per a local food post.','g']]};
+var sel={},cur='coffee',it=document.getElementById('items'),mt=document.getElementById('msgt');
+function list(){var a=[];for(var k in sel)if(sel[k])a.push(k.charAt(0).toLowerCase()+k.slice(1));return a}
+function msg(){var a=list(),x=a.length>1?a.slice(0,-1).join(', ')+' and '+a[a.length-1]:a[0];
+mt.textContent=a.length?'Hi Tinto’s! Planning to stop by — thinking a '+x+'. Anything fresh today, and is there room to sit?':'Hi Tinto’s! Planning to stop by — what do you recommend today?'}
+function draw(){it.innerHTML='';M[cur].forEach(function(r){var b=document.createElement('button');b.type='button';b.className='item';b.setAttribute('aria-pressed',sel[r[0]]?'true':'false');
+b.innerHTML='<h3>'+r[0]+'</h3><span class="tag'+(r[2]=='p'?' post':'')+'">'+(r[2]=='p'?'from their post':'mentioned by guests')+'</span><p>'+r[1]+'</p><span class="tick">'+(sel[r[0]]?'✓ In your message':'+ Add to message')+'</span>';
+b.onclick=function(){sel[r[0]]=!sel[r[0]];draw();msg()};it.appendChild(b)})}
+document.querySelectorAll('.chip').forEach(function(c){c.onclick=function(){document.querySelectorAll('.chip').forEach(function(z){z.setAttribute('aria-pressed','false')});c.setAttribute('aria-pressed','true');cur=c.dataset.m;draw()}});
+sel['Flat white']=true;draw();msg();
+document.getElementById('copy').onclick=function(){var c=document.getElementById('copied'),v=mt.textContent;
+function ok(){c.textContent='Copied — now open the DM and paste.'}
+if(navigator.clipboard)navigator.clipboard.writeText(v).then(ok,function(){c.textContent='Select the message text and copy it manually.'});else c.textContent='Select the message text and copy it manually.'};
+
+var secs=[].slice.call(document.querySelectorAll('section[data-name]')),fill=document.getElementById('fill'),mk=document.getElementById('mk'),mkl=document.getElementById('mkl'),strip=document.getElementById('strip');
+function sc(){var max=document.documentElement.scrollHeight-innerHeight,r=max>0?Math.min(1,scrollY/max):0,trk=innerHeight-182;
+fill.style.height=r*trk+'px';mk.style.top=(104+r*trk)+'px';strip.style.transform='scaleX('+r+')';
+var nm='Origin';secs.forEach(function(x){if(x.getBoundingClientRect().top<innerHeight*.5)nm=x.dataset.name});mkl.textContent=nm}
+addEventListener('scroll',sc,{passive:true});addEventListener('resize',sc);sc();
+var rv=[].slice.call(document.querySelectorAll('.reveal'));if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('go');io.unobserve(x.target)}})},{rootMargin:'0px 0px -6% 0px'});rv.forEach(function(x){if(x.getBoundingClientRect().top>innerHeight)io.observe(x)})}
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Demo concept|Demo-Konzept/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Pricing →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>
