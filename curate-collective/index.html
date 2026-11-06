@@ -1,408 +1,312 @@
 <!doctype html>
 <html lang="en">
-<script>if(!navigator.webdriver&&'IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.className='js'</script>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Curate Collective — Streetwear, Vintage &amp; Sneakers in Tempe, AZ</title><meta property="og:type" content="website"><meta property="og:title" content="Curate Collective — Streetwear, Vintage &amp;amp; Sneakers in Tempe, AZ"><meta property="og:description" content="Curate Collective, 1775 E University Dr, Tempe. Streetwear, vintage and sneakers, open daily at 12 noon. We pay cash for kicks &amp;amp; clothing."><meta property="og:image" content="https://pikold.github.io/demo-sites/curate-collective/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
-<meta name="description" content="Curate Collective, 1775 E University Dr, Tempe. Streetwear, vintage and sneakers, open daily at 12 noon. We pay cash for kicks &amp; clothing.">
-<link rel="stylesheet" href="../_fonts/instrument-serif.css">
-<link rel="stylesheet" href="../_fonts/familjen-grotesk.css">
-<style>
-:root{--white:#FAF9F6;--concrete:#D4D0C9;--ink:#1C1C1C;--grey:#8A8781;--grey-d:#64615c;--serif:'Instrument Serif',Georgia,serif;--sans:'Familjen Grotesk',system-ui,sans-serif;--pad:clamp(20px,5vw,72px)}
-*{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-text-size-adjust:100%}
-body{background:var(--white);color:var(--ink);font:400 17px/1.55 var(--sans);overflow-x:hidden}
-img{display:block;max-width:100%;height:auto}
-a{color:inherit}
-:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
-.wrap{max-width:1360px;margin:0 auto;padding:0 var(--pad)}
-.demo{font-size:12.5px;line-height:1.4;color:var(--grey-d);text-align:center;padding:8px var(--pad);border-bottom:1px solid var(--concrete)}
-.label{font:500 11.5px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--grey-d)}
-.serif{font-family:var(--serif);font-weight:400}
-/* header */
-.top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:18px;padding-bottom:18px}
-.mark{font:400 24px/1 var(--serif);text-decoration:none;letter-spacing:-.01em}
-.top nav{display:flex;gap:28px;font-size:14.5px}
-.top nav a{text-decoration:none;color:var(--grey-d);padding:10px 0;transition:color .2s}
-.top nav a:hover{color:var(--ink)}
-/* hero */
-.hero{display:flex;flex-direction:column;align-items:center;padding-top:clamp(12px,3vh,40px);padding-bottom:clamp(64px,10vw,140px)}
-.hero figure{width:min(100%,calc((100svh - 380px) * .8));min-width:240px;max-width:520px}
-.hero img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:60% 50%}
-.placard{margin-top:26px;text-align:center;max-width:560px}
-.placard h1{font:400 clamp(34px,3.6vw,50px)/1.02 var(--serif);letter-spacing:-.01em}
-.placard .what{margin-top:8px;font-size:15.5px;color:var(--grey-d)}
-.placard .what em{font-style:normal;color:var(--ink)}
-.status{display:inline-flex;align-items:center;gap:8px;margin-top:10px;font-size:14px;color:var(--grey-d)}
-.status i{width:7px;height:7px;border-radius:50%;background:var(--grey)}
-.status.open i{background:var(--ink);box-shadow:0 0 0 3px var(--concrete)}
-.status.open{color:var(--ink)}
-.acts{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:18px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 20px;font:500 15px/1 var(--sans);text-decoration:none;border:1px solid var(--ink);background:var(--ink);color:var(--white);cursor:pointer;transition:background .2s,color .2s,transform .15s}
-.btn:hover{background:#3a3a38}
-.btn:active{transform:translateY(1px)}
-.btn.ghost{background:transparent;color:var(--ink)}
-.btn.ghost:hover{background:var(--concrete)}
-.btn svg{width:16px;height:16px;flex:none}
-/* section heads */
-.wall{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:0 clamp(16px,2vw,32px)}
-.intro{grid-column:2/9}
-.intro h2{font:400 clamp(30px,3.4vw,48px)/1.08 var(--serif);letter-spacing:-.01em;margin-top:14px}
-.intro p{margin-top:16px;color:var(--grey-d);max-width:52ch}
-/* exhibition */
-.show{padding-bottom:clamp(80px,10vw,160px)}
-.work{margin-top:clamp(88px,12vw,200px);align-items:end}
-.work figure{position:relative}
-.work img{width:100%}
-.lbl{font-size:14px;line-height:1.45;max-width:340px}
-.lbl .no{font:500 11.5px/1 var(--sans);letter-spacing:.14em;color:var(--grey)}
-.lbl h3{font:400 italic 25px/1.12 var(--serif);margin:10px 0 4px}
-.lbl .src{color:var(--grey-d);font-size:13px}
-.lbl dl{margin-top:14px;border-top:1px solid var(--concrete)}
-.lbl dl div{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 14px;padding:8px 0;border-bottom:1px solid var(--concrete)}
-.lbl dt{grid-column:1/-1}
-.lbl dd{color:var(--grey-d)}
-.lbl dd.p{color:var(--ink);text-align:right;font-variant-numeric:tabular-nums}
-.lbl .note{margin-top:12px;font-size:12.5px;color:var(--grey-d)}
-.lbl .ask{display:inline-block;margin-top:6px;padding:10px 0;font-weight:500;text-decoration:none;border-bottom:1px solid var(--ink);line-height:1}
-.lbl .ask:hover{color:var(--grey-d)}
-.w1 figure{grid-column:1/7}.w1 .lbl{grid-column:8/12}
-.w2 figure{grid-column:8/13;grid-row:1}.w2 .lbl{grid-column:4/8;grid-row:1;justify-self:end;text-align:right}
-.w3 figure{grid-column:3/7}.w3 .lbl{grid-column:8/11;align-self:start}
-.w4 figure{grid-column:6/13;grid-row:1}.w4 .lbl{grid-column:2/6;grid-row:1}
-.w5 figure{grid-column:1/6}.w5 .lbl{grid-column:7/10}
-.w6 figure{grid-column:8/12;grid-row:1}.w6 .lbl{grid-column:4/8;grid-row:1;align-self:start;justify-self:end;text-align:right}
-.w7 figure{grid-column:2/9}.w7 .lbl{grid-column:10/13}
-.w2 .lbl dd.p,.w6 .lbl dd.p{text-align:right}
-/* wall text */
-.words{background:var(--white);padding:clamp(80px,10vw,150px) 0;border-top:1px solid var(--concrete)}
-.quotes{grid-column:2/12;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:56px clamp(16px,2vw,32px);margin-top:56px}
-.quotes p{font:400 clamp(24px,2.3vw,33px)/1.2 var(--serif)}
-.quotes .q1{grid-column:1/7}.quotes .q2{grid-column:7/13;margin-top:120px}.quotes .q3{grid-column:3/9}
-.quotes small{display:block;margin-top:12px;font:400 13px/1.4 var(--sans);color:var(--grey-d)}
-.rating{grid-column:9/13;align-self:end;font-size:15px;color:var(--grey-d)}
-.rating b{display:block;font:400 64px/1 var(--serif);color:var(--ink)}
-/* directory */
-.dir{padding:clamp(80px,10vw,150px) 0}
-.plaque{grid-column:2/12;margin-top:48px;background:var(--concrete);padding:clamp(24px,4vw,56px)}
-.plaque-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;border-bottom:1px solid var(--ink);padding-bottom:14px}
-.plaque-head h3{font:400 clamp(26px,2.6vw,36px)/1 var(--serif)}
-.row{display:grid;grid-template-columns:150px minmax(0,1fr);gap:16px;padding:16px 0;border-bottom:1px solid rgba(28,28,28,.25);align-items:center}
-.row h4{font:500 12px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase}
-.opts{display:flex;flex-wrap:wrap;gap:4px 2px}
-.opt{min-height:44px;min-width:44px;padding:0 14px;font:500 16px/1 var(--sans);background:transparent;border:1px solid transparent;color:var(--ink);cursor:pointer;font-variant-numeric:tabular-nums;transition:background .15s,color .15s,border-color .15s}
-.opt:hover{border-color:var(--ink)}
-.opt[aria-pressed=true]{background:var(--ink);color:var(--white)}
-.compose{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:24px 40px;margin-top:28px;align-items:end}
-.msg{font:400 clamp(22px,2.2vw,30px)/1.22 var(--serif);min-height:3.6em}
-.msg-acts{display:flex;flex-direction:column;gap:10px}
-.msg-acts .btn{width:100%}
-.copied{font-size:13px;color:var(--ink);min-height:18px}
-.after{display:flex;flex-wrap:wrap;gap:8px 32px;margin-top:28px;padding-top:16px;border-top:1px solid rgba(28,28,28,.25);font-size:15px}
-.after a{padding:8px 0;text-decoration-thickness:1px;text-underline-offset:4px}
-/* info wall */
-.info{padding:clamp(80px,10vw,140px) 0;border-top:1px solid var(--concrete)}
-.lines{grid-column:2/12;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(24px,4vw,64px);margin-top:40px}
-.lines div{padding:22px 0;border-top:1px solid var(--concrete)}
-.lines strong{display:block;font:400 clamp(24px,2.4vw,34px)/1.1 var(--serif)}
-.lines span{display:block;margin-top:6px;color:var(--grey-d);font-size:15px}
-/* visit */
-.visit{padding:clamp(80px,10vw,140px) 0 clamp(64px,8vw,120px);border-top:1px solid var(--concrete)}
-.vgrid{grid-column:2/12;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:48px clamp(24px,5vw,96px);margin-top:40px}
-.addr{font:400 clamp(30px,3.4vw,48px)/1.08 var(--serif)}
-.vgrid .acts{justify-content:flex-start}
-table{width:100%;border-collapse:collapse;font-size:16px}
-td{padding:11px 0;border-bottom:1px solid var(--concrete)}
-td+td{text-align:right;font-variant-numeric:tabular-nums}
-tr.today td{font-weight:600}
-.small{font-size:13px;color:var(--grey-d);margin-top:12px}
-.close{text-align:center;padding:clamp(80px,10vw,140px) 0}
-.close p:not(.label){font:400 clamp(30px,3.6vw,52px)/1.08 var(--serif);max-width:18ch;margin:12px auto 26px}
-footer{border-top:1px solid var(--concrete);padding:28px 0 96px;font-size:13px;color:var(--grey-d)}
-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
-.fab{position:fixed;right:16px;bottom:16px;z-index:20;display:none;box-shadow:none}
-/* reveal */
-.js .rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
-.js .rv.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}*{transition:none!important}}
-@media (max-width:980px){
- .intro,.quotes,.plaque,.lines,.vgrid{grid-column:1/-1}
- .w1 figure{grid-column:1/9}.w1 .lbl{grid-column:9/13}
- .w2 figure{grid-column:6/13}.w2 .lbl{grid-column:1/6}
- .w3 figure{grid-column:2/8}.w3 .lbl{grid-column:8/13}
- .w4 figure{grid-column:5/13}.w4 .lbl{grid-column:1/5}
- .w5 figure{grid-column:1/8}.w5 .lbl{grid-column:8/13}
- .w6 figure{grid-column:6/12}.w6 .lbl{grid-column:1/6}
- .w7 figure{grid-column:1/9}.w7 .lbl{grid-column:9/13}
-}
-@media (max-width:720px){
- body{font-size:16px}
- .top nav{display:none}
- .hero figure{width:min(100%,calc((100svh - 400px) * .8));min-width:220px}
- .work{margin-top:88px}
- .work figure,.work .lbl{grid-column:1/-1!important;grid-row:auto!important;text-align:left!important;justify-self:start!important}
- .work .lbl{margin-top:18px;max-width:none;width:100%}
- .w1 figure,.w4 figure,.w7 figure{margin-right:0}
- .w2 figure,.w6 figure{margin-left:18%}
- .w3 figure,.w5 figure{margin-right:18%}
- .quotes{grid-template-columns:minmax(0,1fr);gap:40px}
- .quotes>*{grid-column:1/-1!important;margin-top:0!important}
- .row{grid-template-columns:minmax(0,1fr);gap:8px}
- .opt{padding:0 11px;font-size:15px}
- .compose,.lines,.vgrid{grid-template-columns:minmax(0,1fr)}
- .plaque{margin-left:calc(var(--pad) * -1);margin-right:calc(var(--pad) * -1)}
- .fab{display:inline-flex}
-}
-</style>
+<title>Curate Collective — Streetwear, Vintage &amp; Sneakers in Tempe, AZ</title>
+<meta name="description" content="Curate Collective, 1775 E University Dr, Tempe. Streetwear, vintage and sneakers — buy, sell, trade. Open daily at 12 noon. We pay cash for kicks &amp; clothing.">
+<meta property="og:type" content="website"><meta property="og:title" content="Curate Collective — Streetwear, Vintage &amp; Sneakers in Tempe, AZ"><meta property="og:description" content="Dig the pile: streetwear, vintage and sneakers on University Dr, Tempe. We pay cash for kicks &amp; clothing."><meta property="og:image" content="https://pikold.github.io/demo-sites/curate-collective/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="../_fonts/1Ptgg87LROyAm3Kz-C8.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../_fonts/anton.css">
+<link rel="stylesheet" href="../_fonts/archivo.css">
+<link rel="stylesheet" href="style.css">
+<script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window&&!navigator.webdriver)document.documentElement.className='anim'</script>
 </head>
 <body>
-<div class="demo">Demo concept by an independent developer — not the official website of Curate Collective. Not approved by the owner; removed on first request.</div>
+<p class="demo">Demo concept by an independent developer — not the official website of Curate Collective. Not approved by the owner; removed on first request.</p>
 
-<header class="wrap top">
- <a class="mark" href="#top">Curate Collective</a>
- <nav aria-label="Sections"><a href="#show">On the floor</a><a href="#directory">Find your size</a><a href="#visit">Visit</a><a href="https://www.instagram.com/curatecollectiveaz/" rel="noopener">Instagram</a></nav>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="logo" href="#top" aria-label="Curate Collective, back to top"><span class="logo-cc">CC</span><span class="logo-t">Curate<br>Collective</span></a>
+    <nav aria-label="Sections"><a href="#dig">The Dig</a><a href="#racks">Racks</a><a href="#find">Find your size</a><a href="#sell">Sell</a><a href="#visit">Visit</a></nav>
+    <a class="top-call" href="tel:+14804895246">(480) 489-5246</a>
+  </div>
 </header>
 
-<main id="top">
-<section class="wrap hero" aria-label="Curate Collective">
- <figure class="rv in">
-  <picture><source media="(max-width:720px)" srcset="img/p1-m.jpg"><img src="img/p1.jpg" width="1440" height="1800" alt="The Curate Collective store floor in Tempe: polished concrete, racks of tees and a sneaker wall at the back" fetchpriority="high"></picture>
- </figure>
- <div class="placard">
-  <h1>Curate Collective</h1>
-  <p class="what"><em>Streetwear · Vintage · Sneakers</em> — 1775 E University Dr, Tempe · open daily at 12 noon</p>
-  <p class="status" id="status" aria-live="polite"><i></i><span>Open daily at 12 noon</span></p>
-  <div class="acts">
-   <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=33.4209632,-111.9104362"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M8 15s5-4.6 5-8.5A5 5 0 0 0 3 6.5C3 10.4 8 15 8 15Z"/><circle cx="8" cy="6.5" r="1.8"/></svg>Directions</a>
-   <a class="btn ghost" href="tel:+14804895246">Call (480) 489-5246</a>
-   <a class="btn ghost" href="https://ig.me/m/curatecollectiveaz" rel="noopener">Instagram DM</a>
-  </div>
- </div>
-</section>
-
-<section class="show" id="show" aria-labelledby="show-h">
- <div class="wrap">
-  <div class="wall">
-   <div class="intro rv">
-    <p class="label">Now on the floor</p>
-    <h2 id="show-h">Seven recent posts, hung one at a time.</h2>
-    <p>Each label carries only what the caption said — the piece, the size, the price. Their captions say new items daily, so a piece can be gone by the time you read this. Ask before you drive.</p>
-   </div>
-  </div>
-
-  <article class="wall work w1">
-   <figure class="rv"><picture><source media="(max-width:720px)" srcset="img/p9-m.jpg"><img src="img/p9.jpg" width="1744" height="1800" loading="lazy" alt="Sneakers set out on their boxes on the concrete floor: Jordan 4s, Foamposites, Kobes and a Dunk High"></picture></figure>
-   <div class="lbl rv">
-    <p class="no">No. 1</p><h3>Another One</h3><p class="src">Sneakers, nine pairs in the post</p>
-    <dl><div><dt>Kobe 4 Draft Day</dt><dd>11.5</dd><dd class="p">$120</dd></div><div><dt>Military Blue 4s</dt><dd>size 10.5</dd><dd class="p">$180</dd></div><div><dt>Dunk SB High Salt Stain</dt><dd>size 13 (No Box)</dd><dd class="p">$90</dd></div></dl>
-    <p class="note">As posted — ask if still available.</p><a class="ask" href="https://ig.me/m/curatecollectiveaz" rel="noopener">Ask about this</a>
-   </div>
-  </article>
-
-  <article class="wall work w2">
-   <figure class="rv"><picture><source media="(max-width:720px)" srcset="img/p3-m.jpg"><img src="img/p3.jpg" width="1440" height="1800" loading="lazy" alt="Vintage tees laid flat in a grid: a Suns embroidered tee, Harvard, B.B. King and more"></picture></figure>
-   <div class="lbl rv">
-    <p class="no">No. 2</p><h3>$20-$40 Vintage Tees Going Out!!</h3><p class="src">Vintage tees, twelve in the post</p>
-    <dl><div><dt>Vintage Suns Embroidered</dt><dd>Size XL</dd><dd class="p">$40</dd></div><div><dt>Vintage Harvard University</dt><dd>Size Medium</dd><dd class="p">$20</dd></div><div><dt>Vintage Coyotes Hockey</dt><dd>size XL</dd><dd class="p">$30</dd></div></dl>
-    <p class="note">As posted — ask if still available.</p><a class="ask" href="https://ig.me/m/curatecollectiveaz" rel="noopener">Ask about this</a>
-   </div>
-  </article>
-
-  <article class="wall work w3">
-   <figure class="rv"><picture><source media="(max-width:720px)" srcset="img/p10-m.jpg"><img src="img/p10.jpg" width="1800" height="1800" loading="lazy" alt="A pile of brand-new Jordan 1 highs in orange, volt, seafoam, green and bordeaux"></picture></figure>
-   <div class="lbl rv">
-    <p class="no">No. 3</p><h3>Brand New 1s Going Out!!</h3><p class="src">Jordan 1s, nine pairs in the post</p>
-    <dl><div><dt>New Volt 1s</dt><dd>size 10</dd><dd class="p">$60</dd></div><div><dt>New Electro Orange</dt><dd>size 9.5</dd><dd class="p">$70</dd></div><div><dt>New Seafoam 1s</dt><dd>size 10.5 (12W)</dd><dd class="p">$80</dd></div></dl>
-    <p class="note">As posted — ask if still available.</p><a class="ask" href="https://ig.me/m/curatecollectiveaz" rel="noopener">Ask about this</a>
-   </div>
-  </article>
-
-  <article class="wall work w4">
-   <figure class="rv"><picture><source media="(max-width:720px)" srcset="img/p8-m.jpg"><img src="img/p8.jpg" width="1350" height="1800" loading="lazy" alt="Vintage sports tees and jerseys: Braves, Jaguars, Padres, Mariners, Notre Dame"></picture></figure>
-   <div class="lbl rv">
-    <p class="no">No. 4</p><h3>Vintage Sports Hitting the Racks!</h3><p class="src">Sports tees and jerseys, nineteen in the post</p>
-    <dl><div><dt>1995 Braves World Series Champs</dt><dd>Size L</dd><dd class="p">$50</dd></div><div><dt>Larry Fitzgerald</dt><dd>Size M</dd><dd class="p">$40</dd></div><div><dt>Late 90s Jacksonville Jaguars Tee</dt><dd>Size L</dd><dd class="p">$30</dd></div></dl>
-    <p class="note">As posted — ask if still available.</p><a class="ask" href="https://ig.me/m/curatecollectiveaz" rel="noopener">Ask about this</a>
-   </div>
-  </article>
-
-  <article class="wall work w5">
-   <figure class="rv"><picture><source media="(max-width:720px)" srcset="img/p6-m.jpg"><img src="img/p6.jpg" width="1471" height="1800" loading="lazy" alt="Rugby tops, a reconstructed flannel and hockey jerseys piled on the concrete floor"></picture></figure>
-   <div class="lbl rv">
-    <p class="no">No. 5</p><h3>Lil Top No Young Boy</h3><p class="src">Tops, six in the post</p>
-    <dl><div><dt>Needles Reconstructed Flannel</dt><dd>XL</dd><dd class="p">$100</dd></div><div><dt>New Valley Rugby Top</dt><dd>Large</dd><dd class="p">$140</dd></div><div><dt>Raspberry Hockey Top</dt><dd>Small (Fits Medium)</dd><dd class="p">$200</dd></div></dl>
-    <p class="note">As posted — ask if still available.</p><a class="ask" href="https://ig.me/m/curatecollectiveaz" rel="noopener">Ask about this</a>
-   </div>
-  </article>
-
-  <article class="wall work w6">
-   <figure class="rv"><picture><source media="(max-width:720px)" srcset="img/p4-m.jpg"><img src="img/p4.jpg" width="1350" height="1800" loading="lazy" alt="Vintage horror movie tees laid flat: Jack the Ripper, Frankenstein, Freddy Krueger"></picture></figure>
-   <div class="lbl rv">
-    <p class="no">No. 6</p><h3>New Vintage Halloween Tees!!!</h3><p class="src">Vintage tees, six in the post</p>
-    <dl><div><dt>Vintage Jack the Ripper</dt><dd>Size XL</dd><dd class="p">$40</dd></div><div><dt>Vintage Frankenstein</dt><dd>Size XL</dd><dd class="p">$50</dd></div><div><dt>Vintage Horror Nights</dt><dd>Size XL</dd><dd class="p">$80</dd></div></dl>
-    <p class="note">As posted — ask if still available.</p><a class="ask" href="https://ig.me/m/curatecollectiveaz" rel="noopener">Ask about this</a>
-   </div>
-  </article>
-
-  <article class="wall work w7">
-   <figure class="rv"><picture><source media="(max-width:720px)" srcset="img/p2-m.jpg"><img src="img/p2.jpg" width="1800" height="1800" loading="lazy" alt="Eight pairs of sneakers arranged on their boxes in three rows on the shop floor"></picture></figure>
-   <div class="lbl rv">
-    <p class="no">No. 7</p><h3>Untitled (Shipping Always Available)</h3><p class="src">Sneakers, eight pairs in the post</p>
-    <dl><div><dt>New Court Purple Jordan 1</dt><dd>size 10.5</dd><dd class="p">$140</dd></div><div><dt>Air Max 1 Crepe Brown</dt><dd>size 9.5</dd><dd class="p">$120</dd></div><div><dt>Pine Green Jordan SB 4s</dt><dd>size 10</dd><dd class="p">$240</dd></div></dl>
-    <p class="note">As posted — ask if still available.</p><a class="ask" href="https://ig.me/m/curatecollectiveaz" rel="noopener">Ask about this</a>
-   </div>
-  </article>
- </div>
-</section>
-
-<section class="dir" id="directory" aria-labelledby="dir-h">
- <div class="wrap wall">
-  <div class="intro rv">
-   <p class="label">Floor directory</p>
-   <h2 id="dir-h">Find your size before you come in.</h2>
-   <p>Built from the shop’s own Instagram Highlights, the same way they sort the racks. Pick what fits, and the plaque writes the message for you.</p>
-  </div>
-  <div class="plaque rv">
-   <div class="plaque-head"><h3>Directory</h3><span class="label" style="color:var(--ink)">Pick one per line</span></div>
-   <div class="row"><h4 id="g-s">Sneakers</h4><div class="opts" role="group" aria-labelledby="g-s" data-g="shoe"><button class="opt">4-7.5</button><button class="opt">8-8.5</button><button class="opt">9-9.5</button><button class="opt">10-10.5</button><button class="opt">11-11.5</button><button class="opt">12-12.5</button><button class="opt">13-17</button></div></div>
-   <div class="row"><h4 id="g-c">Clothing</h4><div class="opts" role="group" aria-labelledby="g-c" data-g="cloth"><button class="opt">XL</button><button class="opt">XXL</button><button class="opt">Pants</button><button class="opt">Hoodies</button></div></div>
-   <div class="row"><h4 id="g-b">Budget</h4><div class="opts" role="group" aria-labelledby="g-b" data-g="budget"><button class="opt">$30-$50</button><button class="opt">$60-$100</button><button class="opt">STEALS</button></div></div>
-   <div class="compose">
-    <div><p class="label" style="color:var(--ink);margin-bottom:10px">Your message</p><p class="msg" id="msg" aria-live="polite"></p></div>
-    <div class="msg-acts">
-     <button class="btn ghost" id="copy" type="button">Copy message</button>
-     <a class="btn" id="dm" href="https://ig.me/m/curatecollectiveaz" rel="noopener">Copy &amp; open Instagram DM</a>
-     <p class="copied" id="copied" aria-live="polite">Instagram can’t prefill a DM — paste it in.</p>
+<main>
+<section class="hero" id="top">
+  <div class="hero-bg"><picture><source media="(max-width:700px)" srcset="img/p10-m.jpg"><img src="img/p10.jpg" alt="A top-down pile of Jordan 1s on the shop floor" fetchpriority="high"></picture></div>
+  <div class="wrap hero-in">
+    <div class="mark-wrap">
+      <h1 class="mark"><span class="sr">Curate Collective</span>
+        <svg viewBox="0 0 1040 612" aria-hidden="true" focusable="false">
+          <defs>
+            <clipPath id="l1"><text x="20" y="342" font-size="370" textLength="1000" lengthAdjust="spacingAndGlyphs">CURATE</text></clipPath>
+            <clipPath id="l2"><text x="20" y="582" font-size="241" textLength="1000" lengthAdjust="spacingAndGlyphs">COLLECTIVE</text></clipPath>
+          </defs>
+          <g transform="rotate(-1.6 520 180)">
+            <text class="sh" x="31" y="353" font-size="370" textLength="1000" lengthAdjust="spacingAndGlyphs">CURATE</text>
+            <text class="bd" x="20" y="342" font-size="370" textLength="1000" lengthAdjust="spacingAndGlyphs">CURATE</text>
+            <g clip-path="url(#l1)"><image class="fill f1" href="img/p8.jpg" x="-30" y="-330" width="1100" height="1460" preserveAspectRatio="xMidYMid slice"/></g>
+            <text class="ol" x="20" y="342" font-size="370" textLength="1000" lengthAdjust="spacingAndGlyphs">CURATE</text>
+          </g>
+          <g transform="rotate(1 520 480)">
+            <text class="sh" x="30" y="592" font-size="241" textLength="1000" lengthAdjust="spacingAndGlyphs">COLLECTIVE</text>
+            <text class="bd" x="20" y="582" font-size="241" textLength="1000" lengthAdjust="spacingAndGlyphs">COLLECTIVE</text>
+            <g clip-path="url(#l2)"><image class="fill f2" href="img/p11.jpg" x="-30" y="0" width="1100" height="1460" preserveAspectRatio="xMidYMid slice"/></g>
+            <text class="ol" x="20" y="582" font-size="241" textLength="1000" lengthAdjust="spacingAndGlyphs">COLLECTIVE</text>
+          </g>
+        </svg>
+      </h1>
+      <div class="stickers">
+        <span class="sk s-daily" data-pop style="--r:-6deg;--i:1">New items daily</span>
+        <span class="sk s-open st" data-pop style="--r:5deg;--i:2"><i></i><span data-status>Open daily at 12 noon</span></span>
+        <span class="sk s-addr" data-pop style="--r:-9deg;--i:3"><b>1775 E</b> University Dr <small>Tempe, AZ</small></span>
+        <span class="sk s-cash burst" data-pop style="--r:8deg;--i:4"><span>We pay <b>cash</b> for kicks &amp; clothing</span></span>
+      </div>
     </div>
-   </div>
-   <div class="after">
-    <a href="https://www.instagram.com/curatecollectiveaz/" rel="noopener">or watch their Story for steals</a>
-    <a href="https://ig.me/m/curatecollectiveaz" rel="noopener" id="sell">Bring kicks to sell — they pay cash</a>
-   </div>
-  </div>
- </div>
-</section>
-
-<section class="words" aria-labelledby="w-h">
- <div class="wrap wall">
-  <div class="intro rv"><p class="label">Wall text</p><h2 id="w-h">What visitors say about the eye behind it.</h2></div>
-  <div class="quotes">
-   <p class="q1 rv">A solid eye for shoes and vintage gear, and the pairs and shirts come home in excellent shape.<small>Paraphrased from a Google review</small></p>
-   <p class="q2 rv">The staff put together a whole birthday outfit for one shopper, who got compliments on it all night.<small>Paraphrased from a Google review</small></p>
-   <p class="q3 rv">Sneakers brought in to sell or trade got a fair offer, with store credit as an option. Ask for Clayton or Eric.<small>Paraphrased from Google reviews</small></p>
-   <p class="rating rv"><b>4.8</b>on Google, from 34 reviews</p>
-  </div>
- </div>
-</section>
-
-<section class="info" aria-labelledby="i-h">
- <div class="wrap wall">
-  <div class="intro rv"><p class="label">Information</p><h2 id="i-h">How the shop works.</h2></div>
-  <div class="lines">
-   <div class="rv"><strong>We pay cash for kicks &amp; clothing.</strong><span>Buy, sell, trade. Bring them in or DM first.</span></div>
-   <div class="rv"><strong>Pay now, pick up anytime.</strong><span>Lock in a piece from a post, collect it in Tempe.</span></div>
-   <div class="rv"><strong>Watch the Story for steals.</strong><span>Deals go up on <a href="https://www.instagram.com/curatecollectiveaz/" rel="noopener">@curatecollectiveaz</a>.</span></div>
-   <div class="rv"><strong>We ship.</strong><span>Shipping is noted on their posts — ask in the DM.</span></div>
-  </div>
- </div>
-</section>
-
-<section class="visit" id="visit" aria-labelledby="v-h">
- <div class="wrap wall">
-  <div class="intro rv"><p class="label">Visit</p><h2 id="v-h">Tempe, on University Drive.</h2></div>
-  <div class="vgrid">
-   <div class="rv">
-    <p class="addr">1775 E University Dr<br>Tempe, AZ 85288</p>
-    <p class="status" id="status2"><i></i><span>Open daily at 12 noon</span></p>
-    <div class="acts">
-     <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=33.4209632,-111.9104362">Directions</a>
-     <a class="btn ghost" href="tel:+14804895246">(480) 489-5246</a>
-     <a class="btn ghost" href="https://www.instagram.com/curatecollectiveaz/" rel="noopener">@curatecollectiveaz</a>
+    <div class="slab">
+      <p class="lede"><b>Streetwear · Vintage · Sneakers.</b> Buy, sell, trade on University Dr in Tempe — open daily at 12 noon.</p>
+      <div class="acts">
+        <a class="btn b-call" href="tel:+14804895246"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call</a>
+        <a class="btn b-dir" href="https://www.google.com/maps/dir/?api=1&amp;destination=33.4209632,-111.9104362" target="_blank" rel="noopener">Directions</a>
+        <a class="btn b-dm" href="https://ig.me/m/curatecollectiveaz" target="_blank" rel="noopener">DM on Instagram</a>
+      </div>
     </div>
-   </div>
-   <div class="rv">
-    <table aria-label="Opening hours"><tbody id="hours">
-     <tr data-d="1"><td>Monday</td><td>12 – 7 pm</td></tr>
-     <tr data-d="2"><td>Tuesday</td><td>12 – 7 pm</td></tr>
-     <tr data-d="3"><td>Wednesday</td><td>12 – 7 pm</td></tr>
-     <tr data-d="4"><td>Thursday</td><td>12 – 7 pm</td></tr>
-     <tr data-d="5"><td>Friday</td><td>12 – 8 pm</td></tr>
-     <tr data-d="6"><td>Saturday</td><td>12 – 8 pm</td></tr>
-     <tr data-d="0"><td>Sunday</td><td>12 – 7 pm</td></tr>
-    </tbody></table>
-    <p class="small">Holiday hours can differ — they post changes on Instagram.</p>
-   </div>
   </div>
- </div>
 </section>
 
-<section class="close wrap" aria-label="Directions">
- <p class="label">Closing</p>
- <p>The rest of the show is in Tempe.</p>
- <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=33.4209632,-111.9104362">Directions to 1775 E University Dr</a>
+<section class="dig" id="dig" aria-labelledby="dig-h">
+  <div class="wrap dig-in">
+    <div class="dig-copy">
+      <span class="kick" data-pop style="--r:-4deg">The Dig</span>
+      <h2 id="dig-h">Dig the<br>pile.</h2>
+      <p>Their feed, as a stack. Drag, flick or tap the top photo to dig deeper. Every sticker is copied from that post's caption — pieces move fast, so DM before you drive.</p>
+      <div class="ctrl">
+        <button type="button" class="rb" data-prev aria-label="Previous photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <span class="count" data-count aria-hidden="true">01 / 11</span>
+        <button type="button" class="rb rb-go" data-next>Dig deeper <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+      <p class="on-top">On top: <b data-now aria-live="polite">Brand New 1s Going Out!!</b></p>
+      <a class="btn b-ink" data-ask href="https://ig.me/m/curatecollectiveaz" target="_blank" rel="noopener">Ask about this pile</a>
+      <p class="fine">Copies a ready message and opens their Instagram DM — paste and send.</p>
+    </div>
+    <div class="stack-zone">
+      <div class="stack" tabindex="0" role="group" aria-label="Photo stack from their Instagram. Use the arrow keys or the buttons to dig.">
+        <figure class="card" data-r="-4" data-bg="#F26B1D" data-t="Brand New 1s Going Out!!">
+          <img src="img/p10-m.jpg" srcset="img/p10-m.jpg 900w, img/p10.jpg 1800w" sizes="(max-width:700px) 84vw, 480px" alt="A pile of brand-new Jordan 1s in every colorway" draggable="false">
+          <figcaption class="stk c-y" style="--sr:-5deg"><i>from the caption</i><b>Brand New 1s Going Out!!</b><span>New Volt 1s · size 10 · $60</span><span>New Shattered Backboards · size 10 · $120</span></figcaption>
+        </figure>
+        <figure class="card" data-r="5" data-bg="#FFD23F" data-t="$20–$40 Vintage Tees Going Out!!">
+          <img src="img/p3-m.jpg" srcset="img/p3-m.jpg 720w, img/p3.jpg 1440w" sizes="(max-width:700px) 84vw, 480px" alt="A grid of vintage tees: Suns, Harvard, Simpsons, BB King" draggable="false" loading="lazy">
+          <figcaption class="stk c-o" style="--sr:4deg"><i>from the caption</i><b>$20–$40 Vintage Tees Going Out!!</b><span>Vintage Suns Embroidered · XL · $40</span><span>Vintage Harvard University · M · $20</span></figcaption>
+        </figure>
+        <figure class="card" data-r="-7" data-bg="#BDB8B0" data-t="Another One">
+          <img src="img/p9-m.jpg" srcset="img/p9-m.jpg 872w, img/p9.jpg 1744w" sizes="(max-width:700px) 84vw, 480px" alt="Nine pairs of sneakers on boxes on the concrete floor" style="object-position:50% 50%" draggable="false" loading="lazy">
+          <figcaption class="stk c-g" style="--sr:-3deg"><i>from the caption</i><b>Another One</b><span>Military Blue 4s · size 10.5 · $180</span><span>Kobe 4 Draft Day · 11.5 · $120</span></figcaption>
+        </figure>
+        <figure class="card" data-r="3" data-bg="#F26B1D" data-t="Vintage Sports Hitting the Racks!">
+          <img src="img/p8-m.jpg" srcset="img/p8-m.jpg 675w, img/p8.jpg 1350w" sizes="(max-width:700px) 84vw, 480px" alt="A wall of vintage sports tees and jerseys" draggable="false" loading="lazy">
+          <figcaption class="stk c-b" style="--sr:5deg"><i>from the caption</i><b>Vintage Sports Hitting the Racks!</b><span>1995 Braves World Series Champs · L · $50</span><span>Late 90s Jacksonville Jaguars Tee · L · $30</span></figcaption>
+        </figure>
+        <figure class="card" data-r="-3" data-bg="#FFD23F" data-t="Lil Top No Young Boy">
+          <img src="img/p6-m.jpg" srcset="img/p6-m.jpg 736w, img/p6.jpg 1471w" sizes="(max-width:700px) 84vw, 480px" alt="A pile of rugby tops, a flannel and a hockey top" draggable="false" loading="lazy">
+          <figcaption class="stk c-o" style="--sr:-4deg"><i>from the caption</i><b>Lil Top No Young Boy</b><span>Needles Reconstructed Flannel · XL · $100</span><span>New Valley Rugby Top · L · $140</span></figcaption>
+        </figure>
+        <figure class="card" data-r="6" data-bg="#BDB8B0" data-t="Shipping Always Available">
+          <img src="img/p2-m.jpg" srcset="img/p2-m.jpg 900w, img/p2.jpg 1800w" sizes="(max-width:700px) 84vw, 480px" alt="Jordan 1s, SB 4s and Air Max on boxes on concrete" draggable="false" loading="lazy">
+          <figcaption class="stk c-y" style="--sr:3deg"><i>from the caption</i><b>Shipping Always Available</b><span>New Court Purple Jordan 1 · 10.5 · $140</span><span>Pine Green Jordan SB 4s · size 10 · $240</span></figcaption>
+        </figure>
+        <figure class="card" data-r="-5" data-bg="#F26B1D" data-t="New Vintage Halloween Tees!!!">
+          <img src="img/p4-m.jpg" srcset="img/p4-m.jpg 675w, img/p4.jpg 1350w" sizes="(max-width:700px) 84vw, 480px" alt="Vintage horror movie tees laid out flat" draggable="false" loading="lazy">
+          <figcaption class="stk c-g" style="--sr:-5deg"><i>from the caption</i><b>New Vintage Halloween Tees!!!</b><span>Vintage Frankenstein · XL · $50</span><span>Vintage Jack the Ripper · XL · $40</span></figcaption>
+        </figure>
+        <figure class="card" data-r="4" data-bg="#FFD23F" data-t="New Items Daily!!!">
+          <img src="img/p11-m.jpg" srcset="img/p11-m.jpg 675w, img/p11.jpg 1350w" sizes="(max-width:700px) 84vw, 480px" alt="A flat-lay of colorful streetwear tees and a polo" draggable="false" loading="lazy">
+          <figcaption class="stk c-b" style="--sr:4deg"><i>from the caption</i><b>New Items Daily!!!</b><span>Awful Lot Pop Up White · L · $60</span><span>Purple Tee · L · $40</span></figcaption>
+        </figure>
+        <figure class="card" data-r="-6" data-bg="#BDB8B0" data-t="New VALE Arrivals in Shop">
+          <img src="img/p5-m.jpg" srcset="img/p5-m.jpg 675w, img/p5.jpg 1350w" sizes="(max-width:700px) 84vw, 480px" alt="New VALE tees and a zip-up hoodie" draggable="false" loading="lazy">
+          <figcaption class="stk c-o" style="--sr:-3deg"><i>from the caption</i><b>New VALE Arrivals in Shop</b><span>VALE Jesus Tee · XL &amp; 2XL · $120</span><span>VALE Zip Up Hoodie · L · $240</span></figcaption>
+        </figure>
+        <figure class="card" data-r="5" data-bg="#F26B1D" data-t="DMs Open 25/8">
+          <img src="img/p7-m.jpg" srcset="img/p7-m.jpg 675w, img/p7.jpg 1350w" sizes="(max-width:700px) 84vw, 480px" alt="A mixed pile of graphic tees and orange shorts" style="object-position:70% 60%" draggable="false" loading="lazy">
+          <figcaption class="stk c-y" style="--sr:5deg"><i>from the caption</i><b>DMs Open 25/8</b><span>Vintage WWF Mankind Tee · L · $280</span><span>Vintage Skate Tee · L · $30</span></figcaption>
+        </figure>
+        <figure class="card" data-r="-2" data-bg="#FFD23F" data-t="Welcome to Curate Collective">
+          <img src="img/p1-m.jpg" srcset="img/p1-m.jpg 720w, img/p1.jpg 1440w" sizes="(max-width:700px) 84vw, 480px" alt="Inside the shop: a rainbow wall of plush, racks and a sneaker wall" draggable="false" loading="lazy">
+          <figcaption class="stk c-g" style="--sr:-4deg"><i>from the caption</i><b>Welcome to Curate Collective</b><span>Open daily at 12 noon</span><span>1775 E University Drive, Tempe</span></figcaption>
+        </figure>
+      </div>
+      <p class="hint" aria-hidden="true">drag · flick · tap</p>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-label="Buy, sell, trade — new items daily" data-qa-skip>
+  <div class="band-c" style="background:#1E8A4C"></div><div class="band-c" style="background:#1F4FD8"></div><div class="band-c" style="background:#FFD23F"></div><div class="band-c" style="background:#F26B1D"></div>
+  <div class="band-row r1" aria-hidden="true">Buy <i></i> Sell <i></i> Trade <i></i> Buy <i></i> Sell <i></i> Trade <i></i> Buy <i></i> Sell <i></i> Trade <i></i></div>
+  <div class="band-row r2" aria-hidden="true">New items daily <i></i> Watch the story for steals <i></i> New items daily <i></i> Watch the story for steals <i></i></div>
+</section>
+
+<section class="racks" id="racks" aria-labelledby="racks-h">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="racks-h">What's in<br>the pile</h2>
+      <p>Three things, piled high: sneakers, vintage tees and new streetwear. Everything below comes from their own posts and Highlights.</p>
+    </div>
+    <div class="rgrid">
+      <article class="tile t-sneak" data-tilt>
+        <div class="ph"><img data-par src="img/p9-m.jpg" srcset="img/p9-m.jpg 872w, img/p9.jpg 1744w" sizes="(max-width:900px) 100vw, 760px" alt="Jordans, Kobes and Nikes laid out on boxes" loading="lazy"></div>
+        <div class="tx">
+          <h3>Sneakers</h3>
+          <p>Jordan 1s and 4s, Kobes, Dunks, Foamposites — new pairs and pre-owned, boxed and no-box, the way their posts list them.</p>
+          <ul class="tags"><li>4–7.5</li><li>8–8.5</li><li>9–9.5</li><li>10–10.5</li><li>11–11.5</li><li>12–12.5</li><li>13–17</li></ul>
+          <p class="sm">Size runs from their Instagram Highlights.</p>
+        </div>
+      </article>
+      <article class="tile t-vint" data-tilt>
+        <div class="ph"><img data-par src="img/p8-m.jpg" srcset="img/p8-m.jpg 675w, img/p8.jpg 1350w" sizes="(max-width:900px) 100vw, 300px" alt="Vintage 90s sports tees" loading="lazy"></div>
+        <div class="tx">
+          <h3>Vintage tees</h3>
+          <p>90s sports and college tees, band, movie and horror prints. One recent drop was a whole rack of $20–$40 vintage tees.</p>
+        </div>
+      </article>
+      <article class="tile t-street" data-tilt>
+        <div class="ph"><img data-par src="img/p6-m.jpg" srcset="img/p6-m.jpg 736w, img/p6.jpg 1471w" sizes="(max-width:900px) 100vw, 300px" alt="Rugby tops and a reconstructed flannel" loading="lazy"></div>
+        <div class="tx">
+          <h3>Streetwear</h3>
+          <p>New pieces daily — VALE, Raspberry Hills, Denim Tears, ASSC, Rhude and more in recent captions. Tops, hoodies, shorts, hats.</p>
+        </div>
+      </article>
+      <ul class="how">
+        <li class="h1x" data-pop style="--r:-2deg"><b>Pay now,</b> pick up anytime</li>
+        <li class="h2x" data-pop style="--r:2deg;--i:1"><b>We ship</b> — ask in the DM</li>
+        <li class="h3x" data-pop style="--r:-1deg;--i:2"><b>Watch the Story</b> for steals</li>
+        <li class="h4x" data-pop style="--r:3deg;--i:3"><b>Buy · Sell · Trade</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="praise" aria-labelledby="praise-h">
+  <div class="wrap pgrid">
+    <div class="rate" data-pop style="--r:-5deg">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.2 5.8 20.9l1.6-7L2 9.2l7.1-.6z"/></svg>
+      <b>4.8</b><span>on Google<br>from 34 reviews</span>
+    </div>
+    <div class="ptext">
+      <h2 id="praise-h">Word from<br>the floor</h2>
+      <p class="pl">Reviewers keep coming back to the same things: a beautiful store, friendly staff who seem genuinely excited to help, and a selection you won't find in big-box stores.</p>
+    </div>
+    <ol class="pts">
+      <li class="pt pt1" data-pop style="--r:-2deg"><b>Fair offers on your pairs.</b> People who brought sneakers in to sell or trade say the price was fair — with store credit as an option.</li>
+      <li class="pt pt2" data-pop style="--r:1.5deg;--i:1"><b>They'll build the fit.</b> The staff put together a whole birthday outfit for one shopper, who got compliments on it all night.</li>
+      <li class="pt pt3" data-pop style="--r:-1deg;--i:2"><b>A real eye for it.</b> Shoes and vintage come home in excellent shape. Regulars mention Clayton and Eric by name.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="find" id="find" aria-labelledby="find-h">
+  <div class="wrap fgrid">
+    <div class="fhead">
+      <span class="kick k-y" data-pop style="--r:3deg">Find your size</span>
+      <h2 id="find-h">Tell them<br>what fits.</h2>
+      <p>The same labels as their Instagram Highlights. Tap your size and budget — we write the DM, you send it.</p>
+    </div>
+    <div class="picker">
+      <fieldset><legend>Sneakers</legend><div class="chips" data-g="s">
+        <button type="button" aria-pressed="false" data-v="4-7.5">4–7.5</button><button type="button" aria-pressed="false" data-v="8-8.5">8–8.5</button><button type="button" aria-pressed="false" data-v="9-9.5">9–9.5</button><button type="button" aria-pressed="false" data-v="10-10.5">10–10.5</button><button type="button" aria-pressed="false" data-v="11-11.5">11–11.5</button><button type="button" aria-pressed="false" data-v="12-12.5">12–12.5</button><button type="button" aria-pressed="false" data-v="13-17">13–17</button>
+      </div></fieldset>
+      <fieldset><legend>Clothing</legend><div class="chips" data-g="c">
+        <button type="button" aria-pressed="false" data-v="XL">XL</button><button type="button" aria-pressed="false" data-v="XXL">XXL</button><button type="button" aria-pressed="false" data-v="Pants">Pants</button><button type="button" aria-pressed="false" data-v="Hoodies">Hoodies</button>
+      </div></fieldset>
+      <fieldset><legend>Budget</legend><div class="chips" data-g="b">
+        <button type="button" aria-pressed="false" data-v="$30-$50">$30–$50</button><button type="button" aria-pressed="false" data-v="$60-$100">$60–$100</button><button type="button" aria-pressed="false" data-v="STEALS" class="steal">Steals</button>
+      </div></fieldset>
+    </div>
+    <div class="ticket">
+      <label for="msg">Your DM</label>
+      <textarea id="msg" rows="4">Hey Curate! What's new on the racks right now?</textarea>
+      <div class="tacts">
+        <a class="btn b-dm" data-dm href="https://ig.me/m/curatecollectiveaz" target="_blank" rel="noopener">Copy &amp; open DM</a>
+        <button type="button" class="btn b-paper" data-copy>Copy</button>
+        <a class="btn b-paper" data-sms href="sms:+14804895246">Text it</a>
+      </div>
+      <p class="fine" data-toast aria-live="polite">Instagram can't prefill a DM — we copy it, you paste.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sell" id="sell" aria-labelledby="sell-h">
+  <div class="wrap sgrid">
+    <h2 id="sell-h" class="cash"><span>We pay</span><span class="big">cash</span><span class="for">for kicks &amp; clothing</span></h2>
+    <figure class="sell-ph" data-tilt><img src="img/p2-m.jpg" srcset="img/p2-m.jpg 900w, img/p2.jpg 1800w" sizes="(max-width:900px) 90vw, 440px" alt="Sneakers on their boxes on the shop's concrete floor" loading="lazy"><span class="stamp" data-spin aria-hidden="true">Buy · Sell · Trade · Buy · Sell · Trade ·</span></figure>
+    <ol class="steps">
+      <li><b>Shoot it.</b> Snap your pairs or pieces and send them in a DM — or just bring them to the shop.</li>
+      <li><b>Get an offer.</b> Take cash, or trade it toward something on the racks.</li>
+      <li><b>Walk out happy.</b> With cash in hand, or with the exact pair you came for.</li>
+    </ol>
+    <div class="sacts">
+      <a class="btn b-ink" href="https://ig.me/m/curatecollectiveaz" target="_blank" rel="noopener">DM photos of your stuff</a>
+      <a class="btn b-paper" href="tel:+14804895246">Call (480) 489-5246</a>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit" aria-labelledby="visit-h">
+  <div class="wrap vgrid">
+    <div class="vmain">
+      <h2 id="visit-h">Pull up.</h2>
+      <svg class="sign" viewBox="0 0 520 120" role="img" aria-label="Street sign: 1775 E University Dr">
+        <rect x="4" y="4" width="512" height="112" rx="12" fill="#1E8A4C" stroke="#F5F2EB" stroke-width="6"/>
+        <text x="30" y="44" fill="#F5F2EB" font-family="Archivo,sans-serif" font-weight="700" font-size="22" letter-spacing="2">1775 E</text>
+        <text x="30" y="100" fill="#F5F2EB" font-family="Anton,sans-serif" font-size="50" letter-spacing="2">UNIVERSITY DR</text>
+        <text x="490" y="44" fill="#F5F2EB" font-family="Archivo,sans-serif" font-weight="700" font-size="22" letter-spacing="2" text-anchor="end">TEMPE, AZ</text>
+      </svg>
+      <address>1775 E University Dr<br>Tempe, AZ 85288</address>
+      <p class="st vst"><i></i><span data-status>Open daily at 12 noon</span></p>
+      <div class="acts">
+        <a class="btn b-ink" href="https://www.google.com/maps/dir/?api=1&amp;destination=33.4209632,-111.9104362" target="_blank" rel="noopener">Directions</a>
+        <a class="btn b-paper" href="tel:+14804895246">(480) 489-5246</a>
+        <a class="btn b-paper" href="https://www.instagram.com/curatecollectiveaz/" target="_blank" rel="noopener">@curatecollectiveaz</a>
+      </div>
+    </div>
+    <div class="hours">
+      <h3>Hours</h3>
+      <dl>
+        <div data-d="1"><dt>Monday</dt><dd>12 – 7 pm</dd></div>
+        <div data-d="2"><dt>Tuesday</dt><dd>12 – 7 pm</dd></div>
+        <div data-d="3"><dt>Wednesday</dt><dd>12 – 7 pm</dd></div>
+        <div data-d="4"><dt>Thursday</dt><dd>12 – 7 pm</dd></div>
+        <div data-d="5"><dt>Friday</dt><dd>12 – 8 pm</dd></div>
+        <div data-d="6"><dt>Saturday</dt><dd>12 – 8 pm</dd></div>
+        <div data-d="0"><dt>Sunday</dt><dd>12 – 7 pm</dd></div>
+      </dl>
+      <p class="fine">Holiday hours can differ — they post changes on Instagram. Pay now, pick up anytime.</p>
+    </div>
+    <figure class="store" data-tilt>
+      <img src="img/p1-m.jpg" srcset="img/p1-m.jpg 720w, img/p1.jpg 1440w" sizes="(max-width:900px) 90vw, 380px" alt="Inside Curate Collective: a rainbow wall of plush next to the racks" loading="lazy">
+      <figcaption class="stk c-y" style="--sr:-4deg"><b>Welcome to Curate Collective</b><span>Open daily at 12 noon</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="final" aria-labelledby="final-h">
+  <div class="wrap fin">
+    <h2 id="final-h">Come<br>dig.</h2>
+    <div class="fin-r">
+      <span class="burst fburst" data-pop style="--r:-8deg"><span>DMs open <b>25/8</b></span></span>
+      <p>1775 E University Dr, Tempe · open daily at 12 noon · <span class="st fst"><i></i><span data-status>Open daily at 12 noon</span></span></p>
+      <div class="acts">
+        <a class="btn b-call" href="tel:+14804895246">Call (480) 489-5246</a>
+        <a class="btn b-paper" href="https://www.google.com/maps/dir/?api=1&amp;destination=33.4209632,-111.9104362" target="_blank" rel="noopener">Directions</a>
+        <a class="btn b-dm" href="https://ig.me/m/curatecollectiveaz" target="_blank" rel="noopener">DM on Instagram</a>
+      </div>
+    </div>
+  </div>
 </section>
 </main>
 
-<footer><div class="wrap"><span>Curate Collective · Streetwear | Vintage | Sneakers · Tempe, AZ</span><span>Demo concept, not the official website.</span></div></footer>
-<a class="btn fab" href="tel:+14804895246" aria-label="Call Curate Collective">Call</a>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p><b>Curate Collective</b> · Streetwear | Vintage | Sneakers · 1775 E University Dr, Tempe, AZ 85288 · <a href="tel:+14804895246">(480) 489-5246</a> · <a href="https://www.instagram.com/curatecollectiveaz/" target="_blank" rel="noopener">Instagram</a></p>
+    <p>Demo concept, not the official website. Photos from @curatecollectiveaz.</p>
+  </div>
+</footer>
 
-<script>
-(function(){
- // open/closed — America/Phoenix
- var H={0:[12,19],1:[12,19],2:[12,19],3:[12,19],4:[12,19],5:[12,20],6:[12,20]};
- function fmt(h){return h===12?'12 noon':(h>12?h-12:h)+' pm'}
- try{
-  var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Phoenix',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date()),o={};
-  p.forEach(function(x){o[x.type]=x.value});
-  var d=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(o.weekday),t=(+o.hour%24)+(+o.minute)/60,h=H[d],txt,open=false;
-  if(t>=h[0]&&t<h[1]){open=true;txt='Open now · until '+fmt(h[1])}
-  else if(t<h[0]){txt='Closed now · opens today at 12 noon'}
-  else{txt='Closed now · opens tomorrow at 12 noon'}
-  ['status','status2'].forEach(function(id){var e=document.getElementById(id);e.lastChild.textContent=txt;if(open)e.classList.add('open')});
-  var r=document.querySelector('#hours tr[data-d="'+d+'"]');if(r)r.className='today';
- }catch(e){}
-
- // directory
- var sel={shoe:null,cloth:null,budget:null},msg=document.getElementById('msg'),note=document.getElementById('copied');
- function compose(){
-  var parts=[];
-  if(sel.shoe)parts.push('sneakers size '+sel.shoe);
-  if(sel.cloth)parts.push(sel.cloth==='Pants'?'pants':sel.cloth==='Hoodies'?'hoodies':'clothing in '+sel.cloth);
-  var b=sel.budget==='STEALS'?' from your steals':sel.budget?' in the '+sel.budget+' range':'';
-  if(!parts.length)return sel.budget?'Hi Curate, I’m looking for something'+b+'. What do you have?':'Hi Curate, what’s new on the racks this week?';
-  return 'Hi Curate, I’m looking for '+parts.join(' and ')+b+'. What do you have?';
- }
- function render(){msg.textContent=compose()}
- document.querySelectorAll('.opts').forEach(function(g){
-  var k=g.getAttribute('data-g');
-  g.querySelectorAll('.opt').forEach(function(btn){
-   btn.type='button';btn.setAttribute('aria-pressed','false');
-   btn.addEventListener('click',function(){
-    var on=btn.getAttribute('aria-pressed')==='true';
-    g.querySelectorAll('.opt').forEach(function(x){x.setAttribute('aria-pressed','false')});
-    if(!on){btn.setAttribute('aria-pressed','true');sel[k]=btn.textContent}else sel[k]=null;
-    render();
-   });
-  });
- });
- function copy(text){
-  var ok=function(){note.textContent='Copied. Paste it into the DM.'};
-  if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(ok,fallback)}else fallback();
-  function fallback(){var a=document.createElement('textarea');a.value=text;a.setAttribute('readonly','');a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();try{document.execCommand('copy');ok()}catch(e){}document.body.removeChild(a)}
- }
- document.getElementById('copy').addEventListener('click',function(){copy(msg.textContent)});
- document.getElementById('dm').addEventListener('click',function(){copy(msg.textContent)});
- document.getElementById('sell').addEventListener('click',function(){copy('Hi Curate, I have kicks to sell. Can I send pics?')});
- render();
-
- // reveal
- if(document.documentElement.classList.contains('js')){
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
-  document.querySelectorAll('.rv:not(.in)').forEach(function(el){io.observe(el)});
- }else document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')});
-})();
-</script>
+<div class="fab"><a href="tel:+14804895246" class="fab-call">Call</a><a href="https://ig.me/m/curatecollectiveaz" target="_blank" rel="noopener" class="fab-dm">DM</a></div>
+<script src="app.js"></script>
 <script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Demo concept|Demo-Konzept/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Pricing →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
 </html>
