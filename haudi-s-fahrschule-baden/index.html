@@ -2,430 +2,575 @@
 <html lang="de-CH">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Haudi's Fahrschule Baden – Fahrstunden, VKU &amp; Nothelfer</title><meta property="og:type" content="website"><meta property="og:title" content="Haudi's Fahrschule Baden – Fahrstunden, VKU &amp;amp; Nothelfer"><meta property="og:description" content="Fahrschule und Verkehrsschule an der Haselstrasse 33 in Baden, nahe beim Bahnhof: Fahrstunden, VKU, Nothelferkurs, Basistheorie, Motorrad-Grundkurs, Lastwagen und Taxi."><meta property="og:image" content="https://pikold.github.io/demo-sites/haudi-s-fahrschule-baden/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
-<meta name="description" content="Fahrschule und Verkehrsschule an der Haselstrasse 33 in Baden, nahe beim Bahnhof: Fahrstunden, VKU, Nothelferkurs, Basistheorie, Motorrad-Grundkurs, Lastwagen und Taxi.">
-<link rel="stylesheet" href="../_fonts/archivo-black.css">
-<link rel="stylesheet" href="../_fonts/archivo.css">
-<link rel="stylesheet" href="../_fonts/ibm-plex-mono.css">
+<title>Haudi's Fahrschule Baden – VKU, Nothelfer, BTU und Fahrstunden</title><meta property="og:type" content="website"><meta property="og:title" content="Haudi's Fahrschule Baden – VKU, Nothelfer, BTU und Fahrstunden"><meta property="og:description" content="Fahrschule und Verkehrsschule an der Haselstrasse 33 in Baden: VKU, Nothelferkurs, Basistheorie und Fahrstunden, Kurse auch in Fremdsprachen. 4,8 Sterne bei 61 Google-Bewertungen."><meta property="og:image" content="https://pikold.github.io/demo-sites/haudi-s-fahrschule-baden/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Fahrschule und Verkehrsschule an der Haselstrasse 33 in Baden: VKU, Nothelferkurs, Basistheorie und Fahrstunden, Kurse auch in Fremdsprachen. 4,8 Sterne bei 61 Google-Bewertungen.">
+<link rel="stylesheet" href="../_fonts/syne.css">
+<link rel="stylesheet" href="../_fonts/work-sans.css">
+<script>document.documentElement.classList.add('js')</script>
 <style>
-:root{--paper:#F2F0E9;--card:#FBFAF6;--ink:#14171B;--mute:#4A515B;--blue:#0A4F9E;--blue2:#073B78;--green:#0B6A3E;--yellow:#F5C000;--red:#CF121C;--asph:#2A2E34;--line:rgba(20,23,27,.15);--g:clamp(16px,4vw,48px)}
-*,*::before,*::after{box-sizing:border-box}*{margin:0}
+*,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{background:var(--paper);color:var(--ink);font:400 1.0625rem/1.55 Archivo,system-ui,sans-serif;overflow-x:hidden}
-a{color:inherit}svg{display:block;max-width:100%}
-.wrap{width:100%;max-width:1360px;margin:0 auto;padding-inline:var(--g)}
-:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
-.mono{font-family:'IBM Plex Mono',ui-monospace,monospace}
-.demo{background:var(--ink);color:#E8E6DF;font:500 .75rem/1.45 'IBM Plex Mono',monospace;padding:7px var(--g);text-align:center}
-h1,h2,h3{font-family:'Archivo Black',Archivo,sans-serif;font-weight:400;letter-spacing:-.02em}
-h2{font-size:clamp(2rem,1.1rem + 3.2vw,3.6rem);line-height:1;max-width:15ch}
-h3{font-size:clamp(1.3rem,1rem + .9vw,1.7rem);line-height:1.05}
-.ls{display:inline-grid;place-items:center;width:.95em;height:.95em;background:var(--blue);color:#fff;border-radius:.11em;box-shadow:inset 0 0 0 .05em var(--blue),inset 0 0 0 .085em #fff;font-size:.88em;line-height:1;vertical-align:.03em;margin:0 .03em}
+:root{--p:#F8F6F0;--y:#E9D348;--a:#2E1F3A;--g:#9FB5AA;--a2:#5A4A66;--ln:rgba(46,31,58,.16);--gut:clamp(16px,4vw,64px);--sy:'Syne',system-ui,sans-serif;--ws:'Work Sans',system-ui,sans-serif}
+body{margin:0;background:var(--p);color:var(--a);font:400 1.0625rem/1.6 var(--ws);padding-bottom:64px}
+@media(min-width:900px){body{padding-right:52px;padding-bottom:0}}
+.wrap{width:min(100% - 2*var(--gut),1320px);margin-inline:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--a);outline-offset:3px}
+.band :focus-visible,.final :focus-visible,.slip header :focus-visible{outline-color:var(--y)}
+[hidden]{display:none!important}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.demo{margin:0;background:var(--a);color:#E8E2EC;font-size:.78rem;line-height:1.45;text-align:center;padding:7px 16px}
 /* header */
-.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:16px}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font:500 .95rem/1.15 Archivo}
-.brand .ls{font-size:30px;width:42px;height:42px;font-family:'Archivo Black'}
-.brand b{display:block;font:400 1.15rem/1 'Archivo Black';letter-spacing:-.01em}
-nav{display:flex;gap:4px}
-nav a{padding:10px 12px;text-decoration:none;font-weight:600;border-radius:8px;background-image:linear-gradient(var(--yellow),var(--yellow));background-size:0 3px;background-repeat:no-repeat;background-position:12px 85%;transition:background-size .2s}
-nav a:hover{background-size:calc(100% - 24px) 3px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border-radius:10px;font:700 1rem/1.1 Archivo;text-decoration:none;border:2px solid transparent;transition:transform .15s,background-color .15s,color .15s;cursor:pointer;text-align:center}
-.btn:hover{transform:translateY(-2px)}.btn:active{transform:none}
-.btn svg{width:18px;height:18px;flex:none}
-.b-blue{background:var(--blue);color:#fff}.b-blue:hover{background:var(--blue2)}
-.b-ink{background:var(--ink);color:#fff}.b-ink:hover{background:var(--blue)}
-.b-line{border-color:var(--ink)}.b-line:hover{background:var(--ink);color:var(--paper)}
-.b-wa{background:var(--green);color:#fff}.b-wa:hover{background:#08522F}
-.b-yel{background:var(--yellow);color:var(--ink)}.b-yel:hover{background:#fff}
-.b-wl{border-color:#fff;color:#fff}.b-wl:hover{background:#fff;color:var(--blue)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:18px}
+.logo{display:flex;align-items:baseline;gap:10px;text-decoration:none;min-height:44px;align-items:center}
+.logo b{font:700 1.55rem/1 var(--sy);letter-spacing:-.03em}
+.logo span{font-size:.8rem;color:var(--a2);line-height:1.2}
+.topr{display:flex;align-items:center;gap:20px}
+.topr a{font-weight:600;text-decoration:none;min-height:44px;display:flex;align-items:center}
+.topr a:hover{text-decoration:underline;text-underline-offset:4px}
+.st{display:inline-flex;align-items:center;gap:.55em;font-size:.9rem;font-weight:500}
+.st i{width:9px;height:9px;border-radius:50%;background:#A3576B;flex:none}
+.st.open i{background:#3F7A5E;box-shadow:0 0 0 4px rgba(63,122,94,.18)}
+@media(max-width:700px){.topr .st,.logo span{display:none}}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:54px;padding:0 1.35em;border-radius:8px;font:600 1rem/1.1 var(--ws);text-decoration:none;border:2px solid var(--a);cursor:pointer;transition:transform .2s,background .2s,color .2s,border-color .2s}
+.btn svg{width:18px;height:18px;fill:currentColor;flex:none}
+.pri{background:var(--a);color:var(--y)}.pri:hover{background:#45305a;border-color:#45305a}
+.ghost{background:transparent;color:var(--a)}.ghost:hover{background:var(--a);color:var(--p)}
+.yel{background:var(--y);color:var(--a);border-color:var(--y)}.yel:hover{background:#f2e070}
+.lite{background:transparent;color:var(--p);border-color:rgba(248,246,240,.6)}.lite:hover{background:var(--p);color:var(--a)}
+.btn:active{transform:translateY(1px) scale(.98)}
 /* hero */
-.hero{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(32px,5vw,80px);align-items:center;padding-block:clamp(16px,3.5vh,48px) clamp(40px,5vw,80px)}
-.eye{font:600 .78rem/1.3 'IBM Plex Mono',monospace;letter-spacing:.07em;text-transform:uppercase;color:var(--mute);margin-bottom:18px}
-h1{font-size:clamp(2.75rem,1rem + 5.4vw,6rem);line-height:.94;margin-bottom:22px}
-.lead{font-size:clamp(1.1rem,1rem + .4vw,1.3rem);max-width:36ch;color:#2A2F36}
-.st{display:inline-flex;align-items:center;gap:10px;margin:22px 0;padding:8px 14px 8px 12px;border-radius:99px;background:var(--card);border:1px solid var(--line);font:500 .88rem/1.2 'IBM Plex Mono',monospace}
-.st i{width:10px;height:10px;border-radius:50%;background:#9AA0A6;flex:none}
-.st.open i{background:#12A150;box-shadow:0 0 0 4px rgba(18,161,80,.18)}.st.closed i{background:var(--red)}
+.hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:end;padding-block:clamp(12px,2.4vw,36px) clamp(48px,6vw,96px)}
+.hl{container-type:inline-size}
+.eye{display:flex;align-items:center;gap:.8em;margin:0;font:600 .78rem/1.3 var(--ws);letter-spacing:.14em;text-transform:uppercase;color:var(--a2)}
+.eye::before{content:"";width:28px;height:10px;border-radius:2px;background:var(--y);flex:none}
+h1{margin:.35em 0 0;font-family:var(--sy);font-weight:700;letter-spacing:-.04em;line-height:.86}
+h1 .a{display:block;font-size:min(22cqi,10.5rem)}
+h1 .b{display:block;margin-top:.3em;font-size:min(7cqi,3.3rem);font-weight:600;letter-spacing:-.02em;line-height:1}
+.lede{max-width:34em;margin:1.3em 0 1.6em;font-size:clamp(1.05rem,1.25vw,1.22rem)}
 .ctas{display:flex;flex-wrap:wrap;gap:12px}
-/* signpost */
-.post{position:relative;display:flex;flex-direction:column;gap:12px;padding:6px 0 34px}
-.post::before{content:"";position:absolute;left:50%;top:-18px;bottom:0;width:16px;margin-left:-8px;border-radius:8px 8px 0 0;background:linear-gradient(90deg,#868C93,#D3D6DA 45%,#767C83)}
-.post::after{content:"";position:absolute;left:50%;bottom:-4px;width:140px;margin-left:-70px;height:10px;border-radius:50%;background:rgba(20,23,27,.16)}
-.arr{--c:var(--blue);position:relative;z-index:1;isolation:isolate;align-self:flex-end;width:68%;min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 46px 10px 22px;color:#fff;text-decoration:none;background:#fff;clip-path:polygon(0 0,calc(100% - 30px) 0,100% 50%,calc(100% - 30px) 100%,0 100%);transition:transform .2s;animation:pin .6s calc(var(--i)*70ms + 150ms) both cubic-bezier(.2,.7,.2,1)}
-.arr::before{content:"";position:absolute;inset:3px;z-index:-1;background:var(--c);clip-path:polygon(0 0,calc(100% - 28px) 0,100% 50%,calc(100% - 28px) 100%,0 100%)}
-.arr.l{align-self:flex-start;padding:10px 22px 10px 46px;clip-path:polygon(30px 0,100% 0,100% 100%,30px 100%,0 50%)}
-.arr.l::before{clip-path:polygon(28px 0,100% 0,100% 100%,28px 100%,0 50%)}
-.arr b{font:700 1.08rem/1.1 Archivo}.arr span{font:500 .8rem/1 'IBM Plex Mono',monospace;opacity:.9;white-space:nowrap}
-.arr:hover,.arr:focus-visible{transform:translateX(7px)}.arr.l:hover,.arr.l:focus-visible{transform:translateX(-7px)}
-.arr.w{--c:#fff;background:var(--ink);color:var(--ink)}.arr.gr{--c:var(--green)}
-@keyframes pin{from{opacity:0;transform:translateY(10px)}}
-/* facts */
-.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-block:2px solid var(--ink)}
-.facts p{padding:16px 18px;font-size:.95rem;border-left:1px solid var(--line)}.facts p:first-child{border:0;padding-left:0}
-.facts b{font:400 1.05rem 'Archivo Black'}
-/* sections */
-.sec{padding-block:clamp(56px,7vw,100px)}
-.sh{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:20px 64px;align-items:end;margin-bottom:clamp(32px,4vw,56px)}
-.sh>p{color:var(--mute);max-width:44ch}
-.rn{display:flex;align-items:center;gap:10px;font:600 .78rem 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.08em;margin-bottom:18px}
-.rn b{display:inline-grid;place-items:center;min-width:34px;height:26px;padding:0 6px;background:var(--blue);color:#fff;border-radius:4px;box-shadow:inset 0 0 0 2px var(--blue),inset 0 0 0 3.5px #fff;font:400 .95rem 'Archivo Black'}
-.bento{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
-.k{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:clamp(22px,2.4vw,36px);display:flex;flex-direction:column;gap:14px;transition:transform .25s,box-shadow .25s}
-.k:hover{transform:translateY(-3px);box-shadow:0 16px 30px -20px rgba(20,23,27,.5)}
-.k p{color:var(--mute)}.k>*{position:relative}
-.tag{align-self:flex-start;font:600 .72rem/1 'IBM Plex Mono',monospace;letter-spacing:.06em;text-transform:uppercase;padding:6px 10px;border-radius:6px;border:1.5px solid currentColor}
-.cl{position:absolute!important;right:clamp(18px,2.4vw,34px);top:clamp(14px,2vw,26px);font:400 clamp(3rem,2rem + 3vw,5.2rem)/1 'Archivo Black';color:transparent;-webkit-text-stroke:2px currentColor;opacity:.55}
-.k-f{grid-column:span 4;grid-row:span 2;background:var(--blue);color:#fff;border:0}
-.k-f p{color:rgba(255,255,255,.86)}
-.deco{position:absolute!important;right:-20px;bottom:-10px;width:70%;pointer-events:none}
-.price{margin-top:auto;display:grid}
-.price div{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:14px 0;border-top:1.5px solid rgba(255,255,255,.35)}
-.price dd{font:400 clamp(1.35rem,1rem + 1.2vw,2rem)/1 'Archivo Black';white-space:nowrap}
-.free{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline;padding:14px 16px;border-radius:12px;background:var(--yellow);color:var(--ink)!important}
-.free b{font:400 1.05rem 'Archivo Black'}
-.k-v{grid-column:span 2;background:var(--yellow);border:0}.k-v p{color:#3A3410}
-.nights{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
-.nights span{background:var(--ink);color:#fff;border-radius:8px;padding:10px 6px 8px;font:500 .7rem/1.3 'IBM Plex Mono',monospace;text-align:center}
-.nights span::before{content:"";display:block;width:14px;height:14px;margin:0 auto 6px;border-radius:50%;box-shadow:inset -4px -2px 0 0 var(--yellow)}
-.k-n{grid-column:span 2}
-.k-t{grid-column:span 6;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:20px 56px;align-items:start}
-.k-t>div{display:flex;flex-direction:column;gap:14px}
-.chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-.chips li{padding:9px 14px;border:2px solid var(--ink);border-radius:8px;font-weight:600;background:#fff;font-size:.95rem}
-.chips li.hl{background:var(--ink);color:#fff}
-.k-m{grid-column:span 3;background:#fff;border:3px solid var(--ink)}
-.k-c{grid-column:span 3;background:var(--green);color:#fff;border:0}.k-c p{color:rgba(255,255,255,.88)}
-.note{font-size:.88rem;color:var(--mute);margin-top:18px}
-/* reviews */
-.rev{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,104px);align-items:start}
-.rl{position:sticky;top:28px}
-.speed{width:min(100%,360px);filter:drop-shadow(0 18px 24px rgba(20,23,27,.18))}
-.rl p{margin-top:18px;font-size:.95rem}.rl b{font-weight:600}
-.praise{list-style:none;padding:0;margin-top:36px;counter-reset:p}
-.praise li{display:grid;grid-template-columns:56px minmax(0,1fr);gap:4px 16px;padding:24px 0;border-top:2px solid var(--ink);counter-increment:p}
-.praise li::before{content:"0" counter(p);grid-row:span 2;font:600 .85rem 'IBM Plex Mono',monospace;color:var(--blue);padding-top:6px}
-.praise p{color:var(--mute);max-width:52ch}
-.staff{border-top:2px solid var(--ink);padding-top:20px;font-weight:600}
-/* planner */
-.planner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background:#fff;border:2px solid var(--ink);border-radius:22px;overflow:hidden}
-.pc{padding:clamp(20px,3vw,40px);border-right:2px solid var(--ink)}
-.po{padding:clamp(20px,3vw,40px);background:var(--card)}
-fieldset{border:0;padding:0;margin:0 0 26px;min-width:0}
-legend,.lab{font:600 .76rem 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.07em;margin-bottom:12px;padding:0}
-.seg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.seg label{position:relative}.seg input{position:absolute;inset:0;opacity:0;margin:0}
-.seg span{display:flex;flex-direction:column;justify-content:center;gap:2px;min-height:66px;padding:10px 12px;border:2px solid var(--ink);border-radius:12px;cursor:pointer;font-weight:600;font-size:.9rem;transition:background-color .15s,color .15s}
-.seg span b{font:400 1.25rem/1 'Archivo Black'}
-.seg label:hover span{background:var(--paper)}
-.seg input:checked+span{background:var(--blue);border-color:var(--blue);color:#fff}
-.seg input:focus-visible+span{outline:3px solid var(--yellow);outline-offset:2px}
-.chk label{display:flex;gap:12px;align-items:center;min-height:48px;padding:6px 0;border-bottom:1px solid var(--line);cursor:pointer}
-.chk label[hidden]{display:none}
-.chk input{width:22px;height:22px;accent-color:var(--green);flex:none}
-.rng{display:flex;align-items:center;gap:16px}
-.rng input{flex:1;min-width:0;height:44px;accent-color:var(--blue)}
-.rng output{font:600 .95rem 'IBM Plex Mono',monospace;min-width:11ch;text-align:right}
-.nm{display:block;font-weight:600}.nm span{font-weight:400;color:var(--mute)}
-.nm input{display:block;width:100%;margin-top:8px;min-height:50px;padding:0 14px;border:2px solid var(--ink);border-radius:10px;font:inherit;background:#fff}
-.road{list-style:none;padding:0 0 0 62px;position:relative;margin:4px 0 22px}
-.road::before{content:"";position:absolute;left:14px;top:2px;bottom:2px;width:30px;border-radius:7px;background:var(--asph)}
-.road::after{content:"";position:absolute;left:28px;top:12px;bottom:12px;width:2px;background:repeating-linear-gradient(#F2F0E9 0 12px,transparent 12px 22px)}
-.road li{position:relative;padding:10px 0 14px;min-height:58px;display:flex;flex-direction:column;align-items:flex-start;transition:opacity .25s}
-.road b{font:700 1.06rem/1.2 Archivo}.road small{color:var(--mute);font-size:.88rem}
-.pin{position:absolute;left:-49px;top:12px;width:32px;height:32px;border-radius:50%;background:#fff;border:3px solid var(--asph);z-index:1}
-.road li:last-child .pin{background:conic-gradient(var(--ink) 25%,#fff 0 50%,var(--ink) 0 75%,#fff 0) 0 0/12px 12px}
-.road li.done{opacity:.6}.road li.done .pin{background:var(--green);border-color:var(--green)}
-.road li.done .pin::after{content:"";position:absolute;left:8px;top:4px;width:8px;height:14px;border:solid #fff;border-width:0 3px 3px 0;transform:rotate(45deg)}
-.road li.nx .pin{background:var(--yellow);border-color:var(--ink);animation:pulse 1.8s infinite}
-.road em{font:600 .68rem/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;font-style:normal;background:var(--ink);color:var(--yellow);padding:4px 8px;border-radius:4px;margin-bottom:6px}
-@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(245,192,0,.35)}}
-.cost{border-top:2px solid var(--ink);padding-top:16px;margin-bottom:16px;display:grid;gap:4px}
-.cost strong{font:400 clamp(1.8rem,1.2rem + 1.6vw,2.5rem)/1.05 'Archivo Black'}
-.cost small{color:var(--mute);font-size:.88rem}
-.msg{font-size:.88rem;background:#fff;border:1.5px dashed rgba(20,23,27,.3);border-radius:10px;padding:12px 14px;margin-bottom:16px;color:var(--mute)}
+.sub{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:18px;font-size:.92rem;color:var(--a2)}
+.cover{position:relative;overflow:hidden;container-type:inline-size;background:var(--y);border-radius:6px;padding:clamp(20px,2.4vw,34px)}
+.ch{position:relative;display:flex;justify-content:space-between;gap:12px;padding-bottom:12px;border-bottom:2px solid var(--a);font:600 .76rem/1.3 var(--ws);letter-spacing:.14em;text-transform:uppercase}
+.toc{position:relative;list-style:none;margin:0;padding:0}
+.toc a{display:grid;grid-template-columns:2.4em minmax(0,1fr) 20px;align-items:baseline;gap:2px 10px;padding:13px 0;border-bottom:1px solid rgba(46,31,58,.28);text-decoration:none}
+.toc .n{font:500 .8rem/1 var(--ws)}
+.toc b{font:700 clamp(1.3rem,7.6cqi,2.5rem)/1 var(--sy);letter-spacing:-.01em;transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.toc span{grid-column:2;font-size:.9rem;color:#4b3b57}
+.toc svg{grid-column:3;grid-row:1;width:18px;height:18px;align-self:center;fill:none;stroke:var(--a);stroke-width:2;transition:transform .3s}
+.toc a:hover b{transform:translateX(8px)}.toc a:hover svg{transform:translateX(4px)}
+.toc .kz b{font-size:clamp(1.05rem,5cqi,1.6rem)}
+.rate{position:relative;display:flex;align-items:center;gap:14px;margin-top:20px}
+.rate strong{font:700 3.1rem/1 var(--sy);letter-spacing:-.04em}
+.rate svg{display:block;width:104px;height:20px;fill:var(--a)}
+.rate small{display:block;font-size:.88rem;margin-top:3px}
+.bub{position:absolute;right:6%;top:0;width:34%;max-width:170px;height:100%;pointer-events:none}
+.bub circle{fill:var(--p);opacity:0;animation:rise 9s linear infinite;animation-delay:var(--d)}
+@keyframes rise{0%{transform:translateY(40px);opacity:0}20%{opacity:.55}100%{transform:translateY(-160px);opacity:0}}
+@media(max-width:899px){.hero{grid-template-columns:minmax(0,1fr)}}
+/* course bands */
+.band{background:var(--a);color:var(--y);overflow:hidden}
+.bi{container-type:inline-size;padding-top:clamp(18px,2.4vw,32px)}
+.bm{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 24px;font:500 .78rem/1.4 var(--ws);letter-spacing:.14em;text-transform:uppercase;color:var(--g)}
+.bm b{color:var(--y);font-weight:600}
+.code{display:flex;justify-content:space-between;margin:clamp(8px,1.2vw,18px) 0 0;padding-bottom:clamp(10px,1.4vw,20px);font:700 var(--fs)/.8 var(--sy);text-transform:uppercase;color:var(--y)}
+.code .c{display:block;transition:transform 1s cubic-bezier(.2,.75,.15,1),opacity .7s;transition-delay:calc(var(--i)*55ms)}
+html.js .band:not(.in) .c{transform:translateY(.45em);opacity:0}
+.cb{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px clamp(20px,3vw,56px);padding-block:clamp(40px,6vw,96px)}
+.lead{grid-column:1/8;margin:0;font:600 clamp(1.5rem,2.8vw,2.55rem)/1.12 var(--sy);letter-spacing:-.025em;text-wrap:balance}
+.txt{grid-column:1/7}
+.txt p{margin:0 0 1em}
+.side{grid-column:8/13;grid-row:1/span 3;align-self:start}
+.facts{margin:0;border-top:2px solid var(--a)}
+.facts div{display:grid;grid-template-columns:8.6em minmax(0,1fr);gap:12px;padding:14px 0;border-bottom:1px solid var(--ln)}
+.facts dt,.cap{font:600 .76rem/1.5 var(--ws);letter-spacing:.12em;text-transform:uppercase;color:var(--a2);padding-top:.15em}
+.facts dd{margin:0;font-weight:500}
+.cap{display:block;margin:0 0 10px}
+.add{display:inline-flex;align-items:center;gap:10px;min-height:50px;padding:0 18px 0 14px;border:2px solid var(--a);border-radius:8px;background:transparent;color:var(--a);font:600 .98rem/1 var(--ws);cursor:pointer;transition:background .2s}
+.add::before{content:"+";display:grid;place-items:center;width:24px;height:24px;border-radius:4px;background:var(--y);font:700 1.1rem/1 var(--sy)}
+.add:hover{background:#F3EAB0}
+.add[aria-pressed=true]{background:var(--a);color:var(--y)}
+.add[aria-pressed=true]::before{content:"✓";font-size:.85rem}
+.words{grid-column:8/13;grid-row:1/span 3;container-type:inline-size;align-self:center}
+.words p{margin:0 0 .12em;font:700 min(10.5cqi,4.4rem)/1.04 var(--sy);letter-spacing:-.035em}
+.words small{display:block;margin:0 0 1.4em;font:500 .9rem/1.4 var(--ws);letter-spacing:0;color:var(--a2)}
+.words .hi{background:var(--y);padding:0 .1em}
+.topics{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;counter-reset:t}
+.topics li{counter-increment:t;padding:14px 0 18px;border-top:2px solid var(--a);font:600 1.15rem/1.25 var(--sy)}
+.topics li::before{content:"0" counter(t);display:block;margin-bottom:6px;font:500 .76rem/1 var(--ws);letter-spacing:.12em;color:var(--a2)}
+.prices{margin:0}
+.prices div{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 0;border-bottom:1px solid var(--ln)}
+.prices dt{font-weight:500}
+.prices dt small{display:block;font-size:.85rem;color:var(--a2);font-weight:400}
+.prices dd{margin:0;font:700 clamp(1.35rem,2.1vw,1.95rem)/1 var(--sy);white-space:nowrap}
+.prices .free{background:var(--y);border:0;border-radius:6px;padding:18px}
+.more{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,3fr) repeat(2,minmax(0,4.5fr));gap:0 clamp(20px,3vw,48px);margin-top:16px;padding-top:28px;border-top:2px solid var(--a)}
+.more h3{margin:0;font:700 clamp(1.3rem,2vw,1.7rem)/1.1 var(--sy);letter-spacing:-.02em}
+.more ul{list-style:none;margin:0;padding:0}
+.more li{padding:0 0 16px}
+.more li b{display:block;font-weight:600}
+.more li span{font-size:.94rem;color:var(--a2)}
+/* praise */
+.praise{background:var(--g)}
+.pr{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,4vw,80px);padding-block:clamp(56px,8vw,120px)}
+.score strong{display:block;font:700 clamp(6rem,15vw,13rem)/.8 var(--sy);letter-spacing:-.06em}
+.score svg{display:block;width:160px;height:30px;margin:22px 0 10px;fill:var(--a)}
+.score p{margin:0;max-width:18em}
+.pr h2{margin:0 0 8px;font:600 clamp(1.5rem,2.6vw,2.3rem)/1.12 var(--sy);letter-spacing:-.025em}
+.pts{list-style:none;margin:20px 0 0;padding:0;counter-reset:p}
+.pts li{counter-increment:p;display:grid;grid-template-columns:3rem minmax(0,1fr);gap:14px;padding:22px 0;border-top:2px solid var(--a)}
+.pts li::before{content:counter(p);font:700 2.3rem/1 var(--sy)}
+.pts li:nth-child(2){margin-left:clamp(0px,4vw,64px)}
+.pts li:nth-child(3){margin-left:clamp(0px,8vw,128px)}
+.pts h3{margin:0 0 4px;font:600 1.3rem/1.2 var(--sy)}
+.pts p{margin:0}
+/* kombinator */
+.kombi{padding-block:clamp(56px,8vw,120px)}
+.kh{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:20px clamp(24px,4vw,64px);align-items:end}
+.kh h2{margin:.3em 0 0;font:700 clamp(2.3rem,6vw,5.4rem)/.92 var(--sy);letter-spacing:-.045em}
+.kh p{margin:0}
+.kg{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,4vw,64px);align-items:start;margin-top:clamp(28px,4vw,52px)}
+fieldset{border:0;margin:0 0 28px;padding:0;min-width:0}
+legend{padding:0;margin-bottom:12px;font:600 .76rem/1.4 var(--ws);letter-spacing:.12em;text-transform:uppercase;color:var(--a2)}
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.tile{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 28px;gap:6px 12px;min-height:88px;padding:16px 18px;border:2px solid var(--a);border-radius:6px;cursor:pointer;transition:background .2s}
+.tile input,.seg input{position:absolute;opacity:0;width:1px;height:1px}
+.tile b{font:700 clamp(1.15rem,1.7vw,1.5rem)/1 var(--sy)}
+.tile span{grid-column:1;font-size:.9rem;line-height:1.3;color:var(--a2)}
+.tile i{grid-column:2;grid-row:1/3;align-self:center;display:grid;place-items:center;width:28px;height:28px;border:2px solid var(--a);border-radius:4px;background:var(--p)}
+.tile i::after{content:"";width:12px;height:7px;border-left:3px solid var(--a);border-bottom:3px solid var(--a);transform:translate(0,-2px) rotate(-45deg);opacity:0;transition:opacity .15s}
+.tile:hover{background:#F3EAB0}
+.tile:has(input:checked){background:var(--y)}
+.tile:has(input:checked) i::after{opacity:1}
+.tile:has(input:focus-visible){outline:3px solid var(--a);outline-offset:3px}
+.segs{display:flex;flex-wrap:wrap;gap:8px}
+.seg{position:relative}
+.seg span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border:2px solid var(--a);border-radius:999px;font-weight:500;cursor:pointer;transition:background .2s,color .2s}
+.seg:hover span{background:#F3EAB0}
+.seg input:checked+span{background:var(--a);color:var(--y)}
+.seg input:focus-visible+span{outline:3px solid var(--a);outline-offset:3px}
+.pack{margin:-12px 0 28px;padding:16px;border-radius:6px;background:#EFEBE0}
+.fld{display:grid;gap:6px;font-size:.92rem;font-weight:500}
+.fld input{width:100%;min-height:50px;padding:0 14px;border:2px solid var(--a);border-radius:6px;background:#fff;color:var(--a);font:inherit;font-size:1rem;font-weight:400}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#langx{margin-top:12px}
+.slip{position:sticky;top:24px;background:#fff;border:2px solid var(--a);border-radius:6px;box-shadow:10px 10px 0 var(--g)}
+.slip header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:16px 20px;background:var(--a);color:var(--y)}
+.slip header b{font:700 1.3rem/1 var(--sy);letter-spacing:.03em;text-transform:uppercase}
+.slip header span{font-size:.85rem;color:var(--g)}
+.sl{list-style:none;margin:0;padding:6px 20px 4px}
+.sl li{display:grid;grid-template-columns:2.2em minmax(0,1fr);gap:10px;padding:12px 0;border-bottom:1px dashed rgba(46,31,58,.3)}
+.sl li>i{font:500 .8rem/1.6 var(--ws);font-style:normal;color:var(--a2)}
+.sl b{font:700 1.12rem/1.2 var(--sy)}
+.sl small{display:block;font-size:.88rem;color:var(--a2)}
+.sl .empty{display:block;color:var(--a2);border:0}
+.sm{margin:0;padding:8px 20px 4px;font-size:.92rem}
+.sm div{display:flex;justify-content:space-between;gap:12px;padding:3px 0}
+.sm dt{color:var(--a2)}.sm dd{margin:0;font-weight:600;text-align:right}
+.hint{margin:10px 20px 0;padding:10px 12px;border-left:4px solid var(--y);background:#F7F1CF;font-size:.9rem;line-height:1.45}
+.sb{display:grid;gap:8px;padding:18px 20px 20px}
+.sb .btn{width:100%}
 /* contact */
-.dir{position:relative;isolation:isolate;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 18px;max-width:880px;padding:22px 92px 22px 30px;margin-bottom:clamp(36px,5vw,64px);background:#fff;color:#fff;text-decoration:none;clip-path:polygon(0 0,calc(100% - 56px) 0,100% 50%,calc(100% - 56px) 100%,0 100%);transition:transform .2s}
-.dir::before{content:"";position:absolute;inset:4px;z-index:-1;background:var(--blue);clip-path:polygon(0 0,calc(100% - 53px) 0,100% 50%,calc(100% - 53px) 100%,0 100%)}
-.dir:hover{transform:translateX(8px)}
-.dir b{font:400 clamp(1.4rem,1rem + 2.6vw,3.1rem)/1.05 'Archivo Black'}
-.dir span{font:500 .85rem 'IBM Plex Mono',monospace;opacity:.9}
-.kg{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(32px,6vw,96px);align-items:start}
-.cls{list-style:none;padding:0;margin:28px 0}
-.cls li{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px 16px;padding:14px 0;border-bottom:1px solid var(--line)}
-.cls span{font:500 .8rem 'IBM Plex Mono',monospace;color:var(--mute);text-transform:uppercase;letter-spacing:.05em}
-.cls a{font:400 clamp(1.1rem,1rem + .6vw,1.45rem) 'Archivo Black';text-decoration:none;padding:6px 0}
-.cls a:hover{color:var(--blue);text-decoration:underline;text-decoration-thickness:3px;text-decoration-color:var(--yellow)}
-.hrs{background:#fff;border:1px solid var(--line);border-radius:20px;padding:clamp(22px,3vw,40px)}
-.hrs table{width:100%;border-collapse:collapse;margin-top:14px}
-.hrs td{padding:12px 0;border-bottom:1px solid var(--line)}
-.hrs td+td{text-align:right;font-family:'IBM Plex Mono',monospace;font-size:.95rem}
-.hrs tr.today td{font-weight:700;color:var(--blue)}
-.hrs tr.today td:first-child::after{content:" · heute";font-weight:500}
-/* cta */
-.cta{padding-bottom:clamp(64px,8vw,112px)}
-.ci{display:grid;grid-template-columns:minmax(0,.5fr) minmax(0,1fr);background:var(--blue);color:#fff;border-radius:24px;overflow:hidden}
-.zebra{background:repeating-linear-gradient(90deg,var(--yellow) 0 30px,transparent 30px 60px) center/100% 72% no-repeat,var(--asph);min-height:240px}
-.ct{padding:clamp(28px,5vw,72px);display:flex;flex-direction:column;gap:18px;align-items:flex-start}
-.ct h2{max-width:13ch}.ct p{max-width:46ch;color:rgba(255,255,255,.88)}
-footer{padding-block:28px 40px;border-top:2px solid var(--ink);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;font-size:.92rem}
-footer .mono{font-size:.78rem;color:var(--mute)}
-.fab{display:none;position:fixed;right:16px;bottom:16px;z-index:9;min-height:56px;padding:0 22px;border-radius:99px;background:var(--blue);color:#fff;font-weight:700;text-decoration:none;align-items:center;gap:10px;box-shadow:0 10px 24px -8px rgba(7,59,120,.7),inset 0 0 0 2px rgba(255,255,255,.25)}
-.fab svg{width:20px;height:20px}
-.js .rv{opacity:0;transform:translateY(20px)}.js .rv.in{opacity:1;transform:none;transition:opacity .5s,transform .5s cubic-bezier(.2,.7,.2,1)}
-@media (max-width:1060px){.k-f{grid-column:span 6;grid-row:auto}.k-v,.k-n{grid-column:span 3}nav{display:none}}
-@media (max-width:900px){.hero,.sh,.rev,.planner,.kg{grid-template-columns:minmax(0,1fr)}.rl{position:static;display:flex;align-items:center;gap:20px}.rl p{margin:0}.speed{width:150px;flex:none}.pc{border-right:0;border-bottom:2px solid var(--ink)}
-.post::before{left:18px}.post::after{left:18px;margin-left:-40px;width:80px}.arr,.arr.l{align-self:stretch;width:auto;margin-left:6px;min-height:54px;padding:8px 44px 8px 20px;clip-path:polygon(0 0,calc(100% - 26px) 0,100% 50%,calc(100% - 26px) 100%,0 100%)}.arr::before,.arr.l::before{clip-path:polygon(0 0,calc(100% - 24px) 0,100% 50%,calc(100% - 24px) 100%,0 100%)}.arr.l:hover{transform:translateX(7px)}
-.facts{grid-template-columns:repeat(2,minmax(0,1fr))}.facts p:nth-child(3){border:0;padding-left:0}.facts p:nth-child(n+3){border-top:1px solid var(--line)}
-.fab{display:inline-flex}footer{padding-bottom:96px}}
-@media (max-width:640px){.top .btn{display:none}.bento{grid-template-columns:minmax(0,1fr)}.bento>.k{grid-column:auto}.k-t{grid-template-columns:minmax(0,1fr)}.ci{grid-template-columns:minmax(0,1fr)}.zebra{min-height:70px;background-size:100% 64%,auto}.seg span{font-size:.82rem;padding:8px}.dir{padding:18px 62px 18px 20px;clip-path:polygon(0 0,calc(100% - 38px) 0,100% 50%,calc(100% - 38px) 100%,0 100%)}.dir::before{clip-path:polygon(0 0,calc(100% - 36px) 0,100% 50%,calc(100% - 36px) 100%,0 100%)}.ctas .btn{flex:1 1 auto}.facts p{padding:12px 10px;font-size:.88rem}.praise li{grid-template-columns:30px minmax(0,1fr);gap:4px 10px}}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
+.contact{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,4fr) minmax(0,3fr);gap:32px clamp(24px,4vw,64px);padding-block:clamp(56px,8vw,112px);border-top:2px solid var(--a)}
+.addr{container-type:inline-size}
+.addr h2{margin:.35em 0 .4em;font:700 min(11cqi,4.6rem)/.95 var(--sy);letter-spacing:-.035em}
+.addr p{margin:0 0 22px;max-width:26em}
+table{width:100%;border-collapse:collapse;font-size:.98rem}
+td{padding:9px 8px;border-bottom:1px solid var(--ln)}
+td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+tr.today td{background:var(--y);font-weight:700;border-color:transparent}
+.cl{margin:0}
+.cl div{padding:0 0 18px}
+.cl dt{font:600 .76rem/1.5 var(--ws);letter-spacing:.12em;text-transform:uppercase;color:var(--a2)}
+.cl dd{margin:0}
+.cl a{display:inline-flex;align-items:center;min-height:44px;font:600 1.2rem/1.2 var(--sy);text-decoration:none;border-bottom:2px solid var(--y)}
+.cl a:hover{border-color:var(--a)}
+/* final */
+.final{background:var(--a);color:var(--p)}
+.fin{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px 32px;padding-top:clamp(40px,6vw,80px)}
+.fin h2{margin:0;max-width:20em;font:600 clamp(1.45rem,2.7vw,2.4rem)/1.12 var(--sy);letter-spacing:-.025em}
+.fin div{display:flex;flex-wrap:wrap;gap:12px}
+.final .bi{padding-top:clamp(28px,4vw,56px)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-block:22px 30px;font-size:.86rem;color:var(--a2)}
+.foot p{margin:0}
+/* index tabs */
+.tabs{position:fixed;z-index:40;right:0;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.tabs a{writing-mode:vertical-rl;transform:rotate(180deg);display:flex;align-items:center;justify-content:center;gap:8px;width:44px;padding:16px 0;border-radius:0 8px 8px 0;background:var(--y);color:var(--a);font:600 .72rem/1 var(--sy);letter-spacing:.13em;text-transform:uppercase;text-decoration:none;transition:width .25s,background .25s,color .25s}
+.tabs a:nth-child(2n){background:var(--g)}
+.tabs a:nth-child(6){background:#E4DED0}
+.tabs a:hover{width:50px}
+.tabs a.on{width:56px;background:var(--a);color:var(--y)}
+.tabs .s{display:none}
+.tabs em{writing-mode:horizontal-tb;transform:rotate(180deg);min-width:20px;height:20px;padding:0 5px;border-radius:10px;background:var(--a);color:var(--y);font:700 .7rem/20px var(--ws);font-style:normal;letter-spacing:0;text-align:center}
+.tabs em[data-n="0"]{display:none}
+.tabs a.on em{background:var(--y);color:var(--a)}
+@media(min-width:900px) and (max-height:700px){.tabs a{padding:10px 0;font-size:.64rem}}
+.fab{position:fixed;z-index:41;right:72px;bottom:20px;display:inline-flex;align-items:center;gap:10px;height:56px;padding:0 22px 0 18px;border-radius:999px;background:var(--a);color:var(--y);font:600 1rem/1 var(--ws);text-decoration:none;box-shadow:0 10px 28px rgba(46,31,58,.3);transition:transform .2s}
+.fab svg{width:20px;height:20px;fill:currentColor}
+.fab:hover{transform:translateY(-2px)}
+/* reveal */
+html.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .8s cubic-bezier(.2,.75,.2,1)}
+html.js .rv.in{opacity:1;transform:none}
+@media(max-width:899px){
+ .cb>*,.cb>.side,.cb>.words{grid-column:1/-1;grid-row:auto}
+ .more,.pr,.kh,.kg,.contact{grid-template-columns:minmax(0,1fr)}
+ .pts li:nth-child(n){margin-left:0}
+ .slip{position:static}
+ .tabs{top:auto;bottom:0;left:0;right:0;transform:none;flex-direction:row;align-items:flex-end;gap:3px;padding:6px 4px env(safe-area-inset-bottom);background:var(--p);border-top:1px solid var(--ln)}
+ .tabs a{writing-mode:horizontal-tb;transform:none;flex:1 1 auto;min-width:0;width:auto;height:50px;padding:0 6px;border-radius:8px 8px 0 0;font-size:.74rem;letter-spacing:.02em;text-transform:none}
+ .tabs a:hover{width:auto}.tabs a.on{width:auto;height:56px}
+ .tabs .k{display:none}
+ .tabs em{transform:none}
+ .fab{right:16px;bottom:calc(72px + env(safe-area-inset-bottom))}
+}
+@media(max-width:600px){
+ .tabs .l{display:none}.tabs .s{display:inline}
+ .tiles,.two,.topics{grid-template-columns:minmax(0,1fr)}
+ .facts div{grid-template-columns:minmax(0,1fr);gap:2px}
+ .ctas .btn{flex:1 1 100%}
+ .fab span{display:none}.fab{width:56px;padding:0;justify-content:center}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+ html.js .rv,html.js .band:not(.in) .c{opacity:1;transform:none}
+}
 </style>
 </head>
 <body>
 <p class="demo">Demo-Konzept eines unabhängigen Entwicklers – keine offizielle Website von Haudi's Fahrschule Baden. Nicht vom Inhaber freigegeben; wird auf erste Anfrage gelöscht.</p>
 
 <header class="top wrap">
-  <a class="brand" href="#top"><span class="ls" aria-hidden="true">L</span><span><b>Haudi's</b>Fahrschule Baden</span></a>
-  <nav aria-label="Hauptnavigation"><a href="#kurse">Kurse</a><a href="#preise">Preise</a><a href="#route">Routenplaner</a><a href="#kontakt">Kontakt</a></nav>
-  <a class="btn b-ink" href="tel:+41796044444"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>079 604 44 44</a>
+ <a class="logo" href="#start"><b>Haudi’s</b><span>Fahrschule &amp;<br>Verkehrsschule Baden</span></a>
+ <div class="topr">
+  <span class="st"><i></i><span data-status>Mo–Sa 07:00–21:00</span></span>
+  <a href="tel:+41796044444">079 604 44 44</a>
+ </div>
 </header>
 
-<main id="top">
-<section class="hero wrap">
+<nav class="tabs" aria-label="Kursregister">
+ <a href="#vku">VKU</a>
+ <a href="#nothelfer">Nothelfer</a>
+ <a href="#btu">BTU</a>
+ <a href="#fahrstunden"><span class="l">Fahrstunden</span><span class="s">Fahren</span></a>
+ <a href="#kombinator"><span class="l">Kombinator</span><span class="s">Liste</span><em data-count data-n="0">0</em></a>
+ <a href="#kontakt" class="k">Kontakt</a>
+</nav>
+
+<main>
+<section class="hero wrap" id="start">
+ <div class="hl">
+  <p class="eye">Kursprogramm · Baden AG</p>
+  <h1><span class="a">Haudi’s</span><span class="b">Fahrschule Baden</span></h1>
+  <p class="lede">Nothelfer, VKU, Basistheorie und Fahrstunden aus einer Hand – in unserer eigenen Verkehrsschule an der Haselstrasse 33, nahe beim Bahnhof Baden. Kurse auch in Fremdsprachen.</p>
+  <div class="ctas">
+   <a class="btn pri" href="tel:+41796044444"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Anrufen · 079 604 44 44</a>
+   <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=47.4773158,8.3046988" target="_blank" rel="noopener">Route zur Haselstrasse 33</a>
+  </div>
+  <div class="sub"><span class="st"><i></i><span data-status>Mo–Sa 07:00–21:00</span></span><span>Mo–Sa 07:00–21:00 · Sonntag geschlossen</span></div>
+ </div>
+
+ <aside class="cover" aria-label="Inhalt des Kursprogramms">
+  <svg class="bub" viewBox="0 0 120 260" aria-hidden="true"><circle cx="30" cy="230" r="9" style="--d:0s"/><circle cx="78" cy="240" r="5" style="--d:-2.5s"/><circle cx="56" cy="250" r="13" style="--d:-5s"/><circle cx="96" cy="235" r="7" style="--d:-7s"/><circle cx="14" cy="248" r="4" style="--d:-3.8s"/></svg>
+  <div class="ch"><span>Inhalt</span><span>Kursprogramm Haudi’s</span></div>
+  <ol class="toc">
+   <li><a href="#vku"><i class="n">01</i><b>VKU</b><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5"/></svg><span>Verkehrskunde, vier Abende</span></a></li>
+   <li><a href="#nothelfer"><i class="n">02</i><b>NOTHELFER</b><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5"/></svg><span>Erste Hilfe, praktisch gezeigt</span></a></li>
+   <li><a href="#btu"><i class="n">03</i><b>BTU</b><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5"/></svg><span>Basistheorie für die Prüfung</span></a></li>
+   <li><a href="#fahrstunden"><i class="n">04</i><b>FAHRSTUNDEN</b><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5"/></svg><span>Die erste Lektion ist kostenlos</span></a></li>
+   <li class="kz"><a href="#kombinator"><i class="n">05</i><b>Kurs-Kombinator</b><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5"/></svg><span>Ankreuzen, was fehlt – Anmeldeliste senden</span></a></li>
+  </ol>
+  <div class="rate"><strong>4,8</strong><div><svg viewBox="0 0 104 20" aria-hidden="true"><g id="st5"><path id="s1" d="M10 1l2.7 5.6 6.1.8-4.4 4.3 1 6.1L10 15l-5.4 2.8 1-6.1L1.2 7.4l6.1-.8z"/><use href="#s1" x="21"/><use href="#s1" x="42"/><use href="#s1" x="63"/><use href="#s1" x="84"/></g></svg><small>61 Bewertungen auf Google</small></div></div>
+ </aside>
+</section>
+
+<section class="course" id="vku">
+ <div class="band"><div class="bi wrap">
+  <div class="bm"><span><b>01</b> · Verkehrskundeunterricht</span><span>Pflichtkurs mit Lernfahrausweis</span></div>
+  <h2 class="code" style="--fs:min(33cqi,28rem)" data-sr="VKU – Verkehrskundeunterricht">VKU</h2>
+ </div></div>
+ <div class="cb wrap">
+  <p class="lead rv">Vier Abende, je zwei Lektionen – und Fragen sind ausdrücklich erwünscht.</p>
+  <div class="txt rv">
+   <p>Teilnehmende beschreiben den VKU bei uns als gut organisiert und abwechslungsreich: Alles wird locker und verständlich erklärt, die Stimmung ist gut, und wer etwas nicht verstanden hat, fragt einfach nach.</p>
+   <p>In den Bewertungen werden die Lehrpersonen <strong>Bernadette und Luca</strong> namentlich gelobt.</p>
+   <button class="add" type="button" data-add="vku" aria-pressed="false">VKU auf meine Liste</button>
+  </div>
+  <div class="side rv">
+   <dl class="facts">
+    <div><dt>Umfang</dt><dd>4 Abende à 2 Lektionen</dd></div>
+    <div><dt>Voraussetzung</dt><dd>Gültiger Lernfahrausweis – ohne ihn ist der Kurs nicht möglich</dd></div>
+    <div><dt>Obligatorisch</dt><dd>Wenn Sie noch keinen Fahrausweis einer anderen Kategorie besitzen</dd></div>
+    <div><dt>Nachweis</dt><dd>Die Lektionen werden schriftlich bestätigt</dd></div>
+    <div><dt>Sprache</dt><dd>Deutsch, auf Anfrage in Fremdsprachen</dd></div>
+   </dl>
+  </div>
+ </div>
+</section>
+
+<section class="course" id="nothelfer">
+ <div class="band"><div class="bi wrap">
+  <div class="bm"><span><b>02</b> · Nothelferkurs</span><span>Was im Ernstfall zu tun ist</span></div>
+  <h2 class="code" style="--fs:12.6cqi" data-sr="Nothelferkurs">NOTHELFER</h2>
+ </div></div>
+ <div class="cb wrap">
+  <p class="lead rv">Nicht nur erklärt, sondern gezeigt: was im Ernstfall zu tun ist.</p>
+  <div class="txt rv">
+   <p>Der Kurs lebt laut Teilnehmenden von anschaulichen Bildern und vom Durchspielen verschiedener Situationen – so bleibt das Wichtige im Kopf. Das Thema ist ernst, die Atmosphäre trotzdem offen und locker.</p>
+   <p>Die Kursleitung bringt viel Fachwissen und Erfahrung mit und beantwortet Rückfragen geduldig. Termine und Kurssprache klären wir gern am Telefon: <a href="tel:+41562212010">056 221 20 10</a>.</p>
+   <button class="add" type="button" data-add="nh" aria-pressed="false">Nothelfer auf meine Liste</button>
+  </div>
+  <div class="words rv" aria-label="So läuft der Kurs">
+   <p>Zeigen.</p><small>Was zu tun ist, wird vorgemacht – nicht nur beschrieben.</small>
+   <p><span class="hi">Durchspielen.</span></p><small>Verschiedene Notfall-Situationen werden gemeinsam geübt.</small>
+   <p>Behalten.</p><small>Mit Bildern und Praxis bleibt der Stoff hängen.</small>
+  </div>
+ </div>
+</section>
+
+<section class="course" id="btu">
+ <div class="band"><div class="bi wrap">
+  <div class="bm"><span><b>03</b> · Basistheorieunterricht</span><span>Freiwillig, sehr empfohlen</span></div>
+  <h2 class="code" style="--fs:min(33cqi,28rem)" data-sr="BTU – Basistheorieunterricht">BTU</h2>
+ </div></div>
+ <div class="cb wrap">
+  <p class="lead rv">Freiwillig – aber die solide Vorbereitung auf die Theorieprüfung.</p>
+  <div class="txt rv">
+   <p>Vier Doppellektionen: drei für die Theorie, eine für das prüfungskonforme Ausfüllen des Fragebogens – des «Bögle». Mit modernen Medien und geschulten Instruktoren verstehen Sie den Stoff schneller und mit weniger Aufwand.</p>
+   <p>Bei Unklarheiten helfen wir Ihnen auch beim Erarbeiten des Prüfungsstoffs.</p>
+   <button class="add" type="button" data-add="btu" aria-pressed="false">BTU auf meine Liste</button>
+  </div>
+  <div class="side rv">
+   <span class="cap">Themen im Kurs</span>
+   <ol class="topics">
+    <li>Geschwindigkeit</li><li>Wie fahre ich auf der Fahrbahn?</li><li>Vortritt 1</li><li>Vortritt 2</li><li>Überholen</li><li>Autobahnen und Autostrassen</li>
+   </ol>
+  </div>
+ </div>
+</section>
+
+<section class="course" id="fahrstunden">
+ <div class="band"><div class="bi wrap">
+  <div class="bm"><span><b>04</b> · Praktische Fahrstunden</span><span>Nach Vereinbarung</span></div>
+  <h2 class="code" style="--fs:10.6cqi" data-sr="Fahrstunden">FAHRSTUNDEN</h2>
+ </div></div>
+ <div class="cb wrap">
+  <p class="lead rv">Die erste Lektion kostet nichts. Danach wählen Sie Ihr Tempo – und Ihr Abo.</p>
+  <div class="txt rv">
+   <p>Fahrstunden vereinbaren wir direkt mit Ihnen. In der ersten Lektion verrechnen wir einmalig CHF 100.– für die Versicherungskosten; die Lektion selbst bleibt kostenlos.</p>
+   <p>Bringen Sie zu jedem Kursteil Ihren Lernfahrausweis mit.</p>
+   <button class="add" type="button" data-add="fs" aria-pressed="false">Fahrstunden auf meine Liste</button>
+  </div>
+  <div class="side rv">
+   <dl class="prices">
+    <div class="free"><dt>Erste Lektion<small>einmalig CHF 100.– Versicherung</small></dt><dd>gratis</dd></div>
+    <div><dt>Einzellektion<small>bar bezahlt</small></dt><dd>CHF 95.–</dd></div>
+    <div><dt>5er-Abo<small>pro Lektion</small></dt><dd>CHF 90.–</dd></div>
+    <div><dt>10er-Abo<small>pro Lektion</small></dt><dd>CHF 88.–</dd></div>
+   </dl>
+  </div>
+  <div class="more rv">
+   <h3>Auch im Programm</h3>
+   <ul>
+    <li><b>Motorrad-Grundkurs (Kat. A1)</b><span>Praktische Grundschulung: Fahrdynamik, Blicktechnik, Bedienung des Fahrzeugs – schriftlich bestätigt.</span></li>
+    <li><b>Motorrad-Kurse</b><span>Auch Motorrad-Fahrschüler brauchen einen gültigen Lernfahrausweis.</span></li>
+   </ul>
+   <ul>
+    <li><b>Lastwagen</b><span>Inklusive Theorie zu Arbeits- und Ruhezeit und Tachograph.</span></li>
+    <li><b>Taxi</b><span>Fragen Sie uns nach dem nächsten Kurs.</span></li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section class="praise" id="stimmen">
+ <div class="pr wrap">
+  <div class="score rv">
+   <strong>4,8</strong>
+   <svg viewBox="0 0 104 20" aria-hidden="true"><use href="#st5"/></svg>
+   <p>Durchschnitt aus 61 Bewertungen auf Google.</p>
+  </div>
+  <div class="rv">
+   <h2>Was Kursteilnehmende hervorheben</h2>
+   <ol class="pts">
+    <li><div><h3>Gezeigt, nicht nur erklärt</h3><p>Im Nothelferkurs wird vorgemacht und durchgespielt, was im Ernstfall zu tun ist – das bleibt.</p></div></li>
+    <li><div><h3>Fragen sind willkommen</h3><p>Rückfragen werden geduldig beantwortet, der Stoff kommt verständlich und abwechslungsreich rüber.</p></div></li>
+    <li><div><h3>Bernadette und Luca</h3><p>Die beiden Lehrpersonen werden für den VKU gelobt – dazu die lockere Stimmung und die Lage nahe beim Bahnhof.</p></div></li>
+   </ol>
+  </div>
+ </div>
+</section>
+
+<section class="kombi wrap" id="kombinator">
+ <div class="kh rv">
+  <div><p class="eye">05 · Kurs-Kombinator</p><h2>Was fehlt Ihnen noch?</h2></div>
+  <p>Kreuzen Sie an, was Sie noch brauchen, und wählen Sie die Kurssprache. Daraus entsteht Ihre Anmeldeliste – per WhatsApp verschickt oder am Telefon durchgegeben.</p>
+ </div>
+ <div class="kg">
+  <form id="kf" onsubmit="return false">
+   <fieldset><legend>1 · Kurse</legend>
+    <div class="tiles">
+     <label class="tile"><input type="checkbox" name="k" value="vku"><b>VKU</b><span>Verkehrskunde · 4 Abende</span><i></i></label>
+     <label class="tile"><input type="checkbox" name="k" value="nh"><b>NOTHELFER</b><span>Nothelferkurs · praxisnah</span><i></i></label>
+     <label class="tile"><input type="checkbox" name="k" value="btu"><b>BTU</b><span>Basistheorie · freiwillig</span><i></i></label>
+     <label class="tile"><input type="checkbox" name="k" value="fs"><b>FAHRSTUNDEN</b><span>Erste Lektion gratis</span><i></i></label>
+    </div>
+   </fieldset>
+   <fieldset class="pack" id="pack" hidden><legend>Fahrstunden-Paket</legend>
+    <div class="segs">
+     <label class="seg"><input type="radio" name="p" value="probe" checked><span>Zuerst die Gratis-Lektion</span></label>
+     <label class="seg"><input type="radio" name="p" value="e"><span>Einzeln · CHF 95.–</span></label>
+     <label class="seg"><input type="radio" name="p" value="a5"><span>5er-Abo · CHF 90.–</span></label>
+     <label class="seg"><input type="radio" name="p" value="a10"><span>10er-Abo · CHF 88.–</span></label>
+    </div>
+   </fieldset>
+   <fieldset><legend>2 · Lernfahrausweis</legend>
+    <div class="segs">
+     <label class="seg"><input type="radio" name="lfa" value="ja" checked><span>Habe ich</span></label>
+     <label class="seg"><input type="radio" name="lfa" value="nein"><span>Noch nicht</span></label>
+    </div>
+   </fieldset>
+   <fieldset><legend>3 · Kurssprache</legend>
+    <div class="segs">
+     <label class="seg"><input type="radio" name="lang" value="de" checked><span>Deutsch</span></label>
+     <label class="seg"><input type="radio" name="lang" value="x"><span>Andere Sprache</span></label>
+    </div>
+    <label class="fld" id="langx" hidden>Welche Sprache?<input name="lx" autocomplete="off" placeholder="Sprache eingeben"></label>
+   </fieldset>
+   <fieldset><legend>4 · Fahrzeug</legend>
+    <div class="segs">
+     <label class="seg"><input type="radio" name="v" value="Auto" checked><span>Auto</span></label>
+     <label class="seg"><input type="radio" name="v" value="Motorrad"><span>Motorrad</span></label>
+     <label class="seg"><input type="radio" name="v" value="Lastwagen"><span>Lastwagen</span></label>
+     <label class="seg"><input type="radio" name="v" value="Taxi"><span>Taxi</span></label>
+    </div>
+   </fieldset>
+   <fieldset><legend>5 · Angaben (freiwillig)</legend>
+    <div class="two">
+     <label class="fld">Ihr Name<input name="n" autocomplete="name"></label>
+     <label class="fld">Wann passt es Ihnen?<input name="w" placeholder="z. B. abends, Samstag"></label>
+    </div>
+   </fieldset>
+  </form>
+
+  <aside class="slip" aria-live="polite">
+   <header><b>Anmeldeliste</b><span id="sd">Haudi’s Baden</span></header>
+   <ol class="sl" id="sl"><li class="empty">Noch nichts angekreuzt – wählen Sie die Kurse, die Ihnen noch fehlen.</li></ol>
+   <dl class="sm" id="sm"></dl>
+   <div id="hints"></div>
+   <div class="sb">
+    <a class="btn pri" id="wa" href="https://wa.me/41796044444" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.7 11.7 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>Liste per WhatsApp senden</a>
+    <a class="btn ghost" href="tel:+41796044444">Am Telefon durchgeben</a>
+    <a class="btn ghost" id="em" href="mailto:info@haudi.ch">Per E-Mail an info@haudi.ch</a>
+   </div>
+  </aside>
+ </div>
+</section>
+
+<section class="contact wrap" id="kontakt">
+ <div class="addr rv">
+  <p class="eye">06 · Kontakt &amp; Anfahrt</p>
+  <h2>Haselstrasse 33<br>5400 Baden</h2>
+  <p>Unser Kurslokal liegt nahe beim Bahnhof Baden – gut erreichbar, auch direkt nach Schule oder Arbeit.</p>
+  <a class="btn pri" href="https://www.google.com/maps/dir/?api=1&amp;destination=47.4773158,8.3046988" target="_blank" rel="noopener">Route planen</a>
+ </div>
+ <div class="rv">
+  <span class="cap">Erreichbar</span>
+  <table>
+   <tr data-day="1"><td>Montag</td><td>07:00–21:00</td></tr>
+   <tr data-day="2"><td>Dienstag</td><td>07:00–21:00</td></tr>
+   <tr data-day="3"><td>Mittwoch</td><td>07:00–21:00</td></tr>
+   <tr data-day="4"><td>Donnerstag</td><td>07:00–21:00</td></tr>
+   <tr data-day="5"><td>Freitag</td><td>07:00–21:00</td></tr>
+   <tr data-day="6"><td>Samstag</td><td>07:00–21:00</td></tr>
+   <tr data-day="0"><td>Sonntag</td><td>geschlossen</td></tr>
+  </table>
+  <p class="st" style="margin-top:14px"><i></i><span data-status>Mo–Sa 07:00–21:00</span></p>
+ </div>
+ <dl class="cl rv">
+  <div><dt>Mobil &amp; WhatsApp</dt><dd><a href="tel:+41796044444">079 604 44 44</a></dd></div>
+  <div><dt>Sekretariat</dt><dd><a href="tel:+41562212010">056 221 20 10</a></dd></div>
+  <div><dt>E-Mail</dt><dd><a href="mailto:info@haudi.ch">info@haudi.ch</a></dd></div>
+ </dl>
+</section>
+
+<section class="final" aria-labelledby="fh">
+ <div class="fin wrap">
+  <h2 id="fh">Nächster VKU, nächster Nothelfer? Ein Anruf genügt.</h2>
   <div>
-    <p class="eye">Fahrschule &amp; Verkehrsschule · Baden AG</p>
-    <h1>Vom <span class="ls">L</span> zum<br>Ausweis.</h1>
-    <p class="lead">Fahrstunden, VKU, Nothelferkurs und Theorie – alles bei Haudi's an der Haselstrasse 33 in Baden, nahe beim Bahnhof.</p>
-    <p class="st" data-st><i></i><span>Mo–Sa 07:00–21:00</span></p>
-    <div class="ctas">
-      <a class="btn b-blue" href="tel:+41796044444"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Anrufen</a>
-      <a class="btn b-line" href="https://www.google.com/maps/dir/?api=1&amp;destination=47.4773158,8.3046988" target="_blank" rel="noopener">Route nach Baden</a>
-      <a class="btn b-line" href="#route">Meine Route planen</a>
-    </div>
+   <a class="btn yel" href="tel:+41796044444">079 604 44 44 anrufen</a>
+   <a class="btn lite" href="https://wa.me/41796044444?text=Gr%C3%BCezi%2C%20wann%20starten%20die%20n%C3%A4chsten%20Kurse%3F" target="_blank" rel="noopener">WhatsApp schreiben</a>
   </div>
-  <nav class="post" aria-label="Wegweiser zu den Kursen">
-    <a class="arr" style="--i:0" href="#k-n"><b>Nothelferkurs</b><span>Start</span></a>
-    <a class="arr l" style="--i:1" href="#k-t"><b>Basistheorie</b><span>4 × 2 L.</span></a>
-    <a class="arr" style="--i:2" href="#k-v"><b>VKU</b><span>4 Abende</span></a>
-    <a class="arr l" style="--i:3" href="#preise"><b>Fahrstunden B</b><span>ab CHF 88</span></a>
-    <a class="arr w" style="--i:4" href="#k-m"><b>Motorrad A1</b><span>Grundkurs</span></a>
-    <a class="arr l gr" style="--i:5" href="#k-c"><b>Lastwagen · Taxi</b><span>Beruf</span></a>
-  </nav>
-</section>
-
-<div class="wrap"><div class="facts">
-  <p><b>4,8</b> von 5 · 61 Google-Bewertungen</p>
-  <p><b>Mo–Sa</b> 07:00–21:00</p>
-  <p>Kurse auch in <b>Fremdsprachen</b></p>
-  <p>Erste Lektion <b>kostenlos</b></p>
-</div></div>
-
-<section class="sec wrap" id="kurse">
-  <div class="sh rv">
-    <div><p class="rn"><b>1</b>Kurse</p><h2>Alles bis zur Prüfung, unter einem Dach.</h2></div>
-    <p>Haudi's führt die Kurse in der eigenen Verkehrsschule durch – vom Nothelfer über die Theorie bis zum VKU, auf Wunsch auch in Fremdsprachen. Die Lektionen werden Ihnen schriftlich bestätigt.</p>
-  </div>
-  <div class="bento">
-    <article class="k k-f rv" id="preise">
-      <svg class="deco" viewBox="0 0 400 220" aria-hidden="true"><path d="M-10 230C120 215 150 130 250 118S370 50 420 0" stroke="rgba(255,255,255,.1)" stroke-width="48" fill="none"/><path d="M-10 230C120 215 150 130 250 118S370 50 420 0" stroke="rgba(255,255,255,.45)" stroke-width="3" stroke-dasharray="16 14" fill="none"/></svg>
-      <span class="cl" aria-hidden="true">B</span>
-      <span class="tag">Kat. B · Auto</span>
-      <h3>Fahrstunden</h3>
-      <p>Termine nach Vereinbarung. Wer mehr Lektionen im Voraus nimmt, bezahlt pro Lektion weniger.</p>
-      <dl class="price">
-        <div><dt>Einzellektion, bar</dt><dd>CHF 95.–</dd></div>
-        <div><dt>5er-Abo, pro Lektion</dt><dd>CHF 90.–</dd></div>
-        <div><dt>10er-Abo, pro Lektion</dt><dd>CHF 88.–</dd></div>
-      </dl>
-      <p class="free"><b>Erste Lektion kostenlos.</b><span>Einmalig verrechnet: CHF 100.– Versicherungskosten.</span></p>
-    </article>
-    <article class="k k-v rv" id="k-v">
-      <span class="tag">Obligatorisch</span>
-      <h3>Verkehrskunde (VKU)</h3>
-      <div class="nights" aria-hidden="true"><span>Abend 1<br>2 L.</span><span>Abend 2<br>2 L.</span><span>Abend 3<br>2 L.</span><span>Abend 4<br>2 L.</span></div>
-      <p>Vier Abende à zwei Lektionen. Pflicht für alle, die noch keinen Fahrausweis einer anderen Kategorie haben. Ohne Lernfahrausweis geht es nicht – bitte zu jedem Kursteil mitbringen.</p>
-    </article>
-    <article class="k k-n rv" id="k-n">
-      <svg width="46" height="46" viewBox="0 0 46 46" aria-hidden="true"><rect width="46" height="46" rx="8" fill="#0B6A3E"/><path d="M18 9h10v9h9v10h-9v9H18v-9H9V18h9z" fill="#fff"/></svg>
-      <h3>Nothelferkurs</h3>
-      <p>Nicht nur Theorie: Sie sehen und üben, was im Ernstfall zu tun ist, und spielen konkrete Situationen durch. Nötig für das Gesuch um den Lernfahrausweis.</p>
-    </article>
-    <article class="k k-t rv" id="k-t">
-      <div>
-        <span class="tag">Theorieprüfung</span>
-        <h3>Basistheorie (BTU) &amp; «Bögle»</h3>
-        <p>Die Basistheorie ist freiwillig, für eine solide Prüfungsvorbereitung aber sehr zu empfehlen: vier Doppellektionen – drei für den Stoff, eine für das prüfungskonforme Ausfüllen des Fragebogens. Bei Unklarheiten im Stoff hilft Ihnen das Team weiter.</p>
-      </div>
-      <div>
-        <p class="lab">Themen im Kurs</p>
-        <ul class="chips"><li>Geschwindigkeit</li><li>Wie fahre ich auf der Fahrbahn?</li><li>Vortritt 1</li><li>Vortritt 2</li><li>Überholen</li><li>Autobahnen &amp; Autostrassen</li><li class="hl">Prüfungsfragebogen (PFB)</li></ul>
-      </div>
-    </article>
-    <article class="k k-m rv" id="k-m">
-      <span class="cl" aria-hidden="true">A1</span>
-      <span class="tag">Kat. A1 / A · Motorrad</span>
-      <h3>Motorrad-Grundkurs</h3>
-      <p>Der obligatorische Grundkurs (Kat. A1) und weitere Motorrad-Kurse. In der praktischen Grundschulung lernen Sie Fahrdynamik, Blicktechnik und die Bedienung des Fahrzeugs – der Besuch wird schriftlich bestätigt. Auch für Motorrad-Fahrschüler gilt: gültiger Lernfahrausweis nötig.</p>
-    </article>
-    <article class="k k-c rv" id="k-c">
-      <span class="cl" aria-hidden="true">C</span>
-      <span class="tag">Beruf</span>
-      <h3>Lastwagen &amp; Taxi</h3>
-      <p>Ausbildung für Berufsfahrerinnen und Berufsfahrer – inklusive Arbeits- und Ruhezeitverordnung (ARV) und Tachograph-Kenntnisse. Das Sekretariat berät Sie gerne zu den Voraussetzungen.</p>
-    </article>
-  </div>
-  <p class="note">Preise und Angaben ohne Gewähr – das Sekretariat gibt gerne Auskunft.</p>
-</section>
-
-<section class="sec wrap rev" id="stimmen">
-  <div class="rl rv">
-    <svg class="speed" viewBox="0 0 200 200" role="img" aria-label="Google-Bewertung 4,8 von 5"><circle cx="100" cy="100" r="97" fill="#fff"/><circle cx="100" cy="100" r="84" fill="none" stroke="#CF121C" stroke-width="22"/><text x="100" y="121" text-anchor="middle" font-family="Archivo Black,Archivo,sans-serif" font-size="60" fill="#14171B" letter-spacing="-2">4,8</text></svg>
-    <p>von 5 Sternen · <b>61 Bewertungen</b> auf Google</p>
-  </div>
-  <div>
-    <p class="rn rv"><b>2</b>Stimmen</p>
-    <h2 class="rv">Was Kursteilnehmende loben.</h2>
-    <ol class="praise">
-      <li class="rv"><h3>Fragen sind erwünscht.</h3><p>Rückfragen werden geduldig beantwortet, der Stoff kommt verständlich und anschaulich an – mit spürbarer Erfahrung der Kursleitung.</p></li>
-      <li class="rv"><h3>Locker, obwohl es ernst ist.</h3><p>Viele beschreiben die Stimmung als offen und entspannt. Im Nothelferkurs wird sogar gelacht – und trotzdem bleibt viel hängen.</p></li>
-      <li class="rv"><h3>Gleich beim Bahnhof.</h3><p>Der Kursort liegt nahe beim Bahnhof Baden und ist mit dem Zug bequem erreichbar.</p></li>
-    </ol>
-    <p class="staff rv">Im VKU werden Bernadette und Luca namentlich als tolle Lehrpersonen erwähnt.</p>
-  </div>
-</section>
-
-<section class="sec wrap" id="route">
-  <div class="sh rv">
-    <div><p class="rn"><b>3</b>Routenplaner</p><h2>Wo stehen Sie auf dem Weg zum Ausweis?</h2></div>
-    <p>Kategorie wählen, abhaken, was schon erledigt ist: Der Planer zeigt Ihre nächste Station, schätzt die Kosten der Fahrstunden und schickt die Route als fertige Anfrage an Haudi's.</p>
-  </div>
-  <div class="planner rv">
-    <form class="pc" id="pf" onsubmit="return false">
-      <fieldset><legend>1 · Welcher Ausweis?</legend><div class="seg">
-        <label><input type="radio" name="cat" value="B" checked><span><b>B</b>Auto</span></label>
-        <label><input type="radio" name="cat" value="A"><span><b>A1/A</b>Motorrad</span></label>
-        <label><input type="radio" name="cat" value="C"><span><b>C</b>Lastwagen</span></label>
-      </div></fieldset>
-      <fieldset><legend>2 · Was haben Sie schon?</legend><div class="chk">
-        <label data-c="BA"><input type="checkbox" value="nh">Nothelferkurs absolviert</label>
-        <label data-c="BA"><input type="checkbox" value="th">Theorieprüfung bestanden</label>
-        <label data-c="BAC"><input type="checkbox" value="lfa">Lernfahrausweis erhalten</label>
-        <label data-c="A"><input type="checkbox" value="gk">Motorrad-Grundkurs besucht</label>
-        <label data-c="BA"><input type="checkbox" value="vku">VKU besucht</label>
-        <label data-c="BA"><input type="checkbox" value="oth">Ich habe bereits einen Ausweis einer anderen Kategorie</label>
-        <label data-c="C" hidden><input type="checkbox" value="arv">ARV &amp; Tachograph abgeschlossen</label>
-      </div></fieldset>
-      <fieldset><legend>3 · Wie viele Fahrstunden rechnen Sie?</legend>
-        <div class="rng"><input type="range" id="n" min="1" max="40" value="12" aria-label="Anzahl Fahrstunden"><output id="nv" for="n">12 Lektionen</output></div>
-      </fieldset>
-      <label class="nm">Ihr Vorname <span>(optional)</span><input id="nm" autocomplete="given-name"></label>
-    </form>
-    <div class="po">
-      <p class="lab">Ihre Route</p>
-      <ol class="road" id="road" aria-live="polite"></ol>
-      <div class="cost" id="cost"></div>
-      <p class="msg" id="msg"></p>
-      <div class="ctas">
-        <a class="btn b-wa" id="wa" href="https://wa.me/41796044444" target="_blank" rel="noopener">Route per WhatsApp senden</a>
-        <a class="btn b-line" id="ml" href="mailto:info@haudi.ch">Per E-Mail</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="sec wrap" id="kontakt">
-  <a class="dir rv" href="https://www.google.com/maps/dir/?api=1&amp;destination=47.4773158,8.3046988" target="_blank" rel="noopener"><span>Haudi's Fahrschule</span><b>Haselstrasse 33</b><span>5400 Baden · Route öffnen</span></a>
-  <div class="kg">
-    <div class="rv">
-      <p class="rn"><b>4</b>Kontakt</p>
-      <h2>Nahe beim Bahnhof Baden.</h2>
-      <ul class="cls">
-        <li><span>Mobile &amp; WhatsApp</span><a href="tel:+41796044444">079 604 44 44</a></li>
-        <li><span>Sekretariat</span><a href="tel:+41562212010">056 221 20 10</a></li>
-        <li><span>E-Mail</span><a href="mailto:info@haudi.ch">info@haudi.ch</a></li>
-      </ul>
-      <div class="ctas">
-        <a class="btn b-blue" href="https://www.google.com/maps/dir/?api=1&amp;destination=47.4773158,8.3046988" target="_blank" rel="noopener">Route planen</a>
-        <a class="btn b-wa" href="https://wa.me/41796044444?text=Gr%C3%BCezi%2C%20ich%20habe%20eine%20Frage%20zu%20Ihren%20Kursen." target="_blank" rel="noopener">WhatsApp schreiben</a>
-      </div>
-    </div>
-    <div class="hrs rv">
-      <h3>Öffnungszeiten</h3>
-      <table id="ht">
-        <tr data-d="1"><td>Montag</td><td>07:00–21:00</td></tr>
-        <tr data-d="2"><td>Dienstag</td><td>07:00–21:00</td></tr>
-        <tr data-d="3"><td>Mittwoch</td><td>07:00–21:00</td></tr>
-        <tr data-d="4"><td>Donnerstag</td><td>07:00–21:00</td></tr>
-        <tr data-d="5"><td>Freitag</td><td>07:00–21:00</td></tr>
-        <tr data-d="6"><td>Samstag</td><td>07:00–21:00</td></tr>
-        <tr data-d="0"><td>Sonntag</td><td>geschlossen</td></tr>
-      </table>
-      <p class="st" data-st><i></i><span>Mo–Sa 07:00–21:00</span></p>
-    </div>
-  </div>
-</section>
-
-<section class="cta wrap">
-  <div class="ci rv">
-    <div class="zebra" aria-hidden="true"></div>
-    <div class="ct">
-      <h2>Die erste Lektion ist kostenlos.</h2>
-      <p>Einmalig verrechnet werden CHF 100.– Versicherungskosten. Rufen Sie an oder schreiben Sie per WhatsApp – Montag bis Samstag, 07:00 bis 21:00.</p>
-      <div class="ctas">
-        <a class="btn b-yel" href="tel:+41796044444">079 604 44 44</a>
-        <a class="btn b-wl" href="https://wa.me/41796044444?text=Gr%C3%BCezi%2C%20ich%20m%C3%B6chte%20gerne%20eine%20erste%20Fahrlektion%20vereinbaren." target="_blank" rel="noopener">WhatsApp</a>
-      </div>
-    </div>
-  </div>
+ </div>
+ <div class="band"><div class="bi wrap">
+  <p class="code" aria-hidden="true" style="--fs:19cqi">HAUDI’S</p>
+ </div></div>
 </section>
 </main>
 
-<footer class="wrap">
-  <p><b>Haudi's Fahrschule Baden</b> · Haselstrasse 33, 5400 Baden · <a href="tel:+41796044444">079 604 44 44</a> · <a href="mailto:info@haudi.ch">info@haudi.ch</a></p>
-  <p class="mono">Demo-Konzept – keine offizielle Website. Angaben ohne Gewähr.</p>
+<footer class="foot wrap">
+ <p>Haudi’s Fahrschule Baden · Haselstrasse 33, 5400 Baden · <a href="mailto:info@haudi.ch">info@haudi.ch</a></p>
+ <p>Demo-Konzept, nicht vom Inhaber freigegeben.</p>
 </footer>
-<a class="fab" href="tel:+41796044444"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Anrufen</a>
+
+<a class="fab" href="tel:+41796044444" aria-label="Haudi’s anrufen: 079 604 44 44"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>Anrufen</span></a>
 
 <script>
-(function(){
-var D=document;D.documentElement.classList.add('js');
-// open/closed (Europe/Zurich)
-try{var p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Zurich',weekday:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date()),g=function(t){return p.find(function(x){return x.type==t}).value},
-d=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(g('weekday')),m=+g('hour')*60+ +g('minute'),wk=d>0,op=wk&&m>=420&&m<1260,
-t=op?'Jetzt geöffnet · bis 21:00':(wk&&m<420)?'Geschlossen · öffnet heute 07:00':(d==6||d==0)?'Geschlossen · öffnet Montag 07:00':'Geschlossen · öffnet morgen 07:00';
-D.querySelectorAll('[data-st]').forEach(function(e){e.lastElementChild.textContent=t;e.classList.add(op?'open':'closed')});
-var r=D.querySelector('#ht tr[data-d="'+d+'"]');if(r)r.className='today';}catch(e){}
-// planner
-var f=D.getElementById('pf'),road=D.getElementById('road'),cost=D.getElementById('cost'),msgE=D.getElementById('msg'),wa=D.getElementById('wa'),ml=D.getElementById('ml'),nv=D.getElementById('nv');
-var S={nh:['Nothelferkurs','Nötig für das Gesuch um den Lernfahrausweis.'],th:['Theorieprüfung','Vorbereitung mit Basistheorie (BTU) und Prüfungsfragebogen.'],lfa:['Lernfahrausweis','Bei jedem Kursteil dabei haben.'],gk:['Motorrad-Grundkurs','Obligatorisch: Fahrdynamik, Blicktechnik, Bedienung.'],vku:['VKU','Vier Abende à zwei Lektionen.'],arv:['ARV & Tachograph','Arbeits- und Ruhezeitverordnung, Tachograph-Kenntnisse.'],be:['Beratung','Voraussetzungen mit dem Sekretariat klären.'],fs:['Fahrstunden','Termine nach Vereinbarung.'],pr:['Praktische Prüfung','Danach halten Sie den Führerausweis in der Hand.']};
-var RT={B:['nh','th','lfa','vku','fs','pr'],A:['nh','th','lfa','gk','vku','fs','pr'],C:['be','lfa','arv','fs','pr']},CAT={B:'Kat. B (Auto)',A:'Kat. A1/A (Motorrad)',C:'Kat. C (Lastwagen)'};
-function lab(k,c){var s=S[k].slice();if(k=='fs'&&c!='B')s[0]=c=='A'?'Fahrstunden Motorrad':'Fahrstunden Lastwagen';if(k=='lfa'&&c=='C')s[0]='Lernfahrausweis Kat. C';return s}
-function fmt(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,"'")}
-function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+(()=>{
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+$$('.code').forEach(c=>{const t=c.textContent.trim(),sr=c.dataset.sr;c.innerHTML=(sr?'<span class="sr">'+sr+'</span>':'')+[...t].map((x,i)=>'<span class="c" aria-hidden="true" style="--i:'+i+'">'+x+'</span>').join('')});
+document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(!a||a.hash.length<2)return;const el=$(a.hash);if(!el)return;e.preventDefault();el.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});history.replaceState(null,'',a.hash)});
+/* open / closed, Europe/Zurich, Mo–Sa 07–21 */
+const D=['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];
+const z=new Date(new Date().toLocaleString('en-US',{timeZone:'Europe/Zurich'}));
+const d=z.getDay(),t=z.getHours()+z.getMinutes()/60,op=x=>x!==0;
+let s,on=false;
+if(op(d)&&t>=7&&t<21){s='Jetzt geöffnet · bis 21:00';on=true}
+else if(op(d)&&t<7)s='Geschlossen · öffnet heute 07:00';
+else{let n=(d+1)%7;while(!op(n))n=(n+1)%7;s='Geschlossen · öffnet '+(n===(d+1)%7?'morgen':D[n])+' 07:00'}
+$$('[data-status]').forEach(e=>{e.textContent=s;e.parentElement.classList.toggle('open',on)});
+$$('[data-day="'+d+'"]').forEach(e=>e.classList.add('today'));
+try{$('#sd').textContent=new Intl.DateTimeFormat('de-CH',{day:'numeric',month:'long',timeZone:'Europe/Zurich'}).format(new Date())}catch(e){}
+/* reveal + index tabs */
+if('IntersectionObserver'in window){
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+ $$('.rv,.band').forEach(e=>io.observe(e));
+ const tabs=$$('.tabs a');
+ const io2=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)tabs.forEach(a=>a.classList.toggle('on',a.hash==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+ $$('main>section[id]').forEach(x=>io2.observe(x));
+}else $$('.rv,.band').forEach(e=>e.classList.add('in'));
+/* Kurs-Kombinator */
+const f=$('#kf'),C={vku:['VKU','Verkehrskundeunterricht, 4 Abende à 2 Lektionen'],nh:['Nothelferkurs','Erste Hilfe für den Ernstfall'],btu:['BTU','Basistheorieunterricht, 4 Doppellektionen'],fs:['Fahrstunden','']};
+const P={probe:['zuerst die Gratis-Lektion','kostenlos, einmalig CHF 100.– Versicherung'],e:['Einzellektionen','CHF 95.– pro Lektion, bar'],a5:['5er-Abo','5 × CHF 90.– = CHF 450.–'],a10:['10er-Abo','10 × CHF 88.– = CHF 880.–']};
+const esc=x=>x.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 function upd(){
-  var c=f.querySelector('input[name=cat]:checked').value,done={};
-  f.querySelectorAll('.chk label').forEach(function(l){var on=l.getAttribute('data-c').indexOf(c)>-1;l.hidden=!on;var i=l.firstElementChild;if(on&&i.checked)done[i.value]=1});
-  if(done.vku||done.gk||done.arv)done.lfa=1;
-  if(done.lfa){done.nh=1;done.th=1;done.be=1}
-  var st=RT[c].filter(function(k){return !(k=='vku'&&done.oth)}),nx=st.filter(function(k){return !done[k]})[0],n=+f.querySelector('#n').value;
-  road.innerHTML=st.map(function(k){var s=done[k]?'done':k==nx?'nx':'',L=lab(k,c);return '<li class="'+s+'"><span class="pin"></span>'+(s=='nx'?'<em>Nächste Station</em>':'')+'<b>'+esc(L[0])+'</b><small>'+esc(L[1])+'</small></li>'}).join('');
-  nv.textContent=n+(n==1?' Lektion':' Lektionen');
-  if(c=='B'){var q=n-1,z=Math.floor(q/10),r=q%10,v=Math.floor(r/5),s1=r%5,tot=z*880+v*450+s1*95+100,pt=['1 Gratislektion'];
-    if(z)pt.push(z+' × 10er-Abo');if(v)pt.push(v+' × 5er-Abo');if(s1)pt.push(s1+' × Einzellektion');pt.push('Versicherung CHF 100.–');
-    cost.innerHTML='<span class="lab">Richtwert für '+n+(n==1?' Lektion':' Lektionen')+'</span><strong>CHF '+fmt(tot)+'.–</strong><small>'+pt.join(' · ')+'. Angaben ohne Gewähr.</small>'}
-  else cost.innerHTML='<span class="lab">Kosten</span><strong>Auf Anfrage</strong><small>Die Preise für '+(c=='A'?'Motorrad':'Lastwagen')+'-Lektionen nennt Ihnen das Sekretariat.</small>';
-  var nm=f.querySelector('#nm').value.trim(),dn=st.filter(function(k){return done[k]}).map(function(k){return lab(k,c)[0]}),td=st.filter(function(k){return !done[k]}).map(function(k){return lab(k,c)[0]+(k=='fs'?' (ca. '+n+' Lektionen)':'')});
-  var m='Grüezi'+(nm?', hier ist '+nm:'')+'. Ich möchte den Führerausweis '+CAT[c]+' machen.'+(dn.length?' Bereits erledigt: '+dn.join(', ')+'.':'')+' Als Nächstes: '+td[0]+'.'+(td.length>1?' Danach: '+td.slice(1).join(', ')+'.':'')+' Können Sie mich zu den nächsten Kursdaten und Terminen beraten? Freundliche Grüsse';
-  msgE.textContent=m;wa.href='https://wa.me/41796044444?text='+encodeURIComponent(m);
-  ml.href='mailto:info@haudi.ch?subject='+encodeURIComponent('Anfrage Führerausweis '+CAT[c])+'&body='+encodeURIComponent(m);
+ const fd=new FormData(f),ks=fd.getAll('k'),lfa=fd.get('lfa'),v=fd.get('v'),p=fd.get('p');
+ const isX=fd.get('lang')==='x';$('#langx').hidden=!isX;$('#pack').hidden=!ks.includes('fs');
+ const lang=isX?((fd.get('lx')||'').trim()||'andere Sprache (bitte nennen)'):'Deutsch';
+ const nm=(fd.get('n')||'').trim(),wz=(fd.get('w')||'').trim();
+ const items=ks.map(k=>k==='fs'?['Fahrstunden',P[p][0]+' – '+P[p][1]]:C[k]);
+ $('#sl').innerHTML=items.length?items.map((it,i)=>`<li><i>${String(i+1).padStart(2,'0')}</i><div><b>${it[0]}</b><small>${it[1]}</small></div></li>`).join(''):'<li class="empty">Noch nichts angekreuzt – wählen Sie die Kurse, die Ihnen noch fehlen.</li>';
+ const meta=[['Kurssprache',lang],['Lernfahrausweis',lfa==='ja'?'habe ich':'noch nicht'],['Fahrzeug',v]];
+ if(wz)meta.push(['Wunschzeit',wz]);if(nm)meta.push(['Name',nm]);
+ $('#sm').innerHTML=meta.map(m=>`<div><dt>${m[0]}</dt><dd>${esc(m[1])}</dd></div>`).join('');
+ const h=[];
+ if(lfa==='nein'&&(ks.includes('vku')||ks.includes('fs')))h.push('VKU und Fahrstunden setzen einen gültigen Lernfahrausweis voraus – wir sagen Ihnen gern, was zuerst kommt.');
+ if(v==='Motorrad')h.push('Auch Motorrad-Fahrschüler brauchen einen gültigen Lernfahrausweis.');
+ if(isX)h.push('Kurse gibt es auch in Fremdsprachen – wir melden uns mit den passenden Terminen.');
+ $('#hints').innerHTML=h.map(x=>`<p class="hint">${x}</p>`).join('');
+ const L=['Grüezi Haudi’s Fahrschule',''];
+ if(items.length){L.push('Ich möchte mich anmelden für:');items.forEach((it,i)=>L.push((i+1)+'. '+it[0]+(it[1]?' ('+it[1]+')':'')))}else L.push('Ich interessiere mich für Ihre Kurse.');
+ L.push('');meta.forEach(m=>L.push(m[0]+': '+m[1]));L.push('','Bitte schicken Sie mir die nächsten Termine. Danke!');
+ const msg=L.join('\n');
+ $('#wa').href='https://wa.me/41796044444?text='+encodeURIComponent(msg);
+ $('#em').href='mailto:info@haudi.ch?subject='+encodeURIComponent('Anmeldung Kurse'+(nm?' – '+nm:''))+'&body='+encodeURIComponent(msg);
+ $$('[data-count]').forEach(e=>{e.textContent=ks.length;e.dataset.n=ks.length});
+ $$('[data-add]').forEach(b=>{const o=ks.includes(b.dataset.add);b.setAttribute('aria-pressed',o);b.lastChild.textContent=o?'Auf der Liste – entfernen':b.dataset.t});
 }
+$$('[data-add]').forEach(b=>{b.dataset.t=b.textContent;b.addEventListener('click',()=>{const i=f.querySelector(`input[name=k][value=${b.dataset.add}]`);i.checked=!i.checked;upd()})});
 f.addEventListener('input',upd);f.addEventListener('change',upd);upd();
-// reveal
-var rv=D.querySelectorAll('.rv');
-if(!navigator.webdriver&&'IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -6% 0px'});rv.forEach(function(e){io.observe(e)})}
-else rv.forEach(function(e){e.classList.add('in')});
 })();
 </script>
 <script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Demo concept|Demo-Konzept/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Preise & Ablauf →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
