@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Kolibri sound — шумоизоляция и автозвук в Краснодаре</title><meta property="og:type" content="website"><meta property="og:title" content="Kolibri sound — шумоизоляция и автозвук в Краснодаре"><meta property="og:description" content="Шумоизоляция салона, продажа, установка и ремонт автозвука, камеры. Краснодар, 22 ряд, бокс 4. Ежедневно 10:00–20:00. 5,0 в 2ГИС."><meta property="og:image" content="https://pikold.github.io/demo-sites/kolibri-sound/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Шумоизоляция салона, продажа, установка и ремонт автозвука, камеры. Краснодар, 22 ряд, бокс 4. Ежедневно 10:00–20:00. 5,0 в 2ГИС.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;600;800&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;600;800&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap"></noscript>
+<style>
+:root{--paper:#f2efe8;--paper2:#e6e2d7;--ink:#121419;--ink2:#444852;--foil:#1a49d4;--foil2:#0f2e8c;--amp:#ff6b1c;--g:clamp(16px,4vw,48px);--r:22px;--fh:'Unbounded',system-ui,sans-serif;--fb:'Onest',system-ui,sans-serif;--fm:'JetBrains Mono',ui-monospace,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--fb);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+ul,ol{list-style:none}
+:focus-visible{outline:3px solid var(--amp);outline-offset:3px;border-radius:8px}
+.wrap{width:min(calc(100% - 2*var(--g)),1360px);margin-inline:auto}
+.mono{font:500 12.5px/1.4 var(--fm);letter-spacing:.09em;text-transform:uppercase}
+.demo{background:var(--ink);color:#f2efe8;text-align:center;font:500 12px/1.4 var(--fm);padding:9px 16px;letter-spacing:.03em}
+
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;font:800 18px/1 var(--fh);letter-spacing:-.02em}
+.logo svg{width:42px;height:42px;flex:none}
+.logo small{display:block;font:500 10.5px/1.2 var(--fm);letter-spacing:.12em;text-transform:uppercase;color:var(--ink2);margin-top:5px}
+.nav{display:flex;gap:30px;font-weight:500;font-size:16px}
+.nav a{text-decoration:none;padding:10px 0;background:linear-gradient(var(--amp),var(--amp)) 0 85%/0 2px no-repeat;transition:background-size .3s}
+.nav a:hover{background-size:100% 2px}
+.top-tel{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 18px;border-radius:999px;border:2px solid var(--ink);font:600 15px var(--fb);text-decoration:none;white-space:nowrap;transition:background .2s,color .2s}
+.top-tel:hover{background:var(--ink);color:var(--paper)}
+
+.hero{padding:clamp(16px,2.6vw,40px) 0 0}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.42fr) minmax(0,1fr);gap:clamp(24px,4.5vw,80px)}
+.kick{color:var(--ink2);display:flex;flex-wrap:wrap;gap:4px 14px}
+.kick b{color:var(--foil);font-weight:500}
+h1{font:800 clamp(36px,5.6vw,84px)/1.02 var(--fh);letter-spacing:-.04em;margin:clamp(16px,2vw,26px) 0 clamp(18px,2vw,28px)}
+h1 .q{display:block;font-weight:300;color:var(--foil);letter-spacing:.01em}
+h1 .l{position:relative;display:inline-block}
+h1 .l::after{content:"";position:absolute;left:.04em;right:.2em;bottom:-.06em;height:.13em;border-radius:3px;background:var(--amp);transform-origin:left}
+.js h1 .l::after{animation:grow .9s .5s cubic-bezier(.2,.8,.2,1) both}
+@keyframes grow{from{transform:scaleX(0)}}
+.lead{font-size:clamp(17px,1.3vw,20px);max-width:35em;color:var(--ink2)}
+.lead b{color:var(--ink);font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:clamp(22px,2.4vw,32px) 0 20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:56px;padding:0 26px;border-radius:999px;font:600 16px/1.1 var(--fb);text-decoration:none;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;transition:transform .2s,background .2s,color .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(1px)}
+.btn small{font:500 13px var(--fm);letter-spacing:.02em}
+.btn-amp{background:var(--amp);border-color:var(--amp);box-shadow:0 12px 26px -14px rgba(255,107,28,.95)}
+.btn-amp:hover{background:#ff8340;box-shadow:0 16px 30px -14px rgba(255,107,28,1)}
+.btn-line:hover{background:var(--ink);color:var(--paper)}
+.btn-w{border-color:#fff;color:#fff}
+.btn-w:hover{background:#fff;color:var(--foil2)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;font-size:15px;color:var(--ink2)}
+.meta a{text-decoration:none;border-bottom:1px solid currentColor}
+[data-status]{display:inline-flex;align-items:center;gap:9px;font-weight:600;color:var(--ink)}
+[data-status]::before{content:"";width:9px;height:9px;border-radius:50%;background:#9aa0a8;flex:none}
+[data-status].is-open::before{background:#1f9d55;box-shadow:0 0 0 4px rgba(31,157,85,.2)}
+[data-status].is-closed::before{background:#c2410c}
+.hero-ph{position:relative;border-radius:var(--r);overflow:hidden;min-height:460px;background:var(--ink)}
+.hero-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 64%}
+.hero-ph figcaption{position:absolute;left:14px;right:14px;bottom:14px;display:flex;justify-content:space-between;gap:10px;background:rgba(18,20,25,.78);color:#fff;padding:11px 14px;border-radius:14px;backdrop-filter:blur(6px)}
+.wave{margin-top:clamp(26px,3.6vw,56px)}
+.wave svg{display:block;width:100%;height:clamp(84px,8.4vw,150px)}
+.wave path{fill:none;stroke:url(#wg);stroke-width:3.2;stroke-linecap:round}
+.js .wave path{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.6s .2s cubic-bezier(.4,0,.2,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.wave-l{display:flex;justify-content:space-between;color:var(--ink2);margin-top:6px}
+.wave-l span:first-child{color:var(--foil)}
+.wave-l span:last-child{color:#b04406}
+
+.sec{padding:clamp(72px,9vw,140px) 0 0}
+.sec-h{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:18px 56px;align-items:end;margin-bottom:clamp(30px,4vw,56px)}
+.sec-h .mono{color:var(--foil);margin-bottom:14px}
+h2{font:800 clamp(28px,3.9vw,58px)/1.06 var(--fh);letter-spacing:-.035em}
+.sec-h>p{color:var(--ink2);max-width:33em}
+
+.svc{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px}
+.card{position:relative;overflow:hidden;border-radius:var(--r);padding:clamp(22px,2.6vw,40px)}
+.card h3{font:600 clamp(24px,2.3vw,36px)/1.1 var(--fh);letter-spacing:-.03em;margin:10px 0 14px}
+.card p{max-width:30em}
+.foil{color:#fff;background:radial-gradient(circle,rgba(255,255,255,.17) 1.5px,transparent 2.1px) 0 0/15px 15px,radial-gradient(circle,rgba(4,12,60,.25) 1.5px,transparent 2.1px) 7.5px 7.5px/15px 15px,linear-gradient(160deg,#2a5cec,#1a49d4 45%,#1238a8)}
+.foil::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 38%,rgba(255,255,255,.22) 50%,transparent 62%);transform:translateX(-110%);transition:transform 1.2s ease;pointer-events:none}
+.foil:hover::after{transform:translateX(110%)}
+.c-q{grid-column:1/6;grid-row:1/3;display:flex;flex-direction:column}
+.c-q .mono,.c-l .mono{opacity:.85}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 26px}
+.tags li{font:500 14px/1 var(--fb);padding:10px 14px;border-radius:999px;border:1.5px solid rgba(255,255,255,.55)}
+.c-q figure{position:relative;flex:1 1 auto;min-height:340px;border-radius:16px;overflow:hidden}.c-q figure img{position:absolute;inset:0}
+.c-q img,.c-l img,.c-s img{width:100%;height:100%;object-fit:cover}
+.c-l{grid-column:6/13;background:var(--ink);color:var(--paper);display:grid;grid-template-columns:minmax(0,1fr);gap:26px}
+.c-l .big{font:800 clamp(18px,1.6vw,24px)/1.25 var(--fh);letter-spacing:-.02em;color:var(--amp);margin-bottom:12px}
+.c-l figure{border-radius:16px;overflow:hidden;aspect-ratio:1311/693}.c-l>div{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:6px 32px;align-items:start}.c-l>div>.mono,.c-l>div>h3{grid-column:1}.c-l>div>.big{grid-column:1}.c-l>div>p:last-child{grid-column:2;grid-row:1/4;align-self:end}
+.c-l img{object-position:50% 55%}
+.c-l p{color:#d9d6ce}
+.c-s{grid-column:6/13;background:var(--paper2);display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:24px;align-items:center}
+.c-s .mono{color:var(--foil)}
+.c-s figure{border-radius:16px;overflow:hidden;aspect-ratio:1/1;max-height:300px}
+.c-s img{object-position:50% 52%}
+.c-s p{color:var(--ink2)}
+
+.works{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:clamp(150px,14.5vw,236px);grid-auto-flow:row dense;gap:12px}
+.works figure{position:relative;border-radius:16px;overflow:hidden;background:var(--paper2)}
+.works img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.works figure:hover img{transform:scale(1.045)}
+.works figcaption{position:absolute;left:10px;bottom:10px;max-width:calc(100% - 20px);background:var(--paper);color:var(--ink);font:500 11px/1.25 var(--fm);letter-spacing:.06em;text-transform:uppercase;padding:7px 10px;border-radius:999px}
+.w-t{grid-row:span 2}
+.w-w{grid-column:span 2}
+.w-note{grid-column:span 2;background:var(--ink);color:var(--paper);border-radius:16px;padding:clamp(18px,2vw,30px);display:flex;flex-direction:column;justify-content:space-between;gap:12px}
+.w-note p:first-child{font:600 clamp(17px,1.6vw,24px)/1.3 var(--fh);letter-spacing:-.02em}
+.w-note .mono{color:var(--amp)}
+
+.praise{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,110px);align-items:start}
+.score{position:sticky;top:24px}
+.score .mono{color:var(--foil)}
+.score-n{font:800 clamp(104px,14vw,212px)/.86 var(--fh);letter-spacing:-.07em;color:var(--foil);margin:18px 0 8px}
+.vu{display:flex;gap:6px;margin:18px 0 14px}
+.vu i{width:30px;height:12px;border-radius:3px;background:var(--amp)}
+.vu i:nth-child(1){background:#ffb07f}.vu i:nth-child(2){background:#ff9a5e}.vu i:nth-child(3){background:#ff853d}
+.score p{color:var(--ink2)}
+.score a{display:inline-flex;align-items:center;min-height:44px;font-weight:600;color:var(--ink)}
+.points li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:6px 18px;padding:clamp(22px,2.4vw,34px) 0;border-top:2px solid var(--ink)}
+.points li:last-child{border-bottom:2px solid var(--ink)}
+.points .n{font:500 13px/1.9 var(--fm);color:var(--foil)}
+.points h3{font:600 clamp(20px,1.8vw,27px)/1.22 var(--fh);letter-spacing:-.025em;margin-bottom:10px}
+.points p{color:var(--ink2);max-width:38em}
+.also{margin-top:22px;color:var(--ink2);font-size:15.5px}
+
+.pick{background:var(--paper2);border-radius:clamp(24px,3vw,40px);padding:clamp(20px,3.6vw,56px);display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(22px,4vw,64px)}
+.car-box{position:relative;display:flex;flex-direction:column;align-items:center;gap:14px}
+.car{width:100%;max-width:300px;height:auto;display:block;touch-action:manipulation}
+.car .body{fill:#fff;stroke:var(--ink);stroke-width:3}
+.car .glass{fill:rgba(18,20,25,.12)}
+.car .seat{fill:var(--paper2);stroke:var(--ink);stroke-width:2;pointer-events:none}
+.car .hood{fill:none;stroke:var(--ink);stroke-width:1.6;opacity:.45}
+.car [data-z]{fill:rgba(26,73,212,.08);stroke:var(--foil);stroke-width:2;stroke-dasharray:5 4;cursor:pointer;transition:fill .25s}
+.car [data-z]:hover{fill:rgba(26,73,212,.24)}
+.car [data-z].on{fill:url(#foilp);stroke-dasharray:none}
+.car [data-s]{opacity:0;transform:scale(.3);transform-box:fill-box;transform-origin:center;transition:opacity .3s,transform .35s cubic-bezier(.3,1.5,.5,1);pointer-events:none}
+.car [data-s].on{opacity:1;transform:none}
+.car .o{fill:var(--amp);stroke:var(--ink);stroke-width:2}
+.car .cone{fill:rgba(255,107,28,.35);stroke:var(--amp);stroke-width:2}
+.legend{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;font:500 11.5px/1.3 var(--fm);text-transform:uppercase;letter-spacing:.06em;color:var(--ink2)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:6px;background:var(--foil)}
+.legend span+span i{background:var(--amp);border-radius:50%}
+.ctl{display:flex;flex-direction:column;gap:22px}
+fieldset{border:0;min-width:0}
+legend{margin-bottom:10px;color:var(--ink2)}
+legend b{color:var(--ink);font-weight:500}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{min-height:44px;padding:0 16px 0 13px;border-radius:999px;border:2px solid var(--ink);background:transparent;color:var(--ink);font:500 15px/1.1 var(--fb);display:inline-flex;align-items:center;gap:10px;cursor:pointer;transition:background .2s,color .2s,border-color .2s,transform .15s}
+.chips button::before{content:"";width:10px;height:10px;border-radius:50%;border:2px solid currentColor;flex:none;transition:background .2s,box-shadow .2s,border-color .2s}
+.chips button:hover{background:#fff}
+.chips button:active{transform:scale(.96)}
+.chips button[aria-pressed=true]{background:var(--ink);color:#fff}
+.chips button[data-g=q][aria-pressed=true]{background:var(--foil);border-color:var(--foil)}
+.chips button[aria-pressed=true]::before{background:var(--amp);border-color:var(--amp);box-shadow:0 0 10px 1px var(--amp)}
+.auto{display:flex;flex-direction:column;gap:8px}
+.auto span{color:var(--ink2)}
+.auto input{min-height:52px;border-radius:14px;border:2px solid var(--ink);background:#fff;padding:0 16px;font:500 16px var(--fb);color:var(--ink);width:100%}
+.auto input:focus{outline:3px solid var(--amp);outline-offset:2px}
+.out{background:#fff;border-radius:18px;padding:clamp(18px,2vw,26px);display:grid;gap:14px;box-shadow:0 20px 40px -30px rgba(18,20,25,.5)}
+.out-h{display:flex;justify-content:space-between;gap:10px;color:var(--ink2)}
+.out-h b{color:var(--foil);font-weight:500}
+#msg{white-space:pre-line;font-size:15.5px;line-height:1.55;border-left:3px solid var(--amp);padding-left:14px}
+.out-b{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.out-b a.tl{min-height:44px;display:inline-flex;align-items:center;padding:0 8px;font-weight:600}
+
+.where{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,5vw,88px);align-items:start}
+.where .mono{color:var(--foil)}
+.coord{font:800 clamp(56px,7vw,112px)/.92 var(--fh);letter-spacing:-.05em;margin:16px 0 22px}
+.coord span{font-weight:300;letter-spacing:-.02em;color:var(--foil)}
+.where-t>p{color:var(--ink2);max-width:30em}
+.facts{margin:28px 0;display:grid;gap:0}
+.facts div{display:grid;grid-template-columns:118px minmax(0,1fr);gap:14px;padding:14px 0;border-top:1.5px solid rgba(18,20,25,.2)}
+.facts dt{font:500 12px/1.9 var(--fm);text-transform:uppercase;letter-spacing:.08em;color:var(--ink2)}
+.facts dd a{font-weight:600;text-decoration:none;border-bottom:2px solid var(--amp);display:inline-block;padding:6px 0 1px}
+.facts dd a:hover{color:var(--foil)}
+.facts dd .sep{color:var(--ink2);margin:0 6px}
+.where-m{display:grid;gap:14px}
+.where-m figure{border-radius:var(--r);overflow:hidden;aspect-ratio:16/8}
+.where-m img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.map{border-radius:var(--r);overflow:hidden;height:clamp(300px,30vw,420px);background:var(--paper2)}
+.map iframe{width:100%;height:100%;border:0;display:block}
+
+.fin{margin-top:clamp(72px,9vw,140px);border-radius:clamp(24px,3vw,40px);padding:clamp(32px,6vw,96px) clamp(22px,5vw,80px);position:relative;overflow:hidden}
+.fin h2{max-width:15em;font-size:clamp(28px,4.4vw,66px)}
+.fin h2 span{font-weight:300}
+.fin p{margin:18px 0 30px;max-width:34em;color:#e4eaff}
+.fin .cta{margin:0}
+.fin [data-status]{color:#fff}
+.foot{padding:40px 0 56px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 32px;color:var(--ink2);font-size:14.5px}
+.foot a{color:var(--ink)}
+.fab{display:none}
+
+.js [data-r]{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+
+@media (max-width:1060px){
+ .hero-grid,.praise,.pick,.where,.sec-h{grid-template-columns:minmax(0,1fr)}
+ .hero-ph{min-height:0;aspect-ratio:4/4.4;max-height:640px}
+ .c-q,.c-l,.c-s{grid-column:1/-1;grid-row:auto}
+ .c-q figure{min-height:0;aspect-ratio:4/3.6;flex:none}
+ .score{position:static}
+ .car{max-width:250px}
+}
+@media (max-width:860px){.nav{display:none}}
+@media (max-width:640px){
+ body{font-size:16px;padding-bottom:82px}
+ h1{font-size:9.4vw}
+ .top-tel span{display:none}
+ .top-tel{padding:0 16px}
+ .c-l,.c-s{grid-template-columns:minmax(0,1fr)}
+ .c-l>div{grid-template-columns:minmax(0,1fr)}.c-l>div>p:last-child{grid-column:1;grid-row:auto}
+ .works{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:150px;gap:8px}
+ .works figcaption{font-size:10px;padding:6px 8px}
+ .btn{width:100%}
+ .cta .btn{flex:1 1 100%}
+ .car{max-width:200px}
+ .facts div{grid-template-columns:minmax(0,1fr);gap:2px}
+ .where-m figure{aspect-ratio:2/1}
+ .fab{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:40;padding:6px;border-radius:999px;background:rgba(18,20,25,.92);backdrop-filter:blur(8px)}
+ .fab a{min-height:52px;border-radius:999px;display:flex;align-items:center;justify-content:center;font-weight:600;text-decoration:none;color:#fff}
+ .fab a:first-child{background:var(--amp);color:var(--ink)}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+ .js [data-r]{opacity:1;transform:none}
+ .js .wave path{stroke-dashoffset:0}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="wrap top">
+ <a class="logo" href="#top" aria-label="Kolibri sound — в начало">
+  <svg viewBox="0 0 42 42" aria-hidden="true"><circle cx="21" cy="21" r="21" fill="#121419"/><path d="M7 21h9c1.5 0 1.8-4 3-4s1.6 9 3 9 1.7-13 3.2-13 1.6 17 3.1 17S30.8 17 32 17s1.4 4 3 4" fill="none" stroke="#ff6b1c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 21h9" stroke="#5b82f2" stroke-width="2.4" stroke-linecap="round"/></svg>
+  <span>Kolibri sound<small>шумоизоляция · автозвук</small></span>
+ </a>
+ <nav class="nav" aria-label="Разделы">
+  <a href="#uslugi">Услуги</a><a href="#raboty">Работы</a><a href="#otzyvy">Отзывы</a><a href="#podbor">Подбор</a><a href="#adres">Как найти</a>
+ </nav>
+ <a class="top-tel" href="tel:+79282467079" aria-label="Позвонить: +7 928 246-70-79"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><span>+7 928 246-70-79</span></a>
+</header>
+
+<main id="top">
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div class="hero-t">
+   <p class="kick mono"><span>Краснодар</span><b>22 ряд · бокс 4</b><span>ежедневно 10–20</span></p>
+   <h1>Сначала <span class="q">тишина.</span>Потом <span class="l">звук.</span></h1>
+   <p class="lead"><b>Kolibri sound</b> — шумоизоляция салона, продажа, установка и ремонт автозвука, камеры. Мастер Виктор подберёт компоненты, поставит и настроит; в отзывах пишут, что он справляется и с нестандартными машинами.</p>
+   <div class="cta">
+    <a class="btn btn-amp" href="tel:+79282467079">Позвонить <small>+7 928 246-70-79</small></a>
+    <a class="btn btn-line" href="https://yandex.ru/maps/?rtext=~44.998235,39.068508" target="_blank" rel="noopener">Маршрут</a>
+   </div>
+   <p class="meta"><span data-status></span><a href="https://2gis.ru/krasnodar/firm/70000001113571154" target="_blank" rel="noopener">5,0 в 2ГИС · 13 отзывов</a></p>
+  </div>
+  <figure class="hero-ph">
+   <img src="img/p1-m.jpg" srcset="img/p1-m.jpg 506w, img/p1.jpg 1012w" sizes="(max-width:1060px) 100vw, 38vw" width="1012" height="1800" alt="Ноутбук с эквалайзером на руле: настройка автозвука в салоне машины" fetchpriority="high">
+   <figcaption class="mono"><span>Настройка звука в салоне</span><span>фото 2ГИС</span></figcaption>
+  </figure>
+ </div>
+ <div class="wave" aria-hidden="true">
+  <svg viewBox="0 0 1440 120" preserveAspectRatio="xMidYMid slice">
+   <defs><linearGradient id="wg" x1="0" x2="1440" y1="0" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1a49d4"/><stop offset=".42" stop-color="#1a49d4"/><stop offset=".62" stop-color="#ff6b1c"/><stop offset="1" stop-color="#ff6b1c"/></linearGradient></defs>
+   <path pathLength="1" d="M0 60H600Q630 52 660 60Q690 75 720 60Q750 38 780 60Q810 89 840 60Q870 24 900 60Q930 103 960 60Q990 10 1020 60Q1050 117 1080 60Q1110 -4 1140 60Q1170 131 1200 60Q1230 -18 1260 60Q1290 145 1320 60Q1350 -32 1380 60Q1410 159 1440 60"/>
+  </svg>
+  <div class="wrap wave-l mono"><span>— тише</span><span>громче +</span></div>
+ </div>
+</section>
+
+<section class="sec" id="uslugi">
+ <div class="wrap">
+  <div class="sec-h">
+   <div><p class="mono">01 · Услуги</p><h2>Тише снаружи — чище звук внутри</h2></div>
+   <p>Пока салон гудит от дороги, хорошая музыка в нём тонет. Здесь делают и шумоизоляцию, и звук, так что можно приехать с одной машиной и одним списком задач.</p>
+  </div>
+  <div class="svc">
+   <article class="card foil c-q" data-r>
+    <p class="mono">Канал A · тише</p>
+    <h3>Шумо&shy;изоляция</h3>
+    <p>Салон целиком или по зонам. Материалы для шумоизоляции можно купить здесь же.</p>
+    <ul class="tags"><li>Двери</li><li>Пол</li><li>Колёсные арки</li><li>Багажник</li><li>Материалы</li></ul>
+    <figure><img src="img/p3-m.jpg" srcset="img/p3-m.jpg 405w, img/p3.jpg 811w" sizes="(max-width:1060px) 100vw, 36vw" width="811" height="1800" loading="lazy" alt="Пол салона, обклеенный синим шумоизоляционным материалом"></figure>
+   </article>
+   <article class="card c-l" data-r>
+    <div>
+     <p class="mono">Канал B · громче</p>
+     <h3>Автозвук</h3>
+     <p class="big">Продажа, установка, ремонт</p>
+     <p>Магнитолы и экраны, динамики, усилители, сабвуферы и настройка всей системы. Можно поменять пару колонок, а можно собрать звук заново, вплоть до полного ребилда. Если после чужой установки что-то перестало играть — разберутся, в чём дело.</p>
+    </div>
+    <figure><img src="img/p6-m.jpg" srcset="img/p6-m.jpg 900w, img/p6.jpg 1311w" sizes="(max-width:1060px) 100vw, 50vw" width="1311" height="693" loading="lazy" alt="Багажник с подсвеченной аудиосистемой: два сабвуфера и усилители"></figure>
+   </article>
+   <article class="card c-s" data-r>
+    <div>
+     <p class="mono">Канал C · видеть</p>
+     <h3>Камеры и тюнинг</h3>
+     <p>Камеры переднего и заднего вида — их здесь ставят часто, и, судя по отзывам, быстро. Машина нестандартная? Просто опишите её.</p>
+    </div>
+    <figure><img src="img/p2-m.jpg" srcset="img/p2-m.jpg 405w, img/p2.jpg 811w" sizes="(max-width:640px) 100vw, (max-width:1060px) 40vw, 26vw" width="811" height="1800" loading="lazy" alt="Экран магнитолы с изображением с камер вокруг машины"></figure>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="raboty">
+ <div class="wrap">
+  <div class="sec-h">
+   <div><p class="mono">02 · Работы</p><h2>Что под обшивкой после бокса 4</h2></div>
+   <p>То, что обычно не видно: изоляция под ковром и в дверях, усилители под порогом, короба в багажнике. Все кадры — из карточки Kolibri sound в 2ГИС.</p>
+  </div>
+  <div class="works">
+   <figure class="w-t" data-r><img src="img/p10-m.jpg" srcset="img/p10-m.jpg 405w, img/p10.jpg 811w" sizes="(max-width:640px) 50vw, 24vw" width="811" height="1800" loading="lazy" alt="Дверь со снятой обшивкой: шумоизоляция и установленный динамик" style="object-position:50% 60%"><figcaption>Динамик в двери</figcaption></figure>
+   <figure class="w-w" data-r><img src="img/p14-m.jpg" srcset="img/p14-m.jpg 900w, img/p14.jpg 1440w" sizes="(max-width:640px) 100vw, 48vw" width="1440" height="648" loading="lazy" alt="Колёсная арка, обклеенная шумоизоляцией"><figcaption>Колёсная арка</figcaption></figure>
+   <figure class="w-t" data-r><img src="img/p9-m.jpg" srcset="img/p9-m.jpg 405w, img/p9.jpg 811w" sizes="(max-width:640px) 50vw, 24vw" width="811" height="1800" loading="lazy" alt="Оранжевый усилитель, закреплённый у порога в салоне" style="object-position:50% 45%"><figcaption>Усилитель у порога</figcaption></figure>
+   <figure class="w-w" data-r><img src="img/p13-m.jpg" srcset="img/p13-m.jpg 900w, img/p13.jpg 1440w" sizes="(max-width:640px) 100vw, 48vw" width="1440" height="648" loading="lazy" alt="Багажник с сабвуфером, встроенным в обшивку"><figcaption>Сабвуфер в багажнике</figcaption></figure>
+   <figure class="w-t" data-r><img src="img/p5-m.jpg" srcset="img/p5-m.jpg 405w, img/p5.jpg 811w" sizes="(max-width:640px) 50vw, 24vw" width="811" height="1800" loading="lazy" alt="Багажник кроссовера с подсветкой" style="object-position:50% 40%"><figcaption>Подсветка багажника</figcaption></figure>
+   <div class="w-note" data-r><p>Отметьте на схеме ниже, где шумит и что поставить, — список уйдёт мастеру в WhatsApp.</p><a class="mono" href="#podbor">К подбору ↓</a></div>
+   <figure class="w-t" data-r><img src="img/p8-m.jpg" srcset="img/p8-m.jpg 405w, img/p8.jpg 811w" sizes="(max-width:640px) 50vw, 24vw" width="811" height="1800" loading="lazy" alt="Салон без сидений: пол полностью в шумоизоляции" style="object-position:50% 62%"><figcaption>Пол целиком</figcaption></figure>
+   <figure class="w-w" data-r><img src="img/p11-m.jpg" srcset="img/p11-m.jpg 405w, img/p11.jpg 811w" sizes="(max-width:640px) 100vw, 48vw" width="810" height="1800" loading="lazy" alt="Пол багажника в шумоизоляционном материале" style="object-position:50% 42%"><figcaption>Багажник в изоляции</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="otzyvy">
+ <div class="wrap praise">
+  <div class="score" data-r>
+   <p class="mono">03 · Отзывы 2ГИС</p>
+   <p class="score-n">5,0</p>
+   <div class="vu" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+   <p>Средняя оценка по 13 отзывам в 2ГИС.</p>
+   <a href="https://2gis.ru/krasnodar/firm/70000001113571154" target="_blank" rel="noopener">Читать отзывы в 2ГИС →</a>
+  </div>
+  <div>
+   <h2 data-r>За что хвалят Виктора</h2>
+   <ol class="points" style="margin-top:clamp(24px,3vw,40px)">
+    <li data-r><span class="n">01</span><div><h3>Берётся, когда другие не смогли</h3><p>Клиент с нестандартной машиной до этого обошёл нескольких специалистов. Виктор подсказал, какие нужны компоненты, всё установил и настроил.</p></div></li>
+    <li data-r><span class="n">02</span><div><h3>Находит чужие ошибки</h3><p>У человека перестали играть колонки, поставленные в другом городе. Виктор показал причину: их просто подключили к заводской проводке.</p></div></li>
+    <li data-r><span class="n">03</span><div><h3>Объясняет и помогает выбрать</h3><p>Подробно консультирует, рассказывает, что к чему, — после разговора узнаёшь много нового. Люди возвращаются: кто-то ставит здесь музыку уже на третью машину.</p></div></li>
+   </ol>
+   <p class="also" data-r>Ещё пишут: камеры ставят оперативно, цена — рыночная по Краснодару, а музыку и шумоизоляцию хвалят одинаково.</p>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="podbor">
+ <div class="wrap">
+  <div class="sec-h">
+   <div><p class="mono">04 · Подбор</p><h2>Отметьте, что нужно вашей машине</h2></div>
+   <p>Нажимайте на зоны схемы и на пункты списка — сайт соберёт сообщение мастеру. Останется отправить его в WhatsApp и спросить цену и время.</p>
+  </div>
+  <div class="pick" id="pick">
+   <div class="car-box">
+    <svg class="car" viewBox="0 -26 260 572" role="img" aria-label="Схема машины сверху: зоны шумоизоляции и узлы звука">
+     <defs><pattern id="foilp" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#1a49d4"/><circle cx="5" cy="5" r="1.7" fill="#6b8ef5"/></pattern></defs>
+     <path class="cone" data-s="camf" d="M130 22 100 -22h60z"/>
+     <path class="cone" data-s="camr" d="M130 498 100 542h60z"/>
+     <g data-z="arches"><rect x="20" y="92" width="28" height="72" rx="10"/><rect x="212" y="92" width="28" height="72" rx="10"/><rect x="20" y="370" width="28" height="72" rx="10"/><rect x="212" y="370" width="28" height="72" rx="10"/></g>
+     <rect class="body" x="36" y="22" width="188" height="476" rx="66"/>
+     <path class="hood" d="M64 70Q130 46 196 70M70 110Q130 96 190 110"/>
+     <path class="glass" d="M58 166Q130 140 202 166L194 198Q130 182 66 198z"/>
+     <g data-z="floor"><rect x="64" y="204" width="132" height="178" rx="14"/></g>
+     <g data-z="doors"><rect x="40" y="202" width="17" height="92" rx="6"/><rect x="40" y="300" width="17" height="84" rx="6"/><rect x="203" y="202" width="17" height="92" rx="6"/><rect x="203" y="300" width="17" height="84" rx="6"/></g>
+     <rect class="seat" x="74" y="222" width="48" height="58" rx="12"/><rect class="seat" x="138" y="222" width="48" height="58" rx="12"/><rect class="seat" x="74" y="318" width="112" height="50" rx="12"/>
+     <path class="glass" d="M66 392Q130 404 194 392L200 410Q130 424 60 410z"/>
+     <g data-z="trunk"><rect x="62" y="420" width="136" height="60" rx="14"/></g>
+     <rect class="o" data-s="hu" x="112" y="196" width="36" height="15" rx="4"/>
+     <rect class="o" data-s="dsp" x="150" y="290" width="26" height="20" rx="4"/>
+     <rect class="o" data-s="amp" x="84" y="290" width="40" height="20" rx="4"/>
+     <g data-s="spk"><circle class="o" cx="48.5" cy="248" r="9"/><circle class="o" cx="211.5" cy="248" r="9"/><circle class="o" cx="48.5" cy="342" r="9"/><circle class="o" cx="211.5" cy="342" r="9"/></g>
+     <g data-s="sub"><circle class="o" cx="130" cy="450" r="21"/><circle cx="130" cy="450" r="8" fill="#121419"/></g>
+    </svg>
+    <p class="legend"><span><i></i>шумоизоляция</span><span><i></i>звук и камеры</span></p>
+   </div>
+   <div class="ctl">
+    <fieldset><legend class="mono"><b>Тише</b> · где шумит</legend>
+     <div class="chips">
+      <button type="button" data-g="q" data-k="all" data-t="весь салон" aria-pressed="false">Весь салон</button>
+      <button type="button" data-g="q" data-k="doors" data-t="двери" aria-pressed="true">Двери</button>
+      <button type="button" data-g="q" data-k="floor" data-t="пол" aria-pressed="false">Пол</button>
+      <button type="button" data-g="q" data-k="arches" data-t="арки" aria-pressed="false">Арки</button>
+      <button type="button" data-g="q" data-k="trunk" data-t="багажник" aria-pressed="false">Багажник</button>
+     </div></fieldset>
+    <fieldset><legend class="mono"><b>Громче</b> · поставить или починить</legend>
+     <div class="chips">
+      <button type="button" data-g="l" data-k="hu" data-t="магнитола" aria-pressed="false">Магнитола</button>
+      <button type="button" data-g="l" data-k="spk" data-t="колонки" aria-pressed="true">Колонки</button>
+      <button type="button" data-g="l" data-k="amp" data-t="усилитель" aria-pressed="false">Усилитель</button>
+      <button type="button" data-g="l" data-k="sub" data-t="сабвуфер" aria-pressed="false">Сабвуфер</button>
+      <button type="button" data-g="l" data-k="dsp" data-t="настройка звука" aria-pressed="false">Настройка</button>
+      <button type="button" data-g="l" data-k="fix" data-t="что-то перестало играть, нужен ремонт" aria-pressed="false">Перестало играть</button>
+     </div></fieldset>
+    <fieldset><legend class="mono"><b>Видеть</b> · камеры</legend>
+     <div class="chips">
+      <button type="button" data-g="v" data-k="camr" data-t="заднего вида" aria-pressed="false">Камера заднего вида</button>
+      <button type="button" data-g="v" data-k="camf" data-t="переднего вида" aria-pressed="false">Камера переднего вида</button>
+     </div></fieldset>
+    <label class="auto"><span class="mono">Машина</span><input id="auto" type="text" placeholder="Марка, модель, год" autocomplete="off" maxlength="60"></label>
+    <div class="out">
+     <p class="out-h mono"><span>Сообщение мастеру</span><b id="cnt"></b></p>
+     <p id="msg" aria-live="polite"></p>
+     <div class="out-b"><a class="btn btn-amp" id="wa" href="https://wa.me/79282467079" target="_blank" rel="noopener">Отправить в WhatsApp</a><a class="tl" href="tel:+79282467079">или позвонить</a></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="adres">
+ <div class="wrap where">
+  <div class="where-t" data-r>
+   <p class="mono">05 · Как найти</p>
+   <h2 class="coord">22 <span>ряд</span><br>4 <span>бокс</span></h2>
+   <p>Краснодар. Адреса с улицей в карточке 2ГИС нет — ориентир на месте: 22 ряд, бокс 4. Перед первым визитом удобнее позвонить.</p>
+   <dl class="facts">
+    <div><dt>Часы</dt><dd>Ежедневно 10:00–20:00<br><span data-status></span></dd></div>
+    <div><dt>Телефон</dt><dd><a href="tel:+79282467079">+7 928 246-70-79</a></dd></div>
+    <div><dt>Написать</dt><dd><a href="https://wa.me/79282467079?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%2C%20%D0%BA%D0%B0%D0%BA%20%D0%BA%20%D0%B2%D0%B0%D0%BC%20%D0%BF%D1%80%D0%BE%D0%B5%D1%85%D0%B0%D1%82%D1%8C%3F" target="_blank" rel="noopener">WhatsApp</a><span class="sep">·</span><a href="https://t.me/+79282467079" target="_blank" rel="noopener">Telegram</a><span class="sep">·</span><a href="https://vk.ru/kolibri_sound" target="_blank" rel="noopener">ВКонтакте</a></dd></div>
+    <div><dt>Оплата</dt><dd>Наличные, перевод с карты</dd></div>
+   </dl>
+   <a class="btn btn-line" href="https://yandex.ru/maps/?rtext=~44.998235,39.068508" target="_blank" rel="noopener">Построить маршрут</a>
+  </div>
+  <div class="where-m" data-r>
+   <figure><img src="img/p12-m.jpg" srcset="img/p12-m.jpg 900w, img/p12.jpg 1440w" sizes="(max-width:1060px) 100vw, 56vw" width="1440" height="648" loading="lazy" alt="Бокс изнутри: рабочая зона, стеллажи с инструментом"></figure>
+   <div class="map"><iframe loading="lazy" title="Kolibri sound на карте" src="https://yandex.ru/map-widget/v1/?ll=39.068508,44.998235&z=16&pt=39.068508,44.998235,pm2rdm"></iframe></div>
+  </div>
+ </div>
+</section>
+
+<section class="wrap">
+ <div class="fin foil" data-r>
+  <h2>Сначала расскажите про машину. <span>Потом — про музыку.</span></h2>
+  <p>Позвоните или напишите, что за машина и что в ней хочется изменить. Ежедневно 10:00–20:00, 22 ряд, бокс 4.</p>
+  <div class="cta">
+   <a class="btn btn-amp" href="tel:+79282467079">Позвонить <small>+7 928 246-70-79</small></a>
+   <a class="btn btn-w" href="https://wa.me/79282467079?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D1%80%D0%BE%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BF%D0%BE%20%D1%88%D1%83%D0%BC%D0%BE%D0%B8%D0%B7%D0%BE%D0%BB%D1%8F%D1%86%D0%B8%D0%B8%20%D0%B8%20%D0%B0%D0%B2%D1%82%D0%BE%D0%B7%D0%B2%D1%83%D0%BA%D1%83." target="_blank" rel="noopener">Написать в WhatsApp</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="wrap foot">
+ <span>Kolibri sound · шумоизоляция и автозвук · Краснодар, 22 ряд, бокс 4</span>
+ <span>Демо по данным <a href="https://2gis.ru/krasnodar/firm/70000001113571154" target="_blank" rel="noopener">2ГИС</a></span>
+</footer>
+
+<nav class="fab" aria-label="Быстрая связь"><a href="tel:+79282467079">Позвонить</a><a href="https://wa.me/79282467079" target="_blank" rel="noopener">WhatsApp</a></nav>
+
+<script>
+(function(){
+ var box=document.getElementById('pick');if(!box)return;
+ var car=box.querySelector('.car'),msg=document.getElementById('msg'),wa=document.getElementById('wa'),auto=document.getElementById('auto'),cnt=document.getElementById('cnt');
+ var Z=['doors','floor','arches','trunk'];
+ function btn(k){return box.querySelector('button[data-k="'+k+'"]')}
+ function on(k){var b=btn(k);return !!b&&b.getAttribute('aria-pressed')==='true'}
+ function set(k,v){var b=btn(k);if(b)b.setAttribute('aria-pressed',v?'true':'false');car.querySelectorAll('[data-z="'+k+'"],[data-s="'+k+'"]').forEach(function(e){e.classList.toggle('on',v)})}
+ function tog(k){
+  if(k==='all'){var v=!on('all');set('all',v);Z.forEach(function(z){set(z,v)})}
+  else{set(k,!on(k));if(Z.indexOf(k)>-1)set('all',Z.every(on))}
+  upd();
+ }
+ function list(g){return [].slice.call(box.querySelectorAll('button[data-g="'+g+'"]')).filter(function(b){return b.dataset.k!=='all'&&on(b.dataset.k)}).map(function(b){return b.dataset.t})}
+ function upd(){
+  var q=list('q'),l=list('l'),v=list('v'),m=auto.value.trim(),L=['Здравствуйте! Пишу с сайта Kolibri sound.'];
+  if(m)L.push('Машина: '+m+'.');
+  if(on('all'))L.push('Шумоизоляция: весь салон.');else if(q.length)L.push('Шумоизоляция: '+q.join(', ')+'.');
+  if(l.length)L.push('Звук: '+l.join(', ')+'.');
+  if(v.length)L.push('Камеры: '+v.join(', ')+'.');
+  if(!q.length&&!l.length&&!v.length)L.push('Хочу проконсультироваться.');
+  L.push('Подскажите, сколько это будет стоить и когда можно приехать?');
+  var t=L.join('\n'),n=q.length+l.length+v.length;
+  msg.textContent=t;cnt.textContent=n?'выбрано: '+n:'';
+  wa.href='https://wa.me/79282467079?text='+encodeURIComponent(t);
+ }
+ box.querySelectorAll('button[data-k]').forEach(function(b){b.addEventListener('click',function(){tog(b.dataset.k)})});
+ car.querySelectorAll('[data-z]').forEach(function(e){e.addEventListener('click',function(){tog(e.getAttribute('data-z'))})});
+ auto.addEventListener('input',upd);
+ ['doors','spk'].forEach(function(k){set(k,true)});
+ upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["10:00","20:00"]],"tue":[["10:00","20:00"]],"wed":[["10:00","20:00"]],"thu":[["10:00","20:00"]],"fri":[["10:00","20:00"]],"sat":[["10:00","20:00"]],"sun":[["10:00","20:00"]]},"is247":false}</script><script src="app.js"></script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

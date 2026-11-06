@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Мир подождёт — студия массажа и SPA в Краснодаре</title><meta property="og:type" content="website"><meta property="og:title" content="Мир подождёт — студия массажа и SPA в Краснодаре"><meta property="og:description" content="Студия массажа «Мир подождёт» на Карякина, 25 в Краснодаре: 12 видов массажа и SPA, ежедневно 9:00–20:00. Рейтинг 5,0 в 2ГИС."><meta property="og:image" content="https://pikold.github.io/demo-sites/mir-podozhdet/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Студия массажа «Мир подождёт» на Карякина, 25 в Краснодаре: 12 видов массажа и SPA, ежедневно 9:00–20:00. Рейтинг 5,0 в 2ГИС.">
+<meta name="theme-color" content="#f5f1e8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300..500;1,7..72,300..500&family=Onest:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300..500;1,7..72,300..500&family=Onest:wght@400;500;600&display=swap"></noscript>
+<style>
+:root{--paper:#f5f1e8;--milk:#fffcf6;--ink:#1a2920;--muted:#55655a;--green:#236a3c;--leaf:#4caa60;--lav:#6a5aa3;--lav2:#ebe5f4;--fir:#13302a;--amber:#f2a640;--line:rgba(26,41,32,.14);--r:24px;--g:clamp(16px,4vw,48px);--serif:'Literata',Georgia,serif;--sans:'Onest',system-ui,-apple-system,'Segoe UI',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--sans);overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+ul,ol{list-style:none}
+.wrap{max-width:1360px;margin:0 auto;padding:0 var(--g)}
+:focus-visible{outline:3px solid var(--lav);outline-offset:3px;border-radius:6px}
+section{scroll-margin-top:72px}
+.demo{background:var(--ink);color:#e6ede7;font-size:13px;line-height:1.4;text-align:center;padding:8px 16px}
+.mk{fill:currentColor}
+/* header */
+.top{position:sticky;top:0;z-index:30;background:rgba(245,241,232,.88);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:68px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--green)}
+.logo svg{width:30px;height:30px}
+.logo b{display:block;font:500 21px/1 var(--serif);color:var(--ink);letter-spacing:-.01em}
+.logo small{display:block;font:600 10.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+.nav{display:flex;gap:24px;margin-left:auto}
+.nav a{text-decoration:none;font-size:15px;color:var(--muted);padding:12px 0;transition:color .2s}
+.nav a:hover{color:var(--ink)}
+.tel{font-weight:600;text-decoration:none;white-space:nowrap;font-size:16px}
+.tel:hover{color:var(--green)}
+.tel-i{display:none;width:44px;height:44px;border-radius:50%;background:var(--green);color:#fff;place-items:center;margin-left:auto}
+.tel-i svg{width:20px;height:20px}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;font:600 16px/1 var(--sans);text-decoration:none;border:1.5px solid transparent;cursor:pointer;white-space:nowrap;transition:transform .2s,background .2s,color .2s,border-color .2s,box-shadow .2s}
+.btn svg{width:19px;height:19px;flex:none}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:scale(.97)}
+.b-main{background:var(--green);color:#fff;box-shadow:0 14px 28px -16px rgba(35,106,60,.9)}
+.b-main:hover{background:#1a5530}
+.b-line{border-color:rgba(26,41,32,.32);color:var(--ink)}
+.b-line:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.b-sm{min-height:44px;padding:0 20px;font-size:15px}
+/* hero */
+.hero{position:relative;padding:clamp(28px,4.6vw,76px) 0 clamp(56px,6vw,96px);overflow:hidden}
+.hero:before{content:"";position:absolute;width:min(1100px,90vw);aspect-ratio:1;right:-18%;top:-30%;background:radial-gradient(closest-side,rgba(106,90,163,.16),transparent 72%);pointer-events:none}
+.hero:after{content:"";position:absolute;width:min(800px,70vw);aspect-ratio:1;right:10%;bottom:-45%;background:radial-gradient(closest-side,rgba(76,170,96,.14),transparent 72%);pointer-events:none}
+.hero-g{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(32px,5vw,90px);align-items:center}
+.kick{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--green)}
+.kick svg{width:22px;height:22px}
+h1{font:300 clamp(56px,8.4vw,148px)/.92 var(--serif);letter-spacing:-.035em;margin:20px 0 28px}
+h1 span{display:block}
+h1 .l2{white-space:nowrap;font-style:italic;color:var(--green);letter-spacing:-.015em;animation:exhale 2.8s cubic-bezier(.2,.7,.2,1) both}
+@keyframes exhale{from{letter-spacing:.025em;opacity:.25}to{letter-spacing:-.015em;opacity:1}}
+.flame{display:inline-block;width:.14em;height:.2em;margin-left:.05em;vertical-align:baseline;border-radius:50% 50% 50% 50%/64% 64% 36% 36%;background:radial-gradient(circle at 50% 72%,#fff4c8 0 16%,var(--amber) 48%,#d9662a);box-shadow:0 0 .22em rgba(242,166,64,.85),0 0 .6em rgba(242,166,64,.35);transform-origin:50% 100%;animation:flick 3.2s ease-in-out infinite}
+@keyframes flick{0%,100%{transform:scale(1) rotate(-3deg)}35%{transform:scale(1.1,.92) rotate(3deg)}70%{transform:scale(.94,1.08) rotate(-1deg)}}
+.lead{font-size:clamp(17px,1.3vw,21px);line-height:1.55;max-width:31em;color:#2f3f35}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:32px 0 24px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:15px;color:var(--muted)}
+[data-status]{display:inline-flex;align-items:center;gap:9px;font-weight:600;color:var(--ink)}
+[data-status]:before{content:"";width:9px;height:9px;border-radius:50%;background:#b5ad9c;flex:none}
+[data-status].is-open:before{background:var(--leaf);box-shadow:0 0 0 4px rgba(76,170,96,.22)}
+.hero-v{position:relative;width:100%;max-width:520px;justify-self:end}
+.ph{border-radius:var(--r);overflow:hidden;background:#d8d1c3}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph-main{aspect-ratio:4/5;margin-left:16%}
+.ph-sign{position:absolute;left:0;bottom:-9%;width:40%;aspect-ratio:3/4;border:6px solid var(--paper);box-shadow:0 24px 40px -22px rgba(0,0,0,.45)}
+.ph-sign img{object-position:50% 34%}
+.breath{position:absolute;top:-5%;right:-5%;width:124px;height:124px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,var(--milk) 0 56%,rgba(235,229,244,.95) 57%);box-shadow:0 18px 40px -20px rgba(106,90,163,.6);font:italic 400 18px/1 var(--serif);color:var(--lav);animation:breathe 10s ease-in-out infinite}
+.breath span{grid-area:1/1;animation:inh 10s ease-in-out infinite}
+.breath span+span{animation-name:exh}
+@keyframes breathe{0%,100%{transform:scale(.84)}50%{transform:scale(1.04)}}
+@keyframes inh{0%,44%{opacity:1}50%,94%{opacity:0}100%{opacity:1}}
+@keyframes exh{0%,44%{opacity:0}50%,94%{opacity:1}100%{opacity:0}}
+.facts{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:clamp(48px,6vw,92px);padding-top:26px;border-top:1px solid var(--line)}
+.facts b{display:block;font:400 clamp(28px,2.6vw,40px)/1.05 var(--serif);letter-spacing:-.02em;margin-bottom:6px}
+.facts span{font-size:14.5px;color:var(--muted);line-height:1.45;display:block;max-width:16em}
+/* common */
+.sec{padding:clamp(76px,9vw,150px) 0}
+.eye{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:18px}
+h2{font:300 clamp(40px,5.2vw,80px)/1 var(--serif);letter-spacing:-.03em}
+h2 em{font-style:italic;color:var(--green)}
+.sub{margin-top:22px;max-width:30em;color:#33433a}
+/* services */
+.svc-g{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(36px,7vw,120px)}
+.svc-side{position:sticky;top:100px;align-self:start}
+.svc-ph{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:12px;align-items:end;margin-top:36px;max-width:440px}
+.svc-ph .ph{aspect-ratio:3/4}
+.svc-ph .ph+.ph{aspect-ratio:3/5;transform:translateY(28px)}
+.svc-ph .ph+.ph img{object-position:50% 40%}
+.grp+.grp{margin-top:52px}
+.grp h3{display:flex;align-items:baseline;gap:14px;font:600 12.5px/1 var(--sans);letter-spacing:.15em;text-transform:uppercase;color:var(--muted);padding-bottom:16px;border-bottom:1.5px solid var(--ink)}
+.grp h3 i{font:italic 400 16px var(--serif);letter-spacing:0;text-transform:none;color:var(--lav)}
+.svc a{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 28px;align-items:baseline;padding:19px 6px;border-bottom:1px solid var(--line);text-decoration:none;transition:padding .3s,background .3s}
+.svc b{font:400 clamp(23px,2.1vw,32px)/1.15 var(--serif);letter-spacing:-.015em;transition:color .25s}
+.svc span{font-size:15px;color:var(--muted);text-align:right}
+.svc a:hover,.svc a:focus-visible{padding-left:18px;background:var(--milk)}
+.svc a:hover b{color:var(--green)}
+.hint{margin-top:30px;font-size:14.5px;color:var(--muted)}
+.hint b{color:var(--ink);font-weight:600}
+.warn{margin-top:10px;font-size:13.5px;color:var(--muted)}
+/* ritual */
+.rit{position:relative;background:var(--fir);color:#eee9dd;overflow:hidden}
+.rit:before{content:"";position:absolute;width:900px;aspect-ratio:1;left:-300px;top:-260px;background:radial-gradient(closest-side,rgba(76,170,96,.22),transparent 70%);pointer-events:none}
+.rit .eye{color:#9fd8ad}
+.rit h2 em{color:#a9dcb5}
+.rit .sub{color:#c4cfc6}
+.rit-g{position:relative;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(48px,8vw,130px);align-items:start}
+.rit-ph{position:relative;max-width:500px;margin-top:8px}
+.rit-ph .ph{background:#22443a}
+.rit-ph>.ph:first-child{aspect-ratio:4/5}
+.rit-ph .ph-s{position:absolute;right:-8%;bottom:-12%;width:42%;aspect-ratio:3/4;border:6px solid var(--fir)}
+.steps{counter-reset:s;margin-top:44px}
+.steps li{display:grid;grid-template-columns:76px minmax(0,1fr);gap:18px;padding:22px 0}
+.steps li:before{counter-increment:s;content:"0" counter(s);font:italic 300 48px/1 var(--serif);color:#bcaee8}
+.steps h3{font:400 clamp(24px,2.1vw,31px)/1.15 var(--serif);letter-spacing:-.01em;margin-bottom:8px}
+.steps p{color:#c4cfc6;max-width:30em}
+.steps li:nth-child(2){margin-left:clamp(0px,4vw,56px)}
+.steps li:nth-child(3){margin-left:clamp(0px,8vw,112px)}
+.steps li:nth-child(4){margin-left:clamp(0px,4vw,56px)}
+.strip{display:flex;gap:14px;margin:30px 0 0 clamp(0px,4vw,56px)}
+.strip .ph{width:min(180px,40%);aspect-ratio:3/4;background:#22443a}
+.strip p{align-self:end;font:italic 400 17px/1.4 var(--serif);color:#a9b8ad;max-width:12em}
+/* praise */
+.pr-g{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(40px,7vw,120px);align-items:start}
+.score b{display:block;font:300 clamp(120px,15vw,230px)/.8 var(--serif);letter-spacing:-.06em;margin-top:28px}
+.leaves{display:flex;gap:6px;margin:22px 0 12px;color:var(--leaf)}
+.leaves svg{width:24px;height:24px}
+.score a{font-weight:600;text-decoration-thickness:1px;text-underline-offset:4px}
+.score a:hover{color:var(--green)}
+.pts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 56px}
+.pt.wide{grid-column:1/-1;padding-bottom:44px;border-bottom:1px solid var(--line)}
+.pt.wide h3{font:300 clamp(30px,3.4vw,52px)/1.08 var(--serif);letter-spacing:-.025em;margin-bottom:18px;max-width:15em}
+.pt.wide h3 em{font-style:italic;color:var(--green)}
+.pt h3{font:400 clamp(22px,1.9vw,27px)/1.2 var(--serif);margin-bottom:10px}
+.pt p{color:#3a4a40;max-width:30em}
+.song{grid-column:2/-1;display:grid;grid-template-columns:auto minmax(0,1fr);gap:20px;align-items:center;background:var(--lav2);border-radius:var(--r);padding:26px 28px}
+.song svg{width:46px;height:46px;color:var(--lav)}
+.song p{font:italic 400 18px/1.45 var(--serif);color:#3d335f}
+/* picker */
+.pick{background:linear-gradient(180deg,var(--lav2) 0%,#f1edf6 55%,var(--paper) 100%)}
+.pk-g{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(36px,6vw,100px);align-items:start;margin-top:54px}
+.dial{position:sticky;top:100px;width:100%;max-width:400px;margin:0 auto}
+.dial svg{width:100%;overflow:visible}
+.seg{stroke:rgba(106,90,163,.22);transition:stroke .5s}
+.seg.on{stroke:var(--green)}
+.tk{font:600 12px var(--sans);letter-spacing:.12em;fill:var(--muted);text-transform:uppercase}
+.core{transform-origin:180px 180px;animation:breathe 10s ease-in-out infinite}
+.dial-c{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;text-align:center;padding:24%}
+.dial-c svg{width:34px;height:34px;color:var(--green);margin-bottom:10px}
+.dial-c b{font:400 clamp(22px,2.2vw,30px)/1.1 var(--serif);letter-spacing:-.01em}
+.dial-c span{font-size:14px;color:var(--muted);margin-top:6px}
+.q{border:0;margin:0 0 30px;min-width:0;transition:opacity .3s}
+.q legend{display:flex;align-items:baseline;gap:12px;font:400 25px/1.2 var(--serif);margin-bottom:14px}
+.q legend i{font:600 12px var(--sans);letter-spacing:.14em;color:var(--lav);font-style:normal}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:1px;height:1px}
+.chip span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border-radius:999px;background:var(--milk);border:1.5px solid rgba(26,41,32,.17);font-size:15.5px;cursor:pointer;transition:background .2s,border-color .2s,color .2s,transform .15s}
+.chip span:hover{border-color:var(--green)}
+.chip input:checked+span{background:var(--green);border-color:var(--green);color:#fff}
+.chip input:focus-visible+span{outline:3px solid var(--lav);outline-offset:2px}
+.chip span:active{transform:scale(.96)}
+.gift-n{display:none;font-size:14.5px;color:var(--lav);margin:-12px 0 26px}
+.is-gift .q-when{opacity:.35;pointer-events:none}
+.is-gift .gift-n{display:block}
+.res{background:var(--milk);border-radius:var(--r);padding:clamp(22px,3vw,34px);box-shadow:0 30px 60px -40px rgba(26,41,32,.5);margin-top:8px}
+.res small{font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--lav)}
+.res h3{font:400 clamp(26px,2.6vw,38px)/1.1 var(--serif);letter-spacing:-.02em;margin:10px 0 8px}
+.res p{color:#3a4a40}
+.res .when{font-weight:600;color:var(--green);margin-top:6px}
+.res .btn{margin-top:22px}
+.res .fine{font-size:14px;color:var(--muted);margin-top:14px}
+/* contacts */
+.ct-g{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,5vw,72px);margin-top:50px;align-items:stretch}
+.addr{font:300 clamp(30px,3vw,46px)/1.08 var(--serif);letter-spacing:-.02em}
+.door{display:flex;gap:14px;align-items:flex-start;background:var(--milk);border-radius:18px;padding:18px 20px;margin:22px 0 30px;border-left:4px solid var(--amber)}
+.door svg{width:26px;height:26px;color:var(--amber);flex:none;margin-top:2px}
+.lbl{font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:26px 0 10px}
+.week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;margin:12px 0 10px}
+.week li{text-align:center;font-size:13px;color:var(--muted);padding:9px 0;border-radius:12px;background:rgba(76,170,96,.12)}
+.week li.today{background:var(--green);color:#fff;font-weight:600}
+.big-tel{font:400 clamp(26px,2.4vw,34px)/1.2 var(--serif);text-decoration:none;letter-spacing:-.01em}
+.big-tel:hover{color:var(--green)}
+.soc{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.soc a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;border:1.5px solid var(--line);text-decoration:none;font-size:15px;font-weight:500;transition:border-color .2s,background .2s}
+.soc a:hover{border-color:var(--green);background:var(--milk)}
+.ct-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.map{border-radius:var(--r);overflow:hidden;background:#e1dbcf;min-height:480px}
+.map iframe{display:block;width:100%;height:100%;min-height:480px;border:0}
+/* final */
+.fin{background:var(--green);color:#f2f6f0;position:relative;overflow:hidden}
+.fin:before{content:"";position:absolute;width:760px;aspect-ratio:1;right:-200px;top:-220px;background:radial-gradient(closest-side,rgba(242,166,64,.2),transparent 70%)}
+.fin-g{position:relative;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(36px,6vw,100px);align-items:center}
+.fin h2{font-size:clamp(50px,7vw,118px);line-height:.95}
+.fin h2 em{color:#c9ecd1}
+.fin p{margin:24px 0 32px;max-width:28em;color:#d9e8dc;font-size:clamp(17px,1.3vw,20px)}
+.fin .ph{aspect-ratio:3/4;max-width:400px;justify-self:end;width:100%;background:#2d7a49}
+.fin .ph img{object-position:50% 45%}
+.b-cream{background:var(--milk);color:var(--green)}
+.b-cream:hover{background:#fff}
+.b-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.b-ghost:hover{background:#fff;color:var(--green)}
+.foot{padding:34px 0 40px;font-size:14px;color:var(--muted)}
+.foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 30px}
+.fab{display:none}
+/* reveal */
+.js [data-r]{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+@media (max-width:1180px){.nav{display:none}.top .tel{margin-left:auto}}
+@media (max-width:960px){
+.hero-g,.svc-g,.rit-g,.pr-g,.pk-g,.ct-g,.fin-g{grid-template-columns:minmax(0,1fr)}
+.hero-v{justify-self:start;max-width:500px;margin:14px 0 30px}
+.svc-side{position:static}
+.dial{position:relative;top:auto}
+.rit-ph{margin-bottom:40px}
+.song{grid-column:1/-1}
+.dial{max-width:300px}
+.fin .ph{justify-self:start;max-width:340px}
+.facts{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:28px}
+.fab{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;gap:8px;padding:6px;border-radius:999px;background:rgba(255,252,246,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 14px 40px -12px rgba(26,41,32,.45)}
+.fab .btn{flex:1;min-height:50px;padding:0 14px}
+body{padding-bottom:86px}
+}
+@media (max-width:640px){
+body{font-size:16px}
+.top .wrap{height:62px}
+.top .tel,.top .b-sm{display:none}
+.top .wrap{gap:12px}
+.facts{gap:16px}
+.facts b{font-size:24px}
+.fin .cta{grid-template-columns:minmax(0,1fr)}
+.tel-i{display:grid}
+.logo small{display:none}
+.cta{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
+.cta .b-main{grid-column:1/-1}
+.cta .btn{padding:0 12px}
+.breath{width:92px;height:92px;font-size:15px;right:-2%}
+.ph-main{margin-left:12%}
+.svc a{grid-template-columns:minmax(0,1fr);padding:16px 4px}
+.svc span{text-align:left}
+.steps li,.steps li:nth-child(n){grid-template-columns:52px minmax(0,1fr);margin-left:0;gap:12px;padding:18px 0}
+.steps li:before{font-size:36px}
+.strip{margin-left:0}
+.pts{grid-template-columns:minmax(0,1fr);gap:34px}
+.pt.wide{padding-bottom:34px}
+.song{grid-template-columns:minmax(0,1fr);gap:12px;padding:22px}
+.q legend{font-size:22px}
+.dial{max-width:250px}
+.chip span{padding:0 15px;font-size:15px}
+.res .btn{width:100%}
+.map,.map iframe{min-height:340px}
+.fin .btn{flex:1 1 100%}
+}
+@media (prefers-reduced-motion:reduce){
+*,*:before,*:after{animation:none!important;transition:none!important}
+html{scroll-behavior:auto}
+.js [data-r]{opacity:1;transform:none}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="mark" viewBox="0 0 32 32"><path class="mk" d="M11 3C6.2 8.6 6.2 23.4 11 29c4.8-5.6 4.8-20.4 0-26zm10 0c-4.8 5.6-4.8 20.4 0 26 4.8-5.6 4.8-20.4 0-26z"/><path d="M11 8v17M21 8v17" stroke="#fffcf6" stroke-width="1.2" stroke-linecap="round" opacity=".7"/></symbol>
+<symbol id="leaf" viewBox="0 0 24 24"><path class="mk" d="M20 4C10 4 4 9 4 16c0 1.6.4 3 1 4 1-4 4-8 9-10-4 3-6.4 6.6-7.4 10.6C8 21.5 9.5 22 11 22c7 0 9-8 9-18z"/></symbol>
+<symbol id="ph" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></symbol>
+<symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1 0-.3-.1-.5-.2z"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+</svg>
+
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="top">
+ <div class="wrap">
+  <a class="logo" href="#top" aria-label="Мир подождёт — наверх"><svg aria-hidden="true"><use href="#mark"/></svg><span><b>Мир подождёт</b><small>студия массажа · SPA</small></span></a>
+  <nav class="nav" aria-label="Разделы">
+   <a href="#menu">Меню</a><a href="#ritual">Как проходит</a><a href="#praise">Отзывы</a><a href="#pick">Подбор</a><a href="#where">Контакты</a>
+  </nav>
+  <a class="tel" href="tel:+79181105010">+7 918 110-50-10</a>
+  <a class="tel-i" href="tel:+79181105010" aria-label="Позвонить"><svg><use href="#ph"/></svg></a>
+  <a class="btn b-main b-sm" href="#pick">Записаться</a>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero">
+ <div class="wrap">
+  <div class="hero-g">
+   <div>
+    <p class="kick"><svg aria-hidden="true"><use href="#mark"/></svg>Студия массажа и SPA · Краснодар</p>
+    <h1><span>Мир</span><span class="l2">подождёт<i class="flame" aria-hidden="true"></i></span></h1>
+    <p class="lead">Час, когда телефон молчит, а плечи наконец опускаются. Двенадцать видов массажа и&nbsp;SPA, тёплый плед на время сеанса и&nbsp;чай с&nbsp;лавандой после.</p>
+    <div class="cta">
+     <a class="btn b-main" href="tel:+79181105010"><svg><use href="#ph"/></svg>Позвонить</a>
+     <a class="btn b-line" href="https://yandex.ru/maps/?rtext=~45.065901,39.011434" target="_blank" rel="noopener"><svg><use href="#pin"/></svg>Маршрут</a>
+     <a class="btn b-line" data-wa href="https://wa.me/79181105010?text=Здравствуйте!%20Хочу%20записаться%20на%20массаж%20в%20«Мир%20подождёт».%20Подскажите%20свободное%20время?" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>WhatsApp</a>
+    </div>
+    <p class="meta"><span data-status></span><span>ул. им. Карякина, 25 · вход с&nbsp;торца</span></p>
+   </div>
+   <div class="hero-v">
+    <figure class="ph ph-main"><img src="img/p2-m.jpg" srcset="img/p2-m.jpg 675w, img/p2.jpg 960w" sizes="(max-width:640px) 80vw, (max-width:960px) 420px, 440px" width="675" height="900" alt="Чай в стеклянном чайнике, свеча и сушёная лаванда на мраморном столике в студии" style="object-position:50% 45%"></figure>
+    <figure class="ph ph-sign"><img src="img/p3-m.jpg" srcset="img/p3-m.jpg 675w, img/p3.jpg 960w" sizes="(max-width:640px) 40vw, 210px" width="675" height="900" alt="Вывеска «Студия массажа Мир подождёт» с зелёным логотипом" loading="lazy"></figure>
+    <div class="breath" aria-hidden="true"><span>вдох</span><span>выдох</span></div>
+   </div>
+  </div>
+  <div class="facts" data-r>
+   <div><b>5,0</b><span>рейтинг в&nbsp;2ГИС по&nbsp;59&nbsp;отзывам</span></div>
+   <div><b>12</b><span>видов массажа и&nbsp;SPA&nbsp;— от&nbsp;лица до&nbsp;спортивного</span></div>
+   <div><b>9:00–20:00</b><span>каждый день, без выходных</span></div>
+   <div><b>Сертификат</b><span>когда хочется подарить кому-то час тишины</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="menu">
+ <div class="wrap svc-g">
+  <div class="svc-side" data-r>
+   <p class="eye">Меню</p>
+   <h2>Что поставить <em>на&nbsp;паузу</em></h2>
+   <p class="sub">Не знаете, что выбрать,&nbsp;— просто расскажите, что беспокоит. Гости пишут, что здесь сначала выслушают, а&nbsp;потом предложат решение.</p>
+   <div class="svc-ph">
+    <figure class="ph"><img src="img/p1-m.jpg" width="675" height="900" sizes="(max-width:640px) 52vw, 240px" srcset="img/p1-m.jpg 675w" alt="Мастер массирует плечи и шею гостьи" loading="lazy" style="object-position:50% 40%"></figure>
+    <figure class="ph"><img src="img/p5-m.jpg" width="507" height="900" sizes="(max-width:640px) 40vw, 190px" srcset="img/p5-m.jpg 507w" alt="Травяной мешочек для массажа в руке мастера" loading="lazy"></figure>
+   </div>
+  </div>
+  <div data-r>
+   <div class="grp"><h3><i>01</i>Для всего тела</h3>
+    <ul class="svc">
+     <li><a href="#pick" data-k="back" data-s="Оздоровительный массаж"><b>Оздоровительный массаж</b><span>когда устало всё сразу</span></a></li>
+     <li><a href="#pick" data-k="relax" data-s="Релаксирующий массаж"><b>Релаксирующий массаж</b><span>медленно, под тёплым пледом</span></a></li>
+     <li><a href="#pick" data-k="sport" data-s="Спортивный массаж"><b>Спортивный массаж</b><span>для мышц после нагрузок</span></a></li>
+     <li><a href="#pick" data-k="east" data-s="Китайский массаж"><b>Китайский массаж</b><span>восточная техника</span></a></li>
+    </ul></div>
+   <div class="grp"><h3><i>02</i>Лёгкость и&nbsp;силуэт</h3>
+    <ul class="svc">
+     <li><a href="#pick" data-k="legs" data-s="Лимфодренаж"><b>Лимфодренаж</b><span>мягко, когда тяжесть и&nbsp;отёки</span></a></li>
+     <li><a href="#pick" data-k="body" data-s="Антицеллюлитный массаж"><b>Антицеллюлитный массаж</b><span>интенсивная работа по&nbsp;зонам</span></a></li>
+     <li><a href="#pick" data-k="body" data-s="Аппаратный массаж"><b>Аппаратный массаж</b><span>аппаратная техника</span></a></li>
+    </ul></div>
+   <div class="grp"><h3><i>03</i>Лицо</h3>
+    <ul class="svc">
+     <li><a href="#pick" data-k="face" data-s="Массаж лица"><b>Массаж лица</b><span>отдых для мимики и&nbsp;тонус</span></a></li>
+    </ul></div>
+   <div class="grp"><h3><i>04</i>Бережно</h3>
+    <ul class="svc">
+     <li><a href="#pick" data-k="mom" data-s="Массаж для беременных"><b>Массаж для беременных</b><span>мягко, с&nbsp;учётом срока</span></a></li>
+     <li><a href="#pick" data-k="kid" data-s="Детский массаж"><b>Детский массаж</b><span>для детей</span></a></li>
+    </ul></div>
+   <div class="grp"><h3><i>05</i>Больше рук, больше времени</h3>
+    <ul class="svc">
+     <li><a href="#pick" data-k="east" data-s="Массаж в 4 руки"><b>Массаж в&nbsp;4&nbsp;руки</b><span>два мастера одновременно</span></a></li>
+     <li><a href="#pick" data-k="two" data-s="SPA для двоих"><b>SPA для двоих</b><span>паузу можно разделить</span></a></li>
+    </ul></div>
+   <p class="hint"><b>Нажмите на&nbsp;услугу</b>&nbsp;— она подставится в&nbsp;подбор и&nbsp;готовое сообщение для записи.</p>
+   <p class="warn">Имеются противопоказания, необходима консультация специалиста.</p>
+  </div>
+ </div>
+</section>
+
+<section class="sec rit" id="ritual">
+ <div class="wrap rit-g">
+  <div data-r>
+   <p class="eye">Как проходит час</p>
+   <h2>Пока мир <em>ждёт</em></h2>
+   <p class="sub">Так визит описывают гости в&nbsp;отзывах&nbsp;— от&nbsp;первого вопроса до&nbsp;последнего глотка чая.</p>
+   <div class="rit-ph" style="margin-top:48px">
+    <figure class="ph"><img src="img/p8-m.jpg" srcset="img/p8-m.jpg 518w, img/p8.jpg 736w" sizes="(max-width:640px) 92vw, 460px" width="518" height="900" alt="Массаж спины в полумраке под фиолетовой подсветкой" loading="lazy" style="object-position:50% 55%"></figure>
+    <figure class="ph ph-s"><img src="img/p7-m.jpg" width="512" height="900" srcset="img/p7-m.jpg 512w" sizes="(max-width:640px) 40vw, 200px" alt="Мастер держит зажжённую массажную свечу над ладонью гостя" loading="lazy" style="object-position:50% 30%"></figure>
+   </div>
+  </div>
+  <div data-r>
+   <ol class="steps">
+    <li><div><h3>Расскажите, что беспокоит</h3><p>Мастер выслушает и&nbsp;предложит технику под вашу задачу&nbsp;— так пишут гости, пришедшие с&nbsp;конкретной проблемой.</p></div></li>
+    <li><div><h3>Плед и&nbsp;тёплый свет</h3><p>Свечи, приглушённый свет, тёплый плед. Тело перестаёт держать оборону раньше, чем вы это заметите.</p></div></li>
+    <li><div><h3>Сам массаж</h3><p>Расслабляет и&nbsp;при этом восстанавливает&nbsp;— об&nbsp;этом в&nbsp;отзывах пишут чаще всего. И&nbsp;отдельно благодарят мастеров по&nbsp;именам.</p></div></li>
+    <li><div><h3>Чай с&nbsp;лавандой</h3><p>После сеанса никто не торопит к&nbsp;выходу: наливают чай с&nbsp;лавандой и&nbsp;угощают полезным батончиком.</p></div></li>
+   </ol>
+   <div class="strip">
+    <figure class="ph"><img src="img/p10-m.jpg" width="654" height="872" srcset="img/p10-m.jpg 654w" sizes="180px" alt="Фирменные стаканы «Мир подождёт» и свеча на стойке" loading="lazy"></figure>
+    <figure class="ph"><img src="img/p13-m.jpg" width="675" height="900" srcset="img/p13-m.jpg 675w" sizes="180px" alt="Свеча для массажа в ладони в тёплом свете" loading="lazy"></figure>
+    <p>Свечи, фирменные стаканы, тёплый свет&nbsp;— кадры из&nbsp;студии.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="praise">
+ <div class="wrap pr-g">
+  <div class="score" data-r>
+   <p class="eye">За что хвалят</p>
+   <b>5,0</b>
+   <div class="leaves" aria-hidden="true"><svg><use href="#leaf"/></svg><svg><use href="#leaf"/></svg><svg><use href="#leaf"/></svg><svg><use href="#leaf"/></svg><svg><use href="#leaf"/></svg></div>
+   <p>Средняя оценка по&nbsp;59&nbsp;отзывам. <a href="https://2gis.ru/krasnodar/firm/70000001092778250" target="_blank" rel="noopener">Читать в&nbsp;2ГИС</a></p>
+  </div>
+  <div class="pts" data-r>
+   <div class="pt wide"><h3>Мастеров здесь благодарят <em>по&nbsp;именам</em>&nbsp;— Саиду и&nbsp;Елизавету</h3><p>Гости уходят с&nbsp;хорошим самочувствием и&nbsp;пишут, что хочется вернуться. Кто-то пришёл по&nbsp;подаренному сертификату&nbsp;— и&nbsp;остался очень доволен.</p></div>
+   <div class="pt"><h3>Сначала слушают</h3><p>Пришли с&nbsp;проблемой&nbsp;— вас выслушают и&nbsp;предложат решение. А&nbsp;цены в&nbsp;отзывах называют приятными и&nbsp;демократичными.</p></div>
+   <div class="pt"><h3>Чисто и&nbsp;уютно</h3><p>Чистоту, аккуратность и&nbsp;внимательный персонал отмечают не&nbsp;раз. И, конечно, чай с&nbsp;лавандой после сеанса.</p></div>
+   <div class="song"><svg aria-hidden="true" viewBox="0 0 48 48"><path fill="currentColor" d="M34 6v24.5a6.5 6.5 0 1 1-3-5.5V13l-14 3.5v18a6.5 6.5 0 1 1-3-5.5V10z"/></svg><p>А&nbsp;один гость так соскучился, что написал о&nbsp;студии целую песню на&nbsp;мотив «Городка». Кажется, это высшая оценка.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec pick" id="pick">
+ <div class="wrap">
+  <div data-r>
+   <p class="eye">Подбор за минуту</p>
+   <h2>Поставьте мир <em>на&nbsp;паузу</em></h2>
+   <p class="sub">Четыре ответа&nbsp;— и&nbsp;готовое сообщение администратору в&nbsp;WhatsApp. Стоимость и&nbsp;свободное время подскажут в&nbsp;ответ.</p>
+  </div>
+  <div class="pk-g">
+   <div class="dial" data-r>
+    <svg viewBox="0 0 360 360" aria-hidden="true">
+     <defs><radialGradient id="cg"><stop offset="0" stop-color="#fffcf6"/><stop offset=".7" stop-color="#f4f0f9"/><stop offset="1" stop-color="#e2daf0"/></radialGradient></defs>
+     <circle class="core" cx="180" cy="180" r="124" fill="url(#cg)"/>
+     <g fill="none" stroke-width="12" stroke-linecap="round">
+      <circle class="seg" cx="180" cy="180" r="150" pathLength="100" stroke-dasharray="21 79" transform="rotate(-85.5 180 180)"/>
+      <circle class="seg" cx="180" cy="180" r="150" pathLength="100" stroke-dasharray="21 79" transform="rotate(4.5 180 180)"/>
+      <circle class="seg" cx="180" cy="180" r="150" pathLength="100" stroke-dasharray="21 79" transform="rotate(94.5 180 180)"/>
+      <circle class="seg" cx="180" cy="180" r="150" pathLength="100" stroke-dasharray="21 79" transform="rotate(184.5 180 180)"/>
+     </g>
+     <g class="tk" text-anchor="middle"><text x="300" y="48">тело</text><text x="312" y="320">кому</text><text x="48" y="320">день</text><text x="52" y="48">время</text></g>
+    </svg>
+    <div class="dial-c" aria-live="polite"><svg aria-hidden="true"><use href="#mark"/></svg><b id="dT">Мир ещё крутится</b><span id="dS">0 из 4</span></div>
+   </div>
+   <form class="pf" id="pf" onsubmit="return false" data-r>
+    <fieldset class="q"><legend><i>01</i>Что просит тело?</legend><div class="chips">
+     <label class="chip"><input type="radio" name="k" value="back"><span>Спина и шея устали</span></label>
+     <label class="chip"><input type="radio" name="k" value="relax"><span>Просто выключиться</span></label>
+     <label class="chip"><input type="radio" name="k" value="legs"><span>Тяжесть, отёки</span></label>
+     <label class="chip"><input type="radio" name="k" value="sport"><span>После тренировок</span></label>
+     <label class="chip"><input type="radio" name="k" value="body"><span>Силуэт и тонус</span></label>
+     <label class="chip"><input type="radio" name="k" value="face"><span>Лицо</span></label>
+     <label class="chip"><input type="radio" name="k" value="mom"><span>Жду малыша</span></label>
+     <label class="chip"><input type="radio" name="k" value="kid"><span>Для ребёнка</span></label>
+     <label class="chip"><input type="radio" name="k" value="east"><span>Хочется необычного</span></label>
+     <label class="chip"><input type="radio" name="k" value="two"><span>Вдвоём с близким</span></label>
+    </div></fieldset>
+    <fieldset class="q"><legend><i>02</i>Для кого?</legend><div class="chips">
+     <label class="chip"><input type="radio" name="w" value="Себе"><span>Себе</span></label>
+     <label class="chip"><input type="radio" name="w" value="Вдвоём"><span>Вдвоём</span></label>
+     <label class="chip"><input type="radio" name="w" value="Подарок"><span>В подарок — сертификат</span></label>
+    </div></fieldset>
+    <p class="gift-n">Для сертификата день и время выберет тот, кому вы его подарите.</p>
+    <fieldset class="q q-when"><legend><i>03</i>Какой день?</legend><div class="chips">
+     <label class="chip"><input type="radio" name="d" value="Сегодня"><span>Сегодня</span></label>
+     <label class="chip"><input type="radio" name="d" value="Завтра"><span>Завтра</span></label>
+     <label class="chip"><input type="radio" name="d" value="На неделе"><span>На неделе</span></label>
+     <label class="chip"><input type="radio" name="d" value="На выходных"><span>На выходных</span></label>
+    </div></fieldset>
+    <fieldset class="q q-when"><legend><i>04</i>Какое время?</legend><div class="chips">
+     <label class="chip"><input type="radio" name="h" value="Утром"><span>Утром · 9–12</span></label>
+     <label class="chip"><input type="radio" name="h" value="Днём"><span>Днём · 12–17</span></label>
+     <label class="chip"><input type="radio" name="h" value="Вечером"><span>Вечером · 17–20</span></label>
+    </div></fieldset>
+    <div class="res">
+     <small>Ваша пауза</small>
+     <h3 id="rT">Выберите, что просит тело</h3>
+     <p id="rN">Если сомневаетесь&nbsp;— мастер подскажет на&nbsp;месте.</p>
+     <p class="when" id="rW">День и время&nbsp;— на&nbsp;ваш выбор</p>
+     <a class="btn b-main" id="rGo" href="https://wa.me/79181105010?text=Здравствуйте!%20Хочу%20записаться%20в%20«Мир%20подождёт».%20Подскажите%20свободное%20время?" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Отправить в WhatsApp</a>
+     <p class="fine">Или позвоните: <a href="tel:+79181105010">+7&nbsp;918&nbsp;110-50-10</a>. Оплата картой, наличными, переводом или по&nbsp;QR-коду.</p>
+    </div>
+   </form>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="where" style="padding-top:clamp(40px,5vw,80px)">
+ <div class="wrap">
+  <div data-r>
+   <p class="eye">Как найти</p>
+   <h2>Карякина, 25&nbsp;— <em>вход с&nbsp;торца</em></h2>
+  </div>
+  <div class="ct-g">
+   <div data-r>
+    <p class="addr">Краснодар, улица им.&nbsp;Карякина, 25, 1&nbsp;этаж</p>
+    <div class="door"><svg aria-hidden="true"><use href="#pin"/></svg><p>Вход с&nbsp;торца здания&nbsp;— со&nbsp;стороны бульвара Котлярова.</p></div>
+    <p class="lbl">Часы работы</p>
+    <p><b>Ежедневно, 09:00–20:00</b> · <span data-status></span></p>
+    <ul class="week" aria-label="Дни работы: все дни недели"><li>Пн</li><li>Вт</li><li>Ср</li><li>Чт</li><li>Пт</li><li>Сб</li><li>Вс</li></ul>
+    <p class="lbl">Телефон и мессенджеры</p>
+    <a class="big-tel" href="tel:+79181105010">+7&nbsp;918&nbsp;110-50-10</a>
+    <div class="soc" style="margin-top:14px">
+     <a data-wa href="https://wa.me/79181105010?text=Здравствуйте!%20Хочу%20записаться%20на%20массаж%20в%20«Мир%20подождёт».%20Подскажите%20свободное%20время?" target="_blank" rel="noopener">WhatsApp</a>
+     <a href="https://t.me/mirpodozhdett" target="_blank" rel="noopener">Telegram</a>
+     <a href="https://vk.ru/massage_krasnodar23" target="_blank" rel="noopener">ВКонтакте</a>
+    </div>
+    <div class="ct-cta">
+     <a class="btn b-main" href="https://yandex.ru/maps/?rtext=~45.065901,39.011434" target="_blank" rel="noopener"><svg><use href="#pin"/></svg>Построить маршрут</a>
+     <a class="btn b-line" href="tel:+79181105010"><svg><use href="#ph"/></svg>Позвонить</a>
+    </div>
+   </div>
+   <div class="map" data-r><iframe loading="lazy" title="Карта: улица им. Карякина, 25" src="https://yandex.ru/map-widget/v1/?ll=39.011434,45.065901&z=16&pt=39.011434,45.065901,pm2rdm"></iframe></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec fin">
+ <div class="wrap fin-g">
+  <div data-r>
+   <h2>Мир подождёт.<br><em>Час&nbsp;— ваш.</em></h2>
+   <p>Запишитесь на&nbsp;любой день недели с&nbsp;9 до&nbsp;20. Если не&nbsp;знаете, что выбрать,&nbsp;— так и&nbsp;напишите: подберут.</p>
+   <div class="cta" style="margin:0">
+    <a class="btn b-cream" href="tel:+79181105010"><svg><use href="#ph"/></svg>Позвонить</a>
+    <a class="btn b-ghost" data-wa href="https://wa.me/79181105010?text=Здравствуйте!%20Хочу%20записаться%20на%20массаж%20в%20«Мир%20подождёт».%20Подскажите%20свободное%20время?" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Написать в WhatsApp</a>
+   </div>
+  </div>
+  <figure class="ph" data-r><img src="img/p9-m.jpg" width="654" height="872" srcset="img/p9-m.jpg 654w" sizes="(max-width:640px) 92vw, 400px" alt="Стакан с логотипом «Мир подождёт» в руке на фоне осенней листвы" loading="lazy"></figure>
+ </div>
+</section>
+</main>
+
+<footer class="foot"><div class="wrap"><span>«Мир подождёт»&nbsp;— студия массажа и&nbsp;SPA. Краснодар, ул.&nbsp;им.&nbsp;Карякина,&nbsp;25</span><span>Демо-концепт по&nbsp;данным 2ГИС, не&nbsp;официальный сайт</span></div></footer>
+
+<div class="fab">
+ <a class="btn b-main" href="tel:+79181105010"><svg><use href="#ph"/></svg>Позвонить</a>
+ <a class="btn b-line" data-wa href="https://wa.me/79181105010?text=Здравствуйте!%20Хочу%20записаться%20на%20массаж%20в%20«Мир%20подождёт».%20Подскажите%20свободное%20время?" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>WhatsApp</a>
+</div>
+
+<script>
+(function(){
+var WA='https://wa.me/79181105010?text=';
+var base='Здравствуйте! Хочу записаться на массаж в «Мир подождёт». Подскажите свободное время?';
+document.querySelectorAll('[data-wa]').forEach(function(a){a.href=WA+encodeURIComponent(base)});
+var wd=(new Date(Date.now()+(new Date().getTimezoneOffset()+180)*60000).getDay()+6)%7,li=document.querySelectorAll('.week li');
+if(li[wd])li[wd].classList.add('today');
+var REC={back:['Оздоровительный массаж','Спина и шея: расскажите мастеру, где тянет, — он подберёт технику.'],relax:['Релаксирующий массаж','Медленно, под тёплым пледом, а после — чай с лавандой.'],legs:['Лимфодренаж','Мягкая техника, когда хочется лёгкости в теле.'],sport:['Спортивный массаж','Для мышц после нагрузок.'],body:['Антицеллюлитный или аппаратный массаж','Мастер подскажет, с чего начать.'],face:['Массаж лица','Отдых для мимики и тонус.'],mom:['Массаж для беременных','Перед записью обсудите срок и самочувствие — нужна консультация специалиста.'],kid:['Детский массаж','Расскажите возраст ребёнка и задачу — администратор подскажет.'],east:['Китайский массаж или массаж в 4 руки','Восточная техника или два мастера одновременно.'],two:['SPA для двоих','Паузу можно разделить с близким человеком.']};
+var f=document.getElementById('pf'),seg=document.querySelectorAll('.seg'),dT=document.getElementById('dT'),dS=document.getElementById('dS'),rT=document.getElementById('rT'),rN=document.getElementById('rN'),rW=document.getElementById('rW'),go=document.getElementById('rGo'),custom='';
+function v(n){var e=f.querySelector('input[name="'+n+'"]:checked');return e?e.value:''}
+function upd(){
+ var k=v('k'),w=v('w'),d=v('d'),h=v('h'),gift=w==='Подарок';
+ f.classList.toggle('is-gift',gift);
+ var done=[!!k,!!w,gift||!!d,gift||!!h],n=0;
+ for(var i=0;i<4;i++){seg[i].classList.toggle('on',done[i]);if(done[i])n++}
+ dT.textContent=n===4?'Мир подождёт':n?'Мир замедляется':'Мир ещё крутится';
+ dS.textContent=n===4?'пауза готова':n+' из 4';
+ var svc=custom||(k?REC[k][0]:'');
+ rT.textContent=svc||'Выберите, что просит тело';
+ rN.textContent=custom?'Вы выбрали услугу в меню. Можно уточнить запрос выше.':(k?REC[k][1]:'Если сомневаетесь — мастер подскажет на месте.');
+ var who=w==='Себе'?'для себя':w==='Вдвоём'?'для двоих':'',when=[d,h].filter(Boolean).join(', ').toLowerCase();
+ rW.textContent=gift?'Сертификат в подарок':([who,when].filter(Boolean).join(' · ')||'День и время — на ваш выбор');
+ var msg=gift?'Здравствуйте! Хочу подарить сертификат в «Мир подождёт»'+(svc?' — '+svc:'')+'. Подскажите, как его оформить?':'Здравствуйте! Хочу записаться в «Мир подождёт»'+(svc?': '+svc:'')+(who?', '+who:'')+(when?', '+when:'')+'. Подскажите свободное время?';
+ go.href=WA+encodeURIComponent(msg);
+}
+f.addEventListener('change',function(e){if(e.target.name==='k')custom='';upd()});
+document.querySelectorAll('[data-s]').forEach(function(a){a.addEventListener('click',function(){custom=a.getAttribute('data-s');var r=f.querySelector('input[name="k"][value="'+a.getAttribute('data-k')+'"]');if(r)r.checked=true;upd()})});
+upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["09:00","20:00"]],"tue":[["09:00","20:00"]],"wed":[["09:00","20:00"]],"thu":[["09:00","20:00"]],"fri":[["09:00","20:00"]],"sat":[["09:00","20:00"]],"sun":[["09:00","20:00"]]},"is247":false}</script><script src="app.js"></script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>
