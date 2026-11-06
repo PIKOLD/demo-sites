@@ -101,7 +101,7 @@ button,input{font:inherit;color:inherit}
 .cd:nth-child(-n+2) .im{height:clamp(340px,36vw,580px)}
 .cd img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
 .cd:hover img{transform:scale(1.035)}
-.cap{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:16px 0 6px}
+.cap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:16px;padding:16px 0 6px}
 .cap h3{font:400 24px/1.1 var(--f1);letter-spacing:-.01em}
 .cap p{font-size:15px;color:var(--ink2);margin-top:6px}
 .take{flex:none;min-height:44px;padding:0 14px;border:1.5px solid var(--ink);border-radius:4px;background:transparent;font-weight:600;font-size:14px;cursor:pointer;transition:background .2s,color .2s}
@@ -159,8 +159,8 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 .fr{stroke:rgba(20,19,18,.2);stroke-width:.7}
 .wl{fill:none;stroke:var(--blk);stroke-width:5;stroke-linecap:square;vector-effect:non-scaling-stroke}
 .ctp{vector-effect:non-scaling-stroke;stroke-width:3}
-.dl{fill:none;stroke:var(--oakT);stroke-width:1.2}
-.dt{font:600 17px var(--f2);fill:var(--oakT)}
+.dl{fill:none;stroke:var(--oakT);stroke-width:1.2;vector-effect:non-scaling-stroke}
+.dt{font:600 20px var(--f2);fill:var(--oakT)}
 .sum{background:var(--blk);color:#f4eee5;border-radius:6px;padding:clamp(18px,2vw,28px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px 28px;align-items:center}
 .len{font:300 clamp(40px,3.6vw,60px)/1 var(--f1);letter-spacing:-.03em}
 .len small{display:block;font:500 13px/1.3 var(--f2);letter-spacing:.04em;color:#bfb6a8;margin-top:8px}
@@ -215,6 +215,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 .hph{margin-inline:calc(-1*var(--pad));aspect-ratio:4/3.3;min-height:0}
 .svc .w,.rv .w,.gtop{grid-template-columns:minmax(0,1fr)}
 .sph{position:static;max-width:620px}
+.gal .cd{grid-column:span 6}.gal .cd:nth-child(1){grid-column:span 12}
 .sph img{aspect-ratio:4/3}
 .ctw{grid-template-columns:minmax(0,1fr)}
 .map,.map iframe{min-height:380px}
@@ -231,11 +232,14 @@ body{font-size:16px;padding-bottom:84px}
 .it{grid-template-columns:34px minmax(0,1fr)}
 .it .go{grid-column:2;grid-row:auto;justify-self:start;margin-top:6px}
 .gal{grid-template-columns:minmax(0,1fr)}
-.gal .cd,.gal:not([data-f=all]) .cd{grid-column:auto}
+.gal .cd:nth-child(n),.gal:not([data-f=all]) .cd{grid-column:auto}
 .cd .im,.cd:nth-child(-n+2) .im{height:auto;aspect-ratio:4/3.5}
 .pts{grid-template-columns:minmax(0,1fr)}
 .drw{grid-template-columns:minmax(0,1fr)}
-.dt{font-size:24px}
+.dt{font-size:22px}
+.shp{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.shp button{grid-auto-flow:column;justify-content:start;align-items:center;gap:10px;padding:6px 12px;font-size:14px;min-height:52px}
+.shp svg{width:30px;height:30px}
 .sum{grid-template-columns:minmax(0,1fr)}
 .sum .btn{width:100%}
 .fbox{grid-template-columns:minmax(0,1fr)}
@@ -297,11 +301,11 @@ body{font-size:16px;padding-bottom:84px}
 <div class="gtop" data-r><div><p class="kick">Кухни</p><h2 class="h2">Найдите похожую — <i>начнём с неё</i></h2><p class="sub">Нажмите «Взять за основу»: планировщик ниже подставит форму и цвета этой кухни.</p></div>
 <div class="flt" role="group" aria-label="Форма кухни"><button class="fb" type="button" data-f="all" aria-pressed="true">Все</button><button class="fb" type="button" data-f="I" aria-pressed="false">Прямые</button><button class="fb" type="button" data-f="L" aria-pressed="false">Угловые</button><button class="fb" type="button" data-f="O" aria-pressed="false">С островом</button></div></div>
 <div class="gal" id="gal" data-f="all">
-<article class="cd" data-t="O" data-r><div class="im"><img src="img/p3-m.jpg" srcset="img/p3-m.jpg 900w, img/p3.jpg 1080w" sizes="(max-width:760px) 92vw, 42vw" width="1080" height="988" loading="lazy" alt="Кухня с островом: серо-голубые фасады, светлая столешница, чёрная вытяжка"></div><div class="cap"><div><h3>С островом</h3><p>Серо-голубые фасады, светлый камень, чёрная вытяжка</p></div><button class="take" type="button" data-pre="O,blue,blue,st1,tall">Взять за основу</button></div></article>
-<article class="cd" data-t="L" data-r><div class="im"><img src="img/p5-m.jpg" srcset="img/p5-m.jpg 675w, img/p5.jpg 1350w" sizes="(max-width:760px) 92vw, 30vw" width="1350" height="1800" loading="lazy" alt="Светлая угловая кухня с деревянными верхними шкафами и тёмной столешницей"></div><div class="cap"><div><h3>Угловая, светлая</h3><p>Белый низ, дерево сверху, тёмная столешница</p></div><button class="take" type="button" data-pre="L,white,oak,st2,std">Взять за основу</button></div></article>
-<article class="cd" data-t="L" data-r><div class="im"><img src="img/p10-m.jpg" srcset="img/p10-m.jpg 720w, img/p10.jpg 1440w" sizes="(max-width:760px) 92vw, (max-width:1199px) 46vw, 24vw" width="1440" height="1800" loading="lazy" alt="Угловая кухня с высокими светлыми колоннами и чёрной столешницей под камень"></div><div class="cap"><div><h3>С тёмным камнем</h3><p>Высокие светлые колонны, чёрная столешница с прожилками</p></div><button class="take" type="button" data-pre="L,white,oak,st2,tall">Взять за основу</button></div></article>
-<article class="cd" data-t="I" data-r><div class="im"><img src="img/p7-m.jpg" srcset="img/p7-m.jpg 720w, img/p7.jpg 1024w" sizes="(max-width:760px) 92vw, (max-width:1199px) 46vw, 24vw" width="1024" height="1280" loading="lazy" alt="Прямая кухня с серо-голубыми колоннами, встроенной духовкой и светлым низом"></div><div class="cap"><div><h3>Прямая с колоннами</h3><p>Серо-голубые колонны, духовка на уровне глаз</p></div><button class="take" type="button" data-pre="I,cash,blue,st1,tall">Взять за основу</button></div></article>
-<article class="cd" data-t="I" data-r><div class="im"><img src="img/p8-m.jpg" srcset="img/p8-m.jpg 720w, img/p8.jpg 1024w" sizes="(max-width:760px) 92vw, (max-width:1199px) 46vw, 24vw" width="1024" height="1280" loading="lazy" alt="Прямая кухня без верхних шкафов: фасады без ручек, фактурная стена, чёрная вытяжка"></div><div class="cap"><div><h3>Без верхних шкафов</h3><p>Фасады без ручек, фактурная стена, чёрная вытяжка</p></div><button class="take" type="button" data-pre="I,cash,cash,st1,none">Взять за основу</button></div></article>
+<article class="cd" data-t="O" data-r><div class="im"><img src="img/p3-m.jpg" srcset="img/p3-m.jpg 900w, img/p3.jpg 1080w" sizes="(max-width:980px) 92vw, (max-width:1440px) 54vw, 785px" width="1080" height="988" loading="lazy" alt="Кухня с островом: серо-голубые фасады, светлая столешница, чёрная вытяжка"></div><div class="cap"><div><h3>С островом</h3><p>Серо-голубые фасады, светлый камень, чёрная вытяжка</p></div><button class="take" type="button" data-pre="O,blue,blue,st1,tall">Взять за основу</button></div></article>
+<article class="cd" data-t="L" data-r><div class="im"><img src="img/p5-m.jpg" srcset="img/p5-m.jpg 675w, img/p5.jpg 1350w" sizes="(max-width:760px) 92vw, (max-width:980px) 46vw, (max-width:1440px) 38vw, 555px" width="1350" height="1800" loading="lazy" alt="Светлая угловая кухня с деревянными верхними шкафами и тёмной столешницей"></div><div class="cap"><div><h3>Угловая, светлая</h3><p>Белый низ, дерево сверху, тёмная столешница</p></div><button class="take" type="button" data-pre="L,white,oak,st2,std">Взять за основу</button></div></article>
+<article class="cd" data-t="L" data-r><div class="im"><img src="img/p10-m.jpg" srcset="img/p10-m.jpg 720w, img/p10.jpg 1440w" sizes="(max-width:760px) 92vw, (max-width:980px) 46vw, (max-width:1440px) 31vw, 440px" width="1440" height="1800" loading="lazy" alt="Угловая кухня с высокими светлыми колоннами и чёрной столешницей под камень"></div><div class="cap"><div><h3>С тёмным камнем</h3><p>Высокие светлые колонны, чёрная столешница с прожилками</p></div><button class="take" type="button" data-pre="L,white,oak,st2,tall">Взять за основу</button></div></article>
+<article class="cd" data-t="I" data-r><div class="im"><img src="img/p7-m.jpg" srcset="img/p7-m.jpg 720w, img/p7.jpg 1024w" sizes="(max-width:760px) 92vw, (max-width:980px) 46vw, (max-width:1440px) 31vw, 440px" width="1024" height="1280" loading="lazy" alt="Прямая кухня с серо-голубыми колоннами, встроенной духовкой и светлым низом"></div><div class="cap"><div><h3>Прямая с колоннами</h3><p>Серо-голубые колонны, духовка на уровне глаз</p></div><button class="take" type="button" data-pre="I,cash,blue,st1,tall">Взять за основу</button></div></article>
+<article class="cd" data-t="I" data-r><div class="im"><img src="img/p8-m.jpg" srcset="img/p8-m.jpg 720w, img/p8.jpg 1024w" sizes="(max-width:760px) 92vw, (max-width:980px) 46vw, (max-width:1440px) 31vw, 440px" width="1024" height="1280" loading="lazy" alt="Прямая кухня без верхних шкафов: фасады без ручек, фактурная стена, чёрная вытяжка"></div><div class="cap"><div><h3>Без верхних шкафов</h3><p>Фасады без ручек, фактурная стена, чёрная вытяжка</p></div><button class="take" type="button" data-pre="I,cash,cash,st1,none">Взять за основу</button></div></article>
 </div>
 </div></section>
 
@@ -400,16 +404,16 @@ SH={I:'прямая',L:'угловая',U:'П-образная',O:'прямая 
 st={sh:'L',a:300,b:220,c:220,i:180,up:'std',fl:'cash',fu:'oak',tp:'st1',tech:false};
 var $=function(s){return document.querySelector(s)},$$=function(s){return [].slice.call(document.querySelectorAll(s))},f1=function(v){return (+v).toFixed(1)};
 function R(x,y,w,h,f,ex){return '<rect x="'+f1(x)+'" y="'+f1(y)+'" width="'+f1(Math.max(0,w))+'" height="'+f1(Math.max(0,h))+'" fill="'+f+'"'+(ex||'')+'/>'}
-function dH(x1,x2,y,t,up){return '<path class="dl" d="M'+f1(x1)+' '+f1(y-6)+'v12M'+f1(x2)+' '+f1(y-6)+'v12M'+f1(x1)+' '+f1(y)+'H'+f1(x2)+'"/><text class="dt" x="'+f1((x1+x2)/2)+'" y="'+f1(up?y-10:y+24)+'" text-anchor="middle">'+t+'</text>'}
+function dH(x1,x2,y,t,up,fs){return '<path class="dl" d="M'+f1(x1)+' '+f1(y-6)+'v12M'+f1(x2)+' '+f1(y-6)+'v12M'+f1(x1)+' '+f1(y)+'H'+f1(x2)+'"/><text class="dt" x="'+f1((x1+x2)/2)+'" y="'+f1(up?y-10:y+(fs?fs+5:24))+'" text-anchor="middle"'+(fs?' style="font-size:'+fs+'px"':'')+'>'+t+'</text>'}
 function dV(x,y1,y2,t,lf){var tx=lf?x-12:x+24,ty=(y1+y2)/2;return '<path class="dl" d="M'+f1(x-6)+' '+f1(y1)+'h12M'+f1(x-6)+' '+f1(y2)+'h12M'+f1(x)+' '+f1(y1)+'V'+f1(y2)+'"/><text class="dt" transform="rotate(-90 '+f1(tx)+' '+f1(ty)+')" x="'+f1(tx)+'" y="'+f1(ty)+'" text-anchor="middle">'+t+'</text>'}
-function elev(){var A=st.a,k=Math.min(1.08,600/A),w=A*k,ox=(640-w)/2,oy=12,n=Math.max(2,Math.round(A/60)),mw=A/n,i,y0,fl=F[st.fl][1],fu=F[st.fu][1],tp=TP[st.tp][1],ck=A*.62,sk=A*.24,s='<g transform="translate('+f1(ox)+' '+oy+') scale('+k.toFixed(4)+')">';
+function elev(){var A=st.a,VW=Math.max(A,340)+40,fs=Math.round(VW/26),k=1,w=A,ox=(VW-A)/2,oy=6,n=Math.max(2,Math.round(A/60)),mw=A/n,i,y0,fl=F[st.fl][1],fu=F[st.fu][1],tp=TP[st.tp][1],ck=A*.62,sk=A*.24,s='<g transform="translate('+f1(ox)+' '+oy+') scale('+k.toFixed(4)+')">';
 s+=R(0,0,A,260,'#f3f0ea')+R(0,104,A,56,tp);
 if(st.up!=='none'){y0=st.up==='tall'?0:30;for(i=0;i<n;i++)s+=R(i*mw+.5,y0,mw-1,104-y0,fu,' class="fr"');s+=R(0,104,A,26,'url(#led)')}else s+=R(ck-21,20,42,84,'#1b1a18');
 for(i=0;i<n;i++)s+=R(i*mw+.5,166,mw-1,84,fl,' class="fr"');
 s+=R(0,160,A,6,tp)+R(0,166,A,2.8,'#141312')+R(0,206,A,2.4,'#141312')+R(0,250,A,10,'#2b2926')+R(ck-30,158,60,2,'#141312');
 s+='<path d="M'+f1(sk)+' 160v-17q0-6 6-6h5v4" fill="none" stroke="#2a2927" stroke-width="2.2"/>';
 if(st.tech)s+=R(ck-28,174,56,56,'#161514')+R(ck-22,186,44,30,'#34322f');
-s+='</g>'+dH(ox,ox+w,oy+260*k+22,A+' см');el.innerHTML=s}
+s+='</g>'+dH(ox,ox+w,oy+274,A+' см',0,fs);el.setAttribute('viewBox','0 0 '+VW+' '+Math.round(oy+274+fs*1.8));el.innerHTML=s}
 function plan(){var A=st.a,L=st.sh==='L'||st.sh==='U',B=L?st.b:0,C=st.sh==='U'?st.c:0,O=st.sh==='O',D=60,Y=Math.max(D,B,C,O?D+100+90:0),k=Math.min(290/A,236/Y,1.1),ox=(400-A*k)/2+(L?10:0),oy=56,rr=[[0,0,A,D]],tp=TP[st.tp][1],fl=F[st.fl][1],s,hx,hy;
 if(L)rr.push([0,D,D,B-D]);if(C)rr.push([A-D,D,D,C-D]);if(O)rr.push([(A-st.i)/2,D+100,st.i,90]);
 s='<g transform="translate('+f1(ox)+' '+oy+') scale('+k.toFixed(4)+')">'+R(-4,-4,A+8,Y+8,'rgba(29,27,24,.035)');
