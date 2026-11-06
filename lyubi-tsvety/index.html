@@ -2,412 +2,321 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Люби цветы: Цветочная мастерская, Санкт-Петербург</title>
-<meta name="description" content="Цветы и игрушки ручной работы на проспекте Маршала Жукова">
-<meta name="theme-color" content="#f4efe5">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&amp;family=Onest:wght@400;500;600&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&amp;family=Onest:wght@400;500;600&amp;display=swap"></noscript>
-<script>document.documentElement.classList.add('js')</script>
+<title>Люби цветы — цветочный магазин на проспекте Маршала Жукова</title><meta property="og:type" content="website"><meta property="og:title" content="Люби цветы — цветочный магазин на проспекте Маршала Жукова"><meta property="og:description" content="«Люби цветы» в Кировском районе: свежие цветы и букеты, сухоцветы, мягкие игрушки, шарики и праздничное оформление, доставка. Проспект Маршала Жукова, 76 к1, с 10:00 до 22:00."><meta property="og:image" content="https://pikold.github.io/demo-sites/lyubi-tsvety/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="«Люби цветы» в Кировском районе: свежие цветы и букеты, сухоцветы, мягкие игрушки, шарики и праздничное оформление, доставка. Проспект Маршала Жукова, 76 к1, с 10:00 до 22:00.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Golos+Text:wght@400;500;600&family=Caveat:wght@600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Golos+Text:wght@400;500;600&family=Caveat:wght@600&display=swap"></noscript>
 <style>
-
-*,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:84px}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:clip}
-img,svg{display:block;max-width:100%}
-img{height:auto;object-fit:cover}
+:root{--bg:#f3f2f6;--ink:#231a2b;--m:#5a4f63;--pink:#c4306a;--pk:#fbd9e6;--lil:#6f48ad;--lb:#e4daf4;--leaf:#3c7434;--lf:#d8ebc8;--cr:#f6ead4;--u:Unbounded,'Arial Black',sans-serif;--h:Caveat,cursive}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:17px/1.6 'Golos Text',system-ui,sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
 a{color:inherit}
-h1,h2,h3,p,ul,ol,dl,dd,figure,fieldset,legend{margin:0;padding:0;border:0;min-width:0}
-ul,ol{list-style:none}
-button,input{font:inherit;color:inherit}
-button{background:none;border:0;cursor:pointer;padding:0}
-main{display:block}
-.wrap{width:min(100% - 2*var(--g),var(--mw));margin-inline:auto}
-:root{--g:20px;--mw:1340px;--hh:64px}
-@media(min-width:900px){:root{--g:44px;--hh:76px}}
-:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
-.demo{position:relative;z-index:60;display:flex;gap:8px;justify-content:center;align-items:center;padding:5px 8px;font-size:10.5px;line-height:1.35;text-align:center;white-space:nowrap;background:var(--demo-bg,#111);color:var(--demo-ink,#fff)}
-.demo b{font-weight:700;letter-spacing:.02em}
-.demo span{opacity:.72}
-.hd{position:sticky;top:0;z-index:50;height:var(--hh);margin-bottom:calc(var(--hh)*-1);transition:background .35s,color .35s,box-shadow .35s,backdrop-filter .35s}
-.hd>.wrap{height:100%;display:flex;align-items:center;gap:28px}
-.brand{margin-right:auto;text-decoration:none;white-space:nowrap;min-width:0;overflow:hidden;text-overflow:ellipsis}
-.nav{display:none}
-.nav a{text-decoration:none;position:relative}
-.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-5px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s}
-.nav a:hover::after{transform:scaleX(1)}
-@media(min-width:900px){.nav{display:flex;gap:30px}}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;cursor:pointer;white-space:nowrap;transition:background .25s,color .25s,border-color .25s,transform .25s}
-.btn svg{width:18px;height:18px;flex:none}
-.hd .btn span{display:none}
-@media(min-width:620px){.hd .btn span{display:inline}}
-.status{display:inline-flex;align-items:center;gap:9px}
-.status[hidden]{display:none}
-.status i{width:8px;height:8px;border-radius:50%;background:#37d67a;flex:none;box-shadow:0 0 0 0 rgba(55,214,122,.5);animation:stp 2.4s infinite}
-.status.closed i{background:#e8a33d;animation:none}
-@keyframes stp{70%{box-shadow:0 0 0 8px rgba(55,214,122,0)}100%{box-shadow:0 0 0 0 rgba(55,214,122,0)}}
-.ln{display:block;overflow:hidden;padding:.08em .12em .1em 0;margin:-.08em -.12em -.1em 0}
-.ln>span{display:block}
-.js .ln>span{animation:lnup .95s cubic-bezier(.2,.75,.15,1) both}
-@keyframes lnup{from{transform:translateY(112%)}to{transform:none}}
-.js .fi{animation:fi .9s .45s cubic-bezier(.2,.7,.2,1) both}
-.js .fi2{animation:fi .9s .62s cubic-bezier(.2,.7,.2,1) both}
-.js .fi3{animation:fi .9s .78s cubic-bezier(.2,.7,.2,1) both}
-@keyframes fi{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-.js .rv{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
-.js .rv.in{opacity:1;transform:none}
-.js .rvi{clip-path:inset(0 0 100% 0);transition:clip-path 1.1s cubic-bezier(.65,0,.2,1)}
-.js .rvi.in{clip-path:inset(0)}
-.d1{transition-delay:.08s!important}.d2{transition-delay:.16s!important}.d3{transition-delay:.24s!important}
-.mq{overflow:hidden;white-space:nowrap}
-.mq-t{display:flex;align-items:center;width:max-content;animation:mq var(--mqs,46s) linear infinite}
-.mq:hover .mq-t{animation-play-state:paused}
-@keyframes mq{to{transform:translateX(-50%)}}
-.zm{display:block;width:100%;overflow:hidden;position:relative;cursor:zoom-in}
-.zm img{width:100%;height:100%;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
-.zm:hover img{transform:scale(1.04)}
-.hrs div{display:flex;justify-content:space-between;gap:18px}
-.hrs dd{font-variant-numeric:tabular-nums;white-space:nowrap}
-.soc{display:flex;flex-wrap:wrap;gap:10px 20px}
-.soc a{display:inline-flex;align-items:center;gap:8px;text-decoration:none}
-.soc svg{width:18px;height:18px}
-/* квиз */
-.qs{display:none}
-.qs.on{display:block;animation:fi .5s cubic-bezier(.2,.7,.2,1) both}
-html:not(.js) .qs{display:block;margin-bottom:24px}
-.opt{position:relative;display:block;cursor:pointer}
-.opt input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
-.opt[hidden]{display:none}
-.opts-i{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-@media(min-width:620px){.opts-i{grid-template-columns:repeat(3,minmax(0,1fr))}}
-.opt-i img{width:100%;aspect-ratio:4/5;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
-.opt-i{overflow:hidden}
-.opt-i:hover img{transform:scale(1.04)}
-.qz-in{display:block}
-.qz-in span{display:block;margin-bottom:8px}
-.qz-in input{width:100%;min-width:0}
-.qz-next,.qz-back,.qz-re{display:inline-flex;align-items:center;gap:8px}
-.qz-next svg,.qz-back svg,.qz-re svg{width:18px;height:18px}
-.qz-back[hidden],.qz-re[hidden]{display:none}
-.qz-nav{display:flex;justify-content:space-between;gap:14px;margin-top:18px}
-.qz-rec[hidden]{display:none}
-.qz-msg{white-space:pre-line}
-.qz-act{display:flex;flex-wrap:wrap;gap:10px}
-/* до/после */
-.ba{position:relative;overflow:hidden;touch-action:pan-y;cursor:ew-resize;user-select:none;-webkit-user-select:none;background:#000}
-.ba img{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-.ba-a{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--p)) 0 0)}
-.ba-h{position:absolute;top:0;bottom:0;left:var(--p);width:2px;margin-left:-1px;background:var(--ac);pointer-events:none}
-.ba-h i{position:absolute;top:50%;left:50%;display:flex;align-items:center;justify-content:center;width:52px;height:52px;margin:-26px 0 0 -26px;background:var(--ac);color:var(--on-ac,#fff);border-radius:50%}
-.ba-h svg{width:16px;height:16px}
-.ba-r{position:absolute;left:0;bottom:0;width:100%;height:1px;opacity:0;pointer-events:none}
-.ba-r:focus-visible+*,.ba:has(.ba-r:focus-visible){outline:2px solid var(--ac);outline-offset:2px}
-/* лайтбокс */
-.lb{position:fixed;inset:0;width:100%;height:100%;max-width:none;max-height:none;margin:0;padding:0;border:0;background:rgba(8,8,8,.94);color:#fff}
-.lb:not([open]){display:none}
-.lb[open]{display:flex;align-items:center;justify-content:center;animation:fi .3s both}
-.lb::backdrop{background:rgba(0,0,0,.8)}
-.lb img{max-width:min(92vw,1500px);max-height:88vh;width:auto;height:auto;object-fit:contain}
-.lb button{position:absolute;display:flex;align-items:center;justify-content:center;width:52px;height:52px;color:#fff;background:rgba(255,255,255,.1);border-radius:50%;transition:background .2s;z-index:2}
-.lb button:hover{background:rgba(255,255,255,.24)}
-.lb svg{width:22px;height:22px}
-.lb-x{top:14px;right:14px}.lb-p{left:14px;top:50%;margin-top:-26px}.lb-n{right:14px;top:50%;margin-top:-26px}
-.lb-c{position:absolute;bottom:16px;left:0;right:0;text-align:center;font-size:13px;opacity:.7}
-/* плавающая кнопка на телефоне */
-.fab{position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom));z-index:45;display:inline-flex;align-items:center;gap:10px;padding:14px 26px;text-decoration:none;font-weight:600;font-size:16px;transform:translate(-50%,90px);transition:transform .4s cubic-bezier(.2,.7,.2,1);box-shadow:0 12px 34px rgba(0,0,0,.34)}
-.fab.show{transform:translate(-50%,0)}
-.fab svg{width:20px;height:20px}
-@media(min-width:760px){.fab{display:none}}
-iframe{display:block;width:100%;height:100%;border:0}
-.ft .wrap{display:flex;flex-wrap:wrap;gap:8px 30px;justify-content:space-between;padding-block:26px 34px;font-size:13px;line-height:1.5}
-@media(max-width:759px){.ft .wrap{padding-bottom:92px}}
-@media (prefers-reduced-motion:reduce){
-html{scroll-behavior:auto}
-*,*::before,*::after{animation:none!important;transition:none!important}
-.js .rv{opacity:1;transform:none}.js .rvi{clip-path:none}
-.mq-t{animation:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:3px solid var(--lil);outline-offset:3px}
+.wrap{max-width:1400px;margin:0 auto;padding:0 clamp(16px,3vw,40px)}
+.demo{background:var(--ink);color:#fff;font-size:13px;text-align:center;padding:8px 16px}
+h1,h2,h3{font-family:var(--u);line-height:1.02;letter-spacing:-.025em}
+h2{font-size:clamp(30px,3.4vw,54px);font-weight:700;margin-bottom:.45em}
+h3{font-weight:700;font-size:clamp(18px,1.5vw,23px);line-height:1.15;letter-spacing:-.01em}
+.k{display:inline-block;font-family:var(--h);font-size:clamp(24px,2vw,30px);line-height:1;color:var(--pink);transform:rotate(-2deg);margin-bottom:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;border:2px solid var(--ink);transition:transform .2s cubic-bezier(.3,1.6,.5,1),box-shadow .2s,background .2s,color .2s}
+.btn.p{background:var(--pink);border-color:var(--pink);color:#fff}
+.btn:hover{transform:translateY(-3px) rotate(-1deg);box-shadow:0 8px 0 -2px var(--ink)}
+.btn:active{transform:translateY(1px);box-shadow:none}
+.btn:not(.p):hover{background:var(--ink);color:#fff}
+[data-status]{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:15px}
+[data-status]::before{content:"";width:10px;height:10px;border-radius:50%;background:currentColor;animation:pulse 2s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 6px transparent}0%{box-shadow:0 0 0 0 currentColor}}
+.is-open{color:var(--leaf)}.is-closed{color:var(--pink)}
+/* шапка */
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:70px}
+.logo{display:inline-flex;align-items:center;gap:10px;font-family:var(--u);font-weight:800;font-size:19px;letter-spacing:-.02em;text-decoration:none;min-height:44px}
+.logo svg{width:28px;height:38px}
+.top nav{display:flex;gap:4px}
+.top nav a,.tel{display:inline-flex;align-items:center;min-height:44px;padding:0 15px;border-radius:999px;text-decoration:none;font-size:15px;font-weight:500;transition:background .2s,color .2s}
+.top nav a:hover{background:#fff}
+.tel{background:var(--ink);color:#fff;font-weight:600}
+.tel:hover{background:var(--pink)}
+/* первый экран */
+.hero{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,4vw,72px);align-items:center;min-height:min(calc(100vh - 106px),860px);padding-top:clamp(16px,3vw,40px);padding-bottom:clamp(40px,5vw,72px)}
+h1{font-size:clamp(60px,8.6vw,156px);font-weight:800;line-height:.9;letter-spacing:-.045em;margin:6px 0 26px}
+h1 span{display:block;color:var(--pink)}
+h1 svg{display:inline-block;width:.42em;height:.58em;vertical-align:-.02em;margin-left:.06em}
+.lead{font-size:clamp(18px,1.45vw,22px);line-height:1.5;max-width:30em}
+.addr{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 28px}
+.chip{display:inline-flex;align-items:center;min-height:36px;padding:0 14px;border-radius:999px;background:#fff;font-size:14.5px;font-weight:500}
+.cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.st{margin-top:18px}
+.hv{position:relative;justify-self:center;width:min(100%,460px);padding:40px 0 30px}
+.hv{isolation:isolate}
+.hv .bigt{position:absolute;z-index:-1;width:90%;left:-36%;top:-12%;height:auto;transform:rotate(-14deg);transition:transform .8s cubic-bezier(.3,1.4,.5,1)}
+.hv:hover .bigt{transform:rotate(-6deg)}
+.hv img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:36px 36px 36px 120px;box-shadow:0 30px 60px -34px rgba(35,26,43,.6)}
+.ring{position:absolute;right:-28px;top:0;width:clamp(120px,10vw,150px);height:auto;animation:spin 26s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ringc{position:absolute;right:-28px;top:0;width:clamp(120px,10vw,150px);aspect-ratio:1;display:grid;place-content:center;text-align:center;font-family:var(--u);font-weight:800;font-size:clamp(20px,1.7vw,26px);line-height:1;pointer-events:none}
+.ringc small{display:block;font:600 12px/1.2 'Golos Text',sans-serif;margin-top:4px}
+.rate{position:absolute;left:-24px;bottom:56px;display:flex;align-items:center;gap:12px;padding:12px 18px 12px 14px;background:#fff;border-radius:20px;text-decoration:none;box-shadow:0 14px 30px -18px rgba(35,26,43,.55);transform:rotate(-4deg);transition:transform .3s cubic-bezier(.3,1.6,.5,1)}
+.rate:hover{transform:rotate(0) scale(1.04)}
+.rate b{font-family:var(--u);font-size:30px;font-weight:800;color:var(--leaf)}
+.rate small{font-size:13px;line-height:1.3;color:var(--m)}
+/* полка */
+.shelf{padding:clamp(64px,8vw,120px) 0}
+.sh{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:12px 40px;margin-bottom:clamp(24px,3vw,44px)}
+.sh p{max-width:28em;color:var(--m)}
+.bento{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-areas:"a a b c" "a a d e";gap:16px}
+.t{position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:14px;min-height:clamp(220px,19vw,280px);padding:clamp(20px,2vw,28px);border-radius:30px;text-decoration:none;transition:transform .3s cubic-bezier(.3,1.5,.5,1),box-shadow .3s}
+.t:hover{transform:translateY(-6px) rotate(-.6deg);box-shadow:0 22px 40px -26px rgba(35,26,43,.6)}
+.t:active{transform:scale(.98)}
+.t p{font-size:15px;line-height:1.45;color:var(--m)}
+.t .go{position:absolute;right:18px;top:18px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.75);display:grid;place-items:center;font-size:18px;transition:transform .3s,background .3s}
+.t:hover .go{transform:rotate(-45deg);background:#fff}
+.t svg{width:clamp(84px,8vw,118px);height:auto;align-self:flex-end;transition:transform .5s cubic-bezier(.3,1.6,.5,1)}
+.t:hover svg{transform:translateY(-6px) rotate(4deg)}
+.ta{grid-area:a;background:var(--pk);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);align-items:stretch;gap:24px}
+.ta h3{font-size:clamp(26px,2.6vw,42px)}
+.ta img{width:100%;max-width:340px;height:100%;min-height:240px;object-fit:cover;border-radius:22px;justify-self:end}
+.ta .tx{display:flex;flex-direction:column;justify-content:space-between;gap:16px}
+.ta .go{right:auto;left:clamp(20px,2vw,28px);top:auto;bottom:clamp(20px,2vw,28px);position:static}
+.tb{grid-area:b;background:var(--lb)}.tc{grid-area:c;background:var(--lf)}.td{grid-area:d;background:var(--cr)}.te{grid-area:e;background:var(--ink);color:#fff}
+.te p{color:#d9d2e0}.te .go{background:rgba(255,255,255,.14)}
+.pay{margin-top:18px;font-size:15px;color:var(--m)}
+/* фишка */
+.love{background:#fff;border-radius:44px;padding:clamp(28px,5vw,80px);display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(28px,5vw,80px);align-items:start}
+.sent{font-family:var(--u);font-weight:500;font-size:clamp(23px,2.5vw,40px);line-height:1.55;letter-spacing:-.02em;margin:10px 0 26px}
+.slot{font-family:var(--u);font-weight:700;font-size:inherit;letter-spacing:-.02em;line-height:1.2;padding:.04em .42em .1em;margin:.08em 0;border-radius:.5em;border:2px dashed rgba(35,26,43,.35);background:var(--bg);white-space:nowrap;transition:background .2s,border-color .2s,color .2s,transform .2s}
+.slot:hover{border-color:var(--ink);transform:translateY(-2px)}
+.slot.on{border-style:solid;border-color:var(--pink);background:var(--pk);color:var(--pink)}
+.s1{color:var(--pink)}.s2{color:var(--lil)}.s3{color:var(--leaf)}
+.panel{background:var(--bg);border-radius:26px;padding:18px 18px 20px}
+.panel p{font-size:14px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--m);margin:0 0 12px 4px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts button{min-height:46px;padding:0 18px;border-radius:999px;background:#fff;font-weight:600;font-size:15.5px;border:2px solid transparent;transition:border-color .2s,background .2s,color .2s,transform .15s}
+.opts button:hover{border-color:var(--ink)}
+.opts button:active{transform:scale(.95)}
+.opts [aria-pressed=true]{background:var(--ink);color:#fff}
+.side{position:sticky;top:24px}
+.pic{position:relative}
+.pic img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 35%;border-radius:30px;background:var(--lb)}
+.pic img.pop{animation:pop .5s cubic-bezier(.3,1.5,.5,1)}
+@keyframes pop{from{opacity:.2;transform:scale(.94)}}
+.who{position:absolute;left:-14px;top:22px;background:var(--pink);color:#fff;font-family:var(--h);font-size:28px;line-height:1;padding:8px 16px 10px;border-radius:14px;transform:rotate(-5deg);box-shadow:0 10px 20px -12px rgba(35,26,43,.7)}
+.bub{margin-top:18px;background:var(--lf);border-radius:22px 22px 22px 6px;padding:16px 18px;font-size:15.5px;line-height:1.5}
+.bub+.btn{margin-top:14px;width:100%}
+.side small{display:block;margin-top:10px;font-size:13.5px;color:var(--m)}
+/* отзывы */
+.rev{padding:clamp(64px,8vw,120px) 0;display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(28px,5vw,90px);align-items:start}
+.score{position:sticky;top:24px}
+.score b{display:block;font-family:var(--u);font-weight:800;font-size:clamp(96px,10vw,170px);line-height:.9;letter-spacing:-.05em;color:var(--leaf)}
+.score p{font-weight:600;margin-top:10px}
+.score a{display:inline-flex;align-items:center;min-height:44px;color:var(--lil);font-weight:600;text-underline-offset:4px}
+.score img{width:min(100%,260px);aspect-ratio:9/14;object-fit:cover;border-radius:26px;margin-top:26px;transform:rotate(3deg)}
+.msgs{display:grid;gap:18px}
+.m{max-width:620px;padding:24px 26px;border-radius:30px 30px 30px 8px;background:#fff}
+.m p{margin-top:8px;color:var(--m)}
+.m:nth-child(2){justify-self:end;border-radius:30px 30px 8px 30px;background:var(--lb)}
+.m:nth-child(3){margin-left:clamp(0px,6vw,90px);background:var(--pk)}
+.m .k{font-size:22px;margin:0 0 4px}
+.also{font-size:15px;color:var(--m);margin-top:10px}
+/* адрес */
+.loc{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:16px;padding-bottom:clamp(64px,8vw,120px)}
+.card{background:#fff;border-radius:36px;padding:clamp(24px,3vw,44px)}
+.hrs{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 20px;margin:6px 0 16px;font-size:16px}
+.hrs dt{color:var(--m)}.hrs dd{font-weight:600}
+.acc{display:flex;gap:14px;align-items:center;background:var(--lf);border-radius:20px;padding:14px 16px;margin:18px 0;font-size:15px;line-height:1.4}
+.acc svg{flex:0 0 34px;height:34px}
+.ct{list-style:none;display:grid;gap:2px;margin:16px 0 22px}
+.ct a{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:48px;border-bottom:1px solid rgba(35,26,43,.12);text-decoration:none;font-weight:500;transition:color .2s,padding .2s}
+.ct a:hover{color:var(--pink);padding-left:6px}
+.ct span{font-size:14px;color:var(--m);font-weight:400}
+.map{border-radius:36px;overflow:hidden;min-height:420px;background:var(--lb)}
+.map iframe{display:block;width:100%;height:100%;min-height:420px;border:0}
+/* финал */
+.fin{background:var(--ink);color:#fff;border-radius:44px;padding:clamp(36px,6vw,96px) clamp(24px,5vw,80px);display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:clamp(24px,4vw,60px);align-items:center;margin-bottom:clamp(40px,5vw,72px);position:relative}
+.fin h2{font-size:clamp(34px,4.6vw,76px);font-weight:800;margin-bottom:.35em}
+.fin p{color:#d9d2e0;max-width:30em}
+.fin .btn:not(.p){border-color:#fff;color:#fff}
+.fin .btn:not(.p):hover{background:#fff;color:var(--ink)}
+.fin .btn:hover{box-shadow:0 8px 0 -2px var(--pink)}
+.fin .cta{justify-content:flex-end}
+.fin svg{position:absolute;right:clamp(16px,4vw,60px);top:-48px;width:clamp(70px,7vw,100px);height:auto}
+footer{padding:0 0 32px;font-size:14px;color:var(--m)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+.fab{display:none}
+.js [data-r]{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.3,1)}
+.js [data-r].in{opacity:1;transform:none}
+@media (max-width:1020px){
+.top nav{display:none}
+.hero,.love,.rev,.loc,.fin{grid-template-columns:minmax(0,1fr)}
+.hero{min-height:0}
+.hv{width:min(100%,420px)}
+.side,.score{position:static}
+.score{display:grid;grid-template-columns:auto minmax(0,1fr);gap:0 20px;align-items:end}
+.score img{display:none}
+.fin .cta{justify-content:flex-start}
+.bento{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-areas:"a a" "b d" "c c" "e e"}
 }
-
-
-:root{--bg:#f4efe5;--paper:#fbf8f1;--ink:#1d2a21;--ink2:#4e5a50;--ac:#c4532f;--on-ac:#fff;--dk:#1d2a21;--blush:#ecd5c6;--line:color-mix(in srgb,#1d2a21 22%,transparent);--disp:"Playfair Display",Georgia,"Times New Roman",serif;--sans:"Onest",system-ui,"Segoe UI",sans-serif;--demo-bg:#1d2a21;--demo-ink:#f4efe5}
-.hd{font-size:14.5px}
-.hd.sc{background:color-mix(in srgb,#f4efe5 92%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
-.brand{font:italic 500 26px/1 var(--disp)}
-.btn{min-height:54px;padding:0 28px;font-weight:500;font-size:15.5px;background:var(--dk);color:var(--bg);border:1px solid var(--dk);border-radius:999px}
-.btn:hover{background:var(--ac);border-color:var(--ac);color:#fff}
-.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
-.btn.ghost:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.btn.sm{min-height:42px;padding:0 18px;font-size:14px;background:transparent;color:var(--ink);border-color:var(--line)}
-.btn.sm:hover{background:var(--dk);color:var(--bg)}
-.fab{background:var(--dk);color:var(--bg);border-radius:999px}
-h2{font:500 clamp(44px,6.6vw,104px)/1 var(--disp);letter-spacing:-.015em}
-h2 em{font-style:italic;color:var(--ac)}
-.k{display:block;font-size:13px;letter-spacing:.02em;color:var(--ink2)}
-.arch{border-radius:999px 999px 0 0;overflow:hidden;background:var(--blush)}
-.arch img{width:100%;height:100%}
-
-.h{position:relative;padding:calc(var(--hh) + 4px) 0 0;overflow:hidden}
-.h-t{font:500 var(--fs)/.86 var(--disp);letter-spacing:-.03em;position:relative;z-index:2}
-.h-t .l2{font-style:italic;padding-left:.28em;color:var(--ink)}
-.h-g{display:flex;flex-direction:column;gap:18px;position:relative;padding-bottom:30px}
-.h-c{position:relative;aspect-ratio:4/5;margin-top:-34px;z-index:1}
-.h-c .arch{height:100%}
-.js .h-c img{animation:lz 2.4s cubic-bezier(.2,.7,.2,1) both}
-@keyframes lz{from{transform:scale(1.1)}to{transform:none}}
-.h-s{position:absolute;right:-6px;bottom:72px;width:36%;aspect-ratio:4/5;z-index:2;border:6px solid var(--bg);border-radius:999px 999px 0 0;overflow:hidden}
-.h-s img{width:100%;height:100%}
-.h-3{display:none}
-.h-i{display:contents}
-.h-c{order:1}
-.h-cta{order:2;position:relative;z-index:4;margin-top:-84px;padding-inline:12px}
-.h-i>.fi:first-child{order:3;margin-top:6px}
-.h-tag{order:4}
-.h-pl{order:5}
-.h-tag{font:500 clamp(22px,5.8vw,27px)/1.25 var(--disp)}
-.h-pl{display:flex;gap:8px;font-size:14px;line-height:1.4;color:var(--ink2)}
-.h-pl svg{width:16px;height:16px;flex:none;margin-top:2px}
-.h-cta{display:flex;flex-wrap:wrap;gap:10px}
-.h-cta .btn{flex:1 1 130px}
-.h-c+.h-3{order:9}
-.h-cta .btn.ghost{background:var(--bg);border-color:var(--bg)}
-.h .status{font-size:13.5px;font-weight:500}
-.seal{position:absolute;left:10px;bottom:16px;z-index:3;width:112px;height:112px;background:var(--ac);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center}
-.seal svg{position:absolute;inset:0;width:100%;height:100%;fill:currentColor}
-.js .seal svg{animation:rot 34s linear infinite}
-@keyframes rot{to{transform:rotate(360deg)}}
-.seal text{font:500 8.4px var(--sans);letter-spacing:.08em;text-transform:uppercase}
-.seal b{font:italic 500 34px/1 var(--disp)}
-@media(min-width:900px){
- .h{min-height:calc(100vh - 28px);padding-top:calc(var(--hh) + 8px);display:flex;flex-direction:column}
- .h>.wrap{flex:1;display:flex;flex-direction:column}
- .h-t{font-size:var(--fsd);display:flex;flex-wrap:wrap;gap:0 .26em;align-items:baseline}
- .h-t .ln{display:inline-block}
- .h-t .l2{padding-left:0}
- .h-g{flex:1;display:grid;grid-template-columns:minmax(0,4fr) minmax(0,4fr) minmax(0,4fr);gap:40px;align-items:end;margin-top:-.5vw;padding-bottom:0}
- .h-i{display:grid;gap:16px;order:0;padding:0 0 44px;align-self:end;grid-column:2;grid-row:1}
- .h-cta{margin-top:0;padding-inline:0;order:0}
- .h-cta .btn.ghost{background:transparent;border-color:var(--ink)}
- .h-i>.fi:first-child{margin-top:0}
- .h-tag{font-size:clamp(23px,2vw,30px)}
- .h-cta .btn{flex:0 1 auto}
- .h-c{grid-column:1;grid-row:1;aspect-ratio:auto;height:100%;min-height:440px;margin-top:0}
- .h-s{display:none}
- .h-3{grid-column:3;grid-row:1;display:block;position:relative;height:74%;min-height:330px;align-self:end}
- .h-3 .arch{height:100%}
- .seal{left:auto;right:-32px;top:-40px;bottom:auto;width:136px;height:136px}
- .seal b{font-size:42px}
+@media (max-width:760px){
+body{font-size:16px;padding-bottom:88px}
+.logo{font-size:16px}
+.tel{padding:0 14px;font-size:14px}
+.cta .btn{flex:1 1 140px;padding:0 18px}
+.hv{padding:30px 10px 20px}
+.ring,.ringc{right:-4px;width:112px}
+.rate{left:0;bottom:30px}
+.ta{grid-template-columns:minmax(0,1fr)}
+.ta img{max-width:none;height:220px;min-height:0;justify-self:stretch}
+.t{border-radius:24px;min-height:190px}
+.t svg{width:76px}
+.love{border-radius:30px;padding:26px 18px}
+.side{order:-1}
+.pic img{aspect-ratio:4/3}
+.who{left:10px;top:12px;font-size:24px}
+.m:nth-child(3){margin-left:0}
+.map,.map iframe{min-height:320px}
+.fin{border-radius:30px}
+.fin .cta .btn{flex:1 1 100%}
+.fab{display:inline-flex;position:fixed;right:16px;bottom:16px;z-index:9;align-items:center;min-height:56px;padding:0 26px;border-radius:999px;background:var(--pink);color:#fff;font-weight:600;text-decoration:none;box-shadow:0 12px 26px -10px rgba(196,48,106,.8)}
+.fab:active{transform:scale(.96)}
 }
-
-.mq-w{border-block:1px solid var(--line);padding:14px 0;--mqs:60s}
-.mq-w span{font:italic 500 clamp(21px,2.3vw,31px)/1.2 var(--disp);padding:0 24px}
-.mq-w i{flex:none;width:18px;height:18px;background:var(--ac);clip-path:path("M9 0c1.2 3.2 2 4.4 3.3 5.700C13.600 7 14.800 7.800 18 9c-3.200 1.200-4.400 2-5.700 3.300C11 13.600 10.200 14.800 9 18c-1.200-3.200-2-4.400-3.300-5.700C4.400 11 3.200 10.200 0 9c3.200-1.200 4.400-2 5.700-3.300C7 4.400 7.800 3.200 9 0z")}
-
-.ab{padding:clamp(80px,10vw,150px) 0}
-.ab-g{display:grid;gap:44px;align-items:center}
-.ab-big{font:500 clamp(27px,3.1vw,46px)/1.22 var(--disp);letter-spacing:-.008em}
-.ab-big::first-line{font-style:italic}
-.ab-ph{aspect-ratio:4/5;border-radius:50%/42%;overflow:hidden}
-.ab-ph img{width:100%;height:100%}
-.of{margin-top:32px;font-size:15.5px}
-.of li{display:flex;gap:16px;align-items:baseline;padding:11px 0;border-top:1px solid var(--line)}
-.of li:last-child{border-bottom:1px solid var(--line)}
-.of small{color:var(--ac);font:italic 500 16px/1 var(--disp);width:26px;flex:none}
-@media(min-width:900px){.ab-g{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:90px}}
-
-.gl{padding:0 0 clamp(80px,9vw,140px);overflow:hidden}
-.gl-h{display:flex;flex-wrap:wrap;gap:14px 40px;align-items:flex-end;justify-content:space-between;margin-bottom:clamp(26px,3.5vw,50px)}
-.gl-h p{max-width:30ch;font-size:15px;color:var(--ink2)}
-.acc{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-inline:var(--g);-webkit-overflow-scrolling:touch}
-.acc::-webkit-scrollbar{display:none}
-.acc .zm{flex:0 0 74%;height:clamp(420px,62vh,720px);scroll-snap-align:center;border-radius:999px 999px 0 0;transition:flex .7s cubic-bezier(.2,.7,.2,1)}
-.acc .zm img{height:100%}
-.acc .zm:hover img{transform:none}
-@media(min-width:900px){.acc{overflow:visible;padding-inline:max(var(--g),calc((100vw - var(--mw))/2))}.acc .zm{flex:1 1 0;min-width:0}.acc .zm:hover{flex:3 1 0}}
-
-.or{background:var(--dk);color:var(--bg);padding:clamp(80px,10vw,150px) 0;--line:color-mix(in srgb,#f4efe5 26%,transparent);--ink2:color-mix(in srgb,#f4efe5 72%,transparent)}
-.or-g{display:grid;gap:40px}
-.or h2 em{color:var(--blush)}
-.or-l p{margin-top:20px;max-width:36ch;color:var(--ink2)}
-.qz-bar{display:flex;gap:6px;margin-bottom:26px}
-.qz-bar i{flex:1;height:1px;background:var(--line);transition:background .4s,height .2s}
-.qz-bar i.on{background:var(--blush);height:2px}
-.qs legend{font:italic 500 clamp(30px,3.4vw,46px)/1.1 var(--disp);margin-bottom:22px}
-.opts:not(.opts-i){display:flex;flex-wrap:wrap;gap:8px}
-.opt>span{display:flex;align-items:center;min-height:54px;padding:10px 22px;border:1px solid var(--line);border-radius:999px;font-size:15.5px;transition:background .2s,color .2s,border-color .2s}
-.opt:hover>span{border-color:var(--bg)}
-.opt input:checked+span,.opt input:checked~span{background:var(--blush);color:var(--dk);border-color:var(--blush)}
-.opt input:focus-visible~span{outline:2px solid var(--blush);outline-offset:2px}
-.opt-i{border-radius:999px 999px 0 0}
-.opt-i>span{position:static;display:block;min-height:0;padding:10px 2px 0;border:0;border-radius:0;background:none!important;color:var(--bg)!important;font-size:14.5px}
-.opt-i img{border-radius:999px 999px 0 0}
-.opt-i input:checked~img,.opt-i input:checked+img{outline:2px solid var(--blush);outline-offset:3px}
-.opt-i{overflow:visible}
-.qz-in span{color:var(--ink2);font-size:15px}
-.qz-in input{height:58px;padding:0 20px;background:transparent;border:1px solid var(--line);border-radius:999px;color:var(--bg)}
-.qz-in input:focus{outline:none;border-color:var(--blush)}
-.qz-next{margin-top:18px;font-size:15.5px;color:var(--blush)}
-.qz-t{font:italic 500 clamp(30px,3.4vw,46px)/1.1 var(--disp);margin-bottom:18px}
-.qz-msg{position:relative;padding:24px 26px 28px;background:var(--paper);color:#1d2a21;font:italic 500 18px/1.5 var(--disp);margin-bottom:22px;transform:rotate(-.7deg);--t:8px;clip-path:polygon(0 0,100% 0,100% calc(100% - var(--t)),97% 100%,94% calc(100% - var(--t)),91% 100%,88% calc(100% - var(--t)),85% 100%,82% calc(100% - var(--t)),79% 100%,76% calc(100% - var(--t)),73% 100%,70% calc(100% - var(--t)),67% 100%,64% calc(100% - var(--t)),61% 100%,58% calc(100% - var(--t)),55% 100%,52% calc(100% - var(--t)),49% 100%,46% calc(100% - var(--t)),43% 100%,40% calc(100% - var(--t)),37% 100%,34% calc(100% - var(--t)),31% 100%,28% calc(100% - var(--t)),25% 100%,22% calc(100% - var(--t)),19% 100%,16% calc(100% - var(--t)),13% 100%,10% calc(100% - var(--t)),7% 100%,4% calc(100% - var(--t)),1% 100%,0 calc(100% - var(--t)))}
-.or .btn{background:var(--blush);color:var(--dk);border-color:var(--blush)}
-.or .btn:hover{background:var(--bg);border-color:var(--bg)}
-.or .btn.ghost{background:transparent;color:var(--bg);border-color:var(--line)}
-.or .btn.ghost:hover{background:var(--bg);color:var(--dk)}
-.qz-back,.qz-re{font-size:14px;color:var(--ink2)}
-@media(min-width:900px){.or-g{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:80px}}
-
-.pr{padding:clamp(80px,10vw,150px) 0}
-.pr-h{display:flex;flex-wrap:wrap;gap:16px 40px;align-items:flex-end;justify-content:space-between;margin-bottom:clamp(30px,5vw,70px)}
-.pr-s{display:flex;align-items:center;gap:14px}
-.pr-s b{font:italic 500 clamp(66px,7vw,104px)/1 var(--disp);color:var(--ac)}
-.pr-s span{font-size:14px;line-height:1.35;color:var(--ink2)}
-.pr-g{display:grid;gap:34px}
-.pr-i h3{font:italic 500 clamp(31px,3.4vw,50px)/1.08 var(--disp)}
-.pr-i p{margin-top:12px;font-size:16.5px;line-height:1.55;color:var(--ink2);max-width:36ch}
-.pr-i .pi{aspect-ratio:1/1;width:62%;border-radius:50%;overflow:hidden;margin-bottom:22px}
-.pr-i .pi img{width:100%;height:100%}
-@media(min-width:900px){.pr-g{grid-template-columns:repeat(3,minmax(0,1fr));gap:50px;align-items:start}.pr-i:nth-child(2){margin-top:90px}.pr-i:nth-child(3){margin-top:30px}}
-
-.ct{padding:0 0 clamp(70px,9vw,130px)}
-.ct-g{display:grid;gap:40px;align-items:end}
-.ct-a{font:500 clamp(29px,3.3vw,48px)/1.12 var(--disp);margin-top:20px}
-.ct-a small{display:block;margin-top:8px;font:400 15px/1.4 var(--sans);color:var(--ink2)}
-.ct-ph{display:inline-block;margin-top:24px;font:italic 500 clamp(33px,3.3vw,48px)/1 var(--disp);text-decoration:none;white-space:nowrap;color:var(--ac)}
-.hrs{margin-top:24px;max-width:340px;font-size:16px}
-.hrs div{padding:9px 0;border-top:1px solid var(--line)}
-.hrs .today{font-weight:600}
-.ct .soc{margin-top:24px;font-size:15px}
-.ct-m{height:clamp(420px,52vw,640px);border-radius:999px 999px 0 0;overflow:hidden;filter:saturate(.75)}
-@media(min-width:900px){.ct-g{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:80px}}
-
-.fin{position:relative;min-height:78svh;display:flex;align-items:center;justify-content:center;text-align:center;isolation:isolate;overflow:hidden;color:#fff;background:#1d2a21}
-.fin-b{position:absolute;inset:0;z-index:-1}
-.fin-b img{width:100%;height:100%;filter:brightness(.68) saturate(1.05)}
-.fin-b::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,.35),rgba(0,0,0,.05) 70%)}
-.fin h2 em{color:#fff}
-.fin .wrap{padding-block:70px}
-.fin .h-cta{justify-content:center;margin-top:30px}
-.fin .btn{background:#fff;color:#1d2a21;border-color:#fff}
-.fin .btn:hover{background:var(--ac);color:#fff;border-color:var(--ac)}
-.fin .btn.ghost{background:transparent;color:#fff;border-color:#fff}
-.ft{color:var(--ink2)}
-
+@media (prefers-reduced-motion:reduce){*,*::before{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js [data-r]{opacity:1;transform:none}}
 </style>
+<script>document.documentElement.className='js'</script>
 </head>
 <body>
-<div class="demo" role="note"><b>Демо-концепт</b><span>Пример по данным 2ГИС, не официальный сайт</span></div>
-<header class="hd" id="top"><div class="wrap"><a class="brand" href="#top" aria-label="Люби цветы, наверх">Люби цветы</a><nav class="nav" aria-label="Основное меню"><a href="#about">О лавке</a><a href="#gallery">Букеты</a><a href="#order">Заказать</a><a href="#praise">Отзывы</a><a href="#contacts">Контакты</a></nav><a class="btn sm" href="tel:+79219419293" aria-label="Позвонить"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2'/></svg><span>+7 921 941-92-93</span></a></div></header>
-<main>
-<section class="h"><div class="wrap">
-<h1 class="h-t" style="--fs:min(190px,calc((100vw - 40px)/2.80));--fsd:min(250px,calc(92vw/5.60))" aria-label="Люби цветы"><span class="ln"><span style="animation-delay:0.08s">Люби</span></span><span class="ln l2"><span style="animation-delay:0.17s">цветы</span></span></h1>
-<div class="h-g">
-<div class="h-i"><div class="fi"><span class="status" data-status hidden><i></i><span></span></span></div><p class="h-tag fi">Цветы и игрушки ручной работы на проспекте Маршала Жукова</p><p class="h-pl fi2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z'/><circle cx='12' cy='9.5' r='2.5'/></svg><span>Кировский район · проспект Маршала Жукова, 76 к1, 1 этаж</span></p><div class="h-cta fi3"><a class="btn" href="tel:+79219419293"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2'/></svg><span>Позвонить</span></a><a class="btn ghost" href="https://yandex.ru/maps/?rtext=~59.827852%2C30.190233&amp;rtt=auto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M3 11l18-8-8 18-2-8-8-2z'/></svg><span>Маршрут</span></a></div></div>
-<div class="h-c"><div class="arch"><img src="img/p12.jpg" srcset="img/p12-m.jpg 675w, img/p12.jpg 1200w" sizes="(min-width:900px) 34vw, 100vw" alt="Люби цветы: фото из карточки 2ГИС" width="1200" height="1600" fetchpriority="high" decoding="async" style="object-position:50% 18%"></div><div class="h-s"><img src="img/p11.jpg" srcset="img/p11-m.jpg 675w, img/p11.jpg 1200w" sizes="50vw" alt="Люби цветы: фото из карточки 2ГИС" width="1200" height="1600" loading="lazy" decoding="async" style="object-position:50% 18%"></div></div>
-<div class="h-3"><div class="arch"><img src="img/p11.jpg" srcset="img/p11-m.jpg 675w, img/p11.jpg 1200w" sizes="34vw" alt="Люби цветы: фото из карточки 2ГИС" width="1200" height="1600" loading="lazy" decoding="async" style="object-position:50% 18%"></div><div class="seal fi2" role="img" aria-label="Рейтинг 4,9 в 2ГИС, 23 оценки"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><path id="sc" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs><text><textPath href="#sc" textLength="284">23 оценки в 2ГИС · 23 оценки в 2ГИС · </textPath></text></svg><b>4,9</b></div></div>
-</div></div></section>
-<div class="mq-w"><div class="mq " aria-hidden="true"><div class="mq-t"><span>Проспект Маршала Жукова, 76 к1</span><i></i><span>Ежедневно с 10 до 22</span><i></i><span>Сухоцветы</span><i></i><span>Мягкие игрушки</span><i></i><span>Доставка цветов</span><i></i><span>Вход с пандусом</span><i></i><span>Проспект Маршала Жукова, 76 к1</span><i></i><span>Ежедневно с 10 до 22</span><i></i><span>Сухоцветы</span><i></i><span>Мягкие игрушки</span><i></i><span>Доставка цветов</span><i></i><span>Вход с пандусом</span><i></i><span>Проспект Маршала Жукова, 76 к1</span><i></i><span>Ежедневно с 10 до 22</span><i></i><span>Сухоцветы</span><i></i><span>Мягкие игрушки</span><i></i><span>Доставка цветов</span><i></i><span>Вход с пандусом</span><i></i><span>Проспект Маршала Жукова, 76 к1</span><i></i><span>Ежедневно с 10 до 22</span><i></i><span>Сухоцветы</span><i></i><span>Мягкие игрушки</span><i></i><span>Доставка цветов</span><i></i><span>Вход с пандусом</span><i></i></div></div></div>
-<section class="ab" id="about"><div class="wrap ab-g"><figure class="ab-ph rvi"><img src="img/p1.jpg" srcset="img/p1-m.jpg 675w, img/p1.jpg 960w" sizes="(min-width:900px) 40vw, 100vw" alt="Люби цветы: фото из карточки 2ГИС" width="960" height="1280" loading="lazy" decoding="async"></figure><div><p class="ab-big rv">Магазин на первом этаже на проспекте Маршала Жукова, 76 к1, в Кировском районе. Работает каждый день с 10 до 22, в воскресенье до 21, вход с пандусом и автоматической дверью. Здесь цветы и сухоцветы, мягкие игрушки, доставка букетов и праздничное оформление.</p><ol class="of rv d1"><li><small>1</small><span>Букеты и цветы</span></li><li><small>2</small><span>Сухоцветы</span></li><li><small>3</small><span>Мягкие игрушки</span></li><li><small>4</small><span>Праздничное оформление</span></li><li><small>5</small><span>Доставка цветов</span></li></ol></div></div></section>
-<section class="gl" id="gallery"><div class="wrap gl-h"><h2 class="rv">Букеты <em>из лавки</em></h2><p class="rv d1">Наведите на кадр, чтобы раскрыть его, и нажмите, чтобы посмотреть целиком.</p></div><div class="acc rv d1" aria-label="Фотографии букетов"><button class="zm" type="button" data-full="img/p8.jpg" aria-label="Открыть фото"><img src="img/p8.jpg" srcset="img/p8-m.jpg 507w, img/p8.jpg 721w" sizes="(min-width:900px) 30vw, 74vw" alt="Люби цветы: фото из карточки 2ГИС" width="721" height="1280" loading="lazy" decoding="async"></button><button class="zm" type="button" data-full="img/p5.jpg" aria-label="Открыть фото"><img src="img/p5.jpg" srcset="img/p5-m.jpg 675w, img/p5.jpg 1200w" sizes="(min-width:900px) 30vw, 74vw" alt="Люби цветы: фото из карточки 2ГИС" width="1200" height="1600" loading="lazy" decoding="async"></button><button class="zm" type="button" data-full="img/p3.jpg" aria-label="Открыть фото"><img src="img/p3.jpg" srcset="img/p3-m.jpg 675w, img/p3.jpg 960w" sizes="(min-width:900px) 30vw, 74vw" alt="Люби цветы: фото из карточки 2ГИС" width="960" height="1280" loading="lazy" decoding="async"></button><button class="zm" type="button" data-full="img/p10.jpg" aria-label="Открыть фото"><img src="img/p10.jpg" srcset="img/p10-m.jpg 507w, img/p10.jpg 721w" sizes="(min-width:900px) 30vw, 74vw" alt="Люби цветы: фото из карточки 2ГИС" width="721" height="1280" loading="lazy" decoding="async"></button></div></section>
-<section class="or" id="order"><div class="wrap or-g"><div class="or-l"><h2 class="rv">Записка <em>флористу</em></h2><p class="rv d1">Ответьте на пару вопросов, и мы сложим их в короткое сообщение. Ничего не уйдёт, пока вы сами не нажмёте кнопку.</p></div><div class="rv d1"><form class="qz" data-quiz data-intro="Здравствуйте! Хочу заказать букет." data-outro="Подскажите, что можно собрать сейчас?" data-reclabel="" onsubmit="return false" aria-label="Заказ букета">
-<div class="qz-bar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
-<fieldset class="qs on" data-l="Кому"><legend>Кому букет?</legend><div class="opts"><label class="opt"><input type="radio" name="q0" value="Любимому человеку"><span>Любимому человеку</span></label><label class="opt"><input type="radio" name="q0" value="Маме"><span>Маме</span></label><label class="opt"><input type="radio" name="q0" value="Подруге"><span>Подруге</span></label><label class="opt"><input type="radio" name="q0" value="Коллеге"><span>Коллеге</span></label><label class="opt"><input type="radio" name="q0" value="Себе"><span>Себе</span></label></div></fieldset><fieldset class="qs" data-l="Настроение"><legend>Какое настроение?</legend><div class="opts opts-i"><label class="opt opt-i"><input type="radio" name="q1" value="Нежный, розовый"><img src="img/p11.jpg" srcset="img/p11-m.jpg 675w, img/p11.jpg 1200w" sizes="220px" alt="" width="1200" height="1600" loading="lazy" decoding="async" style="object-position:50% 18%"><span>Нежный, розовый</span></label><label class="opt opt-i"><input type="radio" name="q1" value="Сочный, сиреневый"><img src="img/p8.jpg" srcset="img/p8-m.jpg 507w, img/p8.jpg 721w" sizes="220px" alt="" width="721" height="1280" loading="lazy" decoding="async"><span>Сочный, сиреневый</span></label></div></fieldset><fieldset class="qs" data-l="Вид"><legend>В каком виде?</legend><div class="opts"><label class="opt"><input type="radio" name="q2" value="Букет в руки"><span>Букет в руки</span></label><label class="opt"><input type="radio" name="q2" value="Букет в коробке"><span>Букет в коробке</span></label><label class="opt"><input type="radio" name="q2" value="Доверяю флористу"><span>Доверяю флористу</span></label></div></fieldset><fieldset class="qs" data-l="Бюджет"><legend>Сколько хотите потратить?</legend><label class="qz-in"><span>Можно не указывать: флорист подскажет.</span><input type="text" name="q3" placeholder="Ваша сумма" autocomplete="off"></label><button class="qz-next" type="button" data-next>Дальше<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M5 12h14M13 6l6 6-6 6'/></svg></button></fieldset>
-<div class="qs qs-end"><p class="qz-t">Записка готова</p><p class="qz-rec" hidden></p><p class="qz-msg">Здравствуйте! Хочу заказать букет.</p><div class="qz-act"><a class="btn" href="https://wa.me/79219419293?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D0%B1%D1%83%D0%BA%D0%B5%D1%82." target="_blank" rel="noopener" data-qwa><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M4 20l1.3-4A8 8 0 1 1 8 18.7z'/><path d='M9 9c0 3 3 6 6 6l1-2-2-1-1 1c-1-.4-2-1.4-2.4-2.4l1-1-1-2z'/></svg><span>Написать в WhatsApp</span></a><a class="btn ghost" href="tel:+79219419293"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2'/></svg><span>Позвонить</span></a></div></div>
-<div class="qz-nav"><button class="qz-back" type="button" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M19 12H5M11 6l-6 6 6 6'/></svg><span>Назад</span></button><button class="qz-re" type="button" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M4 12a8 8 0 1 0 2.6-5.9L4 8.5M4 4v4.5h4.5'/></svg><span>Заново</span></button></div>
-</form></div></div></section>
-<section class="pr" id="praise"><div class="wrap"><div class="pr-h"><h2 class="rv">За что <em>хвалят</em></h2><div class="pr-s rv d1"><b data-cu="4.9">4,9</b><span>23 оценки<br>в 2ГИС</span></div></div><div class="pr-g"><article class="pr-i rv d0"><div class="pi"><img src="img/p10.jpg" srcset="img/p10-m.jpg 507w, img/p10.jpg 721w" sizes="280px" alt="" width="721" height="1280" loading="lazy" decoding="async"></div><h3>Помогут с выбором</h3><p>Продавцы доброжелательные и подсказывают, что взять; клиенты хвалят и консультанта, и обслуживание.</p></article><article class="pr-i rv d1"><h3>Цветы свежие</h3><p>О свежести пишут сразу в нескольких отзывах: и про букеты, и про хороший выбор.</p></article><article class="pr-i rv d2"><h3>Игрушки в подарок</h3><p>Покупательница отмечает доступные цены и много игрушек ручной работы, которые подойдут в подарок.</p></article></div></div></section>
-<section class="ct" id="contacts"><div class="wrap ct-g"><div><h2 class="rv">Заходите <em>в лавку</em></h2><p class="ct-a rv">проспект Маршала Жукова, 76 к1<small>Санкт-Петербург · Кировский район · 1 этаж</small></p><a class="ct-ph rv" href="tel:+79219419293">+7 921 941-92-93</a><div class="rv"><dl class="hrs"><div data-days="0,1,2,3,4,5"><dt>Пн–Сб</dt><dd>10:00–22:00</dd></div><div data-days="6"><dt>Вс</dt><dd>10:00–21:00</dd></div></dl></div><div class="rv"><div class="soc"><a href="https://wa.me/79219419293" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M4 20l1.3-4A8 8 0 1 1 8 18.7z'/><path d='M9 9c0 3 3 6 6 6l1-2-2-1-1 1c-1-.4-2-1.4-2.4-2.4l1-1-1-2z'/></svg><span>WhatsApp</span></a><a href="https://t.me/+79219419293" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M21 4L3 11l6 2 2 6 3-4 5 4z'/></svg><span>Telegram</span></a><a href="https://vk.com/lubi_cveti" target="_blank" rel="noopener"><span>ВКонтакте</span></a><a href="https://2gis.ru/spb/firm/70000001020409912" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z'/><circle cx='12' cy='9.5' r='2.5'/></svg><span>2ГИС</span></a></div></div></div><div class="ct-m rv d1"><iframe src="https://yandex.ru/map-widget/v1/?ll=30.190233,59.827852&amp;z=16&amp;pt=30.190233,59.827852,pm2rdm" title="Карта: Люби цветы" loading="lazy" allowfullscreen></iframe></div></div></section>
-<section class="fin"><div class="fin-b"><img src="img/p5.jpg" srcset="img/p5-m.jpg 675w, img/p5.jpg 1200w" sizes="100vw" alt="Люби цветы: фото из карточки 2ГИС" width="1200" height="1600" loading="lazy" decoding="async"></div><div class="wrap"><h2 class="rv">Соберём букет<br><em>к вашему поводу</em></h2><div class="h-cta rv d1"><a class="btn" href="https://wa.me/79219419293?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D0%B1%D1%83%D0%BA%D0%B5%D1%82." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M4 20l1.3-4A8 8 0 1 1 8 18.7z'/><path d='M9 9c0 3 3 6 6 6l1-2-2-1-1 1c-1-.4-2-1.4-2.4-2.4l1-1-1-2z'/></svg><span>Написать в WhatsApp</span></a><a class="btn ghost" href="tel:+79219419293"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2'/></svg><span>Позвонить</span></a></div></div></section>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="tl" viewBox="0 0 100 140"><path d="M50 66V138" stroke="#3c7434" stroke-width="5" stroke-linecap="round"/><path fill="#3c7434" d="M50 124C30 114 21 96 23 80c15 8 25 22 27 44zM52 116c16-8 26-22 27-38-14 6-24 18-27 38z"/><path fill="#c4306a" d="M50 72C29 70 17 52 19 22c13 6 23 16 31 28z"/><path fill="#c4306a" d="M50 72c21-2 33-20 31-50-13 6-23 16-31 28z"/><path fill="#e86b9a" d="M50 68C37 58 35 33 50 12c15 21 13 46 0 56z"/></symbol></svg>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+<header class="wrap top">
+<a class="logo" href="#top"><svg aria-hidden="true"><use href="#tl"/></svg>Люби цветы</a>
+<nav aria-label="Разделы"><a href="#polka">Что есть</a><a href="#lyublyu">Собрать заказ</a><a href="#otzyvy">Отзывы</a><a href="#adres">Адрес</a></nav>
+<a class="tel" href="tel:+79219419293">+7 921 941-92-93</a>
+</header>
+
+<main id="top">
+<section class="wrap hero">
+<div>
+<span class="k">цветочный магазин в Кировском районе</span>
+<h1>Люби <span>цветы<svg aria-hidden="true"><use href="#tl"/></svg></span></h1>
+<p class="lead">Свежие цветы и букеты, сухоцветы, мягкие игрушки, шарики и праздничное оформление. Помогут выбрать, покажут несколько вариантов и красиво упакуют.</p>
+<div class="addr"><span class="chip">пр. Маршала Жукова, 76 к1, 1 этаж</span><span class="chip">вход с пандусом</span></div>
+<div class="cta"><a class="btn p" href="tel:+79219419293">Позвонить</a><a class="btn" href="https://yandex.ru/maps/?rtext=~59.827852,30.190233" target="_blank" rel="noopener">Маршрут</a></div>
+<p class="st"><span data-status></span></p>
+</div>
+<div class="hv">
+<svg class="bigt" viewBox="0 0 100 140" aria-hidden="true"><path fill="#fbd9e6" d="M50 72C29 70 17 52 19 22c13 6 23 16 31 28zM50 72c21-2 33-20 31-50-13 6-23 16-31 28zM50 68C37 58 35 33 50 12c15 21 13 46 0 56z"/><path d="M50 66V138" stroke="#d8ebc8" stroke-width="5"/></svg>
+<img src="img/p5.jpg" srcset="img/p5-m.jpg 675w, img/p5.jpg 1200w" sizes="(max-width:760px) calc(100vw - 52px), 460px" width="1200" height="1600" alt="Девушка держит большой букет розовых цветов с крупными листьями" fetchpriority="high">
+<svg class="ring" viewBox="0 0 160 160" aria-hidden="true"><defs><path id="rp" d="M80 80m-62 0a62 62 0 1 1 124 0a62 62 0 1 1-124 0"/></defs><circle cx="80" cy="80" r="78" fill="#e4daf4"/><text font-family="Unbounded,sans-serif" font-size="11.5" font-weight="700" letter-spacing="1.6" fill="#231a2b"><textPath href="#rp">С 10:00 КАЖДЫЙ ДЕНЬ · ПН–СБ ДО 22 · ВС ДО 21 ·</textPath></text></svg>
+<span class="ringc" aria-hidden="true">до 22<small>вс до 21</small></span>
+<a class="rate" href="#otzyvy"><b>4,9</b><small>23 оценки<br>в 2ГИС</small></a>
+</div>
+</section>
+
+<section class="wrap shelf" id="polka">
+<div class="sh" data-r><div><span class="k">что есть в магазине</span><h2>Цветы и всё к празднику</h2></div><p>Нажмите на полку, и в WhatsApp откроется готовый вопрос продавцу.</p></div>
+<div class="bento">
+<a class="t ta" data-r href="https://wa.me/79219419293?text=Здравствуйте!%20Хочу%20букет.%20Что%20есть%20сегодня%3F" target="_blank" rel="noopener"><div class="tx"><h3>Букеты и цветы поштучно</h3><p>Свежие цветы каждый день, соберут букет на праздник или просто так.</p><span class="go" aria-hidden="true">→</span></div><img src="img/p1-m.jpg" width="675" height="900" alt="Розовые тюльпаны крупным планом" loading="lazy"></a>
+<a class="t tb" data-r href="https://wa.me/79219419293?text=Здравствуйте!%20Какие%20есть%20мягкие%20игрушки%3F" target="_blank" rel="noopener"><span class="go" aria-hidden="true">→</span><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="33" cy="30" r="15" fill="#6f48ad"/><circle cx="87" cy="30" r="15" fill="#6f48ad"/><ellipse cx="60" cy="110" rx="34" ry="24" fill="#8a66c4"/><circle cx="60" cy="54" r="33" fill="#8a66c4"/><ellipse cx="60" cy="66" rx="15" ry="11" fill="#e4daf4"/><circle cx="47" cy="49" r="4" fill="#231a2b"/><circle cx="73" cy="49" r="4" fill="#231a2b"/><ellipse cx="60" cy="61" rx="5.5" ry="4" fill="#231a2b"/><path d="M60 104c-8-7-14-4-14 1 0 6 14 12 14 12s14-6 14-12c0-5-6-8-14-1z" fill="#c4306a"/></svg><div><h3>Мягкие игрушки</h3><p>Есть игрушки ручной работы</p></div></a>
+<a class="t tc" data-r href="https://wa.me/79219419293?text=Здравствуйте!%20Нужны%20шарики%20и%20оформление%20к%20празднику." target="_blank" rel="noopener"><span class="go" aria-hidden="true">→</span><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M38 64c4 20 18 30 22 54M82 56c-4 24-18 36-22 62M60 74v44" fill="none" stroke="#231a2b" stroke-width="1.5"/><ellipse cx="38" cy="38" rx="20" ry="25" fill="#c4306a"/><ellipse cx="82" cy="32" rx="20" ry="25" fill="#6f48ad"/><ellipse cx="60" cy="50" rx="19" ry="24" fill="#f6ead4"/><path d="M34 63h8l-4 5zM78 57h8l-4 5zM56 74h8l-4 5z" fill="#231a2b"/><ellipse cx="31" cy="28" rx="5" ry="8" fill="#fff" opacity=".4"/></svg><div><h3>Шарики и оформление</h3><p>Надуют шарики, подберут мелочи к празднику</p></div></a>
+<a class="t td" data-r href="https://wa.me/79219419293?text=Здравствуйте!%20Какие%20сейчас%20есть%20сухоцветы%3F" target="_blank" rel="noopener"><span class="go" aria-hidden="true">→</span><svg viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="#8a6a3c" stroke-width="2" stroke-linecap="round"><path d="M60 118C58 90 50 60 38 30M60 118c2-30 8-58 22-86M60 118V24"/></g><g fill="#c49a5a"><ellipse cx="38" cy="24" rx="7" ry="13" transform="rotate(-20 38 24)"/><ellipse cx="84" cy="26" rx="7" ry="13" transform="rotate(22 84 26)"/><ellipse cx="60" cy="16" rx="7" ry="13"/></g><g fill="#e0c79a"><circle cx="46" cy="60" r="4"/><circle cx="52" cy="54" r="3"/><circle cx="74" cy="58" r="4"/><circle cx="68" cy="66" r="3"/></g></svg><div><h3>Сухоцветы</h3><p>Для букетов, которые стоят долго</p></div></a>
+<a class="t te" data-r href="https://wa.me/79219419293?text=Здравствуйте!%20Хочу%20заказать%20букет%20с%20доставкой.%20Подскажите%20условия%3F" target="_blank" rel="noopener"><span class="go" aria-hidden="true">→</span><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M16 104c20-6 26-30 46-30s26 14 40-10" fill="none" stroke="#e4daf4" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round"/><circle cx="16" cy="104" r="7" fill="#d8ebc8"/><path d="M92 14c-12 0-21 9-21 21 0 16 21 37 21 37s21-21 21-37c0-12-9-21-21-21z" fill="#c4306a"/><circle cx="92" cy="35" r="8" fill="#fff"/></svg><div><h3>Доставка цветов</h3><p>Условия подскажут по телефону</p></div></a>
+</div>
+<p class="pay">Оплата картой, наличными или переводом с карты.</p>
+</section>
+
+<section class="wrap" id="lyublyu">
+<div class="love" data-r>
+<div>
+<span class="k">соберите заказ одной фразой</span>
+<h2>Кого любите?</h2>
+<p class="sent" id="sent">Люблю <button type="button" class="slot s1" data-s="0" aria-controls="opts">маму</button>. Соберите <button type="button" class="slot s2" data-s="1" aria-controls="opts">нежный</button> букет <button type="button" class="slot s3" data-s="2" aria-controls="opts">без дополнений</button>, <button type="button" class="slot" data-s="3" aria-controls="opts">заберу в магазине</button> <button type="button" class="slot" data-s="4" aria-controls="opts">сегодня</button>.</p>
+<div class="panel"><p id="plab">Шаг 1 из 5 · Кого любите</p><div class="opts" id="opts" role="group" aria-labelledby="plab"></div></div>
+</div>
+<div class="side">
+<div class="pic"><img id="lp" src="img/p10.jpg" srcset="img/p10-m.jpg 507w, img/p10.jpg 721w" sizes="(max-width:1020px) calc(100vw - 80px), 400px" width="721" height="1280" alt="Нежный букет в персиковых и зелёных тонах в руках" loading="lazy"><span class="who" id="lw">для мамы</span></div>
+<p class="bub" id="lm" aria-live="polite">Здравствуйте! Хочу букет для мамы: нежный, без дополнений. Заберу в магазине сегодня. Покажете пару вариантов?</p>
+<a class="btn p" id="lwa" href="https://wa.me/79219419293" target="_blank" rel="noopener">Отправить в WhatsApp</a>
+<small>Фото для настроения, из карточки магазина в 2ГИС. Что есть сегодня, подскажет продавец.</small>
+</div>
+</div>
+</section>
+
+<section class="wrap rev" id="otzyvy">
+<div class="score" data-r>
+<b>4,9</b>
+<div><p>из 5 по 23 оценкам в 2ГИС</p><a href="https://2gis.ru/spb/firm/70000001020409912" target="_blank" rel="noopener">Все отзывы в 2ГИС →</a></div>
+<img src="img/p8-m.jpg" width="507" height="900" alt="Девушка с пастельным букетом у серой стены" loading="lazy">
+</div>
+<div>
+<span class="k" data-r>пересказ отзывов</span>
+<h2 data-r>За что хвалят</h2>
+<div class="msgs">
+<article class="m" data-r><h3>Помогут выбрать</h3><p>Продавцов хвалят почти в каждом отзыве: доброжелательные и терпеливые, подскажут, покажут несколько вариантов и красиво упакуют.</p></article>
+<article class="m" data-r><h3>Цветы всегда свежие</h3><p>О свежести пишут постоянно. Кто-то не первый год берёт здесь и букеты, и цветы поштучно, кто-то покупает цветы для школы.</p></article>
+<article class="m" data-r><h3>Выручат со срочным</h3><p>Готовы взяться за нестандартный заказ, даже если времени совсем мало.</p></article>
+</div>
+<p class="also" data-r>Ещё отмечают приятные цены и много мелочей, которые пригодятся на празднике.</p>
+</div>
+</section>
+
+<section class="wrap loc" id="adres">
+<div class="card" data-r>
+<span class="k">как найти</span>
+<h2>Маршала Жукова, 76 к1</h2>
+<p>Проспект Маршала Жукова, 76 к1, 1 этаж · Кировский район</p>
+<dl class="hrs" style="margin-top:18px"><dt>Пн–Сб</dt><dd>10:00–22:00</dd><dt>Вс</dt><dd>10:00–21:00</dd></dl>
+<span data-status></span>
+<div class="acc"><svg viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="17" fill="#3c7434"/><circle cx="17" cy="8.5" r="2.6" fill="#fff"/><path d="M15 12.5v7h6l3 6M15 16h6M13 15.5a6.5 6.5 0 1 0 7 9" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Вход без барьеров: пандус и автоматическая дверь</div>
+<ul class="ct">
+<li><a href="tel:+79219419293">+7 921 941-92-93 <span>позвонить</span></a></li>
+<li><a href="tel:+79219819314">+7 921 981-93-14 <span>второй номер</span></a></li>
+<li><a href="https://wa.me/79219419293?text=Здравствуйте!" target="_blank" rel="noopener">WhatsApp <span>написать</span></a></li>
+<li><a href="https://t.me/+79219419293" target="_blank" rel="noopener">Telegram <span>написать</span></a></li>
+<li><a href="https://vk.com/lubi_cveti" target="_blank" rel="noopener">ВКонтакте <span>группа магазина</span></a></li>
+</ul>
+<div class="cta"><a class="btn p" href="https://yandex.ru/maps/?rtext=~59.827852,30.190233" target="_blank" rel="noopener">Построить маршрут</a></div>
+</div>
+<div class="map" data-r><iframe loading="lazy" title="«Люби цветы» на карте: проспект Маршала Жукова, 76 к1" src="https://yandex.ru/map-widget/v1/?ll=30.190233,59.827852&amp;z=16&amp;pt=30.190233,59.827852,pm2rdm"></iframe></div>
+</section>
+
+<section class="wrap">
+<div class="fin" data-r>
+<svg viewBox="0 0 100 140" aria-hidden="true"><use href="#tl"/></svg>
+<div><h2>Заходите за цветами</h2><p>Каждый день с 10:00: с понедельника по субботу до 22, в воскресенье до 21. Позвоните или напишите, букет соберут к вашему приходу.</p></div>
+<div class="cta"><a class="btn p" href="tel:+79219419293">Позвонить</a><a class="btn" href="https://wa.me/79219419293?text=Здравствуйте!%20Хочу%20заказать%20букет." target="_blank" rel="noopener">Написать в WhatsApp</a></div>
+</div>
+</section>
 </main>
-<footer class="ft"><div class="wrap"><span>Люби цветы · Цветочная мастерская · <a href="https://2gis.ru/spb/firm/70000001020409912" target="_blank" rel="noopener">Карточка в 2ГИС</a></span><span>Демо-концепт сайта для «Люби цветы». Данные и фото из открытой карточки 2ГИС на 03.11.2026. Страница не индексируется.</span></div></footer>
-<dialog class="lb" id="lb" aria-label="Просмотр фото"><button type="button" class="lb-x" aria-label="Закрыть"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M6 6l12 12M18 6L6 18'/></svg></button><button type="button" class="lb-p" aria-label="Предыдущее фото"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M19 12H5M11 6l-6 6 6 6'/></svg></button><img id="lbImg" alt=""><button type="button" class="lb-n" aria-label="Следующее фото"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M5 12h14M13 6l6 6-6 6'/></svg></button><span class="lb-c"></span></dialog>
-<a class="fab" href="tel:+79219419293" aria-label="Позвонить"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2'/></svg><span>Позвонить</span></a>
-<script>window.W8={"hours":{"mon":[["10:00","22:00"]],"tue":[["10:00","22:00"]],"wed":[["10:00","22:00"]],"thu":[["10:00","22:00"]],"fri":[["10:00","22:00"]],"sat":[["10:00","22:00"]],"sun":[["10:00","21:00"]]},"is247":false,"wa":"79219419293","cases":{}};</script>
-<script>(function(){
-var D=document,$=function(s,r){return(r||D).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||D).querySelectorAll(s))};
-var W=window.W8||{},RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
-/* появление */
-var rv=$$('.rv,.rvi');
-if('IntersectionObserver' in window&&!RM){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);var c=e.target.matches('[data-cu]')?[e.target]:$$('[data-cu]',e.target);c.forEach(cu)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});rv.forEach(function(el){io.observe(el)})}else rv.forEach(function(el){el.classList.add('in')});
-function cu(el){if(el._cu)return;el._cu=1;var to=parseFloat(el.getAttribute('data-cu')),dec=(el.getAttribute('data-cu').split('.')[1]||'').length,t0=null;function step(t){if(!t0)t0=t;var k=Math.min(1,(t-t0)/1100),v=to*(1-Math.pow(1-k,3));el.textContent=v.toFixed(dec).replace('.',',');if(k<1)requestAnimationFrame(step)}if(!RM)requestAnimationFrame(step)}
-/* шапка и кнопка звонка */
-var hd=$('.hd'),fab=$('.fab');
-function onS(){var y=window.pageYOffset;if(hd)hd.classList.toggle('sc',y>30);if(fab)fab.classList.toggle('show',y>Math.min(420,innerHeight*.6))}
-addEventListener('scroll',onS,{passive:true});onS();
-/* открыто сейчас */
-var sts=$$('[data-status]');
-var now=new Date(new Date().toLocaleString('en-US',{timeZone:'Europe/Moscow'})),dow=(now.getDay()+6)%7;
-if(sts.length&&(W.is247||W.hours)){
-var DK=['mon','tue','wed','thu','fri','sat','sun'],DN=['в понедельник','во вторник','в среду','в четверг','в пятницу','в субботу','в воскресенье'];
-var cur=dow*1440+now.getHours()*60+now.getMinutes();
-var mm=function(t){var p=t.split(':');return(+p[0])*60+(+p[1])};
-var fmt=function(m){m=((m%1440)+1440)%1440;return('0'+Math.floor(m/60)).slice(-2)+':'+('0'+m%60).slice(-2)};
-var iv=[],open=false,txt='';
-if(W.hours)DK.forEach(function(k,i){(W.hours[k]||[]).forEach(function(r){var a=i*1440+mm(r[0]),b=i*1440+mm(r[1]);if(b<=a)b+=1440;iv.push([a,b])})});
-if(W.is247){open=true;txt='Открыто круглосуточно'}
-else if(iv.length){
-iv.forEach(function(r){[0,10080].forEach(function(o){var c=cur+o;if(!open&&c>=r[0]&&c<r[1]){open=true;txt='Открыто сейчас · до '+fmt(r[1])}})});
-if(!open){var best=1e9,bs=0;iv.forEach(function(r){var d=(r[0]-cur+10080)%10080;if(d<best){best=d;bs=r[0]}});
-var sd=Math.floor(bs/1440)%7,when=(sd===dow&&best<1440)?'сегодня':(sd===(dow+1)%7&&best<2880)?'завтра':DN[sd];
-txt='Сейчас закрыто · откроемся '+when+' в '+fmt(bs)}}
-if(txt)sts.forEach(function(s){s.hidden=false;s.classList.toggle('closed',!open);s.querySelector('span').textContent=txt})}
-$$('.hrs [data-days]').forEach(function(r){if(r.getAttribute('data-days').split(',').indexOf(String(dow))>=0)r.classList.add('today')});
-$$('[data-clock]').forEach(function(c){c.textContent=('0'+now.getHours()).slice(-2)+':'+('0'+now.getMinutes()).slice(-2)});
-/* лёгкий параллакс */
-var px=$$('[data-px]');
-if(px.length&&!RM&&innerWidth>=900){var tk=false,pf=function(){px.forEach(function(im){var r=im.parentNode.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;var p=(r.top+r.height/2-innerHeight/2)*-.06;p=Math.max(-46,Math.min(46,p));im.style.transform='translate3d(0,'+p.toFixed(1)+'px,0) scale(1.12)'});tk=false};addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(pf)}},{passive:true});pf()}
-/* квиз */
-$$('[data-quiz]').forEach(function(q){
-var st=$$('.qs',q),bars=$$('.qz-bar i',q),cu=0,end=st.length-1,bk=$('.qz-back',q),re=$('.qz-re',q),wa=$('[data-qwa]',q),rec=$('.qz-rec',q);
-var fin=function(){var lines=[q.getAttribute('data-intro')],recs=[],nots=[];
-st.forEach(function(f){var l=f.getAttribute('data-l');if(!l)return;var c=$('input[type=radio]:checked',f),t=$('input[type=text]',f),v=c?c.value:(t?t.value.trim():'');if(c){if(c.getAttribute('data-rec'))recs=recs.concat(c.getAttribute('data-rec').split('|'));if(c.getAttribute('data-not'))nots=nots.concat(c.getAttribute('data-not').split('|'))}if(v)lines.push(l+': '+v)});
-recs=recs.filter(function(r,i){return recs.indexOf(r)===i&&nots.indexOf(r)<0});
-if(rec){rec.hidden=!recs.length;rec.innerHTML='';if(recs.length){var b=D.createElement('small');b.textContent=q.getAttribute('data-reclabel');rec.appendChild(b);var s=D.createElement('strong');s.textContent=recs.join(', ');rec.appendChild(s);lines.splice(1,0,'Интересует: '+recs.join(', '))}}
-var o=q.getAttribute('data-outro');if(o)lines.push(o);var m=lines.join('\n');$('.qz-msg',q).textContent=m;if(wa&&W.wa)wa.href='https://wa.me/'+W.wa+'?text='+encodeURIComponent(m)};
-var go=function(n){cu=n;st.forEach(function(s,i){s.classList.toggle('on',i===n)});bars.forEach(function(b,i){b.classList.toggle('on',i<=n)});bk.hidden=n===0;re.hidden=n!==end;if(n===end)fin()};
-q.addEventListener('change',function(e){var t=e.target;if(t.type!=='radio')return;var h=t.getAttribute('data-hide');$$('.opt[data-k]',q).forEach(function(o){var kk=o.getAttribute('data-k');if(h!==null||t.closest('.qs').querySelector('[data-hide]')){o.hidden=!!h&&h.split('|').indexOf(kk)>=0}});setTimeout(function(){go(Math.min(cu+1,end))},RM?0:220)});
-$$('[data-next]',q).forEach(function(b){b.addEventListener('click',function(){go(Math.min(cu+1,end))})});
-q.addEventListener('keydown',function(e){if(e.key==='Enter'&&e.target.type==='text'){e.preventDefault();go(Math.min(cu+1,end))}});
-bk.addEventListener('click',function(){go(Math.max(cu-1,0))});
-re.addEventListener('click',function(){q.reset();$$('.opt[hidden]',q).forEach(function(o){o.hidden=false});go(0)});
-go(0)});
-/* карта деталей: data-map="multi" (несколько) или "one" (одна) */
-$$('[data-map]').forEach(function(m){
-var multi=m.getAttribute('data-map')==='multi',sel=[],parts=$$('[data-part]',m),list=$('.mp-list',m),msg=$('.mp-msg',m),wa=$('.mp-wa',m),cs=$('.mp-case',m),rd=$('.mp-read',m),inp=$('.mp-in',m),cases=window.W8&&W.cases||{},rdDef=rd?rd.textContent:'';
-var upd=function(){parts.forEach(function(p){var on=sel.indexOf(p.getAttribute('data-part'))>=0;p.classList.toggle('on',on);p.setAttribute('aria-pressed',on)});
-if(list){list.innerHTML='';sel.forEach(function(n){var c=D.createElement('button');c.type='button';c.className='mp-chip';c.textContent=n;c.setAttribute('aria-label','Убрать: '+n);c.addEventListener('click',function(){sel.splice(sel.indexOf(n),1);upd()});list.appendChild(c)});m.classList.toggle('has',!!sel.length)}
-if(cs){var t=sel[0]&&cases[sel[0]];cs.textContent=t||'';cs.hidden=!t}
-var dev=inp&&inp.value.trim(),txt=m.getAttribute('data-intro')+(dev?' '+m.getAttribute('data-dev')+dev+'.':'')+(sel.length?'\n'+m.getAttribute('data-sel')+sel.join(', ')+'.':'')+'\n'+m.getAttribute('data-outro');
-if(msg)msg.textContent=txt;if(wa&&W.wa)wa.href='https://wa.me/'+W.wa+'?text='+encodeURIComponent(txt)};
-parts.forEach(function(p){var act=function(){var n=p.getAttribute('data-part'),i=sel.indexOf(n);if(multi){if(i>=0)sel.splice(i,1);else sel.push(n)}else sel=i>=0?[]:[n];upd()};
-p.addEventListener('click',act);p.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();act()}});
-p.addEventListener('mouseenter',function(){if(rd)rd.textContent=p.getAttribute('data-part')});p.addEventListener('mouseleave',function(){if(rd)rd.textContent=rdDef})});
-if(inp)inp.addEventListener('input',upd);upd()});
-/* до/после */
-$$('[data-ba]').forEach(function(b){var r=$('.ba-r',b),dr=false,tt=false;
-var set=function(v){b.style.setProperty('--p',v+'%');r.value=v};
-var mv=function(e){var x=b.getBoundingClientRect();set(Math.max(0,Math.min(100,(e.clientX-x.left)/x.width*100)))};
-b._set=set;b.addEventListener('pointerdown',function(e){dr=true;tt=true;try{b.setPointerCapture(e.pointerId)}catch(_){ }mv(e)});
-b.addEventListener('pointermove',function(e){if(dr)mv(e)});
-['pointerup','pointercancel'].forEach(function(n){b.addEventListener(n,function(){dr=false})});
-r.addEventListener('input',function(){tt=true;set(r.value)});
-if(b.hasAttribute('data-sweep')&&!RM){var seq=[[50,0],[74,1000],[30,1500],[58,1100]],i=0;var run=function(){if(tt||i>=seq.length)return;var from=parseFloat(b.style.getPropertyValue('--p')),to=seq[i][0],dur=seq[i][1],t0=null;i++;if(!dur){run();return}var st=function(t){if(tt)return;if(!t0)t0=t;var k=Math.min(1,(t-t0)/dur),e=k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;set(from+(to-from)*e);if(k<1)requestAnimationFrame(st);else run()};requestAnimationFrame(st)};setTimeout(run,1100)}});
-$$('[data-ba-rail]').forEach(function(rl){var ma=$(rl.getAttribute('data-ba-rail')),cn=$('.ba-n');$$('button',rl).forEach(function(b,i){b.addEventListener('click',function(){$$('button',rl).forEach(function(x){x.classList.remove('on')});b.classList.add('on');var A=$('.ba-a img',ma),B=$('.ba-b',ma);A.removeAttribute('srcset');B.removeAttribute('srcset');A.src=b.getAttribute('data-a');B.src=b.getAttribute('data-b');ma._set(50);if(cn)cn.textContent=('0'+(i+1)).slice(-2)})})});
-/* лента: тянуть мышью */
-$$('[data-drag]').forEach(function(s){var down=false,sx=0,sl=0,mv=0;s.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;down=true;sx=e.clientX;sl=s.scrollLeft;mv=0});addEventListener('pointermove',function(e){if(!down)return;var d=e.clientX-sx;mv=Math.abs(d);s.scrollLeft=sl-d;if(mv>4)s.classList.add('dragging')});addEventListener('pointerup',function(){down=false;setTimeout(function(){s.classList.remove('dragging')},0)});s.addEventListener('click',function(e){if(mv>6){e.stopPropagation();e.preventDefault()}},true)});
-/* список с предпросмотром */
-$$('[data-peek]').forEach(function(w){var it=$$('[data-i]',w),im=$$('[data-pi]',w);it.forEach(function(a){a.addEventListener('mouseenter',function(){var k=a.getAttribute('data-i');im.forEach(function(x){x.classList.toggle('on',x.getAttribute('data-pi')===k)});it.forEach(function(x){x.classList.toggle('on',x===a)})})})});
-/* выбор из списка подставляет значение в квиз */
-$$('[data-pick]').forEach(function(a){a.addEventListener('click',function(){var v=a.getAttribute('data-pick'),i=$('[data-quiz] input[value="'+v+'"]');if(i){i.checked=true}})});
-/* лайтбокс */
-var lb=$('#lb'),zs=$$('.zm');
-if(lb&&zs.length){var li=$('#lbImg'),lc=$('.lb-c',lb),k=0;var show=function(n){k=(n+zs.length)%zs.length;li.src=zs[k].getAttribute('data-full');lc.textContent=(k+1)+' / '+zs.length};
-zs.forEach(function(z,i){z.addEventListener('click',function(){show(i);if(lb.showModal)lb.showModal()})});
-$('.lb-x',lb).addEventListener('click',function(){lb.close()});$('.lb-p',lb).addEventListener('click',function(){show(k-1)});$('.lb-n',lb).addEventListener('click',function(){show(k+1)});
-lb.addEventListener('click',function(e){if(e.target===lb)lb.close()});
-lb.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')show(k-1);if(e.key==='ArrowRight')show(k+1)});
-var tx0=null;lb.addEventListener('touchstart',function(e){tx0=e.touches[0].clientX},{passive:true});lb.addEventListener('touchend',function(e){if(tx0==null)return;var d=e.changedTouches[0].clientX-tx0;if(Math.abs(d)>50)show(k+(d<0?1:-1));tx0=null},{passive:true})}
-})();</script>
-</body>
+<footer><div class="wrap"><span>«Люби цветы» · проспект Маршала Жукова, 76 к1</span><span>Демо-концепт по данным 2ГИС, не официальный сайт</span></div></footer>
+<a class="fab" href="tel:+79219419293">Позвонить</a>
+<script>
+(function(){
+var S=[['Кого любите',[['маму','мамы'],['любимую','любимой'],['любимого','любимого'],['подругу','подруги'],['учителя','учителя'],['коллегу','коллеги'],['себя','себя']]],
+['Какой букет',[['нежный'],['яркий'],['белый'],['сиреневый']]],
+['Что добавить',[['без дополнений'],['с мягкой игрушкой'],['с шариками']]],
+['Как получить',[['заберу в магазине'],['нужна доставка']]],
+['Когда',[['сегодня'],['завтра'],['к определённой дате']]]],
+PH=[['p10',507,721,'Нежный букет в персиковых и зелёных тонах в руках'],['p11',675,1200,'Яркий букет с малиновыми и белыми цветами в руках'],['p12',675,1200,'Белые цветы в плетёной корзине'],['p3',675,960,'Сиреневые тюльпаны крупным планом']],
+v=[0,0,0,0,0],a=0,$=function(i){return document.getElementById(i)},sl=document.querySelectorAll('.slot'),img=$('lp');
+function w(i){return S[i][1][v[i]][0]}
+function draw(){
+sl.forEach(function(b,i){b.textContent=w(i);b.classList.toggle('on',i==a);b.setAttribute('aria-expanded',i==a)});
+$('plab').textContent='Шаг '+(a+1)+' из 5 · '+S[a][0];
+$('opts').innerHTML=S[a][1].map(function(o,j){return '<button type="button" data-o="'+j+'" aria-pressed="'+(j==v[a])+'">'+o[0]+'</button>'}).join('');
+var p=PH[v[1]];if(img.dataset.p!=p[0]){img.dataset.p=p[0];img.srcset='img/'+p[0]+'-m.jpg '+p[1]+'w, img/'+p[0]+'.jpg '+p[2]+'w';img.src='img/'+p[0]+'.jpg';img.alt=p[3];img.classList.remove('pop');void img.offsetWidth;img.classList.add('pop')}
+var g=S[0][1][v[0]][1];$('lw').textContent='для '+g;
+var t='Здравствуйте! Хочу букет для '+g+': '+w(1)+', '+w(2)+'. '+w(3).charAt(0).toUpperCase()+w(3).slice(1)+' '+w(4)+'. Покажете пару вариантов?';
+$('lm').textContent=t;$('lwa').href='https://wa.me/79219419293?text='+encodeURIComponent(t)}
+document.addEventListener('click',function(e){var s=e.target.closest('.slot'),o=e.target.closest('[data-o]');
+if(s){a=+s.dataset.s;draw()}else if(o){v[a]=+o.dataset.o;if(a<4)a++;draw()}});
+img.dataset.p='p10';PH.forEach(function(p){new Image().src='img/'+p[0]+'-m.jpg'});draw();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["10:00","22:00"]],"tue":[["10:00","22:00"]],"wed":[["10:00","22:00"]],"thu":[["10:00","22:00"]],"fri":[["10:00","22:00"]],"sat":[["10:00","22:00"]],"sun":[["10:00","21:00"]]},"is247":false}</script>
+<script src="app.js"></script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
 </html>
