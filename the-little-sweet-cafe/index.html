@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>The Little Sweet Café · Crêpes & Coffee on Hoyt Street, Brooklyn</title><meta property="og:type" content="website"><meta property="og:title" content="The Little Sweet Café · Crêpes &amp; Coffee on Hoyt Street, Brooklyn"><meta property="og:description" content="A small, quiet café behind the ivy at 77B Hoyt St, Brooklyn: sweet and savory crêpes, sandwiches, shakshuka, pastries and coffee."><meta property="og:image" content="https://pikold.github.io/demo-sites/the-little-sweet-cafe/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="A small, quiet café behind the ivy at 77B Hoyt St, Brooklyn: sweet and savory crêpes, sandwiches, shakshuka, pastries and coffee.">
+<link rel="stylesheet" href="../_fonts/libre-caslon-text.css">
+<link rel="stylesheet" href="../_fonts/fraunces.css">
+<style>
+:root{--maroon:#5E1F2B;--maroon-d:#45151f;--cream:#F3E6CC;--ivy:#2F4A2A;--amber:#E3A33A;--slate:#5C6670;--paper:#FBF6EC;--ink:#2a1a1d;--band:52px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"Libre Caslon Text",Georgia,serif;font-size:1.0625rem;line-height:1.65;color:var(--ink);background:var(--paper)}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:2px}
+.it{font-family:"Fraunces",Georgia,serif;font-style:italic;font-weight:400}
+.demo{background:#1d1416;color:#d9cdb6;font-size:.78rem;line-height:1.4;padding:.5rem 1rem;text-align:center;letter-spacing:.01em}
+/* ivy margin band */
+.ivy{display:none}
+@media (min-width:1100px){
+  body{padding-right:var(--band)}
+  .ivy{display:block;position:fixed;top:0;right:0;bottom:0;width:var(--band);z-index:5;background-color:var(--ivy);
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='150' viewBox='0 0 52 150'%3E%3Cpath d='M26 0C38 38 14 76 26 112C31 128 26 150 26 150' fill='none' stroke='%23587a4c' stroke-width='1.6'/%3E%3Cg fill='%23436439'%3E%3Cpath transform='translate(31 28) rotate(70)' d='M0 0C-6-2-11-8-9-15C-5-12-2-15 0-21C2-15 5-12 9-15C11-8 6-2 0 0Z'/%3E%3Cpath transform='translate(19 70) rotate(-75)' d='M0 0C-6-2-11-8-9-15C-5-12-2-15 0-21C2-15 5-12 9-15C11-8 6-2 0 0Z'/%3E%3Cpath transform='translate(29 118) rotate(60) scale(.75)' d='M0 0C-6-2-11-8-9-15C-5-12-2-15 0-21C2-15 5-12 9-15C11-8 6-2 0 0Z'/%3E%3C/g%3E%3C/svg%3E");
+    box-shadow:inset 1px 0 0 rgba(243,230,204,.18)}
+  .ivy::after{content:"77B Hoyt St";position:absolute;left:50%;bottom:28px;transform:translateX(-50%) rotate(180deg);writing-mode:vertical-rl;font-family:"Fraunces",serif;font-style:italic;color:var(--cream);font-size:.85rem;letter-spacing:.08em;background:var(--ivy);padding:10px 4px}
+}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:48px;padding:.7rem 1.3rem;border-radius:3px;font:700 .95rem/1.1 "Libre Caslon Text",Georgia,serif;letter-spacing:.02em;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .2s,background-color .2s,color .2s,border-color .2s}
+.btn:active{transform:translateY(1px)}
+.btn svg{width:18px;height:18px;flex:none}
+.b-amber{background:var(--amber);color:#2b1a08}
+.b-amber:hover{background:#efb752}
+.b-cream{border-color:rgba(243,230,204,.65);color:var(--cream)}
+.b-cream:hover{background:var(--cream);color:var(--maroon)}
+.b-ink{border-color:var(--maroon);color:var(--maroon)}
+.b-ink:hover{background:var(--maroon);color:var(--cream)}
+/* hero */
+.hero{position:relative;overflow:hidden;background:#140f0c;color:var(--cream);isolation:isolate}
+.hero-bg{position:absolute;inset:-40px;z-index:-2}
+.hero-bg img{width:100%;height:100%;object-fit:cover;filter:blur(22px) brightness(.42) saturate(1.15)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(40% 50% at 70% 40%,rgba(227,163,58,.18),transparent 70%),linear-gradient(180deg,rgba(20,15,12,.15),rgba(20,15,12,.55))}
+.rain{position:absolute;inset:-200px 0 0;z-index:-1;opacity:.13;pointer-events:none;
+  background-image:repeating-linear-gradient(103deg,transparent 0 46px,rgba(243,230,204,.9) 46px 47px,transparent 47px 93px),repeating-linear-gradient(101deg,transparent 0 71px,rgba(243,230,204,.6) 71px 72px,transparent 72px 140px);
+  background-size:100% 220px,100% 300px;animation:rain 1.4s linear infinite}
+@keyframes rain{to{background-position:-44px 220px,-60px 300px}}
+.hero-in{max-width:1240px;margin:0 auto;padding:clamp(28px,4.5vw,64px) 20px clamp(36px,5vw,72px);display:grid;grid-template-columns:minmax(0,1fr);gap:28px;align-items:center}
+@media (min-width:900px){.hero-in{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(32px,5vw,80px);min-height:min(calc(100vh - 34px),760px)}}
+.sign{position:relative;background:var(--maroon);padding:clamp(40px,min(4.5vw,6vh),60px) clamp(28px,4.5vw,64px);box-shadow:0 30px 60px -20px rgba(0,0,0,.6),inset 0 0 0 10px var(--maroon),inset 0 0 0 11px rgba(243,230,204,.55),inset 0 0 0 15px var(--maroon),inset 0 0 0 16px rgba(243,230,204,.3);text-align:center}
+.sign::after{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(255,255,255,.06),transparent 40%,rgba(0,0,0,.18));pointer-events:none}
+.fl{position:absolute;width:clamp(54px,7vw,84px);height:clamp(54px,7vw,84px);color:var(--cream);opacity:.92}
+.fl.tl{top:16px;left:16px}.fl.tr{top:16px;right:16px;transform:scaleX(-1)}.fl.bl{bottom:16px;left:16px;transform:scaleY(-1)}.fl.br{bottom:16px;right:16px;transform:scale(-1)}
+.kick{font-size:clamp(.95rem,.85rem + .3vw,1.1rem);color:#e6cfa8;letter-spacing:.04em}
+h1{font-weight:400;font-size:clamp(2.5rem,min(1.2rem + 4.2vw,9.5vh),4.9rem);line-height:1.04;letter-spacing:.01em;margin:.3em 0 .35em;color:var(--cream)}
+h1 span{display:block}
+.orn{display:block;width:120px;height:14px;margin:0 auto 18px;color:#e6cfa8}
+.sign p.what{max-width:30ch;margin:0 auto;font-size:clamp(1rem,.92rem + .3vw,1.15rem);color:#f0e2c6}
+.below{margin-top:26px;display:flex;flex-direction:column;gap:16px}
+.addr{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;align-items:center;font-size:.98rem}
+.status{display:inline-flex;align-items:center;gap:.5rem;font-family:"Fraunces",serif;font-style:italic;color:#e9d9bb}
+.status i{width:9px;height:9px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 4px rgba(227,163,58,.22)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.frame{position:relative;justify-self:center;width:min(100%,440px,calc((100vh - 150px)*.8))}.frame picture{display:block}
+.frame img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:30% 40%;border:1px solid rgba(243,230,204,.35);outline:1px solid rgba(243,230,204,.18);outline-offset:8px}
+.frame figcaption{margin-top:18px;font-size:.88rem;color:#cbbd9f;text-align:right}
+@media (max-width:899px){.frame{width:min(100%,520px)}.frame img{aspect-ratio:1/1}}
+/* main column */
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+.menu-zone{padding:clamp(56px,8vw,112px) 0;display:grid;grid-template-columns:minmax(0,1fr);gap:40px}
+@media (min-width:1100px){.menu-zone{grid-template-columns:minmax(0,720px) minmax(0,1fr);gap:64px;align-items:start}}
+.card{position:relative;background:#fffaf0;border:1px solid var(--maroon);outline:1px solid var(--maroon);outline-offset:-7px;padding:clamp(34px,5vw,60px) clamp(22px,5vw,58px)}
+.card::before{content:"";position:absolute;inset:-1px;box-shadow:0 24px 48px -30px rgba(70,30,30,.35);pointer-events:none}
+.label{font-family:"Fraunces",serif;font-style:italic;color:var(--slate);font-size:.95rem;letter-spacing:.02em}
+h2{font-weight:400;font-size:clamp(1.9rem,1.2rem + 2.1vw,3rem);line-height:1.1;color:var(--maroon);margin:.15em 0 .45em}
+h3{font-weight:700;font-size:1.05rem;letter-spacing:.14em;text-transform:uppercase;color:var(--maroon)}
+.toggle{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;margin:28px 0 8px;border-top:1px solid var(--slate);border-bottom:1px solid var(--slate);padding:6px 0}
+.toggle button{background:none;border:0;min-height:56px;font:400 clamp(1.3rem,1rem + 1vw,1.75rem)/1 "Libre Caslon Text",serif;color:var(--slate);cursor:pointer;border-radius:3px;transition:color .2s,background-color .2s}
+.toggle button[aria-pressed=true]{color:var(--maroon);background:rgba(227,163,58,.14)}
+.toggle button[aria-pressed=true]::after{content:"";display:block;width:28px;height:2px;background:var(--amber);margin:8px auto 0}
+.toggle button:hover{color:var(--maroon)}
+.toggle .bar{width:1px;height:38px;background:var(--slate);margin:0 10px}
+.hint{text-align:center;font-size:.9rem;color:var(--slate);margin-bottom:22px}
+.items{list-style:none;display:grid;grid-template-columns:minmax(0,1fr);gap:20px 40px;transition:opacity .25s}
+@media (min-width:640px){.items{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.items.fade{opacity:0}
+.dot li,.items li{position:relative;padding-left:22px}
+.dot li::before,.items li::before{content:"";position:absolute;left:2px;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--amber)}
+.items b{display:block;font-weight:700;font-size:1.08rem;color:var(--ink)}
+.items span{display:block;font-family:"Fraunces",serif;font-style:italic;font-size:.95rem;color:var(--slate);line-height:1.45;margin-top:2px}
+.rule{border:0;height:7px;border-top:1px solid var(--maroon);border-bottom:1px solid var(--maroon);margin:44px 0 36px;opacity:.55}
+.rules{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:16px}
+@media (min-width:640px){.rules{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.rules div{border-left:2px solid var(--amber);padding:2px 0 2px 16px}
+.rules strong{display:block;font-size:1.6rem;font-weight:400;color:var(--maroon);line-height:1.15}
+.rules p{font-size:.95rem;color:#4a3a3d}
+.love{font-size:1.08rem}
+.love .num{font-size:clamp(2.6rem,2rem + 2vw,3.6rem);color:var(--maroon);line-height:1;float:left;margin:4px 16px 0 0}
+.dot{list-style:none;margin-top:18px;display:grid;gap:10px;clear:both}
+/* marginalia */
+.margin{display:grid;gap:36px;align-content:start}
+@media (min-width:1100px){.margin{position:sticky;top:40px;padding-top:40px}}
+.note{border-top:1px solid var(--slate);padding-top:14px}
+.note ul{list-style:none;margin-top:8px}
+.note li{padding:7px 0;border-bottom:1px dotted rgba(92,102,112,.45);display:flex;justify-content:space-between;gap:12px}
+.note li em{font-family:"Fraunces",serif;color:var(--slate);font-size:.88rem}
+.stars{font-size:clamp(3rem,2.4rem + 2vw,4.4rem);color:var(--maroon);line-height:1}
+.stars small{font-size:.32em;color:var(--slate);font-family:"Fraunces",serif;font-style:italic;margin-left:.4em}
+/* planner */
+.planner{background:var(--maroon);color:var(--cream);position:relative;overflow:hidden}
+.planner::before{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(227,163,58,.35),transparent 65%)}
+.pl-in{position:relative;padding:clamp(56px,8vw,104px) 20px;max-width:1240px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr);gap:40px}
+@media (min-width:900px){.pl-in{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:72px;align-items:center}}
+.planner h2{color:var(--cream)}
+.planner .label{color:#dcc6a2}
+.planner p.lead{max-width:40ch;color:#ecdcbf}
+.ticket{background:var(--paper);color:var(--ink);padding:clamp(24px,4vw,40px);border:1px solid var(--cream);outline:1px solid rgba(243,230,204,.5);outline-offset:6px}
+.ticket label{display:block;font-family:"Fraunces",serif;font-style:italic;font-size:1.15rem;color:var(--maroon)}
+.trow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:10px 0 18px}
+.trow input{font:700 1.5rem "Libre Caslon Text",serif;color:var(--maroon);background:#fff;border:1px solid var(--slate);border-radius:3px;min-height:56px;padding:6px 12px;width:11rem;max-width:100%}
+.chip{min-height:44px;padding:0 14px;border:1px solid var(--slate);border-radius:22px;background:none;font:400 .92rem "Libre Caslon Text",serif;color:var(--ink);cursor:pointer}
+.chip:hover{border-color:var(--maroon);color:var(--maroon)}
+.out{border-top:1px solid var(--slate);border-bottom:1px solid var(--slate);padding:18px 0;margin-bottom:18px}
+.out .big{font-size:clamp(1.5rem,1.1rem + 1.4vw,2.2rem);line-height:1.2;color:var(--maroon)}
+.out .big b{font-weight:700;white-space:nowrap}
+.out p.small{font-size:.95rem;color:#4a3a3d;margin-top:10px}
+.tact{display:flex;flex-wrap:wrap;gap:10px}
+/* visit */
+.visit{padding:clamp(56px,8vw,112px) 0}
+.vgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:36px}
+@media (min-width:900px){.vgrid{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr);gap:56px}}
+.big-addr{font-size:clamp(1.8rem,1.3rem + 1.6vw,2.6rem);line-height:1.15;color:var(--maroon)}
+.vgrid dl{display:grid;gap:16px}
+.vgrid dt{font-family:"Fraunces",serif;font-style:italic;color:var(--slate);font-size:.95rem}
+.vgrid dd a{text-decoration-color:var(--amber);text-underline-offset:4px;text-decoration-thickness:2px}
+.vgrid dd a:hover{color:var(--maroon)}
+.vgrid dd{min-height:28px}
+.copy{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.msg{font-family:"Fraunces",serif;font-style:italic;background:#fff;border:1px dashed var(--slate);padding:12px 14px;font-size:.95rem;color:#3d3133}
+/* final */
+.final{background:var(--ivy);color:var(--cream);text-align:center;padding:clamp(64px,9vw,120px) 20px;position:relative;overflow:hidden}
+.final h2{color:var(--cream);font-size:clamp(2.1rem,1.3rem + 2.8vw,3.6rem)}
+.final p{max-width:46ch;margin:0 auto 28px;color:#dfe5d3}
+.final .ctas{justify-content:center}
+footer{background:#1d1416;color:#bfb29b;font-size:.85rem;padding:24px 20px 96px;text-align:center}
+@media (min-width:900px){footer{padding-bottom:28px}}
+.float{position:fixed;left:16px;right:16px;bottom:14px;z-index:20;display:flex;gap:10px}
+.float .btn{flex:1;box-shadow:0 10px 24px -8px rgba(0,0,0,.5)}
+.float .b-ink{background:var(--paper)}
+@media (min-width:900px){.float{display:none}}
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="demo">Demo concept by an independent developer — not the official website of The Little Sweet Café. Not approved by the owner; removed on first request.</div>
+<div class="ivy" aria-hidden="true"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="flr" viewBox="0 0 84 84"><g fill="none" stroke="currentColor" stroke-linecap="round">
+    <path stroke-width="1.6" d="M8 78V36C8 18 18 8 36 8h42"/>
+    <path stroke-width="1.4" d="M14 72C14 44 26 26 48 21c14-3 19 10 10 15-7 4-14-2-9-8"/>
+    <path stroke-width="1.4" d="M72 14C44 14 26 26 21 48c-3 14 10 19 15 10 4-7-2-14-8-9"/>
+    <path stroke-width="1.1" d="M22 22c6 2 10 6 12 12M30 16c8 1 13 5 16 11M16 30c1 8 5 13 11 16"/>
+  </g><circle cx="21" cy="21" r="2.6" fill="currentColor"/><circle cx="62" cy="8" r="1.8" fill="currentColor"/><circle cx="8" cy="62" r="1.8" fill="currentColor"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 22s7-7 7-12a7 7 0 0 0-14 0c0 5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-dm" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/></symbol>
+</svg>
+
+<header class="hero">
+  <div class="hero-bg" aria-hidden="true"><img src="img/p1-m.jpg" alt=""></div>
+  <div class="rain" aria-hidden="true"></div>
+  <div class="hero-in">
+    <div>
+      <div class="sign">
+        <svg class="fl tl" aria-hidden="true"><use href="#flr"/></svg><svg class="fl tr" aria-hidden="true"><use href="#flr"/></svg>
+        <svg class="fl bl" aria-hidden="true"><use href="#flr"/></svg><svg class="fl br" aria-hidden="true"><use href="#flr"/></svg>
+        <p class="kick it">behind the ivy on Hoyt Street</p>
+        <h1><span>The Little</span><span>Sweet Café</span></h1><svg class="orn" viewBox="0 0 120 14" aria-hidden="true"><path d="M2 7h44M74 7h44" stroke="currentColor" stroke-width="1"/><path d="M60 1l6 6-6 6-6-6z" fill="#E3A33A"/><circle cx="48" cy="7" r="1.6" fill="currentColor"/><circle cx="72" cy="7" r="1.6" fill="currentColor"/></svg>
+        <p class="what">French- and Persian-inspired crêpes, sweet or savory, plus sandwiches, shakshuka, pastries and coffee.</p>
+      </div>
+      <div class="below">
+        <div class="addr"><span>77B Hoyt St, Brooklyn, NY 11201</span><span class="status"><i aria-hidden="true"></i><span id="status">Hours aren't posted online · call ahead</span></span></div>
+        <div class="ctas">
+          <a class="btn b-amber" href="tel:+17188588998"><svg><use href="#i-phone"/></svg>Call (718) 858-8998</a>
+          <a class="btn b-cream" href="https://www.google.com/maps/dir/?api=1&amp;destination=40.6880933,-73.9866079" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>Directions</a>
+          <a class="btn b-cream" href="https://ig.me/m/thelittlesweetcafe" target="_blank" rel="noopener"><svg><use href="#i-dm"/></svg>Instagram DM</a>
+        </div>
+      </div>
+    </div>
+    <figure class="frame">
+      <picture><source media="(min-width:900px)" srcset="img/p1.jpg"><img src="img/p1-m.jpg" alt="The café's maroon signboard wrapped in ivy, lit by warm lanterns at dusk" width="1080" height="1080"></picture>
+      <figcaption class="it">The sign, the ivy, the lanterns — 77B Hoyt</figcaption>
+    </figure>
+  </div>
+</header>
+
+<main>
+  <div class="wrap menu-zone">
+    <article class="card rv" id="menu">
+      <p class="label">The menu card</p>
+      <h2>Sweet or savory?</h2>
+      <p>Crêpes are what this little room is known for, and they come both ways. Pick a side — the card turns over.</p>
+      <div class="toggle" role="group" aria-label="Choose sweet or savory">
+        <button type="button" data-side="sweet" aria-pressed="true">Sweet</button><span class="bar" aria-hidden="true"></span><button type="button" data-side="savory" aria-pressed="false">Savory</button>
+      </div>
+      <p class="hint it" id="hint">for the sweet tooth</p>
+      <ul class="items" id="items" aria-live="polite"></ul>
+
+      <hr class="rule">
+      <p class="label">Posted by the door</p>
+      <h2>House rules, kindly</h2>
+      <div class="rules">
+        <div><strong>45 minutes</strong><p>A sign asks guests to keep a table for about 45 minutes, so the next person in from the cold gets a seat.</p></div>
+        <div><strong>No laptops</strong><p>It's a talking, eating, reading kind of room. Bring a book or a friend.</p></div>
+        <div><strong>Small room</strong><p>Seating is limited. If every table is taken, it's worth a few minutes' wait.</p></div>
+      </div>
+
+      <hr class="rule">
+      <p class="label">From 838 Google reviews</p>
+      <h2>What people love</h2>
+      <p class="love"><span class="num">4.5</span>Guests describe it as a sanctuary — one couple ducked in on a cold, rainy Monday morning and found a quiet, beautiful room with fresh food and good coffee. They talk about the playlist (more than one person kept reaching for Shazam) and about an owner who is genuinely kind.</p>
+      <ul class="dot">
+        <li>Small, quiet and warm — the decor and the vibe come up again and again.</li>
+        <li>Food presented with care: crêpes, sandwiches and a danish that's buttery and flaky without being too sweet.</li>
+        <li>Quick, courteous service and a great spot for brunch with friends.</li>
+      </ul>
+    </article>
+
+    <aside class="margin rv">
+      <div class="note">
+        <p class="label">Rated on Google</p>
+        <p class="stars">4.5<small>from 838 reviews</small></p>
+      </div>
+      <div class="note">
+        <p class="label">From the bar — as mentioned by guests</p>
+        <ul>
+          <li>Drip coffee</li>
+          <li>Café au lait</li>
+          <li>Cortado <em>a standout, says one regular</em></li>
+          <li>Pumpkin-spice chai <em>milky, gently spiced</em></li>
+        </ul>
+      </div>
+      <div class="note">
+        <p class="label">Good to know</p>
+        <p style="margin-top:8px">The café posts on Instagram as <a href="https://www.instagram.com/thelittlesweetcafe/" target="_blank" rel="noopener">@thelittlesweetcafe</a> and on <a href="https://www.facebook.com/thelittlesweetcafe" target="_blank" rel="noopener">Facebook</a>. Ask there what's in the pastry case today.</p>
+      </div>
+    </aside>
+  </div>
+
+  <section class="planner" id="table" aria-labelledby="pl-h">
+    <div class="pl-in">
+      <div class="rv">
+        <p class="label">The 45-minute table planner</p>
+        <h2 id="pl-h">Plan your <span class="it">little</span> visit</h2>
+        <p class="lead">Tell us when you're walking in and we'll tell you how long the table is yours — enough for a crêpe, a coffee and a chapter.</p>
+      </div>
+      <div class="ticket rv">
+        <label for="arr">Arriving at…</label>
+        <div class="trow">
+          <input type="time" id="arr" value="16:00" step="300">
+          <button class="chip" type="button" data-add="0">Now</button>
+          <button class="chip" type="button" data-add="15">In 15 min</button>
+          <button class="chip" type="button" data-add="30">In 30 min</button>
+        </div>
+        <div class="out" aria-live="polite">
+          <p class="big">Your table is yours until <b id="until">4:45 pm</b>.</p>
+          <p class="small">Seating is limited and it's first come, first seated — laptops stay closed, books are welcome. Hours aren't posted online, so a quick call before you head over is a good idea.</p>
+        </div>
+        <div class="tact">
+          <a class="btn b-amber" href="https://www.google.com/maps/dir/?api=1&amp;destination=40.6880933,-73.9866079" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>Directions to 77B Hoyt St</a>
+          <a class="btn b-ink" href="tel:+17188588998"><svg><use href="#i-phone"/></svg>Call first</a>
+          <a class="btn b-ink" href="https://www.facebook.com/thelittlesweetcafe" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit wrap" id="visit" aria-labelledby="v-h">
+    <div class="vgrid">
+      <div class="rv">
+        <p class="label">Find us</p>
+        <h2 id="v-h" class="big-addr">77B Hoyt Street<br>Brooklyn, NY 11201</h2>
+        <p style="margin:12px 0 22px;color:var(--slate)">Look for the maroon sign in the ivy and the lanterns by the door.</p>
+        <a class="btn b-ink" href="https://www.google.com/maps/dir/?api=1&amp;destination=40.6880933,-73.9866079" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>Get directions</a>
+      </div>
+      <dl class="rv">
+        <div><dt>Phone</dt><dd><a href="tel:+17188588998">(718) 858-8998</a></dd></div>
+        <div><dt>Hours</dt><dd>Not listed online — call or check Instagram before you go.</dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/thelittlesweetcafe/" target="_blank" rel="noopener">@thelittlesweetcafe</a></dd></div>
+        <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/thelittlesweetcafe" target="_blank" rel="noopener">facebook.com/thelittlesweetcafe</a></dd></div>
+      </dl>
+      <div class="rv">
+        <p class="label">Ask on Instagram</p>
+        <p class="msg" id="msg">Hi! Are you open today, and is there still pastry in the case? Thinking of stopping by.</p>
+        <div class="copy">
+          <button class="btn b-ink" type="button" id="cp">Copy message</button>
+          <a class="btn b-ink" href="https://ig.me/m/thelittlesweetcafe" target="_blank" rel="noopener"><svg><use href="#i-dm"/></svg>Open DM</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <h2>Come in from the rain.</h2>
+    <p>A crêpe, sweet or savory, a warm cup and a song you'll want to look up — on Hoyt Street in Brooklyn.</p>
+    <div class="ctas">
+      <a class="btn b-amber" href="tel:+17188588998"><svg><use href="#i-phone"/></svg>Call the café</a>
+      <a class="btn b-cream" href="https://www.google.com/maps/dir/?api=1&amp;destination=40.6880933,-73.9866079" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>Directions</a>
+    </div>
+  </section>
+</main>
+<footer>The Little Sweet Café · 77B Hoyt St, Brooklyn, NY 11201 · Demo concept, not the official website.</footer>
+<div class="float">
+  <a class="btn b-amber" href="tel:+17188588998"><svg><use href="#i-phone"/></svg>Call</a>
+  <a class="btn b-ink" href="https://www.google.com/maps/dir/?api=1&amp;destination=40.6880933,-73.9866079" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>Directions</a>
+</div>
+<script>
+(function(){
+  var M={
+    sweet:{hint:"for the sweet tooth",items:[
+      ["Sweet crêpes","Half of what the café is known for — ask what's on today."],
+      ["Pastries","A strawberry cheese danish won one guest over: buttery, flaky, not too sweet."],
+      ["Cakes","From the house assortment of sweets."],
+      ["Pumpkin-spice chai","Creamy and gently spiced — more milk than pumpkin, a guest notes."]]},
+    savory:{hint:"for a proper meal",items:[
+      ["Savory crêpes","Guests mention a roasted chicken crêpe and a scrambled egg one."],
+      ["Caprese sandwich","A regular's favorite from the sandwich side."],
+      ["Chicken curry focaccia","Called one of the best sandwiches a guest has ever eaten."],
+      ["Shakshuka","Right there in the café's own description, next to the crêpes."]]}
+  };
+  var list=document.getElementById('items'),hint=document.getElementById('hint'),btns=document.querySelectorAll('.toggle button');
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+  function draw(side){
+    list.innerHTML=M[side].items.map(function(i){return '<li><b>'+esc(i[0])+'</b><span>'+esc(i[1])+'</span></li>'}).join('');
+    hint.textContent=M[side].hint;
+  }
+  function show(side){
+    btns.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.side===side)});
+    list.classList.add('fade');
+    setTimeout(function(){draw(side);list.classList.remove('fade')},200);
+  }
+  draw('sweet');
+  btns.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.side)})});
+
+  // planner
+  var arr=document.getElementById('arr'),until=document.getElementById('until');
+  function nyNow(){
+    var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(new Date());
+    var h=+p.find(function(x){return x.type==='hour'}).value,m=+p.find(function(x){return x.type==='minute'}).value;
+    return h*60+m;
+  }
+  function fmt(t){t=((t%1440)+1440)%1440;var h=Math.floor(t/60),m=t%60,ap=h<12?'am':'pm';h=h%12||12;return h+':'+(m<10?'0':'')+m+' '+ap}
+  function toVal(t){t=((t%1440)+1440)%1440;var h=Math.floor(t/60),m=t%60;return (h<10?'0':'')+h+':'+(m<10?'0':'')+m}
+  function calc(){var v=(arr.value||'16:00').split(':');until.textContent=fmt(+v[0]*60+ +v[1]+45)}
+  arr.addEventListener('input',calc);
+  document.querySelectorAll('.chip').forEach(function(c){c.addEventListener('click',function(){
+    var t=Math.ceil((nyNow()+ +c.dataset.add)/5)*5;arr.value=toVal(t);calc();
+  })});
+  try{var t0=Math.ceil(nyNow()/5)*5;arr.value=toVal(t0);}catch(e){}
+  calc();
+
+  // copy DM text
+  var cp=document.getElementById('cp');
+  cp.addEventListener('click',function(){
+    var txt=document.getElementById('msg').textContent;
+    function ok(){cp.textContent='Copied';setTimeout(function(){cp.textContent='Copy message'},1800)}
+    if(navigator.clipboard){navigator.clipboard.writeText(txt).then(ok,ok)}else{var a=document.createElement('textarea');a.value=txt;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}a.remove();ok()}
+  });
+
+  // reveal
+  var els=[].slice.call(document.querySelectorAll('.rv'));document.documentElement.classList.add('js');
+  function rv(){els=els.filter(function(e){if(e.getBoundingClientRect().top<innerHeight*.92){e.classList.add('in');return false}return true})}
+  rv();addEventListener('scroll',rv,{passive:true});addEventListener('resize',rv);
+  setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},1200);
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Demo concept|Demo-Konzept/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Pricing →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

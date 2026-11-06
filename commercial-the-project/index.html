@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Commercial – The Project · Specialty Coffee an der Feldstrasse 61, Zürich</title><meta property="og:type" content="website"><meta property="og:title" content="Commercial – The Project · Specialty Coffee an der Feldstrasse 61, Zürich"><meta property="og:description" content="Specialty-Café an der Feldstrasse 61 in 8004 Zürich: Espresso, Cappuccino, V60, eigene Röstung und Gaströster. Konfigurieren Sie Ihren Kaffee – 4,8 Sterne bei 312 Google-Bewertungen."><meta property="og:image" content="https://pikold.github.io/demo-sites/commercial-the-project/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Specialty-Café an der Feldstrasse 61 in 8004 Zürich: Espresso, Cappuccino, V60, eigene Röstung und Gaströster. Konfigurieren Sie Ihren Kaffee – 4,8 Sterne bei 312 Google-Bewertungen.">
+<link rel="stylesheet" href="../_fonts/unbounded.css">
+<link rel="stylesheet" href="../_fonts/archivo.css">
+<style>
+:root{--w:#F4F5F6;--wh:#fff;--ink:#111214;--yel:#FFC400;--blue:#2A45E8;--blush:#E9B8B0;--steel:#8A9099;--txt2:#565c64;--line:rgba(17,18,20,.12);--d:'Unbounded',system-ui,sans-serif;--b:'Archivo',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--w);color:var(--ink);font:400 1rem/1.55 var(--b);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+.demo{background:var(--ink);color:#d9dce0;font-size:.78rem;line-height:1.4;padding:.5rem 16px;text-align:center}
+.wrap{max-width:1440px;margin:0 auto;padding:0 clamp(16px,3vw,40px)}
+header.top{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem clamp(16px,3vw,40px);max-width:1440px;margin:0 auto}
+.mark{white-space:nowrap;font:600 .82rem/1 var(--d);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;display:flex;align-items:center;gap:.6rem;min-height:44px}
+.mk2{margin-left:-.45rem}.mark i{width:22px;height:22px;background:var(--ink);display:inline-grid;place-items:center;border-radius:3px}
+.mark i::after{content:"";width:10px;height:4px;background:var(--yel)}
+nav.nav{display:flex;gap:1.4rem;font-size:.88rem;font-weight:500}
+nav.nav a{text-decoration:none;padding:.7rem 0;border-bottom:2px solid transparent;transition:border-color .2s}
+nav.nav a:hover{border-color:var(--yel)}
+.kick{font:600 .72rem/1.3 var(--d);letter-spacing:.14em;text-transform:uppercase;color:var(--txt2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:48px;padding:.8rem 1.3rem;border-radius:999px;font:600 .95rem/1 var(--b);text-decoration:none;border:2px solid var(--ink);cursor:pointer;transition:transform .15s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px)}.btn:active{transform:translateY(0)}
+.btn.y{background:var(--yel);border-color:var(--yel);color:var(--ink)}
+.btn.k{background:var(--ink);color:var(--w)}
+.btn.o{background:transparent}
+.btn.o:hover{background:var(--ink);color:var(--w)}
+.btn svg{width:18px;height:18px;flex:none}
+.chip{display:inline-flex;align-items:center;gap:.55rem;padding:.45rem .85rem;border-radius:999px;background:var(--wh);border:1px solid var(--line);font-weight:600;font-size:.88rem}
+.chip b{width:9px;height:9px;border-radius:50%;background:var(--steel)}
+.chip.on b{background:#1fa35b;box-shadow:0 0 0 4px rgba(31,163,91,.18)}
+/* configurator */
+.cfg{display:grid;grid-template-columns:minmax(0,58fr) minmax(0,42fr);grid-template-areas:"stage hero" "stage opts";column-gap:clamp(24px,3.5vw,64px);max-width:1440px;margin:0 auto;padding:0 clamp(16px,3vw,40px) 4rem}
+.stage{grid-area:stage;position:sticky;top:0;align-self:start;height:100vh;min-height:560px;display:flex;flex-direction:column;padding:1rem 0 1.2rem}
+.floor{position:relative;flex:1;min-height:0;border-radius:18px;overflow:hidden;background:radial-gradient(120% 70% at 50% 100%,#e4e6e9 0%,#f9fafa 55%,#fff 100%);display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-top:3rem}
+.floor::before{content:"";position:absolute;left:0;right:0;bottom:0;height:24%;background:linear-gradient(#e9ebee,#dfe2e6);border-top:1px solid rgba(17,18,20,.06)}
+.ghost{position:absolute;top:12%;left:0;right:0;text-align:center;font:700 clamp(2.4rem,6.2vw,6rem)/.9 var(--d);color:#e9ebee;letter-spacing:-.02em;white-space:nowrap;pointer-events:none;transition:opacity .3s}
+.vlabel{position:absolute;top:1rem;left:1.1rem;right:1.1rem;display:flex;justify-content:space-between;z-index:3}
+.vlabel span{font:600 .68rem/1 var(--d);letter-spacing:.16em;text-transform:uppercase;color:var(--txt2)}
+.vlabel em{font-style:normal;color:var(--blue)}
+.car{position:relative;z-index:2;height:min(50vh,560px);aspect-ratio:3/4}
+.car img,.refl img{width:100%;height:100%;object-fit:cover;border-radius:10px;transition:opacity .35s}
+.car img{box-shadow:0 30px 40px -24px rgba(17,18,20,.45)}
+.car.fade img,.refl.fade img{opacity:.15}
+.refl{position:relative;z-index:1;height:min(11vh,120px);width:calc(min(50vh,560px)*.75);margin-top:6px;overflow:hidden;opacity:.32;transform:scaleY(-1);-webkit-mask-image:linear-gradient(to top,#000 0%,transparent 75%);mask-image:linear-gradient(to top,#000 0%,transparent 75%)}
+.refl img{height:auto;aspect-ratio:3/4;position:absolute;bottom:0;left:0;border-radius:0}
+.plate{margin-top:.9rem;background:var(--ink);color:var(--w);border-radius:14px;padding:1rem 1.2rem;display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) ;gap:.4rem 1.2rem}
+.plate dt{font:600 .62rem/1 var(--d);letter-spacing:.16em;text-transform:uppercase;color:var(--yel);margin-bottom:.35rem}
+.plate dd{font-weight:600;font-size:.95rem;line-height:1.3}
+.plate .note{grid-column:1/-1;border-top:1px solid rgba(244,245,246,.16);margin-top:.5rem;padding-top:.6rem;color:#cfd3d8;font-size:.9rem}
+.plate .note strong{color:var(--w)}
+.hero{grid-area:hero;padding:clamp(1.5rem,5vh,4rem) 0 2.5rem}
+h1{font:700 clamp(2.1rem,4.1vw,3.8rem)/1.02 var(--d);letter-spacing:-.025em;margin:.8rem 0 1rem}
+h1 span{display:block;color:var(--blue);font-size:.52em;letter-spacing:0;margin-top:.35em}
+.lead{font-size:1.12rem;max-width:34rem;color:#2b2e33}
+.addr{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:center;margin:1.3rem 0}
+.addr p{font-weight:600}
+.ctas{display:flex;flex-wrap:wrap;gap:.7rem}
+.rate{margin-top:1.4rem;font-size:.92rem;color:var(--txt2)}
+.rate b{color:var(--ink);font-family:var(--d);font-weight:600}
+.opts{grid-area:opts}
+.step{border:0;border-top:2px solid var(--ink);padding:1.4rem 0 2.2rem}
+.step legend{display:flex;align-items:baseline;gap:.9rem;padding:1.4rem 0 1rem;float:left;width:100%}
+.step legend b{font:700 .9rem/1 var(--d);color:var(--blue)}
+.step legend span{font:600 1.35rem/1.2 var(--d);letter-spacing:-.01em}
+.step .hint{clear:both;color:var(--txt2);font-size:.92rem;margin-bottom:1rem}
+.grid2{clear:both;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt label{display:flex;flex-direction:column;gap:.25rem;min-height:84px;padding:.95rem 1rem .9rem 2.6rem;background:var(--wh);border:1.5px solid var(--line);border-radius:12px;cursor:pointer;transition:border-color .2s,transform .15s,box-shadow .2s}
+.opt label::before{content:"";position:absolute;left:1rem;top:1.15rem;width:14px;height:14px;border-radius:50%;border:2px solid var(--steel);transition:all .2s}
+.opt label:hover{border-color:var(--ink);transform:translateY(-1px)}
+.opt label strong{font:600 1rem/1.2 var(--d)}
+.opt label small{font-size:.84rem;color:var(--txt2);line-height:1.35}
+.opt input:checked+label{border-color:var(--ink);box-shadow:inset 0 -4px 0 var(--yel)}
+.opt input:checked+label::before{border-color:var(--ink);background:var(--yel);box-shadow:inset 0 0 0 2px var(--wh)}
+.opt input:focus-visible+label{outline:3px solid var(--blue);outline-offset:2px}
+.aside{clear:both;margin-top:1rem;font-size:.9rem;color:var(--txt2);border-left:3px solid var(--blush);padding-left:.8rem}
+.order{clear:both;background:var(--wh);border-radius:14px;border:1.5px solid var(--ink);padding:1.2rem}
+.msg{font-size:.98rem;background:var(--w);border-radius:10px;padding:.9rem 1rem;margin:.8rem 0 1rem;border-left:4px solid var(--yel)}
+.order .ctas .btn{flex:1 1 auto}
+.copied{font-size:.85rem;color:var(--blue);min-height:1.3em;margin-top:.5rem}
+/* model pages */
+section.mp{padding:clamp(4rem,9vw,8rem) 0;border-top:1px solid var(--line)}
+.mhead{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:2rem;align-items:end;margin-bottom:clamp(2rem,5vw,3.5rem)}
+h2{font:700 clamp(1.9rem,4.6vw,4rem)/1.02 var(--d);letter-spacing:-.025em}
+h3{font:600 1.15rem/1.25 var(--d)}
+.mhead p{max-width:36rem;color:#2b2e33;font-size:1.06rem}
+.mach{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(2rem,5vw,5rem);align-items:center}
+.lm{background:linear-gradient(#fff,#eceef0);border-radius:18px;padding:clamp(1.5rem,4vw,3rem);aspect-ratio:5/4;display:flex;align-items:flex-end;justify-content:center}
+.lm svg{width:100%;height:auto}
+table.spec{width:100%;border-collapse:collapse;font-size:1rem}
+.spec th,.spec td{text-align:left;padding:1rem 0;border-bottom:1px solid var(--line);vertical-align:top}
+.spec th{font:600 .68rem/1.6 var(--d);letter-spacing:.14em;text-transform:uppercase;color:var(--txt2);width:38%;padding-right:1rem}
+.spec td{font-weight:600}
+.src{font-size:.85rem;color:var(--txt2);margin-top:1rem}
+.praise{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,2fr);gap:clamp(2rem,5vw,5rem)}
+.score{font:700 clamp(4.5rem,11vw,9rem)/.85 var(--d);letter-spacing:-.04em}
+.score small{display:block;font:500 1rem/1.4 var(--b);letter-spacing:0;margin-top:1rem;color:var(--txt2)}
+.pts{list-style:none;counter-reset:p}
+.pts li{display:grid;grid-template-columns:3.2rem minmax(0,1fr);gap:1rem;padding:1.4rem 0;border-top:1px solid var(--line)}
+.pts li::before{counter-increment:p;content:"0" counter(p);font:700 .9rem/1.6 var(--d);color:var(--blue)}
+.pts li:nth-child(2){margin-left:clamp(0px,4vw,4rem)}.pts li:nth-child(3){margin-left:clamp(0px,8vw,8rem)}
+.pts p{color:#2b2e33;margin-top:.3rem}
+.equip{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(2rem,5vw,5rem);align-items:start}
+.equip figure img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:14px}
+figcaption{font-size:.84rem;color:var(--txt2);margin-top:.6rem}
+.eq{list-style:none}
+.eq li{display:flex;justify-content:space-between;gap:1rem;align-items:baseline;padding:1.1rem 0;border-bottom:1px solid var(--line)}
+.eq li span{font:600 clamp(1.05rem,2vw,1.4rem)/1.2 var(--d)}
+.eq li em{font-style:normal;color:var(--txt2);font-size:.9rem;text-align:right;max-width:55%}
+/* crew poster */
+.poster{background:var(--yel);border-radius:22px;padding:clamp(1.5rem,5vw,4.5rem);display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:clamp(1.5rem,4vw,4rem);color:var(--blue);position:relative;overflow:hidden}
+.poster .kick{color:var(--ink)}
+.poster h2{font-size:clamp(2.4rem,7vw,6.4rem);line-height:.9;margin:.7rem 0 1.2rem;text-transform:lowercase}
+.poster .when{font:700 clamp(1.1rem,2.2vw,1.6rem)/1.2 var(--d);color:var(--ink)}
+.titles{list-style:none;margin-top:1.8rem}
+.titles li{font:600 clamp(.95rem,1.6vw,1.15rem)/1.3 var(--d);padding:.8rem 0;border-top:2px solid var(--blue);display:flex;gap:.8rem}
+.titles li::before{content:"";width:12px;height:12px;margin-top:.3rem;flex:none;background:var(--blue);clip-path:polygon(0 100%,0 30%,25% 60%,50% 0,75% 60%,100% 30%,100% 100%)}
+.poster figure img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:14px}
+.poster figcaption{color:var(--ink)}
+.poster p{color:var(--ink);max-width:32rem}
+/* beans */
+.beans{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,5rem)}
+.blend{background:var(--ink);color:var(--w);border-radius:18px;padding:clamp(1.4rem,3.5vw,2.6rem)}
+.blend .kick{color:var(--yel)}
+.blend h3{font-size:clamp(1.3rem,2.4vw,1.8rem);margin:.6rem 0 1.4rem}
+.ratio{display:flex;height:14px;border-radius:7px;overflow:hidden;margin:1.2rem 0 .5rem}
+.ratio i:first-child{flex:18;background:var(--yel)}.ratio i:last-child{flex:2;background:var(--blush)}
+.blend dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:.7rem 1.2rem;font-size:.95rem}
+.blend dt{font:700 .9rem/1.4 var(--d);color:var(--yel)}
+.blend dt.p{color:var(--blush)}
+.blend dd{color:#d4d7dc}
+.blend .prof{margin-top:1.4rem;padding-top:1rem;border-top:1px solid rgba(244,245,246,.18)}
+.roast{list-style:none}
+.roast li{font:600 clamp(1.4rem,3.4vw,2.6rem)/1.15 var(--d);letter-spacing:-.02em;padding:.75rem 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline;gap:1rem;transition:color .2s,padding .2s}
+.roast li:hover{color:var(--blue);padding-left:.5rem}
+.roast li small{font:500 .85rem/1 var(--b);color:var(--txt2);letter-spacing:0}
+.beanfig{margin-top:2rem;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:1rem;align-items:end}
+.beanfig img{border-radius:14px;aspect-ratio:3/4;object-fit:cover;width:100%}
+/* visit */
+.visit{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,5rem)}
+.hours{width:100%;border-collapse:collapse;margin:1.2rem 0 1.6rem}
+.hours td{padding:.8rem 0;border-bottom:1px solid var(--line);font-weight:500}
+.hours td:last-child{text-align:right;font-family:var(--d);font-weight:600;font-size:.95rem}
+.hours tr.today td{color:var(--blue)}
+.map{position:relative;background:var(--wh);border-radius:18px;border:1.5px solid var(--line);overflow:hidden;aspect-ratio:4/3;display:block;text-decoration:none}
+.map svg{width:100%;height:100%;display:block}
+.map .tag{position:absolute;left:1rem;bottom:1rem;background:var(--ink);color:var(--w);border-radius:10px;padding:.7rem .9rem;font-size:.9rem}
+.map .tag b{display:block;font-family:var(--d);font-weight:600;color:var(--yel);font-size:.95rem}
+.final{background:var(--ink);color:var(--w);border-radius:22px;padding:clamp(2rem,6vw,5rem);margin:clamp(3rem,7vw,6rem) 0;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:2rem;align-items:end}
+.final h2{color:var(--w)}.final h2 em{font-style:normal;color:var(--yel)}
+.final p{color:#cfd3d8;margin-top:1rem;max-width:32rem}
+.final .btn.o{border-color:var(--w);color:var(--w)}.final .btn.o:hover{background:var(--w);color:var(--ink)}
+footer{padding:2rem 0 6rem;font-size:.85rem;color:var(--txt2);display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between}
+.fab{display:none}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.rv.in{opacity:1;transform:none}
+@media (max-width:1100px){nav.nav{display:none}.plate{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:900px){
+ .cfg{grid-template-columns:minmax(0,1fr);grid-template-areas:"hero" "stage" "opts";padding-bottom:2rem}
+ .hero{padding-top:.5rem}
+ h1{font-size:clamp(1.85rem,9.2vw,3rem)}
+ .stage{height:auto;min-height:0;top:0;z-index:5;background:var(--w);padding:.5rem 0;margin:0 -16px;padding-left:16px;padding-right:16px}
+ .floor{flex:none;aspect-ratio:16/9;max-height:42vh;padding:0;border-radius:12px;justify-content:center;flex-direction:row}
+ .floor::before{display:none}
+ .car{height:100%;width:100%;aspect-ratio:auto}
+ .car img{border-radius:12px;box-shadow:none;object-position:50% 45%}
+ .refl,.ghost{display:none}
+ .vlabel{top:.6rem;left:.7rem;right:.7rem}.vlabel span{background:rgba(244,245,246,.92);padding:.35rem .5rem;border-radius:6px}
+ .plate{margin-top:.5rem;padding:.6rem .8rem;grid-template-columns:repeat(3,minmax(0,1fr));gap:.2rem .8rem}
+ .plate dt{font-size:.55rem;margin-bottom:.2rem}.plate dd{font-size:.82rem}
+ .plate .note{display:none}
+ .mhead,.mach,.praise,.equip,.poster,.beans,.visit,.final{grid-template-columns:minmax(0,1fr)}
+ .pts li:nth-child(n){margin-left:0}
+ .poster figure{max-width:420px}
+ .fab{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:20;gap:.5rem}
+ .fab .btn{flex:1;box-shadow:0 8px 24px rgba(17,18,20,.25)}
+}
+@media (max-width:420px){.mark{font-size:.72rem}.mk2{display:none}.vlabel .vl2{display:none}.grid2{grid-template-columns:minmax(0,1fr)}.opt label{min-height:64px}.eq li{flex-direction:column;gap:.2rem}.eq li em{text-align:left;max-width:none}.roast li{flex-direction:column;gap:.2rem}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="demo">Demo-Konzept eines unabhängigen Entwicklers – keine offizielle Website von Commercial – The Project. Nicht vom Inhaber freigegeben; wird auf erste Anfrage gelöscht.</div>
+<header class="top">
+ <a class="mark" href="#top"><i aria-hidden="true"></i>Commercial<span class="mk2">&nbsp;· The Project</span></a>
+ <nav class="nav" aria-label="Hauptnavigation"><a href="#konfigurator">Konfigurator</a><a href="#maschine">Maschine</a><a href="#crew">Crew</a><a href="#bohnen">Bohnen</a><a href="#besuch">Besuch</a></nav>
+ <a class="btn o" href="https://www.instagram.com/the.commercial.project/" target="_blank" rel="noopener" style="min-height:44px;padding:.6rem 1rem;font-size:.85rem">Instagram</a>
+</header>
+
+<main id="top">
+<div class="cfg" id="konfigurator">
+ <div class="stage" aria-label="Vorschau Ihrer Konfiguration">
+  <div class="floor">
+   <div class="vlabel"><span>Vorschau</span><span><em id="vNo">Espresso</em><i class="vl2" style="font-style:normal"> · Feldstrasse 61</i></span></div>
+   <div class="ghost" id="ghost" aria-hidden="true">ESPRESSO</div>
+   <div class="car" id="car"><img id="stImg" style="object-position:50% 82%" src="img/p8.jpg" alt="Espresso in rosa Tasse auf Holztablett am Tresen, daneben ein Glas Wasser" width="1350" height="1800"></div>
+   <div class="refl" id="refl" aria-hidden="true"><img id="rfImg" src="img/p8-m.jpg" alt=""></div>
+  </div>
+  <dl class="plate" aria-live="polite">
+   <div><dt>Modell</dt><dd id="pModel">Espresso</dd></div>
+   <div><dt>Bohne</dt><dd id="pBean">Hausröstung</dd></div>
+   <div><dt>Zubereitung</dt><dd id="pPrep">Siebträger, pur</dd></div>
+   <div class="note" id="pNote"><strong>Laut Gästen:</strong> der beste Espresso der Stadt.</div>
+  </dl>
+ </div>
+
+ <div class="hero">
+  <p class="kick">Specialty Coffee · Zürich Kreis 4</p>
+  <h1>Commercial<span>The Project</span></h1>
+  <p class="lead">Café mit eigener Röstung und Gaströstern – hier wird ein Kaffee so sorgfältig zusammengestellt wie ein Wagen im Showroom.</p>
+  <div class="addr"><p>Feldstrasse 61, 8004 Zürich</p><span class="chip" id="st1"><b></b><span>Öffnungszeiten werden geladen</span></span></div>
+  <div class="ctas">
+   <a class="btn k" href="https://www.google.com/maps/dir/?api=1&amp;destination=47.3773193,8.5219809" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>Route</a>
+   <a class="btn y" href="https://ig.me/m/the.commercial.project" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>Instagram-DM</a>
+  </div>
+  <p class="rate"><b>4,8</b> von 5 · 312 Google-Bewertungen · <a href="#konf-start">Kaffee konfigurieren ↓</a></p>
+ </div>
+
+ <form class="opts" id="konf" onsubmit="return false">
+  <p class="kick" id="konf-start" style="margin-bottom:.4rem">Dein Kaffee-Konfigurator</p>
+  <fieldset class="step"><legend><b>01</b><span>Zubereitung</span></legend>
+   <div class="grid2">
+    <div class="opt"><input type="radio" name="z" id="z1" value="esp" checked><label for="z1"><strong>Espresso</strong><small>laut Gästen der beste der Stadt</small></label></div>
+    <div class="opt"><input type="radio" name="z" id="z2" value="cap"><label for="z2"><strong>Cappuccino</strong><small>seidenmatter Milchschaum</small></label></div>
+    <div class="opt"><input type="radio" name="z" id="z3" value="v60"><label for="z3"><strong>V60</strong><small>Handfilter, gewaschene Lots</small></label></div>
+    <div class="opt"><input type="radio" name="z" id="z4" value="sid"><label for="z4"><strong>Sidra</strong><small>Varietät, die Gäste hier fanden</small></label></div>
+   </div></fieldset>
+  <fieldset class="step"><legend><b>02</b><span>Bohne · Charakter</span></legend>
+   <div class="grid2">
+    <div class="opt"><input type="radio" name="c" id="c1" value="kl" checked><label for="c1"><strong>Klassisch</strong><small>selbst geröstet, im Haus</small></label></div>
+    <div class="opt"><input type="radio" name="c" id="c2" value="un"><label for="c2"><strong>Ungewöhnlich</strong><small>Sidra, Geisha-Espresso, Gaströster</small></label></div>
+   </div></fieldset>
+  <fieldset class="step"><legend><b>03</b><span>Milch</span></legend>
+   <div class="grid2">
+    <div class="opt"><input type="radio" name="m" id="m1" value="pur" checked><label for="m1"><strong>Pur</strong><small>die Bohne, sonst nichts</small></label></div>
+    <div class="opt"><input type="radio" name="m" id="m2" value="foam"><label for="m2"><strong>Seidenmatt</strong><small>Milchschaum – macht daraus einen Cappuccino</small></label></div>
+   </div></fieldset>
+  <fieldset class="step"><legend><b>04</b><span>Ort</span></legend>
+   <div class="grid2">
+    <div class="opt"><input type="radio" name="o" id="o1" value="in" checked><label for="o1"><strong>Am Tresen</strong><small>Feldstrasse 61, drinnen</small></label></div>
+    <div class="opt"><input type="radio" name="o" id="o2" value="out"><label for="o2"><strong>Draussen</strong><small>an den gelben Stühlen vor dem Café</small></label></div>
+   </div>
+   <p class="aside">Das zweite Projekt der Crew: ein Café in einem Cadillac-Showroom in Zürich. Wo genau – fragen Sie per Instagram.</p></fieldset>
+  <fieldset class="step"><legend><b>05</b><span>Abholung</span></legend>
+   <div class="grid2" style="margin-bottom:1rem">
+    <div class="opt"><input type="radio" name="a" id="a1" value="jetzt" checked><label for="a1"><strong>Gleich</strong><small>ich bin unterwegs</small></label></div>
+    <div class="opt"><input type="radio" name="a" id="a2" value="spaeter"><label for="a2"><strong>Später</strong><small>heute oder morgen</small></label></div>
+   </div>
+   <div class="order">
+    <span class="chip" id="st2"><b></b><span>…</span></span>
+    <p class="hint" style="margin:.9rem 0 0">Frag nach der Bohne des Tages – Ihre Nachricht für den Instagram-DM:</p>
+    <p class="msg" id="msg"></p>
+    <div class="ctas">
+     <button type="button" class="btn o" id="copy">Text kopieren</button>
+     <a class="btn y" href="https://ig.me/m/the.commercial.project" target="_blank" rel="noopener">Instagram-DM öffnen</a>
+     <a class="btn k" href="https://www.google.com/maps/dir/?api=1&amp;destination=47.3773193,8.5219809" target="_blank" rel="noopener">Route</a>
+    </div>
+    <p class="copied" id="copied" aria-live="polite"></p>
+   </div>
+  </fieldset>
+ </form>
+</div>
+
+<div class="wrap">
+ <section class="mp" id="maschine" aria-labelledby="h-m">
+  <div class="mhead rv"><p class="kick">Modellseite 01 · Die Maschine</p><div><h2 id="h-m">Schwarz. Gelb. Custom.</h2></div></div>
+  <div class="mach">
+   <div class="lm rv" aria-hidden="true">
+    <svg viewBox="0 0 400 260"><rect x="20" y="236" width="360" height="8" rx="4" fill="#d6d9dd"/><rect x="40" y="40" width="320" height="150" rx="14" fill="#111214"/><rect x="40" y="96" width="320" height="22" fill="#FFC400"/><rect x="40" y="186" width="320" height="40" rx="6" fill="#1d1f22"/><g fill="#8A9099"><rect x="78" y="118" width="54" height="16" rx="3"/><rect x="173" y="118" width="54" height="16" rx="3"/><rect x="268" y="118" width="54" height="16" rx="3"/></g><g fill="#111214" stroke="#8A9099" stroke-width="3"><rect x="85" y="134" width="40" height="14" rx="4"/><rect x="180" y="134" width="40" height="14" rx="4"/><rect x="275" y="134" width="40" height="14" rx="4"/></g><g fill="#E9B8B0"><path d="M92 196h26l-3 22h-20z"/><path d="M187 196h26l-3 22h-20z"/></g><g fill="#2A45E8"><circle cx="105" cy="70" r="5"/><circle cx="200" cy="70" r="5"/><circle cx="295" cy="70" r="5"/></g><rect x="60" y="24" width="280" height="16" rx="4" fill="#26282c"/></svg>
+   </div>
+   <div class="rv">
+    <table class="spec">
+     <tr><th scope="row">Hersteller</th><td>La Marzocco</td></tr>
+     <tr><th scope="row">Modell</th><td>Linea PB 3AV</td></tr>
+     <tr><th scope="row">Finish</th><td>Schwarz und Gelb, Custom</td></tr>
+     <tr><th scope="row">Standort</th><td>Café im Cadillac-Showroom, Zürich</td></tr>
+     <tr><th scope="row">Projekt</th><td>das zweite Café der Crew – nach der Feldstrasse 61</td></tr>
+    </table>
+    <p class="src">Gemäss Beitrag des Ausrüsters auf Instagram: «Premium cars need premium coffee».</p>
+   </div>
+  </div>
+ </section>
+
+ <section class="mp" id="lob" aria-labelledby="h-l">
+  <div class="praise">
+   <div class="rv"><p class="kick">Testberichte</p><h2 id="h-l" class="score">4,8<small>von 5 Sternen bei 312 Google-Bewertungen</small></h2></div>
+   <ol class="pts rv">
+    <li><div><h3>Espresso, über den man spricht</h3><p>Gäste nennen ihn den besten der Stadt – und das Café eines der besten der Schweiz.</p></div></li>
+    <li><div><h3>Milchschaum wie lackiert</h3><p>Die Cappuccini fallen auf: eine seidenmatte Oberfläche, die schon beim Hinschauen überzeugt.</p></div></li>
+    <li><div><h3>Baristi, die beraten</h3><p>Sehr herzlich und sehr kompetent, mit Bohnen abseits des Üblichen – und mitten in der Stadt gelegen.</p></div></li>
+   </ol>
+  </div>
+ </section>
+
+ <section class="mp" id="ausstattung" aria-labelledby="h-a">
+  <div class="equip">
+   <figure class="rv"><img src="img/p11.jpg" alt="Schwarze Espressomaschine mit Commercial-Schriftzug, darauf rosa und weisse Tassen" loading="lazy" width="720" height="1280"><figcaption>Der Tresen an der Feldstrasse 61.</figcaption></figure>
+   <div class="rv">
+    <p class="kick">Modellseite 02 · Serienausstattung</p>
+    <h2 id="h-a" style="margin:.7rem 0 2rem">Was am Tresen läuft</h2>
+    <ul class="eq">
+     <li><span>Espresso</span><em>von Gästen als bester der Stadt gelobt</em></li>
+     <li><span>Cappuccino</span><em>seidenmatter Milchschaum</em></li>
+     <li><span>Filter V60</span><em>zum Beispiel gewaschene Lots aus Kolumbien</em></li>
+     <li><span>Eigene Röstung</span><em>selbst geröstete Bohnen</em></li>
+     <li><span>Gaströster</span><em>wechselnde Bohnen bekannter Röstereien</em></li>
+     <li><span>Gebäck</span><em>in der Vitrine am Tresen</em></li>
+    </ul>
+   </div>
+  </div>
+ </section>
+
+ <section class="mp" id="crew" aria-labelledby="h-c">
+  <div class="poster rv">
+   <div>
+    <p class="kick">Modellseite 03 · Die Crew</p>
+    <h2 id="h-c">triple crown pop-up</h2>
+    <p class="when">Freitag, 28. November · 15:00–17:00<br>Feldstrasse 61</p>
+    <ul class="titles">
+     <li>Swiss Brewers Cup</li>
+     <li>Coffee in Good Spirits</li>
+     <li>Cup Tasters</li>
+    </ul>
+    <p style="margin-top:1.2rem">Drei Schweizer Meisterinnen und Meister übernehmen die Maschine und brühen für Sie. So holt die Crew die Wettbewerbsszene an die Feldstrasse.</p>
+   </div>
+   <figure><img src="img/p4.jpg" alt="Barista im senfgelben Hemd hinter dem Tresen vor einer Backsteinwand" loading="lazy" width="720" height="1280"><figcaption>Hinter dem Tresen, Feldstrasse 61.</figcaption></figure>
+  </div>
+ </section>
+
+ <section class="mp" id="bohnen" aria-labelledby="h-b">
+  <div class="mhead rv"><p class="kick">Modellseite 04 · Bohnen &amp; Gaströster</p><h2 id="h-b">Hausröstung trifft Gäste</h2></div>
+  <div class="beans">
+   <div class="rv">
+    <div class="blend">
+     <p class="kick">Das Haus-Setup</p>
+     <h3>The Commercial Project Blend</h3>
+     <div class="ratio" aria-hidden="true"><i></i><i></i></div>
+     <dl>
+      <dt>18 g</dt><dd>Äthiopien, Alo Washing Station · Heirloom, gewaschen · Rose Coffee Roasters</dd>
+      <dt class="p">2 g</dt><dd>Kolumbien, Finca El Diviso · Bioreactor-Mosto-Fermentation · eigene Röstung</dd>
+     </dl>
+     <p class="prof">Profil: grüner Apfel, Wassermelonen-Bonbon.</p>
+    </div>
+    <div class="beanfig"><img src="img/p7.jpg" alt="Hand hält eine rosa Tasse mit hellem Kaffee vor einem Regal mit Keramiktassen" loading="lazy" width="1350" height="1800"><p class="src">Laut Gästen gab es auch schon zwei verschiedene Sidras gleichzeitig. Was gerade in der Mühle ist, verrät die Crew am Tresen oder per DM.</p></div>
+   </div>
+   <ul class="roast rv" aria-label="Gaströster">
+    <li>Dak <small>Amsterdam</small></li>
+    <li>Rose Coffee Roasters</li>
+    <li>Janson Coffee <small>Geisha-Espresso</small></li>
+    <li>Balloon Coffee Roasters</li>
+    <li>Savage Coffees</li>
+   </ul>
+  </div>
+ </section>
+
+ <section class="mp" id="besuch" aria-labelledby="h-v">
+  <div class="visit">
+   <div class="rv">
+    <p class="kick">Modellseite 05 · Besuch</p>
+    <h2 id="h-v" style="margin:.7rem 0 1rem">Feldstrasse 61</h2>
+    <p style="font-size:1.1rem">8004 Zürich · Kreis 4</p>
+    <p style="margin-top:1rem"><span class="chip" id="st3"><b></b><span>…</span></span></p>
+    <table class="hours" aria-label="Öffnungszeiten">
+     <tr data-d="1"><td>Montag</td><td>08:00–17:00</td></tr>
+     <tr data-d="2"><td>Dienstag</td><td>08:00–17:00</td></tr>
+     <tr data-d="3"><td>Mittwoch</td><td>08:00–17:00</td></tr>
+     <tr data-d="4"><td>Donnerstag</td><td>08:00–17:00</td></tr>
+     <tr data-d="5"><td>Freitag</td><td>08:00–17:00</td></tr>
+     <tr data-d="6"><td>Samstag</td><td>09:00–18:00</td></tr>
+     <tr data-d="0"><td>Sonntag</td><td>09:00–18:00</td></tr>
+    </table>
+    <div class="ctas">
+     <a class="btn k" href="https://www.google.com/maps/dir/?api=1&amp;destination=47.3773193,8.5219809" target="_blank" rel="noopener">Route planen</a>
+     <a class="btn o" href="https://www.instagram.com/the.commercial.project/" target="_blank" rel="noopener">@the.commercial.project</a>
+    </div>
+   </div>
+   <a class="map rv" href="https://www.google.com/maps/place/Commercial+-+The+Project/data=!4m7!3m6!1s0x47900bacc6964a7d:0x40a501225e1ac3b6!8m2!3d47.3773193!4d8.5219809!16s%2Fg%2F11vrrgb0d2!19sChIJfUqWxqwLkEcRtsMaXiIBpUA" target="_blank" rel="noopener" aria-label="Standort in Google Maps öffnen">
+    <svg viewBox="0 0 400 300" aria-hidden="true"><rect width="400" height="300" fill="#F4F5F6"/><g stroke="#dfe2e6" stroke-width="1"><path d="M0 50h400M0 100h400M0 150h400M0 200h400M0 250h400M50 0v300M100 0v300M150 0v300M200 0v300M250 0v300M300 0v300M350 0v300"/></g><path d="M-10 230 L410 110" stroke="#fff" stroke-width="26"/><path d="M-10 230 L410 110" stroke="#FFC400" stroke-width="3" stroke-dasharray="10 10"/><circle cx="214" cy="168" r="44" fill="#2A45E8" opacity=".1"/><circle cx="214" cy="168" r="10" fill="#111214"/><circle cx="214" cy="168" r="4" fill="#FFC400"/><text x="230" y="140" font-family="Unbounded,sans-serif" font-size="11" font-weight="600" fill="#111214">FELDSTRASSE 61</text><text x="20" y="32" font-family="Archivo,sans-serif" font-size="11" fill="#565c64">47.3773° N · 8.5220° E</text></svg>
+    <span class="tag"><b>Karte öffnen</b>Feldstrasse 61, 8004 Zürich</span>
+   </a>
+  </div>
+ </section>
+
+ <section class="final rv" aria-labelledby="h-f">
+  <div><p class="kick" style="color:var(--yel)">Probefahrt</p><h2 id="h-f" style="margin-top:.7rem">Ein Espresso an der Feldstrasse. <em>Ohne Termin.</em></h2><p>Montag bis Freitag ab 08:00, am Wochenende ab 09:00. Welche Bohne heute in der Mühle ist, fragen Sie direkt per Instagram.</p></div>
+  <div class="ctas"><a class="btn y" href="https://ig.me/m/the.commercial.project" target="_blank" rel="noopener">Instagram-DM</a><a class="btn o" href="https://www.google.com/maps/dir/?api=1&amp;destination=47.3773193,8.5219809" target="_blank" rel="noopener">Route</a></div>
+ </section>
+ <footer><span>Commercial – The Project · Feldstrasse 61, 8004 Zürich · <a href="https://www.instagram.com/the.commercial.project/" target="_blank" rel="noopener">Instagram</a></span><span>Demo-Konzept, nicht offiziell. Fotos: Instagram @the.commercial.project.</span></footer>
+</div>
+</main>
+<div class="fab"><a class="btn k" href="https://www.google.com/maps/dir/?api=1&amp;destination=47.3773193,8.5219809" target="_blank" rel="noopener">Route</a><a class="btn y" href="https://ig.me/m/the.commercial.project" target="_blank" rel="noopener">Instagram-DM</a></div>
+
+<script>
+(function(){
+ // open/closed, Europe/Zurich
+ var H={0:[9,18],1:[8,17],2:[8,17],3:[8,17],4:[8,17],5:[8,17],6:[9,18]};
+ function zh(){var p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Zurich',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date()),o={};p.forEach(function(x){o[x.type]=x.value});return{d:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(o.weekday),m:(+o.hour%24)*60+(+o.minute)}}
+ var pad=function(h){return(h<10?'0':'')+h+':00'};
+ function status(){var t=zh(),h=H[t.d],open=t.m>=h[0]*60&&t.m<h[1]*60,txt;
+  if(open)txt='Jetzt offen · bis '+pad(h[1]);
+  else if(t.m<h[0]*60)txt='Geschlossen · öffnet heute um '+pad(h[0]);
+  else{var n=(t.d+1)%7;txt='Geschlossen · öffnet morgen um '+pad(H[n][0])}
+  ['st1','st2','st3'].forEach(function(id){var e=document.getElementById(id);if(!e)return;e.classList.toggle('on',open);e.lastElementChild.textContent=txt});
+  var r=document.querySelector('.hours tr[data-d="'+t.d+'"]');if(r)r.className='today';return open}
+ var isOpen=status();setInterval(status,60000);
+
+ // configurator
+ var D={
+  esp:{n:'Espresso',img:'p8',pos:'50% 82%',alt:'Espresso in rosa Tasse auf Holztablett am Tresen',prep:'Siebträger, pur',note:'der beste Espresso der Stadt.'},
+  cap:{n:'Cappuccino',img:'p11',pos:'50% 35%',alt:'Espressomaschine mit rosa Tassen am Tresen',prep:'Siebträger + Milchschaum',note:'seidenmatter Milchschaum, der schon beim Hinschauen überzeugt.'},
+  v60:{n:'V60',img:'p10',pos:'50% 50%',alt:'Hell beleuchteter Tresen mit Mühle und Espressomaschine',prep:'Handfilter V60',note:'gewaschene Kolumbien-Lots als Filter.'},
+  sid:{n:'Sidra',img:'p7',pos:'50% 78%',alt:'Heller Kaffee in rosa Tasse vor einem Tassenregal',prep:'Espresso oder Filter – am Tresen fragen',note:'zeitweise gab es sogar zwei Sidras.'}};
+ var C={kl:{n:'Hausröstung',t:'klassisch',note:'Bohnen aus eigener Röstung.'},un:{n:'Ungewöhnlich',t:'gern etwas Ungewöhnliches',note:'Sidra, Geisha-Espresso, Gaströster wie Dak.'}};
+ var f=document.getElementById('konf'),$=function(i){return document.getElementById(i)},last='';
+ function val(n){var e=f.querySelector('input[name="'+n+'"]:checked');return e?e.value:''}
+ function set(n,v){var e=f.querySelector('input[name="'+n+'"][value="'+v+'"]');if(e)e.checked=true}
+ function render(){
+  var z=D[val('z')],c=C[val('c')],m=val('m'),o=val('o'),a=val('a');
+  $('pModel').textContent=z.n;$('vNo').textContent=z.n;$('ghost').textContent=z.n.toUpperCase();
+  $('pBean').textContent=c.n;$('pPrep').textContent=z.prep;
+  $('pNote').innerHTML='<strong>Laut Gästen:</strong> '+z.note+' <strong>Charakter:</strong> '+c.note;
+  if(last!==z.img){last=z.img;var ci=$('car'),rf=$('refl');ci.classList.add('fade');rf.classList.add('fade');
+   setTimeout(function(){$('stImg').src='img/'+z.img+'.jpg';$('stImg').alt=z.alt;$('stImg').style.objectPosition=z.pos;$('rfImg').src='img/'+z.img+'-m.jpg';ci.classList.remove('fade');rf.classList.remove('fade')},180)}
+  var drink=z.n+(val('z')==='sid'?'-Kaffee':''),when=a==='jetzt'?(isOpen?'gleich':'zur Öffnung'):'später',where=o==='in'?'am Tresen':'draussen';
+  $('msg').textContent='Grüezi! Ich komme '+when+' an die Feldstrasse 61 und hätte gern einen '+drink+(m==='foam'&&val('z')!=='cap'?' mit Milchschaum':'')+' – '+c.t+', '+where+'. Was ist heute die Bohne des Tages?';
+ }
+ f.addEventListener('change',function(e){
+  var t=e.target;
+  if(t.name==='m'){if(t.value==='foam')set('z','cap');else if(val('z')==='cap')set('z','esp')}
+  if(t.name==='z'){set('m',t.value==='cap'?'foam':'pur')}
+
+  render()});
+ render();
+ $('copy').addEventListener('click',function(){var s=$('msg').textContent,done=function(){$('copied').textContent='Kopiert – jetzt im Instagram-DM einfügen.'};
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(s).then(done,fb)}else fb();
+  function fb(){var ta=document.createElement('textarea');ta.value=s;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');done()}catch(x){}ta.remove()}});
+
+ // reveal
+ if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});document.querySelectorAll('.rv').forEach(function(e){io.observe(e)})}else document.querySelectorAll('.rv').forEach(function(e){e.classList.add('in')});
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Demo concept|Demo-Konzept/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Preise & Ablauf →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

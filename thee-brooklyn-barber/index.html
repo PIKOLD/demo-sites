@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Thee Brooklyn Barber — Walk-ins only · Greenpoint &amp; Williamsburg</title><meta property="og:type" content="website"><meta property="og:title" content="Thee Brooklyn Barber — Walk-ins only · Greenpoint &amp;amp; Williamsburg"><meta property="og:description" content="Thee Brooklyn Barber: three walk-in barbershops in Brooklyn — 141 Nassau Ave (Greenpoint), 158 Wythe Ave (N. Williamsburg), 376 Graham Ave (E. Williamsburg). No appointment needed."><meta property="og:image" content="https://pikold.github.io/demo-sites/thee-brooklyn-barber/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Thee Brooklyn Barber: three walk-in barbershops in Brooklyn — 141 Nassau Ave (Greenpoint), 158 Wythe Ave (N. Williamsburg), 376 Graham Ave (E. Williamsburg). No appointment needed.">
+<link rel="stylesheet" href="../_fonts/barlow-condensed.css">
+<link rel="stylesheet" href="../_fonts/inter.css">
+<style>
+:root{--white:#F4F3EF;--paper:#FBFAF7;--grey:#8F989D;--ink:#141414;--stripe:#2A2A2A;--g:#6CBE45;--brass:#B88A3E;--muted:#4a4f52;--line:#d9d7d0;--cond:'Barlow Condensed',Impact,sans-serif;--sans:'Inter',system-ui,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--white);color:var(--ink);font:400 17px/1.55 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+picture{display:block}
+figure{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:2px}
+.wrap{width:min(1360px,100% - 48px);margin-inline:auto}
+.demo{background:var(--ink);color:#e9e7e0;font-size:12.5px;line-height:1.4;text-align:center;padding:7px 16px}
+.cond{font-family:var(--cond);text-transform:uppercase;letter-spacing:.02em}
+/* header */
+header{border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.mark{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 21px/1 var(--cond);text-transform:uppercase;letter-spacing:.04em}
+.mark i{width:14px;height:14px;border-radius:50%;border:4px solid var(--ink);background:var(--white);box-shadow:0 0 0 3px var(--g)}
+nav{display:flex;gap:26px;font:600 15px/1 var(--cond);text-transform:uppercase;letter-spacing:.08em}
+nav a{text-decoration:none;padding:12px 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border:2px solid var(--ink);border-radius:999px;background:var(--ink);color:var(--white);font:700 18px/1 var(--cond);text-transform:uppercase;letter-spacing:.07em;text-decoration:none;cursor:pointer;transition:transform .15s,background .15s,color .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--white)}
+.btn.sm{min-height:44px;padding:0 18px;font-size:16px}
+.btn svg{width:18px;height:18px}
+/* hero */
+.hero{padding:clamp(28px,4vw,56px) 0 clamp(36px,5vw,72px)}
+.hgrid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr);gap:clamp(28px,5vw,80px);align-items:center}
+.idrow{display:flex;align-items:center;gap:20px}
+.badge{width:clamp(96px,9vw,132px);flex:none}
+.badge text{font-family:var(--cond);font-weight:700;fill:var(--ink)}
+.name{margin:0;font:700 clamp(30px,3.4vw,46px)/.95 var(--cond);text-transform:uppercase;letter-spacing:.01em}
+.name small{display:block;font:500 15px/1.3 var(--sans);text-transform:none;letter-spacing:0;color:var(--muted);margin-top:8px}
+.walk{font:700 clamp(92px,15.5vw,236px)/.8 var(--cond);text-transform:uppercase;letter-spacing:-.01em;margin:clamp(18px,2.4vw,32px) 0 clamp(14px,2vw,24px);white-space:nowrap}
+.walk span{color:var(--g)}
+.lede{font-size:clamp(17px,1.4vw,20px);max-width:34ch;margin:0 0 20px}
+.hoods{display:flex;align-items:center;margin:0 0 26px;padding:0;list-style:none;font:600 15px/1.2 var(--cond);text-transform:uppercase;letter-spacing:.08em;flex-wrap:wrap;row-gap:10px}
+.hoods li{display:flex;align-items:center;gap:8px}
+.hoods li+li::before{content:"";width:clamp(18px,3vw,44px);height:6px;background:var(--g);margin:0 8px 0 0}
+.hoods b{width:14px;height:14px;border-radius:50%;border:3px solid var(--ink);background:var(--white)}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.status{display:inline-flex;align-items:center;gap:9px;margin-top:18px;font-size:15px;color:var(--muted)}
+.status i{width:10px;height:10px;border-radius:50%;background:var(--grey)}
+.status.open i{background:var(--g);box-shadow:0 0 0 4px rgba(108,190,69,.25)}
+.status strong{color:var(--ink)}
+.hphoto{position:relative;justify-self:end;width:100%;max-width:470px}
+.hphoto picture,.hphoto img{width:100%;aspect-ratio:4/5.2;object-fit:cover;object-position:50% 40%}
+.hphoto::before{content:"";position:absolute;inset:18px -18px -18px 18px;background:repeating-linear-gradient(90deg,var(--stripe) 0 2px,var(--paper) 2px 9px);z-index:-1}
+.hphoto figcaption{position:absolute;left:-14px;bottom:28px;background:var(--white);padding:10px 14px;font:600 14px/1.2 var(--cond);text-transform:uppercase;letter-spacing:.1em;border-left:4px solid var(--brass)}
+.hero .hphoto{isolation:isolate}
+/* pinstripe band */
+.pin{height:34px;background:repeating-linear-gradient(90deg,var(--stripe) 0 2px,var(--paper) 2px 10px);border-block:2px solid var(--ink)}
+/* section heads */
+.sec{padding:clamp(56px,7vw,110px) 0}
+.kick{font:600 14px/1 var(--cond);text-transform:uppercase;letter-spacing:.18em;color:var(--muted);display:flex;align-items:center;gap:10px;margin:0 0 14px}
+.kick::before{content:"";width:28px;height:2px;background:var(--brass)}
+h2{font:700 clamp(46px,6.4vw,96px)/.88 var(--cond);text-transform:uppercase;margin:0 0 18px;letter-spacing:-.005em}
+/* line map */
+.mapgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:clamp(24px,4vw,64px);margin-top:clamp(28px,4vw,48px);align-items:start}
+.route{position:sticky;top:24px}
+.rhead{display:flex;flex-direction:column;gap:12px;margin-bottom:26px}
+.rhead p{margin:0;font-size:14px;color:var(--muted)}
+.line{position:relative;list-style:none;margin:0;padding:6px 0}
+.line::before{content:"";position:absolute;left:23px;top:-14px;bottom:-14px;width:16px;background:var(--g);border-radius:8px}
+.line li+li{margin-top:clamp(40px,6vw,76px)}
+.stop{position:relative;display:flex;align-items:center;gap:20px;width:100%;background:none;border:0;padding:4px 0;text-align:left;cursor:pointer;color:var(--ink);font:inherit}
+.ring{flex:none;width:62px;height:62px;border-radius:50%;border:9px solid var(--ink);background:var(--white);transition:transform .2s,box-shadow .2s;position:relative;z-index:1}
+.stop:hover .ring{transform:scale(1.08)}
+.stop[aria-pressed=true] .ring{box-shadow:0 0 0 7px var(--white),0 0 0 10px var(--ink)}
+.stop[aria-pressed=true] .ring::after{content:"";position:absolute;inset:9px;border-radius:50%;background:var(--ink)}
+.sl{display:flex;flex-direction:column}
+.sl b{font:700 clamp(28px,2.6vw,40px)/.9 var(--cond);text-transform:uppercase;letter-spacing:.01em}
+.sl span{font:500 13px/1.3 var(--sans);color:var(--muted);text-transform:uppercase;letter-spacing:.12em;margin-top:6px}
+.sl em{font:600 14px/1 var(--cond);font-style:normal;letter-spacing:.08em;color:var(--ink);background:#e6efe0;padding:4px 7px;border-radius:3px;margin-top:8px;width:max-content}
+.sl em:empty{display:none}
+.north{font:600 13px/1 var(--cond);letter-spacing:.2em;color:var(--muted);margin:22px 0 0 14px}
+.panel{background:var(--paper);border:2px solid var(--ink);display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);min-height:620px}
+.pbody{padding:clamp(24px,3vw,44px);display:flex;flex-direction:column;gap:22px}
+.ptag{display:flex;align-items:center;gap:10px;font:600 14px/1 var(--cond);letter-spacing:.16em;text-transform:uppercase}
+.ptag i{width:12px;height:12px;border-radius:50%;background:var(--g)}
+.ptitle{font:700 clamp(48px,5.4vw,84px)/.86 var(--cond);text-transform:uppercase;margin:0}
+.paddr{font-size:18px;margin:0}
+.paddr strong{display:block;font-weight:600}
+.walkline{font:700 24px/1 var(--cond);text-transform:uppercase;letter-spacing:.04em;padding:14px 0;border-block:1px solid var(--line);margin:0}
+.dir{display:flex;gap:10px;flex-wrap:wrap}
+.rave h3{font:600 15px/1 var(--cond);letter-spacing:.16em;text-transform:uppercase;margin:0 0 10px;color:var(--muted)}
+.rave ul{list-style:none;margin:0;padding:0}
+.rave li{display:grid;grid-template-columns:86px minmax(0,1fr);gap:12px;padding:11px 0;border-top:1px dashed #c9c6bd;font-size:15px}
+.rave li b{font:700 22px/1 var(--cond);text-transform:uppercase}
+.rave li.ask{color:var(--muted)}
+.rave li small{display:block;font:600 12px/1.2 var(--cond);letter-spacing:.14em;text-transform:uppercase;color:var(--brass);margin-bottom:2px}
+.msg{background:var(--white);border:1px solid var(--line);padding:14px;font-size:15px}
+.msg p{margin:0 0 10px}
+.msg q{display:block;quotes:none;font-style:normal;background:#fff;border-left:3px solid var(--ink);padding:10px 12px;margin-bottom:12px}
+.msg .row{display:flex;gap:8px;flex-wrap:wrap}
+.pfig{margin:0;position:relative;border-left:2px solid var(--ink);overflow:hidden;background:var(--grey)}
+.pfig img{width:100%;height:100%;object-fit:cover;transition:opacity .35s}
+.pfig figcaption{position:absolute;left:0;right:0;bottom:0;padding:10px 14px;background:linear-gradient(transparent,rgba(20,20,20,.75));color:#fff;font:500 13px/1.3 var(--sans)}
+.note{font-size:14px;color:var(--muted);margin:0;min-height:1.4em}
+/* cuts */
+.cuts{background:var(--grey);color:var(--ink)}
+.cuts .kick{color:var(--ink)}
+.cgrid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.55fr) minmax(0,.55fr);gap:clamp(18px,2.5vw,36px);align-items:end}
+.clist{list-style:none;margin:28px 0 0;padding:0;counter-reset:c}
+.clist li{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:14px 0;border-top:2px solid var(--ink);font:700 clamp(28px,3vw,44px)/1 var(--cond);text-transform:uppercase}
+.clist li span{font:500 14px/1.35 var(--sans);text-transform:none;max-width:24ch;text-align:right}
+.cimg{margin:0;background:var(--white);padding:10px 10px 14px;box-shadow:0 24px 40px -24px rgba(0,0,0,.45)}
+.cimg img{aspect-ratio:3/4.3;object-fit:cover;width:100%}
+.cimg figcaption{font:600 14px/1.2 var(--cond);letter-spacing:.1em;text-transform:uppercase;margin-top:10px}
+.cimg.up{transform:translateY(-56px)}
+.cnote{font-size:15px;margin:18px 0 0;max-width:46ch}
+/* praise */
+.pgrid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);gap:clamp(28px,5vw,90px)}
+.score{font:700 clamp(120px,16vw,230px)/.8 var(--cond);margin:10px 0 8px}
+.score small{font-size:.28em;letter-spacing:.06em;vertical-align:top;margin-left:6px;color:var(--brass)}
+.stars{display:flex;gap:4px;margin-bottom:10px}
+.stars svg{width:22px;height:22px;fill:var(--ink)}
+.plist{list-style:none;margin:0;padding:0}
+.plist li{display:grid;grid-template-columns:70px minmax(0,1fr);gap:20px;padding:26px 0;border-top:2px solid var(--ink)}
+.plist li:nth-child(2){margin-left:clamp(0px,4vw,64px)}
+.plist li:nth-child(3){margin-left:clamp(0px,8vw,128px)}
+.plist .n{font:700 46px/.9 var(--cond);color:var(--g);-webkit-text-stroke:1px var(--ink)}
+.plist h3{font:700 clamp(26px,2.4vw,34px)/1 var(--cond);text-transform:uppercase;margin:0 0 8px}
+.plist p{margin:0;color:#2c2f31;max-width:56ch}
+/* visit */
+.visit{background:var(--paper);border-top:2px solid var(--ink)}
+.vgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border:2px solid var(--ink);margin-top:30px}
+.vcol{padding:clamp(20px,2.4vw,32px);border-right:2px solid var(--ink)}
+.vcol:last-child{border-right:0}
+.vcol h3{font:700 30px/1 var(--cond);text-transform:uppercase;margin:0 0 4px;display:flex;align-items:center;gap:10px}
+.vcol h3 i{width:16px;height:16px;border-radius:50%;border:4px solid var(--ink)}
+.vcol .hood{font:600 13px/1 var(--cond);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+.vcol p{margin:0 0 12px;font-size:15px}
+.vcol a.tl{font-weight:600;text-decoration-thickness:1px;text-underline-offset:3px}
+.hours{width:100%;border-collapse:collapse;font-size:15px;margin:6px 0 12px}
+.hours td{padding:6px 0;border-bottom:1px solid var(--line)}
+.hours td+td{text-align:right}
+.hours tr.today td{font-weight:700}
+.small{font-size:13px;color:var(--muted)}
+/* final */
+.final{padding:clamp(64px,9vw,140px) 0;text-align:center}
+.final .big{font:700 clamp(64px,11vw,170px)/.82 var(--cond);text-transform:uppercase;margin:0 0 22px}
+.final .big span{display:block;color:var(--g);-webkit-text-stroke:2px var(--ink)}
+.final .ctas{justify-content:center}
+footer{border-top:2px solid var(--ink);padding:26px 0 90px;font-size:13px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.fab{position:fixed;right:16px;bottom:16px;z-index:20;display:none;box-shadow:0 10px 24px -8px rgba(0,0,0,.5)}
+.rv{transition:opacity .7s,transform .7s}
+.js .rv:not(.in){opacity:0;transform:translateY(22px)}
+@media (max-width:1080px){
+  .panel{grid-template-columns:minmax(0,1fr)}
+  .pfig{border-left:0;border-top:2px solid var(--ink);aspect-ratio:4/3}
+  .cgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .cgrid>div:first-child{grid-column:1/-1}
+  .cimg.up{transform:none}
+}
+@media (max-width:860px){
+  nav{display:none}
+  .hgrid{grid-template-columns:minmax(0,1fr)}
+  .hphoto{justify-self:start;max-width:none;width:calc(100% - 18px)}
+  .hphoto picture,.hphoto img{aspect-ratio:4/4.4}
+  .mapgrid{grid-template-columns:minmax(0,1fr)}
+  .route{position:sticky;top:0;z-index:5;background:var(--white);padding:12px 0 6px;margin-inline:-4px}
+  .rhead{flex-direction:row;align-items:center;justify-content:space-between;margin-bottom:12px}
+  .rhead p{display:none}
+  .line{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:0}
+  .line::before{left:8%;right:8%;top:17px;bottom:auto;width:auto;height:12px}
+  .line li+li{margin-top:0}
+  .stop{flex-direction:column;align-items:center;gap:8px;text-align:center;min-height:44px}
+  .ring{width:46px;height:46px;border-width:7px}
+  .stop[aria-pressed=true] .ring::after{inset:7px}
+  .sl{align-items:center}
+  .sl b{font-size:22px}
+  .sl span{font-size:10.5px;letter-spacing:.08em}
+  .sl em{margin-top:4px;font-size:12px}
+  .north{display:none}
+  .panel{min-height:0}
+  .pgrid{grid-template-columns:minmax(0,1fr)}
+  .plist li:nth-child(n){margin-left:0}
+  .vgrid{grid-template-columns:minmax(0,1fr)}
+  .vcol{border-right:0;border-bottom:2px solid var(--ink)}
+  .vcol:last-child{border-bottom:0}
+  .fab{display:inline-flex}
+}
+@media (max-width:520px){
+  .wrap{width:calc(100% - 32px)}
+  .idrow{gap:14px}
+  .walk{font-size:clamp(76px,23vw,128px)}
+  .hoods{font-size:13px}
+  .ctas .btn{flex:1 1 auto}
+  .cgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+  .clist li{flex-direction:column;gap:6px}
+  .clist li span{text-align:left}
+  .plist li{grid-template-columns:44px minmax(0,1fr);gap:12px}
+  .plist .n{font-size:36px}
+  .rave li{grid-template-columns:70px minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.js .rv:not(.in){opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="demo" role="note">Demo concept by an independent developer — not the official website of Thee Brooklyn Barber. Not approved by the owner; removed on first request.</div>
+
+<header>
+  <div class="wrap bar">
+    <a class="mark" href="#top" aria-label="Thee Brooklyn Barber — top"><i aria-hidden="true"></i>Thee Brooklyn Barber</a>
+    <nav aria-label="Main"><a href="#stops">Pick a stop</a><a href="#cuts">The cuts</a><a href="#praise">Reviews</a><a href="#visit">Visit</a></nav>
+    <a class="btn sm ghost" href="https://www.instagram.com/theebrooklynbarber/" rel="noopener" target="_blank">Instagram</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hgrid">
+    <div>
+      <div class="idrow">
+        <svg class="badge" viewBox="0 0 200 200" role="img" aria-label="Round badge: Williamsburg × Greenpoint, Thee Brooklyn Barber, est. 2017">
+          <defs><path id="arcT" d="M30 100a70 70 0 0 1 140 0"/><path id="arcB" d="M22 100a78 78 0 0 0 156 0"/></defs>
+          <circle cx="100" cy="100" r="96" fill="none" stroke="#141414" stroke-width="5"/>
+          <circle cx="100" cy="100" r="86" fill="none" stroke="#141414" stroke-width="1.5"/>
+          <text font-size="23" letter-spacing="3"><textPath href="#arcT" startOffset="50%" text-anchor="middle">WILLIAMSBURG</textPath></text>
+          <text font-size="23" letter-spacing="3"><textPath href="#arcB" startOffset="50%" text-anchor="middle" dominant-baseline="hanging">GREENPOINT</textPath></text>
+          <text x="22" y="106" font-size="16">×</text><text x="168" y="106" font-size="16">×</text>
+          <rect x="46" y="76" width="108" height="46" fill="#141414"/>
+          <text x="100" y="93" font-size="13" text-anchor="middle" style="fill:#F4F3EF" letter-spacing="2">THEE BROOKLYN</text>
+          <text x="100" y="117" font-size="26" text-anchor="middle" style="fill:#F4F3EF" letter-spacing="2">BARBER</text>
+          <text x="100" y="140" font-size="12" text-anchor="middle" letter-spacing="2" style="fill:#B88A3E">EST. 2017</text>
+        </svg>
+        <h1 class="name">Thee Brooklyn Barber<small>Barbershop · three shops across Greenpoint &amp; Williamsburg</small></h1>
+      </div>
+      <p class="walk" aria-hidden="true">Walk in<span>.</span></p>
+      <p class="lede">Skin fades, burst fades, modern mullets, beards with sharp lines. Walk-ins only — no appointment needed. Pick the stop closest to you.</p>
+      <ul class="hoods" aria-label="Neighborhoods">
+        <li><b aria-hidden="true"></b>Greenpoint</li>
+        <li><b aria-hidden="true"></b>N. Williamsburg</li>
+        <li><b aria-hidden="true"></b>E. Williamsburg</li>
+      </ul>
+      <div class="ctas">
+        <a class="btn" href="#stops"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/></svg>Nearest chair</a>
+        <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=40.7248573,-73.947991" rel="noopener" target="_blank">Directions</a>
+        <a class="btn ghost" href="tel:+17186750200">Call</a>
+      </div>
+      <p class="status" id="status" aria-live="polite"><i aria-hidden="true"></i><span><strong>Walk-ins welcome</strong> · Greenpoint hours</span></p>
+    </div>
+    <figure class="hphoto rv">
+      <picture><source media="(max-width:700px)" srcset="img/p12-m.jpg"><img src="img/p12.jpg" alt="Barber chair by a grey wall with white wainscot and a wooden shelf; a client in a pinstriped cape with a fresh fade" width="900" height="1170" fetchpriority="high"></picture>
+      <figcaption>Grey wall · white wainscot · pinstripe cape</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="pin" aria-hidden="true"></div>
+
+<section class="sec" id="stops">
+  <div class="wrap">
+    <p class="kick">Nearest chair</p>
+    <h2>Pick your stop.<br>Walk in.</h2>
+    <p style="max-width:52ch;margin:0">Three shops on one short line through North Brooklyn. Tap a stop — or let your browser find the closest one. Your location is used only on this page and never sent anywhere.</p>
+    <div class="mapgrid">
+      <div class="route">
+        <div class="rhead">
+          <button class="btn sm" id="locate" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>Find closest</button>
+          <p id="locnote">Optional · computed on your device</p>
+        </div>
+        <ol class="line" aria-label="Shops, north to south">
+          <li><button class="stop" type="button" data-s="nassau" aria-pressed="true"><span class="ring" aria-hidden="true"></span><span class="sl"><b>Nassau Av</b><span>Greenpoint</span><em></em></span></button></li>
+          <li><button class="stop" type="button" data-s="wythe" aria-pressed="false"><span class="ring" aria-hidden="true"></span><span class="sl"><b>Wythe Av</b><span>N. Williamsburg</span><em></em></span></button></li>
+          <li><button class="stop" type="button" data-s="graham" aria-pressed="false"><span class="ring" aria-hidden="true"></span><span class="sl"><b>Graham Av</b><span>E. Williamsburg</span><em></em></span></button></li>
+        </ol>
+        <p class="north" aria-hidden="true">↑ North · Greenpoint</p>
+      </div>
+
+      <article class="panel" aria-live="polite">
+        <div class="pbody">
+          <p class="ptag"><i aria-hidden="true"></i><span id="pHood">Greenpoint</span></p>
+          <h3 class="ptitle" id="pTitle">Nassau Av</h3>
+          <p class="paddr"><strong id="pAddr">141 Nassau Ave</strong><span id="pCity">Brooklyn, NY 11222</span></p>
+          <p class="walkline">No booking. Just walk in.</p>
+          <div class="dir">
+            <a class="btn sm" id="gLink" href="https://www.google.com/maps/dir/?api=1&amp;destination=40.7248573,-73.947991" target="_blank" rel="noopener">Google Maps</a>
+            <a class="btn sm ghost" id="aLink" href="https://maps.apple.com/?daddr=141%20Nassau%20Ave%2C%20Brooklyn%2C%20NY%2011222" target="_blank" rel="noopener">Apple Maps</a>
+          </div>
+          <div class="rave">
+            <h3>Who reviewers rave about</h3>
+            <ul id="pRave"></ul>
+          </div>
+          <div class="msg">
+            <p>Want to check the wait first? Instagram DMs can't be pre-filled — copy this, then open the DM.</p>
+            <q id="pMsg"></q>
+            <div class="row">
+              <button class="btn sm ghost" id="copy" type="button">Copy message</button>
+              <a class="btn sm" href="https://ig.me/m/theebrooklynbarber" target="_blank" rel="noopener">Open Instagram DM</a>
+            </div>
+          </div>
+          <p class="note" id="copied" role="status"></p>
+        </div>
+        <figure class="pfig">
+          <img id="pImg" src="img/p11.jpg" alt="" width="900" height="1200" loading="lazy">
+          <figcaption id="pCap">From @theebrooklynbarber</figcaption>
+        </figure>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="pin" aria-hidden="true"></div>
+
+<section class="sec cuts" id="cuts">
+  <div class="wrap cgrid">
+    <div class="rv">
+      <p class="kick">The cuts</p>
+      <h2>Clean fade.<br>Sharp details.</h2>
+      <ul class="clist">
+        <li>Skin fade<span>Blended down to the skin — reviewers rave about the medium</span></li>
+        <li>Burst fade<span>Smooth and curved — the finish on Alex’s mullets</span></li>
+        <li>Modern mullet<span>Natural texture on top, clean from every angle</span></li>
+        <li>Beard trim<span>Shaped with sharp lines</span></li>
+      </ul>
+      <p class="cnote">No menu or prices are posted online — ask at the chair. It starts with listening to what you want.</p>
+    </div>
+    <figure class="cimg up rv"><picture><source media="(max-width:700px)" srcset="img/p2-m.jpg"><img src="img/p2.jpg" alt="Low fade seen from behind, client in a pinstriped cape" width="900" height="1290" decoding="async"></picture><figcaption>Low fade</figcaption></figure>
+    <figure class="cimg rv"><picture><source media="(max-width:700px)" srcset="img/p5-m.jpg"><img src="img/p5.jpg" alt="Side profile of a textured crop with a fresh fade, white tiled shop wall behind" width="900" height="1290" decoding="async"></picture><figcaption>Texture + fade</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec" id="praise">
+  <div class="wrap pgrid">
+    <div class="rv">
+      <p class="kick">What customers praise</p>
+      <p class="score">5.0<small>★</small></p>
+      <div class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18l-6.5 4 1.7-7.4-5.7-5 7.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18l-6.5 4 1.7-7.4-5.7-5 7.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18l-6.5 4 1.7-7.4-5.7-5 7.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18l-6.5 4 1.7-7.4-5.7-5 7.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18l-6.5 4 1.7-7.4-5.7-5 7.5-.7z"/></svg></div>
+      <p style="margin:0;font-weight:600">Average from 695 Google reviews</p>
+    </div>
+    <ol class="plist">
+      <li class="rv"><span class="n">01</span><div><h3>The same fade, every time</h3><p>Regulars say their barber is consistent visit after visit — some followed Ray to this shop just to keep their cut.</p></div></li>
+      <li class="rv"><span class="n">02</span><div><h3>Detail, patience, a spotless shop</h3><p>Reviewers describe unhurried, detail-first work — Mike gets singled out for how clean he works — in a shop that's tidy and thoughtfully laid out.</p></div></li>
+      <li class="rv"><span class="n">03</span><div><h3>A vibe that slows you down</h3><p>Good music, a welcoming room, and in Greenpoint, jazz on the speakers while Franco works. People leave feeling lighter — and compare the cut to pricier places in the city.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec visit" id="visit">
+  <div class="wrap">
+    <p class="kick">Visit</p>
+    <h2>Three doors.<br>No appointments.</h2>
+    <div class="vgrid">
+      <div class="vcol">
+        <h3><i aria-hidden="true"></i>Nassau Av</h3>
+        <p class="hood">Greenpoint</p>
+        <p>141 Nassau Ave<br>Brooklyn, NY 11222</p>
+        <table class="hours" aria-label="Greenpoint hours"><tbody id="hrs">
+          <tr data-d="1"><td>Monday</td><td>10 am – 8 pm</td></tr>
+          <tr data-d="2"><td>Tuesday</td><td>10 am – 8 pm</td></tr>
+          <tr data-d="3"><td>Wednesday</td><td>10 am – 8 pm</td></tr>
+          <tr data-d="4"><td>Thursday</td><td>10 am – 8 pm</td></tr>
+          <tr data-d="5"><td>Friday</td><td>10 am – 8 pm</td></tr>
+          <tr data-d="6"><td>Saturday</td><td>10 am – 7 pm</td></tr>
+          <tr data-d="0"><td>Sunday</td><td>10 am – 7 pm</td></tr>
+        </tbody></table>
+        <p class="small">Hours as listed on Google; may differ on holidays.</p>
+        <p><a class="tl" href="tel:+17186750200">(718) 675-0200</a> · <a class="tl" href="https://www.google.com/maps/dir/?api=1&amp;destination=40.7248573,-73.947991" target="_blank" rel="noopener">Directions</a></p>
+      </div>
+      <div class="vcol">
+        <h3><i aria-hidden="true"></i>Wythe Av</h3>
+        <p class="hood">North Williamsburg</p>
+        <p>158 Wythe Ave<br>Brooklyn, NY 11249</p>
+        <p>Walk-ins only — no appointment needed. Alex's modern mullets and burst fades show up on the feed from this shop.</p>
+        <p><a class="tl" href="https://www.google.com/maps/dir/?api=1&amp;destination=158%20Wythe%20Ave%2C%20Brooklyn%2C%20NY%2011249" target="_blank" rel="noopener">Directions</a></p>
+      </div>
+      <div class="vcol">
+        <h3><i aria-hidden="true"></i>Graham Av</h3>
+        <p class="hood">East Williamsburg</p>
+        <p>376 Graham Ave<br>Brooklyn, NY 11211</p>
+        <p>Walk-ins always welcome. For today's hours at Wythe and Graham, message the shop on Instagram.</p>
+        <p><a class="tl" href="https://www.google.com/maps/dir/?api=1&amp;destination=40.715645,-73.944299" target="_blank" rel="noopener">Directions</a> · <a class="tl" href="https://www.instagram.com/theebrooklynbarber/" target="_blank" rel="noopener">@theebrooklynbarber</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="pin" aria-hidden="true"></div>
+
+<section class="final">
+  <div class="wrap">
+    <p class="big rv">No booking.<span>Just walk in.</span></p>
+    <div class="ctas">
+      <a class="btn" href="#stops">Find the nearest chair</a>
+      <a class="btn ghost" href="tel:+17186750200">Call Greenpoint</a>
+      <a class="btn ghost" href="https://www.instagram.com/theebrooklynbarber/" target="_blank" rel="noopener">@theebrooklynbarber</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>Thee Brooklyn Barber · 141 Nassau Ave · 158 Wythe Ave · 376 Graham Ave · Brooklyn, NY</span><span>Demo concept — not the official website. Photos from @theebrooklynbarber.</span></div></footer>
+<a class="btn fab" href="tel:+17186750200" aria-label="Call Thee Brooklyn Barber, Greenpoint">Call</a>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+var S={
+ nassau:{t:'Nassau Av',hood:'Greenpoint',addr:'141 Nassau Ave',city:'Brooklyn, NY 11222',lat:40.7248573,lon:-73.947991,img:'p11',alt:'Client with a full beard and skin fade in a pinstriped cape, grey wall and white wainscot behind',
+  rave:[['Franco','Greenpoint','Reviewers call him the barber the shop is named for — zero rush, jazz on, a cut that feels like a reset.']]},
+ wythe:{t:'Wythe Av',hood:'N. Williamsburg',addr:'158 Wythe Ave',city:'Brooklyn, NY 11249',lat:40.7196,lon:-73.9584,img:'p6',alt:'Barber shaping curly hair on top while the client sits in a white cape',
+  rave:[['Alex','Wythe Ave','Modern mullets finished with a smooth burst fade — clean from every angle, per the shop\'s own posts.']]},
+ graham:{t:'Graham Av',hood:'E. Williamsburg',addr:'376 Graham Ave',city:'Brooklyn, NY 11211',lat:40.715645,lon:-73.944299,img:'p4',alt:'Client in a pinstriped cape in a shop with grey walls, white wainscot and framed art',
+  rave:[]}
+};
+var ASK=[['Ray','Ask in shop','Regulars praise his consistency — perfect fades, every single visit.'],['Mike','Ask in shop','Personable and detail-oriented, singled out for how clean he works.']];
+var cur='nassau',$=function(i){return document.getElementById(i)};
+function esc(s){return s.replace(/[&<>]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
+function show(k){
+ cur=k;var s=S[k],full=s.addr+', '+s.city;
+ document.querySelectorAll('.stop').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.s===k)});
+ $('pHood').textContent=s.hood;$('pTitle').textContent=s.t;$('pAddr').textContent=s.addr;$('pCity').textContent=s.city;
+ $('gLink').href='https://www.google.com/maps/dir/?api=1&destination='+(k==='wythe'?encodeURIComponent(full):s.lat+','+s.lon);
+ $('aLink').href='https://maps.apple.com/?daddr='+encodeURIComponent(full);
+ var h='';s.rave.concat(ASK).forEach(function(r){h+='<li'+(r[1]==='Ask in shop'?' class="ask"':'')+'><b>'+r[0]+'</b><span><small>'+r[1]+'</small>'+esc(r[2])+'</span></li>'});
+ $('pRave').innerHTML=h;
+ $('pMsg').textContent='Hi! Heading to your '+s.addr+' shop ('+s.hood+') — is there a wait for a cut right now?';
+ var im=$('pImg');im.src='img/'+s.img+(innerWidth<700?'-m':'')+'.jpg';im.alt=s.alt;$('copied').textContent='';
+}
+document.querySelectorAll('.stop').forEach(function(b){b.addEventListener('click',function(){show(b.dataset.s)})});
+show(cur);
+$('copy').addEventListener('click',function(){
+ var t=$('pMsg').textContent;
+ function ok(){$('copied').textContent='Copied — paste it into the Instagram DM.'}
+ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,fb)}else fb();
+ function fb(){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy');ok()}catch(e){$('copied').textContent='Select the message and copy it manually.'}a.remove()}
+});
+function mi(a,b,c,d){var R=3958.8,r=Math.PI/180,x=Math.sin((c-a)*r/2),y=Math.sin((d-b)*r/2),q=x*x+Math.cos(a*r)*Math.cos(c*r)*y*y;return 2*R*Math.asin(Math.sqrt(q))}
+$('locate').addEventListener('click',function(){
+ var n=$('locnote');
+ if(!navigator.geolocation){n.textContent='Location isn\'t available here — just tap a stop.';return}
+ n.textContent='Locating…';
+ navigator.geolocation.getCurrentPosition(function(p){
+  var best=null,bd=1e9;
+  document.querySelectorAll('.stop').forEach(function(b){var s=S[b.dataset.s],d=mi(p.coords.latitude,p.coords.longitude,s.lat,s.lon);b.querySelector('em').textContent=(d<10?d.toFixed(1):Math.round(d))+' mi';if(d<bd){bd=d;best=b.dataset.s}});
+  show(best);n.textContent='Closest: '+S[best].t+' · about '+(bd<10?bd.toFixed(1):Math.round(bd))+' mi as the crow flies';
+ },function(){n.textContent='Location blocked — no problem, just tap a stop.'},{timeout:10000,maximumAge:300000});
+});
+// open/closed (Greenpoint hours, America/New_York)
+var H={0:[10,19],1:[10,20],2:[10,20],3:[10,20],4:[10,20],5:[10,20],6:[10,19]};
+try{
+ var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(new Date()),o={};
+ parts.forEach(function(p){o[p.type]=p.value});
+ var d=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(o.weekday),t=(+o.hour%24)+(+o.minute)/60,h=H[d];
+ function f(x){return(x>12?x-12:x)+(x>=12?' pm':' am')}
+ var el=$('status'),txt;
+ if(t>=h[0]&&t<h[1]){el.classList.add('open');txt='<strong>Open now</strong> · until '+f(h[1])+' · Greenpoint'}
+ else if(t<h[0])txt='<strong>Closed now</strong> · opens '+f(h[0])+' · Greenpoint';
+ else txt='<strong>Closed now</strong> · opens '+f(H[(d+1)%7][0])+' tomorrow · Greenpoint';
+ el.querySelector('span').innerHTML=txt;
+ var row=document.querySelector('#hrs tr[data-d="'+d+'"]');if(row)row.classList.add('today');
+}catch(e){}
+// reveal
+var rv=document.querySelectorAll('.rv');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});rv.forEach(function(e){io.observe(e)})}
+setTimeout(function(){rv.forEach(function(e){e.classList.add('in')})},1600);
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Demo concept|Demo-Konzept/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Pricing →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

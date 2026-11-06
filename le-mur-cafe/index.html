@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Le Mur Cafe & Kiosk – Engelstrasse 59, Zürich</title><meta property="og:type" content="website"><meta property="og:title" content="Le Mur Cafe &amp; Kiosk – Engelstrasse 59, Zürich"><meta property="og:description" content="Le Mur Cafe &amp; Kiosk an der Engelstrasse 59 im Kreis 4: täglich frischer, hausgemachter Zmittag, Kaffee &amp; Kuchen, die besten Amaretti – A Touch of Aotearoa in Zürich."><meta property="og:image" content="https://pikold.github.io/demo-sites/le-mur-cafe/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Le Mur Cafe & Kiosk an der Engelstrasse 59 im Kreis 4: täglich frischer, hausgemachter Zmittag, Kaffee & Kuchen, die besten Amaretti – A Touch of Aotearoa in Zürich.">
+<link rel="stylesheet" href="../_fonts/archivo-black.css">
+<link rel="stylesheet" href="../_fonts/sora.css">
+<style>
+:root{--sky:#3D8FE0;--yel:#FFC72C;--grape:#8B23B5;--wall:#F6F2EA;--ink:#161616;--red:#D7262E;--max:1320px;--pad:max(16px,calc((100% - var(--max))/2))}
+*{box-sizing:border-box;margin:0}
+@media (prefers-reduced-motion:no-preference){html:focus-within{scroll-behavior:smooth}}
+body{font-family:'Sora',system-ui,sans-serif;background:var(--wall);color:var(--ink);font-size:clamp(15px,.35vw + 14px,17px);line-height:1.6;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.disp{font-family:'Archivo Black',Impact,sans-serif;font-weight:400;letter-spacing:-.01em;line-height:1}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;box-shadow:0 0 0 6px var(--yel)}
+.demo{background:var(--ink);color:#e9e4da;font-size:12px;line-height:1.4;padding:7px 16px;text-align:center}
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.55em;min-height:48px;padding:.7em 1.15em;border:3px solid var(--ink);border-radius:999px;font:600 15px/1.2 'Sora',sans-serif;text-decoration:none;cursor:pointer;background:var(--wall);color:var(--ink);box-shadow:4px 4px 0 var(--ink);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.ink{background:var(--ink);color:var(--yel)}
+.btn.yel{background:var(--yel)}
+.btn.grape{background:var(--grape);color:#fff}
+.sticker{display:inline-block;font-family:'Archivo Black',sans-serif;background:var(--yel);color:var(--ink);padding:.35em .75em .3em;border:3px solid var(--ink);box-shadow:3px 3px 0 var(--ink);transform:rotate(-3deg);line-height:1.1}
+.sticker.p{background:var(--grape);color:#fff}
+.sticker.w{background:var(--wall)}
+/* nav */
+.nav{background:var(--sky);border-bottom:3px solid var(--ink)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px}
+.brand{font-family:'Archivo Black',sans-serif;text-decoration:none;font-size:17px}
+.brand b{color:var(--yel);-webkit-text-stroke:1px var(--ink);text-shadow:2px 2px 0 var(--ink)}
+.brand i{font-style:normal;color:#fff;background:var(--grape);padding:0 .3em;margin-left:.2em}
+.nav ul{display:flex;gap:22px;list-style:none;padding:0;font-size:14px;font-weight:600}
+.nav ul a{text-decoration:none;padding:12px 0;border-bottom:3px solid transparent}
+.nav ul a:hover{border-color:var(--ink)}
+/* hero */
+.hero{background:var(--sky) url(img/p1.jpg) 50% 0/cover;position:relative;padding:clamp(20px,3vw,40px) 0 clamp(48px,6vw,80px);border-bottom:3px solid var(--ink)}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(61,143,224,.25),rgba(61,143,224,.55))}
+.hero-in{position:relative;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);grid-template-rows:1fr auto auto auto 1fr;grid-template-areas:". win" "kia win" "h1 win" "det win" ". win";column-gap:clamp(24px,3vw,48px)}
+.kia{grid-area:kia;margin-bottom:18px;font-size:15px;font-weight:600;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.kia .sticker{font-size:22px}
+h1{grid-area:h1;position:relative;z-index:3;font-size:clamp(64px,11vw,168px);line-height:.86;white-space:nowrap;width:max-content;pointer-events:none}
+h1 .a{display:block;color:var(--yel);text-shadow:.045em .045em 0 var(--ink);-webkit-text-stroke:2px var(--ink)}
+h1 .b{display:block;color:var(--grape);margin-left:.9em;text-shadow:.045em .045em 0 var(--ink);-webkit-text-stroke:2px var(--ink)}
+.det{grid-area:det;margin-top:20px;max-width:520px}
+.lead{font-size:clamp(17px,.5vw + 15px,21px);font-weight:600;line-height:1.45}
+.addr{margin-top:12px;font-size:15px;font-weight:600;display:flex;gap:8px;align-items:center}
+.addr svg{width:18px;height:18px;flex:none}
+.status{margin-top:8px;font-size:14px;display:flex;align-items:center;gap:9px;background:rgba(246,242,234,.85);border:2px solid var(--ink);border-radius:999px;padding:5px 13px;width:fit-content}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--red);flex:none;box-shadow:0 0 0 3px rgba(215,38,46,.2)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.winbox{grid-area:win;justify-self:end;align-self:center;position:relative;width:min(100%,calc((100vh - 190px)*.975),720px)}
+.win{position:relative;border:clamp(10px,1.2vw,16px) solid var(--ink);background:var(--ink);aspect-ratio:640/656;overflow:hidden;box-shadow:12px 12px 0 rgba(22,22,22,.28)}
+.win img{position:absolute;left:0;width:100%;top:-49.09%;height:auto}
+.sill{height:20px;background:var(--yel);border:3px solid var(--ink);margin:0 -14px;position:relative;z-index:1}
+.rate{position:absolute;right:-12px;top:22px;z-index:2;transform:rotate(4deg);font-size:15px;text-align:center}
+.rate span{display:block;font-family:'Sora';font-size:11px;font-weight:600}
+/* sections */
+section{scroll-margin-top:16px}
+.sec{padding:clamp(64px,8vw,120px) 0}
+.kick{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+h2{font-size:clamp(34px,5vw,68px);margin:.25em 0 .35em;max-width:16ch}
+.intro{max-width:56ch;font-size:clamp(16px,.4vw + 14px,19px)}
+/* shelves */
+.shelf{margin-top:clamp(40px,5vw,64px);position:relative}
+.shelf-h{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 var(--pad);margin-bottom:6px}
+.shelf-h .sticker{font-size:clamp(18px,1.6vw,24px)}
+.arrows{display:flex;gap:8px}
+.arrows button{width:44px;height:44px;border-radius:50%;border:3px solid var(--ink);background:var(--wall);cursor:pointer;font:700 18px/1 'Sora';box-shadow:2px 2px 0 var(--ink)}
+.arrows button:hover{background:var(--yel)}
+.row{--th:clamp(270px,30vw,380px);display:flex;align-items:flex-end;gap:clamp(12px,1.4vw,20px);overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--pad);padding:22px var(--pad) 0;border-bottom:16px solid var(--ink);box-shadow:0 12px 0 rgba(22,22,22,.12);scrollbar-width:thin;scrollbar-color:var(--ink) transparent}
+.row::after{content:"";flex:0 0 1px}
+.t{flex:0 0 auto;height:var(--th);scroll-snap-align:start;position:relative;overflow:hidden;border:3px solid var(--ink);border-bottom:0;padding:clamp(16px,1.8vw,24px);display:flex;flex-direction:column;justify-content:flex-end;gap:8px;transition:transform .2s}
+.t:hover{transform:translateY(-6px)}
+.t.s{height:calc(var(--th)*.8)}.t.xs{height:calc(var(--th)*.66)}
+.t h3{font-family:'Archivo Black',sans-serif;font-weight:400;font-size:clamp(22px,2.2vw,32px);line-height:1.02}
+.t p{font-size:14px;line-height:1.5}
+.t.y{background:var(--yel)}.t.g{background:var(--grape);color:#fff}.t.g h3{color:var(--yel)}.t.k{background:var(--ink);color:var(--wall)}.t.k h3{color:var(--yel)}.t.b{background:var(--sky)}.t.w{background:#fff}
+.t.ph{padding:0}
+.t.ph img{width:100%;height:100%;object-fit:cover}
+.t.ph figcaption{position:absolute;left:12px;bottom:12px;font-size:13px;font-weight:600;background:var(--wall);border:2px solid var(--ink);padding:3px 10px;transform:rotate(-2deg)}
+.w72{width:calc(var(--th)*.72)}.w80{width:calc(var(--th)*.8)}.w90{width:calc(var(--th)*.9)}.w100{width:var(--th)}.w124{width:calc(var(--th)*1.24)}
+.crop{width:calc(var(--th)*.704)}
+.crop img{position:absolute;left:0;top:-83.6%;width:236%;max-width:none;height:auto}
+.big{font-size:clamp(30px,3vw,44px)!important}
+.t a{font-weight:700}
+.note{position:absolute;z-index:2;font-size:14px;max-width:220px;padding:.5em .8em;line-height:1.25}
+.n1{right:var(--pad);top:-8px;transform:rotate(3deg)}
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(24px,4vw,64px);align-items:start}
+.score{background:var(--grape);color:#fff;border:3px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:clamp(24px,3vw,40px);transform:rotate(-1.5deg)}
+.score .n{font-size:clamp(88px,10vw,150px);color:var(--yel);line-height:.9;text-shadow:5px 5px 0 var(--ink)}
+.stars{display:flex;gap:4px;margin:14px 0 6px}
+.stars svg{width:26px;height:26px;fill:var(--yel)}
+.score p{font-weight:600}
+.pts{list-style:none;padding:0;display:grid;gap:0}
+.pts li{display:grid;grid-template-columns:minmax(0,auto) minmax(0,1fr);gap:18px;align-items:baseline;padding:22px 0;border-top:3px solid var(--ink)}
+.pts li:last-child{border-bottom:3px solid var(--ink)}
+.pts .disp{font-size:clamp(34px,4vw,56px);color:var(--sky);-webkit-text-stroke:1.5px var(--ink)}
+.pts h3{font-family:'Archivo Black';font-weight:400;font-size:clamp(20px,2vw,28px);line-height:1.1;margin-bottom:6px}
+.pts li:nth-child(2){padding-left:clamp(0px,5vw,72px)}
+.pts li:nth-child(3){padding-left:clamp(0px,2.5vw,36px)}
+.pts .heart{display:inline-block;width:18px;height:18px;vertical-align:-2px;fill:var(--red);margin-left:6px}
+/* aotearoa */
+.ao{background:var(--sky);border-block:3px solid var(--ink);overflow:hidden}
+.ao-in{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(28px,4vw,72px);align-items:center}
+.ao h2{color:#fff;text-shadow:4px 4px 0 var(--ink);-webkit-text-stroke:2px var(--ink);max-width:13ch}
+.letter{background:var(--wall);border:3px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:clamp(22px,3vw,40px);transform:rotate(1.5deg);position:relative}
+.letter .sticker{position:absolute;top:-22px;left:22px;font-size:20px}
+.letter p+p{margin-top:12px}
+.sig{font-weight:700;margin-top:16px}
+.route{width:100%;height:auto;margin-top:16px}
+/* check */
+.chk{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:start;margin-top:32px}
+.q{border:3px solid var(--ink);background:#fff;padding:clamp(18px,2.4vw,30px);box-shadow:6px 6px 0 var(--ink)}
+.q+.q{margin-top:28px;margin-left:clamp(0px,3vw,40px)}
+.q legend{float:left;width:100%;font-family:'Archivo Black';font-size:clamp(22px,2.2vw,30px);line-height:1.1;margin-bottom:16px;padding:0}
+.q fieldset{border:0;padding:0;min-width:0}
+.q .num{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--ink);color:var(--yel);font-size:17px;margin-right:10px;vertical-align:3px}
+.opts{clear:both;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.opt{min-height:64px;border:3px solid var(--ink);background:var(--wall);font:700 16px/1.2 'Sora';cursor:pointer;padding:10px 14px;text-align:left;transition:background .15s,transform .15s}
+.opt:hover{transform:translateY(-2px)}
+.opt[aria-pressed=true]{background:var(--yel);box-shadow:inset 0 -6px 0 var(--ink)}
+.opt small{display:block;font-weight:400;font-size:13px;margin-top:3px}
+.ticket{background:var(--wall);border:3px solid var(--ink);box-shadow:10px 10px 0 var(--grape);position:sticky;top:20px}
+.ticket header{background:var(--ink);color:var(--yel);padding:14px 22px;font-family:'Archivo Black';font-size:18px;display:flex;justify-content:space-between;gap:12px}
+.tb{padding:clamp(18px,2.4vw,28px)}
+.res{font-family:'Archivo Black';font-size:clamp(24px,2.6vw,34px);line-height:1.08}
+.tip{margin-top:10px}
+.sw{margin-top:10px;font-weight:600;color:var(--grape)}
+.msg{margin-top:18px;border:2px dashed var(--ink);background:#fff;padding:14px 16px;font-size:15px}
+.msg b{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+.tact{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.eve{margin-top:18px;font-size:14px;padding-top:14px;border-top:2px solid var(--ink)}
+/* visit strip */
+.counter{background:var(--ink);color:var(--wall);border:3px solid var(--ink);max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));box-shadow:0 14px 0 var(--yel)}
+.counter>div{padding:22px 22px 24px;border-right:2px dashed rgba(246,242,234,.35)}
+.counter>div:last-child{border:0}
+.counter b{display:block;color:var(--yel);font-family:'Archivo Black';font-weight:400;font-size:19px;line-height:1.15;margin-bottom:6px}
+.counter p{font-size:14px}
+.vbtn{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:44px}
+/* final */
+.final{background:var(--yel);border-top:3px solid var(--ink);text-align:center;padding:clamp(64px,8vw,110px) 0}
+.final h2{margin:0 auto .3em;max-width:18ch}
+.final h2 span{color:var(--grape)}
+.final .cta{justify-content:center}
+footer{background:var(--ink);color:#d9d4ca;font-size:13px;padding:28px 0 96px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+.fab{display:none}
+/* reveal */
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (max-width:960px){
+ .hero-in{grid-template-columns:minmax(0,1fr);grid-template-rows:none;grid-template-areas:"kia" "win" "h1" "det"}
+ .winbox{justify-self:stretch;width:auto;max-width:560px}
+ h1{margin-top:-.42em;font-size:clamp(60px,17vw,120px);margin-left:-4px}
+ .praise,.ao-in,.chk{grid-template-columns:minmax(0,1fr)}
+ .ticket{position:static}
+ .counter{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .counter>div:nth-child(2){border-right:0}
+ .counter>div:nth-child(-n+2){border-bottom:2px dashed rgba(246,242,234,.35)}
+}
+@media (max-width:760px){
+ .nav ul{display:none}
+ .fab{display:inline-flex;position:fixed;right:16px;bottom:16px;z-index:50}
+ footer{padding-bottom:110px}
+ .note{display:none}
+ .q+.q{margin-left:0}
+}
+@media (max-width:520px){
+ .counter{grid-template-columns:minmax(0,1fr)}
+ .counter>div{border-right:0!important;border-bottom:2px dashed rgba(246,242,234,.35)}
+ .opts{grid-template-columns:minmax(0,1fr)}
+ .cta .btn{flex:1 1 auto;justify-content:center}
+ .rate{right:-6px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="demo" role="note">Demo-Konzept eines unabhängigen Entwicklers – keine offizielle Website von Le Mur Cafe. Nicht vom Inhaber freigegeben; wird auf erste Anfrage gelöscht.</div>
+
+<nav class="nav" aria-label="Hauptnavigation"><div class="wrap">
+ <a class="brand" href="#top"><b>LE MUR</b><i>CAFE</i></a>
+ <ul><li><a href="#regal">Im Regal</a></li><li><a href="#check">Zmittag-Check</a></li><li><a href="#besuch">Besuch</a></li><li><a href="https://www.instagram.com/le_mur_cafe_kiosk_zuri_nz/" rel="noopener" target="_blank">Instagram</a></li></ul>
+</div></nav>
+
+<header class="hero" id="top">
+ <div class="wrap hero-in">
+  <p class="kia"><span class="sticker">Kia ora!</span> Grüezi aus dem Kiosk-Fenster.</p>
+  <h1 class="disp"><span class="sr">Le Mur Cafe &amp; Kiosk</span><span class="a" aria-hidden="true">LE MUR</span><span class="b" aria-hidden="true">CAFE</span></h1>
+  <div class="winbox">
+   <div class="win"><img src="img/p2.jpg" alt="Le Mur von aussen: bunt beklebtes Schaufenster, Tischchen vor dem Kiosk an der Engelstrasse" width="640" height="1136"></div>
+   <div class="sill" aria-hidden="true"></div>
+   <p class="sticker w rate">4,9 ★<span>76 Google-Bewertungen</span></p>
+  </div>
+  <div class="det">
+   <p class="lead">Kleiner Kiosk, grosses Herz: täglich frischer, hausgemachter Zmittag, Kaffee &amp; Kuchen – mit einem Touch of Aotearoa mitten im Kreis&nbsp;4.</p>
+   <p class="addr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>Engelstrasse 59 · 8004 Zürich · Aussersihl</p>
+   <p class="status"><span class="dot" aria-hidden="true"></span>Keine fixen Zeiten online – heute kurz anrufen oder auf Instagram schauen</p>
+   <div class="cta">
+    <a class="btn ink" href="tel:+41442415939"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1Z"/></svg>Anrufen</a>
+    <a class="btn yel" href="https://www.google.com/maps/dir/?api=1&amp;destination=47.3766928,8.5236504" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.7 11.3 12.7 2.3a1 1 0 0 0-1.4 0l-9 9a1 1 0 0 0 0 1.4l9 9a1 1 0 0 0 1.4 0l9-9a1 1 0 0 0 0-1.4ZM14 14.5V12h-4v3H8v-4a1 1 0 0 1 1-1h5V7.5l3.5 3.5Z"/></svg>Route</a>
+    <a class="btn" href="https://ig.me/m/le_mur_cafe_kiosk_zuri_nz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg>Instagram-DM</a>
+   </div>
+  </div>
+ </div>
+</header>
+
+<main>
+<section class="sec" id="regal" style="padding-bottom:clamp(40px,5vw,72px)">
+ <div class="wrap rv">
+  <p class="kick">Was im Regal steht</p>
+  <h2 class="disp">Klein. Laut. Alles selbstgemacht.</h2>
+  <p class="intro">Ein fixes Menü auf Papier gibt es nicht – was auf den Teller kommt, bestimmt der Markt am Morgen. Ein Blick in die Regale, so wie man durchs Fenster schaut.</p>
+ </div>
+
+ <div class="shelf rv">
+  <div class="shelf-h"><h3 class="sticker">Heute frisch</h3><div class="arrows"><button type="button" data-dir="-1" aria-label="Regal nach links">←</button><button type="button" data-dir="1" aria-label="Regal nach rechts">→</button></div></div>
+  <div class="row" data-qa-skip tabindex="0" aria-label="Heute frisch">
+   <figure class="t ph w124"><img src="img/p8.jpg" alt="Frisch angerichtete Teller auf der Theke von Le Mur, dahinter wird gekocht" style="object-position:50% 35%" loading="lazy"><figcaption>Direkt von der Theke</figcaption></figure>
+   <div class="t y w90"><h3 class="big">Alles haus&shy;gemacht.</h3><p>Jeden Tag frisch zubereitet – mit Produkten vom lokalen Markt.</p></div>
+   <div class="t w s w80"><h3>Gesunde Linie</h3><p>Ein kleiner, ausgewogener Zmittag: abwechslungsreich und mit Raffinesse gekocht.</p></div>
+   <figure class="t ph crop"><img src="img/p2.jpg" alt="Das bunte Schaufenster von Le Mur mit Blumen und einem Tischchen davor" loading="lazy"><figcaption>Das Fenster</figcaption></figure>
+   <div class="t g w90"><h3>New Zealand Twist meets Switzerland</h3><p>Unter neuer Führung: gleich frisch wie immer – und ein bisschen anders.</p></div>
+  </div>
+ </div>
+
+ <div class="shelf rv">
+  <span class="sticker p note n1">Notiz: über Mittag lohnt sich kurz Anstehen</span>
+  <div class="shelf-h"><h3 class="sticker p">Amaretti &amp; Süsses</h3><div class="arrows"><button type="button" data-dir="-1" aria-label="Regal nach links">←</button><button type="button" data-dir="1" aria-label="Regal nach rechts">→</button></div></div>
+  <div class="row" data-qa-skip tabindex="0" aria-label="Amaretti und Süsses">
+   <div class="t g w100"><h3 class="big">Die besten Amaretti</h3><p>So steht es in den Google-Bewertungen. Wir widersprechen nicht.</p></div>
+   <figure class="t ph w72"><img src="img/p11.jpg" alt="Blick aus dem Kiosk-Fenster: Bücher, Blumen und ein Kaffee auf dem Sims" loading="lazy"><figcaption>Kaffee am Fenster</figcaption></figure>
+   <div class="t y s w90"><h3>Kaffee &amp; Kuchen</h3><p>Für die Pause zwischendurch – zum Mitnehmen oder draussen an einem der Tischli.</p></div>
+   <div class="t b xs w80"><h3>Bücher, Kunst &amp; Gläser</h3><p>Die Regale drinnen sind voll. Schauen Sie sich ruhig um.</p></div>
+  </div>
+ </div>
+
+ <div class="shelf rv">
+  <div class="shelf-h"><h3 class="sticker w">Abends</h3><div class="arrows"><button type="button" data-dir="-1" aria-label="Regal nach links">←</button><button type="button" data-dir="1" aria-label="Regal nach rechts">→</button></div></div>
+  <div class="row" data-qa-skip tabindex="0" aria-label="Abends">
+   <div class="t k w124"><h3 class="big">Bar, Food &amp; Sounds</h3><p>An ausgewählten Abenden wird der Kiosk zur kleinen Bar – mit Essen und Musik. Die Daten stehen jeweils auf Instagram.</p></div>
+   <div class="t y s w90"><h3>Neu für den Winter</h3><p>Neues Winter-Food und neue Drinks. Was gerade da ist, zeigt Le Mur auf Instagram.</p></div>
+   <div class="t w xs w80"><h3>Nächster Abend?</h3><p><a href="https://www.instagram.com/le_mur_cafe_kiosk_zuri_nz/" target="_blank" rel="noopener">@le_mur_cafe_kiosk_zuri_nz</a> folgen und nichts verpassen.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="lob" style="padding-top:clamp(40px,5vw,72px)">
+ <div class="wrap praise">
+  <div class="score rv">
+   <p class="disp n">4,9</p>
+   <div class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 2 3 6.6 7 .7-5.3 4.8 1.6 7L12 17.5 5.7 21l1.6-7L2 9.3l7-.7Z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 3 6.6 7 .7-5.3 4.8 1.6 7L12 17.5 5.7 21l1.6-7L2 9.3l7-.7Z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 3 6.6 7 .7-5.3 4.8 1.6 7L12 17.5 5.7 21l1.6-7L2 9.3l7-.7Z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 3 6.6 7 .7-5.3 4.8 1.6 7L12 17.5 5.7 21l1.6-7L2 9.3l7-.7Z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 3 6.6 7 .7-5.3 4.8 1.6 7L12 17.5 5.7 21l1.6-7L2 9.3l7-.7Z"/></svg></div>
+   <p>aus 76 Google-Bewertungen</p>
+  </div>
+  <div class="rv">
+   <p class="kick">Was Gäste schreiben</p>
+   <h2 class="disp">Ein Geheimtipp im Quartier.</h2>
+   <ol class="pts">
+    <li><span class="disp">01</span><div><h3>Frisch &amp; selbstgemacht<svg class="heart" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11Z"/></svg></h3><p>Gäste loben, dass jeden Tag alles frisch und mit Zutaten vom Markt zubereitet wird – abwechslungsreich und gesund.</p></div></li>
+    <li><span class="disp">02</span><div><h3>Klein und sehr herzlich</h3><p>Für manche ist Le Mur seit Jahren der Lieblingsort für den Zmittag – sehr freundlich, mit ganz wenigen Plätzen.</p></div></li>
+    <li><span class="disp">03</span><div><h3>Preis und Qualität stimmen</h3><p>Das Preis-Leistungs-Verhältnis wird immer wieder gelobt. Über Mittag kann es kurz eine Wartezeit geben.</p></div></li>
+   </ol>
+  </div>
+ </div>
+</section>
+
+<section class="sec ao">
+ <div class="wrap ao-in">
+  <div class="rv">
+   <p class="kick">Kia ora &amp; grüezi</p>
+   <h2 class="disp">A Touch of Aotearoa in Zürich.</h2>
+   <svg class="route" viewBox="0 0 520 120" role="img" aria-label="Von Aotearoa an die Engelstrasse in Zürich">
+    <path d="M30 90 C 160 -10, 360 -10, 490 70" fill="none" stroke="#161616" stroke-width="4" stroke-dasharray="10 9" stroke-linecap="round"/>
+    <circle cx="30" cy="90" r="11" fill="#FFC72C" stroke="#161616" stroke-width="4"/>
+    <circle cx="490" cy="70" r="11" fill="#8B23B5" stroke="#161616" stroke-width="4"/>
+    <text x="8" y="118" font-family="Sora" font-weight="700" font-size="15" fill="#161616">Aotearoa</text>
+    <text x="512" y="104" text-anchor="end" font-family="Sora" font-weight="700" font-size="15" fill="#161616">Kreis 4</text>
+   </svg>
+  </div>
+  <div class="letter rv">
+   <span class="sticker">Kia ora</span>
+   <p>Le Mur ist unter neuer Führung: Māori von der einen Seite, Irisch von der anderen – und jetzt zuhause an der Engelstrasse.</p>
+   <p>Geblieben ist, was das Quartier kennt: alles frisch, alles selbstgemacht, jeden Tag. Dazu kommen ein Stück Neuseeland, viel Farbe im Schaufenster und Abende mit Musik.</p>
+   <p class="sig">Ngā mihi – bis bald am Kiosk.</p>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="check">
+ <div class="wrap">
+  <div class="rv">
+   <p class="kick">Zmittag-Check</p>
+   <h2 class="disp">Mitnehmen oder bleiben?</h2>
+   <p class="intro">Zwei Fragen – dann wissen Sie, wie Sie am besten vorbeikommen. Und was Sie vorher fragen können, damit es heute passt.</p>
+  </div>
+  <div class="chk">
+   <div class="rv">
+    <div class="q"><fieldset><legend><span class="num">1</span>Mitnehmen oder hier essen?</legend>
+     <div class="opts"><button type="button" class="opt" data-k="mode" data-v="take" aria-pressed="false">Mitnehmen<small>Take-away vom Fenster</small></button><button type="button" class="opt" data-k="mode" data-v="here" aria-pressed="false">Hier essen<small>Draussen am Tischli</small></button></div>
+    </fieldset></div>
+    <div class="q"><fieldset><legend><span class="num">2</span>Süss dazu?</legend>
+     <div class="opts"><button type="button" class="opt" data-k="sweet" data-v="yes" aria-pressed="false">Ja, Amaretti<small>Laut Gästen die besten</small></button><button type="button" class="opt" data-k="sweet" data-v="no" aria-pressed="false">Nein, danke<small>Nur Zmittag</small></button></div>
+    </fieldset></div>
+   </div>
+   <article class="ticket rv" aria-live="polite">
+    <header><span>Ihr Plan</span><span>Engelstr. 59</span></header>
+    <div class="tb">
+     <p class="res" id="res">Wählen Sie links – der Plan steht in zwei Klicks.</p>
+     <p class="tip" id="tip">Was es heute gibt, entscheidet der Markt am Morgen. Fragen kostet nichts.</p>
+     <p class="sw" id="sw" hidden></p>
+     <div class="msg"><b>Ihre Nachricht</b><span id="msg"></span></div>
+     <div class="tact">
+      <a class="btn grape" href="https://ig.me/m/le_mur_cafe_kiosk_zuri_nz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>Frag per Instagram, was heute auf dem Teller ist</a>
+      <button type="button" class="btn yel" id="copy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg><span>Text kopieren</span></button>
+      <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=47.3766928,8.5236504" target="_blank" rel="noopener">Route</a>
+      <a class="btn" href="tel:+41442415939">044 241 59 39</a>
+     </div>
+     <p class="eve">Abends geplant? Die «Bar, Food &amp; Sounds»-Abende werden auf <a href="https://www.instagram.com/le_mur_cafe_kiosk_zuri_nz/" target="_blank" rel="noopener">Instagram</a> angekündigt.</p>
+    </div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="besuch" style="padding-top:0">
+ <div class="wrap">
+  <div class="rv" style="text-align:center;margin-bottom:32px"><p class="kick">Besuch</p><h2 class="disp" style="margin-inline:auto">Am Fenster bestellen.</h2></div>
+  <div class="counter rv">
+   <div><b>Engelstrasse 59</b><p>8004 Zürich, Kreis 4 – im Quartier Aussersihl</p></div>
+   <div><b>2–3 Tischli</b><p>draussen, ein paar Plätze drinnen – sonst Take-away</p></div>
+   <div><b>Zeiten</b><p>keine fixen Zeiten online – tagesaktuell auf Instagram oder per Telefon</p></div>
+   <div><b>044 241 59 39</b><p>Kurz anrufen und fragen, was heute frisch ist</p></div>
+  </div>
+  <div class="vbtn">
+   <a class="btn yel" href="https://www.google.com/maps/dir/?api=1&amp;destination=47.3766928,8.5236504" target="_blank" rel="noopener">Route zur Engelstrasse 59</a>
+   <a class="btn ink" href="tel:+41442415939">Anrufen</a>
+   <a class="btn" href="https://www.instagram.com/le_mur_cafe_kiosk_zuri_nz/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+ </div>
+</section>
+
+<section class="final">
+ <div class="wrap rv">
+  <h2 class="disp">Hunger? Das Fenster ist <span>gleich um die Ecke.</span></h2>
+  <p class="intro" style="margin:0 auto">Frischer Zmittag, Kaffee &amp; Kuchen und Amaretti – an der Engelstrasse 59.</p>
+  <div class="cta"><a class="btn ink" href="tel:+41442415939">Anrufen</a><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=47.3766928,8.5236504" target="_blank" rel="noopener">Route</a></div>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+ <span>Le Mur Cafe &amp; Kiosk · Engelstrasse 59 · 8004 Zürich · <a href="tel:+41442415939">044 241 59 39</a> · <a href="https://www.instagram.com/le_mur_cafe_kiosk_zuri_nz/" target="_blank" rel="noopener">@le_mur_cafe_kiosk_zuri_nz</a></span>
+ <span>Demo-Konzept, nicht offiziell. Wird auf erste Anfrage gelöscht.</span>
+</div></footer>
+
+<a class="btn ink fab" href="tel:+41442415939" aria-label="Le Mur anrufen"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1Z"/></svg>Anrufen</a>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+ var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var els=document.querySelectorAll('.rv');
+ if(rm||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')})}
+ else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)})}
+ document.querySelectorAll('.arrows button').forEach(function(b){b.addEventListener('click',function(){var r=b.closest('.shelf').querySelector('.row');r.scrollBy({left:b.dataset.dir*r.clientWidth*.7,behavior:rm?'auto':'smooth'})})});
+ var st={mode:null,sweet:null},$=function(i){return document.getElementById(i)};
+ function upd(){
+  var res='Wählen Sie links – der Plan steht in zwei Klicks.',tip='Was es heute gibt, entscheidet der Markt am Morgen. Fragen kostet nichts.',want='';
+  if(st.mode==='take'){res='Meist Take-away – alles täglich frisch.';tip='Am Fenster bestellen, mitnehmen, fertig. Über Mittag kann es kurz eine kleine Schlange geben.';want=' Ich würde gern etwas mitnehmen'}
+  if(st.mode==='here'){res='Nur 2–3 Tischli draussen – früh kommen.';tip='Sitzplätze sind rar. Wer vor dem grossen Mittagsansturm da ist, hat die besten Chancen.';want=' Ich würde gern draussen an einem Tischli essen'}
+  var sw=$('sw');
+  if(st.sweet==='yes'){sw.hidden=false;sw.textContent='Plus Amaretti – laut Gästen die besten weit und breit.';want+=want?' und Amaretti dazu nehmen':' Ich hätte gern Amaretti'}
+  else if(st.sweet==='no'){sw.hidden=false;sw.textContent='Ohne Süsses – die Amaretti warten aufs nächste Mal.'}
+  else sw.hidden=true;
+  $('res').textContent=res;$('tip').textContent=tip;
+  $('msg').textContent='Kia ora! Was gibt es heute bei Ihnen zum Zmittag?'+(want?want+'.':'')+' Danke!';
+ }
+ document.querySelectorAll('.opt').forEach(function(b){b.addEventListener('click',function(){st[b.dataset.k]=b.dataset.v;document.querySelectorAll('.opt[data-k="'+b.dataset.k+'"]').forEach(function(o){o.setAttribute('aria-pressed',o===b)});upd()})});
+ $('copy').addEventListener('click',function(){var t=$('msg').textContent,l=this.querySelector('span');function ok(){l.textContent='Kopiert';setTimeout(function(){l.textContent='Text kopieren'},1800)}
+  if(navigator.clipboard){navigator.clipboard.writeText(t).then(ok,fb)}else fb();
+  function fb(){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy');ok()}catch(e){}a.remove()}});
+ upd();
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Demo concept|Demo-Konzept/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Preise & Ablauf →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

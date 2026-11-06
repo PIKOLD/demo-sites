@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Life Vintage &amp; Thrift — non-profit thrift on Fifth Ave, Brooklyn</title><meta property="og:type" content="website"><meta property="og:title" content="Life Vintage &amp;amp; Thrift — non-profit thrift on Fifth Ave, Brooklyn"><meta property="og:description" content="Life Vintage &amp;amp; Thrift (Life Boutique Thrift): a non-profit thrift and vintage store at 515 and 66 Fifth Ave, Brooklyn. Racks sorted by color, proceeds benefit Chai Lifeline. Donations always welcome."><meta property="og:image" content="https://pikold.github.io/demo-sites/life-boutique-thrift/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Life Vintage &amp; Thrift (Life Boutique Thrift): a non-profit thrift and vintage store at 515 and 66 Fifth Ave, Brooklyn. Racks sorted by color, proceeds benefit Chai Lifeline. Donations always welcome.">
+<link rel="stylesheet" href="../_fonts/oswald.css">
+<link rel="stylesheet" href="../_fonts/lora.css">
+<style>
+:root{--bg:#FBFAF8;--chrome:#BFC3C7;--ink:#1C1A1A;--mute:#4a4545;--red:#D7362F;--pink:#F06A9A;--mari:#F2A93B;--green:#5FA052;--sky:#4FA3D9;--violet:#7B5BC4;--line:#e3e1dd;--fh:'Oswald',Impact,sans-serif;--fb:'Lora',Georgia,serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--fb);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1360px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}
+.demo{background:var(--ink);color:#f2f0ec;font:400 13px/1.4 var(--fb);text-align:center;padding:7px 16px}
+h1,h2,h3,.oz{font-family:var(--fh);font-weight:600;text-transform:uppercase;letter-spacing:.01em;line-height:.95;margin:0}
+h2{font-size:clamp(38px,5.6vw,80px)}
+.kick{font:500 13px/1 var(--fh);letter-spacing:.18em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px;margin:0 0 18px}
+.kick::before{content:"";width:28px;height:4px;background:linear-gradient(90deg,var(--red),var(--pink),var(--mari),var(--green),var(--sky),var(--violet))}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:999px;font:500 16px/1 var(--fh);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:2px solid var(--ink);background:var(--ink);color:var(--bg);cursor:pointer;transition:transform .15s,background .15s,color .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(1px)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--bg)}
+.btn.red{background:var(--red);border-color:var(--red);color:#fff}
+.btn svg{width:18px;height:18px}
+nav.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.mini{font:700 20px/1 var(--fh);text-transform:uppercase;text-decoration:none;letter-spacing:.02em}
+.mini span{color:var(--red)}
+nav.top ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+nav.top ul a{font:500 14px/1 var(--fh);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:12px 0;border-bottom:2px solid transparent}
+nav.top ul a:hover{border-color:var(--pink)}
+/* hero */
+.hero{position:relative;padding:clamp(8px,2vh,28px) 0 0}
+.word{font:700 clamp(54px,8.4vw,136px)/.86 var(--fh);text-transform:uppercase;letter-spacing:-.005em;margin:0}
+.word .l2{display:block}
+.word .amp{color:var(--red)}
+.hrow{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(20px,4vw,64px);align-items:end}
+.hinfo{padding-bottom:6px;max-width:560px}
+.hinfo p{margin:0 0 10px}
+.lede{font-size:clamp(18px,1.6vw,21px);line-height:1.45}
+.addr{color:var(--mute);font-size:15px}
+.status{display:inline-flex;align-items:center;gap:8px;font:500 14px/1.2 var(--fh);letter-spacing:.08em;text-transform:uppercase;margin:4px 0 14px}
+.status i{width:10px;height:10px;border-radius:50%;background:var(--chrome);flex:none}
+.status.open i{background:var(--green);box-shadow:0 0 0 4px rgba(95,160,82,.2)}
+.status.closed i{background:var(--red)}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.causetag{position:relative;display:inline-block;margin:0 0 18px;transform:rotate(3deg);transform-origin:top center;background:#fff;border:1.5px solid var(--ink);border-radius:6px 6px 10px 10px;padding:24px 18px 12px;font:500 14px/1.15 var(--fh);text-transform:uppercase;letter-spacing:.04em;text-align:center;box-shadow:4px 6px 0 var(--pink)}
+.causetag::before{content:"";position:absolute;top:9px;left:50%;width:10px;height:10px;margin-left:-5px;border-radius:50%;border:1.5px solid var(--ink);background:var(--bg)}
+
+.causetag b{display:block;color:var(--red);font-size:22px;margin-top:4px}
+/* rail */
+.rack{position:relative;margin:clamp(18px,3vh,34px) 0 0;padding:0 12px}
+.bar{position:relative;height:12px;border-radius:8px;background:linear-gradient(180deg,#eef0f2 0%,#fff 22%,var(--chrome) 55%,#8d9196 100%);box-shadow:0 3px 6px rgba(28,26,26,.18)}
+.bar::before,.bar::after{content:"";position:absolute;top:-5px;width:22px;height:22px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff,var(--chrome) 55%,#7d8186)}
+.bar::before{left:-10px}.bar::after{right:-10px}
+.tabs{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:clamp(4px,1.4vw,22px);margin:-14px 0 0;padding:0 clamp(4px,2vw,30px)}
+.tab{position:relative;display:flex;flex-direction:column;align-items:center;text-decoration:none;transform-origin:50% 6px;transition:transform .3s}
+.tab:hover,.tab:focus-visible{transform:rotate(-5deg)}
+.tab:active{transform:rotate(4deg)}
+.tab svg{width:min(78px,100%);height:auto;overflow:visible}
+.tab .cl{display:block;width:88%;height:clamp(82px,13vh,150px);margin-top:-3px;background:var(--c);border-radius:14px 14px 4px 4px;clip-path:polygon(0 12%,22% 0,78% 0,100% 12%,100% 100%,0 100%);box-shadow:inset -10px 0 0 rgba(0,0,0,.07)}
+.tab .tg{position:absolute;right:-2px;bottom:-14px;background:#fff;border:1.2px solid var(--ink);border-radius:3px;padding:8px 3px 5px;font:500 11px/1 var(--fh);letter-spacing:.14em;text-transform:uppercase;writing-mode:vertical-rl;transform:rotate(-4deg)}
+.tab .tg::before{content:"";position:absolute;top:2px;left:50%;width:4px;height:4px;margin-left:-2px;border-radius:50%;background:var(--ink)}
+.railnote{display:flex;justify-content:space-between;gap:16px;margin:30px 0 0;font-size:14px;color:var(--mute)}
+/* services */
+.sec{padding:clamp(64px,9vw,128px) 0}
+.what{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,6vw,96px);align-items:start}
+.what h2 span{color:var(--green)}
+.what .intro{font-size:clamp(18px,1.5vw,20px);max-width:44ch;margin:22px 0 0}
+.inv{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.inv li{display:grid;grid-template-columns:28px minmax(0,1fr) minmax(0,1.3fr);gap:16px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line)}
+.inv li::before{content:"";width:16px;height:16px;border-radius:3px;background:var(--c);transform:translateY(2px)}
+.inv b{font:600 clamp(20px,2vw,26px)/1.05 var(--fh);text-transform:uppercase}
+.inv span{color:var(--mute);font-size:16px}
+/* finder */
+#find{padding-top:clamp(56px,8vw,110px)}
+.fhead{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,420px);gap:32px;align-items:end;margin-bottom:28px}
+.fhead p{margin:0;color:var(--mute)}
+.daily{display:inline-block;background:#fff;border:1.5px dashed var(--ink);padding:10px 14px;border-radius:6px;font-size:15px;color:var(--ink)!important;margin-top:12px!important}
+.dots{position:sticky;top:0;z-index:5;background:rgba(251,250,248,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.dots .wrap{display:flex;gap:6px;align-items:center;padding-top:8px;padding-bottom:8px}
+.dots span{font:500 12px/1 var(--fh);letter-spacing:.14em;text-transform:uppercase;margin-right:8px}
+.dots a{width:44px;height:44px;display:grid;place-items:center;border-radius:50%}
+.dots a::after{content:"";width:22px;height:22px;border-radius:50%;background:var(--c);border:2px solid rgba(28,26,26,.25);transition:transform .2s}
+.dots a.on::after,.dots a:hover::after{transform:scale(1.25);border-color:var(--ink)}
+.band{--t:color-mix(in srgb,var(--c) 11%,var(--bg));background:var(--t);border-top:1px solid color-mix(in srgb,var(--c) 30%,var(--bg));scroll-margin-top:60px}
+.band .wrap{display:grid;gap:clamp(24px,5vw,80px);align-items:center;padding-top:clamp(36px,5vw,72px);padding-bottom:clamp(36px,5vw,72px)}
+.band.big .wrap{grid-template-columns:minmax(0,5fr) minmax(0,6fr)}
+.band.big.flip .wrap{grid-template-columns:minmax(0,6fr) minmax(0,5fr)}
+.band.big.flip .ph{order:2}
+.band.strip .wrap{grid-template-columns:minmax(0,auto) minmax(0,1fr) minmax(0,auto);padding-top:26px;padding-bottom:26px}
+.sw{display:flex;align-items:center;gap:14px}
+.sw i{width:46px;height:62px;background:var(--c);border-radius:8px 8px 3px 3px;clip-path:polygon(0 14%,24% 0,76% 0,100% 14%,100% 100%,0 100%);flex:none}
+.sw .oz{font-size:clamp(30px,4vw,56px);font-weight:700}
+.band.strip .sw .oz{font-size:clamp(26px,3vw,40px)}
+.band.strip p{margin:0;color:var(--mute)}
+.ph{position:relative;margin:0}
+.ph img{width:100%;object-fit:cover;border-radius:4px;box-shadow:10px 10px 0 var(--c)}
+.ph figcaption{font-size:13px;color:var(--mute);margin-top:18px}
+.find h3{font-size:clamp(28px,3.2vw,44px);font-weight:500;margin:18px 0 12px;text-transform:none;line-height:1.05}
+.find p{margin:0 0 18px;max-width:46ch}
+.ask{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 20px;border-radius:999px;border:2px solid var(--ink);background:#fff;font:500 15px/1 var(--fh);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:background .15s,color .15s}
+.ask:hover,.ask[aria-expanded=true]{background:var(--ink);color:var(--bg)}
+.composer{margin-top:16px;background:#fff;border:1.5px solid var(--ink);border-radius:8px;padding:16px;max-width:520px;box-shadow:6px 6px 0 var(--c)}
+.composer p{font-size:14px;color:var(--mute);margin:0 0 8px}
+.composer textarea{width:100%;font:400 16px/1.5 var(--fb);border:1px solid var(--line);border-radius:6px;padding:10px;resize:none;background:var(--bg);color:var(--ink)}
+.composer .row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.composer .btn{min-height:44px;font-size:14px;padding:0 16px}
+/* praise */
+.praise{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(28px,6vw,96px)}
+.score{align-self:start;position:relative;background:#fff;border:2px solid var(--ink);border-radius:8px 8px 16px 16px;padding:44px 26px 26px;transform:rotate(-3deg);box-shadow:8px 8px 0 var(--mari);max-width:320px}
+.score::before{content:"";position:absolute;top:14px;left:50%;width:14px;height:14px;margin-left:-7px;border-radius:50%;border:2px solid var(--ink)}
+.score .n{font:700 clamp(84px,9vw,128px)/.9 var(--fh)}
+.score .stars{color:var(--mari);font-size:26px;letter-spacing:4px}
+.score p{margin:8px 0 0;font-size:15px;color:var(--mute)}
+.pts{list-style:none;margin:0;padding:0;counter-reset:p}
+.pts li{counter-increment:p;display:grid;grid-template-columns:72px minmax(0,1fr);gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}
+.pts li:nth-child(2){margin-left:clamp(0px,6vw,90px)}
+.pts li:nth-child(3){margin-left:clamp(0px,3vw,45px)}
+.pts li::before{content:"0" counter(p);font:600 44px/1 var(--fh);color:var(--c)}
+.pts b{display:block;font:600 24px/1.1 var(--fh);text-transform:uppercase;margin-bottom:6px}
+.pts span{color:var(--mute)}
+/* cause */
+.cause{background:var(--ink);color:#f3f1ed}
+.cause .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,6vw,96px);align-items:center;padding-top:clamp(56px,8vw,110px);padding-bottom:clamp(56px,8vw,110px)}
+.bigtag{position:relative;justify-self:center;width:min(100%,340px);background:var(--bg);color:var(--ink);border-radius:14px 14px 28px 28px;padding:70px 28px 30px;text-align:center;transform:rotate(-4deg);box-shadow:12px 12px 0 var(--red)}.bigtag::before{content:"";position:absolute;top:22px;left:50%;width:22px;height:22px;margin-left:-11px;border-radius:50%;background:var(--ink)}.bigtag::after{content:"";position:absolute;top:-60px;left:50%;width:2px;height:94px;background:var(--chrome)}.bigtag span{display:block;font:500 15px/1.2 var(--fh);letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}.bigtag b{display:block;font:700 clamp(56px,6vw,84px)/.9 var(--fh);text-transform:uppercase;color:var(--red);margin:14px 0 18px;padding:16px 0;border-top:2px dashed var(--chrome);border-bottom:2px dashed var(--chrome)}
+.cause h2{color:#fff}
+.cause h2 em{font-style:normal;color:var(--mari)}
+.cause p{font-size:clamp(18px,1.6vw,21px);max-width:46ch}
+.cause .kick{color:#f3f1ed}
+/* shops */
+.shops{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(20px,3vw,40px);margin-top:40px;align-items:start}
+.shop{border:2px solid var(--ink);border-radius:10px;padding:clamp(22px,3vw,40px);background:#fff;position:relative}
+.shop .no{font:700 clamp(80px,10vw,150px)/.85 var(--fh);display:block}
+.shop.a .no{color:var(--red)}
+.shop.b{margin-top:clamp(0px,8vw,110px);background:color-mix(in srgb,var(--sky) 10%,var(--bg))}
+.shop.b .no{color:var(--sky);font-size:clamp(70px,8vw,120px)}
+.shop h3{font-size:26px;margin:14px 0 6px}
+.shop p{margin:0 0 16px;color:var(--mute)}
+.ave{position:relative;height:14px;margin:34px 0 0;background:repeating-linear-gradient(90deg,var(--ink) 0 22px,transparent 22px 36px);opacity:.5;border-radius:2px}
+.avel{display:flex;justify-content:space-between;font:500 13px/1 var(--fh);letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-top:10px}
+/* donate + hours */
+.dh{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,6vw,96px);align-items:start}
+.donate{background:color-mix(in srgb,var(--green) 12%,var(--bg));border-radius:12px;padding:clamp(24px,4vw,52px)}
+.donate h2 span{color:var(--green)}
+.donate>p{max-width:48ch}
+.pick{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+.pick label{cursor:pointer}
+.pick input{position:absolute;opacity:0}
+.pick span{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;border:2px solid var(--ink);border-radius:999px;font:500 16px/1 var(--fh);letter-spacing:.06em;text-transform:uppercase;background:#fff}
+.pick input:checked+span{background:var(--ink);color:var(--bg)}
+.pick input:focus-visible+span{outline:3px solid var(--sky);outline-offset:3px}
+.out{background:#fff;border-radius:8px;padding:18px;border:1.5px solid var(--ink)}
+.out .num{font:600 clamp(28px,3vw,38px)/1 var(--fh);display:block;margin-bottom:12px;text-decoration:none}
+.out p{margin:12px 0 0;font-size:15px;color:var(--mute)}
+.hours h2{font-size:clamp(36px,4vw,56px);margin-bottom:26px}
+.stack{display:grid;gap:12px}
+.ht{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px;background:#fff;border:1.5px solid var(--ink);border-radius:6px 22px 22px 6px;padding:16px 26px 16px 22px;transition:transform .2s}
+.ht::after{content:"";position:absolute;right:12px;top:50%;width:9px;height:9px;margin-top:-5px;border-radius:50%;border:1.5px solid var(--ink)}
+.ht:nth-child(1){transform:rotate(-1.2deg)}.ht:nth-child(2){transform:rotate(1deg);margin-left:18px}.ht:nth-child(3){transform:rotate(-.6deg);margin-left:6px}
+.ht b{font:600 20px/1.1 var(--fh);text-transform:uppercase}
+.ht span{font-size:16px;padding-right:12px}
+.ht.today{border-left:10px solid var(--c,var(--green))}
+.ht.today b::after{content:" · today";color:var(--mute);font-weight:400;font-size:14px;letter-spacing:.06em}
+.hours .note{font-size:14px;color:var(--mute);margin-top:18px}
+/* final */
+.final{border-top:2px solid var(--ink);text-align:left}
+.final .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:end;padding-top:clamp(56px,7vw,100px);padding-bottom:clamp(56px,7vw,100px)}
+.final h2{font-size:clamp(46px,7vw,110px)}
+.final h2 span{background:linear-gradient(90deg,var(--red),var(--pink),var(--mari),var(--green),var(--sky),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+footer{background:var(--ink);color:#d9d6d1;font-size:14px;padding:26px 0 90px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer a{color:#fff}
+.fab{position:fixed;right:16px;bottom:16px;z-index:20;display:none;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.js .rv.in{opacity:1;transform:none}
+@media (max-width:980px){
+ nav.top ul{display:none}
+ .hrow,.what,.praise,.cause .wrap,.shops,.dh,.fhead,.final .wrap{grid-template-columns:minmax(0,1fr)}
+ .band.big .wrap,.band.big.flip .wrap{grid-template-columns:minmax(0,1fr)}
+ .band.big.flip .ph{order:0}
+ .shop.b{margin-top:0}
+ .pts li:nth-child(n){margin-left:0}
+}
+@media (max-width:700px){
+ body{font-size:16px}
+ .band.strip .wrap{grid-template-columns:minmax(0,1fr)}
+ .tab .tg{font-size:9px;letter-spacing:.08em;padding:6px 2px 4px;right:-4px}
+ .tab .cl{height:84px}
+ .inv li{grid-template-columns:22px minmax(0,1fr)}
+ .inv span{grid-column:2}
+ .railnote{flex-direction:column;gap:4px}
+ .dots span{display:none}
+ .dots .wrap{justify-content:space-between;gap:0}
+ .dots a{width:40px}
+ .fab{display:inline-flex}
+ .ph img{box-shadow:6px 6px 0 var(--c)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="demo">Demo concept by an independent developer — not the official website of Life Vintage &amp; Thrift (Life Boutique Thrift). Not approved by the owner; removed on first request.</div>
+
+<header class="wrap">
+ <nav class="top" aria-label="Main">
+  <a class="mini" href="#top">Life <span>V&amp;T</span></a>
+  <ul><li><a href="#find">Find by color</a></li><li><a href="#shops">Two shops</a></li><li><a href="#donate">Donate</a></li><li><a href="#hours">Hours</a></li></ul>
+  <a class="btn ghost" href="https://www.instagram.com/lifevintageandthrift/" target="_blank" rel="noopener">@lifevintageandthrift</a>
+ </nav>
+</header>
+
+<main id="top">
+<section class="hero wrap" aria-labelledby="hname">
+ <div class="hrow">
+  <h1 class="word" id="hname">Life Vintage<span class="l2"><span class="amp">&amp;</span> Thrift</span></h1>
+  <div class="hinfo">
+   <div class="causetag">Every purchase supports<b>Chai Lifeline</b></div>
+   <p class="lede">A non-profit thrift and vintage store on Fifth Avenue in Brooklyn — racks hung by color, not size, and every sale benefits Chai Lifeline.</p>
+   <p class="addr">515 5th Ave &amp; 66 5th Ave, Brooklyn, NY · listed on Google as Life Boutique Thrift</p>
+   <div class="status" id="status" role="status"><i></i><span>Sun–Thu 11 am – 7 pm</span></div>
+   <div class="cta">
+    <a class="btn red" href="tel:+17187885433"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>Call 718-788-5433</a>
+    <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=40.6664369,-73.9881412" target="_blank" rel="noopener">Directions</a>
+   </div>
+  </div>
+ </div>
+
+ <div class="rack" aria-label="Shop by color">
+  <div class="bar"></div>
+  <div class="tabs" id="tabs"></div>
+ </div>
+ <div class="railnote"><span>Tap a hanger to jump to that color's latest finds.</span><span>The real racks run the same way, color by color.</span></div>
+</section>
+
+<section class="sec wrap" aria-labelledby="what">
+ <div class="what">
+  <div class="rv">
+   <p class="kick">What turns up</p>
+   <h2 id="what">Sorted by color. <span>Found by luck.</span></h2>
+   <p class="intro">Regulars call every visit a treasure hunt. Clothes hang by color instead of size, so you shop the shade you love and then check what fits. Watch Instagram for color-tag sales.</p>
+  </div>
+  <ul class="inv rv">
+   <li style="--c:var(--red)"><b>Clothing</b><span>Women's wear, fancy and casual. Skirts come up a lot.</span></li>
+   <li style="--c:var(--pink)"><b>The big-day find</b><span>One shopper walked out with a show-stopping wedding outfit.</span></li>
+   <li style="--c:var(--mari)"><b>Shoes &amp; bags</b><span>Different every week. A white loafer was a recent one.</span></li>
+   <li style="--c:var(--green)"><b>Jewelry</b><span>Small things worth digging through slowly.</span></li>
+   <li style="--c:var(--sky)"><b>Home &amp; furniture</b><span>Vases, housewares, lamps, tchotchkes, the odd statement piece.</span></li>
+   <li style="--c:var(--violet)"><b>Books</b><span>With a comfortable chair in the book section, so take your time.</span></li>
+   <li style="--c:var(--ink)"><b>Posters &amp; records</b><span>You never know what will be in the bins.</span></li>
+  </ul>
+ </div>
+</section>
+
+<section id="find" aria-labelledby="findh">
+ <div class="wrap fhead">
+  <div><p class="kick">Find by color</p><h2 id="findh">Latest finds,<br>rack by rack</h2></div>
+  <div><p>Pieces from recent posts, sorted the way the store is. See something? Ask before you come in.</p><p class="daily">Stock changes daily. A piece from a post may already have a new home.</p></div>
+ </div>
+ <div class="dots" aria-label="Jump to a color"><div class="wrap" id="dots"><span>Colors</span></div></div>
+
+ <div class="band big" id="c-white" style="--c:#BFC3C7" data-name="White">
+  <div class="wrap">
+   <figure class="ph rv"><picture><source media="(max-width:700px)" srcset="img/p11-m.jpg"><img src="img/p11.jpg" alt="White croc-textured loafer with a gold buckle, photographed close up" style="aspect-ratio:1/1;object-position:50% 0%"></picture></figure>
+   <div class="find rv">
+    <div class="sw"><i></i><span class="oz">White</span></div>
+    <h3>The white loafer with the gold buckle</h3>
+    <p>Croc texture, polished hardware, posted fresh off the rack.</p>
+    <button class="ask" data-msg="Hi! Is the white loafer with the gold buckle from your post still in the shop?" aria-expanded="false">Ask about this piece</button>
+   </div>
+  </div>
+ </div>
+
+ <div class="band strip" id="c-red" style="--c:var(--red)" data-name="Red">
+  <div class="wrap">
+   <div class="sw"><i></i><span class="oz">Red</span></div>
+   <p>No red piece in the feed this week. The red rack is on the floor all the same.</p>
+   <div class="find"><button class="ask" data-msg="Hi! Anything new on the red rack this week?" aria-expanded="false">Ask what's new in red</button></div>
+  </div>
+ </div>
+
+ <div class="band big flip" id="c-pink" style="--c:var(--pink)" data-name="Pink">
+  <div class="wrap">
+   <figure class="ph rv"><picture><source media="(max-width:700px)" srcset="img/p2-m.jpg"><img src="img/p2.jpg" alt="Hand pulling a hanger of pleated pink, coral and black pieces from a packed rack" style="aspect-ratio:4/3;object-position:50% 46%"></picture></figure>
+   <div class="find rv">
+    <div class="sw"><i></i><span class="oz">Pink</span></div>
+    <h3>The pleats on the color-tag rack</h3>
+    <p>Pink, coral and plum, packed tight. Color tags are how the store runs its sales, so watch the posts.</p>
+    <button class="ask" data-msg="Hi! Are the pink pleated pieces from your color-tag post still on the rack?" aria-expanded="false">Ask about this piece</button>
+   </div>
+  </div>
+ </div>
+
+ <div class="band big" id="c-marigold" style="--c:var(--mari)" data-name="Marigold">
+  <div class="wrap">
+   <figure class="ph rv"><picture><source media="(max-width:700px)" srcset="img/p1-m.jpg"><img src="img/p1.jpg" alt="Big amber pleated lamp glowing beside a light box that spells Chai Lifeline" style="aspect-ratio:4/5;object-position:50% 40%"></picture></figure>
+   <div class="find rv">
+    <div class="sw"><i></i><span class="oz">Marigold</span></div>
+    <h3>The big amber lamp by the Chai Lifeline sign</h3>
+    <p>Warm light, pleated shade, the kind of piece that changes a whole room.</p>
+    <button class="ask" data-msg="Hi! Is the big amber lamp next to the Chai Lifeline sign for sale, and is it still in the shop?" aria-expanded="false">Ask about this piece</button>
+   </div>
+  </div>
+ </div>
+
+ <div class="band strip" id="c-green" style="--c:var(--green)" data-name="Green">
+  <div class="wrap">
+   <div class="sw"><i></i><span class="oz">Green</span></div>
+   <p>Nothing green in the latest posts. Ask what came in, it turns over fast.</p>
+   <div class="find"><button class="ask" data-msg="Hi! Anything new on the green rack this week?" aria-expanded="false">Ask what's new in green</button></div>
+  </div>
+ </div>
+
+ <div class="band big flip" id="c-sky" style="--c:var(--sky)" data-name="Sky">
+  <div class="wrap">
+   <figure class="ph rv"><picture><source media="(max-width:700px)" srcset="img/p9-m.jpg"><img src="img/p9.jpg" alt="Tall turquoise vase painted with flowers, standing on a carved wooden side table between clothing racks" style="aspect-ratio:3/4;object-position:50% 30%;max-height:640px;margin-left:auto"></picture></figure>
+   <div class="find rv">
+    <div class="sw"><i></i><span class="oz">Sky</span></div>
+    <h3>The painted vase on the carved stand</h3>
+    <p>Turquoise, hand-painted flowers, gilded handles. Proof the home section is worth the detour.</p>
+    <button class="ask" data-msg="Hi! Are the painted turquoise vase and the carved stand from your post still in the shop?" aria-expanded="false">Ask about this piece</button>
+   </div>
+  </div>
+ </div>
+
+ <div class="band strip" id="c-violet" style="--c:var(--violet)" data-name="Violet">
+  <div class="wrap">
+   <div class="sw"><i></i><span class="oz">Violet</span></div>
+   <p>No violet in the feed right now. The rack still has its corner.</p>
+   <div class="find"><button class="ask" data-msg="Hi! Anything new on the purple rack this week?" aria-expanded="false">Ask what's new in violet</button></div>
+  </div>
+ </div>
+
+ <div class="band strip" id="c-black" style="--c:var(--ink)" data-name="Black">
+  <div class="wrap">
+   <div class="sw"><i></i><span class="oz">Black</span></div>
+   <p>The basics end of the spectrum. Ask for something specific.</p>
+   <div class="find"><button class="ask" data-msg="Hi! Anything new on the black rack this week?" aria-expanded="false">Ask what's new in black</button></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec wrap" aria-labelledby="praise">
+ <div class="praise">
+  <div class="score rv" style="--c:var(--mari)">
+   <div class="n">4.6</div>
+   <div class="stars" aria-hidden="true">★★★★★</div>
+   <p>from 380 Google reviews</p>
+  </div>
+  <div>
+   <p class="kick">What shoppers say</p>
+   <h2 id="praise" style="margin-bottom:18px">A treasure hunt, every visit</h2>
+   <ol class="pts rv">
+    <li style="--c:var(--red)"><div><b>Well organized</b><span>Clothes grouped by color, and a comfy chair in the books so you can actually read before you buy.</span></div></li>
+    <li style="--c:var(--sky)"><div><b>Every kind of find</b><span>Shoes, bags, jewelry, décor, books, tchotchkes and, once, a wedding outfit that stole the show.</span></div></li>
+    <li style="--c:var(--green)"><div><b>Kind people, fair prices</b><span>Shoppers mention friendly, welcoming staff and prices that feel very reasonable.</span></div></li>
+   </ol>
+  </div>
+ </div>
+</section>
+
+<section class="cause" aria-labelledby="causeh">
+ <div class="wrap">
+  <div class="bigtag rv" aria-hidden="true"><span>Non-profit</span><b>Chai<br>Lifeline</b><span>515 + 66 Fifth Ave</span></div>
+  <div class="rv">
+   <p class="kick">Why it matters</p>
+   <h2 id="causeh">Shop here and it <em>goes somewhere</em></h2>
+   <p>Life Vintage &amp; Thrift is a non-profit store. Proceeds from both shops benefit Chai Lifeline, so the skirt, the vase or the stack of books you carry out is doing double duty.</p>
+   <a class="btn red" href="#donate">Donate your things</a>
+  </div>
+ </div>
+</section>
+
+<section class="sec wrap" id="shops" aria-labelledby="shopsh">
+ <p class="kick">Two shops on Fifth</p>
+ <h2 id="shopsh">Same cause, two doors</h2>
+ <div class="shops">
+  <article class="shop a rv">
+   <span class="no">515</span>
+   <h3>515 5th Ave</h3>
+   <p>Brooklyn, NY 11215 · 4.6 on Google from 380 reviews</p>
+   <div class="cta"><a class="btn red" href="tel:+17187885433">718-788-5433</a><a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=40.6664369,-73.9881412" target="_blank" rel="noopener">Directions</a></div>
+  </article>
+  <article class="shop b rv">
+   <span class="no">66</span>
+   <h3>66 5th Ave</h3>
+   <p>Brooklyn, NY · the second store, same hours</p>
+   <div class="cta"><a class="btn" href="tel:+17187895433">718-789-5433</a><a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=66+5th+Ave%2C+Brooklyn%2C+NY" target="_blank" rel="noopener">Directions</a></div>
+  </article>
+ </div>
+ <div class="ave" aria-hidden="true"></div>
+ <div class="avel" aria-hidden="true"><span>66 · Fifth Ave</span><span>Fifth Ave · 515</span></div>
+</section>
+
+<section class="sec wrap" aria-label="Donate and hours">
+ <div class="dh">
+  <div class="donate rv" id="donate">
+   <p class="kick">Donate</p>
+   <h2>Drop it off or <span>we'll pick it up</span></h2>
+   <p>The shops are always accepting donations. Bring in what you no longer use, or call to schedule a pickup. Choose the shop closest to you:</p>
+   <div class="pick" role="radiogroup" aria-label="Choose a shop">
+    <label><input type="radio" name="shop" value="515" checked><span>515 5th Ave</span></label>
+    <label><input type="radio" name="shop" value="66"><span>66 5th Ave</span></label>
+   </div>
+   <div class="out" aria-live="polite">
+    <a class="num" id="dnum" href="tel:+17187885433">Call 718-788-5433</a>
+    <div class="cta"><a class="btn red" id="dcall" href="tel:+17187885433">Schedule a pickup</a><a class="btn ghost" id="ddir" href="https://www.google.com/maps/dir/?api=1&amp;destination=40.6664369,-73.9881412" target="_blank" rel="noopener">Drop-off directions</a></div>
+    <p>Drop-offs during shop hours: Sunday to Thursday 11 am – 7 pm. Friday: call to ask. Saturday: closed.</p>
+   </div>
+  </div>
+  <div class="hours rv" id="hours">
+   <p class="kick">Hours</p>
+   <h2>Hang-tag hours</h2>
+   <div class="stack">
+    <div class="ht" data-d="0,1,2,3,4" style="--c:var(--green)"><b>Sun – Thu</b><span>11 am – 7 pm</span></div>
+    <div class="ht" data-d="5" style="--c:var(--mari)"><b>Friday</b><span>11 am – call to ask</span></div>
+    <div class="ht" data-d="6" style="--c:var(--red)"><b>Saturday</b><span>Closed</span></div>
+   </div>
+   <p class="note">Hours apply to both shops. Holidays can shift things, so check Instagram or call.</p>
+  </div>
+ </div>
+</section>
+
+<section class="final" aria-labelledby="fin">
+ <div class="wrap">
+  <h2 id="fin">Come dig through <span>the rainbow</span></h2>
+  <div class="cta"><a class="btn red" href="tel:+17187885433">Call 515</a><a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=40.6664369,-73.9881412" target="_blank" rel="noopener">Directions</a><a class="btn ghost" href="https://ig.me/m/lifevintageandthrift" target="_blank" rel="noopener">Instagram DM</a></div>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>Life Vintage &amp; Thrift · 515 &amp; 66 5th Ave, Brooklyn, NY · a non-profit benefiting Chai Lifeline</span><a href="https://www.instagram.com/lifevintageandthrift/" target="_blank" rel="noopener">Instagram @lifevintageandthrift</a></div></footer>
+<a class="btn red fab" href="tel:+17187885433">Call</a>
+
+<script>
+(function(){
+document.documentElement.classList.add('js');setTimeout(function(){document.querySelectorAll('.rv').forEach(function(x){x.classList.add('in')})},1200);
+var C=[['White','#FFFFFF','c-white'],['Red','#D7362F','c-red'],['Pink','#F06A9A','c-pink'],['Marigold','#F2A93B','c-marigold'],['Green','#5FA052','c-green'],['Sky','#4FA3D9','c-sky'],['Violet','#7B5BC4','c-violet'],['Black','#1C1A1A','c-black']];
+var hg='<svg viewBox="0 0 80 40" aria-hidden="true"><path d="M40 16V10a5 5 0 1 0-5-5" fill="none" stroke="#7d8186" stroke-width="2.5" stroke-linecap="round"/><path d="M40 16L6 34h68z" fill="none" stroke="#1C1A1A" stroke-width="2.5" stroke-linejoin="round"/></svg>';
+var t=document.getElementById('tabs'),d=document.getElementById('dots');
+C.forEach(function(c){
+ var a=document.createElement('a');a.className='tab';a.href='#'+c[2];a.style.setProperty('--c',c[1]);a.setAttribute('aria-label',c[0]+' finds');
+ a.innerHTML=hg+'<span class="cl"'+(c[0]=='White'?' style="box-shadow:inset 0 0 0 1.5px #BFC3C7"':'')+'></span><span class="tg">'+c[0]+'</span>';t.appendChild(a);
+ var b=document.createElement('a');b.href='#'+c[2];b.style.setProperty('--c',c[1]);b.setAttribute('aria-label',c[0]);d.appendChild(b);
+});
+// status
+var st=document.getElementById('status');
+try{
+ var p={};new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date()).forEach(function(x){p[x.type]=x.value});
+ var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(p.weekday),m=(+p.hour%24)*60+(+p.minute),txt,open=false;
+ if(day==6)txt='Closed Saturdays · opens Sun 11 am';
+ else if(m<660)txt='Closed now · opens 11 am'+(day==5?' (Friday, call to ask)':'');
+ else if(day==5){open=m<1140;txt=open?'Open now · Friday hours vary, call to ask':'Friday · call to ask if still open'}
+ else if(m<1140){open=true;txt='Open now · until 7 pm'}
+ else txt='Closed now · opens '+(day==4?'Fri':'tomorrow')+' 11 am';
+ st.className='status '+(open?'open':'closed');st.querySelector('span').textContent=txt;
+ document.querySelectorAll('.ht').forEach(function(h){if(h.dataset.d.split(',').indexOf(String(day))>-1)h.classList.add('today')});
+}catch(e){}
+// ask composer
+var IG='https://ig.me/m/lifevintageandthrift',box=document.createElement('div');box.className='composer';
+box.innerHTML='<p>Instagram can’t prefill a DM, so copy this first, then paste it in the chat:</p><textarea readonly rows="3" aria-label="Message to send"></textarea><div class="row"><button class="btn red" type="button">Copy message</button><a class="btn ghost" href="'+IG+'" target="_blank" rel="noopener">Open Instagram DM</a></div>';
+var ta=box.querySelector('textarea'),cb=box.querySelector('button'),cur=null;
+document.querySelectorAll('.ask').forEach(function(b){b.addEventListener('click',function(){
+ if(cur===b){box.remove();b.setAttribute('aria-expanded','false');cur=null;return}
+ if(cur)cur.setAttribute('aria-expanded','false');
+ cur=b;b.setAttribute('aria-expanded','true');ta.value=b.dataset.msg;cb.textContent='Copy message';
+ var band=b.closest('.band');box.style.setProperty('--c',getComputedStyle(band).getPropertyValue('--c'));
+ b.parentNode.appendChild(box);
+})});
+cb.addEventListener('click',function(){
+ var ok=function(){cb.textContent='Copied ✓'};
+ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(ta.value).then(ok,function(){ta.select();document.execCommand('copy');ok()})}
+ else{ta.select();document.execCommand('copy');ok()}
+});
+// donate helper
+var S={'515':['+17187885433','718-788-5433','40.6664369,-73.9881412'],'66':['+17187895433','718-789-5433','66+5th+Ave%2C+Brooklyn%2C+NY']};
+document.querySelectorAll('input[name=shop]').forEach(function(r){r.addEventListener('change',function(){
+ var s=S[r.value];document.getElementById('dnum').href=document.getElementById('dcall').href='tel:'+s[0];
+ document.getElementById('dnum').textContent='Call '+s[1];document.getElementById('ddir').href='https://www.google.com/maps/dir/?api=1&destination='+s[2];
+})});
+// dots highlight + reveal
+if('IntersectionObserver' in window){
+ var dl=d.querySelectorAll('a');
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){dl.forEach(function(x){x.classList.toggle('on',x.getAttribute('href')=='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+ document.querySelectorAll('.band').forEach(function(b){io.observe(b)});
+ var rv=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');rv.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+ document.querySelectorAll('.rv').forEach(function(x){rv.observe(x)});
+}else document.querySelectorAll('.rv').forEach(function(x){x.classList.add('in')});
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Demo concept|Demo-Konzept/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Pricing →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

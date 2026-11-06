@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Bohemian House of Espresso + Chai — chai &amp; coffee in DTLA</title><meta property="og:type" content="website"><meta property="og:title" content="Bohemian House of Espresso + Chai — chai &amp;amp; coffee in DTLA"><meta property="og:description" content="A family-run chai and espresso house on Spring St in downtown Los Angeles, plus Glendale. Artisan chai, quality coffee, healthy breakfast and lunch, a genuine workspace. Open daily 8 am–7 pm."><meta property="og:image" content="https://pikold.github.io/demo-sites/bohemian-house-of-espresso/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="A family-run chai and espresso house on Spring St in downtown Los Angeles, plus Glendale. Artisan chai, quality coffee, healthy breakfast and lunch, a genuine workspace. Open daily 8 am–7 pm.">
+<link rel="stylesheet" href="../_fonts/instrument-serif.css">
+<link rel="stylesheet" href="../_fonts/plus-jakarta-sans.css">
+<style>
+:root{--grey:#D8D4CD;--grey2:#CBC6BE;--black:#161515;--amber:#C77F3A;--amberD:#8E531D;--matcha:#8CAE57;--matchaD:#4E6B26;--straw:#D84452;--milk:#F7F3EC;--ink2:#4a4644;
+--serif:'Instrument Serif',Georgia,serif;--sans:'Plus Jakarta Sans',system-ui,sans-serif;--wrap:min(1360px,100% - 40px)}
+*{box-sizing:border-box;margin:0}
+@media (prefers-reduced-motion:no-preference){html:focus-within{scroll-behavior:smooth}}
+body{font:400 16px/1.6 var(--sans);color:var(--black);background:var(--milk);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+.wrap{width:var(--wrap);margin-inline:auto}
+.demo{background:var(--black);color:#d9d4cc;font-size:12px;line-height:1.4;text-align:center;padding:7px 16px}
+.cap{font-size:12px;letter-spacing:.02em;text-transform:lowercase;color:var(--ink2)}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:.95;letter-spacing:-.01em}
+h2{font-size:clamp(40px,6vw,88px)}
+h2 em,h1 em{font-style:italic;color:var(--amberD)}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;font:600 15px/1 var(--sans);text-decoration:none;border:1.5px solid var(--black);cursor:pointer;background:none;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn.solid{background:var(--black);color:var(--milk)}
+.btn.solid:hover{background:#2c2a29}
+.btn.light{border-color:var(--milk);color:var(--milk)}
+.btn.light:hover{background:var(--milk);color:var(--black)}
+.btn svg{width:18px;height:18px;flex:none}
+/* header */
+header{position:absolute;inset:auto 0;z-index:5}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0;gap:20px}
+.mark{display:flex;align-items:center;gap:10px;text-decoration:none}
+.mono{width:40px;height:40px;border-radius:50%;background:var(--black);color:#fff;display:grid;place-items:center;font:700 22px/1 var(--sans);letter-spacing:-.04em}
+.mark b{font:400 26px/1 var(--serif)}
+.mark small{display:block;font-size:11px;color:var(--ink2);letter-spacing:.04em}
+.nav ul{display:flex;gap:26px;list-style:none;padding:0;font-size:14px;font-weight:500}
+.nav ul a{text-decoration:none;padding:12px 0}
+.nav ul a:hover{color:var(--amberD)}
+/* hero sweep */
+.hero{position:relative;background:linear-gradient(180deg,#cfcac2 0%,var(--grey) 38%,#e2ded7 62%,#ebe7e0 78%,#e0dcd5 100%);overflow:hidden}
+.hero::after{content:"";position:absolute;left:-10%;right:-10%;top:66%;height:60%;background:radial-gradient(ellipse at 50% 0,rgba(255,255,255,.55),transparent 60%);pointer-events:none}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:40px;align-items:end;min-height:min(100vh,940px);padding:104px 0 56px}
+.hero h1{font-size:clamp(58px,8.4vw,132px);margin:18px 0 22px}
+.hero h1 span{display:block}
+.lede{max-width:34em;font-size:17px;color:#2b2827}
+.meta{display:flex;flex-wrap:wrap;gap:10px 18px;margin:20px 0 26px;font-size:14px;align-items:center}
+.status{display:inline-flex;align-items:center;gap:8px;font-weight:600}
+.status i{width:9px;height:9px;border-radius:50%;background:#999}
+.status.open i{background:var(--matcha);box-shadow:0 0 0 4px rgba(140,174,87,.25)}
+.status.closed i{background:var(--straw)}
+.stars{font-weight:600}
+.stars b{color:var(--amberD)}
+.ctas{display:flex;flex-wrap:wrap;gap:10px}
+/* lineup */
+.lineup{position:relative;display:flex;align-items:flex-end;justify-content:center;gap:clamp(10px,2vw,30px);padding-bottom:64px}
+.lineup::before{content:"";position:absolute;left:-6%;right:-6%;bottom:58px;height:1px;background:rgba(22,21,21,.12)}
+.item{position:relative;display:flex;flex-direction:column;align-items:center}
+.plate{background:url(img/p11.jpg) no-repeat;border-radius:6px;box-shadow:0 30px 30px -22px rgba(22,21,21,.45);transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.item:hover .plate{transform:translateY(-8px)}
+.riser{width:100%;background:linear-gradient(180deg,#f3efe8,#e4dfd7);border-radius:3px 3px 0 0;box-shadow:inset 0 1px 0 #fff}
+.p-cold{width:clamp(96px,13.4vw,220px);aspect-ratio:.73;background-size:250%;background-position:6.7% 71.4%}
+.p-smoo{width:clamp(110px,15vw,250px);aspect-ratio:.805;background-size:227%;background-position:44.6% 28.6%}
+.p-pist{width:clamp(104px,14vw,232px);aspect-ratio:.815;background-size:244%;background-position:94.9% 79%}
+.r1{height:clamp(60px,10vw,170px)}.r2{height:clamp(22px,3.6vw,62px)}
+.label{position:absolute;bottom:-46px;left:50%;display:flex;align-items:center;gap:6px;white-space:nowrap;font-size:12px;color:var(--ink2)}
+.label::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--black)}
+.label::after{content:"";order:-1;position:absolute;left:2px;bottom:6px;width:1px;height:34px;background:rgba(22,21,21,.35)}
+.item:nth-child(2) .label{bottom:-30px}
+.item:nth-child(3) .label{bottom:-46px;left:auto;right:0}
+/* shelf */
+.shelf{padding:110px 0 90px}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:40px;align-items:end;margin-bottom:44px}
+.head p{color:var(--ink2);max-width:30em}
+.track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 max(20px,(100% - 1360px)/2) 26px;scrollbar-width:thin;scrollbar-color:var(--amber) transparent}
+.card{flex:none;scroll-snap-align:start;width:clamp(240px,24vw,330px)}
+.card .ph{aspect-ratio:3/4;border-radius:8px;overflow:hidden;background:var(--grey)}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.card:hover img{transform:scale(1.04)}
+.card .bgc{width:100%;height:100%;background-repeat:no-repeat}
+.card figcaption{display:flex;gap:10px;align-items:baseline;margin-top:12px;font-size:13px;color:var(--ink2)}
+.card figcaption b{font:400 22px/1 var(--serif);color:var(--black)}
+.card.type .ph{display:flex;flex-direction:column;justify-content:space-between;padding:26px;color:#fff}
+.card.type h3{font-size:44px}
+.card.type ul{list-style:none;padding:0;font-size:15px;font-weight:500}
+.card.type li{padding:7px 0;border-top:1px solid rgba(255,255,255,.3)}
+.wide{width:clamp(280px,34vw,460px)}
+.wide .ph{aspect-ratio:4/4.2}
+.menu{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px;margin-top:60px;padding-top:30px;border-top:1.5px solid var(--black)}
+.menu h3{font-size:30px;margin-bottom:12px}
+.menu ul{list-style:none;padding:0;font-size:15px}
+.menu li{padding:5px 0;border-bottom:1px dotted #bdb6ac}
+.menu .src{font-size:12px;color:var(--ink2);margin-top:10px}
+/* praise */
+.praise{background:var(--black);color:var(--milk);padding:110px 0}
+.praise .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:60px}
+.score{font:400 clamp(110px,15vw,220px)/.8 var(--serif);color:var(--amber)}
+.score+p{margin-top:20px;color:#bdb7ae}
+.points{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}
+.pt{padding:28px;border-radius:10px;background:#211f1e}
+.pt:first-child{grid-column:1/-1;background:var(--amber);color:var(--black)}
+.pt:first-child h3{font-size:clamp(34px,3.6vw,52px)}
+.pt h3{font-size:32px;margin-bottom:10px}
+.pt p{font-size:15px;color:inherit;opacity:.85}
+/* builder */
+.build{background:var(--grey);padding:110px 0}
+.build .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px;align-items:start}
+.step{margin-top:32px}
+.step legend{display:flex;gap:12px;align-items:baseline;font-weight:600;margin-bottom:12px}
+.step legend span{font:400 28px/1 var(--serif);color:var(--amberD)}
+fieldset{border:0;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0;inset:0}
+.chips span{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;border:1.5px solid rgba(22,21,21,.35);font-size:15px;font-weight:500;cursor:pointer;background:rgba(255,255,255,.35);transition:.2s}
+.chips label:hover span{border-color:var(--black)}
+.chips input:checked+span{background:var(--black);color:#fff;border-color:var(--black)}
+.chips input:focus-visible+span{outline:2px solid var(--amberD);outline-offset:3px}
+.chips input:disabled+span{opacity:.35;cursor:not-allowed;text-decoration:line-through}
+.note{font-size:13px;color:var(--ink2);margin-top:10px}
+.cup{position:sticky;top:24px;background:var(--black);color:var(--milk);border-radius:18px;padding:34px;overflow:hidden}
+.cup .mono{position:absolute;right:-30px;top:-30px;width:170px;height:170px;font-size:110px;background:#232120;color:#2f2c2b}
+.cup .cap{color:#a9a39a}
+.cup h3{position:relative;font-size:clamp(44px,4.6vw,66px);margin:14px 0 8px}
+.cup .milk{color:var(--amber);font-size:15px;font-weight:600;min-height:1.6em}
+.cup .desc{color:#d2ccc3;margin:14px 0 18px;font-size:15px}
+.ask{display:inline-block;font:400 italic 24px/1.2 var(--serif);border-bottom:1px solid var(--amber);padding-bottom:4px}
+.where{margin-top:26px;padding-top:22px;border-top:1px solid #3a3634}
+.seg{display:inline-flex;border:1.5px solid #5a5552;border-radius:999px;padding:3px;margin-bottom:16px}
+.seg button{min-height:40px;padding:0 18px;border-radius:999px;border:0;background:none;color:var(--milk);font:600 14px var(--sans);cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--milk);color:var(--black)}
+.loc p{font-size:15px;color:#d2ccc3;margin-bottom:14px}
+.msg{margin-top:20px;background:#211f1e;border-radius:10px;padding:16px;font-size:14px;color:#d2ccc3}
+.msg .ctas{margin-top:12px}
+.msg .btn{min-height:44px;font-size:14px;padding:0 16px}
+/* family */
+.family{padding:120px 0}
+.family .wrap{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:70px;align-items:center}
+.family figure{position:relative}
+.family figure img{border-radius:10px;aspect-ratio:4/5;object-fit:cover;object-position:50% 40%;width:100%}
+.family figure figcaption{margin-top:10px}
+.trio{font:400 clamp(44px,6vw,92px)/1 var(--serif);margin:16px 0 30px}
+.trio span{display:block}
+.trio span:nth-child(2){padding-left:1.2em;color:var(--amberD);font-style:italic}
+.trio span:nth-child(3){padding-left:2.4em}
+.family p{max-width:36em;color:#2f2b29;margin-bottom:14px}
+/* work */
+.work{padding:0 0 120px}
+.work .box{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);border-radius:16px;overflow:hidden}
+.work .l{background:var(--matcha);padding:clamp(28px,5vw,64px)}
+.work .r{background:#e9e4dc;padding:clamp(28px,4vw,52px);display:flex;flex-direction:column;justify-content:center;gap:18px}
+.work h2{font-size:clamp(46px,6vw,96px)}
+.work .l p{max-width:30em;margin-top:18px;font-size:17px}
+.fact{display:flex;gap:16px;align-items:baseline;border-bottom:1px solid #cfc8bd;padding-bottom:16px}
+.fact b{font:400 34px/1 var(--serif);min-width:3.2em}
+/* locations */
+.locs{padding:0 0 120px}
+.locgrid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:22px;align-items:end;margin-top:40px}
+.lc{border-radius:16px;padding:clamp(26px,4vw,48px)}
+.lc.big{background:var(--black);color:var(--milk);min-height:460px;display:flex;flex-direction:column;justify-content:space-between;gap:30px}
+.lc.big h3{font-size:clamp(60px,8vw,120px)}
+.lc.big dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 22px;font-size:15px}
+.lc.big dt{color:#a9a39a}
+.lc.big a{color:var(--milk)}
+.lc.small{background:#fff;border:1.5px solid var(--black);min-height:300px;display:flex;flex-direction:column;justify-content:space-between;gap:22px}
+.lc.small h3{font-size:64px}
+.lc.small p{color:var(--ink2);font-size:15px}
+/* catering */
+.cater{background:var(--straw);color:#fff;padding:100px 0}
+.cater .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:50px;align-items:end}
+.cater h2{font-size:clamp(50px,7.4vw,120px)}
+.cater h2 em{color:var(--black)}
+.cater ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 26px}
+.cater li{border:1.5px solid rgba(255,255,255,.7);border-radius:999px;padding:8px 16px;font-size:14px;font-weight:600}
+.cater p{font-size:17px;max-width:30em}
+.cater .btn{border-color:#fff;color:#fff}
+.cater .btn.solid{background:#fff;color:var(--straw)}
+/* final */
+.final{padding:110px 0 70px;text-align:left}
+.final h2{font-size:clamp(54px,9vw,150px)}
+.final .ctas{margin:30px 0 70px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-size:13px;color:var(--ink2);border-top:1px solid #d6cfc4;padding-top:22px}
+.fab{position:fixed;right:16px;bottom:16px;z-index:20;display:none;width:58px;height:58px;border-radius:50%;background:var(--black);color:#fff;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.3)}
+.fab svg{width:24px;height:24px}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (max-width:1000px){
+ .nav ul{display:none}
+ .hero .wrap,.head,.praise .wrap,.build .wrap,.family .wrap,.work .box,.locgrid,.cater .wrap{grid-template-columns:minmax(0,1fr)}
+ .hero .wrap{min-height:0;padding:96px 0 40px;gap:30px}
+ .menu{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .cup{position:relative;top:0}
+ .family figure{max-width:420px}
+}
+@media (max-width:600px){
+ :root{--wrap:calc(100% - 32px)}
+ .fab{display:grid}
+ .hero h1{font-size:clamp(50px,15vw,70px)}
+ .lede{font-size:16px}
+ .mark small{display:none}
+ .ctas .btn{flex:1 1 auto;justify-content:center}
+ .lineup{gap:8px;padding-bottom:58px}
+ .p-cold{width:27vw}.p-smoo{width:30vw}.p-pist{width:28vw}
+ .label{font-size:10.5px;left:30%}
+ .item:nth-child(3) .label{left:auto;right:0}
+ .item:nth-child(3) .label::after{left:2px}
+ .menu{grid-template-columns:minmax(0,1fr)}
+ .points{grid-template-columns:minmax(0,1fr)}
+ .shelf,.praise,.build,.family,.cater,.final{padding-top:80px;padding-bottom:80px}
+ .lc.big{min-height:0}
+ .cup{padding:26px}
+ .final h2{font-size:15vw}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="demo">Demo concept by an independent developer — not the official website of Bohemian House of Espresso + Chai. Not approved by the owner; removed on first request.</div>
+<header><div class="wrap nav">
+ <a class="mark" href="#top" aria-label="Bohemian, back to top"><span class="mono" aria-hidden="true">b</span><span><b>bohemian</b><small>house of espresso + chai</small></span></a>
+ <ul><li><a href="#lineup">The lineup</a></li><li><a href="#build">Build your chai</a></li><li><a href="#family">The family</a></li><li><a href="#visit">Visit</a></li><li><a href="#catering">Catering</a></li></ul>
+ <a class="btn" href="tel:+12136283086">(213) 628-3086</a>
+</div></header>
+
+<main id="top">
+<section class="hero">
+ <div class="wrap">
+  <div>
+   <p class="eyebrow">Bohemian House of Espresso + Chai · DTLA &amp; Glendale</p>
+   <h1><span>chai, the way</span><span><em>home</em> tastes.</span></h1>
+   <p class="lede">A family-run chai and espresso house on Spring St in downtown LA. Artisan chai, quality coffee, healthy breakfast and lunch, and a genuine place to work.</p>
+   <div class="meta">
+    <span class="status" id="st"><i></i><span>Open daily · 8 am – 7 pm</span></span>
+    <span>548 S Spring St R110, Los Angeles</span>
+    <span class="stars"><b>4.8 ★</b> · 495 Google reviews</span>
+   </div>
+   <div class="ctas">
+    <a class="btn solid" href="https://www.google.com/maps/dir/?api=1&amp;destination=34.0459418,-118.2507081" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Directions</a>
+    <a class="btn" href="tel:+12136283086"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>Call</a>
+    <a class="btn" href="https://ig.me/m/bohemianchai" target="_blank" rel="noopener">Instagram DM</a>
+   </div>
+  </div>
+  <div class="lineup" aria-label="Three Bohemian drinks photographed on a grey studio sweep">
+   <div class="item"><div class="plate p-cold" role="img" aria-label="Cold brew with cream in a clear cup with the white b monogram"></div><span class="label">cold brew with cream</span></div>
+   <div class="item"><div class="plate p-smoo" role="img" aria-label="Purple berry smoothie with a mint sprig"></div><div class="riser r1"></div><span class="label">boho berry smoothie</span></div>
+   <div class="item"><div class="plate p-pist" role="img" aria-label="Layered pistachio einspanner topped with crushed pistachio"></div><div class="riser r2"></div><span class="label">pistachio einspanner</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="shelf" id="lineup">
+ <div class="wrap head rv">
+  <div><p class="eyebrow">The lineup</p><h2>Shot like products, <em>poured like family.</em></h2></div>
+  <p>Black cups, a white b, and a lineup that runs from home-style chai to a latte made with date seeds. Scroll the shelf, then find your drink below.</p>
+ </div>
+ <div class="track" data-qa-skip tabindex="0" aria-label="Drink shelf, scroll sideways">
+  <figure class="card"><div class="ph"><div class="bgc" style="background-image:url(img/p2.jpg);background-size:134%;background-position:0 41%" role="img" aria-label="An iced drink and a hot drink in Bohemian cups on the counter"></div></div><figcaption><b>01</b>hot and iced, house cups</figcaption></figure>
+  <figure class="card type" style="--c:var(--straw)"><div class="ph" style="background:var(--straw)"><h3>fruity iced teas</h3><ul><li>strawberry</li><li>peach</li><li>pomegranate</li><li>fresh mint</li></ul></div><figcaption><b>02</b>the summer refreshers</figcaption></figure>
+  <figure class="card"><div class="ph"><img src="img/p6.jpg" alt="Iced coffee with Halloween ghost doodles on the cup" loading="lazy" style="object-position:50% 45%"></div><figcaption><b>03</b>iced coffee, halloween edition</figcaption></figure>
+  <figure class="card"><div class="ph"><img src="img/p4.jpg" alt="A milky iced drink being poured on the bar mat" loading="lazy"></div><figcaption><b>04</b>poured to order on the bar</figcaption></figure>
+  <figure class="card type"><div class="ph" style="background:var(--matchaD)"><h3>matcha, two ways</h3><ul><li>strawberry matcha</li><li>mint matcha</li></ul></div><figcaption><b>05</b>sweet strawberry, smooth matcha</figcaption></figure>
+  <figure class="card"><div class="ph"><div class="bgc" style="background-image:url(img/p10.jpg);background-size:150%;background-position:90% 100%" role="img" aria-label="A black Bohemian cup riding in a car seat"></div></div><figcaption><b>06</b>along for the ride</figcaption></figure>
+ </div>
+ <div class="wrap menu rv">
+  <div><h3>Chai</h3><ul><li>Hand-crafted cardamom ginger chai</li><li>Caramel drizzle chai</li><li>Dirty chai</li><li>Date seed latte</li></ul></div>
+  <div><h3>Coffee</h3><ul><li>Espresso · cappuccino · latte</li><li>Spanish latte</li><li>Cold brew with cream</li><li>Pistachio einspanner</li></ul></div>
+  <div><h3>Matcha &amp; cold</h3><ul><li>Strawberry matcha · mint matcha</li><li>Fruity iced teas</li><li>Fresh smoothies</li></ul></div>
+  <div><h3>Kitchen</h3><ul><li>Avocado toast</li><li>Paninis</li><li>Healthy breakfast &amp; lunch</li></ul><p class="src">Drinks as named on the sign out front, in posts and in reviews. Ask at the counter for today’s board.</p></div>
+ </div>
+</section>
+
+<section class="praise">
+ <div class="wrap">
+  <div class="rv"><p class="eyebrow" style="color:#a9a39a">What guests say</p><div class="score" style="margin-top:20px">4.8</div><p>Average from 495 Google reviews. Here is what keeps coming up.</p></div>
+  <div class="points">
+   <div class="pt rv"><h3>A chai that tastes like it was brewed at home.</h3><p>Full of flavor, never too spicy or bitter, sweetness in balance. One guest had it with coconut milk and was already planning the caramel drizzle chai for next time.</p></div>
+   <div class="pt rv"><h3>A small coffee art house.</h3><p>Fast service, sharp presentation, and a cup people want to photograph.</p></div>
+   <div class="pt rv"><h3>Drinks you can’t get elsewhere.</h3><p>The date seed drink surprised a first-timer: deep, rich and nutty. The Spanish latte gets the same love.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="build" id="build">
+ <div class="wrap">
+  <div>
+   <p class="eyebrow">Build your chai</p>
+   <h2>Three taps to <em>your</em> order.</h2>
+   <p class="note" style="font-size:15px;max-width:34em">Every result is a real Bohemian drink, named on their sign, in their posts or in reviews. No guessing at the counter.</p>
+   <fieldset class="step"><legend><span>01</span>Base</legend><div class="chips" id="base"></div></fieldset>
+   <fieldset class="step"><legend><span>02</span>Milk</legend><div class="chips" id="milk"></div><p class="note" id="milkNote">Coconut milk comes recommended by a regular for the chai.</p></fieldset>
+   <fieldset class="step"><legend><span>03</span>Extra</legend><div class="chips" id="extra"></div><p class="note">Crossed-out extras don’t go with that base. Try another.</p></fieldset>
+  </div>
+  <aside class="cup" aria-live="polite">
+   <span class="mono" aria-hidden="true">b</span>
+   <p class="cap">your drink</p>
+   <h3 id="rName">Caramel drizzle chai</h3>
+   <p class="milk" id="rMilk"></p>
+   <p class="desc" id="rDesc"></p>
+   <span class="ask">Ask for it at the counter.</span>
+   <div class="where">
+    <div class="seg" role="group" aria-label="Location"><button type="button" aria-pressed="true" data-l="dtla">DTLA</button><button type="button" aria-pressed="false" data-l="gle">Glendale</button></div>
+    <div class="loc" id="loc"></div>
+    <div class="msg"><span class="cap" style="display:block;margin-bottom:6px">message to save or send</span><span id="mTxt"></span>
+     <div class="ctas"><button class="btn light" type="button" id="copy">Copy</button><a class="btn light" href="https://ig.me/m/bohemianchai" target="_blank" rel="noopener">Open Instagram DM</a></div></div>
+   </div>
+  </aside>
+ </div>
+</section>
+
+<section class="family" id="family">
+ <div class="wrap">
+  <figure class="rv"><img src="img/p5.jpg" alt="The Bohemian chalkboard sign on the sidewalk, listing hand-crafted cardamom ginger chai, dirty chai, mint matcha and date seed latte" loading="lazy" style="object-position:50% 30%"><figcaption class="cap">the board out front, spring st</figcaption></figure>
+  <div class="rv">
+   <p class="eyebrow">The family behind the counter</p>
+   <p class="trio"><span>a mother,</span><span>a daughter,</span><span>a son.</span></p>
+   <p>Visitors in town for a few days end up coming back visit after visit, and they talk about the same three people: friendly, quick, and working hard even when only one or two of them are on shift.</p>
+   <p>The young man at the bar does not hold back on the caramel drizzle. The woman at the register takes time to explain how the date seed coffee is made. Happy Halloween, they signed one post: from the Bohemian family.</p>
+  </div>
+ </div>
+</section>
+
+<section class="work" id="work">
+ <div class="wrap box rv">
+  <div class="l"><p class="eyebrow">Work here</p><h2>A genuine workspace.</h2><p>That’s their own word for it. Bring the laptop, order a chai, and stay a while. Guests describe the room as relaxed and calm, a different world from the street outside.</p></div>
+  <div class="r">
+   <div class="fact"><b>8–7</b><span>open every day of the week</span></div>
+   <div class="fact"><b>food</b><span>healthy breakfast and lunch, avocado toast, paninis</span></div>
+   <div class="fact" style="border:0"><b>menu</b><span>chai, espresso, matcha, iced teas, smoothies</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="locs" id="visit">
+ <div class="wrap">
+  <div class="head rv" style="margin:0"><div><p class="eyebrow">Visit</p><h2>Two houses, <em>one family.</em></h2></div><p>Downtown on Spring St, and a second Bohemian in Glendale.</p></div>
+  <div class="locgrid">
+   <div class="lc big rv">
+    <div><p class="cap" style="color:#a9a39a">house no. 1</p><h3>DTLA</h3></div>
+    <dl>
+     <dt>Address</dt><dd>548 S Spring St R110, Los Angeles, CA 90013<br><span style="color:#a9a39a">Google lists the café at 109 W 6th St</span></dd>
+     <dt>Hours</dt><dd>Every day, 8 am – 7 pm <span id="st2" style="color:var(--amber)"></span><br><span style="color:#a9a39a">Holiday hours may differ</span></dd>
+     <dt>Phone</dt><dd><a href="tel:+12136283086">(213) 628-3086</a></dd>
+    </dl>
+    <div class="ctas"><a class="btn light" style="background:var(--milk);color:var(--black)" href="https://www.google.com/maps/dir/?api=1&amp;destination=34.0459418,-118.2507081" target="_blank" rel="noopener">Directions</a><a class="btn light" href="tel:+12136283086">Call</a></div>
+   </div>
+   <div class="lc small rv">
+    <div><p class="cap">house no. 2</p><h3>Glendale</h3></div>
+    <p>The newer Bohemian, on the posts tagged Glendale. For the address and today’s hours, check their Instagram.</p>
+    <div class="ctas"><a class="btn" href="https://www.instagram.com/bohemianchai/" target="_blank" rel="noopener">@bohemianchai</a></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="cater" id="catering">
+ <div class="wrap">
+  <div class="rv"><p class="eyebrow">Coming soon</p><h2>The Bohemian <em>coffee booth</em>, at your event.</h2></div>
+  <div class="rv">
+   <p>After many requests, the family is starting to cater. Chai and coffee, served at the place you choose.</p>
+   <ul><li>birthdays</li><li>weddings</li><li>corporate events</li><li>offices</li><li>shoots</li></ul>
+   <div class="ctas"><a class="btn solid" href="https://ig.me/m/bohemianchai" target="_blank" rel="noopener">Ask on Instagram</a><a class="btn" href="tel:+12136283086">Call the shop</a></div>
+  </div>
+ </div>
+</section>
+
+<section class="final">
+ <div class="wrap">
+  <h2 class="rv">See you on <em>Spring St.</em></h2>
+  <div class="ctas"><a class="btn solid" href="https://www.google.com/maps/dir/?api=1&amp;destination=34.0459418,-118.2507081" target="_blank" rel="noopener">Directions</a><a class="btn" href="tel:+12136283086">(213) 628-3086</a><a class="btn" href="https://www.instagram.com/bohemianchai/" target="_blank" rel="noopener">Instagram</a></div>
+  <div class="foot"><span>Bohemian House of Espresso + Chai · 548 S Spring St R110, Los Angeles, CA 90013 · daily 8 am – 7 pm</span><span>Photos from @bohemianchai. Demo concept, not the official site.</span></div>
+ </div>
+</section>
+</main>
+<a class="fab" href="tel:+12136283086" aria-label="Call Bohemian"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></a>
+<script>
+(function(){
+// open status, America/Los_Angeles, daily 8-19
+var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Los_Angeles',hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(new Date()),h=+p.find(function(x){return x.type=='hour'}).value,m=+p.find(function(x){return x.type=='minute'}).value,t=h+m/60,open=t>=8&&t<19;
+var st=document.getElementById('st');st.className='status '+(open?'open':'closed');
+st.lastElementChild.textContent=open?'Open now · until 7 pm':'Closed now · opens '+(t<8?'today':'tomorrow')+' at 8 am';
+document.getElementById('st2').textContent=open?'· open now':'· closed now';
+// builder
+var bases={chai:'chai',espresso:'espresso',matcha:'matcha',tea:'iced tea'},
+milks={any:'as you like',coco:'coconut milk'},
+extras={classic:'keep it classic',caramel:'caramel drizzle',date:'date seed',shot:'espresso shot',cream:'cream on top',pist:'pistachio',straw:'strawberry',mint:'mint',peach:'peach',pom:'pomegranate'},
+D={chai:{classic:['Cardamom ginger chai','The hand-crafted house chai from the sign out front: real spice, balanced sweetness.'],caramel:['Caramel drizzle chai','Rich, spiced chai, and a counter that is generous with the caramel.'],date:['Date seed latte','Made with date seeds: deep, rich and nutty. Ask the family how they make it.'],shot:['Dirty chai','Their chai with espresso in it. Named on the board out front.']},
+espresso:{classic:['Spanish latte','Guests say you can taste the spice and the whole milk, and it arrives looking sharp.'],cream:['Cold brew with cream','Slow cold brew under a thick white cap, in the clear b cup.'],pist:['Pistachio einspanner','Layered, creamy, finished with crushed pistachio on top.'],date:['Date seed latte','The one first-timers have never heard of: date seeds, deep and nutty.']},
+matcha:{straw:['Strawberry matcha','Sweet strawberry meets smooth matcha.'],mint:['Mint matcha','Matcha with mint, straight off the sign out front.']},
+tea:{straw:['Strawberry iced tea','One of the fruity iced teas, the summer refreshers.'],peach:['Peach iced tea','One of the fruity iced teas, the summer refreshers.'],pom:['Pomegranate iced tea','One of the fruity iced teas, the summer refreshers.'],mint:['Fresh mint iced tea','One of the fruity iced teas, the summer refreshers.']}},
+S={base:'chai',milk:'any',extra:'caramel',loc:'dtla'};
+function chips(id,obj,name){var el=document.getElementById(id);for(var k in obj){var l=document.createElement('label');l.innerHTML='<input type="radio" name="'+name+'" value="'+k+'"><span>'+obj[k]+'</span>';el.appendChild(l)}
+el.addEventListener('change',function(e){S[name]=e.target.value;render()})}
+chips('base',bases,'base');chips('milk',milks,'milk');chips('extra',extras,'extra');
+function render(){var ok=D[S.base];if(!ok[S.extra])S.extra=Object.keys(ok)[0];
+document.querySelectorAll('#extra input').forEach(function(i){i.disabled=!ok[i.value];i.checked=i.value==S.extra});
+document.querySelectorAll('#base input').forEach(function(i){i.checked=i.value==S.base});
+var tea=S.base=='tea';document.querySelectorAll('#milk input').forEach(function(i){i.disabled=tea;i.checked=i.value==S.milk});
+document.getElementById('milkNote').textContent=tea?'The milk step is skipped for fruity iced teas.':'Coconut milk comes recommended by a regular for the chai.';
+var d=ok[S.extra],mk=(!tea&&S.milk=='coco')?'with coconut milk':'';
+document.getElementById('rName').textContent=d[0];document.getElementById('rMilk').textContent=mk;document.getElementById('rDesc').textContent=d[1];
+var L=document.getElementById('loc');
+L.innerHTML=S.loc=='dtla'?'<p>548 S Spring St R110, Los Angeles · every day 8 am – 7 pm</p><a class="btn light" href="https://www.google.com/maps/dir/?api=1&amp;destination=34.0459418,-118.2507081" target="_blank" rel="noopener">Directions to DTLA</a>':'<p>Glendale address and hours are posted on their Instagram.</p><a class="btn light" href="https://www.instagram.com/bohemianchai/" target="_blank" rel="noopener">See @bohemianchai</a>';
+document.getElementById('mTxt').textContent='Hi Bohemian! Next time I’m at '+(S.loc=='dtla'?'Spring St (DTLA)':'your Glendale spot')+' I’d like a '+d[0].toLowerCase()+(mk?' '+mk:'')+'. See you soon!'}
+document.querySelectorAll('.seg button').forEach(function(b){b.addEventListener('click',function(){S.loc=b.dataset.l;document.querySelectorAll('.seg button').forEach(function(x){x.setAttribute('aria-pressed',x==b)});render()})});
+document.getElementById('copy').addEventListener('click',function(){var b=this,t=document.getElementById('mTxt').textContent;function done(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1800)}
+if(navigator.clipboard)navigator.clipboard.writeText(t).then(done,done);else done()});
+render();
+// reveal
+var R=[].slice.call(document.querySelectorAll('.rv'));function rv(){var H=innerHeight;R=R.filter(function(e){if(e.getBoundingClientRect().top<H*.94){e.classList.add('in');return false}return true})}
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){R.forEach(function(e){e.classList.add('in')})}else{rv();addEventListener('scroll',rv,{passive:true});addEventListener('resize',rv);setTimeout(function(){R.forEach(function(e){e.classList.add('in')})},6000)}
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Demo concept|Demo-Konzept/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Pricing →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

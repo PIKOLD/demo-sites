@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>gniessbar – Kuchenmanufaktur und Café am Blumenrain, Basel</title><meta property="og:type" content="website"><meta property="og:title" content="gniessbar – Kuchenmanufaktur und Café am Blumenrain, Basel"><meta property="og:description" content="gniessbar am Blumenrain 32 in Basel: Kaffee, Mittag, Kuchen und Apéro. Hausgemachter Cheesecake, Rhabarber-Erdbeer-Streusel, Hibiskus-Eistee und Pink Latte."><meta property="og:image" content="https://pikold.github.io/demo-sites/gniessbar/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="gniessbar am Blumenrain 32 in Basel: Kaffee, Mittag, Kuchen und Apéro. Hausgemachter Cheesecake, Rhabarber-Erdbeer-Streusel, Hibiskus-Eistee und Pink Latte.">
+<link rel="stylesheet" href="../_fonts/young-serif.css">
+<link rel="stylesheet" href="../_fonts/outfit.css">
+<style>
+:root{--milk:#FBF4EE;--pink:#F2B8C6;--butter:#EBCB8B;--green:#7C9A3F;--green-d:#4D6424;--hib:#7E1736;--ink:#2A1A1A;--g:clamp(16px,4vw,48px);--serif:'Young Serif',Georgia,serif;--sans:'Outfit',system-ui,sans-serif}
+*{box-sizing:border-box}
+html{scroll-padding-top:64px}
+body>header,main{overflow-x:clip}
+body{margin:0;background:var(--milk);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--hib);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1320px,100% - 2*var(--g));margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;line-height:1.05}
+p{margin:0 0 1em}
+.demo{background:var(--ink);color:#F5E6E0;font-size:12.5px;line-height:1.4;text-align:center;padding:7px var(--g)}
+/* ribbon */
+.rib{position:sticky;top:0;z-index:20;background:rgba(251,244,238,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(126,23,54,.14)}
+.rib .wrap{display:flex;align-items:center;gap:14px;height:52px}
+.rib .tm{font:500 13px var(--sans);color:var(--hib);letter-spacing:.04em;font-variant-numeric:tabular-nums}
+.track{position:relative;flex:1;display:flex;justify-content:space-between;align-items:center;height:100%}
+.track::before{content:"";position:absolute;left:0;right:0;top:50%;height:2px;background:rgba(126,23,54,.15);border-radius:2px}
+.track .fill{position:absolute;left:0;top:50%;height:2px;width:var(--p,0%);background:linear-gradient(90deg,var(--pink),var(--hib));border-radius:2px;transition:width .2s}
+.stop{position:relative;z-index:1;text-decoration:none;font:500 13.5px var(--sans);color:#6b4a4f;background:var(--milk);padding:6px 10px;border-radius:99px;min-height:34px;display:inline-flex;align-items:center;transition:background .25s,color .25s}
+.stop:hover{color:var(--hib)}
+.stop.on{background:var(--hib);color:var(--milk)}
+.rib .ig{font:500 13px var(--sans);text-decoration:none;color:var(--hib);border:1px solid rgba(126,23,54,.3);border-radius:99px;padding:6px 12px}
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 22px;border-radius:99px;font:500 16px var(--sans);text-decoration:none;border:1.5px solid var(--hib);transition:transform .15s,background .2s,color .2s;cursor:pointer;background:none;color:var(--hib)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.solid{background:var(--hib);color:var(--milk)}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn.solid:hover{background:#5f0f27}
+.btn.light{border-color:var(--milk);color:var(--milk)}
+.btn.light.solid{background:var(--milk);color:var(--hib)}
+.status{display:inline-flex;align-items:center;gap:9px;font-weight:500;font-size:15px}
+.status i{width:10px;height:10px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(124,154,63,.2)}
+.status.closed i{background:#b55;box-shadow:0 0 0 4px rgba(180,80,80,.18)}
+/* slices */
+.slice{position:relative;margin:0}
+.slice img{width:100%;height:100%;object-fit:cover}
+.sd{clip-path:url(#sd)}.su{clip-path:url(#su)}.sl{clip-path:url(#sl)}.sr{clip-path:url(#sr)}
+/* hero */
+.hero{padding:clamp(28px,5vw,64px) 0 clamp(48px,6vw,88px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,4vw,64px);align-items:center}
+.eyebrow{font:500 13px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--hib);margin-bottom:14px;display:flex;gap:10px;align-items:center}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--butter)}
+.word{font-size:clamp(54px,9.2vw,124px);letter-spacing:-.02em;color:var(--hib);line-height:.95}
+.word span{color:var(--green)}
+.lead{font-size:clamp(19px,1.7vw,23px);line-height:1.45;max-width:30ch;margin:20px 0 14px}
+.addr{color:#5a3e40;margin-bottom:18px}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.heroimg{justify-self:center;width:min(100%,440px);position:relative}
+.heroimg .slice{aspect-ratio:4/5}
+.heroimg img{object-position:50% 78%;transform:scale(1.15);transform-origin:50% 70%}
+.heroimg::before{content:"";position:absolute;inset:5% -3% -3% 6%;background:var(--pink);clip-path:url(#sd);transform:rotate(9deg);z-index:-1;opacity:.75}
+.heroimg figcaption,.cap{font:500 13px var(--sans);color:#6b4a4f;margin-top:10px;text-align:center}
+/* day sections */
+.day{position:relative;background:linear-gradient(180deg,var(--from) 0,var(--bg) 220px);padding:clamp(64px,8vw,120px) 0}
+.stamp{display:flex;align-items:baseline;gap:18px;margin-bottom:clamp(28px,4vw,48px);flex-wrap:wrap}
+.stamp .t{font:400 clamp(44px,6vw,84px)/1 var(--serif);color:var(--hib);font-variant-numeric:tabular-nums}
+.stamp h2{font-size:clamp(28px,3.2vw,44px)}
+.stamp .k{font:500 13px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#6b4a4f;flex-basis:100%}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,80px);align-items:center}
+.big{font-size:clamp(20px,1.9vw,26px);line-height:1.45;max-width:34ch}
+/* Tafel */
+.tafel{list-style:none;margin:28px 0 0;padding:0;border-top:1.5px solid rgba(126,23,54,.2)}
+.tafel li{padding:16px 0;border-bottom:1.5px solid rgba(126,23,54,.2);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;align-items:baseline}
+.tafel b{font:400 clamp(21px,2vw,27px)/1.2 var(--serif);color:var(--hib)}
+.tafel small{grid-column:1/-1;font-size:15px;color:#5a3e40}
+.tafel em{font-style:normal;font:500 12px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--green-d)}
+.kimg{aspect-ratio:5/4}.kimg img{object-position:50% 38%}
+/* Mittag */
+.mimg{aspect-ratio:1;width:min(100%,540px)}.mimg img{object-position:50% 41%}
+.mword{font-size:clamp(40px,5.6vw,80px);color:var(--hib);margin:6px 0 20px}
+.tag{display:inline-block;font:500 13px var(--sans);letter-spacing:.08em;text-transform:uppercase;background:var(--butter);color:var(--ink);padding:5px 12px;border-radius:99px}
+/* wheel */
+.cake{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,88px);align-items:center}
+.wheel{position:relative;width:min(100%,540px);aspect-ratio:1;justify-self:center}
+.sl6{position:absolute;inset:0;border-radius:50%;overflow:hidden;-webkit-mask:conic-gradient(from calc(var(--a) + 1.6deg),#000 0 56.8deg,transparent 0);mask:conic-gradient(from calc(var(--a) + 1.6deg),#000 0 56.8deg,transparent 0);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.sl6 img{width:100%;height:100%;object-fit:cover}
+.sl6.c{background:var(--c)}
+.sl6 .lb{position:absolute;left:var(--x);top:var(--y);transform:translate(-50%,-50%);width:28%;text-align:center;font:400 clamp(13px,1.4vw,18px)/1.15 var(--serif)}
+.wheel:hover .sl6,.wheel .sl6{transform:none}
+.sl6.lift,.sl6:hover{transform:translate(calc(sin(var(--a) + 30deg)*14px),calc(cos(var(--a) + 30deg)*-14px))}
+.legend{list-style:none;margin:0;padding:0;counter-reset:n}
+.legend li{padding:14px 0 14px 0;border-bottom:1.5px solid rgba(126,23,54,.22);cursor:default}
+.legend li b{display:block;font:400 clamp(21px,2vw,28px)/1.2 var(--serif);color:var(--hib);transition:transform .2s}
+.legend li:hover b{transform:translateX(6px)}
+.legend li span{font-size:15px;color:#4f3337}
+.note{margin-top:22px;display:flex;gap:12px;align-items:flex-start;font-size:15.5px;background:rgba(251,244,238,.6);border-radius:16px;padding:14px 16px}
+.note svg{flex:none;width:22px;height:22px;color:var(--hib);margin-top:2px}
+/* Bedia */
+.bedia{margin-top:clamp(64px,8vw,112px);display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(24px,4vw,64px);align-items:center;background:var(--milk);border-radius:28px;padding:clamp(20px,3vw,40px)}
+.bimg{aspect-ratio:1;width:min(100%,360px)}.bimg img{object-position:50% 27%}
+.bedia h3{font-size:clamp(32px,3.6vw,52px);color:var(--hib)}
+.bedia .role{font:500 13px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--green-d);margin:8px 0 18px}
+.bedia blockquote{margin:0;font:400 clamp(19px,1.8vw,24px)/1.45 var(--serif);max-width:40ch}
+.bedia .src{font-size:14px;color:#6b4a4f;margin-top:14px}
+/* Apéro */
+.aimg{aspect-ratio:1;width:min(100%,500px);justify-self:end}.aimg img{object-position:50% 100%}
+.praise{margin-top:clamp(56px,7vw,100px);display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.6fr);gap:clamp(24px,4vw,64px);align-items:start}
+.score{font:400 clamp(72px,9vw,128px)/.9 var(--serif);color:var(--hib)}
+.score small{display:block;font:500 15px/1.4 var(--sans);color:var(--ink);margin-top:12px}
+.pts{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.pts li{background:rgba(251,244,238,.75);border-radius:22px;padding:20px 24px;font-size:17px}
+.pts li:nth-child(2){margin-left:clamp(0px,6vw,80px)}
+.pts li:nth-child(3){margin-left:clamp(0px,3vw,40px)}
+.pts b{display:block;font:400 22px/1.2 var(--serif);color:var(--hib);margin-bottom:4px}
+/* feature */
+.dialbox{margin-top:clamp(56px,7vw,100px);background:var(--milk);border-radius:32px;padding:clamp(20px,4vw,52px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,4vw,64px)}
+.dialbox h2{font-size:clamp(34px,4.2vw,58px);color:var(--hib)}
+.days{display:flex;flex-wrap:wrap;gap:6px;margin:20px 0 8px}
+.days button{min-width:48px;min-height:44px;border-radius:99px;border:1.5px solid rgba(126,23,54,.3);background:none;font:500 15px var(--sans);color:var(--ink);cursor:pointer}
+.days button[aria-pressed=true]{background:var(--hib);border-color:var(--hib);color:var(--milk)}
+.days button.mo{color:#9a7b7f}
+svg.dial{width:100%;max-width:420px;display:block;margin:10px auto 0}
+.rng{width:100%;accent-color:var(--hib);height:44px;cursor:pointer}
+.rowx{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.now{font:500 14px var(--sans);background:none;border:1.5px solid rgba(126,23,54,.3);border-radius:99px;min-height:40px;padding:0 14px;color:var(--hib);cursor:pointer}
+.out .when{font:400 clamp(26px,2.6vw,34px)/1.15 var(--serif)}
+.out .st{margin:8px 0 18px}
+.out .mom{font:500 13px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--green-d)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 18px}
+.chips button{min-height:44px;padding:0 16px;border-radius:99px;border:1.5px solid var(--hib);background:none;color:var(--hib);font:500 15.5px var(--sans);cursor:pointer;transition:background .2s,color .2s}
+.chips button[aria-pressed=true]{background:var(--hib);color:var(--milk)}
+.empty{color:#5a3e40;font-size:16px}
+.msg{background:#fff;border:1.5px dashed rgba(126,23,54,.35);border-radius:16px;padding:14px 16px;font-size:15.5px;white-space:pre-wrap;margin:0 0 12px}
+.out .note{background:rgba(242,184,198,.35)}
+/* Abend */
+.abend{color:var(--milk)}
+.abend .stamp .t,.abend .stamp h2{color:var(--milk)}
+.abend .stamp .k{color:#f2c6cf}
+.hours{list-style:none;margin:0;padding:0;font-size:18px}
+.hours li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid rgba(251,244,238,.22)}
+.hours li.today{color:var(--butter)}
+.map{border-radius:28px;overflow:hidden;background:#6a1230}
+.map svg{display:block;width:100%;height:auto}
+.contact{margin-top:20px;font-size:17px}
+.contact a{color:var(--milk)}
+.final{margin-top:clamp(64px,8vw,112px);text-align:center}
+.final h2{font-size:clamp(38px,6vw,88px);color:var(--milk)}
+.final p{color:#f2c6cf;font-size:18px;margin:16px auto 26px;max-width:44ch}
+.final .cta{justify-content:center}
+footer{background:#4A0D20;color:#e7c5cc;font-size:13.5px;padding:24px 0 96px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.fab{display:none;position:fixed;right:16px;bottom:16px;z-index:30;box-shadow:0 10px 28px rgba(42,26,26,.3)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media (max-width:900px){
+ .hero .wrap,.two,.cake,.praise,.dialbox{grid-template-columns:minmax(0,1fr)}
+ .heroimg{width:min(78%,360px)}
+ .bedia{grid-template-columns:minmax(0,1fr)}
+ .aimg{justify-self:center}
+ .rib .tm,.rib .ig{display:none}
+ .mfirst{order:-1}
+}
+@media (max-width:600px){
+ body{font-size:16px}
+ .stop{font-size:12.5px;padding:6px 7px}
+ .fab{display:inline-flex}
+ .cta .btn{flex:1 1 auto;justify-content:center}
+ .pts li:nth-child(n){margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <clipPath id="sd" clipPathUnits="objectBoundingBox"><path d="M.54,.955Q.5,1.012.46,.955L.025,.15Q.003,.098.05,.08Q.5,-.04.95,.08Q.997,.098.975,.15Z"/></clipPath>
+ <clipPath id="su" clipPathUnits="objectBoundingBox"><path d="M.54,.045Q.5,-.012.46,.045L.025,.85Q.003,.902.05,.92Q.5,1.04.95,.92Q.997,.902.975,.85Z"/></clipPath>
+ <clipPath id="sl" clipPathUnits="objectBoundingBox"><path d="M.045,.54Q-.012,.5.045,.46L.85,.025Q.902,.003.92,.05Q1.04,.5.92,.95Q.902,.997.85,.975Z"/></clipPath>
+ <clipPath id="sr" clipPathUnits="objectBoundingBox"><path d="M.955,.54Q1.012,.5.955,.46L.15,.025Q.098,.003.08,.05Q-.04,.5.08,.95Q.098,.997.15,.975Z"/></clipPath>
+</svg>
+<div class="demo">Demo-Konzept eines unabhängigen Entwicklers – keine offizielle Website von gniessbar. Nicht vom Inhaber freigegeben; wird auf erste Anfrage gelöscht.</div>
+
+<nav class="rib" aria-label="Tagesablauf">
+ <div class="wrap">
+  <span class="tm">10:00</span>
+  <div class="track"><span class="fill"></span>
+   <a class="stop" href="#kaffee" data-i="0">Kaffee</a>
+   <a class="stop" href="#mittag" data-i="1">Mittag</a>
+   <a class="stop" href="#kuchen" data-i="2">Kuchen</a>
+   <a class="stop" href="#apero" data-i="3">Apéro</a>
+   <a class="stop" href="#abend" data-i="4">Abend</a>
+  </div>
+  <span class="tm">18:30</span>
+  <a class="ig" href="https://www.instagram.com/gniessbar/" target="_blank" rel="noopener">@gniessbar</a>
+ </div>
+</nav>
+
+<header class="hero">
+ <div class="wrap">
+  <div>
+   <div class="eyebrow">Kuchenmanufaktur · Basel</div>
+   <h1 class="word">gniessbar<span>.</span></h1>
+   <p class="lead">Café und Kuchenmanufaktur am Blumenrain – vom ersten Cappuccino bis zum Apéro.</p>
+   <p class="addr">Blumenrain 32 · 4051 Basel, ein paar Schritte vom Rhein</p>
+   <span class="status" id="st"><i></i><span>Öffnungszeiten werden geladen</span></span>
+   <div class="cta">
+    <a class="btn solid" href="tel:+41612616544"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Anrufen</a>
+    <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=47.5613458,7.5866809" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Route</a>
+    <a class="btn" href="https://ig.me/m/gniessbar" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>Instagram-DM</a>
+   </div>
+  </div>
+  <figure class="heroimg">
+   <div class="slice sd"><img src="img/p1.jpg" alt="Ein Stück Cheesecake mit roten Beeren unter der Glasglocke" width="640" height="1136"></div>
+   <figcaption>Best Cheesecake – unter der Glasglocke</figcaption>
+  </figure>
+ </div>
+</header>
+
+<main>
+<section class="day" id="kaffee" data-i="0" style="--from:#FBF4EE;--bg:#F9E9E3">
+ <div class="wrap">
+  <div class="stamp rv"><span class="t">10:00</span><h2>Kaffee</h2><span class="k">Der Morgen am Blumenrain</span></div>
+  <div class="two">
+   <div class="rv">
+    <p class="big">Die Tür geht um zehn auf. Erst ein Cappuccino, dann ein Blick an die Tafel – dort steht morgens das Sauerteigbrot mit Avocado und Ei.</p>
+    <ul class="tafel">
+     <li><b>Cappuccino</b><small>Für Gäste der beste Start in einen freien Tag.</small></li>
+     <li><b>Vital-Latte</b><em>in Blau</em><small>Der Latte, der in Bewertungen immer wieder auffällt.</small></li>
+     <li><b>Gipfeli</b><small>Zum Kaffee dazu – klassisch Basel.</small></li>
+     <li><b>Sauerteigbrot mit Avocado und Ei</b><small>Fein zubereitet und gut portioniert, schreiben Gäste.</small></li>
+    </ul>
+   </div>
+   <figure class="slice-wrap rv" style="margin:0">
+    <div class="slice sr kimg"><img src="img/p12.jpg" alt="Bedia Özkan hinter der Theke der gniessbar" loading="lazy" width="640" height="1136"></div>
+    <figcaption class="cap">Hinter der Theke: Bedia Özkan</figcaption>
+   </figure>
+  </div>
+ </div>
+</section>
+
+<section class="day" id="mittag" data-i="1" style="--from:#F9E9E3;--bg:#F6D8DA">
+ <div class="wrap">
+  <div class="two">
+   <div class="slice su mimg rv"><img src="img/p6.jpg" alt="Melone-Feta-Salat auf einem Teller" loading="lazy" width="640" height="1136"></div>
+   <div class="rv mfirst">
+    <div class="stamp" style="margin-bottom:12px"><span class="t">12:00</span><h2>Mittag</h2></div>
+    <span class="tag">Aus der Küche</span>
+    <h3 class="mword">Melone-Feta-Salat</h3>
+    <p class="big">Süss trifft salzig: Melone und Feta, frisch angerichtet – leicht genug für eine Mittagspause in der Altstadt.</p>
+    <p>Was mittags sonst auf der Karte steht, zeigt die gniessbar laufend auf <a href="https://www.instagram.com/gniessbar/" target="_blank" rel="noopener">Instagram</a>.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="day" id="kuchen" data-i="2" style="--from:#F6D8DA;--bg:#F2B8C6">
+ <div class="wrap">
+  <div class="stamp rv"><span class="t">14:30</span><h2>Kuchen</h2><span class="k">Kuchenmanufaktur – alles hausgemacht</span></div>
+  <div class="cake">
+   <div class="wheel rv" id="wheel" role="img" aria-label="Kuchenrad mit Fotos: Rhabarber-Erdbeer-Streusel, frisch gepflückte Erdbeeren, saisonaler Streusel">
+    <div class="sl6" style="--a:0deg" data-k="0"><img src="img/p3.jpg" alt="" style="object-position:50% 50%" loading="lazy"></div>
+    <div class="sl6 c" style="--a:60deg;--c:#EBCB8B;--x:80%;--y:50%" data-k="2"><span class="lb">Mix Fruit&shy;cake</span></div>
+    <div class="sl6" style="--a:120deg" data-k="1"><img src="img/p10.jpg" alt="" style="object-position:50% 100%" loading="lazy"></div>
+    <div class="sl6" style="--a:180deg" data-k="0"><img src="img/p8.jpg" alt="" style="object-position:50% 100%" loading="lazy"></div>
+    <div class="sl6 c" style="--a:240deg;--c:#7E1736;--x:20%;--y:50%;color:#FBF4EE" data-k="3"><span class="lb">Best Cheese&shy;cake</span></div>
+    <div class="sl6 c" style="--a:300deg;--c:#7C9A3F;--x:35%;--y:24%;color:#FBF4EE" data-k="4"><span class="lb">je nach Saison</span></div>
+   </div>
+   <div class="rv">
+    <p class="big" style="margin-bottom:20px">Am Nachmittag gehört die gniessbar den Kuchen. Gebacken wird im Haus, und für den Streusel kommen die Erdbeeren frisch vom Feld.</p>
+    <ul class="legend" id="legend">
+     <li data-k="0"><b>Rhabarber-Erdbeer-Streusel</b><span>Rhabarber, Erdbeeren, Butterstreusel – saisonal.</span></li>
+     <li data-k="1"><b>Erdbeeren frisch gepflückt</b><span>So steht es auf Instagram, und so sieht der Korb aus.</span></li>
+     <li data-k="2"><b>Mix Fruitcake</b><span>Der Fruchtkuchen, den die gniessbar ganz oben in ihrem Profil nennt.</span></li>
+     <li data-k="3"><b>Best Cheesecake</b><span>Unter der Glasglocke auf der Theke.</span></li>
+    </ul>
+    <div class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Die Kuchen sind oft schnell weg. Was es heute gibt, zeigt die gniessbar auf <a href="https://www.instagram.com/gniessbar/" target="_blank" rel="noopener">Instagram</a>.</span></div>
+   </div>
+  </div>
+
+  <div class="bedia rv">
+   <div class="slice sd bimg"><img src="img/p2.jpg" alt="Porträt von Bedia Özkan" loading="lazy" width="640" height="1136"></div>
+   <div>
+    <h3>Bedia Özkan</h3>
+    <div class="role">Gastgeberin und Bäckerin</div>
+    <blockquote>Hinter jedem Stück steht Bedia: Sie backt die Kuchen, setzt den Hibiskus-Eistee selbst an und die Erdbeeren für den Streusel werden frisch gepflückt.</blockquote>
+    <p class="src">Notiz zur Gastgeberin, nach den Beiträgen auf @gniessbar.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="day" id="apero" data-i="3" style="--from:#F2B8C6;--bg:#E696AB">
+ <div class="wrap">
+  <div class="two">
+   <div class="rv">
+    <div class="stamp" style="margin-bottom:24px"><span class="t">17:00</span><h2>Apéro</h2><span class="k">Rosa wird es gegen Abend</span></div>
+    <p class="big">Gegen Abend wird es rosa im Glas: hausgemachter Hibiskus-Eistee und Pink Latte. Dazu leiser Jazz und ein Raum, den Gäste stilvoll und gemütlich nennen.</p>
+    <ul class="tafel" style="max-width:520px">
+     <li><b>Hibiskus-Eistee</b><em>hausgemacht</em><small>Im grossen Topf angesetzt, kalt serviert.</small></li>
+     <li><b>Pink Latte</b><small>Die rosa Spezialität des Hauses.</small></li>
+    </ul>
+   </div>
+   <div class="slice sl aimg rv"><img src="img/p5.jpg" alt="Hausgemachter Hibiskus-Eistee im Topf" loading="lazy" width="640" height="1136"></div>
+  </div>
+
+  <div class="praise">
+   <div class="rv"><div class="score">4,6</div><small style="display:block;font-weight:500;margin-top:10px">Sterne bei 61 Google-Bewertungen</small></div>
+   <ul class="pts">
+    <li class="rv"><b>Frühstück, das man weiterempfiehlt</b>Das Sauerteigbrot mit Avocado und Ei wird als sorgfältig zubereitet und grosszügig beschrieben.</li>
+    <li class="rv"><b>Ein Raum mit Liebe zum Detail</b>Stilvoll, gemütlich, eingerichtet mit viel Gefühl – und im Hintergrund Soft-Jazz.</li>
+    <li class="rv"><b>Herzlicher, schneller Service</b>Freundlich und flink, auch am Muttertag mit vollem Haus gut gemeistert.</li>
+   </ul>
+  </div>
+
+  <div class="dialbox rv" id="jetzt">
+   <div>
+    <h2>Was passt jetzt?</h2>
+    <p style="margin-top:12px">Tag und Uhrzeit wählen – die Uhr zeigt, ob offen ist und was dann am besten passt.</p>
+    <div class="days" id="days" role="group" aria-label="Wochentag"></div>
+    <svg class="dial" id="dial" viewBox="0 0 320 222" aria-hidden="true"></svg>
+    <div class="rowx"><label for="rng" style="font-weight:500">Uhrzeit: <span id="tv">10:00</span></label><button class="now" id="now" type="button">Jetzt</button></div>
+    <input class="rng" id="rng" type="range" min="540" max="1140" step="15" value="600" aria-describedby="tv">
+   </div>
+   <div class="out" aria-live="polite">
+    <div class="mom" id="mom">Kaffee-Zeit</div>
+    <div class="when" id="when">Dienstag, 10:00</div>
+    <div class="status st" id="st2"><i></i><span></span></div>
+    <div id="sugg"></div>
+    <p style="font-weight:500;margin:6px 0 8px">Ihre Nachricht an die gniessbar</p>
+    <p class="msg" id="msg"></p>
+    <div class="cta" style="margin-top:0">
+     <button class="btn solid" id="copy" type="button">Text kopieren</button>
+     <a class="btn" href="https://ig.me/m/gniessbar" target="_blank" rel="noopener">Instagram-DM öffnen</a>
+     <a class="btn" href="tel:+41612616544">Anrufen</a>
+    </div>
+    <div class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg><span>Die Kuchen sind oft schnell weg, und Änderungen postet die gniessbar auf Instagram. Ein kurzer Anruf oder eine DM lohnt sich.</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="day abend" id="abend" data-i="4" style="--from:#E696AB;--bg:#7E1736;background:linear-gradient(180deg,#E696AB 0,#B04462 120px,#7E1736 300px)">
+ <div class="wrap">
+  <div class="stamp rv"><span class="t">18:30</span><h2>Abend</h2><span class="k">Öffnungszeiten und Weg</span></div>
+  <div class="two" style="align-items:start">
+   <div class="rv">
+    <ul class="hours" id="hours">
+     <li data-d="1,2,3,4"><span>Dienstag – Freitag</span><span>10:00 – 18:30</span></li>
+     <li data-d="5"><span>Samstag</span><span>10:00 – 17:00</span></li>
+     <li data-d="6"><span>Sonntag</span><span>10:00 – 16:00</span></li>
+     <li data-d="0"><span>Montag</span><span>geschlossen</span></li>
+    </ul>
+    <div class="contact">
+     <p>Blumenrain 32, 4051 Basel<br>Telefon <a href="tel:+41612616544">061 261 65 44</a><br>Instagram <a href="https://www.instagram.com/gniessbar/" target="_blank" rel="noopener">@gniessbar</a></p>
+     <p style="font-size:15px;color:#f2c6cf">Laut Instagram-Profil. Änderungen kündigt die gniessbar dort an.</p>
+    </div>
+   </div>
+   <div class="map rv">
+    <svg viewBox="0 0 600 420" role="img" aria-label="Skizze: gniessbar am Blumenrain 32, nahe am Rhein in Basel">
+     <rect width="600" height="420" fill="#6a1230"/>
+     <path d="M-20 60 C 140 40 250 120 330 170 S 520 250 640 230 L640 330 C 520 350 420 300 320 260 S 120 150 -20 170Z" fill="#F2B8C6" opacity=".9"/>
+     <text x="430" y="290" fill="#7E1736" font-family="Outfit,sans-serif" font-size="20" font-weight="500" letter-spacing="6">RHEIN</text>
+     <path d="M-20 205 C 120 190 220 250 320 300 S 520 380 640 370" fill="none" stroke="#EBCB8B" stroke-width="10" stroke-linecap="round"/>
+     <text x="40" y="250" fill="#EBCB8B" font-family="Outfit,sans-serif" font-size="17" transform="rotate(10 40 250)">Blumenrain</text>
+     <g transform="translate(262 268)"><circle r="34" fill="#FBF4EE" opacity=".18"/><path d="M0 18 L-14 -6 A16 16 0 1 1 14 -6Z" fill="#FBF4EE"/><circle cy="-12" r="6" fill="#7E1736"/></g>
+     <text x="300" y="340" fill="#FBF4EE" font-family="'Young Serif',serif" font-size="26">gniessbar</text>
+     <text x="300" y="366" fill="#f2c6cf" font-family="Outfit,sans-serif" font-size="16">Blumenrain 32 · 4051 Basel</text>
+    </svg>
+   </div>
+  </div>
+  <div class="final rv">
+   <h2>Bis bald am Blumenrain.</h2>
+   <p>Kaffee ab zehn, Kuchen solange es hat. Rufen Sie an oder schreiben Sie eine DM, wenn Sie sicher gehen wollen.</p>
+   <div class="cta">
+    <a class="btn light solid" href="tel:+41612616544">Anrufen</a>
+    <a class="btn light" href="https://www.google.com/maps/dir/?api=1&amp;destination=47.5613458,7.5866809" target="_blank" rel="noopener">Route planen</a>
+    <a class="btn light" href="https://www.instagram.com/gniessbar/" target="_blank" rel="noopener">Instagram</a>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap"><span>gniessbar · Blumenrain 32 · 4051 Basel</span><span>Demo-Konzept, nicht offiziell. Fotos: Instagram @gniessbar</span></div></footer>
+<a class="btn solid fab" href="tel:+41612616544" aria-label="gniessbar anrufen">Anrufen</a>
+
+<script>
+(()=>{
+const H=[null,[600,1110],[600,1110],[600,1110],[600,1110],[600,1020],[600,960]]; // Mo..So
+const DN=['Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag','Sonntag'];
+const DS=['Mo','Di','Mi','Do','Fr','Sa','So'];
+const f=m=>String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0');
+function zh(){const p={};new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Zurich',weekday:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date()).forEach(x=>p[x.type]=x.value);return{d:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].indexOf(p.weekday),m:(+p.hour)*60+(+p.minute)}}
+function stat(d,m,rel){const h=H[d];if(h&&m>=h[0]&&m<h[1])return[1,'Geöffnet · bis '+f(h[1])];
+ if(h&&m<h[0])return[0,'Geschlossen · öffnet '+(rel?'heute':'am '+DN[d])+' um '+f(h[0])];
+ for(let i=1;i<8;i++){const n=(d+i)%7;if(H[n])return[0,'Geschlossen · öffnet '+(rel&&i===1?'morgen':DN[n])+' um '+f(H[n][0])]}}
+function paint(el,s){el.classList.toggle('closed',!s[0]);el.querySelector('span').textContent=(s[0]&&el.id==='st'?'Jetzt geöffnet · bis ':'')+(s[0]&&el.id==='st'?s[1].split('bis ')[1]:s[1])}
+const now=zh();paint(document.getElementById('st'),stat(now.d,now.m,1));
+document.querySelectorAll('#hours li').forEach(li=>{if(li.dataset.d.split(',').includes(String(now.d)))li.classList.add('today')});
+
+/* ribbon */
+const stops=[...document.querySelectorAll('.stop')],fill=document.querySelector('.fill'),secs=[...document.querySelectorAll('.day')];
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const i=+e.target.dataset.i;stops.forEach((s,j)=>{s.classList.toggle('on',j===i);if(j===i)s.setAttribute('aria-current','true');else s.removeAttribute('aria-current')})}}),{rootMargin:'-45% 0px -50% 0px'});
+secs.forEach(s=>io.observe(s));
+const onS=()=>{const t=document.documentElement,p=Math.min(1,scrollY/Math.max(1,t.scrollHeight-innerHeight));fill.style.setProperty('--p',(p*100).toFixed(1)+'%')};addEventListener('scroll',onS,{passive:true});onS();
+stops.forEach(s=>s.addEventListener("click",e=>{const t=document.querySelector(s.getAttribute("href"));if(t){e.preventDefault();t.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"auto":"smooth"});history.replaceState(null,"",s.getAttribute("href"))}}));
+const rio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');rio.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(e=>rio.observe(e));
+
+/* wheel legend */
+const sl=[...document.querySelectorAll('.sl6')];
+document.querySelectorAll('#legend li').forEach(li=>{const k=li.dataset.k;li.addEventListener('mouseenter',()=>sl.forEach(s=>s.classList.toggle('lift',s.dataset.k===k)));li.addEventListener('mouseleave',()=>sl.forEach(s=>s.classList.remove('lift')))});
+
+/* dial */
+const MENU={am:['Cappuccino','Gipfeli','Sauerteigbrot mit Avocado und Ei','Vital-Latte'],mid:['Melone-Feta-Salat'],pm:['Cheesecake','Rhabarber-Erdbeer-Streusel','Mix Fruitcake','Pink Latte','Hibiskus-Eistee']};
+const rng=document.getElementById('rng'),days=document.getElementById('days'),dial=document.getElementById('dial');
+let D=now.d,picked=new Set();
+const order=[1,2,3,4,5,6,0];
+order.forEach(d=>{const b=document.createElement('button');b.type='button';b.textContent=DS[d];b.dataset.d=d;b.setAttribute('aria-label',DN[d]);if(!H[d])b.className='mo';b.onclick=()=>{D=d;upd()};days.appendChild(b)});
+const C=[160,170],R=136;const pt=(m,r=R)=>{const a=Math.PI*(1-(m-540)/600);return[(C[0]+r*Math.cos(a)).toFixed(1),(C[1]-r*Math.sin(a)).toFixed(1)]};
+const arc=(a,b,r=R)=>{const p=pt(a,r),q=pt(b,r);return`M${p[0]} ${p[1]}A${r} ${r} 0 0 1 ${q[0]} ${q[1]}`};
+function drawDial(m){const h=H[D];let s=`<defs><linearGradient id="dg" x1="0" x2="1"><stop offset="0" stop-color="#F2B8C6"/><stop offset=".55" stop-color="#EBCB8B"/><stop offset="1" stop-color="#7E1736"/></linearGradient></defs><path d="${arc(540,1140)}" fill="none" stroke="#efe0dc" stroke-width="22" stroke-linecap="round"/>`;
+ if(h)s+=`<path d="${arc(h[0],h[1])}" fill="none" stroke="url(#dg)" stroke-width="22" stroke-linecap="round"/>`;
+ for(let t=600;t<=1080;t+=120){const p=pt(t,R-30);s+=`<text x="${p[0]}" y="${+p[1]+5}" text-anchor="middle" font-family="Outfit,sans-serif" font-size="13" fill="#6b4a4f">${t/60}</text>`}
+ const p=pt(m,R-14),q=pt(m,R);s+=`<line x1="${C[0]}" y1="${C[1]}" x2="${p[0]}" y2="${p[1]}" stroke="#2A1A1A" stroke-width="3" stroke-linecap="round"/><circle cx="${q[0]}" cy="${q[1]}" r="12" fill="#FBF4EE" stroke="#7E1736" stroke-width="4"/><circle cx="${C[0]}" cy="${C[1]}" r="8" fill="#7E1736"/>`;
+ s+=`<text x="${C[0]}" y="${C[1]+44}" text-anchor="middle" font-family="'Young Serif',serif" font-size="30" fill="#7E1736">${f(m)}</text>`;dial.innerHTML=s}
+function upd(){const m=+rng.value;document.getElementById('tv').textContent=f(m);
+ days.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.d===D));
+ const s=stat(D,m,0),el=document.getElementById('st2');el.classList.toggle('closed',!s[0]);el.querySelector('span').textContent=s[1];
+ document.getElementById('when').textContent=DN[D]+', '+f(m);drawDial(m);
+ const k=!s[0]?null:m<690?'am':m<840?'mid':'pm';
+ document.getElementById('mom').textContent=k?{am:'Kaffee-Zeit',mid:'Mittag',pm:'Kuchen & Apéro'}[k]:'Geschlossen';
+ const sg=document.getElementById('sugg');
+ if(k){const items=MENU[k];[...picked].forEach(x=>{if(!items.includes(x))picked.delete(x)});
+  sg.innerHTML='<p style="margin:0">Dazu passt – antippen zum Merken:</p><div class="chips">'+items.map(x=>`<button type="button" aria-pressed="${picked.has(x)}">${x}</button>`).join('')+'</div>';
+  sg.querySelectorAll('button').forEach(b=>b.onclick=()=>{const x=b.textContent;picked.has(x)?picked.delete(x):picked.add(x);b.setAttribute('aria-pressed',picked.has(x));msg()});}
+ else{picked.clear();sg.innerHTML=`<p class="empty">${H[D]?'Zu dieser Zeit ist die Tür zu.':'Am Montag ist Ruhetag.'} Wählen Sie eine andere Zeit – geöffnet ist Di–Fr 10:00–18:30, Sa 10:00–17:00, So 10:00–16:00.</p>`}
+ msg()}
+function msg(){const m=+rng.value,it=[...picked];let t=`Grüezi Frau Özkan\n\nwir möchten am ${DN[D]} gegen ${f(m)} in die gniessbar kommen.`;
+ t+=it.length?` Gibt es dann noch ${it.length>1?it.slice(0,-1).join(', ')+' und '+it.at(-1):it[0]}?`:' Was können Sie uns zu dieser Zeit empfehlen?';
+ t+='\n\nHerzliche Grüsse';document.getElementById('msg').textContent=t}
+rng.oninput=upd;
+const setNow=()=>{const n=zh();D=n.d;rng.value=Math.min(1140,Math.max(540,Math.round(n.m/15)*15));upd()};
+document.getElementById('now').onclick=setNow;setNow();
+document.getElementById('copy').onclick=async e=>{const t=document.getElementById('msg').textContent;try{await navigator.clipboard.writeText(t)}catch(_){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove()}e.target.textContent='Kopiert';setTimeout(()=>e.target.textContent='Text kopieren',1800)};
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Demo concept|Demo-Konzept/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Preise & Ablauf →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>
