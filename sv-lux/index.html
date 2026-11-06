@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Sv-Lux — натяжные потолки со светом, Геленджик</title><meta property="og:type" content="website"><meta property="og:title" content="Sv-Lux — натяжные потолки со светом, Геленджик"><meta property="og:description" content="Sv-Lux: натяжные потолки со световыми линиями, теневым профилем и парящей подсветкой. Геленджик, ул. Суворова, 26, 2 этаж. 5,0 в 2ГИС по 25 оценкам."><meta property="og:image" content="https://pikold.github.io/demo-sites/sv-lux/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Sv-Lux: натяжные потолки со световыми линиями, теневым профилем и парящей подсветкой. Геленджик, ул. Суворова, 26, 2 этаж. 5,0 в 2ГИС по 25 оценкам.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Tenor+Sans&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Tenor+Sans&display=swap"></noscript>
+<style>
+:root{--bg:#EDEAE4;--paper:#F8F6F2;--band:#E4E0D8;--stone:#D3CEC4;--ink:#1D1E20;--ink2:#55524D;--brass:#76572B;--amber:#C98A2E;--core:#FFF4DC;--glow:0 0 6px 1px rgba(255,214,140,.95),0 0 22px 5px rgba(255,186,90,.45);--fd:'Tenor Sans','Segoe UI',sans-serif;--fb:'Golos Text',system-ui,-apple-system,'Segoe UI',sans-serif;--fm:'JetBrains Mono',ui-monospace,Consolas,monospace;--pad:clamp(16px,4vw,48px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--fb)}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{width:min(100% - 2*var(--pad),1360px);margin-inline:auto}
+.mono{font:500 12px/1.4 var(--fm);letter-spacing:.08em;text-transform:uppercase;color:var(--ink2)}
+.demo{background:var(--ink);color:#E9E5DE;font:500 12px/1.4 var(--fm);text-align:center;padding:8px 16px}
+/* шапка = парящий потолок: светится нижний край */
+.hdr{position:relative;background:var(--paper);z-index:3}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:72px}
+.hdr::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--core);box-shadow:0 0 6px 1px rgba(255,214,140,.95),0 8px 34px 8px rgba(255,190,100,.38)}
+.logo{display:inline-flex;align-items:center;gap:.4em;min-height:44px;font:400 21px/1 var(--fd);letter-spacing:.16em;text-decoration:none}
+.logo i{width:1.4em;height:2px;background:var(--amber);box-shadow:0 0 6px rgba(255,190,90,.9)}
+.nav{display:flex;gap:30px;font:500 12px/1 var(--fm);letter-spacing:.1em;text-transform:uppercase}
+.nav a{position:relative;padding:16px 0;text-decoration:none}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:8px;height:2px;background:var(--core);box-shadow:var(--glow);transform:scaleX(0);transition:transform .3s}
+.nav a:hover::after,.nav a:focus-visible::after{transform:none}
+.hph{font:500 15px/1 var(--fm);text-decoration:none;padding:14px 0;white-space:nowrap}
+/* первый экран */
+.hero{padding:clamp(34px,4.6vw,72px) 0 clamp(48px,6vw,96px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.34fr) minmax(0,.66fr);gap:clamp(28px,4.4vw,72px);min-height:min(calc(100svh - 160px),860px)}
+.htx{display:flex;flex-direction:column;justify-content:center;gap:clamp(18px,2.2vw,30px)}
+.dim{display:flex;align-items:center;gap:14px;max-width:660px}
+.dim::before,.dim::after{content:"";flex:1;min-width:20px;height:11px;border:solid var(--ink2);border-width:0 0 0 1px;background:linear-gradient(var(--ink2),var(--ink2)) center/100% 1px no-repeat}
+.dim::after{border-width:0 1px 0 0}
+.wm{display:flex;align-items:center;gap:.1em;font:400 clamp(58px,10.2vw,166px)/.86 var(--fd);letter-spacing:.03em;white-space:nowrap}
+.wm i{display:inline-block;width:.92em;height:max(3px,.042em);border-radius:2px;background:var(--core);box-shadow:0 0 .06em .02em #FFE2A8,0 0 .24em .06em rgba(255,186,90,.75),0 0 .7em .2em rgba(255,176,80,.32);animation:on 1.7s .35s both}
+@keyframes on{0%{opacity:.08}7%{opacity:1}11%{opacity:.15}19%{opacity:1}24%{opacity:.35}32%,100%{opacity:1}}
+.lead{font:400 clamp(21px,1.9vw,31px)/1.26 var(--fd);max-width:23em;text-wrap:balance}
+.where{display:flex;flex-wrap:wrap;gap:10px 26px;font:500 14px/1.4 var(--fm);color:var(--ink2)}
+.where a{text-decoration:none;border-bottom:1px solid var(--stone)}
+[data-status]{display:inline-flex;align-items:center;gap:9px}
+[data-status]::before{content:"";width:8px;height:8px;border-radius:50%;background:#A39D92;flex:none}
+[data-status].is-open::before{background:#F4B848;box-shadow:0 0 8px 2px rgba(255,186,80,.85)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border:1.5px solid var(--ink);border-radius:3px;background:transparent;font:600 16px/1 var(--fb);text-decoration:none;cursor:pointer;transition:transform .2s,background .25s,color .25s,box-shadow .35s}
+.btn svg{width:18px;height:18px;flex:none;fill:currentColor}
+.btn-d{background:var(--ink);color:var(--paper)}
+.btn-d:hover{box-shadow:inset 0 -3px 0 #FFD58A,0 14px 30px -12px rgba(230,150,40,.75)}
+.btn-l:hover{background:var(--ink);color:var(--paper)}
+.btn:active{transform:translateY(1px) scale(.99)}
+.tx{font:500 15px/1.3 var(--fb);color:var(--ink);padding:14px 0;text-decoration:none;border-bottom:1px solid var(--ink)}
+.facts{display:flex;flex-wrap:wrap;gap:16px 0;border-top:1px solid var(--stone);padding-top:20px;margin-top:4px}
+.facts div{padding-right:26px;margin-right:26px;border-right:1px solid var(--stone)}
+.facts div:last-child{border:0;margin:0;padding:0}
+.facts b{display:block;font:400 26px/1.15 var(--fd)}
+.hph2{position:relative;margin:0}
+.hph2::before{content:"";position:absolute;left:-18px;top:6%;bottom:6%;width:2px;background:var(--core);box-shadow:var(--glow)}
+.hph2 img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 38%;border-radius:2px}
+.hph2 figcaption{position:absolute;right:0;bottom:-30px;font:500 11px/1.3 var(--fm);letter-spacing:.06em;text-transform:uppercase;color:var(--ink2)}
+/* общие секции */
+.sec{padding:clamp(72px,9vw,140px) 0}
+.idx{display:flex;align-items:center;gap:12px;font:500 12px/1 var(--fm);letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
+.idx::before{content:"";width:34px;height:2px;background:var(--core);box-shadow:var(--glow)}
+h2{font:400 clamp(34px,4.6vw,70px)/1.03 var(--fd);margin-top:18px;text-wrap:balance}
+h3{font-weight:400}
+.sub{color:var(--ink2);max-width:34em;margin-top:20px}
+.slit{height:6px;background:linear-gradient(#0d0d0e,#2c2d30);box-shadow:inset 0 2px 3px rgba(0,0,0,.7)}
+/* свет */
+.svc .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,104px)}
+.svl{position:sticky;top:32px;align-self:start}
+.svl figure{margin:40px 0 0;max-width:440px}
+.svl img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 34%}
+.svl figcaption{margin-top:10px}
+.rows{list-style:none;padding:0;border-bottom:1px solid var(--stone)}
+.rows li{display:grid;grid-template-columns:40px 72px minmax(0,1fr);gap:0 28px;padding:30px 0;border-top:1px solid var(--stone)}
+.rows .n{font:500 13px/1 var(--fm);color:var(--ink2);padding-top:8px}
+.gl{width:72px;height:72px;overflow:visible}
+.gl .b{fill:var(--paper);stroke:var(--ink);stroke-width:2}
+.gl .lt{fill:none;stroke:var(--amber);stroke-width:3;stroke-linecap:round;transition:stroke .3s,filter .3s;filter:drop-shadow(0 0 2px rgba(255,190,90,.8))}
+.gl .sp{fill:var(--amber);transition:fill .3s}
+.gl .dk{fill:none;stroke:var(--ink)}
+.rows li:hover .lt{stroke:#F4B848;filter:drop-shadow(0 0 6px rgba(255,186,80,1))}
+.rows li:hover .sp{fill:#F4B848}
+.rows h3{font:400 clamp(23px,2.1vw,30px)/1.15 var(--fd)}
+.rows p{color:var(--ink2);margin-top:8px;max-width:33em}
+/* работы */
+.ghd{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 48px;align-items:end}
+.gal{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:clamp(56px,5.6vw,80px);gap:14px;margin-top:clamp(36px,4vw,56px)}
+.gal figure{position:relative;margin:0;overflow:hidden;background:var(--stone)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.gal figure:hover img{transform:scale(1.035)}
+.gal figcaption{position:absolute;left:10px;bottom:10px;max-width:calc(100% - 20px);background:rgba(248,246,242,.94);font:500 11px/1.35 var(--fm);letter-spacing:.05em;text-transform:uppercase;padding:7px 10px}
+.g1{grid-column:1/8;grid-row:1/7}.g2{grid-column:8/10;grid-row:1/7}.g3{grid-column:10/13;grid-row:1/4}.g4{grid-column:10/13;grid-row:4/7}
+.g5{grid-column:1/5;grid-row:7/11}.g6{grid-column:5/8;grid-row:7/11}.g7{grid-column:8/13;grid-row:7/11}
+.g8{grid-column:1/7;grid-row:11/16}.g9{grid-column:7/10;grid-row:11/16}
+.gt{grid-column:10/13;grid-row:11/16;background:var(--ink);color:var(--paper);padding:28px;display:flex;flex-direction:column;justify-content:space-between;text-decoration:none;transition:box-shadow .35s}
+.gt b{font:400 clamp(22px,1.9vw,28px)/1.2 var(--fd)}
+.gt span{font:500 12px/1.4 var(--fm);letter-spacing:.08em;text-transform:uppercase;color:#FFD58A}
+.gt:hover{box-shadow:inset 0 -4px 0 #FFD58A}
+/* отзывы */
+.rev .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(36px,6vw,104px)}
+.big{font:400 clamp(112px,13vw,214px)/.85 var(--fd);margin-top:clamp(28px,3vw,44px);letter-spacing:-.02em}
+.dots{display:flex;gap:14px;margin:22px 0 14px}
+.dots i{width:12px;height:12px;border-radius:50%;background:var(--core);box-shadow:0 0 6px 2px rgba(255,200,110,.95),0 0 18px 5px rgba(255,180,80,.4)}
+.lnk{display:inline-block;margin-top:10px;padding:12px 0;font:500 15px/1.3 var(--fb);text-decoration:none;border-bottom:1px solid var(--ink)}
+.boss{margin-top:clamp(32px,4vw,56px);padding-top:20px;border-top:1px solid var(--stone);max-width:26em}
+.boss b{display:block;font:400 26px/1.2 var(--fd);margin:8px 0 6px}
+.boss p{color:var(--ink2)}
+.pts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,3vw,44px) clamp(24px,3vw,48px);align-content:start;padding-top:clamp(8px,4vw,64px)}
+.pt{border-top:1px solid var(--ink);padding-top:22px}
+.pt h3{font:400 clamp(23px,2vw,30px)/1.18 var(--fd);margin:12px 0 10px}
+.pt p{color:var(--ink2)}
+.pt1{grid-column:1/-1;border-top-width:2px}
+.pt1 h3{font-size:clamp(28px,3.1vw,46px);line-height:1.08;max-width:15em}
+.pt1 p{font-size:19px;max-width:32em}
+.again{grid-column:1/-1;display:flex;align-items:center;gap:18px;font:400 clamp(20px,1.8vw,26px)/1.3 var(--fd);padding:24px 28px;background:var(--paper)}
+.again::before{content:"";width:40px;height:2px;flex:none;background:var(--core);box-shadow:var(--glow)}
+/* план */
+.cfg{background:var(--band)}
+.cgrid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,4vw,64px);margin-top:clamp(36px,4vw,56px)}
+.cplan{order:2;position:sticky;top:24px;align-self:start}
+.pbox{background:var(--paper);border:1px solid var(--stone);padding:clamp(10px,1.6vw,22px)}
+#plan{display:block;width:100%;height:auto}
+#plan .wall{fill:#C9C3B8}
+#plan .ceil{fill:#2A2B2F;transition:fill .5s}
+#plan .gap{fill:none;stroke:#030303;stroke-width:4}
+#plan .halo{fill:none;stroke:#FFB447;stroke-width:11;opacity:.8;filter:url(#bl);transition:opacity .5s}
+#plan .core{fill:none;stroke:#FFF3D6;stroke-width:3;stroke-linecap:round;transition:stroke .5s}
+#plan circle.core{fill:#FFF3D6}
+#plan .trk{stroke:#060607;stroke-width:7;stroke-linecap:round}
+#plan .dim{fill:none;stroke:#6A665F;stroke-width:1.4}
+#plan .dtx{font:500 15px var(--fm);fill:#3A3835}
+#plan.day .ceil{fill:#F2F0EB}
+#plan.day .gap{stroke:#2A2A2C;stroke-width:3}
+#plan.day .halo{opacity:.22}
+#plan.day .core{stroke:#C98A2E}
+#plan.day circle.core{fill:#C98A2E}
+#plan.day .trk{stroke:#1D1E20}
+.pbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:10px}
+.sw{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 14px;border:1px solid var(--stone);border-radius:22px;background:var(--bg);font:500 12px/1 var(--fm);letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.sw i{position:relative;width:32px;height:18px;border-radius:9px;background:#A39D92;transition:background .25s}
+.sw i::after{content:"";position:absolute;top:3px;left:3px;width:12px;height:12px;border-radius:50%;background:#fff;transition:transform .25s}
+.sw[aria-pressed=true] i{background:var(--amber)}
+.sw[aria-pressed=true] i::after{transform:translateX(14px);box-shadow:0 0 8px 2px rgba(255,210,120,.95)}
+fieldset{border:0;padding:0;margin:0 0 28px;min-width:0}
+legend{padding:0;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip,.opt{min-height:46px;border:1.5px solid var(--stone);border-radius:3px;background:var(--paper);font:500 15px/1.2 var(--fb);cursor:pointer;transition:border-color .2s,background .2s,color .2s}
+.chip{padding:0 16px}
+.chip:hover,.opt:hover{border-color:var(--ink)}
+.chip[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.opt{display:flex;align-items:center;gap:12px;padding:8px 14px;text-align:left}
+.opt i{width:22px;height:4px;flex:none;border-radius:2px;background:var(--stone);transition:background .25s,box-shadow .25s}
+.opt[aria-pressed=true]{border-color:var(--ink);background:#fff}
+.opt[aria-pressed=true] i{background:#FFE7B3;box-shadow:0 0 8px 2px rgba(255,186,80,.9)}
+.rng{display:block;margin-bottom:6px}
+.rng span{display:flex;justify-content:space-between;gap:12px}
+.rng output{font:500 15px/1.4 var(--fm)}
+input[type=range]{width:100%;height:44px;margin:0;-webkit-appearance:none;appearance:none;background:transparent;cursor:pointer}
+input[type=range]::-webkit-slider-runnable-track{height:3px;background:var(--ink)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;height:28px;margin-top:-12.5px;border-radius:50%;background:var(--paper);border:2px solid var(--ink);transition:box-shadow .2s}
+input[type=range]:active::-webkit-slider-thumb,input[type=range]:focus-visible::-webkit-slider-thumb{box-shadow:0 0 0 5px rgba(201,138,46,.35)}
+input[type=range]::-moz-range-track{height:3px;background:var(--ink)}
+input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;background:var(--paper);border:2px solid var(--ink)}
+.sum{border-top:1px solid var(--ink);padding-top:20px}
+#sum{font:400 21px/1.35 var(--fd)}
+#saved{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:6px}
+#saved li{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-left:14px;background:var(--paper);font:14px/1.3 var(--fm)}
+#saved button{width:44px;height:44px;border:0;background:none;font-size:22px;cursor:pointer}
+.sum .btns{margin-top:20px}
+.note{margin-top:14px;font-size:14px;color:var(--ink2)}
+/* адрес */
+.con .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,80px);align-items:stretch}
+.dl{margin:36px 0 34px;display:grid;gap:0}
+.dl div{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;padding:14px 0;border-top:1px solid var(--stone)}
+.dl dt{font:500 12px/1.9 var(--fm);letter-spacing:.08em;text-transform:uppercase;color:var(--ink2)}
+.dl dd{margin:0}
+.dl a{text-decoration:none;border-bottom:1px solid var(--stone)}
+.dl .tel{font:400 26px/1.2 var(--fd);border:0}
+.map{position:relative;min-height:520px;background:var(--stone)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.map span{position:absolute;left:0;top:-28px;font:500 11px/1 var(--fm);letter-spacing:.06em;color:var(--ink2)}
+/* финал */
+.fin{padding:0 0 clamp(80px,9vw,140px)}
+.beam{height:3px;background:var(--core);box-shadow:0 0 6px 1px rgba(255,214,140,.95),0 0 40px 10px rgba(255,186,90,.4);transform-origin:left}
+.js .beam[data-r]{transform:scaleX(0);transition:transform 1.8s cubic-bezier(.3,.6,.2,1),opacity .4s}
+.js .beam[data-r].in{transform:none}
+.fin .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:32px clamp(32px,5vw,80px);align-items:end;padding-top:clamp(64px,8vw,120px)}
+.fin h2{font-size:clamp(54px,8.4vw,136px);line-height:.92;margin:0}
+.fin p{color:var(--ink2);font-size:19px;max-width:24em}
+.ftel{display:inline-block;margin:18px 0 22px;font:400 clamp(28px,2.6vw,38px)/1.1 var(--fd);text-decoration:none;white-space:nowrap}
+.ftr{border-top:1px solid var(--stone);padding:24px 0 30px;font:13px/1.5 var(--fm);color:var(--ink2)}
+.ftr .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px}
+.fcall{display:none}
+.js [data-r]{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+@media (max-width:1100px){.opts{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:960px){.nav{display:none}}
+@media (max-width:899px){
+ .hero .wrap,.svc .wrap,.rev .wrap,.cgrid,.con .wrap,.fin .wrap,.ghd{grid-template-columns:minmax(0,1fr)}
+ .hero .wrap{min-height:0}
+ .hph2::before{left:auto;right:-9px;bottom:40px}
+ .hph2 figcaption{position:static;margin-top:10px;text-align:right}
+ .hph2 img{position:static;height:min(110vw,520px)}
+ .svl{position:static}
+ .svl figure{max-width:none}
+ .svl img{aspect-ratio:4/3}
+ .rows li{grid-template-columns:56px minmax(0,1fr);gap:0 18px;padding:24px 0}
+ .rows .n{display:none}
+ .gl{width:56px;height:56px}
+ .gal{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:46vw;grid-auto-flow:dense;gap:10px}
+ .gal>*{grid-column:auto;grid-row:auto}
+ .g1,.g7,.g8{grid-column:1/-1}.g2{grid-row:span 2}
+ .gt{grid-column:1/-1;gap:18px;min-height:0}
+ .pts{grid-template-columns:minmax(0,1fr);padding-top:0}
+ .cplan{order:0;position:sticky;top:0;z-index:4;background:var(--band);padding:8px 0 6px;margin-top:-8px}
+ #plan{max-height:31vh}
+ .pbox{padding:8px}
+ .pbar .mono{display:none}
+ .map{min-height:380px}
+ .fcall{position:fixed;right:16px;bottom:16px;z-index:9;display:inline-flex;align-items:center;gap:10px;min-height:56px;padding:0 24px;border-radius:30px;background:var(--ink);color:var(--paper);font:600 16px/1 var(--fb);text-decoration:none;box-shadow:0 0 0 2px rgba(255,230,180,.9),0 10px 30px -6px rgba(200,130,40,.7)}
+ .fcall svg{width:18px;height:18px;fill:currentColor}
+ .ftr{padding-bottom:96px}
+}
+@media (max-width:520px){
+ .hdr .wrap{min-height:62px}
+ .logo{font-size:18px}
+ .hph{font-size:13px}
+ .btns .btn{flex:1 1 100%}
+ .facts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px 18px}
+ .facts div{padding:0;margin:0;border:0}
+ .facts div:last-child{grid-column:1/-1}
+ .facts b{font-size:22px}
+ .dl div{grid-template-columns:minmax(0,1fr);gap:2px}
+ .again{padding:20px;align-items:flex-start}
+ .again::before{margin-top:14px;width:24px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js [data-r]{opacity:1;transform:none}}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-ph" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.12.37 2.33.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></symbol></svg>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+<header class="hdr"><div class="wrap">
+ <a class="logo" href="#top" aria-label="Sv-Lux, в начало">SV<i></i>LUX</a>
+ <nav class="nav" aria-label="Разделы"><a href="#svet">Свет</a><a href="#raboty">Работы</a><a href="#otzyvy">Отзывы</a><a href="#plan-sec">План потолка</a><a href="#kontakty">Адрес</a></nav>
+ <a class="hph" href="tel:+79604876298">+7&nbsp;960&nbsp;487-62-98</a>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+ <div class="htx">
+  <p class="dim mono">Натяжные потолки · Геленджик</p>
+  <h1 class="wm" aria-label="Sv-Lux">SV<i></i>LUX</h1>
+  <p class="lead">Натяжные потолки, в которые встроен свет: световые линии, теневой профиль, парящий контур и треки — для квартир и домов.</p>
+  <div class="where"><a href="#kontakty">ул. Суворова, 26 · 2 этаж</a><span data-status></span></div>
+  <div class="btns">
+   <a class="btn btn-d" href="tel:+79604876298"><svg aria-hidden="true"><use href="#i-ph"/></svg>Позвонить</a>
+   <a class="btn btn-l" href="https://yandex.ru/maps/?rtext=~44.573806,38.085677" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Маршрут</a>
+   <a class="tx" href="#plan-sec">Начертить свой потолок →</a>
+  </div>
+  <div class="facts">
+   <div><b>5,0</b><span class="mono">25 оценок в 2ГИС</span></div>
+   <div><b>08:00–19:00</b><span class="mono">пн–сб, вс — выходной</span></div>
+   <div><b>Квартиры и дома</b><span class="mono">от комнаты до всего дома</span></div>
+  </div>
+ </div>
+ <figure class="hph2">
+  <img src="img/p7.jpg" srcset="img/p7-m.jpg 437w, img/p7.jpg 622w" sizes="(min-width:900px) 34vw, 100vw" width="622" height="1280" alt="Стена со световыми линиями и потолок с теневым зазором — объект Sv-Lux">
+  <figcaption>Свет в стене и потолке · объект Sv-Lux</figcaption>
+ </figure>
+</div></section>
+<div class="slit" aria-hidden="true"></div>
+
+<section class="sec svc" id="svet"><div class="wrap">
+ <div class="svl" data-r>
+  <p class="idx">01 / Свет</p>
+  <h2>Свет не висит под потолком — он в нём</h2>
+  <p class="sub">Всё, что ниже, видно на фотографиях объектов Sv-Lux в&nbsp;2ГИС. Можно взять одно решение или собрать несколько в одном потолке.</p>
+  <figure><img src="img/p8-m.jpg" srcset="img/p8-m.jpg 405w, img/p8.jpg 720w" sizes="(min-width:900px) 440px, 100vw" width="720" height="1600" loading="lazy" alt="Потолок с теневым профилем, световой линией, кольцом и точечными светильниками"><figcaption class="mono">Линия, кольцо и точки в одном потолке</figcaption></figure>
+ </div>
+ <ol class="rows">
+  <li data-r><span class="n">01</span><svg class="gl" viewBox="0 0 72 72" aria-hidden="true"><rect class="b" x="2" y="2" width="68" height="68"/><path class="lt" d="M15 25H57M15 47H57"/></svg><div><h3>Световые линии</h3><p>Полосы света прямо в полотне: через всю комнату, буквой «Г» или вдоль стены, с переходом на стену.</p></div></li>
+  <li data-r><span class="n">02</span><svg class="gl" viewBox="0 0 72 72" aria-hidden="true"><rect class="b" x="2" y="2" width="68" height="68"/><rect class="dk" x="9" y="9" width="54" height="54" stroke-width="3"/></svg><div><h3>Теневой профиль</h3><p>Между потолком и стеной — тонкий тёмный зазор вместо плинтуса. Потолок выглядит строгим и собранным.</p></div></li>
+  <li data-r><span class="n">03</span><svg class="gl" viewBox="0 0 72 72" aria-hidden="true"><rect class="b" x="2" y="2" width="68" height="68"/><rect class="lt" x="11" y="11" width="50" height="50"/></svg><div><h3>Парящий потолок</h3><p>Тёплая подсветка по контуру — кажется, что полотно не касается стен.</p></div></li>
+  <li data-r><span class="n">04</span><svg class="gl" viewBox="0 0 72 72" aria-hidden="true"><rect class="b" x="2" y="2" width="68" height="68"/><path class="dk" d="M19 14V58" stroke-width="5" stroke-linecap="round"/><circle class="sp" cx="28" cy="24" r="3"/><circle class="sp" cx="28" cy="36" r="3"/><circle class="sp" cx="28" cy="48" r="3"/></svg><div><h3>Трековый свет</h3><p>Чёрные шинопроводы со спотами: свет направляют туда, где он нужен, — на стол, стену, проход.</p></div></li>
+  <li data-r><span class="n">05</span><svg class="gl" viewBox="0 0 72 72" aria-hidden="true"><rect class="b" x="2" y="2" width="68" height="68"/><circle class="lt" cx="36" cy="36" r="12"/><circle class="sp" cx="15" cy="15" r="2.6"/><circle class="sp" cx="57" cy="15" r="2.6"/><circle class="sp" cx="15" cy="57" r="2.6"/><circle class="sp" cx="57" cy="57" r="2.6"/></svg><div><h3>Кольца, подвесы, точки</h3><p>Светящиеся кольца, цилиндры, тёплые абажуры и точечный свет — под интерьер и под задачу комнаты.</p></div></li>
+  <li data-r><span class="n">06</span><svg class="gl" viewBox="0 0 72 72" aria-hidden="true"><rect class="b" x="2" y="2" width="68" height="68"/><path class="dk" d="M14 36H58M14 30V42M58 30V42M36 14V58M30 14H42M30 58H42" stroke-width="1.6"/></svg><div><h3>Замер и подбор под сумму</h3><p>Приезжают на замер и помогают определиться с выбором в ваш бюджет — так пишут в отзывах.</p></div></li>
+ </ol>
+</div></section>
+
+<section class="sec" id="raboty" style="padding-top:0"><div class="wrap">
+ <div class="ghd" data-r>
+  <div><p class="idx">02 / Работы</p><h2>Смотрите вверх</h2></div>
+  <p class="sub">Кадры с объектов из карточки Sv-Lux в 2ГИС. Почти все сняты снизу — так потолок видит хозяин, когда заходит в комнату.</p>
+ </div>
+ <div class="gal">
+  <figure class="g1" data-r><img src="img/p3-m.jpg" srcset="img/p3-m.jpg 900w, img/p3.jpg 1280w" sizes="(min-width:1400px) 790px, (min-width:900px) 58vw, 100vw" width="1280" height="960" loading="lazy" alt="Световые линии на потолке и подсветка рейчатой стены"><figcaption>Световые линии и подсветка стены</figcaption></figure>
+  <figure class="g2" data-r><img src="img/p1-m.jpg" srcset="img/p1-m.jpg 405w, img/p1.jpg 720w" sizes="(min-width:900px) 18vw, 50vw" width="720" height="1600" loading="lazy" alt="Подвесной светильник-цилиндр под световой линией" style="object-position:50% 60%"><figcaption>Подвес под линией</figcaption></figure>
+  <figure class="g3" data-r><img src="img/p11-m.jpg" srcset="img/p11-m.jpg 900w, img/p11.jpg 1440w" sizes="(min-width:1400px) 600px, (min-width:900px) 43vw, 105vw" width="1440" height="648" loading="lazy" alt="Светящееся кольцо и точечный светильник на потолке"><figcaption>Кольцо и точка</figcaption></figure>
+  <figure class="g4" data-r><img src="img/p12-m.jpg" srcset="img/p12-m.jpg 900w, img/p12.jpg 1280w" sizes="(min-width:1400px) 410px, (min-width:900px) 29vw, 72vw" width="1280" height="853" loading="lazy" alt="Парящий потолок с тёплой контурной подсветкой"><figcaption>Парящий контур</figcaption></figure>
+  <figure class="g5" data-r><img src="img/p2-m.jpg" srcset="img/p2-m.jpg 900w, img/p2.jpg 1440w" sizes="(min-width:1400px) 810px, (min-width:900px) 58vw, 105vw" width="1440" height="648" loading="lazy" alt="Подвесные кольца и световые линии на потолке"><figcaption>Двойное кольцо и линии</figcaption></figure>
+  <figure class="g6" data-r><img src="img/p13-m.jpg" srcset="img/p13-m.jpg 900w, img/p13.jpg 1280w" sizes="(min-width:1400px) 550px, (min-width:900px) 39vw, 72vw" width="1280" height="853" loading="lazy" alt="Потолок с двумя магнитными треками и спотами"><figcaption>Магнитные треки</figcaption></figure>
+  <figure class="g7" data-r><img src="img/p4-m.jpg" srcset="img/p4-m.jpg 900w, img/p4.jpg 1440w" sizes="(min-width:1400px) 810px, (min-width:900px) 58vw, 105vw" width="1440" height="648" loading="lazy" alt="Световые линии, подвесы и теневой зазор в комнате с зеркалом"><figcaption>Линии, подвесы, теневой зазор</figcaption></figure>
+  <figure class="g8" data-r><img src="img/p9-m.jpg" srcset="img/p9-m.jpg 900w, img/p9.jpg 1280w" sizes="(min-width:1400px) 690px, (min-width:900px) 50vw, 100vw" width="1280" height="960" loading="lazy" alt="Линии буквой Г и подвесные светильники над кухней"><figcaption>Линии буквой «Г» и подвесы</figcaption></figure>
+  <figure class="g9" data-r><img src="img/p6-m.jpg" srcset="img/p6-m.jpg 900w, img/p6.jpg 1280w" sizes="(min-width:1400px) 690px, (min-width:900px) 50vw, 72vw" width="1280" height="853" loading="lazy" alt="Тёплый свет: абажуры и трек со спотами вечером"><figcaption>Тёплый вечерний свет</figcaption></figure>
+  <a class="gt" data-r href="https://2gis.ru/krasnodar/firm/70000001040213406" target="_blank" rel="noopener"><b>Ещё кадры и все 25 оценок — в карточке Sv-Lux</b><span>Открыть 2ГИС →</span></a>
+ </div>
+</div></section>
+
+<section class="sec rev" id="otzyvy" style="padding-top:0"><div class="wrap">
+ <div data-r>
+  <p class="idx">03 / Отзывы</p>
+  <h2>За что хвалят</h2>
+  <div class="big">5,0</div>
+  <div class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+  <p class="mono">Рейтинг в 2ГИС · 25 оценок</p>
+  <a class="lnk" href="https://2gis.ru/krasnodar/firm/70000001040213406" target="_blank" rel="noopener">Читать отзывы в 2ГИС →</a>
+  <div class="boss"><span class="mono">Руководитель</span><b>Андрей Бондаревский</b><p>Его по имени благодарят в отзывах — за замер, монтаж и подбор.</p></div>
+ </div>
+ <div class="pts">
+  <article class="pt pt1" data-r><span class="mono">01 — сроки</span><h3>Замер — быстро, монтаж — как договорились</h3><p>Андрей оперативно приезжает на замер, а сроки держат те, что обговорили. В одном из отзывов потолок был готов уже через сутки после замера.</p></article>
+  <article class="pt" data-r><span class="mono">02 — чистота</span><h3>После монтажа чисто</h3><p>Пишут, что работают аккуратно и добросовестно: без мусора и без повреждений.</p></article>
+  <article class="pt" data-r><span class="mono">03 — после сдачи</span><h3>Подберут под сумму и не бросят потом</h3><p>Помогают выбрать в ваш бюджет, цены называют адекватными. Когда свет показался слишком ярким — приехали и бесплатно поменяли лампы на менее мощные.</p></article>
+  <p class="again" data-r>К ним возвращаются: сначала потолок в квартире, потом — в доме.</p>
+ </div>
+</div></section>
+
+<section class="sec cfg" id="plan-sec"><div class="wrap">
+ <div data-r>
+  <p class="idx">04 / План потолка</p>
+  <h2>Начертите свой потолок</h2>
+  <p class="sub">Выберите комнату, размеры и свет — план нарисуется сам. Отправьте его в WhatsApp: с площадью и периметром проще договориться о замере.</p>
+ </div>
+ <div class="cgrid" id="cfg">
+  <div class="cplan">
+   <div class="pbox">
+    <svg id="plan" viewBox="0 0 600 440" role="img" aria-label="План потолка"><defs><filter id="bl" filterUnits="userSpaceOnUse" x="0" y="0" width="600" height="440"><feGaussianBlur stdDeviation="5"/></filter></defs><g id="pg"></g></svg>
+    <div class="pbar"><span class="mono">Вид снизу · свет на плане условно</span><button class="sw" type="button" id="night" aria-pressed="true"><i></i><span>Свет включён</span></button></div>
+   </div>
+  </div>
+  <div class="cctl">
+   <fieldset><legend class="mono">Комната</legend><div class="chips" id="rooms">
+    <button class="chip" type="button" aria-pressed="true">Гостиная</button><button class="chip" type="button" aria-pressed="false">Спальня</button><button class="chip" type="button" aria-pressed="false">Кухня</button><button class="chip" type="button" aria-pressed="false">Ванная</button><button class="chip" type="button" aria-pressed="false">Коридор</button><button class="chip" type="button" aria-pressed="false">Кабинет</button>
+   </div></fieldset>
+   <fieldset><legend class="mono">Размеры</legend>
+    <label class="rng"><span>Длина <output id="oL">4,2 м</output></span><input type="range" id="L" min="1.5" max="12" step="0.1" value="4.2"></label>
+    <label class="rng"><span>Ширина <output id="oW">3,6 м</output></span><input type="range" id="W" min="1.5" max="9" step="0.1" value="3.6"></label>
+   </fieldset>
+   <fieldset><legend class="mono">Свет</legend><div class="opts" id="opts">
+    <button class="opt" type="button" data-k="lines" aria-pressed="true"><i></i>Световые линии</button><button class="opt" type="button" data-k="shadow" aria-pressed="true"><i></i>Теневой профиль</button><button class="opt" type="button" data-k="float" aria-pressed="false"><i></i>Парящий контур</button><button class="opt" type="button" data-k="track" aria-pressed="false"><i></i>Магнитный трек</button><button class="opt" type="button" data-k="spots" aria-pressed="false"><i></i>Точечный свет</button><button class="opt" type="button" data-k="ring" aria-pressed="false"><i></i>Люстра или кольцо</button>
+   </div></fieldset>
+   <div class="sum">
+    <p id="sum" aria-live="polite">Гостиная · 15,1 м² · периметр 15,6 м</p>
+    <ul id="saved"></ul>
+    <div class="btns"><a class="btn btn-d" id="wa" href="https://wa.me/79604876298?text=Здравствуйте!%20Хочу%20натяжной%20потолок.%20Когда%20можно%20приехать%20на%20замер%3F" target="_blank" rel="noopener">Отправить план в WhatsApp</a><button class="btn btn-l" type="button" id="add">+ Ещё комната</button></div>
+    <p class="note">В сообщение попадут комнаты, размеры и выбранный свет. Остальное уточнят на замере.</p>
+   </div>
+  </div>
+ </div>
+</div></section>
+
+<div class="slit" aria-hidden="true"></div>
+<section class="sec con" id="kontakty"><div class="wrap">
+ <div data-r>
+  <p class="idx">05 / Адрес</p>
+  <h2>Суворова, 26. Второй этаж</h2>
+  <dl class="dl">
+   <div><dt>Телефон</dt><dd><a class="tel" href="tel:+79604876298">+7&nbsp;960&nbsp;487-62-98</a></dd></div>
+   <div><dt>WhatsApp</dt><dd><a href="https://wa.me/79604876298?text=Здравствуйте!%20Хочу%20натяжной%20потолок.%20Когда%20можно%20приехать%20на%20замер%3F" target="_blank" rel="noopener">Написать в WhatsApp</a></dd></div>
+   <div><dt>Часы</dt><dd>Пн–Сб 08:00–19:00<br>Воскресенье — выходной<br><span data-status></span></dd></div>
+   <div><dt>Оплата</dt><dd>Наличные, через банк, перевод с карты</dd></div>
+   <div><dt>Город</dt><dd>Геленджик, ул. Суворова, 26, 2 этаж</dd></div>
+  </dl>
+  <div class="btns"><a class="btn btn-d" href="https://yandex.ru/maps/?rtext=~44.573806,38.085677" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg>Построить маршрут</a><a class="btn btn-l" href="https://2gis.ru/krasnodar/firm/70000001040213406" target="_blank" rel="noopener">Карточка в 2ГИС</a></div>
+ </div>
+ <div class="map" data-r><span aria-hidden="true">44.5738 N · 38.0857 E</span><iframe loading="lazy" title="Sv-Lux на карте: Геленджик, ул. Суворова, 26" src="https://yandex.ru/map-widget/v1/?ll=38.085677,44.573806&amp;z=16&amp;pt=38.085677,44.573806,pm2rdm"></iframe></div>
+</div></section>
+
+<section class="fin">
+ <div class="beam" data-r aria-hidden="true"></div>
+ <div class="wrap">
+  <h2 data-r>Начнём<br>с замера</h2>
+  <div data-r>
+   <p>Позвоните или напишите — приедут на замер и помогут выбрать свет под вашу сумму.</p>
+   <a class="ftel" href="tel:+79604876298">+7&nbsp;960&nbsp;487-62-98</a>
+   <div class="btns"><a class="btn btn-d" href="tel:+79604876298"><svg aria-hidden="true"><use href="#i-ph"/></svg>Позвонить</a><a class="btn btn-l" href="https://wa.me/79604876298?text=Здравствуйте!%20Хочу%20натяжной%20потолок.%20Когда%20можно%20приехать%20на%20замер%3F" target="_blank" rel="noopener">WhatsApp</a></div>
+  </div>
+ </div>
+</section>
+</main>
+<footer class="ftr"><div class="wrap"><span>Sv-Lux · натяжные потолки · Геленджик, ул. Суворова, 26, 2 этаж</span><span>Демо-концепт по данным 2ГИС, не официальный сайт</span></div></footer>
+<a class="fcall" href="tel:+79604876298"><svg aria-hidden="true"><use href="#i-ph"/></svg>Позвонить</a>
+
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)},g=$('pg'),svg=$('plan');if(!g)return;
+var NS='http://www.w3.org/2000/svg',N={lines:'световые линии',shadow:'теневой профиль',float:'парящий контур',track:'магнитный трек',spots:'точечный свет',ring:'люстра или кольцо'};
+var st={room:'Гостиная',L:4.2,W:3.6,on:{lines:1,shadow:1}},saved=[];
+var f1=function(n){return n.toFixed(1).replace('.',',')};
+function mk(t,a,c){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);if(c)e.setAttribute('class',c);g.appendChild(e);return e}
+function lite(t,a){mk(t,a,'halo');mk(t,a,'core')}
+function txt(x,y,s){var e=mk('text',{x:x,y:y,'text-anchor':'middle'},'dtx');e.textContent=s;return e}
+function lights(){return Object.keys(N).filter(function(k){return st.on[k]}).map(function(k){return N[k]})}
+function draw(){
+ while(g.firstChild)g.removeChild(g.firstChild);
+ var L=st.L,W=st.W,o=st.on,s=Math.min(470/L,290/W),w=L*s,h=W*s,x=(600-w)/2+12,y=(440-h)/2+4,i,k;
+ mk('rect',{x:x-8,y:y-8,width:w+16,height:h+16},'wall');
+ mk('rect',{x:x,y:y,width:w,height:h},'ceil');
+ if(o.shadow)mk('rect',{x:x+4,y:y+4,width:w-8,height:h-8},'gap');
+ if(o.float)lite('rect',{x:x+13,y:y+13,width:w-26,height:h-26,rx:2});
+ var a=o.track?.27:.12;
+ if(o.lines)(h<90?[.5]:[.32,.68]).forEach(function(k){lite('line',{x1:x+w*a,y1:y+h*k,x2:x+w*.88,y2:y+h*k})});
+ if(o.track){mk('line',{x1:x+w*.15,y1:y+h*.17,x2:x+w*.15,y2:y+h*.83},'trk');[.3,.5,.7].forEach(function(k){lite('circle',{cx:x+w*.15+10,cy:y+h*k,r:3.5})})}
+ if(o.spots){var n=Math.max(2,Math.min(7,Math.round(L/1.3))),a0=o.track?.32:.14;for(i=0;i<n;i++){var px=x+w*(a0+(.86-a0)*i/(n-1));lite('circle',{cx:px,cy:y+h*.13,r:4});lite('circle',{cx:px,cy:y+h*.87,r:4})}}
+ if(o.ring)lite('circle',{cx:x+w*(o.track?.57:.5),cy:y+h/2,r:Math.min(w,h)*.11});
+ var t=y-30,l=x-30;
+ mk('path',{d:'M'+x+' '+t+'H'+(x+w)+'M'+x+' '+(t-6)+'v12M'+(x+w)+' '+(t-6)+'v12'},'dim');
+ txt(x+w/2,t-9,f1(L)+' м');
+ mk('path',{d:'M'+l+' '+y+'V'+(y+h)+'M'+(l-6)+' '+y+'h12M'+(l-6)+' '+(y+h)+'h12'},'dim');
+ txt(l-9,y+h/2,f1(W)+' м').setAttribute('transform','rotate(-90 '+(l-9)+' '+(y+h/2)+')');
+ txt(x+w/2,y+h+38,'S '+f1(L*W)+' м²  ·  P '+f1(2*(L+W))+' м');
+ var cur={room:st.room,L:L,W:W,li:lights()},all=saved.concat([cur]),tot=0;
+ all.forEach(function(r){tot+=r.L*r.W});
+ var desc=st.room+' · '+f1(L*W)+' м² · периметр '+f1(2*(L+W))+' м'+(cur.li.length?' · '+cur.li.join(', '):'');
+ $('sum').textContent=desc+(saved.length?'. Всего в заявке: '+all.length+' комн., ≈'+f1(tot)+' м²':'');
+ svg.setAttribute('aria-label','План потолка: '+desc);
+ var ul=$('saved');ul.innerHTML='';
+ saved.forEach(function(r,j){var li=document.createElement('li');li.textContent=r.room+' · '+f1(r.L)+'×'+f1(r.W)+' м · '+f1(r.L*r.W)+' м²';var b=document.createElement('button');b.type='button';b.textContent='×';b.setAttribute('aria-label','Убрать: '+r.room);b.onclick=function(){saved.splice(j,1);draw()};li.appendChild(b);ul.appendChild(li)});
+ var msg='Здравствуйте! Хочу натяжной потолок, набросал план на сайте.\n'+all.map(function(r,j){return (all.length>1?(j+1)+') ':'')+r.room+' — '+f1(r.L)+' × '+f1(r.W)+' м, ≈'+f1(r.L*r.W)+' м², периметр '+f1(2*(r.L+r.W))+' м. Свет: '+(r.li.length?r.li.join(', '):'пока не выбрал')+'.'}).join('\n')+'\nКогда можно приехать на замер?';
+ $('wa').href='https://wa.me/79604876298?text='+encodeURIComponent(msg);
+}
+var chips=[].slice.call(document.querySelectorAll('#rooms .chip'));
+function setRoom(v){st.room=v;chips.forEach(function(c){c.setAttribute('aria-pressed',c.textContent===v)})}
+chips.forEach(function(c){c.onclick=function(){setRoom(c.textContent);draw()}});
+['L','W'].forEach(function(id){var r=$(id);r.oninput=function(){st[id]=+r.value;$('o'+id).textContent=f1(st[id])+' м';draw()}});
+[].forEach.call(document.querySelectorAll('#opts .opt'),function(b){b.onclick=function(){var k=b.getAttribute('data-k');st.on[k]=!st.on[k];b.setAttribute('aria-pressed',!!st.on[k]);draw()}});
+$('night').onclick=function(){var on=this.getAttribute('aria-pressed')!=='true';this.setAttribute('aria-pressed',on);svg.classList.toggle('day',!on);this.lastChild.textContent=on?'Свет включён':'Свет выключен'};
+$('add').onclick=function(){saved.push({room:st.room,L:st.L,W:st.W,li:lights()});var used=saved.map(function(r){return r.room}),nx=chips.filter(function(c){return used.indexOf(c.textContent)<0})[0];if(nx)setRoom(nx.textContent);draw()};
+draw();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["08:00","19:00"]],"tue":[["08:00","19:00"]],"wed":[["08:00","19:00"]],"thu":[["08:00","19:00"]],"fri":[["08:00","19:00"]],"sat":[["08:00","19:00"]],"sun":null},"is247":false}</script>
+<script src="app.js"></script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>SPA &amp; Therapy — студия массажа в Краснодаре</title><meta property="og:type" content="website"><meta property="og:title" content="SPA &amp;amp; Therapy — студия массажа в Краснодаре"><meta property="og:description" content="SPA &amp;amp; Therapy — студия массажа на ул. Героя Бочарникова, 4 в Краснодаре: тайский, релаксирующий, лимфодренаж, массаж для беременных, парный массаж и кедровая фитобочка. Ежедневно 10:00–22:00."><meta property="og:image" content="https://pikold.github.io/demo-sites/spa-therapy/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="SPA &amp; Therapy — студия массажа на ул. Героя Бочарникова, 4 в Краснодаре: тайский, релаксирующий, лимфодренаж, массаж для беременных, парный массаж и кедровая фитобочка. Ежедневно 10:00–22:00.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Prata&family=Onest:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prata&family=Onest:wght@400;500;600&display=swap"></noscript>
+<style>
+:root{--linen:#f2ebdf;--paper:#faf6ee;--moss:#1e3a2f;--moss2:#2a4b3c;--ink:#2a241f;--mut:#655a50;--honey:#cf9246;--honeyd:#86561c;--bamboo:#d6c088;--cream:#f1e8d6;--line:rgba(42,36,31,.14);--wrap:1320px;--pad:clamp(16px,4vw,48px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--linen);color:var(--ink);font:400 17px/1.6 Onest,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3,.serif{font-family:Prata,Georgia,serif;font-weight:400;margin:0}
+h2{font-size:clamp(2rem,1.15rem + 2.5vw,3.5rem);line-height:1.08;letter-spacing:-.01em}
+p{margin:0}
+:focus-visible{outline:3px solid var(--honey);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+.kick{display:block;font:600 12px/1.4 Onest,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--honeyd);margin-bottom:18px}
+.demo{background:var(--moss);color:var(--cream);font-size:13px;line-height:1.4;text-align:center;padding:8px 16px}
+.seal{display:block;color:var(--moss)}
+.seal .dots{stroke:currentColor;stroke-width:12;stroke-dasharray:0 10.472;stroke-linecap:round;fill:none}
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:Prata,serif;font-size:21px}
+.logo svg{width:44px;height:44px}
+.nav{display:flex;gap:30px;font-size:15px}
+.nav a{text-decoration:none;color:var(--mut);padding:10px 0;transition:color .2s}
+.nav a:hover{color:var(--ink)}
+.toptel{font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;min-height:44px}
+.toptel svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8}
+/* buttons */
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:600 16px/1 Onest,sans-serif;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .2s,background-color .2s,color .2s,box-shadow .25s}
+.btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn--main{background:var(--moss);color:var(--cream)}
+.btn--main:hover{background:var(--moss2);box-shadow:0 10px 24px -10px rgba(30,58,47,.6)}
+.btn--line{border-color:var(--ink);color:var(--ink)}
+.btn--line:hover{background:var(--ink);color:var(--linen)}
+.btn--honey{background:var(--honey);color:#22170b}
+.btn--honey:hover{background:#dca15a;box-shadow:0 10px 24px -10px rgba(207,146,70,.7)}
+.btn--ghost{border-color:rgba(241,232,214,.5);color:var(--cream)}
+.btn--ghost:hover{background:var(--cream);color:var(--moss)}
+[data-status]{display:inline-flex;align-items:center;gap:9px;font-size:15px}
+[data-status]::before{content:"";width:9px;height:9px;border-radius:50%;background:#b9ad9f;flex:none}
+[data-status].is-open::before{background:#3f9a5c;box-shadow:0 0 0 4px rgba(63,154,92,.18)}
+/* hero */
+.hero{position:relative;padding:clamp(20px,3.5vw,48px) 0 clamp(56px,7vw,110px)}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 70% at 78% 42%,rgba(207,146,70,.26),transparent 70%);pointer-events:none}
+.hero__grid{position:relative;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.9fr);gap:clamp(32px,5vw,88px);align-items:center}
+h1{font-size:clamp(3.2rem,1.3rem + 6vw,7.4rem);line-height:.92;letter-spacing:-.015em;margin:0 0 .32em}
+h1 .l2{display:block;padding-left:.8em}
+h1 em{font-style:normal;color:var(--honey)}
+.lead{font-size:clamp(1.08rem,.95rem + .45vw,1.32rem);line-height:1.5;max-width:31em}
+.addr{display:flex;gap:10px;align-items:flex-start;margin:22px 0 26px;color:var(--mut);font-size:15.5px;max-width:34em}
+.addr svg{width:18px;height:18px;flex:none;margin-top:3px;stroke:var(--honeyd);fill:none;stroke-width:1.8}
+.hero__meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px;margin-top:20px;color:var(--mut);font-size:15px}
+.hero__meta a{color:var(--moss);font-weight:600;text-underline-offset:4px}
+.ph{position:relative;max-width:520px;margin-left:auto}
+.ph__main{width:100%;aspect-ratio:3/4;max-height:min(76vh,700px);object-fit:cover;object-position:50% 60%;border-radius:8px;box-shadow:0 40px 80px -40px rgba(60,30,5,.55)}
+.ph__in{position:absolute;left:-16%;bottom:-7%;width:36%;aspect-ratio:3/4;object-fit:cover;object-position:50% 30%;border:7px solid var(--linen);border-radius:6px}
+.ph__seal{position:absolute;top:-30px;right:-22px;width:124px;height:124px;display:grid;place-items:center;color:var(--moss)}
+.ph__seal svg{position:absolute;inset:0;width:100%;height:100%;animation:turn 40s linear infinite}
+.ph__seal b{position:relative;font:400 30px/1 Prata,serif;color:var(--cream);text-align:center}
+.ph__seal small{display:block;font:500 10.5px/1.2 Onest,sans-serif;letter-spacing:.03em;margin-top:5px;color:var(--bamboo)}
+.ph__cap{margin-top:16px;padding-left:24%;font-size:14px;color:var(--mut);text-align:right}
+@keyframes turn{to{transform:rotate(360deg)}}
+/* inside */
+.inside{padding:clamp(40px,6vw,96px) 0 clamp(64px,8vw,128px)}
+.inside__grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr) minmax(0,1fr);gap:clamp(16px,2.2vw,32px)}
+.inside__text{grid-column:2/4;align-self:end;padding-bottom:clamp(8px,2vw,32px)}
+.inside__text p{max-width:30em;margin-top:20px;color:var(--mut);font-size:1.06rem}
+.fig{margin:0}
+.fig img{width:100%;object-fit:cover;border-radius:6px}
+.fig figcaption{font-size:13.5px;color:var(--mut);margin-top:10px}
+.f1{grid-row:1/3;grid-column:1}
+.f1 img{aspect-ratio:3/4;height:auto}
+.f2 img,.f3 img{aspect-ratio:4/5;height:auto}
+.f3{margin-top:clamp(0px,6vw,80px)}
+/* menu */
+.menu{background:var(--paper);padding:clamp(64px,8vw,128px) 0}
+.menu__grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(40px,6vw,112px);align-items:start}
+.menu__side{position:sticky;top:28px}
+.menu__side p{margin-top:20px;color:var(--mut);max-width:28em}
+.menu__side .fig{margin-top:32px;max-width:440px}
+.menu__side .fig img{aspect-ratio:1/1;height:auto;object-position:50% 40%}
+.grp{margin-bottom:44px}
+.grp__h{display:flex;align-items:baseline;gap:16px;padding-bottom:14px;border-bottom:1.5px solid var(--ink)}
+.grp__h i{font:400 15px/1 Prata,serif;font-style:normal;color:var(--honeyd);width:28px;flex:none}
+.grp__h h3{font-size:clamp(1.5rem,1.2rem + .9vw,2.1rem)}
+.grp__h span{margin-left:auto;font-size:14px;color:var(--mut);text-align:right}
+.svc{display:grid;grid-template-columns:28px minmax(0,1fr) auto 24px;gap:0 16px;align-items:center;min-height:64px;padding:12px 0;border-bottom:1px solid var(--line);text-decoration:none;transition:background-color .25s,padding .25s}
+.svc b{grid-column:2;font:400 clamp(1.12rem,1rem + .35vw,1.32rem)/1.25 Prata,serif;transition:color .2s}
+.svc em{grid-column:3;font-style:normal;font-size:14.5px;color:var(--mut);text-align:right}
+.svc svg{grid-column:4;width:22px;height:22px;stroke:var(--honeyd);fill:none;stroke-width:1.7;transition:transform .25s}
+.svc:hover,.svc:focus-visible{background:rgba(207,146,70,.1);padding-left:8px;padding-right:8px}
+.svc:hover b{color:var(--honeyd)}
+.svc:hover svg{transform:translateX(4px)}
+.warn{font-size:14px;color:var(--mut);margin-top:8px;padding-left:44px}
+/* two */
+.two{background:var(--moss);color:var(--cream);padding:clamp(64px,8vw,128px) 0;overflow:hidden}
+.two__grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.85fr) minmax(0,.7fr);gap:clamp(24px,3.5vw,56px);align-items:start}
+.two .kick{color:var(--bamboo)}
+.two p{margin-top:22px;color:rgba(241,232,214,.82);max-width:30em;font-size:1.06rem}
+.two .btns{margin-top:32px}
+.two__ph img{width:100%;aspect-ratio:3/4;height:auto;object-fit:cover;border-radius:6px}
+.gift{margin-top:clamp(0px,9vw,140px);background:var(--cream);color:var(--ink);border-radius:10px;padding:12px 12px 22px;transition:transform .3s}
+.gift:hover{transform:rotate(-1.2deg) translateY(-4px)}
+.gift img{width:100%;aspect-ratio:6/5;height:auto;object-fit:cover;border-radius:6px}
+.gift h3{font-size:1.35rem;margin:16px 8px 6px}
+.gift p{color:var(--mut);margin:0 8px;font-size:14.5px}
+.gift a{display:inline-flex;align-items:center;min-height:44px;margin:8px 8px 0;font-weight:600;color:var(--moss);text-underline-offset:4px}
+/* praise */
+.praise{padding:clamp(64px,8vw,128px) 0}
+.praise__grid{display:grid;grid-template-columns:minmax(0,.55fr) minmax(0,1.45fr);gap:clamp(32px,6vw,104px);align-items:start}
+.big-seal{position:relative;width:clamp(170px,18vw,230px);aspect-ratio:1;display:grid;place-items:center;color:var(--moss);margin-top:8px}
+.big-seal svg{position:absolute;inset:0;width:100%;height:100%}
+.big-seal div{position:relative;text-align:center;color:var(--cream)}
+.big-seal b{display:block;font:400 clamp(2.8rem,2rem + 2vw,4rem)/1 Prata,serif}
+.big-seal span{display:block;font-size:13px;color:var(--bamboo);margin-top:8px;line-height:1.3}
+.praise__src{margin-top:22px;font-size:14.5px;color:var(--mut)}
+.praise__src a{color:var(--moss);font-weight:600;text-underline-offset:4px;display:inline-block;padding:8px 0}
+.pts{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,3vw,48px) clamp(24px,4vw,64px)}
+.pts li{border-top:1.5px solid var(--ink);padding-top:20px}
+.pts li:first-child{grid-column:1/3;border:0;padding:0}
+.pts h3{font-size:1.4rem;margin-bottom:10px}
+.pts li:first-child h3{font-size:clamp(1.7rem,1.2rem + 1.6vw,2.7rem);line-height:1.15;max-width:22em;margin-bottom:16px}
+.pts li:first-child h3 span{color:var(--honeyd)}
+.pts p{color:var(--mut)}
+.pts li:first-child p{font-size:1.1rem;max-width:40em}
+/* picker */
+.pick{background:var(--paper);padding:clamp(64px,8vw,128px) 0}
+.pick__head{max-width:46em;margin-bottom:clamp(36px,4vw,56px)}
+.pick__head p{margin-top:18px;color:var(--mut);font-size:1.06rem}
+.pick__grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(32px,5vw,80px);align-items:start}
+fieldset{position:relative;border:0;margin:0;padding:0 0 34px 60px;min-width:0}
+fieldset::before{content:"";position:absolute;left:15px;top:6px;bottom:0;width:12px;border-radius:6px;background:linear-gradient(90deg,#c4aa6a,#e8d9ab 45%,#b99d5f);opacity:.35;transition:opacity .4s}
+fieldset:last-of-type::before{bottom:20px}
+fieldset:has(input:checked)::before{opacity:1}
+.node{position:absolute;left:5px;top:0;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font:400 15px/1 Prata,serif;background:var(--paper);border:1.5px solid var(--bamboo);color:var(--honeyd);transition:background-color .3s,color .3s}
+fieldset:has(input:checked) .node{background:var(--moss);border-color:var(--moss);color:var(--cream)}
+legend{float:left;width:100%;padding:0;margin:2px 0 16px;font:400 1.35rem/1.3 Prata,serif}
+.chips{clear:both;display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative;display:inline-flex}
+.chip input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.chip span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border:1.5px solid var(--line);border-radius:999px;background:#fff;font-size:15.5px;transition:background-color .2s,border-color .2s,color .2s,transform .15s}
+.chip:hover span{border-color:var(--honey)}
+.chip input:active+span{transform:scale(.97)}
+.chip input:checked+span{background:var(--moss);border-color:var(--moss);color:var(--cream)}
+.chip input:focus-visible+span{outline:3px solid var(--honey);outline-offset:2px}
+.alt{display:none;clear:both;color:var(--mut);font-size:15px;max-width:30em}
+.is-special .goal .chips,.is-special .barrel{display:none}
+.is-special .alt{display:block}
+.out{position:sticky;top:24px;background:var(--moss);color:var(--cream);border-radius:18px;padding:clamp(24px,3vw,40px)}
+.out .kick{color:var(--bamboo);margin-bottom:14px}
+.out ul{list-style:none;margin:0;padding:0}
+.out li{font:400 clamp(1.3rem,1.1rem + .6vw,1.7rem)/1.25 Prata,serif;padding:6px 0}
+.out li+li{border-top:1px solid rgba(241,232,214,.16)}
+.out__why{margin-top:14px;color:rgba(241,232,214,.8);font-size:15px}
+.out__warn{display:none;margin-top:10px;font-size:14px;color:var(--bamboo)}
+.out.is-special .out__warn{display:block}
+.msg{margin:22px 0 20px;background:var(--cream);color:var(--ink);border-radius:12px 12px 12px 4px;padding:14px 16px;font-size:14.5px;line-height:1.5}
+.msg small{display:block;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--honeyd);margin-bottom:6px;font-weight:600}
+.out .btn{width:100%}
+.out__alt{margin-top:14px;font-size:14px;color:rgba(241,232,214,.75);text-align:center}
+.out__alt a{color:var(--cream);font-weight:600;display:inline-block;padding:6px 0}
+/* find */
+.find{padding:clamp(64px,8vw,128px) 0}
+.find__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(32px,5vw,80px);align-items:stretch}
+.find__addr{font:400 clamp(1.5rem,1.1rem + 1.2vw,2.2rem)/1.2 Prata,serif;margin-top:22px}
+.path{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:26px 0 30px;padding:0;position:relative}
+.path::before{content:"";position:absolute;left:12px;right:calc(33% - 12px);top:11px;height:8px;border-radius:4px;background:linear-gradient(#e8d9ab,#c4aa6a)}
+.path li{position:relative;padding-top:38px;font-size:15px;line-height:1.35;padding-right:8px}
+.path li::before{content:"";position:absolute;left:4px;top:3px;width:24px;height:24px;border-radius:50%;background:var(--moss);box-shadow:0 0 0 5px var(--linen)}
+.path b{display:block;font-weight:600}
+.path span{color:var(--mut)}
+.info{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px 24px;margin:0 0 30px;font-size:15.5px}
+.info dt{color:var(--mut)}
+.info dd{margin:0}
+.info a{text-underline-offset:4px;display:inline-block;padding:2px 0}
+.info dd a+a{margin-left:14px}
+.map{min-height:460px;border-radius:14px;overflow:hidden;background:#e5dccd}
+.map iframe{display:block;width:100%;height:100%;min-height:460px;border:0}
+/* final */
+.final{background:var(--moss);color:var(--cream);padding:clamp(64px,8vw,120px) 0;position:relative;overflow:hidden}
+.final__grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.6fr);gap:40px;align-items:center}
+.final h2{max-width:14em}
+.final .tel{display:inline-block;margin:22px 0 30px;font:400 clamp(1.9rem,1.3rem + 2.4vw,3.6rem)/1.1 Prata,serif;color:var(--bamboo);text-decoration:none;transition:color .2s}
+.final .tel:hover{color:var(--cream)}
+.final__seal{justify-self:end;width:clamp(160px,20vw,280px);aspect-ratio:1;position:relative;display:grid;place-items:center;color:#b8944c}
+.final__seal svg{position:absolute;inset:0;width:100%;height:100%}
+.final__seal b{position:relative;font:400 clamp(2.4rem,1.8rem + 2vw,3.8rem)/1 Prata,serif;color:var(--moss)}
+.foot{padding:28px 0 32px;font-size:13.5px;color:var(--mut)}
+.foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px}
+.fab{display:none}
+/* reveal */
+.js [data-r]{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js [data-r].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before{animation:none!important;transition:none!important}.js [data-r]{opacity:1;transform:none}}
+@media (max-width:1080px){.nav{display:none}.two__grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.two__text{grid-column:1/3}.gift{margin-top:0}}
+@media (max-width:900px){
+.hero__grid,.menu__grid,.praise__grid,.pick__grid,.find__grid,.final__grid{grid-template-columns:minmax(0,1fr)}
+.ph{margin:24px auto 0;max-width:460px;width:88%}
+.menu__side,.out{position:static}
+.inside__grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.inside__text{grid-column:1/3;order:-1;padding-bottom:8px}
+.f1{grid-column:1/3;grid-row:auto}
+.f1 img{aspect-ratio:4/3;object-position:50% 70%}
+.f3{margin-top:0}
+.praise__grid{gap:28px}
+.big-seal{width:170px}
+.final__seal{display:none}
+.map,.map iframe{min-height:360px}
+}
+@media (max-width:600px){
+body{font-size:16px;padding-bottom:84px}
+h1 .l2{padding-left:.35em}
+.toptel span{display:none}
+.toptel{width:44px;justify-content:center;border:1.5px solid var(--line);border-radius:50%}
+.btns .btn{flex:1 1 auto}
+.ph{width:84%}
+.ph__seal{width:96px;height:96px;top:-22px;right:-14px}
+.ph__seal b{font-size:24px}
+.ph__seal small{font-size:9px;margin-top:3px}
+.ph__in{left:-9%;width:34%}
+.ph__cap{padding-left:30%}
+.svc{grid-template-columns:22px minmax(0,1fr) 20px;gap:0 12px}
+.svc em{grid-column:2;text-align:left;font-size:13.5px}
+.svc svg{grid-column:3;grid-row:1/3}
+.grp__h{flex-wrap:wrap}
+.grp__h span{margin-left:44px;text-align:left;width:100%}
+.warn{padding-left:0}
+.two__grid{grid-template-columns:minmax(0,1fr)}
+.two__text{grid-column:auto}
+.two__ph{max-width:420px}
+.pts{grid-template-columns:minmax(0,1fr)}
+.pts li:first-child{grid-column:auto}
+fieldset{padding-left:50px}
+fieldset::before{left:12px}
+.node{left:2px}
+.chip span{padding:0 15px;font-size:15px}
+.path{grid-template-columns:minmax(0,1fr);gap:18px}
+.path::before{left:12px;right:auto;top:12px;bottom:12px;width:8px;height:auto}
+.path li{padding:0 0 0 44px}
+.path li::before{top:0}
+.info{grid-template-columns:minmax(0,1fr);gap:2px}
+.info dd{margin-bottom:12px}
+.fab{display:flex;gap:10px;position:fixed;left:12px;right:12px;bottom:12px;z-index:20}
+.fab .btn{flex:1;min-height:54px;box-shadow:0 12px 30px -10px rgba(20,30,25,.55)}
+.fab .btn--honey{flex:0 0 auto;padding:0 20px}
+}
+</style>
+<script>document.documentElement.className='js'</script>
+</head>
+<body>
+<div class="demo">Демо-концепт. Пример по данным 2ГИС, не официальный сайт</div>
+
+<header class="wrap top">
+  <a class="logo" href="#top" aria-label="SPA &amp; Therapy, наверх">
+    <svg class="seal" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="currentColor"/><circle class="dots" cx="60" cy="60" r="50"/><text x="60" y="71" text-anchor="middle" font-family="Prata,serif" font-size="34" fill="#d6c088">S&amp;T</text></svg>
+    SPA &amp; Therapy
+  </a>
+  <nav class="nav" aria-label="Разделы">
+    <a href="#menu">Массаж</a><a href="#two">Вдвоём</a><a href="#praise">Отзывы</a><a href="#pick">Подобрать</a><a href="#find">Как найти</a>
+  </nav>
+  <a class="toptel" href="tel:+79933089026" aria-label="Позвонить: +7 993 308-90-26"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span>+7&nbsp;993&nbsp;308-90-26</span></a>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div>
+      <span class="kick">Массаж и SPA-процедуры · Краснодар</span>
+      <h1>SPA <em>&amp;</em><span class="l2">Therapy</span></h1>
+      <p class="lead">Студия массажа на Бочарникова: двенадцать техник, кедровая фитобочка и тишина, ради которой сюда приходят поодиночке и парами.</p>
+      <p class="addr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>ул. им. Героя Георгия Бочарникова, 4 · вход со двора, 1 этаж, помещение 305</span></p>
+      <div class="btns">
+        <a class="btn btn--main" href="tel:+79933089026"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a>
+        <a class="btn btn--line" href="https://yandex.ru/maps/?rtext=~45.073072,39.04082" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8z"/></svg>Маршрут</a>
+      </div>
+      <div class="hero__meta"><span data-status></span><span>ежедневно 10:00–22:00</span><a href="https://wa.me/79933089026?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%2C%20%D0%BF%D0%BE%D0%B6%D0%B0%D0%BB%D1%83%D0%B9%D1%81%D1%82%D0%B0%2C%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F." target="_blank" rel="noopener">Записаться в WhatsApp</a></div>
+    </div>
+    <div class="ph" data-r>
+      <img class="ph__main" src="img/p3-m.jpg" srcset="img/p3-m.jpg 675w, img/p3.jpg 1350w" sizes="(max-width: 600px) 84vw, (max-width: 900px) 460px, 520px" width="675" height="900" alt="Кабинет студии в тёплом свете: массажный стол и кедровая фитобочка">
+      <img class="ph__in" src="img/p8-m.jpg" width="675" height="900" sizes="190px" loading="lazy" alt="Статуэтка Ганеши и зелёный конверт с сургучом на бамбуковой стойке">
+      <div class="ph__seal"><svg class="seal" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="currentColor"/><circle class="dots" cx="60" cy="60" r="50"/></svg><b>5,0<small>2ГИС<br>166 отзывов</small></b></div>
+      <p class="ph__cap">Кабинет с кедровой фитобочкой</p>
+    </div>
+  </div>
+</section>
+
+<section class="inside" aria-labelledby="in-h">
+  <div class="wrap inside__grid">
+    <div class="inside__text" data-r>
+      <span class="kick">Внутри</span>
+      <h2 id="in-h">Вход со двора — и&nbsp;город остаётся за&nbsp;дверью</h2>
+      <p>Бамбуковая стойка, живые растения, свечи и плотные шторы. Гости пишут про уют, приятную музыку и тишину, в которой наконец получается выдохнуть.</p>
+    </div>
+    <figure class="fig f1" data-r><img src="img/p7-m.jpg" srcset="img/p7-m.jpg 675w, img/p7.jpg 1350w" sizes="(max-width: 900px) 92vw, 460px" width="675" height="900" loading="lazy" alt="Стойка из бамбука, подвесные светильники и живые растения"><figcaption>Бамбуковая стойка и живые растения</figcaption></figure>
+    <figure class="fig f2" data-r><img src="img/p11-m.jpg" srcset="img/p11-m.jpg 675w, img/p11.jpg 1350w" sizes="(max-width: 900px) 46vw, 400px" width="675" height="900" loading="lazy" alt="Массажный кабинет: стол, шторы и мягкий свет"><figcaption>Кабинет в мягком свете</figcaption></figure>
+    <figure class="fig f3" data-r><img src="img/p4-m.jpg" sizes="(max-width: 900px) 46vw, 400px" width="600" height="800" loading="lazy" alt="Две массажные кушетки в одном кабинете"><figcaption>Две кушетки — для парного массажа</figcaption></figure>
+  </div>
+</section>
+
+<section class="menu" id="menu" aria-labelledby="menu-h">
+  <div class="wrap menu__grid">
+    <div class="menu__side" data-r>
+      <span class="kick">Меню массажа</span>
+      <h2 id="menu-h">Двенадцать техник — от тайского до лимфодренажа</h2>
+      <p>Нажмите на массаж — откроется WhatsApp с готовым сообщением. Не знаете, что выбрать, — соберите сеанс в подборе ниже.</p>
+      <figure class="fig"><img src="img/p14-m.jpg" srcset="img/p14-m.jpg 900w, img/p14.jpg 1210w" sizes="(max-width: 900px) 92vw, 440px" width="900" height="900" loading="lazy" alt="Мастер делает тайский массаж с растяжкой на мате"><figcaption>Тайский массаж: растяжки на мате</figcaption></figure>
+    </div>
+    <div>
+      <div class="grp" data-r>
+        <div class="grp__h"><i>I</i><h3>Выдохнуть</h3><span>когда копятся усталость и стресс</span></div>
+        <a class="svc" href="https://wa.me/79933089026?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%80%D0%B5%D0%BB%D0%B0%D0%BA%D1%81%D0%B8%D1%80%D1%83%D1%8E%D1%89%D0%B8%D0%B9%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F." target="_blank" rel="noopener"><b>Релаксирующий массаж</b><em>медленный, спокойный ритм</em><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="svc" href="https://wa.me/79933089026?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F." target="_blank" rel="noopener"><b>Тайский массаж</b><em>растяжки и работа на мате</em><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="svc" href="https://wa.me/79933089026?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BA%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F." target="_blank" rel="noopener"><b>Китайский массаж</b><em>восточная техника</em><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="svc" href="https://wa.me/79933089026?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6%20%D0%B2%204%20%D1%80%D1%83%D0%BA%D0%B8.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F." target="_blank" rel="noopener"><b>Массаж в 4 руки</b><em>два мастера одновременно</em><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="grp" data-r>
+        <div class="grp__h"><i>II</i><h3>Восстановиться</h3><span>спина, мышцы, нагрузки</span></div>
+        <a class="svc" href="https://wa.me/79933089026?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BE%D0%B7%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F." target="_blank" rel="noopener"><b>Оздоровительный массаж</b><em>общий массаж тела</em><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="svc" href="https://wa.me/79933089026?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F." target="_blank" rel="noopener"><b>Спортивный массаж</b><em>после тренировок</em><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="grp" data-r>
+        <div class="grp__h"><i>III</i><h3>Тонус и лёгкость</h3><span>тело и лицо</span></div>
+        <a class="svc" href="https://wa.me/79933089026?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B0%D0%BD%D1%82%D0%B8%D1%86%D0%B5%D0%BB%D0%BB%D1%8E%D0%BB%D0%B8%D1%82%D0%BD%D1%8B%D0%B9%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F." target="_blank" rel="noopener"><b>Антицеллюлитный массаж</b><em>интенсивная проработка</em><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="svc" href="https://wa.me/79933089026?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BB%D0%B8%D0%BC%D1%84%D0%BE%D0%B4%D1%80%D0%B5%D0%BD%D0%B0%D0%B6%D0%BD%D1%8B%D0%B9%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F." target="_blank" rel="noopener"><b>Лимфодренаж</b><em>мягко, по ходу лимфы</em><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="svc" href="https://wa.me/79933089026?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82%D0%BD%D1%8B%D0%B9%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F." target="_blank" rel="noopener"><b>Аппаратный массаж</b><em>с помощью аппарата</em><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="svc" href="https://wa.me/79933089026?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6%20%D0%BB%D0%B8%D1%86%D0%B0.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F." target="_blank" rel="noopener"><b>Массаж лица</b><em>отдельная процедура</em><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="grp" data-r>
+        <div class="grp__h"><i>IV</i><h3>Бережно</h3><span>особые случаи</span></div>
+        <a class="svc" href="https://wa.me/79933089026?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6%20%D0%B4%D0%BB%D1%8F%20%D0%B1%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D1%85.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F." target="_blank" rel="noopener"><b>Массаж для беременных</b><em>для будущих мам</em><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="svc" href="https://wa.me/79933089026?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%20%D1%80%D0%B5%D0%B1%D1%91%D0%BD%D0%BA%D0%B0%20%D0%BD%D0%B0%20%D0%B4%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F." target="_blank" rel="noopener"><b>Детский массаж</b><em>для детей</em><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <p class="warn">Имеются противопоказания, необходима консультация специалиста.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="two" id="two" aria-labelledby="two-h">
+  <div class="wrap two__grid">
+    <div class="two__text" data-r>
+      <span class="kick">Вдвоём</span>
+      <h2 id="two-h">Вечер на двоих: бочка, чай, массаж</h2>
+      <p>Сюда часто приходят парами. В отзывах — парный массаж и программа «Идеальное свидание»: кедровая бочка, травяной чай и массаж в одном вечере. Пишут, что получается отключиться от работы не только телом, но и головой.</p>
+      <div class="btns">
+        <a class="btn btn--honey" href="https://wa.me/79933089026?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%82%D0%B8%D0%BC%20%D0%BF%D1%80%D0%B8%D0%B9%D1%82%D0%B8%20%D0%B2%D0%B4%D0%B2%D0%BE%D1%91%D0%BC%3A%20%D0%BF%D0%B0%D1%80%D0%BD%D1%8B%D0%B9%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6%20%D0%B8%D0%BB%D0%B8%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%20%C2%AB%D0%98%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D1%81%D0%B2%D0%B8%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%C2%BB.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F." target="_blank" rel="noopener">Записаться вдвоём</a>
+        <a class="btn btn--ghost" href="tel:+79933089026">Позвонить</a>
+      </div>
+    </div>
+    <figure class="fig two__ph" data-r><img src="img/p9-m.jpg" srcset="img/p9-m.jpg 675w, img/p9.jpg 1350w" sizes="(max-width: 600px) 92vw, (max-width: 1080px) 46vw, 380px" width="675" height="900" loading="lazy" alt="Кабинет со свечой, растениями и массажным столом"></figure>
+    <div class="gift" data-r>
+      <img src="img/p5-m.jpg" srcset="img/p5-m.jpg 900w, img/p5.jpg 1440w" sizes="(max-width: 600px) 92vw, (max-width: 1080px) 46vw, 320px" width="900" height="754" loading="lazy" alt="Подарочный сертификат и зелёный конверт с золотой сургучной печатью">
+      <h3>Сертификат в подарок</h3>
+      <p>Зелёный конверт с золотым сургучом. Как оформить — спросите в WhatsApp.</p>
+      <a href="https://wa.me/79933089026?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%B4%D0%B0%D1%80%D0%BE%D1%87%D0%BD%D1%8B%D0%B9%20%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%2C%20%D0%BA%D0%B0%D0%BA%20%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%B8%D1%82%D1%8C." target="_blank" rel="noopener">Спросить про сертификат</a>
+    </div>
+  </div>
+</section>
+
+<section class="praise" id="praise" aria-labelledby="pr-h">
+  <div class="wrap praise__grid">
+    <div data-r>
+      <span class="kick">За что хвалят</span>
+      <div class="big-seal"><svg class="seal" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" fill="currentColor"/><circle class="dots" cx="60" cy="60" r="50"/><circle cx="60" cy="60" r="41" fill="none" stroke="#d6c088" stroke-opacity=".4"/></svg><div><b>5,0</b><span>рейтинг 2ГИС<br>166 отзывов</span></div></div>
+      <p class="praise__src">Пересказ отзывов гостей. <a href="https://2gis.ru/krasnodar/firm/70000001087484684" target="_blank" rel="noopener">Читать все в 2ГИС</a></p>
+    </div>
+    <div>
+      <h2 id="pr-h" class="kick" style="font-family:Onest,sans-serif;font-size:12px;line-height:1.4">Три вещи, которые повторяют в отзывах</h2>
+      <ol class="pts">
+        <li data-r><h3>Прорабатывают каждую мышцу — <span>и спина правда отпускает</span></h3><p>После сеанса, пишут гости, уходит напряжение в спине и движения становятся свободнее. Чаще всего благодарят мастера Анастасию, а пары после свидания — Анастасию и Олесю.</p></li>
+        <li data-r><h3>Тишина и уют</h3><p>Приятная музыка, мягкий свет, всё продумано. Гости, которым есть с чем сравнить, обещают вернуться.</p></li>
+        <li data-r><h3>Слышат пожелания</h3><p>Подробно консультируют, учитывают пожелания, а цену называют адекватной.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="pick" id="pick" aria-labelledby="pick-h">
+  <div class="wrap">
+    <div class="pick__head" data-r>
+      <span class="kick">Подбор сеанса</span>
+      <h2 id="pick-h">Соберите свой вечер за три касания</h2>
+      <p>Выберите, для кого и чего хочется, — подскажем техники из меню и соберём сообщение в WhatsApp. Цену и свободное время уточните в ответе.</p>
+    </div>
+    <div class="pick__grid">
+      <form id="pf" onsubmit="return false">
+        <fieldset>
+          <span class="node" aria-hidden="true">1</span>
+          <legend>Для кого</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="who" value="self" checked><span>Для себя</span></label>
+            <label class="chip"><input type="radio" name="who" value="two"><span>Для двоих</span></label>
+            <label class="chip"><input type="radio" name="who" value="preg"><span>Жду ребёнка</span></label>
+            <label class="chip"><input type="radio" name="who" value="kid"><span>Для ребёнка</span></label>
+            <label class="chip"><input type="radio" name="who" value="gift"><span>В подарок</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="goal">
+          <span class="node" aria-hidden="true">2</span>
+          <legend>Чего хочется</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="goal" value="back" checked><span>Снять напряжение в спине</span></label>
+            <label class="chip"><input type="radio" name="goal" value="calm"><span>Отключиться от стресса</span></label>
+            <label class="chip"><input type="radio" name="goal" value="light"><span>Лёгкость, меньше отёков</span></label>
+            <label class="chip"><input type="radio" name="goal" value="sport"><span>Восстановиться после спорта</span></label>
+            <label class="chip"><input type="radio" name="goal" value="tone"><span>Подтянуть тело</span></label>
+            <label class="chip"><input type="radio" name="goal" value="face"><span>Освежить лицо</span></label>
+          </div>
+          <p class="alt">Здесь технику выберет специалист: расскажите при записи о самочувствии.</p>
+        </fieldset>
+        <fieldset>
+          <span class="node" aria-hidden="true">3</span>
+          <legend>Детали</legend>
+          <div class="chips">
+            <label class="chip barrel"><input type="checkbox" id="barrel"><span>+ кедровая фитобочка</span></label>
+            <label class="chip"><input type="radio" name="time" value="day"><span>Днём</span></label>
+            <label class="chip"><input type="radio" name="time" value="eve"><span>Вечером</span></label>
+            <label class="chip"><input type="radio" name="time" value="wkd"><span>В выходные</span></label>
+          </div>
+        </fieldset>
+      </form>
+      <aside class="out" id="out" aria-live="polite">
+        <span class="kick">Вам подойдёт</span>
+        <ul id="recs"><li>Оздоровительный массаж</li></ul>
+        <p class="out__why" id="why"></p>
+        <p class="out__warn">Имеются противопоказания, необходима консультация специалиста.</p>
+        <div class="msg"><small>Сообщение</small><span id="msg">Здравствуйте! Хочу записаться в SPA &amp; Therapy.</span></div>
+        <a class="btn btn--honey" id="send" href="https://wa.me/79933089026?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20SPA%20%26%20Therapy.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.4-4A8 8 0 1 1 8 18.6z"/></svg>Отправить в WhatsApp</a>
+        <p class="out__alt">или <a href="tel:+79933089026">позвоните: +7&nbsp;993&nbsp;308-90-26</a></p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="find" id="find" aria-labelledby="find-h">
+  <div class="wrap find__grid">
+    <div data-r>
+      <span class="kick">Как найти</span>
+      <h2 id="find-h">Вход со двора, первый этаж</h2>
+      <p class="find__addr">ул. им. Героя Георгия Бочарникова, 4</p>
+      <ol class="path">
+        <li><b>Вход со двора</b></li>
+        <li><b>1 этаж</b></li>
+        <li><b>Помещение 305</b></li>
+      </ol>
+      <dl class="info">
+        <dt>Часы</dt><dd>Ежедневно, 10:00–22:00<br><span data-status></span></dd>
+        <dt>Телефон</dt><dd><a href="tel:+79933089026">+7&nbsp;993&nbsp;308-90-26</a></dd>
+        <dt>Написать</dt><dd><a href="https://wa.me/79933089026?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F." target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/+79933089026" target="_blank" rel="noopener">Telegram</a><a href="https://vk.ru/st_massagee" target="_blank" rel="noopener">ВКонтакте</a></dd>
+        <dt>Оплата</dt><dd>Наличными или переводом с карты</dd>
+      </dl>
+      <div class="btns">
+        <a class="btn btn--main" href="https://yandex.ru/maps/?rtext=~45.073072,39.04082" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8z"/></svg>Построить маршрут</a>
+        <a class="btn btn--line" href="tel:+79933089026">Позвонить</a>
+      </div>
+    </div>
+    <div class="map" data-r><iframe loading="lazy" title="SPA &amp; Therapy на карте" src="https://yandex.ru/map-widget/v1/?ll=39.04082,45.073072&amp;z=16&amp;pt=39.04082,45.073072,pm2rdm"></iframe></div>
+  </div>
+</section>
+
+<section class="final" aria-labelledby="fin-h">
+  <div class="wrap final__grid">
+    <div data-r>
+      <h2 id="fin-h">Запишитесь на вечер, после которого хочется вернуться</h2>
+      <a class="tel" href="tel:+79933089026">+7&nbsp;993&nbsp;308-90-26</a>
+      <div class="btns">
+        <a class="btn btn--honey" href="https://wa.me/79933089026?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F." target="_blank" rel="noopener">Записаться в WhatsApp</a>
+        <a class="btn btn--ghost" href="tel:+79933089026">Позвонить</a>
+      </div>
+    </div>
+    <div class="final__seal" aria-hidden="true"><svg class="seal" viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" fill="currentColor"/><circle class="dots" cx="60" cy="60" r="50"/><circle cx="60" cy="60" r="40" fill="none" stroke="#1e3a2f" stroke-opacity=".35"/></svg><b>S&amp;T</b></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot"><div class="wrap"><span>SPA &amp; Therapy · Краснодар, ул. им. Героя Георгия Бочарникова, 4</span><span>Демо-концепт по открытым данным 2ГИС, не официальный сайт</span></div></footer>
+
+<div class="fab"><a class="btn btn--main" href="tel:+79933089026"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Позвонить</a><a class="btn btn--honey" href="https://wa.me/79933089026?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6.%20%D0%9F%D0%BE%D0%B4%D1%81%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D0%BE%D0%B5%20%D0%B2%D1%80%D0%B5%D0%BC%D1%8F." target="_blank" rel="noopener" aria-label="Написать в WhatsApp">WhatsApp</a></div>
+
+<script>
+(function(){
+var f=document.getElementById('pf'),out=document.getElementById('out');if(!f)return;
+var G={back:['Оздоровительный массаж','Тайский массаж','Китайский массаж'],calm:['Релаксирующий массаж','Массаж в 4 руки','Тайский массаж'],light:['Лимфодренаж','Аппаратный массаж'],sport:['Спортивный массаж','Тайский массаж'],tone:['Антицеллюлитный массаж','Аппаратный массаж','Лимфодренаж'],face:['Массаж лица']};
+var W={back:'В отзывах чаще всего об этом: прорабатывают каждую мышцу, напряжение в спине уходит, движения свободнее.',calm:'Тишина, мягкий свет и музыка — гости пишут, что отключаются не только телом, но и головой.',light:'Мягкие техники, когда хочется лёгкости в теле.',sport:'Проработка мышц после тренировок и нагрузок.',tone:'Техники для тонуса тела — какую выбрать, подскажут при записи.',face:'Отдельная процедура для лица.'};
+var GT={back:'снять напряжение в спине',calm:'отключиться от стресса',light:'лёгкости и меньше отёков',sport:'восстановиться после спорта',tone:'подтянуть тело',face:'освежить лицо'};
+var TT={day:'днём',eve:'вечером',wkd:'в выходные'};
+var v=function(n){var e=f.querySelector('input[name="'+n+'"]:checked');return e?e.value:''};
+var lc=function(s){return s.charAt(0).toLowerCase()+s.slice(1)};
+function upd(){
+ var who=v('who'),goal=v('goal')||'back',time=v('time'),sp=who==='preg'||who==='kid',barrel=!sp&&document.getElementById('barrel').checked,recs,why;
+ f.classList.toggle('is-special',sp);out.classList.toggle('is-special',sp);
+ if(who==='preg'){recs=['Массаж для беременных'];why='Бережная техника для будущих мам. При записи расскажите о сроке и самочувствии.'}
+ else if(who==='kid'){recs=['Детский массаж'];why='При записи расскажите о возрасте ребёнка и о том, что беспокоит.'}
+ else{recs=G[goal].slice();why=W[goal];
+  if(who==='two'){recs=['Парный массаж','«Идеальное свидание»'].concat(recs.slice(0,1));why='Пары в отзывах хвалят парный массаж и программу «Идеальное свидание» с кедровой бочкой и травяным чаем.'}
+  if(who==='gift'){recs=['Подарочный сертификат'].concat(recs.slice(0,2));why='Сертификат — в зелёном конверте с сургучом. Как оформить, подскажут в ответ.'}}
+ if(barrel)recs.push('Кедровая фитобочка');
+ document.getElementById('recs').innerHTML=recs.map(function(r){return '<li>'+r+'</li>'}).join('');
+ document.getElementById('why').textContent=why;
+ var m='Здравствуйте! '+(who==='gift'?'Хочу подарочный сертификат в SPA & Therapy':'Хочу записаться в SPA & Therapy'+(who==='two'?' на двоих':''))+'. ';
+ if(!sp)m+='Хочется '+GT[goal]+'. ';
+ m+='Интересует: '+recs.map(lc).join(', ')+'. ';
+ if(time)m+='Удобно '+TT[time]+'. ';
+ m+=who==='gift'?'Подскажите, как оформить.':'Подскажите свободное время.';
+ document.getElementById('msg').textContent=m;
+ document.getElementById('send').href='https://wa.me/79933089026?text='+encodeURIComponent(m);
+}
+f.addEventListener('change',upd);upd();
+})();
+</script>
+<script type="application/json" id="site">{"hours":{"mon":[["10:00","22:00"]],"tue":[["10:00","22:00"]],"wed":[["10:00","22:00"]],"thu":[["10:00","22:00"]],"fri":[["10:00","22:00"]],"sat":[["10:00","22:00"]],"sun":[["10:00","22:00"]]},"is247":false}</script>
+<script src="app.js"></script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>
