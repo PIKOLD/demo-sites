@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>University Coffee Co · City Heights, San Diego</title><meta property="og:type" content="website"><meta property="og:title" content="University Coffee Co · City Heights, San Diego"><meta property="og:description" content="University Coffee Co at 3550 University Ave, San Diego 92104: espresso, matcha and croissants under a wall of album covers. Open daily, 4.9 stars from 230 Google reviews."><meta property="og:image" content="https://pikold.github.io/demo-sites/university-coffee/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="University Coffee Co at 3550 University Ave, San Diego 92104: espresso, matcha and croissants under a wall of album covers. Open daily, 4.9 stars from 230 Google reviews.">
+<link rel="stylesheet" href="../_fonts/dm-serif-display.css">
+<link rel="stylesheet" href="../_fonts/outfit.css">
+<style>
+:root{--cream:#F5EFE2;--paper:#FBF7EE;--wall:#2F4A34;--frog:#7DB246;--cognac:#9A5A33;--ink:#1A1A17;--rose:#D46A5C;--mute:#5B5A50;--g:clamp(16px,4vw,48px);--serif:"DM Serif Display",Georgia,serif;--sans:"Outfit",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font:400 17px/1.55 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--frog);outline-offset:3px}
+.wrap{width:min(100% - 2*var(--g),1360px);margin-inline:auto}
+.demo{background:var(--ink);color:#e9e3d4;font-size:12.5px;line-height:1.4;padding:7px var(--g);text-align:center}
+.demo b{color:var(--frog);font-weight:600}
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;letter-spacing:.02em}
+.brand svg{width:34px;height:34px}
+.nav{display:flex;gap:4px;list-style:none}
+.nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-size:15px;border-radius:99px;transition:background .2s}
+.nav a:hover{background:#e8dfcc}
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:stretch;padding-bottom:clamp(40px,6vw,88px)}
+.hero-ph{position:relative;min-height:420px;height:min(calc(100vh - 120px),780px);overflow:hidden;background:var(--wall)}
+.hero-ph img{width:100%;height:100%;object-fit:cover;object-position:50% 38%}
+.hero-ph figcaption{position:absolute;left:0;bottom:0;background:var(--cream);font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px 0 0}
+.hero-tx{display:flex;flex-direction:column;justify-content:center;gap:clamp(14px,2.2vh,24px);padding-block:8px}
+.mark{width:clamp(58px,6vw,84px);height:auto}
+h1{font:400 min(6.6vw,11.5vh,7rem)/.9 var(--serif);letter-spacing:-.01em}
+h1 span{display:block}
+h1 .co{color:var(--cognac)}
+.lede{font-size:clamp(17px,1.35vw,20px);max-width:34ch}
+.where{font-size:14px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;border-block:1px solid #1a1a1733;padding:10px 0}
+.status{display:inline-flex;align-items:center;gap:9px;font-weight:500;font-size:15px}
+.status i{width:10px;height:10px;border-radius:50%;background:#a49c88;box-shadow:0 0 0 4px #a49c8833}
+.status.open i{background:var(--frog);box-shadow:0 0 0 4px #7db24640}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 22px;border-radius:99px;text-decoration:none;font-weight:600;font-size:16px;border:2px solid var(--ink);transition:transform .15s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn.solid{background:var(--ink);color:var(--cream)}
+.btn.solid:hover{background:var(--wall);border-color:var(--wall)}
+.btn.line{background:transparent}
+.btn.line:hover{background:var(--ink);color:var(--cream)}
+.btn svg{width:18px;height:18px}
+/* section heads */
+.kick{font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--cognac)}
+h2{font:400 clamp(2.3rem,5vw,4.4rem)/.95 var(--serif);letter-spacing:-.01em}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:24px 48px;align-items:end;margin-bottom:clamp(24px,3vw,40px)}
+.head p{color:var(--mute);max-width:44ch}
+/* album wall */
+.wallsec{padding-block:clamp(48px,7vw,104px);border-top:1px solid #1a1a1722}
+.wall{container-type:inline-size}
+.grid{--gap:10px;--cell:calc((100cqw - 5*var(--gap))/6);display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:var(--cell);gap:var(--gap);grid-auto-flow:dense;list-style:none}
+.s22{grid-column:span 2;grid-row:span 2}.s21{grid-column:span 2}.s12{grid-row:span 2}
+.slv{perspective:1400px;min-width:0}
+.slv>button{position:relative;display:block;width:100%;height:100%;border:0;background:none;padding:0;text-align:left;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.3,.7,.2,1)}
+.slv.on>button{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(10px,calc(var(--cell)*.07),18px);box-shadow:0 1px 0 #0000001a,0 10px 22px -16px #00000080;transition:box-shadow .25s,transform .25s}
+.slv>button:hover .front{transform:translateY(-3px);box-shadow:0 1px 0 #0000001a,0 18px 28px -16px #00000099}
+.back{transform:rotateY(180deg);background:var(--paper);color:var(--ink);justify-content:flex-start;gap:8px;border:1px solid #1a1a1726}
+.front img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cat{position:relative;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;opacity:.85}
+.nm{position:relative;font-family:var(--serif);line-height:.95;font-size:calc(var(--cell)*.15)}
+.s21 .nm{font-size:calc(var(--cell)*.21)}
+.s22 .nm{font-size:calc(var(--cell)*.27)}
+.ph .cat,.ph .nm{color:var(--cream);text-shadow:0 1px 12px #000a}
+.ph .front::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0000 45%,#000a)}
+.ph .cat,.ph .nm,.ph .flip{z-index:1}
+.ph .front{justify-content:flex-end;gap:6px}
+.flip{position:relative;align-self:flex-start;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;border-bottom:1px solid currentColor}
+.back h3{font:400 calc(var(--cell)*.11)/1 var(--serif)}
+.s21 .back h3,.s22 .back h3,.s12 .back h3{font-size:clamp(20px,calc(var(--cell)*.14),30px)}
+.back p{font-size:clamp(12px,calc(var(--cell)*.068),16px);line-height:1.4}
+.s22 .back p,.s12 .back p{font-size:clamp(14px,calc(var(--cell)*.085),19px)}
+.tag{margin-top:auto;align-self:flex-start;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:4px 8px;border-radius:99px;background:var(--wall);color:var(--cream)}
+.tag.post{background:var(--cognac)}
+.c-cog .front{background:var(--cognac);color:var(--cream)}
+.c-wall .front{background:var(--wall);color:var(--cream)}
+.c-frog .front{background:var(--frog);color:var(--ink)}
+.c-ink .front{background:var(--ink);color:var(--cream)}
+.c-rose .front{background:var(--rose);color:var(--ink)}
+.c-cream .front{background:var(--paper);color:var(--ink);border:1px solid #1a1a1733}
+.c-ink .nm em,.c-wall .nm em{color:var(--frog);font-style:normal}
+.ring{position:absolute;right:-28%;bottom:-28%;width:78%;aspect-ratio:1;border-radius:50%;background:repeating-radial-gradient(circle,#0000 0 3px,#00000014 3px 4px);opacity:.9;pointer-events:none}
+.hint{margin-top:14px;font-size:14px;color:var(--mute)}
+/* past shows */
+.shows{padding-block:clamp(40px,6vw,88px);border-top:1px solid #1a1a1722}
+.shelf{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr) minmax(0,1fr);gap:clamp(14px,2vw,28px);align-items:end;list-style:none}
+.show{position:relative;aspect-ratio:1;padding:clamp(16px,2vw,26px);display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+.show:nth-child(1){background:var(--ink);color:var(--cream)}
+.show:nth-child(2){background:var(--frog);aspect-ratio:1/.86}
+.show:nth-child(3){background:var(--paper);border:1px solid #1a1a1733;aspect-ratio:1/.92}
+.show h3{font:400 clamp(1.6rem,3vw,2.8rem)/.95 var(--serif)}
+.show:nth-child(1) h3{font-size:clamp(2.2rem,4.6vw,4.4rem);font-style:italic}
+.show p{font-size:15px;max-width:34ch}
+.show .d{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:600}
+.stamp{position:absolute;top:18px;right:-6px;transform:rotate(9deg);border:3px solid currentColor;padding:2px 12px;font:600 15px/1.3 var(--sans);letter-spacing:.3em;text-transform:uppercase;opacity:.75}
+.show:nth-child(1) .stamp{color:var(--rose)}
+.show:nth-child(3) .stamp{color:var(--cognac)}
+.shows .more{margin-top:20px;font-size:15px}
+/* spin */
+.spin{background:var(--wall);color:var(--cream);padding-block:clamp(56px,8vw,112px)}
+.spin .kick{color:var(--frog)}
+.spin-g{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(32px,5vw,80px);align-items:start}
+.spin p.sub{color:#dcd6c6;max-width:40ch;margin-top:16px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chip{min-height:46px;padding:0 18px;border-radius:99px;border:1.5px solid #f5efe280;background:transparent;font-weight:500;font-size:16px;transition:background .2s,color .2s,border-color .2s}
+.chip:hover{border-color:var(--cream)}
+.chip[aria-pressed=true]{background:var(--frog);border-color:var(--frog);color:var(--ink)}
+.rand{margin-top:16px;background:none;border:0;border-bottom:1.5px solid var(--frog);color:var(--frog);font-weight:600;min-height:44px;font-size:16px}
+.crate{position:relative;height:clamp(330px,32vw,400px);display:flex;align-items:flex-end;justify-content:center;overflow:hidden}
+.crate::after{content:"";position:absolute;left:0;right:0;bottom:0;height:72px;background:linear-gradient(180deg,#86502d,var(--cognac));box-shadow:inset 0 2px 0 #ffffff26;z-index:3}
+.edges{position:absolute;left:6%;right:6%;bottom:60px;height:46%;display:flex;gap:4px;align-items:flex-end;z-index:1}
+.edges i{flex:1;background:var(--c);height:var(--h);border-radius:2px 2px 0 0}
+.out{position:relative;z-index:2;width:min(60%,260px);aspect-ratio:1;margin-bottom:44px;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.out.down{transform:translateY(90%)}
+.out .sl{position:absolute;inset:0;padding:18px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 20px 40px -18px #000c;z-index:1}
+.out .sl b{font:400 clamp(1.7rem,3vw,2.5rem)/.95 var(--serif)}
+.out .sl small{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600}
+.disc{position:absolute;top:6%;right:-30%;width:88%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,var(--frog) 0 15%,#111 15.5% 17%,#0000 17.5%),repeating-radial-gradient(circle,#161614 0 2px,#262622 2px 3px);transition:right .6s .25s}
+.out.down .disc{right:6%}
+.card{background:var(--paper);color:var(--ink);padding:clamp(18px,2.4vw,28px);margin-top:-1px}
+.card .tag{margin:0 0 10px}
+.card h3{font:400 clamp(1.8rem,3vw,2.4rem)/1 var(--serif)}
+.card p{margin-top:8px}
+.flag[hidden]{display:none}.flag{display:inline-block;margin-top:10px;background:var(--rose);color:var(--ink);font-weight:600;font-size:14px;padding:4px 10px}
+.msg{margin-top:16px;border:1.5px dashed #1a1a1766;padding:12px 14px;font-size:15px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.msg q{quotes:none;min-width:0;flex:1 1 220px}
+.copy{min-height:44px;padding:0 16px;border-radius:99px;border:1.5px solid var(--ink);background:none;font-weight:600;font-size:14px}
+.copy:hover{background:var(--ink);color:var(--cream)}
+.card .btns{margin-top:14px}
+/* leather band */
+.leather{background:var(--cognac);color:var(--cream);position:relative;padding-block:clamp(56px,8vw,112px)}
+.leather::before{content:"";position:absolute;inset:12px;border:2px dashed #f5efe259;pointer-events:none}
+.leather .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(32px,5vw,80px);align-items:start;position:relative}
+.score{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.score b{font:400 clamp(5rem,12vw,9.5rem)/.8 var(--serif)}
+.score span{font-size:18px;max-width:14ch;line-height:1.3}
+.praise{list-style:none;margin-top:32px;display:grid;gap:0}
+.praise li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;padding:16px 0;border-top:1px solid #f5efe24d;font-size:18px}
+.praise li:last-child{border-bottom:1px solid #f5efe24d}
+.praise em{font:400 26px/1 var(--serif);font-style:normal;color:#f2d9b8}
+.visit{background:var(--cream);color:var(--ink);padding:clamp(22px,3vw,36px)}
+.visit h2{font-size:clamp(2.2rem,4vw,3.4rem)}
+.visit dl{margin-top:18px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 20px}
+.visit dt{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--cognac);padding-top:4px}
+.visit .btns{margin-top:22px}
+.small{font-size:14px;color:var(--mute)}
+/* final */
+.final{padding-block:clamp(56px,8vw,112px);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:32px;align-items:end}
+.final h2{font-size:clamp(2.6rem,6.5vw,5.8rem)}
+.final .btns{justify-content:flex-end}
+footer{background:var(--ink);color:#cfc8b6;font-size:14px;padding:28px 0 96px}
+footer .wrap{display:flex;gap:16px 28px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+footer svg{width:46px;height:auto}
+footer a{color:var(--cream)}
+.fab{position:fixed;right:16px;bottom:16px;z-index:20;display:none;box-shadow:0 10px 26px -10px #000c}
+/* reveal */
+@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.hero-tx>*{animation:up .8s cubic-bezier(.2,.8,.2,1) both}.hero-tx>:nth-child(2){animation-delay:.08s}.hero-tx>:nth-child(3){animation-delay:.16s}.hero-tx>:nth-child(n+4){animation-delay:.24s}
+.slv{transition:transform .3s}
+.fab.hide{opacity:0;pointer-events:none;transform:translateY(12px)}
+.fab{transition:opacity .25s,transform .25s}
+@media (max-width:1000px){
+.grid{--cell:calc((100cqw - 3*var(--gap))/4);grid-template-columns:repeat(4,minmax(0,1fr))}
+.spin-g,.leather .wrap{grid-template-columns:minmax(0,1fr)}
+.head{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:760px){
+body{font-size:16px}
+.nav li:not(:last-child){display:none}
+.hero{grid-template-columns:minmax(0,1fr);gap:22px}
+.hero-ph{height:46vh;min-height:300px}
+h1{font-size:clamp(3.2rem,17vw,5rem)}
+.grid{--gap:8px;--cell:calc((100cqw - var(--gap))/2);grid-template-columns:repeat(2,minmax(0,1fr))}
+.shelf{grid-template-columns:minmax(0,1fr)}
+.show,.show:nth-child(2),.show:nth-child(3){aspect-ratio:auto;min-height:220px;gap:20px}
+.show:nth-child(2){width:88%;margin-left:auto}
+.show:nth-child(3){width:92%}
+.final{grid-template-columns:minmax(0,1fr)}
+.final .btns{justify-content:flex-start}
+.fab{display:inline-flex}
+.btn{flex:1 1 auto}
+}
+@media (prefers-reduced-motion:reduce){
+*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+.rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<p class="demo"><b>Demo concept</b> by an independent developer — not the official website of University Coffee Co. Not approved by the owner; removed on first request.</p>
+
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="#top" aria-label="University Coffee Co, top of page">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><use href="#frogcup"/></svg>
+    University Coffee Co
+  </a>
+  <ul class="nav">
+    <li><a href="#wall">The wall</a></li>
+    <li><a href="#spin">Spin a drink</a></li>
+    <li><a href="#shows">Past shows</a></li>
+    <li><a href="#visit">Visit</a></li>
+  </ul>
+</header>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="frogcup" viewBox="0 0 64 64">
+    <ellipse cx="24" cy="21" rx="7" ry="6.5" fill="#7DB246" stroke="#1A1A17" stroke-width="2.2"/>
+    <ellipse cx="40" cy="21" rx="7" ry="6.5" fill="#7DB246" stroke="#1A1A17" stroke-width="2.2"/>
+    <path d="M17 30c2-6 28-6 30 0" fill="#7DB246" stroke="#1A1A17" stroke-width="2.2"/>
+    <circle cx="24.5" cy="21.5" r="2.4" fill="#1A1A17"/><circle cx="39.5" cy="21.5" r="2.4" fill="#1A1A17"/>
+    <path d="M10 30h44v4c0 13-9 22-22 22S10 47 10 34z" fill="#F5EFE2" stroke="#1A1A17" stroke-width="2.4" stroke-linejoin="round"/>
+    <path d="M54 35h3a6 6 0 0 1 0 12h-5" fill="none" stroke="#1A1A17" stroke-width="2.4"/>
+    <path d="M10 30h44" stroke="#1A1A17" stroke-width="2.4"/>
+    <path d="M22 41h20" stroke="#9A5A33" stroke-width="2.2" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<main id="top">
+<section class="hero" aria-label="University Coffee Co">
+  <figure class="hero-ph">
+    <img src="img/p10.jpg" srcset="img/p10-m.jpg 675w, img/p10.jpg 1350w" sizes="(max-width:760px) 100vw, 52vw" alt="The University Coffee storefront on University Ave: white stucco wall with the word COFFEE above a dark doorway" fetchpriority="high">
+    <figcaption>3550 University Ave</figcaption>
+  </figure>
+  <div class="hero-tx">
+    <svg class="mark" viewBox="0 0 64 64" role="img" aria-label="University Coffee mark: a frog peeking out of a cup"><use href="#frogcup"/></svg>
+    <h1><span>University</span><span>Coffee</span><span class="co">Co.</span></h1>
+    <p class="lede">The neighborhood coffee shop on University Ave in City Heights — espresso, matcha and croissants under a wall of album covers.</p>
+    <p class="where">University Ave · San Diego 92104 · open Mon–Sun</p>
+    <p class="status" data-status><i></i><span>Open daily · 7 am – 3 pm</span></p>
+    <div class="btns">
+      <a class="btn solid" href="https://www.google.com/maps/dir/?api=1&amp;destination=32.7499132,-117.1166436" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Directions</a>
+      <a class="btn line" href="https://ig.me/m/universitycoffeeco" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r=".8" fill="currentColor"/></svg>Message on Instagram</a>
+    </div>
+  </div>
+</section>
+</main>
+</div>
+
+<section class="wallsec" id="wall" aria-labelledby="wall-h">
+ <div class="wrap">
+  <div class="head rv">
+    <div><p class="kick">Side A · the drinks</p><h2 id="wall-h">The wall</h2></div>
+    <p>Like the one over their leather couch, only every sleeve here is something to order. Tap a sleeve for the liner notes: what guests and the shop itself have said about it.</p>
+  </div>
+  <div class="wall">
+  <ul class="grid">
+    <li class="slv s22 ph"><button aria-pressed="false" aria-label="The room — show notes"><span class="face front"><img src="img/p7.jpg" srcset="img/p7-m.jpg 508w, img/p7.jpg 1015w" sizes="(max-width:760px) 100vw, 33vw" alt="Inside the shop: a wall of album covers above a cognac leather couch and a wooden coffee table" loading="lazy" style="object-position:50% 55%"><span class="cat">UCC 3550-01</span><span class="nm">The room</span><span class="flip">Liner notes</span></span><span class="face back"><span class="cat">UCC 3550-01</span><h3>The room</h3><p>Simple and cozy: album covers up the wall, a cognac couch, a breeze through the open doors. Guests say it's an easy place to sit down and work for a while.</p><span class="tag">mentioned by guests</span></span></button></li>
+    <li class="slv s21 c-cog"><button aria-pressed="false" aria-label="Salted Caramel Latte — show notes"><span class="face front"><span class="cat">UCC 3550-02</span><span class="nm">Salted Caramel Latte</span><span class="ring"></span></span><span class="face back"><h3>Salted Caramel Latte</h3><p>The one reviewers keep coming back to: not too sweet, and you can still taste the espresso.</p><span class="tag">mentioned by guests</span></span></button></li>
+    <li class="slv c-rose"><button aria-pressed="false" aria-label="Watermelon Matcha — show notes"><span class="face front"><span class="cat">03</span><span class="nm">Water&shy;melon Matcha</span></span><span class="face back"><h3>Watermelon Matcha</h3><p>Guests call it properly refreshing when it's hot out.</p><span class="tag">mentioned by guests</span></span></button></li>
+    <li class="slv c-wall"><button aria-pressed="false" aria-label="Matcha — show notes"><span class="face front"><span class="cat">04</span><span class="nm"><em>Matcha</em></span></span><span class="face back"><h3>Matcha</h3><p>One guest ranks it their best ever. Tip: ask for it sugar-free.</p><span class="tag">mentioned by guests</span></span></button></li>
+    <li class="slv s22 ph"><button aria-pressed="false" aria-label="Iced latte photo — show notes"><span class="face front"><img src="img/p6.jpg" srcset="img/p6-m.jpg 900w, img/p6.jpg 1800w" sizes="(max-width:760px) 100vw, 33vw" alt="An iced latte with chocolate drizzle in a University Coffee Co cup, a ceramic frog beside it, album covers behind" loading="lazy" style="object-position:40% 60%"><span class="cat">UCC 3550-05</span><span class="nm">Iced, house cup</span><span class="flip">Liner notes</span></span><span class="face back"><span class="cat">UCC 3550-05</span><h3>Iced, house cup</h3><p>Drizzle down the sides, the logo cup, the leather couch and the album wall behind. The ceramic friend on the right is a regular in their posts.</p><span class="tag post">from their post</span></span></button></li>
+    <li class="slv s12 ph"><button aria-pressed="false" aria-label="The people behind the bar — show notes"><span class="face front"><img src="img/p1.jpg" srcset="img/p1-m.jpg 675w, img/p1.jpg 1248w" sizes="(max-width:760px) 50vw, 17vw" alt="The two people behind University Coffee smiling at the counter, the green back wall and menu board behind them" loading="lazy" style="object-position:45% 40%"><span class="cat">06</span><span class="nm">Behind the bar</span><span class="flip">Notes</span></span><span class="face back"><h3>Behind the bar</h3><p>Friendly without being over the top, guests say. One review calls the owner, Allen, a true gentleman.</p><span class="tag">mentioned by guests</span></span></button></li>
+    <li class="slv c-frog"><button aria-pressed="false" aria-label="Pistachio Latte — show notes"><span class="face front"><span class="cat">07</span><span class="nm">Pista&shy;chio Latte</span></span><span class="face back"><h3>Pistachio Latte</h3><p>Starred in their Labor Day weekend post, with a ceramic frog.</p><span class="tag post">from their post</span></span></button></li>
+    <li class="slv s22 ph"><button aria-pressed="false" aria-label="University Ave corner — show notes"><span class="face front"><img src="img/p2.jpg" srcset="img/p2-m.jpg 675w, img/p2.jpg 1350w" sizes="(max-width:760px) 100vw, 33vw" alt="The corner building on University Ave under a big cloudy sky, with a traffic light and palm trees" loading="lazy" style="object-position:50% 70%"><span class="cat">UCC 3550-08</span><span class="nm">City Heights</span><span class="flip">Liner notes</span></span><span class="face back"><span class="cat">UCC 3550-08</span><h3>City Heights</h3><p>A corner on University Ave. Neighbors list it among the area's study spots, and the shop poured coffee for a grand opening down the block.</p><span class="tag post">from Instagram</span></span></button></li>
+    <li class="slv c-cream"><button aria-pressed="false" aria-label="Caramel Latte — show notes"><span class="face front"><span class="cat">09</span><span class="nm">Caramel Latte</span></span><span class="face back"><h3>Caramel Latte</h3><p>A first visit with a ham croissant, rated 10 out of 10.</p><span class="tag">mentioned by guests</span></span></button></li>
+    <li class="slv s21 c-ink"><button aria-pressed="false" aria-label="Ham and Cheese Croissant — show notes"><span class="face front"><span class="cat">UCC 3550-10</span><span class="nm">Ham &amp; Cheese <em>Croissant</em></span></span><span class="face back"><h3>Ham &amp; Cheese Croissant</h3><p>Guests rate it highly. Go early: some food can be sold out by around 10 a.m.</p><span class="tag">mentioned by guests</span></span></button></li>
+    <li class="slv c-cog"><button aria-pressed="false" aria-label="Seasonal drink — show notes"><span class="face front"><span class="cat">11</span><span class="nm">Ask what's seasonal</span></span><span class="face back"><h3>Seasonal</h3><p>A regular tried one: actually good, not too sweet.</p><span class="tag">mentioned by guests</span></span></button></li>
+    <li class="slv c-wall"><button aria-pressed="false" aria-label="Coffee and art — show notes"><span class="face front"><span class="cat">12</span><span class="nm">Coffee &amp; <em>art</em></span></span><span class="face back"><h3>Coffee &amp; art</h3><p>Local artists hang shows here. A mellow Saturday, their words.</p><span class="tag post">from their post</span></span></button></li>
+  </ul>
+  </div>
+  <p class="hint">No prices or menu listed here on purpose: the board behind the counter has the full lineup.</p>
+ </div>
+</section>
+
+<section class="spin" id="spin" aria-labelledby="spin-h">
+ <div class="wrap spin-g">
+  <div class="rv">
+    <p class="kick">What to order</p>
+    <h2 id="spin-h">Spin a drink</h2>
+    <p class="sub">Pick a mood and a sleeve slides out of the crate. Every answer comes from guest reviews or the shop's own posts.</p>
+    <div class="chips" role="group" aria-label="Pick a mood">
+      <button class="chip" data-k="sweet" aria-pressed="true">Not too sweet</button>
+      <button class="chip" data-k="hot" aria-pressed="false">Hot day</button>
+      <button class="chip" data-k="matcha" aria-pressed="false">Matcha person</button>
+      <button class="chip" data-k="nutty" aria-pressed="false">Something nutty</button>
+      <button class="chip" data-k="hungry" aria-pressed="false">Hungry</button>
+    </div>
+    <button class="rand" id="rand">Can't decide — spin for me</button>
+  </div>
+  <div class="rv" aria-live="polite">
+    <div class="crate" aria-hidden="true">
+      <div class="edges"><i style="--c:#D46A5C;--h:72%"></i><i style="--c:#F5EFE2;--h:88%"></i><i style="--c:#7DB246;--h:64%"></i><i style="--c:#1A1A17;--h:92%"></i><i style="--c:#9A5A33;--h:78%"></i><i style="--c:#c9bfa8;--h:84%"></i><i style="--c:#D46A5C;--h:68%"></i><i style="--c:#7DB246;--h:90%"></i><i style="--c:#F5EFE2;--h:74%"></i><i style="--c:#1A1A17;--h:80%"></i><i style="--c:#9A5A33;--h:94%"></i><i style="--c:#c9bfa8;--h:70%"></i></div>
+      <div class="out" id="out"><div class="disc"></div><div class="sl" id="sl"><small id="slc">Mood · Not too sweet</small><b id="sln">Salted Caramel Latte</b></div></div>
+    </div>
+    <div class="card">
+      <span class="tag" id="tag">mentioned by guests</span>
+      <h3 id="pn">Salted Caramel Latte</h3>
+      <p id="pt">Reviewers say it isn't too sweet — you can still taste the espresso.</p>
+      <span class="flag" id="pf" hidden></span>
+      <div class="msg"><q id="pm">Hi! Coming by for a salted caramel latte — is it on today?</q><button class="copy" id="copy">Copy</button></div>
+      <div class="btns">
+        <a class="btn solid" href="https://ig.me/m/universitycoffeeco" target="_blank" rel="noopener">Send on Instagram</a>
+        <a class="btn line" href="https://www.google.com/maps/dir/?api=1&amp;destination=32.7499132,-117.1166436" target="_blank" rel="noopener">Directions to 3550 University Ave</a>
+      </div>
+      <p class="small" style="margin-top:10px">Instagram can't prefill a message: copy it, then paste it into the DM.</p>
+    </div>
+  </div>
+ </div>
+</section>
+
+<section class="shows" id="shows" aria-labelledby="shows-h">
+ <div class="wrap">
+  <div class="head rv">
+    <div><p class="kick">Side B · back catalog</p><h2 id="shows-h">Past shows</h2></div>
+    <p>The room doubles as a gallery and a meeting spot. These have already happened; the next one gets announced on their Instagram.</p>
+  </div>
+  <ul class="shelf">
+    <li class="show rv"><span class="stamp">Past</span><span class="d">Art show · Sat 9/12 · 10–2</span><div><h3>Embodied</h3><p>Paintings on presence and pleasure in everyday life, with @p.m.projects.</p></div></li>
+    <li class="show rv"><span class="stamp">Past</span><span class="d">Sat, Aug 15 · 10–12</span><div><h3>Neighborhood Coffee &amp; Chat</h3><p>A drink, a bite and a talk about the neighborhood. Bring a neighbor.</p></div></li>
+    <li class="show rv"><span class="stamp">Past</span><span class="d">Wed, Aug 5 · 10 am</span><div><h3>A Mindful Morning</h3><p>Creativity &amp; community, led by a licensed therapist.</p></div></li>
+  </ul>
+  <p class="more">Next one: <a href="https://www.instagram.com/universitycoffeeco/" target="_blank" rel="noopener">follow @universitycoffeeco</a></p>
+ </div>
+</section>
+
+<section class="leather" id="visit" aria-label="Reviews and visit">
+ <div class="wrap">
+  <div class="rv">
+    <p class="kick" style="color:#f2d9b8">What guests say</p>
+    <div class="score"><b>4.9</b><span>stars from 230 Google reviews</span></div>
+    <ul class="praise">
+      <li><em>01</em><span>Drinks that aren't too sweet. The salted caramel latte and the seasonal specials both get that note, and the espresso still comes through.</span></li>
+      <li><em>02</em><span>Owners who are warm and welcoming, friendly without being over the top. Allen gets named.</span></li>
+      <li><em>03</em><span>A cozy room with a breeze through the open doors, good for a slow coffee or a work session.</span></li>
+    </ul>
+  </div>
+  <div class="visit rv">
+    <p class="kick">Visit</p>
+    <h2>3550 University Ave</h2>
+    <dl>
+      <dt>Where</dt><dd>San Diego, CA 92104 · City Heights</dd>
+      <dt>Hours</dt><dd>Open daily, 7 am – 3 pm<br><span class="small">Hours from Google; holidays may differ.</span></dd>
+      <dt>Now</dt><dd><span class="status" data-status><i></i><span>Open daily · 7 am – 3 pm</span></span></dd>
+      <dt>Social</dt><dd><a href="https://www.instagram.com/universitycoffeeco/" target="_blank" rel="noopener">@universitycoffeeco</a></dd>
+      <dt>Tip</dt><dd>Food can sell out: come early for a croissant.</dd>
+    </dl>
+    <div class="btns">
+      <a class="btn solid" href="https://www.google.com/maps/dir/?api=1&amp;destination=32.7499132,-117.1166436" target="_blank" rel="noopener">Directions</a>
+      <a class="btn line" href="https://ig.me/m/universitycoffeeco" target="_blank" rel="noopener">Message</a>
+    </div>
+  </div>
+ </div>
+</section>
+
+<section class="wrap final" aria-label="Come by">
+  <h2 class="rv">Pull up a spot<br>on the couch.</h2>
+  <div class="btns rv">
+    <a class="btn solid" href="https://www.google.com/maps/dir/?api=1&amp;destination=32.7499132,-117.1166436" target="_blank" rel="noopener">Directions</a>
+    <a class="btn line" href="https://www.instagram.com/universitycoffeeco/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</section>
+
+<footer>
+ <div class="wrap">
+  <svg viewBox="0 0 60 44" role="img" aria-label="A small frog"><path d="M10 38c0-12 8-22 20-22s20 10 20 22z" fill="#7DB246" stroke="#F5EFE2" stroke-width="2"/><circle cx="21" cy="15" r="7" fill="#7DB246" stroke="#F5EFE2" stroke-width="2"/><circle cx="39" cy="15" r="7" fill="#7DB246" stroke="#F5EFE2" stroke-width="2"/><circle cx="21.5" cy="15.5" r="2.6" fill="#1A1A17"/><circle cx="38.5" cy="15.5" r="2.6" fill="#1A1A17"/><path d="M23 27q7 5 14 0" fill="none" stroke="#1A1A17" stroke-width="2" stroke-linecap="round"/><path d="M4 40h52" stroke="#F5EFE2" stroke-width="2" stroke-linecap="round"/></svg>
+  <span>University Coffee Co · 3550 University Ave, San Diego, CA 92104 · <a href="https://www.instagram.com/universitycoffeeco/" target="_blank" rel="noopener">Instagram</a></span>
+  <span>Demo concept, not the official site.</span>
+ </div>
+</footer>
+
+<a class="btn solid fab" href="https://www.google.com/maps/dir/?api=1&amp;destination=32.7499132,-117.1166436" target="_blank" rel="noopener">Directions</a>
+
+<script>
+(function(){
+  // open/closed: daily 7–15, America/Los_Angeles
+  try{
+    var p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Los_Angeles',hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(new Date());
+    var h=+p.find(function(x){return x.type==='hour'}).value,m=+p.find(function(x){return x.type==='minute'}).value,t=h*60+m;
+    var open=t>=420&&t<900,txt=open?'Open now · until 3 pm':(t<420?'Closed now · opens 7 am':'Closed now · opens 7 am tomorrow');
+    document.querySelectorAll('[data-status]').forEach(function(el){el.classList.toggle('open',open);el.lastElementChild.textContent=txt});
+  }catch(e){}
+  // flip sleeves
+  document.querySelectorAll('.slv>button').forEach(function(b){b.addEventListener('click',function(){var li=b.parentNode,on=li.classList.toggle('on');b.setAttribute('aria-pressed',on)})});
+  // picker
+  var D={
+    sweet:['Not too sweet','Salted Caramel Latte','#9A5A33','#F5EFE2','Reviewers say it isn’t too sweet — you can still taste the espresso.','mentioned by guests','','Hi! Coming by for a salted caramel latte — is it on today?'],
+    hot:['Hot day','Watermelon Matcha','#D46A5C','#1A1A17','Iced and properly refreshing on a hot day, guests say.','mentioned by guests','','Hi! Is the watermelon matcha on today?'],
+    matcha:['Matcha person','Matcha','#2F4A34','#F5EFE2','One guest calls it the best matcha they’ve had. Their tip: ask for the sugar-free version.','mentioned by guests','','Hi! Can I get the matcha sugar-free when I come in today?'],
+    nutty:['Something nutty','Pistachio Latte','#7DB246','#1A1A17','It starred in their Labor Day weekend post, next to a certain ceramic frog.','from their post','','Hi! Is the pistachio latte still on?'],
+    hungry:['Hungry','Ham & Cheese Croissant','#1A1A17','#F5EFE2','Guests rate the ham & cheese croissant highly.','mentioned by guests','Go early: food can sell out','Hi! Any ham & cheese croissants left this morning?']
+  };
+  var $=function(i){return document.getElementById(i)},out=$('out'),cur='sweet',rm=matchMedia('(prefers-reduced-motion: reduce)').matches,tm;
+  function show(k){
+    var d=D[k];cur=k;
+    document.querySelectorAll('.chip').forEach(function(c){c.setAttribute('aria-pressed',c.dataset.k===k)});
+    function fill(){
+      $('sl').style.background=d[2];$('sl').style.color=d[3];$('slc').textContent='Mood · '+d[0];$('sln').textContent=d[1];
+      $('pn').textContent=d[1];$('pt').textContent=d[4];var tg=$('tag');tg.textContent=d[5];tg.className='tag'+(d[5].indexOf('post')>-1?' post':'');
+      $('pf').hidden=!d[6];$('pf').textContent=d[6];$('pm').textContent=d[7];$('copy').textContent='Copy';
+      out.classList.remove('down');
+    }
+    clearTimeout(tm);
+    if(rm){fill();return}
+    out.classList.add('down');tm=setTimeout(fill,380);
+  }
+  document.querySelectorAll('.chip').forEach(function(c){c.addEventListener('click',function(){show(c.dataset.k)})});
+  $('rand').addEventListener('click',function(){var ks=Object.keys(D).filter(function(k){return k!==cur});show(ks[Math.floor(Math.random()*ks.length)])});
+  $('copy').addEventListener('click',function(){
+    var t=$('pm').textContent,b=this;
+    function ok(){b.textContent='Copied'}
+    if(navigator.clipboard)navigator.clipboard.writeText(t).then(ok,function(){});
+    else{var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy');ok()}catch(e){}a.remove()}
+  });
+  show('sweet');
+  // reveal
+  if('IntersectionObserver' in window){
+        var fab=document.querySelector('.fab'),hb=document.querySelector('.hero .btns');fab.classList.add('hide');
+    new IntersectionObserver(function(es){fab.classList.toggle('hide',es[0].isIntersecting||es[0].boundingClientRect.top>0)}).observe(hb);
+  }
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Demo concept|Demo-Konzept/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Pricing →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>
