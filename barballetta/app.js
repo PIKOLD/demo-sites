@@ -75,7 +75,7 @@ let rzT; addEventListener('resize', () => { clearTimeout(rzT); rzT = setTimeout(
 
 /* ---------- 3. scroll-driven: hero split, stitches, photo zoom ---------- */
 const wmTop = $('.wm--top'), wmBot = $('.wm--bot'), heroImg = $('.hero__item img');
-const splitImgs = $('.split__ph img'), fab = $('.fab');
+const splitImgs = $$('.split__ph img'), fab = $('.fab');
 let ticking = false;
 function onScroll() {
   ticking = false;
