@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>banana_kruz — кепка, футболка и худи с твоей надписью · Санкт-Петербург</title><meta property="og:type" content="website"><meta property="og:title" content="banana_kruz — кепка, футболка и худи с твоей надписью · Санкт-Петербург"><meta property="og:description" content="banana_kruz: печать и вышивка ваших идей на кепках, футболках и худи. Напиши фразу — сразу увидишь её на кепке. Размеры до 5XL, более 20 расцветок, доставка Питер и мир."><meta property="og:image" content="https://pikold.github.io/demo-sites/banana-kruz/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="banana_kruz: печать и вышивка ваших идей на кепках, футболках и худи. Напиши фразу — сразу увидишь её на кепке. Размеры до 5XL, более 20 расцветок, доставка Питер и мир.">
+<link rel="stylesheet" href="../_fonts/oswald.css">
+<link rel="stylesheet" href="../_fonts/rubik.css">
+<style>
+:root{
+  --y:#F7D23E; --k:#2C2B29; --k2:#1E1D1C; --p:#ECE4D6; --m:#3ED3C3; --pk:#FF4F9E; --w:#FBF7EF;
+  --disp:"Oswald","Impact","Haettenschweiler","Avenir Next Condensed","Arial Narrow",sans-serif;
+  --body:"Rubik","Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;
+  --gut:16px; --max:1320px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--y);color:var(--k);font:400 16px/1.5 var(--body);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--pk);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.disp{font-family:var(--disp);font-weight:700;text-transform:uppercase;letter-spacing:-.005em;line-height:.9;font-stretch:condensed}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* demo bar */
+.demo{background:var(--k);color:#d9d3c6;font-size:12px;line-height:1.35;padding:7px var(--gut);text-align:center}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:var(--y);border-bottom:3px solid var(--k)}
+.top .wrap{display:flex;align-items:center;gap:20px;min-height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex:none}
+.logo svg{width:44px;height:44px}
+.logo b{font-family:var(--disp);font-weight:700;font-size:24px;letter-spacing:.01em;line-height:1}
+.logo small{display:block;font:500 11px/1.2 var(--body);letter-spacing:.08em;text-transform:uppercase;opacity:.75}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{font:500 15px/1 var(--body);text-decoration:none;padding:14px 12px;border-radius:999px}
+.nav a:hover{background:rgba(44,43,41,.1)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;border:3px solid var(--k);border-radius:999px;font:600 16px/1.1 var(--body);text-decoration:none;cursor:pointer;background:var(--k);color:var(--y);transition:transform .15s, box-shadow .15s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--k)}
+.btn.ghost{background:transparent;color:var(--k)}
+.btn svg{width:20px;height:20px;flex:none}
+.top .btn{min-height:44px;padding:8px 18px;font-size:15px}
+
+/* hero */
+.hero{position:relative;padding:28px 0 56px;overflow:hidden}
+.hero .wrap{display:grid;gap:28px}
+.h1{font-size:clamp(52px,16vw,120px)}
+.h1 span{display:block}
+.h1 .st{position:relative;display:inline-block}
+.h1 .st svg{position:absolute;left:0;right:0;bottom:-.08em;width:100%;height:.16em;overflow:visible}
+.lead{font-size:clamp(17px,2.2vw,21px);line-height:1.45;max-width:34ch;margin-top:22px}
+.lead b{font-weight:600}
+.patches{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.patch{font:600 14px/1.1 var(--body);padding:10px 14px;border:2px dashed var(--k);border-radius:10px;background:var(--w);box-shadow:0 0 0 4px var(--w)}
+.patch:nth-child(2){transform:rotate(-1.5deg);border-radius:999px}
+.patch:nth-child(3){transform:rotate(1deg);background:var(--k);color:var(--y);border-color:var(--y);box-shadow:0 0 0 4px var(--k)}
+.promo{position:absolute;right:0;top:-14px;width:104px;height:104px;border-radius:50%;background:var(--pk);color:#fff;display:grid;place-items:center;text-align:center;font:700 13.5px/1.12 var(--body);padding:16px;transform:rotate(12deg);box-shadow:0 0 0 4px var(--y),0 0 0 6px var(--k);z-index:2}
+.hero-l{position:relative}
+.mini{display:none}
+
+/* constructor */
+.mk{position:relative;background:var(--p);border:3px solid var(--k);border-radius:22px;box-shadow:10px 10px 0 var(--k);padding:16px;scroll-margin-top:90px}
+.mk-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:10px}
+.mk-h h2{font-size:26px}
+.mk-h span{font:500 12px/1.2 var(--body);text-transform:uppercase;letter-spacing:.08em;opacity:.7}
+.stage{position:relative;border-radius:14px;background:
+  linear-gradient(rgba(44,43,41,.07) 1px,transparent 1px) 0 0/22px 22px,
+  linear-gradient(90deg,rgba(44,43,41,.07) 1px,transparent 1px) 0 0/22px 22px,#F4EEE3;
+  border:2px solid rgba(44,43,41,.18);aspect-ratio:420/320;overflow:hidden}
+.stage svg{width:100%;height:100%;display:block}
+.stage .tag{position:absolute;left:10px;top:10px;font:600 11px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;background:var(--k);color:var(--y);padding:7px 9px;border-radius:6px}
+.swatches{position:absolute;right:10px;top:8px;display:flex;gap:6px}
+.sw{width:30px;height:30px;border-radius:50%;border:2px solid var(--w);box-shadow:0 0 0 2px rgba(44,43,41,.35);cursor:pointer;padding:0}
+.sw[aria-pressed="true"]{box-shadow:0 0 0 3px var(--k)}
+.ctrl{margin-top:14px;display:grid;gap:12px}
+.row-l{font:600 12px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;display:flex;justify-content:space-between}
+.seg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.seg.four{grid-template-columns:repeat(2,minmax(0,1fr))}
+.seg button,.sizes button{min-height:44px;border:2px solid var(--k);background:var(--w);border-radius:12px;font-weight:600;font-size:15px;cursor:pointer;padding:6px 8px;line-height:1.1}
+.seg button[aria-pressed="true"],.sizes button[aria-pressed="true"]{background:var(--k);color:var(--y)}
+.txt{position:relative}
+.txt input{width:100%;min-height:54px;border:3px solid var(--k);border-radius:14px;background:#fff;padding:12px 64px 12px 14px;font:600 18px/1.2 var(--body)}
+.txt output{position:absolute;right:14px;top:50%;transform:translateY(-50%);font:500 13px/1 var(--body);opacity:.6}
+.sizes{display:flex;flex-wrap:wrap;gap:6px}
+.sizes button{min-width:52px}
+.year{display:none;margin-top:8px}
+.year.on{display:flex;align-items:center;gap:10px}
+.year input{width:110px;min-height:44px;border:2px solid var(--k);border-radius:12px;padding:8px 12px;font-weight:600;background:#fff}
+.chk{display:flex;align-items:center;gap:10px;min-height:44px;font-weight:500;cursor:pointer}
+.chk input{width:22px;height:22px;accent-color:var(--pk)}
+.hide{display:none!important}
+.msg{background:#fff;border:2px solid var(--k);border-radius:16px 16px 16px 4px;padding:12px 14px;font-size:15px;line-height:1.45;white-space:pre-line}
+.acts{display:grid;gap:8px}
+.acts .btn{width:100%}
+.acts .sub{font-size:14px;text-align:center}
+.acts .sub a{font-weight:600}
+.copied{font:500 13px/1.3 var(--body);text-align:center;min-height:1.3em}
+
+/* stitches */
+.thread{font-family:var(--disp);font-weight:600;text-transform:uppercase}
+.paint .thread{font-family:var(--body);font-style:italic;font-weight:700;text-transform:none}
+.t-draw{fill:none;stroke:var(--th);stroke-width:1.3;stroke-dasharray:520;stroke-dashoffset:0}
+.t-fill{fill:var(--th)}
+.emb .t-fill{fill:url(#satin)}
+.t-st{fill:none;stroke:var(--th2);stroke-width:.7;stroke-dasharray:2.4 1.6;opacity:.75}
+.print .t-st,.paint .t-st{display:none}
+.print .t-draw{display:none}
+.go .t-draw{animation:sew 1.15s steps(46) both}
+.go .t-fill{animation:fillin .35s .95s both}
+.go .t-st{animation:fillin .3s 1.15s both}
+.print.go .t-fill{animation:press .45s both}
+.paint.go .t-draw{animation-duration:.8s}
+.paint.go .t-fill{animation-delay:.6s}
+@keyframes sew{from{stroke-dashoffset:520}to{stroke-dashoffset:0}}
+@keyframes fillin{from{opacity:0}}
+@keyframes press{from{opacity:0;transform:scale(1.04)}}
+.needle{opacity:0}
+.go .needle{animation:needle 1.15s steps(46) both}
+@keyframes needle{0%{opacity:1;transform:translateX(-90px)}95%{opacity:1;transform:translateX(90px)}100%{opacity:0;transform:translateX(90px)}}
+
+/* wall of posters */
+.wall{overflow:hidden;background:var(--p);border-top:3px solid var(--k);border-bottom:3px solid var(--k);padding:64px 0 72px;position:relative}
+.wall::before{content:"";position:absolute;inset:0;background:radial-gradient(rgba(44,43,41,.13) 1.2px,transparent 1.6px) 0 0/34px 34px;pointer-events:none}
+.sec-h{display:grid;gap:14px;margin-bottom:36px;position:relative}
+.sec-h h2{font-size:clamp(46px,11vw,128px)}
+.sec-h p{max-width:46ch;font-size:17px}
+.kicker{font:600 13px/1 var(--body);letter-spacing:.12em;text-transform:uppercase}
+.grid{position:relative;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:26px 14px}
+.post{grid-column:span 3;transform:rotate(var(--r,0deg));transition:transform .55s cubic-bezier(.2,1.6,.4,1),opacity .3s}
+.post.big,.post.m6{grid-column:span 6}
+.post.pre{transform:rotate(-6deg) scale(1.08)}
+.post.pre .ph{box-shadow:0 34px 40px -18px rgba(44,43,41,.45)}
+.post .ph{position:relative;background:#fff;padding:7px 7px 0;box-shadow:0 14px 24px -14px rgba(44,43,41,.55),0 2px 0 rgba(44,43,41,.15)}
+.post .ph::before{content:"";position:absolute;left:50%;top:-12px;width:76px;height:24px;margin-left:-38px;background:rgba(247,210,62,.82);transform:rotate(-3deg);z-index:2;box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.post:nth-child(even) .ph::before{transform:rotate(4deg);background:rgba(62,211,195,.75)}
+.post img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.post figcaption{padding:10px 4px 12px;display:grid;gap:4px}
+.post .no{font:600 11px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;opacity:.6}
+.post h3{overflow-wrap:anywhere;font-family:var(--disp);font-weight:700;font-size:21px;line-height:1;text-transform:uppercase}
+.post q{font-size:13.5px;line-height:1.35;quotes:"«" "»"}
+.post .want{justify-self:start;margin-top:4px;min-height:44px;padding:8px 14px;border:2px solid var(--k);border-radius:999px;background:var(--y);font:600 14px/1 var(--body);cursor:pointer}
+.post .want:hover{background:var(--k);color:var(--y)}
+.post.pair .ph::before{background:rgba(255,79,158,.85)}
+.post.pair h3{color:var(--pk)}
+.corp{grid-column:1/-1;background:var(--k);color:var(--y);border-radius:6px;padding:28px 20px;display:grid;gap:18px;transform:rotate(-.6deg);transition:transform .55s cubic-bezier(.2,1.6,.4,1),opacity .3s}
+.corp.pre{transform:rotate(-4deg) scale(1.04)}
+.corp h3{font-size:clamp(38px,5.8vw,92px)}
+.corp p{color:#e9e2d2;max-width:44ch}
+.corp .btn{background:var(--y);color:var(--k);border-color:var(--y);justify-self:start}
+.sale{position:relative;margin:48px auto 0;max-width:900px;text-align:center;font-size:clamp(30px,6vw,64px);line-height:.95}
+.sale em{font-style:normal;white-space:nowrap;background:var(--pk);color:#fff;padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+
+/* how */
+.how{background:var(--k);color:var(--p);padding:72px 0 80px;position:relative;overflow:hidden}
+.how::before{content:"";position:absolute;inset:0;opacity:.35;background:
+ radial-gradient(60% 40% at 20% 10%,rgba(255,255,255,.08),transparent 70%),
+ radial-gradient(40% 50% at 85% 70%,rgba(255,255,255,.07),transparent 70%);pointer-events:none}
+.how .sec-h h2{color:var(--y)}
+.steps{position:relative;display:grid;gap:30px;list-style:none;counter-reset:s}
+.step{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;align-items:start;padding-bottom:26px;border-bottom:2px dashed rgba(236,228,214,.3)}
+.step .n{font-family:var(--disp);font-weight:700;font-size:84px;line-height:.8;color:transparent;-webkit-text-stroke:2px var(--m)}
+.step:nth-child(2) .n{color:var(--m);-webkit-text-stroke:0}
+.step h3{font:700 23px/1.1 var(--disp);text-transform:uppercase;color:#fff;margin-bottom:8px}
+.step p{color:#d8d1c3;font-size:16px}
+.step p a{color:var(--m);font-weight:600}
+
+/* people */
+.people{padding:72px 0;background:var(--y)}
+.people .wrap{display:grid;gap:30px}
+.ppl-ph{position:relative;justify-self:center;max-width:420px;width:100%}
+.ppl-ph img{width:100%;aspect-ratio:610/900;object-fit:cover;object-position:50% 70%;border:3px solid var(--k);border-radius:20px}
+.ppl-ph .lbl{position:absolute;left:-6px;bottom:22px;background:var(--k);color:var(--y);font:600 14px/1.2 var(--body);padding:10px 14px;border-radius:8px;transform:rotate(-3deg);max-width:80%}
+.ppl h2{font-size:clamp(56px,13vw,150px)}
+.ppl .big{font-size:clamp(22px,3vw,30px);line-height:1.25;margin:20px 0 26px;max-width:24ch;font-weight:500}
+.stats{display:flex;flex-wrap:wrap;gap:14px 34px;align-items:flex-end}
+.stat b{display:block;font-family:var(--disp);font-weight:700;font-size:clamp(64px,12vw,128px);line-height:.85}
+.stat span{font-weight:500}
+.stat.s2 b{font-size:clamp(40px,6vw,64px)}
+
+/* contacts */
+.end{background:var(--k);color:var(--p);padding:72px 0 120px}
+.end h2{font-size:clamp(58px,15vw,190px);color:var(--y)}
+.end h2 span{color:var(--p)}
+.links{margin-top:36px;display:grid;gap:12px}
+.lnk{display:flex;justify-content:space-between;align-items:center;gap:14px;min-height:64px;padding:14px 18px;border:2px solid rgba(236,228,214,.35);border-radius:16px;text-decoration:none;transition:background .2s,border-color .2s}
+.lnk:hover{background:rgba(247,210,62,.08);border-color:var(--y)}
+.lnk b{font:700 22px/1.1 var(--disp);text-transform:uppercase;color:#fff}
+.lnk span{font-size:14px;opacity:.75;overflow-wrap:anywhere}
+.lnk.main{background:var(--y);border-color:var(--y);color:var(--k)}
+.lnk.main b{color:var(--k)}
+.lnk i{font-style:normal;font:700 24px/1 var(--disp)}
+.foot{margin-top:46px;font-size:13px;color:#a9a397;display:grid;gap:6px}
+
+/* mobile sticky */
+.dock{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;display:flex;gap:8px}
+.dock a{flex:1;min-height:52px;box-shadow:0 8px 20px -6px rgba(0,0,0,.5)}
+.dock a.ghost{background:var(--y)}
+
+@media (min-width:700px){
+  :root{--gut:32px}
+  .grid{grid-template-columns:repeat(12,minmax(0,1fr));gap:40px 26px}
+  .post,.post.m6{grid-column:span 4}.post.w3{grid-column:span 3}.post.w5{grid-column:span 5}.post.big{grid-column:span 5}
+  .corp{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);align-items:end;padding:40px 44px}
+  .steps{grid-template-columns:repeat(4,minmax(0,1fr));gap:26px}
+  .step{grid-template-columns:1fr;border-bottom:0;border-top:2px dashed rgba(236,228,214,.3);padding:22px 0 0}
+  .step:nth-child(2){margin-top:44px}.step:nth-child(3){margin-top:88px}.step:nth-child(4){margin-top:132px}
+  .step .n{font-size:120px}
+  .links{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dock{display:none}
+  .end{padding-bottom:80px}
+}
+@media (max-width:899px){.nav{display:none}.top .btn{margin-left:auto}}
+@media (max-width:420px){.top .btn{padding:8px 14px;font-size:14px}.logo small{display:none}}
+@media (min-width:1000px){
+  :root{--gut:40px}
+  .hero{padding:44px 0 80px}
+  .hero .wrap{grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);align-items:start;gap:44px}
+  .h1{font-size:clamp(76px,9.2vw,138px)}
+  .lead{max-width:27ch}
+  .hero-l{padding-top:18px;position:sticky;top:96px}
+  .promo{right:6%;top:4px;width:140px;height:140px;font-size:15px}
+  .mini{display:block;position:absolute;right:20px;bottom:-60px;width:150px;transform:rotate(5deg);background:#fff;padding:6px;box-shadow:0 18px 30px -16px rgba(0,0,0,.5)}
+  .mk{padding:20px}
+  .patches{max-width:calc(100% - 180px)}
+  .ctrl{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:14px}
+  .ctrl .full{grid-column:1/-1}
+  .sec-h{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);align-items:end}
+  .people .wrap{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:center;gap:64px}
+  .ppl-ph{transform:rotate(-2deg)}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .post.pre,.corp.pre{transform:rotate(var(--r,0deg));opacity:1}
+}
+</style>
+</head>
+<body>
+<div class="demo">Демо-концепт независимого разработчика — не официальный сайт banana_kruz. Не согласован с владельцем, удаляется по первой просьбе.</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="banana_kruz — наверх">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#2C2B29"/><path d="M12 15c-1 10 5 20 17 21 4 0 7-1 9-3-2-1-4-1-6-1-9 0-15-7-16-16l-1-3z" fill="#F7D23E" stroke="#F7D23E" stroke-width="1.5" stroke-linejoin="round"/><path d="M12.4 15.5 11 12.6" stroke="#ECE4D6" stroke-width="2.4" stroke-linecap="round"/><path d="M16 22c2 5 6 9 11 10" fill="none" stroke="#2C2B29" stroke-width="1.2" stroke-dasharray="2 1.6" stroke-linecap="round"/></svg>
+      <span><b>banana_kruz</b><small>Печать и вышивка · СПб</small></span>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#make">Конструктор</a><a href="#polki">Подборки</a><a href="#kak">Как заказать</a><a href="#lyudi">Наши люди</a><a href="#kontakty">Контакты</a>
+    </nav>
+    <a class="btn" href="https://t.me/banana_kruz_zakaz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.9 4.3 18.8 19c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8L18.2 6c.4-.3-.1-.5-.6-.2L6.7 12.7 2.1 11.3c-1-.3-1-1 .2-1.5L20.5 2.9c.9-.3 1.6.2 1.4 1.4z"/></svg>Заказать</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-l">
+      <h1 class="h1 disp"><span>Кепка</span><span>с твоей</span><span><i class="st" style="font-style:normal">надписью<svg viewBox="0 0 300 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 7 Q75 1 150 6 T298 5" fill="none" stroke="#FF4F9E" stroke-width="4" stroke-dasharray="10 6" stroke-linecap="round"/></svg></i></span></h1>
+      <p class="lead"><b>Печать и вышивка ваших идей</b> на кепках, футболках и худи. Пишешь фразу — тут же видишь её на вещи и отправляешь заказ в Telegram.</p>
+      <div class="patches" aria-label="Коротко">
+        <span class="patch">Размеры до 5XL</span>
+        <span class="patch">Более 20 расцветок</span>
+        <span class="patch">Доставка Питер и мир</span>
+      </div>
+      <div class="promo" aria-label="Акция">Каждая вторая кепка за пол стоимости</div>
+      <img class="mini" src="img/p10-m.jpg" alt="Собака в варёной кепке с вышивкой «Уставшая собака»" width="150" height="200">
+    </div>
+
+    <div class="mk" id="make" aria-labelledby="mk-t">
+      <div class="mk-h"><h2 id="mk-t" class="disp">Цех надписей</h2><span>конструктор заказа</span></div>
+      <div class="stage">
+        <svg id="pv" viewBox="0 0 420 320" role="img" aria-label="Превью: вещь с вашей надписью">
+          <defs>
+            <filter id="wash" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.022 0.05" numOctaves="3" seed="7"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .9 -.32"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+            <pattern id="satin" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(62)"><rect width="3.2" height="3.2" fill="var(--th)"/><rect width=".7" height="3.2" fill="var(--th2)" opacity=".28"/></pattern>
+            <pattern id="photo" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="var(--th)" opacity=".18"/><rect width="2" height="8" fill="var(--th)" opacity=".55"/></pattern>
+          </defs>
+          <g id="garment"></g>
+          <g id="art" class="emb"></g>
+          <g id="ph"></g>
+        </svg>
+        <span class="tag" id="pvTag">Кепка · вышивка</span>
+        <div class="swatches" role="group" aria-label="Цвет на превью">
+          <button class="sw" style="background:#2C2B29" data-c="0" aria-pressed="true" aria-label="Варёный чёрный"></button>
+          <button class="sw" style="background:#7B2E3A" data-c="1" aria-pressed="false" aria-label="Бордо"></button>
+          <button class="sw" style="background:#3ED3C3" data-c="2" aria-pressed="false" aria-label="Мятный"></button>
+          <button class="sw" style="background:#F3EEE4" data-c="3" aria-pressed="false" aria-label="Молочный"></button>
+        </div>
+      </div>
+
+      <div class="ctrl">
+        <div class="full txt">
+          <label class="row-l" for="tx"><span>Твоя надпись</span></label>
+          <input id="tx" maxlength="40" autocomplete="off" value="Терпение и труд инфаркт и инсульт" placeholder="Напиши свою фразу">
+          <output id="cnt" for="tx">33/40</output>
+        </div>
+        <div>
+          <div class="row-l">Изделие</div>
+          <div class="seg" role="group" aria-label="Изделие" id="prod">
+            <button data-v="cap" aria-pressed="true">Кепка</button><button data-v="tee" aria-pressed="false">Футболка</button><button data-v="hood" aria-pressed="false">Худи</button>
+          </div>
+        </div>
+        <div>
+          <div class="row-l">Способ</div>
+          <div class="seg" role="group" aria-label="Способ нанесения" id="meth">
+            <button data-v="emb" aria-pressed="true">Вышивка</button><button data-v="print" aria-pressed="false">Печать</button><button data-v="paint" aria-pressed="false">Роспись</button>
+          </div>
+        </div>
+        <label class="chk full" id="pairRow"><input type="checkbox" id="pair"> Парные — две кепки (каждая вторая за пол стоимости)</label>
+        <div class="full hide" id="photoRow">
+          <div class="row-l">Фото на вещь <span style="text-transform:none;letter-spacing:0;font-weight:500;opacity:.7">кидаете в ЛС</span></div>
+          <div class="seg four" role="group" aria-label="Фото" id="photo">
+            <button data-v="none" aria-pressed="true">Без фото</button><button data-v="pet" aria-pressed="false">Фото питомца</button><button data-v="retro" aria-pressed="false">Ретрофото и год</button><button data-v="own" aria-pressed="false">Своё фото или мем</button>
+          </div>
+          <div class="year" id="yearRow"><label for="yr">Год рождения</label><input id="yr" inputmode="numeric" maxlength="4" value="1997"></div>
+        </div>
+        <div class="full hide" id="sizeRow">
+          <div class="row-l">Размер</div>
+          <div class="sizes" role="group" aria-label="Размер" id="size">
+            <button aria-pressed="false">S</button><button aria-pressed="true">M</button><button aria-pressed="false">L</button><button aria-pressed="false">XL</button><button aria-pressed="false">2XL</button><button aria-pressed="false">3XL</button><button aria-pressed="false">4XL</button><button aria-pressed="false">5XL</button>
+          </div>
+        </div>
+        <div class="full">
+          <div class="row-l">Готовый текст заказа</div>
+          <div class="msg" id="msg" aria-live="polite"></div>
+        </div>
+        <div class="full acts">
+          <button class="btn" id="send"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.9 4.3 18.8 19c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8L18.2 6c.4-.3-.1-.5-.6-.2L6.7 12.7 2.1 11.3c-1-.3-1-1 .2-1.5L20.5 2.9c.9-.3 1.6.2 1.4 1.4z"/></svg>Скопировать и открыть Telegram</button>
+          <div class="copied" id="copied" aria-live="polite"></div>
+          <p class="sub">или <a href="https://ig.me/m/banana_kruz" target="_blank" rel="noopener" id="dm">в Direct @banana_kruz</a> — текст скопируется так же</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wall" id="polki" aria-labelledby="w-t">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><p class="kicker">Стена цеха</p><h2 id="w-t" class="disp">Полки подборок</h2></div>
+      <p>Их знают по мем-постерам: коты и собаки в варёных кепках с фразами, которые хочется носить. Нажми «Хочу такую» — фраза перенесётся в конструктор, поменяешь пару слов под себя.</p>
+    </div>
+    <div class="grid" id="grid">
+      <figure class="post big" style="--r:-1.6deg"><div class="ph"><img src="img/p1.jpg" srcset="img/p1-m.jpg 600w, img/p1.jpg 1350w" sizes="(min-width:700px) 36vw, 52vw" alt="Кот в варёной чёрной кепке с вышивкой «Терпение и труд инфаркт и инсульт» — постер «Кепки для работяг»" decoding="async" width="1350" height="1800"></div>
+        <figcaption><span class="no">Полка 01</span><h3>Для работяг</h3><q>Терпение и труд инфаркт и инсульт</q><button class="want" data-p='{"p":"cap","m":"emb","t":"Терпение и труд инфаркт и инсульт"}'>Хочу такую</button></figcaption></figure>
+      <figure class="post" style="--r:2deg"><div class="ph"><img src="img/p10.jpg" srcset="img/p10-m.jpg 600w, img/p10.jpg 1350w" sizes="(min-width:700px) 36vw, 52vw" alt="Бигль в кепке с вышивкой «Уставшая собака» — постер «Кепки для уставших»" decoding="async" width="1350" height="1800"></div>
+        <figcaption><span class="no">Полка 02</span><h3>Для уставших</h3><q>Уставшая собака</q><button class="want" data-p='{"p":"cap","m":"emb","t":"Уставшая собака"}'>Хочу такую</button></figcaption></figure>
+      <figure class="post w3" style="--r:-2.4deg"><div class="ph"><img src="img/p13.jpg" srcset="img/p13-m.jpg 600w, img/p13.jpg 1350w" sizes="(min-width:700px) 36vw, 52vw" alt="Кот в кепке с вышивкой «Не бойся кринжа, пусть он боится тебя» — постер «Кепки для смельчаков»" decoding="async" width="1351" height="1800"></div>
+        <figcaption><span class="no">Полка 03</span><h3>Для смельчаков</h3><q>Не бойся кринжа пусть он боится тебя</q><button class="want" data-p='{"p":"cap","m":"emb","t":"Не бойся кринжа пусть он боится тебя"}'>Хочу такую</button></figcaption></figure>
+
+      <figure class="post pair" style="--r:1.4deg"><div class="ph"><img src="img/p8.jpg" srcset="img/p8-m.jpg 600w, img/p8.jpg 1350w" sizes="(min-width:700px) 36vw, 52vw" alt="Собака и кот в парных кепках, неоновое сердце «Парные кепки»" decoding="async" width="1440" height="1800"></div>
+        <figcaption><span class="no">Полка 04</span><h3>Парные</h3><q>Для тебя и твоей</q><button class="want" data-p='{"p":"cap","m":"emb","t":"Привет, уроды","pair":1}'>Хочу пару</button></figcaption></figure>
+      <figure class="post w3" style="--r:-1deg"><div class="ph"><img src="img/p3.jpg" srcset="img/p3-m.jpg 600w, img/p3.jpg 1350w" sizes="(min-width:700px) 36vw, 52vw" alt="Мальчик в тёмно-зелёной кепке с вышивкой — постер «Детские дерзкие кепки»" decoding="async" width="1350" height="1800"></div>
+        <figcaption><span class="no">Полка 05</span><h3>Детские дерзкие</h3><q>Дерзкая фраза — ваша</q><button class="want" data-p='{"p":"cap","m":"emb","t":""}'>Хочу такую</button></figcaption></figure>
+      <figure class="post w5 m6" style="--r:1.2deg"><div class="ph"><img src="img/p12.jpg" srcset="img/p12-m.jpg 600w, img/p12.jpg 1350w" sizes="(min-width:700px) 36vw, 52vw" alt="Варёная чёрная футболка: год «1997» из детских ретрофото" decoding="async" width="1350" height="1800"></div>
+        <figcaption><span class="no">Полка 06</span><h3>С годом рождения и ретрофото</h3><q>Подарок, вызывающий мурашки</q><button class="want" data-p='{"p":"tee","m":"print","t":"","ph":"retro"}'>Хочу такую</button></figcaption></figure>
+
+      <figure class="post w5" style="--r:-1.8deg"><div class="ph"><img src="img/p7.jpg" srcset="img/p7-m.jpg 600w, img/p7.jpg 1350w" sizes="(min-width:700px) 36vw, 52vw" alt="Девушка с котом на плече, на спине футболки принт «Cat mother» с фото кота" decoding="async" width="1350" height="1800"></div>
+        <figcaption><span class="no">Полка 07</span><h3>С питомцем</h3><q>А как зовут твоего питомца?</q><button class="want" data-p='{"p":"tee","m":"print","t":"Cat mother","ph":"pet"}'>Хочу такую</button></figcaption></figure>
+      <figure class="post" style="--r:1.6deg"><div class="ph"><img src="img/p9.jpg" srcset="img/p9-m.jpg 600w, img/p9.jpg 1350w" sizes="(min-width:700px) 36vw, 52vw" alt="Белая футболка «Mom mom mom» с коллажем семейных фото — подарок для мамы" decoding="async" width="1350" height="1800"></div>
+        <figcaption><span class="no">Полка 08 · 29.11 — День матери</span><h3>Для мамы</h3><q>Футболки с персональными фото и дизайнерскими буквами</q><button class="want" data-p='{"p":"tee","m":"print","t":"Mom mom mom","ph":"own"}'>Хочу такую</button></figcaption></figure>
+      <figure class="post w3 m6" style="--r:-1.2deg"><div class="ph"><img src="img/p4.jpg" srcset="img/p4-m.jpg 600w, img/p4.jpg 1350w" sizes="(min-width:700px) 36vw, 52vw" alt="Мятное худи с вышитой лисой и надписями «Иди ко мне», «Главное фыр фыр»" decoding="async" width="1350" height="1800"></div>
+        <figcaption><span class="no">Полка 09</span><h3>Худи с лисой</h3><q>Какая лисичка сегодня ты?</q><button class="want" data-p='{"p":"hood","m":"emb","t":"Иди ко мне","c":2}'>Хочу такое</button></figcaption></figure>
+
+      <div class="corp pre-able" style="--r:-.6deg">
+        <div><p class="kicker" style="color:var(--m)">Полка 10</p><h3 class="disp">Корпоративный мерч</h3></div>
+        <div style="display:grid;gap:16px"><p>Печать и вышивка ваших идей — для команды, события или своего бренда. Кепки, футболки, худи, размеры до 5XL и более 20 расцветок.</p><button class="btn" id="corpBtn">Обсудить мерч в Telegram</button></div>
+      </div>
+    </div>
+    <p class="sale disp">Каждая вторая кепка <em>за пол стоимости</em></p>
+  </div>
+</section>
+
+<section class="how" id="kak" aria-labelledby="h-t">
+  <div class="wrap">
+    <div class="sec-h"><div><p class="kicker" style="color:var(--m)">Как это работает</p><h2 id="h-t" class="disp">Четыре стежка до заказа</h2></div><p style="color:#d8d1c3">Без форм и регистраций: заказ остаётся в переписке, как привыкли, — просто начинается с готового текста.</p></div>
+    <ol class="steps">
+      <li class="step"><span class="n" aria-hidden="true">01</span><div><h3>Собери надпись</h3><p>Кепка, футболка или худи; вышивка, печать или роспись. Своя фраза или любая с полки подборок.</p></div></li>
+      <li class="step"><span class="n" aria-hidden="true">02</span><div><h3>Отправь текст</h3><p>Кнопка скопирует заказ и откроет <a href="https://t.me/banana_kruz_zakaz" target="_blank" rel="noopener">Telegram для заказов</a>. Фото питомца, ретрофото или мем — туда же.</p></div></li>
+      <li class="step"><span class="n" aria-hidden="true">03</span><div><h3>Выбери цвет</h3><p>Пришлём все варианты расцветок — их больше двадцати. Размеры футболок и худи до 5XL.</p></div></li>
+      <li class="step"><span class="n" aria-hidden="true">04</span><div><h3>Получи</h3><p>Отправка в любую точку мира: Питер и мир.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="people" id="lyudi" aria-labelledby="p-t">
+  <div class="wrap">
+    <div class="ppl-ph"><img src="img/p11.jpg" alt="Пара со спины в чёрных худи с надписями Mr. Gagarin и Mrs. Gagarin" width="610" height="1084"><span class="lbl">«Мне нравится твоя фамилия»</span></div>
+    <div class="ppl">
+      <p class="kicker">Рубрика из профиля</p>
+      <h2 id="p-t" class="disp">Наши люди</h2>
+      <p class="big">Парные худи с фамилией, кепка с фразой, смысл которой понятен только вам двоим. Подарок на свадьбу, годовщину или просто так.</p>
+      <div class="stats">
+        <div class="stat"><b><span data-count="52.6">52,6</span> тыс.</b><span>подписчиков в Instagram</span></div>
+        <div class="stat s2"><b data-count="1923">1&nbsp;923</b><span>публикации</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="end" id="kontakty" aria-labelledby="e-t">
+  <div class="wrap">
+    <p class="kicker" style="color:var(--m)">Санкт-Петербург · доставка Питер и мир</p>
+    <h2 id="e-t" class="disp">Пиши —<br><span>нанесём</span></h2>
+    <div class="links">
+      <a class="lnk main" href="https://t.me/banana_kruz_zakaz" target="_blank" rel="noopener"><div><b>Telegram для заказов</b><span>@banana_kruz_zakaz</span></div><i aria-hidden="true">→</i></a>
+      <a class="lnk" href="https://ig.me/m/banana_kruz" target="_blank" rel="noopener"><div><b>Direct</b><span>@banana_kruz · 52,6 тыс. подписчиков</span></div><i aria-hidden="true">→</i></a>
+      <a class="lnk" href="https://taplink.cc/banana_kruz" target="_blank" rel="noopener"><div><b>Taplink</b><span>taplink.cc/banana_kruz</span></div><i aria-hidden="true">→</i></a>
+      <a class="lnk" href="https://www.threads.com/@banana_kruz" target="_blank" rel="noopener"><div><b>Threads</b><span>@banana_kruz</span></div><i aria-hidden="true">→</i></a>
+    </div>
+    <div class="foot">
+      <p>banana_kruz — футболки, худи, кепки: роспись, печать и вышивка. Санкт-Петербург.</p>
+      <p>Демо-концепт независимого разработчика — не официальный сайт banana_kruz. Не согласован с владельцем, удаляется по первой просьбе. Фото — из Instagram @banana_kruz.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="dock"><a class="btn ghost" href="#make">Собрать</a><a class="btn" href="https://t.me/banana_kruz_zakaz" target="_blank" rel="noopener">Telegram</a></div>
+
+<script>
+(()=>{
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const NS='http://www.w3.org/2000/svg';
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const TG='https://t.me/banana_kruz_zakaz';
+const COLORS=[
+  {b:'#2C2B29',d:'#1f1e1d',name:'варёный чёрный',th:'#F1E9D8',th2:'#6d675c',wash:1},
+  {b:'#7B2E3A',d:'#5e1f2a',name:'бордо',th:'#F6EBDD',th2:'#7a5a50',wash:1},
+  {b:'#3ED3C3',d:'#2bb3a5',name:'мятный',th:'#2C2B29',th2:'#bfeee8',wash:0},
+  {b:'#F3EEE4',d:'#dcd4c4',name:'молочный',th:'#2C2B29',th2:'#bdb5a5',wash:0}];
+const S={p:'cap',m:'emb',c:0,ph:'none',size:'M',pair:false};
+const NAMES={cap:['кепку','кепки'],tee:['футболку','футболки'],hood:['худи','худи']};
+const METH={emb:'вышивка',print:'печать',paint:'роспись'};
+const tx=$('#tx'),svg=$('#pv'),G=$('#garment'),A=$('#art'),PH=$('#ph');
+
+function el(t,a,p){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e}
+
+const SH={
+  cap:{zone:{cx:210,cy:150,w:196,h:78},draw(c){
+    const g=document.createDocumentFragment();
+    const crown='M84 214C76 128 126 62 210 58C294 62 344 128 336 214Z';
+    const brim='M52 218C124 192 296 192 368 218C378 242 360 266 330 264C262 244 158 244 90 264C60 266 42 242 52 218Z';
+    el('ellipse',{cx:210,cy:276,rx:150,ry:14,fill:'rgba(44,43,41,.16)'},g);
+    el('path',{d:crown,fill:c.b},g);
+    if(c.wash)el('path',{d:crown,fill:'#fff',filter:'url(#wash)',opacity:.55},g);
+    el('path',{d:'M150 74C130 120 122 168 126 212M270 74C290 120 298 168 294 212',fill:'none',stroke:c.d,'stroke-width':2.4},g);
+    el('path',{d:'M146 76C126 122 118 168 122 212M274 76C294 122 302 168 298 212',fill:'none',stroke:c.th2,'stroke-width':1,'stroke-dasharray':'3 2.4',opacity:.6},g);
+    el('path',{d:brim,fill:c.d},g);
+    if(c.wash)el('path',{d:brim,fill:'#fff',filter:'url(#wash)',opacity:.35},g);
+    for(const o of[0,9,18])el('path',{d:`M${70+o*.4} ${228+o*.55}C150 ${207+o*.6} 270 ${207+o*.6} ${350-o*.4} ${228+o*.55}`,fill:'none',stroke:c.th2,'stroke-width':1.1,'stroke-dasharray':'3.5 2.5',opacity:.75},g);
+    el('ellipse',{cx:210,cy:60,rx:15,ry:6,fill:c.d},g);
+    el('circle',{cx:168,cy:88,r:3.2,fill:c.d},g);el('circle',{cx:252,cy:88,r:3.2,fill:c.d},g);
+    return g}},
+  tee:{zone:{cx:210,cy:128,w:170,h:70},photo:{x:160,y:178,w:100,h:96},draw(c){
+    const g=document.createDocumentFragment();
+    const body='M150 22C172 44 248 44 270 22L352 50L408 124L356 158L332 132L332 318L88 318L88 132L64 158L12 124L68 50Z';
+    el('path',{d:body,fill:c.b},g);
+    if(c.wash)el('path',{d:body,fill:'#fff',filter:'url(#wash)',opacity:.5},g);
+    el('path',{d:'M150 22C172 50 248 50 270 22',fill:'none',stroke:c.d,'stroke-width':9},g);
+    el('path',{d:'M146 26C170 58 250 58 274 26',fill:'none',stroke:c.th2,'stroke-width':1,'stroke-dasharray':'3 2.4',opacity:.7},g);
+    el('path',{d:'M88 132L68 50M332 132L352 50',fill:'none',stroke:c.d,'stroke-width':2},g);
+    return g}},
+  hood:{zone:{cx:210,cy:140,w:160,h:62},photo:{x:168,y:184,w:84,h:52},draw(c){
+    const g=document.createDocumentFragment();
+    const body='M136 40C150 14 270 14 284 40L356 66L404 150L362 238L340 228L366 150L332 120L332 300L88 300L88 120L54 150L80 228L58 238L16 150L64 66Z';
+    el('path',{d:body,fill:c.b},g);
+    if(c.wash)el('path',{d:body,fill:'#fff',filter:'url(#wash)',opacity:.45},g);
+    el('path',{d:'M140 42C160 92 260 92 280 42C262 28 158 28 140 42Z',fill:c.d},g);
+    el('path',{d:'M196 80L192 122M224 80L228 122',fill:'none',stroke:c.th,'stroke-width':2.4,'stroke-linecap':'round'},g);
+    el('path',{d:'M140 244L280 244L300 300L120 300Z',fill:'none',stroke:c.d,'stroke-width':2.4},g);
+    el('path',{d:'M88 288L332 288',fill:'none',stroke:c.d,'stroke-width':6},g);
+    return g}}
+};
+
+function lines(t){
+  t=t.trim().replace(/\s+/g,' ');if(!t)return[];
+  const n=t.length<=12?1:t.length<=26?2:3;const words=t.split(' ');
+  if(n===1||words.length===1)return[t];
+  const target=t.length/n;const out=[];let cur='';
+  for(const w of words){
+    if(cur&&(cur.length+1+w.length)>target*1.15&&out.length<n-1){out.push(cur);cur=w}else cur=cur?cur+' '+w:w}
+  if(cur)out.push(cur);return out}
+
+let timer;
+function render(anim){
+  const c=COLORS[S.c],sh=SH[S.p];
+  svg.style.setProperty('--th',c.th);svg.style.setProperty('--th2',c.th2);
+  G.replaceChildren(sh.draw(c));
+  A.replaceChildren();PH.replaceChildren();
+  A.setAttribute('class',S.m);
+  const raw=tx.value;let L=lines(S.m==='paint'?raw:raw.toUpperCase());
+  const z={...sh.zone};
+  const photo=S.p!=='cap'&&S.ph!=='none';
+  if(photo&&S.ph==='retro'){
+    const yr=($('#yr').value||'').replace(/\D/g,'').slice(0,4)||'1997';
+    if(L.length){z.cy=sh.zone.cy-8;z.h=40;}
+    const yz={cy:L.length?z.cy+70:sh.zone.cy+40};
+    const y=el('text',{x:210,y:0,'text-anchor':'middle','font-size':100,'font-family':'Oswald,Impact,sans-serif','font-weight':700,fill:'url(#photo)',stroke:'var(--th)','stroke-width':1.4},PH);
+    y.textContent=yr;
+    const w=y.getComputedTextLength()||200;const fs=Math.min(100*150/w,L.length?84:120);
+    y.setAttribute('font-size',fs.toFixed(1));y.setAttribute('y',(yz.cy+fs*.36).toFixed(1));
+    if(L.length>2)L=[L.slice(0,Math.ceil(L.length/2)).join(' '),L.slice(Math.ceil(L.length/2)).join(' ')];
+  }else if(photo){
+    const p=sh.photo;
+    el('rect',{x:p.x,y:p.y,width:p.w,height:p.h,rx:6,fill:'url(#photo)',stroke:'var(--th)','stroke-width':1.6,'stroke-dasharray':'5 3'},PH);
+    const lb=el('text',{x:210,y:p.y+p.h/2+4,'text-anchor':'middle','font-size':11,'font-family':'Rubik,sans-serif','font-weight':600,fill:'var(--th)'},PH);
+    lb.textContent=S.ph==='pet'?'ФОТО ПИТОМЦА':'ВАШЕ ФОТО';
+  }
+  if(L.length){
+    const lh=1.04;const groups=[];
+    let fs=Math.min(z.h/(L.length*lh),S.p==='cap'?44:40);
+    const probe=[];
+    L.forEach(s=>{const t=el('text',{'font-size':40,class:'thread','text-anchor':'middle',x:z.cx,y:0},A);t.textContent=s;probe.push(t)});
+    probe.forEach(t=>{const w=t.getComputedTextLength();if(w)fs=Math.min(fs,40*z.w/w)});
+    A.replaceChildren();
+    const top=z.cy-(L.length*fs*lh)/2+fs*.82;
+    L.forEach((s,i)=>{
+      const y=(top+i*fs*lh).toFixed(1);
+      for(const cl of['t-fill','t-draw','t-st']){const t=el('text',{x:z.cx,y,'font-size':fs.toFixed(1),'text-anchor':'middle',class:'thread '+cl},A);t.textContent=s;
+        if(cl==='t-fill'&&S.m==='paint')t.style.transformOrigin='210px '+y+'px';}
+    });
+    if(S.m!=='print'){const nd=el('g',{class:'needle'},A);el('path',{d:`M210 ${z.cy-z.h/2-26}L210 ${z.cy-z.h/2+4}`,stroke:'#9b978e','stroke-width':2.2,'stroke-linecap':'round'},nd);el('circle',{cx:210,cy:z.cy-z.h/2+5,r:1.6,fill:c.th},nd)}
+  }
+  if(anim&&!RM){A.classList.remove('go');void A.getBBox();A.classList.add('go')}
+  $('#pvTag').textContent=({cap:'Кепка',tee:'Футболка',hood:'Худи'})[S.p]+' · '+METH[S.m];
+  $('#cnt').textContent=raw.length+'/40';
+  $('#pairRow').classList.toggle('hide',S.p!=='cap');
+  $('#photoRow').classList.toggle('hide',S.p==='cap');
+  $('#sizeRow').classList.toggle('hide',S.p==='cap');
+  $('#yearRow').classList.toggle('on',S.ph==='retro');
+  $('#msg').textContent=message();
+}
+function message(){
+  const t=tx.value.trim();const c=COLORS[S.c];
+  let s='Здравствуйте! Хочу '+(S.p==='cap'&&S.pair?'две парные кепки':NAMES[S.p][0])+', '+METH[S.m];
+  s+=t?': «'+t+'».':' — надпись придумаю вместе с вами.';
+  if(S.p!=='cap'){s+=' Размер '+S.size+'.';
+    if(S.ph==='pet')s+=' Добавить фото питомца — пришлю в ЛС.';
+    if(S.ph==='retro')s+=' С ретрофото и годом '+(($('#yr').value||'').replace(/\D/g,'')||'…')+' — фото пришлю в ЛС.';
+    if(S.ph==='own')s+=' Со своим фото — пришлю в ЛС.';}
+  s+=' Цвет на превью — '+c.name+'. Пришлите варианты расцветок';
+  return s}
+function anim(){clearTimeout(timer);timer=setTimeout(()=>render(true),260)}
+
+function seg(id,key){$$('#'+id+' button').forEach(b=>b.addEventListener('click',()=>{
+  S[key]=b.dataset.v||b.textContent;$$('#'+id+' button').forEach(x=>x.setAttribute('aria-pressed',x===b));render(true)}))}
+seg('prod','p');seg('meth','m');seg('photo','ph');seg('size','size');
+$$('.sw').forEach(b=>b.addEventListener('click',()=>{S.c=+b.dataset.c;$$('.sw').forEach(x=>x.setAttribute('aria-pressed',x===b));render(true)}));
+tx.addEventListener('input',()=>{render(false);anim()});
+$('#yr').addEventListener('input',()=>{render(false);anim()});
+$('#pair').addEventListener('change',e=>{S.pair=e.target.checked;render(false)});
+
+function setPressed(id,v){$$('#'+id+' button').forEach(x=>x.setAttribute('aria-pressed',(x.dataset.v||x.textContent)===v))}
+$$('.want').forEach(b=>b.addEventListener('click',()=>{
+  const d=JSON.parse(b.dataset.p);S.p=d.p;S.m=d.m;S.ph=d.ph||'none';S.pair=!!d.pair;S.c=d.c||0;
+  $('#pair').checked=S.pair;tx.value=d.t;setPressed('prod',S.p);setPressed('meth',S.m);setPressed('photo',S.ph);
+  $$('.sw').forEach(x=>x.setAttribute('aria-pressed',+x.dataset.c===S.c));
+  render(false);$('#make').scrollIntoView({behavior:RM?'auto':'smooth',block:'start'});
+  setTimeout(()=>{render(true);if(!d.t)tx.focus({preventScroll:true})},RM?0:600);
+}));
+
+function copy(text){
+  try{navigator.clipboard.writeText(text).catch(()=>fb(text))}catch(e){fb(text)}
+  function fb(t){const a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}a.remove()}
+}
+function sendTo(url,text){copy(text);$('#copied').textContent='Текст скопирован — вставьте его в чат.';window.open(url,'_blank','noopener')}
+$('#send').addEventListener('click',()=>sendTo(TG,message()));
+$('#dm').addEventListener('click',e=>{e.preventDefault();sendTo('https://ig.me/m/banana_kruz',message())});
+$('#corpBtn').addEventListener('click',()=>{copy('Здравствуйте! Нужен корпоративный мерч: кепки / футболки / худи с нашим логотипом. Пришлите варианты расцветок');window.open(TG,'_blank','noopener')});
+
+const start=()=>render(true);
+document.fonts&&document.fonts.ready?document.fonts.ready.then(start):start();
+render(false);
+
+/* posters slap onto the wall */
+const posts=$$('.post,.corp');
+if(!RM&&'IntersectionObserver'in window){
+  posts.forEach(p=>{if(p.getBoundingClientRect().top>innerHeight)p.classList.add('pre')});
+  let q=[],t=null;
+  const flush=()=>{const p=q.shift();if(p)p.classList.remove('pre');t=q.length?setTimeout(flush,80):null};
+  const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){io.unobserve(e.target);q.push(e.target)}});if(!t)flush()},{rootMargin:'0px 0px -8% 0px',threshold:.12});
+  posts.forEach(p=>io.observe(p));
+  const chk=()=>posts.forEach(p=>{if(p.classList.contains("pre")&&!q.includes(p)&&p.getBoundingClientRect().top<innerHeight*.9){io.unobserve(p);q.push(p);if(!t)flush()}});
+  addEventListener("scroll",chk,{passive:true});
+  setTimeout(()=>posts.forEach(p=>p.classList.remove("pre")),9000);
+}
+
+/* counters */
+const cs=$$('[data-count]');
+if(!RM&&'IntersectionObserver'in window){
+  const io2=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io2.unobserve(e.target);
+    const el=e.target,to=+el.dataset.count,dec=to%1?1:0,t0=performance.now();
+    const f=n=>{const k=Math.min(1,(n-t0)/1400),v=to*(1-Math.pow(1-k,3));
+      el.textContent=dec?v.toFixed(1).replace('.',','):Math.round(v).toLocaleString('ru-RU');if(k<1)requestAnimationFrame(f)};requestAnimationFrame(f)}),{threshold:.5});
+  cs.forEach(c=>io2.observe(c));
+}
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

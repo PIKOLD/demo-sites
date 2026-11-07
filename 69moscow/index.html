@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>69 MOSCOW — шубы и oversize-косухи собственного производства · Москва, Санкт-Петербург</title><meta property="og:type" content="website"><meta property="og:title" content="69 MOSCOW — шубы и oversize-косухи собственного производства · Москва, Санкт-Петербург"><meta property="og:description" content="69 MOSCOW — магазин одежды собственного производства. Oversize-косухи из эко-кожи и шубы. Шоурумы в Москве и Санкт-Петербурге, ПН–ВС с 15:00 по записи."><meta property="og:image" content="https://pikold.github.io/demo-sites/69moscow/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="69 MOSCOW — магазин одежды собственного производства. Oversize-косухи из эко-кожи и шубы. Шоурумы в Москве и Санкт-Петербурге, ПН–ВС с 15:00 по записи.">
+<link rel="stylesheet" href="../_fonts/gloock.css">
+<link rel="stylesheet" href="../_fonts/familjen-grotesk.css">
+<style>
+:root{
+  --graphite:#5F6772; --bluegrey:#9AA6B6; --rose:#EBC9C6; --bordo:#4E1022; --choc:#4A3428; --milk:#F1E9DC; --ink:#2A2224;
+  --cur:#EBC9C6; --curfg:#2A2224;
+  --serif:'Gloock', Georgia, 'Times New Roman', serif;
+  --sans:'Familjen Grotesk', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);font-size:17px;line-height:1.5;color:var(--ink);background:var(--cur);transition:background-color 1.1s var(--ease);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* demo plaque */
+.demo{background:var(--ink);color:var(--milk);font-size:12px;line-height:1.35;text-align:center;padding:7px 16px;letter-spacing:.01em}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:var(--cur);color:var(--curfg);transition:background-color 1.1s var(--ease),color .6s;border-bottom:1px solid color-mix(in srgb,var(--curfg) 18%,transparent)}
+.top .in{display:flex;align-items:center;gap:28px;padding:10px clamp(16px,3vw,40px);max-width:1600px;margin:0 auto}
+.logo{font-family:var(--serif);font-size:26px;text-decoration:none;letter-spacing:.02em;line-height:1;display:flex;align-items:baseline;gap:6px}
+.logo small{font-family:var(--sans);font-size:11px;letter-spacing:.32em;font-weight:600}
+.nav{display:flex;gap:22px;margin-left:auto;font-size:14px}
+.nav a{text-decoration:none;padding:12px 0;opacity:.85}
+.nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:5px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;font:600 15px/1 var(--sans);text-decoration:none;border:1.5px solid currentColor;cursor:pointer;transition:transform .3s var(--ease),background-color .3s,color .3s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn.fill{background:var(--bordo);color:var(--milk);border-color:var(--bordo)}
+.btn.fill:hover{background:var(--ink);border-color:var(--ink)}
+.btn.ghost{background:transparent}
+.btn svg{width:18px;height:18px;flex:none}
+.top .btn{min-height:44px;padding:0 18px;font-size:14px}
+
+/* hero */
+.hero{position:relative;background:var(--rose);color:var(--ink);min-height:calc(100svh - 96px);display:flex;flex-direction:column;overflow:hidden;isolation:isolate}
+.hero .kicker{display:flex;justify-content:space-between;gap:24px;padding:22px clamp(16px,3vw,40px) 0;font-size:13px;letter-spacing:.14em;text-transform:uppercase;position:relative;z-index:3}
+.hero .kicker p:last-child{text-align:right}
+.hero h1{position:relative;z-index:2;flex:1;display:flex;align-items:flex-end;justify-content:center;font-weight:400;margin-top:auto}
+.hero .num{font-family:var(--serif);font-size:min(40vw,74svh);line-height:.78;color:var(--bordo);letter-spacing:.06em;display:block;transform:translateY(.02em)}
+.hero .num span{display:inline-block}
+.hero .num .g{width:.22em;display:inline-block}
+.hero .moscow{position:absolute;left:clamp(16px,3vw,40px);top:18%;font:600 clamp(13px,1.2vw,17px)/1 var(--sans);letter-spacing:.6em;color:var(--bordo);writing-mode:vertical-rl;transform:rotate(180deg)}
+.poppy{position:absolute;left:50%;bottom:0;height:min(96%,100svh);width:auto;aspect-ratio:736/976;transform:translateX(-36%);mix-blend-mode:multiply;z-index:1;pointer-events:none}
+.poppy img{width:100%;height:100%;object-fit:cover}
+.js .poppy{clip-path:inset(100% 0 0 0);animation:grow 2.4s .2s var(--ease) forwards}
+@keyframes grow{to{clip-path:inset(0 0 0 0)}}
+.hero .base{position:relative;z-index:3;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:24px;padding:20px clamp(16px,3vw,40px) 26px;border-top:1px solid rgba(42,34,36,.25);background:var(--rose)}
+.hero .base p{font-size:clamp(15px,1.3vw,19px);letter-spacing:.02em}
+.hero .base .dot{color:var(--bordo);padding:0 .4em}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+.hero .tag{position:absolute;right:clamp(16px,3vw,40px);top:24%;z-index:3;max-width:290px;background:var(--milk);padding:16px 18px 14px;font-size:14px;line-height:1.45;box-shadow:0 1px 0 rgba(0,0,0,.06);transform:rotate(1.5deg)}
+.tag b{display:block;font:400 22px/1.1 var(--serif);margin-bottom:6px}
+.tag .ln{display:flex;justify-content:space-between;border-top:1px solid rgba(42,34,36,.3);padding-top:6px;margin-top:8px;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+
+/* intro line */
+.intro{background:var(--ink);color:var(--milk);padding:clamp(56px,8vw,110px) clamp(16px,3vw,40px)}
+.intro .w{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(28px,5vw,80px);align-items:end}
+.intro h2{font:400 clamp(32px,4.4vw,64px)/1.06 var(--serif)}
+.intro h2 em{font-style:normal;color:var(--rose)}
+.stats{display:grid;gap:18px}
+.stats div{display:flex;align-items:baseline;gap:14px;border-top:1px solid rgba(241,233,220,.25);padding-top:12px}
+.stats b{font:400 clamp(30px,3vw,44px)/1 var(--serif);min-width:4.2ch}
+.stats span{font-size:14px;opacity:.8}
+
+/* pairs */
+.pair{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:min(100svh,980px);background:var(--bg);color:var(--fg);overflow:hidden}
+.coat{position:relative;background:var(--frame,var(--bg));overflow:hidden;min-height:560px}
+.coat img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;mix-blend-mode:multiply}
+.js .coat img{transform:scale(.94) translateY(2%);transition:transform 1.6s var(--ease)}
+.js .pair.in .coat img,.js .kos.in .coat img{transform:none}
+.coat .no{position:absolute;left:20px;top:18px;font:400 15px/1 var(--serif);color:var(--ink);opacity:.75;z-index:2}
+.side{position:relative;display:flex;flex-direction:column;padding:clamp(32px,4vw,64px) clamp(16px,4vw,64px) 0}
+.side .eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;opacity:.8}
+.side h2{font:400 clamp(40px,5.6vw,92px)/.98 var(--serif);margin:14px 0 18px}
+.side .lead{max-width:30em;font-size:clamp(16px,1.25vw,19px);opacity:.92}
+.sheet{position:relative;margin-top:auto;align-self:flex-start;width:min(78%,460px);background:var(--milk);padding:22px 22px 0;margin-left:clamp(0px,4vw,60px)}
+.sheet::before{content:"";position:absolute;left:22px;right:22px;top:12px;height:1px;background:rgba(42,34,36,.18)}
+.stem{height:clamp(380px,58svh,620px);overflow:hidden}
+.stem img{width:100%;height:100%;object-fit:cover;object-position:center top;mix-blend-mode:multiply;clip-path:inset(var(--hide,0%) 0 0 0)}
+.label{position:absolute;right:-18px;bottom:46px;width:min(260px,74%);background:var(--milk);color:var(--ink);border:1px solid rgba(42,34,36,.55);padding:12px 14px;font-size:13px;line-height:1.4;box-shadow:6px 8px 0 rgba(0,0,0,.08);transform:rotate(-1.5deg)}
+.label dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:3px 10px}
+.label dt{font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.65;padding-top:3px}
+.label dd{font-weight:600}
+.label q{display:block;border-top:1px solid rgba(42,34,36,.3);margin-top:9px;padding-top:8px;font:400 15px/1.3 var(--serif);quotes:"«" "»"}
+.also{display:flex;align-items:center;gap:14px;margin:22px 0 0;font-size:14px}
+.also .sw{width:84px;height:104px;flex:none;background:var(--bluegrey);overflow:hidden}
+.also .sw img{width:100%;height:100%;object-fit:cover;object-position:center 15%;mix-blend-mode:multiply}
+
+.p-graphite{--bg:var(--graphite);--fg:var(--milk);--frame:var(--bluegrey)}
+.p-choc{--bg:var(--choc);--fg:var(--milk);--frame:var(--milk)}
+.p-rose{--bg:var(--rose);--fg:var(--ink);--frame:var(--rose)}
+.p-rose .sheet{margin-left:auto;margin-right:clamp(0px,4vw,60px)}
+.p-rose .label{right:auto;left:-18px;transform:rotate(1.5deg)}
+.p-rev .coat{order:2}
+
+/* kosuha */
+.kos{--bg:var(--bordo);--fg:var(--milk);position:relative;background:var(--bordo);color:var(--milk);display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);overflow:hidden}
+.kos .coat{background:var(--ink);min-height:640px}
+.kos .coat img{mix-blend-mode:normal;object-position:center 30%}
+.kos .txt{padding:clamp(40px,6vw,96px) clamp(16px,4vw,72px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.62fr);gap:clamp(20px,3vw,48px);align-items:end}
+.kos .yr{font:400 clamp(90px,15vw,240px)/.8 var(--serif);color:var(--rose);letter-spacing:-.01em}
+.kos h2{font:400 clamp(38px,5vw,80px)/1 var(--serif);margin:22px 0 22px}
+.kos p{max-width:32em;font-size:clamp(16px,1.25vw,19px);opacity:.92}
+.kos p + p{margin-top:14px}
+.kos .ov{font-family:var(--sans);font-weight:700;letter-spacing:.14em}
+.kos .sheet{width:100%;margin:0;background:var(--rose);padding:18px 18px 0}
+.kos .sheet::before{display:none}
+.kos .stem{height:clamp(320px,46svh,520px)}
+.kos .cap{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);padding:10px 0 14px}
+
+/* life */
+.life{background:var(--graphite);color:var(--milk);padding:clamp(56px,7vw,110px) clamp(16px,3vw,40px)}
+.life .grid{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) minmax(0,.9fr);gap:clamp(12px,2vw,28px);align-items:end}
+.life figure{position:relative;overflow:hidden}
+.life figure img{width:100%;aspect-ratio:9/16;object-fit:cover;transition:transform 1.2s var(--ease)}
+.life figure:hover img{transform:scale(1.03)}
+.life figcaption{font-size:13px;letter-spacing:.06em;padding-top:10px;opacity:.8}
+.life .f2{margin-bottom:clamp(40px,8vw,120px)}
+.life .note{background:var(--milk);color:var(--ink);padding:22px 22px 0;display:flex;flex-direction:column}
+.life .note b{font:400 clamp(28px,2.6vw,40px)/1.05 var(--serif);display:block}
+.life .note span{font-size:14px;opacity:.75;margin-top:8px}
+.life .note .stem{height:clamp(260px,34vw,460px);margin-top:16px}
+.life h2{max-width:1400px;margin:0 auto clamp(28px,4vw,52px);font:400 clamp(34px,4.4vw,64px)/1 var(--serif)}
+
+/* atelier constructor */
+.atl{background:var(--bluegrey);color:var(--ink);padding:clamp(56px,7vw,110px) clamp(16px,3vw,40px)}
+.atl .w{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:start}
+.atl h2{font:400 clamp(40px,5.4vw,84px)/.98 var(--serif);margin-bottom:16px}
+.atl .lead{max-width:34em;font-size:clamp(16px,1.25vw,19px);margin-bottom:34px}
+.step{border-top:1px solid rgba(42,34,36,.35);padding:20px 0 24px}
+.step legend{display:flex;gap:14px;align-items:baseline;font-weight:600;font-size:15px;letter-spacing:.04em;margin-bottom:14px;float:left;width:100%}
+.step legend i{font:400 26px/1 var(--serif);font-style:normal;color:var(--bordo);min-width:1.4em}
+.step fieldset{border:0;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:10px;clear:both}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.chip span{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 18px 0 12px;border:1.5px solid rgba(42,34,36,.55);border-radius:999px;font-size:15px;background:transparent;transition:background-color .25s,color .25s,border-color .25s}
+.chip.plain span{padding:0 18px}
+.chip input:checked + span{background:var(--ink);color:var(--milk);border-color:var(--ink)}
+.chip input:focus-visible + span{outline:2px solid var(--ink);outline-offset:3px}
+.chip .fl{width:26px;height:26px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 1.5px rgba(241,233,220,.6)}
+.custom{display:none;margin-top:12px}
+.custom.on{display:block}
+.custom input,.chips + .custom input{width:100%;min-height:48px;border:1.5px solid rgba(42,34,36,.55);border-radius:12px;background:rgba(241,233,220,.55);padding:0 14px;font:16px var(--sans);color:var(--ink)}
+.room span{flex-direction:column;align-items:flex-start;justify-content:center;gap:2px;border-radius:16px;padding:10px 18px;min-height:64px}
+.room small{font-size:12px;opacity:.75}
+.ticket{position:sticky;top:90px;background:var(--milk);padding:26px 24px 24px;border:1px solid rgba(42,34,36,.5);box-shadow:10px 12px 0 rgba(42,34,36,.12)}
+.ticket .h{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(42,34,36,.35);padding-bottom:10px;margin-bottom:14px;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+.ticket .h b{font:400 24px/1 var(--serif);letter-spacing:0;text-transform:none}
+.ticket output{display:block;white-space:pre-line;font-size:16px;line-height:1.55;min-height:9em}
+.ticket .btn{width:100%;margin-top:20px}
+.ticket .sub{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:14px;font-size:14px}
+.ticket .sub a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:4px}
+.ticket .fine{font-size:12px;opacity:.7;margin-top:6px}
+
+/* addresses */
+.rooms{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.city{padding:clamp(48px,6vw,96px) clamp(16px,4vw,64px);display:flex;flex-direction:column;gap:18px;min-height:520px}
+.city.msk{background:var(--bordo);color:var(--milk)}
+.city.spb{background:var(--rose);color:var(--ink)}
+.city .eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;opacity:.8}
+.city h3{font:400 clamp(44px,6vw,96px)/.95 var(--serif)}
+.city address{font-style:normal;font-size:clamp(18px,1.6vw,24px);line-height:1.35;max-width:22em}
+.city .hrs{display:flex;gap:12px;align-items:baseline;border-top:1px solid currentColor;padding-top:14px;margin-top:auto;font-size:15px}
+.city .hrs b{font:400 34px/1 var(--serif)}
+.city .row{display:flex;gap:12px;flex-wrap:wrap}
+.city.msk .btn.fill{background:var(--milk);color:var(--bordo);border-color:var(--milk)}
+
+footer{background:var(--ink);color:var(--milk);padding:48px clamp(16px,3vw,40px) 96px}
+footer .w{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) minmax(0,1fr);gap:28px}
+footer .big{font:400 clamp(56px,8vw,120px)/.85 var(--serif);color:var(--rose)}
+footer p,footer a{font-size:14px;line-height:1.7}
+footer a{display:inline-flex;min-height:32px;align-items:center}
+footer .disc{grid-column:1/-1;border-top:1px solid rgba(241,233,220,.2);padding-top:18px;font-size:12px;opacity:.65}
+
+.fab{display:none}
+
+@media (max-width:1100px){
+  .nav{display:none}
+  .top .btn{margin-left:auto}
+  .kos .txt{grid-template-columns:minmax(0,1fr)}
+  .kos .sheet{max-width:360px}
+}
+@media (max-width:860px){
+  body{font-size:16px}
+  .hero{min-height:auto}
+  .hero .kicker{font-size:11px;letter-spacing:.1em;padding-top:16px}
+  .hero h1{min-height:min(118vw,600px)}
+  .hero .num{font-size:63vw;letter-spacing:.02em}
+  .hero .num .g{width:.16em}
+  .poppy{height:96%;transform:translateX(-40%)}
+  .hero .moscow{top:auto;bottom:calc(63vw*.78 + 18px);letter-spacing:.42em;font-size:11px}
+  .hero .tag,.hero .moscow,.dk{display:none}
+  .hero .tag b{font-size:17px}
+  .hero .tag p{display:none}
+  .hero .base{grid-template-columns:minmax(0,1fr);gap:16px}
+  .hero .cta{justify-content:stretch}
+  .hero .cta .btn{flex:1 1 100%}
+  .intro .w{grid-template-columns:minmax(0,1fr)}
+  .pair{grid-template-columns:minmax(0,1fr);min-height:0}
+  .pair .coat{order:1;min-height:0;aspect-ratio:4/5}
+  .pair .side{order:2;padding-top:32px}
+  .p-rev .coat{order:1}
+  .sheet,.p-rose .sheet{width:calc(100% - 40px);margin:28px 0 0 0}
+  .p-rose .sheet{margin-left:40px}
+  .stem{height:min(110vw,520px)}
+  .label{right:-28px;width:68%}
+  .p-rose .label{left:-28px}
+  .kos{grid-template-columns:minmax(0,1fr)}
+  .kos .coat{min-height:0;aspect-ratio:4/5}
+  .life .grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .life .f2{margin-bottom:0}
+  .life .note{grid-column:1/-1}
+  .life .note .stem{height:90vw;max-height:520px}
+  .atl .w{grid-template-columns:minmax(0,1fr)}
+  .ticket{position:relative;top:0}
+  .rooms{grid-template-columns:minmax(0,1fr)}
+  .city{min-height:0}
+  .city .hrs{margin-top:10px}
+  footer .w{grid-template-columns:minmax(0,1fr)}
+  .fab{display:flex;position:fixed;left:16px;right:16px;bottom:14px;z-index:40;box-shadow:0 10px 30px rgba(42,34,36,.35);transition:transform .4s var(--ease),opacity .4s}
+  .fab.hide{transform:translateY(140%);opacity:0}
+}
+@media (max-width:400px){
+  .top .btn{padding:0 14px}
+  .logo small{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .poppy{clip-path:none}
+  .js .coat img{transform:none}
+  .stem img{clip-path:none!important}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+<div class="demo">Демо-концепт независимого разработчика — не официальный сайт 69 MOSCOW. Не согласован с владельцем, удаляется по первой просьбе.</div>
+
+<header class="top">
+  <div class="in">
+    <a class="logo" href="#top" aria-label="69 MOSCOW — наверх">69 <small>MOSCOW</small></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#things">Вещи</a>
+      <a href="#kosuha">Косуха</a>
+      <a href="#atelier">Своя вещь</a>
+      <a href="#rooms">Шоурумы</a>
+    </nav>
+    <a class="btn fill" id="topWa" href="https://wa.me/79778100130?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%BA%D1%83%20%D0%B2%2069%20MOSCOW.">Записаться</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" data-tone="#EBC9C6" data-fg="#2A2224" aria-label="69 MOSCOW">
+  <div class="kicker"><p>Магазин одежды</p><p><span class="dk">Собственное производство · </span>с 2019</p></div>
+  <div class="poppy" aria-hidden="true"><img src="img/p10.jpg" alt="" fetchpriority="high"></div>
+  <span class="moscow" aria-hidden="true">MOSCOW</span>
+  <h1><span class="sr">69 MOSCOW — московская марка одежды собственного производства</span><span class="num" aria-hidden="true"><span>6</span><span class="g"></span><span>9</span></span></h1>
+  <aside class="tag" aria-label="Этикетка">
+    <b>Стиль с характером</b>
+    <p>Oversize-косухи из эко-кожи и шубы, которые шьют на своём производстве.</p>
+    <div class="ln"><span>№ 69</span><span>мак</span></div>
+  </aside>
+  <div class="base">
+    <p>Москва<span class="dot">·</span>Санкт-Петербург<span class="dot">·</span>собственное производство</p>
+    <div class="cta">
+      <a class="btn fill wa" data-msg="Здравствуйте! Хочу записаться на примерку в 69 MOSCOW." href="https://wa.me/79778100130">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+        Записаться на примерку</a>
+      <a class="btn ghost" href="#atelier">Собрать свою вещь</a>
+    </div>
+  </div>
+</section>
+
+<section class="intro" data-tone="#2A2224" data-fg="#F1E9DC">
+  <div class="w">
+    <h2>Вещь, вокруг которой хочется <em>собрать весь гардероб</em>. Каждая — в паре со своим цветком.</h2>
+    <div class="stats">
+      <div><b>2019</b><span>год, когда появилась марка</span></div>
+      <div><b>58,2K</b><span>подписчиков в Instagram @69moscow</span></div>
+      <div><b>2</b><span>шоурума: Москва и Санкт-Петербург</span></div>
+    </div>
+  </div>
+</section>
+
+<div id="things">
+<section class="pair p-graphite" data-tone="#5F6772" data-fg="#F1E9DC" aria-labelledby="h-graphite">
+  <div class="coat"><span class="no">№ 01</span><img src="img/p7.jpg" srcset="img/p7-m.jpg 720w, img/p7.jpg 1440w" sizes="(max-width:860px) 100vw, 50vw" alt="Объёмная шуба холодного серого оттенка с воротником, 69 MOSCOW"></div>
+  <div class="side">
+    <p class="eyebrow">Шуба · пара: кала</p>
+    <h2 id="h-graphite">Холодный графит</h2>
+    <p class="lead">Объёмный силуэт, выразительный воротник и благородный серо-голубой оттенок. Носим с денимом и массивной обувью — или на контрасте, с каблуками и лаконичными аксессуарами.</p>
+    <div class="also"><div class="sw"><img src="img/p4-m.jpg" alt="Шуба серо-голубого оттенка, 69 MOSCOW"></div><span>Ещё в этом тоне —<br><b>серо-голубой</b></span></div>
+    <div class="sheet">
+      <div class="stem grow"><img src="img/p12.jpg" alt="Кала на длинном изогнутом стебле — пара к графитовой шубе"></div>
+      <div class="label"><dl><dt>Вещь</dt><dd>шуба</dd><dt>Оттенок</dt><dd>холодный графит</dd><dt>Цветок</dt><dd>кала</dd></dl><q>Та самая вещь, вокруг которой хочется собрать весь гардероб</q></div>
+    </div>
+  </div>
+</section>
+
+<section class="pair p-choc p-rev" data-tone="#4A3428" data-fg="#F1E9DC" aria-labelledby="h-choc">
+  <div class="coat"><span class="no">№ 02</span><img src="img/p9.jpg" srcset="img/p9-m.jpg 720w, img/p9.jpg 1474w" sizes="(max-width:860px) 100vw, 50vw" alt="Шубка с принтом в молочном, шоколадном и коричневом, 69 MOSCOW"></div>
+  <div class="side">
+    <p class="eyebrow">Шубка с принтом · пара: белый мак</p>
+    <h2 id="h-choc">Молочный, шоколадный, коричневый</h2>
+    <p class="lead">Выразительный принт в природных оттенках, мягкий фактурный мех. Носим с лаконичными брюками, денимом или любимыми базовыми вещами.</p>
+    <div class="sheet">
+      <div class="stem grow"><img src="img/p8.jpg" alt="Белый мак и бутоны на тонких стеблях — пара к шубке с принтом"></div>
+      <div class="label"><dl><dt>Вещь</dt><dd>шубка</dd><dt>Оттенок</dt><dd>молоко · шоколад</dd><dt>Цветок</dt><dd>белый мак</dd></dl><q>Превращает даже самый простой образ в стильное заявление</q></div>
+    </div>
+  </div>
+</section>
+
+<section class="pair p-rose" data-tone="#EBC9C6" data-fg="#2A2224" aria-labelledby="h-rose">
+  <div class="coat"><span class="no">№ 03</span><img src="img/p13.jpg" srcset="img/p13-m.jpg 720w, img/p13.jpg 1620w" sizes="(max-width:860px) 100vw, 50vw" alt="Розовая объёмная шубка из длинного меха, 69 MOSCOW"></div>
+  <div class="side">
+    <p class="eyebrow">Шубка · пара: антуриум</p>
+    <h2 id="h-rose">Тепло без компромиссов</h2>
+    <p class="lead">Для тех, кто не готов выбирать между теплом и эстетикой. Выразительная фактура и лаконичный силуэт — акцент и в повседневных, и в самых смелых образах.</p>
+    <div class="sheet">
+      <div class="stem grow"><img src="img/p14.jpg" alt="Два розовых антуриума на стеблях — пара к розовой шубке"></div>
+      <div class="label"><dl><dt>Вещь</dt><dd>шубка</dd><dt>Оттенок</dt><dd>розовый</dd><dt>Цветок</dt><dd>антуриум</dd></dl><q>Встречайте холодный сезон в стиле 69Moscow</q></div>
+    </div>
+  </div>
+</section>
+</div>
+
+<section class="kos" id="kosuha" data-tone="#4E1022" data-fg="#F1E9DC" aria-labelledby="h-kos">
+  <div class="coat"><img src="img/p2.jpg" alt="Чёрная косуха из эко-кожи с меховыми манжетами и воротником, 69 MOSCOW"></div>
+  <div class="txt">
+    <div>
+      <div class="yr" aria-hidden="true">2019</div>
+      <h2 id="h-kos">Косуха — наша визитка</h2>
+      <p>69moscow — московская марка одежды, созданная в 2019 году. Основное направление — пошив <span class="ov">OVERSIZE</span> косух из эко-кожи: именно они стали визитной карточкой бренда.</p>
+      <p>Благодаря собственному производству здесь исполняют любое пожелание клиента: можно выбрать позицию из каталога или создать уникальное изделие — самые смелые сочетания цветов.</p>
+    </div>
+    <div class="sheet">
+      <div class="stem grow"><img src="img/p3.jpg" alt="Бордовый анемон на тёмном стебле — пара к чёрной косухе"></div>
+      <p class="cap">Чёрная косуха × анемон</p>
+    </div>
+  </div>
+</section>
+
+<section class="life" data-tone="#5F6772" data-fg="#F1E9DC" aria-labelledby="h-life">
+  <h2 id="h-life">В жизни, а не на вешалке</h2>
+  <div class="grid">
+    <figure><img src="img/p11.jpg" alt="Девушка в куртке 69 MOSCOW с меховой отделкой и высоких сапогах"><figcaption>Куртка с меховыми манжетами</figcaption></figure>
+    <figure class="f2"><img src="img/p6.jpg" alt="Девушка в чёрном образе в светлом интерьере"><figcaption>Образ в чёрном</figcaption></figure>
+    <div class="note">
+      <b>69 MOSCOW — стиль с характером</b>
+      <span>Акцентные вещи для тех, кто хочет быть в центре внимания.</span>
+      <div class="stem grow"><img src="img/p1.jpg" alt="Жёлтая лилия на длинном стебле"></div>
+    </div>
+  </div>
+</section>
+
+<section class="atl" id="atelier" data-tone="#9AA6B6" data-fg="#2A2224" aria-labelledby="h-atl">
+  <div class="w">
+    <div>
+      <h2 id="h-atl">Своя вещь на производстве</h2>
+      <p class="lead">«Вы сможете не только выбрать позицию из каталога, но и создать уникальное изделие, опираясь на свои предпочтения». Соберите заявку за четыре шага — она уйдёт в WhatsApp 69 MOSCOW готовым сообщением.</p>
+      <form id="f" onsubmit="return false">
+        <div class="step"><fieldset><legend><i>1</i>Изделие</legend>
+          <div class="chips">
+            <label class="chip plain"><input type="radio" name="item" value="oversize-косуха из эко-кожи" checked><span>Oversize-косуха из эко-кожи</span></label>
+            <label class="chip plain"><input type="radio" name="item" value="шуба"><span>Шуба</span></label>
+          </div></fieldset></div>
+        <div class="step"><fieldset><legend><i>2</i>Оттенок</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="tone" value="холодный графит" checked><span><i class="fl" style="background:#5F6772"></i>Холодный графит</span></label>
+            <label class="chip"><input type="radio" name="tone" value="серо-голубой"><span><i class="fl" style="background:#9AA6B6"></i>Серо-голубой</span></label>
+            <label class="chip"><input type="radio" name="tone" value="холодный серый"><span><i class="fl" style="background:#B9B8B7"></i>Холодный серый</span></label>
+            <label class="chip"><input type="radio" name="tone" value="принт: молочный, шоколадный, коричневый"><span><i class="fl" style="background:conic-gradient(#F1E9DC 0 45%,#4A3428 0 75%,#7A5440 0)"></i>Молоко · шоколад</span></label>
+            <label class="chip"><input type="radio" name="tone" value="custom"><span><i class="fl" style="background:conic-gradient(#EBC9C6,#4E1022,#9AA6B6,#F1E9DC,#EBC9C6)"></i>Свой вариант</span></label>
+          </div>
+          <div class="custom" id="customWrap"><label class="sr" for="custom">Свой цвет или сочетание</label><input id="custom" type="text" maxlength="80" placeholder="Например: бордо с молочным воротником"></div>
+        </fieldset></div>
+        <div class="step"><fieldset><legend><i>3</i>Шоурум</legend>
+          <div class="chips">
+            <label class="chip room"><input type="radio" name="room" value="Москва, 1-й Волконский пер., 15" checked><span>Москва<small>1-й Волконский пер., 15</small></span></label>
+            <label class="chip room"><input type="radio" name="room" value="Санкт-Петербург, Измайловский бул., 1 к3, 3 этаж, офис 3155"><span>Санкт-Петербург<small>Измайловский бул., 1 к3, офис 3155</small></span></label>
+          </div></fieldset></div>
+        <div class="step"><fieldset><legend><i>4</i>День визита <small style="font-weight:400;opacity:.75">· с 15:00, по записи</small></legend>
+          <div class="chips" id="days"></div></fieldset></div>
+      </form>
+    </div>
+    <aside class="ticket" aria-live="polite">
+      <div class="h"><b>Заявка</b><span>69 MOSCOW · ателье</span></div>
+      <output id="out" for="f">Здравствуйте! Хочу записаться в шоурум 69 MOSCOW.</output>
+      <a class="btn fill" id="send" href="https://wa.me/79778100130" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+        Отправить в WhatsApp</a>
+      <div class="sub"><a href="tel:+79778100130">Позвонить: 8&nbsp;977&nbsp;810-01-30</a><a href="https://ig.me/m/69moscow" target="_blank" rel="noopener">Написать в Direct</a></div>
+      <p class="fine">Модель, мерки и детали обсуждаются с мастером при визите.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="rooms" id="rooms" data-tone="#4E1022" data-fg="#F1E9DC" aria-label="Шоурумы">
+  <div class="city msk">
+    <p class="eyebrow">Шоурум · Москва</p>
+    <h3>Москва</h3>
+    <address>1-й Волконский переулок, д. 15</address>
+    <div class="hrs"><b>15:00</b><span>ПН–ВС, по записи</span></div>
+    <div class="row">
+      <a class="btn fill wa" data-msg="Здравствуйте! Хочу записаться на примерку в шоурум 69 MOSCOW в Москве (1-й Волконский пер., 15)." href="https://wa.me/79778100130">Записаться</a>
+      <a class="btn ghost" href="https://yandex.ru/maps/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%201-%D0%B9%20%D0%92%D0%BE%D0%BB%D0%BA%D0%BE%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D1%83%D0%BB%D0%BE%D0%BA%2C%2015" target="_blank" rel="noopener">Маршрут</a>
+    </div>
+  </div>
+  <div class="city spb">
+    <p class="eyebrow">Шоурум · Санкт-Петербург</p>
+    <h3>Питер</h3>
+    <address>Измайловский бульвар, 1 корп. 3,<br>3 этаж, офис 3155</address>
+    <div class="hrs"><b>15:00</b><span>ПН–ВС, по записи</span></div>
+    <div class="row">
+      <a class="btn fill wa" data-msg="Здравствуйте! Хочу записаться на примерку в шоурум 69 MOSCOW в Санкт-Петербурге (Измайловский бул., 1 к3, офис 3155)." href="https://wa.me/79778100130">Записаться</a>
+      <a class="btn ghost" href="https://yandex.ru/maps/?text=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%98%D0%B7%D0%BC%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80%2C%201%20%D0%BA3" target="_blank" rel="noopener">Маршрут</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer data-tone="#2A2224">
+  <div class="w">
+    <div class="big">69<br>MOSCOW</div>
+    <div><p>Магазин одежды собственного производства.<br>Москва · Санкт-Петербург.<br>Принимаем ПН–ВС с 15:00 по записи.</p></div>
+    <div><a href="tel:+79778100130">8&nbsp;977&nbsp;810-01-30</a><br><a href="https://wa.me/79778100130" target="_blank" rel="noopener">WhatsApp</a><br><a href="https://instagram.com/69moscow" target="_blank" rel="noopener">Instagram @69moscow</a></div>
+    <p class="disc">Демо-концепт независимого разработчика — не официальный сайт 69 MOSCOW. Фото и тексты — из открытого профиля бренда. Удаляется по первой просьбе.</p>
+  </div>
+</footer>
+
+<a class="btn fill fab wa" id="fab" data-msg="Здравствуйте! Хочу записаться на примерку в 69 MOSCOW." href="https://wa.me/79778100130">Записаться на примерку</a>
+
+<script>
+(function(){
+  var WA='https://wa.me/79778100130?text=';
+  document.querySelectorAll('a.wa').forEach(function(a){a.href=WA+encodeURIComponent(a.dataset.msg);a.target='_blank';a.rel='noopener'});
+
+  /* constructor */
+  var days=document.getElementById('days'),wd=['вс','пн','вт','ср','чт','пт','сб'],mn=['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
+  var now=new Date();
+  for(var i=0;i<7;i++){var d=new Date(now.getFullYear(),now.getMonth(),now.getDate()+i);var txt=(i===0?'сегодня':i===1?'завтра':wd[d.getDay()])+', '+d.getDate()+' '+mn[d.getMonth()];
+    var l=document.createElement('label');l.className='chip plain';l.innerHTML='<input type="radio" name="day"'+(i===1?' checked':'')+'><span></span>';l.querySelector('input').value=txt;l.querySelector('span').textContent=txt;days.appendChild(l)}
+  var f=document.getElementById('f'),out=document.getElementById('out'),send=document.getElementById('send'),cw=document.getElementById('customWrap'),ci=document.getElementById('custom');
+  function v(n){var x=f.querySelector('input[name='+n+']:checked');return x?x.value:''}
+  function upd(){var tone=v('tone');cw.classList.toggle('on',tone==='custom');if(tone==='custom')tone=ci.value.trim()||'свой вариант, обсудим';
+    var room=v('room');var msg='Здравствуйте! Хочу записаться в шоурум 69 MOSCOW.\nИзделие: '+v('item')+'\nОттенок: '+tone+'\nШоурум: '+room+'\nДень: '+v('day')+', после 15:00\nПодскажите, пожалуйста, свободное время.';
+    out.textContent=msg;send.href=WA+encodeURIComponent(msg)}
+  f.addEventListener('change',upd);ci.addEventListener('input',upd);upd();
+
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var root=document.documentElement;
+  /* body colour follows the section pair */
+  var secs=document.querySelectorAll('[data-tone]');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');
+      if(e.intersectionRatio>0||innerHeight>2000){root.style.setProperty('--cur',e.target.dataset.tone);root.style.setProperty('--curfg',e.target.dataset.fg||'#F1E9DC')}}})},{rootMargin:'-45% 0px -45% 0px'});
+    secs.forEach(function(s){io.observe(s)});
+    var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.15});
+    secs.forEach(function(s){io2.observe(s)});
+  } else secs.forEach(function(s){s.classList.add('in')});
+
+  /* stems grow with scroll: clip-path inset from the bottom up */
+  var stems=[].slice.call(document.querySelectorAll('.grow'));
+  var ticking=false;
+  function frame(){ticking=false;var vh=innerHeight;
+    stems.forEach(function(s){var r=s.getBoundingClientRect();var p=(vh*1.02-r.top)/(r.height*.95+vh*.15);p=Math.max(s._p||0,Math.min(1,p));s._p=p;
+      s.firstElementChild.style.setProperty('--hide',(reduce?0:(1-p)*78).toFixed(1)+'%')})}
+  function req(){if(!ticking){ticking=true;requestAnimationFrame(frame);setTimeout(function(){if(ticking)frame()},150)}}
+  addEventListener('scroll',req,{passive:true});addEventListener('resize',req);frame();
+
+  /* mobile fab hides near the constructor */
+  var fab=document.getElementById('fab'),atl=document.getElementById('atelier'),rooms=document.getElementById('rooms');
+  addEventListener('scroll',function(){var a=atl.getBoundingClientRect(),b=rooms.getBoundingClientRect();fab.classList.toggle('hide',scrollY<300||(a.top<innerHeight&&b.bottom>0))},{passive:true});
+  fab.classList.add('hide');
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

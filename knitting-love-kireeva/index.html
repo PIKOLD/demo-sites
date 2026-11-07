@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Гузэль Киреева — вязание только руками, на заказ</title><meta property="og:type" content="website"><meta property="og:title" content="Гузэль Киреева — вязание только руками, на заказ"><meta property="og:description" content="knitting_love_kireeva: вязание ручной работы на заказ. Кашемир на шёлке, мохер с пайетками, лён с пайетками, меринос ручной окраски. Выберите пряжу и вещь — заказ в WhatsApp."><meta property="og:image" content="https://pikold.github.io/demo-sites/knitting-love-kireeva/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="knitting_love_kireeva: вязание ручной работы на заказ. Кашемир на шёлке, мохер с пайетками, лён с пайетками, меринос ручной окраски. Выберите пряжу и вещь — заказ в WhatsApp.">
+<link rel="stylesheet" href="../_fonts/fraunces.css">
+<link rel="stylesheet" href="../_fonts/plus-jakarta-sans.css">
+<style>
+:root{
+  --sapphire:#1D5DA6; --sapphire-d:#164A86; --teal:#2A8A8C; --red:#C21F2E; --champ:#D8C7B2; --champ-l:#EEE5D9;
+  --sequin:#E9E4F2; --black:#141218; --ink:#141218; --white:#FBF9F6;
+  --serif:'Fraunces', Georgia, 'Times New Roman', serif;
+  --sans:'Plus Jakarta Sans', 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+  --sp:0; /* scroll progress for sequin light */
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--ink);background:var(--champ-l);line-height:1.55;overflow-x:hidden;font-size:16px}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+:focus-visible{outline:2px solid var(--sequin);outline-offset:3px;box-shadow:0 0 0 5px var(--black)}
+.wrap{width:min(1240px,100% - 32px);margin-inline:auto}
+.serif{font-family:var(--serif);font-style:italic;font-weight:400}
+
+/* sequin light: gradient glint moves with scroll */
+.shine{
+  background-image:linear-gradient(105deg,var(--base,#fff) 0 38%, var(--sequin) 45%, #fff 48%, var(--glint,#b9c8f0) 51%, var(--base,#fff) 58% 100%);
+  background-size:320% 100%;
+  background-position:calc(var(--sp) * 1%) 0;
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.shine.ink{--base:var(--black);--glint:#7d90c4}
+.shine.sap{--base:var(--sapphire);--glint:#8fb2e6}
+
+/* demo bar */
+.demo{background:var(--black);color:var(--champ);font-size:12px;line-height:1.4;padding:7px 16px;text-align:center;letter-spacing:.01em}
+
+/* header */
+.top{position:sticky;top:0;z-index:40;background:rgba(29,93,166,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid rgba(233,228,242,.18)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.logo{text-decoration:none;display:flex;flex-direction:column;line-height:1.05}
+.logo b{font-family:var(--serif);font-style:italic;font-weight:400;font-size:24px}
+.logo small{font-size:11px;letter-spacing:.18em;text-transform:uppercase;opacity:.75;margin-top:3px}
+.nav{display:flex;gap:26px;font-size:14px}
+.nav a{text-decoration:none;opacity:.88;padding:10px 0}
+.nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:5px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;transition:transform .25s,background .25s,color .25s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-champ{background:var(--champ-l);color:var(--sapphire-d)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.6);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn-ink{background:var(--black);color:#fff}
+.btn-white{background:#fff;color:var(--red)}
+.top .btn{min-height:44px;padding:0 18px;font-size:14px}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;background:var(--sapphire);color:#fff;overflow:hidden;padding:56px 0 88px;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:
+  radial-gradient(60% 70% at 85% 10%, rgba(42,138,140,.45), transparent 60%),
+  radial-gradient(50% 60% at 10% 100%, rgba(20,18,24,.35), transparent 60%)}
+.sequins{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.sequins i{position:absolute;width:var(--s);height:var(--s);border-radius:50%;
+  background:radial-gradient(circle at 35% 35%,#fff,var(--sequin) 40%,rgba(185,200,240,.4) 70%,transparent 72%);
+  opacity:.15;animation:twinkle var(--d) ease-in-out var(--dl) infinite}
+@keyframes twinkle{0%,100%{opacity:.12;transform:scale(.7)}50%{opacity:.95;transform:scale(1.1)}}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);gap:56px;align-items:center}
+.hero-photo{position:relative}
+.hero-photo figure{position:relative;border-radius:4px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(10,20,50,.7);transform:rotate(-1.5deg)}
+.hero-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%}
+.hero-photo figcaption{position:absolute;left:16px;bottom:14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;background:rgba(20,18,24,.6);padding:6px 10px;border-radius:3px}
+.hero-kicker{font-size:12px;letter-spacing:.24em;text-transform:uppercase;opacity:.85;margin-bottom:22px;display:flex;align-items:center;gap:12px}
+.hero-kicker::before{content:"";width:34px;height:1px;background:currentColor}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
+.hero-meta{margin-top:22px;font-size:13px;opacity:.8}
+
+/* ---------- TAG (бирка) ---------- */
+.hang{position:relative;transform-origin:50% 0;transform:rotate(var(--r,0deg));will-change:transform}
+.hang.swing{animation:swing 2.6s cubic-bezier(.25,.6,.35,1) both}
+@keyframes swing{
+  0%{transform:rotate(calc(var(--r,0deg) - 16deg))}
+  22%{transform:rotate(calc(var(--r,0deg) + 10deg))}
+  42%{transform:rotate(calc(var(--r,0deg) - 6deg))}
+  60%{transform:rotate(calc(var(--r,0deg) + 3.5deg))}
+  78%{transform:rotate(calc(var(--r,0deg) - 1.5deg))}
+  100%{transform:rotate(var(--r,0deg))}
+}
+.thread{position:absolute;left:50%;top:calc(var(--th,48px) * -1);width:2px;height:calc(var(--th,48px) + 30px);margin-left:-1px;
+  background:linear-gradient(var(--thc,#E9E4F2),var(--thc,#E9E4F2));border-radius:2px;z-index:2}
+.thread::after{content:"";position:absolute;left:50%;bottom:-6px;width:20px;height:12px;margin-left:-10px;border:2px solid var(--thc,#E9E4F2);border-top:0;border-radius:0 0 12px 12px}
+.tag{position:relative;background:var(--tbg,var(--champ-l));color:var(--tfg,var(--ink));padding:56px 26px 24px;
+  clip-path:polygon(22% 0,78% 0,100% 9%,100% 100%,0 100%,0 9%);
+  -webkit-mask:radial-gradient(circle at 50% 30px,transparent 8px,#000 8.5px);mask:radial-gradient(circle at 50% 30px,transparent 8px,#000 8.5px);
+  box-shadow:0 20px 40px -20px rgba(0,0,0,.4)}
+.tag::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.28) 47%,rgba(233,228,242,.5) 50%,transparent 60%);
+  background-size:300% 100%;background-position:calc(var(--sp) * 1%) 0;mix-blend-mode:soft-light}
+.tag .no{font-size:11px;letter-spacing:.22em;text-transform:uppercase;opacity:.7;text-align:center;display:block;margin-bottom:12px}
+.tag .rows{border-top:1px solid currentColor;margin-top:16px}
+.tag .rows div{display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px;padding:9px 0;border-bottom:1px solid color-mix(in srgb,currentColor 30%,transparent);font-size:14px}
+.tag .rows dt{font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.7;padding-top:2px}
+.tag .sig{font-family:var(--serif);font-style:italic;font-size:26px;margin-top:16px;text-align:right}
+
+.hero-tag{--th:70px;max-width:460px;margin:70px 0 0 auto}
+.hero-tag .tag{padding:62px 34px 30px}
+.hero-tag h1{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(42px,5vw,68px);line-height:.98;letter-spacing:-.01em;text-align:center}
+.hero-tag p.lead{text-align:center;margin-top:14px;font-size:15px;color:#3b3a48}
+
+/* ---------- SECTIONS ---------- */
+section{position:relative;overflow-x:clip}
+main{overflow-x:clip}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:56px}
+.eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;font-weight:600}
+.h2{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(44px,7vw,104px);line-height:.95;letter-spacing:-.015em}
+.sec-head p{max-width:420px;font-size:16px}
+
+/* collection */
+.coll{background:var(--champ-l);padding:110px 0 130px}
+.coll .eyebrow{color:var(--sapphire)}
+.items{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;row-gap:40px}
+.item{width:var(--w);margin-top:var(--mt,0);position:relative}
+.item figure{border-radius:3px;overflow:hidden;background:#cbbba6;transform:rotate(var(--fr,0deg))}
+.item img{width:100%;aspect-ratio:var(--ar,4/5);object-fit:cover;object-position:var(--op,50% 50%);transition:transform .8s}
+.item:hover img{transform:scale(1.04)}
+.item .hang{position:absolute;width:var(--tw,210px);z-index:3;--th:40px}
+.item .tag{padding:48px 18px 18px}
+.item .tag h3{font-family:var(--serif);font-style:italic;font-weight:400;font-size:24px;line-height:1.1;text-align:center}
+.item .tag p{font-size:13px;margin-top:8px;text-align:center;line-height:1.45}
+.item .tag .sig{font-size:18px;margin-top:10px}
+.t-sap{--tbg:var(--sapphire);--tfg:#fff}
+.t-red{--tbg:var(--red);--tfg:#fff}
+.t-blk{--tbg:radial-gradient(circle at 20% 30%,rgba(233,228,242,.5) 0 1px,transparent 1.5px) 0 0/9px 11px,radial-gradient(circle at 70% 60%,rgba(233,228,242,.35) 0 1px,transparent 1.5px) 0 0/13px 7px,var(--black);--tfg:#fff}
+.t-champ{--tbg:var(--champ);--tfg:var(--ink)}
+.t-white{--tbg:#fff;--tfg:var(--ink)}
+.t-teal{--tbg:var(--teal);--tfg:#fff}
+.coll-note{margin-top:96px;font-size:14px;max-width:620px;opacity:.75}
+
+/* compositions + picker */
+.pick{background:var(--sapphire);color:#fff;padding:110px 0 120px;overflow:hidden;isolation:isolate}
+.pick .sequins{z-index:-1}
+.pick .sec-head p{opacity:.88}
+.pick-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);gap:64px;align-items:start}
+.step{font-size:12px;letter-spacing:.22em;text-transform:uppercase;opacity:.8;margin:0 0 14px;display:flex;gap:10px;align-items:center}
+.step b{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;border:1px solid rgba(255,255,255,.6);font-weight:600;letter-spacing:0}
+.yarns{list-style:none;border-top:1px solid rgba(233,228,242,.3)}
+.yarns button{width:100%;text-align:left;display:grid;grid-template-columns:34px minmax(0,1fr) auto;align-items:center;gap:14px;padding:16px 4px;min-height:64px;border-bottom:1px solid rgba(233,228,242,.3);transition:background .25s,padding .25s}
+.yarns button .dot{width:18px;height:18px;border-radius:50%;border:1.5px solid rgba(255,255,255,.7);position:relative}
+.yarns button .nm{font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.6vw,34px);line-height:1.1}
+.yarns button .src{font-size:12px;opacity:.65;text-align:right;max-width:150px}
+.yarns button:hover{background:rgba(255,255,255,.06);padding-left:12px}
+.yarns button[aria-pressed="true"]{background:rgba(233,228,242,.12);padding-left:12px}
+.yarns button[aria-pressed="true"] .dot{background:var(--sequin);box-shadow:0 0 0 4px rgba(233,228,242,.25),0 0 18px #fff}
+.things{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.things button{min-height:46px;padding:0 20px;border-radius:999px;border:1.5px solid rgba(255,255,255,.55);font-weight:500;transition:background .2s,color .2s}
+.things button:hover{background:rgba(255,255,255,.1)}
+.things button[aria-pressed="true"]{background:var(--champ-l);color:var(--sapphire-d);border-color:var(--champ-l)}
+.wish{margin-top:32px}
+.wish label{display:block;font-size:12px;letter-spacing:.22em;text-transform:uppercase;opacity:.8;margin-bottom:10px}
+.wish input{width:100%;min-height:50px;border-radius:10px;border:1.5px solid rgba(255,255,255,.45);background:rgba(20,18,24,.15);color:#fff;font:inherit;padding:0 16px}
+.wish input::placeholder{color:rgba(255,255,255,.6)}
+.order-side{position:sticky;top:100px;padding-top:48px}
+.order-side .hang{--th:48px;--r:2.5deg}
+.order-side .tag{padding:58px 28px 26px;min-height:420px;display:flex;flex-direction:column}
+.order-side .tag h3{font-family:var(--serif);font-style:italic;font-weight:400;font-size:30px;line-height:1.05;text-align:center}
+.order-side .msg{margin-top:18px;font-size:15px;line-height:1.55;background:rgba(29,93,166,.07);border-left:3px solid var(--sapphire);padding:14px 16px;flex:1}
+.order-side .sig{position:relative;display:inline-block;align-self:flex-end;color:var(--sapphire)}
+.order-side .sig span{display:inline-block;clip-path:inset(0 100% 0 0)}
+.order-side .sig.signed span{animation:sign 1.4s cubic-bezier(.6,.1,.3,1) forwards}
+@keyframes sign{to{clip-path:inset(0 0 0 0)}}
+.order-side .sig::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:1px;background:currentColor;opacity:.35}
+.order-side .cta{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.order-side .cta .btn{width:100%}
+.order-side .alt{font-size:13px;color:#fff;opacity:.85;margin-top:16px;text-align:center}
+
+/* five days */
+.five{background:var(--champ);padding:110px 0 120px;overflow:hidden}
+.five-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:56px;align-items:center}
+.big5{display:flex;align-items:flex-end;gap:18px;line-height:.8}
+.big5 .n{font-family:var(--serif);font-style:italic;font-size:clamp(200px,26vw,380px);letter-spacing:-.04em}
+.big5 .w{font-family:var(--serif);font-style:italic;font-size:clamp(40px,5vw,72px);padding-bottom:.35em}
+.five blockquote{font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.4vw,30px);line-height:1.25;margin-top:28px;max-width:520px}
+.five .by{margin-top:14px;font-size:14px;opacity:.75}
+.loops{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
+.loops figure{position:relative;overflow:hidden;border-radius:3px}
+.loops figure:first-child{grid-row:span 2}
+.loops img{width:100%;height:auto;object-fit:cover}
+.loops figure:first-child{display:flex}
+.loops figure:first-child img{height:100%;min-height:100%;aspect-ratio:auto}
+.loops figure:not(:first-child) img{aspect-ratio:1/1}
+.loops figcaption{position:absolute;left:10px;bottom:10px;right:10px;font-size:12px;background:rgba(238,229,217,.92);padding:6px 10px;border-radius:2px;width:max-content;max-width:calc(100% - 20px)}
+
+/* how */
+.how{background:var(--champ-l);padding:100px 0}
+.how-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:64px}
+.how ol{list-style:none;counter-reset:s}
+.how li{counter-increment:s;display:grid;grid-template-columns:84px minmax(0,1fr);gap:20px;padding:26px 0;border-top:1px solid rgba(20,18,24,.2)}
+.how li:last-child{border-bottom:1px solid rgba(20,18,24,.2)}
+.how li::before{content:counter(s);font-family:var(--serif);font-style:italic;font-size:64px;line-height:.9;color:var(--sapphire)}
+.how h3{font-size:19px;font-weight:600}
+.how li p{margin-top:6px;opacity:.8}
+.proof{margin-top:48px;display:flex;flex-wrap:wrap;gap:12px 40px;align-items:baseline}
+.proof b{font-family:var(--serif);font-style:italic;font-weight:400;font-size:46px;color:var(--sapphire);line-height:1}
+.proof span{font-size:14px;opacity:.75;margin-left:8px}
+.how-quote{font-family:var(--serif);font-style:italic;font-size:clamp(26px,3vw,40px);line-height:1.15;margin-top:28px}
+
+/* final */
+.final{background:var(--red);color:#fff;padding:120px 0 110px;overflow:hidden;isolation:isolate}
+.final .sequins i{background:radial-gradient(circle at 35% 35%,#fff,#ffd7db 40%,transparent 72%)}
+.final-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:48px;align-items:center}
+.final h2{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(50px,8vw,120px);line-height:.92;letter-spacing:-.02em}
+.final p{max-width:520px;margin-top:22px;font-size:17px;opacity:.92}
+.final .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.final .btn-ghost{border-color:rgba(255,255,255,.7)}
+.final figure{transform:rotate(3deg);border-radius:3px;overflow:hidden;box-shadow:0 30px 60px -25px rgba(0,0,0,.5);max-width:400px;margin-left:auto}
+.final figure img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.links{margin-top:28px;font-size:14px;display:flex;flex-wrap:wrap;gap:6px 22px}
+.links a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:4px}
+
+footer{background:var(--black);color:var(--champ);font-size:13px;padding:28px 0 96px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer a{color:var(--champ)}
+
+.fab{position:fixed;right:16px;bottom:16px;z-index:50;display:none;box-shadow:0 12px 30px -8px rgba(0,0,0,.5)}
+
+/* ---------- responsive ---------- */
+@media (max-width:1020px){
+  .nav{display:none}
+  .hero-grid,.pick-grid,.five-grid,.how-grid,.final-grid{grid-template-columns:minmax(0,1fr)}
+  .hero-tag{margin:-90px auto 0;max-width:440px;position:relative;z-index:2}
+  .order-side{position:relative;top:0}
+  .final figure{margin:0 auto;max-width:340px}
+}
+@media (max-width:760px){
+  body{font-size:15px}
+  .top .wrap{min-height:58px}
+  .top .btn span{display:none}
+  .top .btn{padding:0 14px}
+  .hero{padding:28px 0 64px}
+  .hero-photo figure{transform:rotate(-1deg)}
+  .hero-tag{--th:56px;margin-top:-70px;width:calc(100% - 20px)}
+  .hero-tag .tag{padding:54px 22px 24px}
+  .hero-actions{flex-direction:column}
+  .hero-actions .btn{width:100%}
+  .coll,.pick,.five,.final{padding:80px 0}
+  .how{padding:76px 0}
+  .sec-head{margin-bottom:36px}
+  .items{flex-direction:column;row-gap:56px}
+  .item{width:100% !important;margin-top:0 !important}
+  .item:nth-child(even) figure{width:84%;margin-left:auto}
+  .item:nth-child(odd) figure{width:84%}
+  .item .hang{position:relative;left:auto !important;right:auto !important;top:auto !important;bottom:auto !important;width:min(250px,72%);margin:-80px 0 0 auto}
+  .item:nth-child(even) .hang{margin:-80px auto 0 0}
+  .yarns button{grid-template-columns:28px minmax(0,1fr)}
+  .yarns button .src{display:none}
+  .order-side .tag{min-height:0}
+  .tag .sig{font-size:22px}
+  .order-side .tag{padding:58px 20px 22px}
+  .tag .rows div{grid-template-columns:82px minmax(0,1fr)}
+  .loops{gap:10px}
+  .how li{grid-template-columns:56px minmax(0,1fr);gap:12px}
+  .how li::before{font-size:48px}
+  .final .acts .btn{width:100%}
+  .fab{display:inline-flex}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .order-side .sig span{clip-path:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<div class="demo" data-label="Demo concept">Демо-концепт независимого разработчика — не официальный сайт knitting_love_kireeva (Гузэль Киреева). Не согласован с владельцем, удаляется по первой просьбе.</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Гузэль Киреева — наверх"><b>Гузэль Киреева</b><small>knitting love</small></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#coll">Составы</a>
+      <a href="#pick">Выбрать пряжу</a>
+      <a href="#five">Как вяжется</a>
+      <a href="#how">Как заказать</a>
+    </nav>
+    <a class="btn btn-champ js-wa" href="https://wa.me/79037247482" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg><span>Написать в WhatsApp</span></a>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero" aria-labelledby="h1">
+  <div class="sequins" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-photo">
+      <figure>
+        <img src="img/p2.jpg" srcset="img/p2-m.jpg 720w, img/p2.jpg 1079w" sizes="(max-width:1020px) 100vw, 50vw" alt="Синяя паутинка из мохера с рукавами в пайетках, связанная Гузэль Киреевой" fetchpriority="high">
+        <figcaption>Паутинка из мохера</figcaption>
+      </figure>
+    </div>
+    <div>
+      <div class="hang hero-tag swing-on" style="--r:-2deg">
+        <i class="thread" aria-hidden="true"></i>
+        <div class="tag">
+          <span class="no">Бирка № 01 · на заказ</span>
+          <h1 id="h1"><span class="shine sap">Только ручная работа</span></h1>
+          <p class="lead">Свяжу вещь из той пряжи, которую вы выберете. Принимаю заказы.</p>
+          <dl class="rows">
+            <div><dt>Состав</dt><dd>мохер на шёлке с добавлением хлопка, с пайетками</dd></div>
+            <div><dt>Вязка</dt><dd>полностью на руках</dd></div>
+            <div><dt>Модель</dt><dd>паутинка</dd></div>
+          </dl>
+          <p class="sig">Гузэль Киреева</p>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-champ" href="#pick">Выбрать пряжу</a>
+        <a class="btn btn-ghost js-wa" href="https://wa.me/79037247482" target="_blank" rel="noopener">Заказать в WhatsApp</a>
+      </div>
+      <p class="hero-meta">«Волшебство!» — так Гузэль подписала эту паутинку.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTION -->
+<section class="coll" id="coll" aria-labelledby="coll-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Коллекция бирок</p>
+        <h2 class="h2" id="coll-h"><span class="shine ink">Составы</span></h2>
+      </div>
+      <p>Подписи Гузэль читаются как этикетки дорогой пряжи. Каждая вещь — одна, связана руками, под конкретного человека.</p>
+    </div>
+
+    <div class="items">
+      <article class="item" style="--w:35%">
+        <figure style="--fr:-1deg"><img src="img/p10-m.jpg" srcset="img/p10-m.jpg 675w, img/p10.jpg 1350w" sizes="(max-width:760px) 84vw, 35vw" alt="Джемпер с пайетками: полосы от синего к серому и чёрному" loading="lazy" style="--ar:3/4"></figure>
+        <div class="hang t-sap" style="--r:-5deg;right:-34px;bottom:-60px;--tw:220px">
+          <i class="thread" aria-hidden="true"></i>
+          <div class="tag"><h3>Джемпер с пайетками</h3><p>полосы от сапфира к чёрному, пайетка по полотну</p><p class="sig">Г. К.</p></div>
+        </div>
+      </article>
+
+      <article class="item" style="--w:27%;--mt:150px">
+        <figure style="--fr:1.2deg"><img src="img/p9-m.jpg" srcset="img/p9-m.jpg 675w, img/p9.jpg 1350w" sizes="(max-width:760px) 84vw, 27vw" alt="Красный джемпер с пайетками на манекене" loading="lazy" style="--ar:3/4"></figure>
+        <div class="hang t-red" style="--r:6deg;left:-40px;top:-30px;--tw:180px">
+          <i class="thread" aria-hidden="true"></i>
+          <div class="tag"><h3>Королевский красный</h3><p>джемпер с пайеткой, ручная работа</p></div>
+        </div>
+      </article>
+
+      <article class="item" style="--w:29%;--mt:40px">
+        <figure style="--fr:-.6deg"><img src="img/p4-m.jpg" srcset="img/p4-m.jpg 720w, img/p4.jpg 1440w" sizes="(max-width:760px) 84vw, 29vw" alt="Чёрный прозрачный джемпер с блёстками" loading="lazy" style="--op:50% 40%"></figure>
+        <div class="hang t-blk" style="--r:-7deg;right:14px;bottom:-80px;--tw:190px">
+          <i class="thread" aria-hidden="true"></i>
+          <div class="tag"><h3>Чёрный с блеском</h3><p>тонкое полотно на просвет, блёстки</p></div>
+        </div>
+      </article>
+
+      <article class="item" style="--w:30%;--mt:-10px">
+        <figure style="--fr:1deg"><img src="img/p13-m.jpg" srcset="img/p13-m.jpg 720w, img/p13.jpg 1440w" sizes="(max-width:760px) 84vw, 30vw" alt="Джемпер цвета шампань с дорожкой пайеток по рукаву" loading="lazy" style="--op:60% 50%"></figure>
+        <div class="hang t-champ" style="--r:4deg;left:-28px;bottom:-70px;--tw:200px">
+          <i class="thread" aria-hidden="true"></i>
+          <div class="tag"><h3>Шампань</h3><p>дорожка пайеток по рукаву</p></div>
+        </div>
+      </article>
+
+      <article class="item" style="--w:34%;--mt:120px">
+        <figure style="--fr:-1.4deg"><img src="img/p11-m.jpg" srcset="img/p11-m.jpg 900w, img/p11.jpg 1440w" sizes="(max-width:760px) 84vw, 34vw" alt="Длинное белое хлопковое пальто ручной вязки" loading="lazy" style="--op:46% 50%"></figure>
+        <div class="hang t-white" style="--r:-4deg;right:-26px;top:-40px;--tw:230px">
+          <i class="thread" aria-hidden="true"></i>
+          <div class="tag"><h3>Кипельно белое пальто</h3><p>хлопок, Италия</p><p class="sig">Гузэль Киреева</p></div>
+        </div>
+      </article>
+
+      <article class="item" style="--w:26%;--mt:20px">
+        <figure style="--fr:.8deg"><img src="img/p8-m.jpg" srcset="img/p8-m.jpg 507w, img/p8.jpg 640w" sizes="(max-width:760px) 84vw, 26vw" alt="Синий жилет в красную клетку, деталь вязки" loading="lazy" style="--ar:3/4.4"></figure>
+        <div class="hang t-teal" style="--r:7deg;left:-46px;bottom:-50px;--tw:210px">
+          <i class="thread" aria-hidden="true"></i>
+          <div class="tag"><h3>Жилет мужской и&nbsp;женский</h3><p>буретный шёлк с кашемиром</p></div>
+        </div>
+      </article>
+    </div>
+    <p class="coll-note">Подписи на бирках — слова самой Гузэль из её постов. Тот же состав можно выбрать для своей вещи ниже.</p>
+  </div>
+</section>
+
+<!-- PICKER -->
+<section class="pick" id="pick" aria-labelledby="pick-h">
+  <div class="sequins" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow" style="opacity:.85">Фишка</p>
+        <h2 class="h2" id="pick-h"><span class="shine">Выберите пряжу</span></h2>
+      </div>
+      <p>Сначала состав — только те, что Гузэль уже вязала. Потом вещь. Бирка подпишется, а сообщение для WhatsApp соберётся само.</p>
+    </div>
+    <div class="pick-grid">
+      <div>
+        <p class="step"><b>1</b> Состав</p>
+        <ul class="yarns" id="yarns">
+          <li><button type="button" data-y="кашемир на шёлке с матовой королевской пайеткой" aria-pressed="false"><span class="dot"></span><span class="nm">Кашемир на шёлке с матовой королевской пайеткой</span><span class="src">из подписи к платью</span></button></li>
+          <li><button type="button" data-y="мохер на шёлке с хлопком и пайетками" aria-pressed="true"><span class="dot"></span><span class="nm">Мохер на шёлке с хлопком и пайетками</span><span class="src">«Волшебство!»</span></button></li>
+          <li><button type="button" data-y="лён с пайетками" aria-pressed="false"><span class="dot"></span><span class="nm">Лён с пайетками</span><span class="src">ручная работа</span></button></li>
+          <li><button type="button" data-y="меринос ручной окраски" aria-pressed="false"><span class="dot"></span><span class="nm">Меринос ручной окраски</span><span class="src">100%</span></button></li>
+          <li><button type="button" data-y="хлопок" aria-pressed="false"><span class="dot"></span><span class="nm">Хлопок</span><span class="src">как у белого пальто</span></button></li>
+          <li><button type="button" data-y="буретный шёлк с кашемиром" aria-pressed="false"><span class="dot"></span><span class="nm">Буретный шёлк с кашемиром</span><span class="src">как у жилета</span></button></li>
+        </ul>
+        <p class="step" style="margin-top:44px"><b>2</b> Вещь</p>
+        <div class="things" id="things">
+          <button type="button" data-t="джемпер" aria-pressed="true">Джемпер</button>
+          <button type="button" data-t="паутинку" aria-pressed="false">Паутинка</button>
+          <button type="button" data-t="платье" aria-pressed="false">Платье</button>
+          <button type="button" data-t="жилет" aria-pressed="false">Жилет</button>
+          <button type="button" data-t="пальто" aria-pressed="false">Пальто</button>
+        </div>
+        <div class="wish">
+          <label for="wish">Пожелания: цвет, размер, к какому случаю</label>
+          <input id="wish" type="text" maxlength="160" placeholder="например: сапфировый, оверсайз">
+        </div>
+      </div>
+      <div class="order-side">
+        <div class="hang swing-on" id="otag">
+          <i class="thread" aria-hidden="true"></i>
+          <div class="tag">
+            <span class="no">Ваша бирка</span>
+            <h3 id="o-title">Джемпер</h3>
+            <dl class="rows">
+              <div><dt>Состав</dt><dd id="o-yarn">мохер на шёлке с хлопком и пайетками</dd></div>
+              <div><dt>Вязка</dt><dd>только руками</dd></div>
+            </dl>
+            <p class="msg" id="o-msg" aria-live="polite"></p>
+            <p class="sig signed" id="o-sig"><span>Гузэль Киреева</span></p>
+          </div>
+        </div>
+        <div class="cta">
+          <a class="btn btn-ink" id="o-wa" href="https://wa.me/79037247482" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>Заказать в WhatsApp</a>
+        </div>
+        <p class="alt">Или напишите в Instagram: <a href="https://ig.me/m/knitting_love_kireeva" target="_blank" rel="noopener">Direct</a> · основной аккаунт <a href="https://instagram.com/guzelkireeva66" target="_blank" rel="noopener">@guzelkireeva66</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FIVE DAYS -->
+<section class="five" id="five" aria-labelledby="five-h">
+  <div class="wrap five-grid">
+    <div>
+      <p class="eyebrow" style="color:var(--sapphire-d)">Один джемпер с пайетками</p>
+      <h2 class="big5" id="five-h"><span class="n shine ink">5</span><span class="w">дней</span></h2>
+      <blockquote>«Меринос. Италия. Связано полностью на руках. Вязала 5&nbsp;дней».</blockquote>
+      <p class="by">Гузэль Киреева о джемпере с пайетками</p>
+      <p style="margin-top:22px;max-width:480px">Петля за петлёй, без машины: рельеф, пуговицы, пайетка, вплетённая в полотно. Поэтому каждая вещь — в единственном экземпляре.</p>
+    </div>
+    <div class="loops">
+      <figure><img src="img/p1-m.jpg" srcset="img/p1-m.jpg 675w, img/p1.jpg 720w" sizes="(max-width:1020px) 50vw, 26vw" alt="Крупно: рельефная вязка и перламутровые пуговицы"><figcaption>рельеф и пуговицы</figcaption></figure>
+      <figure><img src="img/p12-m.jpg" alt="Крупно: гладь цвета шампань и пайетки у плеча"><figcaption>гладь и пайетка</figcaption></figure>
+      <figure><img src="img/p5-m.jpg" alt="Крупно: тонкое полотно цвета шампань с мерцанием" style="object-position:40% 50%"><figcaption>мерцание в полотне</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="how" id="how" aria-labelledby="how-h">
+  <div class="wrap how-grid">
+    <div>
+      <p class="eyebrow" style="color:var(--sapphire)">Как заказать</p>
+      <h2 class="h2" id="how-h" style="font-size:clamp(42px,5.5vw,80px)"><span class="shine ink">Три шага</span></h2>
+      <p class="how-quote">«Красивая вещь на&nbsp;красивой женщине»</p>
+      <div class="proof">
+        <div><b>709</b><span>подписчиков</span></div>
+        <div><b>118</b><span>публикаций</span></div>
+      </div>
+    </div>
+    <ol>
+      <li><div><h3>Выберите пряжу и вещь</h3><p>Состав из бирок Гузэль: кашемир на шёлке, мохер с пайетками, лён, меринос, хлопок, буретный шёлк.</p></div></li>
+      <li><div><h3>Напишите в WhatsApp</h3><p>Готовый текст уже собран — останется добавить пожелания по цвету и размеру.</p></div></li>
+      <li><div><h3>Обсудите детали с мастером</h3><p>Гузэль вяжет только руками и лично отвечает на заказы.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final" aria-labelledby="final-h">
+  <div class="sequins" aria-hidden="true"></div>
+  <div class="wrap final-grid">
+    <div>
+      <h2 id="final-h"><span class="shine" style="--glint:#ffc6cc">Создаю красоту</span></h2>
+      <p>Принимаю заказы. Только ручная работа. Напишите, из чего и что хочется — Гузэль ответит в WhatsApp.</p>
+      <div class="acts">
+        <a class="btn btn-white js-wa" href="https://wa.me/79037247482" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>Заказать в WhatsApp</a>
+        <a class="btn btn-ghost" href="#pick">Сначала выбрать пряжу</a>
+      </div>
+      <div class="links">
+        <a href="https://instagram.com/knitting_love_kireeva" target="_blank" rel="noopener">@knitting_love_kireeva</a>
+        <a href="https://instagram.com/guzelkireeva66" target="_blank" rel="noopener">основной аккаунт @guzelkireeva66</a>
+      </div>
+    </div>
+    <figure><img src="img/p9-m.jpg" alt="Красный джемпер ручной вязки с пайетками" loading="lazy"></figure>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Гузэль Киреева · knitting_love_kireeva · вязание ручной работы на заказ</span>
+    <span>Демо-концепт. Фото — из Instagram <a href="https://instagram.com/knitting_love_kireeva" target="_blank" rel="noopener">@knitting_love_kireeva</a></span>
+  </div>
+</footer>
+
+<a class="btn btn-ink fab js-wa" href="https://wa.me/79037247482" target="_blank" rel="noopener" aria-label="Заказать в WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>WhatsApp</a>
+
+<script>
+(function(){
+  var WA='https://wa.me/79037247482';
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var root=document.documentElement;
+
+  /* sequins */
+  document.querySelectorAll('.sequins').forEach(function(box){
+    var n=window.innerWidth<760?22:46, h='';
+    for(var i=0;i<n;i++){
+      var s=(2+Math.random()*5).toFixed(1);
+      h+='<i style="left:'+(Math.random()*100).toFixed(2)+'%;top:'+(Math.random()*100).toFixed(2)+'%;--s:'+s+'px;--d:'+(2.5+Math.random()*4).toFixed(2)+'s;--dl:-'+(Math.random()*6).toFixed(2)+'s"></i>';
+    }
+    box.innerHTML=h;
+  });
+
+  /* sequin light follows scroll */
+  var ticking=false;
+  function upd(){
+    var max=Math.max(1,document.documentElement.scrollHeight-innerHeight);
+    var p=window.scrollY/max;
+    root.style.setProperty('--sp',(100-((p*5)%1)*100).toFixed(2));
+    ticking=false;
+  }
+  if(!reduce){addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(upd)}},{passive:true});}
+  root.style.setProperty('--sp','62');
+
+  /* tags swing on entry */
+  var hangs=document.querySelectorAll('.item .hang, .swing-on');
+  if(!reduce && 'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.remove('swing');void e.target.offsetWidth;e.target.classList.add('swing');io.unobserve(e.target);}
+    })},{threshold:.35});
+    hangs.forEach(function(h){io.observe(h)});
+  }
+
+  /* picker */
+  var yarn='мохер на шёлке с хлопком и пайетками', thing='джемпер';
+  var names={'джемпер':'Джемпер','паутинку':'Паутинка','платье':'Платье','жилет':'Жилет','пальто':'Пальто'};
+  var wish=document.getElementById('wish'), msg=document.getElementById('o-msg'), wa=document.getElementById('o-wa'),
+      sig=document.getElementById('o-sig'), otag=document.getElementById('otag');
+  function text(){
+    var t='Гузэль, здравствуйте! Хочу '+thing+': '+yarn+'.';
+    var w=(wish.value||'').trim(); if(w) t+=' Пожелания: '+w+'.';
+    return t+' Увидела ваши работы в Instagram @knitting_love_kireeva.';
+  }
+  function render(sign){
+    var t=text();
+    msg.textContent=t;
+    document.getElementById('o-title').textContent=names[thing];
+    document.getElementById('o-yarn').textContent=yarn;
+    var href=WA+'?text='+encodeURIComponent(t);
+    wa.href=href;
+    document.querySelectorAll('.js-wa').forEach(function(a){a.href=href});
+    if(sign && !reduce){
+      sig.classList.remove('signed');void sig.offsetWidth;sig.classList.add('signed');
+      otag.classList.remove('swing');void otag.offsetWidth;otag.classList.add('swing');
+    }
+  }
+  function group(id,attr,set){
+    var bs=document.querySelectorAll('#'+id+' button');
+    bs.forEach(function(b){b.addEventListener('click',function(){
+      bs.forEach(function(x){x.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed','true'); set(b.getAttribute(attr)); render(true);
+    })});
+  }
+  group('yarns','data-y',function(v){yarn=v});
+  group('things','data-t',function(v){thing=v});
+  wish.addEventListener('input',function(){render(false)});
+  render(false);
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

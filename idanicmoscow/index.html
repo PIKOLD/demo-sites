@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>IDANIC — одежда в азиатском стиле, собственное производство в Москве</title><meta property="og:type" content="website"><meta property="og:title" content="IDANIC — одежда в азиатском стиле, собственное производство в Москве"><meta property="og:description" content="IDANIC: кимоно, ципао и костюмы собственного производства. Дропы КИОТО, ПЕКИН, БУШИДО, RONIN. Магазин в ТЦ Таганка, 2 этаж, офис 30."><meta property="og:image" content="https://pikold.github.io/demo-sites/idanicmoscow/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="IDANIC: кимоно, ципао и костюмы собственного производства. Дропы КИОТО, ПЕКИН, БУШИДО, RONIN. Магазин в ТЦ Таганка, 2 этаж, офис 30.">
+<link rel="stylesheet" href="../_fonts/young-serif.css">
+<link rel="stylesheet" href="../_fonts/outfit.css">
+<style>
+:root{
+  --bordo:#7A1A2B; --bordo-d:#5E1220; --lak:#17110F; --sakura:#F2C4CF; --rice:#EFE4D2; --rice-d:#E3D4BD; --hanko:#C8282E;
+  --serif:'Young Serif',Georgia,'Times New Roman',serif;
+  --sans:'Outfit','Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;
+  --pad:clamp(16px,4vw,56px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--lak);color:var(--lak);line-height:1.5;font-size:17px;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--hanko);outline-offset:3px}
+button{font:inherit;cursor:pointer}
+.demo{background:var(--rice);color:#4a3a34;font-size:12px;line-height:1.35;text-align:center;padding:7px 16px;border-bottom:1px solid var(--rice-d)}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:30;background:var(--lak);color:var(--rice);display:flex;align-items:center;gap:24px;padding:0 var(--pad);height:60px}
+.logo{font-family:var(--serif);font-size:22px;letter-spacing:.14em;text-decoration:none}
+.nav{display:flex;gap:26px;margin-left:auto;font-size:15px}
+.nav a{text-decoration:none;opacity:.8;padding:10px 0}
+.nav a:hover{opacity:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:2px;border:0;text-decoration:none;font-weight:600;font-size:16px;letter-spacing:.01em;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-rice{background:var(--rice);color:var(--lak)}
+.btn-lak{background:var(--lak);color:var(--rice)}
+.btn-bordo{background:var(--bordo);color:var(--rice)}
+.btn-line{background:transparent;color:inherit;box-shadow:inset 0 0 0 1.5px currentColor}
+.hdr .btn{min-height:40px;padding:0 16px;font-size:14px}
+
+/* hanko */
+.hanko{display:inline-grid;place-items:center;background:var(--hanko);color:#fff4ee;font-family:var(--serif);line-height:1;text-align:center;border-radius:4px;transform:rotate(-4deg);
+  box-shadow:inset 0 0 0 3px rgba(255,240,230,.35),inset 0 0 14px rgba(60,0,0,.35)}
+.js .hanko.st{opacity:0;transform:rotate(-4deg) scale(1.4)}
+.js .hanko.st.on{animation:stamp .55s cubic-bezier(.2,.9,.3,1.2) forwards}
+@keyframes stamp{
+  0%{opacity:0;transform:rotate(-4deg) scale(1.4);box-shadow:inset 0 0 0 3px rgba(255,240,230,.35),0 18px 30px rgba(0,0,0,.35)}
+  60%{opacity:1;transform:rotate(-4deg) scale(.96);box-shadow:inset 0 0 0 3px rgba(255,240,230,.35),inset 0 0 22px rgba(60,0,0,.6)}
+  100%{opacity:1;transform:rotate(-4deg) scale(1);box-shadow:inset 0 0 0 3px rgba(255,240,230,.35),inset 0 0 14px rgba(60,0,0,.35)}}
+
+/* screen (ширма) */
+.screen{position:relative;overflow:hidden}
+.screen img{width:100%;height:100%;object-fit:cover}
+.screen::before,.screen::after{content:"";position:absolute;top:0;bottom:0;width:50.5%;background:var(--panel,var(--bordo));z-index:2;transition:transform 1s cubic-bezier(.7,0,.2,1);
+  background-image:linear-gradient(90deg,transparent calc(50% - 1px),rgba(0,0,0,.18) calc(50% - 1px),rgba(0,0,0,.18) calc(50% + 1px),transparent calc(50% + 1px));}
+.screen::before{left:0;box-shadow:inset -2px 0 0 rgba(0,0,0,.25)}
+.screen::after{right:0}
+.screen.open::before{transform:translateX(-101%)}
+.screen.open::after{transform:translateX(101%)}
+.no-js .screen::before,.no-js .screen::after{display:none}
+
+/* hero */
+.hero{background:var(--bordo);color:var(--rice);display:grid;grid-template-columns:auto minmax(0,1.05fr) minmax(0,1fr);gap:clamp(20px,3vw,48px);padding:clamp(28px,4vw,56px) var(--pad) 0;min-height:calc(100vh - 92px);align-items:stretch;position:relative;overflow:hidden}
+.v-name{writing-mode:vertical-rl;transform:rotate(180deg);font-family:var(--serif);font-size:clamp(88px,13vw,210px);line-height:.82;letter-spacing:.04em;color:var(--rice);align-self:end;padding-bottom:clamp(20px,3vw,40px);user-select:none}
+.hero-photo{--panel:var(--bordo-d);align-self:stretch;min-height:520px;border-radius:2px 2px 0 0}
+.hero-photo img{object-position:50% 0;height:100%;position:absolute;inset:0;height:162%}
+.hero-txt{display:flex;flex-direction:column;justify-content:center;gap:22px;padding-bottom:clamp(28px,4vw,56px);position:relative}
+.kick{font-size:13px;letter-spacing:.22em;text-transform:uppercase;opacity:.75}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(38px,4.4vw,68px);line-height:1.02;letter-spacing:-.01em}
+.hero p{max-width:30em;font-size:18px;opacity:.88}
+.hero .hanko{width:118px;height:118px;font-size:22px;position:absolute;top:clamp(0px,2vw,24px);right:0}
+.hero .hanko span{display:block;font-size:11px;font-family:var(--sans);letter-spacing:.2em;margin-top:6px;opacity:.85}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;font-size:14px;opacity:.85;border-top:1px solid rgba(239,228,210,.25);padding-top:18px}
+.facts b{font-family:var(--serif);font-weight:400;font-size:24px;display:block;line-height:1.1}
+
+/* scroll index */
+.index{background:var(--rice);padding:clamp(48px,6vw,88px) var(--pad);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:40px;align-items:end}
+.index h2{font-family:var(--serif);font-weight:400;font-size:clamp(32px,4vw,56px);line-height:1.05}
+.index p{font-size:18px;max-width:36em;color:#3c2e29}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.chips a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:40px;text-decoration:none;font-weight:600;background:var(--lak);color:var(--rice);font-size:15px}
+.chips a.c-kioto{background:var(--bordo)} .chips a.c-pekin{background:var(--sakura);color:var(--lak)}
+
+/* drop sections */
+.drop{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,3.5vw,56px);padding:clamp(56px,7vw,110px) var(--pad);align-items:start;position:relative}
+.drop .vt{writing-mode:vertical-rl;font-family:var(--serif);font-size:clamp(84px,11vw,180px);line-height:.85;letter-spacing:.06em;position:sticky;top:80px;user-select:none}
+.drop .vt-wrap{position:relative}
+.drop .vt-wrap .hanko{position:absolute;left:50%;bottom:-36px;width:64px;height:64px;font-size:12px;margin-left:-32px;line-height:1.1}
+.drop .shot{aspect-ratio:3/4;border-radius:2px}.drop .shot.sq{aspect-ratio:1/1}
+.drop .info{display:flex;flex-direction:column;gap:20px;padding-top:8px}
+.drop h3{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3vw,44px);line-height:1.08}
+.drop .lead{font-size:18px;max-width:28em}
+.cap{font-size:13px;letter-spacing:.12em;text-transform:uppercase;opacity:.7}
+.items{list-style:none;display:grid;gap:0;border-top:1px solid currentColor}
+.items li{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid rgba(0,0,0,.18);align-items:baseline}
+.items .pr{font-family:var(--serif);white-space:nowrap}
+.items small{display:block;font-size:14px;opacity:.75}
+.d-kioto{background:var(--bordo);color:var(--rice);--panel:var(--lak)}
+.d-kioto .items li{border-color:rgba(239,228,210,.25)}
+.d-pekin{background:var(--sakura);color:var(--lak);--panel:var(--bordo)}
+.d-pekin .vt{color:var(--bordo)}
+.d-bushido{background:var(--lak);color:var(--rice);--panel:var(--bordo)}
+.d-bushido .vt{color:var(--bordo)}
+.d-bushido h3{color:#d9a4ad}
+.d-bushido .items li{border-color:rgba(239,228,210,.18)}
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.cut{background:#fff;border-radius:2px;aspect-ratio:4/5;overflow:hidden;position:relative}
+.cut img{width:100%;height:100%;object-fit:cover;object-position:50% 100%}
+.quote{font-family:var(--serif);font-size:clamp(22px,2.2vw,30px);line-height:1.2}
+
+/* order tool */
+.order{background:var(--rice);padding:clamp(56px,7vw,110px) var(--pad);display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(28px,4vw,64px)}
+.order h2{font-family:var(--serif);font-weight:400;font-size:clamp(36px,4.6vw,68px);line-height:1;margin-bottom:14px}
+.order .sub{color:#4a3a34;max-width:34em;margin-bottom:28px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.tab{min-height:46px;padding:0 18px;border:0;border-radius:2px;background:transparent;box-shadow:inset 0 0 0 1.5px var(--lak);color:var(--lak);font-weight:600;letter-spacing:.06em}
+.tab[aria-selected=true]{background:var(--lak);color:var(--rice)}
+.tab[data-k=kioto][aria-selected=true]{background:var(--bordo);box-shadow:none}
+.tab[data-k=pekin][aria-selected=true]{background:var(--sakura);color:var(--lak);box-shadow:inset 0 0 0 1.5px var(--bordo)}
+.list{display:grid;gap:10px}
+.it{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;background:#f7efe3;border:1px solid var(--rice-d);padding:16px 16px 16px 20px;border-radius:2px}
+.it b{font-weight:600;font-size:17px;display:block}
+.it .p{font-family:var(--serif);color:var(--bordo);font-size:17px}
+.it .n{font-size:14px;color:#5b4a43}
+.add{min-width:48px;min-height:48px;padding:0 16px;border:0;border-radius:2px;background:var(--bordo);color:var(--rice);font-weight:600;font-size:14px}
+.add.in{background:var(--lak)}
+.more{font-size:14px;color:#5b4a43;margin-top:16px}
+.panel{background:var(--lak);color:var(--rice);padding:clamp(22px,3vw,36px);border-radius:2px;align-self:start;position:sticky;top:80px;display:flex;flex-direction:column;gap:18px}
+.panel h3{font-family:var(--serif);font-weight:400;font-size:26px}
+.seg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background:#2a201d;padding:4px;border-radius:2px}
+.seg button{min-height:44px;border:0;background:transparent;color:var(--rice);border-radius:2px;font-size:15px}
+.seg button[aria-pressed=true]{background:var(--rice);color:var(--lak);font-weight:600}
+.msg{background:var(--rice);color:var(--lak);padding:18px;border-radius:2px;font-size:16px;min-height:120px;white-space:pre-wrap;position:relative}
+.msg::after{content:"";position:absolute;right:14px;bottom:14px;width:30px;height:30px;background:var(--hanko);border-radius:3px;transform:rotate(-6deg);opacity:.9}
+.panel .btn{width:100%}
+.alt{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px}
+.alt a{opacity:.8;padding:10px 0}
+.toast{font-size:14px;color:var(--sakura);min-height:20px}
+
+/* route */
+.route{background:var(--lak);color:var(--rice);padding:clamp(56px,7vw,110px) var(--pad)}
+.route-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:24px;margin-bottom:44px}
+.route h2{font-family:var(--serif);font-weight:400;font-size:clamp(36px,4.6vw,68px);line-height:1}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;counter-reset:s}
+.steps li{padding:26px 24px 30px;border-left:1px solid rgba(239,228,210,.2);counter-increment:s;position:relative}
+.steps li::before{content:counter(s);font-family:var(--serif);font-size:72px;line-height:1;color:var(--bordo);display:block;margin-bottom:18px}
+.steps li:nth-child(4){background:var(--bordo)}
+.steps li:nth-child(4)::before{color:var(--rice)}
+.steps b{font-family:var(--serif);font-weight:400;font-size:24px;display:block;margin-bottom:6px}
+.steps span{opacity:.75;font-size:15px}
+
+/* reviews */
+.rev{background:var(--sakura);color:var(--lak);padding:clamp(56px,7vw,100px) var(--pad);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center}
+.rev .big{font-family:var(--serif);font-size:clamp(64px,9vw,140px);line-height:.9;color:var(--bordo)}
+.rev p{font-size:20px;max-width:26em;margin:14px 0 24px}
+
+.foot{background:var(--lak);color:var(--rice);padding:44px var(--pad) 90px;display:grid;grid-template-columns:minmax(0,1.2fr) repeat(2,minmax(0,1fr));gap:28px;font-size:15px;border-top:1px solid rgba(239,228,210,.12)}
+.foot .logo{font-size:40px;display:block;margin-bottom:8px}
+.foot a{display:inline-block;padding:6px 0;opacity:.85}
+.foot h4{font-size:12px;letter-spacing:.2em;text-transform:uppercase;opacity:.55;font-weight:500;margin-bottom:10px}
+.fab{display:none}
+
+@media (max-width:1100px){
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps li{border-top:1px solid rgba(239,228,210,.2)}
+}
+@media (max-width:900px){
+  .nav{display:none}
+  .hdr .btn{margin-left:auto}
+  .hero{grid-template-columns:auto minmax(0,1fr);min-height:0}
+  .hero-photo{min-height:0;aspect-ratio:3/4}
+  .hero-txt{grid-column:1/-1;padding-top:8px}
+  .hdr{position:relative}
+  .hero .hanko{width:88px;height:88px;font-size:17px;top:-118px;right:6px}
+  .v-name{font-size:clamp(72px,19vw,140px)}
+  .index{grid-template-columns:minmax(0,1fr)}
+  .drop{grid-template-columns:auto minmax(0,1fr)}
+  .drop .info{grid-column:1/-1}
+  .drop .vt{position:relative;top:0;font-size:clamp(64px,16vw,120px)}
+  .order{grid-template-columns:minmax(0,1fr)}
+  .panel{position:static}
+  .rev{grid-template-columns:minmax(0,1fr)}
+  .foot{grid-template-columns:minmax(0,1fr)}
+  .fab{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+}
+@media (max-width:520px){
+  body{font-size:16px}
+  .hero{gap:14px;padding-top:20px}
+  .v-name{font-size:76px;padding-bottom:12px}
+  .hero h1{font-size:36px}
+  .hero p{font-size:16px}
+  .hero .row .btn{flex:1 1 100%}
+  .drop{gap:16px}
+  .drop .vt{font-size:60px}
+  .drop .vt-wrap .hanko{width:50px;height:50px;font-size:10px;margin-left:-25px;bottom:-30px}
+  .duo{grid-template-columns:minmax(0,1fr)}
+  .steps{grid-template-columns:minmax(0,1fr)}
+  .steps li{padding:22px 4px 24px 20px}
+  .steps li::before{font-size:52px;margin-bottom:10px}
+  .it{padding:14px}
+  .tab{padding:0 14px;font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .screen::before,.screen::after{display:none}
+  .js .hanko.st{opacity:1;transform:rotate(-4deg)}
+}
+</style>
+</head>
+<body class="no-js">
+<div class="demo">Демо-концепт независимого разработчика — не официальный сайт IDANIC. Не согласован с владельцем, удаляется по первой просьбе.</div>
+
+<header class="hdr">
+  <a class="logo" href="#top" aria-label="IDANIC — наверх">IDANIC</a>
+  <nav class="nav" aria-label="Разделы">
+    <a href="#kioto">КИОТО</a><a href="#pekin">ПЕКИН</a><a href="#bushido">БУШИДО / RONIN</a><a href="#order">Заказать</a><a href="#route">Как дойти</a>
+  </nav>
+  <a class="btn btn-bordo" href="https://t.me/idanicmoscow" target="_blank" rel="noopener">Telegram</a>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="v-name" aria-hidden="true">IDANIC</div>
+  <div class="screen hero-photo" id="heroShot">
+    <img src="img/p10.jpg" srcset="img/p10-m.jpg 506w, img/p10.jpg 720w" sizes="(max-width:900px) 70vw, 36vw" alt="Бордовое кимоно IDANIC с широкими рукавами и поясом на талии" fetchpriority="high">
+  </div>
+  <div class="hero-txt">
+    <div class="hanko" aria-label="Магазин на Таганке">Таганка<span>офис 30</span></div>
+    <div class="kick">Одежда в азиатском стиле · Москва</div>
+    <h1>Собственное производство в&nbsp;Москве</h1>
+    <p>Кимоно, ципао и костюмы, которые шьём сами. Дропы называем как города и кодексы — КИОТО, ПЕКИН, БУШИДО, RONIN. Примерить можно в магазине в ТЦ Таганка.</p>
+    <div class="row">
+      <a class="btn btn-rice" href="#order">Выбрать дроп и заказать</a>
+      <a class="btn btn-line" href="https://t.me/idanicmoscow" target="_blank" rel="noopener">Написать в Telegram</a>
+    </div>
+    <div class="facts">
+      <div><b>11 тыс.</b>подписчиков</div>
+      <div><b>366</b>публикаций</div>
+      <div><b>2 этаж</b>ТЦ Таганка, офис 30</div>
+    </div>
+  </div>
+</section>
+
+<section class="index" aria-labelledby="ix">
+  <div>
+    <div class="kick" style="opacity:.6;margin-bottom:12px">Свиток дропов</div>
+    <h2 id="ix">Каждый дроп — со своей печатью</h2>
+  </div>
+  <div>
+    <p>В Instagram коллекции разложены по хайлайтам. Здесь они собраны в одну ленту: листайте, выбирайте вещь и отправляйте готовую заявку в Telegram.</p>
+    <div class="chips">
+      <a class="c-kioto" href="#kioto">КИОТО</a><a class="c-pekin" href="#pekin">ПЕКИН</a><a href="#bushido">БУШИДО</a><a href="#bushido">RONIN</a><a href="#order" style="background:var(--rice-d);color:var(--lak)">ЦИПАО</a>
+    </div>
+  </div>
+</section>
+
+<section class="drop d-kioto" id="kioto" aria-labelledby="h-kioto">
+  <div class="vt-wrap"><div class="vt" aria-hidden="true">КИОТО</div><div class="hanko st">дроп<br>01</div></div>
+  <div class="screen shot sq"><img src="img/p14.jpg" srcset="img/p14-m.jpg 506w, img/p14.jpg 720w" sizes="(max-width:900px) 70vw, 34vw" alt="Покупательницы в кимоно IDANIC с поясом в магазине" style="object-position:50% 0;height:auto"></div>
+  <div class="info">
+    <div class="cap">Дроп 01 · кимоно и юката</div>
+    <h3 id="h-kioto">Кимоно, которое рисует талию</h3>
+    <p class="lead">Широкие рукава, запах и пояс, который собирает силуэт. Кардиган в стиле кимоно и юката — тоже из КИОТО.</p>
+    <ul class="items">
+      <li><div>Кимоно КИОТО<small>есть на Ozon, артикул 5960426396</small></div><span class="pr">в тг 4&nbsp;000&nbsp;₽</span></li>
+      <li><div>Кардиган в стиле кимоно и юката<small>из дропа КИОТО</small></div><span class="pr">цена в тг</span></li>
+    </ul>
+    <div class="row"><button class="btn btn-rice" data-pick="kioto">Выбрать из КИОТО</button><a class="btn btn-line" href="https://www.ozon.ru/product/5960426396/" target="_blank" rel="noopener">Ozon</a></div>
+  </div>
+</section>
+
+<section class="drop d-pekin" id="pekin" aria-labelledby="h-pekin">
+  <div class="vt-wrap"><div class="vt" aria-hidden="true">ПЕКИН</div><div class="hanko st">дроп<br>02</div></div>
+  <div class="screen shot"><img src="img/p6.jpg" srcset="img/p6-m.jpg 506w, img/p6.jpg 1012w" sizes="(max-width:900px) 70vw, 34vw" alt="Магазин IDANIC: ципао, блузки и кимоно на стенде" style="object-position:50% 0;height:155%"></div>
+  <div class="info">
+    <div class="cap">Дроп 02 · новая модель</div>
+    <h3 id="h-pekin">ПЕКИН — новая моделька</h3>
+    <p class="lead">Сдержанный крой с азиатскими деталями: лонгслив ПЕКИН и новая модель дропа. Рядом в магазине — ципао, блузки и топы.</p>
+    <ul class="items">
+      <li><div>Модель ПЕКИН<small>новинка дропа</small></div><span class="pr">цена в тг</span></li>
+      <li><div>Лонгслив ПЕКИН</div><span class="pr">цена в тг</span></li>
+    </ul>
+    <div class="row"><button class="btn btn-lak" data-pick="pekin">Выбрать из ПЕКИНА</button></div>
+  </div>
+</section>
+
+<section class="drop d-bushido" id="bushido" aria-labelledby="h-bushido">
+  <div class="vt-wrap"><div class="vt" aria-hidden="true">БУШИДО</div><div class="hanko st">дроп<br>03</div></div>
+  <div class="duo">
+    <div class="cut"><img src="img/p12.jpg" alt="Чёрное кимоно IDANIC с широкими рукавами и поясом, вещь целиком"></div>
+    <div class="screen shot"><img src="img/p9.jpg" srcset="img/p9-m.jpg 506w, img/p9.jpg 720w" sizes="(max-width:520px) 90vw, 24vw" alt="Чёрное кимоно IDANIC на прогулке осенью" style="object-position:50% 0;height:170%"></div>
+  </div>
+  <div class="info">
+    <div class="cap">Дропы 03 и 04 · БУШИДО и RONIN</div>
+    <h3 id="h-bushido">Кимоно, которое сделало нам имя</h3>
+    <p class="quote">Чёрный, широкие рукава, пояс на талии — и его носят не только на съёмку, а каждый день.</p>
+    <ul class="items">
+      <li><div>Дроп БУШИДО<small>весь состав — в хайлайте БУШИДО</small></div><span class="pr">цена в тг</span></li>
+      <li><div>Дроп RONIN<small>весь состав — в хайлайте RONIN</small></div><span class="pr">цена в тг</span></li>
+    </ul>
+    <div class="row"><button class="btn btn-bordo" data-pick="bushido">Выбрать БУШИДО</button><button class="btn btn-line" data-pick="ronin">RONIN</button></div>
+  </div>
+</section>
+
+<section class="order" id="order" aria-labelledby="h-order">
+  <div>
+    <div class="kick" style="opacity:.6;margin-bottom:12px">Фишка</div>
+    <h2 id="h-order">Выбрать дроп и&nbsp;заказать</h2>
+    <p class="sub">Отметьте вещи — мы соберём текст заявки. Цены указаны там, где бренд называл их в постах; остальное подскажут в Telegram.</p>
+    <div class="tabs" role="tablist" aria-label="Дропы">
+      <button class="tab" role="tab" data-k="kioto" aria-selected="true">КИОТО</button>
+      <button class="tab" role="tab" data-k="pekin" aria-selected="false">ПЕКИН</button>
+      <button class="tab" role="tab" data-k="bushido" aria-selected="false">БУШИДО</button>
+      <button class="tab" role="tab" data-k="ronin" aria-selected="false">RONIN</button>
+      <button class="tab" role="tab" data-k="qipao" aria-selected="false">ЦИПАО</button>
+    </div>
+    <div class="list" id="list" role="tabpanel"></div>
+    <p class="more">Ещё в хайлайтах профиля: блузки, топы, сорочки-платья, костюмы, купальники и SALE.</p>
+  </div>
+  <aside class="panel" aria-label="Заявка">
+    <h3>Ваша заявка</h3>
+    <div class="seg" role="group" aria-label="Как получить">
+      <button type="button" data-mode="shop" aria-pressed="true">Приду в магазин</button>
+      <button type="button" data-mode="ship" aria-pressed="false">Нужна доставка</button>
+    </div>
+    <div class="msg" id="msg" aria-live="polite"></div>
+    <a class="btn btn-bordo" id="tg" href="https://t.me/idanicmoscow" target="_blank" rel="noopener">Скопировать и написать в Telegram</a>
+    <div class="toast" id="toast" role="status"></div>
+    <div class="alt">
+      <a href="https://t.me/idanic_shop" target="_blank" rel="noopener">Канал t.me/idanic_shop</a>
+      <a href="https://www.ozon.ru/product/5960426396/" target="_blank" rel="noopener">Кимоно на Ozon</a>
+      <a href="https://ig.me/m/idanicmoscow" target="_blank" rel="noopener">Direct</a>
+    </div>
+  </aside>
+</section>
+
+<section class="route" id="route" aria-labelledby="h-route">
+  <div class="route-top">
+    <div><div class="kick" style="margin-bottom:12px">Магазин и производство</div><h2 id="h-route">Как дойти</h2></div>
+    <a class="btn btn-line" href="https://yandex.ru/maps/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A2%D0%B0%D0%B3%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%2C%202" target="_blank" rel="noopener">Открыть на карте</a>
+  </div>
+  <ol class="steps">
+    <li><b>м. Марксистская</b><span>выходите со станции к улице Таганской</span></li>
+    <li><b>ТЦ Таганка</b><span>улица Таганская, 2</span></li>
+    <li><b>2 этаж</b><span>поднимайтесь на второй этаж</span></li>
+    <li><b>Офис 30</b><span>ширма с горой, сакура и кимоно — вы на месте</span></li>
+  </ol>
+</section>
+
+<section class="rev" aria-labelledby="h-rev">
+  <div class="big">11 тыс.</div>
+  <div>
+    <h2 id="h-rev" class="kick" style="opacity:.7">Отзывы</h2>
+    <p>«Каждый день мы получаем отзывы от наших прекрасных покупательниц» — их собирают в отдельном хайлайте в профиле.</p>
+    <a class="btn btn-lak" href="https://www.instagram.com/idanicmoscow/" target="_blank" rel="noopener">Смотреть хайлайт «Отзывы»</a>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div><span class="logo">IDANIC</span>Одежда в азиатском стиле. Собственное производство в Москве.</div>
+  <div><h4>Адрес</h4>Москва, ул. Таганская, 2<br>ТЦ Таганка, 2 этаж, офис 30<br>м. Марксистская</div>
+  <div><h4>Связь</h4><a href="https://t.me/idanicmoscow" target="_blank" rel="noopener">Telegram @idanicmoscow</a><br><a href="https://t.me/idanic_shop" target="_blank" rel="noopener">Канал t.me/idanic_shop</a><br><a href="https://www.instagram.com/idanicmoscow/" target="_blank" rel="noopener">Instagram @idanicmoscow</a></div>
+</footer>
+<a class="btn btn-bordo fab" href="#order">Выбрать дроп и заказать</a>
+
+<script>
+(function(){
+  var b=document.body;b.classList.remove('no-js');b.classList.add('js');
+  var D={
+    kioto:[{n:'Кимоно КИОТО',p:'в тг 4 000 ₽',t:'есть на Ozon, артикул 5960426396'},{n:'Кардиган в стиле кимоно и юката',t:'из дропа КИОТО'}],
+    pekin:[{n:'Модель ПЕКИН',t:'новинка дропа'},{n:'Лонгслив ПЕКИН'}],
+    bushido:[{n:'Вещь из дропа БУШИДО',t:'подскажем по хайлайту БУШИДО'}],
+    ronin:[{n:'Вещь из дропа RONIN',t:'подскажем по хайлайту RONIN'}],
+    qipao:[{n:'Ципао лонг',p:'2 000 ₽'},{n:'Штанишки',p:'2 600 ₽'},{n:'Топ',p:'1 000 ₽'}]
+  };
+  var picked=[],mode='shop',cur='kioto';
+  var list=document.getElementById('list'),msg=document.getElementById('msg');
+  function key(i){return i.n}
+  function render(){
+    list.innerHTML='';
+    D[cur].forEach(function(i){
+      var on=picked.some(function(x){return x.n===i.n});
+      var d=document.createElement('div');d.className='it';
+      d.innerHTML='<div><b></b>'+(i.p?'<span class="p"></span> ':'')+(i.t?'<div class="n"></div>':'')+'</div><button type="button" class="add'+(on?' in':'')+'" aria-pressed="'+on+'">'+(on?'В заявке':'+ В заявку')+'</button>';
+      d.querySelector('b').textContent=i.n;
+      if(i.p)d.querySelector('.p').textContent=i.p;
+      if(i.t)d.querySelector('.n').textContent=i.t;
+      d.querySelector('button').onclick=function(){
+        if(on)picked=picked.filter(function(x){return x.n!==i.n});else picked.push(i);
+        render();text();
+      };
+      list.appendChild(d);
+    });
+  }
+  function text(){
+    var v=mode==='shop'?'примерить':'заказать';
+    var s='Здравствуйте! Хочу '+v+': ';
+    s+=picked.length?picked.map(function(i){return i.n+(i.p?' ('+i.p.replace('в тг ','')+')':'')}).join(', '):'вещь из дропа '+document.querySelector('.tab[aria-selected=true]').textContent;
+    s+='.\n'+(mode==='shop'?'Приду в магазин на Таганке (ТЦ Таганка, 2 этаж, офис 30).':'Нужна доставка — подскажите, пожалуйста, варианты.');
+    s+='\nМой размер: ';
+    msg.textContent=s;return s;
+  }
+  document.querySelectorAll('.tab').forEach(function(t){t.onclick=function(){sel(t.dataset.k)}});
+  function sel(k){cur=k;document.querySelectorAll('.tab').forEach(function(t){t.setAttribute('aria-selected',t.dataset.k===k)});render();text();}
+  document.querySelectorAll('[data-pick]').forEach(function(x){x.onclick=function(){sel(x.dataset.pick);document.getElementById('order').scrollIntoView({behavior:'smooth'})}});
+  document.querySelectorAll('.seg button').forEach(function(x){x.onclick=function(){mode=x.dataset.mode;document.querySelectorAll('.seg button').forEach(function(y){y.setAttribute('aria-pressed',y===x)});text()}});
+  function copy(s){
+    if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(s);
+    var a=document.createElement('textarea');a.value=s;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}a.remove();return Promise.resolve();
+  }
+  document.getElementById('tg').addEventListener('click',function(){
+    copy(text()).then(function(){document.getElementById('toast').textContent='Текст скопирован — вставьте его в чат @idanicmoscow.'},function(){});
+  });
+  render();text();
+
+  // motion
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(ev){var t=document.querySelector(a.getAttribute('href'));if(t){ev.preventDefault();t.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}})});
+  var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hs=document.getElementById('heroShot');
+  if(rm||!('IntersectionObserver' in window)){document.querySelectorAll('.screen').forEach(function(s){s.classList.add('open')});document.querySelectorAll('.hanko.st').forEach(function(h){h.classList.add('on')});return;}
+  setTimeout(function(){hs.classList.add('open')},250);
+  var pend=[].slice.call(document.querySelectorAll('.drop .screen,.hanko.st')),tk=0;
+  function act(x){x.classList.add(x.classList.contains('hanko')?'on':'open')}
+  function chk(){tk=0;pend=pend.filter(function(x){if(x.getBoundingClientRect().top<innerHeight*.8){act(x);return false}return true});
+    if(!pend.length){removeEventListener('scroll',on);io.disconnect()}}
+  function on(){if(!tk)tk=requestAnimationFrame(chk)}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)on()})},{threshold:.2});
+  pend.forEach(function(x){io.observe(x)});addEventListener('scroll',on,{passive:true});chk();
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

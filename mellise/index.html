@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>MELLISÉ — женская одежда, Грозный · Coming soon</title><meta property="og:type" content="website"><meta property="og:title" content="MELLISÉ — женская одежда, Грозный · Coming soon"><meta property="og:description" content="MELLISÉ — когда красота кроется в деталях. Luxury women’s fashion из Грозного: химары, двойки, костюм-четвёрка на Умру и Хадж. Коллекция готовится к запуску."><meta property="og:image" content="https://pikold.github.io/demo-sites/mellise/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="MELLISÉ — когда красота кроется в деталях. Luxury women’s fashion из Грозного: химары, двойки, костюм-четвёрка на Умру и Хадж. Коллекция готовится к запуску.">
+<link rel="stylesheet" href="../_fonts/cormorant-garamond.css">
+<link rel="stylesheet" href="../_fonts/work-sans.css">
+<style>
+:root{
+  --choc:#4B2F23;--bordo:#5A1D2B;--navy:#1E2A44;--graphite:#3A3A3D;--taupe:#8C857D;--silk:#6A5E54;--deep:#33231C;
+  --cream:#EFE6D9;--cream-2:rgba(239,230,217,.72);--cream-3:rgba(239,230,217,.36);--brass:#B8956A;
+  --bg:#8C857D;
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:'Work Sans',system-ui,sans-serif;
+  --ease:cubic-bezier(.22,.8,.24,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--cream);font:400 15px/1.6 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:1px solid var(--brass);outline-offset:4px}
+.demo{position:relative;z-index:30;background:#2A211C;color:var(--cream-2);font-size:11.5px;line-height:1.4;padding:7px 16px;text-align:center;letter-spacing:.02em}
+.leaf{width:18px;height:18px;fill:none;stroke:var(--brass);stroke-width:.8;stroke-linejoin:round;stroke-linecap:round;flex:none}
+.rule{display:flex;align-items:center;gap:14px;color:var(--brass)}
+.rule::before,.rule::after{content:"";height:1px;flex:1;background:currentColor;opacity:.5}
+.rule.short::before,.rule.short::after{flex:0 0 46px}
+.k{font:500 11px/1.4 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--cream-2)}
+
+/* header */
+.top{position:absolute;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:22px clamp(16px,4vw,56px)}
+.top .mark{font:500 13px/1 var(--sans);letter-spacing:.42em;text-decoration:none}
+.top nav{display:flex;gap:28px;align-items:center}
+.top nav a{font-size:12px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--cream-2);padding:12px 0}
+.top nav a:hover{color:var(--cream)}
+.top .wa{border:1px solid var(--cream-3);padding:12px 18px;color:var(--cream)}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,40vw) minmax(0,1fr);align-items:stretch;overflow:hidden;background:var(--taupe)}
+.hero .ph{grid-column:2;position:relative;height:100%;min-height:100svh}
+.hero .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.hero .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(60,48,40,.28),transparent 30%,transparent 55%,rgba(52,40,33,.55))}
+.hero .word{position:absolute;left:0;right:0;top:41%;z-index:5;display:flex;justify-content:space-between;padding:0 clamp(16px,3vw,44px);font:300 clamp(64px,13.4vw,214px)/.8 var(--serif);color:var(--cream);pointer-events:none;mix-blend-mode:normal;text-shadow:0 2px 40px rgba(40,30,24,.25)}
+.hero .word span{display:block}
+.hero .side{position:relative;z-index:6;display:flex;flex-direction:column;justify-content:flex-end;padding:120px clamp(16px,3vw,48px) 56px}
+.hero .side.l{grid-column:1;grid-row:1}
+.hero .side.r{grid-column:3;grid-row:1;align-items:flex-end;text-align:right}
+.hero .line{font:400 italic clamp(22px,2vw,30px)/1.2 var(--serif);max-width:15ch;margin-top:14px}
+.soon{display:inline-flex;flex-direction:column;gap:6px;border:1px solid var(--cream-3);padding:16px 20px;max-width:270px;background:rgba(75,47,35,.22);backdrop-filter:blur(6px)}
+.soon b{font:500 11px/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--brass)}
+.soon span{font:400 italic 21px/1.2 var(--serif)}
+.hero .cta{margin-top:22px;display:inline-flex;align-items:center;gap:12px;min-height:48px;padding:0 24px;background:var(--cream);color:var(--choc);text-decoration:none;font:500 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;transition:background .3s}
+.hero .cta:hover{background:#fff8ee}
+
+/* intro */
+.intro{padding:clamp(90px,14vw,190px) 16px clamp(80px,10vw,140px);text-align:center}
+.intro .q{font:300 italic clamp(34px,5.2vw,78px)/1.08 var(--serif);max-width:17ch;margin:26px auto 0}
+.intro .en{margin-top:26px;font:400 13px/1.6 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--cream-2)}
+.intro .stats{margin:56px auto 0;display:flex;justify-content:center;gap:clamp(28px,6vw,90px);flex-wrap:wrap}
+.intro .stats div{display:flex;flex-direction:column;gap:4px}
+.intro .stats strong{font:400 clamp(34px,4vw,54px)/1 var(--serif)}
+.intro .stats span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--cream-2)}
+
+/* panels */
+.panel,.show,.foot{background:linear-gradient(180deg,transparent,var(--tone) 16%,var(--tone) 84%,transparent)}
+.foot{background:linear-gradient(180deg,transparent,var(--tone) 30%)}
+.panel{position:relative;min-height:104vh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,54vh) minmax(0,320px) minmax(0,1fr);gap:0 clamp(28px,5vw,80px);align-items:center;padding:10vh clamp(16px,4vw,56px)}
+.panel .fig{grid-column:2;position:relative}
+.panel .txt{grid-column:3}
+.panel.rev .fig{grid-column:3}
+.panel.rev .txt{grid-column:2;grid-row:1;text-align:right}
+.panel.rev{grid-template-columns:minmax(0,1fr) minmax(0,320px) minmax(0,54vh) minmax(0,1fr)}
+.panel.rev .rule{justify-content:flex-end}
+.drape{position:relative;overflow:hidden;aspect-ratio:3/4.1;height:auto;width:100%;clip-path:inset(0 0 0 0);transition:clip-path 1.8s var(--ease)}
+.drape img{width:100%;height:100%;object-fit:cover;transform:scale(1);transition:transform 2.4s var(--ease)}
+.js .drape:not(.on){clip-path:inset(0 0 100% 0)}
+.js .drape:not(.on) img{transform:scale(1.08) translateY(-3%)}
+.drape.small{position:absolute;width:44%;aspect-ratio:3/4;bottom:-9%;right:-34%;box-shadow:0 30px 60px rgba(0,0,0,.25);transition-delay:.35s}
+.panel.rev .drape.small{right:auto;left:-34%}
+.fig .no{position:absolute;top:-28px;left:0;font:500 11px/1 var(--sans);letter-spacing:.24em;color:var(--cream-2)}
+.panel.rev .fig .no{left:auto;right:0}
+.txt h2{font:300 italic clamp(46px,5.4vw,88px)/.95 var(--serif);margin:18px 0 22px;letter-spacing:-.01em}
+.txt .d{font-size:15px;line-height:1.65;color:var(--cream-2);max-width:30ch}
+.panel.rev .txt .d{margin-left:auto}
+.txt .meta{margin-top:20px;font:500 11px/1.8 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--brass)}
+.txt .ask{margin-top:26px;display:inline-flex;align-items:center;gap:10px;min-height:44px;font:500 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--cream-3);padding:0 0 2px}
+.txt .ask:hover{border-color:var(--brass)}
+.crop7{aspect-ratio:457/887}
+.crop7 img{position:absolute;max-width:none;width:238%;height:auto;margin-left:-4.8%;margin-top:-29.4%;object-fit:initial}
+
+/* umra list */
+.kit{list-style:none;margin-top:8px;border-top:1px solid var(--cream-3)}
+.kit li{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--cream-3);font:400 italic 22px/1.2 var(--serif)}
+.kit li small{font:500 10.5px/2 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--cream-2);font-style:normal}
+.panel.rev .kit li{flex-direction:row-reverse}
+
+/* showroom */
+.show{padding:clamp(80px,10vw,140px) clamp(16px,4vw,56px) clamp(80px,10vw,130px)}
+.sheet{max-width:1080px;margin:0 auto;background:var(--cream);color:var(--choc);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);box-shadow:0 40px 90px rgba(20,12,8,.35)}
+.sheet .head{padding:clamp(28px,4vw,56px);border-right:1px solid rgba(75,47,35,.16);display:flex;flex-direction:column}
+.sheet .k{color:rgba(75,47,35,.7)}
+.sheet h2{font:300 italic clamp(44px,5vw,76px)/.95 var(--serif);margin:16px 0 18px}
+.sheet .head p{color:rgba(75,47,35,.8);max-width:34ch}
+.steps{list-style:none;margin:28px 0 0;counter-reset:s;display:grid;gap:12px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:34px minmax(0,1fr);font-size:14px;color:rgba(75,47,35,.85)}
+.steps li::before{content:counter(s,upper-roman);font:400 italic 20px/1.1 var(--serif);color:var(--brass)}
+.preview{margin-top:auto;padding-top:28px}
+.preview pre{white-space:pre-wrap;font:400 italic 17px/1.45 var(--serif);background:rgba(75,47,35,.06);border-left:2px solid var(--brass);padding:14px 16px;min-height:96px;color:var(--choc)}
+.items{padding:clamp(18px,3vw,40px) clamp(20px,3.5vw,48px)}
+.item{display:grid;grid-template-columns:28px minmax(0,1fr);gap:14px;align-items:start;padding:14px 0;border-bottom:1px solid rgba(75,47,35,.14);cursor:pointer;min-height:44px}
+.item input{appearance:none;-webkit-appearance:none;width:22px;height:22px;border:1px solid rgba(75,47,35,.5);margin-top:3px;display:grid;place-content:center;cursor:pointer;background:transparent}
+.item input::after{content:"";width:12px;height:12px;background:var(--choc);transform:scale(0);transition:transform .25s var(--ease)}
+.item input:checked::after{transform:scale(1)}
+.item input:checked{border-color:var(--choc)}
+.item .n{font:400 italic 24px/1.15 var(--serif)}
+.item .m{display:block;font:500 10.5px/1.7 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:rgba(75,47,35,.62);margin-top:3px}
+.item.sub{margin-left:42px;padding:8px 0 14px;border-bottom-style:dashed}
+.item.sub .n{font-size:19px}
+.item.sub[aria-disabled="true"]{opacity:.4;pointer-events:none}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;font:500 12px/1.2 var(--sans);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:1px solid var(--choc);cursor:pointer;background:transparent;color:var(--choc);transition:background .3s,color .3s}
+.btn.main{background:var(--choc);color:var(--cream)}
+.btn.main:hover{background:var(--bordo);border-color:var(--bordo)}
+.btn:not(.main):hover{background:rgba(75,47,35,.08)}
+.btn[aria-disabled="true"]{opacity:.45}
+.note{margin-top:14px;font-size:12.5px;color:rgba(75,47,35,.66)}
+.note a{text-underline-offset:3px}
+
+/* footer */
+.foot{padding:90px clamp(16px,4vw,56px) 110px;text-align:center}
+.foot .big{font:300 clamp(54px,12vw,190px)/.85 var(--serif);letter-spacing:.24em;margin-right:-.24em}
+.foot .row{margin-top:40px;display:flex;justify-content:center;flex-wrap:wrap;gap:12px 36px}
+.foot .row a{display:inline-flex;align-items:center;min-height:44px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;color:var(--cream-2)}
+.foot .row a:hover{color:var(--cream)}
+.foot small{display:block;margin-top:34px;color:var(--cream-3);font-size:11.5px}
+.fab{display:none}
+
+/* static mode (screenshots, no-js): each panel carries its own tone */
+
+@media (max-width:900px){
+  .top nav a:not(.wa){display:none}
+  .hero{grid-template-columns:minmax(0,1fr);min-height:calc(100svh - 40px)}
+  .hero .ph{grid-column:1;grid-row:1/3;min-height:calc(100svh - 40px);position:absolute;inset:0}
+  .hero .ph::after{background:linear-gradient(180deg,rgba(60,48,40,.35),transparent 25%,rgba(40,30,24,.15) 45%,rgba(45,33,27,.82) 82%)}
+  .hero .word{top:44%;bottom:auto;font-size:clamp(50px,15vw,110px);padding:0 16px}
+  .hero .side.l{grid-column:1;grid-row:1;justify-content:flex-end;padding:0 16px 22px;align-self:end;min-height:calc(100svh - 40px)}
+  .hero .side.r{display:none}
+  .hero .line{max-width:none}
+  .hero .soon-m{display:flex}
+  .panel,.panel.rev{grid-template-columns:minmax(0,1fr);min-height:auto;padding:90px 16px 70px;gap:44px}
+  .panel .fig,.panel.rev .fig{grid-column:1;width:min(78vw,420px);margin:0 auto}
+  .panel .txt,.panel.rev .txt{grid-column:1;grid-row:auto;text-align:left}
+  .panel.rev .rule{justify-content:flex-start}
+  .panel.rev .txt .d{margin-left:0}
+  .panel.rev .kit li{flex-direction:row}
+  .panel.rev .fig .no{right:auto;left:0}
+  .drape.small{width:42%;right:-14%;bottom:-8%}
+  .panel.rev .drape.small{left:-14%}
+  .sheet{grid-template-columns:minmax(0,1fr)}
+  .sheet .head{border-right:0;border-bottom:1px solid rgba(75,47,35,.16)}
+  .show{padding-left:12px;padding-right:12px}
+  .fab{display:flex;position:fixed;left:16px;right:16px;bottom:14px;z-index:40;min-height:52px;align-items:center;justify-content:center;gap:10px;background:var(--cream);color:var(--choc);font:500 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,.3);transition:opacity .3s,transform .3s}
+  .fab.hide{opacity:0;transform:translateY(20px);pointer-events:none}
+}
+@media (min-width:901px){.hero .soon-m{display:none}}
+.drape img.z{width:142%;max-width:none;margin-left:-21%}
+@media (max-width:420px){
+  .item.sub{margin-left:20px}
+  .btn{width:100%}
+  .txt h2{font-size:52px}
+}
+@media (prefers-reduced-motion:reduce){
+  .drape,.drape img{transition:none!important}
+  .js .drape:not(.on){clip-path:none}
+  .js .drape:not(.on) img{transform:none}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="leaf" viewBox="0 0 24 24">
+    <path d="M12 2.2l1.6 3.5 2.2-1 -.6 4 3.4-2.2-.4 2.8 3 .4-2 2.4 1.2 1.6-4.8.6.6 2.2L12 15.1l-4.2 1.4.6-2.2-4.8-.6 1.2-1.6-2-2.4 3-.4-.4-2.8 3.4 2.2-.6-4 2.2 1z"/>
+    <path d="M12 15.1V22M12 15V6.2M12 12.4l4.6-3.4M12 12.4L7.4 9M12 14l3.4-.6M12 14l-3.4-.6"/>
+  </symbol>
+</svg>
+
+<div class="demo">Демо-концепт независимого разработчика — не официальный сайт MELLISÉ. Не согласован с владельцем, удаляется по первой просьбе. <span lang="en">· Demo concept</span></div>
+
+<header class="top">
+  <a class="mark" href="#top" aria-label="MELLISÉ — наверх">MELLISÉ</a>
+  <nav aria-label="Разделы">
+    <a href="#items">Вещи</a>
+    <a href="#umra">Умра и Хадж</a>
+    <a href="#showroom">Узнать цену</a>
+    <a class="wa" href="https://wa.me/79282203434?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!" target="_blank" rel="noopener">WhatsApp</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero" data-bg="#8C857D" aria-label="MELLISÉ">
+  <div class="side l">
+    <span class="k">Женская одежда · Грозный</span>
+    <p class="line">Luxury women’s fashion, designed for modern elegance</p>
+    <div class="soon soon-m" style="margin-top:18px"><b>Coming soon</b><span>Коллекция готовится к запуску</span></div>
+    <a class="cta soon-m" href="#showroom" style="align-self:flex-start">Узнать цену</a>
+  </div>
+  <div class="ph"><img src="img/p6.jpg" alt="Строгий костюм MELLISÉ в графитовом цвете и бежевый химар — в светлом холле" fetchpriority="high"></div>
+  <div class="side r">
+    <div class="soon"><b>Coming soon</b><span>Коллекция готовится к запуску</span></div>
+    <a class="cta" href="#showroom">Узнать цену <svg class="leaf" style="stroke:var(--choc)"><use href="#leaf"/></svg></a>
+  </div>
+  <div class="word" aria-hidden="true"><span>M</span><span>E</span><span>L</span><span>L</span><span>I</span><span>S</span><span>É</span></div>
+</section>
+
+<section class="intro" data-bg="#8C857D">
+  <div class="rule short"><svg class="leaf"><use href="#leaf"/></svg></div>
+  <h1 class="q">MELLISÉ — когда красота кроется в деталях</h1>
+  <p class="en">Luxury women’s fashion · Designed for modern elegance</p>
+  <div class="stats">
+    <div><strong>20,7&nbsp;тыс.</strong><span>подписчиков в Instagram</span></div>
+    <div><strong>Грозный</strong><span>город бренда</span></div>
+    <div><strong>Coming soon</strong><span>запуск коллекции</span></div>
+  </div>
+</section>
+
+<div id="items"></div>
+
+<section class="panel" data-bg="#4B2F23" style="--tone:#4B2F23">
+  <div class="fig">
+    <span class="no">I</span>
+    <div class="drape"><img class="z" src="img/p1.jpg" alt="Двойка MELLISÉ шоколадного цвета: жакет и длинная юбка на светлом диване" loading="lazy"></div>
+  </div>
+  <div class="txt">
+    <div class="rule"><svg class="leaf"><use href="#leaf"/></svg></div>
+    <h2>Двойка</h2>
+    <p class="d">Двойка от MELLISE — жакет свободного кроя и длинная юбка в одном тоне.</p>
+    <p class="meta">На фото — шоколад</p>
+    <a class="ask" href="#showroom" data-pick="dvoyka">Узнать цену</a>
+  </div>
+</section>
+
+<section class="panel rev" data-bg="#5A1D2B" style="--tone:#5A1D2B">
+  <div class="fig">
+    <span class="no">II</span>
+    <div class="drape"><img src="img/p14.jpg" alt="Бордовый кардиган MELLISÉ на манекене поверх тёмного платья" loading="lazy"></div>
+    <div class="drape small"><img src="img/p11.jpg" alt="Бордовый комплект MELLISÉ: верх и юбка, латунный зажим на вешалке" loading="lazy"></div>
+  </div>
+  <div class="txt">
+    <div class="rule"><svg class="leaf"><use href="#leaf"/></svg></div>
+    <h2>Бордо</h2>
+    <p class="d">Глубокий винный цвет: свободный кардиган и комплект в тон.</p>
+    <p class="meta">На фото — бордо</p>
+    <a class="ask" href="#showroom" data-pick="dvoyka">Узнать цену</a>
+  </div>
+</section>
+
+<section class="panel" data-bg="#1E2A44" style="--tone:#1E2A44">
+  <div class="fig">
+    <span class="no">III</span>
+    <div class="drape"><img src="img/p13.jpg" alt="Тёмно-синий химар MELLISÉ на манекене, мягкая драпировка" loading="lazy"></div>
+    <div class="drape small"><img src="img/p2.jpg" alt="Тёмно-синяя фактурная ткань крупным планом" loading="lazy"></div>
+  </div>
+  <div class="txt">
+    <div class="rule"><svg class="leaf"><use href="#leaf"/></svg></div>
+    <h2>Тёмно-синий химар</h2>
+    <p class="d">Лаконичность, комфорт и элегантность. Лёгкая фактурная ткань с мягкой, струящейся драпировкой — красиво ложится по плечам и свободно ниспадает спереди и по бокам.</p>
+    <a class="ask" href="#showroom" data-pick="navy">Узнать цену</a>
+  </div>
+</section>
+
+<section class="panel rev" data-bg="#3A3A3D" style="--tone:#3A3A3D">
+  <div class="fig">
+    <span class="no">IV</span>
+    <div class="drape"><img src="img/p8.jpg" alt="Химар MELLISÉ графитового оттенка с жаккардовым узором" loading="lazy"></div>
+  </div>
+  <div class="txt">
+    <div class="rule"><svg class="leaf"><use href="#leaf"/></svg></div>
+    <h2>Химар графит</h2>
+    <p class="d">Глубокий графитовый оттенок с деликатным жаккардовым узором. Лёгкая струящаяся ткань красиво ложится в драпировку, удлинённый фасон даёт благородный силуэт.</p>
+    <p class="meta">Цвет: графит · Новинка</p>
+    <a class="ask" href="#showroom" data-pick="graphite">Узнать цену</a>
+  </div>
+</section>
+
+<section class="panel" data-bg="#7E776F" style="--tone:#7E776F">
+  <div class="fig">
+    <span class="no">V</span>
+    <div class="drape"><img src="img/p10.jpg" alt="Лёгкий химар MELLISÉ нежного оттенка с мягким блеском" loading="lazy"></div>
+  </div>
+  <div class="txt">
+    <div class="rule"><svg class="leaf"><use href="#leaf"/></svg></div>
+    <h2>Лёгкий химар</h2>
+    <p class="d">Из лёгкой ткани в нежном оттенке.</p>
+    <p class="meta">Ткань Сантарини</p>
+    <a class="ask" href="#showroom" data-pick="santarini">Узнать цену</a>
+  </div>
+</section>
+
+<section class="panel rev" data-bg="#6A5E54" style="--tone:#6A5E54">
+  <div class="fig">
+    <span class="no">VI</span>
+    <div class="drape"><img src="img/p5.jpg" alt="Платье MELLISÉ свободного силуэта из рифлёного шёлка с цветочным принтом и платком" loading="lazy"></div>
+  </div>
+  <div class="txt">
+    <div class="rule"><svg class="leaf"><use href="#leaf"/></svg></div>
+    <h2>Платье из рифлёного шёлка</h2>
+    <p class="d">Свободный силуэт, деликатный цветочный принт. Лёгкая ткань красиво движется при ходьбе, съёмный платок — из той же ткани.</p>
+    <p class="meta">Рукава реглан</p>
+    <a class="ask" href="#showroom" data-pick="dress">Узнать цену</a>
+  </div>
+</section>
+
+<section class="panel" id="umra" data-bg="#33231C" style="--tone:#33231C">
+  <div class="fig">
+    <span class="no">VII</span>
+    <div class="drape crop7"><img src="img/p7.jpg" alt="Костюм MELLISÉ: платье, широкие брюки, шейла и сумка" loading="lazy"></div>
+  </div>
+  <div class="txt">
+    <div class="rule"><svg class="leaf"><use href="#leaf"/></svg></div>
+    <span class="k">Комплект</span>
+    <h2>На Умру и Хадж</h2>
+    <p class="d">Костюм-четвёрка. Лёгкая ткань, не нужно гладить.</p>
+    <ul class="kit" aria-label="Состав комплекта">
+      <li>Платье <small>с разрезами</small></li>
+      <li>Брюки <small>широкого кроя</small></li>
+      <li>Шейла</li>
+      <li>Сумка</li>
+    </ul>
+    <p class="meta">+ химар из такой же ткани — отдельно, по желанию</p>
+    <a class="ask" href="#showroom" data-pick="umra">Узнать цену</a>
+  </div>
+</section>
+
+<section class="show" id="showroom" data-bg="#4B2F23" style="--tone:#4B2F23">
+  <div class="sheet">
+    <div class="head">
+      <span class="k">Шоурум-лист</span>
+      <h2>Узнать цену</h2>
+      <p>Отметьте вещи — мы соберём сообщение, останется отправить его в WhatsApp.</p>
+      <ol class="steps">
+        <li>Отметьте, что понравилось</li>
+        <li>Нажмите «Спросить в WhatsApp» — текст уже готов</li>
+        <li>MELLISÉ ответит про цену и наличие</li>
+      </ol>
+      <div class="preview">
+        <span class="k">Ваше сообщение</span>
+        <pre id="msg" aria-live="polite" style="margin-top:10px"></pre>
+      </div>
+    </div>
+    <form class="items" id="list" onsubmit="return false">
+      <label class="item"><input type="checkbox" value="Химар, графит с жаккардовым узором" data-id="graphite"><span><span class="n">Химар графит, жаккард</span><span class="m">новинка · цвет графит</span></span></label>
+      <label class="item"><input type="checkbox" value="Тёмно-синий химар" data-id="navy"><span><span class="n">Химар тёмно-синий</span><span class="m">лёгкая фактурная ткань</span></span></label>
+      <label class="item"><input type="checkbox" value="Лёгкий химар нежного оттенка (ткань Сантарини)" data-id="santarini"><span><span class="n">Химар нежного оттенка</span><span class="m">ткань Сантарини</span></span></label>
+      <label class="item"><input type="checkbox" value="Двойка" data-id="dvoyka"><span><span class="n">Двойка</span><span class="m">жакет и юбка</span></span></label>
+      <label class="item"><input type="checkbox" value="Строгий костюм" data-id="strict"><span><span class="n">Строгий костюм</span></span></label>
+      <label class="item"><input type="checkbox" value="Костюм (размер: Стандарт)" data-id="costume"><span><span class="n">Костюм</span><span class="m">размер: Стандарт</span></span></label>
+      <label class="item"><input type="checkbox" value="Костюм-четвёрка на Умру и Хадж (платье, широкие брюки, шейла, сумка)" data-id="umra"><span><span class="n">Костюм-четвёрка на Умру и Хадж</span><span class="m">платье · широкие брюки · шейла · сумка</span></span></label>
+      <label class="item sub" id="subRow" aria-disabled="true"><input type="checkbox" value="+ химар из такой же ткани" data-id="umra-khimar" disabled><span><span class="n">+ химар из такой же ткани</span><span class="m">отдельно, по желанию</span></span></label>
+      <label class="item"><input type="checkbox" value="Платье из рифлёного шёлка со съёмным платком" data-id="dress"><span><span class="n">Платье из рифлёного шёлка</span><span class="m">со съёмным платком</span></span></label>
+      <div class="btns">
+        <a class="btn main" id="ask" href="https://wa.me/79282203434" target="_blank" rel="noopener">Спросить в WhatsApp</a>
+        <a class="btn" id="notify" href="https://wa.me/79282203434" target="_blank" rel="noopener">Сообщить мне о запуске коллекции</a>
+      </div>
+      <p class="note">Можно и в Instagram: <a href="https://ig.me/m/mellise._" target="_blank" rel="noopener">написать в Direct @mellise._</a></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot" data-bg="#33231C" style="--tone:#33231C">
+  <div class="rule short" style="margin-bottom:40px"><svg class="leaf"><use href="#leaf"/></svg></div>
+  <div class="big">MELLISÉ</div>
+  <div class="row">
+    <a href="https://wa.me/79282203434" target="_blank" rel="noopener">WhatsApp +7 928 220-34-34</a>
+    <a href="https://instagram.com/mellise._" target="_blank" rel="noopener">Instagram @mellise._</a>
+    <a href="#top">Женская одежда · Грозный</a>
+  </div>
+  <small>Демо-концепт независимого разработчика — не официальный сайт MELLISÉ.</small>
+</footer>
+
+<a class="fab" id="fab" href="#showroom">Узнать цену <svg class="leaf" style="stroke:var(--choc)"><use href="#leaf"/></svg></a>
+
+<script>
+(function(){
+  var d=document.documentElement, WA='https://wa.me/79282203434?text=';
+  var auto=navigator.webdriver||/HeadlessChrome/.test(navigator.userAgent);
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  d.classList.add(auto?'static':'js');
+
+  /* 1. drape reveal */
+  var dr=[].slice.call(document.querySelectorAll('.drape'));
+  if(auto||!('IntersectionObserver' in window)){dr.forEach(function(e){e.classList.add('on')})}
+  else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{rootMargin:'0px 0px -12% 0px',threshold:.08});dr.forEach(function(e){io.observe(e)})}
+
+  /* 2. background flows between fabric tones */
+  var secs=[].slice.call(document.querySelectorAll('[data-bg]'));
+  function hex(h){h=h.replace('#','');return[parseInt(h.slice(0,2),16),parseInt(h.slice(2,4),16),parseInt(h.slice(4,6),16)]}
+  var cols=secs.map(function(s){return hex(s.getAttribute('data-bg'))});
+  var tick=false, fab=document.getElementById('fab'), show=document.getElementById('showroom');
+  function upd(){
+    tick=false;
+    var mid=innerHeight*.55, i=0;
+    for(var k=0;k<secs.length;k++){if(secs[k].getBoundingClientRect().top<=mid)i=k}
+    var a=cols[i], b=cols[Math.min(i+1,cols.length-1)], r=secs[i].getBoundingClientRect();
+    var zone=Math.min(innerHeight*.6,r.height*.5);
+    var t=Math.max(0,Math.min(1,(mid-(r.bottom-zone))/zone));
+    t=t*t*(3-2*t);
+    var c=a.map(function(v,j){return Math.round(v+(b[j]-v)*t)});
+    dr.forEach(function(e){if(!e.classList.contains("on")&&e.getBoundingClientRect().top<innerHeight*.92)e.classList.add("on")});
+    d.style.setProperty('--bg','rgb('+c.join(',')+')');
+    var sr=show.getBoundingClientRect();
+    fab.classList.toggle('hide',scrollY<innerHeight*.6||(sr.top<innerHeight&&sr.bottom>0));
+  }
+  if(!auto){addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});addEventListener('resize',upd);upd()}
+  else fab.classList.add('hide');
+
+  /* 3. showroom list */
+  var boxes=[].slice.call(document.querySelectorAll('#list input')), msg=document.getElementById('msg');
+  var ask=document.getElementById('ask'), sub=document.getElementById('subRow'), subBox=sub.querySelector('input'), umra=document.querySelector('[data-id="umra"]');
+  function build(){
+    subBox.disabled=!umra.checked; if(!umra.checked)subBox.checked=false;
+    sub.setAttribute('aria-disabled',String(!umra.checked));
+    var picked=boxes.filter(function(b){return b.checked&&b!==subBox}).map(function(b){
+      return '— '+b.value+(b===umra&&subBox.checked?' + химар из такой же ткани':'');
+    });
+    var text=picked.length?'Здравствуйте! Подскажите цену и наличие:\n'+picked.join('\n'):'Здравствуйте! Подскажите цену и наличие вещей MELLISÉ.';
+    msg.textContent=text;
+    ask.href=WA+encodeURIComponent(text);
+  }
+  boxes.forEach(function(b){b.addEventListener('change',build)});
+  document.getElementById('notify').href=WA+encodeURIComponent('Здравствуйте! Сообщите мне, пожалуйста, о запуске коллекции MELLISÉ.');
+  [].forEach.call(document.querySelectorAll('a[href^="#"]'),function(a){a.addEventListener('click',function(ev){var t=document.querySelector(a.getAttribute('href'));if(t){ev.preventDefault();t.scrollIntoView({behavior:reduce?'auto':'smooth'})}})});
+  [].forEach.call(document.querySelectorAll('[data-pick]'),function(a){a.addEventListener('click',function(){var b=document.querySelector('#list [data-id="'+a.getAttribute('data-pick')+'"]');if(b&&!b.checked){b.checked=true;build()}})});
+  build();
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

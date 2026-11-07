@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Malugino studio — авторское ателье Алёны Малюгиной, Москва</title><meta property="og:type" content="website"><meta property="og:title" content="Malugino studio — авторское ателье Алёны Малюгиной, Москва"><meta property="og:description" content="Авторская студия Алёны Малюгиной: сложные работы на заказ, премиум. Жакеты, пальто, костюмы, юбки-карандаш, блузы. Запись на пошив через Telegram, пн–вс 10:00–20:00."><meta property="og:image" content="https://pikold.github.io/demo-sites/malugino-studio/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Авторская студия Алёны Малюгиной: сложные работы на заказ, премиум. Жакеты, пальто, костюмы, юбки-карандаш, блузы. Запись на пошив через Telegram, пн–вс 10:00–20:00.">
+<link rel="stylesheet" href="../_fonts/libre-caslon-text.css">
+<link rel="stylesheet" href="../_fonts/archivo.css">
+<link rel="preload" as="image" href="img/p8.jpg" media="(min-width: 821px)">
+<style>
+:root{
+  --red:#B3261E; --rust:#A4462A; --indigo:#262E4A; --ivory:#EEE7DC; --graphite:#3C3F3C; --brass:#B08D57;
+  --ink:#1E1E1C; --paper:#F6F1E8; --lace:#E3DACB;
+  --flow:var(--red);
+  --serif:'Libre Caslon Text', Georgia, 'Times New Roman', serif;
+  --sans:'Archivo', 'Segoe UI', Roboto, Arial, sans-serif;
+  --pad:clamp(20px,4.4vw,72px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--ivory);color:var(--ink);font:400 16px/1.55 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button,input,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:12px;z-index:99;background:var(--paper);padding:10px 14px}
+
+/* demo plate */
+.demo{background:var(--ink);color:#d9d1c4;font:500 12px/1.4 var(--sans);letter-spacing:.01em;padding:8px var(--pad);text-align:center}
+
+/* top bar */
+.bar{position:absolute;z-index:5;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:20px var(--pad);color:var(--paper);pointer-events:none}
+.bar a{pointer-events:auto}
+.mark{font:400 15px/1 var(--serif);letter-spacing:.02em;text-decoration:none}
+.bar .mark{background:rgba(30,30,28,.55);padding:9px 12px;backdrop-filter:blur(3px)}
+.bar nav{display:flex;gap:28px;font:500 12px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase}
+.bar nav a{text-decoration:none;padding:12px 0;border-bottom:1px solid transparent}
+.bar nav a:hover{border-color:currentColor}
+
+/* hero */
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,60fr) minmax(0,40fr);min-height:min(100svh,980px);background:var(--rust);color:var(--paper)}
+.hero-photo{position:relative;overflow:hidden;background:var(--red)}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 30%;transform:scale(1.08);animation:settle 2.2s cubic-bezier(.2,.7,.1,1) forwards}
+@keyframes settle{to{transform:scale(1)}}
+.hero-photo figcaption{position:absolute;left:var(--pad);bottom:28px;font:500 11px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--paper);mix-blend-mode:normal;background:rgba(30,30,28,.28);padding:8px 10px;backdrop-filter:blur(2px)}
+.hero-text{display:flex;flex-direction:column;justify-content:space-between;padding:110px var(--pad) 44px clamp(28px,3.6vw,60px);position:relative}
+.hero-text::before{content:"";position:absolute;left:0;top:0;bottom:0;width:1px;background:rgba(246,241,232,.22)}
+.eyebrow{font:600 11px/1.4 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--brass)}
+.hero-text .eyebrow{color:#E9C99A}
+.hero h1{font:400 clamp(54px,7.4vw,126px)/.9 var(--serif);letter-spacing:-.025em;margin:22px 0 0}
+.hero h1 em{font-style:italic;display:block;padding-left:.42em}
+.hero .lead{font:400 clamp(21px,1.9vw,30px)/1.22 var(--serif);max-width:15em;margin-top:34px}
+.hero .who{margin-top:18px;font-size:14px;line-height:1.5;color:rgba(246,241,232,.82);max-width:30em}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border:1px solid currentColor;text-decoration:none;font:600 13px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;background:none;transition:background .25s,color .25s,border-color .25s}
+.btn-solid{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.btn-solid:hover{background:var(--brass);border-color:var(--brass);color:var(--ink)}
+.btn-ghost:hover{background:rgba(246,241,232,.12)}
+.hero-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:48px;padding-top:18px;border-top:1px solid rgba(246,241,232,.28);font-size:12px;line-height:1.35;color:rgba(246,241,232,.8)}
+.hero-meta b{display:block;white-space:nowrap;font:400 clamp(20px,1.7vw,26px)/1 var(--serif);color:var(--paper);margin-bottom:6px}
+
+/* manifesto */
+.form{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(28px,5vw,90px);padding:clamp(72px,10vw,150px) var(--pad);align-items:center}
+.form blockquote{font:400 clamp(36px,4.6vw,76px)/1.04 var(--serif);letter-spacing:-.02em}
+.form blockquote span{color:var(--red)}
+.form .src{margin-top:22px;font-size:13px;color:#5f5a52}
+.form-item{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:end}
+.form-item img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%}
+.form-item h3{font:400 24px/1.15 var(--serif);margin:12px 0 16px}
+
+/* spec list */
+.spec{list-style:none;counter-reset:s;border-top:1px solid currentColor}
+.spec li{counter-increment:s;position:relative;padding:12px 0 12px 48px;border-bottom:1px solid color-mix(in srgb,currentColor 28%,transparent);font-size:15px;line-height:1.4}
+.spec li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:12px;font:400 14px/1.4 var(--serif);color:var(--brass)}
+.spec li b{font-weight:600}
+
+/* item cards */
+.items{background:var(--ivory)}
+.card{--bg:var(--red);--fg:var(--paper);background:var(--bg);color:var(--fg);padding:clamp(56px,8vw,120px) var(--pad);display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,5vw,96px);align-items:center;transition:background-color .9s ease}
+.card.flip{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
+.card.flip .stage{order:2}
+html.flow .items{background:var(--flow);transition:background-color 1s ease}
+html.flow .card{background:transparent}
+.c-red{--bg:var(--red)}.c-rust{--bg:var(--rust)}.c-indigo{--bg:var(--indigo)}.c-graphite{--bg:var(--graphite)}.c-lace{--bg:var(--lace);--fg:var(--ink)}
+
+.stage{position:relative;aspect-ratio:4/5;max-height:86vh;width:100%;overflow:hidden;background:rgba(0,0,0,.12)}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.stage .face{clip-path:inset(0 0 0 0);transition:clip-path 1.25s cubic-bezier(.7,0,.2,1);z-index:2}
+.card.open .stage .face{clip-path:inset(0 0 0 100%)}
+.stage .back{transform:scale(1.06);transition:transform 1.6s cubic-bezier(.2,.7,.1,1)}
+.card.open .stage .back{transform:scale(1)}
+.stage .tag{position:absolute;z-index:3;left:16px;top:16px;font:600 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;background:var(--paper);color:var(--ink);padding:9px 11px}
+.stage .tag i{font-style:normal;color:#8b8478}
+.stage .tag .t-back{display:none}
+.card.open .stage .tag .t-face{display:none}.card.open .stage .tag .t-back{display:inline}
+.stage .seam{position:absolute;z-index:3;top:0;bottom:0;right:0;width:2px;background:var(--brass);transform:translateX(0);transition:transform 1.25s cubic-bezier(.7,0,.2,1);opacity:.9}
+.card.open .stage .seam{transform:translateX(2px)}
+
+.info .num{display:flex;justify-content:space-between;align-items:baseline;font:500 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;opacity:.85}
+.info .num span:first-child{font:400 15px/1 var(--serif);letter-spacing:0}
+.info h2{font:400 clamp(34px,3.8vw,62px)/1.02 var(--serif);letter-spacing:-.02em;margin:22px 0 18px}
+.info .quote{font:400 italic 17px/1.5 var(--serif);opacity:.92;max-width:30em;margin-bottom:28px}
+.info .quote::before{content:"\00AB"}.info .quote::after{content:"\00BB"}
+.info .spec{margin-bottom:26px}
+.info-foot{display:flex;gap:18px;align-items:flex-end;flex-wrap:wrap}
+.info-foot figure{width:128px;flex:none}
+.info-foot figure img{width:128px;height:160px;object-fit:cover}
+.info-foot figcaption{font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-top:8px;opacity:.75}
+.toggle{min-height:44px;padding:0 16px;border:1px solid currentColor;background:none;cursor:pointer;font:600 11px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase}
+.toggle:hover{background:color-mix(in srgb,currentColor 12%,transparent)}
+.once{display:inline-block;margin-top:8px;font:600 11px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#E9C99A}
+
+/* numbers */
+.facts{padding:clamp(72px,10vw,140px) var(--pad) clamp(40px,6vw,80px)}
+.facts h2{font:600 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#6d665b;margin-bottom:34px}
+.nums{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.25fr) minmax(0,1.95fr);border-top:1px solid var(--ink)}
+.nums div{padding:26px 24px 10px 0;border-right:1px solid rgba(30,30,28,.2);margin-right:24px}
+.nums div:last-child{border:0;margin:0}
+.nums b{display:block;white-space:nowrap;font:400 clamp(56px,7.2vw,132px)/.9 var(--serif);letter-spacing:-.04em;color:var(--ink)}
+.nums b small{font-size:.42em;letter-spacing:-.01em}
+.nums div:nth-child(2) b{color:var(--red)}
+.nums span{display:block;margin-top:14px;font-size:14px;color:#4d483f;max-width:22em}
+
+/* inside strip */
+.inside{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,3fr) minmax(0,3fr);gap:clamp(16px,2.4vw,36px);padding:clamp(40px,6vw,90px) var(--pad) clamp(72px,10vw,140px);align-items:end}
+.inside h2{font:400 clamp(30px,3.4vw,54px)/1.05 var(--serif);letter-spacing:-.02em}
+.inside p{margin-top:18px;color:#4d483f;max-width:26em}
+.inside figure img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.inside figcaption{font-size:13px;line-height:1.45;margin-top:12px;color:#3b3731}
+.inside figcaption b{display:block;font:600 11px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--rust);margin-bottom:6px}
+
+/* highlights index */
+.index{background:var(--graphite);color:var(--paper);padding:clamp(56px,7vw,100px) var(--pad);display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(28px,5vw,80px)}
+.index h2{font:400 clamp(30px,3.2vw,48px)/1.08 var(--serif)}
+.index p{margin-top:16px;color:rgba(246,241,232,.75);max-width:24em}
+.index ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px;align-content:flex-start}
+.index li a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border:1px solid rgba(246,241,232,.35);text-decoration:none;font:400 18px/1 var(--serif);transition:background .2s,color .2s}
+.index li a:hover{background:var(--paper);color:var(--ink)}
+.index li a.k{border-color:var(--brass);color:#E9C99A}
+
+/* booking */
+.book{background:var(--indigo);color:var(--paper);padding:clamp(72px,10vw,140px) var(--pad) 48px}
+.book-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,110px)}
+.book h2{font:400 clamp(44px,5.6vw,92px)/.96 var(--serif);letter-spacing:-.03em;margin-top:18px}
+.book .note{margin-top:26px;font:400 italic 20px/1.35 var(--serif);color:#E9C99A}
+.book .hrs{margin-top:28px;display:flex;flex-direction:column;gap:6px;font-size:15px;color:rgba(246,241,232,.85)}
+.book .hrs b{font:400 34px/1.1 var(--serif);color:var(--paper)}
+.book .side-links{margin-top:30px;display:flex;flex-direction:column;gap:4px;font-size:14px}
+.book .side-links a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:4px}
+.panel{border-top:1px solid rgba(246,241,232,.35);padding-top:26px}
+.panel .lbl{display:block;font:600 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:rgba(246,241,232,.7);margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.chip{min-height:44px;padding:0 16px;border:1px solid rgba(246,241,232,.38);background:none;cursor:pointer;font:400 16px/1 var(--serif);transition:background .2s,color .2s,border-color .2s}
+.chip[aria-pressed="true"]{background:var(--paper);color:var(--indigo);border-color:var(--paper)}
+.chip:hover{border-color:var(--paper)}
+textarea{width:100%;min-height:96px;background:rgba(246,241,232,.06);border:1px solid rgba(246,241,232,.38);padding:14px;resize:vertical;line-height:1.45}
+textarea::placeholder{color:rgba(246,241,232,.5)}
+.check{display:flex;align-items:center;gap:12px;min-height:44px;margin:14px 0 24px;cursor:pointer;font-size:15px}
+.check input{width:22px;height:22px;accent-color:var(--brass)}
+.out{background:var(--paper);color:var(--ink);padding:20px 22px;font:400 15px/1.55 var(--sans);white-space:pre-wrap;min-height:110px;position:relative}
+.out::before{content:"Текст заявки";display:block;font:600 10px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--rust);margin-bottom:10px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:16px}
+.btn-brass{background:var(--brass);border-color:var(--brass);color:var(--ink)}
+.btn-brass:hover{background:var(--paper);border-color:var(--paper)}
+.status{font-size:13px;color:#E9C99A;min-height:20px}
+.foot{margin-top:clamp(64px,8vw,110px);padding-top:22px;border-top:1px solid rgba(246,241,232,.22);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:rgba(246,241,232,.6)}
+.foot .mark{font-size:20px;color:var(--paper)}
+
+/* reveal */
+.rv{opacity:1;transform:none;transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.1,1)}
+html.js .rv:not(.in){opacity:.001;transform:translateY(26px)}
+
+@media (max-width:1080px){
+  .bar nav{gap:18px}
+  .hero-meta{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:820px){
+  .bar{position:absolute;padding:16px 20px}
+  .bar nav{display:none}
+  .hero{grid-template-columns:minmax(0,1fr);min-height:0}
+  .hero-photo{height:68svh;min-height:420px}
+  .hero-photo figcaption{left:20px;bottom:18px}
+  .hero-text{padding:36px 20px 36px}
+  .hero-text::before{display:none}
+  .hero h1{font-size:clamp(52px,15vw,74px)}
+  .hero .lead{margin-top:24px}
+  .hero-cta .btn{flex:1 1 100%}
+  .hero-meta{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:34px;font-size:11px}
+  .hero-meta b{font-size:20px}
+  .form{grid-template-columns:minmax(0,1fr)}
+  .form-item{grid-template-columns:minmax(0,1fr)}
+  .card,.card.flip{grid-template-columns:minmax(0,1fr);gap:30px}
+  .card.flip .stage{order:0}
+  .stage{max-height:none}
+  .nums{grid-template-columns:minmax(0,1fr)}
+  .nums div{border-right:0;margin-right:0;border-bottom:1px solid rgba(30,30,28,.2);padding:22px 0 18px}
+  .inside{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .inside > div{grid-column:1/-1}
+  .index{grid-template-columns:minmax(0,1fr)}
+  .book-grid{grid-template-columns:minmax(0,1fr)}
+  .actions .btn{flex:1 1 100%}
+}
+@media (max-width:420px){
+  .nums b{font-size:clamp(48px,15vw,64px)}
+  .info-foot figure,.info-foot figure img{width:104px}
+  .info-foot figure img{height:130px}
+  .index li a{font-size:16px;padding:0 14px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .hero-photo img{transform:none}
+  html.js .rv:not(.in){opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#zapis">К записи на пошив</a>
+<div class="demo">Демо-концепт независимого разработчика — не официальный сайт Malugino studio. Не согласован с владельцем, удаляется по первой просьбе.</div>
+
+<header class="bar">
+  <a class="mark" href="#top">Malugino studio</a>
+  <nav aria-label="Разделы">
+    <a href="#izdeliya">Изделия</a>
+    <a href="#iznanka">Изнанка</a>
+    <a href="#zapis">Запись</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero" aria-label="Malugino studio">
+  <figure class="hero-photo">
+    <picture>
+      <source media="(max-width:820px)" srcset="img/p8-m.jpg">
+      <img src="img/p8.jpg" alt="Пальто из красного кашемира на манекене: лацкан и плечо крупным планом" fetchpriority="high">
+    </picture>
+    <figcaption>Пальто из красного кашемира · без фильтров</figcaption>
+  </figure>
+  <div class="hero-text">
+    <div>
+      <p class="eyebrow">Авторская студия · Москва</p>
+      <h1>Malugino <em>studio</em></h1>
+      <p class="lead">Сложные работы на&nbsp;заказ, премиум</p>
+      <p class="who">Алёна Малюгина, дипломированный модельер. Каждая вещь здесь — с&nbsp;лица и&nbsp;с&nbsp;изнанки: подкладка, швы, карманы, воротник.</p>
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="#zapis">Записаться на пошив</a>
+        <a class="btn btn-ghost" href="#izdeliya">Смотреть изделия</a>
+      </div>
+    </div>
+    <div class="hero-meta">
+      <div><b>18</b>лет опыта</div>
+      <div><b>85,5&nbsp;тыс.</b>подписчиков в&nbsp;Instagram</div>
+      <div><b>10–20</b>запись пн–вс</div>
+    </div>
+  </div>
+</section>
+
+<section class="form" aria-labelledby="form-h">
+  <div class="rv">
+    <p class="eyebrow">Принцип студии</p>
+    <blockquote id="form-h" style="margin-top:20px">«<span>Форма</span> — всегда отталкиваемся от&nbsp;неё»</blockquote>
+    <p class="src">— из подписи к посту @malugino_studio</p>
+  </div>
+  <div class="form-item rv">
+    <img src="img/p1-m.jpg" srcset="img/p1-m.jpg 689w, img/p1.jpg 1284w" sizes="(max-width:820px) 92vw, 26vw" alt="Авторский жакет нестандартной формы с длинным атласным шалевым воротником на манекене">
+    <div>
+      <p class="eyebrow">Спецификация</p>
+      <h3>Сложный авторский жакет нестандартной формы</h3>
+      <ol class="spec">
+        <li>Разрезы по&nbsp;борту</li>
+        <li>Шалевый, длинный, атласный воротник</li>
+        <li>Карманы в&nbsp;швах</li>
+        <li>Высокие шлицы на&nbsp;рукавах</li>
+        <li>Подкладка из&nbsp;шёлка</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<div class="items" id="izdeliya">
+
+<article class="card c-red" data-c="#B3261E" aria-labelledby="i1">
+  <div class="stage">
+    <img class="back" src="img/p8-m.jpg" srcset="img/p8-m.jpg 720w, img/p8.jpg 1440w" sizes="(max-width:820px) 92vw, 54vw" style="object-position:30% 85%;transform:scale(1.7)" alt="Фактура красного кашемира крупным планом">
+    <img class="face" src="img/p8-m.jpg" srcset="img/p8-m.jpg 720w, img/p8.jpg 1440w" sizes="(max-width:820px) 92vw, 54vw" alt="Пальто из красного кашемира на манекене">
+    <span class="tag"><span class="t-face">Лицо</span><span class="t-back">Фактура кашемира</span></span>
+    <span class="seam" aria-hidden="true"></span>
+  </div>
+  <div class="info rv">
+    <p class="num"><span>01 / 05</span><span>Красный кашемир</span></p>
+    <h2 id="i1">Пальто из&nbsp;красного кашемира</h2>
+    <p class="quote">Без фильтров. Пальто из&nbsp;красного кашемира, на&nbsp;подкладке из&nbsp;шёлка.</p>
+    <ol class="spec">
+      <li>Ткань — <b>красный кашемир</b></li>
+      <li>Подкладка — <b>шёлк</b></li>
+      <li>Пошив на&nbsp;заказ</li>
+    </ol>
+    <div class="info-foot"><button class="toggle" type="button">Лицо / фактура</button></div>
+  </div>
+</article>
+
+<article class="card c-rust flip" data-c="#A4462A" aria-labelledby="i2">
+  <div class="stage">
+    <img class="back" src="img/p4-m.jpg" srcset="img/p4-m.jpg 506w, img/p4.jpg 1012w" sizes="(max-width:820px) 92vw, 54vw" style="object-position:50% 35%" alt="Двубортный жакет из ржавого вельвета в профиль, накладные карманы">
+    <img class="face" src="img/p2-m.jpg" srcset="img/p2-m.jpg 675w, img/p2.jpg 1350w" sizes="(max-width:820px) 92vw, 54vw" style="object-position:50% 30%" alt="Костюм из вельвета: двубортный приталенный жакет и брюки на манекене">
+    <span class="tag"><span class="t-face">Лицо</span><span class="t-back">В профиль</span></span>
+    <span class="seam" aria-hidden="true"></span>
+  </div>
+  <div class="info rv">
+    <p class="num"><span>02 / 05</span><span>Вельвет · замша</span></p>
+    <h2 id="i2">Костюм из&nbsp;вельвета</h2>
+    <p class="quote">Увидев эту ткань, сразу в&nbsp;голове родился дизайн этой модели.</p>
+    <ol class="spec">
+      <li>Двубортный приталенный жакет</li>
+      <li>Акцентные карманы</li>
+      <li>Элементы из&nbsp;<b>натуральной замши</b></li>
+      <li>Брюки с&nbsp;небольшим клёшем, со&nbsp;стрелками</li>
+      <li>Подбор всех сопутствующих материалов</li>
+    </ol>
+    <div class="info-foot">
+      <figure><img src="img/p10-m.jpg" alt="Брюки из плотного вельвета: пояс и застёжка крупно"><figcaption>Брюки, деталь</figcaption></figure>
+      <button class="toggle" type="button">Лицо / профиль</button>
+    </div>
+  </div>
+</article>
+
+<article class="card c-indigo" data-c="#262E4A" aria-labelledby="i3">
+  <div class="stage">
+    <img class="back" src="img/p9-m.jpg" srcset="img/p9-m.jpg 675w, img/p9.jpg 1350w" sizes="(max-width:820px) 92vw, 54vw" alt="Стёганая куртка с объёмными рукавами: тёмная сторона и шалевый воротник">
+    <img class="face" src="img/p11-m.jpg" srcset="img/p11-m.jpg 675w, img/p11.jpg 1350w" sizes="(max-width:820px) 92vw, 54vw" alt="Стёганая куртка с рукавами со складками, шалевым воротником и поясом на резинке">
+    <span class="tag"><span class="t-face">Лицо</span><span class="t-back">Другая сторона</span></span>
+    <span class="seam" aria-hidden="true"></span>
+  </div>
+  <div class="info rv">
+    <p class="num"><span>03 / 05</span><span>Стёганая ткань</span></p>
+    <h2 id="i3">Куртка с&nbsp;объёмным рукавом</h2>
+    <p class="quote">Сногсшибательная ткань и&nbsp;невероятная куртка.</p>
+    <ol class="spec">
+      <li>Рукава <b>со&nbsp;складками</b>, объёмная форма</li>
+      <li>Шалевый воротник</li>
+      <li>Пояс на&nbsp;резинке</li>
+    </ol>
+    <div class="info-foot">
+      <figure><img src="img/p13-m.jpg" alt="Та же куртка сбоку: силуэт рукава"><figcaption>Силуэт сбоку</figcaption></figure>
+      <div>
+        <button class="toggle" type="button">Лицо / изнанка</button><br>
+        <span class="once">Эта куртка — в&nbsp;единственном экземпляре</span>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="card c-graphite flip" data-c="#3C3F3C" aria-labelledby="i4">
+  <div class="stage">
+    <img class="back" src="img/p6-m.jpg" srcset="img/p6-m.jpg 506w, img/p6.jpg 1012w" sizes="(max-width:820px) 92vw, 54vw" alt="Юбка-карандаш: фигурный шов на бедре, вид сзади">
+    <img class="face" src="img/p14-m.jpg" srcset="img/p14-m.jpg 683w, img/p14.jpg 1284w" sizes="(max-width:820px) 92vw, 54vw" alt="Юбка-карандаш с фигурными швами на высокой талии на манекене">
+    <span class="tag"><span class="t-face">Лицо</span><span class="t-back">Линия шва</span></span>
+    <span class="seam" aria-hidden="true"></span>
+  </div>
+  <div class="info rv">
+    <p class="num"><span>04 / 05</span><span>Графит</span></p>
+    <h2 id="i4">Юбка-карандаш с&nbsp;фигурными швами</h2>
+    <p class="quote">Юбка-карандаш с&nbsp;фигурными швами на&nbsp;высокой талии. Пошив на&nbsp;заказ.</p>
+    <ol class="spec">
+      <li><b>Фигурные швы</b> — конструктивный дизайн модели</li>
+      <li>Высокая талия</li>
+      <li>По&nbsp;индивидуальному заказу</li>
+    </ol>
+    <div class="info-foot"><button class="toggle" type="button">Лицо / линия шва</button></div>
+  </div>
+</article>
+
+<article class="card c-lace" data-c="#E3DACB" aria-labelledby="i5">
+  <div class="stage">
+    <img class="back" src="img/p7-m.jpg" srcset="img/p7-m.jpg 720w, img/p7.jpg 1440w" sizes="(max-width:820px) 92vw, 54vw" style="object-position:50% 12%;transform:scale(1.9)" alt="Фестонный край с ресничками по горловине кружевной блузы крупно">
+    <img class="face" src="img/p7-m.jpg" srcset="img/p7-m.jpg 720w, img/p7.jpg 1440w" sizes="(max-width:820px) 92vw, 54vw" alt="Блуза из кружева Шантильи по фигуре с рельефами корсета и рукавами-перчатками">
+    <span class="tag"><span class="t-face">Лицо</span><span class="t-back">Фестонный край</span></span>
+    <span class="seam" aria-hidden="true"></span>
+  </div>
+  <div class="info rv">
+    <p class="num"><span>05 / 05</span><span>Кружево Шантильи</span></p>
+    <h2 id="i5">Блуза из&nbsp;французского кружева Шантильи</h2>
+    <p class="quote">Блуза по&nbsp;фигуре с&nbsp;рельефными линиями, повторяющими корсет.</p>
+    <ol class="spec">
+      <li>Фестонный край <b>с&nbsp;ресничками</b>, в&nbsp;том числе по&nbsp;горловине</li>
+      <li>Рельефы, повторяющие корсет</li>
+      <li>Спереди — слой мягкой сетки для меньшей просвечиваемости</li>
+      <li>Молния по&nbsp;спинке, декоративная застёжка-планка</li>
+      <li>Рукава, переходящие в&nbsp;перчатки, <b>цельнокроеные</b>, без шва на&nbsp;запястье</li>
+    </ol>
+    <div class="info-foot"><button class="toggle" type="button">Лицо / край</button></div>
+  </div>
+</article>
+
+</div>
+
+<section class="facts" aria-labelledby="facts-h">
+  <h2 id="facts-h">Malugino studio в&nbsp;цифрах</h2>
+  <div class="nums rv">
+    <div><b>18</b><span>лет опыта у&nbsp;Алёны Малюгиной, дипломированного модельера</span></div>
+    <div><b>85,5<small>&nbsp;тыс.</small></b><span>подписчиков и&nbsp;2&nbsp;911 публикаций в&nbsp;Instagram</span></div>
+    <div><b>10<small>:00</small>–20<small>:00</small></b><span>время для записи — пн–вс, Павелецкая наб., 2с2</span></div>
+  </div>
+</section>
+
+<section class="inside" id="iznanka" aria-labelledby="in-h">
+  <div class="rv">
+    <p class="eyebrow">Изнанка</p>
+    <h2 id="in-h" style="margin-top:16px">То, что обычно прячут, здесь показывают</h2>
+    <p>Обработка швов, подбор фурнитуры, карманы, спрятанные в&nbsp;шов. В&nbsp;подписях студия рассказывает о&nbsp;конструкции так&nbsp;же подробно, как о&nbsp;ткани.</p>
+  </div>
+  <figure class="rv">
+    <img src="img/p12-m.jpg" alt="Изнанка джинсов: пояс на резинке и внутренний карман в шве">
+    <figcaption><b>Джинсы</b>Индивидуальный пошив: на&nbsp;резинке, со&nbsp;внутренними карманами в&nbsp;швах</figcaption>
+  </figure>
+  <figure class="rv">
+    <img src="img/p3-m.jpg" alt="Изнанка брюк: пояс на резинке, карман и окантовка швов">
+    <figcaption><b>Брюки</b>Изнанка: пояс на&nbsp;резинке, карман, окантованные швы</figcaption>
+  </figure>
+</section>
+
+<section class="index" aria-labelledby="ix-h">
+  <div>
+    <h2 id="ix-h">Прайс и&nbsp;примерки — в&nbsp;хайлайтах</h2>
+    <p>Цены студия публикует в&nbsp;Instagram. Там&nbsp;же примерки, процесс и&nbsp;работы на&nbsp;клиентах.</p>
+  </div>
+  <ul>
+    <li><a class="k" href="https://www.instagram.com/malugino_studio/" target="_blank" rel="noopener">Прайс</a></li>
+    <li><a class="k" href="https://www.instagram.com/malugino_studio/" target="_blank" rel="noopener">Примерки</a></li>
+    <li><a href="https://www.instagram.com/malugino_studio/" target="_blank" rel="noopener">Пошив Шанель</a></li>
+    <li><a href="https://www.instagram.com/malugino_studio/" target="_blank" rel="noopener">Process</a></li>
+    <li><a href="https://www.instagram.com/malugino_studio/" target="_blank" rel="noopener">На клиентах</a></li>
+    <li><a href="https://www.instagram.com/malugino_studio/" target="_blank" rel="noopener">Юбка по косой</a></li>
+    <li><a href="https://www.instagram.com/malugino_studio/" target="_blank" rel="noopener">Платье по косой</a></li>
+    <li><a href="https://www.instagram.com/malugino_studio/" target="_blank" rel="noopener">Жакет в ёлочку</a></li>
+    <li><a href="https://www.instagram.com/malugino_studio/" target="_blank" rel="noopener">Бомбер</a></li>
+    <li><a href="https://www.instagram.com/malugino_studio/" target="_blank" rel="noopener">Пиджак</a></li>
+    <li><a href="https://www.instagram.com/malugino_studio/" target="_blank" rel="noopener">Обучение</a></li>
+  </ul>
+</section>
+
+<section class="book" id="zapis" aria-labelledby="bk-h">
+  <div class="book-grid">
+    <div>
+      <p class="eyebrow">Запись на пошив</p>
+      <h2 id="bk-h">Начнём с&nbsp;формы</h2>
+      <p class="note">Запись на&nbsp;пошив — заблаговременно.</p>
+      <div class="hrs"><span>Время для записи</span><b>пн–вс, 10:00–20:00</b><span>Москва, Павелецкая наб., 2с2</span></div>
+      <div class="side-links">
+        <a href="https://t.me/Malugino_studio_booking" target="_blank" rel="noopener">Telegram-бот записи — @Malugino_studio_booking</a>
+        <a href="https://ig.me/m/malugino_studio" target="_blank" rel="noopener">Или написать в&nbsp;Direct @malugino_studio</a>
+      </div>
+    </div>
+    <div class="panel">
+      <span class="lbl" id="what-l">Что шьём</span>
+      <div class="chips" role="group" aria-labelledby="what-l">
+        <button type="button" class="chip" aria-pressed="false">жакет</button>
+        <button type="button" class="chip" aria-pressed="false">пальто</button>
+        <button type="button" class="chip" aria-pressed="false">юбка-карандаш</button>
+        <button type="button" class="chip" aria-pressed="false">брюки</button>
+        <button type="button" class="chip" aria-pressed="false">джинсы</button>
+        <button type="button" class="chip" aria-pressed="false">блуза</button>
+        <button type="button" class="chip" aria-pressed="false">костюм</button>
+        <button type="button" class="chip" aria-pressed="false">по материалу заказчицы</button>
+      </div>
+      <label class="lbl" for="wish">Что важно</label>
+      <textarea id="wish" placeholder="Например: подкладка из шёлка, карманы в швах, хочу шалевый воротник"></textarea>
+      <label class="check"><input type="checkbox" id="own"> Своя ткань</label>
+      <div class="out" id="out" aria-live="polite"></div>
+      <div class="actions">
+        <button class="btn btn-brass" type="button" id="go">Скопировать и открыть Telegram</button>
+        <span class="status" id="st"></span>
+      </div>
+    </div>
+  </div>
+  <footer class="foot">
+    <span class="mark">Malugino studio</span>
+    <span>Ателье · пошив одежды · Москва · <a href="https://www.instagram.com/malugino_studio/" target="_blank" rel="noopener">@malugino_studio</a></span>
+  </footer>
+</section>
+</main>
+
+<script>
+(function(){
+  var d=document, root=d.documentElement; root.classList.add('js');
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // reveals
+  var rv=d.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    rv.forEach(function(el){io.observe(el)});
+  } else rv.forEach(function(el){el.classList.add('in')});
+  setTimeout(function(){rv.forEach(function(el){el.classList.add('in')})},2500);
+
+  // cards: clip-path curtain + body colour flow
+  var cards=d.querySelectorAll('.card');
+  cards.forEach(function(c){
+    c.querySelector('.toggle').addEventListener('click',function(){c.classList.toggle('open');c.dataset.manual=1});
+  });
+  if('IntersectionObserver' in window){
+    var co=new IntersectionObserver(function(es){es.forEach(function(e){
+      var c=e.target;
+      if(e.isIntersecting){
+        root.style.setProperty('--flow',c.dataset.c);
+        if(!c.dataset.manual&&!reduce){clearTimeout(c._t);c._t=setTimeout(function(){c.classList.add('open')},700)}
+      } else if(!c.dataset.manual){clearTimeout(c._t);c.classList.remove('open')}
+    })},{threshold:.5});
+    cards.forEach(function(c){co.observe(c)});
+  }
+  // colour flow only once a real person scrolls (keeps each block its own colour in static captures)
+  function arm(){root.classList.add('flow');['wheel','touchmove','keydown'].forEach(function(t){removeEventListener(t,arm)})}
+  if(!reduce)['wheel','touchmove','keydown'].forEach(function(t){addEventListener(t,arm,{passive:true})});
+
+  // booking text
+  var chips=d.querySelectorAll('.chip'), wish=d.getElementById('wish'), own=d.getElementById('own'), out=d.getElementById('out'), st=d.getElementById('st');
+  function text(){
+    var sel=[].filter.call(chips,function(b){return b.getAttribute('aria-pressed')==='true'}).map(function(b){return b.textContent});
+    var t='Здравствуйте, Алёна! Хочу записаться на пошив.\n';
+    t+='Изделие: '+(sel.length?sel.join(', '):'пока не решила, нужна консультация')+'\n';
+    if(own.checked)t+='Ткань: своя\n';
+    if(wish.value.trim())t+='Что важно: '+wish.value.trim()+'\n';
+    t+='Подскажите, пожалуйста, ближайшее время для записи.';
+    return t;
+  }
+  function render(){out.textContent=text()}
+  chips.forEach(function(b){b.addEventListener('click',function(){b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');render()})});
+  wish.addEventListener('input',render); own.addEventListener('change',render); render();
+  function fallback(t){var ta=d.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';d.body.appendChild(ta);ta.select();var ok=false;try{ok=d.execCommand('copy')}catch(e){}d.body.removeChild(ta);return ok}
+  d.getElementById('go').addEventListener('click',function(){
+    var t=text(), url='https://t.me/Malugino_studio_booking';
+    var p=null, ok=false;
+    if(navigator.clipboard&&window.isSecureContext){p=navigator.clipboard.writeText(t)}else{ok=fallback(t)}
+    var w=window.open(url,'_blank','noopener');
+    function done(ok){st.textContent=ok?'Текст скопирован — вставьте его в чат с ботом.':'Не удалось скопировать: выделите текст заявки и скопируйте вручную.'}
+    if(p)p.then(function(){done(true)},function(){done(fallback(t))});else done(ok);
+    if(!w)setTimeout(function(){location.href=url},400);
+  });
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>THE XIX STORE — 19 шоурум локальных брендов, Ростов-на-Дону</title><meta property="og:type" content="website"><meta property="og:title" content="THE XIX STORE — 19 шоурум локальных брендов, Ростов-на-Дону"><meta property="og:description" content="19 шоурум / THE XIX STORE — пространство локальных брендов в Ростове-на-Дону, Кировский 41/62, 12–19. TWOEVENS, MIIMENO, LI’VI, AERIS, theEXTRAVAGANZA, THE XIX | нити."><meta property="og:image" content="https://pikold.github.io/demo-sites/the19showroom/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="19 шоурум / THE XIX STORE — пространство локальных брендов в Ростове-на-Дону, Кировский 41/62, 12–19. TWOEVENS, MIIMENO, LI’VI, AERIS, theEXTRAVAGANZA, THE XIX | нити.">
+<link rel="stylesheet" href="../_fonts/big-shoulders-display.css">
+<link rel="stylesheet" href="../_fonts/jetbrains-mono.css">
+<style>
+:root{
+  --steel:linear-gradient(180deg,#E9EAEB 0%,#D9DBDD 22%,#9EA2A6 48%,#C9CCCF 52%,#8E9297 64%,#E9EAEB 100%);
+  --concrete:#BDB8B2; --concrete-d:#A9A39C; --orange:#FF5A14; --pink:#F49BBB; --ink:#141414;
+  --paper:#ECEAE6;
+  --disp:'Big Shoulders Display','Bahnschrift','Arial Narrow','sans-serif-condensed',sans-serif;
+  --mono:'JetBrains Mono',Consolas,'Roboto Mono','Courier New',monospace;
+  --sw:0;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--concrete);color:var(--ink);font:400 15px/1.55 var(--mono);overflow-x:hidden;padding-bottom:84px;
+  background-image:radial-gradient(rgba(20,20,20,.06) 1px,transparent 1.2px),radial-gradient(rgba(255,255,255,.12) 1px,transparent 1.2px);
+  background-size:7px 7px,11px 11px;background-position:0 0,3px 5px}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.wrap{width:min(1320px,100% - 32px);margin-inline:auto}
+.demo{background:var(--ink);color:#BDB8B2;font:400 11px/1.4 var(--mono);text-align:center;padding:7px 16px;letter-spacing:.02em}
+.demo b{color:var(--pink);font-weight:500}
+.disp{font-family:var(--disp);font-stretch:condensed;font-weight:700;text-transform:uppercase;line-height:.86;letter-spacing:.005em}
+.label{font:500 11px/1.3 var(--mono);text-transform:uppercase;letter-spacing:.14em}
+
+/* metal */
+.metal{background:linear-gradient(105deg,transparent 0%,transparent 42%,rgba(255,255,255,.85) 50%,transparent 58%,transparent 100%) calc(var(--sw) * 1%) 0/300% 100% no-repeat,
+  repeating-linear-gradient(90deg,rgba(255,255,255,.07) 0 1px,transparent 1px 3px),var(--steel)}
+.chrome{background:linear-gradient(100deg,transparent 0%,transparent 44%,rgba(255,255,255,.95) 50%,transparent 56%,transparent 100%) calc(var(--sw) * 1%) 0/300% 100% no-repeat,
+  repeating-linear-gradient(90deg,rgba(255,255,255,.1) 0 1px,transparent 1px 4px),var(--steel);
+  -webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-stroke:1px rgba(20,20,20,.35);
+  filter:drop-shadow(0 2px 0 rgba(20,20,20,.55)) drop-shadow(0 24px 30px rgba(20,20,20,.35))}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:999px;border:0;
+  font:600 13px/1.1 var(--mono);text-transform:uppercase;letter-spacing:.08em;text-decoration:none;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-or{background:var(--orange);color:var(--ink);box-shadow:0 10px 24px -10px rgba(255,90,20,.8)}
+.btn-ink{background:var(--ink);color:#E9EAEB}
+.btn-line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+
+/* header */
+.top{position:absolute;inset:auto 0 auto 0;z-index:5}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:18px}
+.logo{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+.logo b{font:700 30px/1 var(--disp);color:var(--orange);letter-spacing:.02em;font-style:italic}
+.logo span{font:500 10px/1 var(--mono);letter-spacing:.24em;color:var(--ink)}
+.nav{display:flex;gap:2px;background:rgba(20,20,20,.62);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-radius:999px;padding:4px;color:#E9EAEB}
+.nav a{font:500 12px/1 var(--mono);text-transform:uppercase;letter-spacing:.1em;text-decoration:none;padding:14px 12px;border-radius:999px}
+.nav a:hover{background:rgba(255,255,255,.12)}
+
+/* hero */
+.hero{position:relative;min-height:max(640px,100svh);display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);overflow:hidden}
+.hero-l{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-end;padding:110px 0 48px max(16px,(100vw - 1320px)/2)}
+.xix{font-size:min(82vh,46vw);margin:0 -0.06em -0.02em -0.04em;white-space:nowrap;position:relative;z-index:3;margin-right:-26vw}
+.hero-sub{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:22px;max-width:620px}
+.hero h1{font:600 13px/1.5 var(--mono);text-transform:uppercase;letter-spacing:.12em;max-width:560px;margin-top:6px}
+.hero h1 em{font-style:normal;color:var(--orange);background:var(--ink);padding:1px 6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{font:500 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.12em;padding:9px 12px;border:1px solid rgba(20,20,20,.35);border-radius:999px}
+.hero-r{position:relative;min-height:100%}
+.hero-r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.hero-r::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--concrete) 0%,rgba(189,184,178,0) 22%),linear-gradient(0deg,rgba(20,20,20,.55),transparent 45%)}
+.status{position:absolute;z-index:4;right:max(16px,(100vw - 1320px)/2);bottom:48px;width:min(380px,calc(100% - 32px));border-radius:18px;padding:20px 20px 18px;
+  box-shadow:0 1px 0 rgba(255,255,255,.7) inset,0 -1px 0 rgba(0,0,0,.25) inset,0 30px 50px -20px rgba(0,0,0,.6)}
+.status .rivet{position:absolute;width:8px;height:8px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff,#7d8287 70%)}
+.status .rivet:nth-child(1){top:10px;left:10px}.status .rivet:nth-child(2){top:10px;right:10px}
+.now{display:flex;align-items:center;gap:10px;font:600 13px/1.3 var(--mono);text-transform:uppercase;letter-spacing:.08em;padding:4px 0 0 10px}
+.dot{width:10px;height:10px;border-radius:50%;background:#2fb34a;box-shadow:0 0 0 4px rgba(47,179,74,.2);flex:none}
+.closed .dot{background:var(--orange);box-shadow:0 0 0 4px rgba(255,90,20,.2)}
+.hours{font:700 64px/.9 var(--disp);margin:12px 0 4px 8px}
+.hours small{font:500 11px/1 var(--mono);letter-spacing:.14em;margin-left:8px;vertical-align:middle}
+.addr{font-size:13px;margin:0 0 14px 10px}
+.status .btn{width:100%}
+.status .row{display:flex;gap:8px;margin-top:8px}
+.status .row .btn{flex:1;padding-inline:10px}
+
+/* section heads */
+.sec{padding:110px 0}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.head h2{font-size:clamp(56px,9vw,148px)}
+.head p{max-width:420px;font-size:14px}
+
+/* brand rack */
+.rack{position:relative;padding-top:34px}
+.pipe{position:absolute;left:0;right:0;top:20px;height:18px;border-radius:9px;z-index:1;box-shadow:0 10px 18px -8px rgba(0,0,0,.5)}
+.rail{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 max(16px,(100vw - 1320px)/2) 34px;scrollbar-width:thin;scrollbar-color:var(--ink) transparent}
+.plate{position:relative;flex:0 0 clamp(250px,26vw,340px);scroll-snap-align:start;margin-top:40px;border-radius:14px;padding:30px 24px 22px;min-height:300px;display:flex;flex-direction:column;
+  box-shadow:0 1px 0 rgba(255,255,255,.8) inset,0 -2px 0 rgba(0,0,0,.2) inset,0 26px 40px -22px rgba(0,0,0,.55)}
+.plate::before,.plate::after{content:"";position:absolute;top:-46px;width:3px;height:48px;background:linear-gradient(90deg,#6e7378,#E9EAEB,#6e7378)}
+.plate::before{left:26%}.plate::after{right:26%}
+.plate .no{font:500 11px/1 var(--mono);letter-spacing:.2em}
+.plate h3{font:700 clamp(46px,4.6vw,64px)/.86 var(--disp);text-transform:none;margin:22px 0 auto;letter-spacing:-.005em;word-break:break-word}
+.plate h3 small{display:block;font-size:.5em;opacity:.7;margin-top:6px}
+.plate p{font-size:12px;margin:18px 0 14px;opacity:.85}
+.plate a{align-self:flex-start}
+.plate.you{background:var(--ink);color:#E9EAEB;box-shadow:0 26px 40px -22px rgba(0,0,0,.55)}
+.plate.you h3{color:var(--pink)}
+.rail-ctl{display:flex;gap:8px}
+.rail-ctl button{width:48px;height:48px;border-radius:50%;border:0;background:var(--ink);color:#E9EAEB;font:600 18px/1 var(--mono);cursor:pointer}
+
+/* look */
+.look{background:var(--concrete-d);background-image:linear-gradient(rgba(20,20,20,.05) 1px,transparent 1px);background-size:100% 120px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:168px;gap:14px;grid-auto-flow:dense}
+.ph{grid-row:span 3;position:relative;overflow:hidden;border-radius:6px;background:#9EA2A6}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.ph:hover img{transform:scale(1.04)}
+.ph.wide{grid-column:span 2;grid-row:span 2}
+.ph.wide img{object-position:50% 0}
+.ph figcaption{position:absolute;left:10px;bottom:10px;font:500 10px/1.2 var(--mono);text-transform:uppercase;letter-spacing:.12em;background:rgba(20,20,20,.72);color:#E9EAEB;padding:6px 8px;border-radius:4px}
+.tag{position:relative;border-radius:10px 10px 6px 6px;padding:26px 16px 14px;display:flex;flex-direction:column;justify-content:space-between;
+  box-shadow:0 1px 0 rgba(255,255,255,.8) inset,0 18px 28px -18px rgba(0,0,0,.6);transform:rotate(var(--r,0deg));transition:transform .35s}
+.tag:hover{transform:rotate(0deg) translateY(-3px)}
+.tag::before{content:"";position:absolute;top:9px;left:50%;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:var(--concrete-d);box-shadow:inset 0 2px 3px rgba(0,0,0,.5)}
+.tag .nm{font:600 12px/1.25 var(--mono);text-transform:uppercase;letter-spacing:.06em}
+.tag .pr{font:700 44px/.9 var(--disp);color:var(--orange);text-shadow:0 1px 0 rgba(255,255,255,.4)}
+.tag .sz{font-size:11px;opacity:.8;line-height:1.3}
+.tag button{min-height:44px;border:0;border-radius:999px;background:var(--pink);color:var(--ink);font:600 12px/1 var(--mono);text-transform:uppercase;letter-spacing:.08em;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px}
+.tag button:hover{background:#f7b3cb}
+.tag button.in{background:var(--ink);color:var(--pink)}
+.tag .bt{display:flex;align-items:flex-end;justify-content:space-between;gap:10px}
+.tag .bt button{padding:0 16px}
+.full{grid-column:span 2;grid-row:span 2;background:var(--ink);color:#E9EAEB;border-radius:10px;padding:26px;display:flex;flex-direction:column;justify-content:space-between;gap:14px}
+.full h3{font-size:clamp(48px,5vw,76px);color:var(--pink)}
+.full ul{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 20px;font-size:13px}
+.full li span{color:var(--orange)}
+.note{margin-top:22px;font-size:12px;display:flex;gap:10px;align-items:flex-start}
+.note::before{content:"!";flex:none;width:22px;height:22px;border-radius:50%;background:var(--orange);display:grid;place-items:center;font-weight:700}
+.fly{position:fixed;z-index:60;pointer-events:none;transition:transform .75s cubic-bezier(.55,-0.2,.6,1),opacity .75s;border-radius:10px}
+
+/* how */
+.how{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:48px;align-items:start}
+.how h2{font-size:clamp(56px,8vw,128px)}
+.steps{list-style:none;counter-reset:s;border-top:2px solid var(--ink)}
+.steps li{counter-increment:s;display:grid;grid-template-columns:90px minmax(0,1fr);gap:16px;padding:22px 0;border-bottom:1px dashed rgba(20,20,20,.5)}
+.steps li::before{content:"1" counter(s);font:700 64px/.8 var(--disp);color:var(--orange)}
+.steps b{display:block;font-size:15px;text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px}
+.steps p{font-size:13px}
+
+/* partners */
+.partners{background:var(--ink);color:#E9EAEB;overflow:hidden}
+.partners .in{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:center}
+.partners h2{font-size:clamp(64px,10vw,170px)}
+.partners h2 .p{color:var(--pink)}
+.partners p{max-width:560px;margin:22px 0 28px;color:#cfcac4}
+.cart-art{width:100%;max-width:460px;justify-self:end}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:70px}
+.stat{border-top:1px solid #444;padding-top:14px}
+.stat b{display:block;font:700 clamp(40px,5vw,72px)/.9 var(--disp)}
+.stat span{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:#9EA2A6}
+
+/* visit */
+.visit{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+.visit-card{border-radius:18px;padding:34px;position:relative;box-shadow:0 1px 0 rgba(255,255,255,.8) inset,0 30px 50px -26px rgba(0,0,0,.55)}
+.visit-card h2{font-size:clamp(60px,8vw,120px)}
+.visit-card .big{font:700 clamp(30px,3.6vw,48px)/1 var(--disp);margin:24px 0 6px}
+.visit-card .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.links{list-style:none;display:grid;gap:10px}
+.links a{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:72px;padding:16px 22px;border-radius:14px;background:var(--ink);color:#E9EAEB;text-decoration:none;font:700 32px/1 var(--disp);text-transform:uppercase;transition:background .2s}
+.links a span{font:500 11px/1.3 var(--mono);letter-spacing:.12em;color:#9EA2A6;text-align:right}
+.links a:hover{background:#2a2a2a}
+.links a.pk{background:var(--pink);color:var(--ink)}.links a.pk span{color:var(--ink)}
+footer{padding:40px 0 30px;font-size:11px;color:#3a3a3a}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* cart */
+.cartbar{position:fixed;z-index:50;left:50%;bottom:14px;transform:translateX(-50%);display:flex;align-items:center;gap:14px;min-height:58px;padding:8px 8px 8px 18px;border-radius:999px;background:var(--pink);color:var(--ink);
+  box-shadow:0 16px 40px -12px rgba(20,20,20,.6);border:0;font:600 13px/1 var(--mono);text-transform:uppercase;letter-spacing:.08em;cursor:pointer;max-width:calc(100% - 24px)}
+.cartbar svg{flex:none}
+.cartbar.hide{transform:translate(-50%,140%);opacity:0;pointer-events:none}
+.cartbar{transition:transform .4s,opacity .4s}
+.cartbar .cnt{display:inline-grid;place-items:center;min-width:28px;height:28px;border-radius:999px;background:var(--ink);color:var(--pink);font-size:13px;padding:0 6px}
+.cartbar .sum{background:var(--ink);color:#E9EAEB;border-radius:999px;padding:13px 16px;white-space:nowrap}
+.bump{animation:bump .5s cubic-bezier(.3,1.8,.5,1)}
+@keyframes bump{0%{transform:scale(1)}40%{transform:scale(1.45)}100%{transform:scale(1)}}
+.receipt{position:fixed;z-index:55;right:16px;bottom:84px;width:min(380px,calc(100% - 32px));max-height:min(72vh,640px);overflow:auto;background:var(--paper);color:var(--ink);
+  font:400 13px/1.5 var(--mono);padding:22px 20px 26px;box-shadow:0 30px 60px -20px rgba(0,0,0,.6);
+  -webkit-mask:linear-gradient(#000,#000) top/100% calc(100% - 10px) no-repeat,radial-gradient(circle 6px at 8px 100%,transparent 6px,#000 6.5px) bottom/16px 10px repeat-x;
+  mask:linear-gradient(#000,#000) top/100% calc(100% - 10px) no-repeat,radial-gradient(circle 6px at 8px 100%,transparent 6px,#000 6.5px) bottom/16px 10px repeat-x;
+  transform:translateY(20px);opacity:0;visibility:hidden;transition:.3s}
+.receipt.open{transform:none;opacity:1;visibility:visible}
+.receipt .x{position:absolute;top:8px;right:8px;width:44px;height:44px;border:0;background:none;font:600 18px var(--mono);cursor:pointer}
+.receipt .hd{text-align:center;border-bottom:1px dashed var(--ink);padding-bottom:10px;margin-bottom:10px}
+.receipt .hd b{font:700 30px/1 var(--disp);display:block}
+.rl{display:grid;grid-template-columns:minmax(0,1fr) auto 32px;gap:8px;align-items:center;min-height:32px}
+.rl .t{overflow:hidden;white-space:nowrap}
+.rl .t::after{content:" ........................................";opacity:.45}
+.rl button{width:32px;height:32px;border:0;background:none;font:600 14px var(--mono);cursor:pointer;opacity:.6}
+.tot{display:flex;justify-content:space-between;border-top:1px dashed var(--ink);margin-top:10px;padding-top:10px;font-weight:700;font-size:16px}
+.empty{opacity:.6;text-align:center;padding:10px 0}
+.receipt .btn{width:100%;margin-top:10px}
+.receipt .sm{font-size:11px;margin-top:12px;opacity:.75;text-align:center}
+.cursor::after{content:"▌";animation:bl .7s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+
+@media (max-width:1100px){
+  .grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:860px){
+  body{font-size:14px;padding-bottom:86px}
+  .nav{display:none}
+  .hero{display:block;min-height:0}
+  .hero-r{position:relative;height:clamp(460px,118vw,620px)}
+  .hero-r img{object-position:50% 20%}
+  .hero-r::after{background:linear-gradient(180deg,rgba(189,184,178,.95) 0%,rgba(189,184,178,0) 26%),linear-gradient(0deg,rgba(20,20,20,.5),transparent 40%)}
+  .hero-l{position:absolute;top:0;left:0;right:0;padding:64px 16px 0;justify-content:flex-start}
+  .xix{font-size:60vw;margin:0 0 0 -3vw;line-height:.8}
+  .hero-sub,.hero-l .chips{display:none}
+  .hero h1{color:#E9EAEB;text-shadow:0 1px 8px rgba(0,0,0,.6);font-size:12px;margin-top:10px}
+  .hero-m{display:block!important;padding:0 16px}
+  .status{position:relative;right:auto;bottom:auto;width:auto;margin:-70px 16px 0}
+  .sec{padding:72px 0}
+  .head{margin-bottom:26px}
+  .plate{flex-basis:76vw;min-height:270px}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:minmax(166px,auto);gap:10px}
+  .tag .bt{flex-direction:column;align-items:stretch;gap:8px}
+  .ph{grid-row:span 2}
+  .ph.wide img{transform:scale(1.15);transform-origin:50% 0}
+  .ph.wide:hover img{transform:scale(1.18)}
+  .tag{padding:24px 12px 12px}
+  .tag .pr{font-size:36px}
+  .tag .sz{font-size:10px}
+  .tag button{font-size:11px;padding:0 6px}
+  .full{padding:20px}
+  .full ul{grid-template-columns:minmax(0,1fr)}
+  .how,.partners .in,.visit{grid-template-columns:minmax(0,1fr);gap:28px}
+  .steps li{grid-template-columns:64px minmax(0,1fr)}
+  .steps li::before{font-size:48px}
+  .cart-art{max-width:260px;justify-self:start}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:44px}
+  .visit-card{padding:24px 20px}
+  .links a{font-size:26px;padding:14px 18px}
+  .cartbar{bottom:10px;gap:10px;padding-left:14px}
+  .cartbar .lbl{display:none}
+  .receipt{right:12px;left:12px;width:auto;bottom:80px}
+}
+@media (max-width:380px){
+  .tag .pr{font-size:31px}
+  .tag .nm{font-size:11px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+<div class="demo" data-qa="Demo concept">Демо-концепт независимого разработчика — <b>не официальный сайт THE XIX STORE / 19 шоурум</b>. Не согласован с владельцем, удаляется по первой просьбе.</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="THE XIX — наверх"><b>THE XIX</b><span>EST. 2020</span></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#brands">Бренды</a><a href="#look">Образ</a><a href="#how">Как купить</a><a href="#partners">Партнёрам</a><a href="#visit">Адрес</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-label="THE XIX STORE">
+  <div class="hero-l">
+    <div class="xix disp chrome" aria-hidden="true">XIX</div>
+    <h1>19 шоурум / THE XIX STORE — <em>пространство локальных брендов</em> в Ростове-на-Дону</h1>
+    <div class="chips"><span class="chip">YOU LIMITED</span><span class="chip">RND</span><span class="chip">est 2020</span><span class="chip">Кировский 41/62</span></div>
+  </div>
+  <div class="hero-r">
+    <picture><source media="(max-width:860px)" srcset="img/p7-m.jpg"><img src="img/p7.jpg" alt="Модель в чёрной куртке и очках-маске в движении — съёмка шоурума THE XIX" fetchpriority="high"></picture>
+  </div>
+  <div class="status metal" id="status">
+    <i class="rivet"></i><i class="rivet"></i>
+    <div class="now" id="now"><span class="dot"></span><span id="nowTxt">Открыто 12–19</span></div>
+    <div class="hours">12–19 <small>часы шоурума</small></div>
+    <div class="addr">Ростов-на-Дону, Кировский 41/62</div>
+    <a class="btn btn-or js-wa" data-msg="Здравствуйте! Пишу с сайта THE XIX STORE. Подскажите, что сейчас есть в наличии?" href="https://wa.me/79094190715" target="_blank" rel="noopener">Онлайн-менеджер</a>
+    <div class="row"><a class="btn btn-ink" href="https://t.me/the19showroom" target="_blank" rel="noopener">Telegram</a><a class="btn btn-line" href="#look">Каталог</a></div>
+  </div>
+</section>
+
+<section class="sec" id="brands" aria-labelledby="h-brands">
+  <div class="wrap head">
+    <div><div class="label">Стеллаж 01 / бренды на полках</div><h2 class="disp" id="h-brands">Бренды</h2></div>
+    <p>Каталог шоурума живёт в хайлайтах — здесь он на одной стойке. Листайте рейку и спрашивайте менеджера, что есть из нужной марки.</p>
+    <div class="rail-ctl"><button type="button" data-dir="-1" aria-label="Назад по стойке">&larr;</button><button type="button" data-dir="1" aria-label="Вперёд по стойке">&rarr;</button></div>
+  </div>
+  <div class="rack" data-qa-skip>
+    <div class="pipe metal" aria-hidden="true"></div>
+    <div class="rail" id="rail" tabindex="0" aria-label="Бренды шоурума, прокрутка вбок"></div>
+  </div>
+</section>
+
+<section class="sec look" id="look" aria-labelledby="h-look">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="label">Стеллаж 02 / доступно к покупке</div><h2 class="disp" id="h-look">Полный образ</h2></div>
+      <p>Бирки с ценами — из постов шоурума. Кладите в розовую тележку: она посчитает сумму и напечатает чек для менеджера.</p>
+    </div>
+    <div class="grid" id="grid"></div>
+    <p class="note">Наличие, размеры и цвета уточняйте у менеджера — вещи в шоуруме с характером и ограниченным тиражом.</p>
+  </div>
+</section>
+
+<section class="sec" id="how" aria-labelledby="h-how">
+  <div class="wrap how">
+    <div><div class="label">Как купить</div><h2 class="disp" id="h-how">12 → 19</h2><p style="margin-top:18px;max-width:380px">Шоурум открыт с 12 до 19. Остальное время — тележка на сайте и онлайн-менеджер.</p></div>
+    <ol class="steps">
+      <li><div><b>Соберите тележку</b><p>Жмите «В тележку» на бирках. Сумма считается сразу, чек печатается внизу экрана.</p></div></li>
+      <li><div><b>Отправьте чек менеджеру</b><p>Одна кнопка — и список вещей с итогом уже в WhatsApp онлайн-менеджера.</p></div></li>
+      <li><div><b>Уточните наличие</b><p>Менеджер подскажет размер, цвет и что сейчас на полках.</p></div></li>
+      <li><div><b>Приходите на Кировский</b><p>Кировский 41/62, Ростов-на-Дону, 12–19 — примерить и забрать.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec partners" id="partners" aria-labelledby="h-partners">
+  <div class="wrap">
+    <div class="in">
+      <div>
+        <div class="label" style="color:#9EA2A6">19 магазин / THE XIX STORE</div>
+        <h2 class="disp" id="h-partners" style="margin-top:14px">New<br><span class="p">partners</span></h2>
+        <p>Ищем новых партнёров. За годы работы мы не просто собираем комьюнити — мы выстраиваем экосистему, где локальные марки находят свою аудиторию, а покупатели — уникальные вещи с характером.</p>
+        <a class="btn btn-or js-wa" data-msg="Здравствуйте! Хочу представить свой бренд в THE XIX STORE. Расскажу о марке:" href="https://wa.me/79094190715" target="_blank" rel="noopener">Представить свой бренд</a>
+      </div>
+      <svg class="cart-art" viewBox="0 0 400 360" fill="none" stroke="#F49BBB" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M18 40h52l44 210h220"/><path d="M84 80h290l-30 130H108"/>
+        <path d="M130 80l14 130M180 80l8 130M230 80l3 130M280 80l-3 130M330 80l-9 130" stroke-width="4"/>
+        <path d="M96 120h272M102 165h258" stroke-width="4"/>
+        <circle cx="140" cy="300" r="24"/><circle cx="310" cy="300" r="24"/>
+      </svg>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>12,5K</b><span>подписчиков в Instagram</span></div>
+      <div class="stat"><b>4 090</b><span>публикаций</span></div>
+      <div class="stat"><b>2020</b><span>est.</span></div>
+      <div class="stat"><b>12–19</b><span>часы шоурума</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="visit" aria-labelledby="h-visit">
+  <div class="wrap visit">
+    <div class="visit-card metal">
+      <div class="label">Адрес</div>
+      <h2 class="disp" id="h-visit">Кировский 41/62</h2>
+      <div class="big">Ростов-на-Дону · 12–19</div>
+      <p id="now2">Шоурум локальных брендов THE XIX STORE.</p>
+      <div class="btns">
+        <a class="btn btn-ink" href="https://yandex.ru/maps/?text=%D0%A0%D0%BE%D1%81%D1%82%D0%BE%D0%B2-%D0%BD%D0%B0-%D0%94%D0%BE%D0%BD%D1%83%2C%20%D0%9A%D0%B8%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%2041%2F62" target="_blank" rel="noopener">Маршрут</a>
+        <a class="btn btn-or js-wa" data-msg="Здравствуйте! Пишу с сайта THE XIX STORE. Хочу прийти в шоурум, подскажите:" href="https://wa.me/79094190715" target="_blank" rel="noopener">Написать менеджеру</a>
+      </div>
+    </div>
+    <ul class="links">
+      <li><a class="pk js-wa" data-msg="Здравствуйте! Пишу с сайта THE XIX STORE." href="https://wa.me/79094190715" target="_blank" rel="noopener">WhatsApp<span>онлайн-менеджер<br>+7 909 419-07-15</span></a></li>
+      <li><a href="https://t.me/the19showroom" target="_blank" rel="noopener">Telegram<span>канал и каталог<br>t.me/the19showroom</span></a></li>
+      <li><a href="https://instagram.com/the19showroom" target="_blank" rel="noopener">Instagram<span>@the19showroom<br>новинки и хайлайты</span></a></li>
+      <li><a href="https://ig.me/m/the19showroom" target="_blank" rel="noopener">Direct<span>написать<br>в Instagram</span></a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>THE XIX STORE · 19 шоурум · YOU LIMITED · RND · est 2020</span><span>Демо-концепт, не официальный сайт. Фото — из постов @the19showroom.</span></div></footer>
+
+<button id="cartbar" class="cartbar hide" type="button" aria-controls="receipt" aria-expanded="false">
+  <svg width="26" height="24" viewBox="0 0 40 36" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4h6l5 22h22"/><path d="M9 9h29l-3 13H12"/><circle cx="15" cy="31" r="2.6"/><circle cx="32" cy="31" r="2.6"/></svg>
+  <span class="lbl">Тележка</span><span class="cnt" id="cnt">0</span><span class="sum" id="sum">0&nbsp;₽</span>
+</button>
+<aside class="receipt" id="receipt" aria-label="Чек тележки">
+  <button class="x" type="button" id="rclose" aria-label="Закрыть чек">×</button>
+  <div class="hd"><b>THE XIX STORE</b>Кировский 41/62 · 12–19<br><span id="rdate"></span></div>
+  <div id="lines"></div>
+  <div class="tot"><span>ИТОГО</span><span id="tot">0&nbsp;₽</span></div>
+  <a class="btn btn-or" id="send" href="https://wa.me/79094190715" target="_blank" rel="noopener">Отправить чек менеджеру</a>
+  <button class="btn btn-line" type="button" id="copy">Скопировать для Telegram</button>
+  <a class="btn btn-ink" href="https://t.me/the19showroom" target="_blank" rel="noopener">Telegram the19showroom</a>
+  <p class="sm">Наличие и цвета уточняйте у менеджера. Цены — из постов шоурума.</p>
+</aside>
+
+<script>
+(()=>{
+const WA='https://wa.me/79094190715';
+const rub=n=>n.toLocaleString('ru-RU').replace(/\s/g,' ')+' ₽';
+const $=s=>document.querySelector(s);
+document.querySelectorAll('.js-wa').forEach(a=>a.href=WA+'?text='+encodeURIComponent(a.dataset.msg));
+
+/* open now (Moscow time = Rostov) */
+const msk=new Date(Date.now()+(new Date().getTimezoneOffset()+180)*60000);
+const h=msk.getHours()+msk.getMinutes()/60, open=h>=12&&h<19;
+$('#nowTxt').textContent=open?'Открыто сейчас · до 19:00':(h<12?'Закрыто · откроемся в 12:00':'Закрыто · завтра с 12:00');
+if(!open)$('#now').classList.add('closed');
+$('#now2').textContent=open?'Сейчас открыто, до 19:00 — успеваете примерить.':'Сейчас закрыто — соберите тележку и отправьте чек менеджеру.';
+$('#rdate').textContent=msk.toLocaleDateString('ru-RU')+' '+String(msk.getHours()).padStart(2,'0')+':'+String(msk.getMinutes()).padStart(2,'0');
+
+/* brands rack */
+const brands=[['THE XIX','нити'],['TWOEVENS',''],['MIIMENO',''],['LI’VI',''],['AERIS',''],['theEXTRAVAGANZA',''],['THE XIX','']];
+const rail=$('#rail');
+rail.innerHTML=brands.map((b,i)=>`<article class="plate metal"><div class="no">№ ${String(i+1).padStart(2,'0')} / ХАЙЛАЙТ</div><h3>${b[0]}${b[1]?`<small>| ${b[1]}</small>`:''}</h3><p>Локальный бренд на полках THE XIX STORE.</p><a class="btn btn-ink js-wa2" href="${WA}?text=${encodeURIComponent('Здравствуйте! Что сейчас есть из '+b[0]+(b[1]?' | '+b[1]:'')+'?')}" target="_blank" rel="noopener">Что есть &rarr;</a></article>`).join('')
+ +`<article class="plate you"><div class="no">№ 08 / СВОБОДНО</div><h3>Ваш бренд?</h3><p>Шоурум ищет новых партнёров среди локальных марок.</p><a class="btn btn-or" href="#partners">Подробнее</a></article>`;
+document.querySelectorAll('.rail-ctl button').forEach(b=>b.onclick=()=>rail.scrollBy({left:b.dataset.dir*rail.clientWidth*.7,behavior:'smooth'}));
+
+/* look grid */
+const items={
+ jacket:['Куртка',7990,'S | M в наличии'],
+ ls48:['Лонгслив, 100% хлопок',4800,''],
+ card:['Кардиган',3390,'one size: xs–m · серый, молочный'],
+ suit:['Костюм',16700,''],
+ jeans:['Джинсы клёш',4790,'xs, s, m, L (46)'],
+ bomber:['Бомбер',24990,''],
+ cargo:['Карго',11990,''],
+ ls39:['Лонгслив',3990,''],
+ legg:['Леггинсы со штрипкой',2600,''],
+ cap:['Бейсболка',2400,''],
+ shoes:['Обувь',10500,'']
+};
+const ph=(n,alt,cls='')=>`<figure class="ph ${cls}"><img src="img/${n}-m.jpg" srcset="img/${n}-m.jpg 1x, img/${n}.jpg 2x" alt="${alt}"></figure>`;
+const tg=(id,r,cls='')=>{const [n,p,s]=items[id];return `<div class="tag metal ${cls}" style="--r:${r}deg" data-id="${id}"><div><div class="nm">${n}</div>${s?`<div class="sz">${s}</div>`:''}</div><div class="bt"><div class="pr">${rub(p)}</div><button type="button" data-add="${id}" aria-label="${n} в тележку">В тележку</button></div></div>`};
+const order=[
+ ph('p8','Светлый объёмный пуховик с высоким воротом'),tg('jacket',-2,'tall'),tg('ls48',1.5,'tall'),
+ ph('p4','Розовый стёганый пуховик с капюшоном в шоуруме THE XIX'),tg('card',2,'tall'),
+ ph('p10','Джинсы клёш и чёрная куртка — примерка в шоуруме','wide'),tg('jeans',-1.5,'tall'),
+ ph('p12','Коричневый костюм: худи на молнии и брюки'),tg('suit',-2,'tall'),
+ ph('p5','Чёрный пуховик, свитшот REQUIEM и леггинсы'),tg('bomber',1.5,'tall'),tg('cargo',-1,'tall'),
+ ph('p11','Розовый свитшот и леггинсы — образ из шоурума','wide'),tg('legg',2,'tall'),tg('ls39',-2,'tall'),
+ ph('p14','Камуфляжная куртка и карго на улице Ростова'),tg('cap',1,'tall'),tg('shoes',-1.5,'tall'),
+ `<div class="full"><div><div class="label" style="color:#9EA2A6">Пост «Полный образ»</div><h3 class="disp" style="margin-top:10px">Весь образ<br>${rub(28290)}</h3></div><ul><li>Куртка <span>${rub(7990)}</span></li><li>Леггинсы <span>${rub(2600)}</span></li><li>Лонгслив <span>${rub(4800)}</span></li><li>Бейсболка <span>${rub(2400)}</span></li><li>Обувь <span>${rub(10500)}</span></li></ul><button class="btn btn-or" type="button" id="addAll">Весь образ в тележку</button></div>`
+];
+$('#grid').innerHTML=order.join('');
+
+/* cart */
+const cart=[]; const lines=$('#lines'), rc=$('#receipt'), bar=$('#cartbar');
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function msg(){return 'Здравствуйте! Чек с сайта THE XIX STORE:\n'+cart.map((id,i)=>`${i+1}. ${items[id][0]} — ${items[id][1].toLocaleString('ru-RU')} ₽`).join('\n')+`\nИтого: ${total().toLocaleString('ru-RU')} ₽\nПодскажите, пожалуйста, наличие, размеры и цвета.`}
+const total=()=>cart.reduce((s,id)=>s+items[id][1],0);
+function render(typeIdx){
+  $('#cnt').textContent=cart.length; $('#sum').textContent=rub(total()); $('#tot').textContent=rub(total());
+  $('#send').href=WA+'?text='+encodeURIComponent(msg());
+  lines.innerHTML=cart.length?'':'<div class="empty">Тележка пуста. Жмите «В тележку» на бирках.</div>';
+  cart.forEach((id,i)=>{const d=document.createElement('div');d.className='rl';
+    const t=document.createElement('span');t.className='t';const full=items[id][0];
+    d.append(t);const p=document.createElement('span');p.innerHTML=rub(items[id][1]);d.append(p);
+    const x=document.createElement('button');x.type='button';x.textContent='×';x.setAttribute('aria-label','Убрать: '+full);x.onclick=()=>{cart.splice(i,1);sync();render()};d.append(x);
+    lines.append(d);
+    if(i===typeIdx&&!reduce){let k=0;t.classList.add('cursor');p.style.opacity=0;const iv=setInterval(()=>{t.textContent=full.slice(0,++k);if(k>=full.length){clearInterval(iv);t.classList.remove('cursor');p.style.opacity=1}},28)}else t.textContent=full;
+  });
+}
+function sync(){document.querySelectorAll('[data-add]').forEach(b=>{const n=cart.filter(x=>x===b.dataset.add).length;b.classList.toggle('in',n>0);b.textContent=n?`В тележке · ${n}`:'В тележку'})}
+function bump(){showBar();const c=$('#cnt');c.classList.remove('bump');void c.offsetWidth;c.classList.add('bump')}
+function fly(el){
+  if(reduce||!el)return;
+  const r=el.getBoundingClientRect(), t=bar.getBoundingClientRect(), cl=el.cloneNode(true);
+  cl.classList.add('fly');Object.assign(cl.style,{left:r.left+'px',top:r.top+'px',width:r.width+'px',height:r.height+'px',margin:0});
+  document.body.append(cl);
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{cl.style.transform=`translate(${t.left+t.width/2-r.left-r.width/2}px,${t.top+t.height/2-r.top-r.height/2}px) scale(.12) rotate(18deg)`;cl.style.opacity='.4'}));
+  setTimeout(()=>cl.remove(),800);
+}
+function add(id,el){cart.push(id);fly(el);setTimeout(()=>{sync();render(cart.length-1);bump();if(innerWidth>860)openR(true)},reduce?0:600)}
+function openR(o){rc.classList.toggle('open',o);bar.setAttribute('aria-expanded',o)}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-add]');if(b)add(b.dataset.add,b.closest('.tag'))});
+$('#addAll').onclick=e=>{['jacket','legg','ls48','cap','shoes'].forEach(id=>cart.push(id));fly(e.target.closest('.full'));setTimeout(()=>{sync();render(cart.length-1);bump();openR(true)},reduce?0:600)};
+bar.onclick=()=>openR(!rc.classList.contains('open'));
+$('#rclose').onclick=()=>openR(false);
+$('#copy').onclick=async e=>{try{await navigator.clipboard.writeText(msg());e.target.textContent='Скопировано'}catch(_){e.target.textContent='Не удалось скопировать'}setTimeout(()=>e.target.textContent='Скопировать для Telegram',1800)};
+render();
+
+/* scroll-linked sheen */
+let tk=0;const root=document.documentElement;
+const showBar=()=>bar.classList.toggle('hide',!cart.length&&scrollY<innerHeight*.6);addEventListener('scroll',showBar,{passive:true});
+const upd=()=>{tk=0;root.style.setProperty('--sw',(((scrollY*0.08+60)%140)-20).toFixed(1))};
+if(!reduce){addEventListener('scroll',()=>{if(!tk)tk=requestAnimationFrame(upd)},{passive:true});upd()}else root.style.setProperty('--sw','40');
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>
