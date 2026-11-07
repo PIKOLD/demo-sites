@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>goodbye_tie — детские бабочки, кружевные подтяжки и рубашечки · Воронеж</title><meta property="og:type" content="website"><meta property="og:title" content="goodbye_tie — детские бабочки, кружевные подтяжки и рубашечки · Воронеж"><meta property="og:description" content="Детский стиль по-взрослому от Оксаны из Воронежа: бабочки 1+ и 10+, кружевные подтяжки в четырёх цветах, рубашечки из польского хлопка. Соберите комплект и закажите на WB или в директ."><meta property="og:image" content="https://pikold.github.io/demo-sites/goodbye-tie/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Детский стиль по-взрослому от Оксаны из Воронежа: бабочки 1+ и 10+, кружевные подтяжки в четырёх цветах, рубашечки из польского хлопка. Соберите комплект и закажите на WB или в директ.">
+<link rel="stylesheet" href="../_fonts/lora.css">
+<link rel="stylesheet" href="../_fonts/rubik.css">
+<style>
+:root{
+  --kraft:#C8A27A; --kraft-d:#B38C63; --kraft-l:#D9BC97;
+  --cream:#F5EEE4; --powder:#E9B8C2; --rust:#B5532F; --cocoa:#5A3A2C; --mustard:#D4A23A;
+  --twine:#7c5a3c;
+  --serif:'Lora',Georgia,serif; --sans:'Rubik',system-ui,sans-serif;
+  --noise:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .33 0 0 0 0 .2 0 0 0 0 .1 0 0 0 .28 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --fibers:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.012 .35' numOctaves='2' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 .98 0 0 0 0 .9 0 0 0 0 .78 0 0 0 .22 -.06'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E");
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--kraft) var(--noise);background-image:var(--fibers),var(--noise);color:var(--cocoa);font:400 17px/1.6 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--rust);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1200px,100% - 32px);margin-inline:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* demo plaque */
+.demo{background:var(--cocoa);color:var(--cream);font-size:12.5px;line-height:1.45;text-align:center;padding:7px 16px}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(200,162,122,.86);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px dashed rgba(90,58,44,.35)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.logo{display:flex;align-items:center;gap:2px;font:600 20px/1 var(--sans);letter-spacing:.14em;text-decoration:none;text-transform:uppercase}
+.logo svg{width:34px;height:20px;margin:0 1px}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;font-size:15px;padding:12px 0;border-bottom:2px solid transparent}
+.nav ul a:hover{border-color:var(--rust)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:999px;font:500 16px/1.2 var(--sans);text-decoration:none;border:2px solid var(--cocoa);cursor:pointer;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-dark{background:var(--cocoa);color:var(--cream)}
+.btn-dark:hover{background:var(--rust);border-color:var(--rust)}
+.btn-line{background:transparent;color:var(--cocoa)}
+.btn-line:hover{background:var(--cream)}
+.btn-sm{min-height:44px;padding:8px 18px;font-size:15px}
+
+/* hero */
+.hero{padding:56px 0 72px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:56px;align-items:center}
+.eyebrow{font:500 13px/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;display:flex;gap:12px;flex-wrap:wrap}
+.eyebrow span+span::before{content:"|";margin-right:12px;opacity:.5}
+.bow{width:min(230px,56%);height:auto;margin:26px 0 8px;overflow:visible;filter:drop-shadow(0 6px 8px rgba(90,58,44,.25))}
+.bow .l,.bow .r,.bow .k{transform-box:fill-box;transition:transform 1.1s cubic-bezier(.2,.9,.25,1.15),opacity .6s}
+.bow .l{transform-origin:100% 50%;transform:translateX(-110px) rotate(-18deg);opacity:0}
+.bow .r{transform-origin:0 50%;transform:translateX(110px) rotate(18deg);opacity:0}
+.bow .k{transform-origin:50% 50%;transform:scale(0);transition-delay:.75s}
+.bow.tied .l,.bow.tied .r{transform:none;opacity:1}
+.bow.tied .k{transform:scale(1)}
+.bow.tied{animation:wiggle .9s 1.5s ease-in-out}
+@keyframes wiggle{30%{transform:rotate(-4deg)}60%{transform:rotate(3deg)}100%{transform:none}}
+h1{font:500 clamp(44px,6.3vw,90px)/1 var(--serif);letter-spacing:-.02em;margin:0 0 28px}
+h1 em{font-style:italic;color:var(--rust);display:block}
+.count{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin:0 0 30px;max-width:520px}
+.count b{font:500 clamp(44px,5vw,64px)/1 var(--serif);color:var(--cocoa)}
+.count > span{font-size:17px;line-height:1.35}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero-pic{position:relative;padding:18px 18px 70px}
+.box{position:relative;transform:rotate(2.2deg);background:var(--cream);padding:12px 12px 14px;border-radius:4px;box-shadow:0 1px 0 rgba(0,0,0,.05),0 26px 40px -18px rgba(70,40,20,.55)}
+.box img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:2px}
+.box figcaption{font:italic 400 15px/1.4 var(--serif);padding:10px 4px 0}
+.stamp{position:absolute;left:-6px;bottom:8px;width:150px;height:150px;border-radius:50%;background:var(--rust);color:var(--cream);display:grid;place-items:center;text-align:center;transform:rotate(-12deg);box-shadow:0 12px 24px -10px rgba(70,30,10,.6);outline:2px dashed rgba(245,238,228,.6);outline-offset:-10px}
+.stamp p{margin:0;font:400 13px/1.25 var(--sans);padding:0 18px}
+.stamp strong{display:block;font:italic 500 21px/1.15 var(--serif);margin-bottom:4px}
+
+/* section heads */
+section{scroll-margin-top:72px}
+.sec{padding:84px 0}
+.kicker{font:500 13px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--rust);margin:0 0 14px}
+h2{font:500 clamp(34px,4.6vw,58px)/1.05 var(--serif);letter-spacing:-.015em;margin:0 0 18px}
+h2 em{color:var(--rust)}
+.lead{max-width:600px;font-size:18px;margin:0}
+
+/* stats strip */
+.strip{border-block:1px dashed rgba(90,58,44,.45)}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));}
+.strip div{padding:22px 18px;border-left:1px dashed rgba(90,58,44,.35)}
+.strip div:first-child{border-left:0;padding-left:0}
+.strip b{display:block;font:500 30px/1.1 var(--serif)}
+.strip span{font-size:14.5px}
+
+/* folder tabs */
+.folder{margin-top:44px}
+.tabs{display:flex;gap:6px;padding-left:18px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;min-height:48px;padding:12px 22px 10px;border:0;border-radius:12px 12px 0 0;background:var(--kraft-d);color:var(--cocoa);font:500 16px/1 var(--sans);cursor:pointer;position:relative;top:4px;transition:top .2s,background .2s;box-shadow:inset 0 -6px 8px -6px rgba(60,30,10,.35)}
+.tab:hover{top:0}
+.tab[aria-selected=true]{background:var(--cream);top:0;box-shadow:none}
+.tab:nth-child(2)[aria-selected=false]{background:#bf9670}
+.panel{background:var(--cream);border-radius:4px 18px 18px 18px;padding:26px 0 36px;box-shadow:0 30px 50px -30px rgba(70,40,20,.6)}
+.panel[hidden]{display:none}
+.panel-top{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;padding:0 32px}
+.panel-top p{margin:0;max-width:560px}
+.panel-top .note{font-size:14px;opacity:.8}
+
+/* twine line + tags */
+.line{overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;padding:0 0 20px;margin-top:18px;scrollbar-width:thin;scrollbar-color:var(--kraft) transparent}
+.line-in{position:relative;display:flex;align-items:flex-start;justify-content:space-around;gap:18px;width:max-content;min-width:100%;padding:16px 32px 10px}
+.line-in::before{content:"";position:absolute;left:0;right:0;top:12px;height:4px;border-radius:4px;background:repeating-linear-gradient(115deg,#8d6847 0 5px,#b08b62 5px 8px,#6f4f34 8px 10px);box-shadow:0 3px 3px -1px rgba(60,30,10,.25)}
+.tag{--drop:34px;--r:-3deg;flex:none;position:relative;margin-top:var(--drop);width:176px;scroll-snap-align:center;transform-origin:50% calc(var(--drop) * -1);transform:rotate(var(--r));filter:drop-shadow(0 10px 10px rgba(70,40,20,.28))}
+.panel.live .tag{animation:swingIn 1.5s cubic-bezier(.3,.7,.4,1) both,sway 6s 1.5s ease-in-out infinite;animation-delay:calc(var(--i,0) * 90ms),calc(1.5s + var(--i,0) * 90ms)}
+.panel.live .tag:hover{animation:swingHover 1.1s ease-out both}
+@keyframes swingIn{0%{transform:rotate(calc(var(--r) + 16deg))}30%{transform:rotate(calc(var(--r) - 9deg))}55%{transform:rotate(calc(var(--r) + 5deg))}78%{transform:rotate(calc(var(--r) - 2deg))}100%{transform:rotate(var(--r))}}
+@keyframes sway{0%,100%{transform:rotate(var(--r))}50%{transform:rotate(calc(var(--r) + 1.6deg))}}
+@keyframes swingHover{0%{transform:rotate(var(--r))}25%{transform:rotate(calc(var(--r) + 7deg))}50%{transform:rotate(calc(var(--r) - 4deg))}75%{transform:rotate(calc(var(--r) + 2deg))}100%{transform:rotate(var(--r))}}
+.str{position:absolute;left:calc(50% - 1px);top:calc(var(--drop) * -1 - 2px);height:calc(var(--drop) + 18px);width:2px;background:repeating-linear-gradient(180deg,#7c5a3c 0 3px,#a8845d 3px 5px);z-index:2;border-radius:2px}
+.tb{position:relative;background:#FBF6EE;padding:30px 12px 14px;clip-path:polygon(22% 0,78% 0,100% 9%,100% 100%,0 100%,0 9%);border-radius:0 0 6px 6px}
+.tb::before{content:"";position:absolute;left:calc(50% - 7px);top:9px;width:14px;height:14px;border-radius:50%;background:var(--kraft-d);box-shadow:0 0 0 3px #e2cfb2,inset 0 2px 2px rgba(0,0,0,.25)}
+.tb img,.sw{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:3px}
+.tag.sq .tb img,.tag.sq .sw{aspect-ratio:1}
+.tag.tall .tb img,.tag.tall .sw{aspect-ratio:3/4.3}
+.tb h3{font:italic 500 18px/1.2 var(--serif);margin:12px 0 2px}
+.tb p{margin:0;font-size:13.5px;line-height:1.35;opacity:.85}
+.tag.txt .tb{background:var(--powder)}
+.tag.txt .tb h3{font-style:normal;font-size:22px;margin-top:4px}
+.tag.mus .tb{background:#ecd29b}
+
+/* fabric swatches */
+.sw{display:block;border:1px solid rgba(90,58,44,.12)}
+.p-retro{background:repeating-linear-gradient(90deg,#F5EEE4 0 9px,#B5532F 9px 15px,#F5EEE4 15px 20px,#5A3A2C 20px 23px,#F5EEE4 23px 30px,#D4A23A 30px 34px)}
+.p-dots{background:#F5EEE4 radial-gradient(circle,#5A3A2C 0 3.2px,transparent 3.8px) 0 0/16px 16px,radial-gradient(circle,#5A3A2C 0 3.2px,transparent 3.8px) 8px 8px/16px 16px;background-color:#F8F3EA}
+.p-diam{background:conic-gradient(from 45deg,#E9B8C2 0 25%,#E58A5A 0 50%,#E9B8C2 0 75%,#F2C27A 0) 0 0/26px 26px}
+.p-candy{background:repeating-linear-gradient(0deg,rgba(181,83,47,.55) 0 7px,transparent 7px 18px),repeating-linear-gradient(90deg,rgba(181,83,47,.55) 0 7px,transparent 7px 18px),repeating-linear-gradient(0deg,transparent 0 12px,rgba(255,255,255,.7) 12px 13.5px,transparent 13.5px 18px),#F3C9D0}
+.p-caramel{background:repeating-linear-gradient(0deg,rgba(181,83,47,.6) 0 6px,transparent 6px 16px),repeating-linear-gradient(90deg,rgba(181,83,47,.6) 0 6px,transparent 6px 16px),repeating-linear-gradient(90deg,transparent 0 10px,rgba(90,58,44,.55) 10px 11.5px,transparent 11.5px 16px),#E2A86E}
+.p-bunny{background:radial-gradient(ellipse 3px 6px at 40% 30%,#F5DDE1 90%,transparent) 0 0/22px 22px,radial-gradient(ellipse 3px 6px at 60% 30%,#F5DDE1 90%,transparent) 0 0/22px 22px,radial-gradient(circle at 50% 58%,#F5DDE1 0 4.5px,transparent 5px) 0 0/22px 22px,#C98A8E}
+.p-mustard{background:repeating-linear-gradient(0deg,rgba(90,58,44,.45) 0 5px,transparent 5px 15px),repeating-linear-gradient(90deg,rgba(90,58,44,.45) 0 5px,transparent 5px 15px),repeating-linear-gradient(0deg,transparent 0 10px,rgba(245,238,228,.7) 10px 11px,transparent 11px 15px),#D4A23A}
+
+/* builder */
+.set{background:var(--cream);position:relative}
+.set::before{content:"";position:absolute;inset:0;background:var(--noise);opacity:.35;pointer-events:none}
+.set .wrap{position:relative}
+.set-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;margin-top:40px;align-items:start}
+fieldset{border:0;padding:0;margin:0 0 30px;min-width:0}
+legend{font:500 14px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px;display:flex;gap:10px;align-items:center}
+legend i{font:italic 500 22px/1 var(--serif);letter-spacing:0;text-transform:none;color:var(--rust)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.chip span{display:flex;align-items:center;gap:10px;min-height:48px;padding:6px 16px 6px 6px;border-radius:999px;background:#fff;border:2px solid rgba(90,58,44,.18);font-size:15.5px;transition:border-color .2s,background .2s;cursor:pointer}
+.chip.plain span{padding:6px 20px}
+.chip span i{width:34px;height:34px;border-radius:50%;flex:none;border:1px solid rgba(90,58,44,.2)}
+.chip input:checked+span{border-color:var(--cocoa);background:#FBF0E2;box-shadow:inset 0 0 0 1px var(--cocoa)}
+.chip input:focus-visible+span{outline:3px solid var(--rust);outline-offset:3px}
+.chip:hover span{border-color:var(--cocoa)}
+.c-brown{background:#7a5038}.c-beige{background:#E6D3B5}.c-pink{background:#E9B8C2}.c-grey{background:#B9B6B1}
+
+.kit{position:sticky;top:90px;background:var(--kraft) var(--noise);background-image:var(--fibers),var(--noise);border-radius:6px;padding:26px;box-shadow:0 30px 50px -28px rgba(70,40,20,.65)}
+.kit-lid{text-align:center;border:1.5px dashed rgba(90,58,44,.5);border-radius:4px;padding:24px 16px 20px}
+.kit-lid small{font:italic 400 17px/1 var(--serif)}
+.pair{display:flex;justify-content:center;align-items:center;gap:22px;margin:18px 0 14px}
+.kbow{width:150px;height:84px;position:relative;filter:drop-shadow(0 8px 8px rgba(70,40,20,.35))}
+.kbow .wing{position:absolute;inset:0;clip-path:polygon(0 4%,50% 38%,100% 4%,100% 96%,50% 62%,0 96%);border-radius:10px;transition:background .3s}
+
+.kbow .knot{position:absolute;left:calc(50% - 15px);top:calc(50% - 17px);width:30px;height:34px;border-radius:8px;box-shadow:inset 0 0 0 40px rgba(60,30,10,.18),0 2px 4px rgba(0,0,0,.2)}
+.strap{width:46px;height:120px;border-radius:4px;position:relative;transition:background .3s;filter:drop-shadow(0 8px 8px rgba(70,40,20,.35))}
+.strap::before,.strap::after{content:"";position:absolute;top:0;bottom:0;width:10px;background:radial-gradient(circle at 0 50%,#fffaf2 0 4px,transparent 4.5px) 0 0/10px 10px;opacity:.95}
+.strap::before{left:-8px;transform:scaleX(-1)}
+.strap::after{right:-8px}
+.strap b{position:absolute;left:8px;right:8px;bottom:-14px;height:22px;border-radius:3px;background:linear-gradient(#d9d9d9,#9a9a9a)}
+.kit-name{font:italic 500 23px/1.25 var(--serif);margin:12px 0 4px}
+.kit-meta{font-size:14px;opacity:.85}
+.kit-actions{display:grid;gap:10px;margin-top:20px}
+.kit-actions .btn{width:100%}
+.msg{margin-top:16px;background:var(--cream);border-radius:6px;padding:14px}
+.msg label{font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+.msg textarea{width:100%;min-height:96px;margin-top:8px;border:1px solid rgba(90,58,44,.25);border-radius:4px;background:#fff;color:var(--cocoa);font:400 15px/1.45 var(--sans);padding:10px;resize:vertical}
+.msg-row{display:flex;gap:10px;margin-top:10px;flex-wrap:wrap}
+.msg-row .btn{flex:1 1 150px}
+
+/* cotton */
+.cotton-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:center}
+.cot-pic{position:relative}
+.cot-pic img{width:100%;aspect-ratio:16/9.5;object-fit:cover;object-position:50% 100%;border-radius:4px;box-shadow:0 30px 44px -26px rgba(70,40,20,.6)}
+.cot-pic .label{position:absolute;right:-14px;top:24px;background:var(--cream);padding:12px 16px;transform:rotate(4deg);font:italic 500 18px/1.2 var(--serif);box-shadow:0 10px 20px -10px rgba(70,40,20,.5)}
+.sizes{margin:28px 0 0;padding:0;list-style:none;border-top:1px dashed rgba(90,58,44,.45)}
+.sizes li{display:grid;grid-template-columns:minmax(0,9rem) minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px dashed rgba(90,58,44,.45);align-items:baseline}
+.sizes b{font:italic 500 20px/1.2 var(--serif)}
+.sizes span{font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.fine{font-size:14px;opacity:.85;margin-top:14px}
+
+/* heart / photos */
+.heart{background:var(--powder);position:relative}
+.heart::before{content:"";position:absolute;inset:0;background:var(--noise);opacity:.3;pointer-events:none}
+.heart .wrap{position:relative}
+.heart-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:56px;align-items:center}
+blockquote{margin:0;font:italic 400 clamp(26px,3vw,38px)/1.25 var(--serif)}
+blockquote footer{font:400 16px/1.4 var(--sans);font-style:normal;margin-top:18px}
+.polas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:start}
+.pola{background:#fff;padding:10px 10px 14px;box-shadow:0 20px 30px -18px rgba(90,40,40,.55);margin:0}
+.pola img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.pola figcaption{font:italic 400 14px/1.3 var(--serif);padding-top:8px}
+.pola:nth-child(1){transform:rotate(-3deg);margin-top:40px}
+.pola:nth-child(2){transform:rotate(2deg)}
+.pola:nth-child(3){transform:rotate(-1.5deg);margin-top:70px}
+
+/* how */
+.how{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:56px}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:72px minmax(0,1fr);gap:18px;padding:22px 0;border-bottom:1px dashed rgba(90,58,44,.45)}
+.steps li:first-child{border-top:1px dashed rgba(90,58,44,.45)}
+.steps li::before{content:counter(s,decimal-leading-zero);font:italic 500 44px/1 var(--serif);color:var(--rust)}
+.steps h3{margin:0 0 4px;font:500 20px/1.3 var(--sans)}
+.steps p{margin:0}
+
+/* final */
+.final{background:var(--cocoa);color:var(--cream);text-align:center}
+.final h2{color:var(--cream)}
+.final h2 em{color:var(--powder)}
+.final .lead{margin-inline:auto;opacity:.9}
+.final .hero-cta{justify-content:center;margin-top:30px}
+.final .btn-dark{background:var(--cream);color:var(--cocoa);border-color:var(--cream)}
+.final .btn-dark:hover{background:var(--powder);border-color:var(--powder)}
+.final .btn-line{color:var(--cream);border-color:rgba(245,238,228,.6)}
+.final .btn-line:hover{background:rgba(245,238,228,.12)}
+.contacts{display:flex;justify-content:center;gap:12px 32px;flex-wrap:wrap;margin-top:40px;font-size:15px;opacity:.9}
+footer.site{background:var(--cocoa);color:rgba(245,238,228,.7);font-size:13px;padding:0 0 32px;text-align:center;border-top:1px dashed rgba(245,238,228,.2)}
+footer.site p{margin:0;padding-top:22px}
+
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,140%);background:var(--cocoa);color:var(--cream);padding:12px 20px;border-radius:999px;font-size:15px;transition:transform .35s,visibility .35s;z-index:50;visibility:hidden}
+.toast.on{transform:translate(-50%,0);visibility:visible}
+
+@media (max-width:960px){
+  .nav ul{display:none}
+  .hero{padding:32px 0 56px}
+  .hero-grid,.set-grid,.cotton-grid,.heart-grid,.how{grid-template-columns:minmax(0,1fr);gap:36px}
+  .hero-pic{max-width:520px;margin-inline:auto;width:100%}
+  .kit{position:relative;top:0}
+  .strip .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .strip div:nth-child(3){border-left:0;padding-left:0}
+  .strip div:nth-child(n+3){border-top:1px dashed rgba(90,58,44,.35)}
+  .cot-pic{max-width:520px}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .sec{padding:60px 0}
+  .logo{font-size:16px;letter-spacing:.1em}
+  .logo svg{width:28px}
+  .nav .btn-sm{padding:8px 14px;font-size:14px}
+  .bow{width:150px;margin-top:18px}
+  .count b{font-size:44px}
+  .hero-cta .btn{flex:1 1 100%}
+  .stamp{width:112px;height:112px;left:auto;right:0;bottom:auto;top:-6px}
+  .strip b{font-size:24px}
+  .stamp strong{font-size:17px}
+  .stamp p{font-size:11px;padding:0 12px}
+  .hero-pic{padding:10px 16px 70px}
+  .box{transform:rotate(1.4deg)}
+  .panel{border-radius:4px 14px 14px 14px}
+  .panel-top{padding:0 18px}
+  .line-in{padding:16px 18px 10px;justify-content:flex-start}
+  .tag{width:150px}
+  .tab{padding:12px 16px 10px;font-size:15px}
+  .tabs{padding-left:8px}
+  .kit{padding:16px}
+  .kbow{width:120px;height:68px}
+  .polas{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pola:nth-child(3){display:none}
+  .pola:nth-child(1){margin-top:24px}
+  .cot-pic .label{right:6px}
+  .sizes li{grid-template-columns:minmax(0,6.5rem) minmax(0,1fr)}
+  .steps li{grid-template-columns:56px minmax(0,1fr)}
+  .steps li::before{font-size:36px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .bow .l,.bow .r{transform:none;opacity:1}.bow .k{transform:none}
+}
+</style>
+</head>
+<body>
+<!-- Demo concept banner -->
+<div class="demo">Демо-концепт независимого разработчика — не официальный сайт goodbye_tie. Не согласован с владельцем, удаляется по первой просьбе.</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="goodbye_tie — на главную">G<svg viewBox="0 0 34 20" aria-hidden="true"><path d="M15 10 2 2v16zM19 10l13-8v16z" fill="#5A3A2C"/><rect x="13" y="6.5" width="8" height="7" rx="2" fill="#B5532F"/></svg>DBYE_TIE</a>
+    <nav aria-label="Разделы"><ul>
+      <li><a href="#catalog">Каталог</a></li>
+      <li><a href="#set">Собрать комплект</a></li>
+      <li><a href="#cotton">Рубашечки</a></li>
+      <li><a href="#order">Как заказать</a></li>
+    </ul></nav>
+    <a class="btn btn-dark btn-sm" href="https://ig.me/m/goodbye_tie" target="_blank" rel="noopener">Написать Оксане</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow"><span>Детское</span><span>Бабочки</span><span>Подтяжки</span></p>
+      <svg class="bow" id="bow" viewBox="0 0 240 120" role="img" aria-label="Бабочка в клетку завязывается">
+        <defs>
+          <pattern id="plaid" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(8)">
+            <rect width="18" height="18" fill="#B5532F"/>
+            <rect width="18" height="6" fill="#D4A23A" opacity=".55"/>
+            <rect width="6" height="18" fill="#D4A23A" opacity=".55"/>
+            <rect y="11" width="18" height="1.6" fill="#F5EEE4" opacity=".75"/>
+            <rect x="11" width="1.6" height="18" fill="#F5EEE4" opacity=".75"/>
+          </pattern>
+        </defs>
+        <g class="l"><path d="M114 60C92 40 44 6 16 12 3 15 2 105 16 108c28 6 76-28 98-48z" fill="url(#plaid)"/><path d="M100 52C78 46 52 40 30 44M100 68C78 74 52 80 30 76" stroke="#5A3A2C" stroke-opacity=".35" stroke-width="2" fill="none"/></g>
+        <g class="r"><path d="M126 60c22-20 70-54 98-48 13 3 14 93 0 96-28 6-76-28-98-48z" fill="url(#plaid)"/><path d="M140 52c22-6 48-12 70-8M140 68c22 6 48 12 70 8" stroke="#5A3A2C" stroke-opacity=".35" stroke-width="2" fill="none"/></g>
+        <g class="k"><rect x="102" y="40" width="36" height="40" rx="9" fill="#8f3f22"/><rect x="102" y="40" width="36" height="40" rx="9" fill="url(#plaid)" opacity=".55"/><path d="M110 46v28M130 46v28" stroke="#5A3A2C" stroke-opacity=".4" stroke-width="1.5"/></g>
+      </svg>
+      <h1>Детский стиль <em>по&#8209;взрослому</em></h1>
+      <div class="count"><b><span id="cnt">6000</span>+</b><span>детишек и их мам<br>выбрали goodbye_tie</span></div>
+      <div class="hero-cta">
+        <a class="btn btn-dark" href="#set">Собрать комплект</a>
+        <a class="btn btn-line" href="https://www.wildberries.ru/brands/goodbyetie" target="_blank" rel="noopener">Магазин на Wildberries</a>
+      </div>
+    </div>
+    <div class="hero-pic">
+      <figure class="box" style="margin:0">
+        <img src="img/p4.jpg" srcset="img/p4-m.jpg 720w, img/p4.jpg 1440w" sizes="(max-width:960px) 92vw, 560px" alt="Розовая бабочка с зайками лежит на крафтовой коробке goodbye_tie с надписью «Будь самым стильным!»" width="1440" height="1439">
+        <figcaption>Фирменная крафтовая коробка «Будь самым стильным!»</figcaption>
+      </figure>
+      <div class="stamp"><p><strong>Оксана, Воронеж</strong>бабочки, подтяжки, рубашечки</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div><b>6000+</b><span>детишек и мам выбрали нас</span></div>
+    <div><b>6 принтов</b><span>рубашечек из польского хлопка</span></div>
+    <div><b>4 цвета</b><span>кружевных подтяжек</span></div>
+    <div><b>1&nbsp;444</b><span>подписчика в Instagram</span></div>
+  </div>
+</div>
+
+<section class="sec" id="catalog">
+  <div class="wrap">
+    <p class="kicker">Каталог на шпагате</p>
+    <h2>Бирка к бирке — <em>как в коробке</em></h2>
+    <p class="lead">Разделы те же, что в актуальных у Оксаны. Наведите на бирку — она качнётся.</p>
+
+    <div class="folder">
+      <div class="tabs" data-qa-skip role="tablist" aria-label="Разделы каталога">
+        <button class="tab" role="tab" id="t1" aria-controls="pn1" aria-selected="true">Бабочки 1+</button>
+        <button class="tab" role="tab" id="t2" aria-controls="pn2" aria-selected="false" tabindex="-1">Бабочки 10+</button>
+        <button class="tab" role="tab" id="t3" aria-controls="pn3" aria-selected="false" tabindex="-1">Подтяжки</button>
+        <button class="tab" role="tab" id="t4" aria-controls="pn4" aria-selected="false" tabindex="-1">Рубашечки</button>
+      </div>
+
+      <div class="panel live" role="tabpanel" id="pn1" aria-labelledby="t1">
+        <div class="panel-top"><p>Бабочки для самых маленьких модников. Новая коллекция и любимые принты — всё доступно к заказу на WB.</p></div>
+        <div class="line" data-qa-skip><div class="line-in">
+          <figure class="tag sq" style="--drop:30px;--r:-3deg;--i:0"><span class="str"></span><div class="tb"><img src="img/p4-m.jpg" alt="Пудровая бабочка с зайками на коробке"><h3>Пудровые заиньки</h3><p>«самый милый комплект»</p></div></figure>
+          <figure class="tag" style="--drop:58px;--r:2deg;--i:1"><span class="str"></span><div class="tb"><i class="sw p-retro"></i><h3>Ретро-полоска</h3><p>любимый принт Оксаны</p></div></figure>
+          <figure class="tag tall" style="--drop:22px;--r:-1.5deg;--i:2"><span class="str"></span><div class="tb"><img src="img/p11-m.jpg" alt="Бабочки в клетку и пудровая бабочка в руке"><h3>Клетка и пудра</h3><p>в руке — новая коллекция</p></div></figure>
+          <figure class="tag sq" style="--drop:46px;--r:3deg;--i:3"><span class="str"></span><div class="tb"><i class="sw p-diam"></i><h3>Мармеладные ромбы</h3><p>новая коллекция</p></div></figure>
+          <figure class="tag" style="--drop:28px;--r:-2.5deg;--i:4"><span class="str"></span><div class="tb"><i class="sw p-candy"></i><h3>Конфетная клетка</h3><p>новая коллекция</p></div></figure>
+          <figure class="tag sq" style="--drop:62px;--r:1.5deg;--i:5"><span class="str"></span><div class="tb"><img src="img/p12-m.jpg" alt="Мальчик поправляет бабочку в клетку" style="object-position:50% 70%"><h3>Сам поправит</h3><p>бабочка в клетку на свитере</p></div></figure>
+        </div></div>
+      </div>
+
+      <div class="panel" role="tabpanel" id="pn2" aria-labelledby="t2" hidden>
+        <div class="panel-top"><p>Бабочки для ребят постарше. Какие принты есть в размере 10+ прямо сейчас — подскажет Оксана в директ.</p></div>
+        <div class="line" data-qa-skip><div class="line-in">
+          <figure class="tag txt" style="--drop:40px;--r:-2deg;--i:0"><span class="str"></span><div class="tb"><h3>10+</h3><p>для тех, кто уже сам выбирает, что надеть на праздник</p></div></figure>
+          <figure class="tag" style="--drop:24px;--r:2.5deg;--i:1"><span class="str"></span><div class="tb"><i class="sw p-caramel"></i><h3>Карамельная клетка</h3><p>новая коллекция</p></div></figure>
+          <figure class="tag sq" style="--drop:54px;--r:-3deg;--i:2"><span class="str"></span><div class="tb"><i class="sw p-mustard"></i><h3>Горчичная клетка</h3><p>в ограниченном количестве</p></div></figure>
+          <figure class="tag" style="--drop:30px;--r:1.5deg;--i:3"><span class="str"></span><div class="tb"><i class="sw p-bunny"></i><h3>Пудровые заиньки</h3><p>комплект с зайками</p></div></figure>
+          <figure class="tag mus" style="--drop:60px;--r:-1deg;--i:4"><span class="str"></span><div class="tb"><h3>Наличие</h3><p>размер 10+ уточняйте в директ — ответим, какие принты в наличии</p></div></figure>
+        </div></div>
+      </div>
+
+      <div class="panel" role="tabpanel" id="pn3" aria-labelledby="t3" hidden>
+        <div class="panel-top"><p>Кружевные подтяжки — теперь в четырёх цветах: коричневый, бежевый, розовый, серый. А ещё ретро-подтяжки.</p></div>
+        <div class="line" data-qa-skip><div class="line-in">
+          <figure class="tag tall" style="--drop:26px;--r:-2deg;--i:0"><span class="str"></span><div class="tb"><img src="img/p8-m.jpg" alt="Розовые подтяжки с кружевом и металлическими клипсами"><h3>Розовые</h3><p>кружевные</p></div></figure>
+          <figure class="tag sq" style="--drop:56px;--r:2.5deg;--i:1"><span class="str"></span><div class="tb"><img src="img/p10-m.jpg" alt="Серые подтяжки в крафтовой коробке с бирками"><h3>Серые</h3><p>в коробке с бирками</p></div></figure>
+          <figure class="tag" style="--drop:34px;--r:-3deg;--i:2"><span class="str"></span><div class="tb"><img src="img/p13-m.jpg" alt="Бежевые подтяжки с кружевом на вязаных брючках"><h3>Бежевые</h3><p>кружево и вязаные брючки</p></div></figure>
+          <figure class="tag sq" style="--drop:64px;--r:1deg;--i:3"><span class="str"></span><div class="tb"><img src="img/p6-m.jpg" alt="Светлые подтяжки в полоску на льняных брюках"><h3>Ретро-подтяжки</h3><p>к весенним нарядам</p></div></figure>
+          <figure class="tag tall" style="--drop:20px;--r:-1.5deg;--i:4"><span class="str"></span><div class="tb"><img src="img/p2-m.jpg" alt="Кружево розовых подтяжек крупным планом"><h3>Зефирные</h3><p>пудровое кружево крупно</p></div></figure>
+        </div></div>
+      </div>
+
+      <div class="panel" role="tabpanel" id="pn4" aria-labelledby="t4" hidden>
+        <div class="panel-top"><p>Рубашечки из польского хлопка с уникальными принтами. Горошек на белом подходит почти ко всем комплектам.</p><p class="note">Размеры — из последнего поста о наличии, актуальное уточняйте в директ.</p></div>
+        <div class="line" data-qa-skip><div class="line-in">
+          <figure class="tag txt" style="--drop:30px;--r:-2deg;--i:0"><span class="str"></span><div class="tb"><h3>Зайки</h3><p>86 · 92 · 98 · 104</p></div></figure>
+          <figure class="tag" style="--drop:58px;--r:2deg;--i:1"><span class="str"></span><div class="tb"><img src="img/p5-m.jpg" alt="Рубашечка с динозаврами и бежевые подтяжки" style="aspect-ratio:16/10;object-position:50% 100%"><h3>Дино</h3><p>92 · 98 · 104</p></div></figure>
+          <figure class="tag mus" style="--drop:24px;--r:-3deg;--i:2"><span class="str"></span><div class="tb"><h3>Ёжики</h3><p>86 · 92 · 98</p></div></figure>
+          <figure class="tag txt" style="--drop:50px;--r:1.5deg;--i:3"><span class="str"></span><div class="tb"><h3>Лапки</h3><p>86 · 92 · 98 · 104</p></div></figure>
+          <figure class="tag" style="--drop:20px;--r:-1deg;--i:4"><span class="str"></span><div class="tb"><i class="sw p-dots" style="aspect-ratio:1"></i><h3>Горошек</h3><p>на белом, универсальный</p></div></figure>
+          <figure class="tag mus" style="--drop:44px;--r:2.5deg;--i:5"><span class="str"></span><div class="tb"><h3>Роботы</h3><p>86 · 92 · 98</p></div></figure>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec set" id="set">
+  <div class="wrap">
+    <p class="kicker">Собери комплект</p>
+    <h2>Бабочка + подтяжки <em>= комплект</em></h2>
+    <p class="lead">Выберите принт, цвет кружева и возраст — и сразу отправьте заказ Оксане в директ готовым сообщением. Или откройте магазин на WB.</p>
+
+    <div class="set-grid">
+      <form id="kitform" onsubmit="return false">
+        <fieldset>
+          <legend><i>1</i> Принт бабочки</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="print" value="ретро-полоска" data-cls="p-retro" checked><span><i class="p-retro"></i>Ретро-полоска</span></label>
+            <label class="chip"><input type="radio" name="print" value="горошек" data-cls="p-dots"><span><i class="p-dots"></i>Горошек</span></label>
+            <label class="chip"><input type="radio" name="print" value="мармеладные ромбы" data-cls="p-diam"><span><i class="p-diam"></i>Мармеладные ромбы</span></label>
+            <label class="chip"><input type="radio" name="print" value="конфетная клетка" data-cls="p-candy"><span><i class="p-candy"></i>Конфетная клетка</span></label>
+            <label class="chip"><input type="radio" name="print" value="карамельная клетка" data-cls="p-caramel"><span><i class="p-caramel"></i>Карамельная клетка</span></label>
+            <label class="chip"><input type="radio" name="print" value="пудровые заиньки" data-cls="p-bunny"><span><i class="p-bunny"></i>Пудровые заиньки</span></label>
+            <label class="chip"><input type="radio" name="print" value="горчичная клетка" data-cls="p-mustard"><span><i class="p-mustard"></i>Горчичная клетка</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><i>2</i> Кружевные подтяжки</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="color" value="коричневые" data-c="#7a5038" checked><span><i class="c-brown"></i>Коричневые</span></label>
+            <label class="chip"><input type="radio" name="color" value="бежевые" data-c="#E6D3B5"><span><i class="c-beige"></i>Бежевые</span></label>
+            <label class="chip"><input type="radio" name="color" value="розовые" data-c="#E9B8C2"><span><i class="c-pink"></i>Розовые</span></label>
+            <label class="chip"><input type="radio" name="color" value="серые" data-c="#B9B6B1"><span><i class="c-grey"></i>Серые</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><i>3</i> Возраст</legend>
+          <div class="chips">
+            <label class="chip plain"><input type="radio" name="age" value="1+" checked><span>Бабочка 1+</span></label>
+            <label class="chip plain"><input type="radio" name="age" value="10+"><span>Бабочка 10+</span></label>
+          </div>
+        </fieldset>
+      </form>
+
+      <aside class="kit" aria-live="polite">
+        <div class="kit-lid">
+          <small>Будь самым стильным!</small>
+          <div class="pair">
+            <div class="kbow" id="kbow"><div class="wing p-retro" id="kwing"></div><div class="knot p-retro" id="kknot"></div></div>
+            <div class="strap" id="kstrap" style="background:#7a5038"><b></b></div>
+          </div>
+          <p class="kit-name" id="kname">Ретро-полоска + коричневое кружево</p>
+          <p class="kit-meta" id="kmeta">возраст 1+</p>
+        </div>
+        <div class="kit-actions">
+          <a class="btn btn-dark" id="igbtn" href="https://ig.me/m/goodbye_tie" target="_blank" rel="noopener">Заказать в директ</a>
+          <a class="btn btn-line" href="https://www.wildberries.ru/brands/goodbyetie" target="_blank" rel="noopener">Смотреть на WB</a>
+        </div>
+        <div class="msg">
+          <label for="msgtext">Готовый текст для директа</label>
+          <textarea id="msgtext" readonly></textarea>
+          <div class="msg-row"><button class="btn btn-line btn-sm" id="copy" type="button">Скопировать</button></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="cotton">
+  <div class="wrap cotton-grid">
+    <div class="cot-pic">
+      <img src="img/p5.jpg" srcset="img/p5-m.jpg 720w, img/p5.jpg 1440w" sizes="(max-width:960px) 92vw, 520px" alt="Рубашечка с динозаврами и бежевые подтяжки">
+      <span class="label">принт «Дино»</span>
+    </div>
+    <div>
+      <p class="kicker">Рубашечки</p>
+      <h2>Наш выбор — <em>польский хлопок</em></h2>
+      <p class="lead">Рубашечки, которые комфортны, приятны и красивы: уникальный принт и мягкость хлопка. Горошек на белом — самый универсальный, к нему подойдут почти все комплекты.</p>
+      <ul class="sizes">
+        <li><b>Зайки</b><span>86, 92, 98, 104</span></li>
+        <li><b>Ёжики</b><span>86, 92, 98</span></li>
+        <li><b>Лапки</b><span>86, 92, 98, 104</span></li>
+        <li><b>Роботы</b><span>86, 92, 98</span></li>
+        <li><b>Дино</b><span>92, 98, 104</span></li>
+        <li><b>Клетка</b><span>86, 92, 98</span></li>
+      </ul>
+      <p class="fine">Размеры из последнего поста о наличии. Фото всех принтов — в актуальных «Рубашечки».</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec heart" id="about">
+  <div class="wrap heart-grid">
+    <div>
+      <p class="kicker" style="color:var(--cocoa)">Меня зовут Оксана</p>
+      <blockquote>«Каждая ваша фотография — это кусочек моего сердца! Не устану это повторять.»
+        <footer>Оксана, goodbye_tie · Воронеж</footer>
+      </blockquote>
+    </div>
+    <div class="polas">
+      <figure class="pola"><img src="img/p14-m.jpg" alt="Девочка в берете и бежевых подтяжках сидит на табурете"><figcaption>кружево к вязаному</figcaption></figure>
+      <figure class="pola"><img src="img/p3-m.jpg" alt="Мальчик в кепке, бабочке и подтяжках с букетом роз"><figcaption>бабочка + подтяжки в тон</figcaption></figure>
+      <figure class="pola"><img src="img/p7-m.jpg" alt="Девочка в белой рубашке и розовой пачке"><figcaption>зефирный образ</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="order">
+  <div class="wrap how">
+    <div>
+      <p class="kicker">Как заказать</p>
+      <h2>Два пути — <em>выбирайте удобный</em></h2>
+      <p class="lead">Весь ассортимент — на Wildberries. Комплекты можно заказать и через Instagram: Оксана ответит в директ.</p>
+    </div>
+    <ol class="steps">
+      <li><div><h3>Соберите комплект</h3><p>Принт бабочки, цвет кружевных подтяжек и возраст — в конструкторе выше.</p></div></li>
+      <li><div><h3>Напишите в директ</h3><p>Скопируйте готовый текст и отправьте @goodbye_tie — уточним наличие принта и размера.</p></div></li>
+      <li><div><h3>Или оформите на WB</h3><p>Магазин goodbye_tie на Wildberries — больше ассортимента, ссылка та же, что в шапке профиля.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec final">
+  <div class="wrap">
+    <h2>Будь <em>самым стильным!</em></h2>
+    <p class="lead">Бабочки, кружевные подтяжки и рубашечки из Воронежа — для выпускных, фотосессий и просто весны.</p>
+    <div class="hero-cta">
+      <a class="btn btn-dark" href="https://ig.me/m/goodbye_tie" target="_blank" rel="noopener">Написать в Instagram</a>
+      <a class="btn btn-line" href="https://www.wildberries.ru/brands/goodbyetie" target="_blank" rel="noopener">Магазин на Wildberries</a>
+    </div>
+    <div class="contacts">
+      <a href="https://instagram.com/goodbye_tie" target="_blank" rel="noopener">@goodbye_tie</a>
+      <span>Воронеж, Олимпийский</span>
+      <a href="https://www.wildberries.ru/brands/goodbyetie" target="_blank" rel="noopener">wildberries.ru/brands/goodbyetie</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site"><p>goodbye_tie · детский стиль по-взрослому · демо-концепт, не официальный сайт</p></footer>
+<div class="toast" id="toast" role="status">Текст скопирован — вставьте его в директ</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // bow tie ties itself
+  var bow = document.getElementById('bow');
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting){ bow.classList.add('tied'); io.disconnect(); } });},{threshold:.4});
+    io.observe(bow);
+  } else bow.classList.add('tied');
+  // counter
+  var cnt = document.getElementById('cnt');
+  if (!reduce) { var t0=null; cnt.textContent='0';
+    requestAnimationFrame(function step(t){ if(!t0)t0=t; var p=Math.min((t-t0)/1400,1); cnt.textContent=Math.round(6000*(1-Math.pow(1-p,3))); if(p<1)requestAnimationFrame(step); });
+  }
+  // tabs
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  function sel(tab){
+    tabs.forEach(function(t){ var on=t===tab; t.setAttribute('aria-selected',on); t.tabIndex=on?0:-1;
+      var p=document.getElementById(t.getAttribute('aria-controls')); p.hidden=!on; p.classList.remove('live'); if(on){ void p.offsetWidth; p.classList.add('live'); var l=p.querySelector('.line'); if(l) l.scrollLeft=0; } });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){sel(t)});
+    t.addEventListener('keydown',function(e){ var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0; if(d){ var n=tabs[(i+d+tabs.length)%tabs.length]; sel(n); n.focus(); e.preventDefault(); } });
+  });
+  // kit builder
+  var f=document.getElementById('kitform'), ta=document.getElementById('msgtext');
+  function upd(){
+    var pr=f.querySelector('[name=print]:checked'), co=f.querySelector('[name=color]:checked'), ag=f.querySelector('[name=age]:checked');
+    document.getElementById('kwing').className='wing '+pr.dataset.cls;
+    document.getElementById('kknot').className='knot '+pr.dataset.cls;
+    document.getElementById('kstrap').style.background=co.dataset.c;
+    var cname={'коричневые':'коричневое','бежевые':'бежевое','розовые':'розовое','серые':'серое'}[co.value];
+    var p=pr.value.charAt(0).toUpperCase()+pr.value.slice(1);
+    document.getElementById('kname').textContent=p+' + '+cname+' кружево';
+    document.getElementById('kmeta').textContent='возраст '+ag.value;
+    ta.value='Здравствуйте, Оксана! Хочу собрать комплект: бабочка «'+pr.value+'» ('+ag.value+') и кружевные подтяжки — '+co.value+'. Подскажите, пожалуйста, есть ли в наличии и как оформить заказ?';
+  }
+  f.addEventListener('change',upd); upd();
+  var toast=document.getElementById('toast');
+  document.getElementById('copy').addEventListener('click',function(){
+    function done(){ toast.classList.add('on'); setTimeout(function(){toast.classList.remove('on')},2200); }
+    if(navigator.clipboard&&window.isSecureContext){ navigator.clipboard.writeText(ta.value).then(done,function(){ta.select();document.execCommand('copy');done();}); }
+    else { ta.select(); document.execCommand('copy'); done(); }
+  });
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

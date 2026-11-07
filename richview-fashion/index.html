@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>RICH VIEW — кашемир и шёлк, пальто из кашемира</title><meta property="og:type" content="website"><meta property="og:title" content="RICH VIEW — кашемир и шёлк, пальто из кашемира"><meta property="og:description" content="RICH VIEW — территория доступной роскоши. Комплекты из 70% кашемира и 30% шёлка в шести оттенках, пальто из кашемира, доставка с примеркой по Москве и МО."><meta property="og:image" content="https://pikold.github.io/demo-sites/richview-fashion/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="RICH VIEW — территория доступной роскоши. Комплекты из 70% кашемира и 30% шёлка в шести оттенках, пальто из кашемира, доставка с примеркой по Москве и МО.">
+<link rel="stylesheet" href="../_fonts/cormorant-garamond.css">
+<link rel="stylesheet" href="../_fonts/manrope.css">
+<style>
+@property --set{syntax:'<color>';inherits:true;initial-value:#B59A83}
+@property --ink{syntax:'<color>';inherits:true;initial-value:#1A1A1A}
+:root{
+  --milk:#F3EEE7;--capp:#B59A83;--graph:#4A4A4D;--rose:#E6C4C4;--mel:#9C9B9A;--black:#1A1A1A;
+  --bed:#E8E0D5;--line:rgba(26,26,26,.14);
+  --serif:'Cormorant Garamond','Cormorant',Georgia,'Times New Roman',serif;
+  --sans:'Manrope','Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;
+  --pad:clamp(16px,4vw,56px);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--milk);color:var(--black);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--black);outline-offset:3px;border-radius:2px}
+.on-dark :focus-visible{outline-color:var(--milk)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.01em;line-height:1;margin:0}
+p{margin:0}
+.wrap{max-width:1320px;margin:0 auto;padding:0 var(--pad)}
+.kick{font:600 11px/1.4 var(--sans);letter-spacing:.22em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;font:600 14px/1 var(--sans);letter-spacing:.04em;text-decoration:none;border:1px solid currentColor;background:transparent;color:inherit;cursor:pointer;transition:background .3s,color .3s,transform .3s}
+.btn:hover{transform:translateY(-1px)}
+.btn.fill{background:var(--black);color:var(--milk);border-color:var(--black)}
+.btn.fill:hover{background:var(--graph)}
+
+/* demo bar */
+.demo{background:var(--black);color:#d9d2c8;font:500 12px/1.45 var(--sans);text-align:center;padding:7px var(--pad)}
+
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px var(--pad);background:var(--milk);border-bottom:1px solid var(--line)}
+.logo{font:500 26px/1 var(--serif);letter-spacing:.32em;text-decoration:none;white-space:nowrap}
+.nav{display:flex;gap:26px;font-size:14px}
+.nav a{text-decoration:none;opacity:.75;padding:12px 0}
+.nav a:hover{opacity:1}
+.top-r{display:flex;align-items:center;gap:16px}
+.tel{font:600 14px/1 var(--sans);text-decoration:none;white-space:nowrap;padding:14px 0}
+.top .btn{min-height:44px;padding:0 18px;font-size:13px}
+
+/* hero stack */
+.hero{position:relative;background:var(--bed);height:clamp(620px,calc(100svh - 104px),900px);display:flex;flex-direction:column;overflow:hidden}
+.slot{position:relative;flex:1 1 0;min-height:0}
+.slot.lead{flex:3.3 1 0}
+.fold{position:absolute;inset:0;transform-origin:50% 0;transform:scaleY(var(--s,1));will-change:transform;
+  border-radius:0 46px 46px 0;margin-right:var(--mr,0);margin-left:var(--ml,0);
+  background:
+   repeating-linear-gradient(90deg,rgba(255,255,255,.07) 0 2px,rgba(0,0,0,.035) 2px 5px),
+   linear-gradient(180deg,rgba(255,255,255,.22),rgba(255,255,255,0) 30%,rgba(0,0,0,0) 70%,rgba(0,0,0,.16)),var(--c);
+  box-shadow:0 10px 18px -12px rgba(26,26,26,.55),inset -14px 0 22px -14px rgba(0,0,0,.35)}
+.fold::after{content:"";position:absolute;left:0;right:0;bottom:22%;height:1px;background:rgba(0,0,0,.08)}
+.slot:nth-child(2){z-index:6}.slot:nth-child(3){z-index:5}.slot:nth-child(4){z-index:4}.slot:nth-child(5){z-index:3}.slot:nth-child(6){z-index:2}
+.slot.lead{z-index:7}
+.slot.s-black{z-index:9}
+.lbl{position:absolute;left:var(--pad);top:12px;z-index:2;font:600 10.5px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--lc,rgba(26,26,26,.6));pointer-events:none}
+.rev{position:absolute;left:var(--pad);right:40%;bottom:12px;z-index:0;display:flex;align-items:baseline;gap:14px;color:var(--graph)}
+.rev b{font:500 italic clamp(20px,2.2vw,30px)/1 var(--serif)}
+.rev span{font:600 11px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase}
+.lead .fold{--c:var(--milk);border-radius:0 64px 64px 0;box-shadow:0 12px 22px -14px rgba(26,26,26,.5),inset -16px 0 26px -16px rgba(0,0,0,.18)}
+.lead-in{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:center;padding:18px var(--pad);max-width:62%}
+.lead-in .kick{color:var(--capp);color:#8c735f}
+.h1{font-size:clamp(54px,7.2vw,118px);font-weight:400;line-height:.86;margin:12px 0 18px}
+.h1 i{font-weight:400;color:#8c735f}
+.lead-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px}
+.chip{display:inline-flex;align-items:center;min-height:32px;padding:0 14px;border:1px solid var(--line);border-radius:999px;font:600 12px/1 var(--sans);letter-spacing:.08em;background:rgba(255,255,255,.45)}
+.hero-pic{position:absolute;z-index:8;right:clamp(16px,6vw,110px);top:14%;bottom:7%;aspect-ratio:4/5;max-width:40%;box-shadow:0 30px 60px -30px rgba(26,26,26,.6)}
+.hero-pic img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.hero-pic figcaption{position:absolute;left:-1px;bottom:-1px;background:var(--milk);font:600 10.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;padding:9px 12px}
+
+/* sections */
+section{scroll-margin-top:10px}
+.sec{padding-top:clamp(72px,10vw,140px);padding-bottom:clamp(72px,10vw,140px)}
+.sec-h{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 48px;align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+.sec-h h2{font-size:clamp(42px,6vw,92px)}
+.sec-h h2 i{color:#8c735f}
+.sec-h p{max-width:440px;color:#4f4a45}
+
+/* set picker */
+.set{--set:#B59A83;--ink:#1A1A1A;background:var(--set);color:var(--ink);transition:--set .6s ease,--ink .6s ease}
+.set .sec-h p{color:inherit;opacity:.82}
+.set .sec-h h2 i{color:inherit}
+.set-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(28px,5vw,80px);align-items:start}
+.set-pic{position:relative;aspect-ratio:4/5;overflow:hidden;background:rgba(0,0,0,.08)}
+.set-pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s ease}
+.set-pic img.on{opacity:1}
+.set-pic figcaption{position:absolute;left:0;bottom:0;z-index:2;background:var(--set);color:var(--ink);padding:10px 14px;font:600 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;transition:--set .6s,--ink .6s}
+.comp{display:flex;align-items:baseline;gap:18px;padding-bottom:22px;border-bottom:1px solid currentColor;border-color:color-mix(in srgb,currentColor 25%,transparent)}
+.comp b{font:400 clamp(56px,7vw,104px)/.9 var(--serif)}
+.comp span{font-size:15px;opacity:.85}
+.step{padding:24px 0;border-bottom:1px solid color-mix(in srgb,currentColor 25%,transparent)}
+.step .kick{opacity:.75;margin-bottom:14px}
+.sw{display:flex;flex-wrap:wrap;gap:10px}
+.sw button{display:flex;align-items:center;gap:10px;min-height:44px;padding:0 16px 0 7px;border-radius:999px;border:1px solid color-mix(in srgb,currentColor 30%,transparent);background:transparent;color:inherit;font:500 14px/1 var(--sans);cursor:pointer;transition:border-color .3s,background .3s}
+.sw button i{width:30px;height:30px;border-radius:50%;background:var(--c);box-shadow:inset 0 0 0 1px rgba(0,0,0,.18),0 0 0 2px rgba(255,255,255,.35)}
+.sw button[aria-pressed=true]{border-color:currentColor;background:color-mix(in srgb,currentColor 10%,transparent);font-weight:700}
+.tops{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
+.tops button{text-align:left;min-height:76px;padding:14px 16px;border:1px solid color-mix(in srgb,currentColor 30%,transparent);background:transparent;color:inherit;cursor:pointer;border-radius:4px;font:500 14px/1.3 var(--sans);transition:border-color .3s,background .3s}
+.tops button b{display:block;font:500 30px/1.1 var(--serif);margin-top:4px}
+.tops button[aria-pressed=true]{border-color:currentColor;background:color-mix(in srgb,currentColor 10%,transparent)}
+.apart{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:14px;opacity:.85;margin-top:14px}
+.order{margin-top:24px;padding:20px;border-radius:4px;background:color-mix(in srgb,var(--milk) 82%,transparent);color:var(--black)}
+.order p{font-size:15px;line-height:1.55}
+.order-b{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.order .note{font-size:12.5px;opacity:.7;margin-top:10px}
+
+/* coats */
+.coats{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:0;border-top:1px solid var(--line)}
+.coat{padding:clamp(28px,4vw,56px) var(--pad) clamp(40px,5vw,72px)}
+.coat+.coat{border-left:1px solid var(--line);background:#ECE6DE}
+.coat figure{margin:0 0 28px;aspect-ratio:4/5;overflow:hidden}
+.coat+.coat figure{aspect-ratio:4/5}
+.coat figure img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.coat:hover figure img{transform:scale(1.03)}
+.coat h3{font-size:clamp(36px,4.2vw,64px);margin:10px 0 16px}
+.coat p{max-width:520px;color:#4f4a45}
+.tone{display:flex;flex-wrap:wrap;gap:16px;margin:22px 0 26px;font-size:14px}
+.tone span{display:inline-flex;align-items:center;gap:8px}
+.tone i{width:22px;height:22px;border-radius:50%;background:var(--c);box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}
+.coats-wrap{max-width:1320px;margin:0 auto}
+
+/* more */
+.more{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto auto;gap:14px}
+.more figure{margin:0;position:relative;overflow:hidden}
+.more figure img{width:100%;height:100%;object-fit:cover}
+.more .m1{grid-column:1/3;grid-row:1/3}
+.more .m2,.more .m3{aspect-ratio:4/5}
+.more .txt{grid-column:3/5;background:var(--rose);padding:clamp(22px,3vw,40px);display:flex;flex-direction:column;justify-content:space-between;gap:20px}
+.more .txt h3{font-size:clamp(30px,3vw,46px)}
+.more ul{list-style:none;margin:0;padding:0}
+.more li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid rgba(26,26,26,.18);font-size:15px}
+.more li em{font-style:normal;font-weight:600;white-space:nowrap}
+.more figcaption{position:absolute;left:0;bottom:0;background:var(--milk);font:600 10.5px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;padding:9px 12px;max-width:90%}
+
+/* care */
+.care{background:#ECE6DE}
+.care ol{list-style:none;margin:0;padding:0;counter-reset:c;display:grid;gap:0}
+.care li{counter-increment:c;display:grid;grid-template-columns:clamp(70px,10vw,150px) minmax(0,1fr) minmax(0,.7fr);gap:24px;align-items:baseline;padding:30px 0;border-top:1px solid var(--line)}
+.care li::before{content:counter(c,decimal-leading-zero);font:400 clamp(48px,6vw,88px)/.9 var(--serif);color:var(--capp)}
+.care li h3{font-size:clamp(26px,2.6vw,38px)}
+.care li p{color:#4f4a45}
+.care .src{margin-top:26px;font-size:14px;color:#6d665f}
+
+/* delivery */
+.deliv{background:var(--graph);color:var(--milk)}
+.deliv .sec-h p{color:#d8d0c6}
+.deliv .sec-h h2 i{color:var(--rose)}
+.d-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(30px,5vw,80px);align-items:end}
+.big{font:400 clamp(110px,17vw,260px)/.8 var(--serif);letter-spacing:-.03em}
+.big small{font-size:.32em;letter-spacing:0;margin-left:.15em}
+.d-list{list-style:none;margin:0;padding:0}
+.d-list li{padding:20px 0;border-top:1px solid rgba(243,238,231,.22);display:grid;grid-template-columns:minmax(0,150px) minmax(0,1fr);gap:16px}
+.d-list li b{font:600 11px/1.6 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--rose)}
+
+/* how */
+.how{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);border-top:1px solid var(--line)}
+.how li{list-style:none;padding:30px 28px 10px 0}
+.how li+li{padding-left:28px;border-left:1px solid var(--line)}
+.how b{display:block;font:400 italic 56px/1 var(--serif);color:#8c735f;margin-bottom:14px}
+.how h3{font-size:30px;margin-bottom:10px}
+.how p{color:#4f4a45}
+.how ol{margin:0;padding:0;display:contents}
+
+/* contacts */
+.contact{background:var(--rose)}
+.c-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:end}
+.c-grid h2{font-size:clamp(46px,7vw,110px)}
+.stats{display:flex;gap:40px;margin:28px 0 0}
+.stats b{display:block;font:400 clamp(44px,5vw,70px)/1 var(--serif)}
+.stats span{font-size:13px;letter-spacing:.06em}
+.c-links{display:grid;gap:10px}
+.c-links a{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:60px;padding:0 4px;border-bottom:1px solid rgba(26,26,26,.25);text-decoration:none;font:500 clamp(20px,2vw,26px)/1.2 var(--serif)}
+.c-links a span{font:600 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;opacity:.6}
+.c-links a:hover{padding-left:10px;transition:padding .3s}
+footer{background:var(--black);color:#b9b1a7;font-size:13px;padding:28px var(--pad) 90px}
+footer .wrap{padding:0;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.float{position:fixed;right:16px;bottom:16px;z-index:50;display:none;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)}
+.toast{position:fixed;left:50%;bottom:84px;transform:translate(-50%,20px);opacity:0;background:var(--black);color:var(--milk);padding:12px 18px;border-radius:999px;font-size:14px;pointer-events:none;transition:.35s;z-index:60}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:1020px){
+  .nav{display:none}
+  .set-grid,.d-grid,.c-grid{grid-template-columns:minmax(0,1fr)}
+  .set-pic{aspect-ratio:4/4.4}
+  .coats{grid-template-columns:minmax(0,1fr)}
+  .coat+.coat{border-left:0;border-top:1px solid var(--line)}
+  .care li{grid-template-columns:70px minmax(0,1fr)}
+  .care li p{grid-column:2}
+}
+@media (max-width:720px){
+  .demo{font-size:11px}
+  .top{padding:10px 16px}
+  .logo{font-size:20px;letter-spacing:.24em}
+  .tel{display:none}
+  .hero{height:clamp(600px,calc(100svh - 110px),760px)}
+  .slot.lead{flex:3.1 1 0}
+  .lead-in{max-width:100%;justify-content:flex-start;padding-top:26px}
+  .h1{font-size:clamp(52px,16vw,74px)}
+  .lead-row .btn{min-height:44px;padding:0 18px}
+  .hero-pic{top:auto;bottom:5%;height:auto;width:40%;max-width:none;right:16px}
+  .rev{right:auto;max-width:calc(60% - 30px);flex-direction:column;gap:2px;bottom:6px}
+  .rev b{font-size:19px}
+  .rev span{font-size:9.5px;letter-spacing:.1em}
+  .lbl{font-size:9.5px;top:9px}
+  .fold{border-radius:0 30px 30px 0}
+  .sec-h{grid-template-columns:minmax(0,1fr)}
+  .tops button b{font-size:24px}
+  .more{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .more .m1{grid-column:1/3;grid-row:auto;aspect-ratio:4/4.2}
+  .more .txt{grid-column:1/3}
+  .how{grid-template-columns:minmax(0,1fr)}
+  .how li,.how li+li{padding:24px 0 6px;border-left:0;border-top:1px solid var(--line)}
+  .how li:first-child{border-top:0}
+  .d-list li{grid-template-columns:minmax(0,1fr);gap:4px}
+  .stats{gap:28px}
+  .float{display:inline-flex}
+  .top .btn{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="demo" role="note">Демо-концепт независимого разработчика — не официальный сайт RICH VIEW. Не согласован с владельцем, удаляется по первой просьбе.</div>
+
+<header class="top">
+  <a class="logo" href="#" aria-label="RICH VIEW — наверх">RICH VIEW</a>
+  <nav class="nav" aria-label="Разделы">
+    <a href="#set">Комплект</a><a href="#coats">Пальто</a><a href="#care">Уход</a><a href="#delivery">Доставка</a><a href="#contact">Контакты</a>
+  </nav>
+  <div class="top-r">
+    <a class="tel" href="tel:+79267773613">+7&nbsp;926&nbsp;777-36-13</a>
+    <a class="btn fill" href="https://ig.me/m/richview_fashion" target="_blank" rel="noopener">Написать в Direct</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="stack" aria-label="Кашемир и шёлк">
+  <div class="slot lead">
+    <div class="fold"></div>
+    <div class="lead-in">
+      <p class="kick">RICH VIEW · территория доступной роскоши</p>
+      <h1 class="h1">кашемир <i>и&nbsp;шёлк</i></h1>
+      <div class="lead-row">
+        <a class="btn fill" href="#set">Собрать комплект</a>
+        <span class="chip">−15% на все позиции</span>
+      </div>
+    </div>
+  </div>
+  <div class="slot" style="--ml:0;--mr:3%"><div class="fold" style="--c:var(--rose)"></div><span class="lbl">розовый</span>
+    <p class="rev"><b>70 / 30</b><span>кашемир и шёлк</span></p></div>
+  <div class="slot" style="--ml:0;--mr:1%"><div class="fold" style="--c:var(--capp)"></div><span class="lbl">капучино</span>
+    <p class="rev"><b>до 5 позиций</b><span>примерка при курьере</span></p></div>
+  <div class="slot" style="--mr:4%"><div class="fold" style="--c:var(--mel)"></div><span class="lbl">серый</span>
+    <p class="rev"><b>кашемир MaxMara</b><span>для пальто</span></p></div>
+  <div class="slot" style="--mr:2%"><div class="fold" style="--c:var(--graph)"></div><span class="lbl" style="--lc:rgba(243,238,231,.7)">графит</span>
+    <p class="rev"><b>500&nbsp;₽</b><span>доставка в пределах МКАД</span></p></div>
+  <div class="slot s-black" style="--mr:0"><div class="fold" style="--c:var(--black)"></div><span class="lbl" style="--lc:rgba(243,238,231,.7)">чёрный</span>
+    <p class="rev"><b>Москва и МО</b><span>и другие города — Почта России, СДЭК</span></p></div>
+  <figure class="hero-pic">
+    <img src="img/p12.jpg" srcset="img/p12-m.jpg 720w, img/p12.jpg 1440w" sizes="(max-width:720px) 48vw, 34vw" alt="Розовый комплект RICH VIEW из кашемира и шёлка: джемпер и брюки">
+    <figcaption>комплект · розовый</figcaption>
+  </figure>
+</section>
+
+<section class="set sec" id="set" aria-labelledby="set-h">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2 id="set-h">Комплект <i>в&nbsp;шести оттенках</i></h2>
+      <p>Брюки и верх на выбор — водолазка или джемпер. Выберите цвет: блок перекрасится, а текст заказа соберётся сам.</p>
+    </div>
+    <div class="set-grid">
+      <figure class="set-pic" style="margin:0">
+        <img data-c="grey" src="img/p3.jpg" alt="Серый комплект: джемпер и брюки" loading="lazy">
+        <img data-c="capp" class="on" src="img/p7.jpg" alt="Комплект цвета капучино: водолазка и брюки" loading="lazy">
+        <img data-c="graph" src="img/p10.jpg" alt="Джемпер цвета графит" loading="lazy">
+        <img data-c="milk" src="img/p11.jpg" alt="Сложенные кофты всех шести оттенков" loading="lazy">
+        <img data-c="rose" src="img/p5.jpg" alt="Розовый комплект с кремовым пальто" loading="lazy">
+        <img data-c="black" src="img/p9.jpg" alt="Чёрная водолазка и брюки" loading="lazy">
+        <figcaption id="pic-cap">на фото — капучино</figcaption>
+      </figure>
+      <div>
+        <div class="comp"><b>70%</b><span>кашемира<br>и 30% шёлка</span></div>
+        <div class="step">
+          <p class="kick">1 · Оттенок</p>
+          <div class="sw" role="group" aria-label="Оттенок комплекта">
+            <button type="button" data-c="grey" data-bg="#9C9B9A" data-ink="#1A1A1A" aria-pressed="false" style="--c:#9C9B9A"><i></i>серый</button>
+            <button type="button" data-c="capp" data-bg="#B59A83" data-ink="#1A1A1A" aria-pressed="true" style="--c:#B59A83"><i></i>капучино</button>
+            <button type="button" data-c="graph" data-bg="#4A4A4D" data-ink="#F3EEE7" aria-pressed="false" style="--c:#4A4A4D"><i></i>графит</button>
+            <button type="button" data-c="milk" data-bg="#F3EEE7" data-ink="#1A1A1A" aria-pressed="false" style="--c:#F3EEE7"><i></i>молочный</button>
+            <button type="button" data-c="rose" data-bg="#E6C4C4" data-ink="#1A1A1A" aria-pressed="false" style="--c:#E6C4C4"><i></i>розовый</button>
+            <button type="button" data-c="black" data-bg="#1A1A1A" data-ink="#F3EEE7" aria-pressed="false" style="--c:#1A1A1A"><i></i>чёрный</button>
+          </div>
+        </div>
+        <div class="step">
+          <p class="kick">2 · Верх</p>
+          <div class="tops" role="group" aria-label="Верх комплекта">
+            <button type="button" data-top="с водолазкой" data-price="14&nbsp;800&nbsp;₽" aria-pressed="true">с водолазкой<b>14&nbsp;800&nbsp;₽</b></button>
+            <button type="button" data-top="с джемпером" data-price="15&nbsp;800&nbsp;₽" aria-pressed="false">с джемпером<b>15&nbsp;800&nbsp;₽</b></button>
+          </div>
+          <p class="apart"><span>Отдельно:</span><span>водолазка 6&nbsp;900&nbsp;₽</span><span>джемпер 7&nbsp;900&nbsp;₽</span><span>брюки 7&nbsp;900&nbsp;₽</span></p>
+        </div>
+        <div class="order">
+          <p class="kick" style="opacity:.6;margin-bottom:8px">Текст для Direct</p>
+          <p id="msg">Здравствуйте! Хочу комплект из кашемира и шёлка цвета «капучино», с водолазкой — 14&nbsp;800&nbsp;₽. Подскажите, пожалуйста, наличие и доставку.</p>
+          <div class="order-b">
+            <button type="button" class="btn" id="copy">Скопировать</button>
+            <a class="btn fill" href="https://ig.me/m/richview_fashion" target="_blank" rel="noopener">Открыть Direct</a>
+          </div>
+          <p class="note">Скопируйте текст и вставьте его в сообщение — так менеджер сразу увидит цвет и комплектацию.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="coats" aria-labelledby="coats-h">
+  <div class="wrap sec" style="padding-bottom:clamp(36px,5vw,64px)">
+    <div class="sec-h" style="margin-bottom:0">
+      <h2 id="coats-h">Пальто <i>из&nbsp;кашемира</i></h2>
+      <p>Для пальто выбран кашемир MaxMara — мягкие спокойные расцветки и комфорт в носке. Цену и наличие уточняйте в Direct.</p>
+    </div>
+  </div>
+  <div class="coats-wrap"><div class="coats">
+    <article class="coat rv">
+      <figure><img src="img/p6.jpg" srcset="img/p6-m.jpg 720w, img/p6.jpg 1440w" sizes="(max-width:1020px) 100vw, 56vw" alt="Пальто-трапеция из кашемира светлого оттенка" loading="lazy"></figure>
+      <p class="kick">пальто-трапеция</p>
+      <h3>В самом нежном оттенке</h3>
+      <p>Пальто-трапеция из мягчайшего кашемира.</p>
+      <div class="tone"><span><i style="--c:#E9D6C8"></i>морская ракушка</span><span><i style="--c:#EFE6D4"></i>кремовый</span><span><i style="--c:#A9A6A2"></i>серый</span></div>
+      <a class="btn" href="https://ig.me/m/richview_fashion" target="_blank" rel="noopener">Спросить в Direct</a>
+    </article>
+    <article class="coat rv">
+      <figure><img src="img/p8.jpg" srcset="img/p8-m.jpg 720w, img/p8.jpg 1440w" sizes="(max-width:1020px) 100vw, 44vw" alt="Серое пальто-халат из кашемира, вид со спины с поясом" loading="lazy"></figure>
+      <p class="kick">пальто-халат</p>
+      <h3>Благородный серый</h3>
+      <p>Свободное в плечах — накидывается на жакет или объёмный свитер. Материал настолько мягкий, что его приятно надеть и на открытое платье или лёгкую блузку.</p>
+      <div class="tone"><span><i style="--c:#A9A6A2"></i>серый</span></div>
+      <a class="btn" href="https://ig.me/m/richview_fashion" target="_blank" rel="noopener">Спросить в Direct</a>
+    </article>
+  </div></div>
+</section>
+
+<section class="sec" aria-labelledby="more-h">
+  <div class="wrap">
+    <div class="more">
+      <figure class="m1 rv"><img src="img/p1.jpg" srcset="img/p1-m.jpg 807w, img/p1.jpg 1440w" sizes="(max-width:720px) 100vw, 50vw" alt="Вешалка с кашемировыми кофтами разных оттенков" loading="lazy"><figcaption>стойка RICH VIEW</figcaption></figure>
+      <div class="txt rv">
+        <h3 id="more-h">Ещё в&nbsp;Direct</h3>
+        <ul>
+          <li><span>Комплект из плотного трикотажа с эффектом утяжки · XS–S · чёрный, кремовый, розовый</span></li>
+          <li><span>Блуза классического кроя из вискозного шёлка</span><em>3&nbsp;700&nbsp;₽</em></li>
+          <li><span>Юбка макси с глубоким разрезом, плотный тянущийся материал</span><em>4&nbsp;200&nbsp;₽</em></li>
+        </ul>
+      </div>
+      <figure class="m2 rv"><img src="img/p2.jpg" srcset="img/p2-m.jpg 720w, img/p2.jpg 1440w" sizes="(max-width:720px) 50vw, 25vw" alt="Шёлковая блуза и чёрная юбка макси с разрезом" loading="lazy"><figcaption>блуза + юбка</figcaption></figure>
+      <figure class="m3 rv"><img src="img/p4.jpg" srcset="img/p4-m.jpg 720w, img/p4.jpg 1440w" sizes="(max-width:720px) 50vw, 25vw" alt="Кашемировый джемпер цвета капучино" loading="lazy"><figcaption>джемпер · капучино</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="care sec" id="care" aria-labelledby="care-h">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2 id="care-h">Уход <i>за&nbsp;кашемиром</i></h2>
+      <p>Рекомендации RICH VIEW — чтобы вещь оставалась мягкой как в первый день.</p>
+    </div>
+    <ol>
+      <li class="rv"><h3>После первой носки или стирки</h3><p>Пройдитесь по изделию машинкой для удаления катышков: при высоком содержании кашемира нужно срезать пух.</p></li>
+      <li class="rv"><h3>Стирка при 30°</h3><p>Можно в стиральной машине — на программе «шерсть» или «ручная стирка».</p></li>
+      <li class="rv"><h3>Сушка — только естественная</h3><p>Не рекомендуется сушить изделие в машине.</p></li>
+    </ol>
+    <p class="src">Полную памятку по уходу пришлют в Direct.</p>
+  </div>
+</section>
+
+<section class="deliv sec on-dark" id="delivery" aria-labelledby="del-h">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2 id="del-h">Доставка <i>по&nbsp;Москве и&nbsp;МО</i></h2>
+      <p>С примеркой: курьер привозит, вы спокойно меряете дома.</p>
+    </div>
+    <div class="d-grid">
+      <div><p class="kick" style="color:var(--rose);margin-bottom:18px">в пределах МКАД</p><p class="big">500<small>₽</small></p></div>
+      <ul class="d-list">
+        <li><b>За МКАД</b><span>Рассчитывается индивидуально, зависит от дальности.</span></li>
+        <li><b>Примерка</b><span>Можно заказать до 5 позиций и примерить их в течение 15 минут с момента приезда курьера.</span></li>
+        <li><b>Другие города</b><span>Почта России и СДЭК — стоимость по габаритам, весу посылки и вашему адресу.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="sec-h"><h2 id="how-h">Как <i>заказать</i></h2><p>Заказы принимают в Direct Instagram и по телефону.</p></div>
+    <ol class="how">
+      <li class="rv"><b>i</b><h3>Выберите вещь</h3><p>Цвет и верх комплекта, пальто или блузу — соберите текст заказа выше.</p></li>
+      <li class="rv"><b>ii</b><h3>Напишите</h3><p>В Direct <a href="https://ig.me/m/richview_fashion" target="_blank" rel="noopener">@richview_fashion</a> или по номеру <a href="tel:+79267773613">+7&nbsp;926&nbsp;777-36-13</a>.</p></li>
+      <li class="rv"><b>iii</b><h3>Примерьте</h3><p>Доставка с примеркой по Москве и МО, в другие города — Почтой России или СДЭК.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="contact sec" id="contact" aria-labelledby="c-h">
+  <div class="wrap c-grid">
+    <div>
+      <p class="kick" style="margin-bottom:16px">RICH VIEW · кашемировая одежда · пальто</p>
+      <h2 id="c-h">Мягко, <i>тихо,</i> тепло</h2>
+      <div class="stats"><div><b>6&nbsp;948</b><span>подписчиков</span></div><div><b>701</b><span>публикация</span></div></div>
+    </div>
+    <div class="c-links">
+      <a href="https://ig.me/m/richview_fashion" target="_blank" rel="noopener">Написать в Direct <span>заказ</span></a>
+      <a href="https://www.instagram.com/richview_fashion/" target="_blank" rel="noopener">@richview_fashion <span>Instagram</span></a>
+      <a href="tel:+79267773613">+7&nbsp;926&nbsp;777-36-13 <span>телефон</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span>RICH VIEW — территория доступной роскоши</span><span>Демо-концепт, не официальный сайт. Фото — из Instagram @richview_fashion.</span></div>
+</footer>
+
+<a class="btn fill float" href="https://ig.me/m/richview_fashion" target="_blank" rel="noopener">Написать в Direct</a>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* 1. stack unfolds on scroll */
+  var hero = document.getElementById('stack');
+  var folds = [].slice.call(hero.querySelectorAll('.slot:not(.lead) .fold'));
+  var tick = false;
+  function unfold(){
+    tick = false;
+    var h = hero.offsetHeight, p = Math.min(Math.max(scrollY / (h * .7), 0), 1);
+    var e = 1 - Math.pow(1 - p, 2);
+    folds.forEach(function(f, i){ f.style.setProperty('--s', (1 - e * (.48 + i * .015)).toFixed(4)); });
+  }
+  
+  /* reveal */
+  if (!reduce){ addEventListener('scroll', function(){ unfold(); check(); }, {passive:true}); unfold(); }
+  var rv = [].slice.call(document.querySelectorAll('.rv'));
+  function check(){ var H = innerHeight; rv = rv.filter(function(el){ if(el.getBoundingClientRect().top < H * .95){ el.classList.add('in'); return false; } return true; }); }
+  if (reduce) rv.forEach(function(el){ el.classList.add('in'); }); else { check(); addEventListener('resize', check); }
+
+  /* 2. set picker */
+  var set = document.getElementById('set'), msg = document.getElementById('msg'), cap = document.getElementById('pic-cap');
+  var sw = [].slice.call(set.querySelectorAll('.sw button')), tops = [].slice.call(set.querySelectorAll('.tops button'));
+  var pics = [].slice.call(set.querySelectorAll('.set-pic img'));
+  var capText = {grey:'на фото — серый', capp:'на фото — капучино', graph:'на фото — джемпер графит', milk:'все шесть оттенков', rose:'на фото — розовый', black:'на фото — чёрный'};
+  var color = 'капучино', top = tops[0];
+  function render(){
+    msg.innerHTML = 'Здравствуйте! Хочу комплект из кашемира и шёлка цвета «' + color + '», ' + top.dataset.top + ' — ' + top.dataset.price + '. Подскажите, пожалуйста, наличие и доставку.';
+  }
+  sw.forEach(function(b){ b.addEventListener('click', function(){
+    sw.forEach(function(x){ x.setAttribute('aria-pressed', x === b); });
+    set.style.setProperty('--set', b.dataset.bg); set.style.setProperty('--ink', b.dataset.ink);
+    set.classList.toggle('on-dark', b.dataset.ink !== '#1A1A1A');
+    pics.forEach(function(p){ p.classList.toggle('on', p.dataset.c === b.dataset.c); });
+    cap.textContent = capText[b.dataset.c];
+    color = b.textContent.trim(); render();
+  }); });
+  tops.forEach(function(b){ b.addEventListener('click', function(){
+    tops.forEach(function(x){ x.setAttribute('aria-pressed', x === b); }); top = b; render();
+  }); });
+  var toast = document.getElementById('toast');
+  function say(t){ toast.textContent = t; toast.classList.add('on'); setTimeout(function(){ toast.classList.remove('on'); }, 2200); }
+  document.getElementById('copy').addEventListener('click', function(){
+    var t = msg.textContent;
+    function fb(){ var a = document.createElement('textarea'); a.value = t; a.style.position='fixed'; a.style.opacity='0'; document.body.appendChild(a); a.select(); try{ document.execCommand('copy'); say('Текст скопирован'); }catch(e){ say('Выделите текст и скопируйте вручную'); } a.remove(); }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(function(){ say('Текст скопирован — вставьте его в Direct'); }, fb); else fb();
+  });
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

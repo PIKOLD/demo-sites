@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Title Rose Atelier — одежда вне роли и времени</title><meta property="og:type" content="website"><meta property="og:title" content="Title Rose Atelier — одежда вне роли и времени"><meta property="og:description" content="Title Rose Atelier, slow atelier в Москве: брюки, джемперы, юбки, жакеты. Французские швы, пуговицы из рога буйвола, ткани в природных оттенках. Заказ в Telegram и Direct."><meta property="og:image" content="https://pikold.github.io/demo-sites/title-rose-atelier/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Title Rose Atelier, slow atelier в Москве: брюки, джемперы, юбки, жакеты. Французские швы, пуговицы из рога буйвола, ткани в природных оттенках. Заказ в Telegram и Direct.">
+<link rel="stylesheet" href="../_fonts/lora.css">
+<link rel="stylesheet" href="../_fonts/jetbrains-mono.css">
+<style>
+:root{
+  --canvas:#E8DFD0; --canvas2:#E1D6C4; --sand:#D7C3A3; --khaki:#A6A47A; --choc:#3D2C24;
+  --ink:#2B2A28; --camel:#B88A5A; --line:rgba(61,44,36,.28);
+  --serif:'Lora',Georgia,serif; --mono:'JetBrains Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--canvas);color:var(--ink);font:400 17px/1.6 var(--serif);overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background-image:repeating-linear-gradient(0deg,rgba(61,44,36,.035) 0 1px,transparent 1px 3px),repeating-linear-gradient(90deg,rgba(61,44,36,.03) 0 1px,transparent 1px 4px)}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px dashed var(--choc);outline-offset:3px}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+
+.demo{position:relative;z-index:30;background:var(--ink);color:var(--sand);font:500 11.5px/1.45 var(--mono);text-align:center;padding:7px 16px}
+
+/* edge tags */
+.tags{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:20;display:flex;flex-direction:column;gap:3px;align-items:flex-end}
+.tags a{display:flex;align-items:center;gap:8px;min-height:30px;padding:5px 14px 5px 12px;background:var(--sand);color:var(--choc);text-decoration:none;
+  font:500 11px/1 var(--mono);letter-spacing:.05em;border-radius:4px 0 0 4px;transition:padding .35s ease,background .35s}
+.tags a::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--canvas);box-shadow:inset 0 0 0 1px var(--line)}
+.tags a:hover,.tags a.on{padding-right:22px;background:var(--choc);color:var(--canvas)}
+.tags a.dim{background:var(--canvas2);color:rgba(61,44,36,.6)}
+.tags a.dim:hover{background:var(--khaki);color:var(--ink)}
+
+.wrap{position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:0 150px 0 48px}
+
+/* first screen: silence */
+.hush{min-height:calc(100vh - 34px);min-height:calc(100svh - 34px);display:grid;grid-template-rows:auto 1fr auto;padding:28px 0 36px}
+.hush-top{display:flex;justify-content:space-between;gap:16px;color:rgba(43,42,40,.7)}
+.hush-mid{align-self:center;padding:8vh 0}
+.hush h1{font:400 clamp(54px,9.5vw,138px)/.95 var(--serif);letter-spacing:-.02em;color:var(--choc)}
+.hush h1 i{font-style:italic;color:var(--camel)}
+.hush .sub{margin-top:30px;font:italic 400 clamp(20px,2.4vw,28px)/1.35 var(--serif);color:var(--ink)}
+.seam{display:block;width:100%;height:12px;margin-top:34px;max-width:520px}
+.seam path{stroke:var(--choc);stroke-width:1.4;stroke-dasharray:7 6;fill:none}
+.hush-bot{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.hush-bot p{max-width:420px;font-size:15px;color:rgba(43,42,40,.78)}
+.down{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 4px;text-decoration:none;color:var(--choc);border-bottom:1px dashed var(--choc)}
+
+/* filter */
+.ledger-head{padding:60px 0 26px;border-top:1px solid var(--line)}
+.ledger-head h2{font:400 clamp(34px,4.6vw,56px)/1.05 var(--serif);color:var(--choc)}
+.ledger-head h2 i{color:var(--camel)}
+.ledger-head p{margin-top:12px;max-width:600px;color:rgba(43,42,40,.8)}
+.filter{position:sticky;top:0;z-index:15;background:rgba(232,223,208,.94);backdrop-filter:blur(6px);border-bottom:1px dashed var(--line);padding:14px 0 12px;margin-bottom:10px}
+.frow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.frow+.frow{margin-top:8px}
+.frow .lab{width:74px;flex:none;color:rgba(43,42,40,.6)}
+.chip{font:500 12.5px/1 var(--mono);min-height:36px;padding:0 13px;border:1px solid var(--line);background:transparent;color:var(--choc);border-radius:999px;cursor:pointer;transition:background .25s,color .25s}
+.chip:hover{border-color:var(--choc)}
+.chip[aria-pressed="true"]{background:var(--choc);color:var(--canvas);border-color:var(--choc)}
+.count{margin-left:auto;color:rgba(43,42,40,.6)}
+
+/* rows */
+.item{position:relative;display:grid;grid-template-columns:64px minmax(0,380px) minmax(0,1fr);gap:36px;padding:34px 28px;margin:22px 0;scroll-margin-top:130px}
+.item[hidden]{display:none}
+.stitch{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.stitch .vis{fill:none;stroke:var(--choc);stroke-width:1.3;stroke-dasharray:6 5;opacity:.55}
+.stitch .m{fill:none;stroke:#fff;stroke-width:6;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.8s cubic-bezier(.45,.1,.25,1)}
+.item.in .stitch .m{stroke-dashoffset:0}
+.no{font:500 13px/1 var(--mono);color:var(--camel);padding-top:6px}
+.ph{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--sand);border-radius:2px}
+.ph img{width:100%;height:100%;object-fit:cover;filter:blur(14px);transform:scale(1.04);opacity:.6;transition:filter .9s ease,transform .9s ease,opacity .9s ease}
+.item.in .ph img,.seams.in .ph img{filter:blur(0);transform:scale(1);opacity:1}
+.sold{position:absolute;left:12px;top:12px;background:var(--canvas);color:var(--choc);padding:6px 10px;font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase}
+.spec h3{font:400 clamp(26px,2.6vw,34px)/1.15 var(--serif);color:var(--choc)}
+.spec .lead{margin-top:12px;font-style:italic;color:rgba(43,42,40,.85)}
+.spec dl{margin-top:22px;display:grid;grid-template-columns:118px minmax(0,1fr);border-top:1px dashed var(--line)}
+.spec dt,.spec dd{padding:11px 0;border-bottom:1px dashed var(--line)}
+.spec dt{font:500 11.5px/1.5 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:rgba(43,42,40,.6);padding-top:13px}
+.spec dd{font-size:16px}
+.sw{display:inline-block;width:13px;height:13px;border-radius:50%;vertical-align:-1px;margin-right:8px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.18)}
+.tagline{display:flex;flex-wrap:wrap;gap:6px}
+.tagline span{font:500 11.5px/1 var(--mono);padding:6px 9px;background:rgba(166,164,122,.28);color:var(--choc);border-radius:2px}
+.order{margin-top:24px;display:inline-flex;align-items:center;gap:12px;min-height:48px;padding:0 22px;background:var(--choc);color:var(--canvas);border:0;cursor:pointer;font:500 13px/1 var(--mono);letter-spacing:.05em;border-radius:2px;transition:background .3s}
+.order:hover{background:var(--ink)}
+.order::after{content:"";width:22px;border-top:1px dashed currentColor}
+.empty{padding:40px 0;font-style:italic;display:none}
+
+/* seams */
+.seams{padding:90px 0 40px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:start}
+.seams h2,.how h2,.more h2,.contact h2{font:400 clamp(32px,4vw,50px)/1.08 var(--serif);color:var(--choc)}
+.seams h2 i,.how h2 i,.more h2 i,.contact h2 i{color:var(--camel)}
+.seams .duo{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:14px;align-items:end}
+.seams .duo .ph:last-child{aspect-ratio:3/4}
+.facts{margin-top:26px;list-style:none;border-top:1px solid var(--line)}
+.facts li{display:grid;grid-template-columns:150px minmax(0,1fr);gap:18px;padding:15px 0;border-bottom:1px solid var(--line)}
+.facts b{font:500 11.5px/1.6 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--camel)}
+
+.how{padding:80px 0 30px}
+.steps{margin-top:30px;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:90px minmax(0,1fr);gap:20px;padding:22px 0;border-top:1px dashed var(--line)}
+.steps li::before{content:"0" counter(s);font:400 44px/1 var(--serif);font-style:italic;color:var(--khaki)}
+.steps h3{font:500 20px/1.3 var(--serif);color:var(--choc)}
+.steps p{color:rgba(43,42,40,.8);margin-top:4px;max-width:620px}
+
+.more{padding:80px 0 30px}
+.hl{margin-top:26px;display:flex;flex-wrap:wrap;gap:10px}
+.hl a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border:1px dashed var(--choc);text-decoration:none;font:500 13px/1 var(--mono);color:var(--choc);border-radius:2px;transition:background .25s,color .25s}
+.hl a:hover{background:var(--choc);color:var(--canvas)}
+.more .jew{margin-top:34px;display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:28px;align-items:center}
+.more .jew .ph{aspect-ratio:1}
+
+.contact{margin:80px 0 0;padding:60px 0 50px;border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:40px}
+.proof{display:flex;gap:40px;margin-top:22px}
+.proof b{display:block;font:400 46px/1 var(--serif);color:var(--choc)}
+.proof span{font:500 11.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:rgba(43,42,40,.6)}
+.links{display:flex;flex-direction:column;gap:10px;align-self:end}
+.btn{display:flex;justify-content:space-between;align-items:center;min-height:56px;padding:0 22px;text-decoration:none;font:500 14px/1 var(--mono);border:1px solid var(--choc);color:var(--choc);border-radius:2px;transition:background .25s,color .25s}
+.btn:hover,.btn.fill{background:var(--choc);color:var(--canvas)}
+.btn.fill:hover{background:var(--ink)}
+footer{padding:26px 0 40px;border-top:1px dashed var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:rgba(43,42,40,.6)}
+
+/* dialog */
+dialog{border:0;padding:0;background:var(--canvas);color:var(--ink);width:min(560px,calc(100vw - 24px));max-height:calc(100vh - 24px);border-radius:3px;box-shadow:0 30px 80px rgba(43,42,40,.35)}
+dialog::backdrop{background:rgba(43,42,40,.55);backdrop-filter:blur(3px)}
+.dlg{padding:30px 28px 26px;position:relative;outline:1.3px dashed rgba(61,44,36,.5);outline-offset:-10px}
+.dlg h3{font:400 28px/1.15 var(--serif);color:var(--choc);padding-right:40px}
+.dlg p{margin-top:8px;font-size:15px;color:rgba(43,42,40,.75)}
+.dlg textarea{margin-top:16px;width:100%;min-height:150px;resize:vertical;border:1px solid var(--line);background:#F1EBE0;color:var(--ink);font:400 14px/1.55 var(--mono);padding:14px;border-radius:2px}
+.dlg .acts{margin-top:14px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);gap:8px}
+.dlg .acts .btn{justify-content:center;min-height:48px;font-size:12.5px;padding:0 10px;text-align:center}
+.x{position:absolute;right:16px;top:16px;width:44px;height:44px;border:0;background:transparent;cursor:pointer;font:400 26px/1 var(--serif);color:var(--choc)}
+.ok{display:block;margin-top:10px;min-height:18px;font:500 12px/1.5 var(--mono);color:var(--camel)}
+
+@media (max-width:1000px){
+  .wrap{padding:0 28px}
+  .tags{position:relative;top:auto;transform:none;flex-direction:row;flex-wrap:wrap;justify-content:flex-start;gap:6px;padding:12px 28px 0;max-width:100%}
+  .tags a{border-radius:2px;min-height:40px;padding:0 12px}
+  .tags a:hover,.tags a.on{padding-right:12px}
+  .tags a.dim{display:none}
+  .item{scroll-margin-top:150px;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:16px 28px}
+  .no{grid-column:1/-1;padding:0}
+  .spec dl{grid-template-columns:100px minmax(0,1fr)}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .tags{padding:10px 16px 0}
+  .hush{min-height:auto;padding:22px 0 30px}
+  .hush-mid{padding:16vh 0 12vh}
+  .hush-top{flex-direction:column;gap:4px}
+  .item{grid-template-columns:minmax(0,1fr);gap:18px;padding:22px 18px 26px;margin:16px 0}
+  .no{padding:0}
+  .spec dl{grid-template-columns:96px minmax(0,1fr)}
+  .order{width:100%;justify-content:center}
+  .frow .lab{width:100%}
+  .frow{gap:6px}
+  .chip{min-height:40px;padding:0 12px}
+  .count{margin-left:0}
+  .filter{position:static}
+  .seams,.contact{grid-template-columns:minmax(0,1fr);gap:28px}
+  .seams{padding-top:60px}
+  .facts li{grid-template-columns:minmax(0,1fr);gap:4px}
+  .steps li{grid-template-columns:56px minmax(0,1fr);gap:12px}
+  .steps li::before{font-size:32px}
+  .more .jew{grid-template-columns:minmax(0,120px) minmax(0,1fr);gap:16px}
+  .proof{gap:28px}
+  .proof b{font-size:38px}
+  .dlg{padding:26px 18px 20px}
+  .dlg .acts{grid-template-columns:minmax(0,1fr)}
+}
+.still .ph img,.still .stitch .m{transition:none!important}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;scroll-behavior:auto!important}
+  .ph img{filter:none;transform:none;opacity:1}
+  .stitch .m{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+<div class="demo">Демо-концепт независимого разработчика — не официальный сайт Title Rose Atelier. Не согласован с владельцем, удаляется по первой просьбе.</div>
+
+<nav class="tags" aria-label="Разделы, как в хайлайтах">
+  <a href="#ledger">In stock</a>
+  <a href="#trousers">Trousers</a>
+  <a href="#sweaters">Sweaters</a>
+  <a href="#skirts">Skirts</a>
+  <a href="#dresses">Dresses</a>
+  <a href="#jackets">Jackets</a>
+  <a href="#seams">Швы и отделка</a>
+  <a href="#more" class="dim">Hats</a>
+  <a href="#more" class="dim">Scarves</a>
+  <a href="#more" class="dim">Mitts</a>
+  <a href="#more" class="dim">Tops</a>
+  <a href="#more" class="dim">Belts</a>
+  <a href="#more" class="dim">Bags</a>
+</nav>
+
+<div class="wrap">
+  <header class="hush">
+    <div class="hush-top mono"><span>slow atelier, Moscow</span><span>@title.rose.atelier</span></div>
+    <div class="hush-mid">
+      <h1>Title Rose<br><i>atelier</i></h1>
+      <p class="sub">одежда вне роли и времени</p>
+      <svg class="seam" viewBox="0 0 520 12" preserveAspectRatio="none" aria-hidden="true"><path d="M0 6 H520"/></svg>
+    </div>
+    <div class="hush-bot">
+      <p>Брюки, джемперы, юбки, жакеты. Французские швы, пуговицы из рога буйвола, ткани в оттенках песка, кэмела и горького шоколада.</p>
+      <a class="down mono" href="#ledger">Открыть ведомость вещей ↓</a>
+    </div>
+  </header>
+
+  <section id="ledger" aria-labelledby="lh">
+    <div class="ledger-head">
+      <h2 id="lh">Ведомость <i>вещей</i></h2>
+      <p>Всё, что раньше жило в хайлайтах, — в одном списке. Отберите по ткани или по вещи, а у понравившейся позиции нажмите «Заказать свой экземпляр»: текст сообщения соберётся сам.</p>
+    </div>
+    <div class="filter" role="group" aria-label="Фильтр">
+      <div class="frow" id="fFab"><span class="lab mono">ткань</span>
+        <button class="chip" data-f="all" aria-pressed="true">все</button>
+        <button class="chip" data-f="flame" aria-pressed="false">фламе</button>
+        <button class="chip" data-f="batist" aria-pressed="false">батист</button>
+        <button class="chip" data-f="boiled" aria-pressed="false">вареный хлопок</button>
+        <button class="chip" data-f="cotton" aria-pressed="false">итальянский хлопок</button>
+        <button class="chip" data-f="linen" aria-pressed="false">лён</button>
+        <button class="chip" data-f="silk" aria-pressed="false">буретный шёлк</button>
+      </div>
+      <div class="frow" id="fType"><span class="lab mono">вещь</span>
+        <button class="chip" data-f="all" aria-pressed="true">все</button>
+        <button class="chip" data-f="trousers" aria-pressed="false">брюки</button>
+        <button class="chip" data-f="sweaters" aria-pressed="false">джемперы</button>
+        <button class="chip" data-f="skirts" aria-pressed="false">юбки</button>
+        <button class="chip" data-f="dresses" aria-pressed="false">сарафаны</button>
+        <button class="chip" data-f="jackets" aria-pressed="false">жакеты</button>
+        <span class="count mono" id="count" aria-live="polite"></span>
+      </div>
+    </div>
+
+    <div id="list">
+      <article class="item" id="trousers" data-fab="cotton" data-type="trousers" data-name="Брюки из итальянского хлопка, оттенок горький шоколад">
+        <div class="no">№ 01</div>
+        <div class="ph"><picture><source media="(max-width:640px)" srcset="img/p9-m.jpg"><img src="img/p9.jpg" alt="Брюки оттенка горький шоколад, разложены на холсте"></picture></div>
+        <div class="spec">
+          <h3>Брюки, горький шоколад</h3>
+          <p class="lead">Ткань с крошечным рубчиком, приятно шуршит и держит форму.</p>
+          <dl>
+            <dt>Ткань</dt><dd>премиальный итальянский хлопок</dd>
+            <dt>Оттенок</dt><dd><span class="sw" style="background:#3D2C24"></span>горький шоколад</dd>
+            <dt>Отделка</dt><dd><div class="tagline"><span>французские швы</span><span>пуговицы из рога буйвола</span><span>клапаны на поясе</span></div></dd>
+            <dt>Детали</dt><dd>глубокие внутренние карманы, в которых приятно тонет рука и ничего не выпадает</dd>
+            <dt>Размер</dt><dd>44–46</dd>
+          </dl>
+          <button class="order">Заказать свой экземпляр</button>
+        </div>
+      </article>
+
+      <article class="item" data-fab="boiled" data-type="trousers" data-name="Брюки из вареного хлопка, оттенок песок">
+        <div class="no">№ 02</div>
+        <div class="ph"><picture><source media="(max-width:640px)" srcset="img/p3-m.jpg"><img src="img/p3.jpg" alt="Брюки из вареного хлопка оттенка песок на тёмном фоне"></picture></div>
+        <div class="spec">
+          <h3>Брюки, песок</h3>
+          <p class="lead">Хлопок с нежнейшей тактильностью, обволакивающий, дышащий, гипоаллергенный.</p>
+          <dl>
+            <dt>Ткань</dt><dd>вареный хлопок</dd>
+            <dt>Оттенок</dt><dd><span class="sw" style="background:#D7C3A3"></span>песок</dd>
+            <dt>Отделка</dt><dd><div class="tagline"><span>французские швы</span><span>пуговицы из рога буйвола</span></div></dd>
+            <dt>Детали</dt><dd>глубокие, максимально комфортные карманы</dd>
+            <dt>Длина</dt><dd>по внешнему боковому шву 102&nbsp;см, объём бёдер 102&nbsp;см</dd>
+          </dl>
+          <button class="order">Заказать свой экземпляр</button>
+        </div>
+      </article>
+
+      <article class="item" data-fab="boiled" data-type="trousers" data-name="Летние брюки из вареного хлопка">
+        <div class="no">№ 03</div>
+        <div class="ph"><picture><source media="(max-width:640px)" srcset="img/p6-m.jpg"><img src="img/p6.jpg" alt="Светлые летние брюки из вареного хлопка"></picture></div>
+        <div class="spec">
+          <h3>Брюки на жаркое лето</h3>
+          <p class="lead">Тактильно очень нежные и дышащие. Посадка расслабленная, с чуть заниженной линией шагового шва.</p>
+          <dl>
+            <dt>Ткань</dt><dd>вареный хлопок</dd>
+            <dt>Сезон</dt><dd>лето / жаркое лето</dd>
+            <dt>Отделка</dt><dd><div class="tagline"><span>французские швы</span><span>пуговицы из натурального рога</span></div></dd>
+            <dt>Детали</dt><dd>глубокие карманы, из которых не выпадает даже самый массивный смартфон</dd>
+            <dt>Размер</dt><dd>хорошо сядут на 42, 44, 46</dd>
+          </dl>
+          <button class="order">Заказать свой экземпляр</button>
+        </div>
+      </article>
+
+      <article class="item" id="sweaters" data-fab="silk" data-type="sweaters" data-name="Джемпер из буретного шёлка, оттенок кэмел">
+        <div class="no">№ 04</div>
+        <div class="ph"><picture><source media="(max-width:640px)" srcset="img/p5-m.jpg"><img src="img/p5.jpg" alt="Джемпер оттенка кэмел из буретного шёлка на холсте"></picture></div>
+        <div class="spec">
+          <h3>Джемпер, кэмел</h3>
+          <p class="lead">Чудесно тактильный и гипоаллергенный. Чтобы заказать свой экземпляр, просто напишите.</p>
+          <dl>
+            <dt>Ткань</dt><dd>буретный шёлк</dd>
+            <dt>Оттенок</dt><dd><span class="sw" style="background:#B88A5A"></span>кэмел — новый оттенок</dd>
+          </dl>
+          <button class="order">Заказать свой экземпляр</button>
+        </div>
+      </article>
+
+      <article class="item" data-fab="flame" data-type="sweaters" data-sold="1" data-name="Джемпер из хлопка фламе, глубокий чёрный">
+        <div class="no">№ 05</div>
+        <div class="ph"><span class="sold">продан</span><picture><source media="(max-width:640px)" srcset="img/p7-m.jpg"><img src="img/p7.jpg" alt="Чёрный джемпер из хлопка фламе на холсте"></picture></div>
+        <div class="spec">
+          <h3>Джемпер, глубокий чёрный</h3>
+          <p class="lead">Нежно тактильный, обволакивающий, шелковистый и очень харизматичный. Подходит для очень чувствительной кожи.</p>
+          <dl>
+            <dt>Ткань</dt><dd>итальянский фактурный хлопок фламе</dd>
+            <dt>Оттенок</dt><dd><span class="sw" style="background:#1E1D1C"></span>глубокий чёрный</dd>
+            <dt>Свойства</dt><dd>гипоаллергенный</dd>
+            <dt>Размер</dt><dd>44–46</dd>
+          </dl>
+          <button class="order">Спросить про свой экземпляр</button>
+        </div>
+      </article>
+
+      <article class="item" id="skirts" data-fab="batist" data-type="skirts" data-sold="1" data-name="Юбка из винтажного батиста, пыльно-чёрный">
+        <div class="no">№ 06</div>
+        <div class="ph"><span class="sold">продано</span><picture><source media="(max-width:640px)" srcset="img/p8-m.jpg"><img src="img/p8.jpg" alt="Длинная юбка пыльно-чёрного оттенка из батиста"></picture></div>
+        <div class="spec">
+          <h3>Юбка, пыльно-чёрный</h3>
+          <p class="lead">Окрашена вручную. Юбка с чудесной тактильностью, единственный экземпляр.</p>
+          <dl>
+            <dt>Ткань</dt><dd>винтажный батист, 100% хлопок</dd>
+            <dt>Оттенок</dt><dd><span class="sw" style="background:#2B2A28"></span>пыльно-чёрный</dd>
+            <dt>Отделка</dt><dd><div class="tagline"><span>французские швы</span><span>ручное окрашивание</span></div></dd>
+            <dt>Размер</dt><dd>44–48</dd>
+            <dt>Длина</dt><dd>90&nbsp;см</dd>
+          </dl>
+          <button class="order">Спросить про свой экземпляр</button>
+        </div>
+      </article>
+
+      <article class="item" id="dresses" data-fab="boiled" data-type="dresses" data-sold="1" data-name="Сарафан из вареного хлопка">
+        <div class="no">№ 07</div>
+        <div class="ph"><span class="sold">продано</span><picture><source media="(max-width:640px)" srcset="img/p4-m.jpg"><img src="img/p4.jpg" alt="Сарафан из вареного хлопка с плетёным пояском"></picture></div>
+        <div class="spec">
+          <h3>Сарафан с поясом-косичкой</h3>
+          <p class="lead">Нежно тактильный, дышащий, летящий. Небольшие карманы в боковых швах. Единственный экземпляр.</p>
+          <dl>
+            <dt>Ткань</dt><dd>вареный хлопок, отделка из другого вида хлопка</dd>
+            <dt>Отделка</dt><dd><div class="tagline"><span>французские швы</span><span>ручные стежки на горловине</span><span>поясок сплетён вручную из хлопка и рафии</span></div></dd>
+            <dt>Размер</dt><dd>42–48</dd>
+            <dt>Длина</dt><dd>от плеча 135&nbsp;см</dd>
+          </dl>
+          <button class="order">Спросить про свой экземпляр</button>
+        </div>
+      </article>
+
+      <article class="item" id="jackets" data-fab="linen" data-type="jackets" data-name="Жакет из фактурного льна с ручной вышивкой">
+        <div class="no">№ 08</div>
+        <div class="ph"><picture><source media="(max-width:640px)" srcset="img/p12-m.jpg"><img src="img/p12.jpg" alt="Жакет из фактурного льна с узорными рукавами, разложен на холсте"></picture></div>
+        <div class="spec">
+          <h3>Жакет из фактурного льна</h3>
+          <p class="lead">Дышащий, не колкий, с характерной тактильностью льна. Заниженная линия плеча, расслабленный стиль.</p>
+          <dl>
+            <dt>Ткань</dt><dd>фактурный лён</dd>
+            <dt>Отделка</dt><dd><div class="tagline"><span>французские швы</span><span>ручная вышивка нитями итальянского льна</span><span>винтажная пуговица</span></div></dd>
+            <dt>Крой</dt><dd>оверсайз</dd>
+            <dt>Размеры</dt><dd>по линии подмышек в обхвате 134&nbsp;см, длина от плеча 62&nbsp;см</dd>
+          </dl>
+          <button class="order">Заказать свой экземпляр</button>
+        </div>
+      </article>
+      <p class="empty" id="empty">В этом сочетании пока ничего нет в ведомости — но можно спросить ателье напрямую.</p>
+    </div>
+  </section>
+
+  <section class="seams" id="seams" aria-labelledby="sh">
+    <div>
+      <p class="mono" style="color:var(--camel)">хайлайт «Швы и отделка»</p>
+      <h2 id="sh" style="margin-top:10px">Изнанка, которую <i>не стыдно</i> показать</h2>
+      <ul class="facts">
+        <li><b>Французские швы</b><span>Все швы деликатно запакованы — у жакетов ещё и бейкой с изнаночной стороны.</span></li>
+        <li><b>Рог буйвола</b><span>Пуговицы на брюках и жакетах выточены из рога; на некоторых вещах — винтажная фурнитура.</span></li>
+        <li><b>Ручные стежки</b><span>Жакеты сшиты с применением ручных стежков, горловина сарафана — тоже.</span></li>
+        <li><b>Природные красители</b><span>Ткань тонируют перед пошивом: так появляются фисташковый хаки и хаки в зелёный, которые камера, признаются в ателье, не всегда ловит верно.</span></li>
+      </ul>
+    </div>
+    <div class="duo">
+      <div class="ph"><img src="img/p11.jpg" alt="Жакет из льна с узорными рукавами на манекене"></div>
+      <div class="ph"><img src="img/p2.jpg" alt="Изнанка льняного жакета с нашивкой Title Rose Atelier"></div>
+    </div>
+  </section>
+
+  <section class="how" aria-labelledby="hh">
+    <h2 id="hh">Как <i>заказать</i></h2>
+    <ol class="steps">
+      <li><div><h3>Выберите вещь в ведомости</h3><p>Ткань, оттенок, отделка и мерки — у каждой позиции. Цену и наличие ателье подскажет в сообщении.</p></div></li>
+      <li><div><h3>Нажмите «Заказать свой экземпляр»</h3><p>Откроется готовый текст с названием вещи. Допишите свой размер и скопируйте.</p></div></li>
+      <li><div><h3>Отправьте в Telegram или Direct</h3><p>Ателье сейчас принимает заказы там: <a href="https://t.me/clothingtitlerose" target="_blank" rel="noopener">t.me/clothingtitlerose</a> и Instagram Direct.</p></div></li>
+    </ol>
+  </section>
+
+  <section class="more" id="more" aria-labelledby="mh">
+    <h2 id="mh">Ещё в <i>хайлайтах</i></h2>
+    <p style="margin-top:12px;max-width:600px;color:rgba(43,42,40,.8)">Шляпы, шарфы, митенки и аксессуары пока живут в историях Instagram. На сайте каждая папка станет своим разделом ведомости.</p>
+    <div class="hl">
+      <a href="https://www.instagram.com/title.rose.atelier/" target="_blank" rel="noopener">Hats</a>
+      <a href="https://www.instagram.com/title.rose.atelier/" target="_blank" rel="noopener">Scarves</a>
+      <a href="https://www.instagram.com/title.rose.atelier/" target="_blank" rel="noopener">Mitts</a>
+      <a href="https://www.instagram.com/title.rose.atelier/" target="_blank" rel="noopener">Tops</a>
+      <a href="https://www.instagram.com/title.rose.atelier/" target="_blank" rel="noopener">Belts</a>
+      <a href="https://www.instagram.com/title.rose.atelier/" target="_blank" rel="noopener">Suspender</a>
+      <a href="https://www.instagram.com/title.rose.atelier/" target="_blank" rel="noopener">Wallets</a>
+      <a href="https://www.instagram.com/title.rose.atelier/" target="_blank" rel="noopener">Bags</a>
+    </div>
+    <div class="jew">
+      <div class="ph"><img src="img/p14.jpg" alt="Украшение на шею на керамической вазе"></div>
+      <div>
+        <p class="mono" style="color:var(--camel)">украшения</p>
+        <p style="margin-top:8px;font-size:19px;font-style:italic;color:var(--choc)">Украшение на шею: керамика раку, серебро 925. Браслет на ногу из серебра 925 пробы и натурального жемчуга создан на заказ — возможен повтор.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="ch">
+    <div>
+      <h2 id="ch">Ателье в <i>Москве</i></h2>
+      <div class="proof">
+        <div><b>1&nbsp;726</b><span>подписчиков<br>в Instagram</span></div>
+        <div><b>766</b><span>публикаций<br>с вещами и деталями</span></div>
+      </div>
+    </div>
+    <div class="links">
+      <a class="btn fill" href="https://t.me/clothingtitlerose" target="_blank" rel="noopener">Telegram <span>t.me/clothingtitlerose</span></a>
+      <a class="btn" href="https://ig.me/m/title.rose.atelier" target="_blank" rel="noopener">Instagram Direct <span>@title.rose.atelier</span></a>
+      <a class="btn" href="https://www.threads.com/@title.rose.atelier" target="_blank" rel="noopener">Threads <span>→</span></a>
+    </div>
+  </section>
+
+  <footer class="mono"><span>Title Rose Atelier · slow atelier, Moscow</span><span>одежда вне роли и времени</span></footer>
+</div>
+
+<dialog id="dlg" aria-labelledby="dt">
+  <div class="dlg">
+    <button class="x" id="x" aria-label="Закрыть">×</button>
+    <h3 id="dt">Свой экземпляр</h3>
+    <p>Допишите размер, скопируйте текст и отправьте ателье в Telegram или Direct.</p>
+    <textarea id="msg" aria-label="Текст сообщения"></textarea>
+    <div class="acts">
+      <button class="btn fill" id="copy" type="button">Скопировать</button>
+      <a class="btn" id="toTg" href="https://t.me/clothingtitlerose" target="_blank" rel="noopener">Telegram</a>
+      <a class="btn" href="https://ig.me/m/title.rose.atelier" target="_blank" rel="noopener">Direct</a>
+    </div>
+    <span class="ok" id="ok" aria-live="polite"></span>
+  </div>
+</dialog>
+
+<script>
+(()=>{
+  const NS='http://www.w3.org/2000/svg', items=[...document.querySelectorAll('.item')];
+  let uid=0;
+  function stitch(el){
+    let svg=el.querySelector('.stitch');
+    const w=el.offsetWidth,h=el.offsetHeight;if(!w)return;
+    if(!svg){
+      const id='sm'+(uid++);
+      svg=document.createElementNS(NS,'svg');svg.setAttribute('class','stitch');svg.setAttribute('aria-hidden','true');
+      svg.innerHTML=`<defs><mask id="${id}" maskUnits="userSpaceOnUse"><rect class="m" pathLength="1"/></mask></defs><rect class="vis" mask="url(#${id})"/>`;
+      el.prepend(svg);
+    }
+    svg.setAttribute('viewBox',`0 0 ${w} ${h}`);
+    svg.querySelectorAll('rect').forEach(r=>{r.setAttribute('x',4);r.setAttribute('y',4);r.setAttribute('width',w-8);r.setAttribute('height',h-8);r.setAttribute('rx',3)});
+    svg.querySelector('mask').setAttribute('width',w);svg.querySelector('mask').setAttribute('height',h);
+  }
+  items.forEach(stitch);
+  let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>items.forEach(stitch),150)});
+  const reveal=[...items,document.querySelector('.seams')];
+  const bot=navigator.webdriver||/Headless/i.test(navigator.userAgent);if(bot)document.documentElement.classList.add('still');
+  if('IntersectionObserver' in window && !bot){
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+    reveal.forEach(el=>io.observe(el));
+  } else reveal.forEach(el=>el.classList.add('in'));
+  // scroll fallback: reveal rows in view; on a very fast jump (fling, page capture) reveal everything at once without motion
+  let ly=scrollY,lt=performance.now();
+  addEventListener('scroll',()=>{
+    const t=performance.now(),dy=Math.abs(scrollY-ly);
+    if(dy>innerHeight*.6&&t-lt<160){document.documentElement.classList.add('still');reveal.forEach(el=>el.classList.add('in'))}
+    else reveal.forEach(el=>{if(!el.classList.contains('in')&&el.getBoundingClientRect().top<innerHeight*.85)el.classList.add('in')});
+    ly=scrollY;lt=t;
+  },{passive:true});
+  // fallback: if frames are not painting (background tab, capture tools), reveal in-view rows instantly
+  let ticks=0,last=-1;(function f(){ticks++;requestAnimationFrame(f)})();
+  const iv=setInterval(()=>{
+    const stalled=last>=0&&ticks-last<6;last=ticks;
+    const left=reveal.filter(el=>!el.classList.contains('in'));if(!left.length){clearInterval(iv);return}
+    if(!stalled)return;
+    document.documentElement.classList.add('still');
+    left.forEach(el=>el.classList.add('in'));
+  },250);
+  document.querySelectorAll('.more .ph img').forEach(i=>{i.style.filter='none';i.style.opacity=1;i.style.transform='none'});
+
+  document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(!t)return;e.preventDefault();t.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'});history.replaceState(null,'',a.getAttribute('href'))}));
+  // filter
+  const st={fab:'all',type:'all'},count=document.getElementById('count'),empty=document.getElementById('empty');
+  function word(n){const a=n%10,b=n%100;return a==1&&b!=11?'позиция':a>=2&&a<=4&&(b<12||b>14)?'позиции':'позиций'}
+  function apply(){
+    let n=0;items.forEach(it=>{const ok=(st.fab=='all'||it.dataset.fab==st.fab)&&(st.type=='all'||it.dataset.type==st.type);it.hidden=!ok;if(ok){n++;requestAnimationFrame(()=>stitch(it))}});
+    count.textContent=n+' '+word(n);empty.style.display=n?'none':'block';
+  }
+  [['fFab','fab'],['fType','type']].forEach(([id,k])=>{
+    document.getElementById(id).addEventListener('click',e=>{
+      const b=e.target.closest('.chip');if(!b)return;st[k]=b.dataset.f;
+      b.parentNode.querySelectorAll('.chip').forEach(c=>c.setAttribute('aria-pressed',c===b));apply();
+    });
+  });
+  apply();
+
+  // edge tags active state
+  const tags=[...document.querySelectorAll('.tags a')];
+  const secs=['trousers','sweaters','skirts','dresses','jackets','seams','more'].map(id=>document.getElementById(id));
+  addEventListener('scroll',()=>{let cur=null;secs.forEach(s=>{if(s&&!s.hidden&&s.getBoundingClientRect().top<innerHeight*.45)cur=s.id});
+    tags.forEach(t=>t.classList.toggle('on',cur&&t.getAttribute('href')=='#'+cur&&!t.classList.contains('dim')))},{passive:true});
+
+  // order dialog
+  const dlg=document.getElementById('dlg'),msg=document.getElementById('msg'),ok=document.getElementById('ok'),tg=document.getElementById('toTg');
+  document.getElementById('list').addEventListener('click',e=>{
+    const b=e.target.closest('.order');if(!b)return;const it=b.closest('.item'),no=it.querySelector('.no').textContent.trim();
+    const t=it.dataset.sold?`Здравствуйте! Увидела на сайте: ${it.dataset.name} (${no}). Вижу, что вещь продана, — можно ли заказать свой экземпляр?\nМой размер: \nПодскажите, пожалуйста, цену и сроки.`
+      :`Здравствуйте! Хочу заказать свой экземпляр: ${it.dataset.name} (${no}).\nМой размер: \nПодскажите, пожалуйста, цену и сроки.`;
+    msg.value=t;ok.textContent='';tg.href='https://t.me/clothingtitlerose';
+    dlg.showModal?dlg.showModal():dlg.setAttribute('open','');
+  });
+  document.getElementById('x').onclick=()=>dlg.close();
+  dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
+  document.getElementById('copy').onclick=async()=>{
+    try{await navigator.clipboard.writeText(msg.value)}catch(_){msg.select();document.execCommand('copy')}
+    ok.textContent='Текст скопирован — вставьте его в чат с ателье.';
+  };
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

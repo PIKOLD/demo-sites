@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>LΛ VI — текстильные аксессуары для путешествий и будней</title><meta property="og:type" content="website"><meta property="og:title" content="LΛ VI — текстильные аксессуары для путешествий и будней"><meta property="og:description" content="LΛ VI: вельветовые шопперы, косметички Blanc из хлопка и муслина, мини-косметички и чехлы для ноутбука. Соберите набор в дорогу и закажите в Direct или через Taplink. Бесплатная доставка."><meta property="og:image" content="https://pikold.github.io/demo-sites/la-vi-brand/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="LΛ VI: вельветовые шопперы, косметички Blanc из хлопка и муслина, мини-косметички и чехлы для ноутбука. Соберите набор в дорогу и закажите в Direct или через Taplink. Бесплатная доставка.">
+<link rel="stylesheet" href="../_fonts/lora.css">
+<link rel="stylesheet" href="../_fonts/inter.css">
+<style>
+:root{
+  --blue:#AFC8E6; --blue-d:#8FAFD6; --sand:#CDB79E; --sand-d:#B89F84; --cotton:#F6F1E8; --sage:#A9B9A0;
+  --cocoa:#6E5446; --ink:#3F2F26; --ink-2:#5A463B;
+  --serif:'Lora',Georgia,serif; --sans:'Inter',system-ui,-apple-system,Segoe UI,sans-serif;
+  --rib:0px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cotton);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:clip}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--cocoa);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1200px,100% - 32px);margin-inline:auto}
+.serif{font-family:var(--serif)}
+
+/* corduroy texture — wales shift with scroll */
+.cord{position:relative;isolation:isolate}
+.cord::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.22) 0 3px,rgba(0,0,0,.035) 3px 5px,rgba(255,255,255,0) 5px 9px);
+  background-position:var(--rib) 0}
+.cord.blue{background:var(--blue)}
+.cord.sand{background:var(--sand)}
+.cord.sage{background:var(--sage)}
+
+.demo{background:var(--ink);color:var(--cotton);font-size:12px;line-height:1.4;text-align:center;padding:7px 16px}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:rgba(246,241,232,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(110,84,70,.15)}
+.top .wrap{display:flex;align-items:center;gap:24px;min-height:64px}
+.logo{font:500 20px/1 var(--serif);letter-spacing:.42em;text-decoration:none;color:var(--ink);white-space:nowrap}
+.logo small{display:block;font:500 9px/1 var(--sans);letter-spacing:.28em;margin-top:6px;color:var(--cocoa)}
+.top nav{display:flex;gap:22px;margin-left:auto;font-size:14px}
+.top nav a{text-decoration:none;padding:12px 0;color:var(--ink-2)}
+.top nav a:hover{color:var(--cocoa);text-decoration:underline;text-underline-offset:5px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;border:1.5px solid var(--ink);background:var(--ink);color:var(--cotton);font:600 15px/1 var(--sans);text-decoration:none;cursor:pointer;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px);background:var(--cocoa);border-color:var(--cocoa)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--cotton)}
+.btn.sm{min-height:44px;padding:0 18px;font-size:14px}
+
+/* hero */
+.hero{padding:56px 0 72px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:center}
+.kick{font:600 12px/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2);margin:0 0 18px}
+.q{font:italic 400 clamp(38px,6.2vw,86px)/1.02 var(--serif);margin:0;color:var(--ink);letter-spacing:-.01em}
+.q .who{display:block;font:400 15px/1.4 var(--sans);font-style:normal;color:var(--ink-2);margin-top:14px;letter-spacing:0}
+.a{font:600 clamp(56px,10vw,150px)/.9 var(--serif);margin:22px 0 0;color:var(--cocoa);letter-spacing:-.03em}
+.lead{font-size:clamp(17px,1.6vw,20px);max-width:34ch;margin:26px 0 30px;color:var(--ink)}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin:34px 0 0;padding:0;list-style:none;font-size:14px;color:var(--ink-2)}
+.facts b{font:600 22px/1 var(--serif);color:var(--ink);margin-right:6px}
+.hero-ph{position:relative;justify-self:center;width:min(420px,100%)}
+.hero-ph .frame{background:var(--cotton);padding:14px 14px 56px;box-shadow:0 30px 60px -30px rgba(63,47,38,.55);transform:rotate(2deg)}
+.hero-ph img{width:100%;aspect-ratio:4/5.2;object-fit:cover}
+.hero-ph figcaption{position:absolute;left:28px;bottom:14px;font:italic 400 17px/1.2 var(--serif);color:var(--ink-2);transform:rotate(2deg)}
+
+/* luggage tag */
+.tag{--c:var(--cotton);position:relative;display:inline-flex;align-items:center;gap:8px;height:34px;padding:0 16px 0 30px;background:var(--c);color:var(--ink);font:600 12px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;clip-path:polygon(14px 0,100% 0,100% 100%,14px 100%,0 50%);white-space:nowrap}
+.tag::before{content:"";position:absolute;left:12px;top:50%;width:8px;height:8px;margin-top:-4px;border-radius:50%;background:var(--ink);box-shadow:0 0 0 2px var(--c)}
+.tag.ship{--c:var(--sage)}
+.hero-ph .tag{position:absolute;right:-14px;top:36px;transform:rotate(8deg);--c:var(--sage)}
+.free{display:flex;align-items:center;gap:14px;margin:0 0 18px}
+.free .tag{--c:var(--cotton)}
+
+/* sections */
+section{scroll-margin-top:70px}
+.sec{padding:96px 0}
+.h2{font:400 clamp(34px,4.6vw,62px)/1.05 var(--serif);margin:0 0 14px;letter-spacing:-.015em}
+.h2 i{color:var(--cocoa)}
+.sub{max-width:52ch;color:var(--ink-2);margin:0}
+
+/* checklist */
+.list{margin:56px 0 0;padding:0;list-style:none;border-top:1.5px solid var(--ink)}
+.row{display:grid;grid-template-columns:72px minmax(0,1fr) minmax(0,340px);gap:32px;align-items:center;padding:34px 0;border-bottom:1.5px dashed rgba(63,47,38,.35)}
+.row:nth-child(even){grid-template-columns:72px minmax(0,340px) minmax(0,1fr)}
+.row:nth-child(even) .ph{order:2}
+.row:nth-child(even) .txt{order:3}
+.box{width:52px;height:52px;border:2px solid var(--ink);border-radius:10px;display:grid;place-items:center;background:var(--cotton)}
+.box svg{width:30px;height:30px}
+.box path{fill:none;stroke:var(--cocoa);stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:40;stroke-dashoffset:0;transition:stroke-dashoffset .6s ease .15s}
+.row.on .box path{animation:draw .7s ease .1s both}
+@keyframes draw{from{stroke-dashoffset:40}}
+.num{display:block;font:500 13px/1 var(--sans);color:var(--ink-2);margin-top:10px;letter-spacing:.1em}
+.txt h3{font:500 clamp(28px,3vw,40px)/1.1 var(--serif);margin:0 0 12px}
+.txt p{margin:0 0 16px;max-width:46ch}
+.txt .note{font-size:14px;color:var(--ink-2);font-style:italic}
+.ph{position:relative}
+.ph img{width:100%;aspect-ratio:4/3.6;object-fit:cover;border-radius:4px}
+.ph .tag{position:absolute;left:-10px;bottom:18px;transform:rotate(-4deg);box-shadow:0 8px 18px -8px rgba(63,47,38,.5)}
+
+/* fabrics */
+.fab .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center}
+.fab-ph{position:relative}
+.fab-ph img{width:100%;aspect-ratio:5/4.1;object-fit:cover;object-position:50% 8%;border-radius:4px}
+.fab-ph .sw{position:absolute;right:-10px;bottom:-26px;display:flex;gap:8px}
+.sw span{width:56px;height:56px;border-radius:50%;border:3px solid var(--cotton);box-shadow:0 6px 14px -6px rgba(0,0,0,.4)}
+.fl{list-style:none;margin:30px 0;padding:0}
+.fl li{display:grid;grid-template-columns:120px minmax(0,1fr);gap:18px;padding:16px 0;border-top:1px solid rgba(63,47,38,.25)}
+.fl b{font:500 19px/1.3 var(--serif)}
+.quote{margin:0;padding:22px 0 0 22px;border-left:3px solid var(--cocoa);font:italic 400 clamp(19px,1.8vw,23px)/1.45 var(--serif)}
+.quote cite{display:block;margin-top:10px;font:500 13px/1 var(--sans);font-style:normal;color:var(--ink-2)}
+
+/* packer */
+.pack .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
+.opts{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:10px}
+.opt label{display:flex;align-items:center;gap:16px;min-height:64px;padding:10px 16px;background:var(--cotton);border:1.5px solid transparent;border-radius:14px;cursor:pointer;transition:border-color .2s,transform .2s}
+.opt label:hover{transform:translateX(4px)}
+.opt input{position:absolute;opacity:0;width:1px;height:1px}
+.opt input:focus-visible + label{outline:3px solid var(--ink);outline-offset:2px}
+.opt input:checked + label{border-color:var(--ink)}
+.cb{flex:none;width:30px;height:30px;border:2px solid var(--ink);border-radius:8px;display:grid;place-items:center}
+.cb svg{width:18px;height:18px;opacity:0;transform:scale(.4);transition:.2s}
+.opt input:checked + label .cb{background:var(--ink)}
+.opt input:checked + label .cb svg{opacity:1;transform:none}
+.ic{flex:none;width:46px;height:46px;color:var(--cocoa)}
+.ic svg,.fly svg{width:100%;height:100%}
+.ol{display:flex;flex-direction:column;line-height:1.25}
+.ol b{font:500 18px/1.25 var(--serif)}
+.ol small{font-size:13px;color:var(--ink-2)}
+.bagwrap{position:sticky;top:90px;background:var(--cotton);border-radius:20px;padding:28px;box-shadow:0 30px 60px -36px rgba(63,47,38,.6)}
+.bag{display:block;width:min(300px,80%);margin:0 auto}
+.bag .fill{transform-origin:50% 100%;transform:scaleY(var(--f,0));transition:transform .7s cubic-bezier(.3,1.4,.5,1)}
+.bag.bump{animation:bump .45s ease}
+@keyframes bump{40%{transform:scale(1.04,.97)}}
+.count{text-align:center;font:italic 400 18px/1.3 var(--serif);margin:12px 0 18px;color:var(--ink-2)}
+.packed{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;min-height:34px;margin:0 0 18px}
+.packed .tag{height:30px;font-size:11px;--c:var(--blue)}
+.msg{width:100%;min-height:150px;resize:vertical;border:1.5px dashed rgba(63,47,38,.45);border-radius:12px;background:#fff;padding:14px;font:400 15px/1.5 var(--sans);color:var(--ink)}
+.acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.acts .btn{flex:1 1 auto}
+.ok{min-height:22px;font-size:13px;color:var(--cocoa);margin:10px 0 0}
+.fly{position:fixed;z-index:60;pointer-events:none;color:var(--cocoa)}
+
+/* you — postcards */
+.you,.fab{overflow:hidden}
+.you .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:center}
+.stack{position:relative;height:600px;padding-bottom:20px}
+.card{position:absolute;width:48%;background:#fff;padding:12px 12px 46px;box-shadow:0 24px 50px -24px rgba(63,47,38,.6);border:0;cursor:pointer;transition:transform .45s cubic-bezier(.3,1.2,.5,1),z-index 0s .2s;font:inherit;color:inherit;text-align:left}
+.card img{width:100%;aspect-ratio:3/4.3;object-fit:cover}
+.card span{position:absolute;left:16px;bottom:14px;font:italic 400 16px/1.2 var(--serif);color:var(--ink-2)}
+.card .stamp{left:auto;right:12px;top:22px;bottom:auto;width:46px;height:54px;border:2px dashed var(--cocoa);display:grid;place-items:center;font:600 11px/1 var(--sans);font-style:normal;letter-spacing:.12em;background:var(--blue);color:var(--ink);transform:rotate(6deg)}
+.card:nth-child(1){left:3%;top:40px;transform:rotate(-7deg);z-index:1}
+.card:nth-child(2){left:24%;top:0;transform:rotate(3deg);z-index:2}
+.card:nth-child(3){left:46%;top:60px;transform:rotate(9deg);z-index:3}
+.stack .card.top{z-index:5;transform:rotate(0) translateY(-14px) scale(1.04)}
+.big{font:600 clamp(48px,6vw,80px)/1 var(--serif);color:var(--cocoa);margin:28px 0 4px}
+
+/* how */
+.steps{list-style:none;margin:48px 0 0;padding:0;counter-reset:s;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,.9fr);border-top:1.5px solid var(--ink)}
+.steps li{padding:26px 26px 0 0;counter-increment:s}
+.steps li+li{padding-left:26px;border-left:1.5px dashed rgba(63,47,38,.4)}
+.steps li::before{content:"0" counter(s);display:block;font:500 13px/1 var(--sans);letter-spacing:.1em;margin-bottom:14px;color:var(--ink-2)}
+.steps h3{font:500 24px/1.2 var(--serif);margin:0 0 10px}
+.steps p{margin:0;color:var(--ink-2)}
+.oz{margin:40px 0 0;font-size:14px;color:var(--ink-2)}
+
+/* footer */
+footer{background:var(--ink);color:var(--cotton);padding:72px 0 40px}
+footer .wrap{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:40px}
+footer .logo{color:var(--cotton);font-size:30px}
+footer .logo small{color:var(--sand)}
+footer p{color:rgba(246,241,232,.75);max-width:42ch}
+.links{display:grid;gap:10px;align-content:start}
+.links a{display:flex;justify-content:space-between;align-items:center;min-height:52px;padding:0 18px;border:1px solid rgba(246,241,232,.25);border-radius:12px;text-decoration:none}
+.links a:hover{background:rgba(246,241,232,.08)}
+.fine{grid-column:1/-1;font-size:12px;color:rgba(246,241,232,.55);border-top:1px solid rgba(246,241,232,.15);padding-top:22px;margin-top:20px}
+
+@media (max-width:980px){
+  .top nav{display:none}
+  .top .btn{margin-left:auto}
+  .hero .wrap,.fab .wrap,.pack .wrap,.you .wrap,footer .wrap{grid-template-columns:minmax(0,1fr)}
+  .hero-ph{width:min(360px,86%)}
+  .bagwrap{position:static}
+  .stack{height:520px;max-width:560px}
+}
+@media (max-width:700px){
+  .hero{padding:36px 0 56px}
+  .sec{padding:68px 0}
+  .row,.row:nth-child(even){grid-template-columns:44px minmax(0,1fr);gap:16px 16px;padding:26px 0}
+  .row .ph,.row:nth-child(even) .ph{order:3;grid-column:1/-1}
+  .row:nth-child(even) .txt{order:2}
+  .box{width:40px;height:40px;border-radius:8px}
+  .box svg{width:22px;height:22px}
+  .ph .tag{left:-4px}
+  .fl li{grid-template-columns:minmax(0,1fr);gap:4px}
+  .fab-ph .sw{right:8px;bottom:-22px}
+  .sw span{width:44px;height:44px}
+  .bagwrap{padding:20px 16px}
+  .stack{height:440px}
+  .card{width:54%;padding:8px 8px 36px}
+  .card:nth-child(1){left:6%;transform:rotate(-5deg)}
+  .card:nth-child(3){transform:rotate(6deg)}
+  .card:nth-child(2){left:22%}
+  .card:nth-child(3){left:38%}
+  .card span{font-size:14px;left:10px;bottom:10px}
+  .card .stamp{width:38px;height:44px;right:8px;top:16px;font-size:9px}
+  .steps{grid-template-columns:minmax(0,1fr)}
+  .steps li,.steps li+li{padding:22px 0;border-left:0;border-bottom:1.5px dashed rgba(63,47,38,.4)}
+  .acts .btn{flex:1 1 100%}
+}
+@media (max-width:380px){.logo{letter-spacing:.3em;font-size:18px}.top .btn{padding:0 14px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="demo">Демо-концепт независимого разработчика — не официальный сайт LΛ VI. Не согласован с владельцем, удаляется по первой просьбе.</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="LΛ VI — наверх">LΛ VI<small>СУМКИ &amp; АКСЕССУАРЫ</small></a>
+    <nav aria-label="Разделы">
+      <a href="#list">Список в дорогу</a>
+      <a href="#fabric">Ткани</a>
+      <a href="#pack">Собрать набор</a>
+      <a href="#you">Вы</a>
+      <a href="#how">Как купить</a>
+    </nav>
+    <a class="btn sm" href="#pack">Собрать набор</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero cord blue" aria-labelledby="h1">
+    <div class="wrap">
+      <div>
+        <div class="free"><span class="tag ship">бесплатная доставка</span></div>
+        <p class="kick">Текстильные аксессуары · L Λ V I</p>
+        <h1 id="h1" class="q">«А у вас есть свой сайт?»<span class="who">— так нам иногда пишут в директ</span></h1>
+        <p class="a">Теперь да.</p>
+        <p class="lead">Создаём текстильные аксессуары для эстетичных путешествий и будней: шопперы, косметички, чехлы для ноутбука.</p>
+        <div class="cta">
+          <a class="btn" href="#pack">Собрать набор в дорогу</a>
+          <a class="btn ghost" href="https://ig.me/m/la.vi_brand" target="_blank" rel="noopener">Написать в Direct</a>
+        </div>
+        <ul class="facts">
+          <li><b>13,3 тыс.</b>подписчиков</li>
+          <li><b>756</b>публикаций</li>
+        </ul>
+      </div>
+      <figure class="hero-ph" style="margin:0">
+        <div class="frame">
+          <picture>
+            <source media="(max-width:700px)" srcset="img/p10-m.jpg">
+            <img src="img/p10.jpg" alt="Вельветовый шоппер LΛ VI, в котором лежат косметички и чехлы — всё на своих местах" width="640" height="1136">
+          </picture>
+        </div>
+        <span class="tag">всё на своих местах</span>
+        <figcaption>набор на каждый день</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="list" class="sec" aria-labelledby="h-list">
+    <div class="wrap">
+      <p class="kick">Чек-лист</p>
+      <h2 id="h-list" class="h2">Список вещей <i>в дорогу</i></h2>
+      <p class="sub">Чтобы больше никаких долгих поисков ключей или помады на дне сумки. Отмечайте, что берёте — ниже соберём всё в один набор.</p>
+      <ol class="list">
+        <li class="row">
+          <div><span class="box"><svg viewBox="0 0 30 30" aria-hidden="true"><path d="M6 16l6 6 12-14"/></svg></span><span class="num">01</span></div>
+          <div class="txt">
+            <h3>Шоппер</h3>
+            <p>Вместительный и удобный для всех повседневных дел — легко берёт на себя ноутбук и весь ваш день. По традиции в новое место — с новым шоппером.</p>
+            <p class="note">Набор Cocoa из мягкого вельвета: шоппер + мини-косметичка.</p>
+          </div>
+          <div class="ph"><img src="img/p9.jpg" alt="Шоппер LΛ VI на кресле в летнем кафе" style="object-position:20% 50%"><span class="tag" style="--c:var(--sand)">мягкий вельвет</span></div>
+        </li>
+        <li class="row">
+          <div><span class="box"><svg viewBox="0 0 30 30" aria-hidden="true"><path d="M6 16l6 6 12-14"/></svg></span><span class="num">02</span></div>
+          <div class="ph"><img src="img/p6.jpg" alt="Белая косметичка Blanc из хлопка с шитьём в руках у раковины"><span class="tag" style="--c:var(--cotton)">100% хлопок, муслин</span></div>
+          <div class="txt">
+            <h3>Косметичка Blanc</h3>
+            <p>Натуральный 100% хлопок, нежное шитьё и воздушный муслин. Эстетичная деталь для ваших сумок, путешествий и уютного дома.</p>
+            <p class="note">Коллекция лимитирована.</p>
+          </div>
+        </li>
+        <li class="row">
+          <div><span class="box"><svg viewBox="0 0 30 30" aria-hidden="true"><path d="M6 16l6 6 12-14"/></svg></span><span class="num">03</span></div>
+          <div class="txt">
+            <h3>Мини-косметичка</h3>
+            <p>Для самых важных мелочей — помады, ключей, всего, что обычно теряется. Держит их в полном порядке и подбирается в тон шопперу.</p>
+          </div>
+          <div class="ph"><img src="img/p2.jpg" alt="Две косметички LΛ VI с баночками на бортике ванны"><span class="tag" style="--c:var(--blue)">для мелочей</span></div>
+        </li>
+        <li class="row">
+          <div><span class="box"><svg viewBox="0 0 30 30" aria-hidden="true"><path d="M6 16l6 6 12-14"/></svg></span><span class="num">04</span></div>
+          <div class="ph"><img src="img/p13.jpg" alt="Голубой вельветовый чехол для ноутбука и чехол поменьше на тумбочке"><span class="tag" style="--c:var(--sage)">для ноутбука</span></div>
+          <div class="txt">
+            <h3>Чехол для ноутбука</h3>
+            <p>Стильная защита вашего гаджета. Твой идеальный рабочий день начинается с чувства контроля и эстетики.</p>
+            <p class="note">А рядом — чехол для зарядки, чтобы провода больше никогда не путались в узел.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="fabric" class="sec fab cord sand" aria-labelledby="h-fab">
+    <div class="wrap">
+      <div class="fab-ph">
+        <img src="img/p1.jpg" alt="Рулоны тканей: голубой и песочный вельвет, хлопок в мелкий цветок">
+        <div class="sw" aria-hidden="true"><span style="background:var(--blue)"></span><span style="background:#D9C6AE"></span><span style="background:var(--cotton)"></span></div>
+      </div>
+      <div>
+        <p class="kick">Как мы выбираем ткани</p>
+        <h2 id="h-fab" class="h2">Важно не только фото, но и <i>ощущение от вещи</i></h2>
+        <p class="sub" style="color:var(--ink)">Поэтому аксессуары LΛ VI выглядят иначе и служат дольше.</p>
+        <ul class="fl">
+          <li><b>Вельвет</b><span>Мягкий, тактильный — из него набор Cocoa: шоппер и мини-косметичка.</span></li>
+          <li><b>Хлопок и муслин</b><span>Натуральный 100% хлопок, нежное шитьё и воздушный муслин — это Blanc.</span></li>
+          <li><b>Тепло</b><span>Мягкие косметички, которые дарят чувство тепла и уюта в самый обычный день.</span></li>
+        </ul>
+        <blockquote class="quote">ИИ может воссоздать форму, но только человек способен вложить в предмет душу и характер.<cite>— LΛ VI в Instagram</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="pack" class="sec pack cord blue" aria-labelledby="h-pack">
+    <div class="wrap">
+      <div>
+        <p class="kick">Собери набор в дорогу</p>
+        <h2 id="h-pack" class="h2">Отметьте вещи — <i>мы уложим</i></h2>
+        <p class="sub" style="color:var(--ink)">Сайт соберёт сообщение для Direct: останется скопировать его и отправить. Доставка бесплатная.</p>
+        <ul class="opts" id="opts">
+          <li class="opt"><input type="checkbox" id="o1" value="шоппер" checked><label for="o1"><span class="cb"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10l4 4 8-9" fill="none" stroke="#F6F1E8" stroke-width="2.6" stroke-linecap="round"/></svg></span><span class="ic" data-ic="tote"></span><span class="ol"><b>Шоппер</b><small>вместительный, для всего дня</small></span></label></li>
+          <li class="opt"><input type="checkbox" id="o2" value="косметичка Blanc"><label for="o2"><span class="cb"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10l4 4 8-9" fill="none" stroke="#F6F1E8" stroke-width="2.6" stroke-linecap="round"/></svg></span><span class="ic" data-ic="pouch"></span><span class="ol"><b>Косметичка Blanc</b><small>100% хлопок, муслин</small></span></label></li>
+          <li class="opt"><input type="checkbox" id="o3" value="мини-косметичка" checked><label for="o3"><span class="cb"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10l4 4 8-9" fill="none" stroke="#F6F1E8" stroke-width="2.6" stroke-linecap="round"/></svg></span><span class="ic" data-ic="mini"></span><span class="ol"><b>Мини-косметичка</b><small>для важных мелочей</small></span></label></li>
+          <li class="opt"><input type="checkbox" id="o4" value="чехол для ноутбука"><label for="o4"><span class="cb"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10l4 4 8-9" fill="none" stroke="#F6F1E8" stroke-width="2.6" stroke-linecap="round"/></svg></span><span class="ic" data-ic="laptop"></span><span class="ol"><b>Чехол для ноутбука</b><small>защита для гаджета</small></span></label></li>
+          <li class="opt"><input type="checkbox" id="o5" value="чехол для зарядки"><label for="o5"><span class="cb"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10l4 4 8-9" fill="none" stroke="#F6F1E8" stroke-width="2.6" stroke-linecap="round"/></svg></span><span class="ic" data-ic="cable"></span><span class="ol"><b>Чехол для зарядки</b><small>чтобы провода не путались</small></span></label></li>
+        </ul>
+      </div>
+      <div class="bagwrap">
+        <svg class="bag" id="bag" viewBox="0 0 240 260" role="img" aria-label="Сумка, которая наполняется отмеченными вещами">
+          <defs>
+            <pattern id="rib" width="7" height="10" patternUnits="userSpaceOnUse"><rect width="7" height="10" fill="#CDB79E"/><rect width="3" height="10" fill="#D8C5AF"/></pattern>
+            <clipPath id="body"><path d="M34 92 L206 92 L222 246 Q222 252 216 252 L24 252 Q18 252 18 246 Z"/></clipPath>
+          </defs>
+          <path d="M78 96 C78 30 162 30 162 96" fill="none" stroke="#6E5446" stroke-width="9" stroke-linecap="round"/>
+          <path d="M34 92 L206 92 L222 246 Q222 252 216 252 L24 252 Q18 252 18 246 Z" fill="#F6F1E8"/>
+          <g clip-path="url(#body)"><rect class="fill" id="fill" x="0" y="92" width="240" height="160" fill="url(#rib)"/></g>
+          <path d="M34 92 L206 92 L222 246 Q222 252 216 252 L24 252 Q18 252 18 246 Z" fill="none" stroke="#3F2F26" stroke-width="3" stroke-dasharray="7 6"/>
+          <rect x="98" y="118" width="44" height="22" rx="2" fill="#F6F1E8" stroke="#3F2F26" stroke-width="1.5"/>
+          <text x="120" y="133.5" text-anchor="middle" font-family="Lora,serif" font-size="10" letter-spacing="2.5" fill="#3F2F26">LΛ VI</text>
+        </svg>
+        <p class="count" id="count" aria-live="polite">Сумка пока пустая</p>
+        <div class="packed" id="packed"></div>
+        <label for="msg" class="kick" style="display:block;margin-bottom:8px">Сообщение для заказа</label>
+        <textarea class="msg" id="msg" readonly></textarea>
+        <div class="acts">
+          <button class="btn" type="button" id="copy">Скопировать</button>
+          <a class="btn ghost" href="https://ig.me/m/la.vi_brand" target="_blank" rel="noopener">Открыть Direct</a>
+          <a class="btn ghost" href="https://lavibrand.taplink.ws" target="_blank" rel="noopener">lavibrand.taplink.ws</a>
+        </div>
+        <p class="ok" id="ok" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="you" class="sec you" aria-labelledby="h-you">
+    <div class="wrap">
+      <div>
+        <p class="kick">Вы</p>
+        <h2 id="h-you" class="h2">Вещи, которые <i>уезжают с вами</i></h2>
+        <p class="sub">«Мы так любим наблюдать за тем, как вещи из наших коллекций отправляются в поездки и живут свою лучшую жизнь вместе с вами». Спасибо за тёплые отметки — они собраны в хайлайтах «Вы» в профиле.</p>
+        <p class="big">13,3 тыс.</p>
+        <p class="sub">человек следят за LΛ VI в Instagram</p>
+        <p style="margin-top:26px"><a class="btn ghost" href="https://www.instagram.com/la.vi_brand/" target="_blank" rel="noopener">Смотреть @la.vi_brand</a></p>
+      </div>
+      <div class="stack" id="stack">
+        <button class="card" type="button" aria-label="Открытка: шоппер в городе"><img src="img/p3.jpg" alt="Девушка в светлом плаще с песочным вельветовым шоппером на плече"><span>в городе</span><i class="stamp" aria-hidden="true">ВЫ</i></button>
+        <button class="card" type="button" aria-label="Открытка: шоппер у воды"><img src="img/p5.jpg" alt="Девушка с вельветовым шоппером у озера в горах"><span>у воды</span><i class="stamp" aria-hidden="true">ВЫ</i></button>
+        <button class="card" type="button" aria-label="Открытка: шоппер у моря"><img src="img/p11.jpg" alt="Девушка в панаме с вельветовым шоппером на пляже на фоне небоскрёбов"><span>у моря</span><i class="stamp" aria-hidden="true">ВЫ</i></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="sec cord sage" aria-labelledby="h-how">
+    <div class="wrap">
+      <p class="kick">Как купить</p>
+      <h2 id="h-how" class="h2">Напрямую — <i>и это поддержка бренда</i></h2>
+      <p class="sub" style="color:var(--ink)">Для небольшого бренда покупка напрямую очень важна. А если удобнее маркетплейс — это абсолютно нормально.</p>
+      <ol class="steps">
+        <li><h3>Соберите набор</h3><p>Отметьте вещи выше — текст заказа появится сам. Или откройте «В наличии» по ссылке в шапке профиля.</p></li>
+        <li><h3>Напишите нам</h3><p>Отправьте сообщение в Direct — или просто напишите «СЕТ».</p></li>
+        <li><h3>Ждите посылку</h3><p>Доставка бесплатная.</p></li>
+      </ol>
+      <p class="oz">Есть и на Озоне: косметичка Blanc — артикул 5372989494.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="logo" href="#top">LΛ VI<small>СУМКИ &amp; АКСЕССУАРЫ</small></a>
+      <p>Создаём текстильные аксессуары для эстетичных путешествий и будней. Бесплатная доставка.</p>
+    </div>
+    <div class="links">
+      <a href="https://ig.me/m/la.vi_brand" target="_blank" rel="noopener">Написать в Direct <span aria-hidden="true">→</span></a>
+      <a href="https://lavibrand.taplink.ws" target="_blank" rel="noopener">lavibrand.taplink.ws <span aria-hidden="true">→</span></a>
+      <a href="https://www.instagram.com/la.vi_brand/" target="_blank" rel="noopener">Instagram @la.vi_brand <span aria-hidden="true">→</span></a>
+    </div>
+    <p class="fine">Демо-концепт независимого разработчика — не официальный сайт LΛ VI. Не согласован с владельцем, удаляется по первой просьбе. Фото и тексты — из публичного профиля @la.vi_brand.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* corduroy parallax */
+  var ribs = document.querySelectorAll('.cord'), tick = false;
+  function rib(){ tick=false; var y=scrollY; ribs.forEach(function(s){ s.style.setProperty('--rib', (y*0.06).toFixed(1)+'px'); }); }
+  if(!reduce) addEventListener('scroll', function(){ if(!tick){ tick=true; requestAnimationFrame(rib); } }, {passive:true});
+
+  /* checklist ticks */
+  var rows = document.querySelectorAll('.row');
+  if('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target);} }); }, {rootMargin:'0px 0px -15% 0px'});
+    rows.forEach(function(r){ io.observe(r); });
+    setTimeout(function(){ rows.forEach(function(r){ r.classList.add('on'); }); }, 4000);
+  } else rows.forEach(function(r){ r.classList.add('on'); });
+
+  /* icons */
+  var S = 'fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"';
+  var IC = {
+    tote:'<svg viewBox="0 0 48 48"><path '+S+' d="M17 18c0-9 14-9 14 0"/><path '+S+' d="M10 18h28l3 24H7z"/><path stroke="currentColor" stroke-width="1" opacity=".45" d="M14 22v16M19 22v16M24 22v16M29 22v16M34 22v16"/></svg>',
+    pouch:'<svg viewBox="0 0 48 48"><path '+S+' d="M8 17c0-2 2-3 4-3h24c2 0 4 1 4 3v18c0 3-2 5-5 5H13c-3 0-5-2-5-5z"/><path '+S+' d="M8 20h32"/><path '+S+' d="M36 17l5-4"/><circle cx="18" cy="29" r="1.6" fill="currentColor"/><circle cx="24" cy="32" r="1.6" fill="currentColor"/><circle cx="30" cy="28" r="1.6" fill="currentColor"/></svg>',
+    mini:'<svg viewBox="0 0 48 48"><rect '+S+' x="11" y="17" width="26" height="18" rx="4"/><path '+S+' d="M11 22h26M33 22v-6"/></svg>',
+    laptop:'<svg viewBox="0 0 48 48"><rect '+S+' x="6" y="11" width="36" height="26" rx="3"/><path '+S+' d="M6 17h36"/><rect '+S+' x="18" y="23" width="12" height="7" rx="1"/></svg>',
+    cable:'<svg viewBox="0 0 48 48"><rect '+S+' x="12" y="12" width="24" height="26" rx="6"/><path '+S+' d="M19 21c4-3 6 7 10 4M19 29c4-3 6 4 10 1"/></svg>'
+  };
+  document.querySelectorAll('[data-ic]').forEach(function(el){ el.innerHTML = IC[el.dataset.ic]; });
+
+  /* packer */
+  var boxes = Array.prototype.slice.call(document.querySelectorAll('#opts input'));
+  var bag = document.getElementById('bag'), fill = document.getElementById('fill');
+  var msg = document.getElementById('msg'), count = document.getElementById('count'), packed = document.getElementById('packed');
+  function word(n){ var m10=n%10,m100=n%100; return (m10===1&&m100!==11)?'вещь':(m10>=2&&m10<=4&&(m100<12||m100>14))?'вещи':'вещей'; }
+  function update(){
+    var on = boxes.filter(function(b){ return b.checked; });
+    fill.style.setProperty('--f', Math.min(1, on.length/boxes.length*0.92 + (on.length?0.08:0)));
+    count.textContent = on.length ? 'В сумке: '+on.length+' '+word(on.length) : 'Сумка пока пустая';
+    packed.innerHTML = on.map(function(b){ return '<span class="tag">'+b.value+'</span>'; }).join('');
+    msg.value = on.length
+      ? 'Здравствуйте! Хочу собрать набор в дорогу:\n'+on.map(function(b){ return '— '+b.value; }).join('\n')+'\nПодскажите, пожалуйста, что сейчас в наличии и какие есть цвета?'
+      : 'Здравствуйте! Хочу собрать набор в дорогу. Подскажите, пожалуйста, что сейчас в наличии?';
+  }
+  function fly(b){
+    var ic = b.parentNode.querySelector('.ic'); if(!ic || reduce) return Promise.resolve();
+    var a = ic.getBoundingClientRect(), t = bag.getBoundingClientRect();
+    if(t.bottom < 0 || t.top > innerHeight) return Promise.resolve();
+    var f = document.createElement('div'); f.className='fly'; f.innerHTML = ic.innerHTML;
+    f.style.cssText = 'left:'+a.left+'px;top:'+a.top+'px;width:'+a.width+'px;height:'+a.height+'px';
+    document.body.appendChild(f);
+    var dx = t.left + t.width/2 - (a.left + a.width/2), dy = t.top + t.height*0.62 - (a.top + a.height/2);
+    var an = f.animate([
+      {transform:'translate(0,0) scale(1)', opacity:1},
+      {transform:'translate('+dx*0.55+'px,'+(dy*0.55-90)+'px) scale(1.5) rotate(-12deg)', opacity:1, offset:.55},
+      {transform:'translate('+dx+'px,'+dy+'px) scale(.5) rotate(6deg)', opacity:0}
+    ], {duration:720, easing:'cubic-bezier(.45,0,.3,1)'});
+    return an.finished.then(function(){ f.remove(); bag.classList.remove('bump'); void bag.getBBox(); bag.classList.add('bump'); });
+  }
+  boxes.forEach(function(b){ b.addEventListener('change', function(){ if(b.checked){ fly(b).then(update); } else update(); }); });
+  update();
+
+  document.getElementById('copy').addEventListener('click', function(){
+    var ok = document.getElementById('ok');
+    function done(){ ok.textContent = 'Скопировано — вставьте в Direct и отправьте.'; }
+    if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(msg.value).then(done, fallback); } else fallback();
+    function fallback(){ msg.removeAttribute('readonly'); msg.select(); try{ document.execCommand('copy'); done(); }catch(e){ ok.textContent='Выделите текст и скопируйте вручную.'; } msg.setAttribute('readonly',''); }
+  });
+
+  /* postcards */
+  var cards = document.querySelectorAll('.card');
+  cards.forEach(function(c){ c.addEventListener('click', function(){ var was=c.classList.contains('top'); cards.forEach(function(x){ x.classList.remove('top'); }); if(!was) c.classList.add('top'); }); });
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

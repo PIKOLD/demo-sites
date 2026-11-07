@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>АЙ — современная одежда в этно-стиле, Уфа</title><meta property="og:type" content="website"><meta property="og:title" content="АЙ — современная одежда в этно-стиле, Уфа"><meta property="og:description" content="Бренд одежды «АЙ» Артура Искужина, Уфа: коллекция «Ете ҡыҙ», кардиганы, костюмы, лонгслив СЮ, роспись. Собственное производство, доставка по РФ, заказ в Direct."><meta property="og:image" content="https://pikold.github.io/demo-sites/ai-brand/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Бренд одежды «АЙ» Артура Искужина, Уфа: коллекция «Ете ҡыҙ», кардиганы, костюмы, лонгслив СЮ, роспись. Собственное производство, доставка по РФ, заказ в Direct.">
+<link rel="stylesheet" href="../_fonts/oswald.css">
+<link rel="stylesheet" href="../_fonts/lora.css">
+<style>
+:root{
+  --night:#1C1512; --night2:#251C18; --night3:#30251F;
+  --silver:#C8C6C0; --red:#B22B2B; --green:#2E6B3F; --ochre:#D59B2D; --light:#EDE6D6;
+  --muted:#A89C8E; --line:rgba(200,198,192,.18);
+  --disp:'Oswald','Arial Narrow','Roboto Condensed','Helvetica Neue',Arial,sans-serif; --serif:'Lora',Georgia,'Times New Roman',serif;
+  --gut:clamp(16px,4vw,56px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html:focus-within{scroll-behavior:smooth}
+body{background:var(--night);color:var(--light);font:400 17px/1.6 var(--serif);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ochre);outline-offset:3px}
+.wrap{max-width:1320px;margin:0 auto;padding:0 var(--gut)}
+.demo{background:#0F0B09;color:var(--muted);font:500 12px/1.4 var(--disp);letter-spacing:.04em;text-align:center;padding:7px 16px}
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(28,21,18,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:24px;min-height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 24px/1 var(--disp);letter-spacing:.08em}
+.logo svg{width:28px;height:28px}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{font:500 14px/1 var(--disp);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--silver);padding:14px 0}
+.nav a:hover{color:var(--light)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:0 22px;border-radius:999px;background:var(--light);color:var(--night);font:600 14px/1 var(--disp);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:0;cursor:pointer;transition:background .25s,transform .25s}
+.btn:hover{background:var(--ochre);transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--light);border:1px solid var(--silver)}
+.btn.ghost:hover{background:var(--light);color:var(--night)}
+.btn.red{background:var(--red);color:var(--light)}
+.btn.red:hover{background:#c83a33}
+/* hero */
+.hero{position:relative;overflow:hidden;padding:clamp(40px,7vw,96px) 0 clamp(56px,8vw,110px);background:radial-gradient(70% 80% at 72% 40%,#3a2a20 0%,var(--night) 62%)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:center}
+.stars{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(1px 1px at 12% 22%,rgba(237,230,214,.6),transparent),radial-gradient(1px 1px at 33% 68%,rgba(237,230,214,.35),transparent),radial-gradient(1.5px 1.5px at 48% 14%,rgba(237,230,214,.5),transparent),radial-gradient(1px 1px at 8% 84%,rgba(237,230,214,.4),transparent),radial-gradient(1px 1px at 92% 12%,rgba(237,230,214,.45),transparent),radial-gradient(1px 1px at 58% 90%,rgba(237,230,214,.3),transparent)}
+.kicker{font:500 13px/1.3 var(--disp);letter-spacing:.24em;text-transform:uppercase;color:var(--ochre)}
+.ai{font:700 clamp(130px,19vw,290px)/.92 var(--disp);letter-spacing:-.01em;color:var(--light);margin:22px 0 22px;display:flex;align-items:flex-end;gap:.06em}
+.ai small{font:400 italic clamp(18px,1.8vw,24px)/1.3 var(--serif);letter-spacing:0;color:var(--silver);padding-bottom:.6em;max-width:9em}
+.lead{font:400 clamp(20px,2.1vw,28px)/1.35 var(--serif);color:var(--light);max-width:24em}
+.lead em{color:var(--silver)}
+.facts{list-style:none;display:flex;flex-wrap:wrap;gap:10px 22px;margin:26px 0 30px;font:500 14px/1.3 var(--disp);letter-spacing:.14em;text-transform:uppercase;color:var(--silver)}
+.facts li{display:flex;align-items:center;gap:10px}
+.facts li::before{content:"";width:7px;height:7px;transform:rotate(45deg);background:var(--ochre)}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.moonbox{position:relative;justify-self:center;width:min(560px,100%)}
+.moon{position:relative;aspect-ratio:1;border-radius:50%;overflow:hidden;box-shadow:0 0 0 1px rgba(200,198,192,.25),0 0 90px 10px rgba(237,230,214,.10),0 0 220px 40px rgba(213,155,45,.06)}
+.moon img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;filter:saturate(.9) contrast(1.04)}
+.moon .shade{position:absolute;inset:-2%;border-radius:50%;background:radial-gradient(circle at 50% 50%,rgba(20,15,12,.9) 62%,rgba(20,15,12,.55) 70%,rgba(20,15,12,0) 74%);transform:translateX(calc(var(--p,0) * -112% - 40%));will-change:transform}
+.moonbox .cap{position:absolute;right:0;bottom:-6px;font:400 italic 14px/1.3 var(--serif);color:var(--muted);text-align:right}
+.ring{position:absolute;inset:-5%;border-radius:50%;border:1px dashed rgba(200,198,192,.22)}
+/* rug */
+.rug{height:clamp(40px,4.5vw,56px);transform-origin:left center;transform:scaleX(var(--rx,1));transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.rug svg{display:block;width:100%;height:100%}
+.js .rug{--rx:.04}
+.js .rug.in{--rx:1}
+/* about */
+.about{padding:clamp(64px,9vw,128px) 0}
+.about .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,6vw,96px);align-items:start}
+.h2{font:600 clamp(40px,5.6vw,84px)/.95 var(--disp);text-transform:uppercase;letter-spacing:.01em}
+.h2 i{font:400 italic .62em/1 var(--serif);text-transform:none;color:var(--silver);letter-spacing:0}
+.about p{color:var(--light);margin-bottom:16px;max-width:36em}
+.about .sign{font-style:italic;color:var(--silver)}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);margin-top:30px}
+.stats div{padding:18px 14px 0 0}
+.stats b{display:block;font:600 clamp(30px,3.4vw,46px)/1 var(--disp);color:var(--light)}
+.stats span{font:400 13px/1.35 var(--disp);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+/* chapters */
+.chap{padding:clamp(56px,8vw,112px) 0;border-top:1px solid var(--line)}
+.chap-head{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:18px 26px;align-items:center;margin-bottom:clamp(28px,4vw,52px)}
+.phase{width:clamp(56px,6vw,84px);height:clamp(56px,6vw,84px)}
+.phase svg{width:100%;height:100%;overflow:visible}
+.chap-head .num{font:500 13px/1.2 var(--disp);letter-spacing:.22em;text-transform:uppercase;color:var(--muted);text-align:right}
+.chap-head .ph{display:block;color:var(--ochre);margin-top:4px}
+.grid2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(16px,3vw,40px);align-items:center}
+.grid3{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.9fr) minmax(0,.9fr);gap:clamp(12px,2vw,24px);align-items:end}
+.ph-img{position:relative;overflow:hidden;border-radius:4px;background:var(--night3)}
+.ph-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.ph-img:hover img{transform:scale(1.03)}
+.ph-img figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 12px;background:linear-gradient(transparent,rgba(20,15,12,.85));font:400 italic 14px/1.35 var(--serif);color:var(--silver)}
+.r45{aspect-ratio:4/5}.r916{aspect-ratio:9/16}.r34{aspect-ratio:3/4}
+.copy{max-width:32em}
+.copy p{margin-bottom:16px}
+.quote{font:400 italic clamp(22px,2.4vw,32px)/1.35 var(--serif);color:var(--light);border-left:3px solid var(--red);padding-left:clamp(16px,2vw,26px);margin:8px 0 22px}
+.quote+.by{font:500 13px/1.3 var(--disp);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.tag{display:inline-block;font:500 12px/1 var(--disp);letter-spacing:.18em;text-transform:uppercase;color:var(--night);background:var(--silver);padding:8px 12px;border-radius:999px;margin:0 6px 8px 0}
+.tag.o{background:var(--ochre)}.tag.g{background:var(--green);color:var(--light)}.tag.r{background:var(--red);color:var(--light)}
+.ask{display:inline-flex;align-items:center;gap:8px;margin-top:10px;font:500 14px/1 var(--disp);letter-spacing:.14em;text-transform:uppercase;color:var(--ochre);text-decoration:none;min-height:44px;border-bottom:1px solid currentColor}
+.ask:hover{color:var(--light)}
+.chap.warm{background:linear-gradient(180deg,var(--night) 0,#2a1e18 100%)}
+.wide{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:clamp(20px,4vw,56px);align-items:center}
+.art{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:center}
+.square{aspect-ratio:1;border:10px solid var(--light);background:var(--night2);position:relative;box-shadow:0 30px 60px rgba(0,0,0,.4)}
+.square svg{width:100%;height:100%;display:block}
+/* shows */
+.shows{padding:clamp(64px,9vw,120px) 0;background:var(--night2)}
+.shows ol{list-style:none;margin-top:clamp(28px,4vw,48px);border-top:1px solid var(--line)}
+.shows li{display:grid;grid-template-columns:minmax(0,170px) minmax(0,1fr) minmax(0,.8fr);gap:8px 32px;padding:24px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.shows .d{font:600 clamp(22px,2.4vw,30px)/1 var(--disp);color:var(--ochre);letter-spacing:.02em}
+.shows .t{font:500 clamp(22px,2.4vw,32px)/1.1 var(--disp);text-transform:uppercase;letter-spacing:.01em}
+.shows .n{font:400 italic 16px/1.45 var(--serif);color:var(--silver)}
+.shows-photos{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(12px,2vw,24px);margin-top:clamp(28px,4vw,48px)}
+/* order */
+.order{padding:clamp(64px,9vw,120px) 0}
+.order .wrap{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(28px,5vw,80px);align-items:start}
+.steps{list-style:none;margin:26px 0;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1px solid var(--silver);font:600 16px/1 var(--disp);color:var(--silver)}
+.promise{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.panel{background:var(--night2);border:1px solid var(--line);border-radius:6px;padding:clamp(18px,3vw,36px)}
+.panel h3{font:500 14px/1.2 var(--disp);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+.panel h3:not(:first-child){margin-top:26px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;padding:0 18px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--light);font:500 15px/1 var(--disp);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:.2s}
+.chip:hover{border-color:var(--silver)}
+.chip[aria-pressed="true"]{background:var(--light);color:var(--night);border-color:var(--light)}
+.looks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.look{position:relative;border:0;padding:0;background:var(--night3);border-radius:4px;overflow:hidden;cursor:pointer;aspect-ratio:3/4;outline-offset:2px}
+.look img{width:100%;height:100%;object-fit:cover;opacity:.75;transition:.25s}
+.look:hover img{opacity:1}
+.look[aria-pressed="true"]{box-shadow:0 0 0 3px var(--ochre)}
+.look[aria-pressed="true"] img{opacity:1}
+.look span{position:absolute;left:6px;bottom:6px;width:22px;height:22px;border-radius:50%;background:var(--ochre);display:none}
+.look[aria-pressed="true"] span{display:block}
+.lookname{font:400 italic 15px/1.4 var(--serif);color:var(--silver);margin-top:10px;min-height:1.4em}
+.fields{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
+.fields label{display:block;font:400 13px/1.3 var(--disp);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.fields input{display:block;width:100%;margin-top:6px;min-height:46px;padding:0 14px;border-radius:4px;border:1px solid var(--line);background:var(--night);color:var(--light);font:400 16px/1 var(--serif)}
+.fields input:focus{border-color:var(--ochre);outline:none}
+.fields .full{grid-column:1/-1}
+.msg{margin-top:22px;background:var(--night);border:1px dashed rgba(200,198,192,.35);border-radius:4px;padding:16px 18px;white-space:pre-wrap;font:400 15px/1.55 var(--serif);color:var(--light);min-height:120px}
+.acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.note{font:400 italic 14px/1.4 var(--serif);color:var(--muted);margin-top:12px}
+/* footer */
+.foot{background:#120D0B;padding:clamp(56px,7vw,96px) 0 30px}
+.foot .big{font:700 clamp(64px,12vw,180px)/.85 var(--disp);letter-spacing:.02em;color:var(--light)}
+.foot .row{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr);gap:28px;margin-top:40px;padding-top:28px;border-top:1px solid var(--line)}
+.foot h4{font:500 13px/1.2 var(--disp);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.foot a{display:inline-flex;min-height:44px;align-items:center;text-decoration:none;border-bottom:1px solid var(--line)}
+.foot a:hover{color:var(--ochre)}
+.foot .fine{margin-top:40px;font:400 13px/1.5 var(--serif);color:var(--muted)}
+/* reveal */
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media (max-width:980px){
+  .hero .wrap,.about .wrap,.order .wrap,.wide,.art{grid-template-columns:minmax(0,1fr)}
+  .moonbox{width:min(440px,100%);order:-1}
+  .nav{display:none}
+  .top .btn{margin-left:auto}
+  .grid3{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .grid3 .ph-img:first-child{grid-column:1/-1}
+  .shows li{grid-template-columns:minmax(0,1fr)}
+  .foot .row{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .top .wrap{min-height:58px;gap:12px}
+  .top .btn{padding:0 16px;font-size:13px;letter-spacing:.08em}
+  .ai{flex-direction:column;align-items:flex-start;gap:10px}
+  .ai small{padding:0}
+  .grid2{grid-template-columns:minmax(0,1fr)}
+  .chap-head{grid-template-columns:auto minmax(0,1fr)}
+  .chap-head .num{grid-column:1/-1;text-align:left;order:-1}
+  .looks{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .fields{grid-template-columns:minmax(0,1fr)}
+  .stats b{font-size:28px}
+  .moonbox .cap{position:static;margin-top:14px;text-align:center}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv,.js .rug{opacity:1;transform:none;transition:none;--rx:1}
+  .moon .shade{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="demo">Демо-концепт независимого разработчика — не официальный сайт бренда «АЙ». Не согласован с владельцем, удаляется по первой просьбе.</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <pattern id="rugp" width="56" height="56" patternUnits="userSpaceOnUse">
+      <rect width="56" height="56" fill="#B22B2B"/>
+      <rect width="56" height="6" fill="#1C1512"/><rect y="50" width="56" height="6" fill="#1C1512"/>
+      <rect y="6" width="56" height="2" fill="#D59B2D"/><rect y="48" width="56" height="2" fill="#D59B2D"/>
+      <polygon points="28,10 46,28 28,46 10,28" fill="#2E6B3F"/>
+      <polygon points="28,16 40,28 28,40 16,28" fill="#D59B2D"/>
+      <polygon points="28,22 34,28 28,34 22,28" fill="#1C1512"/>
+      <polygon points="0,19 9,28 0,37" fill="#EDE6D6"/><polygon points="56,19 47,28 56,37" fill="#EDE6D6"/>
+      <polygon points="0,24 4,28 0,32" fill="#1C1512"/><polygon points="56,24 52,28 56,32" fill="#1C1512"/>
+      <rect x="26" y="1" width="4" height="4" fill="#D59B2D"/><rect x="26" y="51" width="4" height="4" fill="#D59B2D"/>
+    </pattern>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="АЙ — наверх">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M14 4a16 16 0 1 1 0 32a20 20 0 0 0 0-32z" fill="#C8C6C0"/></svg>АЙ
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#etekyz">Ете ҡыҙ</a><a href="#cardigans">Кардиганы</a><a href="#suits">Костюмы</a><a href="#shows">Показы</a>
+    </nav>
+    <a class="btn" href="#order">Заказ в Direct</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" id="hero">
+  <div class="stars"></div>
+  <div class="wrap">
+    <div>
+      <p class="kicker">Бренд одежды Артура Искужина · Уфа</p>
+      <h1 class="ai" aria-label="АЙ — современная одежда в этно-стиле">АЙ<small>«ай» — луна. Её серп — в нашей шапке</small></h1>
+      <p class="lead">Современная одежда в этно-стиле <em>· Уфа</em>. Башкирские узоры, серебро и строгие силуэты — для города и для подиума.</p>
+      <ul class="facts">
+        <li>Собственное производство</li><li>Доставка по РФ</li><li>Заказ в Direct</li>
+      </ul>
+      <div class="cta">
+        <a class="btn red" href="#order">Собрать заказ</a>
+        <a class="btn ghost" href="#etekyz">Смотреть коллекцию</a>
+      </div>
+    </div>
+    <div class="moonbox">
+      <div class="ring"></div>
+      <div class="moon" id="moon">
+        <img src="img/p12.jpg" srcset="img/p12-m.jpg 720w, img/p12.jpg 945w" sizes="(max-width:980px) 90vw, 560px" alt="Модель в тёмном платье с узором и серебряными подвесками на лице" fetchpriority="high">
+        <div class="shade" aria-hidden="true"></div>
+      </div>
+      <p class="cap">листайте — луна растёт</p>
+    </div>
+  </div>
+</section>
+
+<div class="rug" aria-hidden="true"><svg><rect width="100%" height="100%" fill="url(#rugp)"/></svg></div>
+
+<section class="about">
+  <div class="wrap">
+    <h2 class="h2 rv">Давняя мечта <i>с отголосками этно</i></h2>
+    <div class="rv">
+      <p>«АЙ» открыл Артур Искужин — дизайнер одежды из Башкортостана. Сначала было своё швейное производство, потом самое трудное — имя. Им стала луна: «ай».</p>
+      <p>Вещи бренда выходили на подиум Российской креативной недели «Евразия», в эфир телеканала БСТ и на конкурсную съёмку Asia Model Festival.</p>
+      <p class="sign">Шьём сами в Уфе, отправляем по всей России. Заказ — в Direct.</p>
+      <div class="stats">
+        <div><b>13,7 тыс.</b><span>подписчиков в Instagram</span></div>
+        <div><b>180</b><span>публикаций</span></div>
+        <div><b>Уфа</b><span>своё производство</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chap warm" id="etekyz">
+  <div class="wrap">
+    <div class="chap-head rv">
+      <div class="phase" data-k="0.16"></div>
+      <h2 class="h2">Коллекция <i>«Ете ҡыҙ»</i></h2>
+      <p class="num">Глава I<span class="ph">молодой серп</span></p>
+    </div>
+    <div class="grid2">
+      <figure class="ph-img r916 rv" style="max-height:860px">
+        <img src="img/p13.jpg" srcset="img/p13-m.jpg 506w, img/p13.jpg 720w" sizes="(max-width:640px) 92vw, 45vw" loading="lazy" alt="Модель в тёмном платье с узором и серебряными украшениями, длинная коса">
+        <figcaption>Серебро, узор на груди и длинная коса</figcaption>
+      </figure>
+      <div class="copy rv">
+        <p class="quote">«Сила башкирской женщины — в её гордости, в её стержне и верности себе».</p>
+        <p class="by">Артур Искужин, о коллекции</p>
+        <p style="margin-top:24px">«Ете ҡыҙ» — «Семь девушек». Коллекция о героинях башкирского народа: принт на груди — это не просто узор, а силуэт их подвига. К образам — металлические головные уборы.</p>
+        <span class="tag">серебро</span><span class="tag o">принт</span><span class="tag r">этно</span>
+        <br><a class="ask" href="#order" data-sec="Вещь с росписью">Спросить про коллекцию в Direct →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="rug" aria-hidden="true"><svg><rect width="100%" height="100%" fill="url(#rugp)"/></svg></div>
+
+<section class="chap" id="cardigans">
+  <div class="wrap">
+    <div class="chap-head rv">
+      <div class="phase" data-k="0.36"></div>
+      <h2 class="h2">Кардиганы</h2>
+      <p class="num">Глава II<span class="ph">растущий серп</span></p>
+    </div>
+    <div class="wide">
+      <figure class="ph-img r916 rv" style="max-height:780px">
+        <img src="img/p10.jpg" srcset="img/p10-m.jpg 506w, img/p10.jpg 1012w" sizes="(max-width:980px) 92vw, 56vw" loading="lazy" alt="Модель в светлом длинном кардигане поверх чёрного идёт по красному орнаментальному ковру">
+        <figcaption>Показ: светлый длинный силуэт поверх чёрного — по ковровой дорожке</figcaption>
+      </figure>
+      <div class="copy rv">
+        <p>Отдельный раздел в Актуальном бренда. Длинные, строгие, поверх чёрного — кардиган тут работает как верхний слой образа.</p>
+        <p>Модели, цвета и наличие сейчас — уточняйте в Direct: ответит команда «АЙ».</p>
+        <a class="ask" href="#order" data-sec="Кардиган">Выбрать кардиган →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chap warm" id="suits">
+  <div class="wrap">
+    <div class="chap-head rv">
+      <div class="phase" data-k="0.55"></div>
+      <h2 class="h2">Костюмы <i>ночь и шоколад</i></h2>
+      <p class="num">Глава III<span class="ph">первая четверть</span></p>
+    </div>
+    <div class="grid3">
+      <figure class="ph-img r34 rv">
+        <img src="img/p11.jpg" srcset="img/p11-m.jpg 675w, img/p11.jpg 1350w" sizes="(max-width:980px) 92vw, 40vw" loading="lazy" alt="Модель в коричневом костюме с жакетом, в берете и очках">
+        <figcaption>Коричневый костюм с жакетом</figcaption>
+      </figure>
+      <figure class="ph-img r916 rv">
+        <img src="img/p9.jpg" srcset="img/p9-m.jpg 507w, img/p9.jpg 1014w" sizes="(max-width:980px) 46vw, 30vw" loading="lazy" alt="Модель в коричневом костюме и берете на показе, под ногами башкирский ковёр">
+        <figcaption>Показ на ковре</figcaption>
+      </figure>
+      <figure class="ph-img r916 rv">
+        <img src="img/p14.jpg" srcset="img/p14-m.jpg 506w, img/p14.jpg 1012w" sizes="(max-width:980px) 46vw, 30vw" loading="lazy" alt="Пара моделей в чёрных костюмах на голубом фоне">
+        <figcaption>Чёрные костюмы для двоих</figcaption>
+      </figure>
+    </div>
+    <div class="copy rv" style="margin-top:34px">
+      <p>Именно в костюмах «АЙ» модели снимались для конкурса Asia Model Festival в Южной Корее — тема «Этно-fashion». Глубокий коричневый и чёрный.</p>
+      <a class="ask" href="#order" data-sec="Костюм">Выбрать костюм →</a>
+    </div>
+  </div>
+</section>
+
+<div class="rug" aria-hidden="true"><svg><rect width="100%" height="100%" fill="url(#rugp)"/></svg></div>
+
+<section class="chap" id="longsleeve">
+  <div class="wrap">
+    <div class="chap-head rv">
+      <div class="phase" data-k="0.78"></div>
+      <h2 class="h2">Лонгслив <i>«СЮ»</i></h2>
+      <p class="num">Глава IV<span class="ph">почти полная</span></p>
+    </div>
+    <div class="grid2">
+      <div class="copy rv">
+        <p>Свой раздел в Актуальном бренда — «Лонгслив СЮ». Модели и цвета сейчас — в сторис и в Direct.</p>
+        <p>Повседневная линия «АЙ» — цветные комплекты и чёрное с принтом — на осенней съёмке в Уфе.</p>
+        <a class="ask" href="#order" data-sec="Лонгслив СЮ">Заказать лонгслив СЮ →</a>
+      </div>
+      <div class="grid2" style="gap:12px">
+        <figure class="ph-img r916 rv"><img src="img/p6.jpg" srcset="img/p6-m.jpg 506w, img/p6.jpg 720w" sizes="(max-width:640px) 46vw, 24vw" loading="lazy" alt="Группа моделей в цветных комплектах с принтом идёт по осеннему парку"><figcaption>Осень, парк</figcaption></figure>
+        <figure class="ph-img r916 rv"><img src="img/p7.jpg" srcset="img/p7-m.jpg 507w, img/p7.jpg 721w" sizes="(max-width:640px) 46vw, 24vw" loading="lazy" alt="Трое в чёрных комплектах на фоне кирпичной стены"><figcaption>Чёрное — на улицу</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chap warm" id="art">
+  <div class="wrap">
+    <div class="chap-head rv">
+      <div class="phase" data-k="1"></div>
+      <h2 class="h2">Роспись <i>и арт-квадрат</i></h2>
+      <p class="num">Глава V<span class="ph">полная луна</span></p>
+    </div>
+    <div class="art">
+      <div class="square rv" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <rect width="200" height="200" fill="#1C1512"/>
+          <rect x="14" y="14" width="172" height="172" fill="url(#rugp)" opacity=".95"/>
+          <circle cx="100" cy="100" r="56" fill="#1C1512"/>
+          <circle cx="100" cy="100" r="44" fill="#C8C6C0"/><circle cx="117" cy="94" r="40" fill="#1C1512"/>
+          <circle cx="100" cy="100" r="56" fill="none" stroke="#D59B2D" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="copy rv">
+        <p>Ещё два раздела в Актуальном бренда — «Роспись» и «Арт-квадрат». Примеры работ — в сторис бренда.</p>
+        <p>Напишите, что хотите расписать или какую работу увидели в сторис, — обсудим в Direct.</p>
+        <span class="tag o">роспись</span><span class="tag g">арт-квадрат</span>
+        <br><a class="ask" href="#order" data-sec="Вещь с росписью">Обсудить роспись →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="shows" id="shows">
+  <div class="wrap">
+    <h2 class="h2 rv">Показы <i>и эфиры</i></h2>
+    <ol>
+      <li class="rv"><span class="d">02.11.26</span><span class="t">Российская креативная неделя «Евразия»</span><span class="n">Показ бренда. Модели — @bash_beauty</span></li>
+      <li class="rv"><span class="d">показ</span><span class="t">«Единство в деталях»</span><span class="n">Этническая красота в современных силуэтах — образы «АЙ» на подиуме</span></li>
+      <li class="rv"><span class="d">эфир</span><span class="t">Телеканал БСТ</span><span class="n">Показ коллекции «АЙ», модели LUNA MODELS</span></li>
+      <li class="rv"><span class="d">Корея</span><span class="t">Asia Model Festival</span><span class="n">Конкурсная fashion-съёмка «Этно-fashion» в костюмах «АЙ»</span></li>
+    </ol>
+  </div>
+</section>
+
+<div class="rug" aria-hidden="true"><svg><rect width="100%" height="100%" fill="url(#rugp)"/></svg></div>
+
+<section class="order" id="order">
+  <div class="wrap">
+    <div class="rv">
+      <p class="kicker">Как заказать</p>
+      <h2 class="h2" style="margin-top:12px">Заказ <i>в Direct</i></h2>
+      <ol class="steps">
+        <li>Выберите раздел и образ — или опишите вещь своими словами.</li>
+        <li>Укажите размер или рост и город — доставляем по РФ.</li>
+        <li>Скопируйте готовый текст и отправьте в Direct @ai__brand_.</li>
+      </ol>
+      <div class="promise"><span class="tag">Собственное производство</span><span class="tag o">Доставка по РФ</span></div>
+      <p class="note">Наличие, размеры и стоимость подскажут в ответ — на сайте цен нет. Отзывы покупателей — в Актуальном «Отзывы» в Instagram.</p>
+    </div>
+    <div class="panel rv" id="builder">
+      <h3>1. Раздел</h3>
+      <div class="chips" id="secs">
+        <button class="chip" type="button" aria-pressed="false">Кардиган</button>
+        <button class="chip" type="button" aria-pressed="false">Костюм</button>
+        <button class="chip" type="button" aria-pressed="false">Лонгслив СЮ</button>
+        <button class="chip" type="button" aria-pressed="false">Вещь с росписью</button>
+      </div>
+      <h3>2. Вещь — как на фото</h3>
+      <div class="looks" id="looks">
+        <button class="look" type="button" aria-pressed="false" data-n="светлый длинный кардиган поверх чёрного (с показа на ковре)"><img src="img/p10-m.jpg" alt="Светлый длинный кардиган" loading="lazy"><span></span></button>
+        <button class="look" type="button" aria-pressed="false" data-n="коричневый костюм с жакетом"><img src="img/p11-m.jpg" alt="Коричневый костюм с жакетом" loading="lazy"><span></span></button>
+        <button class="look" type="button" aria-pressed="false" data-n="коричневый костюм, как на показе с беретом"><img src="img/p9-m.jpg" alt="Коричневый костюм с показа" loading="lazy"><span></span></button>
+        <button class="look" type="button" aria-pressed="false" data-n="чёрный костюм (фото пары на голубом фоне)"><img src="img/p14-m.jpg" alt="Чёрные костюмы" loading="lazy"><span></span></button>
+        <button class="look" type="button" aria-pressed="false" data-n="образ из коллекции «Ете ҡыҙ» — тёмное платье с серебром"><img src="img/p13-m.jpg" alt="Образ из коллекции Ете ҡыҙ" loading="lazy"><span></span></button>
+        <button class="look" type="button" aria-pressed="false" data-n="платье с узором, как на фото с серебряными подвесками"><img src="img/p12-m.jpg" alt="Платье с узором" loading="lazy"><span></span></button>
+        <button class="look" type="button" aria-pressed="false" data-n="цветной комплект с принтом (осенняя съёмка в парке)"><img src="img/p6-m.jpg" alt="Цветные комплекты" loading="lazy"><span></span></button>
+        <button class="look" type="button" aria-pressed="false" data-n="чёрный комплект (съёмка у кирпичной стены)"><img src="img/p7-m.jpg" alt="Чёрный комплект" loading="lazy"><span></span></button>
+      </div>
+      <p class="lookname" id="lookname" aria-live="polite">Можно не выбирать — опишите ниже</p>
+      <h3>3. Детали</h3>
+      <div class="fields">
+        <label class="full">Своими словами<input id="f-desc" type="text" placeholder="цвет, вещь из сторис, пожелания"></label>
+        <label>Размер или рост<input id="f-size" type="text" placeholder="например, 46 / 170 см"></label>
+        <label>Город доставки<input id="f-city" type="text" placeholder="например, Казань"></label>
+      </div>
+      <div class="msg" id="msg" aria-live="polite"></div>
+      <div class="acts">
+        <button class="btn" type="button" id="copy">Скопировать</button>
+        <a class="btn red" id="go" href="https://ig.me/m/ai__brand_" target="_blank" rel="noopener">Открыть Direct</a>
+      </div>
+      <p class="note" id="copied">Текст скопируется — вставьте его в чат с @ai__brand_.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="big">АЙ<span style="color:var(--silver)">·</span>УФА</p>
+    <div class="row">
+      <div><h4>Бренд</h4><p>Современная одежда в этно-стиле. Собственное производство в Уфе, доставка по РФ.</p></div>
+      <div><h4>Заказ</h4><a href="https://ig.me/m/ai__brand_" target="_blank" rel="noopener">Direct @ai__brand_</a></div>
+      <div><h4>Instagram</h4><a href="https://www.instagram.com/ai__brand_/" target="_blank" rel="noopener">@ai__brand_</a><br><a href="https://www.instagram.com/ai_artur_iskuzhin_/" target="_blank" rel="noopener">@ai_artur_iskuzhin_</a></div>
+    </div>
+    <p class="fine">Демо-концепт независимого разработчика — не официальный сайт бренда «АЙ». Фото — из публикаций @ai__brand_.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var d=document, R=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  d.documentElement.classList.add('js');
+  // moon phase icons
+  d.querySelectorAll('.phase').forEach(function(el,i){
+    var k=parseFloat(el.dataset.k), dx=k>=1?60:6+k*34, id='ph'+i;
+    el.innerHTML='<svg viewBox="0 0 40 40" aria-hidden="true"><defs><mask id="'+id+'"><rect x="-10" y="-10" width="60" height="60" fill="#fff"/><circle cx="'+(20-dx)+'" cy="20" r="18.5" fill="#000"/></mask></defs><circle cx="20" cy="20" r="18" fill="#2a201b"/><circle cx="20" cy="20" r="18" fill="#C8C6C0" mask="url(#'+id+')"/><circle cx="20" cy="20" r="18" fill="none" stroke="#C8C6C0" stroke-opacity=".35"/></svg>';
+  });
+  // reveal + rug
+  var pend=[].slice.call(d.querySelectorAll('.rv,.rug'));
+  function rev(){if(!pend.length)return;var H=innerHeight;pend=pend.filter(function(e){var r=e.getBoundingClientRect();if(R||r.top<H*.94){e.classList.add('in');return false}return true})}
+  addEventListener('scroll',rev,{passive:true});addEventListener('resize',rev);rev();
+  // moon phase on scroll
+  var moon=d.getElementById('moon'), hero=d.getElementById('hero'), tick=false;
+  function upd(){tick=false;var h=hero.offsetHeight, p=Math.min(1,Math.max(0,scrollY/(h*.85)));moon.style.setProperty('--p',p.toFixed(3))}
+  if(!R){addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd()}
+  else moon.style.setProperty('--p',1);
+  // order builder
+  var sec='', look='', msg=d.getElementById('msg');
+  var f={desc:d.getElementById('f-desc'),size:d.getElementById('f-size'),city:d.getElementById('f-city')};
+  function build(){
+    var L=['Здравствуйте! Хочу заказать в «АЙ».'];
+    L.push('Раздел: '+(sec||'пока не выбрал(а)'));
+    if(look)L.push('Вещь: '+look);
+    if(f.desc.value.trim())L.push('Пожелания: '+f.desc.value.trim());
+    L.push('Размер / рост: '+(f.size.value.trim()||'—'));
+    L.push('Город доставки: '+(f.city.value.trim()||'—'));
+    L.push('Подскажите, пожалуйста, наличие и стоимость.');
+    msg.textContent=L.join('\n');
+  }
+  function press(group,btn){group.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-pressed',b===btn?'true':'false')})}
+  var secs=d.getElementById('secs'), looks=d.getElementById('looks');
+  secs.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var on=b.getAttribute('aria-pressed')!=='true';press(secs,on?b:null);sec=on?b.textContent:'';build()});
+  looks.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var on=b.getAttribute('aria-pressed')!=='true';press(looks,on?b:null);look=on?b.dataset.n:'';d.getElementById('lookname').textContent=look||'Можно не выбирать — опишите ниже';build()});
+  [f.desc,f.size,f.city].forEach(function(i){i.addEventListener('input',build)});
+  d.querySelectorAll('[data-sec]').forEach(function(a){a.addEventListener('click',function(){var s=a.dataset.sec;secs.querySelectorAll('button').forEach(function(b){if(b.textContent===s){press(secs,b);sec=s;build()}})})});
+  function copy(t){if(navigator.clipboard&&isSecureContext)return navigator.clipboard.writeText(t);var ta=d.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';d.body.appendChild(ta);ta.select();try{d.execCommand('copy')}catch(e){}d.body.removeChild(ta);return Promise.resolve()}
+  var cb=d.getElementById('copy'), note=d.getElementById('copied');
+  cb.addEventListener('click',function(){copy(msg.textContent).then(function(){cb.textContent='Скопировано';note.textContent='Готово — откройте Direct и вставьте текст.';setTimeout(function(){cb.textContent='Скопировать'},2200)})});
+  d.getElementById('go').addEventListener('click',function(){copy(msg.textContent)});
+  build();
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

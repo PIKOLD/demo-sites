@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>BONKOMBINEZON — зимние комбинезоны из Сибири до −40°С</title><meta property="og:type" content="website"><meta property="og:title" content="BONKOMBINEZON — зимние комбинезоны из Сибири до −40°С"><meta property="og:description" content="Зимние комбинезоны BONKOMBINEZON из Сибири: «Гранд», «Люкс», «Гранд» Тайга с натуральным мехом, демисезон до −10°С и новый костюм до −40°С. 7 вариантов ростовок, индивидуальный пошив. Подбор модели под вашу зиму."><meta property="og:image" content="https://pikold.github.io/demo-sites/bonkombinezon/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Зимние комбинезоны BONKOMBINEZON из Сибири: «Гранд», «Люкс», «Гранд» Тайга с натуральным мехом, демисезон до −10°С и новый костюм до −40°С. 7 вариантов ростовок, индивидуальный пошив. Подбор модели под вашу зиму.">
+<meta name="theme-color" content="#A3122A">
+<link rel="stylesheet" href="../_fonts/rubik.css">
+<link rel="stylesheet" href="../_fonts/jetbrains-mono.css">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"../_lib/three.module.js"}}</script>
+</head>
+<body>
+<a class="skip" href="#pick">К подбору модели</a>
+<div class="demo" role="note">Демо-концепт (Demo concept) независимого разработчика — не официальный сайт BONKOMBINEZON. Не согласован с владельцем, удаляется по первой просьбе.</div>
+
+<header class="hdr">
+  <div class="hdr-bar">
+    <a class="logo" href="#top" aria-label="BONKOMBINEZON — наверх">BON<b>KOMBINEZON</b></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#demi">Демисезон</a>
+      <a href="#grand">Гранд / Люкс</a>
+      <a href="#new">Новинка</a>
+      <a href="#taiga">Тайга</a>
+      <a href="#order">Как заказать</a>
+    </nav>
+    <a class="btn btn-sm" href="#pick">Подобрать</a>
+  </div>
+  <div class="thermo-m" aria-hidden="true">
+    <span class="tm-scale"><i class="tm-fill"></i></span>
+    <span class="tm-ticks"><b>0</b><b>−10</b><b>−20</b><b>−30</b><b>−40</b></span>
+    <span class="tm-val"><span class="t-now">0</span>°С</span>
+  </div>
+</header>
+
+<aside class="thermo" aria-hidden="true">
+  <div class="th-unit">°С</div>
+  <div class="th-tube">
+    <div class="th-ticks">
+      <span style="--p:0"><em>0</em></span>
+      <span style="--p:.25"><em>−10</em></span>
+      <span style="--p:.5"><em>−20</em></span>
+      <span style="--p:.75"><em>−30</em></span>
+      <span style="--p:1"><em>−40</em></span>
+    </div>
+    <div class="th-glass"><i class="th-merc"></i></div>
+    <div class="th-read"><span class="t-now">0</span>°</div>
+  </div>
+  <div class="th-bulb"></div>
+  <div class="th-cap">Сибирь</div>
+</aside>
+
+<canvas id="snow" aria-hidden="true"></canvas>
+<div class="snow-css" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="traveler" aria-hidden="true"><img src="img/p8.jpg" alt=""></div>
+
+<main id="top">
+
+<!-- 0° -->
+<section class="s-hero" data-t="0" data-tone="dark" id="hero">
+  <div class="hero-top">
+    <p class="mono eyebrow">BONKOMBINEZON · Сибирь · отметка 0°</p>
+    <h1>Зимние комбинезоны<br>из&nbsp;Сибири. <span>До&nbsp;−40°С</span></h1>
+  </div>
+  <div class="hero-stage">
+    <div class="hero-num back" aria-hidden="true">−40°C</div>
+    <figure class="hero-photo frost-css" data-frost="hero">
+      <img src="img/p8.jpg" srcset="img/p8-m.jpg 540w, img/p8.jpg 968w" sizes="(max-width:760px) 62vw, 26vw" alt="Девушка в чёрном зимнем комбинезоне BONKOMBINEZON с капюшоном из натурального меха и поясной сумкой" fetchpriority="high">
+    </figure>
+    <div class="hero-num front" aria-hidden="true">−40°C</div>
+  </div>
+  <div class="hero-bot">
+    <dl class="stats mono">
+      <div><dt>подписчиков</dt><dd>152&nbsp;тыс.</dd></div>
+      <div><dt>ростовок</dt><dd>7 вариантов</dd></div>
+      <div><dt>пошив</dt><dd>индивидуальный</dd></div>
+      <div><dt>до</dt><dd>−40°С</dd></div>
+    </dl>
+    <div class="ctas">
+      <a class="btn btn-snow" href="#pick">Подобрать под мою зиму</a>
+      <a class="btn btn-line" href="https://ig.me/m/bonkombinezon" target="_blank" rel="noopener">Написать в&nbsp;Direct</a>
+    </div>
+  </div>
+  <p class="scroll-hint mono" aria-hidden="true">листайте вниз — будет холоднее ↓</p>
+</section>
+
+<!-- −10° -->
+<section class="s-demi" data-t="-10" data-tone="dark" id="demi">
+  <div class="demi-grid">
+    <div class="demi-text">
+      <p class="mono mark">−10° · демисезон</p>
+      <h2>Серый<br>меланж</h2>
+      <p class="lead">Демисезонный комбинезон до&nbsp;−10°С. «Мы сделаем вашу осень комфортной и стильной».</p>
+      <ul class="spec mono">
+        <li>брюки из плотного softshell на флисе</li>
+        <li>не промокает и не продувается</li>
+        <li>воротник-стойка</li>
+        <li>карман для ski-pass</li>
+        <li>молнии для горнолыжной обуви</li>
+      </ul>
+    </div>
+    <figure class="demi-photo">
+      <img src="img/p3.jpg" srcset="img/p3-m.jpg 540w, img/p3.jpg 720w" sizes="(max-width:760px) 90vw, 30vw" loading="lazy" alt="Демисезонный комбинезон: светлый верх из курточной ткани и коричневые брюки, кадр на фоне тёмного забора">
+      <figcaption class="mono">@bonkombinezon · демисезон</figcaption>
+    </figure>
+    <div class="demi-lane" aria-hidden="true">
+      <span class="mono">мех капюшона<br>едет к отметке −25°</span>
+    </div>
+    <div class="demi-note">
+      <p class="mono mark">ещё в демисезоне</p>
+      <p>«Комбинезон, в котором не хочется сидеть дома»: до&nbsp;−10°С, визуально удлиняет ноги. Верх — прочная курточная ткань с&nbsp;усиленной водоотталкивающей пропиткой, брюки — плотный softshell на&nbsp;флисе с&nbsp;защитой от&nbsp;ветра и&nbsp;осадков.</p>
+    </div>
+  </div>
+</section>
+
+<!-- −25° -->
+<section class="s-split" data-t="-25" data-tone="dark" id="grand">
+  <header class="split-head">
+    <p class="mono mark">−25° · сравнение</p>
+    <h2><span>Гранд</span> <em>против</em> <span>Люкс</span></h2>
+    <p class="mono sub">«В чём отличия таких похожих моделей? У каждой есть своя особенная сильная сторона»</p>
+  </header>
+  <div class="split-grid">
+    <div class="split-l">
+      <h3>Гранд</h3>
+      <p>Подходит и для прогулок, и для катания на горных лыжах — за счёт прочной ветрозащитной мембранной ткани. Ткань максимально неприхотливая, отталкивает воду и грязь.</p>
+      <p class="mono big-n">12 <small>оттенков</small></p>
+      <p class="mono tag-row"><span class="sw sw-kedr">Кедр</span><span class="sw sw-klk">Клюква</span></p>
+      <figure class="split-small">
+        <img src="img/p10.jpg" srcset="img/p10-m.jpg 540w, img/p10.jpg 720w" sizes="(max-width:760px) 60vw, 18vw" loading="lazy" alt="Два комбинезона с меховыми капюшонами — красный и коричневый — на вешалках в шоу-руме">
+        <figcaption class="mono">«Гранд» в оттенках Кедр и Клюква · до&nbsp;−40°С · комбинезон + сумка + варежки</figcaption>
+      </figure>
+    </div>
+    <figure class="split-mid">
+      <img src="img/p7.jpg" srcset="img/p7-m.jpg 540w, img/p7.jpg 720w" sizes="(max-width:760px) 90vw, 28vw" loading="lazy" alt="Сравнение моделей: слева «Гранд» шоколадного цвета, справа «Люкс» цвета клюквы, оба с меховыми капюшонами">
+    </figure>
+    <div class="split-r">
+      <figure class="loupe" data-frost="loupe">
+        <img src="img/p8.jpg" alt="Крупно: капюшон из натурального меха" loading="lazy">
+        <figcaption class="mono">мех капюшона · ×1.3</figcaption>
+      </figure>
+      <h3>Люкс</h3>
+      <p>Самая мягкая и невесомая — но при этом самая тёплая модель во всей линейке.</p>
+      <p class="mono tag-row"><span class="sw sw-snow">самая мягкая</span><span class="sw sw-snow">самая тёплая</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- Новинка -->
+<section class="s-new" data-t="-30" data-tone="dark" id="new">
+  <div class="new-grid">
+    <div class="new-head">
+      <p class="mono mark">новинка · −30°…−40°</p>
+      <h2>Куртка и&nbsp;брюки <span>до&nbsp;−40°С</span></h2>
+      <p class="lead">«Потрясающе мягкий и тёплый костюм для русской зимы».</p>
+    </div>
+    <ol class="prices">
+      <li><span class="mono">01 / куртка</span><b>17&nbsp;990&nbsp;₽</b></li>
+      <li><span class="mono">02 / брюки</span><b>9&nbsp;990&nbsp;₽</b></li>
+      <li><span class="mono">03 / варежки</span><b>2&nbsp;490&nbsp;₽</b></li>
+    </ol>
+    <ul class="new-spec mono">
+      <li><b>3000/3000</b> ветрозащитная мембрана</li>
+      <li><b>200 г</b> утеплитель Atmo Snow</li>
+      <li><b>мех</b> натуральный, финского енота</li>
+      <li><b>ski-pass</b> карман</li>
+      <li><b>телефон</b> внутренний карман</li>
+      <li><b>кулиса</b> ширина куртки и брюк регулируется</li>
+      <li><b>7</b> вариантов ростовок</li>
+    </ul>
+    <p class="new-cta"><span class="mono">в посте бренд просит написать в комментариях слово</span> <b class="zima">ЗИМА</b> <a class="btn btn-snow" href="#pick" data-suit>Собрать костюм в подборе</a></p>
+  </div>
+</section>
+
+<!-- приборы -->
+<section class="s-panel" data-t="-34" data-tone="light" id="panel">
+  <p class="mono mark">показания приборов</p>
+  <h2 class="panel-h">Что внутри, <span>цифрами</span></h2>
+  <div class="gauges">
+    <div class="g g-a"><span class="mono gl">мембрана · костюм</span><b class="gv">3000/3000</b><span class="gs">ветрозащитная</span></div>
+    <div class="g g-b"><span class="mono gl">утеплитель · костюм</span><b class="gv">200<small>г</small></b><span class="gs">Atmo Snow</span></div>
+    <div class="g g-c"><span class="mono gl">ростовки</span><b class="gv">7</b><span class="gs">вариантов, от XS до XXL</span></div>
+    <div class="g g-d"><span class="mono gl">палитра «Гранд»</span><b class="gv">12</b><span class="gs">оттенков, среди них Кедр и Клюква</span></div>
+    <div class="g g-e"><span class="mono gl">мех · костюм</span><b class="gv gv-t">финский енот</b><span class="gs">натуральный</span></div>
+    <div class="g g-f"><span class="mono gl">«Гранд» Тайга</span><b class="gv gv-t">магнитная планка</b><span class="gs">ветрозащитная</span></div>
+    <div class="g g-g"><span class="mono gl">«Гранд» Тайга</span><b class="gv gv-t">флисовый подклад</b><span class="gs">внутри</span></div>
+    <div class="g g-h"><span class="mono gl">карман</span><b class="gv gv-t">ski-pass</b><span class="gs">костюм и демисезон</span></div>
+  </div>
+</section>
+
+<!-- −40° -->
+<section class="s-taiga" data-t="-40" data-tone="light" id="taiga">
+  <div class="taiga-word" aria-hidden="true">ТАЙГА</div>
+  <div class="taiga-grid">
+    <figure class="taiga-photo frost-css" data-frost="taiga">
+      <img src="img/p11.jpg" srcset="img/p11-m.jpg 540w, img/p11.jpg 1012w" sizes="(max-width:760px) 92vw, 38vw" loading="lazy" alt="Белый зимний комбинезон с очень пышным меховым капюшоном">
+    </figure>
+    <div class="taiga-text">
+      <p class="mono mark">−40° · дно шкалы</p>
+      <h2>«Гранд» Тайга</h2>
+      <p class="lead">Роскошный «Гранд» с&nbsp;пышным натуральным мехом размера XXL. Комбинезон, который вызывает визуальный восторг.</p>
+      <ul class="spec mono">
+        <li>до −40°С</li>
+        <li>ветро- и влагозащитная мембрана</li>
+        <li>магнитная ветрозащитная планка</li>
+        <li>флисовый подклад</li>
+      </ul>
+      <p class="kit"><span class="mono">комплект</span> комбинезон «Гранд» + сумка + варежки</p>
+      <a class="btn btn-klk" href="https://ig.me/m/bonkombinezon" target="_blank" rel="noopener">Спросить менеджера</a>
+    </div>
+    <figure class="taiga-fur">
+      <img src="img/p6.jpg" srcset="img/p6-m.jpg 540w, img/p6.jpg 1013w" sizes="(max-width:760px) 60vw, 20vw" loading="lazy" alt="Крупно: меховой капюшон на чёрном комбинезоне">
+      <figcaption class="mono">натуральный мех · крупно</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- лента -->
+<section class="s-look" data-t="-40" data-tone="light" id="look">
+  <div class="look-head">
+    <p class="mono mark">из профиля @bonkombinezon · 1&nbsp;534 публикации</p>
+    <h2>Так это носят</h2>
+  </div>
+  <div class="look">
+    <figure class="lk lk1"><img src="img/p4.jpg" srcset="img/p4-m.jpg 540w, img/p4.jpg 720w" sizes="(max-width:760px) 46vw, 24vw" loading="lazy" alt="Тёмно-коричневый комбинезон с меховым капюшоном и поясной сумкой"><figcaption class="mono">01</figcaption></figure>
+    <figure class="lk lk2"><img src="img/p12.jpg" srcset="img/p12-m.jpg 540w, img/p12.jpg 1012w" sizes="(max-width:760px) 46vw, 24vw" loading="lazy" alt="Голубая куртка и чёрные брюки, кадр у витрины"><figcaption class="mono">02</figcaption></figure>
+        <figure class="lk lk4"><img src="img/p13.jpg" srcset="img/p13-m.jpg 540w, img/p13.jpg 720w" sizes="(max-width:760px) 46vw, 24vw" loading="lazy" alt="Белый комбинезон с меховой отделкой капюшона"><figcaption class="mono">03</figcaption></figure>
+    <figure class="lk lk5"><img src="img/p5.jpg" srcset="img/p5-m.jpg 540w, img/p5.jpg 720w" sizes="(max-width:760px) 46vw, 24vw" loading="lazy" alt="Бежевый комбинезон с поясом в гардеробной"><figcaption class="mono">04</figcaption></figure>
+    <figure class="lk lk3"><img src="img/p9.jpg" srcset="img/p9-m.jpg 540w, img/p9.jpg 720w" sizes="(max-width:760px) 46vw, 24vw" loading="lazy" alt="Чёрный комбинезон с поясом, кадр в холле"><figcaption class="mono">05</figcaption></figure>
+  </div>
+</section>
+
+<!-- Подбор -->
+<section class="s-pick" data-t="pick" data-tone="light" id="pick">
+  <div class="pick-head">
+    <p class="mono mark">фишка · подбор</p>
+    <h2>Подбор модели под&nbsp;твою зиму</h2>
+    <p class="lead">Логика — только по подписям самого бренда. Двигайте ползунок: снег на&nbsp;странице подстроится под вашу улицу.</p>
+  </div>
+  <form class="picker" id="picker" onsubmit="return false">
+    <div class="pk-ctrl">
+      <fieldset class="pk-temp">
+        <legend class="mono">самая холодная улица</legend>
+        <output class="pk-out" id="tOut" for="tRange">−25°С</output>
+        <input type="range" id="tRange" min="0" max="40" step="5" value="25" aria-label="Самая холодная температура на улице, °С">
+        <div class="pk-scale mono" aria-hidden="true"><span>0</span><span>−10</span><span>−20</span><span>−30</span><span>−40</span></div>
+      </fieldset>
+      <fieldset>
+        <legend class="mono">как гуляете</legend>
+        <div class="chips" role="radiogroup">
+          <label class="chip"><input type="radio" name="mode" value="city" checked><span>прогулки и город</span></label>
+          <label class="chip"><input type="radio" name="mode" value="ski"><span>горные лыжи</span></label>
+          <label class="chip"><input type="radio" name="mode" value="kids"><span>с детьми</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="mono">что важнее</legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="want" value="any" checked><span>неважно</span></label>
+          <label class="chip"><input type="radio" name="want" value="soft"><span>самая мягкая и тёплая</span></label>
+          <label class="chip"><input type="radio" name="want" value="fur"><span>пышный мех</span></label>
+          <label class="chip"><input type="radio" name="want" value="suit"><span>куртка + брюки</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="mono">размер</legend>
+        <div class="chips chips-size">
+          <label class="chip"><input type="radio" name="size" value="XS"><span>XS</span></label>
+          <label class="chip"><input type="radio" name="size" value="S"><span>S</span></label>
+          <label class="chip"><input type="radio" name="size" value="M" checked><span>M</span></label>
+          <label class="chip"><input type="radio" name="size" value="L"><span>L</span></label>
+          <label class="chip"><input type="radio" name="size" value="XL"><span>XL</span></label>
+          <label class="chip"><input type="radio" name="size" value="XXL"><span>XXL</span></label>
+        </div>
+        <p class="note mono">7 вариантов ростовок — уточнит менеджер</p>
+        <label class="height mono">рост, см <input type="text" inputmode="numeric" id="hIn" maxlength="3" placeholder="__"></label>
+      </fieldset>
+      <fieldset>
+        <legend class="mono">цвет</legend>
+        <div class="chips" id="colorChips"></div>
+      </fieldset>
+    </div>
+    <div class="pk-res" aria-live="polite">
+      <p class="mono res-mark">результат · <span id="resT">−25°С</span></p>
+      <h3 id="resName">«Гранд»</h3>
+      <p id="resWhy" class="res-why">Прочная ветрозащитная мембрана, ткань отталкивает воду и грязь.</p>
+      <ul id="resList" class="res-list mono"></ul>
+      <p id="resPrice" class="res-price mono">цена — у менеджера</p>
+      <label class="mono msg-l" for="msg">готовый текст в Direct</label>
+      <textarea id="msg" rows="3" readonly>Здравствуйте! Подбор: Гранд, цвет Клюква, размер M, рост __. Для прогулок по городу.</textarea>
+      <div class="res-btns">
+        <button type="button" class="btn btn-snow" id="copyBtn">Скопировать</button>
+        <a class="btn btn-snow" href="https://ig.me/m/bonkombinezon" target="_blank" rel="noopener">Написать в&nbsp;Direct</a>
+        <a class="btn btn-line" href="https://bonkombinezon.taplink.ws/" target="_blank" rel="noopener">Их taplink</a>
+      </div>
+      <p class="res-hint mono">Или как в их посте: напишите в&nbsp;комментариях слово <b>«ЗИМА»</b></p>
+    </div>
+  </form>
+</section>
+
+<!-- Как заказать -->
+<section class="s-order" data-t="-40" data-tone="light" id="order">
+  <h2>Как заказать</h2>
+  <ol class="steps">
+    <li><span class="mono">01</span><h3>Менеджеры в&nbsp;Direct</h3><p>«Для заказа пишите менеджерам» — так в каждом посте. Текст подбора уже готов, его можно скопировать.</p><a class="lnk" href="https://ig.me/m/bonkombinezon" target="_blank" rel="noopener">ig.me/m/bonkombinezon</a></li>
+    <li><span class="mono">02</span><h3>Слово «ЗИМА»</h3><p>Под постом с новым костюмом бренд просит написать в комментариях слово «ЗИМА».</p><a class="lnk" href="https://www.instagram.com/bonkombinezon/" target="_blank" rel="noopener">instagram.com/bonkombinezon</a></li>
+    <li><span class="mono">03</span><h3>Taplink</h3><p>Все ссылки бренда собраны в taplink из шапки профиля.</p><a class="lnk" href="https://bonkombinezon.taplink.ws/" target="_blank" rel="noopener">bonkombinezon.taplink.ws</a></li>
+  </ol>
+  <div class="hl">
+    <p class="mono mark">разделы в закреплённых историях профиля</p>
+    <ul class="hl-list">
+      <li>NEW</li><li>Отзывы</li><li>Оплата</li><li>Фабрика</li><li>Шоу-рум</li><li>Размеры</li>
+    </ul>
+    <p class="hl-note">Плюс <b>индивидуальный пошив</b> — указан в шапке профиля. Уточняйте у менеджеров.</p>
+  </div>
+</section>
+</main>
+
+<footer class="ftr" data-tone="light">
+  <p class="ftr-word" aria-hidden="true">−40°C</p>
+  <div class="ftr-row">
+    <p><b>BONKOMBINEZON</b> · зимние комбинезоны из Сибири · 152&nbsp;тыс. подписчиков</p>
+    <p class="mono"><a href="https://www.instagram.com/bonkombinezon/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.threads.com/@bonkombinezon" target="_blank" rel="noopener">Threads</a> · <a href="https://bonkombinezon.taplink.ws/" target="_blank" rel="noopener">Taplink</a></p>
+  </div>
+  <p class="ftr-demo mono">Демо-концепт независимого разработчика. Фото — из открытого профиля @bonkombinezon. Не официальный сайт, удаляется по первой просьбе.</p>
+</footer>
+
+<script src="app.js" defer></script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>BUTONelle — дизайнерская женская одежда, Уфа</title><meta property="og:type" content="website"><meta property="og:title" content="BUTONelle — дизайнерская женская одежда, Уфа"><meta property="og:description" content="BUTONelle — дизайнерская женская одежда собственного производства из Уфы. Пуховики, куртки, тренчи и городские костюмы. Заказ в Instagram Direct."><meta property="og:image" content="https://pikold.github.io/demo-sites/butonelle/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="BUTONelle — дизайнерская женская одежда собственного производства из Уфы. Пуховики, куртки, тренчи и городские костюмы. Заказ в Instagram Direct.">
+<link rel="stylesheet" href="../_fonts/oswald.css">
+<link rel="stylesheet" href="../_fonts/manrope.css">
+<style>
+:root{
+  --asphalt:#3A3A3A; --ink:#232323; --powder:#E8B9B9; --green:#2F5141; --trench:#CDBFA6;
+  --white:#FAFAF8; --walnut:#5A3423; --line:rgba(58,58,58,.18);
+  --d:'Oswald',Impact,sans-serif; --t:'Manrope',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--white);color:var(--asphalt);font:16px/1.6 var(--t);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.demo{background:var(--ink);color:#dcd6cc;font-size:12px;line-height:1.4;padding:7px 16px;text-align:center}
+.wrap{width:min(1320px,100% - 32px);margin-inline:auto}
+@media(min-width:900px){.wrap{width:min(1320px,100% - 96px)}}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:rgba(250,250,248,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px}
+.logo{font:600 22px/1 var(--d);letter-spacing:.02em;text-decoration:none;color:var(--ink)}
+.logo b{font-weight:700;color:var(--walnut)}
+.nav{display:flex;gap:28px;font-size:14px;font-weight:600}
+.nav a{text-decoration:none;padding:12px 0}
+.nav a:hover{color:var(--walnut)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:0;border:1.5px solid var(--ink);background:var(--ink);color:var(--white);font:600 13px/1 var(--t);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .25s,color .25s,transform .25s}
+.btn:hover{background:var(--walnut);border-color:var(--walnut)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--white)}
+.top .btn{min-height:44px;padding:0 18px}
+@media(max-width:899px){.nav{display:none}.top .btn{font-size:11px;padding:0 14px}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;min-height:calc(100svh - 92px);display:grid;grid-template-columns:minmax(0,1fr);align-content:end;padding-bottom:28px}
+.hero-photo{position:absolute;top:-4%;right:-7vw;width:min(46vw,640px);height:112%;transform:rotate(3deg);box-shadow:-30px 40px 80px rgba(58,58,58,.18);will-change:transform}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.hero-kicker{position:relative;z-index:2;font:500 14px/1.5 var(--t);max-width:340px;margin:0 0 auto;padding-top:56px}
+.hero-kicker b{display:block;font:500 13px/1 var(--d);letter-spacing:.18em;text-transform:uppercase;color:var(--walnut);margin-bottom:14px}
+.word{position:relative;z-index:3;font:700 clamp(84px,17.4vw,300px)/.82 var(--d);text-transform:uppercase;letter-spacing:-.035em;color:var(--ink);white-space:nowrap;margin-top:60px;will-change:letter-spacing}
+.word .on{color:var(--green)}
+.word .low{text-transform:none;font-weight:400;letter-spacing:inherit}
+.hero-line{position:relative;z-index:3;display:flex;flex-wrap:wrap;gap:6px 22px;align-items:center;border-top:1.5px solid var(--ink);margin-top:18px;padding-top:14px;font:500 clamp(13px,1.2vw,16px)/1.4 var(--d);letter-spacing:.14em;text-transform:uppercase}
+.hero-line i{font-style:normal;color:var(--walnut)}
+.hero-cta{position:relative;z-index:3;display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+@media(max-width:899px){
+  .hero{min-height:auto;padding-top:0}
+  .hero-photo{position:relative;top:auto;right:auto;width:84%;height:auto;aspect-ratio:3/4;margin:24px -6vw 0 auto;transform:rotate(2deg)}
+  .hero .wrap{display:flex;flex-direction:column}
+  .hero-photo{order:1}.word{order:2}.hero-line{order:3}.hero-kicker{order:4;margin:22px 0 0;padding:0;max-width:none;font-size:15px}.hero-cta{order:5}
+  .hero-cta .btn{flex:1 1 150px}
+  .word{margin-top:-0.55em;font-size:19.5vw;text-shadow:none}
+}
+@media(max-width:899px){.hero .wrap{position:relative}}
+
+/* section heads */
+.sec{padding:110px 0}
+.eyebrow{font:500 13px/1 var(--d);letter-spacing:.2em;text-transform:uppercase;color:var(--walnut);margin-bottom:18px}
+.h2{font:700 clamp(44px,7vw,112px)/.9 var(--d);text-transform:uppercase;letter-spacing:-.01em;color:var(--ink)}
+.lead{max-width:520px;font-size:17px;margin-top:20px}
+@media(max-width:600px){.sec{padding:72px 0}.lead{font-size:16px}}
+
+/* manifesto */
+.mani{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:56px;align-items:end}
+.mani p.big{font:400 clamp(26px,3.2vw,44px)/1.15 var(--d);text-transform:uppercase;color:var(--ink)}
+.mani p.big em{font-style:normal;color:var(--green)}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1.5px solid var(--ink)}
+.facts div{padding:18px 16px 0 0}
+.facts strong{display:block;font:600 clamp(32px,3.6vw,52px)/1 var(--d);color:var(--ink)}
+.facts span{font-size:13px;line-height:1.35;display:block;margin-top:6px}
+@media(max-width:899px){.mani{grid-template-columns:minmax(0,1fr);gap:36px}}
+
+/* seasons horizontal */
+.seasons{position:relative;background:var(--powder);transition:none}
+.seasons-sticky{position:sticky;top:0;height:100svh;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+.seasons-head{display:flex;justify-content:space-between;align-items:end;gap:20px;padding-top:70px}
+.seasons-head .h2{color:var(--ink)}
+.seasons-now{font:600 14px/1 var(--d);letter-spacing:.18em;text-transform:uppercase;color:var(--ink)}
+.track{display:flex;align-items:center;gap:28px;padding:36px 48px 40px;width:max-content;will-change:transform}
+.chap{display:flex;align-items:center;gap:28px}
+.chap-title{width:300px;flex:none;padding-right:20px}
+.chap-title .n{font:500 13px/1 var(--d);letter-spacing:.2em;text-transform:uppercase}
+.chap-title h3{font:700 96px/.86 var(--d);text-transform:uppercase;margin:12px 0 14px;color:var(--ink)}
+.chap-title p{font-size:15px;line-height:1.5;max-width:260px}
+.chap.c2 .chap-title,.chap.c2 .chap-title h3{color:var(--white)}
+.shot{flex:none;margin:0;position:relative;overflow:hidden;background:rgba(0,0,0,.08)}
+.shot img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.shot:hover img{transform:scale(1.04)}
+.shot figcaption{position:absolute;left:0;bottom:0;background:var(--white);color:var(--ink);font:500 12px/1 var(--d);letter-spacing:.14em;text-transform:uppercase;padding:9px 12px}
+.s-l{width:min(30vw,420px);height:min(64vh,580px)}
+.s-m{width:min(22vw,300px);height:min(50vh,420px)}
+.s-s{width:min(16vw,220px);height:min(34vh,290px);align-self:flex-end}
+.s-up{align-self:flex-start}
+@media(max-width:899px){
+  .seasons-head{padding-top:64px}
+  .track{gap:16px;padding:24px 16px 28px}
+  .chap{gap:16px}
+  .chap-title{width:250px}
+  .chap-title h3{font-size:68px}
+  .s-l{width:62vw;height:52vh}
+  .s-m{width:48vw;height:40vh}
+  .s-s{width:38vw;height:28vh}
+}
+@media (prefers-reduced-motion:reduce){
+  .seasons-sticky{position:relative;height:auto;overflow-x:auto}
+}
+
+/* looks */
+.looks{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.55fr) minmax(0,1fr);gap:22px;align-items:start;margin-top:56px}
+.look{margin:0;position:relative}
+.look .ph{overflow:hidden;background:#eee}
+.look img{width:100%;height:100%;object-fit:cover}
+.look figcaption{display:flex;justify-content:space-between;gap:12px;padding-top:12px;font-size:14px;border-top:1.5px solid var(--ink);margin-top:12px}
+.look figcaption b{font:600 15px/1.3 var(--d);letter-spacing:.06em;text-transform:uppercase;color:var(--ink)}
+.look.a .ph{aspect-ratio:4/5}
+.look.b{margin-top:140px}.look.b .ph{aspect-ratio:9/22}
+.look.c{margin-top:60px}.look.c .ph{aspect-ratio:3/4}
+.quote{font:400 clamp(22px,2.4vw,32px)/1.2 var(--d);text-transform:uppercase;color:var(--ink);max-width:380px;margin-top:28px}
+@media(max-width:899px){
+  .looks{grid-template-columns:minmax(0,1fr) minmax(0,.62fr);gap:14px}
+  .look.a{grid-column:1/-1}
+  .look.b{margin-top:0}.look.c{margin-top:0}
+  .look.b .ph{aspect-ratio:9/19}
+  .look figcaption{flex-direction:column;gap:2px;font-size:13px}
+}
+
+/* builder */
+.build{background:var(--asphalt);color:#e9e5de}
+.build .h2,.build .eyebrow{color:var(--white)}
+.build .eyebrow{color:var(--powder)}
+.bgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:56px;margin-top:52px;align-items:start}
+.pick h3{font:500 14px/1 var(--d);letter-spacing:.2em;text-transform:uppercase;color:var(--trench);margin:0 0 14px}
+.opts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:36px}
+.opts.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.opt{position:relative;display:flex;align-items:flex-end;min-height:120px;padding:0;border:1.5px solid rgba(250,250,248,.25);background:#2f2f2f;color:var(--white);cursor:pointer;overflow:hidden;text-align:left;font:600 14px/1.2 var(--d);letter-spacing:.06em;text-transform:uppercase}
+.opt img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55;transition:opacity .3s,transform .5s}
+.opt span{position:relative;padding:12px;background:linear-gradient(transparent,rgba(0,0,0,.6));width:100%}
+.opt:hover img{opacity:.8;transform:scale(1.05)}
+.opt[aria-pressed="true"]{border-color:var(--powder);box-shadow:inset 0 0 0 3px var(--powder)}
+.opt[aria-pressed="true"] img{opacity:1}
+.opt.noimg{background:var(--walnut)}
+.opt.noimg span{background:none;font-size:22px}
+.result{position:sticky;top:90px;background:var(--white);color:var(--asphalt);padding:28px}
+.result .pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;margin-bottom:20px}
+.result .pair div{aspect-ratio:3/4;background:var(--trench);overflow:hidden;position:relative}
+.result .pair img{width:100%;height:100%;object-fit:cover;transition:opacity .3s}
+.result .pair .tag{position:absolute;left:8px;top:8px;background:var(--white);font:500 11px/1 var(--d);letter-spacing:.14em;text-transform:uppercase;padding:6px 8px}
+.result .ph-word{position:absolute;inset:0;display:grid;place-items:center;font:700 34px/1 var(--d);text-transform:uppercase;color:var(--white);background:var(--walnut)}
+.msg{width:100%;min-height:96px;border:1.5px solid var(--line);background:#fff;padding:14px;font:500 15px/1.5 var(--t);color:var(--ink);resize:vertical}
+.ract{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.ract .btn{flex:1 1 180px}
+.note{font-size:13px;margin-top:12px;color:#6a6a6a}
+.copied{color:var(--green);font-weight:700}
+@media(max-width:899px){
+  .bgrid{grid-template-columns:minmax(0,1fr);gap:28px}
+  .opts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .opt{min-height:104px}
+  .result{position:relative;top:auto;padding:18px}
+}
+
+/* order steps */
+.steps{margin-top:48px;border-top:1.5px solid var(--ink)}
+.step{display:grid;grid-template-columns:140px minmax(0,1fr) minmax(0,1.1fr);gap:28px;padding:30px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.step .num{font:700 84px/.8 var(--d);color:var(--powder);-webkit-text-stroke:1.5px var(--ink)}
+.step h3{font:600 clamp(26px,3vw,40px)/1 var(--d);text-transform:uppercase;color:var(--ink)}
+.step p{font-size:16px;max-width:520px}
+.step:nth-child(2) .num{color:var(--green)}
+.step:nth-child(3) .num{color:var(--trench)}
+@media(max-width:700px){.step{grid-template-columns:72px minmax(0,1fr);gap:8px 16px}.step .num{font-size:56px;grid-row:span 2}}
+
+/* proof + contact */
+.door{background:var(--walnut);color:#efe4da;overflow:hidden}
+.door .h2{color:var(--white)}
+.dgrid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr);gap:56px;align-items:center}
+.dphoto{aspect-ratio:3/4;overflow:hidden}
+.dphoto img{width:100%;height:100%;object-fit:cover}
+.door .eyebrow{color:var(--powder)}
+.dlist{list-style:none;margin-top:30px;border-top:1px solid rgba(255,255,255,.25)}
+.dlist li{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.25);font-size:15px}
+.dlist li b{font:500 14px/1.5 var(--d);letter-spacing:.14em;text-transform:uppercase;color:var(--trench)}
+.dlist a{text-decoration:none;font-weight:600}
+.dlist a:hover{text-decoration:underline}
+.door .btn{background:var(--powder);border-color:var(--powder);color:var(--ink);margin-top:30px}
+.door .btn:hover{background:var(--white);border-color:var(--white)}
+@media(max-width:899px){.dgrid{grid-template-columns:minmax(0,1fr);gap:32px}.dphoto{aspect-ratio:4/5}.dlist li{flex-direction:column;gap:2px}}
+
+footer{background:var(--ink);color:#bdb6ab;padding:40px 0 48px;font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer .fw{font:700 clamp(56px,12vw,180px)/.85 var(--d);text-transform:uppercase;color:#2f2f2f;width:100%;letter-spacing:-.02em;margin-bottom:24px}
+footer .fw span{color:var(--green)}
+
+.rv{opacity:1;transform:none;transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .rv.pre{transform:translateY(34px)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="demo" role="note">Демо-концепт независимого разработчика — не официальный сайт BUTONelle. Не согласован с владельцем, удаляется по первой просьбе.</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="BUTONelle — наверх">BUT<b>ON</b>elle</a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#seasons">Сезоны</a>
+      <a href="#looks">Образы</a>
+      <a href="#build">Собери образ</a>
+      <a href="#order">Как заказать</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <a class="btn" href="https://ig.me/m/butonelle" target="_blank" rel="noopener">Написать в Direct</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <figure class="hero-photo" id="heroPhoto"><img src="img/p1.jpg" srcset="img/p1-m.jpg 506w, img/p1.jpg 720w" sizes="(max-width:899px) 84vw, 46vw" alt="Девушка в пудрово-розовом пуховике BUTONelle на городской улице" fetchpriority="high"></figure>
+    <p class="hero-kicker"><b>Женская одежда · Уфа</b>Городской гардероб под чутким руководством Лианы Хайруллиной: пуховики, куртки, тренчи и костюмы для улиц, по которым ходишь каждый день.</p>
+    <h1 class="word" id="word" aria-label="BUTONelle">BUT<span class="on">ON</span><span class="low">elle</span></h1>
+    <p class="hero-line"><span>Дизайнерская одежда</span><i>·</i><span>Собственное производство</span><i>·</i><span>Уфа</span></p>
+    <div class="hero-cta">
+      <a class="btn" href="#build">Собрать образ</a>
+      <a class="btn ghost" href="#seasons">Смотреть сезоны</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap mani">
+    <div class="rv">
+      <p class="eyebrow">О бренде</p>
+      <p class="big">Своё производство, свои силуэты. <em>Пудровый пуховик</em>, зелёный городской костюм, белая куртка и бежевый тренч — уверенный стрит с женственностью.</p>
+    </div>
+    <div class="rv">
+      <p class="lead" style="margin:0 0 28px">Новинки BUTONelle сейчас живут в десятке хайлайтов Instagram. Здесь — весь гардероб на одной странице: смотрите по сезонам, собирайте образ и пишите в Direct.</p>
+      <div class="facts">
+        <div><strong>5&nbsp;053</strong><span>подписчиков в Instagram</span></div>
+        <div><strong>260</strong><span>публикаций с образами</span></div>
+        <div><strong>Уфа</strong><span>собственное производство</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="seasons" id="seasons" aria-label="Сезоны">
+  <div class="seasons-sticky">
+    <div class="wrap seasons-head">
+      <h2 class="h2">Сезоны</h2>
+      <p class="seasons-now" id="seasonNow">Осень</p>
+    </div>
+    <div class="track" id="track" data-qa-skip>
+      <div class="chap c0" data-color="#E8B9B9">
+        <div class="chap-title"><p class="n">01 / Новинки</p><h3>Осень</h3><p>Пудровый пуховик, длинная юбка и старые деревянные двери Уфы.</p></div>
+        <figure class="shot s-l"><img src="img/p10-m.jpg" alt="Розовый пуховик и серая длинная юбка у деревянной двери"><figcaption>Пуховик + юбка</figcaption></figure>
+        <figure class="shot s-m s-up"><img src="img/p11-m.jpg" alt="Серый образ с длинной юбкой у деревянной двери"><figcaption>Серый тотал</figcaption></figure>
+        <figure class="shot s-s"><img src="img/p13-m.jpg" alt="Бежевый тренч крупным планом"><figcaption>Тренч</figcaption></figure>
+      </div>
+      <div class="chap c1" data-color="#2F5141">
+        <div class="chap-title"><p class="n">02 / Новинки</p><h3>Весна</h3><p>Городской костюм в зелёном: от прогулки до встречи.</p></div>
+        <figure class="shot s-l"><img src="img/p7-m.jpg" alt="Зелёный городской костюм BUTONelle"><figcaption>Городской костюм</figcaption></figure>
+        <figure class="shot s-m s-up"><img src="img/p12-m.jpg" alt="Светлый комплект с юбкой и высокими сапогами"><figcaption>Светлый комплект</figcaption></figure>
+      </div>
+      <div class="chap c2" data-color="#CDBFA6">
+        <div class="chap-title"><p class="n" style="color:var(--ink)">03 / Новинки</p><h3 style="color:var(--ink)">Верхняя<br>одежда</h3><p style="color:var(--ink)">Белая куртка вне времени, тренч и куртка глубокого оттенка.</p></div>
+        <figure class="shot s-m s-up"><img src="img/p9-m.jpg" alt="Белая куртка BUTONelle"><figcaption>Белая куртка</figcaption></figure>
+        <figure class="shot s-l"><img src="img/p14-m.jpg" alt="Длинный бежевый тренч на городской улице"><figcaption>Тренч</figcaption></figure>
+        <figure class="shot s-m"><img src="img/p8-m.jpg" alt="Тёмная куртка с поясом"><figcaption>Куртка с поясом</figcaption></figure>
+        <figure class="shot s-s s-up"><img src="img/p6-m.jpg" alt="Тренч цвета хаки с белыми брюками"><figcaption>Тренч + брюки</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="looks">
+  <div class="wrap">
+    <p class="eyebrow rv">Образы</p>
+    <h2 class="h2 rv">Стиль, в котором каждая деталь на своём месте</h2>
+    <div class="looks">
+      <figure class="look a rv"><div class="ph"><img src="img/p10.jpg" alt="Образ: розовый пуховик, серая юбка с разрезом, лоферы"></div><figcaption><b>Пудра и дерево</b><span>Пуховик · длинная юбка</span></figcaption></figure>
+      <figure class="look b rv"><div class="ph"><img src="img/p14-m.jpg" alt="Образ: длинный тренч в движении"></div><figcaption><b>В движении</b><span>Тренч</span></figcaption></figure>
+      <div class="rv">
+        <figure class="look c"><div class="ph"><img src="img/p7.jpg" alt="Образ: зелёный городской костюм у фасада"></div><figcaption><b>Город в зелёном</b><span>Городской костюм</span></figcaption></figure>
+        <p class="quote">«Городской костюм в красивом зелёном цвете: от прогулки до встречи»</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec build" id="build">
+  <div class="wrap">
+    <p class="eyebrow">Фишка</p>
+    <h2 class="h2">Собери образ</h2>
+    <p class="lead">Выберите верх и низ — мы сложим из этого сообщение. Скопируйте его и отправьте в Direct: так менеджер сразу поймёт, что вы хотите.</p>
+    <div class="bgrid">
+      <div class="pick">
+        <h3>1. Верх</h3>
+        <div class="opts" id="tops">
+          <button class="opt" type="button" data-v="розовый пуховик" data-img="img/p1-m.jpg" aria-pressed="true"><img src="img/p1-m.jpg" alt=""><span>Розовый пуховик</span></button>
+          <button class="opt" type="button" data-v="белая куртка" data-img="img/p9-m.jpg" aria-pressed="false"><img src="img/p9-m.jpg" alt=""><span>Белая куртка</span></button>
+          <button class="opt" type="button" data-v="тренч" data-img="img/p14-m.jpg" aria-pressed="false"><img src="img/p14-m.jpg" alt=""><span>Тренч</span></button>
+          <button class="opt" type="button" data-v="куртка глубокого оттенка" data-img="img/p8-m.jpg" aria-pressed="false"><img src="img/p8-m.jpg" alt=""><span>Куртка с поясом</span></button>
+          <button class="opt" type="button" data-v="зелёный городской костюм" data-img="img/p7-m.jpg" aria-pressed="false"><img src="img/p7-m.jpg" alt=""><span>Зелёный костюм</span></button>
+          <button class="opt noimg" type="button" data-v="бомбер" data-img="" aria-pressed="false"><span>Бомбер</span></button>
+        </div>
+        <h3>2. Низ</h3>
+        <div class="opts two" id="bottoms">
+          <button class="opt" type="button" data-v="длинная юбка" data-img="img/p11-m.jpg" aria-pressed="true"><img src="img/p11-m.jpg" alt="" style="object-position:50% 80%"><span>Юбка</span></button>
+          <button class="opt" type="button" data-v="брюки" data-img="img/p4-m.jpg" aria-pressed="false"><img src="img/p4-m.jpg" alt="" style="object-position:50% 85%"><span>Брюки</span></button>
+        </div>
+      </div>
+      <div class="result" aria-live="polite">
+        <div class="pair">
+          <div id="rTop"><span class="tag">Верх</span><img src="img/p1-m.jpg" alt="Выбранный верх"></div>
+          <div id="rBot"><span class="tag">Низ</span><img src="img/p11-m.jpg" alt="Выбранный низ" style="object-position:50% 85%"></div>
+        </div>
+        <label for="msg" class="eyebrow" style="display:block;margin-bottom:10px">Ваше сообщение</label>
+        <textarea class="msg" id="msg"></textarea>
+        <div class="ract">
+          <button class="btn" type="button" id="copy">Скопировать</button>
+          <a class="btn ghost" href="https://ig.me/m/butonelle" target="_blank" rel="noopener">Открыть Direct</a>
+        </div>
+        <p class="note" id="note">Текст можно поправить: добавьте свой рост или размер.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="order">
+  <div class="wrap">
+    <p class="eyebrow">Как заказать</p>
+    <h2 class="h2">Три шага до новой вещи</h2>
+    <ol class="steps" style="list-style:none">
+      <li class="step rv"><span class="num">01</span><h3>Выберите</h3><p>Посмотрите сезоны и образы выше или соберите свой комплект — верх и низ.</p></li>
+      <li class="step rv"><span class="num">02</span><h3>Напишите в Direct</h3><p>Отправьте готовый текст в Instagram <a href="https://ig.me/m/butonelle" target="_blank" rel="noopener">@butonelle</a> — там подскажут по наличию и размеру.</p></li>
+      <li class="step rv"><span class="num">03</span><h3>Доставка</h3><p>Бренд доставляет заказы — условия уточнит менеджер в переписке.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec door" id="contact">
+  <div class="wrap dgrid">
+    <div class="dphoto rv"><img src="img/p11-m.jpg" alt="Образ BUTONelle у старой деревянной двери"></div>
+    <div class="rv">
+      <p class="eyebrow">Уфа · Instagram</p>
+      <h2 class="h2">Заходите в&nbsp;Direct</h2>
+      <p class="lead">Отзывы покупательниц и все новинки — в хайлайтах профиля. Вопросы по вещам и заказ — в сообщениях.</p>
+      <ul class="dlist">
+        <li><b>Instagram</b><a href="https://instagram.com/butonelle" target="_blank" rel="noopener">@butonelle · 5&nbsp;053 подписчиков</a></li>
+        <li><b>Заказ</b><a href="https://ig.me/m/butonelle" target="_blank" rel="noopener">Direct — ig.me/m/butonelle</a></li>
+        <li><b>Руководитель</b><a href="https://instagram.com/liana_hairullinai" target="_blank" rel="noopener">Лиана Хайруллина</a></li>
+        <li><b>Город</b><span>Уфа · собственное производство</span></li>
+      </ul>
+      <a class="btn" href="https://ig.me/m/butonelle" target="_blank" rel="noopener">Написать в Direct</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="fw" aria-hidden="true">BUT<span>ON</span>elle</p>
+    <span>BUTONelle — дизайнерская женская одежда, Уфа</span>
+    <span>Демо-концепт, не официальный сайт. Фото — из Instagram @butonelle.</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.documentElement.classList.add('js');
+
+  /* hero: letters spread on first scroll */
+  var word = document.getElementById('word'), photo = document.getElementById('heroPhoto');
+  /* seasons */
+  var sec = document.getElementById('seasons'), sticky = sec.querySelector('.seasons-sticky'),
+      track = document.getElementById('track'), chaps = [].slice.call(track.querySelectorAll('.chap')),
+      now = document.getElementById('seasonNow'), names = ['Осень','Весна','Верхняя одежда'];
+  var cols = chaps.map(function(c){var h=c.dataset.color;return [parseInt(h.substr(1,2),16),parseInt(h.substr(3,2),16),parseInt(h.substr(5,2),16)]});
+  var dist = 0, lastW = 0, H = innerHeight;
+  function size(){
+    if(reduce){sec.style.height='';return}
+    if(innerWidth !== lastW){ lastW = innerWidth; H = Math.min(innerHeight, 1100); }
+    sticky.style.height = H + 'px';
+    dist = Math.max(0, track.scrollWidth - innerWidth);
+    sec.style.height = (H + dist) + 'px';
+  }
+  function mix(a,b,t){return 'rgb('+a.map(function(v,i){return Math.round(v+(b[i]-v)*t)}).join(',')+')'}
+  var ticking=false;
+  function frame(){
+    ticking=false;
+    var y = scrollY;
+    var p = Math.min(1, y/420);
+    word.style.letterSpacing = (-0.035 + p*0.075).toFixed(4)+'em';
+    photo.style.transform = 'rotate('+(3-p*3)+'deg) translateY('+(p*-30)+'px)';
+    if(reduce) return;
+    var r = sec.getBoundingClientRect();
+    var prog = Math.min(1, Math.max(0, -r.top / (dist||1)));
+    var x = prog*dist;
+    track.style.transform = 'translate3d('+(-x)+'px,0,0)';
+    /* colour by which chapter crosses screen middle */
+    var mid = innerWidth*0.5, idx=0, t=0;
+    for(var i=0;i<chaps.length;i++){
+      var left = chaps[i].offsetLeft - x;
+      if(left < mid) idx=i;
+    }
+    if(idx < chaps.length-1){
+      var nl = chaps[idx+1].offsetLeft - x;
+      t = Math.max(0, 1 - (nl - mid)/(innerWidth*0.35));
+      t = Math.min(1, Math.max(0,t));
+    }
+    sec.style.background = idx < chaps.length-1 ? mix(cols[idx], cols[idx+1], t) : mix(cols[idx],cols[idx],0);
+    var cur = t>0.5 ? idx+1 : idx;
+    now.textContent = names[cur];
+    var dark = cur===1;
+    sec.querySelector('.h2').style.color = dark ? '#FAFAF8' : '';
+    now.style.color = dark ? '#FAFAF8' : '';
+  }
+  function req(){if(!ticking){ticking=true;requestAnimationFrame(frame)}}
+  addEventListener('scroll',req,{passive:true});
+  addEventListener('resize',function(){size();req()});
+  addEventListener('load',function(){size();req()});
+  size(); frame();
+
+  /* reveal */
+  var rv=[].slice.call(document.querySelectorAll('.rv'));
+  if('IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('pre');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    rv.forEach(function(el){var b=el.getBoundingClientRect();if(b.top>innerHeight){el.classList.add('pre');io.observe(el)}});
+  }
+
+  /* builder */
+  var msg=document.getElementById('msg'), note=document.getElementById('note');
+  function sel(id){return document.querySelector('#'+id+' [aria-pressed="true"]')}
+  function setImg(box, b){
+    var im=box.querySelector('img'), w=box.querySelector('.ph-word');
+    if(b.dataset.img){ if(w) w.remove(); im.style.display=''; im.src=b.dataset.img; im.style.objectPosition = box.id==='rBot' ? '50% 85%' : '50% 30%'; }
+    else { im.style.display='none'; if(!w){w=document.createElement('span');w.className='ph-word';box.appendChild(w)} w.textContent=b.querySelector('span').textContent; }
+  }
+  function update(){
+    var t=sel('tops'), b=sel('bottoms');
+    msg.value='Здравствуйте! Хочу образ: '+t.dataset.v+' + '+b.dataset.v+'. Подскажите, пожалуйста, наличие и размеры. Увидела на сайте.';
+    setImg(document.getElementById('rTop'),t); setImg(document.getElementById('rBot'),b);
+  }
+  ['tops','bottoms'].forEach(function(id){
+    document.getElementById(id).addEventListener('click',function(e){
+      var b=e.target.closest('.opt'); if(!b) return;
+      [].forEach.call(this.querySelectorAll('.opt'),function(o){o.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed','true'); update();
+    });
+  });
+  document.getElementById('copy').addEventListener('click',function(){
+    var done=function(){note.innerHTML='<span class="copied">Скопировано.</span> Откройте Direct и вставьте сообщение.'};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(msg.value).then(done,function(){msg.select();document.execCommand('copy');done()})}
+    else{msg.select();document.execCommand('copy');done()}
+  });
+  update();
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

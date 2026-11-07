@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>SENSUAL store — пляжная одежда и туники, доставка по миру</title><meta property="og:type" content="website"><meta property="og:title" content="SENSUAL store — пляжная одежда и туники, доставка по миру"><meta property="og:description" content="SENSUAL store: пляжные комплекты, туники и beachwear. В наличии и пошив по вашим меркам, международная доставка. Соберите комплект и отправьте заказ в Telegram или Direct."><meta property="og:image" content="https://pikold.github.io/demo-sites/sensual-store-co/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="SENSUAL store: пляжные комплекты, туники и beachwear. В наличии и пошив по вашим меркам, международная доставка. Соберите комплект и отправьте заказ в Telegram или Direct.">
+<link rel="stylesheet" href="../_fonts/playfair-display.css">
+<link rel="stylesheet" href="../_fonts/manrope.css">
+<style>
+:root{
+  --sun:#F2B33D; --sand:#EFE3CF; --coral:#E8685A; --sage:#9AA88A; --sea:#2C6E8F; --powder:#F4C9CF;
+  --ink:#2B211B; --ink2:#5a4a3e; --cream:#FBF6EC; --black:#1f1a17;
+  --serif:'Playfair Display', Georgia, serif; --sans:'Manrope', system-ui, sans-serif;
+  --sk:0deg; --aw:0px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--sand);color:var(--ink);font:16px/1.6 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sea);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1200px,100% - 32px);margin-inline:auto}
+.demo{background:var(--ink);color:var(--sand);font-size:12px;line-height:1.4;text-align:center;padding:7px 16px;position:relative;z-index:5}
+
+/* ---------- awning ---------- */
+.awning{position:relative;height:clamp(78px,10vw,120px);
+  background:repeating-linear-gradient(90deg,var(--sun) 0 64px,#fffaf0 64px 128px);
+  background-position:var(--aw) 0;box-shadow:inset 0 -10px 18px -12px rgba(80,50,0,.35)}
+.awning::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.18),rgba(0,0,0,.06))}
+.scallops{height:32px;margin-top:-1px;position:relative;z-index:2;
+  background:repeating-linear-gradient(90deg,var(--sun) 0 64px,#fffaf0 64px 128px);background-position:var(--aw) 0;
+  -webkit-mask:radial-gradient(circle 32px at 32px 0,#000 98%,transparent 100%) var(--aw) 0/64px 32px repeat-x;
+          mask:radial-gradient(circle 32px at 32px 0,#000 98%,transparent 100%) var(--aw) 0/64px 32px repeat-x;
+  filter:drop-shadow(0 4px 3px rgba(80,50,0,.18))}
+.tassels{height:26px;margin-top:-6px;position:relative;z-index:1;overflow:hidden}
+.tassels i{position:absolute;inset:0;background:repeating-linear-gradient(90deg,#f6ead2 0 2px,transparent 2px 5px);
+  transform:skewX(var(--sk));transform-origin:top;-webkit-mask:linear-gradient(#000 55%,transparent);mask:linear-gradient(#000 55%,transparent)}
+
+/* ---------- hero ---------- */
+.hero{background:var(--sand);position:relative}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:6px 0 0}
+.nav .mark{font:italic 600 22px/1 var(--serif);text-decoration:none;letter-spacing:.06em}
+.nav ul{display:flex;gap:6px;list-style:none;margin:0;padding:0}
+.nav ul a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;text-decoration:none;font-size:14px;font-weight:600}
+.nav ul a:hover{text-decoration:underline;text-decoration-color:var(--coral);text-underline-offset:5px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:999px;border:2px solid var(--ink);
+  background:var(--ink);color:var(--sand);font:700 15px/1 var(--sans);text-decoration:none;cursor:pointer;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.sun{background:var(--sun);border-color:var(--sun);color:var(--ink)}
+.btn.sm{min-height:44px;padding:0 16px;font-size:14px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,5vw,72px);align-items:center;padding:clamp(28px,5vw,64px) 0 clamp(48px,7vw,96px)}
+.kicker{font-size:13px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--ink2)}
+.logo{font-family:var(--serif);font-style:italic;font-weight:600;line-height:.86;margin:.18em 0 .1em;letter-spacing:.03em;font-size:clamp(52px,8.6vw,128px)}
+.logo small{display:block;font-size:.34em;font-weight:400;letter-spacing:.02em;margin:.1em 0 0 1.7em;color:var(--coral)}
+.motto{font:italic 400 clamp(22px,2.4vw,32px)/1.25 var(--serif);margin:18px 0 10px}
+.lead{max-width:34em;color:var(--ink2);margin:0 0 26px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px;padding:0;list-style:none}
+.chips li{padding:7px 14px;border-radius:999px;background:#fffaf0;font-size:13px;font-weight:600;border:1px solid rgba(43,33,27,.15)}
+.chips li b{color:var(--coral)}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.towel{padding:12px;background:repeating-linear-gradient(90deg,var(--powder) 0 14px,#fff 14px 28px);border-radius:4px;box-shadow:0 30px 60px -30px rgba(80,50,10,.45);transform:rotate(1.2deg)}
+.towel img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%}
+.towel figcaption{font-size:12px;padding:10px 4px 0;color:var(--ink2);font-weight:600;background:#fff;margin:0 -12px -12px;padding:10px 16px 12px}
+.hero-photo{position:relative}
+.sticker{position:absolute;left:-18px;bottom:44px;background:var(--sun);color:var(--ink);border-radius:50%;width:118px;height:118px;display:grid;place-items:center;text-align:center;
+  font:700 12px/1.25 var(--sans);letter-spacing:.06em;text-transform:uppercase;transform:rotate(-12deg);box-shadow:0 10px 24px -10px rgba(0,0,0,.35)}
+.sticker span{font:italic 600 19px/1 var(--serif);text-transform:none;letter-spacing:0;display:block}
+
+/* ---------- fringe dividers ---------- */
+.fringe{position:relative;height:38px;overflow:hidden;background:var(--next)}
+.fringe::before{content:"";position:absolute;left:0;right:0;top:0;height:10px;background:var(--band)}
+.fringe::after{content:"";position:absolute;left:0;right:0;top:9px;height:5px;background:radial-gradient(circle 2.3px at 3px 2.5px,var(--thread) 96%,transparent) 0 0/7px 5px repeat-x}
+.fringe i{position:absolute;left:-20px;right:-20px;top:12px;height:26px;
+  background:repeating-linear-gradient(90deg,var(--thread) 0 2px,transparent 2px 4px,var(--thread) 4px 5px,transparent 5px 7px);
+  transform:skewX(var(--sk));transform-origin:top;-webkit-mask:linear-gradient(#000 40%,transparent);mask:linear-gradient(#000 40%,transparent)}
+
+/* ---------- sections ---------- */
+section{position:relative}
+.sec{padding:clamp(56px,8vw,110px) 0}
+.h2{font:italic 600 clamp(36px,5.4vw,72px)/1 var(--serif);margin:0 0 14px;letter-spacing:-.01em}
+.sub{max-width:40em;color:var(--ink2);margin:0 0 clamp(28px,4vw,48px)}
+.label{font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--coral);margin:0 0 12px}
+
+/* catalog: loungers */
+.catalog{background:var(--cream)}
+.loungers{display:grid;gap:22px}
+.lounger{--c:var(--coral);--t:var(--ink);display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr) minmax(0,330px);align-items:stretch;
+  background:var(--c);color:var(--t);border-radius:6px;overflow:hidden;position:relative;box-shadow:0 22px 40px -28px rgba(60,35,10,.55)}
+.lounger::after{content:"";position:absolute;right:0;top:0;bottom:0;width:14px;background:repeating-linear-gradient(180deg,rgba(255,255,255,.55) 0 10px,transparent 10px 20px)}
+.lounger .ph{position:relative;min-height:260px}
+.lounger .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.lounger .info{padding:28px 30px;display:flex;flex-direction:column;justify-content:center}
+.lounger .tag{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;opacity:.8}
+.lounger h3{font:italic 600 clamp(28px,3.2vw,42px)/1.05 var(--serif);margin:8px 0 10px}
+.lounger p{margin:0;max-width:30em}
+.prices{padding:26px 40px 26px 26px;display:flex;flex-direction:column;justify-content:center;gap:2px;border-left:1px dashed color-mix(in srgb,var(--t) 35%,transparent)}
+.row{display:flex;align-items:baseline;gap:8px;font-weight:600;font-size:15px;padding:5px 0}
+.row .dots{flex:1;border-bottom:2px dotted color-mix(in srgb,var(--t) 40%,transparent);transform:translateY(-4px)}
+.row b{font:600 20px/1 var(--serif);white-space:nowrap}
+.total{margin-top:10px;padding-top:10px;border-top:2px solid color-mix(in srgb,var(--t) 50%,transparent);font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;display:flex;justify-content:space-between;gap:10px}
+.total b{font:italic 600 24px/1 var(--serif);letter-spacing:0;text-transform:none}
+.add{margin-top:14px;align-self:flex-start}
+.lounger .add{border-color:var(--t);background:transparent;color:var(--t)}
+.lounger .add:hover{background:var(--t);color:var(--c)}
+.l-sage{--c:var(--sage)}
+.l-powder{--c:var(--powder)}
+.l-black{--c:var(--black);--t:var(--sand)}
+.l-sand{--c:#e6d3b1}
+.big-price{font:italic 600 clamp(40px,4.5vw,58px)/1 var(--serif)}
+.swatches{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;padding:0;list-style:none}
+.swatches li{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:600}
+.swatches i{width:22px;height:22px;border-radius:50%;border:2px solid rgba(43,33,27,.35)}
+
+/* stock vs made-to-measure */
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.split > div{padding:clamp(44px,6vw,90px) clamp(20px,5vw,72px)}
+.split .stock{background:var(--sun)}
+.split .tailor{background:var(--sage)}
+.split h3{font:italic 600 clamp(32px,4.4vw,58px)/1 var(--serif);margin:0 0 16px}
+.split p{max-width:28em;margin:0 0 14px}
+.split ul{margin:16px 0 22px;padding:0;list-style:none;display:grid;gap:8px}
+.split li{padding-left:22px;position:relative;font-weight:600}
+.split li::before{content:"";position:absolute;left:0;top:.62em;width:12px;height:2px;background:var(--ink)}
+.split .mini{display:flex;gap:14px;align-items:center;margin-top:8px}
+.split .mini img{width:96px;height:120px;object-fit:cover;border-radius:4px;border:5px solid #fffaf0}
+
+/* lookbook */
+.look{background:var(--sand)}
+.mosaic{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:clamp(110px,13vw,190px);gap:12px}
+.mosaic figure{margin:0;position:relative;overflow:hidden;border-radius:4px;background:#e2d3b9}
+.mosaic img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.mosaic figure:hover img{transform:scale(1.04)}
+.mosaic figcaption{position:absolute;left:10px;bottom:10px;background:rgba(251,246,236,.92);font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px}
+.m1{grid-column:span 2;grid-row:span 4}
+.m2{grid-column:span 2;grid-row:span 2}
+.m3{grid-column:span 2;grid-row:span 2}
+.m4{grid-column:span 2;grid-row:span 2}
+.m5{grid-column:span 2;grid-row:span 2}
+.m6{grid-column:span 3;grid-row:span 2}
+.m7{grid-column:span 3;grid-row:span 2}
+
+/* builder */
+.builder{background:var(--cream)}
+.b-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,4vw,56px);align-items:start}
+.panel{background:#fff;border-radius:8px;padding:clamp(20px,3vw,34px);box-shadow:0 24px 50px -36px rgba(60,35,10,.5);border-top:10px solid var(--sun)}
+.seg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background:var(--sand);border-radius:999px;padding:4px;margin:0 0 22px}
+.seg label{position:relative}
+.seg input{position:absolute;opacity:0;inset:0}
+.seg span{display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:999px;font-weight:700;font-size:14px;cursor:pointer;text-align:center;padding:0 10px;transition:background .2s}
+.seg input:checked + span{background:var(--ink);color:var(--sand)}
+.seg input:focus-visible + span{outline:3px solid var(--sea);outline-offset:2px}
+fieldset{border:0;padding:0;margin:0 0 20px;min-width:0}
+legend{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--ink2);margin-bottom:10px;padding:0}
+.pieces{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.piece{position:relative}
+.piece input{position:absolute;opacity:0;inset:0}
+.piece span{display:flex;justify-content:space-between;align-items:center;gap:8px;min-height:52px;padding:8px 14px;border:2px solid #e5d8c2;border-radius:8px;cursor:pointer;font-weight:600;font-size:14px;transition:border-color .2s,background .2s}
+.piece span b{font:600 16px/1 var(--serif);white-space:nowrap}
+.piece span small{display:block;font-weight:500;font-size:11.5px;color:var(--ink2)}
+.piece input:checked + span{border-color:var(--ink);background:#fff7e3;box-shadow:inset 6px 0 0 var(--sun)}
+.piece input:focus-visible + span{outline:3px solid var(--sea);outline-offset:2px}
+.colors{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.colors[hidden]{display:none}
+.colors label{position:relative}
+.colors input{position:absolute;opacity:0;inset:0}
+.colors span{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px 0 8px;border:2px solid #e5d8c2;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer}
+.colors span i{width:22px;height:22px;border-radius:50%;border:2px solid rgba(43,33,27,.3)}
+.colors input:checked + span{border-color:var(--ink)}
+.colors input:focus-visible + span{outline:3px solid var(--sea)}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.fields label{display:grid;gap:4px;font-size:13px;font-weight:600}
+.fields input{font:500 16px var(--sans);min-height:46px;padding:0 12px;border:2px solid #e5d8c2;border-radius:8px;background:#fffdf8;color:var(--ink);width:100%}
+.fields input:focus{border-color:var(--ink);outline:none}
+.fields .wide{grid-column:1/-1}
+.measure[hidden]{display:none}
+.receipt{position:sticky;top:20px;background:var(--powder);border-radius:8px;padding:clamp(20px,3vw,32px);background-image:repeating-linear-gradient(90deg,transparent 0 22px,rgba(255,255,255,.45) 22px 44px)}
+.receipt .sum{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:14px}
+.receipt .sum b{font:italic 600 clamp(38px,4.6vw,56px)/1 var(--serif);white-space:nowrap}
+.receipt textarea{width:100%;min-height:230px;resize:vertical;border:0;border-radius:6px;padding:14px;font:500 14px/1.55 var(--sans);background:#fffdf8;color:var(--ink)}
+.receipt .acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.receipt .note{font-size:13px;color:var(--ink2);margin:12px 0 0}
+.copied{font-size:13px;font-weight:700;color:var(--ink);min-height:1.4em;margin:8px 0 0}
+
+/* how to order */
+.how{background:var(--sun)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:2px solid var(--ink)}
+.steps li{padding:22px 22px 6px 0;border-right:1px solid rgba(43,33,27,.25);margin-right:22px}
+.steps li:last-child{border-right:0;margin-right:0}
+.steps .n{font:italic 600 54px/1 var(--serif);color:#fffaf0;-webkit-text-stroke:1.5px var(--ink)}
+.steps h3{font-size:18px;margin:10px 0 6px}
+.steps p{margin:0;font-size:15px}
+
+/* social */
+.social{background:var(--sand)}
+.soc-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:center}
+.stats{display:flex;flex-wrap:wrap;gap:clamp(20px,4vw,56px);margin:10px 0 24px}
+.stats div{font-size:14px;font-weight:600;color:var(--ink2)}
+.stats b{display:block;font:italic 600 clamp(44px,5.5vw,76px)/1 var(--serif);color:var(--ink)}
+.hl{display:flex;flex-wrap:wrap;gap:12px;list-style:none;padding:0;margin:0}
+.hl li{display:grid;place-items:center;width:84px;height:84px;border-radius:50%;background:#fffaf0;border:3px solid var(--sun);font:italic 500 14px/1.1 var(--serif);text-align:center;padding:6px}
+.umb{border-radius:4px;overflow:hidden;position:relative}
+.umb img{width:100%;aspect-ratio:4/5;object-fit:cover}
+
+/* footer */
+footer{background:var(--black);color:var(--sand);padding:clamp(48px,6vw,80px) 0 28px}
+.f-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:32px;align-items:end}
+.f-logo{font:italic 600 clamp(52px,9vw,128px)/.9 var(--serif);margin:0}
+.f-logo span{color:var(--sun)}
+.f-links{display:grid;gap:10px}
+.f-links a{display:flex;justify-content:space-between;align-items:center;min-height:52px;border-bottom:1px solid rgba(239,227,207,.25);text-decoration:none;font-weight:600;font-size:17px}
+.f-links a:hover{color:var(--sun)}
+.fine{margin-top:40px;font-size:12px;opacity:.7;max-width:60em}
+footer .btn.sun{color:var(--ink)}
+
+.reveal{opacity:1;transform:none;transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .reveal.pre{transform:translateY(22px)}
+
+@media (max-width:980px){
+  .lounger{grid-template-columns:minmax(0,220px) minmax(0,1fr)}
+  .prices{grid-column:1/-1;border-left:0;border-top:1px dashed color-mix(in srgb,var(--t) 35%,transparent);padding:20px 34px 24px 26px}
+  .b-grid{grid-template-columns:minmax(0,1fr)}
+  .receipt{position:static}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps li:nth-child(2){border-right:0;margin-right:0}
+}
+@media (max-width:760px){
+  .nav ul{display:none}
+  .hero-grid{grid-template-columns:minmax(0,1fr);padding-top:18px}
+  .hero-photo{max-width:440px;width:100%;margin-inline:auto}
+  .sticker{left:auto;right:-6px;bottom:-24px;width:100px;height:100px;font-size:11px}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .mosaic{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:150px;gap:8px}
+  .m1{grid-column:span 1;grid-row:span 2}
+  .m2,.m3,.m4,.m5{grid-column:span 1;grid-row:span 2}
+  .m6,.m7{grid-column:span 2;grid-row:span 2}
+  .soc-grid,.f-grid{grid-template-columns:minmax(0,1fr)}
+  .umb{max-width:420px}
+}
+@media (max-width:560px){
+  .lounger{grid-template-columns:minmax(0,1fr)}
+  .lounger .ph{min-height:0;aspect-ratio:4/3.4}
+  .lounger .info{padding:22px 34px 6px 20px}
+  .prices{border-top:0;padding:10px 34px 22px 20px}
+  .pieces,.fields{grid-template-columns:minmax(0,1fr)}
+  .steps{grid-template-columns:minmax(0,1fr)}
+  .steps li{border-right:0;margin-right:0;border-bottom:1px solid rgba(43,33,27,.25);padding:18px 0}
+  .logo small{margin-left:1.2em}
+  .logo{font-size:clamp(52px,16vw,84px)}
+  .chips li{font-size:12px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+  .js .reveal.pre{transform:none}
+}
+</style>
+</head>
+<body>
+<div class="demo" role="note">Демо-концепт независимого разработчика — не официальный сайт SENSUAL store. Не согласован с владельцем, удаляется по первой просьбе.</div>
+
+<header class="hero" id="top">
+  <div class="awning" aria-hidden="true"></div>
+  <div class="scallops" aria-hidden="true"></div>
+  <div class="tassels" aria-hidden="true"><i></i></div>
+  <div class="wrap">
+    <nav class="nav" aria-label="Разделы">
+      <a class="mark" href="#top">SENSUAL</a>
+      <ul>
+        <li><a href="#catalog">Каталог</a></li>
+        <li><a href="#tailor">По меркам</a></li>
+        <li><a href="#builder">Собрать комплект</a></li>
+        <li><a href="#how">Как заказать</a></li>
+      </ul>
+      <a class="btn sm" href="https://t.me/sensual_store_co" target="_blank" rel="noopener">Telegram</a>
+    </nav>
+    <div class="hero-grid">
+      <div>
+        <div class="kicker">Пляжная одежда · Туники · Beachwear</div>
+        <h1 class="logo">SENSUAL<small>store</small></h1>
+        <p class="motto">Feel sensual, live free</p>
+        <p class="lead">Лёгкие комплекты с бахромой, длинные туники и костюмы для отпуска. Изделия в наличии и на пошив по вашим меркам — с доставкой по всему миру.</p>
+        <ul class="chips">
+          <li>Worldwide shipping</li>
+          <li>В наличии и <b>по меркам</b></li>
+          <li>Топ от 2&nbsp;900&nbsp;₽</li>
+        </ul>
+        <div class="cta">
+          <a class="btn sun" href="#builder">Собрать комплект</a>
+          <a class="btn ghost" href="#catalog">Смотреть цены</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <figure class="towel" style="margin:0">
+          <img src="img/p11.jpg" srcset="img/p11-m.jpg 680w, img/p11.jpg 1300w" sizes="(max-width:760px) 92vw, 40vw" alt="Комплект шалфейного цвета: длинная туника, шорты и топ с бахромой" fetchpriority="high">
+          <figcaption>Шалфей: туника, шорты, топ</figcaption>
+        </figure>
+        <div class="sticker"><div><span>доставка</span>по всему миру</div></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="fringe" style="--band:var(--sand);--thread:#d8c4a2;--next:var(--cream)" aria-hidden="true"><i></i></div>
+
+<section class="catalog sec" id="catalog" aria-labelledby="cat-h">
+  <div class="wrap">
+    <p class="label">Шезлонги с ценами</p>
+    <h2 class="h2" id="cat-h">Выбирайте по цвету ткани</h2>
+    <p class="sub">Цены — из постов бренда. Каждую вещь можно взять отдельно или собрать в комплект: кнопка добавит её в конструктор ниже.</p>
+
+    <div class="loungers">
+      <article class="lounger reveal">
+        <div class="ph"><img src="img/p10-m.jpg" alt="Коралловый комплект: топ и юбка с белой бахромой, блузка с широкими рукавами"></div>
+        <div class="info">
+          <span class="tag">Коралл · по вашим меркам</span>
+          <h3>Комплект с юбкой</h3>
+          <p>Топ, шорты, юбка и блузка с бахромой. Комплекты доступны к заказу с изготовлением по вашим меркам.</p>
+        </div>
+        <div class="prices">
+          <div class="row">Топ<span class="dots"></span><b>2&nbsp;900&nbsp;₽</b></div>
+          <div class="row">Шорты<span class="dots"></span><b>4&nbsp;500&nbsp;₽</b></div>
+          <div class="row">Юбка<span class="dots"></span><b>4&nbsp;000&nbsp;₽</b></div>
+          <div class="row">Блузка<span class="dots"></span><b>10&nbsp;500&nbsp;₽</b></div>
+          <button class="btn sm add" type="button" data-add="top,skirt,blouse2">В конструктор</button>
+        </div>
+      </article>
+
+      <article class="lounger l-sage reveal">
+        <div class="ph"><img src="img/p11-m.jpg" alt="Шалфейный костюм: длинная туника, шорты и кремовый топ" style="object-position:50% 25%"></div>
+        <div class="info">
+          <span class="tag">Шалфей · костюм</span>
+          <h3>Костюм с туникой</h3>
+          <p>Длинная туника в пол, шорты и топ. Костюм доступен к заказу.</p>
+        </div>
+        <div class="prices">
+          <div class="row">Туника<span class="dots"></span><b>10&nbsp;900&nbsp;₽</b></div>
+          <div class="row">Шорты<span class="dots"></span><b>4&nbsp;500&nbsp;₽</b></div>
+          <div class="row">Топ<span class="dots"></span><b>2&nbsp;900&nbsp;₽</b></div>
+          <div class="total">Весь костюм <b>18&nbsp;300&nbsp;₽</b></div>
+          <button class="btn sm add" type="button" data-add="top,shorts,tunicL">Костюм в конструктор</button>
+        </div>
+      </article>
+
+      <article class="lounger l-powder reveal">
+        <div class="ph"><img src="img/p1-m.jpg" alt="Пудровый костюм: топ, шорты с бахромой и блуза" style="object-position:50% 35%"></div>
+        <div class="info">
+          <span class="tag">Пудра · костюм</span>
+          <h3>Костюм с блузой</h3>
+          <p>Блуза с широкими рукавами, шорты и топ. Костюм доступен к заказу.</p>
+        </div>
+        <div class="prices">
+          <div class="row">Блуза<span class="dots"></span><b>6&nbsp;500&nbsp;₽</b></div>
+          <div class="row">Шорты<span class="dots"></span><b>4&nbsp;500&nbsp;₽</b></div>
+          <div class="row">Топ<span class="dots"></span><b>2&nbsp;900&nbsp;₽</b></div>
+          <div class="total">Весь костюм <b>13&nbsp;900&nbsp;₽</b></div>
+          <button class="btn sm add" type="button" data-add="top,shorts,blouse1">Костюм в конструктор</button>
+        </div>
+      </article>
+
+      <article class="lounger l-black reveal">
+        <div class="ph"><img src="img/p4-m.jpg" alt="Чёрная длинная модель с запахом и широкими рукавами на пляже" style="object-position:50% 30%"></div>
+        <div class="info">
+          <span class="tag">Чёрный · пудровый</span>
+          <h3>В двух цветах</h3>
+          <p>Доступно в чёрном и пудровом цвете. Ткань синтетика.</p>
+        </div>
+        <div class="prices">
+          <div class="big-price">9&nbsp;000&nbsp;₽</div>
+          <ul class="swatches" aria-label="Цвета">
+            <li><i style="background:#1b1715;border-color:#efe3cf"></i>чёрный</li>
+            <li><i style="background:#F4C9CF"></i>пудровый</li>
+          </ul>
+          <button class="btn sm add" type="button" data-add="model9">В конструктор</button>
+        </div>
+      </article>
+
+      <article class="lounger l-sand reveal">
+        <div class="ph"><img src="img/p6-m.jpg" alt="Серая длинная туника и шорты на песке" style="object-position:50% 40%"></div>
+        <div class="info">
+          <span class="tag">Туники · 4 цвета</span>
+          <h3>Туника</h3>
+          <p>Туники доступны к заказу в четырёх цветах — выберите свой в конструкторе.</p>
+        </div>
+        <div class="prices">
+          <div class="big-price">8&nbsp;900&nbsp;₽</div>
+          <ul class="swatches" aria-label="Цвета">
+            <li><i style="background:#fbf8f2"></i>белый</li>
+            <li><i style="background:#7a5236"></i>коричневый</li>
+            <li><i style="background:#1b1715"></i>чёрный</li>
+            <li><i style="background:#9fb0bb"></i>серо-голубой</li>
+          </ul>
+          <button class="btn sm add" type="button" data-add="tunic">В конструктор</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="fringe" style="--band:var(--cream);--thread:#e9c46e;--next:var(--sun)" aria-hidden="true"><i></i></div>
+
+<section class="split" id="tailor" aria-label="В наличии или по меркам">
+  <div class="stock">
+    <p class="label" style="color:var(--ink)">Вариант 1</p>
+    <h3>В наличии</h3>
+    <p>Часть изделий есть в наличии — их можно заказать сразу. Напишите, что понравилось, и уточните размер и цвет в переписке.</p>
+    <ul>
+      <li>Выбираете вещь из каталога</li>
+      <li>Пишете в Telegram или Direct</li>
+      <li>Отправка по всему миру</li>
+    </ul>
+    <div class="mini"><img src="img/p3-m.jpg" alt="Коралловые топ и юбка с кремовой бахромой, раскладка"><img src="img/p13-m.jpg" alt="Кремовый топ с бахромой и шорты на пуговицах"></div>
+  </div>
+  <div class="tailor">
+    <p class="label" style="color:var(--ink)">Вариант 2</p>
+    <h3>Пошив по вашим меркам</h3>
+    <p>Комплекты доступны с изготовлением по вашим меркам. В конструкторе есть поля для роста и обхватов — они сразу попадут в текст заказа.</p>
+    <ul>
+      <li>Рост</li>
+      <li>Обхват груди, талии, бёдер</li>
+      <li>Пожелания по цвету и модели</li>
+    </ul>
+    <a class="btn" href="#builder" data-mode="tailor">Указать мерки</a>
+  </div>
+</section>
+
+<div class="fringe" style="--band:var(--sage);--thread:#7f8d70;--next:var(--sand)" aria-hidden="true"><i></i></div>
+
+<section class="look sec" aria-labelledby="look-h">
+  <div class="wrap">
+    <p class="label">Лукбук</p>
+    <h2 class="h2" id="look-h">Солнце, бахрома и полоска</h2>
+    <p class="sub">Съёмки из профиля @sensual_store_co.</p>
+    <div class="mosaic">
+      <figure class="m1 reveal"><img src="img/p12-m.jpg" alt="Длинная шалфейная туника со спины на фоне города"><figcaption>Туника в пол</figcaption></figure>
+      <figure class="m2 reveal"><img src="img/p5-m.jpg" alt="Пудровый полосатый комплект: топ, шорты на пуговицах, кардиган с бахромой" style="object-position:50% 40%"></figure>
+      <figure class="m3 reveal"><img src="img/p14-m.jpg" alt="Жёлто-белые пляжные зонты на фоне неба"></figure>
+      <figure class="m4 reveal"><img src="img/p9-m.jpg" alt="Шалфейный костюм с длинной туникой на набережной" style="object-position:50% 35%"></figure>
+      <figure class="m5 reveal"><img src="img/p13-m.jpg" alt="Кремовый топ-пончо с бахромой и шорты" style="object-position:50% 30%"></figure>
+      <figure class="m6 reveal"><img src="img/p8.jpg" alt="Два полосатых комплекта с бахромой: серый и пудровый" style="object-position:50% 30%"><figcaption>Полоска</figcaption></figure>
+      <figure class="m7 reveal"><img src="img/p7.jpg" alt="Розовые полосатые подушки шезлонга у бирюзовой воды" style="object-position:50% 60%"></figure>
+    </div>
+  </div>
+</section>
+
+<div class="fringe" style="--band:var(--sand);--thread:#e6a9b1;--next:var(--cream)" aria-hidden="true"><i></i></div>
+
+<section class="builder sec" id="builder" aria-labelledby="b-h">
+  <div class="wrap">
+    <p class="label">Конструктор комплекта</p>
+    <h2 class="h2" id="b-h">Соберите свой комплект</h2>
+    <p class="sub">Отметьте вещи — сумма посчитается сама, а текст заказа соберётся для Telegram или Direct.</p>
+    <div class="b-grid">
+      <form class="panel" id="kit" onsubmit="return false">
+        <div class="seg" role="radiogroup" aria-label="Как шить">
+          <label><input type="radio" name="mode" value="stock" checked><span>Из наличия</span></label>
+          <label><input type="radio" name="mode" value="tailor"><span>По моим меркам</span></label>
+        </div>
+        <fieldset>
+          <legend>Вещи</legend>
+          <div class="pieces">
+            <label class="piece"><input type="checkbox" name="p" value="top"><span>Топ <b>2&nbsp;900&nbsp;₽</b></span></label>
+            <label class="piece"><input type="checkbox" name="p" value="shorts"><span>Шорты <b>4&nbsp;500&nbsp;₽</b></span></label>
+            <label class="piece"><input type="checkbox" name="p" value="skirt"><span>Юбка <b>4&nbsp;000&nbsp;₽</b></span></label>
+            <label class="piece"><input type="checkbox" name="p" value="tunicL"><span><span style="all:unset">Туника<small>из костюма</small></span><b>10&nbsp;900&nbsp;₽</b></span></label>
+            <label class="piece"><input type="checkbox" name="p" value="blouse1"><span><span style="all:unset">Блуза<small>из костюма с блузой</small></span><b>6&nbsp;500&nbsp;₽</b></span></label>
+            <label class="piece"><input type="checkbox" name="p" value="blouse2"><span><span style="all:unset">Блузка<small>из комплекта с юбкой</small></span><b>10&nbsp;500&nbsp;₽</b></span></label>
+            <label class="piece"><input type="checkbox" name="p" value="tunic"><span><span style="all:unset">Туника<small>4 цвета</small></span><b>8&nbsp;900&nbsp;₽</b></span></label>
+            <label class="piece"><input type="checkbox" name="p" value="model9"><span><span style="all:unset">Модель<small>чёрный / пудровый</small></span><b>9&nbsp;000&nbsp;₽</b></span></label>
+          </div>
+          <div class="colors" id="tunicColors" hidden role="radiogroup" aria-label="Цвет туники 8 900 ₽">
+            <label><input type="radio" name="tc" value="белый" checked><span><i style="background:#fbf8f2"></i>белый</span></label>
+            <label><input type="radio" name="tc" value="коричневый"><span><i style="background:#7a5236"></i>коричневый</span></label>
+            <label><input type="radio" name="tc" value="чёрный"><span><i style="background:#1b1715"></i>чёрный</span></label>
+            <label><input type="radio" name="tc" value="серо-голубой"><span><i style="background:#9fb0bb"></i>серо-голубой</span></label>
+          </div>
+          <div class="colors" id="m9Colors" hidden role="radiogroup" aria-label="Цвет модели 9 000 ₽">
+            <label><input type="radio" name="mc" value="чёрный" checked><span><i style="background:#1b1715"></i>чёрный</span></label>
+            <label><input type="radio" name="mc" value="пудровый"><span><i style="background:#F4C9CF"></i>пудровый</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="measure" id="measure" hidden>
+          <legend>Мои мерки, см</legend>
+          <div class="fields">
+            <label>Рост<input inputmode="numeric" name="h" autocomplete="off" placeholder="168"></label>
+            <label>Обхват груди<input inputmode="numeric" name="b" autocomplete="off" placeholder="88"></label>
+            <label>Обхват талии<input inputmode="numeric" name="w" autocomplete="off" placeholder="66"></label>
+            <label>Обхват бёдер<input inputmode="numeric" name="hp" autocomplete="off" placeholder="94"></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Детали</legend>
+          <div class="fields">
+            <label class="wide">Цвет или модель (можно ссылку на пост)<input name="note" autocomplete="off" placeholder="например, как в шалфейном костюме"></label>
+            <label class="wide">Страна и город доставки<input name="city" autocomplete="off" placeholder="например, Дубай"></label>
+          </div>
+        </fieldset>
+      </form>
+      <aside class="receipt" aria-live="polite">
+        <div class="sum"><span style="font-weight:700">Итого</span><b id="sum">0&nbsp;₽</b></div>
+        <label for="msg" class="label" style="display:block;color:var(--ink)">Текст заказа</label>
+        <textarea id="msg" readonly></textarea>
+        <div class="acts">
+          <button class="btn" type="button" id="copy">Скопировать</button>
+          <a class="btn sun" href="https://t.me/sensual_store_co" target="_blank" rel="noopener">Telegram</a>
+          <a class="btn ghost" href="https://ig.me/m/sensual_store_co" target="_blank" rel="noopener">Direct</a>
+        </div>
+        <p class="copied" id="copied"></p>
+        <p class="note">Скопируйте текст и вставьте в чат. Сумма — по ценам из постов; доставку и наличие уточнят в переписке.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<div class="fringe" style="--band:var(--cream);--thread:#e9c46e;--next:var(--sun)" aria-hidden="true"><i></i></div>
+
+<section class="how sec" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <h2 class="h2" id="how-h">Как заказать</h2>
+    <p class="sub" style="color:var(--ink)">Заказ принимают в переписке — так было и раньше, просто теперь всё собрано заранее.</p>
+    <ol class="steps">
+      <li class="reveal"><div class="n">01</div><h3>Выберите</h3><p>Вещь из каталога или целый костюм — цены перед глазами.</p></li>
+      <li class="reveal"><div class="n">02</div><h3>Наличие или мерки</h3><p>Возьмите готовое или укажите рост и обхваты для пошива.</p></li>
+      <li class="reveal"><div class="n">03</div><h3>Отправьте текст</h3><p>Скопируйте готовый заказ в Telegram или Direct.</p></li>
+      <li class="reveal"><div class="n">04</div><h3>Получите</h3><p>Worldwide shipping — международная доставка.</p></li>
+    </ol>
+  </div>
+</section>
+
+<div class="fringe" style="--band:var(--sun);--thread:#c98f22;--next:var(--sand)" aria-hidden="true"><i></i></div>
+
+<section class="social sec" aria-labelledby="soc-h">
+  <div class="wrap soc-grid">
+    <div>
+      <p class="label">@sensual_store_co</p>
+      <h2 class="h2" id="soc-h">Пляжный клуб в Instagram</h2>
+      <div class="stats">
+        <div><b>1&nbsp;431</b>подписчиков</div>
+        <div><b>566</b>публикаций</div>
+      </div>
+      <p class="sub" style="margin-bottom:18px">В актуальном профиля — прайс, доставка и уход за вещами.</p>
+      <ul class="hl" aria-label="Актуальное в профиле">
+        <li>you&amp;<br>sensual</li><li>price</li><li>delivery</li><li>about us</li><li>уход</li>
+      </ul>
+      <p style="margin-top:26px"><a class="btn" href="https://instagram.com/sensual_store_co" target="_blank" rel="noopener">Открыть Instagram</a></p>
+    </div>
+    <figure class="umb reveal" style="margin:0"><img src="img/p14-m.jpg" alt="Жёлто-белые зонты пляжного клуба и надпись SENSUAL store"></figure>
+  </div>
+</section>
+
+<div class="fringe" style="--band:var(--sand);--thread:#d8c4a2;--next:var(--black)" aria-hidden="true"><i></i></div>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <p class="f-logo">SENSUAL<br><span>store</span></p>
+        <p style="font:italic 400 22px/1.3 var(--serif);margin:16px 0 0">Feel sensual, live free</p>
+      </div>
+      <div class="f-links">
+        <a href="https://t.me/sensual_store_co" target="_blank" rel="noopener">Telegram <span>t.me/sensual_store_co</span></a>
+        <a href="https://ig.me/m/sensual_store_co" target="_blank" rel="noopener">Instagram Direct <span>@sensual_store_co</span></a>
+        <a href="#builder">Собрать комплект <span>→</span></a>
+      </div>
+    </div>
+    <p class="fine">Демо-концепт независимого разработчика — не официальный сайт SENSUAL store. Не согласован с владельцем, удаляется по первой просьбе. Фото — из публичного профиля бренда.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var root=document.documentElement;
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* reveal */
+  var els=[].slice.call(document.querySelectorAll('.reveal'));
+  if('IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('pre');io.unobserve(e.target)}})},{rootMargin:'0px 0px -6% 0px'});
+    els.forEach(function(el){var r=el.getBoundingClientRect();if(r.top>innerHeight){el.classList.add('pre');io.observe(el)}});
+    setTimeout(function(){els.forEach(function(el){el.classList.remove('pre')})},4000);
+  }
+
+  /* motion: fringe sway by scroll velocity + awning drift */
+  if(!reduce){
+    var last=scrollY,vel=0,running=false;
+    function tick(){
+      var y=scrollY,d=y-last;last=y;
+      vel=vel*0.86+d*0.14;
+      var sk=Math.max(-22,Math.min(22,vel*1.1));
+      root.style.setProperty('--sk',sk.toFixed(2)+'deg');
+      root.style.setProperty('--aw',(-y*0.35).toFixed(1)+'px');
+      if(Math.abs(vel)>0.02){requestAnimationFrame(tick)}else{running=false;root.style.setProperty('--sk','0deg')}
+    }
+    addEventListener('scroll',function(){if(!running){running=true;requestAnimationFrame(tick)}},{passive:true});
+  }
+
+  /* builder */
+  var P={top:['Топ',2900],shorts:['Шорты',4500],skirt:['Юбка',4000],tunicL:['Туника (из костюма)',10900],blouse1:['Блуза',6500],blouse2:['Блузка',10500],tunic:['Туника',8900],model9:['Модель в чёрном/пудровом',9000]};
+  var form=document.getElementById('kit'),msg=document.getElementById('msg'),sumEl=document.getElementById('sum');
+  var tc=document.getElementById('tunicColors'),mc=document.getElementById('m9Colors'),ms=document.getElementById('measure');
+  function fmt(n){return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,' ')+' ₽'}
+  function val(n){var el=form.elements[n];return el?String(el.value||'').trim():''}
+  function update(){
+    var mode=form.querySelector('[name=mode]:checked').value;
+    var picked=[].slice.call(form.querySelectorAll('[name=p]:checked')).map(function(i){return i.value});
+    tc.hidden=picked.indexOf('tunic')<0; mc.hidden=picked.indexOf('model9')<0; ms.hidden=mode!=='tailor';
+    var sum=0,lines=[];
+    picked.forEach(function(k){var p=P[k];sum+=p[1];var extra='';
+      if(k==='tunic')extra=', цвет: '+form.querySelector('[name=tc]:checked').value;
+      if(k==='model9')extra=', цвет: '+form.querySelector('[name=mc]:checked').value;
+      lines.push('— '+p[0]+extra+' — '+fmt(p[1]));});
+    sumEl.textContent=fmt(sum);
+    var t='Здравствуйте! Хочу заказать в SENSUAL store:\n';
+    t+=lines.length?lines.join('\n'):'— (выберите вещи)';
+    t+='\nИтого по прайсу: '+fmt(sum);
+    t+='\nВариант: '+(mode==='tailor'?'пошив по моим меркам':'из наличия');
+    if(mode==='tailor'){
+      var m=[['Рост','h'],['Грудь','b'],['Талия','w'],['Бёдра','hp']].map(function(a){var v=val(a[1]);return v?a[0]+' '+v+' см':''}).filter(Boolean);
+      t+='\nМерки: '+(m.length?m.join(', '):'пришлю');
+    }
+    if(val('note'))t+='\nЦвет/модель: '+val('note');
+    if(val('city'))t+='\nДоставка: '+val('city');
+    t+='\nПодскажите, пожалуйста, по наличию и доставке.';
+    msg.value=t;
+  }
+  form.addEventListener('input',update);form.addEventListener('change',update);
+  document.querySelectorAll('[data-add]').forEach(function(b){b.addEventListener('click',function(){
+    b.getAttribute('data-add').split(',').forEach(function(k){var i=form.querySelector('[name=p][value='+k+']');if(i)i.checked=true});
+    update();document.getElementById('builder').scrollIntoView({behavior:reduce?'auto':'smooth'});
+  })});
+  document.querySelectorAll('[data-mode]').forEach(function(a){a.addEventListener('click',function(){
+    form.querySelector('[name=mode][value='+a.getAttribute('data-mode')+']').checked=true;update();
+  })});
+  var cp=document.getElementById('copied');
+  document.getElementById('copy').addEventListener('click',function(){
+    function ok(){cp.textContent='Скопировано — вставьте в Telegram или Direct'}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(msg.value).then(ok,function(){msg.select();document.execCommand('copy');ok()})}
+    else{msg.select();document.execCommand('copy');ok()}
+  });
+  update();
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Chumakova Maryam — платья и платки с ингушским орнаментом, Москва</title><meta property="og:type" content="website"><meta property="og:title" content="Chumakova Maryam — платья и платки с ингушским орнаментом, Москва"><meta property="og:description" content="Chumakova Maryam: чёрные платья и платки с ингушским орнаментом «истинг». Дизайнер одежды, модельер-конструктор, художник, Москва. Модели ГОРЯНКА, КАМЕЛИЯ, АЗАЛИЯ, АМИРА и другие. Заказ в Direct."><meta property="og:image" content="https://pikold.github.io/demo-sites/maryamchumakova-fashion/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Chumakova Maryam: чёрные платья и платки с ингушским орнаментом «истинг». Дизайнер одежды, модельер-конструктор, художник, Москва. Модели ГОРЯНКА, КАМЕЛИЯ, АЗАЛИЯ, АМИРА и другие. Заказ в Direct.">
+<link rel="stylesheet" href="../_fonts/playfair-display.css">
+<link rel="stylesheet" href="../_fonts/rubik.css">
+<style>
+:root{
+  --white:#FAFAF7; --black:#0D0D0D; --red:#C1121F; --pearl:#EDE6DA; --grey:#6E6A64;
+  --line:rgba(13,13,13,.14);
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+  --sans:"Rubik","Segoe UI",system-ui,-apple-system,Arial,sans-serif;
+  --ease:cubic-bezier(.65,0,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--white);color:var(--black);font:400 17px/1.6 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button,input,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{width:min(1240px,100% - 32px);margin-inline:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* demo banner */
+.demo{background:var(--black);color:var(--pearl);font-size:12.5px;line-height:1.4;text-align:center;padding:7px 16px}
+
+/* header */
+.top{position:sticky;top:0;z-index:30;background:rgba(250,250,247,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;min-height:64px;gap:16px}
+.nav{display:flex;gap:26px;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+.nav a{text-decoration:none;padding:12px 0}
+.nav a:hover{color:var(--red)}
+.logo{font:italic 500 24px/1 var(--serif);text-decoration:none;display:flex;align-items:center;gap:10px;white-space:nowrap}
+.logo svg{width:22px;height:28px;color:var(--red)}
+.top .cta{justify-self:end}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;border:1.5px solid var(--black);background:var(--black);color:var(--white);text-decoration:none;font-weight:500;font-size:15px;letter-spacing:.02em;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.btn:hover{background:var(--red);border-color:var(--red)}
+.btn.ghost{background:transparent;color:var(--black)}
+.btn.ghost:hover{background:var(--black);color:var(--white);border-color:var(--black)}
+.btn.red{background:var(--red);border-color:var(--red)}
+.btn.red:hover{background:var(--black);border-color:var(--black)}
+
+/* ornament */
+.orn{color:var(--black)}
+.orn.r{color:var(--red)}
+.mark{display:block;width:34px;height:42px;color:var(--red);margin:0 auto 18px}
+
+/* hero */
+.hero{position:relative;padding:40px 0 64px;overflow:hidden}
+.hero .kick{text-align:center;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--grey)}
+.hero h1{text-align:center;font:italic 400 clamp(50px,8.4vw,124px)/.95 var(--serif);letter-spacing:-.02em;margin:14px 0 30px}
+.hero h1 span{font-style:normal;color:var(--red)}
+.stage{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,170px) minmax(0,400px) minmax(0,170px) minmax(0,1fr);align-items:end;gap:0}
+.stage .ph{position:relative;aspect-ratio:3/4;background:var(--pearl)}
+.stage .ph img{width:100%;height:100%;object-fit:cover}
+.stage .ph::after{content:"";position:absolute;left:50%;top:-22px;bottom:-22px;width:1px;background:var(--red);opacity:.5}
+.half{height:100%;align-self:stretch;display:flex}
+.half svg{width:100%;height:100%}
+.half.l svg{transform:scaleX(-1)}
+.side{padding:0 28px 6px;font-size:15px;color:var(--grey)}
+.side.l{text-align:right}
+.side b{display:block;font:500 13px/1.3 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--black);margin-bottom:8px}
+.side .price{font:500 32px/1.1 var(--serif);color:var(--black);margin:6px 0 14px}
+.side .btn{margin-top:4px}
+.side p+p{margin-top:10px}
+
+/* mirror reveal */
+.mw{display:block}
+.js .mirror>*{clip-path:inset(0 50% 0 50%);transition:clip-path 1.6s var(--ease) .15s}
+.js .mirror.in>*{clip-path:inset(0 0 0 0)}
+.js .half.l .grow{clip-path:inset(0 0 0 100%)}
+.js .half.r .grow{clip-path:inset(0 100% 0 0)}
+.js .half .grow{transition:clip-path 1.5s var(--ease) .25s}
+.js .half.in .grow{clip-path:inset(0 0 0 0)}
+.js .fade{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s var(--ease)}
+.js .fade.in{opacity:1;transform:none}
+
+/* stats */
+.stats{border-block:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.stats div{padding:26px 12px;text-align:center;border-left:1px solid var(--line)}
+.stats div:first-child{border-left:0}
+.stats strong{display:block;font:500 34px/1.1 var(--serif)}
+.stats span{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--grey)}
+
+/* section head */
+section{position:relative}
+.sec{padding:110px 0}
+.head{text-align:center;max-width:720px;margin:0 auto 56px}
+.eyebrow{font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--red);font-weight:500}
+h2{font:400 clamp(36px,5vw,64px)/1.05 var(--serif);letter-spacing:-.01em;margin:12px 0 16px}
+h2 em{color:var(--red)}
+.lead{color:var(--grey);font-size:18px}
+
+/* index of models */
+.index{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 80px;position:relative;max-width:1060px;margin:0 auto}
+.index::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--red);opacity:.45}
+.index button{display:flex;align-items:baseline;gap:16px;width:100%;min-height:64px;padding:16px 4px;border:0;border-bottom:1px solid var(--line);background:none;cursor:pointer;text-align:left}
+.index button .n{font:500 14px var(--sans);color:var(--red);min-width:26px}
+.index button .t{font:400 clamp(24px,2.6vw,34px)/1.1 var(--serif);letter-spacing:.04em}
+.index button .dots{flex:1;border-bottom:1px dotted rgba(13,13,13,.35);transform:translateY(-6px)}
+.index button .go{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--grey);transition:color .2s}
+.index button:hover .t,.index button:hover .go{color:var(--red)}
+.index .col:first-child button{flex-direction:row-reverse;text-align:right}
+.index-note{text-align:center;margin-top:34px;color:var(--grey);font-size:15px}
+.index-note a{color:var(--black)}
+
+/* lookbook */
+.look{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr) minmax(0,1fr);gap:28px;align-items:start}
+.look figure{margin:0}
+.look .frame{overflow:hidden;background:var(--pearl);position:relative}
+.look .frame img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.look figure:hover img{transform:scale(1.04)}
+.look .a .frame,.look .c .frame{aspect-ratio:3/4.2}
+.look .b .frame{aspect-ratio:4/5}
+.look .a,.look .c{margin-top:120px}
+.look figcaption{font-size:14px;color:var(--grey);margin-top:12px;display:flex;gap:10px}
+.look figcaption i{font:italic 500 15px var(--serif);color:var(--red);font-style:italic}
+.look .b figcaption{justify-content:center;text-align:center}
+.look .a figcaption{justify-content:flex-end;text-align:right}
+
+/* stock dress */
+.stock{background:var(--black);color:var(--white)}
+.stock .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;align-items:center}
+.stock .frame{aspect-ratio:4/5;overflow:hidden}
+.stock .frame img{width:100%;height:100%;object-fit:cover;object-position:50% 0}
+.stock .eyebrow{color:#ff5a63}
+.stock h2 em{color:#ff5a63}
+.stock .q{font:italic 400 22px/1.45 var(--serif);color:var(--pearl);margin-bottom:28px}
+.spec{border-top:1px solid rgba(250,250,247,.2);margin-bottom:30px}
+.spec div{display:grid;grid-template-columns:minmax(0,150px) minmax(0,1fr);padding:14px 0;border-bottom:1px solid rgba(250,250,247,.2)}
+.spec dt{color:#b3aea6;font-size:14px;letter-spacing:.1em;text-transform:uppercase}
+.spec dd{font-size:17px}
+.big-price{font:500 clamp(44px,5vw,64px)/1 var(--serif);margin-bottom:22px}
+.stock .btn{background:var(--white);color:var(--black);border-color:var(--white)}
+.stock .btn:hover{background:var(--red);color:var(--white);border-color:var(--red)}
+.stock .small{color:#b3aea6;font-size:14px;margin-top:14px}
+
+/* how the pattern is born */
+.born .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr) minmax(0,1fr);gap:48px;align-items:center}
+.born .frame{aspect-ratio:1/1;overflow:hidden}
+.born .frame img{width:100%;height:100%;object-fit:cover;object-position:50% 0}
+.born .center{display:flex;justify-content:center}
+.born .center svg{width:100%;max-width:300px;height:auto;aspect-ratio:4/5}
+.steps{list-style:none;counter-reset:s}
+.steps li{counter-increment:s;padding:20px 0 20px 64px;border-bottom:1px solid var(--line);position:relative}
+.steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:18px;font:500 30px/1 var(--serif);color:var(--red)}
+.steps b{display:block;font-weight:500;margin-bottom:4px}
+.steps span{color:var(--grey);font-size:15.5px}
+.born h2{text-align:left}
+.born .intro{margin-bottom:18px}
+
+/* scarf module */
+.scarf{background:var(--pearl)}
+.scarf .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 16px;align-items:stretch}
+.sq{aspect-ratio:1/1;position:relative;overflow:hidden}
+.sq img{width:100%;height:100%;object-fit:cover;object-position:50% 0}
+.sq svg{width:100%;height:100%;display:block}
+.sq .dim{position:absolute;font-size:12px;letter-spacing:.2em;color:var(--white);text-transform:uppercase}
+.sq .dim.x{left:50%;bottom:14px;transform:translateX(-50%)}
+.sq .dim.y{right:6px;top:50%;transform:translateY(-50%) rotate(90deg)}
+.scarf-info{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);gap:40px;padding:48px 0 0;align-items:end}
+.scarf-info h3{font:400 clamp(32px,3.6vw,48px)/1.05 var(--serif)}
+.scarf-info h3 em{color:var(--red)}
+.scarf-info .p{font:500 40px/1 var(--serif)}
+.scarf-info ul{list-style:none;color:var(--grey);font-size:15.5px}
+.scarf-info li{padding:6px 0;border-bottom:1px solid rgba(13,13,13,.12)}
+.scarf-info li b{color:var(--black);font-weight:500}
+.scarf .note{grid-column:1/-1;margin-top:28px;color:var(--grey);font-size:15px}
+
+/* pearls */
+.pearl .wrap{display:grid;grid-template-columns:minmax(0,1fr) 60px minmax(0,1fr);gap:56px;align-items:center}
+.pearl .frame{aspect-ratio:4/5;overflow:hidden}
+.pearl .frame img{width:100%;height:100%;object-fit:cover;object-position:50% 72%;transform:scale(1.35);transform-origin:50% 72%}
+.pearls{display:flex;flex-direction:column;align-items:center;gap:30px;position:relative;padding:20px 0}
+.pearls::before{content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;background:var(--line)}
+.pearls i{width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff 0 18%,#f3eee6 32%,#d9cfbf 72%,#bfb29e 100%);box-shadow:0 2px 6px rgba(13,13,13,.18);position:relative}
+.js .pearls i{transform:scale(0);transition:transform .7s cubic-bezier(.3,1.6,.5,1)}
+.js .pearls.in i{transform:scale(1)}
+.pearl blockquote{font:italic 400 clamp(30px,3.4vw,46px)/1.2 var(--serif)}
+.pearl blockquote em{color:var(--red)}
+.pearl cite{display:block;margin-top:20px;font-style:normal;color:var(--grey);font-size:15px}
+
+/* builder */
+.order{background:var(--white);border-top:1px solid var(--line)}
+.builder{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px;align-items:start}
+fieldset{border:0;margin-bottom:30px}
+legend{font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;margin-bottom:14px}
+legend small{letter-spacing:0;text-transform:none;color:var(--grey);font-weight:400;font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.chips span{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border:1.5px solid var(--line);border-radius:999px;font-size:14.5px;letter-spacing:.04em;transition:all .2s;cursor:pointer;background:#fff}
+.chips input:checked+span{background:var(--black);color:var(--white);border-color:var(--black)}
+.chips input:focus-visible+span{outline:3px solid var(--red);outline-offset:2px}
+.chips .sw{width:16px;height:16px;border-radius:50%;border:1px solid rgba(13,13,13,.35)}
+.field{display:block}
+.field textarea,.field input{width:100%;border:1.5px solid var(--line);background:#fff;border-radius:14px;padding:14px 16px;font-size:16px;resize:vertical}
+.field textarea{min-height:92px}
+.field textarea:focus,.field input:focus{border-color:var(--black);outline:none}
+.preview{position:sticky;top:96px;background:var(--black);color:var(--white);padding:30px;border-radius:4px}
+.preview .pv{display:flex;align-items:center;gap:22px;margin-bottom:22px;padding-bottom:22px;border-bottom:1px solid rgba(250,250,247,.18)}
+.preview .pv svg{width:74px;height:92px;flex:none}
+.preview .pv strong{display:block;font:italic 400 30px/1.1 var(--serif)}
+.preview .pv span{font-size:14px;color:#b3aea6}
+.preview pre{white-space:pre-wrap;font:400 15px/1.6 var(--sans);color:var(--pearl);background:rgba(250,250,247,.06);padding:16px;border-radius:4px;margin-bottom:18px;min-height:150px}
+.preview .row{display:flex;flex-wrap:wrap;gap:10px}
+.preview .btn{flex:1 1 180px}
+.preview .btn.ghost{color:var(--white);border-color:rgba(250,250,247,.5)}
+.preview .btn.ghost:hover{background:var(--white);color:var(--black)}
+.preview .hint{font-size:13.5px;color:#b3aea6;margin-top:14px}
+.ok{color:#7fd39a}
+
+/* how to order */
+.how{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);border-top:1px solid var(--black);margin-top:72px}
+.how div{padding:26px 22px 0 0}
+.how div+div{padding-left:22px;border-left:1px solid var(--line)}
+.how b{display:block;font:400 26px/1.1 var(--serif);margin:8px 0 8px}
+.how span{color:var(--grey);font-size:15px}
+.how small{color:var(--red);font-weight:500;letter-spacing:.14em}
+
+/* proof + footer */
+.proof{background:var(--black);color:var(--white);text-align:center;padding:96px 0;overflow:hidden}
+.proof .mark{color:var(--red)}
+.proof h2{max-width:900px;margin:0 auto 18px}
+.proof p{color:#b3aea6;max-width:640px;margin:0 auto 32px}
+.proof .btn{background:var(--white);color:var(--black);border-color:var(--white)}
+.proof .btn:hover{background:var(--red);color:var(--white);border-color:var(--red)}
+.proof .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.proof .btn.ghost{background:transparent;color:var(--white);border-color:rgba(250,250,247,.5)}
+.foot{padding:36px 0 40px;font-size:14px;color:var(--grey)}
+.foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+.foot a{color:var(--black);padding:12px 0}
+
+.mbar{display:none}
+
+@media (max-width:1100px){
+  .nav{display:none}
+  .top .wrap{grid-template-columns:minmax(0,1fr) auto}
+  .stage{grid-template-columns:minmax(0,1fr) minmax(0,130px) minmax(0,340px) minmax(0,130px) minmax(0,1fr)}
+  .side{padding:0 16px 6px;font-size:14px}
+  .born .wrap{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .born .center{display:none}
+}
+@media (max-width:860px){
+  body{font-size:16px;padding-bottom:76px}
+  .sec{padding:76px 0}
+  .hero{padding:26px 0 40px}
+  .hero h1{margin:10px 0 22px}
+  .stage{grid-template-columns:minmax(0,1fr) minmax(0,3fr) minmax(0,1fr)}
+  .stage .side{grid-row:2;padding:26px 0 0;text-align:center}
+  .stage .side.l{grid-column:1/-1}
+  .stage .side.r{grid-column:1/-1;grid-row:3}
+  .side .price{font-size:30px}
+  .stats .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stats div:nth-child(3){border-left:0}
+  .stats div:nth-child(n+3){border-top:1px solid var(--line)}
+  .stats strong{font-size:28px}
+  .index{grid-template-columns:minmax(0,1fr);gap:0}
+  .index::before{display:none}
+  .index .col:first-child button{flex-direction:row;text-align:left}
+  .look{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+  .look .b{grid-column:1/-1;grid-row:1}
+  .look .a,.look .c{margin-top:0}
+  .look .a figcaption{justify-content:flex-start;text-align:left}
+  .stock .wrap,.builder,.pearl .wrap{grid-template-columns:minmax(0,1fr);gap:36px}
+  .pearls{flex-direction:row;justify-content:center;gap:22px;padding:0}
+  .pearls::before{top:50%;bottom:auto;left:0;right:0;width:auto;height:1px}
+  .pearl .wrap{gap:28px}
+  .born .wrap{grid-template-columns:minmax(0,1fr);gap:30px}
+  .scarf .wrap{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .scarf-info{grid-template-columns:minmax(0,1fr);gap:22px;padding-top:32px}
+  .preview{position:static;padding:22px}
+  .how{grid-template-columns:minmax(0,1fr) minmax(0,1fr);margin-top:48px}
+  .how div:nth-child(3){padding-left:0;border-left:0}
+  .how div{padding-bottom:22px}
+  .proof{padding:72px 0}
+  .mbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;gap:8px}
+  .mbar .btn{flex:1;box-shadow:0 8px 24px rgba(13,13,13,.25)}
+  .top .cta{display:none}
+}
+@media (max-width:480px){
+  .logo{font-size:21px}
+  .head{margin-bottom:38px}
+  .scarf .wrap{grid-template-columns:minmax(0,1fr);gap:12px}
+  .how{grid-template-columns:minmax(0,1fr)}
+  .how div,.how div+div{padding-left:0;border-left:0;border-bottom:1px solid var(--line)}
+  .spec div{grid-template-columns:minmax(0,110px) minmax(0,1fr)}
+  .chips span{padding:0 14px;font-size:14px}
+  .index button .t{font-size:25px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .js .mirror>*,.js .half .grow{clip-path:none}
+  .js .fade{opacity:1;transform:none}
+  .js .pearls i{transform:none}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- половина орнамента: ось симметрии — x=0 -->
+    <g id="half" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 0V500"/>
+      <path d="M0 110C90 110 170 85 172 40C173 12 140 4 124 22C110 38 124 60 146 50"/>
+      <path d="M0 40C30 40 52 26 58 0"/>
+      <path d="M0 170L55 215L0 260"/>
+      <path d="M55 215C110 215 160 200 178 165C190 140 168 124 152 138"/>
+      <path d="M55 215C110 225 165 245 170 290C174 322 142 334 126 316C114 302 126 284 144 292"/>
+      <path d="M0 340C80 345 120 378 120 420C120 455 92 468 74 452C60 440 70 418 90 424"/>
+      <path d="M0 470C35 470 60 482 70 500"/>
+      <circle cx="96" cy="160" r="11" fill="currentColor" stroke="none"/>
+      <circle cx="98" cy="290" r="11" fill="currentColor" stroke="none"/>
+    </g>
+    <g id="full"><use href="#half"/><use href="#half" transform="scale(-1 1)"/></g>
+  </defs>
+</svg>
+
+<div class="demo" role="note">Демо-концепт независимого разработчика — не официальный сайт Chumakova Maryam. Не согласован с владельцем, удаляется по первой просьбе. <span lang="en">Demo concept.</span></div>
+
+<header class="top">
+  <div class="wrap">
+    <nav class="nav" aria-label="Разделы">
+      <a href="#models">Модели</a><a href="#born">Узор</a><a href="#scarf">Платки</a><a href="#order">Заказ</a>
+    </nav>
+    <a class="logo" href="#top" aria-label="Chumakova Maryam — наверх"><svg viewBox="-200 0 400 500" aria-hidden="true"><use href="#full"/></svg>Chumakova Maryam</a>
+    <a class="btn cta" href="https://ig.me/m/maryamchumakova_fashion" target="_blank" rel="noopener">Написать в Direct</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <p class="kick">Ингушский орнамент · modest fashion · Москва</p>
+    <h1 id="h1">Chumakova <span>Maryam</span></h1>
+    <div class="stage">
+      <div class="side l">
+        <b>Дизайнер одежды</b>
+        <p>Модельер-конструктор, художник. Чёрные платья и&nbsp;платки с&nbsp;ингушским орнаментом «истинг».</p>
+        <p>Модели — ГОРЯНКА, КАМЕЛИЯ, АЗАЛИЯ и&nbsp;ещё семь.</p>
+      </div>
+      <div class="half l" aria-hidden="true"><div class="grow" style="width:100%;height:100%"><svg class="orn" viewBox="0 0 200 500" preserveAspectRatio="xMinYMid meet"><use href="#half"/></svg></div></div>
+      <div class="ph">
+        <picture><source media="(max-width:600px)" srcset="img/p3-m.jpg"><img src="img/p3.jpg" alt="Чёрное платье с белым ингушским орнаментом на груди и рукавах, платок с орнаментом" width="1350" height="1800" fetchpriority="high"></picture>
+      </div>
+      <div class="half r" aria-hidden="true"><div class="grow" style="width:100%;height:100%"><svg class="orn r" viewBox="0 0 200 500" preserveAspectRatio="xMinYMid meet"><use href="#half"/></svg></div></div>
+      <div class="side r">
+        <b>В наличии</b>
+        <p>Платье с&nbsp;орнаментом на&nbsp;рукавах</p>
+        <div class="price">13&nbsp;500&nbsp;₽</div>
+        <a class="btn red" href="#order">Собрать заказ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap">
+    <div><strong>6&nbsp;811</strong><span>подписчиц и&nbsp;подписчиков</span></div>
+    <div><strong>10</strong><span>моделей в&nbsp;хайлайтах</span></div>
+    <div><strong>90×90</strong><span>платки, шёлк Армани</span></div>
+    <div><strong>Москва</strong><span>дизайнер и&nbsp;конструктор</span></div>
+  </div>
+</div>
+
+<section class="sec" id="models" aria-labelledby="h-models">
+  <div class="wrap">
+    <div class="head">
+      <span class="mirror mw"><svg class="mark" viewBox="-200 0 400 500" aria-hidden="true"><use href="#full"/></svg></span>
+      <p class="eyebrow">Указатель моделей</p>
+      <h2 id="h-models">Десять имён — <em>одна графика</em></h2>
+      <p class="lead">Сейчас модели живут только в хайлайтах Instagram. Здесь — оглавление: выберите имя, и&nbsp;оно сразу встанет в&nbsp;заказ.</p>
+    </div>
+    <div class="index">
+      <div class="col">
+        <button type="button" data-model="ГОРЯНКА"><span class="n">01</span><span class="t">ГОРЯНКА</span><span class="dots"></span><span class="go">в заказ</span></button>
+        <button type="button" data-model="КАМЕЛИЯ"><span class="n">02</span><span class="t">КАМЕЛИЯ</span><span class="dots"></span><span class="go">в заказ</span></button>
+        <button type="button" data-model="АЗАЛИЯ"><span class="n">03</span><span class="t">АЗАЛИЯ</span><span class="dots"></span><span class="go">в заказ</span></button>
+        <button type="button" data-model="АМИРА"><span class="n">04</span><span class="t">АМИРА</span><span class="dots"></span><span class="go">в заказ</span></button>
+        <button type="button" data-model="ЛЕДИ ЛЕЙНА"><span class="n">05</span><span class="t">ЛЕДИ ЛЕЙНА</span><span class="dots"></span><span class="go">в заказ</span></button>
+      </div>
+      <div class="col">
+        <button type="button" data-model="ВИКТОРИЯ"><span class="n">06</span><span class="t">ВИКТОРИЯ</span><span class="dots"></span><span class="go">в заказ</span></button>
+        <button type="button" data-model="АИША"><span class="n">07</span><span class="t">АИША</span><span class="dots"></span><span class="go">в заказ</span></button>
+        <button type="button" data-model="ДЖАМИЛЯ"><span class="n">08</span><span class="t">ДЖАМИЛЯ</span><span class="dots"></span><span class="go">в заказ</span></button>
+        <button type="button" data-model="СОФИЯ"><span class="n">09</span><span class="t">СОФИЯ</span><span class="dots"></span><span class="go">в заказ</span></button>
+        <button type="button" data-model="САРА"><span class="n">10</span><span class="t">САРА</span><span class="dots"></span><span class="go">в заказ</span></button>
+      </div>
+    </div>
+    <p class="index-note">Фото каждой модели — в&nbsp;хайлайтах <a href="https://www.instagram.com/maryamchumakova_fashion/" target="_blank" rel="noopener">@maryamchumakova_fashion</a></p>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0" aria-labelledby="h-look">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Лукбук</p>
+      <h2 id="h-look">Белый, красный <em>и&nbsp;чёрный</em></h2>
+    </div>
+    <div class="look">
+      <figure class="a fade"><div class="frame"><img src="img/p1.jpg" alt="Чёрное платье с белым орнаментом на рукавах и платок с крупным орнаментом" decoding="async" width="1350" height="1800"></div><figcaption><span>Белый орнамент на&nbsp;платке и&nbsp;рукавах</span><i>01</i></figcaption></figure>
+      <figure class="b fade"><div class="frame"><img src="img/p9.jpg" alt="Чёрное платье с красным ингушским орнаментом на груди и манжетах, красный платок" decoding="async" width="1350" height="1800" style="object-position:50% 80%"></div><figcaption><span><i>02</i>&nbsp; Красный орнамент на&nbsp;груди и&nbsp;манжетах, платок в&nbsp;тон</span></figcaption></figure>
+      <figure class="c fade"><div class="frame"><img src="img/p10.jpg" alt="Красное платье с орнаментом на тёмном фоне" decoding="async" width="750" height="1334"></div><figcaption><i>03</i><span>Красное платье — тот же узор, обратный цвет</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec stock" aria-labelledby="h-stock">
+  <div class="wrap">
+    <div class="frame fade"><img src="img/p2.jpg" alt="Рукава чёрного платья с вырезанным белым орнаментом крупным планом" decoding="async" width="640" height="1136"></div>
+    <div>
+      <p class="eyebrow">В наличии</p>
+      <h2 id="h-stock">Платье с&nbsp;орнаментом <em>на&nbsp;рукавах</em></h2>
+      <p class="q">Трикотажное, свободного силуэта, с&nbsp;акцентными рукавами. Орнамент можно сделать по&nbsp;вашему запросу.</p>
+      <dl class="spec">
+        <div><dt>Ткань</dt><dd>трикотаж, Греция</dd></div>
+        <div><dt>Размер</dt><dd>44–46</dd></div>
+        <div><dt>Орнамент</dt><dd>на рукавах; другой — по запросу</dd></div>
+      </dl>
+      <div class="big-price">13&nbsp;500&nbsp;₽</div>
+      <a class="btn" href="#order" data-pick="Платье с орнаментом на рукавах (в наличии)">Хочу это платье</a>
+      <p class="small">Заказ и&nbsp;вопросы — в&nbsp;Direct, как и&nbsp;раньше. Сайт просто собирает сообщение за вас.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec born" id="born" aria-labelledby="h-born">
+  <div class="wrap">
+    <div class="frame fade"><img src="img/p7.jpg" alt="Белая фигура орнамента вырезается ножом на чёрной ткани" decoding="async" width="640" height="1136"></div>
+    <div class="center mirror" aria-hidden="true"><svg class="orn r" viewBox="-200 0 400 500"><use href="#full"/></svg></div>
+    <div>
+      <p class="eyebrow">Как рождается узор</p>
+      <h2 id="h-born">Сначала — <em>трафарет</em></h2>
+      <p class="lead intro">Узор не печатают: фигуру вырезают и&nbsp;кладут на&nbsp;чёрное. Поэтому линии такие чистые.</p>
+      <ol class="steps">
+        <li><b>Рисунок</b><span>Ингушский орнамент: завитки, ромб и&nbsp;зеркальная ось.</span></li>
+        <li><b>Вырезание</b><span>Фигура вырезается из&nbsp;ткани по&nbsp;контуру — как на&nbsp;фото.</span></li>
+        <li><b>Платье или платок</b><span>Орнамент ложится на&nbsp;грудь, рукава или по&nbsp;углам платка.</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="sec scarf" id="scarf" aria-labelledby="h-scarf">
+  <div class="wrap">
+    <div class="head" style="grid-column:1/-1">
+      <p class="eyebrow">Платки · модуль 90×90</p>
+      <h2 id="h-scarf">Квадрат, <em>сложенный вчетверо</em></h2>
+      <p class="lead">Орнамент повторяется по&nbsp;четырём углам — платок одинаково красив, как ни&nbsp;сложи.</p>
+    </div>
+    <div class="sq fade mirror">
+      <svg viewBox="-300 -300 600 600" role="img" aria-label="Схема платка 90 на 90 сантиметров: красный орнамент в четырёх углах на чёрном">
+        <rect x="-300" y="-300" width="600" height="600" fill="#0D0D0D"/>
+        <rect x="-276" y="-276" width="552" height="552" fill="none" stroke="#FAFAF7" stroke-width="5"/>
+        <g style="color:#C1121F">
+          <g transform="rotate(45) translate(0 -380) scale(.56)"><use href="#full"/></g>
+          <g transform="rotate(135) translate(0 -380) scale(.56)"><use href="#full"/></g>
+          <g transform="rotate(225) translate(0 -380) scale(.56)"><use href="#full"/></g>
+          <g transform="rotate(315) translate(0 -380) scale(.56)"><use href="#full"/></g>
+          <g style="color:#FAFAF7" transform="translate(0 -100) scale(.4)"><use href="#full"/></g>
+        </g>
+      </svg>
+      <span class="dim x">90 см</span><span class="dim y">90 см</span>
+    </div>
+    <div class="sq fade"><img src="img/p6.jpg" alt="Платок с чёрно-белым ингушским орнаментом в подарочной коробке Chumakova Maryam" decoding="async" width="720" height="1280"></div>
+    <div class="scarf-info">
+      <h3>Платок <em>«Насыр-Корт»</em></h3>
+      <ul>
+        <li><b>Размер:</b> 90×90&nbsp;см, стандарт</li>
+        <li><b>Ткань:</b> шёлк Армани</li>
+        <li><b>Орнамент:</b> «один из ярких и&nbsp;красивых»</li>
+      </ul>
+      <div>
+        <div class="p">6&nbsp;800&nbsp;₽</div>
+        <a class="btn" style="margin-top:16px" href="#order" data-pick="Платок 90×90 «Насыр-Корт»">Платок в заказ</a>
+      </div>
+      <p class="note">Платок с&nbsp;ингушским орнаментом «истинг» стал лотом благотворительного аукциона на&nbsp;ифтаре 2025 — все средства ушли в&nbsp;помощь палестинцам Газы.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec pearl" aria-labelledby="h-pearl">
+  <div class="wrap">
+    <div class="frame fade"><img src="img/p8.jpg" alt="Чёрное платье с рядом жемчужных пуговиц и объёмными рукавами" decoding="async" width="1350" height="1800"></div>
+    <div class="pearls" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div>
+      <h2 id="h-pearl" class="sr">Жемчужные пуговицы</h2>
+      <blockquote>Иногда достаточно <em>жемчужных пуговиц</em> для&nbsp;нарядного изделия</blockquote>
+      <cite>— из подписи к&nbsp;посту @maryamchumakova_fashion</cite>
+    </div>
+  </div>
+</section>
+
+<section class="sec order" id="order" aria-labelledby="h-order">
+  <div class="wrap">
+    <div class="head">
+      <span class="mirror mw"><svg class="mark" viewBox="-200 0 400 500" aria-hidden="true"><use href="#full"/></svg></span>
+      <p class="eyebrow">Платье + орнамент</p>
+      <h2 id="h-order">Соберите <em>свой</em> заказ</h2>
+      <p class="lead">Модель, цвет узора и&nbsp;ваша идея — в&nbsp;одно сообщение. Скопируйте его и&nbsp;отправьте в&nbsp;Direct.</p>
+    </div>
+    <div class="builder">
+      <form id="bf" onsubmit="return false">
+        <fieldset>
+          <legend>Что заказать</legend>
+          <div class="chips">
+            <label><input type="radio" name="item" value="Платье с орнаментом" checked><span>Платье</span></label>
+            <label><input type="radio" name="item" value="Платок 90×90 «Насыр-Корт»"><span>Платок 90×90</span></label>
+            <label><input type="radio" name="item" value="Платье и платок с орнаментом"><span>Платье + платок</span></label>
+            <label><input type="radio" name="item" value="Платье с орнаментом на рукавах (в наличии)"><span>Платье из наличия</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Модель <small>— из хайлайтов</small></legend>
+          <div class="chips" id="models-chips"></div>
+        </fieldset>
+        <fieldset>
+          <legend>Цвет орнамента</legend>
+          <div class="chips">
+            <label><input type="radio" name="color" value="белый" checked><span><i class="sw" style="background:#fff"></i>Белый</span></label>
+            <label><input type="radio" name="color" value="красный"><span><i class="sw" style="background:#C1121F;border-color:#C1121F"></i>Красный</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Орнамент по вашему запросу <small>— необязательно</small></legend>
+          <label class="field"><span class="sr">Опишите орнамент</span><textarea name="wish" placeholder="Например: орнамент только на манжетах, как на платке «Насыр-Корт»"></textarea></label>
+        </fieldset>
+        <fieldset style="margin-bottom:0">
+          <legend>Ваш размер <small>— необязательно</small></legend>
+          <label class="field"><span class="sr">Размер</span><input name="size" placeholder="Например: 44 или 46" inputmode="text"></label>
+        </fieldset>
+      </form>
+      <aside class="preview" aria-live="polite">
+        <div class="pv">
+          <svg id="pvorn" viewBox="-200 0 400 500" style="color:#FAFAF7" aria-hidden="true"><use href="#full"/></svg>
+          <div><strong id="pvname">Платье</strong><span id="pvsub">орнамент белый</span></div>
+        </div>
+        <pre id="msg"></pre>
+        <div class="row">
+          <button type="button" class="btn red" id="copy">Скопировать</button>
+          <a class="btn ghost" href="https://ig.me/m/maryamchumakova_fashion" target="_blank" rel="noopener">Открыть Direct</a>
+        </div>
+        <p class="hint" id="hint">Текст скопируется — вставьте его в&nbsp;диалог с&nbsp;@maryamchumakova_fashion.</p>
+      </aside>
+    </div>
+
+    <div class="how">
+      <div><small>01</small><b>Выберите</b><span>Модель из указателя и&nbsp;цвет узора.</span></div>
+      <div><small>02</small><b>Скопируйте</b><span>Готовый текст заказа одной кнопкой.</span></div>
+      <div><small>03</small><b>Напишите</b><span>В&nbsp;Direct @maryamchumakova_fashion — там отвечают на&nbsp;вопросы.</span></div>
+      <div><small>04</small><b>Уточните</b><span>Размер, детали орнамента и&nbsp;сроки — напрямую с&nbsp;дизайнером.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="proof" aria-labelledby="h-proof">
+  <div class="wrap">
+    <span class="mirror mw"><svg class="mark" viewBox="-200 0 400 500" aria-hidden="true" style="width:48px;height:60px"><use href="#full"/></svg></span>
+    <h2 id="h-proof">6&nbsp;811 человек уже следят за&nbsp;узором</h2>
+    <p>Отзывы покупательниц собраны в&nbsp;хайлайте «Отзывы», о&nbsp;бренде — в&nbsp;«О&nbsp;бренде», а&nbsp;подбор по&nbsp;цвету — в&nbsp;«Цветотипах».</p>
+    <div class="row">
+      <a class="btn" href="https://www.instagram.com/maryamchumakova_fashion/" target="_blank" rel="noopener">Открыть Instagram</a>
+      <a class="btn ghost" href="https://www.threads.com/@maryamchumakova_fashion" target="_blank" rel="noopener">Threads</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>Chumakova Maryam · дизайнер одежды, модельер-конструктор, художник · Москва</span>
+    <a href="https://ig.me/m/maryamchumakova_fashion" target="_blank" rel="noopener">Direct @maryamchumakova_fashion</a>
+  </div>
+</footer>
+
+<div class="mbar"><a class="btn red" href="#order">Собрать заказ</a><a class="btn" href="https://ig.me/m/maryamchumakova_fashion" target="_blank" rel="noopener">Direct</a></div>
+
+<script>
+(function(){
+  var d=document; d.documentElement.classList.add('js');
+  var models=['ГОРЯНКА','КАМЕЛИЯ','АЗАЛИЯ','АМИРА','ЛЕДИ ЛЕЙНА','ВИКТОРИЯ','АИША','ДЖАМИЛЯ','СОФИЯ','САРА'];
+  var box=d.getElementById('models-chips');
+  box.innerHTML='<label><input type="radio" name="model" value="" checked><span>Пока не выбрала</span></label>'+models.map(function(m){return '<label><input type="radio" name="model" value="'+m+'"><span>'+m+'</span></label>'}).join('');
+
+  // reveal
+  var els=[].slice.call(d.querySelectorAll('.mirror,.fade,.half,.pearls'));
+  d.querySelectorAll('.pearls i').forEach(function(p,i){p.style.transitionDelay=(i*140)+'ms'});
+  var all=function(){els.forEach(function(e){e.classList.add('in')})};
+  if(navigator.webdriver||!('IntersectionObserver' in window)){all()}
+  else{
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.2,rootMargin:'0px 0px -6% 0px'});
+    els.forEach(function(e){io.observe(e)});
+  }
+
+  // builder
+  var f=d.getElementById('bf'), msg=d.getElementById('msg');
+  function val(n){var e=f.querySelector('[name="'+n+'"]:checked');return e?e.value:''}
+  function upd(){
+    var item=val('item'), m=val('model'), c=val('color'), w=f.wish.value.trim(), s=f.size.value.trim();
+    var t='Здравствуйте, Марьям! Хочу заказать: '+item+'.';
+    if(m) t+='\nМодель: '+m+' (из хайлайтов).';
+    t+='\nЦвет орнамента: '+c+'.';
+    if(w) t+='\nОрнамент по моему запросу: '+w;
+    if(s) t+='\nМой размер: '+s+'.';
+    t+='\nПодскажите, пожалуйста, цену и сроки.';
+    msg.textContent=t;
+    d.getElementById('pvname').textContent=m||item.replace(/ с орнаментом.*$/,'');
+    d.getElementById('pvsub').textContent='орнамент '+c+(w?' · по запросу':'');
+    d.getElementById('pvorn').style.color=c==='красный'?'#C1121F':'#FAFAF7';
+  }
+  f.addEventListener('input',upd); f.addEventListener('change',upd); upd();
+
+  function pick(sel,v){var e=f.querySelector('[name="'+sel+'"][value="'+v+'"]');if(e){e.checked=true;upd()}}
+  d.querySelectorAll('[data-model]').forEach(function(b){b.addEventListener('click',function(){pick('model',b.dataset.model);d.getElementById('order').scrollIntoView({behavior:'smooth'})})});
+  d.querySelectorAll('[data-pick]').forEach(function(b){b.addEventListener('click',function(){pick('item',b.dataset.pick)})});
+
+  var hint=d.getElementById('hint');
+  d.getElementById('copy').addEventListener('click',function(){
+    var t=msg.textContent, done=function(){hint.innerHTML='<span class="ok">Скопировано.</span> Откройте Direct и вставьте текст.'};
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(done,fb)}else fb();
+    function fb(){var a=d.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';d.body.appendChild(a);a.select();try{d.execCommand('copy');done()}catch(e){}a.remove()}
+  });
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

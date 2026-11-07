@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>URBANFOX — премиальные базовые футболки. Сделано в России</title><meta property="og:type" content="website"><meta property="og:title" content="URBANFOX — премиальные базовые футболки. Сделано в России"><meta property="og:description" content="URBANFOX: премиальные базовые футболки для мужчин и женщин. FIT, SLIM, оверсайз, поло, V-вырез. Размеры S–3XL. Сделано в России. Подбор посадки и заказ на Wildberries."><meta property="og:image" content="https://pikold.github.io/demo-sites/urbanfox-16/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="URBANFOX: премиальные базовые футболки для мужчин и женщин. FIT, SLIM, оверсайз, поло, V-вырез. Размеры S–3XL. Сделано в России. Подбор посадки и заказ на Wildberries.">
+<meta name="theme-color" content="#F6F4EF">
+<link rel="stylesheet" href="../_fonts/oswald.css">
+<link rel="stylesheet" href="../_fonts/inter.css">
+<style>
+:root{
+  --paper:#F6F4EF; --ink:#111111; --ecru:#E9DFCC; --bordo:#6E1E2B; --choc:#4A3328;
+  --line:rgba(17,17,17,.14); --muted:#5b5752;
+  --d:'Oswald','Arial Narrow','Roboto Condensed','Helvetica Neue',Arial,sans-serif; --t:'Inter', system-ui, sans-serif;
+  --ease:cubic-bezier(.7,0,.2,1);
+  --g:clamp(16px,4vw,56px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font:400 16px/1.55 var(--t);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--bordo);outline-offset:3px}
+.wrap{width:100%;max-width:1360px;margin:0 auto;padding:0 var(--g)}
+.demo{background:var(--ink);color:#d9d4cb;font-size:12px;line-height:1.4;text-align:center;padding:7px 16px}
+
+/* header */
+.hd{position:sticky;top:0;z-index:50;background:rgba(246,244,239,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.hd .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px}
+.logo{font:600 22px/1 var(--d);letter-spacing:.14em;text-decoration:none;text-transform:uppercase}
+.nav{display:flex;gap:26px;font-size:14px;font-weight:500}
+.nav a{text-decoration:none;padding:12px 0;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:6px;height:1px;background:currentColor;transition:right .4s var(--ease)}
+.nav a:hover::after{right:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;background:var(--ink);color:var(--paper);font:600 14px/1 var(--t);letter-spacing:.02em;text-decoration:none;border:1.5px solid var(--ink);transition:background .3s,color .3s,transform .3s}
+.btn:hover{background:var(--bordo);border-color:var(--bordo)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+.btn.sm{min-height:44px;padding:0 18px;font-size:13px}
+.btn .ar{transition:transform .3s}
+.btn:hover .ar{transform:translateX(4px)}
+
+/* shirt silhouette */
+.shirt-o{filter:drop-shadow(0 0 .6px rgba(17,17,17,.55)) drop-shadow(0 24px 40px rgba(17,17,17,.10))}
+.shirt{position:relative;aspect-ratio:1/1.05;width:100%;background:var(--ecru);clip-path:polygon(41% 3%,50% 9%,59% 3%,71% 6%,85% 22%,82% 34%,70% 33%,68% 97%,32% 97%,30% 33%,18% 34%,15% 22%,29% 6%);transition:clip-path .9s var(--ease),background .6s}
+.shirt img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 28%;transition:opacity .6s}
+.ls.in{animation:lsIn 1.4s var(--ease) both}
+@keyframes lsIn{from{letter-spacing:.18em;opacity:.15}to{letter-spacing:0;opacity:1}}
+.shirt img.z{object-position:50% 50%;transform:scale(1.55);transform-origin:50% 50%}
+
+
+/* hero */
+.hero{position:relative;padding-top:clamp(28px,5vw,60px);padding-bottom:clamp(40px,6vw,80px);overflow:hidden}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;font-size:13px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
+.stage{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,min(460px,40vw,56vh)) minmax(0,1fr);grid-template-rows:auto auto;align-items:center;gap:0 clamp(12px,3vw,48px);margin-top:clamp(18px,3vw,36px)}
+.stage .shirt-o{grid-column:2;grid-row:1/3}
+.fw{font:600 clamp(44px,6.6vw,116px)/.86 var(--d);text-transform:uppercase;color:var(--ink);opacity:.18;transition:opacity .4s,color .4s;padding:6px 0;text-align:left}
+.fw.on{opacity:1}
+.fw:hover{opacity:.7}
+.fw.on:hover{opacity:1}
+.fw.r{text-align:right}
+.fw sup{font:500 13px/1 var(--t);letter-spacing:.1em;vertical-align:top;margin-left:6px;color:var(--bordo)}
+.col-l,.col-r{display:flex;flex-direction:column;gap:clamp(40px,10vh,120px)}
+.col-l{grid-column:1;grid-row:1/3;align-items:flex-end}
+.col-r{grid-column:3;grid-row:1/3;align-items:flex-start}
+.hero-cap{min-height:3em;max-width:260px;font-size:14px;color:var(--muted)}
+.col-r .hero-cap{order:3}
+.hero-bot{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:24px;align-items:end;margin-top:clamp(28px,5vw,56px)}
+.h1{font:600 clamp(40px,6.2vw,96px)/.92 var(--d);text-transform:uppercase;letter-spacing:-.01em}
+.h1 em{font-style:normal;color:var(--bordo)}
+.hero-side p{font-size:17px;max-width:420px;margin-bottom:20px}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px}
+.ru{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+.ru i{display:inline-grid;grid-template-rows:repeat(3,4px);width:18px;border:1px solid var(--line)}
+.ru i b:nth-child(1){background:#fff}.ru i b:nth-child(2){background:#1c3f94}.ru i b:nth-child(3){background:#c8202f}
+
+/* section heads */
+section{scroll-margin-top:64px}
+main>section,.ft{overflow-x:clip}
+.h2,.h1,.fw,.step h3,.res h3{font-stretch:condensed;overflow-wrap:break-word}
+.sh{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:clamp(28px,4vw,56px)}
+.kick{font:600 12px/1 var(--t);letter-spacing:.18em;text-transform:uppercase;color:var(--bordo);margin-bottom:14px;display:block}
+.h2{font:600 clamp(38px,6vw,88px)/.92 var(--d);text-transform:uppercase}
+.lead{max-width:440px;color:var(--muted)}
+
+/* lab sticky */
+.lab{position:relative;padding-top:clamp(60px,8vw,120px);border-top:1px solid var(--line)}
+.lab-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,80px)}
+.lab-fig{position:sticky;top:12vh;height:76vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.lab-fig .shirt-o{width:min(100%,58vh)}
+.lab-fig .shirt{transition:none}
+.lab-meta{display:flex;justify-content:space-between;width:min(100%,58vh);margin-top:16px;font:500 13px/1 var(--t);letter-spacing:.14em;text-transform:uppercase}
+.lab-meta b{font-family:var(--d);font-size:22px;letter-spacing:.06em}
+.ecru-fill{position:absolute;inset:0;background:var(--ecru);opacity:0;transition:opacity .6s}
+.step{min-height:88vh;display:flex;flex-direction:column;justify-content:center;padding:40px 0;max-width:520px}
+.step .n{font:500 13px/1 var(--t);letter-spacing:.16em;color:var(--muted);margin-bottom:18px}
+.step h3{font:600 clamp(52px,7vw,112px)/.88 var(--d);text-transform:uppercase;margin-bottom:22px;opacity:.3;transition:opacity .5s}
+.step.on h3{opacity:1}
+.step p{font-size:17px;margin-bottom:14px}
+.step ul{list-style:none;border-top:1px solid var(--line);margin-top:10px}
+.step li{padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:14px;font-size:15px}
+.step li::before{content:"";flex:0 0 8px;height:8px;margin-top:8px;background:var(--ink)}
+.step .tag{display:inline-block;margin-top:14px;font:600 12px/1 var(--t);letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;border:1px solid var(--ink);border-radius:999px}
+
+/* split */
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);margin-top:clamp(60px,8vw,120px)}
+.half{padding:clamp(36px,5vw,72px) var(--g);display:flex;flex-direction:column;gap:28px}
+.half.m{background:var(--ink);color:var(--paper)}
+.half.w{background:var(--ecru)}
+.half .h2{font-size:clamp(56px,8vw,140px)}
+.ph{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:12px;align-items:end}
+.ph img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 25%}
+.ph img+img{aspect-ratio:3/4.6}
+.models{list-style:none}
+.models li{display:grid;grid-template-columns:minmax(0,150px) minmax(0,1fr);gap:16px;padding:16px 0;border-top:1px solid currentColor;border-color:rgba(127,127,127,.35)}
+.models b{font:600 22px/1.1 var(--d);text-transform:uppercase;letter-spacing:.03em}
+.models span{font-size:15px;opacity:.85}
+.half.m .btn{background:var(--paper);color:var(--ink);border-color:var(--paper);align-self:flex-start}
+.half.m .btn:hover{background:var(--bordo);color:var(--paper);border-color:var(--bordo)}
+.half.w .btn{align-self:flex-start}
+
+/* wear */
+.wear{padding-top:clamp(60px,8vw,120px);padding-bottom:clamp(60px,8vw,120px)}
+.wear-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,5vw,72px);align-items:start}
+.wear-ph{position:relative}
+.wear-ph img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%}
+.wear-ph figcaption{font-size:13px;color:var(--muted);margin-top:10px}
+.recipes{list-style:none;border-top:2px solid var(--ink)}
+.rec{padding:clamp(22px,3vw,34px) 0;border-bottom:1px solid var(--line)}
+.eq{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;font:600 clamp(26px,3.2vw,44px)/1.05 var(--d);text-transform:uppercase}
+.eq .pl{color:var(--muted);font-weight:400}
+.sw{display:inline-block;width:.8em;height:.8em;border-radius:50%;vertical-align:-.06em;margin-right:8px;box-shadow:inset 0 0 0 1px rgba(17,17,17,.25)}
+.rec p{margin-top:12px;color:var(--muted);max-width:560px}
+
+/* picker */
+.pick{background:var(--ink);color:var(--paper);padding:clamp(60px,8vw,120px) 0}
+.pick .lead{color:#b9b3a9}
+.pick .kick{color:#d6a3ad}
+.pk{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(24px,5vw,80px);align-items:start}
+.q{margin-bottom:28px}
+.q-l{font:500 12px/1 var(--t);letter-spacing:.16em;text-transform:uppercase;color:#b9b3a9;margin-bottom:12px;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:48px;padding:0 20px;border:1.5px solid rgba(246,244,239,.35);border-radius:999px;font:500 17px/1 var(--d);letter-spacing:.06em;text-transform:uppercase;transition:all .25s}
+.chip:hover{border-color:var(--paper)}
+.chip[aria-pressed="true"]{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.res{border-top:1px solid rgba(246,244,239,.25);padding-top:24px}
+.res h3{font:600 clamp(40px,5vw,72px)/.9 var(--d);text-transform:uppercase;margin-bottom:16px}
+.res p{color:#ddd7cd;max-width:520px}
+.res .sz{margin:16px 0 22px;font-size:14px;color:#b9b3a9}
+.res .sz b{color:var(--paper);font-weight:600}
+.res .btn{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.res .btn:hover{background:var(--bordo);color:var(--paper);border-color:var(--bordo)}
+.res .btn.ghost{background:transparent;color:var(--paper);border-color:rgba(246,244,239,.5)}
+.res .btn.ghost:hover{background:var(--paper);color:var(--ink)}
+.msg{margin-top:22px;border:1px dashed rgba(246,244,239,.35);padding:16px;border-radius:12px}
+.msg-t{font-size:14px;color:#ddd7cd;margin-bottom:12px}
+.copy{min-height:44px;padding:0 16px;border-radius:999px;border:1px solid rgba(246,244,239,.5);font-size:13px;font-weight:600}
+.copy:hover{background:var(--paper);color:var(--ink)}
+.pk-fig{background:var(--paper);border-radius:4px;padding:clamp(24px,4vw,48px);display:flex;flex-direction:column;align-items:center;gap:18px;position:sticky;top:90px}
+.pk-fig .shirt-o{width:min(100%,340px)}
+.pk-fig .shirt{background:#fff}
+.colors{display:flex;gap:10px;align-items:center;color:var(--ink);font-size:13px}
+.cdot{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1.5px solid transparent}
+.cdot i{width:28px;height:28px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(17,17,17,.3)}
+.cdot[aria-pressed="true"]{border-color:var(--ink)}
+.pk-name{font:600 15px/1 var(--d);letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+
+/* sizes */
+.sizes{padding-top:clamp(60px,8vw,120px);padding-bottom:clamp(60px,8vw,120px);border-bottom:1px solid var(--line)}
+.sz-row{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.sz-row span{font:600 clamp(36px,7vw,120px)/1 var(--d);text-align:center;padding:clamp(16px,2.5vw,32px) 0;border-left:1px solid var(--line)}
+.sz-row span:first-child{border-left:0}
+.sz-notes{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.2fr);gap:24px;margin-top:28px;font-size:15px}
+.sz-notes b{display:block;font:600 18px/1.2 var(--d);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px}
+
+/* how */
+.how{padding-top:clamp(60px,8vw,120px);padding-bottom:clamp(60px,8vw,120px)}
+.how-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:clamp(24px,5vw,80px)}
+.how ol{list-style:none;counter-reset:s}
+.how li{counter-increment:s;display:grid;grid-template-columns:minmax(0,90px) minmax(0,1fr);gap:18px;padding:22px 0;border-top:1px solid var(--line)}
+.how li:last-child{border-bottom:1px solid var(--line)}
+.how li::before{content:"0" counter(s);font:600 44px/1 var(--d);color:var(--bordo)}
+.how h3{font:600 24px/1.1 var(--d);text-transform:uppercase;margin-bottom:6px}
+.how p{color:var(--muted)}
+.how a{font-weight:600}
+.proof{display:flex;flex-wrap:wrap;gap:16px 48px;margin-top:40px;padding-top:28px;border-top:2px solid var(--ink)}
+.proof div{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.proof b{display:block;font:600 clamp(36px,4vw,56px)/1 var(--d);color:var(--ink);letter-spacing:0;margin-bottom:6px}
+
+/* final */
+.fin{background:var(--bordo);color:var(--paper);padding:clamp(60px,9vw,140px) 0;overflow:hidden}
+.fin .h2{font-size:clamp(52px,11vw,190px);line-height:.86}
+.fin-row{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-top:36px}
+.fin .btn{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.fin .btn:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.fin .btn.ghost{background:transparent;color:var(--paper);border-color:rgba(246,244,239,.6)}
+.ft{background:var(--ink);color:#b9b3a9;padding:36px 0 44px;font-size:14px}
+.ft .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.ft a{color:var(--paper);display:inline-flex;align-items:center;min-height:44px}
+.ft .logo{color:var(--paper)}
+
+@media (max-width:900px){
+  .nav{display:none}
+  .stage{grid-template-columns:minmax(0,1fr);grid-template-rows:auto;justify-items:center}
+  .stage .shirt-o{grid-column:1;grid-row:2;width:min(80vw,380px)}
+  .col-l,.col-r{grid-column:1;flex-direction:row;gap:6px 18px;align-items:center;justify-content:center;flex-wrap:wrap}
+  .col-l{grid-row:1;margin-bottom:12px}
+  .col-r{grid-row:3;margin-top:12px}
+  .fw{font-size:clamp(38px,11vw,64px);text-align:center;min-height:44px}
+  .fw.r{text-align:center}
+  .fw sup{display:none}
+  .hero-cap{display:none}
+  .hero-cap.mob{display:block;text-align:center;max-width:none;width:100%;order:9}
+  .hero-bot{grid-template-columns:minmax(0,1fr)}
+  .lab-grid{grid-template-columns:minmax(0,1fr);gap:0}
+  .lab-fig{top:60px;height:auto;z-index:3;background:var(--paper);padding:10px 0 12px;border-bottom:1px solid var(--line)}
+  .lab-fig .shirt-o{width:min(40vw,200px)}
+  .lab-meta{width:min(72vw,320px);margin-top:8px}
+  .step{min-height:72vh;max-width:none}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .wear-grid{grid-template-columns:minmax(0,1fr)}
+  .pk{grid-template-columns:minmax(0,1fr)}
+  .pk-fig{position:relative;top:0;order:-1}
+  .pk-fig .shirt-o{width:min(56vw,240px)}
+  .sz-notes{grid-template-columns:minmax(0,1fr)}
+  .how-grid{grid-template-columns:minmax(0,1fr)}
+}
+@media (min-width:901px){.hero-cap.mob{display:none}}
+@media (max-width:480px){
+  .models li{grid-template-columns:minmax(0,1fr);gap:4px}
+  .how li{grid-template-columns:minmax(0,56px) minmax(0,1fr)}
+  .how li::before{font-size:34px}
+  .btn{width:100%}
+  .cta-row .btn,.fin .btn{width:100%}
+  .logo{font-size:19px}
+  .hd .btn{width:auto}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+  .ls.in{animation:none}
+}
+</style>
+</head>
+<body>
+<div class="demo" data-en="Demo concept">Демо-концепт независимого разработчика — не официальный сайт URBANFOX. Не согласован с владельцем, удаляется по первой просьбе.</div>
+
+<header class="hd">
+  <div class="wrap">
+    <a class="logo" href="#top">Urbanfox</a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#lab">Посадки</a><a href="#split">Мужские / Женские</a><a href="#wear">С чем носить</a><a href="#pick">Подбор</a><a href="#sizes">Размеры</a>
+    </nav>
+    <a class="btn sm" href="https://www.wildberries.ru/seller/909921" target="_blank" rel="noopener">Магазин на WB</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero wrap" aria-label="Первый экран">
+  <div class="hero-top"><span>Премиальные базовые футболки</span><span class="ru"><i><b></b><b></b><b></b></i>Сделано в России</span></div>
+  <div class="stage">
+    <div class="col-l">
+      <button class="fw ls on" data-fit="fit" aria-pressed="true">Fit</button>
+      <button class="fw ls" data-fit="over" aria-pressed="false">Oversize</button>
+      <p class="hero-cap" id="capL"></p>
+    </div>
+    <div class="shirt-o"><div class="shirt" id="heroShirt"><img class="z" src="img/p1.jpg" srcset="img/p1-m.jpg 480w, img/p1.jpg 720w" sizes="(max-width:900px) 78vw, 460px" alt="Мужчина в белой футболке URBANFOX" fetchpriority="high"></div></div>
+    <div class="col-r">
+      <button class="fw r ls" data-fit="slim" aria-pressed="false">Slim</button>
+      <button class="fw r ls" data-fit="polo" aria-pressed="false">Polo</button>
+      <p class="hero-cap mob" id="capM" aria-live="polite"></p>
+    </div>
+  </div>
+  <div class="hero-bot">
+    <h1 class="h1">Просто. Стильно.<br><em>Для каждого.</em></h1>
+    <div class="hero-side">
+      <p>URBANFOX — премиальные базовые футболки для мужчин и женщин. Один силуэт, четыре посадки: нажмите на слово и посмотрите, как меняется форма.</p>
+      <div class="cta-row">
+        <a class="btn" href="#pick">Подобрать посадку <span class="ar">→</span></a>
+        <a class="btn ghost" href="https://www.wildberries.ru/seller/909921" target="_blank" rel="noopener">Магазин на WB</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lab" id="lab" aria-label="Лаборатория посадки">
+  <div class="wrap">
+    <div class="sh">
+      <div><span class="kick">Лаборатория посадки</span><h2 class="h2 ls">Один силуэт —<br>четыре характера</h2></div>
+      <p class="lead">Листайте: футболка перекраивается на глазах. Описания — словами самих URBANFOX.</p>
+    </div>
+    <div class="lab-grid">
+      <div class="lab-fig">
+        <div class="shirt-o"><div class="shirt" id="labShirt">
+          <img class="z" data-l="0" src="img/p1.jpg" srcset="img/p1-m.jpg 480w, img/p1.jpg 720w" sizes="(max-width:900px) 40vw, 500px" alt="Футболка FIT на мужчине" loading="lazy">
+          <img data-l="1" src="img/p12.jpg" srcset="img/p12-m.jpg 480w, img/p12.jpg 1014w" sizes="(max-width:900px) 40vw, 500px" alt="Белая футболка Slim с бордовым пальто и тёмными брюками" loading="lazy" style="opacity:0;transform:scale(1.3);transform-origin:50% 30%">
+          <img data-l="2" src="img/p11.jpg" srcset="img/p11-m.jpg 480w, img/p11.jpg 720w" sizes="(max-width:900px) 40vw, 500px" alt="Мужская белая футболка оверсайз" loading="lazy" style="opacity:0;object-position:50% 22%;transform:scale(1.35);transform-origin:50% 22%">
+          <div class="ecru-fill" data-l="3"></div>
+        </div></div>
+        <div class="lab-meta"><b id="labName">FIT</b><span id="labNum">01 / 04</span></div>
+      </div>
+      <div class="steps">
+        <article class="step on" data-i="0">
+          <span class="n">01 — мужская</span>
+          <h3>Fit</h3>
+          <p>Спортивный крой идеально садится по фигуре, выделяя плечи и руки, но оставляя полную свободу движений.</p>
+          <ul><li>Ткань дышит и быстро сохнет</li><li>Не теряет форму даже после жёстких тренировок — в зале или на улице</li></ul>
+        </article>
+        <article class="step" data-i="1">
+          <span class="n">02 — мужская и женская</span>
+          <h3>Slim</h3>
+          <p>Чёрная SLIM с брюками в глубоком цвете бордо — сочетание, которое моментально собирает комплименты. Белая Slim этой осенью — с шоколадными джинсами и бордовым пальто.</p>
+          <a class="tag" href="https://www.wildberries.ru/catalog/842032946/detail.aspx" target="_blank" rel="noopener">Артикул на WB 842032946</a>
+        </article>
+        <article class="step" data-i="2">
+          <span class="n">03 — свободная посадка</span>
+          <h3>Оверсайз</h3>
+          <p>Правильный оверсайз: свободный крой, который идеально садится на любую фигуру.</p>
+          <ul><li>Укороченный кроп-крой и спущенный рукав</li><li>Плотный турецкий хлопок: держит форму, не растягивается и дышит</li><li>Версия с удлинённым рукавом и аккуратным подворотом</li></ul>
+        </article>
+        <article class="step" data-i="3">
+          <span class="n">04 — женская</span>
+          <h3>Поло</h3>
+          <p>Идеальная посадка, классический воротник и минус сто сомнений в себе. Оттенок экрю — мягкий, молочно-кремовый, смотрится интереснее обычного белого.</p>
+          <ul><li>От деловых встреч до воскресенья с друзьями</li><li>С джинсами, строгими брюками или юбкой</li><li>Размерный ряд от XS до 3XL</li></ul>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="split" id="split" aria-label="Мужские и женские">
+  <div class="half m">
+    <h2 class="h2 ls">Мужские</h2>
+    <div class="ph">
+      <img src="img/p11.jpg" srcset="img/p11-m.jpg 480w, img/p11.jpg 720w" sizes="(max-width:900px) 60vw, 30vw" alt="Мужская белая футболка оверсайз с широкими джинсами" loading="lazy">
+      <img src="img/p2.jpg" srcset="img/p2-m.jpg 480w, img/p2.jpg 720w" sizes="(max-width:900px) 36vw, 18vw" alt="Белая футболка под пиджак" loading="lazy">
+    </div>
+    <ul class="models">
+      <li><b>FIT</b><span>Спортивный крой по плечам и рукам, свобода движений</span></li>
+      <li><b>SLIM</b><span>Чёрная, артикул на WB 842032946 — с брюками бордо</span></li>
+      <li><b>Оверсайз</b><span>Базовая — «вывозит любой образ»; укороченный кроп со спущенным рукавом</span></li>
+    </ul>
+    <a class="btn" href="https://www.wildberries.ru/seller/909921" target="_blank" rel="noopener">Мужские на WB <span class="ar">→</span></a>
+  </div>
+  <div class="half w">
+    <h2 class="h2 ls">Женские</h2>
+    <div class="ph">
+      <img src="img/p12.jpg" srcset="img/p12-m.jpg 480w, img/p12.jpg 1014w" sizes="(max-width:900px) 60vw, 30vw" alt="Белая футболка с бордовым пальто" loading="lazy">
+      <img src="img/p6.jpg" srcset="img/p6-m.jpg 480w, img/p6.jpg 640w" sizes="(max-width:900px) 36vw, 18vw" alt="Чёрный образ URBANFOX" loading="lazy">
+    </div>
+    <ul class="models">
+      <li><b>Поло</b><span>Экрю, классический воротник, от XS до 3XL</span></li>
+      <li><b>V-вырез</b><span>Белая и экрю — визуально удлиняет шею</span></li>
+      <li><b>Slim</b><span>Белая — с шоколадными джинсами и бордовым пальто</span></li>
+      <li><b>Оверсайз</b><span>Удлинённый рукав с подворотом, белоснежный хлопок</span></li>
+    </ul>
+    <a class="btn" href="https://www.wildberries.ru/seller/909921" target="_blank" rel="noopener">Женские на WB <span class="ar">→</span></a>
+  </div>
+</section>
+
+<section class="wear wrap" id="wear" aria-label="С чем носить">
+  <div class="sh">
+    <div><span class="kick">Рецепты из ленты URBANFOX</span><h2 class="h2 ls">С чем носить</h2></div>
+    <p class="lead">База работает, когда к ней есть цвет. Осенние сочетания, которые бренд сам собирает в постах.</p>
+  </div>
+  <div class="wear-grid">
+    <figure class="wear-ph">
+      <img src="img/p12.jpg" srcset="img/p12-m.jpg 480w, img/p12.jpg 1014w" sizes="(max-width:900px) 92vw, 40vw" alt="Белая футболка, бордовое пальто и тёмные брюки" loading="lazy">
+      <figcaption>Белая Slim + бордовое пальто. Фото из Instagram @urbanfox_16</figcaption>
+    </figure>
+    <ul class="recipes">
+      <li class="rec">
+        <div class="eq"><span><i class="sw" style="background:#fff"></i>Белая Slim</span><span class="pl">+</span><span><i class="sw" style="background:#4A3328"></i>Шоколадные джинсы</span><span class="pl">+</span><span><i class="sw" style="background:#6E1E2B"></i>Бордо</span></div>
+        <p>Самый стильный комбо-рецепт против серости: шоколад — база и главный тренд сезона, бордовое пальто добавляет роскошного осеннего цвета.</p>
+      </li>
+      <li class="rec">
+        <div class="eq"><span><i class="sw" style="background:#111"></i>Чёрная SLIM</span><span class="pl">+</span><span><i class="sw" style="background:#6E1E2B"></i>Брюки бордо</span></div>
+        <p>Идеальный мэтч на осень, который поднимает настроение даже в самый пасмурный день. Артикул на WB — 842032946.</p>
+      </li>
+      <li class="rec">
+        <div class="eq"><span><i class="sw" style="background:#fff"></i>Белая футболка</span><span class="pl">+</span><span><i class="sw" style="background:#8a8378"></i>Жилетка</span></div>
+        <p>Секрет идеального повседневного образа — просто добавить жилетку к базовой белой футболке.</p>
+      </li>
+      <li class="rec">
+        <div class="eq"><span><i class="sw" style="background:#E9DFCC"></i>Поло экрю</span><span class="pl">+</span><span>Джинсы / брюки / юбка</span></div>
+        <p>Мягкий тёплый цвет, который выглядит дороже обычного белого. Стильно, дорого и ничего лишнего.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="pick" id="pick" aria-label="Подбор посадки">
+  <div class="wrap">
+    <div class="sh">
+      <div><span class="kick">Подбор посадки</span><h2 class="h2 ls">Найдите свою<br>футболку</h2></div>
+      <p class="lead">Два вопроса — и вы знаете, что искать в магазине URBANFOX на Wildberries. Сомневаетесь в размере — спросите в директ.</p>
+    </div>
+    <div class="pk">
+      <div>
+        <div class="q"><span class="q-l">1. Для кого</span>
+          <div class="chips" id="gChips">
+            <button class="chip" data-g="m" aria-pressed="true">Мужская</button>
+            <button class="chip" data-g="w" aria-pressed="false">Женская</button>
+          </div>
+        </div>
+        <div class="q"><span class="q-l">2. Посадка</span><div class="chips" id="fChips"></div></div>
+        <div class="res" aria-live="polite">
+          <h3 id="rName">FIT</h3>
+          <p id="rText"></p>
+          <p class="sz" id="rSize"></p>
+          <div class="cta-row">
+            <a class="btn" id="rWb" href="https://www.wildberries.ru/seller/909921" target="_blank" rel="noopener">Смотреть на WB <span class="ar">→</span></a>
+            <a class="btn ghost" href="https://ig.me/m/urbanfox_16" target="_blank" rel="noopener">Спросить в директ</a>
+          </div>
+          <div class="msg">
+            <p class="msg-t" id="rMsg"></p>
+            <button class="copy" id="copyBtn">Скопировать текст</button>
+          </div>
+        </div>
+      </div>
+      <div class="pk-fig">
+        <div class="shirt-o"><div class="shirt" id="pkShirt"></div></div>
+        <span class="pk-name" id="pkName">FIT</span>
+        <div class="colors" id="pkColors" aria-label="Цвет"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sizes wrap" id="sizes" aria-label="Размеры">
+  <div class="sh">
+    <div><span class="kick">Размерный ряд</span><h2 class="h2 ls">От S до 3XL</h2></div>
+    <p class="lead">Базовые футболки URBANFOX — в шести размерах. Точную сетку смотрите на карточке товара в WB.</p>
+  </div>
+  <div class="sz-row" aria-label="Размеры S, M, L, XL, 2XL, 3XL"><span>S</span><span>M</span><span>L</span><span>XL</span><span>2XL</span><span>3XL</span></div>
+  <div class="sz-notes">
+    <div><b>Женское поло</b>от XS до 3XL</div>
+    <div><b>Оверсайз с подворотом</b>от S до 2XL</div>
+    <div><b>Не уверены в размере?</b>Напишите рост и вес в <a href="https://ig.me/m/urbanfox_16" target="_blank" rel="noopener">директ @urbanfox_16</a></div>
+  </div>
+</section>
+
+<section class="how wrap" id="how" aria-label="Как заказать">
+  <div class="how-grid">
+    <div><span class="kick">Как заказать</span><h2 class="h2 ls">Три шага</h2></div>
+    <ol>
+      <li><div><h3>Выберите посадку</h3><p>FIT, SLIM, оверсайз, поло или V-вырез — в <a href="#pick">подборе</a> выше.</p></div></li>
+      <li><div><h3>Откройте магазин на WB</h3><p>Все модели — в магазине продавца <a href="https://www.wildberries.ru/seller/909921" target="_blank" rel="noopener">wildberries.ru/seller/909921</a>.</p></div></li>
+      <li><div><h3>Вопросы — в директ</h3><p>Размер, цвет, наличие — <a href="https://ig.me/m/urbanfox_16" target="_blank" rel="noopener">напишите URBANFOX в Instagram</a>.</p></div></li>
+    </ol>
+  </div>
+  <div class="proof">
+    <div><b>1&nbsp;039</b>подписчиков в Instagram</div>
+    <div><b>339</b>публикаций</div>
+    <div><b>РФ</b>сделано в России</div>
+    <div><b>М&nbsp;+&nbsp;Ж</b>отзывы — в закреплённых историях</div>
+  </div>
+</section>
+
+<section class="fin" aria-label="Заказать">
+  <div class="wrap">
+    <h2 class="h2 ls">Просто.<br>Стильно.<br>Твоё.</h2>
+    <div class="fin-row">
+      <p style="max-width:420px;font-size:17px">Мы делаем ваш гардероб удобным — URBANFOX.</p>
+      <div class="cta-row">
+        <a class="btn" href="https://www.wildberries.ru/seller/909921" target="_blank" rel="noopener">Магазин на Wildberries <span class="ar">→</span></a>
+        <a class="btn ghost" href="https://ig.me/m/urbanfox_16" target="_blank" rel="noopener">Написать в директ</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div><span class="logo">Urbanfox</span><p style="margin-top:8px">Премиальные базовые футболки для мужчин и женщин. Сделано в России.</p></div>
+    <div style="display:flex;flex-direction:column">
+      <a href="https://instagram.com/urbanfox_16" target="_blank" rel="noopener">Instagram @urbanfox_16</a>
+      <a href="https://www.wildberries.ru/seller/909921" target="_blank" rel="noopener">Wildberries — продавец 909921</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+var RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+var S = {
+  fit:  {nw:9, nd:9, sh:26,sy:7, sl:15,sd:24,sw:13,ay:36,bw:27,hw:24,len:97},
+  slim: {nw:8, nd:8, sh:23,sy:7, sl:13,sd:24,sw:12,ay:35,bw:23,hw:22,len:97},
+  over: {nw:11,nd:8, sh:34,sy:12,sl:14,sd:34,sw:16,ay:48,bw:35,hw:35,len:80},
+  over2:{nw:11,nd:8, sh:32,sy:11,sl:17,sd:36,sw:15,ay:48,bw:33,hw:33,len:95},
+  polo: {nw:7, nd:26,sh:25,sy:7, sl:14,sd:25,sw:12,ay:36,bw:26,hw:26,len:97},
+  v:    {nw:12,nd:24,sh:24,sy:7, sl:13,sd:24,sw:12,ay:35,bw:25,hw:24,len:96}
+};
+function poly(p){
+  var k=3, pts=[[50-p.nw,3],[50,p.nd],[50+p.nw,3],[50+p.sh,p.sy],[50+p.sh+p.sl,p.sd],[50+p.sh+p.sl-k,p.sd+p.sw],[50+p.bw,p.ay],[50+p.hw,p.len],
+    [50-p.hw,p.len],[50-p.bw,p.ay],[50-p.sh-p.sl+k,p.sd+p.sw],[50-p.sh-p.sl,p.sd],[50-p.sh,p.sy]];
+  return 'polygon('+pts.map(function(a){return a[0].toFixed(2)+'% '+a[1].toFixed(2)+'%'}).join(',')+')';
+}
+function lerp(a,b,t){var o={};for(var k in a)o[k]=a[k]+(b[k]-a[k])*t;return o}
+
+/* letter-spacing reveal */
+var lsEls=[].slice.call(document.querySelectorAll('.ls'));
+if('IntersectionObserver' in window && !RM){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.2});
+  lsEls.forEach(function(el){io.observe(el)});
+  setTimeout(function(){lsEls.forEach(function(el){if(el.getBoundingClientRect().top<innerHeight*3)el.classList.add('in')})},2600);
+} else lsEls.forEach(function(el){el.classList.add('in')});
+
+/* hero */
+var CAP={fit:'FIT — спортивный крой по плечам и рукам',slim:'SLIM — по фигуре; чёрная, арт. 842032946',over:'OVERSIZE — свободный крой и спущенный рукав',polo:'POLO — классический воротник, экрю'};
+var hs=document.getElementById('heroShirt'), words=[].slice.call(document.querySelectorAll('.fw')), capL=document.getElementById('capL'), capM=document.getElementById('capM'), order=['fit','slim','over','polo'], cur=0, timer;
+function setHero(f){
+  hs.style.clipPath=poly(S[f]); capL.textContent=CAP[f]; capM.textContent=CAP[f];
+  words.forEach(function(w){var on=w.dataset.fit===f;w.classList.toggle('on',on);w.setAttribute('aria-pressed',on)});
+  cur=order.indexOf(f);
+}
+words.forEach(function(w){w.addEventListener('click',function(){clearInterval(timer);setHero(w.dataset.fit)})});
+setHero('fit');
+if(!RM) timer=setInterval(function(){setHero(order[(cur+1)%4])},3200);
+
+/* lab sticky morph */
+var lab=document.getElementById('lab'), ls=document.getElementById('labShirt'), layers=[].slice.call(ls.querySelectorAll('[data-l]')), steps=[].slice.call(document.querySelectorAll('.step')),
+    STG=[S.fit,S.slim,S.over,S.polo], NAMES=['FIT','SLIM','OVERSIZE','POLO'], ln=document.getElementById('labName'), lnum=document.getElementById('labNum'), ticking=false, lastA=-1;
+function sm(t){t=Math.max(0,Math.min(1,(t-.3)/.4));return t*t*(3-2*t)}
+function labUpdate(){
+  ticking=false;
+  var st=document.querySelector('.steps'), r=st.getBoundingClientRect(), total=st.offsetHeight-steps[steps.length-1].offsetHeight;
+  var pr=Math.max(0,Math.min(1,(innerHeight*.5-r.top-steps[0].offsetHeight*.5)/Math.max(1,total)))*(STG.length-1);
+  var i=Math.min(STG.length-2,Math.floor(pr)), t=RM?Math.round(pr-i):sm(pr-i);
+  ls.style.clipPath=poly(lerp(STG[i],STG[i+1],t));
+  layers.forEach(function(l,j){l.style.opacity=j===i?1-t:(j===i+1?t:0)});
+  var a=Math.round(i+t);
+  if(a!==lastA){lastA=a;ln.textContent=NAMES[a];lnum.textContent='0'+(a+1)+' / 04';steps.forEach(function(s,j){s.classList.toggle('on',j===a)})}
+}
+function req(){if(!ticking){ticking=true;requestAnimationFrame(labUpdate)}}
+addEventListener('scroll',req,{passive:true});addEventListener('resize',req);labUpdate();
+
+/* picker */
+var WB='https://www.wildberries.ru/seller/909921', SLIMWB='https://www.wildberries.ru/catalog/842032946/detail.aspx';
+var C={white:['#ffffff','белый'],black:['#111111','чёрный'],ecru:['#E9DFCC','экрю']};
+var M={
+  m:[{id:'fit',n:'FIT',s:'fit',c:['white'],t:'Спортивный крой идеально садится по фигуре, выделяя плечи и руки, но оставляя полную свободу движений. Ткань дышит, быстро сохнет и не теряет форму даже после самых жёстких тренировок.',z:'<b>S–3XL</b> — общий размерный ряд; сетку модели смотрите на карточке WB.',u:WB},
+     {id:'slim',n:'SLIM',s:'slim',c:['black','white'],t:'По фигуре, без лишнего. Чёрная SLIM — артикул на WB 842032946: с брюками в глубоком цвете бордо собирает комплименты даже в пасмурный день.',z:'<b>S–3XL</b> — общий размерный ряд; артикул <b>842032946</b>.',u:SLIMWB},
+     {id:'over',n:'Оверсайз',s:'over',c:['white'],t:'Укороченный кроп-крой, свободный силуэт и стильный спущенный рукав — садится на любую фигуру. Плотный турецкий хлопок: держит форму, не растягивается и дышит.',z:'<b>S–3XL</b> — общий размерный ряд; сетку модели смотрите на карточке WB.',u:WB}],
+  w:[{id:'polo',n:'Поло',s:'polo',c:['ecru'],t:'Изысканный оттенок экрю, классический воротник, идеальная посадка — баланс расслабленного шика и строгой классики. С джинсами, строгими брюками или юбкой.',z:'Размерный ряд: <b>от XS до 3XL</b>.',u:WB},
+     {id:'v',n:'V-вырез',s:'v',c:['white','ecru'],t:'Футболка с V-вырезом визуально удлиняет шею. Белая — для контраста, экрю — благородный тёплый оттенок для светлых дней.',z:'<b>S–3XL</b> — общий размерный ряд; сетку модели смотрите на карточке WB.',u:WB},
+     {id:'slim',n:'Slim',s:'slim',c:['white','black'],t:'Белая Slim — рецепт против осенней серости: шоколадные джинсы и бордовое пальто.',z:'<b>S–3XL</b> — общий размерный ряд; сетку модели смотрите на карточке WB.',u:WB},
+     {id:'over2',n:'Оверсайз',s:'over2',c:['white'],t:'Свободная посадка, удлинённый рукав с аккуратным подворотом — визуально делает руки изящнее. Белоснежный хлопок: плотный, дышащий, приятный к телу.',z:'Размерная сетка: <b>от S до 2XL</b>.',u:WB}]
+};
+var G={m:'мужская',w:'женская'}, st={g:'m',i:0,c:0};
+var fC=document.getElementById('fChips'), gC=[].slice.call(document.querySelectorAll('#gChips .chip')), pk=document.getElementById('pkShirt'), pkC=document.getElementById('pkColors');
+function render(){
+  var list=M[st.g], m=list[st.i];
+  fC.innerHTML=list.map(function(x,j){return '<button class="chip" data-i="'+j+'" aria-pressed="'+(j===st.i)+'">'+x.n+'</button>'}).join('');
+  gC.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.g===st.g)});
+  if(st.c>=m.c.length)st.c=0;
+  pk.style.clipPath=poly(S[m.s]); pk.style.background=C[m.c[st.c]][0];
+  document.getElementById('pkName').textContent=m.n+' · '+C[m.c[st.c]][1];
+  pkC.innerHTML='<span>Цвет:</span>'+m.c.map(function(c,j){return '<button class="cdot" data-c="'+j+'" aria-pressed="'+(j===st.c)+'" aria-label="'+C[c][1]+'"><i style="background:'+C[c][0]+'"></i></button>'}).join('');
+  document.getElementById('rName').textContent=m.n;
+  document.getElementById('rText').textContent=m.t;
+  document.getElementById('rSize').innerHTML=m.z;
+  document.getElementById('rWb').href=m.u;
+  document.getElementById('rMsg').textContent='Здравствуйте! Интересует '+G[st.g]+' футболка '+m.n+', цвет '+C[m.c[st.c]][1]+'. Мой рост ___ см, вес ___ кг — какой размер подойдёт?';
+}
+fC.addEventListener('click',function(e){var b=e.target.closest('.chip');if(b){st.i=+b.dataset.i;st.c=0;render()}});
+gC.forEach(function(b){b.addEventListener('click',function(){st.g=b.dataset.g;st.i=0;st.c=0;render()})});
+pkC.addEventListener('click',function(e){var b=e.target.closest('.cdot');if(b){st.c=+b.dataset.c;render()}});
+document.getElementById('copyBtn').addEventListener('click',function(){
+  var t=document.getElementById('rMsg').textContent, btn=this;
+  function ok(){btn.textContent='Скопировано';setTimeout(function(){btn.textContent='Скопировать текст'},1800)}
+  if(navigator.clipboard)navigator.clipboard.writeText(t).then(ok,fb);else fb();
+  function fb(){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy');ok()}catch(e){}a.remove()}
+});
+render();
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

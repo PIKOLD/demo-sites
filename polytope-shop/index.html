@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>POLYTOPE — практичный авантюризм. Дизайнерская одежда, Пермь</title><meta property="og:type" content="website"><meta property="og:title" content="POLYTOPE — практичный авантюризм. Дизайнерская одежда, Пермь"><meta property="og:description" content="POLYTOPE — дизайнерская одежда в Перми: собственное производство и гарантия идеальной посадки. Маршрут по каталогу и примерка на Ленина, 44."><meta property="og:image" content="https://pikold.github.io/demo-sites/polytope-shop/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="POLYTOPE — дизайнерская одежда в Перми: собственное производство и гарантия идеальной посадки. Маршрут по каталогу и примерка на Ленина, 44.">
+<link rel="stylesheet" href="../_fonts/unbounded.css">
+<link rel="stylesheet" href="../_fonts/ibm-plex-mono.css">
+<style>
+:root{
+  --sky:#3D7DD8;--sky-d:#2a62b4;--olive:#6B6A3A;--bronze:#8A6A3A;--graphite:#4F5560;--milk:#EEE7DC;--red:#D2232A;
+  --ink:#1d2026;--line:rgba(29,32,38,.18);
+  --u:'Unbounded','Segoe UI Variable Display','Segoe UI','Helvetica Neue',Arial,sans-serif;--m:'IBM Plex Mono',Consolas,'Cascadia Mono','SF Mono',Menlo,'DejaVu Sans Mono','Roboto Mono',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--milk);color:var(--ink);font:400 15px/1.6 var(--m);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{width:min(1240px,100% - 32px);margin-inline:auto}
+.mono{font-family:var(--m)}
+.k{font:500 11px/1.4 var(--m);letter-spacing:.14em;text-transform:uppercase}
+h1,h2,h3{font-family:var(--u);font-weight:700;line-height:1.02;letter-spacing:-.02em}
+h2{font-size:clamp(30px,5vw,64px)}
+h3{font-size:18px;line-height:1.2;letter-spacing:-.01em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;font:600 13px/1.2 var(--u);letter-spacing:.02em;text-decoration:none;clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%);transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-red{background:var(--red);color:#fff}
+.btn-ink{background:var(--ink);color:var(--milk)}
+.btn-milk{background:var(--milk);color:var(--ink)}
+.btn-ghost{background:rgba(255,255,255,.14);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.5)}
+
+/* demo bar */
+.demo{background:var(--ink);color:#cfd3da;font:400 11px/1.45 var(--m);padding:7px 16px;text-align:center}
+
+/* header */
+header.top{position:sticky;top:0;z-index:40;background:rgba(238,231,220,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:62px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 15px/1 var(--u);letter-spacing:.18em}
+.logo svg{width:34px;height:30px}
+.top nav{display:flex;gap:22px}
+.top nav a{font:500 12px/1 var(--m);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:14px 0}
+.top nav a:hover{color:var(--red)}
+.top .btn{min-height:44px;padding:10px 18px;font-size:12px}
+.cnt{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 6px;background:#fff;color:var(--red);font:700 11px/1 var(--m);border-radius:11px}
+
+/* horse progress */
+.trail{position:fixed;left:0;right:0;bottom:0;height:34px;z-index:45;pointer-events:none}
+.trail svg.ln{position:absolute;inset:auto 0 6px 0;width:100%;height:16px}
+.horse{position:absolute;left:0;bottom:6px;width:38px;height:32px;will-change:transform}
+.horse svg{width:100%;height:100%}
+
+/* facets */
+.facet{position:relative;padding-block:clamp(70px,9vw,130px);margin-top:-5vw}
+.facet:first-of-type{margin-top:0}
+
+/* hero */
+.hero{background:var(--sky);color:#fff;padding:clamp(28px,4vw,56px) 0 clamp(90px,10vw,150px);overflow:hidden;margin-top:0}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,4vw,64px);align-items:center}
+.hero h1{font-size:clamp(44px,7.4vw,112px);line-height:.94;letter-spacing:-.035em;margin:18px 0 26px}
+.hero h1 span{display:block}
+.hero h1 .r{color:var(--milk);-webkit-text-stroke:0}
+.hero .lead{max-width:470px;font-size:15px;color:#eaf1fc}
+.facts{list-style:none;display:grid;gap:8px;margin:26px 0 30px}
+.facts li{display:flex;gap:12px;align-items:center;font:500 13px/1.3 var(--m);letter-spacing:.04em}
+.facts li::before{content:"";width:10px;height:10px;background:var(--milk);clip-path:polygon(50% 0,100% 40%,80% 100%,20% 100%,0 40%)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px}
+.addr{margin-top:30px;display:inline-grid;gap:4px;padding:14px 18px 14px 16px;border-left:3px solid var(--red);background:rgba(20,40,80,.18)}
+.addr b{font:600 15px/1.25 var(--u);letter-spacing:0}
+.hero-pic{position:relative;aspect-ratio:4/5.3;max-height:82vh;justify-self:end;width:100%}
+.hero-pic .mask{position:absolute;inset:0;clip-path:polygon(18% 0,100% 7%,100% 78%,74% 100%,0 92%,4% 22%)}
+.hero-pic img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.hero-pic .shard{position:absolute;background:var(--red);width:64px;height:64px;left:-18px;bottom:16%;clip-path:polygon(0 30%,70% 0,100% 100%)}
+.hero-pic .shard2{position:absolute;right:-10px;top:-14px;width:110px;height:80px;background:var(--milk);opacity:.9;clip-path:polygon(0 0,100% 20%,60% 100%)}
+.hero-pic .tag{position:absolute;right:6%;bottom:9%;background:var(--ink);color:var(--milk);padding:8px 12px;font:500 11px/1.3 var(--m);letter-spacing:.06em}
+
+/* route + catalog */
+.route{background:var(--milk);padding-top:clamp(90px,10vw,140px)}
+.route-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,420px);gap:24px;align-items:end;margin-bottom:34px}
+.route-head p{color:#444a54}
+.map{position:relative;margin:10px 0 40px}
+.map svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.stops{position:relative;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));height:150px}
+.stop{position:relative;display:flex;flex-direction:column;align-items:center;gap:10px;font:600 12px/1.2 var(--u);text-align:center;min-height:44px}
+.stop .dot{width:22px;height:22px;background:var(--milk);border:3px solid var(--ink);transform:rotate(45deg);transition:.25s}
+.stop small{font:500 10px/1 var(--m);letter-spacing:.1em;color:var(--graphite)}
+.stop[aria-pressed=true] .dot{background:var(--red);border-color:var(--red);transform:rotate(45deg) scale(1.25)}
+.stop[aria-pressed=true]{color:var(--red)}
+.stop:hover .dot{background:var(--sky)}
+.stop:nth-child(odd){justify-content:flex-start}
+.stop:nth-child(even){justify-content:flex-end;flex-direction:column-reverse}
+
+.cat{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,360px);gap:28px;align-items:start}
+.items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.item{background:#fff;display:flex;flex-direction:column;animation:in .45s ease both}
+.item:nth-child(2n){margin-top:44px}
+@keyframes in{from{opacity:.2;transform:translateY(14px)}}
+.item .ph{aspect-ratio:4/5;overflow:hidden;clip-path:polygon(0 0,100% 0,100% 88%,82% 100%,0 100%)}
+.item:nth-child(2n) .ph{clip-path:polygon(0 0,100% 0,100% 100%,14% 100%,0 90%)}
+.item img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.item:hover img{transform:scale(1.04)}
+.item .bd{padding:18px 18px 20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.item .by{font:500 11px/1.3 var(--m);letter-spacing:.08em;text-transform:uppercase;color:var(--bronze)}
+.item p{font-size:13px;color:#4a505a}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{min-height:36px;padding:6px 12px;border:1px solid var(--line);font:500 12px/1 var(--m)}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--milk);border-color:var(--ink)}
+.add{margin-top:auto;min-height:46px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;background:var(--milk);font:600 12px/1 var(--u);transition:.2s}
+.add:hover{background:var(--sky);color:#fff}
+.add[aria-pressed=true]{background:var(--red);color:#fff}
+
+.tray{position:sticky;top:84px;background:var(--ink);color:var(--milk);padding:24px 22px 22px;clip-path:polygon(0 0,92% 0,100% 6%,100% 100%,0 100%)}
+.tray h3{font-size:20px;margin:8px 0 14px}
+.tray ul{list-style:none;display:grid;gap:8px;margin-bottom:16px;min-height:24px}
+.tray li{display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:13px;border-bottom:1px dashed rgba(238,231,220,.25);padding-bottom:6px}
+.tray li button{min-width:44px;min-height:36px;color:#ff8a8f;font-size:12px}
+.tray .empty{color:#9aa0aa;font-size:13px}
+.tray label{display:block;font:500 11px/1.3 var(--m);letter-spacing:.08em;text-transform:uppercase;color:#aeb4bd;margin:10px 0 6px}
+.tray input{width:100%;min-height:44px;padding:10px 12px;background:#2b2f37;border:1px solid #474c56;color:#fff;font:400 14px var(--m)}
+.tray textarea{width:100%;min-height:150px;padding:12px;background:#2b2f37;border:1px solid #474c56;color:#e8e3da;font:400 12.5px/1.5 var(--m);resize:vertical}
+.tray .acts{display:grid;gap:10px;margin-top:12px}
+.tray .row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
+.tray .btn{width:100%;font-size:12px;padding:12px 10px}
+.tray .note{font-size:11px;color:#9aa0aa;margin-top:12px}
+
+/* lookbook */
+.look{background:var(--graphite);color:var(--milk)}
+.look .wrap>header{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:40px}
+.look .wrap>header p{max-width:380px;color:#d5d8de}
+.lgrid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:clamp(56px,7vw,96px);gap:14px}
+.lgrid figure{position:relative;overflow:hidden}
+.lgrid img{width:100%;height:100%;object-fit:cover}
+.lgrid figcaption{position:absolute;left:12px;bottom:10px;background:var(--milk);color:var(--ink);padding:5px 9px;font:500 11px/1.3 var(--m)}
+.l1{grid-column:1/6;grid-row:1/8;clip-path:polygon(0 4%,100% 0,100% 100%,0 94%)}
+.l2{grid-column:6/9;grid-row:2/6;clip-path:polygon(0 0,100% 8%,100% 100%,0 100%)}
+.l3{grid-column:9/13;grid-row:1/6;clip-path:polygon(0 6%,100% 0,94% 100%,0 100%)}
+.l4{grid-column:6/10;grid-row:6/11;clip-path:polygon(4% 0,100% 0,100% 92%,0 100%)}
+.l5{grid-column:10/13;grid-row:6/11;clip-path:polygon(0 0,100% 6%,100% 100%,0 100%)}
+.l6{grid-column:1/6;grid-row:8/11;background:var(--sky);clip-path:polygon(0 6%,100% 0,96% 100%,0 100%);display:flex;align-items:center;padding:24px}
+.l6 p{font:600 clamp(16px,1.7vw,22px)/1.25 var(--u)}
+
+/* production */
+.prod{background:var(--olive);color:var(--milk)}
+.prod .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,80px);align-items:center}
+.prod .pic{aspect-ratio:4/5;clip-path:polygon(0 8%,70% 0,100% 18%,100% 100%,22% 100%,0 86%)}
+.prod .pic img{width:100%;height:100%;object-fit:cover}
+.prod h2{margin:14px 0 22px}
+.pts{display:grid;gap:0;margin-top:26px;border-top:1px solid rgba(238,231,220,.3)}
+.pts>div{display:grid;grid-template-columns:52px minmax(0,1fr);gap:14px;padding:18px 0;border-bottom:1px solid rgba(238,231,220,.3)}
+.pts b{font:700 22px/1 var(--u);color:#e2d7a6}
+.pts h3{margin-bottom:6px}
+.pts p{color:#e6e1d2;font-size:14px}
+
+/* designer */
+.des{background:var(--bronze);color:#fff}
+.des .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,5vw,80px);align-items:center}
+.des h2{font-size:clamp(28px,4.4vw,58px);margin:14px 0 22px}
+.des blockquote{font:500 clamp(17px,1.7vw,22px)/1.4 var(--u);border-left:3px solid var(--milk);padding-left:18px;margin:22px 0}
+.des ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.des li{padding:8px 12px;background:rgba(0,0,0,.18);font-size:12px}
+.des .duo{position:relative;aspect-ratio:1/1.15}
+.des .duo figure{position:absolute;overflow:hidden}
+.des .duo img{width:100%;height:100%;object-fit:cover}
+.des .d1{inset:0 22% 18% 0;clip-path:polygon(0 0,100% 6%,92% 100%,0 94%)}
+.des .d2{inset:36% 0 0 40%;clip-path:polygon(10% 0,100% 0,100% 100%,0 92%);box-shadow:0 0 0 8px var(--bronze)}
+.others{margin-top:26px;font-size:13px;color:#f1e6d3}
+
+/* horse story */
+.pony{background:var(--milk)}
+.pony .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:center}
+.pony .pic{aspect-ratio:1/1;clip-path:polygon(8% 0,100% 0,100% 90%,88% 100%,0 100%,0 12%)}
+.pony .pic img{width:100%;height:100%;object-fit:cover}
+.pony h2 em{font-style:normal;color:var(--red)}
+.pony p{margin:20px 0 26px;max-width:520px;color:#3c414a}
+
+/* proof */
+.proof{background:var(--ink);color:var(--milk)}
+.nums{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;margin-top:36px}
+.nums div{background:#2a2e36;padding:26px 22px}
+.nums div:nth-child(2){background:var(--sky)}
+.nums div:nth-child(4){background:var(--red)}
+.nums b{display:block;font:700 clamp(24px,3.6vw,46px)/1.05 var(--u);overflow-wrap:anywhere;margin-bottom:10px}
+.nums span{font-size:13px;color:#d8dbe0}
+.hl{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.hl a{display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;border:1px solid #4a4f59;text-decoration:none;font-size:13px}
+.hl a:hover{border-color:var(--milk)}
+
+/* find */
+.find{background:var(--sky);color:#fff;padding-bottom:clamp(80px,9vw,120px)}
+.find .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,5vw,72px);align-items:center}
+.find h2{font-size:clamp(30px,5.4vw,72px)}
+.find .street{font:600 clamp(18px,2vw,26px)/1.25 var(--u);margin:22px 0 8px}
+.find .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.poly{aspect-ratio:1/1;position:relative}
+.poly svg{width:100%;height:100%}
+footer{background:var(--ink);color:#aab0b9;padding:30px 0 70px;font-size:12px}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+footer a{color:var(--milk)}
+
+.toast{position:fixed;left:50%;bottom:48px;transform:translate(-50%,30px);opacity:0;background:var(--red);color:#fff;padding:12px 18px;font:600 13px var(--u);z-index:60;transition:.3s;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.fab{display:none}
+body:not(.has) .fab{opacity:0;pointer-events:none;transform:translateY(20px)}
+
+@media (max-width:980px){
+  .top nav{display:none}
+  .hero .wrap,.prod .wrap,.des .wrap,.pony .wrap,.find .wrap{grid-template-columns:minmax(0,1fr)}
+  .hero-pic{max-height:none;aspect-ratio:4/4.6}
+  .route-head{grid-template-columns:minmax(0,1fr)}
+  .cat{grid-template-columns:minmax(0,1fr)}
+  .tray{position:relative;top:0}
+  .nums{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .poly{max-width:360px}
+}
+@media (max-width:640px){
+  body{font-size:14px}
+  .hero h1{font-size:clamp(38px,12vw,56px)}
+  .hero-pic{order:-1;aspect-ratio:4/4.4}
+  .stops{grid-template-columns:repeat(3,minmax(0,1fr));height:auto;row-gap:18px}
+  .stop,.stop:nth-child(even){flex-direction:column;justify-content:flex-start;padding:6px 2px}
+  .map svg{display:none}
+  .items{grid-template-columns:minmax(0,1fr);gap:18px}
+  .item:nth-child(2n){margin-top:0}
+  .item .ph{aspect-ratio:4/4.3}
+  .lgrid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:auto}
+  .lgrid figure{grid-column:auto!important;grid-row:auto!important;aspect-ratio:3/4}
+  .lgrid .l1{grid-column:1/3!important;aspect-ratio:4/4.4}
+  .l6{grid-column:1/3!important;aspect-ratio:auto!important}
+  .tray .row{grid-template-columns:minmax(0,1fr)}
+  .fab{display:flex;position:fixed;transition:.25s;right:12px;bottom:42px;z-index:50;min-height:48px}
+  .demo{font-size:10.5px}
+  .logo{font-size:13px;letter-spacing:.14em}
+  .top .btn .t{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+<div class="demo" data-note="Demo concept">Демо-концепт независимого разработчика — не официальный сайт POLYTOPE. Не согласован с владельцем, удаляется по первой просьбе.</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="POLYTOPE — наверх">
+      <svg viewBox="0 0 34 30" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="M8 3 L26 2 L33 14 L24 28 L9 27 L1 15 Z"/><path d="M8 3 L14 13 L26 2 M14 13 L1 15 M14 13 L24 28 M14 13 L33 14"/></svg>
+      POLYTOPE
+    </a>
+    <nav aria-label="Разделы">
+      <a href="#route">Каталог</a>
+      <a href="#look">Лукбук</a>
+      <a href="#prod">Производство</a>
+      <a href="#designer">Дизайнер</a>
+      <a href="#find">Как найти</a>
+    </nav>
+    <a class="btn btn-red" href="#tray"><span class="t">Примерка</span> <span class="cnt" data-count>0</span></a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero facet" data-edge="0,0,0|0,0,0" data-bot="0,6,2|5,0,4">
+  <div class="wrap">
+    <div>
+      <p class="k">Дизайнерская одежда · Пермь</p>
+      <h1><span>Практичный</span><span class="r">авантюризм</span></h1>
+      <p class="lead">в каждой вещи. Городская экспедиция по Перми: клетчатая шерсть, оливковый трикотаж, бронзовый сатин и молочный мех — с примеркой в нашем пространстве.</p>
+      <ul class="facts">
+        <li>Собственное производство</li>
+        <li>Гарантия идеальной посадки</li>
+        <li>Полный ассортимент — в магазине</li>
+      </ul>
+      <div class="cta">
+        <a class="btn btn-red" href="#route">Маршрут по каталогу</a>
+        <a class="btn btn-ghost" href="https://t.me/polytope_shop" target="_blank" rel="noopener">Telegram-канал</a>
+      </div>
+      <div class="addr"><span class="k">Точка сбора</span><b>Пермь, Ленина, 44</b><span>Старокирпичный переулок</span></div>
+    </div>
+    <div class="hero-pic">
+      <span class="shard2" aria-hidden="true"></span>
+      <div class="mask" data-poly="18 0,100 7,100 78,74 100,0 92,4 22|4 6,86 0,100 64,90 100,10 100,0 40">
+        <picture><source media="(max-width:640px)" srcset="img/p14-m.jpg"><img src="img/p14.jpg" alt="Девушка в бежевом полупальто POLYTOPE на фоне синего неба Перми" fetchpriority="high"></picture>
+      </div>
+      <span class="shard" aria-hidden="true"></span>
+      <span class="tag">Полупальто Loginenko</span>
+    </div>
+  </div>
+</section>
+
+<section class="route facet" id="route" data-edge="0,5,1|4,0,5" data-bot="3,0,5|0,5,1">
+  <div class="wrap">
+    <div class="route-head">
+      <div><p class="k">Фишка · маршрут по каталогу</p><h2>Выберите точку маршрута</h2></div>
+      <p>Шесть остановок — как в наших хайлайтах. Добавьте вещи в примерку, и мы подготовим их к вашему приходу в магазин. Цены и наличие подскажем в сообщениях.</p>
+    </div>
+    <div class="map">
+      <svg viewBox="0 0 1200 150" preserveAspectRatio="none" aria-hidden="true"><polyline points="100,20 300,130 500,20 700,130 900,20 1100,130" fill="none" stroke="#1d2026" stroke-width="2" stroke-dasharray="7 7" vector-effect="non-scaling-stroke"/></svg>
+      <div class="stops" role="group" aria-label="Категории каталога" id="stops"></div>
+    </div>
+    <div class="cat">
+      <div class="items" id="items" aria-live="polite"></div>
+      <aside class="tray" id="tray" aria-label="Примерка">
+        <p class="k">Отложить и примерить в магазине</p>
+        <h3>Ваша примерка</h3>
+        <ul id="list"><li class="empty">Пока пусто — добавьте вещи из маршрута.</li></ul>
+        <label for="size">Ваш размер (по желанию)</label>
+        <input id="size" placeholder="например, 44 или S">
+        <label for="when">Когда удобно прийти</label>
+        <input id="when" placeholder="например, в субботу днём">
+        <label for="msg">Текст сообщения</label>
+        <textarea id="msg" readonly></textarea>
+        <div class="acts">
+          <button class="btn btn-milk" id="copy" type="button">Скопировать текст</button>
+          <div class="row">
+            <a class="btn btn-red" href="https://t.me/polytope_shop" target="_blank" rel="noopener">Telegram</a>
+            <a class="btn btn-ghost" href="https://ig.me/m/polytope_shop" target="_blank" rel="noopener">Direct</a>
+          </div>
+        </div>
+        <p class="note">Скопируйте текст и вставьте в Telegram или Instagram Direct @polytope_shop. Оплата и наличие — по ответу магазина.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="look facet" id="look" data-edge="4,0,3|0,4,0" data-bot="0,4,1|4,0,4">
+  <div class="wrap">
+    <header>
+      <div><p class="k">Лукбук · городская экспедиция</p><h2>Пермь в&nbsp;слоях</h2></div>
+      <p>Пальто в пол, мех, сатин и клетка: вещи, которые носят по городу с утра до вечера и не боятся смены погоды.</p>
+    </header>
+    <div class="lgrid">
+      <figure class="l1"><img src="img/p8.jpg" alt="Длинное чёрное пальто и серый трикотаж на фоне каменной стены" decoding="async"><figcaption>Слой за слоем</figcaption></figure>
+      <figure class="l2"><img src="img/p11-m.jpg" alt="Клетчатая шерстяная вещь на фоне неба" decoding="async"></figure>
+      <figure class="l3"><img src="img/p10.jpg" alt="Молочная шубка Loginenko у деревянной двери" decoding="async"><figcaption>Шубка Loginenko</figcaption></figure>
+      <figure class="l4"><img src="img/p3.jpg" alt="Чёрный жакет с юбкой у кованой ограды" decoding="async"><figcaption>Чёрный жакет</figcaption></figure>
+      <figure class="l5"><img src="img/p1-m.jpg" alt="Джинсовое платье Loginenko миди" decoding="async"><figcaption>Платье Loginenko</figcaption></figure>
+      <div class="l6"><p>«Достаточно сменить обувь и аксессуары, чтобы получить совершенно другое настроение».</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="prod facet" id="prod" data-edge="0,5,2|5,1,0" data-bot="5,0,3|1,5,0">
+  <div class="wrap">
+    <div class="pic"><img src="img/p5.jpg" alt="Оливковый лонгслив крупным планом" decoding="async"></div>
+    <div>
+      <p class="k">Производство</p>
+      <h2>Шьём сами — поэтому сидит</h2>
+      <p>POLYTOPE — локальный пермский бренд с собственным производством. Вещи придуманы для каждого дня: база, к которой хочется возвращаться, и акценты, которые меняют настроение комплекта.</p>
+      <div class="pts">
+        <div><b>01</b><div><h3>Собственное производство</h3><p>Свои лекала и свой контроль — от трикотажа до пальто.</p></div></div>
+        <div><b>02</b><div><h3>Гарантия идеальной посадки</h3><p>Так и написано в нашем профиле. Примерка — в магазине на Ленина, 44.</p></div></div>
+        <div><b>03</b><div><h3>Состав честно</h3><p>Например, костюм — 100% шерсть; куртка — утеплитель Valtherm и подклад из вискозы.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="des facet" id="designer" data-edge="4,0,4|0,4,0" data-bot="0,5,0|5,0,5">
+  <div class="wrap">
+    <div>
+      <p class="k">Дизайнер</p>
+      <h2>Екатерина Логиненко</h2>
+      <blockquote>«Выбирайте одежду, которая будет работать на вас и в будни, и в праздники».</blockquote>
+      <p>Подпись Loginenko стоит на шубке, джинсовом платье, костюме из шерсти, полупальто, куртке на Valtherm, лонгсливе и болоневой манишке.</p>
+      <ul><li>Шубка</li><li>Платье из денима</li><li>Жакет-бомбер и брюки</li><li>Полупальто</li><li>Куртка</li><li>Манишка</li><li>Толстовка с лошадкой</li></ul>
+      <p class="others">Также в POLYTOPE: Галина Плохая, Natasha Nagina, Feel Simple.</p>
+    </div>
+    <div class="duo">
+      <figure class="d1"><img src="img/p6.jpg" alt="Куртка из бронзового сатина и вязаная шапка" decoding="async"></figure>
+      <figure class="d2"><img src="img/p12-m.jpg" alt="Оливковая блуза и тёмная юбка миди на фоне кирпичного дома" decoding="async"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="pony facet" data-edge="0,4,0|4,0,4" data-bot="0,4,2|3,0,4">
+  <div class="wrap">
+    <div class="pic"><img src="img/p7.jpg" alt="Тёмно-синяя толстовка с красной брошью-лошадкой и еловая ветка" decoding="async"></div>
+    <div>
+      <p class="k">Символ</p>
+      <h2>Маленькая <em>красная лошадка</em></h2>
+      <p>Толстовки с лошадкой стали для нас символом чего-то тёплого, доброго и очень личного. Лимитированная серия в чёрном и белом цветах — наличие уточняйте в сообщениях. А лошадка внизу экрана бежит вместе с вами по всему маршруту.</p>
+      <button class="btn btn-ink" type="button" data-addid="horse">Добавить в примерку</button>
+    </div>
+  </div>
+</section>
+
+<section class="proof facet" data-edge="3,0,4|0,4,0" data-bot="0,0,0|0,0,0" style="padding-bottom:clamp(60px,7vw,100px)">
+  <div class="wrap">
+    <p class="k">Сообщество</p>
+    <h2>Нас читают в&nbsp;Instagram</h2>
+    <div class="nums">
+      <div><b>12&nbsp;тыс.</b><span>подписчиков @polytope_shop</span></div>
+      <div><b>3&nbsp;564</b><span>публикации — образы, обзоры, новинки</span></div>
+      <div><b>100%</b><span>шерсть — костюм Loginenko</span></div>
+      <div><b>Ленина, 44</b><span>примерка в Перми</span></div>
+    </div>
+    <div class="hl">
+      <a href="https://instagram.com/polytope_shop" target="_blank" rel="noopener">Отзывы — в хайлайтах</a>
+      <a href="https://instagram.com/polytope_shop" target="_blank" rel="noopener">Polytope Girls</a>
+      <a href="https://instagram.com/polytope_shop" target="_blank" rel="noopener">Выбор звёзд</a>
+      <a href="https://instagram.com/polytope_shop" target="_blank" rel="noopener">От стилистов</a>
+    </div>
+  </div>
+</section>
+
+<section class="find facet" id="find" data-edge="0,5,2|4,0,5" data-bot="0,0,0|0,0,0">
+  <div class="wrap">
+    <div>
+      <p class="k">Как найти</p>
+      <h2>Финиш маршрута — примерочная</h2>
+      <p class="street">Пермь, Ленина, 44<br>(Старокирпичный переулок)</p>
+      <p>Ждём в гости на примерку. Новинки и наличие — в Telegram-канале.</p>
+      <div class="cta">
+        <a class="btn btn-milk" href="https://yandex.ru/maps/?text=%D0%9F%D0%B5%D1%80%D0%BC%D1%8C%2C%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%2C%2044" target="_blank" rel="noopener">Маршрут в Яндекс Картах</a>
+        <a class="btn btn-red" href="https://t.me/polytope_shop" target="_blank" rel="noopener">t.me/polytope_shop</a>
+        <a class="btn btn-ghost" href="https://ig.me/m/polytope_shop" target="_blank" rel="noopener">Direct</a>
+      </div>
+    </div>
+    <div class="poly" aria-hidden="true">
+      <svg viewBox="0 0 300 280" fill="none" stroke="#EEE7DC" stroke-width="2" stroke-linejoin="round">
+        <path d="M70 28 L230 18 L292 128 L212 262 L80 254 L8 136 Z" fill="rgba(255,255,255,.06)"/>
+        <path d="M70 28 L124 118 L230 18 M124 118 L8 136 M124 118 L212 262 M124 118 L292 128 M124 118 L80 254"/>
+        <path d="M124 118 L230 18 L292 128 Z" fill="#D2232A" stroke="none" opacity=".9"/>
+      </svg>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>POLYTOPE · дизайнерская одежда · Пермь, Ленина, 44</span>
+    <span><a href="https://t.me/polytope_shop" target="_blank" rel="noopener">Telegram</a> · <a href="https://instagram.com/polytope_shop" target="_blank" rel="noopener">Instagram</a></span>
+    <span>Демо-концепт, не официальный сайт.</span>
+  </div>
+</footer>
+
+<a class="btn btn-red fab" href="#tray">Примерка <span class="cnt" data-count>0</span></a>
+
+<div class="trail" aria-hidden="true">
+  <svg class="ln" viewBox="0 0 1000 16" preserveAspectRatio="none"><polyline id="trailLine" points="" fill="none" stroke="#D2232A" stroke-width="1.5" stroke-dasharray="5 5" vector-effect="non-scaling-stroke" opacity=".7"/></svg>
+  <div class="horse" id="horse"><svg viewBox="0 0 40 32"><path fill="#D2232A" d="M5 15 L9 9 L13 5 L15 1 L17 4 L19 5 L17 9 L18 12 L30 11 L34 12 L38 8 L37 15 L33 17 L34 27 L31 27 L30 20 L21 20 L19 27 L16 27 L16 18 L12 15 L8 17 Z"/><circle cx="13" cy="9" r="1" fill="#EEE7DC"/></svg></div>
+</div>
+<div class="toast" id="toast" role="status">Текст скопирован</div>
+
+<script>
+(()=>{
+const CATS=[
+ {id:'top',n:'Верх',items:[
+  {id:'horse',t:'Толстовка с лошадкой',by:'Loginenko',img:'p7',d:'Лимитированная серия, наш маленький символ. Наличие уточняйте.',c:['чёрный','белый']},
+  {id:'ls',t:'Лонгслив из мягкого хлопка',by:'Дизайнер Екатерина Логиненко',img:'p2',d:'Меланжевый оттенок, дружит с денимом, брюками и юбками.'},
+  {id:'ls2',t:'Лонгсливы и водолазки',by:'В наличии в Polytope',img:'p5',d:'Мягкие фактуры на холодный сезон: самостоятельно или в многослойных сочетаниях.'},
+  {id:'jk',t:'Чёрный жакет',by:'Дизайнер Екатерина Логиненко',img:'p3',d:'Универсальная единица: элегантность в будни, акцент вечером.'}]},
+ {id:'outer',n:'Верхняя одежда',items:[
+  {id:'jacket',t:'Куртка на утеплителе Valtherm',by:'Дизайнер Екатерина Логиненко',img:'p6',d:'Подклад из вискозы. Температурный режим: от −5 до +5 °C.'},
+  {id:'fur',t:'Молочная шубка',by:'Loginenko',img:'p10',d:'Легко меняет настроение: от строгого до расслабленного, немного хулиганского образа.'},
+  {id:'coat',t:'Полупальто',by:'Loginenko',img:'p14',d:'В комплекте с юбкой миди Natasha Nagina и поло Feel Simple.'}]},
+ {id:'dress',n:'Платья',items:[
+  {id:'denim',t:'Джинсовое платье',by:'Loginenko',img:'p1',d:'Деним не зависит от трендов, а платье само задаёт основу образа.'}]},
+ {id:'suit',n:'Костюмы',items:[
+  {id:'bomber',t:'Клетчатый жакет-бомбер',by:'Loginenko · 100% шерсть',img:'p11',d:'Часть костюма из 100% шерсти — готовое решение на каждый день.'},
+  {id:'pants',t:'Брюки к костюму',by:'Loginenko · 100% шерсть',img:'p8',d:'Продуманный силуэт, в паре с жакетом-бомбером или отдельно.'}]},
+ {id:'bottom',n:'Низ',items:[
+  {id:'skirt',t:'Юбка миди с защипами',by:'Natasha Nagina',img:'p12',d:'Защипы дают объём и выразительный силуэт, длина миди — элегантность.',c:['серый','шоколадный']}]},
+ {id:'acc',n:'Аксессуары',items:[
+  {id:'bib',t:'Болоневая манишка',by:'Дизайнер Екатерина Логиненко',img:'p4',d:'Аксессуар, который точно пригодится осенью и зимой.',c:['чёрный','молочный','кофейный']}]}
+];
+const P=["im","g/"].join("");const ALL={};CATS.forEach(c=>c.items.forEach(i=>ALL[i.id]=i));
+const picked=new Map();// id -> color
+const $=s=>document.querySelector(s);
+const stops=$('#stops'),itemsEl=$('#items');
+CATS.forEach((c,i)=>{const b=document.createElement('button');b.type='button';b.className='stop';b.setAttribute('aria-pressed',i===0);
+ b.innerHTML=`<span class="dot"></span><span>${c.n}</span><small>0${i+1} · ${c.items.length} шт.</small>`;b.onclick=()=>show(i);stops.appendChild(b)});
+function show(i){[...stops.children].forEach((b,j)=>b.setAttribute('aria-pressed',j===i));
+ itemsEl.innerHTML='';CATS[i].items.forEach(it=>{const a=document.createElement('article');a.className='item';
+  const col=it.c?`<div class="chips" role="group" aria-label="Цвет">${it.c.map((c,k)=>`<button type="button" class="chip" data-c="${c}" aria-pressed="${(picked.get(it.id)||it.c[0])===c}">${c}</button>`).join('')}</div>`:'';
+  a.innerHTML=`<div class="ph"><picture><source media="(max-width:640px)" srcset=${P+it.img}-m.jpg><img src=${P+it.img}.jpg alt="${it.t}" decoding="async"></picture></div><div class="bd"><span class="by">${it.by}</span><h3>${it.t}</h3><p>${it.d}</p>${col}<button type="button" class="add" aria-pressed="${picked.has(it.id)}"><span>${picked.has(it.id)?'В примерке':'Отложить на примерку'}</span><span>${picked.has(it.id)?'✓':'+'}</span></button></div>`;
+  a.querySelectorAll('.chip').forEach(ch=>ch.onclick=()=>{a.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x===ch));a.dataset.c=ch.dataset.c;if(picked.has(it.id)){picked.set(it.id,ch.dataset.c);render()}});
+  a.querySelector('.add').onclick=e=>{const btn=e.currentTarget;if(picked.has(it.id))picked.delete(it.id);else picked.set(it.id,a.dataset.c||(it.c?it.c[0]:''));btn.setAttribute('aria-pressed',picked.has(it.id));btn.children[0].textContent=picked.has(it.id)?'В примерке':'Отложить на примерку';btn.children[1].textContent=picked.has(it.id)?'✓':'+';render()};
+  itemsEl.appendChild(a)})}
+function render(){const l=$('#list');l.innerHTML='';
+ if(!picked.size)l.innerHTML='<li class="empty">Пока пусто — добавьте вещи из маршрута.</li>';
+ picked.forEach((c,id)=>{const li=document.createElement('li');li.innerHTML=`<span>${ALL[id].t}${c?' — '+c:''}</span>`;const x=document.createElement('button');x.type='button';x.textContent='убрать';x.setAttribute('aria-label','Убрать '+ALL[id].t);x.onclick=()=>{picked.delete(id);render();show([...stops.children].findIndex(b=>b.getAttribute('aria-pressed')==='true'))};li.appendChild(x);l.appendChild(li)});
+ document.querySelectorAll('[data-count]').forEach(e=>e.textContent=picked.size);document.body.classList.toggle('has',picked.size>0);
+ const lines=[...picked].map(([id,c])=>`— ${ALL[id].t} (${ALL[id].by}${c?', '+c:''})`);
+ const sz=$('#size').value.trim(),wh=$('#when').value.trim();
+ $('#msg').value=`Здравствуйте! Хочу отложить и примерить в магазине POLYTOPE (Пермь, Ленина, 44):\n${lines.length?lines.join('\n'):'— (выберу вещи вместе с вами)'}\nМой размер: ${sz||'подскажите по посадке'}\nКогда удобно прийти: ${wh||'уточню'}\nПодскажите, пожалуйста, наличие и цену.`}
+$('#size').oninput=render;$('#when').oninput=render;
+document.querySelector('[data-addid]').onclick=e=>{picked.set('horse',picked.get('horse')||'чёрный');render();show(0);e.currentTarget.textContent='В примерке ✓'};
+const toast=$('#toast');
+$('#copy').onclick=async()=>{const t=$('#msg');try{await navigator.clipboard.writeText(t.value)}catch(_){t.select();document.execCommand('copy')}toast.classList.add('on');setTimeout(()=>toast.classList.remove('on'),1800)};
+show(0);render();
+
+/* facets: polygons shift with scroll */
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const parse=s=>s.split('|').map(p=>p.split(',').map(Number));
+const lerp=(a,b,t)=>a+(b-a)*t;
+const secs=[...document.querySelectorAll('.facet')].map(el=>({el,top:parse(el.dataset.edge||'0,0,0|0,0,0'),bot:parse(el.dataset.bot||'0,0,0|0,0,0')}));
+const masks=[...document.querySelectorAll('[data-poly]')].map(el=>({el,p:el.dataset.poly.split('|').map(s=>s.split(',').map(v=>v.trim().split(' ').map(Number)))}));
+const tl=$('#trailLine'),horse=$('#horse');
+const Z=[0,1,.2,.9,.1,1,.3,.8,0];// zigzag (y: 0 top..1 bottom)
+tl.setAttribute('points',Z.map((y,i)=>`${i/(Z.length-1)*1000},${2+y*12}`).join(' '));
+function zig(p){const f=p*(Z.length-1),i=Math.min(Z.length-2,Math.floor(f));return lerp(Z[i],Z[i+1],f-i)}
+let ticking=false;
+function frame(){ticking=false;const vh=innerHeight,vw=innerWidth/100;
+ for(const s of secs){const r=s.el.getBoundingClientRect();let t=RM?0:Math.min(1,Math.max(0,(vh-r.top)/(vh+r.height)));
+  const h=r.height,tp=s.top[0].map((v,i)=>lerp(v,s.top[1][i],t)*vw),bt=s.bot[0].map((v,i)=>lerp(v,s.bot[1][i],t)*vw);
+  s.el.style.clipPath=`polygon(0 ${tp[0]}px,50% ${tp[1]}px,100% ${tp[2]}px,100% ${h-bt[2]}px,50% ${h-bt[1]}px,0 ${h-bt[0]}px)`}
+ for(const m of masks){const r=m.el.getBoundingClientRect();const t=RM?0:Math.min(1,Math.max(0,-r.top/(r.height||1)+.0));
+  m.el.style.clipPath='polygon('+m.p[0].map((pt,i)=>`${lerp(pt[0],m.p[1][i][0],t).toFixed(2)}% ${lerp(pt[1],m.p[1][i][1],t).toFixed(2)}%`).join(',')+')'}
+ const max=document.documentElement.scrollHeight-vh,p=max>0?Math.min(1,scrollY/max):0;
+ const W=innerWidth-38;horse.style.transform=`translate(${(p*W).toFixed(1)}px,${(-zig(p)*12+6).toFixed(1)}px)`}
+const req=()=>{if(!ticking){ticking=true;requestAnimationFrame(frame)}};
+addEventListener('scroll',req,{passive:true});addEventListener('resize',req);addEventListener('load',req);frame();
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

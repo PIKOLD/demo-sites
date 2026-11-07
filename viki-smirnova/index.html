@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>VIKI SMIRNOVA — дизайнерская одежда, Москва</title><meta property="og:type" content="website"><meta property="og:title" content="VIKI SMIRNOVA — дизайнерская одежда, Москва"><meta property="og:description" content="VIKI SMIRNOVA — дизайнерская женская одежда премиум класса из Москвы: твидовые жакеты с золотым шитьём, вещи в наличии и индивидуальный пошив. Заказ в Direct."><meta property="og:image" content="https://pikold.github.io/demo-sites/viki-smirnova/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="VIKI SMIRNOVA — дизайнерская женская одежда премиум класса из Москвы: твидовые жакеты с золотым шитьём, вещи в наличии и индивидуальный пошив. Заказ в Direct.">
+<link rel="stylesheet" href="../_fonts/playfair-display.css">
+<link rel="stylesheet" href="../_fonts/inter.css">
+<style>
+:root{
+  --wall:#F7F5F0; --wall2:#EFEBE2; --gold:#B8913A; --gold-d:#8E6E27; --blue:#1F5FA8; --bottle:#1E4A3A; --rose:#E9BFC4; --velvet:#121212;
+  --ink:#1b1a18; --muted:#6b665d;
+  --serif:'Playfair Display',Georgia,serif; --sans:'Inter',system-ui,sans-serif;
+  --pad:clamp(16px,4vw,56px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--wall);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden;position:relative}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.demo{background:var(--velvet);color:#d9cfb8;font-size:12px;line-height:1.45;text-align:center;padding:7px var(--pad);position:relative;z-index:30}
+.wrap{max-width:1320px;margin:0 auto;padding:0 var(--pad)}
+.kicker{font:600 11px/1.3 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--gold-d)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 26px;font:600 13px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:1px solid var(--velvet);cursor:pointer;transition:background .3s,color .3s,border-color .3s}
+.btn-dark{background:var(--velvet);color:#f3e6c4}
+.btn-dark:hover{background:var(--gold);border-color:var(--gold);color:var(--velvet)}
+.btn-line{background:transparent;color:var(--velvet)}
+.btn-line:hover{background:var(--velvet);color:var(--wall)}
+
+/* gold soutache line */
+#cord{position:absolute;left:0;top:0;width:100%;pointer-events:none;z-index:20;overflow:hidden;max-width:100%}
+#cord path{fill:none;stroke:var(--gold);stroke-linecap:round;stroke-linejoin:round}
+#cord .c1{stroke-width:2.2}
+#cord .c2{stroke-width:.8;stroke:#d8b863;opacity:.85}
+
+/* header */
+header{position:sticky;top:0;z-index:25;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(184,145,58,.35)}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.logo{font:500 20px/1 var(--serif);letter-spacing:.24em;text-decoration:none;white-space:nowrap}
+.nav{display:flex;gap:28px;align-items:center}
+.nav a{font-size:13px;letter-spacing:.08em;text-decoration:none;padding:12px 0;border-bottom:1px solid transparent}
+.nav a:hover{border-color:var(--gold)}
+.nav .btn{min-height:44px;padding:0 18px;font-size:12px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(24px,5vw,80px);padding:clamp(28px,5vw,64px) 0 clamp(48px,7vw,96px);align-items:start}
+.hero-ph{position:relative;margin-left:calc(var(--pad)*-1);overflow:hidden}
+.hero-ph img{width:100%;height:min(82vh,820px);object-fit:cover;object-position:50% 35%}
+.hero-ph figcaption{position:absolute;left:var(--pad);bottom:22px;background:var(--velvet);color:#f3e6c4;font:italic 400 15px/1 var(--serif);padding:14px 18px}
+.hero-col{padding-top:clamp(0px,6vh,72px);border-top:1px solid var(--gold);position:relative}
+.hero-col .kicker{margin:18px 0 22px;display:block}
+.hero h1{font:400 clamp(46px,6.4vw,98px)/.92 var(--serif);letter-spacing:-.01em}
+.hero h1 i{display:block;font-style:italic;color:var(--gold-d)}
+.hero .lead{font:400 clamp(18px,1.6vw,22px)/1.45 var(--serif);margin:26px 0 26px;max-width:28ch}
+.bio{list-style:none;border-top:1px solid rgba(18,18,18,.15)}
+.bio li{display:flex;align-items:center;gap:14px;padding:11px 0;border-bottom:1px solid rgba(18,18,18,.15);font-size:15px;letter-spacing:.02em}
+.bio li svg{flex:0 0 18px;color:var(--gold)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+
+/* numbers */
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.facts div{padding:28px 20px;border-right:1px solid rgba(184,145,58,.4)}
+.facts div:last-child{border-right:0}
+.facts b{display:block;font:400 clamp(30px,3.4vw,50px)/1 var(--serif)}
+.facts span{font-size:13px;color:var(--muted)}
+
+/* lookbook */
+.sec{padding:clamp(72px,10vw,140px) 0}
+.sec-h{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:40px;align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+.sec-h h2{font:400 clamp(40px,5.6vw,84px)/.95 var(--serif)}
+.sec-h h2 i{color:var(--gold-d)}
+.sec-h p{max-width:46ch;color:var(--muted)}
+.chapter{margin-top:clamp(56px,8vw,110px)}
+.ch-h{display:flex;align-items:baseline;gap:20px;border-bottom:1px solid var(--ink);padding-bottom:14px;margin-bottom:28px}
+.ch-h .n{font:italic 400 18px/1 var(--serif);color:var(--gold-d)}
+.ch-h h3{font:400 clamp(32px,4vw,58px)/1 var(--serif)}
+.ch-h .door{margin-left:auto;width:34px;height:56px;background:var(--blue);border:4px solid #fff;outline:1px solid rgba(18,18,18,.15);flex:0 0 auto;align-self:center}
+.ch-h small{font-size:13px;color:var(--muted);letter-spacing:.06em}
+.frames{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(12px,1.6vw,22px);align-items:start}
+.shot{margin:0;position:relative;overflow:hidden}
+.shot img{width:100%;height:100%;object-fit:cover}
+.shot figcaption{font-size:13px;color:var(--muted);margin-top:10px;line-height:1.4}
+.shot figcaption b{color:var(--ink);font-weight:600}
+.f-a{grid-column:1/span 5}.f-a img{aspect-ratio:3/4}
+.f-b{grid-column:7/span 6;margin-top:90px}.f-b img{aspect-ratio:4/5}
+.f-c{grid-column:2/span 4}.f-c img{aspect-ratio:3/4}
+.f-d{grid-column:6/span 7;margin-top:-60px}.f-d img{aspect-ratio:1/1;object-position:50% 30%}
+.f-e{grid-column:1/span 8}.f-e img{aspect-ratio:4/3;object-position:50% 40%}
+.f-f{grid-column:9/span 4;margin-top:120px}.f-f img{aspect-ratio:3/5}
+.f-g{grid-column:3/span 5}.f-g img{aspect-ratio:3/4;object-position:50% 20%}
+.f-h{grid-column:8/span 5;margin-top:70px}.f-h img{aspect-ratio:4/5}
+.chapter.moscow{background:var(--bottle);color:#efe6cf;margin-left:calc(var(--pad)*-1);margin-right:calc(var(--pad)*-1);padding:clamp(40px,6vw,80px) var(--pad)}
+.moscow .ch-h{border-color:rgba(239,230,207,.5)}
+.moscow .ch-h .n{color:#d8b863}
+.moscow .ch-h small,.moscow .shot figcaption{color:#c8c1aa}
+.moscow .shot figcaption b{color:#fff}
+.atlas{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.atlas a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border:1px solid rgba(18,18,18,.25);border-radius:0;text-decoration:none;font:italic 400 18px/1 var(--serif);transition:.25s}
+.atlas a:hover{border-color:var(--gold);background:#fff}
+.atlas-wrap{margin-top:clamp(56px,7vw,90px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:32px;align-items:start}
+.atlas-wrap h3{font:400 clamp(28px,3vw,40px)/1.05 var(--serif)}
+
+/* reveal */
+html.js .rv{transition:clip-path .95s cubic-bezier(.2,.75,.25,1)}
+html.js .rv.l{clip-path:inset(0 100% 0 0)}
+html.js .rv.r{clip-path:inset(0 0 0 100%)}
+html.js .rv.b{clip-path:inset(100% 0 0 0)}
+html.js .rv.t{clip-path:inset(0 0 100% 0)}
+html.js .rv.shot img,html.js .hero-ph.rv img{transform:scale(1.1);transition:transform 1.3s cubic-bezier(.2,.75,.25,1)}
+html.js .rv.in{clip-path:inset(0 0 0 0)}
+html.js .rv.in img{transform:none}
+
+/* quote */
+.quote{background:var(--wall2);padding:clamp(64px,9vw,120px) 0;text-align:center}
+.quote blockquote{font:italic 400 clamp(26px,3.4vw,48px)/1.2 var(--serif);max-width:24ch;margin:0 auto}
+.quote cite{display:block;margin-top:22px;font:600 11px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--gold-d);font-style:normal}
+
+/* stock */
+.stock{background:var(--rose)}
+.stock .sec-h p{color:#5a4547}
+.items{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(16px,2vw,28px)}
+.item{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:end;background:var(--wall);padding:14px}
+.item img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.item h3{font:400 clamp(22px,2vw,28px)/1.15 var(--serif);margin:10px 0 12px}
+.item p{font-size:14px;color:#544d45}
+.size{display:inline-block;font:600 12px/1 var(--sans);letter-spacing:.14em;border:1px solid var(--gold);color:var(--gold-d);padding:8px 10px;margin-top:4px}
+.item a{display:inline-flex;align-items:center;min-height:44px;margin-top:12px;font-size:13px;font-weight:600;letter-spacing:.06em;text-decoration:none;border-bottom:1px solid var(--gold)}
+.it1{grid-column:1/span 7}.it2{grid-column:8/span 5;margin-top:80px}
+.it3{grid-column:2/span 5}.it4{grid-column:7/span 6;margin-top:40px}
+.it2,.it3{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}
+.note{font-size:13px;color:#5a4547;margin-top:28px}
+
+/* configurator */
+.atelier{background:var(--velvet);color:#ece4d2}
+.atelier .sec-h p{color:#b8b0a0}
+.atelier .sec-h h2 i{color:#d8b863}
+.cfg{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(24px,4vw,64px)}
+.step-t{font:600 11px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:#d8b863;margin:0 0 16px;display:block}
+.looks{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;border:0}
+.look input{position:absolute;opacity:0;pointer-events:none}
+.look label{display:block;cursor:pointer;border:1px solid rgba(236,228,210,.2);padding:6px;transition:.25s;height:100%}
+.look img{width:100%;aspect-ratio:3/4;object-fit:cover;filter:grayscale(.5) brightness(.75);transition:.3s}
+.look span{display:block;font-size:12px;line-height:1.3;padding:8px 2px 2px}
+.look input:checked+label{border-color:var(--gold);background:rgba(184,145,58,.12)}
+.look input:checked+label img,.look label:hover img{filter:none}
+.look input:focus-visible+label{outline:2px solid #d8b863;outline-offset:2px}
+.modes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border:1px solid rgba(236,228,210,.3);margin:28px 0 20px}
+.modes button{min-height:52px;background:transparent;color:#ece4d2;border:0;font:500 14px/1.2 var(--sans);cursor:pointer;padding:8px 12px}
+.modes button[aria-pressed="true"]{background:#ece4d2;color:var(--velvet)}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.fields label{display:block;font-size:12px;letter-spacing:.06em;color:#b8b0a0}
+.fields input,.fields select,.fields textarea{display:block;width:100%;margin-top:6px;min-height:46px;background:transparent;border:0;border-bottom:1px solid rgba(236,228,210,.4);color:#fff;font:400 16px/1.3 var(--sans);padding:8px 2px}
+.fields select option{color:#111}
+.fields .wide{grid-column:1/-1}
+.fields textarea{min-height:60px;resize:vertical}
+.hidden{display:none!important}
+.hint{font-size:13px;color:#b8b0a0;margin-top:14px}
+.out{background:var(--wall);color:var(--ink);padding:clamp(20px,3vw,36px);position:relative;align-self:start}
+.out .kicker{display:block;margin-bottom:14px}
+.out pre{white-space:pre-wrap;font:400 italic 19px/1.5 var(--serif);min-height:220px;border-left:2px solid var(--gold);padding-left:18px}
+.out .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.out .ok{font-size:13px;color:var(--bottle);margin-top:12px;min-height:20px}
+
+/* steps */
+.how{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:40px}
+.how ol{list-style:none;counter-reset:s}
+.how li{counter-increment:s;display:grid;grid-template-columns:70px minmax(0,1fr);gap:16px;padding:22px 0;border-top:1px solid rgba(18,18,18,.15)}
+.how li::before{content:"0" counter(s);font:italic 400 34px/1 var(--serif);color:var(--gold-d)}
+.how li b{display:block;font:400 22px/1.2 var(--serif);margin-bottom:6px}
+.how li p{color:var(--muted);font-size:15px}
+
+/* footer */
+footer{background:var(--blue);color:#eaf0f8;padding:clamp(56px,8vw,100px) 0 32px}
+.ft{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:40px;align-items:end}
+.ft h2{font:400 clamp(40px,6vw,92px)/.95 var(--serif)}
+.ft h2 i{color:#f0d68e}
+.ft .btn{background:#fff;color:var(--velvet);border-color:#fff}
+.ft .btn:hover{background:var(--gold);border-color:var(--gold)}
+.ft ul{list-style:none;font-size:15px}
+.ft li{padding:12px 0;border-bottom:1px solid rgba(234,240,248,.3)}
+.ft li a{text-decoration:none;display:inline-block;min-height:24px}
+.ft li a:hover{text-decoration:underline}
+.legal{margin-top:56px;font-size:12px;color:#c4d3e8}
+
+@media (max-width:1000px){
+  .nav a:not(.btn){display:none}
+  .hero{grid-template-columns:minmax(0,1fr)}
+  .hero-ph{margin-right:calc(var(--pad)*-1)}
+  .hero-ph img{height:min(72vh,640px)}
+  .hero-col{padding-top:0}
+  .sec-h,.atlas-wrap,.cfg,.how,.ft{grid-template-columns:minmax(0,1fr)}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .facts div:nth-child(2){border-right:0}
+  .facts div:nth-child(-n+2){border-bottom:1px solid rgba(184,145,58,.4)}
+  .items .item{grid-column:1/-1!important;margin-top:0!important}
+}
+@media (max-width:700px){
+  body{font-size:15px}
+  .logo{font-size:16px;letter-spacing:.18em}
+  .nav .btn{padding:0 14px;letter-spacing:.08em}
+  .frames{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .f-a,.f-c,.f-g{grid-column:1/span 4}
+  .f-b,.f-d,.f-h{grid-column:2/span 5;margin-top:-30px}
+  .f-e{grid-column:1/-1}
+  .f-f{grid-column:3/span 4;margin-top:-40px}
+  .shot{z-index:1}
+  .f-b,.f-d,.f-f,.f-h{z-index:2}
+  .looks{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .fields{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .item{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:14px;padding:10px}
+  .item h3{font-size:20px}
+  .how li{grid-template-columns:52px minmax(0,1fr)}
+  .facts div{padding:20px 14px}
+  .hero .cta .btn{flex:1 1 100%}
+  .out pre{font-size:17px;min-height:160px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  html.js .rv,html.js .rv img{clip-path:none!important;transform:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<div class="demo">Демо-концепт независимого разработчика — не официальный сайт VIKI SMIRNOVA. Не согласован с владельцем, удаляется по первой просьбе.</div>
+
+<svg id="cord" aria-hidden="true" focusable="false"><path class="c1"/><path class="c2"/></svg>
+
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="#top">VIKI SMIRNOVA</a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#lookbook">Лукбук</a>
+      <a href="#stock">В наличии</a>
+      <a href="#atelier">По меркам</a>
+      <a class="btn btn-dark" href="https://ig.me/m/viki.smirnova" target="_blank" rel="noopener">Direct</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+    <section class="hero">
+      <figure class="hero-ph rv l">
+        <picture>
+          <source media="(max-width:700px)" srcset="img/p2-m.jpg">
+          <img src="img/p2.jpg" alt="Чёрный жакет VIKI SMIRNOVA с золотой сутажной тесьмой на террасе у моря" fetchpriority="high">
+        </picture>
+        <figcaption>Золотое шитьё у моря</figcaption>
+      </figure>
+      <div class="hero-col">
+        <span class="kicker">Дизайнерская одежда · Москва</span>
+        <h1>Viki<i>Smirnova</i></h1>
+        <p class="lead">Твид, золотое шитьё и old money с солнцем. Вещи в наличии — или по вашим меркам.</p>
+        <ul class="bio">
+          <li><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M2 10c3-6 7 6 10 0s6-2 6 0-3 3-4 1" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>Fashion Designer</li>
+          <li><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M2 10c3-6 7 6 10 0s6-2 6 0-3 3-4 1" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>Одежда премиум класс</li>
+          <li><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M2 10c3-6 7 6 10 0s6-2 6 0-3 3-4 1" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>Индивидуальный пошив</li>
+          <li><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M2 10c3-6 7 6 10 0s6-2 6 0-3 3-4 1" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>Mercedes-Benz Fashion Week</li>
+          <li><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M2 10c3-6 7 6 10 0s6-2 6 0-3 3-4 1" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>Москва</li>
+        </ul>
+        <div class="cta">
+          <a class="btn btn-dark" href="#atelier">Собрать заказ</a>
+          <a class="btn btn-line" href="#stock">Что в наличии</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="facts">
+      <div><b>994</b><span>публикации в Instagram</span></div>
+      <div><b>3&nbsp;640</b><span>подписчиц и подписчиков</span></div>
+      <div><b>MBFW</b><span>показы на Mercedes-Benz Fashion Week</span></div>
+      <div><b>42/44</b><span>размеры вещей в наличии</span></div>
+    </div>
+  </div>
+
+  <section class="sec" id="lookbook">
+    <div class="wrap">
+      <div class="sec-h">
+        <h2>География <i>съёмок</i></h2>
+        <p>Лукбук собран из постов VIKI SMIRNOVA: выбеленные стены и синие двери, бутылочный милитари, пастельный розовый, зелёная шотландка — и московские улицы, по которым ходят клиентки бренда.</p>
+      </div>
+
+      <div class="chapter">
+        <div class="ch-h"><span class="n">Глава 01</span><h3>Santorini</h3><small>белые стены, синие двери</small><span class="door" aria-hidden="true"></span></div>
+        <div class="frames">
+          <figure class="shot f-a rv l"><img src="img/p5.jpg" alt="Розовый твидовый костюм у синей двери на белой стене"><figcaption><b>Костюм пастельного розового цвета.</b> Жакет из твида с ручным декором и золотым шитьём, с оригинальными рукавами.</figcaption></figure>
+          <figure class="shot f-b rv r"><img src="img/p7.jpg" alt="Чёрное вечернее платье с кружевом на белой террасе"><figcaption><b>Вечернее платье с кружевом.</b> Красота, изысканность, утончённость.</figcaption></figure>
+          <figure class="shot f-c rv b"><img src="img/p12.jpg" alt="Костюм бутылочного цвета в стиле милитари с золотыми пуговицами"><figcaption><b>Бутылочный милитари.</b> Можно шить на заказ по индивидуальным параметрам.</figcaption></figure>
+          <figure class="shot f-d rv r"><img src="img/p8.jpg" alt="Розовый жакет на белом парапете под облачным небом"><figcaption><b>Пастельный розовый</b> — новинка сезона.</figcaption></figure>
+          <figure class="shot f-e rv l"><img src="img/p6.jpg" alt="Чёрный твидовый жакет с золотым декором в проёме белой стены"><figcaption><b>Жакет из твида с золотым декором</b> и мини-шорты на высокой посадке.</figcaption></figure>
+          <figure class="shot f-f rv t"><img src="img/p10.jpg" alt="Жакет из жаккарда с розовыми цветами и юбка"><figcaption><b>Жакет из жаккарда</b> и юбка — очень женственный образ.</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="chapter moscow">
+        <div class="ch-h"><span class="n">Глава 02</span><h3>Москва</h3><small>интерьеры и улицы</small></div>
+        <div class="frames">
+          <figure class="shot f-g rv b"><img src="img/p13.jpg" alt="Белоснежный твидовый костюм с чёрной отделкой у белого камина"><figcaption><b>Белоснежный твидовый костюм</b> — хит бренда, отделка в стиле Chanel.</figcaption></figure>
+          <figure class="shot f-h rv r"><img src="img/p3.jpg" alt="Корсет и юбка из зелёной шотландки у чёрного ЗИЛа"><figcaption><b>Корсет и юбка из зелёной шотландки.</b> Асимметричное решение — всегда стильно.</figcaption></figure>
+          <figure class="shot f-e rv l"><img src="img/p4.jpg" alt="Образ VIKI SMIRNOVA рядом с чёрным ЗИЛом в лофте"><figcaption><b>Шотландка</b> в большом городе.</figcaption></figure>
+          <figure class="shot f-f rv b"><img src="img/p14.jpg" alt="Образ из белого атласа и чёрного бархата на улице"><figcaption><b>Белый атлас и чёрный бархат.</b></figcaption></figure>
+        </div>
+      </div>
+
+      <div class="atlas-wrap">
+        <h3>Остальные главы — в&nbsp;«Актуальном»</h3>
+        <div>
+          <p style="color:var(--muted);max-width:56ch">В профиле бренда отдельные истории со съёмок, показов и путешествий. Каждая — как глава лукбука.</p>
+          <div class="atlas">
+            <a href="https://www.instagram.com/viki.smirnova/" target="_blank" rel="noopener">Secret Garden</a>
+            <a href="https://www.instagram.com/viki.smirnova/" target="_blank" rel="noopener">Каппадокия</a>
+            <a href="https://www.instagram.com/viki.smirnova/" target="_blank" rel="noopener">Париж</a>
+            <a href="https://www.instagram.com/viki.smirnova/" target="_blank" rel="noopener">Дубаи</a>
+            <a href="https://www.instagram.com/viki.smirnova/" target="_blank" rel="noopener">Морокко</a>
+            <a href="https://www.instagram.com/viki.smirnova/" target="_blank" rel="noopener">Mercedes B.F.W</a>
+            <a href="https://www.instagram.com/viki.smirnova/" target="_blank" rel="noopener">Неделя моды</a>
+            <a href="https://www.instagram.com/viki.smirnova/" target="_blank" rel="noopener">От кутюр</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote">
+    <div class="wrap">
+      <blockquote>«Эту прекрасную модель можно шить на заказ по индивидуальным параметрам»</blockquote>
+      <cite>VIKI SMIRNOVA, о костюме в стиле милитари</cite>
+    </div>
+  </section>
+
+  <section class="sec stock" id="stock">
+    <div class="wrap">
+      <div class="sec-h">
+        <h2>В <i>наличии</i></h2>
+        <p>Готовые вещи из последних постов бренда. Наличие меняется быстро — перед заказом уточните в Direct.</p>
+      </div>
+      <div class="items">
+        <article class="item it1">
+          <img class="rv l" src="img/p13.jpg" alt="Белый твидовый жакет VIKI SMIRNOVA">
+          <div><span class="kicker">Хит</span><h3>Белоснежный твидовый жакет</h3><p>Из костюма в стиле old money. В наличии один жакет.</p><span class="size">Р 42/44</span><br><a href="#atelier" data-pick="white">Заказать этот</a></div>
+        </article>
+        <article class="item it2">
+          <img class="rv r" src="img/p11.jpg" alt="Белая шёлковая блузка VIKI SMIRNOVA">
+          <div><span class="kicker">Шёлк</span><h3>Нежная шёлковая блузка</h3><p>Добавит в образ аристократичный стиль.</p><span class="size">Р 42/44</span><br><a href="https://ig.me/m/viki.smirnova" target="_blank" rel="noopener">Спросить в Direct</a></div>
+        </article>
+        <article class="item it3">
+          <img class="rv b" src="img/p10.jpg" alt="Жакет из жаккарда и юбка VIKI SMIRNOVA">
+          <div><span class="kicker">Образ</span><h3>Жакет из жаккарда и юбка</h3><p>Женственный стильный лук.</p><span class="size">Р 42</span><br><a href="https://ig.me/m/viki.smirnova" target="_blank" rel="noopener">Спросить в Direct</a></div>
+        </article>
+        <article class="item it4">
+          <img class="rv r" src="img/p7.jpg" alt="Вечернее платье с кружевом VIKI SMIRNOVA">
+          <div><span class="kicker">Вечер</span><h3>Вечернее платье с роскошным кружевом</h3><p>Красота, изысканность, утончённость.</p><br><a href="https://ig.me/m/viki.smirnova" target="_blank" rel="noopener">Спросить размер</a></div>
+        </article>
+      </div>
+      <p class="note">Размеры указаны так, как в постах бренда. Цены и актуальное наличие — в Direct.</p>
+    </div>
+  </section>
+
+  <section class="sec atelier" id="atelier">
+    <div class="wrap">
+      <div class="sec-h">
+        <h2>В наличии или <i>по моим меркам</i></h2>
+        <p>Выберите образ и как вы хотите его получить. Мы соберём готовое сообщение — скопируйте его и отправьте в Direct VIKI SMIRNOVA.</p>
+      </div>
+      <div class="cfg">
+        <div>
+          <span class="step-t">1 · Образ</span>
+          <fieldset class="looks" id="looks">
+            <legend class="hidden">Образ</legend>
+            <div class="look"><input type="radio" name="look" id="lk-white" value="белоснежный твидовый костюм" checked><label for="lk-white"><img src="img/p13-m.jpg" alt=""><span>Твидовый белый костюм</span></label></div>
+            <div class="look"><input type="radio" name="look" id="lk-pink" value="розовый твидовый костюм с золотым шитьём"><label for="lk-pink"><img src="img/p5-m.jpg" alt=""><span>Розовый твидовый костюм</span></label></div>
+            <div class="look"><input type="radio" name="look" id="lk-mil" value="костюм бутылочного цвета в стиле милитари"><label for="lk-mil"><img src="img/p12-m.jpg" alt=""><span>Бутылочный милитари</span></label></div>
+            <div class="look"><input type="radio" name="look" id="lk-jump" value="комбинезон из белого атласа и чёрного бархата"><label for="lk-jump"><img src="img/p14-m.jpg" alt=""><span>Комбинезон атлас + бархат</span></label></div>
+            <div class="look"><input type="radio" name="look" id="lk-tartan" value="корсет и юбка из зелёной шотландки"><label for="lk-tartan"><img src="img/p3-m.jpg" alt=""><span>Корсет и юбка, шотландка</span></label></div>
+          </fieldset>
+
+          <div class="modes" role="group" aria-label="Способ заказа">
+            <button type="button" data-mode="stock" aria-pressed="true">В наличии · 42/44</button>
+            <button type="button" data-mode="custom" aria-pressed="false">Индивидуальный пошив</button>
+          </div>
+
+          <span class="step-t">2 · Детали</span>
+          <div class="fields" id="f-stock">
+            <label>Размер<select id="size"><option>42</option><option>44</option><option>42/44 — подскажите по посадке</option></select></label>
+            <label>Как к вам обращаться<input id="name1" autocomplete="given-name" placeholder="Имя"></label>
+          </div>
+          <div class="fields hidden" id="f-custom">
+            <label>Рост, см<input id="m-h" inputmode="numeric" placeholder="168"></label>
+            <label>Обхват груди, см<input id="m-c" inputmode="numeric" placeholder="86"></label>
+            <label>Обхват талии, см<input id="m-w" inputmode="numeric" placeholder="64"></label>
+            <label>Обхват бёдер, см<input id="m-hp" inputmode="numeric" placeholder="92"></label>
+            <label class="wide">Пожелания: длина, ткань, к какому событию<textarea id="m-note" placeholder="Например: к показу, жакет чуть длиннее"></textarea></label>
+          </div>
+          <p class="hint" id="hint">Наличие меняется — бренд подтвердит размер в ответ.</p>
+        </div>
+
+        <div class="out" aria-live="polite">
+          <span class="kicker">Ваше сообщение</span>
+          <pre id="msg"></pre>
+          <div class="row">
+            <button class="btn btn-dark" type="button" id="copy">Скопировать</button>
+            <a class="btn btn-line" href="https://ig.me/m/viki.smirnova" target="_blank" rel="noopener">Открыть Direct</a>
+          </div>
+          <p class="ok" id="ok"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="how">
+    <div class="wrap how">
+      <div class="sec-h" style="display:block;margin:0"><h2>Как <i>заказать</i></h2></div>
+      <ol>
+        <li><div><b>Выберите образ</b><p>В лукбуке, в разделе «В наличии» или в «Актуальном» Instagram.</p></div></li>
+        <li><div><b>Готовая вещь или по меркам</b><p>Вещи в наличии — в размерах из постов. Многие модели шьются на заказ по индивидуальным параметрам.</p></div></li>
+        <li><div><b>Напишите в Direct</b><p>Скопируйте собранное сообщение и отправьте его @viki.smirnova — там подтвердят наличие, цену и детали.</p></div></li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <h2>Ваш жакет <i>с золотым шитьём</i></h2>
+        <p style="margin:22px 0 28px;max-width:44ch;color:#d3e0f1">Дизайнерская одежда премиум класса и индивидуальный пошив. Москва.</p>
+        <a class="btn" href="https://ig.me/m/viki.smirnova" target="_blank" rel="noopener">Написать в Direct</a>
+      </div>
+      <ul>
+        <li><a href="https://www.instagram.com/viki.smirnova/" target="_blank" rel="noopener">Instagram @viki.smirnova</a></li>
+        <li><a href="https://ig.me/m/viki.smirnova" target="_blank" rel="noopener">Заказ — в Direct</a></li>
+        <li>Москва</li>
+      </ul>
+    </div>
+    <p class="legal">Демо-концепт независимого разработчика — не официальный сайт VIKI SMIRNOVA. Фото и тексты — из открытого профиля бренда в Instagram.</p>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* reveal: IO + direct check (works also where IO is throttled) */
+  var rv = [].slice.call(document.querySelectorAll('.rv'));
+  function reveal(e){ e.classList.add('in') }
+  function check(){ var h = innerHeight; rv = rv.filter(function(e){ var r = e.getBoundingClientRect(); if (r.top < h * .92) { reveal(e); return false } return true }) }
+  if (reduce || navigator.webdriver || /Headless/.test(navigator.userAgent)) { rv.forEach(reveal); rv = [] }
+  else {
+    if ('IntersectionObserver' in window) { var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){reveal(e.target);io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.08}); rv.forEach(function(e){io.observe(e)}) }
+    check(); addEventListener('scroll', check, {passive:true}); addEventListener('load', check);
+    var poll = setInterval(function(){ check(); if (!rv.length) clearInterval(poll) }, 300);
+  }
+
+  /* gold soutache cord */
+  var svg = document.getElementById('cord'), p1 = svg.querySelector('.c1'), p2 = svg.querySelector('.c2'), L = 0;
+  function build(){
+    var W = document.documentElement.clientWidth, H = document.documentElement.scrollHeight;
+    svg.setAttribute('width', W); svg.setAttribute('height', H); svg.setAttribute('viewBox','0 0 '+W+' '+H);
+    var mob = W < 700, edge = mob ? 8 : Math.max(18, (W - 1320) / 2 + 14), r = mob ? 14 : 26;
+    var marks = Array.prototype.map.call(document.querySelectorAll('.hero-col,.facts,#lookbook,.chapter,.atlas-wrap,.quote,#stock,#atelier,#how,footer'), function(el){
+      return el.getBoundingClientRect().top + scrollY;
+    }).sort(function(a,b){return a-b});
+    var hc = document.querySelector('.hero-col').getBoundingClientRect();
+    var x = mob ? W - edge : hc.right - 10, y = hc.top + scrollY + 2;
+    var d = 'M' + (hc.left + (mob?0:0)) + ' ' + y + ' L' + x + ' ' + y, side = 1;
+    marks.forEach(function(my, i){
+      if (my <= y + 60) return;
+      var nx = (i % 2 ? W - edge : edge);
+      var my2 = my - 30;
+      d += ' C' + x + ' ' + (y + (my2 - y) * .55) + ' ' + nx + ' ' + (my2 - (my2 - y) * .45) + ' ' + nx + ' ' + my2;
+      /* curl — soutache loop */
+      var s = nx < W/2 ? 1 : -1;
+      d += ' c' + (s*r*1.8) + ' ' + (r*.2) + ' ' + (s*r*1.6) + ' ' + (r*2.2) + ' ' + (s*r*.4) + ' ' + (r*1.4);
+      d += ' c' + (-s*r*1.1) + ' ' + (-r*.6) + ' ' + (-s*r*.2) + ' ' + (-r*1.7) + ' ' + (s*r*.6) + ' ' + (-r*.5);
+      d += ' c' + (s*r*.7) + ' ' + (r*1) + ' ' + (-s*r*.5) + ' ' + (r*1.8) + ' ' + (-s*r*1) + ' ' + (r*2.2);
+      x = nx; y = my2 + r*3.1;
+    });
+    d += ' C' + x + ' ' + (y + 200) + ' ' + (W/2) + ' ' + (H - 220) + ' ' + (W/2) + ' ' + (H - 60);
+    p1.setAttribute('d', d); p2.setAttribute('d', d);
+    p2.setAttribute('transform','translate(3,3)');
+    L = p1.getTotalLength();
+    [p1,p2].forEach(function(p){p.style.strokeDasharray = L + ' ' + L});
+    draw();
+  }
+  function draw(){
+    var max = document.documentElement.scrollHeight - innerHeight;
+    var k = reduce ? 1 : Math.min(1, Math.max(.06, (scrollY + innerHeight * .35) / (max + innerHeight * .35)));
+    var off = L * (1 - k);
+    p1.style.strokeDashoffset = off; p2.style.strokeDashoffset = off;
+  }
+  var tick = false;
+  addEventListener('scroll', draw, {passive:true});
+  var rt; addEventListener('resize', function(){clearTimeout(rt); rt = setTimeout(build, 150)});
+  addEventListener('load', build);
+  if (document.fonts) document.fonts.ready.then(build);
+  if ('ResizeObserver' in window) { var lastH = 0; new ResizeObserver(function(){var h=document.documentElement.scrollHeight; if(Math.abs(h-lastH)>40){lastH=h;build()}}).observe(document.body); }
+
+  /* configurator */
+  var mode = 'stock', msg = document.getElementById('msg'), ok = document.getElementById('ok');
+  function v(id){ var e = document.getElementById(id); return e ? e.value.trim() : '' }
+  function render(){
+    var look = document.querySelector('input[name=look]:checked').value, t;
+    if (mode === 'stock') {
+      t = 'Здравствуйте! ' + (v('name1') ? 'Меня зовут ' + v('name1') + '. ' : '') +
+          'Хочу ' + look + ' от VIKI SMIRNOVA.\nЕсть ли в наличии размер ' + v('size') + '?\nПодскажите, пожалуйста, цену и как оформить заказ.';
+    } else {
+      var m = [];
+      if (v('m-h')) m.push('рост ' + v('m-h'));
+      if (v('m-c')) m.push('грудь ' + v('m-c'));
+      if (v('m-w')) m.push('талия ' + v('m-w'));
+      if (v('m-hp')) m.push('бёдра ' + v('m-hp'));
+      t = 'Здравствуйте! Хочу заказать индивидуальный пошив: ' + look + '.\n' +
+          'Мои мерки: ' + (m.length ? m.join(', ') + ' см' : 'пришлю отдельно') + '.' +
+          (v('m-note') ? '\nПожелания: ' + v('m-note') + '.' : '') +
+          '\nПодскажите, пожалуйста, цену и сроки.';
+    }
+    msg.textContent = t; ok.textContent = '';
+  }
+  document.querySelectorAll('.modes button').forEach(function(b){
+    b.addEventListener('click', function(){
+      mode = b.dataset.mode;
+      document.querySelectorAll('.modes button').forEach(function(x){x.setAttribute('aria-pressed', x === b)});
+      document.getElementById('f-stock').classList.toggle('hidden', mode !== 'stock');
+      document.getElementById('f-custom').classList.toggle('hidden', mode !== 'custom');
+      document.getElementById('hint').textContent = mode === 'stock' ? 'Наличие меняется — бренд подтвердит размер в ответ.' : 'Достаточно четырёх мерок — остальное уточнят в переписке.';
+      render();
+    });
+  });
+  document.querySelectorAll('.cfg input,.cfg select,.cfg textarea').forEach(function(e){ e.addEventListener('input', render); e.addEventListener('change', render) });
+  document.querySelectorAll('[data-pick]').forEach(function(a){ a.addEventListener('click', function(){ document.getElementById('lk-' + a.dataset.pick).checked = true; render() }) });
+  document.getElementById('copy').addEventListener('click', function(){
+    var t = msg.textContent;
+    function done(){ ok.textContent = 'Скопировано. Вставьте сообщение в Direct @viki.smirnova.' }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(done, fallback); else fallback();
+    function fallback(){ var ta = document.createElement('textarea'); ta.value = t; ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta); ta.select(); try{document.execCommand('copy'); done()}catch(e){ ok.textContent = 'Выделите текст и скопируйте вручную.' } ta.remove() }
+  });
+  render();
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

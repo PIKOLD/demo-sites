@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>BARZAQ̇ — чеченский бренд одежды, Грозный · демо-концепт</title><meta property="og:type" content="website"><meta property="og:title" content="BARZAQ̇ — чеченский бренд одежды, Грозный · демо-концепт"><meta property="og:description" content="BARZAQ̇ из Грозного: костюм-двойка в национальном стиле с чеченской символикой и футболки оверсайз «Концепт». Заказ в WhatsApp с готовым текстом."><meta property="og:image" content="https://pikold.github.io/demo-sites/barzaq-du/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="BARZAQ̇ из Грозного: костюм-двойка в национальном стиле с чеченской символикой и футболки оверсайз «Концепт». Заказ в WhatsApp с готовым текстом.">
+<meta name="theme-color" content="#141414">
+<link rel="stylesheet" href="../_fonts/gloock.css">
+<link rel="stylesheet" href="../_fonts/inter.css">
+<style>
+:root{
+  --basalt:#141414; --mortar:#0b0b0b; --stone:#8C8478; --gold:#B8935A; --gold-l:#d4b47e;
+  --fog:#C9C6BE; --night:#1D2430; --ink:#e9e6df;
+  --col:720px; --pad:20px;
+  --disp:'Gloock', Georgia, 'Times New Roman', serif;
+  --sans:'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--basalt);color:var(--fog);font:400 16px/1.6 var(--sans);overflow-x:hidden;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .52 0 0 0 0 .47 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse 60% 40% at 50% 0%, rgba(29,36,48,.9), transparent 70%);
+}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.lat{font-family:var(--disp);font-weight:400}
+
+/* demo strip */
+.demo{position:relative;z-index:30;background:var(--mortar);color:var(--stone);font-size:12px;line-height:1.45;text-align:center;padding:7px var(--pad);border-bottom:1px solid #222}
+
+/* brand mark with gold dot */
+.bz{white-space:nowrap}
+.bz .q{position:relative;display:inline-block}
+.bz .q::after{content:"";position:absolute;left:.33em;transform:translateX(-50%);top:-.07em;width:.13em;height:.13em;border-radius:50%;background:var(--gold)}
+
+/* side rails of the tower (desktop) */
+.rail{position:fixed;top:50%;z-index:2;writing-mode:vertical-rl;font:500 11px/1 var(--sans);letter-spacing:.42em;text-transform:uppercase;color:#4a4640;pointer-events:none;transform:translateY(-50%)}
+.rail.l{left:28px;transform:translateY(-50%) rotate(180deg)} .rail.r{right:28px}
+@media (max-width:1000px){.rail{display:none}}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:grid;overflow:hidden;background:var(--night)}
+.hero .bg{position:absolute;inset:-30px;background:url(img/p2.jpg) center 55%/cover;filter:blur(10px) brightness(.38) saturate(.7)}
+.hero .shaft{position:absolute;top:0;bottom:0;left:50%;width:min(var(--col),100%);transform:translateX(-50%);overflow:hidden;box-shadow:0 0 0 1px rgba(140,132,120,.25),0 0 120px rgba(0,0,0,.7)}
+.hero .shaft img{width:100%;height:100%;object-fit:cover;object-position:50% 62%;filter:saturate(.85) contrast(1.05)}
+.hero .shaft::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,20,20,.82) 0%,rgba(29,36,48,.25) 38%,rgba(29,36,48,.15) 55%,rgba(20,20,20,.92) 100%)}
+.hero .in{position:relative;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;padding:30px var(--pad) 34px;min-height:inherit}
+.kick{font:500 12px/1.4 var(--sans);letter-spacing:.32em;text-transform:uppercase;color:var(--fog)}
+.kick b{color:var(--gold);font-weight:500}
+.hero .mid{display:flex;flex-direction:column;align-items:center}
+.hero .orn{width:clamp(92px,14vw,136px);height:auto;margin-bottom:14px}
+.hero h1{font:400 clamp(58px,15.5vw,212px)/.86 var(--disp);color:var(--ink);letter-spacing:.01em;text-shadow:0 6px 40px rgba(0,0,0,.6)}
+.hero h1 .q::after{top:-.06em}
+.motto{margin-top:22px;font:italic 400 clamp(19px,2.6vw,26px)/1.35 var(--sans);color:var(--fog)}
+.motto small{display:block;margin-top:6px;font:500 11px/1.4 var(--sans);font-style:normal;letter-spacing:.28em;text-transform:uppercase;color:var(--stone)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;font:600 15px/1 var(--sans);letter-spacing:.02em;text-decoration:none;border:1px solid var(--gold);color:var(--basalt);background:var(--gold);cursor:pointer;transition:background .25s,color .25s,transform .25s}
+.btn:hover{background:var(--gold-l);transform:translateY(-2px)}
+.btn.ghost{background:rgba(20,20,20,.4);color:var(--ink);border-color:rgba(201,198,190,.45)}
+.btn.ghost:hover{border-color:var(--gold);color:var(--gold-l);background:rgba(20,20,20,.6)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* ORNAMENT drawing */
+.orn path,.orn circle{fill:none;stroke:var(--gold);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.2s cubic-bezier(.6,.05,.3,1)}
+.orn .dot{fill:var(--gold);stroke:none;opacity:0;transition:opacity .6s 1.8s}
+.orn.drawn path,.orn.drawn circle{stroke-dashoffset:0}
+.orn.drawn .dot{opacity:1}
+
+/* TOWER column */
+.tower{position:relative;overflow-x:clip;z-index:3;max-width:var(--col);margin:0 auto;padding-bottom:40px}
+.stone{position:relative;background:linear-gradient(180deg,#1b1a19,#161616);border-left:1px solid #26241f;border-right:1px solid #26241f}
+.stone.night{background:linear-gradient(180deg,#1f2734,var(--night))}
+.stone.fog{background:var(--fog);color:#2a2824;border-color:var(--fog)}
+.pad{padding:56px clamp(20px,6vw,56px)}
+.seam{position:relative;height:30px;background:var(--mortar);display:grid;place-items:center;border-top:1px solid #2a2722;border-bottom:1px solid #2a2722}
+.seam::before{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:linear-gradient(90deg,transparent,rgba(184,147,90,.35) 30%,rgba(184,147,90,.35) 70%,transparent)}
+.seam .orn{position:relative;width:46px;height:46px;background:var(--mortar);border-radius:50%;padding:4px}
+.seam .orn path,.seam .orn circle{stroke-width:3.2}
+
+.num{display:flex;align-items:center;gap:14px;font:400 15px/1 var(--disp);color:var(--gold);letter-spacing:.12em;margin-bottom:20px}
+.num::after{content:"";height:1px;width:56px;background:rgba(184,147,90,.5)}
+.num span{font:500 11px/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--stone)}
+.stone.fog .num span{color:#5d574e}
+h2{font:600 clamp(28px,5.4vw,44px)/1.08 var(--sans);letter-spacing:-.025em;color:var(--ink)}
+h2 em{font-style:normal;color:var(--gold)}
+.stone.fog h2{color:#141414}
+.lead{margin-top:18px;font-size:17px;color:var(--fog);max-width:34em}
+.stone.fog .lead{color:#3a3731}
+
+/* masonry reveal */
+.js .rise{opacity:0;transform:translateY(70px) rotate(-1deg);transform-origin:0 100%;transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .85s cubic-bezier(.2,.7,.2,1)}
+.js .rise:nth-of-type(even){transform:translateY(70px) rotate(.9deg);transform-origin:100% 100%}
+.js .rise.in{opacity:1;transform:none}
+
+/* II casket */
+.casket{display:grid;grid-template-columns:minmax(0,1fr)}
+.casket figure{position:relative;aspect-ratio:4/5;overflow:hidden}
+.casket figure img{width:100%;height:100%;object-fit:cover;object-position:50% 52%}
+.casket figure::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(22,22,22,.95))}
+.casket .cap{position:absolute;left:clamp(20px,6vw,56px);right:clamp(20px,6vw,56px);bottom:28px;z-index:2}
+.quote{font:400 clamp(24px,4.4vw,34px)/1.2 var(--sans);font-weight:500;letter-spacing:-.015em;color:var(--ink)}
+.quote::before{content:"";display:block;width:34px;height:2px;background:var(--gold);margin-bottom:16px}
+.casket .txt p+p{margin-top:12px}
+
+/* III suit spread */
+.suit figure{position:relative;aspect-ratio:4/5;overflow:hidden;background:#0e0e0e}
+.suit figure img{width:100%;height:100%;object-fit:cover;object-position:50% 92%;filter:contrast(1.04)}
+.suit figure::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,22,22,.55) 0%,transparent 28%,transparent 62%,rgba(22,22,22,.96) 100%)}
+.suit .tagline{position:absolute;z-index:2;left:clamp(20px,6vw,56px);top:28px}
+.suit .plate{position:relative;z-index:2;margin:-150px clamp(14px,4vw,40px) 0;background:#141414;border:1px solid #2c2924;padding:30px clamp(20px,5vw,40px) 34px;box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.suit .plate::before{content:"";position:absolute;inset:6px;border:1px solid rgba(184,147,90,.22);pointer-events:none}
+.price{font:400 clamp(40px,7vw,58px)/1 var(--disp);color:var(--gold);white-space:nowrap}
+.price small{font:500 13px/1 var(--sans);color:var(--stone);letter-spacing:.06em;margin-left:4px}
+.row{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px;margin-top:22px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;list-style:none}
+.tags li{font:500 13px/1 var(--sans);padding:9px 12px;border:1px solid #3a362f;color:var(--fog)}
+.tags li.g{border-color:var(--gold);color:var(--gold-l)}
+
+/* IV tees pair */
+.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:30px}
+.tee{display:flex;flex-direction:column;background:#111;border:1px solid #2a2722}
+.tee .crop{position:relative;aspect-ratio:4/5;overflow:hidden;background:#3a2214}
+.tee .crop img{position:absolute;width:200%;max-width:none;height:auto}
+.tee.c3 .crop img{left:-6%;top:-118%}
+.tee.c4 .crop img{left:-80%;top:-90%}
+.tee .meta{padding:16px 16px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tee h3{font:400 clamp(22px,3.6vw,28px)/1.05 var(--disp);color:var(--ink)}
+.tee p{font-size:14px;line-height:1.45;color:var(--stone)}
+.tee .price{font-size:clamp(26px,4.2vw,34px)}
+.tee .btn{min-height:46px;padding:0 14px;font-size:14px;margin-top:auto;background:transparent;color:var(--gold-l)}
+.tee .btn:hover{background:var(--gold);color:var(--basalt)}
+
+/* V big sizes slab */
+.slab{text-align:center}
+.slab .big{font:600 clamp(30px,6.6vw,54px)/1.04 var(--sans);letter-spacing:-.03em;color:#141414}
+.slab .big .dotsep{display:block;width:12px;height:12px;border-radius:50%;background:var(--gold);margin:14px auto}
+.slab p{margin:20px auto 0;max-width:30em;color:#3a3731}
+.slab .orn{width:64px;height:64px;margin:0 auto 18px}
+.slab .orn path,.slab .orn circle{stroke:#8a6a38}
+.slab .orn .dot{fill:#8a6a38}
+
+/* VI order */
+.steps{display:grid;grid-template-columns:minmax(0,1fr);gap:0;margin-top:26px;counter-reset:s;list-style:none;border-top:1px solid #2c2924}
+.steps li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;padding:14px 0;border-bottom:1px solid #2c2924;font-size:15px}
+.steps li::before{counter-increment:s;content:counter(s,upper-roman);font:400 18px/1.3 var(--disp);color:var(--gold)}
+fieldset{border:0;margin-top:28px}
+legend,.lg{display:block;font:500 12px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--stone);margin-bottom:12px}
+.opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.opt{position:relative;display:block;cursor:pointer}
+.opt input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.opt .box{display:flex;flex-direction:column;gap:6px;min-height:84px;padding:14px 14px;border:1px solid #3a362f;background:#121212;transition:border-color .2s,background .2s;height:100%}
+.opt .box b{font:600 15px/1.25 var(--sans);color:var(--ink)}
+.opt .box i{font:400 22px/1 var(--disp);font-style:normal;color:var(--gold)}
+.opt .box s{text-decoration:none;font-size:12.5px;color:var(--stone);line-height:1.35}
+.opt input:checked+.box{border-color:var(--gold);background:#1d1912}
+.opt input:focus-visible+.box{outline:2px solid var(--gold);outline-offset:2px}
+.opts.models .box{min-height:60px;justify-content:center}
+.hide{display:none!important}
+.field{display:block;margin-top:28px}
+.field input{width:100%;min-height:52px;margin-top:2px;background:#0f0f0f;border:1px solid #3a362f;color:var(--ink);font:400 16px/1.4 var(--sans);padding:12px 14px;border-radius:0}
+.field input::placeholder{color:#6d675e}
+.field input:focus{border-color:var(--gold);outline:none}
+.hint{font-size:13px;color:var(--stone);margin-top:8px}
+.msg{margin-top:28px;border:1px solid rgba(184,147,90,.45);background:#0d0f13;position:relative}
+.msg .hd{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px 14px;border-bottom:1px solid #24282f;font:500 11px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--stone)}
+.msg pre{white-space:pre-wrap;word-break:break-word;font:400 15px/1.6 var(--sans);color:var(--ink);padding:16px 14px 18px;min-height:150px}
+.acts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
+.acts .btn{width:100%;padding:0 12px}
+#wa.ready{box-shadow:0 0 0 3px rgba(184,147,90,.35);animation:pulse 1.6s ease-in-out 2}
+@keyframes pulse{50%{transform:translateY(-3px)}}
+.alt{margin-top:14px;font-size:14px;color:var(--stone)}
+.alt a{color:var(--gold-l);text-underline-offset:3px}
+.toast{font:500 13px/1.4 var(--sans);color:var(--gold-l);min-height:20px;margin-top:10px}
+
+/* VII proof */
+.proof{display:grid;grid-template-columns:minmax(0,auto) minmax(0,1fr);gap:22px 30px;align-items:end}
+.proof .n{font:400 clamp(64px,13vw,110px)/.85 var(--disp);color:var(--ink)}
+.proof p{color:var(--fog)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;list-style:none}
+.chips li{font:500 13px/1 var(--sans);padding:10px 14px;border-radius:40px;border:1px solid #39404d;color:var(--fog)}
+
+/* VIII contacts */
+.contacts{display:grid;grid-template-columns:minmax(0,1fr);margin-top:26px;border-top:1px solid #2c2924}
+.contacts a,.contacts div{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:62px;padding:14px 0;border-bottom:1px solid #2c2924;text-decoration:none}
+.contacts span{font:500 11px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--stone)}
+.contacts b{font:500 17px/1.3 var(--sans);color:var(--ink);text-align:right;word-break:break-word}
+.contacts a:hover b{color:var(--gold-l)}
+footer{max-width:var(--col);margin:0 auto;padding:36px var(--pad) 110px;text-align:center;color:#6d675e;font-size:12.5px}
+footer .bz{display:block;font:400 34px/1 var(--disp);color:var(--stone);margin-bottom:12px}
+footer .m{font-style:italic;color:var(--stone);margin-bottom:16px;font-size:15px}
+
+/* sticky mobile order */
+.dock{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;display:none}
+.dock .btn{width:100%;box-shadow:0 12px 30px rgba(0,0,0,.55)}
+@media (max-width:760px){
+  .dock{display:block}
+  .dock.off{opacity:0;pointer-events:none;transform:translateY(20px)}
+  .dock{transition:opacity .3s,transform .3s}
+}
+@media (max-width:480px){
+  :root{--pad:16px}
+  .pad{padding:44px 18px}
+  .hero .in{padding:24px 16px 28px}
+  .kick{font-size:11px;letter-spacing:.24em}
+  .cta{flex-direction:column;width:100%}
+  .cta .btn{width:100%}
+  .pair{gap:10px}
+  .tee .meta{padding:12px 12px 14px}
+  .tee p{font-size:13px}
+  .suit .plate{margin-top:-90px}
+  .acts{grid-template-columns:minmax(0,1fr)}
+  .proof{grid-template-columns:minmax(0,1fr)}
+  .opt .box{padding:12px 11px}
+  .opt .box b{font-size:14px}
+}
+@media (min-width:1001px){
+  .tower::before,.tower::after{content:"";position:fixed;top:0;bottom:0;width:1px;background:rgba(140,132,120,.08);z-index:-1}
+  .tower::before{left:calc(50% - var(--col)/2 - 28px)} .tower::after{right:calc(50% - var(--col)/2 - 28px)}
+}
+@media (prefers-reduced-motion:reduce){
+  .js .rise{opacity:1;transform:none;transition:none}
+  .orn path,.orn circle{stroke-dashoffset:0;transition:none}
+  .orn .dot{opacity:1;transition:none}
+  .btn,#wa.ready{transition:none;animation:none}
+}
+</style>
+</head>
+<body>
+<div class="demo" role="note">Демо-концепт независимого разработчика — не официальный сайт BARZAQ̇. Не согласован с владельцем, удаляется по первой просьбе.</div>
+
+<div class="rail l" aria-hidden="true">BARZAQ · Чеченский бренд одежды</div>
+<div class="rail r" aria-hidden="true">Грозный · Борз йалахь — ка тоха</div>
+
+<header class="hero">
+  <div class="bg" aria-hidden="true"></div>
+  <div class="shaft"><img src="img/p2.jpg" alt="Две древние каменные башни в горном ущелье над рекой" fetchpriority="high"></div>
+  <div class="in">
+    <p class="kick">Чеченский бренд одежды <b>·</b> Грозный</p>
+    <div class="mid">
+      <svg class="orn" data-orn viewBox="0 0 200 200" aria-hidden="true"></svg>
+      <h1 class="bz" aria-label="BARZAQ">BARZA<span class="q">Q</span></h1>
+      <p class="motto">«Борз йалахь — ка тоха.»<small>девиз бренда</small></p>
+    </div>
+    <div class="cta">
+      <a class="btn" href="#order"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/></svg>Собрать заказ в WhatsApp</a>
+      <a class="btn ghost" href="#catalog">Смотреть вещи</a>
+    </div>
+  </div>
+</header>
+
+<main class="tower" id="top">
+
+  <div class="seam" aria-hidden="true"><svg class="orn" data-orn viewBox="0 0 200 200"></svg></div>
+
+  <section class="stone casket rise" aria-labelledby="h-sign">
+    <figure>
+      <img src="img/p1.jpg" alt="Руки на деревянной шкатулке BARZAQ с золотым орнаментом на крышке" loading="lazy">
+      <figcaption class="cap"><p class="num">II <span>Знак</span></p><p class="quote">Каждый узор, каждая деталь — отголосок предков.</p></figcaption>
+    </figure>
+    <div class="txt pad">
+      <h2 id="h-sign">Не просто одежда — <em>отражение нашей истории.</em></h2>
+      <p class="lead">Современный взгляд на наш стиль. Уважение к своим корням никогда не выходит из моды.</p>
+      <p class="lead">Золотой орнамент с крышки шкатулки — нить, которая проходит через весь этот сайт.</p>
+    </div>
+  </section>
+
+  <div class="seam" aria-hidden="true"><svg class="orn" data-orn viewBox="0 0 200 200"></svg></div>
+
+  <section class="stone suit rise" id="catalog" aria-labelledby="h-suit">
+    <figure>
+      <img src="img/p6.jpg" alt="Двое мужчин в чёрных костюмах-двойках BARZAQ с национальной символикой на груди" loading="lazy">
+      <p class="num tagline">III <span>Костюм</span></p>
+    </figure>
+    <div class="plate">
+      <h2 id="h-suit">Костюм-двойка <em>в национальном стиле</em></h2>
+      <p class="lead">Рубашка и брюки с чеченской символикой. Строгий стиль, внимание к деталям и достойный внешний вид — для праздника и для каждого дня.</p>
+      <ul class="tags">
+        <li class="g">Ручная работа</li><li class="g">Есть большие размеры</li><li>В наличии</li><li>Количество ограничено</li>
+      </ul>
+      <div class="row">
+        <p class="price">22&nbsp;000&nbsp;₽</p>
+        <a class="btn" href="#order" data-pick="suit">Заказать костюм</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="seam" aria-hidden="true"><svg class="orn" data-orn viewBox="0 0 200 200"></svg></div>
+
+  <section class="stone night pad rise" aria-labelledby="h-tee">
+    <p class="num">IV <span>Футболки</span></p>
+    <h2 id="h-tee">Оверсайз <em>с чеченским характером</em></h2>
+    <p class="lead">Две футболки линии «Концепт» — какая нравится больше?</p>
+    <div class="pair">
+      <article class="tee c3">
+        <div class="crop"><img src="img/p3.jpg" alt="Футболка BARZAQ в фирменном пакете на деревянном столе" loading="lazy"></div>
+        <div class="meta">
+          <h3>Концепт-3</h3>
+          <p>Футболка оверсайз с элементами чеченского характера</p>
+          <p class="price">3&nbsp;650&nbsp;₽</p>
+          <a class="btn" href="#order" data-pick="tee" data-model="Концепт-3">Выбрать</a>
+        </div>
+      </article>
+      <article class="tee c4">
+        <div class="crop"><img src="img/p3.jpg" alt="Белая футболка BARZAQ в фирменном пакете" loading="lazy"></div>
+        <div class="meta">
+          <h3>Концепт 4</h3>
+          <p>Оверсайз с элементами чеченского характера, в белом цвете</p>
+          <p class="price">3&nbsp;650&nbsp;₽</p>
+          <a class="btn" href="#order" data-pick="tee" data-model="Концепт 4 (белая)">Выбрать</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="seam" aria-hidden="true"><svg class="orn" data-orn viewBox="0 0 200 200"></svg></div>
+
+  <section class="stone fog pad slab rise" aria-label="Большие размеры и ручная работа">
+    <svg class="orn" data-orn viewBox="0 0 200 200" aria-hidden="true"></svg>
+    <p class="big">Есть большие размеры<span class="dotsep" aria-hidden="true"></span>Ручная работа</p>
+    <p>Костюм-двойка шьётся вручную и есть в больших размерах. Серия ограничена — размер лучше уточнить сразу в сообщении.</p>
+  </section>
+
+  <div class="seam" aria-hidden="true"><svg class="orn" data-orn viewBox="0 0 200 200"></svg></div>
+
+  <section class="stone pad rise" id="order" aria-labelledby="h-order">
+    <p class="num">VI <span>Заказ</span></p>
+    <h2 id="h-order">Сообщение в WhatsApp <em>за минуту</em></h2>
+    <ol class="steps">
+      <li>Выберите вещь и напишите размер.</li>
+      <li>Нажмите «Скопировать» — текст заказа готов.</li>
+      <li>Откройте WhatsApp BARZAQ и вставьте сообщение.</li>
+    </ol>
+
+    <form id="f" onsubmit="return false">
+      <fieldset>
+        <legend>Вещь</legend>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="item" value="suit" checked><span class="box"><b>Костюм-двойка</b><i>22&nbsp;000&nbsp;₽</i><s>рубашка и брюки, есть большие размеры</s></span></label>
+          <label class="opt"><input type="radio" name="item" value="tee"><span class="box"><b>Футболка оверсайз</b><i>3&nbsp;650&nbsp;₽</i><s>«Концепт-3» или «Концепт 4»</s></span></label>
+        </div>
+      </fieldset>
+      <fieldset id="models" class="hide">
+        <legend>Модель</legend>
+        <div class="opts models">
+          <label class="opt"><input type="radio" name="model" value="Концепт-3" checked><span class="box"><b>Концепт-3</b></span></label>
+          <label class="opt"><input type="radio" name="model" value="Концепт 4 (белая)"><span class="box"><b>Концепт 4, белая</b></span></label>
+        </div>
+      </fieldset>
+      <label class="field"><span class="lg">Размер</span>
+        <input id="size" name="size" type="text" autocomplete="off" maxlength="60" placeholder="например: 52 или XL, рост 185">
+      </label>
+      <p class="hint">Пишите как привыкли — размер, рост, обхват. Уточнят в переписке.</p>
+    </form>
+
+    <div class="msg" aria-live="polite">
+      <div class="hd">Текст заказа <span id="sum" class="lat" style="letter-spacing:0;font-size:15px;color:var(--gold);text-transform:none">22 000 ₽</span></div>
+      <pre id="out"></pre>
+    </div>
+    <div class="acts">
+      <button class="btn" type="button" id="copy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="8" y="8" width="12" height="12"/><path d="M16 8V4H4v12h4"/></svg><span>Скопировать</span></button>
+      <a class="btn ghost" id="wa" href="https://wa.me/message/6O3K5RGOUTCSE1" target="_blank" rel="noopener">Открыть WhatsApp</a>
+    </div>
+    <p class="toast" id="toast" role="status"></p>
+    <p class="alt">Удобнее в Instagram? <a href="https://ig.me/m/barzaq.du" target="_blank" rel="noopener">Напишите в Direct @barzaq.du</a> — тот же текст подойдёт.</p>
+  </section>
+
+  <div class="seam" aria-hidden="true"><svg class="orn" data-orn viewBox="0 0 200 200"></svg></div>
+
+  <section class="stone night pad rise" aria-labelledby="h-proof">
+    <p class="num">VII <span>Instagram</span></p>
+    <div class="proof">
+      <p class="n">5&nbsp;720</p>
+      <div><h2 id="h-proof" style="font-size:clamp(22px,3.6vw,30px)">подписчиков следят за BARZAQ</h2>
+      <p style="margin-top:10px">Отзывы, доставка и ответы на вопросы — в закреплённых историях профиля.</p></div>
+    </div>
+    <ul class="chips"><li>Отзывы</li><li>Доставка</li><li>Вопросы</li><li>«ARDANG»</li><li>Новости</li></ul>
+    <a class="btn ghost" style="margin-top:26px" href="https://www.instagram.com/barzaq.du/" target="_blank" rel="noopener">Открыть @barzaq.du</a>
+  </section>
+
+  <div class="seam" aria-hidden="true"><svg class="orn" data-orn viewBox="0 0 200 200"></svg></div>
+
+  <section class="stone pad rise" aria-labelledby="h-c">
+    <p class="num">VIII <span>Связь</span></p>
+    <h2 id="h-c">Грозный. <em>Заказы — в WhatsApp.</em></h2>
+    <div class="contacts">
+      <a href="https://wa.me/message/6O3K5RGOUTCSE1" target="_blank" rel="noopener"><span>WhatsApp</span><b>Написать</b></a>
+      <a href="https://ig.me/m/barzaq.du" target="_blank" rel="noopener"><span>Direct</span><b>@barzaq.du</b></a>
+      <div><span>Город</span><b>Грозный</b></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="bz">BARZA<span class="q">Q</span></span>
+  <p class="m">«Борз йалахь — ка тоха.»</p>
+  <p>Демо-концепт независимого разработчика — не официальный сайт BARZAQ̇. Фото — из Instagram @barzaq.du. Не согласован с владельцем, удаляется по первой просьбе.</p>
+</footer>
+
+<div class="dock" id="dock"><a class="btn" href="#order">Собрать заказ · WhatsApp</a></div>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  /* ornament: four petals, four ram's-horn curls, ring — after the casket lid */
+  var petal='<path pathLength="1" d="M100 88C90 74 89 56 100 40C111 56 110 74 100 88Z"/><path pathLength="1" d="M100 38L93 27L100 15L107 27Z"/>';
+  var curl='<path pathLength="1" d="M109 91C122 80 136 74 148 70C160 66 166 54 158 46C151 39 140 45 143 53C145 59 152 58 153 53"/>';
+  var g='';
+  for(var i=0;i<4;i++){g+='<g transform="rotate('+(i*90)+' 100 100)">'+petal+curl+'<circle class="dot" cx="100" cy="8" r="3.4"/></g>';}
+  var svg=g+'<circle pathLength="1" cx="100" cy="100" r="9"/><circle pathLength="1" cx="100" cy="100" r="74" style="stroke-width:1.2;opacity:.6"/>';
+  var orns=document.querySelectorAll('[data-orn]');
+  orns.forEach(function(o){o.innerHTML=svg;});
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  requestAnimationFrame(function(){setTimeout(function(){orns[0]&&orns[0].classList.add('drawn')},250)});
+
+  var rise=document.querySelectorAll('.rise');
+  if(reduce||!('IntersectionObserver' in window)){
+    rise.forEach(function(e){e.classList.add('in')});orns.forEach(function(o){o.classList.add('drawn')});
+  }else{
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(!e.isIntersecting)return;var t=e.target;
+      if(t.classList.contains('rise'))t.classList.add('in');
+      t.querySelectorAll&&t.querySelectorAll('[data-orn]').forEach(function(o){o.classList.add('drawn')});
+      if(t.matches('[data-orn]'))t.classList.add('drawn');
+      io.unobserve(t);
+    })},{rootMargin:'0px 0px -8% 0px',threshold:.06});
+    rise.forEach(function(e){io.observe(e)});
+    orns.forEach(function(o,i){if(i)io.observe(o)});
+  }
+
+  /* fallback reveal on scroll + smooth anchors */
+  function sweep(){var vh=innerHeight;rise.forEach(function(e){if(!e.classList.contains("in")&&e.getBoundingClientRect().top<vh*.95){e.classList.add("in");e.querySelectorAll("[data-orn]").forEach(function(o){o.classList.add("drawn")})}});orns.forEach(function(o){if(o.getBoundingClientRect().top<innerHeight)o.classList.add("drawn")})}
+  addEventListener("scroll",function(){requestAnimationFrame(sweep)},{passive:true});addEventListener("resize",sweep);
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener("click",function(ev){var t=document.querySelector(a.getAttribute("href"));if(!t)return;ev.preventDefault();t.scrollIntoView({behavior:reduce?"auto":"smooth"});history.replaceState(null,"",a.getAttribute("href"))})});
+
+  /* order builder */
+  var f=document.getElementById('f'),out=document.getElementById('out'),sum=document.getElementById('sum'),
+      models=document.getElementById('models'),size=document.getElementById('size'),wa=document.getElementById('wa'),
+      toast=document.getElementById('toast'),copyBtn=document.getElementById('copy');
+  function val(n){var c=f.querySelector('input[name="'+n+'"]:checked');return c?c.value:''}
+  function render(){
+    var item=val('item'),s=size.value.trim(),line,price;
+    models.classList.toggle('hide',item!=='tee');
+    if(item==='suit'){line='Костюм-двойка в национальном стиле (рубашка и брюки)';price='22 000 ₽';}
+    else{line='Футболка оверсайз «'+val('model')+'»';price='3 650 ₽';}
+    sum.textContent=price;
+    out.textContent='Ассаламу алейкум! Хочу заказать с сайта:\n'+line+' — '+price+'\nРазмер: '+(s||'(подскажите по размеру)')+'\n\nЕсть в наличии? Как оформить и получить?';
+  }
+  f.addEventListener('input',render);f.addEventListener('change',render);
+  document.querySelectorAll('[data-pick]').forEach(function(a){a.addEventListener('click',function(){
+    f.querySelector('input[name="item"][value="'+a.dataset.pick+'"]').checked=true;
+    if(a.dataset.model)f.querySelector('input[name="model"][value="'+a.dataset.model+'"]').checked=true;
+    render();setTimeout(function(){size.focus({preventScroll:true})},700);
+  })});
+  function done(ok){
+    toast.textContent=ok?'Текст скопирован. Откройте WhatsApp и вставьте его в чат.':'Не получилось скопировать — выделите текст выше вручную.';
+    copyBtn.querySelector('span').textContent=ok?'Скопировано':'Скопировать';
+    if(ok){wa.classList.add('ready');wa.classList.remove('ghost');}
+  }
+  copyBtn.addEventListener('click',function(){
+    var t=out.textContent;
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(function(){done(true)},fallback);}else fallback();
+    function fallback(){var ta=document.createElement('textarea');ta.value=t;ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();var ok=false;try{ok=document.execCommand('copy')}catch(e){}document.body.removeChild(ta);done(ok);}
+  });
+  render();
+
+  /* hide mobile dock over hero & order */
+  var dock=document.getElementById('dock'),order=document.getElementById('order'),hero=document.querySelector('.hero');
+  if('IntersectionObserver' in window){
+    var vis={};var dio=new IntersectionObserver(function(es){es.forEach(function(e){vis[e.target===order?'o':'h']=e.isIntersecting});dock.classList.toggle('off',!!(vis.o||vis.h))});
+    dio.observe(order);dio.observe(hero);
+  }
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

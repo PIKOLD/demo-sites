@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Oberrollberg — кабинет редкостей · апсайкл по мотивам Ренессанса, Петербург</title><meta property="og:type" content="website"><meta property="og:title" content="Oberrollberg — кабинет редкостей · апсайкл по мотивам Ренессанса, Петербург"><meta property="og:description" content="Oberrollberg brand: одежда и аксессуары по мотивам Эпохи Возрождения, апсайклинг, Санкт-Петербург. Манжеты, жабо, передники, жилеты — с ценами из подписей и заказом в Telegram или Direct."><meta property="og:image" content="https://pikold.github.io/demo-sites/e-v-a-oberrollberg/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Oberrollberg brand: одежда и аксессуары по мотивам Эпохи Возрождения, апсайклинг, Санкт-Петербург. Манжеты, жабо, передники, жилеты — с ценами из подписей и заказом в Telegram или Direct.">
+<meta name="theme-color" content="#141011">
+<link rel="stylesheet" href="../_fonts/cormorant-garamond.css">
+<link rel="stylesheet" href="../_fonts/ibm-plex-mono.css">
+<style>
+:root{
+  --ink:#141011; --ink2:#1d1718; --ink3:#2a2122;
+  --blanc:#F1E6D6; --praline:#A87A5C; --amarant:#8B1E3F; --nymph:#E7C2B8; --gold:#B08D57;
+  --gold-hi:#dcc08c; --muted:#b9ab99;
+  --serif:'Cormorant Garamond', 'Times New Roman', serif;
+  --mono:'IBM Plex Mono', ui-monospace, Consolas, monospace;
+  --gut:clamp(16px,4vw,56px);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--blanc);font-family:var(--serif);font-size:19px;line-height:1.45;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.wrap{max-width:1320px;margin:0 auto;padding:0 var(--gut)}
+
+/* demo plate */
+.demo{background:#0b0909;color:var(--muted);font-family:var(--mono);font-size:11px;line-height:1.5;text-align:center;padding:7px 16px;border-bottom:1px solid #2a2122}
+
+/* header */
+header.top{position:sticky;top:0;z-index:30;background:rgba(20,16,17,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(176,141,87,.22)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:62px}
+.logo{font-family:var(--serif);font-weight:600;letter-spacing:.32em;text-transform:uppercase;font-size:17px;text-decoration:none;white-space:nowrap}
+.logo span{color:var(--gold)}
+nav.menu{display:flex;gap:26px}
+nav.menu a{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--muted);padding:12px 0}
+nav.menu a:hover{color:var(--blanc)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:0 22px;border:1px solid var(--gold);background:transparent;color:var(--blanc);font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background .25s,color .25s}
+.btn:hover{background:var(--gold);color:var(--ink)}
+.btn.solid{background:var(--amarant);border-color:var(--amarant)}
+.btn.solid:hover{background:#a3264c;color:var(--blanc)}
+.top .btn{min-height:44px;padding:0 16px}
+
+/* hero */
+.hero{position:relative;padding:clamp(40px,6vw,90px) 0 clamp(60px,7vw,110px);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 70% at 72% 40%,rgba(139,30,63,.28),transparent 70%),radial-gradient(40% 50% at 10% 90%,rgba(168,122,92,.16),transparent 70%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(32px,5vw,80px);align-items:center}
+.kicker{color:var(--gold);margin:0 0 22px}
+h1{font-weight:400;font-size:clamp(46px,7.4vw,118px);line-height:.92;margin:0;letter-spacing:-.01em}
+h1 em{display:block;color:var(--nymph);font-weight:400}
+h1 .small{display:block;font-size:.3em;letter-spacing:.24em;text-transform:uppercase;font-style:normal;color:var(--muted);margin-bottom:.5em;font-weight:500}
+.motto{font-style:italic;font-size:clamp(22px,2.2vw,30px);line-height:1.25;margin:28px 0 8px;color:var(--blanc);max-width:30ch}
+.motto b{font-weight:400;color:var(--gold-hi);font-style:normal;font-family:var(--mono);font-size:.5em;letter-spacing:.14em;text-transform:uppercase;display:block;margin-top:10px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:40px;color:var(--muted)}
+.facts span b{color:var(--blanc);font-weight:500}
+
+/* frames */
+.frame{position:relative;padding:var(--fp,14px);background:linear-gradient(135deg,#7d6038,#d9bd86 22%,#8f6f40 45%,#c9a96f 68%,#6e5230);box-shadow:0 30px 60px -20px rgba(0,0,0,.8),0 0 0 1px #3b2c1a,inset 0 0 0 1px rgba(255,236,190,.4);z-index:2;overflow:hidden}
+.frame::before{content:"";position:absolute;inset:calc(var(--fp,14px) - 4px);border:1px solid rgba(40,28,14,.7);box-shadow:inset 0 0 0 3px rgba(255,236,190,.25);pointer-events:none;z-index:1}
+.frame.black{background:linear-gradient(135deg,#0c0a0a,#2b2324 40%,#0c0a0a 70%,#231b1c);box-shadow:0 30px 60px -20px rgba(0,0,0,.9),0 0 0 1px #4a3b28,inset 0 0 0 2px #6e5636}
+.frame.black::before{border-color:var(--gold)}
+.frame.wood{background:linear-gradient(135deg,#5b3d29,#A87A5C 35%,#6d4a32 60%,#9a6f52);}
+.frame .pic{position:relative;overflow:hidden;background:var(--ink2)}
+.frame img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);transition:transform 1.6s cubic-bezier(.2,.7,.2,1)}
+.frame .pic::after{content:"";position:absolute;inset:-20% -60%;background:linear-gradient(105deg,transparent 40%,rgba(255,244,220,.0) 44%,rgba(255,244,220,.32) 50%,rgba(255,244,220,0) 56%,transparent 60%);transform:translateX(-70%);pointer-events:none}
+.frame::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 42%,rgba(255,250,235,.55) 50%,transparent 58%);transform:translateX(-110%);mix-blend-mode:soft-light;pointer-events:none;z-index:3}
+.in .frame img,.frame.in img{transform:scale(1)}
+.in .frame .pic::after,.frame.in .pic::after{animation:lak 1.5s .25s cubic-bezier(.3,.6,.2,1) both}
+.in .frame::after,.frame.in::after{animation:lak2 1.5s .2s cubic-bezier(.3,.6,.2,1) both}
+@keyframes lak{to{transform:translateX(70%)}}
+@keyframes lak2{to{transform:translateX(110%)}}
+
+/* brass plaque */
+.plaque{position:relative;z-index:1;margin:-2px auto 0;width:min(92%,340px);background:linear-gradient(180deg,#d8bc85,#B08D57 45%,#94733f);color:#1e1610;padding:12px 14px 11px;box-shadow:0 10px 20px -8px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,240,200,.7),inset 0 -1px 0 rgba(60,40,15,.5);font-family:var(--mono);font-size:11.5px;line-height:1.5;clip-path:inset(0 0 100% 0);transform:translateY(-18px);transition:clip-path .8s .6s cubic-bezier(.2,.7,.2,1),transform .8s .6s cubic-bezier(.2,.7,.2,1)}
+.plaque::before,.plaque::after{content:"";position:absolute;top:8px;width:5px;height:5px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#f3dfae,#6b5230)}
+.plaque::before{left:6px}.plaque::after{right:6px}
+.in .plaque{clip-path:inset(0 0 0 0);transform:none}
+.plaque .no{opacity:.7;letter-spacing:.1em}
+.plaque h3{font-family:var(--serif);font-style:italic;font-weight:600;font-size:21px;line-height:1.1;margin:3px 0 5px;color:#1a120c}
+.plaque p{margin:0}
+.plaque .meta{margin-top:5px;opacity:.85}
+.plaque .row{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-top:8px;padding-top:7px;border-top:1px solid rgba(40,26,10,.35)}
+.plaque .price{font-size:15px;font-weight:600;letter-spacing:.02em}
+.plaque .tag{font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.want{display:flex;align-items:center;justify-content:center;gap:8px;margin:12px auto 0;min-height:44px;width:min(92%,340px);background:none;border:1px solid rgba(176,141,87,.5);color:var(--blanc);font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:background .2s,border-color .2s;opacity:0;transition:opacity .6s 1.1s,background .2s,border-color .2s}
+.in .want{opacity:1}
+.want:hover{background:rgba(139,30,63,.55);border-color:var(--amarant)}
+
+/* hero frame */
+.hero-art{justify-self:center;width:min(100%,470px)}
+.hero-art .pic{aspect-ratio:828/1104}
+.hero-art .frame{--fp:20px}
+
+/* section heads */
+section{position:relative}
+.sec{padding:clamp(70px,9vw,140px) 0}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:30px;align-items:end;margin-bottom:clamp(36px,5vw,70px)}
+h2{font-weight:400;font-size:clamp(38px,5.2vw,78px);line-height:.98;margin:0}
+h2 em{color:var(--nymph)}
+.lead{color:var(--muted);font-size:clamp(18px,1.6vw,22px);margin:0;max-width:46ch}
+.hall{color:var(--gold);margin:0 0 14px}
+
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 clamp(40px,5vw,64px)}
+.filters button{min-height:44px;padding:0 18px;background:transparent;border:1px solid rgba(241,230,214,.22);color:var(--muted);font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;border-radius:999px}
+.filters button[aria-pressed="true"]{background:var(--blanc);color:var(--ink);border-color:var(--blanc)}
+.filters button sup{font-size:10px;margin-left:4px}
+
+/* salon hang */
+.salon{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(40px,4.5vw,70px) clamp(20px,3vw,48px);align-items:start;background:radial-gradient(80% 60% at 50% 30%,#1d1617,transparent)}
+.ex{grid-column:span 4}
+.ex.l{grid-column:span 5}
+.ex.m{grid-column:span 4}
+.ex.s{grid-column:span 3}
+.ex.d1{margin-top:60px}.ex.d2{margin-top:130px}.ex.u1{margin-top:-30px}
+.ex[hidden]{display:none}
+.ex .pic{aspect-ratio:3/4}
+.ex.wide .pic{aspect-ratio:4/5}
+.ex .frame{--fp:clamp(9px,1vw,14px)}
+.ex.s .frame{--fp:9px}
+.swatch{position:relative;aspect-ratio:3/4;display:flex;flex-direction:column;justify-content:flex-end;padding:22px;overflow:hidden}
+.swatch .ttl{font-style:italic;font-size:clamp(26px,2.6vw,38px);line-height:1;position:relative}
+.swatch .note{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;margin-top:10px;opacity:.8;position:relative}
+.swatch.amarant{background:radial-gradient(120% 90% at 30% 20%,#b13a5c,#8B1E3F 45%,#4a0d20);color:var(--blanc)}
+.swatch.amarant::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(255,255,255,.05) 0 2px,transparent 2px 7px)}
+.swatch.cobweb{background:radial-gradient(circle at 70% 30%,#f7efe3,#d8cbb9 60%,#b9aa95);color:#2a1f1a}
+.swatch.cobweb::before{content:"";position:absolute;inset:0;background:repeating-radial-gradient(circle at 70% 30%,transparent 0 18px,rgba(40,30,20,.13) 18px 19px),repeating-conic-gradient(from 0deg at 70% 30%,transparent 0 14deg,rgba(40,30,20,.12) 14deg 14.6deg)}
+.swatch.white{background:linear-gradient(160deg,#fbf6ee,#F1E6D6 55%,#dccbb2);color:#2a1f1a}
+.swatch.white::before{content:"";position:absolute;inset:14% 22%;border:1px solid rgba(42,31,26,.18);border-radius:46% 46% 8% 8%}
+.swatch.diptych{background:linear-gradient(90deg,#F1E6D6 0 50%,#A87A5C 50% 100%);color:#2a1f1a}
+.swatch.diptych .ttl,.swatch.diptych .note{background:rgba(241,230,214,.88);padding:6px 10px;margin-left:-6px;width:max-content;max-width:100%}
+
+/* codes */
+.codes{background:var(--ink2);border-top:1px solid rgba(176,141,87,.2);border-bottom:1px solid rgba(176,141,87,.2)}
+.codes .wrap{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(36px,6vw,100px);align-items:center}
+.code{display:grid;grid-template-columns:70px minmax(0,1fr);gap:8px 20px;padding:clamp(22px,2.6vw,34px) 0;border-top:1px solid rgba(241,230,214,.12)}
+.code:last-child{border-bottom:1px solid rgba(241,230,214,.12)}
+.code .n{font-family:var(--mono);color:var(--gold);font-size:13px;padding-top:.9em}
+.code h3{font-weight:400;font-style:italic;font-size:clamp(34px,4.4vw,66px);line-height:1;margin:0}
+.code:nth-child(2) h3{color:var(--nymph)}
+.code:nth-child(3) h3{color:#d79aa9}
+.code p{grid-column:2;margin:0;color:var(--muted);font-size:18px;max-width:52ch}
+.codes-art{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:start}
+.codes-art .frame{--fp:9px}
+.codes-art .pic{aspect-ratio:3/4}
+.codes-art figure{margin:0}
+.codes-art figure:last-child{margin-top:70px}
+.codes-art figcaption{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:10px;letter-spacing:.06em}
+
+/* palette */
+.palette{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;margin-top:clamp(40px,5vw,70px)}
+.chip{min-height:150px;padding:16px;display:flex;flex-direction:column;justify-content:flex-end}
+.chip i{font-style:italic;font-size:22px;line-height:1.05}
+.chip span{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;opacity:.75;margin-top:6px}
+
+/* sizes */
+.sizes{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:13px}
+.sizes th,.sizes td{text-align:left;padding:14px 12px;border-bottom:1px solid rgba(241,230,214,.12);vertical-align:top}
+.sizes th{color:var(--gold);font-weight:500;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.sizes td:first-child{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--blanc)}
+.sizes td:last-child{white-space:nowrap}
+.table-wrap{overflow-x:auto}
+
+/* order */
+.order .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,6vw,100px)}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{position:relative;padding:22px 0 22px 64px;border-top:1px solid rgba(241,230,214,.12)}
+.steps li::before{counter-increment:s;content:counter(s,upper-roman);position:absolute;left:0;top:18px;font-style:italic;font-size:34px;color:var(--gold)}
+.steps b{display:block;font-weight:500;font-size:24px;line-height:1.15}
+.steps span{color:var(--muted)}
+.highlights{display:flex;flex-wrap:wrap;gap:16px;margin-top:28px}
+.hl{display:flex;flex-direction:column;align-items:center;gap:8px;text-decoration:none;width:84px}
+.hl i{width:72px;height:72px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;font-style:italic;font-size:26px;background:radial-gradient(circle at 35% 30%,#2b2122,#141011)}
+.hl span{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:center}
+
+/* contacts */
+.contact{text-align:center;padding:clamp(80px,10vw,150px) 0;background:radial-gradient(60% 80% at 50% 100%,rgba(139,30,63,.35),transparent 70%)}
+.contact h2{font-size:clamp(42px,6.4vw,100px)}
+.contact .acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:36px}
+.contact p{color:var(--muted);margin:20px auto 0;max-width:44ch}
+footer{border-top:1px solid rgba(176,141,87,.2);padding:28px 0 40px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 30px}
+footer a{text-decoration:none;padding:10px 0;display:inline-block}
+
+/* dialog */
+dialog{border:0;padding:0;background:transparent;color:var(--blanc);max-width:min(560px,calc(100vw - 24px));width:100%}
+dialog::backdrop{background:rgba(10,8,8,.78);backdrop-filter:blur(4px)}
+.dlg{background:var(--ink2);border:1px solid var(--gold);padding:clamp(22px,4vw,36px);position:relative}
+.dlg h3{font-weight:400;font-style:italic;font-size:32px;line-height:1.05;margin:6px 44px 6px 0}
+.dlg .x{position:absolute;top:10px;right:10px;width:44px;height:44px;background:none;border:0;color:var(--blanc);font-size:28px;cursor:pointer;font-family:var(--serif)}
+.dlg .colors{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 4px}
+.dlg .colors button{min-height:44px;padding:0 16px 0 10px;display:flex;align-items:center;gap:10px;border:1px solid rgba(241,230,214,.25);background:transparent;color:var(--blanc);font-family:var(--mono);font-size:12px;cursor:pointer}
+.dlg .colors button i{width:22px;height:22px;border-radius:50%;border:1px solid rgba(255,255,255,.3)}
+.dlg .colors button[aria-pressed="true"]{border-color:var(--gold-hi);background:rgba(176,141,87,.15)}
+.dlg label{display:block;margin:18px 0 8px}
+.dlg textarea{width:100%;min-height:150px;resize:vertical;background:var(--ink);color:var(--blanc);border:1px solid rgba(241,230,214,.2);padding:14px;font-family:var(--mono);font-size:13px;line-height:1.55}
+.dlg .acts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:14px}
+.dlg .acts .btn{padding:0 10px}
+.dlg .hint{color:var(--muted);font-size:15px;margin:12px 0 0}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,40px);opacity:0;background:var(--blanc);color:var(--ink);font-family:var(--mono);font-size:12px;padding:12px 18px;transition:.3s;z-index:100;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* reveal for text */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .9s,transform .9s}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:1080px){
+  nav.menu{display:none}
+  .ex.l{grid-column:span 6}.ex.m{grid-column:span 6}.ex.s{grid-column:span 6}
+  .ex.d1,.ex.d2,.ex.u1{margin-top:0}
+  .ex:nth-child(even){margin-top:70px}
+}
+@media (max-width:820px){
+  body{font-size:18px}
+  .hero .wrap,.codes .wrap,.order .wrap,.sec-head{grid-template-columns:minmax(0,1fr)}
+  .hero-art{width:min(100%,400px);order:-1}
+  .palette{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .chip:last-child{grid-column:span 2}
+  .chip{min-height:110px}
+}
+@media (max-width:600px){
+  .salon{grid-template-columns:minmax(0,1fr);gap:56px}
+  .ex,.ex.l,.ex.m,.ex.s{grid-column:auto;margin-top:0!important}
+  .ex.s{width:82%;justify-self:center}
+  .ex:nth-child(3n+2){width:88%;justify-self:end}
+  .top .btn{padding:0 12px;font-size:11px}
+  .logo{font-size:14px;letter-spacing:.24em}
+  .code{grid-template-columns:minmax(0,1fr)}
+  .code .n{padding-top:0}
+  .code p{grid-column:1}
+  .dlg .acts{grid-template-columns:minmax(0,1fr)}
+  .sizes thead{display:none}
+  .sizes tr{display:block;border-bottom:1px solid rgba(241,230,214,.12);padding:12px 0}
+  .sizes td{display:block;border:0;padding:3px 0}
+  .sizes td:last-child{white-space:normal;color:var(--gold-hi)}
+  .codes-art figure:last-child{margin-top:40px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .plaque{clip-path:none;transform:none}.want,.rv{opacity:1;transform:none}
+  .frame img{transform:none}
+}
+</style>
+</head>
+<body>
+<div class="demo">Демо-концепт независимого разработчика — не официальный сайт Oberrollberg. Не согласован с владельцем, удаляется по первой просьбе.</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Oberrollberg — наверх">Oberrollberg<span>·</span></a>
+    <nav class="menu" aria-label="Разделы">
+      <a href="#hall">Экспонаты</a><a href="#codes">Три кода</a><a href="#sizes">Обмеры</a><a href="#order">Как заказать</a>
+    </nav>
+    <a class="btn" href="https://t.me/oberrollberg1" target="_blank" rel="noopener">Telegram</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="rv">
+      <p class="kicker mono">Кабинет редкостей · Зал I · Санкт-Петербург</p>
+      <h1><span class="small">Oberrollberg brand</span>Апсайкл <em>эпохи Возрождения</em></h1>
+      <p class="motto">одежда и аксессуары по мотивам Эпохи Возрождения<b>Based in Saint Petersburg · апсайклинг одежды</b></p>
+      <div class="hero-actions">
+        <a class="btn solid" href="#hall">Смотреть экспонаты</a>
+        <a class="btn" href="https://ig.me/m/e.v.a.oberrollberg" target="_blank" rel="noopener">Написать в Direct</a>
+      </div>
+      <div class="facts mono"><span><b>1&nbsp;703</b> подписчика</span><span><b>2&nbsp;153</b> публикации</span><span>Отправка в любой город</span></div>
+    </div>
+    <div class="hero-art io">
+      <div class="frame black"><div class="pic"><img src="img/p1.jpg" srcset="img/p1-m.jpg 675w, img/p1.jpg 828w" sizes="(max-width:820px) 90vw, 470px" width="828" height="1104" alt="Манишка Oberrollberg цвета бланманже с чёрным бантом поверх чёрного платья, модель с рыжими косами" fetchpriority="high"></div></div>
+      <div class="plaque">
+        <p class="no">Экспонат № 01 · аксессуар для пряной осени</p>
+        <h3>Манишка Oberrollberg</h3>
+        <p class="meta">Два цвета: бланманже и пралине</p>
+        <div class="row"><span class="tag">Отправлю в любой город</span><span class="price">3&nbsp;300&nbsp;₽</span></div>
+      </div>
+      <button class="want" data-id="manishka" type="button">Хочу этот экспонат</button>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="hall" aria-labelledby="hall-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="hall mono">Зал II · шпалерная развеска</p><h2 id="hall-h">Анфилада <em>экспонатов</em></h2></div>
+      <p class="lead">Цены, обмеры и составы — из подписей к постам. У каждой вещи своё имя, а многие — в единственном исполнении.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Фильтр экспонатов">
+      <button type="button" data-f="all" aria-pressed="true">Все<sup></sup></button>
+      <button type="button" data-f="stock" aria-pressed="false">В наличии<sup></sup></button>
+      <button type="button" data-f="one" aria-pressed="false">Единственное исполнение<sup></sup></button>
+      <button type="button" data-f="acc" aria-pressed="false">Манжеты и жабо<sup></sup></button>
+      <button type="button" data-f="wear" aria-pressed="false">Одежда<sup></sup></button>
+    </div>
+    <div class="salon" id="salon"></div>
+  </div>
+</section>
+
+<section class="sec codes" id="codes" aria-labelledby="codes-h">
+  <div class="wrap">
+    <div>
+      <p class="hall mono">Зал III · концепция</p>
+      <h2 id="codes-h" class="rv" style="margin-bottom:40px">Три кода <em>бренда</em></h2>
+      <div class="code rv"><span class="n">I</span><h3>Архитектурный крой</h3></div>
+      <div class="code rv"><span class="n">II</span><h3>Игра с гендером</h3><p>Мужские ткани и классическое наследие: за базу берутся винтажные мужские пиджаки и жилеты классического кроя лекал 1960–70-х и переплетаются с женственной пластикой и текучими платьями.</p></div>
+      <div class="code rv"><span class="n">III</span><h3>Цветочная эстетика</h3><p>Цветы и разнообразие их форм и оттенков — в брошах, лентах и названиях.</p></div>
+    </div>
+    <div class="codes-art">
+      <figure class="io"><div class="frame wood"><div class="pic"><img src="img/p4-m.jpg" srcset="img/p4-m.jpg 675w, img/p4.jpg 896w" sizes="(max-width:820px) 45vw, 240px" width="675" height="900" alt="Образ Oberrollberg upcycle: чёрное платье с полосатым лифом на крыше"></div></div><figcaption>Oberrollberg upcycle</figcaption></figure>
+      <figure class="io"><div class="frame"><div class="pic"><img src="img/p2-m.jpg" srcset="img/p2-m.jpg 675w, img/p2.jpg 1350w" sizes="(max-width:820px) 45vw, 240px" width="675" height="900" alt="Чёрная кружевная манжета на руке, держащей серебряную раму, рядом эскизы"></div></div><figcaption>Чёрное кружево и эскизы</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="pal-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="hall mono">Зал IV · палитра из подписей</p><h2 id="pal-h" class="rv">Цвета <em>с именами</em></h2></div>
+      <p class="lead">Оттенки здесь не придуманы дизайнером — так бренд сам называет свои вещи.</p>
+    </div>
+    <div class="palette rv">
+      <div class="chip" style="background:#F1E6D6;color:#2a1f1a"><i>Бланманже</i><span>манишка</span></div>
+      <div class="chip" style="background:#A87A5C;color:#1e1410"><i>Пралине</i><span>манишка</span></div>
+      <div class="chip" style="background:#8B1E3F"><i>Бархат Тициана</i><span>манжеты</span></div>
+      <div class="chip" style="background:#E7C2B8;color:#2a1f1a"><i>Бедро испуганной нимфы</i><span>манжеты</span></div>
+      <div class="chip" style="background:#0c0a0a;border:1px solid #3a2e22"><i>Giglio Nero</i><span>флорентийская лилия</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="sizes" aria-labelledby="sizes-h" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="hall mono">Опись · обмеры</p><h2 id="sizes-h" class="rv">Размеры <em>и составы</em></h2></div>
+      <p class="lead">Всё, что бренд указал в подписях. Нужен другой обмер — спросите в Telegram или Direct.</p>
+    </div>
+    <div class="table-wrap">
+    <table class="sizes">
+      <thead><tr><th>Экспонат</th><th>Размер и обмеры</th><th>Состав</th><th>Цена</th></tr></thead>
+      <tbody>
+        <tr><td>Рубашка-платье upcycle</td><td>S–M · длина по спинке 84 см · ширина 54 см</td><td>нейлон, винтаж 1970 (Чехословакия)</td><td>7&nbsp;200&nbsp;₽</td></tr>
+        <tr><td>Жилет upcycle</td><td>длина по спинке 57 см · объём груди 104 см · по нижней части 102 см</td><td>шерсть, хлопок, вискоза; подкладка пэ</td><td>8&nbsp;000&nbsp;₽</td></tr>
+        <tr><td>Юбка-передник «Босх»</td><td>единый · длина 100 / 56 см · ширина 71 см</td><td>винтажное кружево, органза</td><td>8&nbsp;000&nbsp;₽</td></tr>
+        <tr><td>Платье upcycle</td><td>44–46</td><td>двуслойное, винтажные элементы</td><td>8&nbsp;500&nbsp;₽</td></tr>
+        <tr><td>Воротничок-жабо</td><td>единый · высота 25 см · на завязках</td><td>100% хлопок</td><td>3&nbsp;000&nbsp;₽</td></tr>
+        <tr><td>Жабо чёрное</td><td>—</td><td>вискоза, хлопок, пэ</td><td>4&nbsp;000&nbsp;₽</td></tr>
+        <tr><td>Манжеты</td><td>размер един</td><td>кружево, бархатная лента</td><td>2&nbsp;500&nbsp;₽</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<section class="sec order" id="order" aria-labelledby="order-h" style="background:var(--ink2)">
+  <div class="wrap">
+    <div>
+      <p class="hall mono">Как приобрести экспонат</p>
+      <h2 id="order-h" class="rv">Заказ — <em>в два касания</em></h2>
+      <p class="lead" style="margin-top:22px">Актуальное наличие и вещи на заказ бренд держит в хайлайтах Instagram. Сайт собирает их в одну витрину и готовит сообщение за вас.</p>
+      <div class="highlights">
+        <a class="hl" href="https://www.instagram.com/e.v.a.oberrollberg/" target="_blank" rel="noopener"><i>Н</i><span>Наличие</span></a>
+        <a class="hl" href="https://www.instagram.com/e.v.a.oberrollberg/" target="_blank" rel="noopener"><i>З</i><span>На заказ</span></a>
+        <a class="hl" href="https://www.instagram.com/e.v.a.oberrollberg/" target="_blank" rel="noopener"><i>К</i><span>Клиенты</span></a>
+        <a class="hl" href="https://www.instagram.com/e.v.a.oberrollberg/" target="_blank" rel="noopener"><i>Ф</i><span>Факты</span></a>
+      </div>
+    </div>
+    <ol class="steps">
+      <li class="rv"><b>Выберите экспонат</b><span>и нажмите «Хочу этот экспонат» под табличкой. У манишки — выберите цвет.</span></li>
+      <li class="rv"><b>Скопируйте готовый текст</b><span>с названием, цветом и ценой — и отправьте в Telegram или Direct.</span></li>
+      <li class="rv"><b>Отправлю в любой город</b><span>— так бренд пишет под каждой вещью. Способ доставки уточните в переписке.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="contact" aria-labelledby="c-h">
+  <div class="wrap">
+    <p class="hall mono">Смотритель кабинета на связи</p>
+    <h2 id="c-h" class="rv">Напишите <em>Oberrollberg</em></h2>
+    <div class="acts">
+      <a class="btn solid" href="https://t.me/oberrollberg1" target="_blank" rel="noopener">Telegram · oberrollberg1</a>
+      <a class="btn" href="https://ig.me/m/e.v.a.oberrollberg" target="_blank" rel="noopener">Instagram Direct</a>
+      <a class="btn" href="https://www.threads.com/@e.v.a.oberrollberg" target="_blank" rel="noopener">Threads</a>
+    </div>
+    <p>Санкт-Петербург · @e.v.a.oberrollberg · 1&nbsp;703 подписчика</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="mono">Oberrollberg brand · по мотивам Эпохи Возрождения</span>
+    <span class="mono"><a href="https://www.instagram.com/e.v.a.oberrollberg/" target="_blank" rel="noopener">Instagram</a> · <a href="https://t.me/oberrollberg1" target="_blank" rel="noopener">Telegram</a></span>
+  </div>
+</footer>
+
+<dialog id="dlg" aria-labelledby="dlg-h">
+  <form class="dlg" method="dialog">
+    <button class="x" value="close" aria-label="Закрыть">×</button>
+    <p class="mono" style="color:var(--gold);margin:0">Заявка на экспонат</p>
+    <h3 id="dlg-h"></h3>
+    <p class="mono" id="dlg-price" style="color:var(--muted);margin:0"></p>
+    <div class="colors" id="dlg-colors" role="group" aria-label="Цвет"></div>
+    <label class="mono" for="dlg-msg">Текст сообщения</label>
+    <textarea id="dlg-msg"></textarea>
+    <div class="acts">
+      <button type="button" class="btn" id="dlg-copy">Скопировать</button>
+      <a class="btn solid" id="dlg-tg" href="https://t.me/oberrollberg1" target="_blank" rel="noopener">Telegram</a>
+      <a class="btn" id="dlg-ig" href="https://ig.me/m/e.v.a.oberrollberg" target="_blank" rel="noopener">Direct</a>
+    </div>
+    <p class="hint">Текст копируется сам при переходе — останется вставить его в чат.</p>
+  </form>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+var NB=' ';
+function rub(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,NB)+NB+'₽'}
+var EX=[
+ {id:'zhilet',img:'p10',big:'p10',bw:896,cls:'l',fr:'',name:'Жилет upcycle',no:'02',sub:'Коллекция upcycle 26 · в традициях венецианских фресок',meta:'Винтажная новая база + дизайн бренда',price:8000,tags:['one','wear'],alt:'Жилет Oberrollberg с вставками-фресками поверх розовой юбки из тюля, балкон в Венеции'},
+ {id:'bosch',img:'p11',big:'p11',bw:896,cls:'m d2',fr:'black',name:'Юбка-передник «Босх»',no:'03',sub:'Принт — репродукция Иеронима Босха, 1500 год',meta:'Винтажное кружево и органза · асимметрия',price:8000,tags:['stock','one','wear'],alt:'Юбка-передник с принтом картины Босха и кружевом, модель в библиотеке у винтовой лестницы'},
+ {id:'nymph',img:'p5',big:'p5',bw:1350,cls:'s d1',fr:'wood',name:'«Бедро испуганной нимфы»',no:'04',sub:'Манжеты · Cuisse de nymphe émue',meta:'Нежное кружево, бархатная лента',price:2500,tags:['acc'],color:'розовая нимфа',alt:'Розовая кружевная манжета с бархатной лентой над блюдом с зелёным виноградом'},
+ {id:'collar',img:'p12',big:'p12',bw:896,cls:'s u1',fr:'',name:'Воротничок-жабо',no:'05',sub:'Жатый хлопок · съёмная брошь',meta:'100% хлопок · высота 25 см · единый размер',price:3000,tags:['stock','acc'],alt:'Чёрный многоярусный воротничок-жабо с брошью, модель на парижском балконе'},
+ {id:'shirt',img:'p7',big:'p7',bw:746,cls:'l wide d1',fr:'black',name:'Рубашка-платье upcycle',no:'06',sub:'Нейлон · Винтаж 1970, Чехословакия',meta:'Разм. S–M · длина 84 см · ширина 54 см',price:7200,tags:['wear'],alt:'Белая рубашка-платье с прозрачным нейлоновым слоем и розовыми цветами-брошами'},
+ {id:'titian',sw:'amarant',cls:'m d2',fr:'',name:'«Бархат Тициана»',no:'07',sub:'Манжеты амарантово-ягодного оттенка',meta:'Летящее кружево · бархатная лента · размер един',price:2500,tags:['acc'],color:'амарантово-ягодный',swNote:'Оттенок с портретов Тициана'},
+ {id:'jabot',img:'p6',big:'p6',bw:896,cls:'l',fr:'',name:'Жабо чёрное',no:'08',sub:'Двуслойное, из ажурного текстиля',meta:'Вискоза, хлопок, пэ',price:4000,tags:['stock','acc'],alt:'Чёрное ажурное жабо на модели с кудрявыми волосами'},
+ {id:'lily',img:'p13',big:'p13',bw:1350,cls:'m d1',fr:'black',name:'«Флорентийская лилия»',no:'09',sub:'Манжеты · Giglio Nero, герб Медичи в чёрном',meta:'Чёрное кружево',price:2500,tags:['acc'],color:'чёрный',alt:'Чёрная кружевная манжета на руке над серебряным подносом, рядом эскиз профиля'},
+ {id:'dress',sw:'white',cls:'s u1',fr:'wood',name:'Платье upcycle',no:'10',sub:'Свободного кроя · двуслойное · с винтажными элементами',meta:'Размер 44–46',price:8500,tags:['stock','one','wear'],swNote:'Фото — в постах бренда'},
+ {id:'apron',img:'p9',big:'p9',bw:896,cls:'s',fr:'',name:'Молочный передник',no:'11',sub:'Флорентийская будуарная вышивка — у нас хлопком',meta:'В наличии один передник',price:4000,tags:['stock','one','wear'],alt:'Передник Oberrollberg на модели в швейной мастерской с манекенами'},
+ {id:'allegory',sw:'cobweb',cls:'s d2',fr:'black',name:'«Аллегория»',no:'12',sub:'Манжеты · Allegory — намёк на скрытый смысл',meta:'Невесомые, как паутина · бархатная лента',price:2500,tags:['acc'],swNote:'Лёгкие, как паутина'},
+ {id:'cuffs',img:'p3',big:'p3',bw:1206,cls:'s d1',fr:'wood',name:'Манжеты осенней коллекции',no:'13',sub:'Кружево и сухоцветы',meta:'Все манжеты коллекции — по 2 500 ₽',price:2500,tags:['acc'],alt:'Две кружевные манжеты с малиновым узором на фоне фиолетового меха и сухоцветов'},
+ {id:'brooch',img:'p14',big:'p14',bw:1350,cls:'s u1',fr:'black',name:'Броши',no:'14',sub:'Из редких винтажных тканей и фактур',meta:'Каждая индивидуальна · оттенки — в карусели',price:null,tags:['acc'],alt:'Броши-розы из винтажных тканей пудровых и кирпичных оттенков на джинсовой куртке'},
+];
+var MANI={id:'manishka',name:'Манишка Oberrollberg',price:3300,colors:[['бланманже','#F1E6D6'],['пралине','#A87A5C']]};
+var frames=['','black','wood'];
+var salon=document.getElementById('salon');
+salon.innerHTML=EX.map(function(e){
+  var art=e.img
+   ? '<div class="pic"><img src="img/'+e.img+'-m.jpg" srcset="img/'+e.img+'-m.jpg 675w, img/'+e.big+'.jpg '+e.bw+'w" sizes="(max-width:600px) 90vw, (max-width:1080px) 45vw, 520px" width="675" height="900" alt="'+e.alt+'"></div>'
+   : '<div class="pic swatch '+e.sw+'" role="img" aria-label="'+e.name+' — цветовое поле"><span class="ttl">'+e.name.replace(/[«»]/g,'')+'</span><span class="note">'+e.swNote+'</span></div>';
+  var tag=e.tags.indexOf('one')>-1?'Единственное исполнение':(e.tags.indexOf('stock')>-1?'В наличии':'Отправлю в любой город');
+  if(e.tags.indexOf('stock')>-1&&e.tags.indexOf('one')>-1)tag='В наличии · одна';
+  return '<article class="ex io '+e.cls+'" data-tags="'+e.tags.join(' ')+'">'+
+   '<div class="frame '+e.fr+'">'+art+'</div>'+
+   '<div class="plaque"><p class="no">Экспонат № '+e.no+'</p><h3>'+e.name+'</h3><p>'+e.sub+'</p><p class="meta">'+e.meta+'</p>'+
+   '<div class="row"><span class="tag">'+tag+'</span><span class="price">'+(e.price?rub(e.price):'цена в Direct')+'</span></div></div>'+
+   '<button class="want" type="button" data-id="'+e.id+'">Хочу этот экспонат</button></article>';
+}).join('');
+
+/* filters */
+var fb=document.querySelectorAll('.filters button'),items=salon.querySelectorAll('.ex');
+fb.forEach(function(b){
+  var f=b.dataset.f,n=0;items.forEach(function(it){if(f==='all'||it.dataset.tags.split(' ').indexOf(f)>-1)n++});
+  b.querySelector('sup').textContent=n;
+  b.addEventListener('click',function(){
+    fb.forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+    items.forEach(function(it){it.hidden=!(f==='all'||it.dataset.tags.split(' ').indexOf(f)>-1);if(!it.hidden)it.classList.add('in')});
+  });
+});
+
+/* reveal: lacquer sweep + plaque */
+var els=document.querySelectorAll('.io,.rv');
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(reduce||navigator.webdriver||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')})}
+else{
+  var left=[].slice.call(els),tick=false;
+  function check(){tick=false;var lim=innerHeight*.9;left=left.filter(function(e){var r=e.getBoundingClientRect();if(r.top<lim&&r.bottom>0){e.classList.add('in');return false}return true});if(!left.length)removeEventListener('scroll',on)}
+  function on(){if(!tick){tick=true;requestAnimationFrame(check)}}
+  addEventListener('scroll',on,{passive:true});addEventListener('resize',on);check();setTimeout(check,300);
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(ev){var t=document.querySelector(a.getAttribute('href'));if(t){ev.preventDefault();t.scrollIntoView({behavior:reduce?'auto':'smooth'})}})});
+/* order dialog */
+var dlg=document.getElementById('dlg'),msg=document.getElementById('dlg-msg'),cur=null,color=null;
+var toast=document.getElementById('toast'),tt;
+function say(t){toast.textContent=t;toast.classList.add('on');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('on')},2200)}
+function build(){
+  var t='Здравствуйте! Хочу экспонат «'+cur.name.replace(/[«»]/g,'')+'»';
+  if(color)t+=', цвет — '+color;
+  if(cur.price)t+=' ('+rub(cur.price)+')';
+  t+='.\nПодскажите, пожалуйста, наличие и отправку в мой город: \nГород: ';
+  msg.value=t;
+}
+function copy(){
+  var t=msg.value;
+  if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(function(){say('Текст скопирован')},fallback)}else fallback();
+  function fallback(){msg.select();try{document.execCommand('copy');say('Текст скопирован')}catch(e){say('Выделите текст и скопируйте')}}
+}
+document.addEventListener('click',function(ev){
+  var b=ev.target.closest('.want');if(!b)return;
+  var id=b.dataset.id;cur=id==='manishka'?MANI:EX.filter(function(e){return e.id===id})[0];
+  document.getElementById('dlg-h').textContent=cur.name;
+  document.getElementById('dlg-price').textContent=(cur.price?rub(cur.price):'цену уточните в Direct')+' · отправлю в любой город';
+  var box=document.getElementById('dlg-colors');box.innerHTML='';
+  if(cur.colors){
+    color=cur.colors[0][0];
+    cur.colors.forEach(function(c,i){var x=document.createElement('button');x.type='button';x.setAttribute('aria-pressed',i===0);x.innerHTML='<i style="background:'+c[1]+'"></i>'+c[0];
+      x.onclick=function(){color=c[0];box.querySelectorAll('button').forEach(function(y){y.setAttribute('aria-pressed',y===x)});build()};box.appendChild(x)});
+  } else color=cur.color||null;
+  build();
+  if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');
+});
+document.getElementById('dlg-copy').addEventListener('click',copy);
+document.getElementById('dlg-tg').addEventListener('click',copy);
+document.getElementById('dlg-ig').addEventListener('click',copy);
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>

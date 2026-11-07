@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Русский Лук — кожаные бомберы с вышивкой, Екатеринбург</title><meta property="og:type" content="website"><meta property="og:title" content="Русский Лук — кожаные бомберы с вышивкой, Екатеринбург"><meta property="og:description" content="Русский Лук — семейный бренд одежды из Екатеринбурга. Кожаный бомбер «я из России», двусторонний бомбер «Я верю», плащ «Знак традиций». Доставка по всей России, заказ в Direct."><meta property="og:image" content="https://pikold.github.io/demo-sites/russkiy-look/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Русский Лук — семейный бренд одежды из Екатеринбурга. Кожаный бомбер «я из России», двусторонний бомбер «Я верю», плащ «Знак традиций». Доставка по всей России, заказ в Direct.">
+<!-- Demo concept: независимый демо-концепт, не официальный сайт -->
+<link rel="stylesheet" href="../_fonts/oswald.css">
+<link rel="stylesheet" href="../_fonts/source-serif-4.css">
+<style>
+:root{
+  --ink:#121212; --canvas:#F4F2EE; --paper:#FBFAF7; --bordo:#7A1F2B; --khaki:#4C5A3E; --grey:#8A8A88;
+  --line:rgba(18,18,18,.14);
+  --head:'Oswald', 'Arial Narrow', sans-serif;
+  --serif:'Source Serif 4', Georgia, serif;
+  --pad:clamp(16px,4vw,56px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--canvas);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.55;overflow-x:clip}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--bordo);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1360px;margin:0 auto;padding:0 var(--pad)}
+.kicker{font-family:var(--head);font-weight:500;text-transform:uppercase;letter-spacing:.16em;font-size:13px}
+.hand{font-family:var(--serif);font-style:italic;font-weight:400}
+.h2{font-family:var(--head);font-weight:600;text-transform:uppercase;letter-spacing:.01em;line-height:.95;font-size:clamp(44px,7vw,112px)}
+.rub{white-space:nowrap}
+
+/* demo bar */
+.demo{background:var(--ink);color:#cfcac2;font:400 12.5px/1.4 var(--serif);padding:7px var(--pad);text-align:center}
+
+/* header */
+.hdr{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px var(--pad);border-bottom:1px solid var(--line);background:var(--canvas)}
+.logo{font-family:var(--head);font-weight:700;color:var(--bordo);text-transform:uppercase;font-size:24px;letter-spacing:.04em;text-decoration:none;line-height:1;display:inline-flex;align-items:center;min-height:44px}
+.logo small{display:block;font-weight:400;font-size:10.5px;letter-spacing:.2em;color:var(--ink);margin-top:4px}
+.nav{display:flex;gap:28px}
+.nav a{font-family:var(--head);text-transform:uppercase;letter-spacing:.12em;font-size:13px;text-decoration:none;padding:12px 0}
+.nav a:hover{color:var(--bordo)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;font-family:var(--head);font-weight:500;text-transform:uppercase;letter-spacing:.12em;font-size:14px;text-decoration:none;border:1.5px solid var(--ink);background:var(--ink);color:var(--canvas);cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.btn:hover{background:var(--bordo);border-color:var(--bordo)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--canvas)}
+.btn.bordo{background:var(--bordo);border-color:var(--bordo)}
+.btn.bordo:hover{background:var(--ink);border-color:var(--ink)}
+.hdr .btn{min-height:44px;padding:0 18px;font-size:13px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);min-height:min(calc(100svh - 110px),900px)}
+.hero-photo{position:relative;background:var(--ink);overflow:hidden;min-height:560px}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:42% 38%}
+.hero-photo figcaption{position:absolute;left:0;bottom:0;right:0;padding:56px 28px 22px;color:var(--canvas);background:linear-gradient(transparent,rgba(18,18,18,.78));font-size:15px}
+.hero-photo figcaption b{font-family:var(--head);font-weight:500;letter-spacing:.12em;text-transform:uppercase;font-size:12px;display:block;color:#d9b3b9}
+.hero-txt{display:flex;flex-direction:column;justify-content:center;padding:56px clamp(24px,5vw,88px);background:var(--paper);position:relative}
+.hero-txt .kicker{color:var(--bordo)}
+.hero h1{margin:22px 0 0}
+.hero h1 .wm{display:block;font-family:var(--head);font-weight:700;text-transform:uppercase;color:var(--bordo);font-size:clamp(20px,2vw,28px);letter-spacing:.06em;line-height:1}
+.hero h1 .hand{display:block;margin-top:18px;font-size:clamp(46px,5.4vw,88px);line-height:1.02;letter-spacing:-.015em}
+.sign{display:flex;align-items:center;gap:18px;margin-top:30px}
+.sign .orn{width:84px;height:84px;flex:none}
+.sign .city{font-style:italic;font-size:30px;color:var(--bordo);line-height:1}
+.sign .city small{display:block;font-style:normal;font-family:var(--head);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);margin-top:8px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.hero-facts{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:34px;padding-top:20px;border-top:1px solid var(--line);font-size:15px}
+.hero-facts b{font-family:var(--head);font-weight:600;font-size:20px;margin-right:6px}
+
+/* stitch */
+.stitch path,.stitch polyline,.stitch line,.stitch circle{fill:none;stroke:var(--bordo);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:6 5}
+.stitch .thread{stroke-dasharray:var(--len) var(--len);stroke-dashoffset:var(--len)}
+.stitch.sewn .thread{animation:sew 2.6s cubic-bezier(.6,.1,.3,1) forwards}
+.stitch.sewn .thread:nth-child(2){animation-delay:.25s}.stitch.sewn .thread:nth-child(3){animation-delay:.5s}.stitch.sewn .thread:nth-child(4){animation-delay:.75s}.stitch.sewn .thread:nth-child(5){animation-delay:1s}.stitch.sewn .thread:nth-child(6){animation-delay:1.2s}
+@keyframes sew{to{stroke-dashoffset:0}}
+.border-orn{display:block;width:100%;height:28px}
+
+/* two-sided */
+.duo{background:var(--ink);color:var(--canvas);transition:background .6s ease,color .6s ease;position:relative}
+.duo.back{background:var(--canvas);color:var(--ink)}
+.duo-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,80px);max-width:1360px;margin:0 auto;padding:0 var(--pad)}
+.duo-steps{padding:14vh 0 10vh}
+.step{min-height:78vh;display:flex;flex-direction:column;justify-content:center;max-width:520px}
+.step .kicker{color:#c58a93}
+.duo.back .step .kicker{color:var(--bordo)}
+.step h2{margin:14px 0 22px}
+.step h3{font-family:var(--head);font-weight:500;text-transform:uppercase;letter-spacing:.04em;font-size:clamp(30px,3.4vw,48px);line-height:1;margin:14px 0 18px}
+.step p{font-size:19px;max-width:44ch;opacity:.88}
+.spec{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:26px;border-top:1px solid currentColor}
+.spec div{padding:14px 12px 0 0}
+.spec b{display:block;font-family:var(--head);font-weight:600;font-size:clamp(22px,2.4vw,30px);line-height:1.1}
+.spec span{font-size:14px;opacity:.75}
+.duo-stage{position:sticky;top:0;height:100svh;display:flex;align-items:center;justify-content:center;perspective:1600px}
+.card{position:relative;width:min(400px,80%);aspect-ratio:3/4.3;transform-style:preserve-3d;will-change:transform}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.face.front img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.face .tag{position:absolute;left:14px;top:14px;background:var(--canvas);color:var(--ink);font-family:var(--head);text-transform:uppercase;letter-spacing:.14em;font-size:11.5px;padding:7px 10px}
+.face.backside{transform:rotateY(180deg);background:var(--paper);color:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px;border:1px solid var(--line)}
+.face.backside .tag{background:var(--bordo);color:var(--canvas)}
+.face.backside svg{width:58%;height:auto}
+.face.backside .hand{font-size:clamp(44px,5vw,68px);color:var(--bordo);line-height:1;margin-top:18px}
+.face.backside p{font-family:var(--head);text-transform:uppercase;letter-spacing:.16em;font-size:12.5px;margin-top:14px}
+.duo-meter{position:absolute;bottom:6vh;left:50%;transform:translateX(-50%);display:flex;gap:10px;font-family:var(--head);text-transform:uppercase;letter-spacing:.14em;font-size:12px}
+.duo-meter span{opacity:.45;transition:opacity .3s}
+.duo-meter span.on{opacity:1}
+
+/* catalog */
+.sec{padding:clamp(72px,10vw,140px) 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(32px,4vw,56px)}
+.sec-head p{max-width:40ch;font-size:17px}
+.cat{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:18px}
+.item{position:relative;overflow:hidden}
+.item img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.item:hover img{transform:scale(1.035)}
+.item .ph{overflow:hidden;position:relative}
+.item .num{font-family:var(--head);font-size:13px;letter-spacing:.16em;opacity:.7}
+.item h3{font-family:var(--head);font-weight:600;text-transform:uppercase;line-height:1;margin:10px 0 14px}
+.item ul{list-style:none;font-size:16px}
+.item li{padding:7px 0;border-top:1px solid currentColor;border-color:rgba(127,127,127,.35)}
+.price{font-family:var(--head);font-weight:600;font-size:28px;margin:18px 0 18px}
+.wide{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);background:var(--ink);color:var(--canvas);min-height:560px}
+.wide .ph{min-height:560px}
+.wide .ph img{position:absolute;inset:0;object-position:50% 30%}
+.wide .txt{padding:clamp(28px,4vw,56px);display:flex;flex-direction:column;justify-content:flex-end}
+.wide h3{font-size:clamp(40px,4.4vw,68px)}
+.wide .btn{background:var(--canvas);color:var(--ink);border-color:var(--canvas);align-self:flex-start}
+.wide .btn:hover{background:var(--bordo);color:var(--canvas);border-color:var(--bordo)}
+.tall{grid-column:1/5;grid-row:2/4;background:var(--paper);border:1px solid var(--line);display:flex;flex-direction:column}
+.tall .ph{aspect-ratio:3/4.4}
+.tall .txt{padding:24px}
+.tall h3{font-size:34px}
+.long{grid-column:5/-1;grid-row:2;align-self:start;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background:var(--grey);color:var(--ink)}
+.long .ph{min-height:460px}
+.long .ph img{position:absolute;inset:0;object-position:50% 22%}
+.long .txt{padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;justify-content:space-between}
+.long h3{font-size:clamp(32px,3vw,46px)}
+.long li{border-color:rgba(18,18,18,.25)}
+.long .btn{align-self:flex-start}
+.howto{grid-column:5/-1;grid-row:3;align-self:end;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding:26px 0 4px;border-top:2px solid var(--ink)}
+.howto b{display:block;font-family:var(--head);font-weight:600;font-size:40px;line-height:1;color:var(--bordo)}
+.howto h3{font-family:var(--head);font-weight:500;text-transform:uppercase;letter-spacing:.06em;font-size:17px;margin:10px 0 6px}
+.howto p{font-size:15.5px}
+
+/* lookbook */
+.look{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr) minmax(0,1fr) minmax(0,.8fr);gap:18px;align-items:end}
+.look figure{overflow:hidden;background:#ddd9d2}
+.look img{width:100%;height:100%;object-fit:cover}
+.look figure:nth-child(1){aspect-ratio:3/4.6}
+.look figure:nth-child(2){aspect-ratio:3/4}
+.look figure:nth-child(3){aspect-ratio:3/5}
+.look figure:nth-child(4){aspect-ratio:3/3.6}
+.look figcaption{font-size:14px;padding:10px 0 0;background:var(--canvas)}
+.look-wrap figure{position:relative}
+
+/* sizes */
+.sizes{background:var(--khaki);color:var(--canvas)}
+.sizes .h2{color:var(--canvas)}
+.sz-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:start}
+.tbl-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:17px}
+th,td{text-align:left;padding:16px 14px 16px 0;border-bottom:1px solid rgba(244,242,238,.3);vertical-align:top}
+th{font-family:var(--head);font-weight:500;text-transform:uppercase;letter-spacing:.12em;font-size:12.5px;opacity:.8}
+td b{font-family:var(--head);font-weight:500;font-size:20px;letter-spacing:.02em}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;padding:0 8px;border:1px solid rgba(244,242,238,.55);font-family:var(--head);font-size:15px}
+.temp{border:1px solid rgba(244,242,238,.35);padding:28px}
+.temp .big{font-family:var(--head);font-weight:600;font-size:clamp(56px,7vw,96px);line-height:.95;letter-spacing:-.01em}
+.temp .big small{font-size:.4em;vertical-align:top;margin-left:6px}
+.scale{position:relative;height:10px;margin:28px 0 10px;background:linear-gradient(90deg,#c9cdbf,#f4f2ee 45%,#d9b3b9)}
+.scale i{position:absolute;top:-7px;bottom:-7px;width:2px;background:var(--canvas)}
+.scale-l{display:flex;justify-content:space-between;font-family:var(--head);font-size:13px;letter-spacing:.06em;opacity:.85}
+.temp p{font-size:16px;margin-top:18px;opacity:.9}
+
+/* order */
+.order-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(28px,5vw,80px);align-items:start}
+.order-intro .hand{font-size:clamp(28px,3vw,40px);color:var(--bordo);line-height:1.15;margin:18px 0}
+.order-intro p{max-width:42ch}
+.deliv{display:flex;align-items:center;gap:14px;margin-top:28px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-family:var(--head);text-transform:uppercase;letter-spacing:.12em;font-size:15px}
+.deliv svg{width:44px;height:44px;flex:none}
+.builder{background:var(--ink);color:var(--canvas);padding:clamp(22px,3.4vw,44px)}
+fieldset{border:0;margin:0 0 24px}
+legend{font-family:var(--head);text-transform:uppercase;letter-spacing:.14em;font-size:12.5px;opacity:.75;margin-bottom:12px}
+.models{display:grid;gap:8px}
+.opt{position:relative;display:block}
+.opt input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.opt span{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:54px;padding:10px 16px;border:1px solid rgba(244,242,238,.28);transition:border-color .2s,background .2s}
+.opt span em{font-style:normal;font-family:var(--head);letter-spacing:.04em;white-space:nowrap}
+.opt input:checked+span{border-color:var(--canvas);background:rgba(244,242,238,.08);box-shadow:inset 3px 0 0 #c58a93}
+.opt input:focus-visible+span{outline:3px solid #c58a93;outline-offset:2px}
+.sizes-pick{display:flex;flex-wrap:wrap;gap:8px}
+.sizes-pick .opt span{min-width:54px;justify-content:center;font-family:var(--head);font-size:17px;padding:0 12px}
+.field input[type=text]{width:100%;min-height:50px;background:transparent;border:1px solid rgba(244,242,238,.28);color:var(--canvas);font:inherit;font-size:17px;padding:0 14px}
+.field input::placeholder{color:rgba(244,242,238,.45)}
+.msg{background:var(--paper);color:var(--ink);padding:18px 18px 20px;font-size:17px;line-height:1.5;position:relative;margin-top:6px}
+.msg::before{content:"";position:absolute;left:18px;top:-8px;width:16px;height:16px;background:var(--paper);transform:rotate(45deg)}
+.msg-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.builder .btn.ghost{color:var(--canvas);border-color:rgba(244,242,238,.6)}
+.builder .btn.ghost:hover{background:var(--canvas);color:var(--ink)}
+.copied{font-size:14px;margin-top:10px;min-height:22px;color:#e2bfc5}
+#variantBox[hidden]{display:none}
+
+/* proof */
+.proof{border-top:1px solid var(--line)}
+.proof-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
+.proof-grid>div{padding:28px 24px 28px 0;border-right:1px solid var(--line)}
+.proof-grid>div+div{padding-left:24px}
+.proof-grid>div:last-child{border-right:0}
+.proof-grid b{display:block;font-family:var(--head);font-weight:600;font-size:clamp(34px,3.6vw,52px);line-height:1;color:var(--bordo)}
+.proof-grid span{font-size:15px}
+
+/* footer */
+.ftr{background:var(--ink);color:var(--canvas);padding:clamp(56px,8vw,110px) 0 36px}
+.ftr .wm{font-family:var(--head);font-weight:700;text-transform:uppercase;color:#b54a5a;font-size:clamp(52px,10vw,160px);line-height:.88;letter-spacing:.01em}
+.ftr .hand{font-size:clamp(24px,2.6vw,36px);margin:18px 0 34px;color:#e9e4dc}
+.ftr-row{display:flex;flex-wrap:wrap;gap:12px 36px;align-items:center;border-top:1px solid rgba(244,242,238,.2);padding-top:24px;font-size:15px}
+.ftr-row a{min-height:44px;display:inline-flex;align-items:center}
+.ftr small{display:block;margin-top:26px;opacity:.6;font-size:13px;max-width:70ch}
+
+.fab{display:none}
+
+/* reveal */
+.rv{opacity:1;transform:none;transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .rv.pre{opacity:0;transform:translateY(26px)}
+
+@media (max-width:1000px){
+  .nav{display:none}
+  .hero{grid-template-columns:minmax(0,1fr)}
+  .hero-photo{min-height:68svh}
+  .hero-txt{padding:40px var(--pad) 48px}
+  .duo-grid{grid-template-columns:minmax(0,1fr)}
+  .duo-stage{order:-1;top:0;height:62svh;z-index:2;background:inherit}
+  .duo{background:var(--ink)}
+  .duo-stage{background:var(--ink);transition:background .6s}
+  .duo.back .duo-stage{background:var(--canvas)}
+  .card{width:auto;height:84%;max-width:78%}
+  .duo-meter{bottom:1.4vh}
+  .duo-steps{padding:4vh 0 8vh}
+  .step{min-height:56svh}
+  .wide{grid-template-columns:minmax(0,1fr)}
+  .wide .ph{min-height:0;aspect-ratio:4/4.4}
+  .tall,.long,.howto{grid-column:1/-1;grid-row:auto}
+  .tall{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .tall .ph{aspect-ratio:auto;min-height:420px}
+  .tall .ph img{position:absolute;inset:0}
+  .sz-grid,.order-grid{grid-template-columns:minmax(0,1fr)}
+  .look{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof-grid>div:nth-child(2){border-right:0}
+  .proof-grid>div:nth-child(3){padding-left:0}
+  .proof-grid>div:nth-child(n+3){border-top:1px solid var(--line)}
+}
+@media (max-width:640px){
+  body{font-size:17px}
+  .hdr{padding:10px var(--pad)}
+  .logo{font-size:20px}
+  .hdr .btn{padding:0 14px;font-size:12px}
+  .hero-photo{min-height:62svh}
+  .hero h1 .hand{font-size:clamp(40px,11.5vw,54px)}
+  .sign .orn{width:64px;height:64px}
+  .sign .city{font-size:25px}
+  .hero-cta .btn{flex:1 1 100%}
+  .card{height:80%;max-width:84%}
+  .step p{font-size:17px}
+  .tall{display:flex}
+  .tall .ph{min-height:0;aspect-ratio:3/3.8}
+  .long{grid-template-columns:minmax(0,1fr)}
+  .long .ph{min-height:0;aspect-ratio:4/3.6}
+  .long .txt{gap:18px}
+  .wide .btn,.long .btn,.tall .btn{align-self:stretch}
+  .look{gap:10px}
+  .howto{grid-template-columns:minmax(0,1fr);gap:14px}
+  th,td{padding:12px 10px 12px 0;font-size:15px}
+  td b{font-size:17px}
+  .chip{min-width:30px;height:30px;font-size:13px}
+  .temp{padding:22px}
+  .msg-actions .btn{flex:1 1 100%}
+  .proof-grid>div{padding:20px 12px 20px 0}
+  .proof-grid>div+div{padding-left:12px}
+  .proof-grid>div:nth-child(3){padding-left:0}
+  .fab{display:flex;position:fixed;left:16px;right:16px;bottom:14px;z-index:50;box-shadow:0 10px 30px rgba(0,0,0,.3);transition:transform .35s,opacity .35s}
+  .fab.hide{transform:translateY(120%);opacity:0}
+  .ftr{padding-bottom:96px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .stitch .thread{stroke-dashoffset:0!important}
+  .js .rv.pre{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="demo" role="note">Демо-концепт независимого разработчика — не официальный сайт «Русский Лук». Не согласован с владельцем, удаляется по первой просьбе.</div>
+
+<header class="hdr">
+  <a class="logo" href="#top" aria-label="Русский Лук — наверх">Русский Лук</a>
+  <nav class="nav" aria-label="Разделы">
+    <a href="#duo">Двусторонний</a>
+    <a href="#catalog">Вещи</a>
+    <a href="#sizes">Размеры</a>
+    <a href="#order">Заказ</a>
+  </nav>
+  <a class="btn" href="#order">Заказать</a>
+</header>
+
+<main id="top">
+<section class="hero">
+  <figure class="hero-photo">
+    <img src="img/p4.jpg" srcset="img/p4-m.jpg 675w, img/p4.jpg 1350w" sizes="(max-width:1000px) 100vw, 54vw" alt="Мужчина в чёрном кожаном бомбере, вид со спины: вышивка на спине" fetchpriority="high">
+    <figcaption><b>Кожаный бомбер «я из России»</b>Детальная вышивка на спине</figcaption>
+  </figure>
+  <div class="hero-txt">
+    <p class="kicker">Семейный бренд одежды · вышивка · кожаные бомберы</p>
+    <h1><span class="wm">Русский Лук</span><span class="hand">Одежда с любовью к своей Родине</span></h1>
+    <div class="sign">
+      <svg class="orn stitch" viewBox="0 0 120 120" aria-hidden="true">
+        <path class="thread" d="M60 6 L114 60 L60 114 L6 60 Z"/>
+        <path class="thread" d="M60 28 L92 60 L60 92 L28 60 Z"/>
+        <path class="thread" d="M60 46 L74 60 L60 74 L46 60 Z M60 6 V28 M60 92 V114 M6 60 H28 M92 60 H114"/>
+        <path class="thread" d="M33 33 l-10 -10 m10 10 l-14 0 m14 0 l0 -14 M87 33 l10 -10 m-10 10 l14 0 m-14 0 l0 -14 M33 87 l-10 10 m10 -10 l-14 0 m14 0 l0 14 M87 87 l10 10 m-10 -10 l14 0 m-14 0 l0 14"/>
+      </svg>
+      <p class="city">Екатеринбург<small>Доставка по всей России</small></p>
+    </div>
+    <div class="hero-cta">
+      <a class="btn bordo" href="#order">Собрать заказ</a>
+      <a class="btn ghost" href="#catalog">Смотреть вещи</a>
+    </div>
+    <div class="hero-facts">
+      <span><b>15&nbsp;000&nbsp;₽</b>кожаные бомберы</span>
+      <span><b>S · M · L</b>до −10/15&nbsp;°C</span>
+    </div>
+  </div>
+</section>
+
+<section class="duo" id="duo" aria-label="Двусторонний бомбер «Я верю»">
+  <div class="duo-grid">
+    <div class="duo-steps">
+      <div class="step">
+        <p class="kicker">Двойной код</p>
+        <h2 class="h2">Двусто&shy;ронний</h2>
+        <p>Бомбер «Я верю» носится двумя сторонами. Листайте — карточка перевернётся.</p>
+      </div>
+      <div class="step">
+        <p class="kicker">Сторона первая</p>
+        <h3>Чёрная кожа, свободный силуэт</h3>
+        <p>Утеплённый кожаный бомбер с вышивкой на спине. Защитит от ветра и дождя и даст комфорт в прохладную погоду — основа для осенних образов.</p>
+      </div>
+      <div class="step">
+        <p class="kicker">Сторона вторая</p>
+        <h3>Вышивка «Я верю»</h3>
+        <p>Переверните — и это уже другая куртка. Одна вещь, два образа.</p>
+        <div class="spec">
+          <div><b>15&nbsp;000&nbsp;₽</b><span>цена</span></div>
+          <div><b>S M L</b><span>размеры</span></div>
+          <div><b>−10/15&nbsp;°</b><span>до, °C</span></div>
+        </div>
+        <p style="margin-top:28px"><a class="btn bordo" href="#order" data-model="ver">Хочу «Я верю»</a></p>
+      </div>
+    </div>
+    <div class="duo-stage">
+      <div class="card" id="card">
+        <div class="face front">
+          <img src="img/p12.jpg" srcset="img/p12-m.jpg 507w, img/p12.jpg 1014w" sizes="(max-width:1000px) 60vw, 400px" alt="Девушка в чёрном кожаном бомбере свободного силуэта">
+          <span class="tag">Сторона 1 · кожа</span>
+        </div>
+        <div class="face backside">
+          <span class="tag">Сторона 2</span>
+          <svg class="stitch sewn" viewBox="0 0 120 120" aria-hidden="true">
+            <path d="M60 6 L114 60 L60 114 L6 60 Z"/>
+            <path d="M60 28 L92 60 L60 92 L28 60 Z"/>
+            <path d="M60 46 L74 60 L60 74 L46 60 Z M60 6 V28 M60 92 V114 M6 60 H28 M92 60 H114"/>
+          </svg>
+          <div class="hand">Я верю</div>
+          <p>двусторонний бомбер</p>
+        </div>
+      </div>
+      <div class="duo-meter" aria-hidden="true"><span class="on" id="m1">Сторона 1</span><span>/</span><span id="m2">Сторона 2</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="catalog">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2 class="h2">Вещи</h2>
+      <p>Три вещи из новых постов. Каждую можно заказать в Direct — текст сообщения соберём ниже.</p>
+    </div>
+    <div class="cat">
+      <article class="item wide rv">
+        <div class="ph"><img src="img/p8.jpg" srcset="img/p8-m.jpg 507w, img/p8.jpg 1013w" sizes="(max-width:1000px) 100vw, 60vw" alt="Мужчина в чёрном кожаном бомбере «я из России» у машины"></div>
+        <div class="txt">
+          <span class="num">01 · Кожаный бомбер</span>
+          <h3>«я из России»</h3>
+          <ul>
+            <li>Детальная вышивка на спине</li>
+            <li>Температурный режим до −10/15&nbsp;°C</li>
+            <li>Размеры S, M, L</li>
+          </ul>
+          <p class="price">15&nbsp;000&nbsp;₽</p>
+          <a class="btn" href="#order" data-model="rus">Заказать этот</a>
+        </div>
+      </article>
+      <article class="item tall rv">
+        <div class="ph"><img src="img/p2.jpg" srcset="img/p2-m.jpg 506w, img/p2.jpg 1012w" sizes="(max-width:1000px) 50vw, 32vw" alt="Девушка в чёрном бомбере с капюшоном на улице"></div>
+        <div class="txt">
+          <span class="num">02 · Двусторонний бомбер</span>
+          <h3>«Я верю»</h3>
+          <ul>
+            <li>Две стороны</li>
+            <li>До −10/15&nbsp;°C</li>
+            <li>S, M, L</li>
+          </ul>
+          <p class="price">15&nbsp;000&nbsp;₽</p>
+          <a class="btn" href="#order" data-model="ver">Заказать</a>
+        </div>
+      </article>
+      <article class="item long rv">
+        <div class="ph"><img src="img/p5.jpg" srcset="img/p5-m.jpg 506w, img/p5.jpg 720w" sizes="(max-width:640px) 100vw, 34vw" alt="Девушка в сером плаще с орнаментальной вышивкой"></div>
+        <div class="txt">
+          <div>
+            <span class="num">03 · Плащ</span>
+            <h3>«Знак традиций»</h3>
+            <ul>
+              <li>Орнаментальная вышивка на передней части, плечах и рукавах</li>
+              <li>Свободный силуэт, воротник-стойка, два кармана</li>
+              <li>Облегчённый или утеплённый</li>
+              <li>Размеры 42–56</li>
+            </ul>
+          </div>
+          <div>
+            <p class="price">25&nbsp;000&nbsp;₽</p>
+            <a class="btn" href="#order" data-model="pl">Заказать плащ</a>
+          </div>
+        </div>
+      </article>
+      <div class="howto" aria-label="Как заказать">
+        <div><b>1</b><h3>Выберите вещь</h3><p>Бомбер «я из России», «Я верю» или плащ «Знак традиций».</p></div>
+        <div><b>2</b><h3>Размер</h3><p>S, M, L для бомберов, 42–56 для плаща.</p></div>
+        <div><b>3</b><h3>Напишите в Direct</h3><p>Готовый текст соберём ниже — доставка по всей России.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0" aria-label="Кадры бренда">
+  <div class="wrap">
+    <div class="sec-head rv"><p class="kicker" style="color:var(--bordo)">Из ленты @russkiy_look</p></div>
+    <div class="look">
+      <figure class="rv"><img src="img/p6-m.jpg" alt="Девушка в длинном чёрном пальто с пакетом Русский Лук"></figure>
+      <figure class="rv"><img src="img/p14-m.jpg" alt="Наклейка с логотипом Русский Лук на упаковке"></figure>
+      <figure class="rv"><img src="img/p10-m.jpg" alt="Девушка в сером плаще с большим воротником"></figure>
+      <figure class="rv"><img src="img/p9-m.jpg" alt="Конверт с логотипом Русский Лук в почтовом ящике"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec sizes" id="sizes">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2 class="h2">Размеры</h2>
+      <p>Как в постах бренда. Таблица мерок — в хайлайте «размеры» в профиле; сомневаетесь — спросите в Direct.</p>
+    </div>
+    <div class="sz-grid">
+      <div class="tbl-wrap rv">
+        <table>
+          <thead><tr><th scope="col">Вещь</th><th scope="col">Размеры</th><th scope="col">Цена</th></tr></thead>
+          <tbody>
+            <tr><td><b>Бомбер «я из России»</b><br>до −10/15&nbsp;°C</td><td><div class="chips"><span class="chip">S</span><span class="chip">M</span><span class="chip">L</span></div></td><td class="rub">15&nbsp;000&nbsp;₽</td></tr>
+            <tr><td><b>Бомбер «Я верю»</b><br>двусторонний, до −10/15&nbsp;°C</td><td><div class="chips"><span class="chip">S</span><span class="chip">M</span><span class="chip">L</span></div></td><td class="rub">15&nbsp;000&nbsp;₽</td></tr>
+            <tr><td><b>Плащ «Знак традиций»</b><br>облегчённый / утеплённый</td><td><span class="rub">42–56</span></td><td class="rub">25&nbsp;000&nbsp;₽</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="temp rv">
+        <p class="kicker">Температурный режим бомберов</p>
+        <div class="big">до&nbsp;−10/15<small>°C</small></div>
+        <div class="scale" aria-hidden="true"><i style="left:66%"></i><i style="left:99%"></i></div>
+        <div class="scale-l" aria-hidden="true"><span>+15</span><span>0</span><span>−10</span><span>−15</span></div>
+        <p>Кожаные бомберы — на осень и мягкую зиму.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="order">
+  <div class="wrap order-grid">
+    <div class="order-intro rv">
+      <p class="kicker" style="color:var(--bordo)">Заказ в Direct</p>
+      <h2 class="h2" style="margin-top:14px">Соберите заказ</h2>
+      <p class="hand">Выберите вещь и размер — сообщение напишется само.</p>
+      <p>Бренд принимает заказы в Instagram Direct. Скопируйте текст, откройте диалог и вставьте — останется только отправить.</p>
+      <div class="deliv">
+        <svg class="stitch" id="delivOrn" viewBox="0 0 44 44" aria-hidden="true"><path class="thread" d="M22 3 L41 22 L22 41 L3 22 Z"/><path class="thread" d="M22 13 L31 22 L22 31 L13 22 Z"/></svg>
+        Доставка по всей России
+      </div>
+    </div>
+    <form class="builder rv" id="builder" onsubmit="return false">
+      <fieldset>
+        <legend>Вещь</legend>
+        <div class="models">
+          <label class="opt"><input type="radio" name="model" value="rus" checked><span>Бомбер «я из России» <em>15&nbsp;000&nbsp;₽</em></span></label>
+          <label class="opt"><input type="radio" name="model" value="ver"><span>Двусторонний бомбер «Я верю» <em>15&nbsp;000&nbsp;₽</em></span></label>
+          <label class="opt"><input type="radio" name="model" value="pl"><span>Плащ «Знак традиций» <em>25&nbsp;000&nbsp;₽</em></span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Размер</legend>
+        <div class="sizes-pick" id="sizePick"></div>
+      </fieldset>
+      <fieldset id="variantBox" hidden>
+        <legend>Вариант</legend>
+        <div class="sizes-pick">
+          <label class="opt"><input type="radio" name="variant" value="облегчённый" checked><span>облегчённый</span></label>
+          <label class="opt"><input type="radio" name="variant" value="утеплённый"><span>утеплённый</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="field">
+        <legend><label for="city">Город доставки (необязательно)</label></legend>
+        <input type="text" id="city" placeholder="например, Казань" autocomplete="off">
+      </fieldset>
+      <div class="msg" id="msg" aria-live="polite"></div>
+      <div class="msg-actions">
+        <button class="btn bordo" type="button" id="copy">Скопировать</button>
+        <a class="btn ghost" id="dm" href="https://ig.me/m/russkiy_look" target="_blank" rel="noopener">Открыть Direct</a>
+      </div>
+      <p class="copied" id="copied" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<section class="proof" aria-label="Бренд в цифрах">
+  <div class="wrap proof-grid">
+    <div><b>1&nbsp;644</b><span>подписчика в Instagram</span></div>
+    <div><b>100</b><span>публикаций</span></div>
+    <div><b>3</b><span>вещи в новой подборке</span></div>
+    <div><b>Отзывы</b><span>в хайлайте «отзывы» <a href="https://instagram.com/russkiy_look" target="_blank" rel="noopener">в профиле</a></span></div>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="wm">Русский Лук</div>
+    <p class="hand">Одежда с любовью к своей Родине</p>
+    <div class="ftr-row">
+      <a href="https://instagram.com/russkiy_look" target="_blank" rel="noopener">Instagram @russkiy_look</a>
+      <a href="https://ig.me/m/russkiy_look" target="_blank" rel="noopener">Написать в Direct</a>
+      <span>Екатеринбург</span>
+      <span>Доставка по всей России</span>
+    </div>
+    <small>Демо-концепт независимого разработчика — не официальный сайт «Русский Лук». Фото — из публикаций бренда в Instagram. Не согласован с владельцем, удаляется по первой просьбе.</small>
+  </div>
+</footer>
+
+<a class="btn bordo fab" id="fab" href="#order">Собрать заказ</a>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* stitch: measure thread lengths */
+  document.querySelectorAll('.stitch .thread').forEach(function(p){
+    var l = Math.ceil(p.getTotalLength()); p.style.setProperty('--len', l);
+  });
+  var hero = document.querySelector('.sign .orn');
+  requestAnimationFrame(function(){ hero.classList.add('sewn'); });
+  var deliv = document.getElementById('delivOrn');
+
+  /* sew delivery ornament when visible */
+  if ('IntersectionObserver' in window && !reduce) {
+    var io2 = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting) { deliv.classList.add('sewn'); io2.disconnect(); } });
+    });
+    io2.observe(deliv);
+  } else { deliv.classList.add('sewn'); }
+  setTimeout(function(){ deliv.classList.add('sewn'); }, 1500);
+
+  /* flip card by scroll progress */
+  var duo = document.getElementById('duo'), card = document.getElementById('card');
+  var m1 = document.getElementById('m1'), m2 = document.getElementById('m2');
+  var ticking = false, fab = document.getElementById('fab'), order = document.getElementById('order');
+  function frame(){
+    ticking = false;
+    var r = duo.getBoundingClientRect();
+    var span = r.height - innerHeight;
+    var p = Math.min(1, Math.max(0, (-r.top) / (span > 0 ? span : 1)));
+    var t = Math.min(1, Math.max(0, (p - .3) / .45));
+    t = t < .5 ? 2*t*t : 1 - Math.pow(-2*t + 2, 2) / 2;
+    if (!reduce) card.style.transform = 'rotateY(' + (t * 180).toFixed(2) + 'deg)';
+    else card.style.transform = t > .5 ? 'rotateY(180deg)' : 'none';
+    var back = t > .5;
+    duo.classList.toggle('back', back);
+    m1.classList.toggle('on', !back); m2.classList.toggle('on', back);
+    var o = order.getBoundingClientRect();
+    fab.classList.toggle('hide', o.top < innerHeight && o.bottom > 0 || scrollY < 300);
+  }
+  addEventListener('scroll', function(){ if (!ticking) { ticking = true; requestAnimationFrame(frame); } }, {passive:true});
+  addEventListener('resize', frame);
+  frame();
+
+  /* order builder */
+  var M = {
+    rus:{name:'кожаный бомбер «я из России»', price:'15 000 ₽', sizes:['S','M','L']},
+    ver:{name:'двусторонний бомбер «Я верю»', price:'15 000 ₽', sizes:['S','M','L']},
+    pl:{name:'плащ «Знак традиций»', price:'25 000 ₽', sizes:['42','44','46','48','50','52','54','56']}
+  };
+  var form = document.getElementById('builder'), pick = document.getElementById('sizePick');
+  var msg = document.getElementById('msg'), city = document.getElementById('city');
+  var vbox = document.getElementById('variantBox'), status = document.getElementById('copied');
+  var cur = 'rus', size = 'M';
+  function sizesFor(k){
+    var s = M[k].sizes; if (s.indexOf(size) < 0) size = s[Math.floor((s.length - 1) / 2)];
+    pick.innerHTML = s.map(function(v){
+      return '<label class="opt"><input type="radio" name="size" value="' + v + '"' + (v === size ? ' checked' : '') + ' aria-label="Размер ' + v + '"><span>' + v + '</span></label>';
+    }).join('');
+  }
+  function text(){
+    var m = M[cur];
+    var noun = cur === 'pl' ? 'Хочу ' + m.name : 'Хочу ' + m.name;
+    var t = 'Здравствуйте! ' + noun + ', размер ' + size;
+    if (cur === 'pl') t += ', вариант ' + form.querySelector('[name=variant]:checked').value;
+    t += ' (' + m.price + ').';
+    var c = city.value.trim();
+    if (c) t += ' Доставка в город ' + c + '.';
+    t += ' Подскажите, пожалуйста, наличие и как оплатить?';
+    return t;
+  }
+  function render(){ msg.textContent = text(); status.textContent = ''; }
+  form.addEventListener('change', function(e){
+    if (e.target.name === 'model') { cur = e.target.value; vbox.hidden = cur !== 'pl'; sizesFor(cur); }
+    if (e.target.name === 'size') size = e.target.value;
+    render();
+  });
+  city.addEventListener('input', render);
+  function setModel(k){
+    var r = form.querySelector('[name=model][value=' + k + ']'); if (!r) return;
+    r.checked = true; cur = k; vbox.hidden = k !== 'pl'; sizesFor(k); render();
+  }
+  document.querySelectorAll('[data-model]').forEach(function(a){
+    a.addEventListener('click', function(){ setModel(a.getAttribute('data-model')); });
+  });
+  document.getElementById('copy').addEventListener('click', function(){
+    var t = text();
+    function ok(){ status.textContent = 'Скопировано. Откройте Direct и вставьте сообщение.'; }
+    function fallback(){
+      var ta = document.createElement('textarea'); ta.value = t; ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); ok(); } catch (e) { status.textContent = 'Выделите текст и скопируйте вручную.'; }
+      document.body.removeChild(ta);
+    }
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(t).then(ok, fallback); else fallback();
+  });
+  sizesFor(cur); render();
+})();
+</script>
+<script data-price-link>(function(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(/Демо-концепт/.test(n.nodeValue)){var e=n.parentElement,a=document.createElement('a');a.href='price/';a.textContent='Стоимость и условия →';a.style.cssText='margin-left:.5em;color:inherit;text-decoration:underline;text-underline-offset:2px;font-weight:700;white-space:nowrap';e.appendChild(a);break}}})()</script></body>
+</html>
